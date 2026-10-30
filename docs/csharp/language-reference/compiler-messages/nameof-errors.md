@@ -20,7 +20,7 @@ ai-usage: ai-assisted
 This article covers the following compiler errors and warnings:
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 
 - [**CS8081**](#use-an-expression-that-names-a-symbol): *Expression does not have a name.*
@@ -33,8 +33,8 @@ That's by design. The text closely matches the text of the compiler error / warn
 - **CS8081**: *Expression does not have a name.*
 - **CS8082**: *Sub-expression cannot be used in an argument to nameof.*
 
-- Pass the name of a variable, type, or member rather than an expression that computes a value. For example, replace `nameof(value + 1)` with `nameof(value)` to obtain the variable's name (**CS8081**).
-- Replace an invocation, element access, or other unsupported subexpression in a member reference with a type or variable name. For example, replace `nameof(GetText().Length)` with `nameof(string.Length)` to obtain the property's name without invoking a method (**CS8082**).
+- Pass the name of a variable, type, or member rather than an expression that computes a value. For example, replace `nameof(value + 1)` with `nameof(value)` to get the variable's name (**CS8081**).
+- Replace an invocation, element access, or other unsupported subexpression in a member reference with a type or variable name. For example, replace `nameof(GetText().Length)` with `nameof(string.Length)` to get the property's name without invoking a method (**CS8082**).
 
 For valid operand forms, see the [nameof expression](../operators/nameof.md).
 

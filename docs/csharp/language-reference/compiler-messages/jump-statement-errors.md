@@ -43,7 +43,7 @@ ai-usage: ai-assisted
 This article covers the following compiler errors and warnings:
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 
 - [**CS0126**](#return-the-required-values): *An object of a type convertible to 'type' is required*

@@ -84,7 +84,6 @@ f1_keywords:
   - "CS7065"
   - "CS7066"
   - "CS7070"
-  - "CS7084"
   - "CS7086"
   - "CS7087"
   - "CS7088"
@@ -126,7 +125,6 @@ f1_keywords:
   - "CS8036"
   - "CS8055"
   - "CS8057"
-  - "CS8058"
   - "CS8077"
   - "CS8078" # build only diagnostic
   - "CS8079"

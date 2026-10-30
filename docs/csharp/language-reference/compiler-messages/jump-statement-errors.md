@@ -100,7 +100,7 @@ For label scope and target resolution, see [The goto statement](../statements/ju
 
 Add a jump statement such as `break`, `return`, `goto case`, `goto default`, or `throw` wherever control could otherwise reach the end of a `switch` section. Control can't fall into the next section (**CS0163**) or out of the final section (**CS8070**), even when the `switch` has only one section.
 
-For example, terminate both the named case and the final `default` section:
+The following examples generate **CS8070** at the marked final `case 1:` and `default:` labels. Uncomment the final `break;` in each `switch` to fix the error:
 
 ```csharp
 switch (number)
@@ -108,9 +108,19 @@ switch (number)
     case 0:
         number++;
         break;
-    default:
+    case 1: // CS8070
         number = 0;
+        // break;
+}
+
+switch (number)
+{
+    case 0:
+        number++;
         break;
+    default: // CS8070
+        number = 0;
+        // break;
 }
 ```
 

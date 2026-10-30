@@ -552,7 +552,7 @@ These schemes use cookies for persistence and redirection to login pages for aut
 
 Web APIs are consumed by code, such as `HttpClient` in .NET applications and equivalent types in other frameworks. These clients expect a usable response from an API call, or a status code indicating what, if any, problem has occurred. These clients are not interacting through a browser and do not render or interact with any HTML that an API might return. Thus, it is not appropriate for API endpoints to redirect their clients to login pages if they are not authenticated. Another scheme is more appropriate.
 
-To configure authentication for APIs, you might set up authentication like the following, used by the `PublicApi` project in the eShopOnWeb reference application:
+To configure authentication for APIs, use JWT bearer authentication. The following example adapts the configuration from the `PublicApi` project in the eShopOnWeb reference application to validate the token's issuer and audience. Set `Jwt:Issuer` to your trusted token issuer and `Jwt:Audience` to the identifier for this API in the API's configuration. Configure the token issuer to include the same values in the access token's `iss` and `aud` claims, respectively.
 
 ```csharp
 builder.Services
@@ -568,11 +568,15 @@ builder.Services
         {
             ValidateIssuerSigningKey = true,
             IssuerSigningKey = new SymmetricSecurityKey(key),
-            ValidateIssuer = false,
-            ValidateAudience = false
+            ValidateIssuer = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidateAudience = true,
+            ValidAudience = builder.Configuration["Jwt:Audience"]
         };
     });
 ```
+
+To prevent the API from accepting tokens intended for another service, keep issuer and audience validation enabled, in addition to signature and lifetime validation. A valid signature alone doesn't establish that a token was issued for this API, particularly when services share signing keys. For more information, see [Configure JWT bearer authentication](/aspnet/core/security/authentication/configure-jwt-bearer-authentication).
 
 While it is possible to configure multiple different authentication schemes within a single project, it is much simpler to configure a single default scheme. For this reason, among others, the eShopOnWeb reference application separates its APIs into their own project, `PublicApi`, separate from the main `Web` project that includes the application's views and Razor Pages.
 

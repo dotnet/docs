@@ -107,6 +107,9 @@ An alternative to creating a symbol package is embedding symbol files in the mai
 
 The downside of embedding symbol files is that they increase the package size by about 30% for .NET libraries compiled using SDK-style projects. If package size is a concern, you should publish symbols in a symbol package instead.
 
+> [!NOTE]
+> Embedding symbol files (`*.pdb`) in a package only provides debug symbols with source file paths from the build machine. To enable consumers to step into source code when debugging on another machine, configure [Source Link](sourcelink.md) or embed the source code files by setting `<EmbedAllSources>true</EmbedAllSources>`.
+
 ✔️ CONSIDER publishing symbols as a symbol package (`*.snupkg`) to NuGet.org
 
 > Symbol packages (`*.snupkg`) provide developers a good on-demand debugging experience without bloating the main package size and impacting restore performance for those who don't intend to debug the NuGet package.

@@ -672,6 +672,11 @@ items:
     displayName: >
       throw, catch, exception filter, catch filter,
       CS8359, CS8360
+  - name: nameof expressions
+    href: ./compiler-messages/nameof-errors.md
+    displayName: >
+      nameof, expression names, method groups,
+      CS8081, CS8082, CS8084, CS8093
   - name: Extension declarations
     href: ./compiler-messages/extension-declarations.md
     displayName: >

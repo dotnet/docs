@@ -15,12 +15,7 @@ namespace SystemTextJsonSamples
                 Precipitation = Precipitation.Sleet
             };
 
-            var options = new JsonSerializerOptions
-            {
-                WriteIndented = true,
-                TypeInfoResolver = Context1.Default,
-            };
-            string? jsonString = JsonSerializer.Serialize(weatherForecast, options);
+            string? jsonString = JsonSerializer.Serialize(weatherForecast, Context1.Default.WeatherForecastWithPrecipEnum);
             // </Serialize>
             Console.WriteLine($"JSON with enum as string:\n{jsonString}\n");
 
@@ -51,12 +46,7 @@ namespace SystemTextJsonSamples
                 Precipitation = Precipitation2.Sleet
             };
 
-            var options = new JsonSerializerOptions
-            {
-                WriteIndented = true,
-                TypeInfoResolver = Context2.Default,
-            };
-            string? jsonString = JsonSerializer.Serialize(weatherForecast, options);
+            string? jsonString = JsonSerializer.Serialize(weatherForecast, Context2.Default.WeatherForecast2WithPrecipEnum);
             // </Serialize2>
             Console.WriteLine($"JSON with enum as string:\n{jsonString}\n");
 

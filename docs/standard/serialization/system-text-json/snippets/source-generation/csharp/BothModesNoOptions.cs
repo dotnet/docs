@@ -1,6 +1,7 @@
 ﻿// <All>
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Text.Json.Serialization.Metadata;
 
 namespace BothModesNoOptions
 {
@@ -40,22 +41,15 @@ namespace BothModesNoOptions
             // output:
             //Date=8/1/2019 12:00:00 AM
 
-            // <DeserializeWithContext>
-            weatherForecast = JsonSerializer.Deserialize(
-                jsonString, typeof(WeatherForecast), SourceGenerationContext.Default)
-                as WeatherForecast;
-            // </DeserializeWithContext>
-            Console.WriteLine($"Date={weatherForecast?.Date}");
-            // output:
-            //Date=8/1/2019 12:00:00 AM
-
-            // <DeserializeWithOptions>
+            // <DeserializeWithTypeInfoFromOptions>
             var sourceGenOptions = new JsonSerializerOptions
             {
                 TypeInfoResolver = SourceGenerationContext.Default
             };
-            weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString, sourceGenOptions);
-            // </DeserializeWithOptions>
+            weatherForecast = JsonSerializer.Deserialize(
+                jsonString,
+                (JsonTypeInfo<WeatherForecast>)sourceGenOptions.GetTypeInfo(typeof(WeatherForecast))!);
+            // </DeserializeWithTypeInfoFromOptions>
             Console.WriteLine($"Date={weatherForecast?.Date}");
             // output:
             //Date=8/1/2019 12:00:00 AM
@@ -68,22 +62,11 @@ namespace BothModesNoOptions
             // output:
             //{"Date":"2019-08-01T00:00:00","TemperatureCelsius":25,"Summary":"Hot"}
 
-            // <SerializeWithContext>
+            // <SerializeWithTypeInfoFromOptions>
             jsonString = JsonSerializer.Serialize(
-                weatherForecast, typeof(WeatherForecast), SourceGenerationContext.Default);
-            // </SerializeWithContext>
-            Console.WriteLine(jsonString);
-            // output:
-            //{"Date":"2019-08-01T00:00:00","TemperatureCelsius":25,"Summary":"Hot"}
-
-            // <SerializeWithOptions>
-            sourceGenOptions = new JsonSerializerOptions
-            {
-                TypeInfoResolver = SourceGenerationContext.Default
-            };
-
-            jsonString = JsonSerializer.Serialize<WeatherForecast>(weatherForecast, sourceGenOptions);
-            // </SerializeWithOptions>
+                weatherForecast!,
+                (JsonTypeInfo<WeatherForecast>)sourceGenOptions.GetTypeInfo(typeof(WeatherForecast))!);
+            // </SerializeWithTypeInfoFromOptions>
             Console.WriteLine(jsonString);
             // output:
             //{"Date":"2019-08-01T00:00:00","TemperatureCelsius":25,"Summary":"Hot"}

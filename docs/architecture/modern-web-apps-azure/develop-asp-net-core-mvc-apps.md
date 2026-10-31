@@ -3,7 +3,7 @@ title: Developing ASP.NET Core MVC apps
 description: Architect Modern Web Applications with ASP.NET Core and Azure | developing ASP.NET Core MVC Apps
 author: ardalis
 ms.author: wiwagn
-ms.date: 12/12/2021
+ms.date: 10/30/2026
 no-loc: [Blazor, WebAssembly]
 ms.custom: sfi-ropc-nochange
 ---
@@ -552,7 +552,7 @@ These schemes use cookies for persistence and redirection to login pages for aut
 
 Web APIs are consumed by code, such as `HttpClient` in .NET applications and equivalent types in other frameworks. These clients expect a usable response from an API call, or a status code indicating what, if any, problem has occurred. These clients are not interacting through a browser and do not render or interact with any HTML that an API might return. Thus, it is not appropriate for API endpoints to redirect their clients to login pages if they are not authenticated. Another scheme is more appropriate.
 
-To configure authentication for APIs, you might set up authentication like the following, used by the `PublicApi` project in the eShopOnWeb reference application:
+To configure authentication for APIs, use JWT bearer authentication. The following example adapts the configuration from the `PublicApi` project in the eShopOnWeb reference application. The reference application disables issuer and audience validation. The adapted version enables both. Set `Jwt:Issuer` to your trusted token issuer and `Jwt:Audience` to the identifier of this API. The token issuer must put the same values in the `iss` and `aud` claims of the access tokens it issues for this API.
 
 ```csharp
 builder.Services
@@ -568,11 +568,15 @@ builder.Services
         {
             ValidateIssuerSigningKey = true,
             IssuerSigningKey = new SymmetricSecurityKey(key),
-            ValidateIssuer = false,
-            ValidateAudience = false
+            ValidateIssuer = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidateAudience = true,
+            ValidAudience = builder.Configuration["Jwt:Audience"]
         };
     });
 ```
+
+To prevent the API from accepting tokens intended for another service, keep issuer and audience validation enabled, in addition to signature and lifetime validation. A valid signature alone doesn't establish that a token was issued for this API, particularly when services share signing keys. For more information, see [Configure JWT bearer authentication](/aspnet/core/security/authentication/configure-jwt-bearer-authentication).
 
 While it is possible to configure multiple different authentication schemes within a single project, it is much simpler to configure a single default scheme. For this reason, among others, the eShopOnWeb reference application separates its APIs into their own project, `PublicApi`, separate from the main `Web` project that includes the application's views and Razor Pages.
 

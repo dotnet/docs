@@ -3,7 +3,7 @@ title: Authentication and Authorization
 description: Providing security and identity management for .NET MAUI application
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 09/10/2024
+ms.date: 10/30/2026
 ms.custom: sfi-image-nochange
 ---
 
@@ -98,21 +98,37 @@ For information about configuring IdentityServer to use ASP.NET Core Identity, s
 
 ### Configuring API resources
 
-When configuring API resources, the `AddInMemoryApiResources` method expects an `IEnumerable<ApiResource>` collection. The following code example shows the `GetApis` method that provides this collection in the eShop reference application:
+To configure API resources, pass an `IEnumerable<ApiResource>` collection to `AddInMemoryApiResources`. The following example adapts the `GetApis` method from the eShop reference application. It links each API resource to a scope of the same name, so that IdentityServer can add the resource name to the access token's `aud` claim:
 
 ```csharp
 public static IEnumerable<ApiResource> GetApis()
 {
     return new List<ApiResource>
     {
-        new ApiScope("orders", "Orders Service"),
-        new ApiScope("basket", "Basket Service"),
-        new ApiScope("webhooks", "Webhooks registration Service"),
+        new ApiResource("orders", "Orders Service") { Scopes = { "orders" } },
+        new ApiResource("basket", "Basket Service") { Scopes = { "basket" } },
+        new ApiResource("webhooks", "Webhooks registration Service") { Scopes = { "webhooks" } },
     };
 }
 ```
 
-This method specifies that IdentityServer should protect the orders and basket APIs. Therefore, IdentityServer-managed access tokens will be required when making calls to these APIs. For more information about the `ApiResource` type, see [API Resource](https://docs.duendesoftware.com/identityserver/v7/fundamentals/resources/api_resources/) in the IdentityServer documentation.
+Register the scopes separately by passing an `IEnumerable<ApiScope>` collection to `AddInMemoryApiScopes`, as shown in the following example:
+
+```csharp
+public static IEnumerable<ApiScope> GetApiScopes()
+{
+    return new List<ApiScope>
+    {
+        new ApiScope("orders", "Orders Service"),
+        new ApiScope("basket", "Basket Service"),
+        new ApiScope("webhooks", "Webhooks registration Service"),
+    };
+}
+```
+
+When a client requests one of these scopes, IdentityServer adds the name of the linked API resource to the access token's `aud` claim. For example, a token for the `basket` scope has `basket` as its audience. Set each API's `Identity:Audience` configuration value to the name of its API resource.
+
+An API scope alone doesn't add an API-specific audience to the token. If your deployment defines only scopes, access tokens have no `aud` claim and an API that validates the audience rejects them. In that case, define API resources and request new access tokens. Don't disable audience validation. For more information, see [API Resources](https://docs.duendesoftware.com/identityserver/fundamentals/resources/api-resources/) in the IdentityServer documentation.
 
 ### Configuring identity resources
 
@@ -371,7 +387,7 @@ The eShop multi-platform app communicates with the identity microservice and req
 
 ## Configuring IdentityServer to perform authorization
 
-To perform authorization with IdentityServer, its authorization middleware must be added to the web application's HTTP request pipeline. The middleware is added in the `AddDefaultAuthentication` extension method, which is invoked from the `AddApplicationServices` method in the `Program` class and is demonstrated in the following code example from the eShop reference application:
+To validate access tokens from IdentityServer, register JWT bearer authentication and authorization services. The `AddApplicationServices` method in the `Program` class invokes the `AddDefaultAuthentication` extension method. The following example adapts that method from the eShop reference application, which disables audience validation. The adapted version enables it:
 
 ```csharp
 public static IServiceCollection AddDefaultAuthentication(this IHostApplicationBuilder builder)
@@ -399,7 +415,7 @@ public static IServiceCollection AddDefaultAuthentication(this IHostApplicationB
         options.RequireHttpsMetadata = false;
         options.Audience = audience;
         options.TokenValidationParameters.ValidIssuers = [identityUrl];
-        options.TokenValidationParameters.ValidateAudience = false;
+        options.TokenValidationParameters.ValidateAudience = true;
     });
 
     services.AddAuthorization();
@@ -408,7 +424,7 @@ public static IServiceCollection AddDefaultAuthentication(this IHostApplicationB
 }
 ```
 
-This method ensures that the API can only be accessed with a valid access token. The middleware validates the incoming token to ensure that it's sent from a trusted issuer and validates that the token is valid to be used with the API that receives it. Therefore, browsing to the ordering or basket controller will return a `401 (unauthorized)` HTTP status code, indicating that an access token is required.
+For endpoints that require authorization, JWT bearer authentication validates the access token's signature, lifetime, issuer, and audience. The `Authority` identifies the trusted IdentityServer instance, and `Audience` identifies the API that accepts the token. The `Audience` value has no effect if `ValidateAudience` is `false`. Keep issuer and audience validation enabled, so the API rejects a token that has a valid signature but an unexpected issuer or audience. Requests to the ordering or basket controller without a valid access token receive a `401 (unauthorized)` HTTP status code.
 
 ## Making access requests to APIs
 

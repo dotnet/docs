@@ -1,4 +1,3 @@
-
 using System;
 
 public static class RawStrings
@@ -31,5 +30,22 @@ public static class RawStrings
                        """";
         // </InitialQuotes>
         Console.WriteLine(MultiLineQuotes);
+
+        // <InterpolatedRawString>
+        var longitude = 47.6062;
+        var latitude = -122.3321;
+        var city = "Seattle";
+
+        var json = $$"""
+        {
+            "city": "{{city}}",
+            "coordinates": {
+                "longitude": {{longitude}},
+                "latitude": {{latitude}}
+            }
+        }
+        """;
+        // </InterpolatedRawString>
+        Console.WriteLine(json);
     }
 }

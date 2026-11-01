@@ -20,6 +20,9 @@ The Native AOT deployment model uses an ahead-of-time compiler to compile IL to 
 
 [Visual Studio 2022 or later](https://visualstudio.microsoft.com/vs/), including the **Desktop development with C++** workload with all default components.
 
+> [!NOTE]
+> Older .NET SDK servicing releases locate the MSVC platform linker specifically within Visual Studio 2022 installations. If you encounter the build error `Platform linker not found` when compiling on newer Visual Studio versions, update to the latest .NET SDK servicing release or install the Visual Studio 2022 C++ build tools.
+
 # [Alpine](#tab/linux-alpine)
 
 - The compiler toolchain and developer packages for libraries that the .NET runtime depends on.

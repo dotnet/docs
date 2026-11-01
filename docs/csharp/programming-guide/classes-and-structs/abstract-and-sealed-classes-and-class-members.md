@@ -1,7 +1,7 @@
 ---
 title: "Abstract and Sealed Classes and Class Members"
-description: The abstract keyword in C# creates incomplete classes and class members. The sealed keyword prevents inheritance of previously virtual classes or class members.
-ms.date: 07/20/2015
+description: Learn how to use the abstract and sealed modifiers in C# to create incomplete base classes or prevent class and member inheritance.
+ms.date: 11/01/2026
 helpviewer_keywords: 
   - "abstract classes [C#]"
   - "sealed classes [C#]"
@@ -11,40 +11,51 @@ ms.assetid: 99aa52f7-b435-43f9-936e-2470af734c4e
 ---
 # Abstract and Sealed Classes and Class Members (C# Programming Guide)
 
-The [abstract](../../language-reference/keywords/abstract.md) keyword enables you to create classes and [class](../../language-reference/keywords/class.md) members that are incomplete and must be implemented in a derived class.  
-  
- The [sealed](../../language-reference/keywords/sealed.md) keyword enables you to prevent the inheritance of a class or certain class members that were previously marked [virtual](../../language-reference/keywords/virtual.md).  
-  
-## Abstract Classes and Class Members  
+In object-oriented programming, classes can participate in an inheritance hierarchy where a *base class* supplies common characteristics and *derived classes* customize or extend that behavior. C# provides two modifiers to control this inheritance:
 
- Classes can be declared as abstract by putting the keyword `abstract` before the class definition. For example:  
-  
- [!code-csharp[csProgGuideInheritance#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#13)]  
-  
- An abstract class cannot be instantiated. The purpose of an abstract class is to provide a common definition of a base class that multiple derived classes can share. For example, a class library may define an abstract class that is used as a parameter to many of its functions, and require programmers using that library to provide their own implementation of the class by creating a derived class.  
-  
- Abstract classes may also define abstract methods. This is accomplished by adding the keyword `abstract` before the return type of the method. For example:  
-  
- [!code-csharp[csProgGuideInheritance#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#14)]  
-  
- Abstract methods have no implementation, so the method definition is followed by a semicolon instead of a normal method block. Derived classes of the abstract class must implement all abstract methods. When an abstract class inherits a virtual method from a base class, the abstract class can override the virtual method with an abstract method. For example:  
-  
- [!code-csharp[csProgGuideInheritance#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#15)]  
-  
- If a `virtual` method is declared `abstract`, it is still virtual to any class inheriting from the abstract class. A class inheriting an abstract method cannot access the original implementation of the method—in the previous example, `DoWork` on class F cannot call `DoWork` on class D. In this way, an abstract class can force derived classes to provide new method implementations for virtual methods.  
-  
-## Sealed Classes and Class Members  
+- The [`abstract`](../../language-reference/keywords/abstract.md) keyword allows you to define incomplete classes and members that derived classes must implement.
+- The [`sealed`](../../language-reference/keywords/sealed.md) keyword prevents other classes from inheriting from a class, or prevents derived classes from overriding specific virtual members.
 
- Classes can be declared as [sealed](../../language-reference/keywords/sealed.md) by putting the keyword `sealed` before the class definition. For example:  
-  
- [!code-csharp[csProgGuideInheritance#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#16)]  
-  
- A sealed class cannot be used as a base class. For this reason, it cannot also be an abstract class. Sealed classes prevent derivation. Because they can never be used as a base class, some run-time optimizations can make calling sealed class members slightly faster.  
-  
- A method, indexer, property, or event, on a derived class that is overriding a virtual member of the base class can declare that member as sealed. This negates the virtual aspect of the member for any further derived class. This is accomplished by putting the `sealed` keyword before the [override](../../language-reference/keywords/override.md) keyword in the class member declaration. For example:  
-  
- [!code-csharp[csProgGuideInheritance#17](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#17)]  
-  
+## Abstract classes and class members
+
+You declare an abstract class by adding the `abstract` keyword before the class definition:
+
+[!code-csharp[csProgGuideInheritance#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#13)]
+
+You cannot *instantiate* an abstract class&mdash;that is, you cannot create an object directly from it using the `new` operator. Attempting to write `new A()` generates compiler error CS0144.
+
+Instead, the purpose of an abstract class is to serve as a shared base class for multiple derived classes. For example, a class library might define an abstract `Shape` class with shared properties like `Color`, and require applications to create concrete derived classes such as `Circle` or `Rectangle` that supply shape-specific logic.
+
+### Abstract methods
+
+Abstract classes can also define abstract methods, properties, indexers, or events. To declare an abstract method, place the `abstract` modifier before the method's return type:
+
+[!code-csharp[csProgGuideInheritance#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#14)]
+
+Abstract methods have no implementation body; the declaration ends with a semicolon (`;`) instead of a method block (`{ }`). Any concrete (non-abstract) class derived from the abstract class must provide an implementation for all inherited abstract methods using the [`override`](../../language-reference/keywords/override.md) keyword.
+
+When an abstract class inherits a virtual method from a base class, it can override the virtual method and declare it `abstract`:
+
+[!code-csharp[csProgGuideInheritance#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#15)]
+
+When a `virtual` method is redeclared as `abstract`, it remains virtual to classes that inherit from the abstract class. A class inheriting that abstract method cannot call the original base implementation. In the preceding example, `DoWork` on class `F` cannot call `DoWork` on class `D`. In this way, an abstract class can force subsequent derived classes to provide new method implementations for virtual methods.
+
+## Sealed classes and class members
+
+You declare a class as [`sealed`](../../language-reference/keywords/sealed.md) by putting the `sealed` keyword before the class definition:
+
+[!code-csharp[csProgGuideInheritance#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#16)]
+
+A sealed class cannot be used as a base class; other classes cannot derive (inherit) from it. Because an abstract class requires derived classes while a sealed class forbids them, a class cannot be declared as both `abstract` and `sealed`. Sealed classes prevent unintended extension and allow the runtime to perform devirtualization optimizations that can make calling class members slightly faster.
+
+### Sealed members
+
+You can also seal an individual member on a derived class that is overriding a virtual member of a base class. Sealing an overridden member stops the virtual behavior for any further derived classes. To seal a member, place the `sealed` keyword before the `override` keyword in the member declaration:
+
+[!code-csharp[csProgGuideInheritance#17](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#17)]
+
+In the preceding example, class `Z` inherits from class `Y`, but `Z` cannot override the virtual method `DoWork` because class `Y` declared it `sealed`.
+
 ## See also
 
 - [The C# type system](../../fundamentals/types/index.md)

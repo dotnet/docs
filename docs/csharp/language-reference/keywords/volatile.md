@@ -1,7 +1,7 @@
 ---
 description: "volatile - C# Reference"
 title: "volatile keyword"
-ms.date: 01/22/2026
+ms.date: 11/01/2026
 f1_keywords: 
   - "volatile_CSharpKeyword"
   - "volatile"
@@ -54,7 +54,20 @@ The following example demonstrates how an auxiliary or worker thread can be crea
 
 :::code language="csharp" source="./snippets/volatile.cs" id="Volatile":::
 
-When you add the `volatile` modifier to the declaration of `_shouldStop`, you always get the same results (similar to the excerpt shown in the preceding code). However, without that modifier on the `_shouldStop` member, the behavior is unpredictable. The `DoWork` method might optimize the member access, resulting in reading stale data. Because of the nature of multithreaded programming, the number of stale reads is unpredictable. Different runs of the program produce somewhat different results.
+When you declare `_shouldStop` as `volatile`, the compiler and runtime ensure that read and write operations on `_shouldStop` are not cached in processor registers across loop iterations and that memory order constraints are respected.
+
+Without the `volatile` modifier, the just-in-time (JIT) compiler is allowed to optimize the loop by hoisting the read of `_shouldStop` outside the `while` loop or holding its value in a CPU register. If hoisted, the loop never re-checks the field value in memory, causing the worker thread to loop indefinitely even after the main thread sets `_shouldStop` to `true`.
+
+> [!NOTE]
+> You might observe identical behavior with and without `volatile` when running your program in `Debug` configuration or under an attached debugger. In `Debug` mode, the JIT compiler disables optimizations, so field reads are reloaded from memory on every loop iteration. To observe compiler optimizations like register caching and loop hoisting, build and run the sample in `Release` configuration:
+>
+> ```dotnetcli
+> dotnet run -c Release
+> ```
+>
+> In addition, CPU hardware architecture affects memory visibility. Architectures with strong hardware memory models (such as x86 and x64) inherently preserve store-load orderings more strictly than weakly ordered architectures (such as ARM64).
+>
+> In modern .NET applications, prefer using <xref:System.Threading.CancellationTokenSource> and <xref:System.Threading.CancellationToken> for thread cancellation rather than manual volatile boolean flags.
 
 ## C# language specification
 

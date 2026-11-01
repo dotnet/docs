@@ -59,7 +59,7 @@ Use the <xref:System.Net.Http.HttpClient> class to make HTTP requests. <xref:Sys
     ```csharp
     await ProcessRepositoriesAsync();
 
-    static async Task ProcessRepositoriesAsync(HttpClient client)
+    static async Task ProcessRepositoriesAsync()
     {
     }
     ```
@@ -90,9 +90,9 @@ Use the <xref:System.Net.Http.HttpClient> class to make HTTP requests. <xref:Sys
    This code:
 
    * Sets up HTTP headers for all requests:
-     * An [`Accept`](https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept) header to accept JSON responses
-     * A [`User-Agent`](https://developer.mozilla.org/docs/Web/HTTP/Headers/User-Agent) header.
-     These headers are checked by the GitHub server code and are necessary to retrieve information from GitHub.
+     * An [`Accept`](https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept) header to accept JSON responses. Specifying `application/vnd.github.v3+json` tells the GitHub REST API to return responses formatted for version 3 of its API.
+     * A [`User-Agent`](https://developer.mozilla.org/docs/Web/HTTP/Headers/User-Agent) header. The GitHub API requires all requests to include a `User-Agent` header; requests without one are rejected with HTTP 403 Forbidden. You can set this value to any descriptive identifier for your application or GitHub username.
+   * Passes the configured `client` instance to `ProcessRepositoriesAsync(client)`.
 
 1. In the `ProcessRepositoriesAsync` method, call the GitHub endpoint that returns a list of all repositories under the .NET foundation organization:
 

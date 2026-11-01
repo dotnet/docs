@@ -76,6 +76,19 @@ When you define a new type, the kind you choose shapes how your code behaves. Us
 
 More than one option is often reasonable.
 
+### Type comparison matrix
+
+The following table summarizes the key default characteristics and differences between `class`, `struct`, `record class`, and `record struct`:
+
+| Feature | `class` | `struct` | `record class` (`record`) | `record struct` |
+| --- | --- | --- | --- | --- |
+| **Category** | Reference type (heap allocated) | Value type (inline storage) | Reference type (heap allocated) | Value type (inline storage) |
+| **Default equality** | Reference equality (<xref:System.Object.ReferenceEquals*>) | Value equality (reflection-based field comparison via <xref:System.ValueType.Equals*>) | Synthesized value equality (strongly typed, efficient member comparison) | Synthesized value equality (strongly typed, efficient member comparison) |
+| **Default mutability** | Mutable | Mutable (unless declared `readonly struct`) | Positional parameters default to immutable (`init`-only) | Positional parameters default to mutable (`get; set;` unless declared `readonly record struct`) |
+| **Inheritance** | Single class inheritance; multiple interfaces | No struct inheritance; multiple interfaces | Single record class inheritance; multiple interfaces | No struct inheritance; multiple interfaces |
+| **`ToString()` behavior** | Returns full type name | Returns full type name | Synthesizes string with type name and all public property values | Synthesizes string with type name and all public property values |
+| **Nondestructive mutation (`with`)** | Not supported | Not supported | Supported via `with` expressions | Supported via `with` expressions |
+
 ## Compile-time type and run-time type
 
 A variable can have different types at compile time and run time. The *compile-time type* is the declared or inferred type in source code. The *run-time type* is the actual type of the instance the variable refers to. The run-time type must be the same as the compile-time type, or a type that derives from it or implements it. An assignment is only valid when an implicit conversion exists from the run-time type to the compile-time type, such as an identity, reference, boxing, or numeric conversion.

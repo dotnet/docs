@@ -249,6 +249,49 @@ If your project uses the legacy project file format, that is, it doesn't referen
   <AnalysisMode>Recommended</AnalysisMode>
 ```
 
+## Curated analyzer packages
+
+For applications and libraries requiring a standardized static analysis baseline across multiple projects, you can use curated analyzer packages rather than configuring individual analyzer packages manually.
+
+### Microsoft.Extensions.StaticAnalysis
+
+[Microsoft.Extensions.StaticAnalysis](https://www.nuget.org/packages/Microsoft.Extensions.StaticAnalysis) is a Microsoft package that bundles and configures a curated suite of code quality, performance, and security analyzers. It provides preconfigured diagnostic sets tailored to different project types and workloads.
+
+To add `Microsoft.Extensions.StaticAnalysis` to your project:
+
+```xml
+<ItemGroup>
+  <PackageReference Include="Microsoft.Extensions.StaticAnalysis" Version="<version>">
+    <PrivateAssets>all</PrivateAssets>
+    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+  </PackageReference>
+</ItemGroup>
+```
+
+#### Configure project profile
+
+You configure the analyzer profile by setting the `StaticAnalysisCodeType` MSBuild property in your project file or in a *Directory.Build.props* file:
+
+```xml
+<PropertyGroup>
+  <StaticAnalysisCodeType>ProdLib</StaticAnalysisCodeType>
+</PropertyGroup>
+```
+
+Supported project profiles include:
+
+| Profile | Description |
+| --- | --- |
+| `ProdLib` | Production libraries (`.dll`) intended for public or shared distribution. |
+| `ProdExe` | Production executable applications (such as web applications and console utilities). |
+| `Test` | Unit and integration test projects. |
+| `Benchmark` | Performance benchmark projects (such as BenchmarkDotNet suites). |
+| `NonProdLib` | Non-production internal or developer-facing helper libraries. |
+| `NonProdExe` | Non-production executable tools and test harnesses. |
+| `General` | Default fallback profile used when no specific code type is specified. |
+
+You can also append `-Tier1` (enabling only the most critical rules) or `-Tier2` (enabling critical and secondary rules) to any of these profiles, for example, `<StaticAnalysisCodeType>ProdLib-Tier1</StaticAnalysisCodeType>`. When no tier suffix is appended, all applicable diagnostics for the selected profile are enforced.
+
 ## Third-party analyzers
 
 In addition to the official .NET analyzers, you can also install third party analyzers, such as [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [Meziantou.Analyzer](https://www.nuget.org/packages/Meziantou.Analyzer/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/), and [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/).

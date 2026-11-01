@@ -6,6 +6,7 @@ f1_keywords:
   - "CS1011"
   - "CS1012"
   - "CS1039"
+  - "CS8103"
   - "CS8996"
   - "CS8997"
   - "CS8998"
@@ -27,6 +28,7 @@ f1_keywords:
   - "CS9315"
 helpviewer_keywords:
   - "CS1009"
+  - "CS8103"
   - "CS1011"
   - "CS1012"
   - "CS1039"
@@ -49,7 +51,7 @@ helpviewer_keywords:
   - "CS9047"
   - "CS9274"
   - "CS9315"
-ms.date: 12/08/2025
+ms.date: 11/01/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings for string literal declarations
@@ -80,8 +82,9 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9009**](#incorrectly-formed-raw-string-literals): *String must start with quote character.*
 - [**CS9026**](#utf-8-string-literals): *The input string cannot be converted into the equivalent UTF-8 byte representation.*
 - [**CS9047**](#utf-8-string-literals): *Operator cannot be applied to operands that are not UTF-8 byte representations.*
-- [**CS9274**](#literal-strings-in-data-sections): *Cannot emit this string literal into the data section because it has XXHash128 collision with another string literal.*
-- [**CS9315**](#literal-strings-in-data-sections): *Combined length of user strings used by the program exceeds allowed limit. Adding a string literal requires restarting the application.*
+- [**CS8103**](#user-string-heap-and-data-section-limits): *Combined length of user strings used by the program exceeds allowed limit. Try to decrease use of string literals.*
+- [**CS9274**](#user-string-heap-and-data-section-limits): *Cannot emit this string literal into the data section because it has XXHash128 collision with another string literal.*
+- [**CS9315**](#user-string-heap-and-data-section-limits): *Combined length of user strings used by the program exceeds allowed limit. Adding a string literal requires restarting the application.*
 
 ## Incorrectly formed string literals
 
@@ -145,12 +148,27 @@ To correct these errors, apply the following techniques:
 
 For more information, see [UTF-8 string literals](../builtin-types/reference-types.md#utf-8-string-literals).
 
-## Literal strings in data sections
+## User string heap and data section limits
 
+- **CS8103**: *Combined length of user strings used by the program exceeds allowed limit. Try to decrease use of string literals.*
 - **CS9274**: *Cannot emit this string literal into the data section because it has XXHash128 collision with another string literal.*
 - **CS9315**: *Combined length of user strings used by the program exceeds allowed limit. Adding a string literal requires restarting the application.*
 
-To fix these issues, try the following techniques:
+The common language infrastructure (CLI) metadata specification limits the size of the UserString heap (the metadata heap where string literals are stored in a compiled assembly) to 2\^24 bytes (approximately 16.7 MB of UTF-16 characters). When the combined size of all string literals in a single project exceeds this threshold, the compiler generates **CS8103** (or **CS9315** during an Edit and Continue debugging session).
 
-- Disable the experimental data section string literals feature for your application when you encounter a hash collision (**CS9274**). This error indicates that two different string literals produced the same XXHash128 value, which prevents the optimization from working correctly, so you should remove the feature flag that enables this experimental behavior.
-- Restart your application after modifying string literals during a debugging session when the data section feature is enabled (**CS9315**). The hot reload infrastructure can't update string literals stored in the data section because they're embedded in a special format that can't be modified at runtime, so continuing execution with the old string values would produce incorrect behavior.
+This error commonly occurs in projects with large generated source files (such as Entity Framework models or T4 templates), web projects with extensive Razor (`.cshtml`) views containing inline HTML and scripts, or applications that embed large JSON, SQL, or XML payloads directly as C# string literals.
+
+To resolve these diagnostics, apply the following techniques:
+
+- Move large blocks of text (such as JSON schemas, HTML templates, or SQL scripts) into external files or [embedded resources](../../../core/extensions/create-resource-files.md) loaded at runtime, rather than defining them as inline string literals (**CS8103**).
+- Refactor large projects into multiple smaller class library projects (**CS8103**). The 16.7 MB UserString heap limit applies per compiled assembly (`.dll` or `.exe`), so distributing code across assemblies distributes the metadata string load.
+- Enable the experimental data section string literal feature in your project file (**CS8103**). This compiler option emits long string literals into a PE data section instead of the UserString heap:
+
+  ```xml
+  <PropertyGroup>
+    <Features>$(Features);experimental-data-section-string-literals</Features>
+  </PropertyGroup>
+  ```
+
+- Disable the experimental data section string literals feature if your project encounters a hash collision (**CS9274**). This error indicates that two distinct string literals produced the same XXHash128 value, preventing the optimization from functioning.
+- Restart your application after modifying string literals during a debugging session when the data section feature is enabled (**CS9315**). The runtime cannot dynamically update string literals stored in the data section without a full restart.

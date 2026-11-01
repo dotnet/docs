@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
@@ -13,7 +13,19 @@ namespace TransformationCS
             Compilation test = CreateTestCompilation();
             // </SnippetDeclareTestCompilation>
 
+#if false
             // <SnippetIterateTrees>
+            foreach (SyntaxTree sourceTree in test.SyntaxTrees)
+            {
+                SemanticModel model = test.GetSemanticModel(sourceTree);
+
+                TypeInferenceRewriter rewriter = new TypeInferenceRewriter(model);
+
+                // Transform the tree here...
+            }
+            // </SnippetIterateTrees>
+#endif
+
             foreach (SyntaxTree sourceTree in test.SyntaxTrees)
             {
                 SemanticModel model = test.GetSemanticModel(sourceTree);
@@ -29,7 +41,6 @@ namespace TransformationCS
                 }
                 // </SnippetTransformTrees>
             }
-            // </SnippetIterateTrees>
         }
 
         private static Compilation CreateTestCompilation()

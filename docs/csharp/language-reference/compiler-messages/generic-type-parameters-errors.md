@@ -391,13 +391,19 @@ For more information, see [Generic Methods](../../programming-guide/generics/gen
 ## Type parameter variance
 
 - **CS1960**: *Invalid variance modifier. Only interface and delegate type parameters can be specified as variant.*
-- **CS1961**: *Invalid variance: The type parameter must be covariantly valid on 'type'. 'type parameter' is contravariant.*
+- **CS1961**: *Invalid variance: The type parameter '{0}' must be covariantly / contravariantly / invariantly valid on '{1}'. '{0}' is {2}.*
 - **CS8427**: *Enums, classes, and structures cannot be declared in an interface that has an 'in' or 'out' type parameter.*
 
 Variance modifiers (`in` for contravariance, `out` for covariance) control how you can use type parameters in interface and delegate declarations. Only interfaces and delegates support variance. A covariant (`out`) type parameter can only appear in output positions (return types), while a contravariant (`in`) type parameter can only appear in input positions (parameter types).
 
 - Use variance modifiers only on interface and delegate type parameters (**CS1960**). Classes, structs, and other type declarations don't support variance modifiers. Only `interface` and `delegate` declarations can use `in` or `out` on their type parameters.
-- Use `out` (covariant) for type parameters that only appear in return types, and `in` (contravariant) for type parameters that only appear in parameter types (**CS1961**). If the type parameter must appear in both input and output positions, remove the variance modifier.
+- Ensure type parameters match variance positions (**CS1961**):
+  - A covariant (`out`) type parameter can only appear in *output* positions (such as method return types or read-only property getters). Using `out T` in an input position (a method parameter) triggers CS1961.
+  - A contravariant (`in`) type parameter can only appear in *input* positions (such as method parameters). Using `in T` in an output position (a method return type) triggers CS1961.
+  - An invariant position requires invariant validity. When a variant type parameter is used as a type argument to an invariant generic type (such as <xref:System.Collections.Generic.ICollection%601>, <xref:System.Collections.Generic.IList%601>, or <xref:System.Collections.Generic.List%601>), or appears in both input and output positions, the compiler reports that the type parameter must be *invariantly* valid. To resolve the error:
+    - Remove the `in` or `out` modifier if the type parameter must appear in invariant positions.
+    - Replace invariant interfaces with covariant read-only interfaces (for example, use <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Collections.Generic.IReadOnlyCollection%601> instead of <xref:System.Collections.Generic.ICollection%601>).
+    - Split the interface into separate covariant (read-only) and contravariant (write-only) interfaces.
 - Don't declare enums, classes, or structures inside a variant interface (**CS8427**). Nested type declarations inside an interface that has `in` or `out` type parameters aren't allowed because they could violate the variance safety rules. Move the nested type outside the interface declaration.
 
 For more information, see [Covariance and Contravariance in Generics](../../../standard/generics/covariance-and-contravariance.md).

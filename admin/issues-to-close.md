@@ -12,8 +12,8 @@ Recommend closing the following issues because current documentation addresses t
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
 - **Completed batches:** The 225 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#28632](https://github.com/dotnet/docs/issues/28632), opened March 11, 2022.
-- **Results:** 41 closure candidates and 85 [clearly defined fixes](issues-with-defined-fixes.md) (76 assignment candidates and 9 fixes with open implementation PRs).
-- **Latest batch:** Issues 201-225, from [dotnet/docs#27653](https://github.com/dotnet/docs/issues/27653) through dotnet/docs#28632: 7 closure candidates and 9 new assignment candidates.
+- **Results:** 40 closure candidates and 85 [clearly defined fixes](issues-with-defined-fixes.md) (76 assignment candidates and 9 fixes with open implementation PRs).
+- **Latest batch:** Issues 201-225, from [dotnet/docs#27653](https://github.com/dotnet/docs/issues/27653) through dotnet/docs#28632: 6 closure candidates and 9 new assignment candidates.
 - **Remaining:** 623 issues from this snapshot are unreviewed. Resume with [dotnet/docs#28635](https://github.com/dotnet/docs/issues/28635), opened March 11, 2022. Refresh issue states before the next batch; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
@@ -376,16 +376,6 @@ The [Web API deployment guide](../docs/machine-learning/how-to-guides/serve-mode
 The [maintainer's resolution comment](https://github.com/dotnet/docs/issues/27938#issuecomment-2037771885) states that core-library API pages now link to source. The live [String.Chars reference](https://learn.microsoft.com/dotnet/api/system.string.chars?view=net-8.0), which the discussion uses as an example, exposes **Source** links to `String.cs` at specific GitHub revisions and line ranges. These are implementation-source links, not just links to the API documentation XML.
 
 **Suggested closure explanation:** The core API reference supplies the requested source navigation. Close the documentation-platform request as implemented; don't claim every external or .NET Framework API has a corresponding public implementation link.
-
-### dotnet/docs#28027: Consolidate the duplicate C# topic hierarchies
-
-**Opened:** January 31, 2022. **Confidence:** High for the duplicated hierarchies identified in the issue. **Reason:** The current navigation and redirects consolidate the reported examples.
-
-The [current C# TOC](../docs/csharp/toc.yml) no longer presents the old parallel **C# concepts** and **C# Programming guide** sections. It places the detailed [LINQ guide](../docs/csharp/linq/index.md) in one hierarchy and [expression trees](../docs/csharp/advanced-topics/expression-trees/index.md) under advanced topics. The [C# redirects](../.openpublishing.redirection.csharp.json) send the old programming-guide LINQ index to `/dotnet/csharp/linq/` and both former expression-tree entry points to the advanced-topic destination.
-
-The maintainer's 2022 preference for the programming-guide hierarchy was explicitly temporary, pending reorganization. It shouldn't become a new instruction to recreate the old hierarchy.
-
-**Suggested closure explanation:** Close the original overlapping-navigation question as superseded by the consolidated topic structure and preserved old URLs. The recommendation doesn't declare all possible C# content duplication resolved; any remaining concrete overlap can be identified separately.
 
 ### dotnet/docs#28046: Document compiler error CS8112
 

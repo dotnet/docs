@@ -11,8 +11,8 @@ Recommend the following 76 issues as GitHub Copilot (GHCP) assignment candidates
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Completed batches:** The 225 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#28632](https://github.com/dotnet/docs/issues/28632), opened March 11, 2022.
-- **Results:** 85 defined fixes (76 assignment candidates and 9 with open implementation PRs) and 41 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 201-225 add 9 new assignment candidates, alongside 7 closure candidates.
+- **Results:** 85 defined fixes (76 assignment candidates and 9 with open implementation PRs) and 40 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 201-225 add 9 new assignment candidates, alongside 6 closure candidates.
 - **Remaining:** 623 issues from this snapshot are unreviewed. Resume with [dotnet/docs#28635](https://github.com/dotnet/docs/issues/28635), opened March 11, 2022.
 - **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the nine active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 

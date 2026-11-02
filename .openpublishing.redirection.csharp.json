@@ -523,6 +523,10 @@
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/preprocessor-errors"
     },
     {
+      "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1700.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/friend-assembly-errors"
+    },
+    {
       "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1704.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/assembly-references"
     },
@@ -533,6 +537,10 @@
     {
       "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1716.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/unsafe-code-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1726.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/friend-assembly-errors"
     },
     {
       "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1739.md",
@@ -1961,12 +1969,22 @@
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/feature-version-errors"
     },
     {
+      "source_path": "docs/csharp/misc/cs0175.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/expression-form-restrictions#invalid-expression-contexts",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/docs/csharp/misc/cs0182.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/parameter-argument-mismatch"
     },
     {
       "source_path_from_root": "/docs/csharp/misc/cs0185.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/lock-semantics"
+    },
+    {
+      "source_path": "docs/csharp/misc/cs0186.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/expression-form-restrictions#invalid-expression-contexts",
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/docs/csharp/misc/cs0192.md",
@@ -2147,6 +2165,10 @@
     {
       "source_path_from_root": "/docs/csharp/misc/cs0280.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/foreach-diagnostics"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs0281.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/friend-assembly-errors"
     },
     {
       "source_path_from_root": "/docs/csharp/misc/cs0282.md",
@@ -2977,6 +2999,11 @@
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/using-directive-errors"
     },
     {
+      "source_path": "docs/csharp/misc/cs1547.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/expression-form-restrictions#invalid-expression-contexts",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/docs/csharp/misc/cs1552.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/array-declaration-errors"
     },
@@ -3263,6 +3290,10 @@
     {
       "source_path_from_root": "/docs/csharp/misc/cs1720.md",
       "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/generic-type-parameters-errors"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/misc/cs1725.md",
+      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/friend-assembly-errors"
     },
     {
       "source_path_from_root": "/docs/csharp/misc/cs1730.md",
@@ -5133,6 +5164,10 @@
       "redirect_url": "/dotnet/csharp/language-reference/operators/default"
     },
     {
+      "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/equality-comparisons.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/expressions/equality"
+    },
+    {
       "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/expression-bodied-members.md",
       "redirect_url": "/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition"
     },
@@ -5141,8 +5176,16 @@
       "redirect_url": "/dotnet/csharp/language-reference/operators/index"
     },
     {
+      "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/expressions/equality#implement-equality-yourself-when-a-type-cant-be-a-record"
+    },
+    {
       "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md",
       "redirect_url": "/dotnet/csharp/language-reference/operators/user-defined-conversion-operators"
+    },
+    {
+      "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md",
+      "redirect_url": "/dotnet/csharp/fundamentals/expressions/equality#use-objectreferenceequals-to-test-identity-directly"
     },
     {
       "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-in-a-query.md",
@@ -5904,33 +5947,6 @@
     {
       "source_path_from_root": "/redirections/proposals/csharp-9.0/nullable-reference-types-specification.md",
       "redirect_url": "/dotnet/csharp/language-reference/language-specification/types#893-nullable-reference-types"
-    },
-    {
-      "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/equality-comparisons.md",
-      "redirect_url": "/dotnet/csharp/fundamentals/expressions/equality"
-    },
-    {
-      "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md",
-      "redirect_url": "/dotnet/csharp/fundamentals/expressions/equality#use-objectreferenceequals-to-test-identity-directly"
-    },
-    {
-      "source_path_from_root": "/docs/csharp/programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md",
-      "redirect_url": "/dotnet/csharp/fundamentals/expressions/equality#implement-equality-yourself-when-a-type-cant-be-a-record"
-    },
-    {
-      "source_path": "docs/csharp/misc/cs0175.md",
-      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/expression-form-restrictions#invalid-expression-contexts",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/csharp/misc/cs0186.md",
-      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/expression-form-restrictions#invalid-expression-contexts",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/csharp/misc/cs1547.md",
-      "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/expression-form-restrictions#invalid-expression-contexts",
-      "redirect_document_id": false
     }
   ]
 }

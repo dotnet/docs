@@ -517,6 +517,17 @@ items:
       CS0012, CS0234, CS0246, CS0400, CS1068, CS1069, CS1070, CS1683, CS1704, CS1714,
       CS1760, CS7008, CS7068, CS7069, CS7071, CS7079, CS8090, CS8203, CS8206, CS8356,
       CS9286
+  - name: Assembly signing
+    href: ./compiler-messages/assembly-signing-errors.md
+    displayName: >
+      assembly signing, strong names, key files, key containers, delay signing, public signing,
+      CS7027, CS7028, CS7032, CS7033, CS7088, CS7090, CS7091, CS7102, CS8002, CS8003,
+      CS8102, CS8105, CS8106
+  - name: Friend assemblies
+    href: ./compiler-messages/friend-assembly-errors.md
+    displayName: >
+      friend assemblies, assembly identity, public keys, InternalsVisibleTo,
+      CS0281, CS1700, CS1725, CS1726, CS7029, CS7030
   - name: Program entry point
     href: ./compiler-messages/entry-point-errors.md
     displayName: >
@@ -1059,8 +1070,6 @@ items:
       href: ../misc/cs0271.md
     - name: CS0272
       href: ../misc/cs0272.md
-    - name: CS0281
-      href: ../misc/cs0281.md
     - name: CS0283
       href: ../misc/cs0283.md
     - name: CS0316
@@ -1461,10 +1470,6 @@ items:
       href: ../misc/cs1722.md
     - name: CS1724
       href: ../misc/cs1724.md
-    - name: CS1725
-      href: ../misc/cs1725.md
-    - name: CS1726
-      href: ./compiler-messages/cs1726.md
     - name: CS1727
       href: ../misc/cs1727.md
     - name: CS1728
@@ -1831,8 +1836,6 @@ items:
       href: ../misc/cs0665.md
     - name: CS0675
       href: ./compiler-messages/cs0675.md
-    - name: CS1700
-      href: ./compiler-messages/cs1700.md
     - name: CS1702
       href: ../misc/cs1702.md
     - name: CS1717

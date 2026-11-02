@@ -5,15 +5,15 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 67 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track nine additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 76 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track nine additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 200 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#27634](https://github.com/dotnet/docs/issues/27634), opened December 20, 2021.
-- **Results:** 76 defined fixes (67 assignment candidates and 9 with open implementation PRs) and 34 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 176-200 add 14 new assignment candidates and 1 fix with an existing implementation PR, alongside 2 closure candidates.
-- **Remaining:** 648 issues from this snapshot are unreviewed. Resume with [dotnet/docs#27653](https://github.com/dotnet/docs/issues/27653), opened December 22, 2021.
+- **Completed batches:** The 225 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#28632](https://github.com/dotnet/docs/issues/28632), opened March 11, 2022.
+- **Results:** 85 defined fixes (76 assignment candidates and 9 with open implementation PRs) and 41 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 201-225 add 9 new assignment candidates, alongside 7 closure candidates.
+- **Remaining:** 623 issues from this snapshot are unreviewed. Resume with [dotnet/docs#28635](https://github.com/dotnet/docs/issues/28635), opened March 11, 2022.
 - **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the nine active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
@@ -791,6 +791,100 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Acceptance criteria:** Obtain runtime-owner confirmation of the support wording. Don't turn the reporter's stack-guarantee experiments into supported thresholds, claim the linked runtime fix added fiber support, or introduce a native stack-switching workaround/sample.
 
+### dotnet/docs#27653: Explain the locality requirement for live analyzer code fixes
+
+**Issue:** [dotnet/docs#27653](https://github.com/dotnet/docs/issues/27653). **Opened:** December 22, 2021. **Size:** Small. **GHCP suitability:** Strong, with Roslyn review and an IDE-level check.
+
+**Why it still applies:** The [analyzer/code-fix tutorial](../docs/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md) doesn't explain why a reported analyzer diagnostic can appear without the IDE invoking its registered code-fix provider. The [Roslyn owner's explanation](https://github.com/dotnet/roslyn/issues/57621#issuecomment-999347642) identifies the non-local diagnostic in the linked reproduction and explicitly endorses a tutorial explanation.
+
+**Proposed assignment scope:** Add a focused troubleshooting note and a small contrasting example. Explain that a symbol/node callback that reports on an unrelated base declaration can produce a non-local diagnostic outside the callback's analyzed declaration. Explain the live code-fix limitation and show a local diagnostic location instead. Distinguish the diagnostic's location from the documents a code action can edit; don't state that code fixes can never change another document.
+
+**Acceptance criteria:** Reproduce the local/non-local contrast in the stated supported Visual Studio/Roslyn environment, confirm actual light-bulb availability, and record the results. A passing code-fix unit test alone doesn't establish the IDE behavior. Keep the diagnostic's meaning intact; don't recommend an always-present informational diagnostic or a new analyzer rule as a workaround. Coordinate this tutorial edit with the existing VSIX-startup and CS8032 tasks.
+
+### dotnet/docs#27818: Correct the CA2215 derived-dispose example
+
+**Issue:** [dotnet/docs#27818](https://github.com/dotnet/docs/issues/27818). **Opened:** January 12, 2022. **Size:** Small. **GHCP suitability:** Strong; the current samples expose the exact missing base call.
+
+**Why it still applies:** The [CA2215 article](../docs/fundamentals/code-analysis/quality-rules/ca2215.md#example) calls its derived implementation correct, but both language snippets call the base method only when `disposing` is false. A public `Dispose()` call passes true and skips the base cleanup. The snippets also imply that every disposable type needs a finalizer.
+
+**Proposed assignment scope:** Replace the inconsistent example with clear violating/corrected derived-dispose snippets in C# and Visual Basic, aligned with the [canonical dispose guidance](../docs/standard/garbage-collection/implementing-dispose.md). In the corrected override, call `base.Dispose(disposing)` or `MyBase.Dispose(disposing)` on both paths. Remove the blanket finalizer claim and any unnecessary finalizer boilerplate; use one only if the example actually owns an unmanaged resource. Don't copy the issue's proposed unconditional `base.Dispose(true)` onto the false/finalizer path.
+
+**Acceptance criteria:** Run both samples and make base cleanup observable for true and false paths. Enable CA2215 explicitly and record the actual diagnostic results as well as runtime behavior; the absence of a warning alone doesn't prove both paths are correct. Preserve the canonical managed/unmanaged cleanup distinction and deterministic public disposal.
+
+### dotnet/docs#27878: Document TensorFlow native redistributable requirements
+
+**Issue:** [dotnet/docs#27878](https://github.com/dotnet/docs/issues/27878). **Opened:** January 18, 2022. **Size:** Small to medium. **GHCP suitability:** Strong for a release-scoped dependency section, with ML.NET review.
+
+**Why it still applies:** The [extra-dependencies guide](../docs/machine-learning/how-to-guides/install-extra-dependencies.md) has no TensorFlow section. Individual tutorials mention SciSharp packages, but don't supply the central compatibility explanation requested here. In [dotnet/machinelearning#6040](https://github.com/dotnet/machinelearning/issues/6040), the owner identifies an incompatible native version and points to the release's version file; [dotnet/machinelearning#6047](https://github.com/dotnet/machinelearning/issues/6047) identifies the missing redistributable.
+
+**Proposed assignment scope:** Add a TensorFlow subsection that distinguishes `Microsoft.ML.TensorFlow`/`Microsoft.ML.Vision`, managed `TensorFlow.NET` bindings, and the separately required native redistributable. Choose and name a supported ML.NET release, and obtain its matching versions from that release's source/package metadata. For example, the checked [v5.0.1 version file](https://github.com/dotnet/machinelearning/blob/v5.0.1/eng/Versions.props) specifies TensorFlow 2.16.0 and different Windows/Linux GPU versions; don't universally prescribe the older issue's 2.3.1 or install the latest native package independently. Link the relevant tutorials and distinguish missing-library failures from missing-entry-point/version mismatches.
+
+**Acceptance criteria:** Restore and run a minimal TensorFlow model with the stated package versions, OS, architecture, and CPU/GPU variant. Record successful native loading and inference, and qualify platform/hardware prerequisites. Don't promise that installing a redistributable fixes unsupported CPU instructions, every GPU configuration, or arbitrary TensorFlow upgrades. Leave unrelated MKL installation instructions outside this task.
+
+### dotnet/docs#27904: State the transaction boundary for nested domain-event saves
+
+**Issue:** [dotnet/docs#27904](https://github.com/dotnet/docs/issues/27904). **Opened:** January 20, 2022. **Size:** Small to medium. **GHCP suitability:** Suitable for a source-backed clarification, with EF Core/architecture review.
+
+**Why it still applies:** The [domain-events chapter](../docs/architecture/microservices/microservice-ddd-cqrs-patterns/domain-events-design-implementation.md) equates a shared scoped context and deferred dispatch with one transaction, yet shows an event handler that calls `SaveEntitiesAsync` again. It doesn't explain the outer transaction that makes the reference application's repeated saves atomic.
+
+**Why the solution is defined:** The actual archived [TransactionBehaviour](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/Services/Ordering/Ordering.API/Application/Behaviors/TransactionBehaviour.cs) begins a transaction around the handler pipeline and commits afterward. [OrderingContext](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/Services/Ordering/Ordering.Infrastructure/OrderingContext.cs) distinguishes `SaveEntitiesAsync`/`SaveChangesAsync` from `CommitTransactionAsync`. Multiple saves inside that explicit transaction aren't separate outer commits.
+
+**Proposed assignment scope:** Explain and link the actual outer transaction, distinguish a save from a transaction commit, and qualify the sample's atomicity claims. State that a shared context alone doesn't make several independent saves one transaction. Preserve the chapter's alternative eventual-consistency model. Don't introduce the proposed recursion counter as though it establishes a database transaction or solves arbitrary event-dispatch reentrancy.
+
+**Acceptance criteria:** Demonstrate with a relational provider that a later handler failure rolls back earlier saves inside the explicit transaction, and contrast the no-outer-transaction case. Don't substitute EF's in-memory provider as transaction evidence. Keep the clarification about the archived design rather than promise exactly-once events or universal atomicity across external services.
+
+### dotnet/docs#27943: Explain Roslyn component API-version packaging
+
+**Issue:** [dotnet/docs#27943](https://github.com/dotnet/docs/issues/27943). **Opened:** January 24, 2022. **Size:** Medium. **GHCP suitability:** Suitable for a bounded packaging guide, with SDK/Roslyn review.
+
+**Why it still applies:** The current [Roslyn SDK documentation](../docs/csharp/roslyn-sdk/index.md) doesn't document `SupportsRoslynComponentVersioning` or versioned component selection. The issue specifies three concrete topics: when multiple compiler-API builds are needed, package selection with and without SDK support, and use of newer APIs.
+
+**Why the solution is defined:** [dotnet/sdk#20793](https://github.com/dotnet/sdk/pull/20793) merged on September 14, 2021 and implements highest-compatible Roslyn asset selection. The [.NET 10 SDK targets](https://github.com/dotnet/sdk/blob/v10.0.100/src/Tasks/Microsoft.NET.Build.Tasks/targets/Microsoft.PackageDependencyResolution.targets) still advertise the capability and pass the compiler API version to package resolution. The property is a capability to inspect, not a switch that makes an old host support newer compiler APIs.
+
+**Proposed assignment scope:** Add one Roslyn SDK article with a minimal two-version component package. Explain compiler-API minima versus runtime TFMs, the supported versioned analyzer folder layout, highest-compatible selection, package-authored fallback logic when the capability isn't available, and separate builds/conditional code for APIs absent from the older reference. Add the TOC entry and links from the analyzer tutorial and Roslyn SDK landing page. Coordinate a source-generator signpost with the existing draft [dotnet/docs#51546](https://github.com/dotnet/docs/pull/51546); that conceptual/tutorial PR doesn't implement this packaging guide.
+
+**Acceptance criteria:** Build the package, inspect its analyzer assets, and consume it in concrete compatible-host scenarios that prove the selected assembly. Verify the legacy fallback with an actual applicable host/toolchain; merely setting the property false in a new SDK doesn't prove older SDK behavior. Include an incompatibility case and don't conflate application target frameworks, SDK versions, and the actual IDE/compiler host. Coordinate the earlier CS8032 compatibility guidance rather than duplicate its general troubleshooting text.
+
+### dotnet/docs#28330: Simplify the inherited-event example
+
+**Issue:** [dotnet/docs#28330](https://github.com/dotnet/docs/issues/28330). **Opened:** February 21, 2022. **Size:** Small. **GHCP suitability:** Strong; the maintainer accepted the focused simplification.
+
+**Why it still applies:** The [base-class event how-to](../docs/csharp/programming-guide/events/how-to-raise-base-class-events-in-derived-classes.md) still uses custom shape event arguments, geometry calculations, two derived shape types, and a container. Those details obscure the requested base-event/derived-caller pattern.
+
+**Proposed assignment scope:** Make the primary example a small standalone program with one base event, one protected base method that raises it, one derived method that calls that method, and a subscriber that observes the event. Use ordinary `EventArgs` unless custom event data demonstrates a separate required concept. Preserve any unique advanced guidance through an appropriate link rather than require the geometry machinery to understand the first example. Keep the explanation that the derived class can't directly invoke the base-declared event.
+
+**Acceptance criteria:** Run the example and verify one subscriber invocation with the expected sender. Publish the executable code through an article-relative snippet project and retain correct event accessibility/null-subscriber behavior. No Windows Forms dependency or event-system redesign is needed.
+
+### dotnet/docs#28429: Show how to acquire and load a simple native SQLite extension
+
+**Issue:** [dotnet/docs#28429](https://github.com/dotnet/docs/issues/28429). **Opened:** February 28, 2022. **Size:** Medium. **GHCP suitability:** Suitable for a deliberately platform-scoped recipe, with native-interoperability review.
+
+**Why it still applies:** The [extensions guide](../docs/standard/data/sqlite/extensions.md) explains SQLite's native-loader behavior but points to a multi-runtime SpatiaLite/NuGet sample without a simple acquisition/build-and-load path. The owner's response recommends platform packages or a known Windows DLL, but the reporter's final comment still reports a load failure after a Cygwin build. The earlier acknowledgement isn't evidence that the final failure was resolved.
+
+**Proposed assignment scope:** Explain that the provider doesn't supply every SQLite extension and that a compatible native binary comes from its actual publisher, an OS package, or a source build. Add one explicitly Windows/architecture-scoped worked example using a trusted SQLite example extension and the [official build instructions](https://www.sqlite.org/loadext.html). Open a connection, call `LoadExtension`, and execute a query that proves the extension works. Contrast the simple recipe with the existing multi-runtime dependency example rather than remove it.
+
+**Acceptance criteria:** Build/acquire the named binary and run the complete C# and Visual Basic load/query examples under the stated architecture. Explain that an existing DLL can still fail because its dependencies, architecture, or runtime ABI don't match. Don't claim to diagnose the reporter's unavailable Cygwin binary, promise a universal NuGet package, or recommend blind system-directory copies, untrusted extension paths, or unnecessary permanent enablement of SQL-level extension loading.
+
+### dotnet/docs#28466: Demonstrate data loading without named schema classes
+
+**Issue:** [dotnet/docs#28466](https://github.com/dotnet/docs/issues/28466). **Opened:** March 3, 2022. **Size:** Small to medium. **GHCP suitability:** Strong; the requested loader APIs and target guide are explicit.
+
+**Why it still applies:** The [load-data guide](../docs/machine-learning/how-to-guides/load-data-ml-net.md) demonstrates named model classes and attributed members but not the requested non-generic text-loader options and anonymous-type enumerable inputs. Current [TextLoader source](https://github.com/dotnet/machinelearning/blob/v5.0.1/src/Microsoft.ML.Data/DataLoadSave/Text/TextLoader.cs) supplies a default label/features layout; that isn't general inference of a string class label or arbitrary feature types.
+
+**Proposed assignment scope:** Add class-free text-loading and anonymous-input examples to the existing guide. For the issue's Iris data, use explicit typed `TextLoader.Column` definitions to preserve the text label and numeric feature vector; explain the narrower default layout separately instead of silently turning class names into missing numeric values. Show `LoadFromEnumerable` over anonymous inputs and verify the original F# anonymous-record case. Supply C#/Visual Basic equivalents where applicable and distinguish automatic CLR-member schema discovery from inference of learning roles, column ranges, or fixed vector dimensions.
+
+**Acceptance criteria:** Run the examples against a tiny owned dataset and check actual schema names/types, row values, and feature-vector length. The Iris label must remain the original text, not NaN or a default value. Verify each language's anonymous-input behavior rather than assume identical visibility/mutability rules. Coordinate with assignee `luisquintanilla` and the existing image-loading task in the same guide; no model training is required to prove these loading operations.
+
+### dotnet/docs#28632: Distinguish static-holder design from inheritance prevention
+
+**Issue:** [dotnet/docs#28632](https://github.com/dotnet/docs/issues/28632). **Opened:** March 11, 2022. **Size:** Small. **GHCP suitability:** Strong for a precise analyzer/language clarification.
+
+**Why it still applies:** The [CA1052 article](../docs/fundamentals/code-analysis/quality-rules/ca1052.md) still says that a type not meant for inheritance should be marked `static`. That overgeneralizes the rule: `sealed` prevents C# inheritance without making a type a static holder. The Cause section also names `Shared` as though it were a valid Visual Basic class modifier, while the actual fix section correctly recommends a module.
+
+**Proposed assignment scope:** Explain that the rule identifies types whose members don't need instances. Distinguish the instantiation and inheritance effects of C# `static` from the inheritance-only effect of `sealed`. Align the Cause, description, and fix sections for both languages, preserving the documented Visual Basic module alternative. Check the [analyzer implementation](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/Microsoft.CodeQuality.Analyzers/ApiDesignGuidelines/StaticHolderTypes.cs), which has a language-specific exception for sealed Visual Basic types; don't promise identical C#/VB detection or prescribe `Shared Class`.
+
+**Acceptance criteria:** Obtain analyzer/language review and verify any changed examples with CA1052 enabled. A normal instance type that merely prohibits inheritance must not be presented as a static-holder candidate. Preserve the existing breaking-change warning and don't broaden the task into changing the analyzer's behavior.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -886,5 +980,9 @@ The custom-repository explanation and logging-event demonstration are additional
 The BCL source link, explicit VSIX startup selection, package-version note, and instance-thread-safety wording are additional small changes. Coordinate the package note with the earlier MSTest task and the VSIX note with the analyzer tutorial's CS8032 signpost. The CRLF example needs backend-specific evidence, and the recommendation explanation must distinguish training labels from predicted scores.
 
 The SRTP syntax, nullable/CA1062 cases, task-exception distinction, enumeration usage, and SQLite WAL example need focused compiler/runtime or sample evidence. Scope connection queues to the actual handler/protocol and compilation trade-offs to reviewed runtime behavior. The fiber note states an unsupported boundary; it must not advertise a new support policy or workaround.
+
+The CA1052 rationale and analyzer-locality note are additional focused clarifications; the latter needs IDE evidence, not just code-fix unit tests. Pair the dispose sample correction with both language examples and runtime cleanup checks. The inherited-event simplification is a separate small executable-example task.
+
+The TensorFlow dependency note must use release-matched managed/native packages. The domain-event clarification needs a real relational rollback check, and the SQLite extension recipe needs a known native binary and platform-specific execution. Coordinate class-free ML.NET loading with its current owner and the retained image-loading task. The Roslyn packaging guide needs an actual multi-host asset-selection matrix and coordination with the draft generator tutorial, not another generic version-mismatch paragraph.
 
 Review the nine existing implementation PRs separately from new assignments. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Issues that don't fit either candidate category are omitted for a future task.

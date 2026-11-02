@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 200 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#27634](https://github.com/dotnet/docs/issues/27634), opened December 20, 2021.
-- **Results:** 34 closure candidates and 76 [clearly defined fixes](issues-with-defined-fixes.md) (67 assignment candidates and 9 fixes with open implementation PRs).
-- **Latest batch:** Issues 176-200, from [dotnet/docs#27011](https://github.com/dotnet/docs/issues/27011) through dotnet/docs#27634: 2 closure candidates, 14 new assignment candidates, and 1 fix with an existing implementation PR.
-- **Remaining:** 648 issues from this snapshot are unreviewed. Resume with [dotnet/docs#27653](https://github.com/dotnet/docs/issues/27653), opened December 22, 2021. Refresh issue states before the next batch; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 225 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#28632](https://github.com/dotnet/docs/issues/28632), opened March 11, 2022.
+- **Results:** 41 closure candidates and 85 [clearly defined fixes](issues-with-defined-fixes.md) (76 assignment candidates and 9 fixes with open implementation PRs).
+- **Latest batch:** Issues 201-225, from [dotnet/docs#27653](https://github.com/dotnet/docs/issues/27653) through dotnet/docs#28632: 7 closure candidates and 9 new assignment candidates.
+- **Remaining:** 623 issues from this snapshot are unreviewed. Resume with [dotnet/docs#28635](https://github.com/dotnet/docs/issues/28635), opened March 11, 2022. Refresh issue states before the next batch; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -352,3 +352,61 @@ The article still correctly says that the rule has no associated code-style opti
 The [single-file guide's native-libraries section](../docs/core/deploying/single-file/overview.md#native-libraries) distinguishes managed assemblies loaded from the bundle in memory from native libraries embedded with `IncludeNativeLibrariesForSelfExtract`. It also states that `IncludeAllContentForSelfExtract` extracts all files, including managed assemblies. The same section identifies `%TEMP%/.net` as the default Windows extraction location and explains `DOTNET_BUNDLE_EXTRACT_BASE_DIR`.
 
 **Suggested closure explanation:** Answer with the existing explanation and ask the reader to inspect the two extraction properties and the files actually extracted. A .NET 6-or-later target doesn't disable intentional native/content extraction. The recommendation doesn't diagnose the original project's unspecified publish settings or claim that a reproducible extraction bug has been fixed.
+
+### dotnet/docs#27860: Link regex Unicode categories and named blocks
+
+**Opened:** January 15, 2022. **Confidence:** High. **Reason:** The requested quick-reference links and supported-value lists already exist.
+
+The [character-class quick-reference table](../docs/standard/base-types/regular-expression-language-quick-reference.md#character-classes) links both `\p{name}` and `\P{name}` explanations to the detailed character-class article. Its [Unicode category/block section](../docs/standard/base-types/character-classes-in-regular-expressions.md#unicode-category-or-unicode-block-p) links directly to the supported general-category and named-block tables. The latter explicitly includes `IsCyrillic`, the example raised in the issue.
+
+**Suggested closure explanation:** Link to the existing category and block tables. The requested discoverability path now exists; don't introduce POSIX `Alnum` as though it were a supported .NET Unicode category or block name.
+
+### dotnet/docs#27933: Remove the missing Startup.cs step from the ML.NET Web API guide
+
+**Opened:** January 23, 2022. **Confidence:** High. **Reason:** The current walkthrough uses the modern Program.cs application model throughout.
+
+The [Web API deployment guide](../docs/machine-learning/how-to-guides/serve-model-web-api-ml-net.md) now configures `PredictionEnginePool` through `builder.Services` after `WebApplication.CreateBuilder(args)` and maps the prediction endpoint with `app.MapPost`. It no longer directs readers to a nonexistent `Startup.cs` or `ConfigureServices` method. Those concrete changes address the template mismatch, rather than merely replace the prerequisite version.
+
+**Suggested closure explanation:** With assignee `luisquintanilla`, close the original missing-Startup-file report as addressed by the Program.cs/minimal-API walkthrough. No instruction to create a legacy Startup class is needed.
+
+### dotnet/docs#27938: Link API reference pages to implementation source
+
+**Opened:** January 24, 2022. **Confidence:** High for the core-library source-link request. **Reason:** The published reference now includes source links, and the maintainer confirmed the change.
+
+The [maintainer's resolution comment](https://github.com/dotnet/docs/issues/27938#issuecomment-2037771885) states that core-library API pages now link to source. The live [String.Chars reference](https://learn.microsoft.com/dotnet/api/system.string.chars?view=net-8.0), which the discussion uses as an example, exposes **Source** links to `String.cs` at specific GitHub revisions and line ranges. These are implementation-source links, not just links to the API documentation XML.
+
+**Suggested closure explanation:** The core API reference supplies the requested source navigation. Close the documentation-platform request as implemented; don't claim every external or .NET Framework API has a corresponding public implementation link.
+
+### dotnet/docs#28027: Consolidate the duplicate C# topic hierarchies
+
+**Opened:** January 31, 2022. **Confidence:** High for the duplicated hierarchies identified in the issue. **Reason:** The current navigation and redirects consolidate the reported examples.
+
+The [current C# TOC](../docs/csharp/toc.yml) no longer presents the old parallel **C# concepts** and **C# Programming guide** sections. It places the detailed [LINQ guide](../docs/csharp/linq/index.md) in one hierarchy and [expression trees](../docs/csharp/advanced-topics/expression-trees/index.md) under advanced topics. The [C# redirects](../.openpublishing.redirection.csharp.json) send the old programming-guide LINQ index to `/dotnet/csharp/linq/` and both former expression-tree entry points to the advanced-topic destination.
+
+The maintainer's 2022 preference for the programming-guide hierarchy was explicitly temporary, pending reorganization. It shouldn't become a new instruction to recreate the old hierarchy.
+
+**Suggested closure explanation:** Close the original overlapping-navigation question as superseded by the consolidated topic structure and preserved old URLs. The recommendation doesn't declare all possible C# content duplication resolved; any remaining concrete overlap can be identified separately.
+
+### dotnet/docs#28046: Document compiler error CS8112
+
+**Opened:** February 2, 2022. **Confidence:** High. **Reason:** A dedicated diagnostic explanation and help metadata now exist.
+
+The [local-function errors article](../docs/csharp/language-reference/compiler-messages/local-function-errors.md#local-function-bodies) lists CS8112, explains the missing-body condition, and directs readers to add a block/expression body or use a valid `static extern` declaration for an externally supplied implementation. The article also includes CS8112 in its F1/help metadata. The error code is identifiable in the original issue's help URL even though its title is generic.
+
+**Suggested closure explanation:** Link to the CS8112 local-function-body explanation. The missing diagnostic documentation now exists; no new standalone error page is needed.
+
+### dotnet/docs#28331: Clarify whether source-generated logging methods require this
+
+**Opened:** February 21, 2022. **Confidence:** High. **Reason:** The guide explicitly distinguishes ordinary static methods from optional extension methods.
+
+The [current basic-usage section](../docs/core/extensions/logging/source-generation.md#basic-usage) says that a static logging method receives `ILogger` as an argument and that adding `this` makes the method an extension method. Its separate `StaticLog.cs` and `ExtensionLog.cs` snippets match that explanation. Instance methods retrieve the logger from instance state instead.
+
+**Suggested closure explanation:** Link to the existing optional-extension explanation. The other static examples aren't missing a required modifier; don't add `this` to every logger parameter or break the valid example where `ILogger` isn't the first parameter.
+
+### dotnet/docs#28417: Explain compiler error CS8862
+
+**Opened:** February 27, 2022. **Confidence:** High. **Reason:** The constructor reference now documents the diagnostic and its correction.
+
+The [primary-constructor declaration guidance](../docs/csharp/language-reference/compiler-messages/constructor-errors.md#primary-constructor-declaration) includes the CS8862 message and explicitly tells readers to add a `: this(...)` initializer that passes appropriate arguments to the primary constructor. CS8862 also appears in the article's diagnostic inventory and F1/help metadata.
+
+**Suggested closure explanation:** The previously missing explanation now exists in the consolidated constructor-errors article. Link to the constructor-chaining guidance instead of create a duplicate record-constructor error page.

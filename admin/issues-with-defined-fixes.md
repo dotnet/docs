@@ -5,16 +5,16 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 53 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track eight additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 67 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track nine additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 175 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#26886](https://github.com/dotnet/docs/issues/26886), opened November 9, 2021.
-- **Results:** 61 defined fixes (53 assignment candidates and 8 with open implementation PRs) and 32 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 151-175 add 8 new assignment candidates and 1 fix with an existing implementation PR, alongside 5 closure candidates.
-- **Remaining:** 673 issues from this snapshot are unreviewed. Resume with [dotnet/docs#27011](https://github.com/dotnet/docs/issues/27011), opened November 10, 2021.
-- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the eight active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
+- **Completed batches:** The 200 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#27634](https://github.com/dotnet/docs/issues/27634), opened December 20, 2021.
+- **Results:** 76 defined fixes (67 assignment candidates and 9 with open implementation PRs) and 34 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 176-200 add 14 new assignment candidates and 1 fix with an existing implementation PR, alongside 2 closure candidates.
+- **Remaining:** 648 issues from this snapshot are unreviewed. Resume with [dotnet/docs#27653](https://github.com/dotnet/docs/issues/27653), opened December 22, 2021.
+- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the nine active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
 
@@ -651,6 +651,146 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Acceptance criteria:** Run the source-generated method through the chosen observer and show `CustomEventName` with event ID 9. Verify both existing formatter outputs separately if they change, and include commands/results in the implementation PR. Don't imply that setting `LoggerMessageAttribute.EventName` forces every provider to print it.
 
+### dotnet/docs#27011: Explain the newline search through the selected overload
+
+**Issue:** [dotnet/docs#27011](https://github.com/dotnet/docs/issues/27011). **Opened:** November 10, 2021. **Size:** Small. **GHCP suitability:** Suitable for a focused example with globalization review.
+
+**Why it still applies:** The old comparison article now redirects to [string best practices](../docs/standard/base-types/best-practices-strings.md). Its [overload explanation](../docs/standard/base-types/best-practices-strings.md#specify-string-comparisons-explicitly) correctly distinguishes `IndexOf(string)` from `IndexOf(char)`, but the specific newline-search clarification/example remains absent. Its cross-runtime section instead discusses null/control characters.
+
+**Proposed assignment scope:** Add the requested CRLF/newline example to the current guide, not the redirected file. Explain that the string overload selects a culture-sensitive comparer regardless of whether a human considers the searched character linguistic. Contrast that default with explicit `StringComparison.Ordinal`, and link the behavioral example to the overload explanation. Preserve the existing redirect and avoid a new duplicate article.
+
+**Acceptance criteria:** Verify the ordinal result is 6 for the issue's exact string in both documentation languages. Record actual culture-sensitive results with runtime, culture, globalization backend, and relevant ICU/NLS version. Review nearby control-character claims against those results; don't copy the issue's 2021 platform/output table as a guarantee for every current ICU version.
+
+### dotnet/docs#27082: Link the BCL overview to its source inventory
+
+**Issue:** [dotnet/docs#27082](https://github.com/dotnet/docs/issues/27082). **Opened:** November 15, 2021. **Size:** Very small, prose and links. **GHCP suitability:** Strong; the issue explicitly accepts a repository link.
+
+**Why it still applies:** The former Framework Libraries page redirects to the [core-library overview](../docs/standard/class-library-overview.md). That overview lists example types and links the API browser, but doesn't identify the [runtime library source directory](https://github.com/dotnet/runtime/tree/main/src/libraries) as the requested inventory.
+
+**Proposed assignment scope:** Add a short source/discovery paragraph with the repository link and the existing API-browser link. Explain that namespaces, assemblies, source folders, and NuGet packages aren't interchangeable inventories. Distinguish runtime-shipped libraries from optional extensions instead of promising that every source directory is an assembly in every shared framework.
+
+**Acceptance criteria:** Both links resolve and readers can reach the source inventory from the old URL's current destination. Don't maintain a new exhaustive hand-written list or move the article.
+
+### dotnet/docs#27142: Distinguish recommendation Score from the input Label
+
+**Issue:** [dotnet/docs#27142](https://github.com/dotnet/docs/issues/27142). **Opened:** November 18, 2021. **Size:** Small. **GHCP suitability:** Strong for a localized schema/explanation correction.
+
+**Why it still applies:** The [movie-recommendation tutorial](../docs/machine-learning/tutorials/movie-recommendation.md#use-your-model) correctly calls `Score` the predicted rating, and its current branch already tests `movieRatingPrediction.Score`. However, `MovieRatingData.cs` still exposes an unused `Label` on `MovieRatingPrediction`, without explaining why the input label isn't a second prediction. The wording about likelihood can also reinforce the reporter's incorrect confidence-score interpretation.
+
+**Proposed assignment scope:** Explain the training/observed `Label` versus predicted numeric `Score`, and state that the regression-style score isn't an accuracy or probability estimate. Remove the unnecessary prediction-output `Label` if the verified schema permits, while preserving the training input's label. Align the explanation with the existing recommendation threshold instead of claiming the current code still tests the wrong property.
+
+**Acceptance criteria:** Run the tutorial's prediction path and show which value controls the recommendation. Test values around the threshold and preserve or explicitly explain the existing rounding behavior. Don't promise the same trained score on every package/platform, remove the training label, or broaden the change to unrelated evaluation-metric corrections.
+
+### dotnet/docs#27156: Explain the queue behind a saturated connection pool
+
+**Issue:** [dotnet/docs#27156](https://github.com/dotnet/docs/issues/27156). **Opened:** November 18, 2021. **Size:** Small. **GHCP suitability:** Suitable for a narrowly versioned networking explanation.
+
+**Why it still applies:** The former Framework connection-management page redirects to the [HTTP overview](../docs/fundamentals/networking/http/http-overview.md), which doesn't answer whether saturation queues requests or immediately throws. The Framework reference source's [connection group](https://github.com/microsoft/referencesource/blob/main/System/net/System/Net/_ConnectionGroup.cs) selects a busy connection when it can't create another, and its [connection implementation](https://github.com/microsoft/referencesource/blob/main/System/net/System/Net/_Connection.cs) adds waiting requests to `m_WaitList`.
+
+**Proposed assignment scope:** Add a Framework-specific explanation in the [ServicePointManager migration section](../docs/fundamentals/networking/http/httpclient-migrate-from-httpwebrequest.md#migrate-servicepointmanager-usage), with a discoverable link from the current overview. Explain that requests can wait for capacity in the affected pool/group rather than fail solely because the limit is reached, and that timeout/cancellation can still end the wait. Link the modern handler's connection-limit API separately.
+
+**Acceptance criteria:** Verify a queued request resumes after capacity is released and a separately configured timeout/cancellation ends a blocked request. Scope any executable example to its actual runtime and HTTP version. Don't equate connection counts with HTTP/2 or HTTP/3 concurrent streams, treat the limit as process-wide, or recommend legacy `ServicePointManager` configuration indiscriminately for modern clients.
+
+### dotnet/docs#27211: Explain test-template package versions and the outdated check
+
+**Issue:** [dotnet/docs#27211](https://github.com/dotnet/docs/issues/27211). **Opened:** November 21, 2021. **Size:** Very small. **GHCP suitability:** Strong for the explicit documentation fallback offered by the reporter.
+
+**Why it still applies:** The [current MSTest tutorial](../docs/core/testing/unit-testing-csharp-with-mstest.md#create-the-test-project) uses `dotnet new mstest` and shows a versioned package example, but doesn't explain that template versions follow the installed SDK/template or how to check for newer stable packages.
+
+**Proposed assignment scope:** Add a brief version note and link the [.NET package outdated check](../docs/core/tools/dotnet-package-list.md). Use the current `dotnet package list --outdated` spelling for .NET 10, with older syntax only if the tutorial's supported scope needs it. Explain compatibility review rather than promise that templates always use the latest NuGet release or instruct readers to upgrade every package automatically. Coordinate the same tutorial's edits with dotnet/docs#24897.
+
+**Acceptance criteria:** Run the note's command on the generated test project and record its actual result. Preserve the tutorial's deliberate fail/pass sequence and don't add duplicate package-install commands or pin a new version solely to make the prose appear current.
+
+### dotnet/docs#27240: Explain explicit SRTP member invocation syntax
+
+**Issue:** [dotnet/docs#27240](https://github.com/dotnet/docs/issues/27240). **Opened:** November 23, 2021. **Size:** Small to medium. **GHCP suitability:** Suitable for bounded syntax examples with F# review.
+
+**Why it still applies:** The [SRTP guide](../docs/fsharp/language-reference/generics/statically-resolved-type-parameters.md) now demonstrates simpler F# 7 member calls, but still includes complex explicit constraint invocations without explaining their final expression/argument syntax. The property-getter, instance receiver, and static-argument distinctions requested by the issue remain implicit.
+
+**Proposed assignment scope:** Add a compact explanation of the explicit invocation's type parameter/signature and supplied expression. Demonstrate a property getter, an instance method, and a static member, including where the receiver belongs and when arguments form a tuple. Explain the existing type-disjunction form without replacing modern simplified calls. Cross-link the related constraints/generics pages to that one explanation.
+
+**Acceptance criteria:** Compile and execute examples against a stable F# compiler, use more than one concrete type where appropriate to demonstrate SRTP behavior, and record outputs. Distinguish F# 7 simplifications from syntax that still requires `^`; don't claim an untested receiver/unit-tuple form is equivalent.
+
+### dotnet/docs#27254: Explain nullable analysis alongside CA1062 runtime guards
+
+**Issue:** [dotnet/docs#27254](https://github.com/dotnet/docs/issues/27254). **Opened:** November 24, 2021. **Size:** Small. **GHCP suitability:** Strong for a scoped analyzer/language clarification.
+
+**Why it still applies:** The [CA1062 article](../docs/fundamentals/code-analysis/quality-rules/ca1062.md) describes explicit null validation, but doesn't discuss C# nullable contexts or a null-coalescing throw expression, both expressly requested.
+
+**Proposed assignment scope:** Explain that nullable annotations and compiler analysis don't insert runtime argument guards or prevent callers from passing null. Link `#nullable`/project nullable configuration and demonstrate a valid modern guard, including the requested C# `?? throw` form where appropriate. Keep C# nullable-only features distinct from the existing VB `Nothing` checks, and describe CA1062 behavior for the analyzer version actually verified rather than assume annotations always enable or suppress it.
+
+**Acceptance criteria:** Explicitly enable CA1062, state SDK/analyzer/settings, and verify guarded/unguarded cases under the stated nullable contexts. Exercise both null and non-null inputs in any new samples. Don't describe warning suppression or a non-nullable declaration as runtime validation.
+
+### dotnet/docs#27267: Distinguish a faulted Task from an unhandled worker exception
+
+**Issue:** [dotnet/docs#27267](https://github.com/dotnet/docs/issues/27267). **Opened:** November 24, 2021. **Size:** Small, primarily prose and cross-links. **GHCP suitability:** Strong for a focused concurrency clarification.
+
+**Why it still applies:** The [thread-pool exception section](../docs/standard/threading/the-managed-thread-pool.md#exceptions-in-thread-pool-threads) still presents process termination and three exceptions without distinguishing task infrastructure that captures an exception into a faulted task. Its linked managed-thread exception guide doesn't supply that missing distinction at the point of use.
+
+**Proposed assignment scope:** Explain the difference between an exception that escapes a raw worker callback, one captured by a task/async-task method, and an `async void` exception dispatched through its context. Link the existing TPL exception-handling guidance and reconcile the related general-thread paragraph. Keep Framework-era unobserved-exception policy separate from current .NET behavior.
+
+**Acceptance criteria:** If examples are added, run faulted-task and raw-worker/`async void` cases in separate child processes, record exit/output behavior, and state the synchronization context/runtime. Don't terminate the verification host, imply every async method runs on the pool, or claim that faulted tasks have no exceptions merely because the process survives.
+
+### dotnet/docs#27273: Scope the thread-safety guideline to shared instance state
+
+**Issue:** [dotnet/docs#27273](https://github.com/dotnet/docs/issues/27273). **Opened:** November 24, 2021. **Size:** Very small, prose only. **GHCP suitability:** Strong for the exact misleading sentence.
+
+**Why it still applies:** The [class-library threading guidelines](../docs/standard/threading/managed-threading-best-practices.md#recommendations-for-class-libraries) still claim that common application models execute user code on only one thread at a time, then use that claim to justify instance thread-safety defaults. That conflates ownership of one instance with concurrency across an application.
+
+**Proposed assignment scope:** Replace the application-wide claim with an explanation of instance ownership and caller synchronization when an instance is shared. Preserve the distinction between static/shared state and instance state. Contrast a thread-affine UI or an unshared request-owned instance with concurrent server code, and direct readers to each type's actual thread-safety contract.
+
+**Acceptance criteria:** The guideline no longer implies that server applications serialize all user code or that every .NET type has the same guarantees. Keep the change local; no new lock implementation, benchmark, or whole-article threading rewrite is needed.
+
+### dotnet/docs#27411: Select the analyzer's VSIX startup project explicitly
+
+**Issue:** [dotnet/docs#27411](https://github.com/dotnet/docs/issues/27411). **Opened:** December 5, 2021. **Size:** Very small. **GHCP suitability:** Strong; the reporter confirms the exact successful step.
+
+**Why it still applies:** The [analyzer tutorial](../docs/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md#explore-the-analyzer-template) calls `MakeConst.Vsix` the default startup project and immediately says to press F5. It doesn't tell readers to select that startup project if Visual Studio chose a library instead. The reporter's final comment says that switching the startup project to the VSIX project works.
+
+**Proposed assignment scope:** Instruct readers to set `MakeConst.Vsix` as the startup project before F5 and explain that the VSIX launcher opens the experimental Visual Studio instance. Remove the unconditional default-selection assumption. Coordinate the tutorial edit with the CS8032 PR's requested signpost rather than expand this issue into a general template modernization.
+
+**Acceptance criteria:** Verify the Visual Studio startup-project selection and experimental-instance launch with the stated template/IDE version. A successful `dotnet build` alone doesn't prove the F5 workflow. Don't tell readers to run the analyzer class library directly.
+
+### dotnet/docs#27432: Summarize compilation-setting trade-offs and appropriate scenarios
+
+**Issue:** [dotnet/docs#27432](https://github.com/dotnet/docs/issues/27432). **Opened:** December 7, 2021. **Size:** Small to medium, prose and a table. **GHCP suitability:** Suitable with runtime-performance review.
+
+**Why it still applies:** The old URL redirects to the [current compilation settings](../docs/core/runtime-config/compilation.md). Quick JIT already has some startup/optimization trade-offs, but the article doesn't provide the requested consistent use/avoid overview across tiering, loops, ReadyToRun, dynamic-code testing, and PGO.
+
+**Proposed assignment scope:** Add a concise scenario/trade-off table based on the existing runtime design and [ReadyToRun guidance](../docs/core/deploying/ready-to-run.md). Distinguish startup cost, steady-state optimization, instrumentation, and publish size without universal speedup promises. Identify `DynamicCodeSupport` as a fallback-test switch rather than a substitute for an actual Native AOT publish. Reconcile loop/default claims with the documented stable runtime and on-stack replacement.
+
+**Acceptance criteria:** Obtain performance-owner review and scope version/platform-dependent recommendations. The [.NET 10 configuration source](https://github.com/dotnet/runtime/blob/v10.0.0/src/coreclr/inc/clrconfigvalues.h) defaults `TC_QuickJitForLoops` differently depending on on-stack-replacement support and enables tiered PGO; don't repeat legacy blanket defaults as universal current behavior. No benchmark percentages or workload thresholds should appear without actual evidence.
+
+### dotnet/docs#27442: Demonstrate enumeration-class values and lookup
+
+**Issue:** [dotnet/docs#27442](https://github.com/dotnet/docs/issues/27442). **Opened:** December 7, 2021. **Size:** Small to medium. **GHCP suitability:** Strong for a bounded usage example based on the linked implementation.
+
+**Why it still applies:** The [enumeration-class chapter](../docs/architecture/microservices/microservice-ddd-cqrs-patterns/enumeration-classes-over-enum-types.md) defines an abridged `Enumeration` and `CardType` but doesn't use their IDs/names in an example. The [full sample implementation on `main`](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/Services/Ordering/Ordering.Domain/SeedWork/Enumeration.cs) includes `GetHashCode`, `FromValue`, and `FromDisplayName`, which the displayed class omits.
+
+**Proposed assignment scope:** Show use of `CardType` values, their stable identifier and display name, enumeration through `GetAll`, and a lookup using an implementation actually supplied to the reader. Clearly label abridged code and link the verified full source, or include the needed complete implementation in executable snippets. Don't call `FromValue` as though it exists in the current abridged class.
+
+**Acceptance criteria:** Run the example and verify ID/name, enumeration, successful lookup, and invalid-value behavior. Preserve equality/hash consistency if the implementation is included. Treat the archived class as an illustration, not an automatic ORM/serialization or trimming/AOT guarantee, and don't broaden the task to unrelated serialization documentation raised in a later comment.
+
+### dotnet/docs#27545: Execute the WAL pragma as SQL, not a connection-string keyword
+
+**Issue:** [dotnet/docs#27545](https://github.com/dotnet/docs/issues/27545). **Opened:** December 14, 2021. **Size:** Small. **GHCP suitability:** Strong; the missing operation and expected result are explicit.
+
+**Why it still applies:** The [provider-comparison table](../docs/standard/data/sqlite/compare.md#connection-strings) says to send `PRAGMA journal_mode = <mode>` instead of the `Journal Mode` keyword, but shows no command execution. The [connection-string reference](../docs/standard/data/sqlite/connection-strings.md) doesn't make that missing example discoverable.
+
+**Proposed assignment scope:** Add a short example that opens a writable file-backed `SqliteConnection`, creates a SQL command for `PRAGMA journal_mode=WAL`, executes it, and checks/displays the returned mode. Explicitly say not to append `Journal Mode` or the pragma text as unsupported connection-string keywords. Link the relevant supported-keyword guidance and keep the operation outside an active transaction.
+
+**Acceptance criteria:** Run both language samples on an owned file-backed fixture and verify the returned/read-back mode is `wal`. Don't substitute an in-memory database, which has different journal-mode behavior, or hide a failure to switch modes. Isolate fixture pooling/cleanup without deleting user databases or changing process-wide pool state merely for convenience.
+
+### dotnet/docs#27634: Clarify that native-to-managed entry doesn't establish fiber support
+
+**Issue:** [dotnet/docs#27634](https://github.com/dotnet/docs/issues/27634). **Opened:** December 20, 2021. **Size:** Small, prose only. **GHCP suitability:** Suitable for a support-boundary clarification with runtime-owner review.
+
+**Why it still applies:** The [fiber warning](../docs/standard/threading/managed-and-unmanaged-threading-in-windows.md#threads-and-fibers) says not to call unmanaged functions implemented with fibers. It doesn't explicitly address the reverse direction asked here: a native fiber entering managed code. In [dotnet/runtime#11373](https://github.com/dotnet/runtime/issues/11373), the runtime owner states that fibers aren't supported; the later fix hardens exception handling around native-only fibers rather than promises managed execution on their stacks.
+
+**Proposed assignment scope:** Clarify that incidental success through COM/native-to-managed entry isn't a supported modern-.NET fiber execution model. Distinguish the native-only exception-handler hardening from support for managed execution, and direct managed entry to supported OS-thread/interop paths. Keep historical Framework-hosting differences appropriately scoped and reviewed.
+
+**Acceptance criteria:** Obtain runtime-owner confirmation of the support wording. Don't turn the reporter's stack-guarantee experiments into supported thresholds, claim the linked runtime fix added fiber support, or introduce a native stack-switching workaround/sample.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -721,6 +861,14 @@ These issues still need their existing PRs to land, with corrections where noted
 
 **Maintainer next action:** Complete the existing PR rather than assign a duplicate. Qualify its broad "Roslyn 4.x"/".NET 6+ SDK" example: a later 4.x API dependency doesn't necessarily load in every .NET 6 SDK or Visual Studio 2022 release. Identify the minimum compatible host for the actual referenced API/package version, link authoritative version information, and add the requested signpost from the [analyzer tutorial](../docs/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md). Distinguish analyzer target-framework compatibility from availability of the required Roslyn APIs. Verify the mismatch and corrected configuration before treating the whole request as complete.
 
+### dotnet/docs#27727: Verify all reported compiler-help routes and correct the CS1574 patch
+
+**Issue:** [dotnet/docs#27727](https://github.com/dotnet/docs/issues/27727). **Opened:** November 16, 2021. **Status:** Open, non-draft [dotnet/docs#56691](https://github.com/dotnet/docs/pull/56691) modernizes one article but doesn't by itself verify the original three help-link failures.
+
+**Why the solution is defined:** Current topics exist for [CS8357](../docs/csharp/language-reference/compiler-messages/invalid-build-command-line.md#deterministic-assembly-versions), [CS7035](../docs/csharp/language-reference/compiler-messages/cs7035.md), and [CS1574](../docs/csharp/misc/cs1574.md). The PR's actual patch changes only CS1574 content and retains its existing `f1_keywords`. It also retains the old syntax-error description and adds a raw-angle-bracket generic example labeled CS1574. The compiler's [error codes](https://github.com/dotnet/roslyn/blob/main/src/Compilers/CSharp/Portable/Errors/ErrorCode.cs) and [diagnostic resources](https://github.com/dotnet/roslyn/blob/main/src/Compilers/CSharp/Portable/CSharpResources.resx) distinguish CS1574's unresolved reference from CS1584's invalid reference syntax.
+
+**Maintainer next action:** Review the existing PR, not a duplicate assignment. Verify F1/help resolution for all three reported codes, and distinguish a successful route from an article-content improvement. Correct the CS1574 diagnostic description and reproduce every proposed example with XML documentation enabled, including any malformed-XML diagnostics from unescaped angle brackets. Validate the corrected example's zero-warning claim under stated compiler/options. Don't close the three-link issue solely because one article was expanded.
+
 ## Assignment order
 
 For the quickest independent changes, start with the table escaping, the paired COM wording corrections, or the existing prose-only signposts. Coordinate the instrumentation link with its current owner. Treat the two COM issues as one assignment, and use the existing hosted-service issue rather than duplicate work for dotnet/docs#23440.
@@ -735,4 +883,8 @@ The prerequisite examples and linked-cancellation lifecycle correction need focu
 
 The custom-repository explanation and logging-event demonstration are additional localized tasks. Pair the two profiler buffer-count issues in one owner-coordinated change, distinct from the earlier paired COM wording task. Coordinate the remaining image guidance with both existing assignees. The VB binding correction, semaphore explanation, and C# first-completion example need language/concurrency-specific review rather than a superficial wording pass.
 
-Review the eight existing implementation PRs separately from new assignments. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, and refine the CS8032 version advice/tutorial signpost before merge. Issues that don't fit either candidate category are omitted for a future task.
+The BCL source link, explicit VSIX startup selection, package-version note, and instance-thread-safety wording are additional small changes. Coordinate the package note with the earlier MSTest task and the VSIX note with the analyzer tutorial's CS8032 signpost. The CRLF example needs backend-specific evidence, and the recommendation explanation must distinguish training labels from predicted scores.
+
+The SRTP syntax, nullable/CA1062 cases, task-exception distinction, enumeration usage, and SQLite WAL example need focused compiler/runtime or sample evidence. Scope connection queues to the actual handler/protocol and compilation trade-offs to reviewed runtime behavior. The fiber note states an unsupported boundary; it must not advertise a new support policy or workaround.
+
+Review the nine existing implementation PRs separately from new assignments. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Issues that don't fit either candidate category are omitted for a future task.

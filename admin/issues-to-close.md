@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 175 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#26886](https://github.com/dotnet/docs/issues/26886), opened November 9, 2021.
-- **Results:** 32 closure candidates and 61 [clearly defined fixes](issues-with-defined-fixes.md) (53 assignment candidates and 8 fixes with open implementation PRs).
-- **Latest batch:** Issues 151-175, from [dotnet/docs#25769](https://github.com/dotnet/docs/issues/25769) through dotnet/docs#26886: 5 closure candidates, 8 new assignment candidates, and 1 fix with an existing implementation PR.
-- **Remaining:** 673 issues from this snapshot are unreviewed. Resume with [dotnet/docs#27011](https://github.com/dotnet/docs/issues/27011), opened November 10, 2021. Refresh issue states before the next batch; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 200 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#27634](https://github.com/dotnet/docs/issues/27634), opened December 20, 2021.
+- **Results:** 34 closure candidates and 76 [clearly defined fixes](issues-with-defined-fixes.md) (67 assignment candidates and 9 fixes with open implementation PRs).
+- **Latest batch:** Issues 176-200, from [dotnet/docs#27011](https://github.com/dotnet/docs/issues/27011) through dotnet/docs#27634: 2 closure candidates, 14 new assignment candidates, and 1 fix with an existing implementation PR.
+- **Remaining:** 648 issues from this snapshot are unreviewed. Resume with [dotnet/docs#27653](https://github.com/dotnet/docs/issues/27653), opened December 22, 2021. Refresh issue states before the next batch; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -334,3 +334,21 @@ No Visual Studio 2017 instructions remain in the tutorial Markdown searched; occ
 The discussion ultimately favors a newline after `if` or `match` for a long multiline condition/expression, one indentation level for that expression, and aligned `if`/`then` or `match`/`with` keywords. The current [if-expression guidance](../docs/fsharp/style-guide/formatting.md#formatting-if-expressions) states that rule and demonstrates it. The [pattern-matching guidance](../docs/fsharp/style-guide/formatting.md#formatting-pattern-matching) supplies the corresponding `match` example and recommends a separate binding when that improves clarity.
 
 **Suggested closure explanation:** Link to both current formatting sections. They now document the final requested layout; the earlier objections in the discussion don't represent the final position. No new formatting-policy decision is needed for this request.
+
+### dotnet/docs#27116: Make qualification simplification configurable
+
+**Opened:** November 17, 2021. **Confidence:** High for the request to retain qualification. **Reason:** The current rule reference documents how to opt out.
+
+The issue asks to make IDE0002 configurable so that explicit qualification can remain. The [IDE0002 suppression section](../docs/fundamentals/code-analysis/style-rules/ide0002.md#suppress-a-warning) now shows both a local pragma and `dotnet_diagnostic.IDE0002.severity = none` for a file, folder, or project. That configuration preserves the static-type qualification illustrated by the article.
+
+The article still correctly says that the rule has no associated code-style options. Severity configuration isn't a new per-member style preference, and `this`/`base` qualification shouldn't be conflated with every case covered by IDE0002.
+
+**Suggested closure explanation:** Link to the existing opt-out configuration. The requested ability to retain qualification doesn't require a documentation change. A request for a new, finer-grained analyzer preference would need its own explicit product requirements; don't describe such a feature as already implemented.
+
+### dotnet/docs#27217: Explain single-file extraction after .NET 5
+
+**Opened:** November 22, 2021. **Confidence:** High for the general documentation question. **Reason:** Current guidance explicitly distinguishes the extraction modes and cache location.
+
+The [single-file guide's native-libraries section](../docs/core/deploying/single-file/overview.md#native-libraries) distinguishes managed assemblies loaded from the bundle in memory from native libraries embedded with `IncludeNativeLibrariesForSelfExtract`. It also states that `IncludeAllContentForSelfExtract` extracts all files, including managed assemblies. The same section identifies `%TEMP%/.net` as the default Windows extraction location and explains `DOTNET_BUNDLE_EXTRACT_BASE_DIR`.
+
+**Suggested closure explanation:** Answer with the existing explanation and ask the reader to inspect the two extraction properties and the files actually extracted. A .NET 6-or-later target doesn't disable intentional native/content extraction. The recommendation doesn't diagnose the original project's unspecified publish settings or claim that a reproducible extraction bug has been fixed.

@@ -5,16 +5,16 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 76 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track nine additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 84 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track ten additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 225 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#28632](https://github.com/dotnet/docs/issues/28632), opened March 11, 2022.
-- **Results:** 85 defined fixes (76 assignment candidates and 9 with open implementation PRs) and 40 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 201-225 add 9 new assignment candidates, alongside 6 closure candidates.
-- **Remaining:** 623 issues from this snapshot are unreviewed. Resume with [dotnet/docs#28635](https://github.com/dotnet/docs/issues/28635), opened March 11, 2022.
-- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the nine active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
+- **Completed batches:** The 250 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#29717](https://github.com/dotnet/docs/issues/29717), opened June 3, 2022.
+- **Results:** 94 defined fixes (84 assignment candidates and 10 with open implementation PRs) and 43 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 226-250 add 8 new assignment candidates and 1 fix with an open implementation PR, alongside 3 closure candidates.
+- **Remaining:** 598 issues from this snapshot are unreviewed. Resume with [dotnet/docs#29741](https://github.com/dotnet/docs/issues/29741), opened June 6, 2022.
+- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the ten active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
 
@@ -885,6 +885,90 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Acceptance criteria:** Obtain analyzer/language review and verify any changed examples with CA1052 enabled. A normal instance type that merely prohibits inheritance must not be presented as a static-holder candidate. Preserve the existing breaking-change warning and don't broaden the task into changing the analyzer's behavior.
 
+### dotnet/docs#28677: Unwrap calibrated model parameters before retraining
+
+**Issue:** [dotnet/docs#28677](https://github.com/dotnet/docs/issues/28677). **Opened:** March 15, 2022. **Size:** Small. **GHCP suitability:** Strong; the product discussion contains a tested resolution.
+
+**Why it still applies:** The [retraining guide](../docs/machine-learning/how-to-guides/retrain-model-ml-net.md) describes algorithm-specific parameter casts but doesn't explain the calibrated binary-classification wrapper in the report. Casting that wrapper directly to linear model parameters isn't the correction.
+
+**Why the solution is defined:** In [dotnet/machinelearning#6092](https://github.com/dotnet/machinelearning/issues/6092), the owner tested access through `CalibratedModelParametersBase.SubModel` followed by the appropriate linear-parameter type, and the reporter confirmed the solution. That product issue closed with the documentation follow-up tracked here.
+
+**Proposed assignment scope:** Add a calibrated-model case to the existing parameter-extraction explanation. Use checked type patterns or explicit validation before the retraining call, not an unchecked `as` cast that can pass null. Select a trainer that actually supports the documented retraining overload, preserve the fitted preprocessing pipeline and feature representation, and distinguish the calibrated wrapper from the underlying trainable model.
+
+**Acceptance criteria:** Train, save, reload, unwrap, and retrain a small calibrated binary model with supported ML.NET packages. Execute both C# and VB examples, record the parameter types and successful predictions, and show that an unsupported model type produces an explicit diagnostic rather than a null-dependent failure. Don't imply every calibrated trainer supports warm-start retraining.
+
+### dotnet/docs#28793: Explain intentional parameter-name literals in CA1507 suppressions
+
+**Issue:** [dotnet/docs#28793](https://github.com/dotnet/docs/issues/28793). **Opened:** March 24, 2022. **Size:** Very small. **GHCP suitability:** Strong for a localized explanation.
+
+**Why it still applies:** The [CA1507 suppression guidance](../docs/fundamentals/code-analysis/quality-rules/ca1507.md#when-to-suppress-warnings) still describes suppression as appropriate when the developer isn't concerned about maintainability. The report supplies a legitimate maintainability reason: a test's expected exception parameter name belongs to the method under test, not to an unrelated test parameter with the same spelling.
+
+**Proposed assignment scope:** Replace the dismissive rationale with an intent-based explanation. Describe the coincidentally matching-name case and a narrow suppression, while retaining the normal benefits of `nameof`. Don't recommend a project-wide rule disable, change the analyzer, or assume every assertion API triggers CA1507.
+
+**Acceptance criteria:** If an example is added, reproduce CA1507 with the actual analyzed API and show that the literal still describes the production method's parameter after the unrelated test parameter is renamed. The final guidance must distinguish intentional independent text from a name that really should follow a symbol.
+
+### dotnet/docs#28865: Align the completed LINQ sample with the tutorial
+
+**Issue:** [dotnet/docs#28865](https://github.com/dotnet/docs/issues/28865). **Opened:** March 31, 2022. **Size:** Small. **GHCP suitability:** Strong for an example/link alignment.
+
+**Why it still applies:** The [tutorial](../docs/csharp/tutorials/working-with-linq.md) now includes string-based iterator steps in `InterimSteps.cs`, but its completed-sample link still leads to the [external enum-based sample](https://github.com/dotnet/samples/tree/main/csharp/getting-started/console-linq). The local completed `Program.cs` also uses enums. The existence of interim examples therefore doesn't resolve the completed-sample mismatch. Related [dotnet/docs#47671](https://github.com/dotnet/docs/pull/47671) closed unmerged; its patch targets a legacy snippet path rather than the current project.
+
+**Proposed assignment scope:** Make `docs/csharp/tutorials/snippets/console-linq` the consistent completed implementation of the documented steps, then point the tutorial's completed-sample link to that maintained project. Align the string iterators, calls, card representation, snippet markers, and final shuffle logic; update or remove obsolete enum-dependent support code as necessary. Don't apply the old patch to a deleted or superseded path, or require an uncoordinated change to `dotnet/samples`.
+
+**Acceptance criteria:** Build and run the complete local project, verify the expected 52 distinct cards and both documented shuffle cycles, and check every extracted step against the final implementation. Preserve the tutorial's lazy-evaluation/performance demonstrations. The completed-sample link must lead to the verified matching project.
+
+### dotnet/docs#29054: State AnalysisLevel defaults by target framework and SDK
+
+**Issue:** [dotnet/docs#29054](https://github.com/dotnet/docs/issues/29054). **Opened:** April 13, 2022. **Size:** Small. **GHCP suitability:** Strong; current property evaluation reproduces the discrepancy.
+
+**Why it still applies:** Both the [analysis overview](../docs/fundamentals/code-analysis/overview.md) and [AnalysisLevel reference](../docs/core/project-sdk/msbuild-props.md#analysislevel) still describe a blanket `latest` default. Evaluation of otherwise unconfigured C# projects with the installed stable SDK 10.0.403 returned `AnalysisLevel=5.0`, `8.0`, and `9.0` for `net5.0`, `net8.0`, and `net9.0`, respectively. Only the `net10.0` project returned `latest`, with `EffectiveAnalysisLevel=10.0`. This was property evaluation, not a build or a claim that the older targets remain supported.
+
+**Proposed assignment scope:** Correct both descriptions from the supported SDK's analyzer targets. Explain the target-framework-based default, when it resolves to `latest`, how an SDK upgrade differs from a target-framework upgrade, and how an explicit value changes the behavior. Preserve the distinctions between rule availability, default enablement, severity, and `AnalysisMode`; verify any claims about explicitly configured modes or analyzer packages rather than infer them from the unconfigured case.
+
+**Acceptance criteria:** Record SDK selection and evaluated properties for an older supported target, the SDK's current target, and explicit numeric/`latest` overrides. Both pages must agree with that matrix. A merged SDK fix alone isn't evidence that the current blanket wording is correct.
+
+### dotnet/docs#29207: Explain ownership of native UTF-8 string return values
+
+**Issue:** [dotnet/docs#29207](https://github.com/dotnet/docs/issues/29207). **Opened:** April 28, 2022. **Size:** Small. **GHCP suitability:** Suitable for a precise interop addition with allocator/ABI review.
+
+**Why it still applies:** The former Framework URL redirects to the [current string-marshalling article](../docs/standard/native-interop/default-marshalling-for-strings.md), but that article still concentrates on parameters rather than the returned UTF-8 buffer in the report. Its parameter-ownership wording doesn't explain when a native return allocation is released.
+
+**Why the solution is defined:** The .NET 10 [built-in UTF-8 IL marshaller](https://github.com/dotnet/runtime/blob/v10.0.0/src/coreclr/vm/ilmarshalers.cpp) converts the native return to a managed string and emits native cleanup. The called [UTF-8 marshaller implementation](https://github.com/dotnet/runtime/blob/v10.0.0/src/libraries/System.Private.CoreLib/src/System/Runtime/InteropServices/Marshalling/Utf8StringMarshaller.cs) uses `PtrToStringUTF8` for conversion and `FreeCoTaskMem` for that cleanup. The copied managed string's later collection isn't the native buffer's ownership boundary.
+
+**Proposed assignment scope:** Add a return-value subsection for built-in `DllImport` marshalling with `[return: MarshalAs(UnmanagedType.LPUTF8Str)]`. Explain the required matching allocator and call-boundary cleanup. Contrast that with an explicit pointer plus the native library's own release function for Rust-owned or otherwise incompatible allocations, and distinguish owned results from borrowed/static memory. Qualify the parameter-focused ownership paragraph; don't generalize this return contract to all COM, custom, or source-generated marshallers.
+
+**Acceptance criteria:** Execute a small native/managed UTF-8 fixture, including non-ASCII text and repeated calls, with allocation/release evidence. For an explicit-pointer example, use the library's matching deallocator exactly once, including exceptional paths. Obtain interop review; never recommend freeing an arbitrary Rust allocation or borrowed pointer with a managed allocator.
+
+### dotnet/docs#29297: Clarify how Framework proxy settings override system defaults
+
+**Issue:** [dotnet/docs#29297](https://github.com/dotnet/docs/issues/29297). **Opened:** May 5, 2022. **Size:** Very small. **GHCP suitability:** Strong; the maintainer supplied the intended interpretation.
+
+**Why it still applies:** The [proxy configuration reference](../docs/framework/configure-apps/file-schema/network/proxy-element-network-settings.md) still says that if `usesystemdefault` is true, subsequent attributes override system settings. That wording invites the reported inference that false means other attributes are ignored. The [maintainer's clarification](https://github.com/dotnet/docs/issues/29297#issuecomment-1489458380) instead says that explicit settings can override the defaults even when true.
+
+**Proposed assignment scope:** Explain that the flag controls whether Framework obtains the system proxy defaults; it doesn't enable or disable all other explicit proxy attributes. Describe explicit overrides without suggesting XML attribute order matters. Match the explanation to [Framework's DefaultProxySection implementation](https://github.com/microsoft/referencesource/blob/main/System/net/System/Net/Configuration/DefaultProxySection.cs), including the false/no-other-settings case. Keep this scoped to Framework configuration, not modern `HttpClient`.
+
+**Acceptance criteria:** The attribute description must distinguish true/system defaults, false/no system defaults, and explicitly configured proxy values. Confirm the wording against the source and, if a configuration example is added, run it with application-local settings without changing machine or user proxy configuration.
+
+### dotnet/docs#29690: Replace cancellation-prone XOR hashing in the value-object example
+
+**Issue:** [dotnet/docs#29690](https://github.com/dotnet/docs/issues/29690). **Opened:** June 1, 2022. **Size:** Small. **GHCP suitability:** Strong; the failure is localized and the maintainer accepted a correction.
+
+**Why it still applies:** The [value-object example](../docs/architecture/microservices/microservice-ddd-cqrs-patterns/implement-value-objects.md) still XORs component hashes with an unseeded `Aggregate`. Equal component hashes cancel, so every two-component diagonal example collapses to zero. XOR also discards component order, unlike the example's ordered equality comparison, and the unseeded aggregation fails for no components.
+
+**Proposed assignment scope:** Replace that aggregation with ordered `System.HashCode` accumulation over the equality components. Preserve null handling and the equality/hash contract, handle empty component sequences, and update the explanation to describe combination rather than guarantee unique hashes. Keep the change in the documented example; don't silently modify the archived external application.
+
+**Acceptance criteria:** Compile the updated sample and exercise empty, null, single, multiple, and repeated components. Equal objects must have equal hashes within the process, and the implementation must no longer structurally cancel repeated component hashes. Unequal objects can still collide; don't assert universal uniqueness, nonzero results, or cross-process hash stability.
+
+### dotnet/docs#29717: Complete the NonBacktracking section with an executable example
+
+**Issue:** [dotnet/docs#29717](https://github.com/dotnet/docs/issues/29717). **Opened:** June 3, 2022. **Size:** Small. **GHCP suitability:** Strong for the remaining example, not another conceptual section.
+
+**Why it still applies:** The [Nonbacktracking mode section](../docs/standard/base-types/regular-expression-options.md#nonbacktracking-mode) now explains the option, limitations, and capture difference, but still has no example. The original issue explicitly requests a section with an example, so the existing prose is only partial completion.
+
+**Proposed assignment scope:** Add a short compatible-pattern example in C# and VB to the existing section. Show actual match results; a repeated-group capture comparison with the default engine can demonstrate the already documented final-capture distinction. Use article-relative snippet projects and references, retain the unsupported-construct/option restrictions, and keep the pattern trusted and simple.
+
+**Acceptance criteria:** Run both language samples on stable .NET, record the exact match/capture output, and verify that the published snippets select the executed code. Don't introduce a timing threshold, claim every expression supports this option, or imply that it makes an untrusted pattern safe.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -963,6 +1047,14 @@ These issues still need their existing PRs to land, with corrections where noted
 
 **Maintainer next action:** Review the existing PR, not a duplicate assignment. Verify F1/help resolution for all three reported codes, and distinguish a successful route from an article-content improvement. Correct the CS1574 diagnostic description and reproduce every proposed example with XML documentation enabled, including any malformed-XML diagnostics from unescaped angle brackets. Validate the corrected example's zero-warning claim under stated compiler/options. Don't close the three-link issue solely because one article was expanded.
 
+### dotnet/docs#29417: Distinguish packaged PDBs from available source code
+
+**Issue:** [dotnet/docs#29417](https://github.com/dotnet/docs/issues/29417). **Opened:** May 11, 2022. **Status:** Covered by open, non-draft [dotnet/docs#56613](https://github.com/dotnet/docs/pull/56613).
+
+**Why the solution is defined:** The [NuGet guidance](../docs/standard/library-guidance/nuget.md) explains PDB inclusion without adequately separating symbols from source availability. The existing PR's actual patch adds a note about build-machine source paths, Source Link, and `EmbedAllSources`, which addresses the reported consumer-debugging confusion.
+
+**Maintainer next action:** Review the existing PR rather than assign a duplicate. Qualify the note so it doesn't imply every PDB has only local source paths: PDBs can already contain Source Link or embedded-source information. Distinguish PDBs in a package, `DebugType=embedded`, and embedded source. Verify a consumer-debugging scenario isolated from the producer's source with owned fixtures, and coordinate overlapping Source Link guidance with dotnet/docs#22373. Don't close before the corrected implementation merges.
+
 ## Assignment order
 
 For the quickest independent changes, start with the table escaping, the paired COM wording corrections, or the existing prose-only signposts. Coordinate the instrumentation link with its current owner. Treat the two COM issues as one assignment, and use the existing hosted-service issue rather than duplicate work for dotnet/docs#23440.
@@ -985,4 +1077,8 @@ The CA1052 rationale and analyzer-locality note are additional focused clarifica
 
 The TensorFlow dependency note must use release-matched managed/native packages. The domain-event clarification needs a real relational rollback check, and the SQLite extension recipe needs a known native binary and platform-specific execution. Coordinate class-free ML.NET loading with its current owner and the retained image-loading task. The Roslyn packaging guide needs an actual multi-host asset-selection matrix and coordination with the draft generator tutorial, not another generic version-mismatch paragraph.
 
-Review the nine existing implementation PRs separately from new assignments. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Issues that don't fit either candidate category are omitted for a future task.
+The CA1507 suppression rationale and Framework proxy clarification are additional small prose tasks. The AnalysisLevel correction must update both descriptions from a real SDK/target matrix. Align the complete LINQ project and its link together, and verify the nonbacktracking example in both languages rather than add another prose-only section.
+
+The calibrated-retraining addition needs a real saved-model round trip and must retain preprocessing compatibility. Native string ownership needs a native fixture and allocator review, not just a managed build. The value-object hash correction needs equality-contract and edge-case checks without a no-collisions promise.
+
+Review the ten existing implementation PRs separately from new assignments. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Issues that don't fit either candidate category are omitted for a future task.

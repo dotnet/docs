@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 225 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#28632](https://github.com/dotnet/docs/issues/28632), opened March 11, 2022.
-- **Results:** 40 closure candidates and 85 [clearly defined fixes](issues-with-defined-fixes.md) (76 assignment candidates and 9 fixes with open implementation PRs).
-- **Latest batch:** Issues 201-225, from [dotnet/docs#27653](https://github.com/dotnet/docs/issues/27653) through dotnet/docs#28632: 6 closure candidates and 9 new assignment candidates.
-- **Remaining:** 623 issues from this snapshot are unreviewed. Resume with [dotnet/docs#28635](https://github.com/dotnet/docs/issues/28635), opened March 11, 2022. Refresh issue states before the next batch; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 250 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#29717](https://github.com/dotnet/docs/issues/29717), opened June 3, 2022.
+- **Results:** 43 closure candidates and 94 [clearly defined fixes](issues-with-defined-fixes.md) (84 assignment candidates and 10 fixes with open implementation PRs).
+- **Latest batch:** Issues 226-250, from [dotnet/docs#28635](https://github.com/dotnet/docs/issues/28635) through dotnet/docs#29717: 3 closure candidates, 8 new assignment candidates, and 1 fix with an open implementation PR.
+- **Remaining:** 598 issues from this snapshot are unreviewed. Resume with [dotnet/docs#29741](https://github.com/dotnet/docs/issues/29741), opened June 6, 2022. Refresh issue states before the next batch; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -400,3 +400,33 @@ The [current basic-usage section](../docs/core/extensions/logging/source-generat
 The [primary-constructor declaration guidance](../docs/csharp/language-reference/compiler-messages/constructor-errors.md#primary-constructor-declaration) includes the CS8862 message and explicitly tells readers to add a `: this(...)` initializer that passes appropriate arguments to the primary constructor. CS8862 also appears in the article's diagnostic inventory and F1/help metadata.
 
 **Suggested closure explanation:** The previously missing explanation now exists in the consolidated constructor-errors article. Link to the constructor-chaining guidance instead of create a duplicate record-constructor error page.
+
+### dotnet/docs#28739: Keep an existing POCO library on .NET Standard
+
+**Opened:** March 20, 2022. **Confidence:** High. **Reason:** The current targeting guidance directly answers the question.
+
+The [.NET Standard article](../docs/standard/net-standard.md) explicitly says existing .NET Standard 2.0 or later code doesn't need a different target framework unless it needs newer language features, runtime capabilities, or APIs. It also explains when to multitarget and why .NET Standard 2.0 remains relevant for .NET Framework compatibility.
+
+That addresses the reported choice for an existing shared library of plain data types; a modern .NET consumer doesn't require that library to abandon .NET Standard. The guidance doesn't promise identical optimization opportunities for every target or recommend .NET Standard 2.1 for consumers that need .NET Framework support.
+
+**Suggested closure explanation:** Link to the current targeting guidance. Choose targets for required consumers and APIs; don't retarget an otherwise compatible POCO library solely because its applications use modern .NET.
+
+### dotnet/docs#28972: Explain how to run the socket server and client
+
+**Opened:** April 10, 2022. **Confidence:** High. **Reason:** The replacement tutorial includes the requested commands and execution order.
+
+The old .NET Framework server page redirects to the [current socket tutorial](../docs/fundamentals/networking/sockets/socket-services.md). Its [Run the sample client and server section](../docs/fundamentals/networking/sockets/socket-services.md#run-the-sample-client-and-server) explicitly starts the server first with `dotnet run --project socket-server`, then starts the client with `dotnet run --project socket-client`, and shows the expected exchange.
+
+The sample's end-of-message marker belongs in the message the client sends, not in an additional command-line argument. The recommendation rests on the actual run instructions, not on the age of the superseded Framework sample.
+
+**Suggested closure explanation:** The replacement tutorial now supplies both commands, their order, and expected output. Link directly to that section; no documentation change is needed for the original run-command question.
+
+### dotnet/docs#29344: Interpret the Framework IDN setting by Uri property
+
+**Opened:** May 10, 2022. **Confidence:** High for the reported inversion. **Reason:** The values aren't reversed; the reported output compares properties with different contracts.
+
+The report's own results show `DnsSafeHost` in Punycode under `All` and unchanged under `None` for a Unicode-input hostname. A separate .NET Framework 4.8 reproduction with two application-local configurations confirmed those results: `All` produced `www.xn--bcher-kva.de` from `DnsSafeHost`, whereas `None` preserved the Unicode input. For that valid international DNS name, `IdnHost` produced the Punycode form under both configurations.
+
+The [Uri property documentation](https://github.com/dotnet/dotnet-api-docs/blob/main/xml/System/Uri.xml) distinguishes configuration-dependent `DnsSafeHost` from configuration-independent `IdnHost`. A Unicode value from `Host`, or a Punycode value from `IdnHost`, doesn't establish that the [Framework configuration table](../docs/framework/configure-apps/file-schema/network/idn-element-uri-settings.md) has its `All` and `None` rows reversed.
+
+**Suggested closure explanation:** Explain which property the setting affects and link to the property contracts. Don't invert the configuration values, infer modern .NET behavior from Framework configuration, or claim that this reproduction verifies every historical default described on the page.

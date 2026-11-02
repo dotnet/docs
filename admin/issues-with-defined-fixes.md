@@ -5,16 +5,16 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following fourteen issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track two additional defined fixes separately because implementation PRs are already open. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 22 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track three additional defined fixes separately because implementation PRs are already open; one of those PRs needs correction before merge. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 75 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#23582](https://github.com/dotnet/docs/issues/23582), opened April 1, 2021.
-- **Results:** 16 defined fixes (14 assignment candidates and 2 already in open PRs) and 13 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 51-75 add 8 new assignment candidates, alongside 6 closure candidates.
-- **Remaining:** 773 issues from this snapshot are unreviewed. Resume with [dotnet/docs#23596](https://github.com/dotnet/docs/issues/23596), opened April 2, 2021.
-- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the two active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
+- **Completed batches:** The 100 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#24691](https://github.com/dotnet/docs/issues/24691), opened June 16, 2021.
+- **Results:** 25 defined fixes (22 assignment candidates and 3 with open implementation PRs) and 19 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 76-100 add 8 new assignment candidates and 1 fix with an existing PR that needs correction, alongside 6 closure candidates.
+- **Remaining:** 748 issues from this snapshot are unreviewed. Resume with [dotnet/docs#24735](https://github.com/dotnet/docs/issues/24735), opened June 18, 2021.
+- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the three active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
 
@@ -217,9 +217,109 @@ These are proposed assignment briefs, not claims that fixes have been implemente
 
 **Acceptance criteria:** The note explains the role of both attributes and scopes the difference to COM-host activation. Preserve the separate marshaling case and existing code. Obtain interop-owner review of the wording; no new COM sample is needed.
 
+### dotnet/docs#23596: Verify numeric-format examples and refresh their output
+
+**Issue:** [dotnet/docs#23596](https://github.com/dotnet/docs/issues/23596). **Opened:** April 2, 2021. **Size:** Medium to large, bounded to one article and its examples. **GHCP suitability:** Suitable for a sample migration and verification task, with numerical-behavior review.
+
+**Why it still applies:** The [general-format table](../docs/standard/base-types/standard-numeric-format-strings.md#GFormatString) now correctly distinguishes modern floating-point defaults from .NET Framework's `G7`/`G15` defaults. However, the [maintainer's final scope](https://github.com/dotnet/docs/issues/23596#issuecomment-848150766) also requires an article-wide check, migration from the old snippet system, and output recapture. The article still contains legacy sample references, including the general-format example. Fixing the table alone doesn't fulfill that follow-up.
+
+**Why the solution is defined:** The maintainer specifies the work, the article identifies each format and sample, and the [floating-point compatibility note](../includes/core-changes/corefx/3.0/floating-point-changes.md) establishes why runtime-version distinctions matter.
+
+**Proposed assignment scope:**
+
+- Inventory and migrate the C# and Visual Basic samples referenced by `docs/standard/base-types/standard-numeric-format-strings.md` to article-relative projects, following the repository's snippet workflow. Preserve shared legacy regions still used by other articles.
+- Run each published region with the latest stable SDK. Set or record the culture used for every culture-dependent example, then recapture and compare the actual output with the article's claims.
+- Correct discrepancies and explicitly label runtime-dependent behavior. Retain justified .NET Framework distinctions instead of replacing all historical results with modern output.
+- Include the reported `99.199999999999989d` case to demonstrate the difference between default general formatting and explicit `G15`. Don't revert the already-correct default-precision table.
+- Keep the work to this article and the snippets it consumes, not a rewrite of every numeric-format guide.
+
+**Acceptance criteria:** Every included region resolves, both language projects run, and the implementation PR records the SDK, cultures, commands, and observed outputs for all examples. Resolve or explicitly document discrepancies rather than claim success after compilation alone. Obtain runtime-owner review of changes to floating-point precision and version-specific claims.
+
+### dotnet/docs#23616: Recommend XML documentation in library guidance
+
+**Issue:** [dotnet/docs#23616](https://github.com/dotnet/docs/issues/23616). **Opened:** April 4, 2021. **Size:** Small. **GHCP suitability:** Strong; connect existing SDK guidance to the library-author workflow.
+
+**Why it still applies:** Neither the [library getting-started page](../docs/standard/library-guidance/get-started.md) nor the [NuGet guidance](../docs/standard/library-guidance/nuget.md) explains how to generate and distribute XML API comments for consumers' IntelliSense. The SDK already documents [GenerateDocumentationFile](../docs/core/project-sdk/msbuild-props.md#generatedocumentationfile), so the gap is a recommendation and discoverability, not a missing compiler feature.
+
+**Proposed assignment scope:** Add a short XML-documentation recommendation to `docs/standard/library-guidance/nuget.md` and mention that coverage in its existing getting-started signpost. Show `GenerateDocumentationFile=true`, explain the matching assembly/XML names, and link to the SDK property and existing language-specific XML-comment guides. Distinguish an IntelliSense XML file from a separately published API website. Don't create a duplicate XML-comment tutorial or recommend blanket suppression of missing-documentation warnings.
+
+**Acceptance criteria:** Build and pack minimal C# and Visual Basic libraries with documented public members. Inspect the generated XML and `.nupkg` to confirm that the matching XML file accompanies each assembly under the appropriate target-framework folder. Record the commands and actual package contents; don't infer package inclusion solely from a successful build or confuse `dotnet publish` with `dotnet pack`.
+
+### dotnet/docs#24018: Explain brace formatting for property patterns
+
+**Issue:** [dotnet/docs#24018](https://github.com/dotnet/docs/issues/24018). **Opened:** May 3, 2021. **Size:** Small. **GHCP suitability:** Strong; the merged formatter change and tests establish the intended behavior.
+
+**Why it still applies:** The [brace-option table](../docs/fundamentals/code-analysis/style-rules/csharp-formatting-options.md#csharp_new_line_before_open_brace) lists `object_collection_array_initializers` but doesn't explain that it also controls property-pattern braces. The issue's final request corrects its original proposal for a separate option.
+
+**Why the solution is defined:** Merged [dotnet/roslyn#53110](https://github.com/dotnet/roslyn/pull/53110) applies the existing initializer option to `PropertyPatternClause` and tests enabled, disabled, and single-line cases. [dotnet/docs#24021](https://github.com/dotnet/docs/pull/24021), which proposed `property_pattern_clauses`, closed without merge.
+
+**Proposed assignment scope:** Explain the expanded meaning of `object_collection_array_initializers` and add a focused multiline property-pattern example under `csharp_new_line_before_open_brace`. Show the option present and absent from the selected element list. Keep the existing option name and other supported values; don't add `property_pattern_clauses` or change the formatter's behavior.
+
+**Acceptance criteria:** Run the formatter against both configurations and record the actual brace placement. Account for single-line preservation rather than promise that every compact pattern expands. Keep the change limited to this option and follow the repository's C# snippet rules for any extracted example.
+
+### dotnet/docs#24065: State Windows container size trade-offs
+
+**Issue:** [dotnet/docs#24065](https://github.com/dotnet/docs/issues/24065). **Opened:** May 6, 2021. **Size:** Small. **GHCP suitability:** Strong for a prose-only qualification of the existing recommendation.
+
+**Why it still applies:** [When to choose .NET Framework for Docker containers](../docs/architecture/microservices/net-core-net-framework-containers/net-framework-container-scenarios.md) recommends direct containerization for existing applications but doesn't discuss the image-size cost raised by the report. The [adjacent modern .NET chapter](../docs/architecture/microservices/net-core-net-framework-containers/net-core-container-scenarios.md) already distinguishes Windows Server Core images from smaller Nano Server or Linux images; the recommendation page needs that context.
+
+**Proposed assignment scope:** Add a concise trade-off paragraph to the direct-migration section and link to the adjacent comparison. Explain that .NET Framework's Windows Server Core dependency can increase image download, storage, and deployment costs. Distinguish image size from per-container writable storage and memory, and account for shared base layers. Preserve the option to leave an application on its current deployment when migration costs outweigh the benefit.
+
+**Acceptance criteria:** The recommendation acknowledges the cost without claiming that every application requires a separate complete copy of the base image. Don't repeat the issue's `20 apps = 320 GB` estimate, prescribe unsupported .NET Core versions, or turn the clarification into a new proxy/migration tutorial.
+
+### dotnet/docs#24137: Connect integration events, event sourcing, and the outbox
+
+**Issue:** [dotnet/docs#24137](https://github.com/dotnet/docs/issues/24137). **Opened:** May 12, 2021. **Size:** Small. **GHCP suitability:** Strong for a focused conceptual clarification and cross-links.
+
+**Why it still applies:** The [integration-events introduction](../docs/architecture/microservices/multi-container-microservice-net-applications/integration-event-based-microservice-communications.md#integration-events) defines cross-service messages without relating them to persisted event-sourcing records. The [atomicity discussion](../docs/architecture/microservices/multi-container-microservice-net-applications/subscribe-events.md#designing-atomicity-and-resiliency-when-publishing-to-the-event-bus) lists the Outbox pattern but also calls its integration-event table a simplified event-sourcing system, which leaves the reported distinction unclear.
+
+**Why the solution is defined:** The issue identifies the two local sections and the [Azure Event Sourcing pattern](https://learn.microsoft.com/azure/architecture/patterns/event-sourcing) to connect. Their different purposes supply the explanation: cross-service contracts, state reconstruction from event history, and reliable publication of committed changes aren't interchangeable concepts.
+
+**Proposed assignment scope:** Add a short comparison and links in the integration-events section. Clarify the existing outbox discussion so that durable outgoing messages don't imply a complete event-sourced domain model. Explain that an application can map internal events to separate integration contracts; don't prescribe a universal one-event-to-one-message mapping, database layout, or mandatory event-sourcing architecture.
+
+**Acceptance criteria:** Readers can follow links among all three requested discussions, and the text distinguishes full event sourcing from an outbox without changing the existing transactional example. Use prose and cross-links only; no new event bus or persistence implementation is needed.
+
+### dotnet/docs#24238: Show configuration access in an ordinary class
+
+**Issue:** [dotnet/docs#24238](https://github.com/dotnet/docs/issues/24238). **Opened:** May 14, 2021. **Size:** Small. **GHCP suitability:** Strong; demonstrate the constructor-injection mechanism already described in the chapter.
+
+**Why it still applies:** The [configuration chapter](../docs/architecture/blazor-for-web-forms-developers/config.md#read-configuration-in-the-app) says that any ASP.NET Core-managed class can request `IConfiguration`, but only demonstrates Razor's `@inject`. The options section likewise mentions class parameters without showing a normal class constructor. That omission is the reader's specific question.
+
+**Proposed assignment scope:** Add a minimal service class that accepts `IConfiguration` through its constructor and reads an existing sample key. Show the registration and DI resolution needed for the example to work, and link to [the dependency-injection overview](../docs/core/extensions/dependency-injection/overview.md). State that the container supplies constructor arguments only when it creates the class. Follow the repository's C# and Visual Basic sample requirements; don't introduce a global configuration object, service locator, or second configuration root.
+
+**Acceptance criteria:** Resolve the service through DI and demonstrate the expected value from the chapter's configuration structure. Record the actual result for both language examples. Keep the Razor and strongly typed options guidance intact and distinguish constructor injection from manually calling a parameterless constructor.
+
+### dotnet/docs#24435: Clarify CA1806, IDE0058, and deliberate result discards
+
+**Issue:** [dotnet/docs#24435](https://github.com/dotnet/docs/issues/24435). **Opened:** May 28, 2021. **Size:** Small to medium. **GHCP suitability:** Suitable for a bounded documentation correction, with analyzer-owner review.
+
+**Why it still applies:** [CA1806](../docs/fundamentals/code-analysis/quality-rules/ca1806.md) still claims that LINQ methods have no side effects, omits the related IDE0058 rule, and doesn't explain intentional C# discards. [IDE0058](../docs/fundamentals/code-analysis/style-rules/ide0058.md) already distinguishes side-effect-free expressions from useful side effects and documents discard/local-variable alternatives.
+
+**Proposed assignment scope:**
+
+- Cross-link the two rules and explain CA1806's targeted correctness checks versus IDE0058's broader unused-expression style preference.
+- Replace the universal LINQ side-effect claim with accurate guidance about unused results and deferred execution. Don't imply that discarding a deferred query causes enumeration or that arbitrary providers and callbacks are side-effect-free.
+- Explain deliberate C# discards where the operation itself is intended and its result is genuinely unnecessary. Preserve the warning about ignored error codes and valuable query results; don't recommend a discard as a universal way to fix CA1806.
+- Verify the report's `StringBuilder.Append` example against current analyzers before including it. Don't claim that default CA1806 flags every fluent API, and distinguish configurable additional methods from the default rule.
+- Keep the work to these rule pages and any required verification snippets. The discussion's suggestion to merge the analyzers is a separate product decision, not a prerequisite or part of this assignment.
+
+**Acceptance criteria:** Run targeted examples with CA1806 and IDE0058 explicitly enabled and record their analyzer versions, configuration, diagnostics, and before/after behavior. Include an intentionally ignored result and a deferred query, with Visual Basic's unused-local alternative where applicable. Obtain analyzer-owner review; don't infer semantic correctness merely because an explicit discard silences a diagnostic.
+
+### dotnet/docs#24529: Load application configuration in the integration-test example
+
+**Issue:** [dotnet/docs#24529](https://github.com/dotnet/docs/issues/24529). **Opened:** June 6, 2021. **Size:** Small to medium. **GHCP suitability:** Strong; replace a bare test host with the established application-test factory pattern.
+
+**Why it still applies:** The [service-testing chapter](../docs/architecture/microservices/multi-container-microservice-net-applications/test-aspnet-core-services-web-apps.md#implementing-integration-and-functional-tests-for-each-microservice) still constructs `TestServer(new WebHostBuilder().UseStartup<Startup>())`. That bare builder doesn't establish the application's usual JSON configuration sources. The example verifies only a constant response, so it doesn't demonstrate the configuration behavior the issue asks about.
+
+**Why the solution is defined:** The reporter identifies `WebApplicationFactory` as the working replacement. The linked [ASP.NET Core integration-testing guide](https://learn.microsoft.com/aspnet/core/test/integration-tests) documents that pattern, the application entry point, content root, and environment customization.
+
+**Proposed assignment scope:** Replace the bare-host example with a minimal `WebApplicationFactory`-based test for an application with normal default configuration. Document the required `Microsoft.AspNetCore.Mvc.Testing` reference and match the actual app entry-point type rather than assume `Startup` is always the generic argument. Show environment selection for an environment-specific JSON file and explain content-root/file availability. Dispose the factory and client appropriately and preserve the chapter's existing distinction between unit and integration tests.
+
+**Acceptance criteria:** Run tests that read a known value from `appsettings.json` and a different value from the selected environment's file. Confirm that the documented setup finds both files from the test runner's working directory. Follow the repository's language and snippet rules, record actual test results, and avoid a wider rewrite of the archived reference application or its Docker topology.
+
 ## Defined fixes already in progress
 
-These issues still need their existing PRs to land. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
+These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
 
 ### dotnet/docs#22074: Document the none API-surface value
 
@@ -239,10 +339,18 @@ These issues still need their existing PRs to land. They aren't closure-without-
 
 **Maintainer next action:** Review the existing one-line correction and confirm that the obsolete feed doesn't remain in sample/configuration files before closure. Don't open another PR or close the issue while the correction is still unmerged.
 
+### dotnet/docs#24007: Correct the unhandled-exception method reference
+
+**Issue:** [dotnet/docs#24007](https://github.com/dotnet/docs/issues/24007). **Opened:** May 1, 2021. **Status:** Open, non-draft [dotnet/docs#56491](https://github.com/dotnet/docs/pull/56491) attempts the fix but needs correction.
+
+**Why the solution is defined:** The current [method page](../docs/core/unmanaged-api/debugging/icordebug/icordebugthread4-hadunhandledexception-method.md) contains the copied `GetBlockingObjects` signature and parameter. The runtime's [CorDebug IDL](https://github.com/dotnet/runtime/blob/main/src/coreclr/inc/cordebug.idl) declares `HRESULT HasUnhandledException();` with no parameters. The existing PR removes the copied parameter but substitutes `HadUnhandledException()`, retaining the documentation's incorrect method name.
+
+**Maintainer next action:** Correct the existing PR rather than assign a duplicate. Align the syntax, title, API metadata, and interface links with `HasUnhandledException`, and verify the HRESULT descriptions against the same authoritative declaration. Preserve the old URL or add an appropriate redirect if the file moves. Don't merge the current patch as a complete fix or close the issue merely because it has an `in-pr` label.
+
 ## Assignment order
 
 For the quickest independent changes, start with the table escaping, the paired COM wording corrections, or the existing prose-only signposts. Coordinate the instrumentation link with its current owner. Treat the two COM issues as one assignment, and use the existing hosted-service issue rather than duplicate work for dotnet/docs#23440.
 
-The coding-components overview needs new-page review. Source Link, plugin publication, and the trimming limitation need focused execution evidence. The linker correction requires the .NET Framework toolchain, and the PEVerify clarification needs compiler-owner review.
+The coding-components overview needs new-page review. Source Link, plugin publication, the trimming limitation, XML package documentation, constructor injection, and integration-test configuration need focused execution evidence. Verify formatter output for the property-pattern explanation and obtain analyzer-owner review of the CA1806 corrections. The numeric-format article is a larger sample-verification task, not a one-line table fix. The linker correction requires the .NET Framework toolchain, and the PEVerify clarification needs compiler-owner review.
 
-Review the two existing implementation PRs separately from new assignments. Issues that don't fit either candidate category are omitted for a future task.
+Review the three existing implementation PRs separately from new assignments; correct the unhandled-exception method name before merge. Issues that don't fit either candidate category are omitted for a future task.

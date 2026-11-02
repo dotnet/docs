@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 250 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#29717](https://github.com/dotnet/docs/issues/29717), opened June 3, 2022.
-- **Results:** 43 closure candidates and 94 [clearly defined fixes](issues-with-defined-fixes.md) (84 assignment candidates and 10 fixes with open implementation PRs).
-- **Latest batch:** Issues 226-250, from [dotnet/docs#28635](https://github.com/dotnet/docs/issues/28635) through dotnet/docs#29717: 3 closure candidates, 8 new assignment candidates, and 1 fix with an open implementation PR.
-- **Remaining:** 598 issues from this snapshot are unreviewed. Resume with [dotnet/docs#29741](https://github.com/dotnet/docs/issues/29741), opened June 6, 2022. Refresh issue states before the next batch; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 275 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#30506](https://github.com/dotnet/docs/issues/30506), opened August 5, 2022.
+- **Results:** 50 closure candidates and 105 [clearly defined fixes](issues-with-defined-fixes.md) (93 assignment candidates and 12 fixes with open implementation PRs).
+- **Latest batch:** Issues 251-275, from [dotnet/docs#29741](https://github.com/dotnet/docs/issues/29741) through dotnet/docs#30506: 7 closure candidates, 9 new assignment candidates, and 2 fixes with open implementation PRs.
+- **Remaining:** 573 issues from this snapshot are unreviewed. Resume with [dotnet/docs#30639](https://github.com/dotnet/docs/issues/30639), opened August 12, 2022. Refresh issue states before the next batch; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -430,3 +430,61 @@ The report's own results show `DnsSafeHost` in Punycode under `All` and unchange
 The [Uri property documentation](https://github.com/dotnet/dotnet-api-docs/blob/main/xml/System/Uri.xml) distinguishes configuration-dependent `DnsSafeHost` from configuration-independent `IdnHost`. A Unicode value from `Host`, or a Punycode value from `IdnHost`, doesn't establish that the [Framework configuration table](../docs/framework/configure-apps/file-schema/network/idn-element-uri-settings.md) has its `All` and `None` rows reversed.
 
 **Suggested closure explanation:** Explain which property the setting affects and link to the property contracts. Don't invert the configuration values, infer modern .NET behavior from Framework configuration, or claim that this reproduction verifies every historical default described on the page.
+
+### dotnet/docs#29741: Separate modern reflection guidance from Framework-only material
+
+**Opened:** June 6, 2022. **Confidence:** High. **Reason:** The requested modern reflection section and navigation now exist.
+
+The [reflection overview](../docs/fundamentals/reflection/overview.md) and its fundamentals TOC now provide a dedicated modern .NET section with type inspection, generic types, attributes, how-to guides, and Reflection.Emit. CodeDOM isn't presented as part of that modern overview. The old Framework reflection landing page redirects through the former fundamentals path to the current overview.
+
+**Suggested closure explanation:** Link to the modern reflection section and its navigation. The requested separation no longer needs a new article or TOC move. Don't claim that every ancillary legacy reference throughout the reflection documentation has been removed.
+
+### dotnet/docs#29762: Make library-targeting guidance conditional on consumer needs
+
+**Opened:** June 8, 2022. **Confidence:** High for the original targeting recommendation. **Reason:** The guide now distinguishes modern-only libraries from libraries that need broader reach.
+
+The [cross-platform targeting guide](../docs/standard/library-guidance/cross-platform-targeting.md) now recommends a modern .NET target for new libraries and makes `netstandard2.0` conditional on broader consumer or .NET Framework requirements. It explains the trade-off between modern APIs and platform reach and links to the .NET/.NET Standard comparison. The issue's blanket recommendation to use .NET Standard rather than a modern target no longer appears as the new-library decision.
+
+**Suggested closure explanation:** The current decision guidance addresses the reported confusion; link to it and coordinate closure with assignee `gewarren`. Don't describe every historical multitargeting paragraph as rewritten or imply that .NET Standard is obsolete for all consumers.
+
+### dotnet/docs#29829: Replace the AssemblyLoadContext article's Understanding title
+
+**Opened:** June 14, 2022. **Confidence:** High. **Reason:** The specific title has already changed.
+
+The [AssemblyLoadContext article](../docs/core/dependency-loading/understanding-assemblyloadcontext.md) now has the title **About AssemblyLoadContext - .NET** and the heading **About System.Runtime.Loader.AssemblyLoadContext**. The requested removal of **Understanding** from that title doesn't require a filename change.
+
+**Suggested closure explanation:** Close as addressed by the current title. Preserve the stable URL; don't expand the issue into a site-wide title rewrite.
+
+### dotnet/docs#30043: Add forecasting to the ML.NET algorithm guide
+
+**Opened:** June 29, 2022. **Confidence:** High as a duplicate, not as completed documentation. **Reason:** The retained algorithm-coverage issue can cover the same missing material.
+
+The [algorithm guide](../docs/machine-learning/how-to-choose-an-ml-net-algorithm.md) still lacks the requested forecasting coverage. However, the existing [dotnet/docs#24832 assignment brief](issues-with-defined-fixes.md#dotnetdocs24832-complete-the-mlnet-algorithm-guides-coverage) already requires a comparison against stable trainer and time-series catalogs. That brief now explicitly preserves SSA forecasting and relevant time-series anomaly algorithms, with the existing [forecasting tutorial](../docs/machine-learning/tutorials/time-series-demand-forecasting.md) as a source.
+
+**Suggested closure explanation:** Close as a duplicate of [dotnet/docs#24832](https://github.com/dotnet/docs/issues/24832), not as fixed. Coordinate with `luisquintanilla` on this issue and `jwood803` on the retained issue so the forecasting requirement isn't lost or assigned twice.
+
+### dotnet/docs#30127: Explain HttpClient reuse with per-request state
+
+**Opened:** July 7, 2022. **Confidence:** High for the documentation question. **Reason:** The owner answer and current lifetime guidance cover the requested distinctions.
+
+The [runtime-owner reply](https://github.com/dotnet/docs/issues/30127#issuecomment-1201297314) distinguishes concurrent requests from mutation of shared defaults and directs request-specific headers to each request. The current [HttpClient guidelines](../docs/fundamentals/networking/http/httpclient-guidelines.md) explain handler-owned connection pools, lifetime and ownership, and multiple long-lived clients when separate proxies or cookie containers are necessary.
+
+The guide also warns that factory handler pooling can share cookie containers and discard cookies when handlers expire. That warning matters for the issue's multi-tenant scenarios: a blanket recommendation to share cookies or use a factory wouldn't answer the question safely.
+
+**Suggested closure explanation:** Link to the owner answer and current lifetime/cookie-isolation guidance. Close the general documentation question as answered; don't promise thread safety for concurrent mutation of client defaults or isolation from a shared cookie container.
+
+### dotnet/docs#30255: Missing histogram values in dotnet-counters
+
+**Opened:** July 18, 2022. **Confidence:** Medium. **Reason:** The directly linked tool investigation found and fixed a parsing bug rather than a missing tutorial step.
+
+The discussion in [dotnet/diagnostics#3542](https://github.com/dotnet/diagnostics/issues/3542) explicitly connects the histogram problem to this report and identifies culture-dependent numeric parsing. The actual patch in [dotnet/diagnostics#3558](https://github.com/dotnet/diagnostics/pull/3558), merged December 16, 2022, uses invariant culture for counter, gauge, and histogram-quantile parsing. The current [metrics tutorial](../docs/core/diagnostics/metrics-instrumentation.md) includes histogram recordings, quantile output, and an explanation that observed values vary.
+
+**Suggested closure explanation:** Close as an upstream tool defect with a merged fix, and link to the diagnosis and patch. The evidence doesn't establish the original reporter's exact locale, and this review didn't rerun their environment. If the symptom persists with a current tool, request a versioned reproduction for the diagnostics repository rather than invent a missing histogram command.
+
+### dotnet/docs#30301: Repeat of the AssemblyLoadContext title request
+
+**Opened:** July 21, 2022. **Confidence:** High. **Reason:** The same author's earlier issue tracks the same article and title, which has already changed.
+
+This report repeats [dotnet/docs#29829](https://github.com/dotnet/docs/issues/29829), including the same source article and document identifiers. The [current article](../docs/core/dependency-loading/understanding-assemblyloadcontext.md) uses **About**, not **Understanding**, in its title and heading.
+
+**Suggested closure explanation:** Close as a duplicate of dotnet/docs#29829 and point to the current title. Neither report requires a URL rename or a broader documentation-title policy change.

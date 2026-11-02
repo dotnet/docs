@@ -5,16 +5,16 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 84 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track ten additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 93 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track twelve additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 250 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#29717](https://github.com/dotnet/docs/issues/29717), opened June 3, 2022.
-- **Results:** 94 defined fixes (84 assignment candidates and 10 with open implementation PRs) and 43 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 226-250 add 8 new assignment candidates and 1 fix with an open implementation PR, alongside 3 closure candidates.
-- **Remaining:** 598 issues from this snapshot are unreviewed. Resume with [dotnet/docs#29741](https://github.com/dotnet/docs/issues/29741), opened June 6, 2022.
-- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the ten active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
+- **Completed batches:** The 275 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#30506](https://github.com/dotnet/docs/issues/30506), opened August 5, 2022.
+- **Results:** 105 defined fixes (93 assignment candidates and 12 with open implementation PRs) and 50 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 251-275 add 9 new assignment candidates and 2 fixes with open implementation PRs, alongside 7 closure candidates.
+- **Remaining:** 573 issues from this snapshot are unreviewed. Resume with [dotnet/docs#30639](https://github.com/dotnet/docs/issues/30639), opened August 12, 2022.
+- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the twelve active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
 
@@ -337,9 +337,9 @@ These are proposed assignment briefs, not claims that fixes have been implemente
 
 **Why the solution is defined:** The maintainer supplies a specific missing algorithm and an existing example. Published stable ML.NET API catalogs provide the source for the issue's broader request to check algorithm coverage; no new model implementation or invented performance comparison is necessary.
 
-**Proposed assignment scope:** Compare the guide's algorithm families with the current stable trainer and time-series catalogs, record omissions, and add missing family descriptions with verified API/tutorial links. Explicitly cover SR-CNN and distinguish its batch time-series detection API from ordinary trainer selection. Reuse existing descriptions and tutorials rather than duplicate API reference material. Don't guess ONNX export support or conflate preprocessing transforms with training algorithms.
+**Proposed assignment scope:** Compare the guide's algorithm families with the current stable trainer and time-series catalogs, record omissions, and add missing family descriptions with verified API/tutorial links. Explicitly cover SSA forecasting, relevant time-series anomaly algorithms, and SR-CNN; distinguish time-series estimator APIs from ordinary trainer selection. Reuse the existing [forecasting tutorial](../docs/machine-learning/tutorials/time-series-demand-forecasting.md) and anomaly tutorials rather than duplicate API reference material. Preserve the forecasting requirement from overlapping dotnet/docs#30043 and coordinate with its assignee `luisquintanilla` as well as `jwood803`. Don't guess ONNX export support or conflate preprocessing transforms with training algorithms.
 
-**Acceptance criteria:** Include a source-backed coverage checklist in the implementation PR and resolve each identified omission. The guide links to the SR-CNN API and tutorial and explains its time-series purpose. Don't claim that one SR-CNN entry alone completes the original all-algorithms review; obtain the existing owner's review of the coverage.
+**Acceptance criteria:** Include a source-backed coverage checklist in the implementation PR and resolve each identified omission, including forecasting. The guide links to the verified forecasting and anomaly APIs/tutorials and explains their time-series purpose. Don't claim that one SR-CNN entry alone completes the original all-algorithms review; obtain the existing owners' review of the coverage.
 
 ### dotnet/docs#24834: Finish the model-improvement navigation update
 
@@ -969,6 +969,96 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Acceptance criteria:** Run both language samples on stable .NET, record the exact match/capture output, and verify that the published snippets select the executed code. Don't introduce a timing threshold, claim every expression supports this option, or imply that it makes an untrusted pattern safe.
 
+### dotnet/docs#29916: Surface supported analyzer options in each rule's summary
+
+**Issue:** [dotnet/docs#29916](https://github.com/dotnet/docs/issues/29916). **Opened:** June 17, 2022. **Size:** Medium. **GHCP suitability:** Suitable for a source-backed rule-table pass with assignee `gewarren`.
+
+**Why it still applies:** The [CA1000 page](../docs/fundamentals/code-analysis/quality-rules/ca1000.md) documents `api_surface` below its summary table, but the table doesn't identify supported options. The earlier options work explicitly left this rule-table follow-up open. Existing lower-page configuration sections don't satisfy the requested discoverability change.
+
+**Proposed assignment scope:** Add supported option names and links to the top tables of applicable CA rule pages, using each page's existing configuration sections and the [shared options reference](../docs/fundamentals/code-analysis/code-quality-rule-options.md). Don't invent an option for a rule without one or redo the separate IDE-rule work. Distinguish severity configuration from rule options: the issue's screenshot uses an invalid severity prefix; the correct form is `dotnet_diagnostic.CA1000.severity`, not `dotnet_code_quality.CA1000.severity`.
+
+**Acceptance criteria:** Supply a rule-to-option inventory from current sources and check every changed table against it. Option links resolve to the right scope and accepted values. CA1000 exposes its actual `api_surface` option, and no copied mock-up introduces unsupported configuration keys.
+
+### dotnet/docs#29941: Add a focused Process lifecycle how-to
+
+**Issue:** [dotnet/docs#29941](https://github.com/dotnet/docs/issues/29941). **Opened:** June 20, 2022. **Size:** Medium. **GHCP suitability:** Suitable for a bounded tutorial with cross-platform execution, not a survey of test frameworks.
+
+**Why it still applies:** The API member documentation explains individual operations, but the current runtime-library supplements don't provide the requested start/wait/timeout/output lifecycle walkthrough. The `Process` and `ProcessStartInfo` API contracts already define the behavior needed for a concrete example.
+
+**Proposed assignment scope:** Add `docs/fundamentals/runtime-libraries/system-diagnostics-process.md` with a small owned child-process fixture. Use `ArgumentList`, `UseShellExecute=false`, concurrent consumption of redirected standard output and error, an awaited exit path, and explicit timeout cleanup. Explain that timeout or cancellation of a wait doesn't terminate the process, and that disposal releases resources rather than automatically kills it. Add fundamentals TOC and runtime-library overview links; coordinate API-reference backlinks if needed.
+
+**Acceptance criteria:** Run C# and VB examples on Windows and Linux with normal exit, nonzero exit, enough output on both streams to expose blocked pipes, and timeout. Record output, exit handling, and cleanup of the owned child. Don't kill arbitrary processes or claim that `WaitForExit` proves every descendant has exited after a tree-termination request.
+
+### dotnet/docs#30227: Remove the unused model-output path from the price tutorial
+
+**Issue:** [dotnet/docs#30227](https://github.com/dotnet/docs/issues/30227). **Opened:** July 14, 2022. **Size:** Small. **GHCP suitability:** Strong; the unused declaration and misleading explanation are localized.
+
+**Why it still applies:** The [price-prediction tutorial](../docs/machine-learning/tutorials/predict-prices.md) still introduces `_modelPath` as the trained model's output location. Its maintained `snippets/predict-prices/csharp/Program.cs` declares that value but only trains and consumes an in-memory model; it never saves the model.
+
+**Proposed assignment scope:** Remove the unused path and its promise of a model file, explain the in-memory workflow, and link to the existing model save/load guidance for persistence. Align the completed-sample link with the maintained project. Don't add an unrequested save step or claim an external sample changed without verifying it.
+
+**Acceptance criteria:** Run the maintained tutorial project through training and prediction. Its declarations, explanation, and completed-sample destination agree, and no step promises a file that the sample doesn't create.
+
+### dotnet/docs#30253: Show the native IDL contract for the COM-hosting example
+
+**Issue:** [dotnet/docs#30253](https://github.com/dotnet/docs/issues/30253). **Opened:** July 17, 2022. **Size:** Medium. **GHCP suitability:** Suitable with Windows MIDL execution and ABI review.
+
+**Why it still applies:** The [COM-hosting article](../docs/core/native-interop/expose-components-to-com.md) says to provide IDL or a native header but doesn't walk through the native contract corresponding to its managed `IServer` interface. Links to general COM material don't supply that missing step.
+
+**Proposed assignment scope:** Add the matching IDL and MIDL workflow, with consistent interface/class GUIDs, `HRESULT` and `[out, retval]` marshaling, generated outputs, and a native-consumer check. Reuse relevant build and type-library patterns from the [OutOfProcCOM sample](https://github.com/dotnet/samples/tree/main/core/extensions/OutOfProcCOM), but adapt the interface: that sample's dual `IDispatch` contract isn't interchangeable with this article's `InterfaceIsIUnknown` contract. Explain how the outputs fit the article's existing hosting/type-library steps. Coordinate the earlier paired wording issues in the same article.
+
+**Acceptance criteria:** Build the managed example, run Windows MIDL, and compile/run a native client against the matching contract. Record the toolchain, generated files, GUID agreement, and `ComputePi` result. Use an owned test environment for any registration; don't change the user's global COM configuration or present an unmodified `IDispatch` sample as an `IUnknown` solution.
+
+### dotnet/docs#30257: Supply the live LLDB setup before unloadability diagnostics
+
+**Issue:** [dotnet/docs#30257](https://github.com/dotnet/docs/issues/30257). **Opened:** July 18, 2022. **Size:** Medium. **GHCP suitability:** Suitable for an article-specific Linux walkthrough with execution evidence.
+
+**Why it still applies:** The [unloadability guide](../docs/standard/assembly/unloadability.md) starts the LLDB instructions at `plugin load` without showing how to launch or attach to the managed process first. The [dotnet-sos installation page](../docs/core/diagnostics/dotnet-sos.md) explains installation and initialization, not the missing live-session sequence.
+
+**Proposed assignment scope:** Add or link the minimal LLDB prerequisites, launch/attach steps, runtime/SOS readiness checks, and command-prefix differences needed for this guide's sample. Keep live-process setup distinct from dump analysis. Diagnose the reported runtime-library loading error against a matching runtime, architecture, process state, and tool version; don't prescribe a universal PATH or `libcoreclr.so` workaround.
+
+**Acceptance criteria:** From a fresh supported Linux environment, follow only the documented prerequisites and reproduce the guide's managed inspection on an owned sample. Record OS, runtime, LLDB/SOS versions, commands, and meaningful output. Current source inspection establishes the missing setup, not a completed Linux reproduction.
+
+### dotnet/docs#30320: Lead the class-library overview with modern library development
+
+**Issue:** [dotnet/docs#30320](https://github.com/dotnet/docs/issues/30320). **Opened:** July 22, 2022. **Size:** Medium. **GHCP suitability:** Suitable for the maintainer's bounded overview rewrite.
+
+**Why it still applies:** The [class-library article](../docs/standard/class-libraries.md) still leads with PE-format details and a platform-specific/PCL/.NET Standard taxonomy rather than explain an ordinary modern .NET library. The discussion supplies a concrete outline for the missing purpose, creation, and organization guidance.
+
+**Proposed assignment scope:** Explain reusable library projects and normal SDK-style development first. Link to the [current creation tutorial](../docs/core/tutorials/create-class-library.md), targeting guidance, and library-design guidance rather than duplicate their walkthroughs. Retain legacy library models as qualified context, not the only choices. Clarify project/assembly boundaries; partial types combine within one compilation and aren't a mechanism to compose a type across DLLs.
+
+**Acceptance criteria:** The overview gives a newcomer a clear purpose, a current creation path, and the relevant design/targeting decisions. Verify linked projects and terminology, and obtain owner review of the new structure. Don't turn the change into a new class-library taxonomy or a broad assembly-format tutorial.
+
+### dotnet/docs#30432: Preserve the remaining overloaded SDK and CLI terminology
+
+**Issue:** [dotnet/docs#30432](https://github.com/dotnet/docs/issues/30432). **Opened:** July 30, 2022. **Size:** Small. **GHCP suitability:** Suitable for a glossary clarification with assignee `tdykstra`.
+
+**Why it still applies:** Much of the deleted introduction's terminology now appears in the [glossary](../docs/standard/glossary.md), but its SDK entry doesn't distinguish the installed development toolchain from an MSBuild project SDK. Its .NET CLI entry also doesn't explain the separate expansion **Common Language Infrastructure**.
+
+**Proposed assignment scope:** Add those short distinctions and cross-links, including the [.NET project SDK overview](../docs/core/project-sdk/overview.md). Preserve the distinction between the .NET command-line tools and the standardized language/runtime infrastructure. Don't copy the obsolete introduction wholesale or restore its historical version recommendations.
+
+**Acceptance criteria:** A reader can distinguish the SDK download from `Sdk="Microsoft.NET.Sdk"` and the two CLI meanings. Check the added definitions and links against current SDK/runtime sources; coordinate with the existing assignee.
+
+### dotnet/docs#30471: Explain why structured log placeholders need meaningful names
+
+**Issue:** [dotnet/docs#30471](https://github.com/dotnet/docs/issues/30471). **Opened:** August 3, 2022. **Size:** Small. **GHCP suitability:** Strong; the missing rule rationale has an established structured-logging explanation.
+
+**Why it still applies:** [CA2253](../docs/fundamentals/code-analysis/quality-rules/ca2253.md) prohibits numeric-only placeholders without explaining why the distinction matters even for short messages. The companion [CA2254 description](../docs/fundamentals/code-analysis/quality-rules/ca2254.md) already explains structured property names and their value to consumers.
+
+**Proposed assignment scope:** Explain that meaningful placeholders identify structured fields, not just positions in a rendered message. Add a concise bad/good comparison and link to the existing message-template guidance. Preserve positional argument binding; don't suggest placeholder names change that binding or make a claim about a particular provider's storage/index behavior.
+
+**Acceptance criteria:** Compile the example with CA2253 enabled and show its diagnostic before correction and absence afterward. Capture structured logging state to verify meaningful keys and corresponding values, including a short message. Don't substitute a performance argument or a minimum-placeholder-count rule.
+
+### dotnet/docs#30506: Clarify JSON DOM families and node-variable names
+
+**Issue:** [dotnet/docs#30506](https://github.com/dotnet/docs/issues/30506). **Opened:** August 5, 2022. **Size:** Small. **GHCP suitability:** Suitable for a focused explanation and sample-name pass with assignee `gewarren`.
+
+**Why it still applies:** The [current DOM guide](../docs/standard/serialization/system-text-json/use-dom.md) already introduces mutable and immutable choices, but their type relationships can be clearer. Its referenced `JsonNodeAverageGradeExample.cs` still names a `JsonNode` variable `document`, which preserves the specific ambiguity reported in the issue.
+
+**Proposed assignment scope:** Make the `JsonDocument`/`JsonElement` model distinct from the `JsonNode` family (`JsonObject`, `JsonArray`, and `JsonValue`). Add a compact choice/type-role comparison and use unambiguous node names in the affected examples. Preserve the existing disposal, element-lifetime, and clone guidance. Don't describe `JsonObject` as a `JsonElement` subclass or rename unrelated examples.
+
+**Acceptance criteria:** Run the affected snippets and confirm unchanged behavior, including the grade example's `81.92` result. The prose, selected snippets, variable names, mutability, and lifetime guidance agree. Coordinate the scope with the current owner rather than redesign the entire namespace documentation.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -1055,6 +1145,22 @@ These issues still need their existing PRs to land, with corrections where noted
 
 **Maintainer next action:** Review the existing PR rather than assign a duplicate. Qualify the note so it doesn't imply every PDB has only local source paths: PDBs can already contain Source Link or embedded-source information. Distinguish PDBs in a package, `DebugType=embedded`, and embedded source. Verify a consumer-debugging scenario isolated from the producer's source with owned fixtures, and coordinate overlapping Source Link guidance with dotnet/docs#22373. Don't close before the corrected implementation merges.
 
+### dotnet/docs#29834: Correct the WCF keep-alive configuration examples
+
+**Issue:** [dotnet/docs#29834](https://github.com/dotnet/docs/issues/29834). **Opened:** June 14, 2022. **Status:** Covered by open, non-draft [dotnet/docs#56611](https://github.com/dotnet/docs/pull/56611).
+
+**Why the solution is defined:** The actual patch moves `keepAliveEnabled` from `binding` to `httpTransport` in both [load-balancing examples](../docs/framework/wcf/load-balancing.md). It doesn't complete the requested attribute documentation in the [HTTPS transport reference](../docs/framework/configure-apps/file-schema/wcf/httpstransport.md).
+
+**Maintainer next action:** Extend the existing PR rather than assign a duplicate. Cover the HTTPS inherited property and review the encoder's protocol version: a Framework 4.8 configuration probe accepted `KeepAliveEnabled=false` on both HTTP and HTTPS transports, but the PR's bare `textMessageEncoding` selects SOAP 1.2/WS-Addressing 1.0, unlike the section's BasicHttp/SOAP 1.1 context. Make that context explicit and validate an actual matching client/service exchange before merge. The probe verifies configuration properties and defaults, not a completed service interoperability test.
+
+### dotnet/docs#29993: Explain alternatives to base/derived conversion operators
+
+**Issue:** [dotnet/docs#29993](https://github.com/dotnet/docs/issues/29993). **Opened:** June 24, 2022. **Status:** Covered by open, non-draft [dotnet/docs#56683](https://github.com/dotnet/docs/pull/56683).
+
+**Why the solution is defined:** The maintainer requests a conceptual explanation with a diagnostic-page link. The existing patch instead adds placeholder constructor/factory/extension signatures to the [consolidated operator diagnostics](../docs/csharp/language-reference/compiler-messages/overloaded-operator-errors.md), without the requested explanation in the [conversion-operator article](../docs/csharp/language-reference/operators/user-defined-conversion-operators.md).
+
+**Maintainer next action:** Complete the existing implementation with executable alternatives and the conceptual/diagnostic links. Explain both directions of the base/derived restriction, including external base assemblies and generic derived types. Distinguish a valid runtime downcast from a new copy or wrapper: a constructor or factory doesn't change an existing base object's runtime type. Verify both the prohibited declarations' diagnostics and the alternatives' actual behavior before merge.
+
 ## Assignment order
 
 For the quickest independent changes, start with the table escaping, the paired COM wording corrections, or the existing prose-only signposts. Coordinate the instrumentation link with its current owner. Treat the two COM issues as one assignment, and use the existing hosted-service issue rather than duplicate work for dotnet/docs#23440.
@@ -1081,4 +1187,8 @@ The CA1507 suppression rationale and Framework proxy clarification are additiona
 
 The calibrated-retraining addition needs a real saved-model round trip and must retain preprocessing compatibility. Native string ownership needs a native fixture and allocator review, not just a managed build. The value-object hash correction needs equality-contract and edge-case checks without a no-collisions promise.
 
-Review the ten existing implementation PRs separately from new assignments. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Issues that don't fit either candidate category are omitted for a future task.
+The unused model path, remaining glossary distinctions, and CA2253 rationale are additional localized tasks. The JSON DOM change must keep type roles and sample output consistent. Coordinate the analyzer-option tables with their owner, and preserve the forecasting requirement in the existing algorithm-coverage task rather than duplicate ownership.
+
+The Process walkthrough needs owned child fixtures and cross-platform timeout/output checks. The COM contract needs Windows MIDL/native execution and coordination with the earlier wording corrections. The LLDB setup needs a fresh Linux run, and the class-library rewrite should link to the current creation tutorial rather than preserve an obsolete taxonomy.
+
+Review the twelve existing implementation PRs separately from new assignments. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Issues that don't fit either candidate category are omitted for a future task.

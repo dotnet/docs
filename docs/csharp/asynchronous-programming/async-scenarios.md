@@ -166,7 +166,8 @@ To control the maximum number of concurrent operations, choose between <xref:Sys
 - **`SemaphoreSlim` with `Task.WhenAll`**: If you need to return collected results from individual tasks or are working on earlier .NET versions, use a <xref:System.Threading.SemaphoreSlim> to throttle concurrent execution:
 
   ```csharp
-  using var semaphore = new SemaphoreSlim(10);
+  const int MaxDegreeOfParallelism = 10;
+  using var semaphore = new SemaphoreSlim(MaxDegreeOfParallelism);
   var tasks = userIds.Select(async userId =>
   {
       await semaphore.WaitAsync();

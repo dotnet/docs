@@ -5,15 +5,16 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. No assignments or other GitHub changes have been made. Entries follow issue creation time, not implementation priority.
+Recommend the following six issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track two additional defined fixes separately because implementation PRs are already open. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batch:** The 25 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#20038](https://github.com/dotnet/docs/issues/20038), opened August 13, 2020.
-- **Results:** 4 defined-fix candidates, 3 [closure candidates](issues-to-close.md#closure-candidates), and 18 [issues held for further triage](issues-to-close.md#reviewed-issues-held-for-further-triage).
-- **Remaining:** 823 issues from this snapshot are unreviewed. Resume with [dotnet/docs#20142](https://github.com/dotnet/docs/issues/20142), opened August 17, 2020.
-- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, and candidate cross-reference timelines. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Each candidate remained open and unassigned when rechecked.
+- **Completed batches:** The 50 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#22109](https://github.com/dotnet/docs/issues/22109), opened December 21, 2020.
+- **Results:** 8 defined fixes (6 assignment candidates and 2 already in open PRs) and 7 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 26-50 add 2 new assignment candidates and 2 existing implementation PRs, alongside 4 closure candidates.
+- **Remaining:** 798 issues from this snapshot are unreviewed. Resume with [dotnet/docs#22155](https://github.com/dotnet/docs/issues/22155), opened December 25, 2020.
+- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, and the patches of the two active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Each of the six new-assignment candidates remained open and unassigned when rechecked.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
 
@@ -89,8 +90,65 @@ These are proposed assignment briefs, not claims that fixes have been implemente
 
 **Acceptance criteria:** In an environment with the .NET Framework C# compiler, Visual Basic compiler, and Assembly Linker, compile the existing two module samples, produce `UtilityLib.dll`, and run both existing consumer examples. Record the exact commands and their actual output in the implementation PR. If the agent's environment lacks that toolchain, report the limitation instead of claiming the new command was verified. The published article no longer directs readers to the native linker for this managed-module step.
 
+### dotnet/docs#20945: Add a fundamental coding components overview
+
+**Issue:** [dotnet/docs#20945](https://github.com/dotnet/docs/issues/20945). **Opened:** October 6, 2020. **Size:** Small. **GHCP suitability:** Strong for a navigation overview, not a consolidation project.
+
+**Why it still applies:** The [Fundamental coding components TOC node](../docs/fundamentals/toc.yml) has child topics but no introductory page for the section itself. Existing pages such as the [common type system](../docs/standard/base-types/common-type-system.md) explain individual areas rather than provide the language-guide and shared-topic map requested in the issue.
+
+**Why the solution is defined:** The issue supplies an explicit content list and distinguishes links into language guides from links to common .NET guidance. Its reference to eventual consolidation doesn't require an agent to move or merge all that content now.
+
+**Proposed assignment scope:**
+
+- Add a concise overview article under `docs/fundamentals` and an **Overview** entry under **Fundamental coding components** in `docs/fundamentals/toc.yml`.
+- Briefly introduce namespaces, types, extension methods, classes, structs, interfaces, and enums, with links to the relevant language guides. Use existing C#, Visual Basic, and F# destinations where the concept applies; don't present C# syntax as a universal .NET language rule.
+- Link to existing shared guidance for lambdas, delegates, events, attributes, and exceptions.
+- Keep the page a conceptual orientation and navigation aid. Don't migrate language-guide content, alter its URLs, or create redundant code samples.
+- Follow the repository's new-page metadata and TOC requirements.
+
+**Acceptance criteria:** All twelve topic groups from the issue appear with an appropriate existing destination. The overview is reachable from the section's current TOC, language distinctions remain accurate, and no existing article is moved or removed. Check links and the documentation build rather than introduce new snippet projects for a prose-only overview.
+
+### dotnet/docs#22058: Add a resilience-testing signpost
+
+**Issue:** [dotnet/docs#22058](https://github.com/dotnet/docs/issues/22058). **Opened:** December 17, 2020. **Size:** Small. **GHCP suitability:** Strong for a short explanation and cross-link.
+
+**Why it still applies:** The [microservices resilience introduction](../docs/architecture/microservices/implement-resilient-applications/index.md) describes partial failures and resilience strategies but doesn't explain how to exercise those strategies through controlled failures.
+
+**Why the solution is defined:** The related cloud-native guide already contains a [resilience-testing section](../docs/architecture/cloud-native/application-resiliency-patterns.md#testing-for-resiliency) that describes end-to-end failure tests, process crashes, unavailable dependencies, and Chaos Monkey. The requested concept can be introduced and linked without selecting or implementing a new fault-injection platform.
+
+**Proposed assignment scope:**
+
+- Add a short paragraph or subsection to `docs/architecture/microservices/implement-resilient-applications/index.md` about deliberate, controlled resilience tests.
+- Explain the difference between functional tests and end-to-end behavior under dependency or process failures. Link to the existing cloud-native resilience-testing section.
+- State that tests should use a controlled environment and explicit safeguards. Don't tell readers to terminate arbitrary production processes.
+- Keep this an explanation and discovery improvement. Don't add Chaos Monkey installation instructions, production experiments, cloud resources, or an application rewrite.
+
+**Acceptance criteria:** Readers of the original section can find the existing chaos-testing guidance and understand why resilience needs failure testing. The link resolves, and the change doesn't imply the historical eShop sample already includes a fault-injection harness.
+
+## Defined fixes already in progress
+
+These issues still need their existing PRs to land. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
+
+### dotnet/docs#22074: Document the none API-surface value
+
+**Issue:** [dotnet/docs#22074](https://github.com/dotnet/docs/issues/22074). **Opened:** December 17, 2020. **Status:** Covered by open, non-draft [dotnet/docs#56622](https://github.com/dotnet/docs/pull/56622).
+
+**Why the solution is defined:** The [analyzer-owner reply](https://github.com/dotnet/docs/issues/22074#issuecomment-747846299) confirms `none` as an API-surface value. The current [options table](../docs/fundamentals/code-analysis/code-quality-rule-options.md#api_surface) omits it. The PR's actual patch adds `none` with the description that it applies to no APIs in exactly that table.
+
+**Maintainer next action:** Review the existing PR rather than assign a second implementation. Confirm the wording and configuration scope against the supported analyzer versions; don't generalize the effect beyond rules that use `api_surface`. Close through the existing PR after merge, not before.
+
+### dotnet/docs#22105: Remove the obsolete dotnet MyGet feed
+
+**Issue:** [dotnet/docs#22105](https://github.com/dotnet/docs/issues/22105). **Opened:** December 21, 2020. **Status:** Covered by open, non-draft [dotnet/docs#56623](https://github.com/dotnet/docs/pull/56623).
+
+**Why the solution is defined:** No MyGet references were found in the current sample files searched, but the [dotnet package add examples](../docs/core/tools/dotnet-package-add.md#examples) still contain `https://dotnet.myget.org/F/dotnet-core/api/v3/index.json`. The PR's actual patch replaces that obsolete .NET feed with `https://api.nuget.org/v3/index.json` in the same example.
+
+**Scope distinction:** Other library-guidance articles mention MyGet as a third-party hosting service. Those generic service references aren't equivalent to the decommissioned Microsoft feed and don't justify a blanket deletion of every occurrence of the service name.
+
+**Maintainer next action:** Review the existing one-line correction and confirm that the obsolete feed doesn't remain in sample/configuration files before closure. Don't open another PR or close the issue while the correction is still unmerged.
+
 ## Assignment order
 
-For the quickest independent changes, start with the hosted-service clarification or the Blazor cross-links. The linker correction has a concrete answer but requires the .NET Framework toolchain for execution evidence. The PEVerify clarification needs compiler-owner review and is the least mechanical of the four.
+For the quickest independent changes, start with the hosted-service clarification, the Blazor cross-links, or the resilience-testing signpost. The coding-components overview has an explicit outline but needs new-page review. The linker correction has a concrete answer but requires the .NET Framework toolchain for execution evidence. The PEVerify clarification needs compiler-owner review.
 
-Keep the 18 held issues out of an automatic assignment queue until the missing scope, behavior, or ownership information recorded in [the coverage ledger](issues-to-close.md#reviewed-issues-held-for-further-triage) is resolved.
+Review the two existing implementation PRs separately from new assignments. Issues that don't fit either candidate category are omitted for a future task.

@@ -5,15 +5,15 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 22 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track three additional defined fixes separately because implementation PRs are already open; one of those PRs needs correction before merge. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 32 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track three additional defined fixes separately because implementation PRs are already open; one of those PRs needs correction before merge. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 100 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#24691](https://github.com/dotnet/docs/issues/24691), opened June 16, 2021.
-- **Results:** 25 defined fixes (22 assignment candidates and 3 with open implementation PRs) and 19 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 76-100 add 8 new assignment candidates and 1 fix with an existing PR that needs correction, alongside 6 closure candidates.
-- **Remaining:** 748 issues from this snapshot are unreviewed. Resume with [dotnet/docs#24735](https://github.com/dotnet/docs/issues/24735), opened June 18, 2021.
+- **Completed batches:** The 125 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#25246](https://github.com/dotnet/docs/issues/25246), opened July 20, 2021.
+- **Results:** 35 defined fixes (32 assignment candidates and 3 with open implementation PRs) and 25 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 101-125 add 10 new assignment candidates, alongside 6 closure candidates. The three existing implementation PRs remain open.
+- **Remaining:** 723 issues from this snapshot are unreviewed. Resume with [dotnet/docs#25247](https://github.com/dotnet/docs/issues/25247), opened July 20, 2021.
 - **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the three active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
@@ -317,6 +317,126 @@ These are proposed assignment briefs, not claims that fixes have been implemente
 
 **Acceptance criteria:** Run tests that read a known value from `appsettings.json` and a different value from the selected environment's file. Confirm that the documented setup finds both files from the test runner's working directory. Follow the repository's language and snippet rules, record actual test results, and avoid a wider rewrite of the archived reference application or its Docker topology.
 
+### dotnet/docs#24829: Refresh the ML.NET CLI sentiment tutorial
+
+**Issue:** [dotnet/docs#24829](https://github.com/dotnet/docs/issues/24829). **Opened:** June 24, 2021. **Size:** Medium. **GHCP suitability:** Suitable for a bounded tutorial refresh, with actual CLI execution.
+
+**Why it still applies:** The [CLI sentiment tutorial](../docs/machine-learning/tutorials/sentiment-analysis-cli.md) uses `--train-time` in its main command but later refers to `--max-exploration-time`. It also promises that extra time will produce a better model and describes positive/negative output as 1/2 despite the input dataset's 0/1 labels. Those concrete inconsistencies remain within the issue's requested tutorial review.
+
+**Why the solution is defined:** The current [CLI reference](../docs/machine-learning/reference/ml-net-cli-reference.md) documents `--train-time`. The named dataset, tutorial command, and generated project provide a reproducible path to resolve the option, generated-file, and prediction-output discrepancies.
+
+**Proposed assignment scope:** Run the tutorial with the current stable CLI and the specified dataset. Reconcile all option names with that version's help and the CLI reference, then update generated filenames, types, label descriptions, and captured output to match the run. Replace the guaranteed-improvement claim with accurate search-budget wording. Don't infer label mappings from a different generated API or claim a legacy option is rejected without checking it.
+
+**Acceptance criteria:** Record the CLI/package versions, successful training and generated-project execution, and actual prediction output. All command references and label explanations agree with the verified run. Follow the repository's snippet rules for changed samples; don't fabricate deterministic scores or promise that a longer run always improves quality.
+
+### dotnet/docs#24832: Complete the ML.NET algorithm guide's coverage
+
+**Issue:** [dotnet/docs#24832](https://github.com/dotnet/docs/issues/24832). **Opened:** June 24, 2021. **Size:** Medium, bounded to the algorithm guide and its API/tutorial links. **GHCP suitability:** Suitable with an API-based coverage checklist and coordination with assignee `jwood803`.
+
+**Why it still applies:** The [algorithm guide](../docs/machine-learning/how-to-choose-an-ml-net-algorithm.md) describes PCA for anomaly detection but omits the time-series SR-CNN detector. The [maintainer's explicit follow-up](https://github.com/dotnet/docs/issues/24832#issuecomment-907166898) identifies `DetectEntireAnomalyBySrCnn` and the existing [phone-call anomaly tutorial](../docs/machine-learning/tutorials/phone-calls-anomaly-detection.md). That tutorial demonstrates the API and its prediction options.
+
+**Why the solution is defined:** The maintainer supplies a specific missing algorithm and an existing example. Published stable ML.NET API catalogs provide the source for the issue's broader request to check algorithm coverage; no new model implementation or invented performance comparison is necessary.
+
+**Proposed assignment scope:** Compare the guide's algorithm families with the current stable trainer and time-series catalogs, record omissions, and add missing family descriptions with verified API/tutorial links. Explicitly cover SR-CNN and distinguish its batch time-series detection API from ordinary trainer selection. Reuse existing descriptions and tutorials rather than duplicate API reference material. Don't guess ONNX export support or conflate preprocessing transforms with training algorithms.
+
+**Acceptance criteria:** Include a source-backed coverage checklist in the implementation PR and resolve each identified omission. The guide links to the SR-CNN API and tutorial and explains its time-series purpose. Don't claim that one SR-CNN entry alone completes the original all-algorithms review; obtain the existing owner's review of the coverage.
+
+### dotnet/docs#24834: Finish the model-improvement navigation update
+
+**Issue:** [dotnet/docs#24834](https://github.com/dotnet/docs/issues/24834). **Opened:** June 24, 2021. **Size:** Very small. **GHCP suitability:** Strong for the remaining TOC correction, with placement confirmed by assignee `jwood803`.
+
+**Why it still applies:** Merged [dotnet/docs#27348](https://github.com/dotnet/docs/pull/27348) updated the article's title and introduction, but the [ML.NET TOC](../docs/machine-learning/toc.yml) still labels it **Improve model accuracy** under the conceptual group. The [article](../docs/machine-learning/resources/improve-machine-learning-model-ml-net.md) is now titled **Improve your ML.NET model** and marked as a how-to. The issue's navigation question remains distinct from the completed title patch.
+
+**Why the solution is defined:** The existing title supplies the label, and the adjacent **How-to guides** group supplies the proposed location. No new article or URL change is required.
+
+**Proposed assignment scope:** Align the TOC label with **Improve your ML.NET model**. Confirm the issue's proposed how-to placement with the owner, then move the existing TOC entry into that group without moving the Markdown file. Keep exactly one navigation entry and preserve the article URL. Limit the task to the demonstrated navigation inconsistency, not an open-ended model-quality rewrite.
+
+**Acceptance criteria:** The TOC label matches the article, the agreed group contains the entry, and the existing relative link resolves. Don't introduce a duplicate page, redirect, or second assignment for the already-merged title change.
+
+### dotnet/docs#24842: Correct concrete ML.NET glossary definitions
+
+**Issue:** [dotnet/docs#24842](https://github.com/dotnet/docs/issues/24842). **Opened:** June 24, 2021. **Size:** Small. **GHCP suitability:** Strong for the demonstrated definition errors, with metric-owner review.
+
+**Why it still applies:** The [glossary](../docs/machine-learning/resources/glossary.md) restricts R-squared to 0-1, calls 0.5 the worst ROC AUC, and defines normalization as a universal conversion to 0-1. The [metrics guide](../docs/machine-learning/resources/metrics.md) permits negative R-squared but incorrectly limits that possibility to particular model families and describes the baseline as random guessing.
+
+**Why the solution is defined:** The [ML.NET regression evaluator](https://github.com/dotnet/machinelearning/blob/main/src/Microsoft.ML.Data/Evaluators/RegressionEvaluator.cs) calculates R-squared from prediction error relative to label variance. The [binary metrics contract](https://github.com/dotnet/machinelearning/blob/main/src/Microsoft.ML.Data/Evaluators/Metrics/BinaryClassificationMetrics.cs) documents ROC AUC's 0-1 range. Existing [normalization API links](../docs/machine-learning/resources/transforms.md#normalization-and-scaling) identify multiple methods, not one universal output range.
+
+**Proposed assignment scope:** Correct the glossary's R-squared, ROC AUC, and normalization entries. Explain that R-squared can be negative relative to the mean-label baseline, while 0.5 ROC AUC denotes chance-level ranking rather than the minimum. Describe normalization as method-dependent. Correct the directly conflicting R-squared explanation in `resources/metrics.md`; don't preserve its unsupported restriction to nonlinear or constrained models.
+
+**Acceptance criteria:** Check the wording against the metric/API contracts and demonstrate negative R-squared and ROC AUC below 0.5 with controlled inputs. Don't promise a finite R-squared for a zero-variance label dataset or import a normalization formula without verifying the selected API. Record actual results for any added examples and follow the repository's language/snippet rules.
+
+### dotnet/docs#24897: Align MSTest tutorial setup with the testing guidance
+
+**Issue:** [dotnet/docs#24897](https://github.com/dotnet/docs/issues/24897). **Opened:** June 29, 2021. **Size:** Small. **GHCP suitability:** Suitable for a localized example-consistency change.
+
+**Why it still applies:** The [MSTest tutorial](../docs/core/testing/unit-testing-csharp-with-mstest.md) and its [local test file](../docs/core/testing/snippets/unit-testing-using-mstest/csharp/PrimeService.Tests/PrimeService_IsPrimeShould.cs) construct the service in a test-class constructor and access it through a field. The referenced [best-practices guide](../docs/core/testing/unit-testing-best-practices.md) favors a visible Arrange step and helper methods rather than hidden common setup. The constructor avoids an initialization attribute, but doesn't show the test's service creation at the point of use.
+
+**Why the solution is defined:** For this stateless, parameterless service, each test can construct its own `PrimeService` in its Arrange step. No fixture lifecycle, asynchronous setup, or framework policy change is necessary. The recommendation is about tutorial consistency, not a claim that MSTest constructors share one instance across tests or are inherently invalid.
+
+**Proposed assignment scope:** Replace the constructor/field arrangement with explicit local service creation in the inline first-test example and every affected region of the local test file. Preserve the assertions, data rows, and test-driven sequence. Check the linked `dotnet/samples` finished example and coordinate a matching change if needed; don't claim that an edit in this repository updates the external sample.
+
+**Acceptance criteria:** Run the tutorial's initial-failure and subsequent-pass stages, then run all final tests. Confirm that each published region compiles in the complete example and follows the same setup pattern. Don't broaden the task into a testing-framework migration or unrelated tutorial cleanup.
+
+### dotnet/docs#24984: Explain F# generalization for lists, options, and arrays
+
+**Issue:** [dotnet/docs#24984](https://github.com/dotnet/docs/issues/24984). **Opened:** July 4, 2021. **Size:** Small to medium. **GHCP suitability:** Strong for a compiler-verifiable explanation, with F# review.
+
+**Why it still applies:** The [automatic-generalization guide](../docs/fsharp/language-reference/generics/automatic-generalization.md) explains the value restriction but doesn't directly explain why a list or option containing `id` can generalize while the reported nonempty array binding cannot.
+
+**Why the solution is defined:** The [F# specification's inference procedures](https://github.com/fsharp/fslang-spec/blob/main/spec/inference-procedures.md) enumerate generalizable expressions, including qualifying union-case constructions and the empty-array exception. During triage, F# Interactive from stable SDK 10.0.403 successfully used `[id; id]` and `Some id` at both `int` and `string`, while an otherwise unused `[| id; id |]` binding produced FS0030. A function that creates a fresh array also worked at both types.
+
+**Proposed assignment scope:** Add a focused list/option-versus-nonempty-array explanation and verified examples to the existing guide. Tie the distinction to generalizable expression forms and mutable storage, not a blanket rule for all immutable collections. Show a function/factory alternative and explain that it creates a fresh value. Don't classify every `seq`, map, dictionary, or array expression solely by its type name; preserve the specification's empty-array exception.
+
+**Acceptance criteria:** Compile successful examples with a current stable F# compiler, reproduce the intended value-restriction diagnostic in a separate negative example, and record the actual results. Keep examples F#-only, follow the repository's snippet rules, and obtain review of the expression-based explanation.
+
+### dotnet/docs#25018: Explain how newer applications consume older-target libraries
+
+**Issue:** [dotnet/docs#25018](https://github.com/dotnet/docs/issues/25018). **Opened:** July 7, 2021. **Size:** Small. **GHCP suitability:** Strong for a package-compatibility clarification.
+
+**Why it still applies:** The [cross-platform library guidance](../docs/standard/library-guidance/cross-platform-targeting.md) discusses .NET Standard and multitargeting, but doesn't directly answer the reported distinction between an older-target library inside a newer application and an older application that needs a runtime.
+
+**Why the solution is defined:** Existing [target-framework guidance](../docs/standard/frameworks.md) and package asset-selection rules provide the explanation: NuGet selects compatible assets for the consuming application's target; a library's target isn't an instruction to launch a separate older runtime inside that application.
+
+**Proposed assignment scope:** Add a short explanation and cross-links in the library-targeting guidance. Use a supported example such as a `net10.0` application that consumes a `net8.0` library package. Distinguish compatible/nearest asset selection from application runtime roll-forward, and retain caveats for transitive dependencies, native assets, operating systems, and behavioral compatibility. Don't promise that every older binary works or recommend an unsupported runtime.
+
+**Acceptance criteria:** Pack the example library, restore and run the consuming application, and inspect the selected package assets. Record the result in the implementation PR. The prose explains both package compatibility and the separate runtime-selection question without conflating them.
+
+### dotnet/docs#25081: Clarify .NET Framework native Arm64 support
+
+**Issue:** [dotnet/docs#25081](https://github.com/dotnet/docs/issues/25081). **Opened:** July 12, 2021. **Size:** Very small. **GHCP suitability:** Strong for a source-backed note and link.
+
+**Why it still applies:** The [Framework versions-and-dependencies guide](../docs/framework/install/versions-and-dependencies.md) lists Windows versions and generic 64-bit support, but doesn't directly answer which Framework version adds native Arm64 support. A generic 64-bit entry doesn't establish the architecture matrix.
+
+**Why the solution is defined:** The existing [Framework 4.8.1 Arm64 section](../docs/framework/whats-new/index.md#arm64native481) explicitly identifies 4.8.1 as the release that adds native Arm64 support and distinguishes it from emulation.
+
+**Proposed assignment scope:** Add a concise Arm64 note beside the Framework 4.8.1 version information and link to that feature explanation and applicable system requirements. Distinguish native architecture support from emulation and retain the supported-Windows constraints. Don't extrapolate the statement to Arm32, Windows RT, every older Framework version, or an unverified emulation matrix.
+
+**Acceptance criteria:** The versions guide answers the native-Arm64 question directly and links to the existing authoritative details. Keep the change prose-only; no new architecture tutorial or runtime sample is necessary.
+
+### dotnet/docs#25240: Connect the migration guide to the existing .NET overview
+
+**Issue:** [dotnet/docs#25240](https://github.com/dotnet/docs/issues/25240). **Opened:** July 20, 2021. **Size:** Very small. **GHCP suitability:** Strong; reuse existing overview content.
+
+**Why it still applies:** In the [migration TOC](../docs/navigate/migration-guide/toc.yml), **General information > About .NET** is a grouping node without an overview link. Its children cover SDK versioning and server-framework choice, not the architecture/runtime overview requested by the issue.
+
+**Why the solution is defined:** The existing [.NET introduction](../docs/core/introduction.md) explains components, implementation families, and app stacks. The Windows installation guide's [runtime-selection section](../docs/core/install/windows.md#choose-the-correct-runtime) explains the base, ASP.NET Core, and Desktop runtimes and the SDK. The issue explicitly permits reuse of existing documentation.
+
+**Proposed assignment scope:** Add the existing introduction as the **About .NET** overview destination, preserving the group's current children. Provide a concise signpost to runtime-selection guidance from the relevant migration entry point if the introduction doesn't expose that distinction clearly enough. Don't duplicate the introduction or create a new runtime taxonomy page.
+
+**Acceptance criteria:** Migration navigation reaches the architecture overview directly and retains the existing versioning/server-choice links. Runtime guidance distinguishes the SDK from the runtime choices without implying that one runtime supports every app stack. Coordinate the shared TOC edit with dotnet/docs#25241.
+
+### dotnet/docs#25241: Rename the migration compatibility overview
+
+**Issue:** [dotnet/docs#25241](https://github.com/dotnet/docs/issues/25241). **Opened:** July 20, 2021. **Size:** Very small. **GHCP suitability:** Strong; mechanical title/navigation alignment, coordinated with assignee `StephenBonikowsky`.
+
+**Why it still applies:** The [porting compatibility page](../docs/core/porting/breaking-changes.md) still uses breaking-changes-only wording in its title and H1. The [migration TOC](../docs/navigate/migration-guide/toc.yml) likewise uses **Breaking changes** for the group, although the page explains compatibility categories as well.
+
+**Why the solution is defined:** The issue explicitly requests **Compatibility and Breaking Changes**. Sentence-case **Compatibility and breaking changes** supplies the requested label without a new content design.
+
+**Proposed assignment scope:** Update the page title, H1, and appropriate migration TOC group label to **Compatibility and breaking changes**. Preserve the Markdown filename, published URL, and existing overview/reference destinations. Check directly related references for title consistency, but don't rename unrelated breaking-change indexes.
+
+**Acceptance criteria:** The displayed page title and migration label agree, and all existing destinations remain valid. No redirect is needed if the path stays unchanged. After owner coordination, consider one assignment with dotnet/docs#25240 to avoid concurrent changes to the same TOC; retain both issue references.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -351,6 +471,10 @@ These issues still need their existing PRs to land, with corrections where noted
 
 For the quickest independent changes, start with the table escaping, the paired COM wording corrections, or the existing prose-only signposts. Coordinate the instrumentation link with its current owner. Treat the two COM issues as one assignment, and use the existing hosted-service issue rather than duplicate work for dotnet/docs#23440.
 
+The model-improvement TOC label, Framework Arm64 signpost, and migration overview/title links are additional small changes. Coordinate the two migration tasks as one TOC pass if the existing owner agrees. Both the algorithm inventory and model-improvement navigation task have current assignee `jwood803`; don't create parallel ownership without coordination.
+
 The coding-components overview needs new-page review. Source Link, plugin publication, the trimming limitation, XML package documentation, constructor injection, and integration-test configuration need focused execution evidence. Verify formatter output for the property-pattern explanation and obtain analyzer-owner review of the CA1806 corrections. The numeric-format article is a larger sample-verification task, not a one-line table fix. The linker correction requires the .NET Framework toolchain, and the PEVerify clarification needs compiler-owner review.
+
+The CLI tutorial needs a real training/generated-project run. The glossary corrections and library-targeting clarification need controlled metric/package examples, while the MSTest cleanup needs the tutorial's fail/pass sequence. The F# explanation already has a stable-compiler reproduction, but its eventual published snippets still need execution and F# review.
 
 Review the three existing implementation PRs separately from new assignments; correct the unhandled-exception method name before merge. Issues that don't fit either candidate category are omitted for a future task.

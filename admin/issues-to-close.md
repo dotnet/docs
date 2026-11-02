@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 100 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#24691](https://github.com/dotnet/docs/issues/24691), opened June 16, 2021.
-- **Results:** 19 closure candidates and 25 [clearly defined fixes](issues-with-defined-fixes.md) (22 assignment candidates and 3 fixes with open implementation PRs).
-- **Latest batch:** Issues 76-100, from [dotnet/docs#23596](https://github.com/dotnet/docs/issues/23596) through dotnet/docs#24691: 6 closure candidates, 8 new assignment candidates, and 1 fix with an existing PR that needs correction.
-- **Remaining:** 748 issues from this snapshot are unreviewed. Resume with [dotnet/docs#24735](https://github.com/dotnet/docs/issues/24735), opened June 18, 2021. Refresh issue states before the next batch; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 125 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#25246](https://github.com/dotnet/docs/issues/25246), opened July 20, 2021.
+- **Results:** 25 closure candidates and 35 [clearly defined fixes](issues-with-defined-fixes.md) (32 assignment candidates and 3 fixes with open implementation PRs).
+- **Latest batch:** Issues 101-125, from [dotnet/docs#24735](https://github.com/dotnet/docs/issues/24735) through dotnet/docs#25246: 6 closure candidates and 10 new assignment candidates.
+- **Remaining:** 723 issues from this snapshot are unreviewed. Resume with [dotnet/docs#25247](https://github.com/dotnet/docs/issues/25247), opened July 20, 2021. Refresh issue states before the next batch; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -212,3 +212,63 @@ The issue asks for follow-up issues based on [the proposed migration TOC](https:
 The current [upgrade overview](../docs/core/porting/index.md), rewritten in June 2026, describes upgrade decisions, paths, and tools and links to separate Framework migration, dependency, compatibility, and modernization pages. The [current migration TOC](../docs/navigate/migration-guide/toc.yml) also navigates to those separate topics. Reopening the 2021 coordination exercise against the former overview would duplicate planning rather than define a new content fix.
 
 **Suggested closure explanation:** With assignee `StephenBonikowsky`, close this coordination ticket as superseded by the follow-up tasks and the redesigned overview. Don't claim that the entire migration revamp is complete or automatically close its still-open child issues; evaluate those requests separately when their snapshot positions are reached.
+
+### dotnet/docs#24800: Run MSTest in an Azure DevOps pipeline
+
+**Opened:** June 23, 2021. **Confidence:** High for the general pipeline documentation request. **Reason:** Current guidance supplies the requested MSTest/Azure pipeline workflow.
+
+The [MSTest SDK guide's CI section](../docs/core/testing/unit-testing-mstest-sdk.md#update-your-ci) includes an Azure Pipelines `DotNetCoreCLI@2` example and explains the test-report, result-directory, and coverage arguments for that configuration. The [MSTest execution guide](../docs/core/testing/unit-testing-mstest-running-tests.md) distinguishes runner modes and covers CI execution. The authoritative [Azure Pipelines .NET guide](https://learn.microsoft.com/azure/devops/pipelines/ecosystems/dotnet-core?view=azure-devops#run-your-tests) explicitly supports MSTest and provides test-task and test-result publication examples.
+
+The recommendation rests on that concrete coverage, not on .NET Core 3.1 reaching end of support. It doesn't establish that the reporter's historical project has been executed successfully, or that VSTest and Microsoft.Testing.Platform arguments are interchangeable.
+
+**Suggested closure explanation:** Link to the MSTest CI example and Azure Pipelines test guidance. The requested pipeline instructions now exist; a reproducible failure with a particular project or runner configuration would need separate troubleshooting.
+
+### dotnet/docs#24828: Refresh the Model Builder sentiment tutorial
+
+**Opened:** June 24, 2021. **Confidence:** High for the specified content changes. **Reason:** A merged replacement implements the requested tutorial update.
+
+The current [sentiment-analysis Model Builder tutorial](../docs/machine-learning/tutorials/sentiment-analysis-model-builder.md) explicitly creates `SentimentAnalysis.mbconfig`, uses the Model Builder 2.0 scenario image, and no longer contains the Visual Studio 2017 branch. It also describes the generated consumption, training, and model files.
+
+The actual patch in merged [dotnet/docs#32011](https://github.com/dotnet/docs/pull/32011) adds the config-file section, replaces the scenario image reference, and removes the Visual Studio 2017-specific instructions. The older linked [dotnet/docs#25407](https://github.com/dotnet/docs/pull/25407) closed without merge and isn't completion evidence. The recommendation doesn't claim a fresh execution of every current Model Builder UI step.
+
+**Suggested closure explanation:** With assignee `luisquintanilla`, close the specified refresh as addressed by the merged tutorial replacement and current content. Track any newly reproducible UI or training failure separately.
+
+### dotnet/docs#24903: Explain Windows Forms and WPF trimming limitations
+
+**Opened:** June 29, 2021. **Confidence:** High for the requested technical explanation. **Reason:** A dedicated incompatibility guide now explains both frameworks.
+
+The [WPF section](../docs/core/deploying/trimming/incompatibilities.md#wpf) explains the framework's extensive reflection and runtime inspection and why the SDK disables trimming. The [Windows Forms section](../docs/core/deploying/trimming/incompatibilities.md#windows-forms) explains its dependence on built-in COM marshalling and links to the framework's tracking issue. The same guide separately explains why automatic COM marshalling conflicts with trimming analysis.
+
+Both `aka.ms/dotnet-illink/wpf` and `aka.ms/dotnet-illink/windows-forms` still land on [the trimming overview](../docs/core/deploying/trimming/trim-self-contained.md), whose warning links to the detailed incompatibility guide. Don't claim the aliases now target framework-specific anchors. The substantive explanation exists in one shared guide rather than two separate pages.
+
+**Suggested closure explanation:** Link directly to the WPF and Windows Forms explanations. The requested reasons and framework follow-up links are documented; duplicate explanation pages aren't necessary. Any desired change to the external short-link destinations is a separate routing refinement, not a missing technical explanation.
+
+### dotnet/docs#25237: Rewrite the migration-guide overview
+
+**Opened:** July 20, 2021. **Confidence:** High. **Reason:** The redesigned overview follows the requested structure.
+
+The current [upgrade overview](../docs/core/porting/index.md) explains upgrade decisions, support, paths, and tools, then links to separate Framework migration, pre-migration, dependency, compatibility, and modernization guidance. The [migration TOC](../docs/navigate/migration-guide/toc.yml) exposes those dedicated topics rather than require the overview to contain their full instructions.
+
+The issue explicitly requests an overview with detailed topics moved elsewhere. The current content addresses that structural request; another rewrite against the 2021 outline would duplicate the completed redesign.
+
+**Suggested closure explanation:** With assignee `StephenBonikowsky`, close the overview-restructure request as addressed by the current overview and linked topic pages. Don't treat this recommendation as completion of every migration-guide follow-up.
+
+### dotnet/docs#25242: Explain .NET releases and servicing
+
+**Opened:** July 20, 2021. **Confidence:** High. **Reason:** A dedicated release-and-support article now covers the requested subject.
+
+The [.NET releases, patches, and support guide](../docs/core/releases-and-support.md) explains release categories, SDK feature bands, runtime roll-forward, LTS/STS support, monthly servicing, patch requirements, and operating-system support. The [upgrade overview](../docs/core/porting/index.md) directly links to that guide for release dates and patch guidance.
+
+The issue proposes content based on a public release-and-support explanation. Current documentation supplies the substantive guidance and a migration entry point; another article adapted from the older blog isn't needed. This recommendation isn't a claim that every lifecycle date elsewhere in the documentation has been audited.
+
+**Suggested closure explanation:** Link to the existing release-and-support guide and close the overlapping content request as addressed.
+
+### dotnet/docs#25245: Explain the move from Windows-only to cross-platform .NET
+
+**Opened:** July 20, 2021. **Confidence:** High. **Reason:** Connected migration guidance covers platform dependencies and the Compatibility Pack.
+
+The [Framework migration overview](../docs/core/porting/framework-overview.md) explains cross-platform considerations, Windows desktop limitations, native dependencies, compatibility mode, and technologies unavailable in modern .NET. The [Windows Compatibility Pack guide](../docs/core/porting/windows-compat-pack.md) distinguishes Windows-only APIs from cross-platform APIs and explains whether to remove, replace, or guard platform-specific calls with analyzer assistance.
+
+Those pages address the issue's requested separation of .NET from Windows, remaining Windows dependencies, and the role of the Compatibility Pack. Both are part of the current migration navigation. Neither implies that a WPF or Windows Forms application becomes cross-platform merely because it targets modern .NET.
+
+**Suggested closure explanation:** Link to the migration overview and Compatibility Pack guide. The requested platform explanation now exists; no duplicate Windows-to-cross-platform overview is needed.

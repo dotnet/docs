@@ -5,16 +5,16 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following six issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track two additional defined fixes separately because implementation PRs are already open. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following fourteen issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track two additional defined fixes separately because implementation PRs are already open. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 50 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#22109](https://github.com/dotnet/docs/issues/22109), opened December 21, 2020.
-- **Results:** 8 defined fixes (6 assignment candidates and 2 already in open PRs) and 7 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 26-50 add 2 new assignment candidates and 2 existing implementation PRs, alongside 4 closure candidates.
-- **Remaining:** 798 issues from this snapshot are unreviewed. Resume with [dotnet/docs#22155](https://github.com/dotnet/docs/issues/22155), opened December 25, 2020.
-- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, and the patches of the two active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Each of the six new-assignment candidates remained open and unassigned when rechecked.
+- **Completed batches:** The 75 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#23582](https://github.com/dotnet/docs/issues/23582), opened April 1, 2021.
+- **Results:** 16 defined fixes (14 assignment candidates and 2 already in open PRs) and 13 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 51-75 add 8 new assignment candidates, alongside 6 closure candidates.
+- **Remaining:** 773 issues from this snapshot are unreviewed. Resume with [dotnet/docs#23596](https://github.com/dotnet/docs/issues/23596), opened April 2, 2021.
+- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the two active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
 
@@ -125,6 +125,98 @@ These are proposed assignment briefs, not claims that fixes have been implemente
 
 **Acceptance criteria:** Readers of the original section can find the existing chaos-testing guidance and understand why resilience needs failure testing. The link resolves, and the change doesn't imply the historical eShop sample already includes a fault-injection harness.
 
+### dotnet/docs#22373: Correct Source Link version-property guidance
+
+**Issue:** [dotnet/docs#22373](https://github.com/dotnet/docs/issues/22373). **Opened:** January 15, 2021. **Size:** Small. **GHCP suitability:** Strong, with SDK property-evaluation evidence.
+
+**Why it still applies:** The [informational-version section](../docs/standard/library-guidance/versioning.md#assembly-informational-version) still says Source Link sets the informational version from the NuGet package version and advises readers not to set it themselves. That wording conflates `PackageVersion` with the base version used for `InformationalVersion`.
+
+**Why the solution is defined:** The current [assembly-attribute guide](../docs/standard/assembly/set-attributes-project-file.md#use-package-properties-as-assembly-attributes) already explains that `InformationalVersion` defaults to `Version` and that source revision metadata is appended separately. The correction can align the library guidance with those documented SDK semantics.
+
+**Proposed assignment scope:** Correct the property relationship, explain revision suffix generation separately, and link to the assembly-attribute guide. Explain the effect of setting `PackageVersion` independently instead of promising that it controls the assembly attribute. Don't mechanically replace the current advice with a universal requirement to copy `PackageVersion` into `InformationalVersion`.
+
+**Acceptance criteria:** With a current stable SDK and a small source-controlled class library, compare builds that set only `PackageVersion`, set `Version`, and explicitly set `InformationalVersion`. Record evaluated properties and the emitted assembly informational version, including revision behavior. The revised explanation matches those results without changing unrelated assembly-version compatibility guidance.
+
+### dotnet/docs#22857: Remove APM callback thread guarantees
+
+**Issue:** [dotnet/docs#22857](https://github.com/dotnet/docs/issues/22857). **Opened:** February 16, 2021. **Size:** Small. **GHCP suitability:** Strong for a bounded conceptual-documentation correction.
+
+**Why it still applies:** Both [the callback guide](../docs/standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-to-end-an-asynchronous-operation.md) and [the state-object guide](../docs/standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-and-state-object.md) still promise processing on a separate thread. The [APM overview](../docs/standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md) also describes execution and `CompletedSynchronously` in terms of particular threads.
+
+**Why the solution is defined:** The [API-owner discussion](https://github.com/dotnet/dotnet-api-docs/pull/4640#issuecomment-690732459) explicitly says callbacks can run synchronously and requests the conceptual-doc review. The issue isn't asking an agent to invent new callback scheduling behavior.
+
+**Proposed assignment scope:** Correct those three articles and check adjacent APM callback explanations for the same unconditional guarantee. Explain synchronous completion and callback reentrancy before the initiating call returns. Preserve the requirement to pair Begin/End operations correctly, and don't promise a specific thread for asynchronous completion either. Keep the task within conceptual docs; the separately owned API-reference page isn't a file in this repository.
+
+**Acceptance criteria:** No reviewed APM callback explanation guarantees a separate thread. `CompletedSynchronously` describes synchronous completion rather than a universal thread identity test. Preserve existing examples unless a correction is necessary; if an example is added or changed, demonstrate both synchronous and asynchronous callback paths and record their actual ordering.
+
+### dotnet/docs#23068: Show plugin publication to a chosen directory
+
+**Issue:** [dotnet/docs#23068](https://github.com/dotnet/docs/issues/23068). **Opened:** March 2, 2021. **Size:** Small. **GHCP suitability:** Strong, with an end-to-end plugin-load check.
+
+**Why it still applies:** The [plugin tutorial](../docs/core/tutorials/creating-app-with-plugin-support.md) now mentions that `dotnet publish` copies class-library dependencies, but still directs the loader to the plugin's Debug build directory. It doesn't show the requested publish-to-plugin-directory workflow. The [maintainer reply](https://github.com/dotnet/docs/issues/23068#issuecomment-791733665) agrees that this scenario belongs in the tutorial.
+
+**Why the solution is defined:** Class-library publication produces assemblies and dependencies; it isn't restricted to NuGet package creation. The existing tutorial already explains `EnableDynamicLoading` and exclusion of the shared plugin-contract assembly.
+
+**Proposed assignment scope:** Add a short CLI workflow that publishes one existing plugin with an explicit output directory, points the existing loader to its published DLL, and distinguishes publication from `dotnet pack`. Keep the dependency directory intact and preserve the shared-contract exclusion. Don't introduce a plugin installer, hot reload, or a new packaging format.
+
+**Acceptance criteria:** Publish and load both the simple plugin and a plugin with dependencies using the documented directory convention. Record the commands, published artifacts, and actual command output. The host resolves the published plugin without loading a second copy of the interface assembly, and the text doesn't depend on a particular Visual Studio publish dialog.
+
+### dotnet/docs#23070: Link trace collection to event instrumentation
+
+**Issue:** [dotnet/docs#23070](https://github.com/dotnet/docs/issues/23070). **Opened:** March 2, 2021. **Size:** Very small. **GHCP suitability:** Strong, subject to coordination with current assignee `tommcdon`.
+
+**Why it still applies:** The [dotnet-trace reference](../docs/core/diagnostics/dotnet-trace.md) describes provider selection and collection but doesn't link to guidance that teaches developers to emit their own events. Its See also section only lists well-known providers.
+
+**Why the solution is defined:** The [EventSource getting-started tutorial](../docs/core/diagnostics/eventsource-getting-started.md) and [instrumentation guide](../docs/core/diagnostics/eventsource-instrumentation.md) already teach event production, and the [collection tutorial](../docs/core/diagnostics/eventsource-collect-and-view-traces.md) connects those events to tracing tools.
+
+**Proposed assignment scope:** Add a short signpost near provider selection and a relevant See also link. Distinguish application/library instrumentation from enabling an existing runtime provider. Reuse the current tutorials rather than duplicate their code or add a new tracing API.
+
+**Acceptance criteria:** Readers can navigate directly from `dotnet-trace` to a custom-event example and its collection instructions. Links resolve, existing tool options remain unchanged, and the owner agrees before an existing assignment is replaced or duplicated.
+
+### dotnet/docs#23325: Explain the diagnostic impact of EventSourceSupport
+
+**Issue:** [dotnet/docs#23325](https://github.com/dotnet/docs/issues/23325). **Opened:** March 15, 2021. **Size:** Small. **GHCP suitability:** Strong for a focused limitation and troubleshooting note.
+
+**Why it still applies:** The [trimming options table](../docs/core/deploying/trimming/trimming-options.md#trim-framework-library-features) already says that `EventSourceSupport=false` removes EventSource code. However, the [dotnet-trace guide](../docs/core/diagnostics/dotnet-trace.md) doesn't explain that an application's publish-time removal of EventSource support can account for missing application-provider events.
+
+**Why the solution is defined:** The [runtime-team explanation](https://github.com/dotnet/runtime/issues/43657#issuecomment-791759620) identifies the affected EventSource providers and the desired diagnostic guidance. Completion of runtime tooling work doesn't by itself add that explanation to these guides.
+
+**Proposed assignment scope:** Add a concise diagnostic limitation to the trimming option and a linked troubleshooting note in the collection guide. Explain that selecting or enabling a provider can't restore instrumentation removed at publication time. Limit the claim to EventSource-dependent events; don't assert that every native runtime event, ETW session, or tool necessarily stops working.
+
+**Acceptance criteria:** Compare a small app published with EventSource support enabled and disabled, then collect its custom provider events with the same tool settings. Record the actual SDK/runtime/tool versions and observed results. Don't invent a guaranteed warning message or broadly equate this switch with disabling every diagnostics facility.
+
+### dotnet/docs#23439: Escape pipe characters in an analyzer-options table
+
+**Issue:** [dotnet/docs#23439](https://github.com/dotnet/docs/issues/23439). **Opened:** March 22, 2021. **Size:** Very small. **GHCP suitability:** Strong; mechanical formatting correction.
+
+**Why it still applies:** In [code-quality rule options](../docs/fundamentals/code-analysis/code-quality-rule-options.md#unsafe_dllimportsearchpath_bits), the default value for `unsafe_DllImportSearchPath_bits` contains two unescaped pipes inside an inline-code expression. Those pipes turn a four-column row into six cells under GitHub-flavored Markdown. An `MD056` suppression surrounds this exact table instead of fixing its structure.
+
+**Proposed assignment scope:** Escape the two literal pipes using the same `\|` convention already used elsewhere in the article. Remove the now-unnecessary suppression around this table. Preserve the default numeric value, enum names, links, and analyzer semantics.
+
+**Acceptance criteria:** The header and data row each have four cells, the full flag expression stays in the Default value cell, and both GitHub and Learn display the intended expression. Don't suppress a new table warning or change the value `770`.
+
+### dotnet/docs#23475: Distinguish class and interface COM identifiers
+
+**Issue:** [dotnet/docs#23475](https://github.com/dotnet/docs/issues/23475). **Opened:** March 24, 2021. **Size:** Very small. **GHCP suitability:** Strong; pair with dotnet/docs#23476 in one assignment.
+
+**Why it still applies:** Step 8 of [Create the library](../docs/core/native-interop/expose-components-to-com.md#create-the-library) still calls the class GUID the identifier of an interface. The surrounding instructions don't explicitly say that the class identifier and interface identifier are different GUIDs.
+
+**Proposed assignment scope:** Change the incorrect noun to class and clarify that the CLSID identifies the coclass, whereas the IID identifies the interface. State that the two identifiers must differ. Retain the existing distinct example GUIDs; no runtime or sample implementation change is necessary.
+
+**Acceptance criteria:** Steps 5 and 8 consistently distinguish IID and CLSID without implying that one GUID should be reused for both. Make this correction together with the adjacent activation-note correction below rather than create competing edits to the same section.
+
+### dotnet/docs#23476: Clarify the explicit CLSID requirement for COM hosting
+
+**Issue:** [dotnet/docs#23476](https://github.com/dotnet/docs/issues/23476). **Opened:** March 24, 2021. **Size:** Very small. **GHCP suitability:** Strong; combine with dotnet/docs#23475.
+
+**Why it still applies:** The important note after [Create the library](../docs/core/native-interop/expose-components-to-com.md#create-the-library) still says only that .NET Core requires a CLSID, without explaining how that differs from .NET Framework's behavior.
+
+**Why the solution is defined:** The [interop-owner answer](https://github.com/dotnet/docs/issues/23476#issuecomment-816067931) specifies both `ComVisible(true)` and an explicit `Guid` for activation. The [follow-up qualification](https://github.com/dotnet/docs/issues/23476#issuecomment-816747425) warns that automatic GUID generation can still occur for objects that pass through the marshaling layer.
+
+**Proposed assignment scope:** Explain the explicit class `Guid` requirement for activation through the generated COM host and contrast that requirement with .NET Framework's ability to supply an automatically generated identifier. Keep visibility and identity separate. Don't claim that modern .NET never generates GUIDs for any COM interop scenario.
+
+**Acceptance criteria:** The note explains the role of both attributes and scopes the difference to COM-host activation. Preserve the separate marshaling case and existing code. Obtain interop-owner review of the wording; no new COM sample is needed.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -149,6 +241,8 @@ These issues still need their existing PRs to land. They aren't closure-without-
 
 ## Assignment order
 
-For the quickest independent changes, start with the hosted-service clarification, the Blazor cross-links, or the resilience-testing signpost. The coding-components overview has an explicit outline but needs new-page review. The linker correction has a concrete answer but requires the .NET Framework toolchain for execution evidence. The PEVerify clarification needs compiler-owner review.
+For the quickest independent changes, start with the table escaping, the paired COM wording corrections, or the existing prose-only signposts. Coordinate the instrumentation link with its current owner. Treat the two COM issues as one assignment, and use the existing hosted-service issue rather than duplicate work for dotnet/docs#23440.
+
+The coding-components overview needs new-page review. Source Link, plugin publication, and the trimming limitation need focused execution evidence. The linker correction requires the .NET Framework toolchain, and the PEVerify clarification needs compiler-owner review.
 
 Review the two existing implementation PRs separately from new assignments. Issues that don't fit either candidate category are omitted for a future task.

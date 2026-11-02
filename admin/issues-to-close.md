@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 125 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#25246](https://github.com/dotnet/docs/issues/25246), opened July 20, 2021.
-- **Results:** 25 closure candidates and 35 [clearly defined fixes](issues-with-defined-fixes.md) (32 assignment candidates and 3 fixes with open implementation PRs).
-- **Latest batch:** Issues 101-125, from [dotnet/docs#24735](https://github.com/dotnet/docs/issues/24735) through dotnet/docs#25246: 6 closure candidates and 10 new assignment candidates.
-- **Remaining:** 723 issues from this snapshot are unreviewed. Resume with [dotnet/docs#25247](https://github.com/dotnet/docs/issues/25247), opened July 20, 2021. Refresh issue states before the next batch; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 150 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#25758](https://github.com/dotnet/docs/issues/25758), opened August 21, 2021.
+- **Results:** 27 closure candidates and 52 [clearly defined fixes](issues-with-defined-fixes.md) (45 assignment candidates and 7 fixes with open implementation PRs).
+- **Latest batch:** Issues 126-150, from [dotnet/docs#25247](https://github.com/dotnet/docs/issues/25247) through dotnet/docs#25758: 2 closure candidates, 13 new assignment candidates, and 4 fixes with existing implementation PRs.
+- **Remaining:** 698 issues from this snapshot are unreviewed. Resume with [dotnet/docs#25769](https://github.com/dotnet/docs/issues/25769), opened August 23, 2021. Refresh issue states before the next batch; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -272,3 +272,23 @@ The [Framework migration overview](../docs/core/porting/framework-overview.md) e
 Those pages address the issue's requested separation of .NET from Windows, remaining Windows dependencies, and the role of the Compatibility Pack. Both are part of the current migration navigation. Neither implies that a WPF or Windows Forms application becomes cross-platform merely because it targets modern .NET.
 
 **Suggested closure explanation:** Link to the migration overview and Compatibility Pack guide. The requested platform explanation now exists; no duplicate Windows-to-cross-platform overview is needed.
+
+### dotnet/docs#25249: Introduce project-portability assessment
+
+**Opened:** July 20, 2021. **Confidence:** High for the requested expectations and advance assessment. **Reason:** Current migration guidance covers both purposes.
+
+The issue asks readers to set realistic expectations and analyze a project before they commit to an upgrade. The [Framework migration overview](../docs/core/porting/framework-overview.md) distinguishes relatively straightforward upgrades from app-model changes and identifies desktop, native-library, dependency, and unavailable-technology risks. Its assessment-tool guidance leads to [the upgrade workflow](../docs/core/porting/github-copilot-upgrade/concepts.md#stage-1-assessment), which explicitly analyzes the dependency graph, package compatibility, breaking APIs, test coverage, complexity, and risk before the planning and execution stages.
+
+The [dependency-assessment guide](../docs/core/porting/third-party-deps.md) also supports manual analysis. The recommendation doesn't require the retired portability analyzer or claim that automated assessment guarantees a successful migration.
+
+**Suggested closure explanation:** Link to the existing overview, dependency analysis, and assessment workflow. The requested expectations and analyze-before-upgrade guidance now exist; a second generic assessment overview isn't necessary.
+
+### dotnet/docs#25478: Document backward-compatible library consumption
+
+**Opened:** August 5, 2021. **Confidence:** High. **Reason:** The remaining documentation gap duplicates an older issue already retained for a defined fix.
+
+The issue asks whether a newer-target application can consume a library compiled for an older .NET target and distinguishes that scenario from runtime roll-forward. [dotnet/docs#25018](https://github.com/dotnet/docs/issues/25018) asks the same question. Its [assignment brief](issues-with-defined-fixes.md#dotnetdocs25018-explain-how-newer-applications-consume-older-target-libraries) already requires a direct compatibility explanation, package asset-selection evidence, runtime-selection distinctions, and appropriate dependency/platform caveats.
+
+The newer issue adds explicit support-confirmation context, which the retained brief now preserves. The recommendation doesn't claim that the missing paragraph has already been written or that all cross-version binaries are compatible.
+
+**Suggested closure explanation:** With assignee `StephenBonikowsky`, close as a duplicate of dotnet/docs#25018 and preserve the request for an explicit support statement in that task. Use one documentation change rather than assign two agents to the same compatibility explanation.

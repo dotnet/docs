@@ -5,16 +5,16 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 32 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track three additional defined fixes separately because implementation PRs are already open; one of those PRs needs correction before merge. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 45 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track seven additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 125 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#25246](https://github.com/dotnet/docs/issues/25246), opened July 20, 2021.
-- **Results:** 35 defined fixes (32 assignment candidates and 3 with open implementation PRs) and 25 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 101-125 add 10 new assignment candidates, alongside 6 closure candidates. The three existing implementation PRs remain open.
-- **Remaining:** 723 issues from this snapshot are unreviewed. Resume with [dotnet/docs#25247](https://github.com/dotnet/docs/issues/25247), opened July 20, 2021.
-- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the three active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
+- **Completed batches:** The 150 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#25758](https://github.com/dotnet/docs/issues/25758), opened August 21, 2021.
+- **Results:** 52 defined fixes (45 assignment candidates and 7 with open implementation PRs) and 27 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 126-150 add 13 new assignment candidates and 4 fixes with existing implementation PRs, alongside 2 closure candidates.
+- **Remaining:** 698 issues from this snapshot are unreviewed. Resume with [dotnet/docs#25769](https://github.com/dotnet/docs/issues/25769), opened August 23, 2021.
+- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the seven active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
 
@@ -399,6 +399,8 @@ These are proposed assignment briefs, not claims that fixes have been implemente
 
 **Proposed assignment scope:** Add a short explanation and cross-links in the library-targeting guidance. Use a supported example such as a `net10.0` application that consumes a `net8.0` library package. Distinguish compatible/nearest asset selection from application runtime roll-forward, and retain caveats for transitive dependencies, native assets, operating systems, and behavioral compatibility. Don't promise that every older binary works or recommend an unsupported runtime.
 
+Preserve the explicit support-confirmation question from duplicate [dotnet/docs#25478](https://github.com/dotnet/docs/issues/25478), currently assigned to `StephenBonikowsky`. State the supported compatible-library scenario with its qualifications, rather than report only that one test happened to work.
+
 **Acceptance criteria:** Pack the example library, restore and run the consuming application, and inspect the selected package assets. Record the result in the implementation PR. The prose explains both package compatibility and the separate runtime-selection question without conflating them.
 
 ### dotnet/docs#25081: Clarify .NET Framework native Arm64 support
@@ -437,6 +439,138 @@ These are proposed assignment briefs, not claims that fixes have been implemente
 
 **Acceptance criteria:** The displayed page title and migration label agree, and all existing destinations remain valid. No redirect is needed if the path stays unchanged. After owner coordination, consider one assignment with dotnet/docs#25240 to avoid concurrent changes to the same TOC; retain both issue references.
 
+### dotnet/docs#25252: Add actionable pre-migration examples and limitations
+
+**Issue:** [dotnet/docs#25252](https://github.com/dotnet/docs/issues/25252). **Opened:** July 20, 2021. **Size:** Medium, bounded to the prerequisites guide. **GHCP suitability:** Suitable for a source-backed procedural expansion.
+
+**Why it still applies:** The [prerequisites guide](../docs/core/porting/premigration-needed-changes.md) still gives only one-sentence instructions for `PackageReference` and SDK-style conversion. It doesn't explain the requested common problems or show the relevant project changes.
+
+**Why the solution is defined:** The authoritative [NuGet migration guide](https://learn.microsoft.com/nuget/consume-packages/migrate-packages-config-to-package-reference) already documents the migrator, backups, compatibility report, unsupported project types, ignored installation scripts, and content differences. The [.NET project SDK overview](../docs/core/project-sdk/overview.md) explains implicit item inclusion and duplicate-item failures.
+
+**Proposed assignment scope:** Expand the terse conversion sections with the applicable tool workflow, a small before/after project example, and links to the documented migration limitations. Explain that project-format conversion and target-framework changes are separate steps. Include package-compatibility review and SDK duplicate-item pitfalls; don't prescribe the Visual Studio migrator for unsupported C++ or classic ASP.NET projects or imply every Framework project converts unchanged.
+
+**Acceptance criteria:** Validate representative eligible C# and Visual Basic projects before and after the documented steps. Preserve their Framework target until the separate retargeting step, verify restore/build behavior, and record actual results. Keep larger source examples in the repository's snippet format, and use current supported tooling rather than revive ApiPort.
+
+### dotnet/docs#25253: Move porting-plan navigation before the upgrade
+
+**Issue:** [dotnet/docs#25253](https://github.com/dotnet/docs/issues/25253). **Opened:** July 20, 2021. **Size:** Very small. **GHCP suitability:** Strong; an explicitly requested TOC move.
+
+**Why it still applies:** The [migration TOC](../docs/navigate/migration-guide/toc.yml) still places **Create a porting plan**, including **Approaches** and **Project structure**, under **Upgrade**. The issue explicitly requests those existing pages under pre-migration.
+
+**Proposed assignment scope:** Move the existing plan group and both children into **Pre-upgrade**, preserving their labels, URLs, and relative links. Don't move the article files or duplicate the group. Coordinate this shared TOC edit with dotnet/docs#25240 and dotnet/docs#25241.
+
+**Acceptance criteria:** Planning appears before execution in navigation, both original pages remain reachable exactly once, and the upgrade/application-guide groups retain their other children.
+
+### dotnet/docs#25294: Dispose the linked-cancellation example's owned resources
+
+**Issue:** [dotnet/docs#25294](https://github.com/dotnet/docs/issues/25294). **Opened:** July 22, 2021. **Size:** Medium, bounded to one article and its two samples. **GHCP suitability:** Suitable for a lifecycle correction with deterministic cancellation tests.
+
+**Why it still applies:** The [multiple-cancellation article](../docs/standard/threading/how-to-listen-for-multiple-cancellation-requests.md) references [C#](../samples/snippets/csharp/VS_Snippets_Misc/cancellation/cs/cancellationex13.cs) and [Visual Basic](../samples/snippets/visualbasic/VS_Snippets_Misc/cancellation/vb/cancellationex13.vb) workers that own an internal `CancellationTokenSource` but never dispose it. `CancellationToken` itself isn't disposable, so the issue's terminology needs correction rather than dismissal. The VB sample also compares an exception's linked token with predecessor tokens instead of checking their cancellation state.
+
+**Proposed assignment scope:** Explain ownership of the sources, linked source, timer, and tokens. Dispose owned sources and the timer only after worker execution and callbacks can no longer use them. Ensure that cancellation of a wait doesn't abandon the worker before cleanup. Align VB's cancellation-origin logic with the article and C# sample; retain the external-cancellation and timeout paths. Follow the snippet rules if the legacy examples move.
+
+**Acceptance criteria:** Exercise external cancellation and timeout without keyboard-dependent automation. Verify worker completion, correct path reporting, and cleanup without `ObjectDisposedException` or timer callbacks that use disposed sources. Don't add a nonexistent `CancellationToken.Dispose` or treat disposal as a request to cancel.
+
+### dotnet/docs#25405: Qualify IDE0071's compiler-lowering explanation
+
+**Issue:** [dotnet/docs#25405](https://github.com/dotnet/docs/issues/25405). **Opened:** July 29, 2021. **Size:** Small. **GHCP suitability:** Strong for a precise wording correction, with compiler review.
+
+**Why it still applies:** The [IDE0071 overview](../docs/fundamentals/code-analysis/style-rules/ide0071.md) says the compiler implicitly invokes the same method after removing `ToString()`. That wording suggests identical lowering, although the reported value-type example can box on older targets. The [compiler discussion](https://github.com/dotnet/roslyn/issues/55240) confirms the diagnostic is intentional and distinguishes .NET 6 code generation.
+
+**Proposed assignment scope:** Describe the rule as a readability simplification, not a guarantee of identical calls, IL, boxing, or allocation behavior. Explain that interpolation lowering depends on compiler/target support and link to the interpolation reference. Don't label the analyzer incorrect or promise that simplification always improves performance.
+
+**Acceptance criteria:** The revised overview matches the compiler-owner explanation. If it includes a version-specific lowering or allocation example, verify that exact compiler/target pair and record the result rather than infer behavior from a current-runtime run.
+
+### dotnet/docs#25445: Demonstrate extension GetEnumerator in conceptual guidance
+
+**Issue:** [dotnet/docs#25445](https://github.com/dotnet/docs/issues/25445). **Opened:** August 3, 2021. **Size:** Small. **GHCP suitability:** Strong; add the requested example to the language reference, not the proposal.
+
+**Why it still applies:** The [foreach reference](../docs/csharp/language-reference/statements/iteration-statements.md#the-foreach-statement) allows an extension `GetEnumerator`, but its adjacent example uses `Span<T>`'s instance pattern. It doesn't demonstrate the extension feature that prompted the issue. The final discussion favors conceptual discoverability rather than expanding normative proposal text.
+
+**Proposed assignment scope:** Add one complete, minimal example of a type without an instance enumeration pattern that becomes enumerable through a public extension `GetEnumerator`. Explain the enumerator's `Current`/`MoveNext` requirements and the distinction from LINQ or `List.ForEach`. Use the existing iteration-reference snippet project and preserve the specification link.
+
+**Acceptance criteria:** Compile and run the actual `foreach` example, capture its output, and confirm the extension supplies the enumeration pattern. Don't rely on a type that already implements the required instance/interface pattern or add an unrelated LINQ tutorial.
+
+### dotnet/docs#25469: Include enums in interop blittability guidance
+
+**Issue:** [dotnet/docs#25469](https://github.com/dotnet/docs/issues/25469). **Opened:** August 5, 2021. **Size:** Small. **GHCP suitability:** Strong for a localized type-rule clarification with interop review.
+
+**Why it still applies:** The [interop best-practices list](../docs/standard/native-interop/best-practices.md#blittable-types) doesn't explicitly identify enum types. The runtime's [field-marshalling implementation](https://github.com/dotnet/runtime/blob/main/src/coreclr/vm/fieldmarshaler.cpp) resolves enum handling through the underlying integral type.
+
+**Proposed assignment scope:** State how a C#/VB enum with a blittable integral underlying type fits the runtime-enabled list, and align the explanation with the existing runtime-disabled rules. Distinguish a concrete enum from a parameter typed as `System.Enum`. Explain that native enum width, struct packing, and layout must match the ABI; don't assume matching member names or an unsafe managed byte copy proves native compatibility.
+
+**Acceptance criteria:** Review the wording against the supported marshalling rules. If the change adds an example, verify native round-trips and struct offsets for explicitly matched integral widths, in both documentation languages. Don't use `Marshal.SizeOf<TEnum>()` alone as a blittability test or extrapolate to every marshalling backend.
+
+### dotnet/docs#25482: Show how multitargeted projects vary their source
+
+**Issue:** [dotnet/docs#25482](https://github.com/dotnet/docs/issues/25482). **Opened:** August 5, 2021. **Size:** Small. **GHCP suitability:** Strong; connect the existing project-layout explanation to conditional-compilation guidance.
+
+**Why it still applies:** The [project-structure article](../docs/core/porting/project-structure.md#replace-existing-projects-with-a-multi-targeted-net-project) promises framework-specific source but its multitargeting section only links project files. It doesn't explain how the source differs per target.
+
+**Proposed assignment scope:** Add a concise explanation of SDK-defined framework symbols and conditional compilation, with a direct link to the existing [library-targeting example](../docs/standard/library-guidance/cross-platform-targeting.md#multi-targeting). Distinguish conditional source from conditional package/project items. If an additional local sample is needed, keep one public API with verified per-target implementations and show the applicable project targets; don't copy the existing illustrative helper calls as though they were complete implementations.
+
+**Acceptance criteria:** Readers reach a concrete source-variation example from the multitargeted-project section. Verify any newly published code against every stated target, include both C# and VB where required, and record which outputs ran. Don't imply that merely adding `TargetFrameworks` makes unavailable APIs compile for all targets.
+
+### dotnet/docs#25514: Reconcile Code Contracts visibility and exception wording
+
+**Issue:** [dotnet/docs#25514](https://github.com/dotnet/docs/issues/25514). **Opened:** August 7, 2021. **Size:** Very small. **GHCP suitability:** Suitable for two precise clarifications in the Framework article.
+
+**Why it still applies:** The [Code Contracts article](../docs/framework/debug-trace-profile/code-contracts.md) permits less-visible members in postconditions but later gives an unqualified visibility rule for all contracts. Its exceptional-postcondition wording also leaves the exact-`T` case implicit.
+
+**Proposed assignment scope:** Qualify **Visibility** so it doesn't contradict **Postconditions**, and cross-link the distinction. Describe exceptional postconditions as applying to exceptions of type `T` or a derived type; don't accept the incorrect inference that derived exceptions are excluded. Preserve the article's Framework-only support warning and existing attribute exceptions.
+
+**Acceptance criteria:** The two visibility explanations agree, and the exception wording remains consistent with `EnsuresOnThrow<TException>`. Keep the change prose-only unless legacy tooling is actually available to verify a new example; don't claim Code Contracts tooling works on modern .NET.
+
+### dotnet/docs#25519: Document the non-generic TaskCompletionSource
+
+**Issue:** [dotnet/docs#25519](https://github.com/dotnet/docs/issues/25519). **Opened:** August 8, 2021. **Size:** Very small for the core correction. **GHCP suitability:** Strong; the contradictory API exists.
+
+**Why it still applies:** The [TAP implementation guide](../docs/standard/asynchronous-programming-patterns/implementing-the-task-based-asynchronous-pattern.md#io-bound-tasks) still says `TaskCompletionSource<TResult>` has no nongeneric counterpart. The [runtime implementation](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Private.CoreLib/src/System/Threading/Tasks/TaskCompletionSource.cs) defines `TaskCompletionSource` with parameterless `SetResult` and `TrySetResult`.
+
+**Proposed assignment scope:** Correct the statement, link to the nongeneric API available from .NET 5, and distinguish modern no-result tasks from the dummy-result technique needed on older targets such as .NET Framework. Keep the existing generic example valid and accurately scoped. Don't imply that the nongeneric API is available on every target covered by this shared guide.
+
+**Acceptance criteria:** API cross-references resolve and version scope is explicit. If the implementation replaces or adds a no-result example, update and execute both language snippets and record successful completion; don't pass a dummy result to the nongeneric completion methods.
+
+### dotnet/docs#25526: Explain permission-policy alternatives for microservices
+
+**Issue:** [dotnet/docs#25526](https://github.com/dotnet/docs/issues/25526). **Opened:** August 9, 2021. **Size:** Small, prose and cross-links. **GHCP suitability:** Suitable with authorization-owner review.
+
+**Why it still applies:** The [authentication chapter](../docs/architecture/microservices/secure-net-microservices-web-applications/index.md) and [authorization chapter](../docs/architecture/microservices/secure-net-microservices-web-applications/authorization-net-microservices-web-applications.md) cover JWT role claims and policies. They don't directly answer whether every service permission must be embedded in the token or explain the requested alternative of service-side permission evaluation.
+
+**Proposed assignment scope:** Add a short signpost from authentication to authorization, then distinguish token-carried roles/claims from custom policy handlers that consult service-owned authorization data. Link to authoritative ASP.NET Core policy/handler guidance and explain the freshness, caching, and availability trade-offs without prescribing one universal model. Keep enforcement at the API/service boundary. Don't invent automatic permission claims or revive an IdentityServer4 configuration tutorial.
+
+**Acceptance criteria:** The explanation answers the all-permissions-in-every-token concern and links to the existing role/policy mechanisms. Obtain review of authorization semantics; no new token issuer, permission service, or sample security architecture is required.
+
+### dotnet/docs#25541: Explain the sample's request-ID deduplication path
+
+**Issue:** [dotnet/docs#25541](https://github.com/dotnet/docs/issues/25541). **Opened:** August 10, 2021. **Size:** Small to medium. **GHCP suitability:** Strong for a source-backed explanation, not a new message-processing system.
+
+**Why it still applies:** The [event-handler deduplication section](../docs/architecture/microservices/multi-container-microservice-net-applications/subscribe-events.md#deduplicating-message-events-at-the-eventhandler-level) stops at wrapping a command with `RequestId`. The linked sample's [IdentifiedCommandHandler](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/Services/Ordering/Ordering.API/Application/Commands/IdentifiedCommandHandler.cs) actually checks `ExistAsync`, returns on a duplicate, records a new request, and dispatches the inner command. [RequestManager](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/Services/Ordering/Ordering.Infrastructure/Idempotency/RequestManager.cs) supplies the persisted request lookup and insertion.
+
+**Proposed assignment scope:** Trace that existing handler/store path in the article and link directly to the missing checks. Explain identifier reuse on redelivery and distinguish duplicate detection from idempotent business updates. Describe the archived sample as an illustration; don't copy its catch-and-default pattern as a new recommendation or imply that attaching an ID alone provides atomic, exactly-once processing.
+
+**Acceptance criteria:** Readers can locate the duplicate branch, request store, and business dispatch from the explanation. Verify any new code against repeated-ID, new-ID, and failure cases, and state transaction/concurrency limits explicitly. Don't introduce a new inbox implementation or claim a serial in-memory test proves distributed exactly-once behavior.
+
+### dotnet/docs#25547: Distinguish runtime tests from framework-specific package builds
+
+**Issue:** [dotnet/docs#25547](https://github.com/dotnet/docs/issues/25547). **Opened:** August 10, 2021. **Size:** Small. **GHCP suitability:** Strong for a focused library-guidance clarification.
+
+**Why it still applies:** The [library-targeting guide](../docs/standard/library-guidance/cross-platform-targeting.md#multi-targeting) explains separate framework assets and dependency binding, but doesn't directly answer whether testing a .NET Standard assembly on Framework runtimes substitutes for producing framework-targeted assets. Its historical `net461` recommendation has changed to `net462`; that edit alone doesn't answer the conceptual question.
+
+**Proposed assignment scope:** Explain that runtime tests exercise the selected compiled artifact, while a framework-specific build uses that target's compile-time references, conditional code, and dependency graph and produces a distinct NuGet asset. Link the explanation to the existing target-selection guidance and distinguish behavioral testing from packaging support. Coordinate edits with dotnet/docs#25018 rather than create competing changes to the same article.
+
+**Acceptance criteria:** The text doesn't equate test coverage with generating an additional target asset. If it includes a package example, inspect the packed target folders and restore selection, then test the stated runtime matrix and record results. Use supported targets instead of reinstating the obsolete `net461` recommendation.
+
+### dotnet/docs#25758: Add multiline tuple formatting examples
+
+**Issue:** [dotnet/docs#25758](https://github.com/dotnet/docs/issues/25758). **Opened:** August 21, 2021. **Size:** Small. **GHCP suitability:** Suitable for an example aligned with existing conventions, with F# style review.
+
+**Why it still applies:** The [tuple-expression section](../docs/fsharp/style-guide/formatting.md#formatting-tuple-expressions) still shows only short tuples. The same guide now places closing parentheses on separate lines in multiline tupled arguments and union-case applications, but doesn't demonstrate the requested standalone/nested tuple case.
+
+**Proposed assignment scope:** Add a multiline tuple example and explain the corresponding closing-parenthesis placement, consistent with the guide's existing multiline application examples. Link related conventions rather than repeat a new global policy. Preserve compact short tuples; don't reinterpret the request as a mandate to reformat every example or invent a Fantomas option.
+
+**Acceptance criteria:** Compile the examples and check them against the current Fantomas version and relevant settings. Record any formatter/configuration assumptions and obtain F# style review. Keep the change local to the missing example and explanation.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -467,14 +601,48 @@ These issues still need their existing PRs to land, with corrections where noted
 
 **Maintainer next action:** Correct the existing PR rather than assign a duplicate. Align the syntax, title, API metadata, and interface links with `HasUnhandledException`, and verify the HRESULT descriptions against the same authoritative declaration. Preserve the old URL or add an appropriate redirect if the file moves. Don't merge the current patch as a complete fix or close the issue merely because it has an `in-pr` label.
 
+### dotnet/docs#25426: Explain why the volatile sample can produce identical observations
+
+**Issue:** [dotnet/docs#25426](https://github.com/dotnet/docs/issues/25426). **Opened:** August 2, 2021. **Status:** Covered by open, non-draft [dotnet/docs#56650](https://github.com/dotnet/docs/pull/56650).
+
+**Why the solution is defined:** The [volatile article](../docs/csharp/language-reference/keywords/volatile.md) still implies reliably different observations, while the maintainer notes that no small sample can guarantee that distinction across all processors, operating systems, and targets. The PR adds JIT, configuration, architecture, and cooperative-cancellation context in the affected paragraph.
+
+**Maintainer next action:** Review the existing explanation, especially its Debug/Release and hardware-ordering qualifications. Don't promise that Release mode always reproduces stale reads or that volatile means immediate cross-core visibility. Require compiler/concurrency review of technical claims; lint success doesn't demonstrate a race or validate the memory model. Don't assign a duplicate sample rewrite.
+
+### dotnet/docs#25499: Expand static anonymous-function examples
+
+**Issue:** [dotnet/docs#25499](https://github.com/dotnet/docs/issues/25499). **Opened:** August 6, 2021. **Status:** Open, non-draft [dotnet/docs#56663](https://github.com/dotnet/docs/pull/56663) implements the examples but needs diagnostic corrections.
+
+**Why the solution is defined:** The PR adds static lambda, anonymous-method, constant, and static-member examples to the [lambda reference](../docs/csharp/language-reference/operators/lambda-expressions.md) and its existing snippet file, as the maintainer requested. However, it identifies the capture diagnostics as CS8828/CS8829. The compiler's [error-code declarations](https://github.com/dotnet/roslyn/blob/main/src/Compilers/CSharp/Portable/Errors/ErrorCode.cs) identify these cases as CS8820/CS8821.
+
+**Maintainer next action:** Correct the diagnostic IDs and links in the existing PR, compile the positive examples, and reproduce both prohibited-capture diagnostics separately. Qualify allocation wording: prevention of a captured closure isn't a guarantee of zero delegate or other allocations. Don't close the issue before the corrected PR merges.
+
+### dotnet/docs#25609: Separate assembly identity from compiler security features
+
+**Issue:** [dotnet/docs#25609](https://github.com/dotnet/docs/issues/25609). **Opened:** August 12, 2021. **Status:** Covered by open, non-draft [dotnet/docs#56649](https://github.com/dotnet/docs/pull/56649).
+
+**Why the solution is defined:** The current [compiler-options page](../docs/csharp/language-reference/compiler-options/security.md) groups signing under security. The PR updates its title, introduction, and TOC label, explains strong-name identity and modern-runtime signature behavior, and preserves `HighEntropyVA` as an actual ASLR security feature. The issue explicitly distinguishes that exception.
+
+**Maintainer next action:** Review the existing prose and cross-links, retain Framework-versus-modern-runtime distinctions, and preserve the existing URL. Don't remove every security reference indiscriminately or open a second terminology PR.
+
+### dotnet/docs#25722: Make both CA2000 examples reproduce their claimed diagnostics
+
+**Issue:** [dotnet/docs#25722](https://github.com/dotnet/docs/issues/25722). **Opened:** August 19, 2021. **Status:** Open, non-draft [dotnet/docs#56665](https://github.com/dotnet/docs/pull/56665) replaces Example 1 but doesn't complete the two-example request.
+
+**Why the solution is defined:** The [CA2000 article](../docs/fundamentals/code-analysis/quality-rules/ca2000.md) describes the two examples as violations. The PR replaces the first with undisposed `FileStream` examples and fixes in C# and VB, but leaves **Example 2** and its VB overflow/`StreamReader` diagnostic claim unchanged. The rule isn't enabled by default, and exceptional-path/ownership configuration affects what a reproduction proves.
+
+**Maintainer next action:** Complete the existing PR rather than duplicate it. Specify the SDK/analyzer version, explicitly enable CA2000, record relevant analysis settings, and reproduce every retained diagnostic claim, including Example 2. Verify both positive and corrected examples in their actual language/compiler configurations. Update or remove unsupported legacy diagnostic claims instead of treating a new Example 1 as proof that the whole issue is fixed.
+
 ## Assignment order
 
 For the quickest independent changes, start with the table escaping, the paired COM wording corrections, or the existing prose-only signposts. Coordinate the instrumentation link with its current owner. Treat the two COM issues as one assignment, and use the existing hosted-service issue rather than duplicate work for dotnet/docs#23440.
 
-The model-improvement TOC label, Framework Arm64 signpost, and migration overview/title links are additional small changes. Coordinate the two migration tasks as one TOC pass if the existing owner agrees. Both the algorithm inventory and model-improvement navigation task have current assignee `jwood803`; don't create parallel ownership without coordination.
+The model-improvement TOC label, Framework Arm64 signpost, migration overview/title links, and pre-upgrade planning move are additional small changes. Coordinate the three migration TOC tasks as one pass if the existing owner agrees. Both the algorithm inventory and model-improvement navigation task have current assignee `jwood803`; don't create parallel ownership without coordination.
 
 The coding-components overview needs new-page review. Source Link, plugin publication, the trimming limitation, XML package documentation, constructor injection, and integration-test configuration need focused execution evidence. Verify formatter output for the property-pattern explanation and obtain analyzer-owner review of the CA1806 corrections. The numeric-format article is a larger sample-verification task, not a one-line table fix. The linker correction requires the .NET Framework toolchain, and the PEVerify clarification needs compiler-owner review.
 
 The CLI tutorial needs a real training/generated-project run. The glossary corrections and library-targeting clarification need controlled metric/package examples, while the MSTest cleanup needs the tutorial's fail/pass sequence. The F# explanation already has a stable-compiler reproduction, but its eventual published snippets still need execution and F# review.
 
-Review the three existing implementation PRs separately from new assignments; correct the unhandled-exception method name before merge. Issues that don't fit either candidate category are omitted for a future task.
+The prerequisite examples and linked-cancellation lifecycle correction need focused build/resource tests. Coordinate the library compatibility and testing-versus-targeting explanations in one article pass. The interop addition needs ABI review, the permission explanation needs authorization review, and the deduplication explanation must preserve the archived sample's limits rather than promise exactly-once delivery.
+
+Review the seven existing implementation PRs separately from new assignments. Correct the unhandled-exception method name and static-lambda diagnostic IDs, and complete the CA2000 two-example verification before merge. Issues that don't fit either candidate category are omitted for a future task.

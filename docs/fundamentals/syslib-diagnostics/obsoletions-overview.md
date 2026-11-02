@@ -100,6 +100,7 @@ The following table lists the `EXTOBS0XXX` obsoletions from the `Microsoft.Exten
 |---------------|------------------|-------------|
 | [EXTOBS0001](extobs0001.md) | Warning | <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor> is obsolete and will be removed in a future version. Consider using [Resource Monitoring observable instruments](../../core/diagnostics/built-in-metrics-diagnostics.md#microsoftextensionsdiagnosticsresourcemonitoring). |
 | [EXTOBS0002](extobs0002.md) | Warning | The `AddServiceLogEnricher` extension methods have been marked as obsolete starting in package version 10.1.0. The methods enrich application logs, not service logs, so they have been replaced with correctly named `AddApplicationLogEnricher` methods. |
+| [EXTOBS0003](extobs0003.md) | Warning | <xref:Microsoft.Extensions.Caching.Hybrid.HybridCacheOptions.DisableCompression?displayProperty=nameWithType> is obsolete because the default `HybridCache` implementation doesn't provide built-in compression and the property has no effect. |
 
 ## Suppress warnings
 

@@ -495,7 +495,7 @@
 | Content Safety Extension Embedded Text | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.0)<br>NuGet [1.0.1-beta.4](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.1-beta.4) |  |  |
 | Cosmos DB AOT | NuGet [0.1.4-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Aot/0.1.4-preview.2) |  |  |
 | Cosmos DB Fault Injection | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.FaultInjection/1.0.0-beta.2) |  |  |
-| Cosmos DB QueryPlanInterop - Linux | NuGet [1.0.6](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.QueryPlanInterop.Linux/1.0.6) |  |  |
+| Cosmos DB QueryPlanInterop - Linux | NuGet [1.0.8](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.QueryPlanInterop.Linux/1.0.8) |  |  |
 | Cosmos DB QueryPlanInterop - macOS | NuGet [1.0.5](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.QueryPlanInterop.MacOS/1.0.5) |  |  |
 | Cosmos DB QueryPlanInterop - Windows | NuGet [1.0.5](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.QueryPlanInterop.Windows/1.0.5) |  |  |
 | DotNetty | NuGet [0.7.6](https://www.nuget.org/packages/DotNetty.Common/0.7.6) |  |  |
@@ -657,8 +657,8 @@
 | Functions extension for Azure SQL and SQL Server | NuGet [3.1.536](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/3.1.536)<br>NuGet [3.1.548-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/3.1.548-preview) |  |  |
 | Functions extension for Cosmos DB | NuGet [4.16.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDB/4.16.1) |  | GitHub [4.16.1](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/cosmos-v3.0.7/src/WebJobs.Extensions.CosmosDB) |
 | Functions extension for DocumentDB | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DocumentDB/1.3.0) |  | GitHub [1.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions) |
-| Functions extension for Durable Task Framework | NuGet [3.16.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask/3.16.1) | [docs](/dotnet/api/overview/azure/functions) | GitHub [3.16.1](https://github.com/Azure/azure-functions-durable-extension/tree/v2.2.2/src/WebJobs.Extensions.DurableTask) |
-| Functions extension for Durable Task Framework - isolated worker | NuGet [1.20.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.20.1) |  |  |
+| Functions extension for Durable Task Framework | NuGet [3.17.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask/3.17.0) | [docs](/dotnet/api/overview/azure/functions) | GitHub [3.17.0](https://github.com/Azure/azure-functions-durable-extension/tree/v2.2.2/src/WebJobs.Extensions.DurableTask) |
+| Functions extension for Durable Task Framework - isolated worker | NuGet [1.21.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.21.0) |  |  |
 | Functions extension for HTTP | NuGet [3.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Http/3.3.0) |  | GitHub [3.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.2/src/WebJobs.Extensions.Http) |
 | Functions extension for IoT Edge | NuGet [1.0.7](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.EdgeHub/1.0.7) |  | GitHub [1.0.7](https://github.com/Azure/iotedge/tree/1.0.7/edge-hub) |
 | Functions extension for Kafka | NuGet [4.3.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kafka/4.3.3) |  | GitHub [4.3.3](https://github.com/Azure/azure-functions-kafka-extension/tree/3.0.0/src/Microsoft.Azure.WebJobs.Extensions.Kafka) |

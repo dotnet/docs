@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 150 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#25758](https://github.com/dotnet/docs/issues/25758), opened August 21, 2021.
-- **Results:** 27 closure candidates and 52 [clearly defined fixes](issues-with-defined-fixes.md) (45 assignment candidates and 7 fixes with open implementation PRs).
-- **Latest batch:** Issues 126-150, from [dotnet/docs#25247](https://github.com/dotnet/docs/issues/25247) through dotnet/docs#25758: 2 closure candidates, 13 new assignment candidates, and 4 fixes with existing implementation PRs.
-- **Remaining:** 698 issues from this snapshot are unreviewed. Resume with [dotnet/docs#25769](https://github.com/dotnet/docs/issues/25769), opened August 23, 2021. Refresh issue states before the next batch; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 175 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#26886](https://github.com/dotnet/docs/issues/26886), opened November 9, 2021.
+- **Results:** 32 closure candidates and 61 [clearly defined fixes](issues-with-defined-fixes.md) (53 assignment candidates and 8 fixes with open implementation PRs).
+- **Latest batch:** Issues 151-175, from [dotnet/docs#25769](https://github.com/dotnet/docs/issues/25769) through dotnet/docs#26886: 5 closure candidates, 8 new assignment candidates, and 1 fix with an existing implementation PR.
+- **Remaining:** 673 issues from this snapshot are unreviewed. Resume with [dotnet/docs#27011](https://github.com/dotnet/docs/issues/27011), opened November 10, 2021. Refresh issue states before the next batch; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -292,3 +292,45 @@ The issue asks whether a newer-target application can consume a library compiled
 The newer issue adds explicit support-confirmation context, which the retained brief now preserves. The recommendation doesn't claim that the missing paragraph has already been written or that all cross-version binaries are compatible.
 
 **Suggested closure explanation:** With assignee `StephenBonikowsky`, close as a duplicate of dotnet/docs#25018 and preserve the request for an explicit support statement in that task. Use one documentation change rather than assign two agents to the same compatibility explanation.
+
+### dotnet/docs#25929: Roslyn API page fails with an invalid version moniker
+
+**Opened:** September 2, 2021. **Confidence:** High for the reported URL. **Reason:** The exact invalid-moniker request now falls back to a valid API page.
+
+The discussion retracts an early claim that the problem was fixed: the important case was the literal `view=roslyn-dotnet` query, not simply whether the API existed. A live request to [the reported URL](https://learn.microsoft.com/dotnet/api/microsoft.codeanalysis.compilation.issymbolaccessiblewithin?view=roslyn-dotnet) now redirects to the `roslyn-dotnet-5.3.0` view with `viewFallbackFrom=roslyn-dotnet`. The response contains the `Compilation.IsSymbolAccessibleWithin` definition, signatures, source metadata, and version choices instead of the reported broken page.
+
+**Suggested closure explanation:** The exact invalid-version URL now resolves through the API browser's version fallback. Close the reported routing failure as addressed. The check doesn't establish that every Roslyn version URL or external search result is correct.
+
+### dotnet/docs#26035: Analyzer template creates an out-of-support .NET Core 2.0 test project
+
+**Opened:** September 10, 2021. **Confidence:** High for the original template defect. **Reason:** The template's target has changed, with a merged product fix and current source evidence.
+
+The final discussion identifies [dotnet/roslyn-sdk#884](https://github.com/dotnet/roslyn-sdk/pull/884). That PR merged on October 29, 2021, and its actual patch changes the diagnostic test template from `netcoreapp2.0` to `netcoreapp3.1`. More importantly, the [current template on the explicit `main` branch](https://github.com/dotnet/roslyn-sdk/blob/main/src/RoslynSdk/VisualStudio.Roslyn.SDK/Roslyn.SDK/ProjectTemplates/CSharp/Diagnostic/Test/Test.csproj) now targets `net8.0`. The [documentation tutorial](../docs/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md) doesn't hardcode the obsolete `netcoreapp2.0` target.
+
+**Suggested closure explanation:** The reported .NET Core 2.0 template target was corrected upstream and isn't present in the current template source. Close the original defect rather than add instructions that preserve that target. The recommendation doesn't claim that previously generated projects or every installed extension version update automatically.
+
+### dotnet/docs#26335: Update ML.NET deployment guides for minimal APIs and Azure Functions v4
+
+**Opened:** October 1, 2021. **Confidence:** High for the original update request. **Reason:** Both explicitly requested deployment changes are present.
+
+The issue's complete scope is the .NET 6-era update to minimal APIs and Azure Functions v4. The [Web API deployment guide](../docs/machine-learning/how-to-guides/serve-model-web-api-ml-net.md) now uses top-level statements, `WebApplication.CreateBuilder`, and `app.MapPost("/predict", predictionHandler)` rather than the old controller/startup workflow. The [Functions deployment guide](../docs/machine-learning/how-to-guides/serve-model-serverless-azure-functions-ml-net.md) links to a [sample project](https://github.com/dotnet/machinelearning-samples/blob/main/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/SentimentAnalysisFunctionsApp.csproj) whose actual project file targets `net6.0` and declares `AzureFunctionsVersion` as `v4`.
+
+**Suggested closure explanation:** With assignee `luisquintanilla`, close the original minimal-API/Functions-v4 conversion request as addressed. The recommendation relies on those concrete changes, not on the age of .NET 6. It doesn't endorse .NET 6 as currently supported or claim that the older in-process Functions sample is a current isolated-worker tutorial.
+
+### dotnet/docs#26349: Update ML.NET API tutorials and remove Visual Studio 2017 instructions
+
+**Opened:** October 1, 2021. **Confidence:** High for the requested version/prerequisite refresh. **Reason:** Current API tutorials use newer prerequisites and project targets.
+
+The issue asks for two changes: remove Visual Studio 2017 instructions and update tutorials to .NET 6. Current API tutorials instead require Visual Studio 2022 or later and create .NET 8 projects. Examples include [sentiment analysis](../docs/machine-learning/tutorials/sentiment-analysis.md), [price prediction](../docs/machine-learning/tutorials/predict-prices.md), [clustering](../docs/machine-learning/tutorials/iris-clustering.md), and [image classification](../docs/machine-learning/tutorials/image-classification-api-transfer-learning.md). The same newer prerequisite/target pattern appears across the regression, recommendation, anomaly, TensorFlow, and ONNX API walkthroughs.
+
+No Visual Studio 2017 instructions remain in the tutorial Markdown searched; occurrences of 2017 in dataset citations aren't IDE prerequisites. Some introductions still mention Visual Studio 2019, but their actual prerequisites/project instructions use Visual Studio 2022 and .NET 8.
+
+**Suggested closure explanation:** With assignee `luisquintanilla`, close the original Visual Studio 2017/.NET 6 refresh request as superseded by the newer tutorial instructions. The recommendation doesn't claim that every external sample was executed or that unrelated tutorial defects are resolved.
+
+### dotnet/docs#26507: Clarify multiline if and match formatting
+
+**Opened:** October 14, 2021. **Confidence:** High. **Reason:** Current guidance includes the layout accepted in the final discussion.
+
+The discussion ultimately favors a newline after `if` or `match` for a long multiline condition/expression, one indentation level for that expression, and aligned `if`/`then` or `match`/`with` keywords. The current [if-expression guidance](../docs/fsharp/style-guide/formatting.md#formatting-if-expressions) states that rule and demonstrates it. The [pattern-matching guidance](../docs/fsharp/style-guide/formatting.md#formatting-pattern-matching) supplies the corresponding `match` example and recommends a separate binding when that improves clarity.
+
+**Suggested closure explanation:** Link to both current formatting sections. They now document the final requested layout; the earlier objections in the discussion don't represent the final position. No new formatting-policy decision is needed for this request.

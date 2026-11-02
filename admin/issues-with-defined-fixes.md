@@ -5,16 +5,16 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 45 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track seven additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 53 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track eight additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 150 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#25758](https://github.com/dotnet/docs/issues/25758), opened August 21, 2021.
-- **Results:** 52 defined fixes (45 assignment candidates and 7 with open implementation PRs) and 27 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 126-150 add 13 new assignment candidates and 4 fixes with existing implementation PRs, alongside 2 closure candidates.
-- **Remaining:** 698 issues from this snapshot are unreviewed. Resume with [dotnet/docs#25769](https://github.com/dotnet/docs/issues/25769), opened August 23, 2021.
-- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the seven active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
+- **Completed batches:** The 175 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#26886](https://github.com/dotnet/docs/issues/26886), opened November 9, 2021.
+- **Results:** 61 defined fixes (53 assignment candidates and 8 with open implementation PRs) and 32 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 151-175 add 8 new assignment candidates and 1 fix with an existing implementation PR, alongside 5 closure candidates.
+- **Remaining:** 673 issues from this snapshot are unreviewed. Resume with [dotnet/docs#27011](https://github.com/dotnet/docs/issues/27011), opened November 10, 2021.
+- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the eight active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
 
@@ -571,6 +571,86 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Acceptance criteria:** Compile the examples and check them against the current Fantomas version and relevant settings. Record any formatter/configuration assumptions and obtain F# style review. Keep the change local to the missing example and explanation.
 
+### dotnet/docs#26016: Explain why a custom repository abstraction is optional
+
+**Issue:** [dotnet/docs#26016](https://github.com/dotnet/docs/issues/26016). **Opened:** September 8, 2021. **Size:** Small, prose only. **GHCP suitability:** Strong for a localized architecture clarification.
+
+**Why it still applies:** The [persistence-layer chapter](../docs/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design.md) explains that EF Core's `DbContext` already implements repository/unit-of-work concepts, but ends its optional-repository discussion with a quotation and an unhelpful choice to use the pattern or not. Earlier wording also says updates must use repositories without distinguishing a custom interface from the abstraction EF Core already supplies.
+
+**Proposed assignment scope:** Explain that the optional decision concerns an additional, custom repository abstraction over EF Core, not whether persistence or aggregate invariants matter. Contrast that abstraction with application handlers that use `DbContext` directly, and describe the relevant coupling/testing trade-offs. Reconcile the earlier unconditional wording and preserve the chapter's separation of domain rules from infrastructure dependencies. Link existing EF Core and architecture guidance rather than prescribe one universal architecture or rewrite the archived sample.
+
+**Acceptance criteria:** The optional section directly explains what the reader can omit, what remains responsible for persistence, and which architectural trade-offs change. Obtain architecture review; no new repository implementation, mocking framework, or sample application is necessary.
+
+### dotnet/docs#26219: Correct GetFunctionInfo2 buffer-count instructions
+
+**Issue:** [dotnet/docs#26219](https://github.com/dotnet/docs/issues/26219). **Opened:** September 22, 2021. **Size:** Small. **GHCP suitability:** Strong; pair with dotnet/docs#26220 and coordinate with assignee `tommcdon`.
+
+**Why it still applies:** The [GetFunctionInfo2 reference](../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-getfunctioninfo2-method.md) treats an element count as bytes, describes the scalar output-count pointer as a buffer, and suggests an undersized nonzero call reveals the total required capacity. The runtime's [profiler implementation](https://github.com/dotnet/runtime/blob/main/src/coreclr/vm/proftoeeinterfaceimpl.cpp) instead returns the total generic-argument count for `cTypeArgs == 0`; a nonzero call caps the returned/copied count at the supplied capacity.
+
+**Proposed assignment scope:** Replace the incorrect comparison/retry advice with a two-call sequence: query the element count with zero capacity and a valid output-count pointer, allocate that many `ClassID` elements, and retrieve them with the resulting capacity. Correct the parameter descriptions and references to the `typeArgs` buffer. Remove the divisions by `sizeof(ClassID)` and don't describe `pcTypeArgs` as an array.
+
+**Acceptance criteria:** Verify the zero-capacity and undersized-buffer semantics against the profiler contract and applicable Framework implementation, with profiler-owner review. If the eventual PR includes code, test zero, insufficient, and sufficient capacity on a known generic method. Don't claim a nonzero undersized call returns the total count or that modern-runtime source alone establishes every historical Framework version's behavior.
+
+### dotnet/docs#26220: Correct GetClassIDInfo2 buffer-count instructions
+
+**Issue:** [dotnet/docs#26220](https://github.com/dotnet/docs/issues/26220). **Opened:** September 22, 2021. **Size:** Small. **GHCP suitability:** Strong as the second page in the owner-coordinated profiler-count fix.
+
+**Why it still applies:** The [GetClassIDInfo2 reference](../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-getclassidinfo2-method.md) still says an undersized call can return a count larger than its nonzero capacity. In the [runtime implementation](https://github.com/dotnet/runtime/blob/main/src/coreclr/vm/proftoeeinterfaceimpl.cpp), zero capacity returns the total generic-argument count; a nonzero call reports only the count that fits and is copied.
+
+**Proposed assignment scope:** Make the zero-capacity size query the documented allocation procedure. Specify that capacities/counts measure `ClassID` elements, clarify the output-count parameter for each call mode, and remove the misleading larger-than-capacity retry test. Keep names specific to this method (`cNumTypeArgs` and `pcNumTypeArgs`) rather than copy the other page's parameter names.
+
+**Acceptance criteria:** Use the same contract/Framework-version review and zero/insufficient/sufficient-capacity checks as dotnet/docs#26219. Deliver both pages in one coordinated change with `tommcdon`; these are two issues, not two independent implementations.
+
+### dotnet/docs#26381: Define Visual Basic binding by member resolution
+
+**Issue:** [dotnet/docs#26381](https://github.com/dotnet/docs/issues/26381). **Opened:** October 5, 2021. **Size:** Small. **GHCP suitability:** Strong for a language-rule correction with focused examples.
+
+**Why it still applies:** The [early/late binding article](../docs/visual-basic/programming-guide/language-features/early-late-binding/index.md) still defines binding as assignment to an object variable and labels every assignment to `Object` as late binding. That wording conflates the variable's declared type with how a particular member access is resolved.
+
+**Proposed assignment scope:** Define early versus late binding at the member-access/call site. Contrast a statically typed receiver with an `Object` receiver whose member isn't resolved until runtime, and explain `Option Strict` restrictions. Distinguish storing a reference as `Object`, calling a statically known `Object` member, constructing an object through `CreateObject`, and explicitly invoking reflection. Don't claim that every `Object` variable, `CreateObject` call, or reflection operation is itself a VB late-bound member call.
+
+**Acceptance criteria:** Compile/run small positive examples and separately verify the prohibited late-bound call with `Option Strict On`. Record the compiler diagnostic and actual output in the implementation PR. Keep examples local and avoid an Office/COM installation dependency merely to demonstrate the language distinction.
+
+### dotnet/docs#26537: Complete image schema and preprocessing guidance
+
+**Issue:** [dotnet/docs#26537](https://github.com/dotnet/docs/issues/26537). **Opened:** October 15, 2021. **Size:** Medium. **GHCP suitability:** Suitable for the explicit remaining sections, coordinated with assignees `zewditu` and `luisquintanilla`.
+
+**Why it still applies:** The [load-data guide](../docs/machine-learning/how-to-guides/load-data-ml-net.md#load-images) now includes image-path loading and an in-memory encoded-byte example. However, the [prepare-data guide](../docs/machine-learning/how-to-guides/prepare-data-ml-net.md) has no image-preprocessing section, and the [image transformation table](../docs/machine-learning/resources/transforms.md#image-transformations) doesn't link to that requested walkthrough. The loading examples also don't explain the requested image-column type/schema distinction. [dotnet/docs#40993](https://github.com/dotnet/docs/pull/40993) merged, but that partial coverage doesn't fulfill all three explicit requirements; the earlier [dotnet/docs#32972](https://github.com/dotnet/docs/pull/32972) closed without merge.
+
+**Proposed assignment scope:** Preserve the existing loading work and finish the image-column/schema explanation, with accurate distinctions between file paths, encoded byte vectors, and decoded image columns (`ImageDataViewType`). Explain the applicable image attribute/schema APIs rather than suggest that `ImageDataViewType` itself is an attribute. Add a short, executable image preprocessing pipeline to the prepare-data guide, using documented transforms such as resize and pixel extraction, and link it from the image table. Use the issue's linked ML.NET sample and current API contracts as sources, not an invented model workflow.
+
+**Acceptance criteria:** Run the file-backed and in-memory variants on a known image, inspect the resulting data-view schema, and verify output dimensions/pixel-vector shape for the chosen transforms. State package/platform requirements and dispose image resources correctly. Follow the repository's language/snippet conventions and include actual outputs in the implementation PR. Don't close the issue merely because the loading PR merged.
+
+### dotnet/docs#26766: Separate semaphore wait duration from internal spinning
+
+**Issue:** [dotnet/docs#26766](https://github.com/dotnet/docs/issues/26766). **Opened:** November 2, 2021. **Size:** Small. **GHCP suitability:** Strong for a source-backed correction to the introductory guidance.
+
+**Why it still applies:** The [semaphore overview](../docs/standard/threading/semaphore-and-semaphoreslim.md) now elaborates on short waits, but introduces microsecond/millisecond categories and recommends `Semaphore` whenever waits are long or unpredictable. It still doesn't clearly answer the question about a long overall wait. The [SemaphoreSlim implementation](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Private.CoreLib/src/System/Threading/SemaphoreSlim.cs) exposes timeout/cancellation contracts and asynchronous waiter tasks; those aren't a short-duration correctness limit.
+
+**Proposed assignment scope:** State that a long overall wait doesn't by itself make `SemaphoreSlim` invalid, and link its timeout/cancellation APIs. Distinguish a synchronous wait's bounded internal spin optimization from the duration of the entire wait and from `WaitAsync`, which doesn't occupy a thread for the pending wait. Remove the unsupported duration categories and blanket long-wait recommendation. Keep named/cross-process coordination as a separate reason to choose `Semaphore`.
+
+**Acceptance criteria:** Review the explanation against both synchronous and asynchronous paths and their API contracts. Don't promise a universal performance winner or imply that an async I/O wait requires minutes of CPU spinning. If a timeout example is added, verify the documented argument range and cancellation behavior; a quick uncontended run isn't evidence that a wait actually lasted the stated duration.
+
+### dotnet/docs#26834: Link to a C# cancel-after-first-completion example
+
+**Issue:** [dotnet/docs#26834](https://github.com/dotnet/docs/issues/26834). **Opened:** November 5, 2021. **Size:** Small to medium. **GHCP suitability:** Suitable for a bounded missing example and navigation fix.
+
+**Why it still applies:** The [VB cancel-after-one-completes article](../docs/visual-basic/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md) still has no C# counterpart link. The existing [C# cancellation tutorial](../docs/csharp/asynchronous-programming/cancel-an-async-task-or-a-list-of-tasks.md) cancels on user input, while the [C# WhenAny walkthrough](../docs/csharp/asynchronous-programming/start-multiple-async-tasks-and-process-them-as-they-complete.md) processes all downloads. Neither demonstrates the same first-completion/cancel-the-rest workflow.
+
+**Proposed assignment scope:** Add a focused C# example to the existing WhenAny walkthrough: start operations once with a shared cancellation token, await `WhenAny`, request cancellation of the remaining operations, await the selected task for its result or failure, and observe completion of the other tasks before cleanup. Link directly to that section from the VB article. Reuse existing guidance and snippet infrastructure rather than create another full WPF tutorial or mislabel the user-input example as equivalent.
+
+**Acceptance criteria:** Verify a successful first completion, a first-task failure, and cancellation of the remaining work with controlled tasks or a local test endpoint. Make clear that `WhenAny` neither starts tasks nor cancels them automatically, and that first completion isn't necessarily first success. Don't hide unrelated failures or dispose the token source while dependent work remains active. Record actual output and keep the existing process-all-tasks workflow intact.
+
+### dotnet/docs#26886: Demonstrate the custom logging event name
+
+**Issue:** [dotnet/docs#26886](https://github.com/dotnet/docs/issues/26886). **Opened:** November 9, 2021. **Size:** Small. **GHCP suitability:** Strong; the existing sample and missing observable value are explicit.
+
+**Why it still applies:** The [source-generation examples](../docs/core/extensions/logging/source-generation.md#more-logging-examples) set `EventName = "CustomEventName"` in `LogWithCustomEventName`, but both displayed formatter outputs show only the numeric event ID and message. Neither output demonstrates the configured name.
+
+**Proposed assignment scope:** Explain that event-name display depends on the provider/formatter and that the shown built-in console outputs don't expose the name. Add a minimal, clearly identified observation of `EventId.Name`, through an appropriate test logger or small custom formatter, and display its actual output for the existing generated method. Keep the SimpleConsole/JsonConsole examples accurate; don't fabricate an `EventName` property in built-in JSON output or change the message text as a substitute for the event name.
+
+**Acceptance criteria:** Run the source-generated method through the chosen observer and show `CustomEventName` with event ID 9. Verify both existing formatter outputs separately if they change, and include commands/results in the implementation PR. Don't imply that setting `LoggerMessageAttribute.EventName` forces every provider to print it.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -633,6 +713,14 @@ These issues still need their existing PRs to land, with corrections where noted
 
 **Maintainer next action:** Complete the existing PR rather than duplicate it. Specify the SDK/analyzer version, explicitly enable CA2000, record relevant analysis settings, and reproduce every retained diagnostic claim, including Example 2. Verify both positive and corrected examples in their actual language/compiler configurations. Update or remove unsupported legacy diagnostic claims instead of treating a new Example 1 as proof that the whole issue is fixed.
 
+### dotnet/docs#26267: Explain analyzer/compiler API incompatibility for CS8032
+
+**Issue:** [dotnet/docs#26267](https://github.com/dotnet/docs/issues/26267). **Opened:** September 26, 2021. **Status:** Open, non-draft [dotnet/docs#56689](https://github.com/dotnet/docs/pull/56689) addresses the core diagnostic explanation but needs precision and scope review.
+
+**Why the solution is defined:** The actual patch adds newer-`Microsoft.CodeAnalysis`/older-host incompatibility and upgrade/downgrade remedies to the [source-generator diagnostic guidance](../docs/csharp/language-reference/compiler-messages/source-generator-errors.md). However, the original issue also asks how to determine compatible compiler/CLI versions and how to find the explanation from the analyzer tutorial. The patch changes only the diagnostic page; it doesn't add the tutorial link or a precise host-version reference.
+
+**Maintainer next action:** Complete the existing PR rather than assign a duplicate. Qualify its broad "Roslyn 4.x"/".NET 6+ SDK" example: a later 4.x API dependency doesn't necessarily load in every .NET 6 SDK or Visual Studio 2022 release. Identify the minimum compatible host for the actual referenced API/package version, link authoritative version information, and add the requested signpost from the [analyzer tutorial](../docs/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md). Distinguish analyzer target-framework compatibility from availability of the required Roslyn APIs. Verify the mismatch and corrected configuration before treating the whole request as complete.
+
 ## Assignment order
 
 For the quickest independent changes, start with the table escaping, the paired COM wording corrections, or the existing prose-only signposts. Coordinate the instrumentation link with its current owner. Treat the two COM issues as one assignment, and use the existing hosted-service issue rather than duplicate work for dotnet/docs#23440.
@@ -645,4 +733,6 @@ The CLI tutorial needs a real training/generated-project run. The glossary corre
 
 The prerequisite examples and linked-cancellation lifecycle correction need focused build/resource tests. Coordinate the library compatibility and testing-versus-targeting explanations in one article pass. The interop addition needs ABI review, the permission explanation needs authorization review, and the deduplication explanation must preserve the archived sample's limits rather than promise exactly-once delivery.
 
-Review the seven existing implementation PRs separately from new assignments. Correct the unhandled-exception method name and static-lambda diagnostic IDs, and complete the CA2000 two-example verification before merge. Issues that don't fit either candidate category are omitted for a future task.
+The custom-repository explanation and logging-event demonstration are additional localized tasks. Pair the two profiler buffer-count issues in one owner-coordinated change, distinct from the earlier paired COM wording task. Coordinate the remaining image guidance with both existing assignees. The VB binding correction, semaphore explanation, and C# first-completion example need language/concurrency-specific review rather than a superficial wording pass.
+
+Review the eight existing implementation PRs separately from new assignments. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, and refine the CS8032 version advice/tutorial signpost before merge. Issues that don't fit either candidate category are omitted for a future task.

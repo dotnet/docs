@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 350 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#33977](https://github.com/dotnet/docs/issues/33977), opened February 11, 2023.
-- **Results:** 68 closure candidates and 141 [clearly defined fixes](issues-with-defined-fixes.md) (121 assignment candidates and 20 fixes with open implementation PRs).
-- **Latest batch:** Issues 326-350, from [dotnet/docs#33307](https://github.com/dotnet/docs/issues/33307) through dotnet/docs#33977: 8 closure candidates, 8 new assignment candidates, and 4 fixes with open implementation PRs.
-- **Remaining:** 498 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 50 are complete and 250 remain. Continue with [dotnet/docs#34173](https://github.com/dotnet/docs/issues/34173), opened February 19, 2023, and stop at position 600. Refresh issue states; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 375 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#35017](https://github.com/dotnet/docs/issues/35017), opened April 15, 2023.
+- **Results:** 75 closure candidates and 150 [clearly defined fixes](issues-with-defined-fixes.md) (130 assignment candidates and 20 fixes with open implementation PRs).
+- **Latest batch:** Issues 351-375, from [dotnet/docs#34173](https://github.com/dotnet/docs/issues/34173) through dotnet/docs#35017: 7 closure candidates, 9 new assignment candidates, and no new fixes with open implementation PRs.
+- **Remaining:** 473 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 75 are complete and 225 remain. Continue with [dotnet/docs#35043](https://github.com/dotnet/docs/issues/35043), opened April 18, 2023, and stop at position 600. Refresh issue states; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -634,3 +634,63 @@ The [publishing overview](../docs/core/deploying/index.md) describes servers, co
 The named option and generator belong to `AspNet.Security.OAuth.Apple` in `aspnet-contrib/AspNet.Security.OAuth.Providers`. The provider's [5.0.0 generator](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/blob/5.0.0/src/AspNet.Security.OAuth.Apple/Internal/DefaultAppleClientSecretGenerator.cs) imports decoded bytes with `ImportPkcs8PrivateKey`; its [6.0.0 generator](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/blob/6.0.0/src/AspNet.Security.OAuth.Apple/Internal/DefaultAppleClientSecretGenerator.cs) imports the option's PEM text with `ImportFromPem`. The [existing provider discussion](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/issues/385#issuecomment-1056507578) identifies the changed PEM-envelope expectation.
 
 **Suggested closure explanation:** Close here as a provider-package migration concern and direct any missing provider release note to its maintainers. Don't add the change to the .NET runtime breaking-change catalog or claim that the closed upstream thread proves the provider's migration documentation is complete. Don't publish the reporter's ad hoc secret-normalization code as a framework workaround.
+
+### dotnet/docs#34173: Clarify which part of dependency injection becomes immutable
+
+**Opened:** February 19, 2023. **Confidence:** High for the reported sentence. **Reason:** The ambiguous subject has been corrected.
+
+The [MAUI dependency-injection chapter](../docs/architecture/maui/dependency-injection.md#registration) now says that the dependency injection **container** becomes immutable after `Build` and immediately tells readers to register all required services first. It no longer says the registered services themselves become immutable. The [author's answer](https://github.com/dotnet/docs/issues/34173#issuecomment-1487820533) independently distinguishes registrations from the mutable state a service object can expose.
+
+**Suggested closure explanation:** Close the original wording report as addressed. The registration/container configuration is fixed after the build; that statement doesn't make service instances or their data immutable.
+
+### dotnet/docs#34709: Apply method casing to private methods
+
+**Opened:** March 23, 2023. **Confidence:** High. **Reason:** The C# naming guide now explicitly covers all methods.
+
+The [identifier-naming guide](../docs/csharp/fundamentals/coding-style/identifier-names.md#pascal-case) says to use Pascal casing for **all methods and local functions**, separately from its public-member guidance. Its introduction identifies the runtime/docs-team convention and distinguishes conventions from compiler-enforced rules. The older [framework design guideline](../docs/standard/design-guidelines/capitalization-conventions.md) concerns public API design and isn't the only naming reference.
+
+**Suggested closure explanation:** Link the explicit all-methods rule, which includes private methods. Don't turn a recommended team convention into a C# language requirement or rewrite the public-API guideline to imply it dictates every project's private implementation style.
+
+### dotnet/docs#34817: Distinguish an optional binding name from authentication configuration
+
+**Opened:** March 29, 2023. **Confidence:** High for the optional-name contract, not the reporter's HTTP 401 cause. **Reason:** Unnamed bindings are supported and documented.
+
+The [`basicHttpBinding` reference](../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md) explicitly states that a name isn't required from .NET Framework 4 onward and provides the equivalent unnamed/default configuration. The [simplified-configuration guide](../docs/framework/wcf/simplified-configuration.md) explains how an endpoint selects that default.
+
+An owned .NET Framework 4.x configuration probe loaded an unnamed `basicHttpBinding` into a `ChannelFactory` and observed the configured `TransportCredentialOnly` mode and `Basic` credentials. No service request was sent, so the result doesn't diagnose the reported 401 or prove server interoperability.
+
+**Suggested closure explanation:** Keep the correct optional-name documentation. Explain default binding selection versus an explicitly named `bindingConfiguration`; request a concrete endpoint/security configuration only if the authentication problem persists. Don't make `name` universally required as a workaround for an unisolated 401.
+
+### dotnet/docs#34826: Resolve the specific TensorFlow native-entry-point mismatch
+
+**Opened:** March 30, 2023. **Confidence:** High for the reported legacy mismatch. **Reason:** The reporter supplies the successful remedy, and the remaining compatibility task already has an owner-backed tracker.
+
+The issue says that the matching `SciSharp.TensorFlow.Redist` 2.3.1 resolved `TF_StringDecode`. The cited [dotnet/machinelearning#6040](https://github.com/dotnet/machinelearning/issues/6040) contains the same confirmed result and an [owner reply](https://github.com/dotnet/machinelearning/issues/6040#issuecomment-1015723147) that explicitly tracks central dependency documentation in [dotnet/docs#27878](https://github.com/dotnet/docs/issues/27878). The [tutorial](../docs/machine-learning/tutorials/image-classification-api-transfer-learning.md) also names that historical package version.
+
+**Suggested closure explanation:** Close the resolved entry-point report and retain release-matched managed/native compatibility guidance under the existing [defined-fix brief](issues-with-defined-fixes.md#dotnetdocs27878-document-tensorflow-native-redistributable-requirements). Don't universally prescribe 2.3.1 for current ML.NET releases, treat arbitrary native upgrades as compatible, or claim that the central documentation task is already complete.
+
+### dotnet/docs#34992: Explain the converter collection initializer
+
+**Opened:** April 12, 2023. **Confidence:** High for the quoted C# pattern. **Reason:** The initializer populates a fresh collection; it doesn't assign the get-only property.
+
+The [converter guide](../docs/standard/serialization/system-text-json/converters-how-to.md) uses a nested collection initializer for `JsonSerializerOptions.Converters`. An owned run with the actual [DateTimeOffset converter](../docs/standard/serialization/system-text-json/snippets/how-to/csharp/DateTimeOffsetConverter.cs) compiled that pattern, registered one converter, and serialized the test value as `"01/02/2023"`. After serialization, an attempted collection addition correctly threw `InvalidOperationException`.
+
+The get-only property and the collection's later read-only state are different constraints. The [maintainer reply](https://github.com/dotnet/docs/issues/34992#issuecomment-1562096432) points to the latter, but doesn't establish that the quoted fresh initializer is invalid.
+
+**Suggested closure explanation:** Explain nested collection initialization versus property assignment and options freezing after use. Close the claim that the shown pattern is inherently broken. A failing variant needs its exact language, complete code, diagnostic, and reuse sequence; don't replace the valid initializer merely because the property has no setter. Coordinate with current assignee `gewarren`.
+
+### dotnet/docs#35008: Match the e-book download to its advertised edition
+
+**Opened:** April 14, 2023. **Confidence:** High for the edition mismatch. **Reason:** The actual PDF, not only its landing page, is now edition 8.
+
+The [book introduction](../docs/architecture/modern-web-apps-azure/index.md) and [eShopOnWeb README](https://github.com/dotnet-architecture/eShopOnWeb) now advertise ASP.NET Core 8. The `aka.ms/webappebook` route leads to a download page whose PDF link targets the [current book asset](https://github.com/dotnet-architecture/eBooks/blob/main/current/architecting-modern-web-apps-azure/Architecting-Modern-Web-Applications-with-ASP.NET-Core-and-Azure.pdf). The downloaded PDF's opening edition statement and version section both identify edition 8.0/ASP.NET Core 8.0.
+
+**Suggested closure explanation:** Close the reported edition-7 link serving edition-6 content as superseded by a verified matching edition-8 download. Repository archival or the HTML edition label alone isn't the evidence. Don't imply that this check validates every chapter or makes the historical book the preferred current architecture guide.
+
+### dotnet/docs#35017: Mention LoggerMessageAttribute in CA1848 guidance
+
+**Opened:** April 15, 2023. **Confidence:** High. **Reason:** The requested attribute guidance and example already exist.
+
+The [CA1848 reference](../docs/fundamentals/code-analysis/quality-rules/ca1848.md#how-to-fix-violations) now explicitly recommends `LoggerMessageAttribute`, provides an attributed partial-method correction, retains `LoggerMessage` for older versions, and links [compile-time logging source generation](../docs/core/extensions/logging/source-generation.md).
+
+**Suggested closure explanation:** Close as addressed in the rule's fix instructions, sample, and related links. No additional attribute introduction is needed for the original request; retain the version and language applicability of source generation rather than infer universal generator support from the rule's language list.

@@ -5,15 +5,15 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 121 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track twenty additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 130 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track twenty additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 350 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#33977](https://github.com/dotnet/docs/issues/33977), opened February 11, 2023.
-- **Results:** 141 defined fixes (121 assignment candidates and 20 with open implementation PRs) and 68 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 326-350 add 8 new assignment candidates and 4 fixes with open implementation PRs, alongside 8 closure candidates.
-- **Remaining:** 498 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 50 are complete and 250 remain. Continue with [dotnet/docs#34173](https://github.com/dotnet/docs/issues/34173), opened February 19, 2023, and stop at position 600.
+- **Completed batches:** The 375 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#35017](https://github.com/dotnet/docs/issues/35017), opened April 15, 2023.
+- **Results:** 150 defined fixes (130 assignment candidates and 20 with open implementation PRs) and 75 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 351-375 add 9 new assignment candidates and no new fixes with open implementation PRs, alongside 7 closure candidates.
+- **Remaining:** 473 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 75 are complete and 225 remain. Continue with [dotnet/docs#35043](https://github.com/dotnet/docs/issues/35043), opened April 18, 2023, and stop at position 600.
 - **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the twenty active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
@@ -1339,6 +1339,96 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Acceptance criteria:** On an owned Windows fixture, verify the documented installed component, actual executable location, shell initialization, and elevated launch. No `fuslogvw.exe` was available on the current PATH, and no elevation or viewer launch was attempted during triage. Don't publish a guessed hard-coded SDK path or change shared-machine logging/registry settings to satisfy the check.
 
+### dotnet/docs#34454: Add a Bicep role-assignment alternative
+
+**Issue:** [dotnet/docs#34454](https://github.com/dotnet/docs/issues/34454). **Opened:** March 8, 2023. **Size:** Small to medium, infrastructure example in a shared include. **GHCP suitability:** Strong after Azure documentation-owner coordination.
+
+**Why it still applies:** The [current developer-account guide](../docs/azure/sdk/authentication/local-development-dev-accounts.md) consumes [assign-group-roles.md](https://github.com/MicrosoftDocs/azure-dev-docs/blob/main/articles/includes/authentication/assign-group-roles.md) from `MicrosoftDocs/azure-dev-docs`. That include still offers only portal and Azure CLI tabs for the role assignment. The old article's redirect isn't evidence that infrastructure-as-code coverage was added.
+
+**Proposed assignment scope:** Add a Bicep alternative for the same existing Microsoft Entra group and resource-group-scoped role assignment. Parameterize the group object ID and role definition, use a deterministic role-assignment name and correct principal type, and explain the deployment identity's role-assignment permission. Reuse Azure RBAC's established Bicep resource pattern. Don't broaden the scope/permissions or turn the task into group provisioning or an authentication rewrite.
+
+**Acceptance criteria:** Compile the Bicep and validate an idempotent deployment on an owned Azure fixture with the same principal, role, and scope as the other tabs. Review all consumers of the shared include and tab grouping. Arrange the include change in `MicrosoftDocs/azure-dev-docs`; editing only the .NET article won't update the embedded instructions.
+
+### dotnet/docs#34467: Explain implementation-only incremental generator output
+
+**Issue:** [dotnet/docs#34467](https://github.com/dotnet/docs/issues/34467). **Opened:** March 8, 2023. **Size:** Small, API-source clarification. **GHCP suitability:** Strong after a Roslyn API handoff.
+
+**Why it still applies:** The [API XML](https://github.com/dotnet/roslyn-api-docs/blob/main/dotnet/xml/Microsoft.CodeAnalysis/IncrementalGeneratorInitializationContext.xml) describes implementation output as treated differently in some scenarios, but leaves remarks empty. The [compiler's feature guide](https://github.com/dotnet/roslyn/blob/main/docs/features/incremental-generators.md) already states the precise distinction, and [dotnet/roslyn#57963](https://github.com/dotnet/roslyn/issues/57963#issuecomment-1460710846) explicitly retains the Learn API-page gap after that guide was updated.
+
+**Proposed assignment scope:** Explain the relationship between `RegisterSourceOutput` and `RegisterImplementationSourceOutput` on both single-value and values-provider overloads, with reciprocal links. Implementation-only output declares no semantic impact on user-code analysis, so an analysis host can skip it; an executable-producing host runs it. Don't describe the distinction as reflection-only code versus ordinary code or promise every IDE always skips it.
+
+**Acceptance criteria:** Match the compiler-owner contract and verify all affected rendered overloads in `dotnet/roslyn-api-docs`. An owned driver probe generated four files normally and only the two ordinary-output files when implementation output was explicitly disabled, covering all four overloads. That controlled driver test isn't a measurement of a particular IDE's optimization policy.
+
+### dotnet/docs#34475: Focus the displayed named-pipe examples
+
+**Issue:** [dotnet/docs#34475](https://github.com/dotnet/docs/issues/34475). **Opened:** March 9, 2023. **Size:** Medium, example presentation/refactoring. **GHCP suitability:** Suitable as one coordinated article change with the retained duplex-example task.
+
+**Why it still applies:** The [named-pipe article](../docs/standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md) still displays the broad `01` regions of the full multi-threaded impersonation/file-transfer client and server. Those programs combine protocol helpers, identity handling, file access, and IPC setup rather than isolate the basic pipe lesson.
+
+**Proposed assignment scope:** Put a compact, focused client/server path first, show short regions around connection and data exchange, and link complete runnable projects. Keep the existing impersonation/file-transfer scenario as a separate advanced example with its prerequisites. Coordinate with [dotnet/docs#33939](https://github.com/dotnet/docs/issues/33939) rather than assign a second competing sample rewrite. Preserve C#/VB coverage and platform distinctions; don't remove security context just to shorten a code block.
+
+**Acceptance criteria:** The displayed regions teach one step at a time without unrelated helpers or unnecessarily wide statements, while full source remains available. Build and execute the paired minimal sample and verify messages/cleanup, then check the rendered layout. Preserve advanced-example behavior and cross-links; an accordion around the same oversized block alone doesn't meet the request.
+
+### dotnet/docs#34480: Identify the archived custom-provider walkthrough
+
+**Issue:** [dotnet/docs#34480](https://github.com/dotnet/docs/issues/34480). **Opened:** March 9, 2023. **Size:** Small, prose/link context. **GHCP suitability:** Strong with current assignee `BillWagner`'s agreement.
+
+**Why it still applies:** The [LINQ overview](../docs/standard/linq/index.md) still introduces the previous-versions provider walkthrough without any historical qualification. The discussion distinguishes the reader's concern about applicability from the archived site's language selector; the maintainer doesn't propose changes inside the unmaintained page.
+
+**Proposed assignment scope:** Label the destination as an archived walkthrough, describe its advanced custom-provider purpose, and pair it with the current `IQueryable`/`IQueryProvider` API entry points. Don't imply the APIs are obsolete or that the old sample is broken merely because its host is archived. Coordinate the localized change with [dotnet/docs#33345](https://github.com/dotnet/docs/issues/33345)'s introductory roadmap in the same article pass; don't create another provider tutorial or edit the archive's language UI.
+
+**Acceptance criteria:** The source page sets the destination's maintenance/version context before navigation and supplies working current API links. Preserve the historical example as an explicitly identified reference rather than silently substitute an unrelated dynamic-query tutorial.
+
+### dotnet/docs#34638: Correct the ReadyToRun cross-target table
+
+**Issue:** [dotnet/docs#34638](https://github.com/dotnet/docs/issues/34638). **Opened:** March 17, 2023. **Size:** Small to medium, version-qualified table correction. **GHCP suitability:** Suitable with a Linux build fixture and runtime-owner review.
+
+**Why it still applies:** The [ReadyToRun table](../docs/core/deploying/ready-to-run.md) still excludes Windows from the Linux x64 host row for .NET 6 and later. The modern SDK's [compiler-selection source](https://github.com/dotnet/sdk/blob/v10.0.100/src/Tasks/Microsoft.NET.Build.Tasks/ResolveReadyToRunCompilers.cs) selects the Crossgen2 host tool and target OS separately; its old same-platform restriction belongs to the legacy Crossgen path, not a blanket rule for modern Crossgen2.
+
+**Proposed assignment scope:** Verify the reported Linux x64-to-Windows target with the applicable supported SDK, correct the affected cells/release qualifications, and retain the separate historical table. Don't copy Native AOT's cross-OS limitation into ReadyToRun or extrapolate a complete host/architecture matrix from one successful target.
+
+**Acceptance criteria:** Publish on Linux for the stated Windows RID with ReadyToRun enabled, inspect the output's ReadyToRun header, and run it on a matching Windows fixture. Distinguish plain IL publication from actual R2R output. No Linux-to-Windows publish was executed during triage; obtain owner confirmation of the supported release scope before publishing the table correction.
+
+### dotnet/docs#34675: Qualify the unsupported IdentityServer4 recipes
+
+**Issue:** [dotnet/docs#34675](https://github.com/dotnet/docs/issues/34675). **Opened:** March 21, 2023. **Size:** Small, support-status/signpost correction. **GHCP suitability:** Strong for the bounded correction, not a wholesale provider migration.
+
+**Why it still applies:** The [microservices authentication chapter](../docs/architecture/microservices/secure-net-microservices-web-applications/index.md) still presents IdentityServer4 configuration as current guidance. The [provider's README](https://github.com/IdentityServer/IdentityServer4) explicitly says it isn't maintained and went out of support on December 13, 2022. Its former documentation link now redirects to Duende documentation, which doesn't make the old package/configuration current.
+
+**Proposed assignment scope:** Clearly mark the IdentityServer4 instructions as historical/unsupported and stop presenting them as a supported production starting point. Link current ASP.NET Core authentication guidance and accurately identified provider documentation. Distinguish IdentityServer4 from Duende IdentityServer and link the latter's licensing terms, including applicable community eligibility, rather than call it a universally free drop-in update. Review the chapter's provider references and further-reading links together.
+
+**Acceptance criteria:** Readers see the support boundary before the legacy steps and have a maintained next step. Don't silently rename packages/APIs or claim a verified provider migration without executing one. A full reference-application/provider replacement remains a separate architecture decision; this brief addresses the concrete misleading support claim.
+
+### dotnet/docs#34862: Explain narrow suppression at a logging adapter boundary
+
+**Issue:** [dotnet/docs#34862](https://github.com/dotnet/docs/issues/34862). **Opened:** April 3, 2023. **Size:** Small, analyzer rationale and focused example. **GHCP suitability:** Strong with analyzer review.
+
+**Why it still applies:** The [CA2254 suppression section](../docs/fundamentals/code-analysis/quality-rules/ca2254.md#when-to-suppress-errors) doesn't discuss a pass-through logger adapter. The cited [adapter source](https://github.com/dotnet-architecture/eShopOnWeb/blob/main/src/Infrastructure/Logging/LoggerAdapter.cs) forwards the template and argument array unchanged. An owned stable-SDK probe emitted CA2254 at that forwarding call even when the caller supplied a constant template.
+
+**Proposed assignment scope:** Explain a narrowly justified suppression at the forwarding boundary when the caller contract preserves a constant template and separate values. Show the difference from an adapter that interpolates/concatenates or accepts genuinely varying templates. Layer placement or an interface alone isn't justification; don't recommend a project-wide suppression or describe all wrappers as false positives. Use both language examples if the general rule page adds executable code.
+
+**Acceptance criteria:** Verify the analyzer result and structured log state. The owned run preserved `OriginalFormat=Person {Name}` and `Name=Ada`; a local suppression removed only the wrapper diagnostic while the direct interpolated call still warned. Apply the same proof to the final published sample and state the caller/template contract rather than hide a real loss of structured data.
+
+### dotnet/docs#34908: Show how to populate a Linux user certificate store
+
+**Issue:** [dotnet/docs#34908](https://github.com/dotnet/docs/issues/34908). **Opened:** April 6, 2023. **Size:** Small to medium, paired-language recipe. **GHCP suitability:** Strong with an isolated Linux test fixture.
+
+**Why it still applies:** The [cross-platform cryptography guide](../docs/standard/security/cross-platform-cryptography.md#x509store) documents read/write support and creation on first write, but doesn't show how to add a certificate to `CurrentUser\My`. The comment's internal storage path isn't a supported import procedure.
+
+**Proposed assignment scope:** Add a concise `X509Store` open/add/find recipe for `StoreName.My` and `StoreLocation.CurrentUser`, with certificate-loading and private-key requirements appropriate to the selected supported .NET version. Explain application identity/home-directory scope, disposal, and the difference between personal key storage and trusted roots. Don't direct users to copy files into an implementation-private directory, use unsupported Linux `LocalMachine\My`, or promise that store placement alone makes Data Protection configuration work.
+
+**Acceptance criteria:** In an owned Linux home/profile, add a disposable test certificate, reopen the store under the same identity, find it by thumbprint, and verify private-key usability when required. Test both C# and VB, remove only the owned certificate afterward, and avoid shared user/root stores. Don't infer Linux persistence from a Windows-only run.
+
+### dotnet/docs#34916: Connect native package assets to P/Invoke probing
+
+**Issue:** [dotnet/docs#34916](https://github.com/dotnet/docs/issues/34916). **Opened:** April 7, 2023. **Size:** Small, explanation and authoritative cross-links. **GHCP suitability:** Strong; the packaging/loading contract is already documented elsewhere.
+
+**Why it still applies:** The old page redirects to [native library loading](../docs/standard/native-interop/native-library-loading.md), which explains name variants and a custom resolver but still doesn't connect NuGet's `runtimes` layout to native dependency selection. The [NuGet native-files guide](https://learn.microsoft.com/nuget/create-packages/native-files-in-net-packages) already explains RID-specific versus RID-less publish output and `.deps.json`.
+
+**Proposed assignment scope:** Add a short package-asset subsection and link the NuGet guide, RID guidance, and [host-configured native probing](../docs/core/dependency-loading/default-probing.md). Distinguish native `runtimes/{rid}/native` assets from managed `runtimes/{rid}/lib/{tfm}` assets, and explain the host's dependency metadata/search paths. Don't say `DllImport` recursively scans arbitrary `runtimes` folders, require a custom resolver for ordinary package assets, or apply the modern contract unchanged to .NET Framework.
+
+**Acceptance criteria:** Match the authoritative RID and publish-mode distinctions, including current portable-RID rules. Verify links and any concrete output/layout example against an owned package; if the change adds runnable publish/P/Invoke steps, execute the stated RID-specific and RID-less cases with matching native fixtures. Keep the task a bridge to established packaging guidance, not a duplicate packaging tutorial.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -1544,6 +1634,10 @@ The variance-position illustration, POCO definition, CA1506 suppression choices,
 Coordinate the worker/I/O count clarification with `kouvel`. Arrange the JsonTypeInfo API and Bootstrap signpost work in their owning repositories before assignment. Preserve both custom-transform owners and verify modern factory discovery rather than copy the obsolete registration requirement. Complete the existing DataFrame guide instead of replacing its merged work; coordinate the general ONNX guide with its current owner and verify schema/provider assumptions.
 
 The LINQ roadmap and corrected flexible-type example are additional small changes. Coordinate converter discoverability with the existing Windows Forms task. Arrange the CSharpParseOptions, syntax-walker, and OLS API work in their actual owning repositories; don't assign a docs-only change that can't publish the correction. The duplex pipe sample needs two live endpoints, and Fuslogvw setup needs a verified Windows tool/launch path.
+
+Pair the archived-provider signpost with the LINQ roadmap, and pair the named-pipe presentation issue with its async duplex example rather than create competing rewrites. The native-asset explanation and IdentityServer4 support warning are focused prose/link tasks; don't turn either into an unapproved platform/provider redesign. The CA2254 adapter exception needs structured-state evidence and a narrow suppression, not an architecture-based blanket exemption.
+
+Arrange the shared Azure Bicep include and incremental-generator API work in their owning repositories. The role assignment needs an owned Azure validation, the R2R table needs a real Linux-to-Windows artifact check, and the certificate recipe needs isolated Linux persistence/private-key checks.
 
 Review the twenty existing implementation PRs separately from new assignments; the F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review.
 

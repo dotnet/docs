@@ -5,15 +5,15 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 130 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track twenty additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 143 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track twenty additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 375 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#35017](https://github.com/dotnet/docs/issues/35017), opened April 15, 2023.
-- **Results:** 150 defined fixes (130 assignment candidates and 20 with open implementation PRs) and 75 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 351-375 add 9 new assignment candidates and no new fixes with open implementation PRs, alongside 7 closure candidates.
-- **Remaining:** 473 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 75 are complete and 225 remain. Continue with [dotnet/docs#35043](https://github.com/dotnet/docs/issues/35043), opened April 18, 2023, and stop at position 600.
+- **Completed batches:** The 400 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#35828](https://github.com/dotnet/docs/issues/35828), opened June 14, 2023.
+- **Results:** 163 defined fixes (143 assignment candidates and 20 with open implementation PRs) and 79 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 376-400 add 13 new assignment candidates and no new fixes with open implementation PRs, alongside 4 closure candidates.
+- **Remaining:** 448 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 100 are complete and 200 remain. Continue with [dotnet/docs#35857](https://github.com/dotnet/docs/issues/35857), opened June 17, 2023, and stop at position 600.
 - **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the twenty active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
@@ -1429,6 +1429,136 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Acceptance criteria:** Match the authoritative RID and publish-mode distinctions, including current portable-RID rules. Verify links and any concrete output/layout example against an owned package; if the change adds runnable publish/P/Invoke steps, execute the stated RID-specific and RID-less cases with matching native fixtures. Keep the task a bridge to established packaging guidance, not a duplicate packaging tutorial.
 
+### dotnet/docs#35043: Distinguish the two type-forwarding attributes
+
+**Issue:** [dotnet/docs#35043](https://github.com/dotnet/docs/issues/35043). **Opened:** April 18, 2023. **Size:** Small, conceptual clarification and API cross-links. **GHCP suitability:** Suitable with runtime/serialization-owner review.
+
+**Why it still applies:** The [type-forwarding guide](../docs/standard/assembly/type-forwarding.md) explains only `TypeForwardedToAttribute`. The [TypeForwardedFrom API source](https://github.com/dotnet/dotnet-api-docs/blob/main/xml/System.Runtime.CompilerServices/TypeForwardedFromAttribute.xml) still offers only the brief origin-tracing statement. Runtime source distinguishes assembly-level forwarding metadata from a type-level original assembly identity; the legacy formatter reads the latter.
+
+**Proposed assignment scope:** Explain where each attribute belongs and that origin metadata doesn't create a forwarder or become a universal requirement for an ordinary type move. Describe the compatibility scenario with explicit serializer/version qualifications, not a blanket recommendation to add it everywhere. Add discoverable conceptual back-links in the two API topics through `dotnet/dotnet-api-docs`, coordinated with the existing API cross-link effort.
+
+**Acceptance criteria:** Preserve the existing binary-compatible type-move walkthrough and verify it without assuming `TypeForwardedFrom` is mandatory. Confirm the origin identity behavior against the actual consuming implementation. Don't introduce a new BinaryFormatter recipe or portray its removed/unsupported modern implementation as a recommended serializer.
+
+### dotnet/docs#35094: Signpost runtime-specific mobile GC configuration
+
+**Issue:** [dotnet/docs#35094](https://github.com/dotnet/docs/issues/35094). **Opened:** April 21, 2023. **Size:** Small, scope note and platform links. **GHCP suitability:** Strong with Android/Apple runtime review.
+
+**Why it still applies:** The [GC configuration page](../docs/core/runtime-config/garbage-collector.md) doesn't identify mobile runtime/configuration differences. The current [Android build-property reference](https://learn.microsoft.com/dotnet/android/building-apps/build-properties#androidenablesgenconcurrent) explicitly scopes `AndroidEnableSGenConcurrent` to supported Mono projects, not CoreCLR or NativeAOT. The [Apple build-property reference](https://learn.microsoft.com/dotnet/ios/building-apps/build-properties#enablesgenconc) similarly scopes `EnableSGenConc` to Mono and identifies the older property as deprecated.
+
+**Proposed assignment scope:** Add a short mobile/runtime applicability note and links to those maintained platform guides. Explain that Mono's SGen controls aren't interchangeable with the listed runtime GC settings; identify runtime and release before choosing a configuration mechanism. Don't imply every Android/iOS deployment always uses the same runtime or apply a preview runtime transition retroactively to supported releases.
+
+**Acceptance criteria:** Platform owners confirm the scope and current property names/aliases. Keep the change a signpost rather than invent a complete mobile GC tuning matrix. If it adds an executable configuration recipe, validate it on the applicable mobile workload; a desktop CoreCLR process doesn't validate SGen behavior.
+
+### dotnet/docs#35127: Define the MAUI Toolkit XAML prefix
+
+**Issue:** [dotnet/docs#35127](https://github.com/dotnet/docs/issues/35127). **Opened:** April 26, 2023. **Size:** Small, namespace/prerequisite clarification. **GHCP suitability:** Strong with MAUI sample-version review.
+
+**Why it still applies:** The [validation chapter](../docs/architecture/maui/validation.md#highlighting-a-control-that-contains-invalid-data) still uses `mct:EventToCommandBehavior` without defining `mct`. The maintained [Toolkit behavior reference](https://learn.microsoft.com/dotnet/communitytoolkit/maui/behaviors/event-to-command-behavior) supplies the `http://schemas.microsoft.com/dotnet/2022/maui/toolkit` mapping and explains the behavior's explicit binding-context requirements.
+
+**Proposed assignment scope:** Define the prefix in its containing XAML/root context and link the CommunityToolkit.Maui package/initialization prerequisites. Distinguish the UI Toolkit namespace from CommunityToolkit.Mvvm; `mct` is an example prefix, not a built-in XML namespace. Preserve the validation lesson instead of rewrite the whole chapter.
+
+**Acceptance criteria:** The referenced toolkit type resolves for the stated sample version, and the command still runs on the control event. Don't repair only XML parsing while retaining an incompatible implicit behavior `BindingContext` assumption in a sample updated to a current Toolkit. Check prerequisite links and the rendered XAML; no MAUI workload was executed during triage.
+
+### dotnet/docs#35180: Make semaphore platform boundaries explicit
+
+**Issue:** [dotnet/docs#35180](https://github.com/dotnet/docs/issues/35180). **Opened:** April 27, 2023. **Size:** Small, introduction/description correction. **GHCP suitability:** Strong; the runtime source settles the distinction.
+
+**Why it still applies:** The [semaphore guide](../docs/standard/threading/semaphore-and-semaphoreslim.md) still describes `Semaphore` as a Win32 wrapper in both its description metadata and introduction without a Windows qualification. The owner points to the [Unix implementation](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Private.CoreLib/src/System/Threading/Semaphore.Unix.cs), which implements unnamed semaphores but rejects names.
+
+**Proposed assignment scope:** Describe the general counting-semaphore contract first, qualify the Windows implementation, and clearly separate local semaphore support from Windows-only named/systemwide behavior. Correct the metadata too. Don't replace Win32 with an unverified claim that every Unix implementation wraps the same POSIX object, or extend named semaphore/ACL advice to Unix.
+
+**Acceptance criteria:** Verify unnamed acquisition/release on Windows and Linux and the named-constructor platform boundary against the selected supported runtime. Preserve Windows named-semaphore/security guidance and `SemaphoreSlim`'s process-local distinction. Keep implementation details version-scoped rather than promise an internal representation.
+
+### dotnet/docs#35181: Explain how to obtain a control-flow graph's entry block
+
+**Issue:** [dotnet/docs#35181](https://github.com/dotnet/docs/issues/35181). **Opened:** April 27, 2023. **Size:** Small, API-source clarification. **GHCP suitability:** Strong after a Roslyn API handoff.
+
+**Why it still applies:** The [ControlFlowGraph API source](https://github.com/dotnet/roslyn-api-docs/blob/main/dotnet/xml/Microsoft.CodeAnalysis.FlowAnalysis/ControlFlowGraph.xml) mentions an entry block but doesn't say how to obtain it. The [BasicBlockKind contract](https://github.com/dotnet/roslyn-api-docs/blob/main/dotnet/xml/Microsoft.CodeAnalysis.FlowAnalysis/BasicBlockKind.xml) explicitly says the entry is the first block and the exit is the last.
+
+**Proposed assignment scope:** Put the ordering guarantee and `Blocks[0]` discovery guidance beside the class/`Blocks` property, cross-link the entry/exit kind definitions, and distinguish the entry boundary from the first user operation. Don't invent an `Entry` property or imply the entry block itself contains the method's first statement.
+
+**Acceptance criteria:** An owned compiler-API probe produced `Entry` at ordinal 0 and `Exit` at the final position. Validate the final wording against the authoritative ordering guarantee and publish through `dotnet/roslyn-api-docs`; a conceptual docs edit alone can't correct the API page.
+
+### dotnet/docs#43915: Map the global-using F1 keyword to the using guide
+
+**Issue:** [dotnet/docs#43915](https://github.com/dotnet/docs/issues/43915). **Opened:** April 27, 2023. **Size:** Small, F1 metadata. **GHCP suitability:** Strong with an IDE lookup check; coordinate with current assignee `arunchndr`.
+
+**Why it still applies:** [dotnet/roslyn#76327](https://github.com/dotnet/roslyn/pull/76327) merged the distinct `global-using_CSharpKeyword` help label, and current compiler IDE source still emits it. The [using-directive guide](../docs/csharp/language-reference/keywords/using-directive.md) lists `using_CSharpKeyword` and `using-static_CSharpKeyword`, but not the new global-using label.
+
+**Proposed assignment scope:** Add the distinct label to the using-directive page's F1 metadata. Preserve the namespace-alias page's `global_CSharpKeyword` mapping, which is still appropriate for `global::`, and preserve existing using/static help labels. The merged compiler PR fixes only one half of the integration.
+
+**Acceptance criteria:** In an IDE that emits the new label, F1 on `global using` reaches the using guide; `using static`, ordinary `using`, and `global::` retain the correct destinations. Confirm the published help mapping, not only the YAML edit. Follow original creation order despite the issue's later transferred number.
+
+### dotnet/docs#35322: Add a source-backed F# version-history overview
+
+**Issue:** [dotnet/docs#35322](https://github.com/dotnet/docs/issues/35322). **Opened:** May 12, 2023. **Size:** Medium, one new overview and TOC entry. **GHCP suitability:** Suitable with an F# maintainer's factual review.
+
+**Why it still applies:** The [F# TOC](../docs/fsharp/toc.yml) lists individual release pages but no history overview. Existing [What's New pages](../docs/fsharp/whats-new/fsharp-10.md) cover modern language versions, and the author's [early-history paper](https://fsharp.org/history/hopl-final/hopl-fsharp.pdf) supplies the historical source the issue identifies.
+
+**Proposed assignment scope:** Add `docs/fsharp/whats-new/fsharp-version-history.md`, modeled on the C# history article's concise release/feature navigation, and include it in the TOC. Use the paper for early context and the individual release articles/accepted design records for newer version highlights. Cite each release's evidence and link detail rather than duplicate tutorials or invent historical examples.
+
+**Acceptance criteria:** Distinguish language, FSharp.Core, tooling, and .NET release versions. Verify dates and first-feature versions, preserve preview labels, and include the latest documented stable release. Don't fabricate a new release or copy the paper's narrative. Paraphrase sourced facts and flag unverified historical claims for maintainer review; don't guess.
+
+### dotnet/docs#35431: Preserve the backslash in rendered AddSource remarks
+
+**Issue:** [dotnet/docs#35431](https://github.com/dotnet/docs/issues/35431). **Opened:** May 22, 2023. **Size:** Small, API XML/rendering fix. **GHCP suitability:** Strong after a Roslyn API handoff.
+
+**Why it still applies:** Both [GeneratorExecutionContext](https://github.com/dotnet/roslyn-api-docs/blob/main/dotnet/xml/Microsoft.CodeAnalysis/GeneratorExecutionContext.xml) and [SourceProductionContext](https://github.com/dotnet/roslyn-api-docs/blob/main/dotnet/xml/Microsoft.CodeAnalysis/SourceProductionContext.xml) contain the literal backslash, but the live `GeneratorExecutionContext.AddSource` HTML still displays an empty quoted separator. [dotnet/roslyn#83179](https://github.com/dotnet/roslyn/pull/83179) proposed code formatting but closed **unmerged**; it isn't a completed implementation.
+
+**Proposed assignment scope:** Use the API pipeline's supported inline-code markup for the separator characters in the owning XML remarks, and coordinate compiler XML-comment parity where necessary. Check both context types and affected overloads. Don't change generator path behavior or add an unnecessary empty-string restriction to fix a presentation defect.
+
+**Acceptance criteria:** The rendered page visibly shows slash and backslash, including the reported version view. An owned generator run normalized `first\One.cs` to `first/One.cs` and retained `second/Two.cs`; preserve that behavior. A raw-source diff showing a backslash isn't sufficient proof because the defect occurs during publication.
+
+### dotnet/docs#35537: Use SDK versions in the manual CI install examples
+
+**Issue:** [dotnet/docs#35537](https://github.com/dotnet/docs/issues/35537). **Opened:** May 30, 2023. **Size:** Small to medium, paired scripts and version explanation. **GHCP suitability:** Strong with isolated script validation.
+
+**Why it still applies:** The [CI guide](../docs/devops/dotnet-cli-and-continuous-integration.md) still passes runtime-style `6.0.7` as the SDK version in PowerShell, Bash, and the provider example. Its installer invocation doesn't select a runtime-only installation, so that value names a nonexistent SDK payload.
+
+**Proposed assignment scope:** Use one verified supported SDK version consistently, distinguish SDK and runtime patch/feature-band numbering, and link the canonical version/installer guidance. Check every occurrence and the provider assumptions. Don't turn the task into a CI-provider redesign or assert that every historical SDK version must have a three-digit patch.
+
+**Acceptance criteria:** Official release metadata currently identifies SDK 10.0.403; both its Windows x64 and Linux x64 payload URLs returned 200 during triage. Execute the retained scripts in isolated install directories and show the expected `dotnet --version`/build result, including quoting and failure propagation. URL checks alone aren't a full installer or hosted-provider CI run.
+
+### dotnet/docs#35576: Correct the missing earlier CQRS explanation
+
+**Issue:** [dotnet/docs#35576](https://github.com/dotnet/docs/issues/35576). **Opened:** May 31, 2023. **Size:** Small, sentence and contextual cross-link. **GHCP suitability:** Strong; the book already contains the intended explanation.
+
+**Why it still applies:** The [distributed-data chapter](../docs/architecture/microservices/architect-microservice-container-applications/distributed-data-management.md) still says propagation was described earlier for CQRS query tables, but the earlier paragraph only introduces denormalized read tables. The same chapter later describes the catalog/basket integration-event example and links the event-driven communication section.
+
+**Proposed assignment scope:** Replace the false backward reference with a correct forward link and a short description of events updating derived/query data. Preserve source-of-truth ownership and eventual consistency. Don't invent an earlier walkthrough, imply a cross-service database transaction, or expand the correction into a new CQRS implementation tutorial.
+
+**Acceptance criteria:** Follow the chapter in reading order and verify every propagation reference resolves to an actual explanation. The revised sentence and destination agree; no new runtime sample is necessary for the prose/link correction.
+
+### dotnet/docs#35733: Update the legacy certificate-tool setup section
+
+**Issue:** [dotnet/docs#35733](https://github.com/dotnet/docs/issues/35733). **Opened:** June 9, 2023. **Size:** Small to medium, scoped Windows tool guidance. **GHCP suitability:** Suitable with Windows networking-owner review.
+
+**Why it still applies:** The [certificate-selection article](../docs/framework/network-programming/certificate-selection-and-validation.md#tools-for-certificate-configuration) still directs readers to Windows XP/Server 2003 support media and generic Microsoft download links for HttpCfg/Winhttpcertcfg. The maintained [Windows HTTP configuration reference](https://learn.microsoft.com/windows-server/networking/technologies/netsh/netsh-http) documents current HTTP.sys certificate-binding commands.
+
+**Proposed assignment scope:** Refresh the tool section: identify historical instructions, replace obsolete download/CD steps with maintained Windows certificate-management and HTTP.sys binding references, and retain the article's .NET Framework/API scope. Don't present `netsh http` as an automatic replacement for every private-key ACL operation, or confuse an HTTP.sys server binding with client certificate selection or Kestrel configuration.
+
+**Acceptance criteria:** Verify links, supported Windows applicability, certificate-store/private-key permission prerequisites, and any newly shown commands on an owned Windows fixture. Preserve the selection/validation API contract and don't disable certificate validation to simplify setup. Triage didn't execute elevated certificate-binding changes.
+
+### dotnet/docs#35737: Keep placeholder casing guidance consistent
+
+**Issue:** [dotnet/docs#35737](https://github.com/dotnet/docs/issues/35737). **Opened:** June 9, 2023. **Size:** Small, convention clarification and cross-link. **GHCP suitability:** Strong.
+
+**Why it still applies:** [High-performance logging](../docs/core/extensions/logging/high-performance-logging.md) explicitly recommends PascalCase placeholder names. [Source generation](../docs/core/extensions/logging/source-generation.md#case-insensitive-template-name-support) explains case-insensitive parameter matching but doesn't state the same convention. Its current example already combines `{City}`/`{Province}` with camelCase C# parameters correctly.
+
+**Proposed assignment scope:** Add the matching placeholder recommendation and link the common rationale: placeholder names become structured property names. Retain the case-insensitive matching explanation and distinguish a style convention from a compiler/generator requirement. Don't rename normal C# parameters to PascalCase or say all logging APIs bind arguments by name.
+
+**Acceptance criteria:** Preserve a case-insensitive generated-method example and its structured keys. An owned run matched a `city` argument to `{City}` and recorded `City=Vancouver` with `OriginalFormat=Hello {City}`. Keep the prose-only correction focused; no new duplicate logging tutorial is needed.
+
+### dotnet/docs#35828: Give Windows dump readers a concrete starting workflow
+
+**Issue:** [dotnet/docs#35828](https://github.com/dotnet/docs/issues/35828). **Opened:** June 14, 2023. **Size:** Medium, introductory workflow built on existing tool guides. **GHCP suitability:** Suitable with a Windows fixture; coordinate with current assignee `samsp-msft`.
+
+**Why it still applies:** [Debug Windows dumps](../docs/core/diagnostics/debug-windows-dumps.md) still consists of a tool-list paragraph. It links Visual Studio, WinDbg, and dotnet-dump without an introductory path from a dump file to useful process/thread/stack information.
+
+**Proposed assignment scope:** Explain tool choice, matching runtime/architecture and symbol prerequisites, how to open a dump, and a minimal first managed-stack investigation with one supported tool. Link existing tool-specific worked examples for deeper analysis instead of create three full manuals. Preserve that dotnet-dump isn't a native debugger; don't reuse .NET Framework SOS-loading commands blindly for modern .NET.
+
+**Acceptance criteria:** Follow the instructions on Windows against an owned, known-state process dump and record the expected thread/stack result. Mark intentional sample waits as such rather than claim every blocked stack is a deadlock. Don't commit production dumps, which can contain secrets. Triage confirmed the concrete introduction gap but didn't run a debugger session.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -1638,6 +1768,10 @@ The LINQ roadmap and corrected flexible-type example are additional small change
 Pair the archived-provider signpost with the LINQ roadmap, and pair the named-pipe presentation issue with its async duplex example rather than create competing rewrites. The native-asset explanation and IdentityServer4 support warning are focused prose/link tasks; don't turn either into an unapproved platform/provider redesign. The CA2254 adapter exception needs structured-state evidence and a narrow suppression, not an architecture-based blanket exemption.
 
 Arrange the shared Azure Bicep include and incremental-generator API work in their owning repositories. The role assignment needs an owned Azure validation, the R2R table needs a real Linux-to-Windows artifact check, and the certificate recipe needs isolated Linux persistence/private-key checks.
+
+The global-using F1 metadata, CQRS forward reference, and placeholder-casing recommendation are small, source-backed changes. Coordinate the F1 lookup with the existing IDE assignee. Pair the missing Toolkit namespace with prerequisite/binding-context checks; don't assume a prefix-only edit makes a current sample runnable.
+
+Route the entry-block and AddSource rendering corrections through Roslyn API documentation; the latter needs rendered-output evidence, not another unmerged compiler patch. Keep the mobile GC change runtime-specific and link maintained platform references. The SDK install, certificate-tool, and dump-introduction tasks need isolated platform validation; the F# overview needs release-by-release factual review rather than unsourced historical reconstruction.
 
 Review the twenty existing implementation PRs separately from new assignments; the F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review.
 

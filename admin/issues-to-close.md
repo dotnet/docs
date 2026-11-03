@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 375 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#35017](https://github.com/dotnet/docs/issues/35017), opened April 15, 2023.
-- **Results:** 75 closure candidates and 150 [clearly defined fixes](issues-with-defined-fixes.md) (130 assignment candidates and 20 fixes with open implementation PRs).
-- **Latest batch:** Issues 351-375, from [dotnet/docs#34173](https://github.com/dotnet/docs/issues/34173) through dotnet/docs#35017: 7 closure candidates, 9 new assignment candidates, and no new fixes with open implementation PRs.
-- **Remaining:** 473 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 75 are complete and 225 remain. Continue with [dotnet/docs#35043](https://github.com/dotnet/docs/issues/35043), opened April 18, 2023, and stop at position 600. Refresh issue states; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 400 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#35828](https://github.com/dotnet/docs/issues/35828), opened June 14, 2023.
+- **Results:** 79 closure candidates and 163 [clearly defined fixes](issues-with-defined-fixes.md) (143 assignment candidates and 20 fixes with open implementation PRs).
+- **Latest batch:** Issues 376-400, from [dotnet/docs#35043](https://github.com/dotnet/docs/issues/35043) through dotnet/docs#35828: 4 closure candidates, 13 new assignment candidates, and no new fixes with open implementation PRs.
+- **Remaining:** 448 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 100 are complete and 200 remain. Continue with [dotnet/docs#35857](https://github.com/dotnet/docs/issues/35857), opened June 17, 2023, and stop at position 600. Refresh issue states; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -694,3 +694,35 @@ The [book introduction](../docs/architecture/modern-web-apps-azure/index.md) and
 The [CA1848 reference](../docs/fundamentals/code-analysis/quality-rules/ca1848.md#how-to-fix-violations) now explicitly recommends `LoggerMessageAttribute`, provides an attributed partial-method correction, retains `LoggerMessage` for older versions, and links [compile-time logging source generation](../docs/core/extensions/logging/source-generation.md).
 
 **Suggested closure explanation:** Close as addressed in the rule's fix instructions, sample, and related links. No additional attribute introduction is needed for the original request; retain the version and language applicability of source generation rather than infer universal generator support from the rule's language list.
+
+### dotnet/docs#35117: Verify MVVM Toolkit content in the downloadable MAUI book
+
+**Opened:** April 24, 2023. **Confidence:** High for the specified missing content. **Reason:** The actual PDF now includes the toolkit material.
+
+The [MAUI book](../docs/architecture/maui/index.md) and its live download route now supply edition 2.0. The downloaded [PDF asset](https://github.com/dotnet-architecture/eBooks/blob/main/current/maui/Enterprise-Application-Patterns-Using-.NET-MAUI.pdf) contains the MVVM Toolkit Features chapter, substantive `ObservableObject` and `RelayCommand`/`AsyncRelayCommand` sections, and toolkit messenger coverage. Those sections occur in the body, not only the table of contents.
+
+**Suggested closure explanation:** Close the specific report that the PDF lacks the toolkit additions present on the web. The later follow-ups were valid at the time, so don't cite the original promise to update as completion evidence. The verified PDF content is the evidence; don't claim every future web edit or MAUI release is automatically synchronized.
+
+### dotnet/docs#35234: Keep the framework-family heading separate from a release number
+
+**Opened:** May 3, 2023. **Confidence:** High for the requested heading change. **Reason:** The current heading correctly contrasts .NET with .NET Framework.
+
+The [microservices book](../docs/architecture/microservices/index.md) now identifies edition 7.0. The actual PDF downloaded from its current route says "When to choose .NET for Docker containers" and immediately explains the edition's .NET 7 choice against .NET Framework; the preceding chapter introduces the same two framework families. A heading without a release suffix isn't an error and doesn't mean .NET Framework.
+
+**Suggested closure explanation:** Decline the proposed hard-coded .NET 6 heading. Keep modern .NET versus .NET Framework terminology and the edition-specific release in the surrounding text. Don't close on the basis that .NET 6 is old, claim that edition 7 is current supported deployment advice, or turn the naming answer into certification of the entire book.
+
+### dotnet/docs#35334: Resolve relative resource references from a custom working directory
+
+**Opened:** May 15, 2023. **Confidence:** High for the existing tool capability. **Reason:** A third input-base-directory switch isn't required for the described case.
+
+The [Resgen reference](../docs/framework/tools/resgen-exe-resource-file-generator.md#parameters) documents `/useSourcePath`, separately from output-file and output-directory arguments. An owned .NET Framework 4.8-tool probe supplied absolute input/output paths and placed different `payload.txt` files beside the input and in a custom working directory. Without `/useSourcePath`, the generated resource contained `custom-working-directory`; with it, the resource contained `source-directory`.
+
+**Suggested closure explanation:** Answer with a child-process working directory set to the desired base and absolute input/output paths, or use `/useSourcePath` for the source directory. Changing an output argument doesn't select the input base. There's no missing documented third switch to add; if a new CLI switch is still desired, distinguish that product feature request from the demonstrated supported workflow.
+
+### dotnet/docs#35681: Route the missing CS9035 explanation to its consolidated article
+
+**Opened:** June 7, 2023. **Confidence:** High for documentation coverage. **Reason:** The diagnostic, cause, and correction are now published.
+
+The [property-declaration diagnostic article](../docs/csharp/language-reference/compiler-messages/property-declaration-errors.md#required-members) includes CS9035 in its diagnostic list, `f1_keywords`, and required-member resolution section. The live article also contains the diagnostic. An owned compiler run emitted **error** CS9035 for an omitted required property and no errors after an object initializer supplied it.
+
+**Suggested closure explanation:** Close the missing-message documentation request and link the existing required-members explanation rather than create a duplicate `cs9035.md`. Correct the issue's warning/error distinction. A live Visual Studio F1 lookup wasn't exercised; if routing still fails in a specific IDE version, retain that concrete publishing/help-routing problem separately rather than claim the topic is absent.

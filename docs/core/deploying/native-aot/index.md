@@ -2,7 +2,7 @@
 title: Native AOT deployment overview
 description: Learn what Native AOT deployments are and why you should consider using it as part of the publishing your app with .NET 7 and later.
 author: lakshanf
-ms.date: 10/22/2025
+ms.date: 11/03/2026
 ai-usage: ai-assisted
 ---
 
@@ -22,84 +22,51 @@ The Native AOT deployment model uses an ahead-of-time compiler to compile IL to 
 
 # [Alpine](#tab/linux-alpine)
 
-- The compiler toolchain and developer packages for libraries that the .NET runtime depends on.
+- The compiler toolchain.
 - Alpine (3.15+)
 
-  Publish dependencies:
-
   ```sh
-  sudo apk add clang build-base icu-dev
-  ```
-
-  Run-time dependencies:
-
-  ```sh
-  sudo apk add icu-libs
+  sudo apk add clang build-base
   ```
 
 > [!NOTE]
-> The `icu-libs` package is only required at runtime if globalization is enabled. If you configure `InvariantGlobalization` or similar [globalization settings](https://learn.microsoft.com/dotnet/core/runtime-config/globalization), runtime `libicu` may not be needed.
+> To run a Native AOT app, the target machine needs the same [dependencies](../../install/linux-alpine.md#dependencies) as a self-contained .NET app, except for `libgcc` and `libstdc++`. The `icu-libs` and `icu-data-full` packages aren't needed if the app runs in [globalization-invariant mode](../../runtime-config/globalization.md#invariant-mode).
 
 # [Fedora](#tab/linux-fedora)
 
-- The compiler toolchain and developer packages for libraries that the .NET runtime depends on.
+- The compiler toolchain.
 - Fedora (39+)
 
-  Publish dependencies:
-
   ```sh
-  sudo dnf install clang libicu-devel
-  ```
-
-  Run-time dependencies:
-
-  ```sh
-  sudo dnf install libicu
+  sudo dnf install clang
   ```
 
 > [!NOTE]
-> The `libicu` package is only required at runtime if globalization is enabled. If you configure `InvariantGlobalization` or similar [globalization settings](https://learn.microsoft.com/dotnet/core/runtime-config/globalization), runtime `libicu` may not be needed.
+> To run a Native AOT app, the target machine needs the same [dependencies](../../install/linux-fedora.md#dependencies) as a self-contained .NET app, except for `libgcc` and `libstdc++`. The `libicu` package isn't needed if the app runs in [globalization-invariant mode](../../runtime-config/globalization.md#invariant-mode).
 
 # [RHEL](#tab/linux-rhel)
 
-- The compiler toolchain and developer packages for libraries that the .NET runtime depends on.
+- The compiler toolchain.
 - RHEL (8+)
 
-  Publish dependencies:
-
   ```sh
-  sudo dnf install clang libicu-devel
-  ```
-
-  Run-time dependencies:
-
-  ```sh
-  sudo dnf install libicu
+  sudo dnf install clang
   ```
 
 > [!NOTE]
-> The `libicu-devel` package is only required at runtime if globalization is enabled. If you configure `InvariantGlobalization` or similar [globalization settings](https://learn.microsoft.com/dotnet/core/runtime-config/globalization), runtime `libicu` may not be needed.
+> To run a Native AOT app, the target machine needs the same [dependencies](../../install/linux-rhel.md#dependencies) as a self-contained .NET app, except for `libgcc` and `libstdc++`. The `libicu` package isn't needed if the app runs in [globalization-invariant mode](../../runtime-config/globalization.md#invariant-mode).
 
 # [Ubuntu](#tab/linux-ubuntu)
 
-- The compiler toolchain and developer packages for libraries that the .NET runtime depends on.
+- The compiler toolchain.
 - Ubuntu (18.04+)
 
-  Publish dependencies:
-
   ```sh
-  sudo apt-get install clang libicu-dev
-  ```
-
-  Run-time dependencies:
-
-  ```sh
-  sudo apt-get install libicuX
-  # replace X with the available version, e.g. libicu76
+  sudo apt-get install clang
   ```
 
 > [!NOTE]
-> The `libicu` library is only required at runtime if globalization is enabled. If you configure `InvariantGlobalization` or similar [globalization settings](https://learn.microsoft.com/dotnet/core/runtime-config/globalization), runtime `libicu` may not be needed.
+> To run a Native AOT app, the target machine needs the same [dependencies](../../install/linux-ubuntu-decision.md#dependencies) as a self-contained .NET app, except for `libgcc-s1` and `libstdc++6`. The `libicu` package (for example, `libicu74` on Ubuntu 24.04) isn't needed if the app runs in [globalization-invariant mode](../../runtime-config/globalization.md#invariant-mode).
 
 # [macOS](#tab/macOS)
 

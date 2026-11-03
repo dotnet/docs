@@ -5,15 +5,15 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 290 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track fifty additional issue-level fixes separately because forty-seven implementation PRs are already open; several issues share PRs, several patches need correction or completion before merge, and two PRs remain drafts. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 303 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track fifty-two additional issue-level fixes separately because forty-nine implementation PRs are already open; several issues share PRs, several patches need correction or completion before merge, and two PRs remain drafts. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 725 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#46227](https://github.com/dotnet/docs/issues/46227), opened May 15, 2025.
-- **Results:** 340 defined fixes (290 assignment candidates and 50 with open implementation PRs) and 149 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 701-725 add 11 new assignment candidates and 1 new issue-level fix with an open implementation PR, alongside 8 closure candidates. The 50 active entries are covered by 47 distinct PRs.
-- **Remaining:** 123 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 175 are complete and 123 remain. Continue with [dotnet/docs#46246](https://github.com/dotnet/docs/issues/46246), opened May 18, 2025, and finish the snapshot at position 848.
+- **Completed batches:** The 750 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#48210](https://github.com/dotnet/docs/issues/48210), opened September 1, 2025.
+- **Results:** 355 defined fixes (303 assignment candidates and 52 with open implementation PRs) and 152 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 726-750 add 13 new assignment candidates and 2 new issue-level fixes with open implementation PRs, alongside 3 closure candidates. The 52 active entries are covered by 49 distinct PRs.
+- **Remaining:** 98 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 200 are complete and 98 remain. Continue with [dotnet/docs#48216](https://github.com/dotnet/docs/issues/48216), opened September 2, 2025, and finish the snapshot at position 848.
 - **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and actual patches for active implementations. For the 545-file curation draft, the complete file manifest and relevant deletion, replacement, and redirect patches were inspected; this isn't a line-by-line review of the entire replacement book. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
@@ -2863,6 +2863,110 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Scope and acceptance:** Add the outlined page under `docs/csharp/roslyn-sdk`, its TOC entry, and the index link. Explain compile-time source addition and common cases, distinguish consumption from authoring, and use the [official incremental-generator cookbook](https://github.com/dotnet/roslyn/blob/main/docs/features/incremental-generators.cookbook.md) for a current authoring workflow. Give each requested debug/test/package topic substantive guidance or an authoritative focused destination, not empty headings or a claim that the existing paragraph completes the outline. If code is included, build the generator and consuming project, inspect generated output, run the result, and verify any package-based consumption and generator-driver tests. Don't recommend obsolete generator patterns as the default or imply generators modify existing source.
 
+### dotnet/docs#46246: Entra authentication for relational grain storage
+
+**Issue:** [dotnet/docs#46246](https://github.com/dotnet/docs/issues/46246). **Opened:** May 18, 2025. **Size:** Small. **GHCP suitability:** Suitable for a provider-specific recipe with Orleans/SQL review.
+
+**Why it still applies:** The [relational-storage guide](../docs/orleans/grains/grain-persistence/relational-storage.md) shows a connection-string placeholder but doesn't explain passwordless SQL authentication or token renewal. The premise that Entra authentication necessarily prevents a stable connection string isn't correct: the [SqlClient authentication guide](https://learn.microsoft.com/sql/connect/ado-net/sql/azure-active-directory-authentication) documents driver-managed authentication modes.
+
+**Scope and acceptance:** Add a SQL Server/Azure SQL example that selects a suitable noninteractive mode for the application host, configures the version-appropriate Orleans invariant/provider, and links identity provisioning and database permissions. Current Orleans source maps its SQL factory to `Microsoft.Data.SqlClient`; don't confuse the current invariant with older versions' names. Qualify driver/package requirements, including the Azure authentication extension for current SqlClient versions. Explain that the driver acquires tokens rather than storing one expiring access token in a static configuration value. Don't invent an Orleans token-refresh callback or generalize SQL authentication to every ADO.NET provider. Build the exact example; any real connection/renewal verification needs an authorized test identity and database. No Azure resource or authenticated connection was created during triage.
+
+### dotnet/docs#46247: Show a Result computation expression
+
+**Issue:** [dotnet/docs#46247](https://github.com/dotnet/docs/issues/46247). **Opened:** May 18, 2025. **Size:** Small. **GHCP suitability:** Strong; a small executable language example.
+
+**Why it still applies:** The [F# Result guide](../docs/fsharp/language-reference/results.md) demonstrates matching and `Result.bind`, but not the requested computation-expression form.
+
+**Scope and acceptance:** Add a clearly identified user-defined `ResultBuilder` with `Bind`, `Return`, and, if demonstrated, `ReturnFrom`. Compare two `let!` steps with the equivalent `Result.bind` chain. An owned FSI fixture produced `Ok 42` on success and `Error "bad"` on failure; an observed call list proved that the second step didn't execute after the first error. Give the example a concrete error type where inference requires it. Don't present `result` as a built-in FSharp.Core builder or imply that a minimal builder supports loops, parallel bindings, asynchronous work, or exception-to-error conversion. Publish the scoped snippet with an actual run and preserve the existing bind explanation.
+
+### dotnet/docs#46484: Complete the grain-migration guidance
+
+**Issue:** [dotnet/docs#46484](https://github.com/dotnet/docs/issues/46484). **Opened:** May 29, 2025. **Size:** Medium. **GHCP suitability:** Suitable for the explicit remaining outline, with `ReubenBond`'s review.
+
+**Why it still applies:** The [grain lifecycle guide](../docs/orleans/grains/grain-lifecycle.md#grain-migration) already covers on-demand migration, placement hints, and a grain that implements `IGrainMigrationParticipant`. The [placement guide](../docs/orleans/grains/grain-placement.md#activation-repartitioning) covers repartitioning. Those additions don't cover the owner's separate request for external management-extension calls and a migration participant on another component.
+
+**Scope and acceptance:** Complete those two remaining surfaces in the existing guides rather than create a duplicate migration article. Use the owner's [upstream migration test](https://github.com/dotnet/orleans/blob/3a50ce57d43876a9f7572d529b777c9b1b6a6e05/test/DefaultCluster.Tests/Migration/MigrationTests.cs#L94-L95), current participant registration, and the supported version's actual API. Explicitly qualify `IGrainManagementExtension`'s internal-namespace surface with the owner; don't present it as an unqualified stable application contract. Explain that `MigrateOnIdle()` requests migration, placement hints aren't unconditional movement guarantees, and migration isn't persistence. Compile and run the eventual two-silo example, observe actual activation locations and preserved component state, and test the no-move case. No cluster-migration run was performed during triage.
+
+### dotnet/docs#46571: Use release-specific Ubuntu dependency lists
+
+**Issue:** [dotnet/docs#46571](https://github.com/dotnet/docs/issues/46571). **Opened:** June 4, 2025. **Size:** Small. **GHCP suitability:** Strong; the owner supplied the destination and package-name distinction.
+
+**Why it still applies:** The [manual-install guide](../docs/core/install/linux-scripted-manual.md) still points to the [mixed Ubuntu dependency list](../docs/core/install/linux-ubuntu-decision.md#dependencies), whose `libssl3` guidance includes newer releases. The [Ubuntu installation article](../docs/core/install/linux-ubuntu-install.md) correctly uses `libssl3t64` in its 24.04-specific list. The old mandatory `liblttng-ust1` entry is no longer present, so don't describe that exact obsolete command as unchanged.
+
+**Scope and acceptance:** Follow `adegeo`'s direction: send manual-install readers to the supported release's actual dependency section and eliminate or reconcile the competing generic list. Preserve per-release names and current supported-version pivots; don't restore retired 24.10 installation instructions. If optional LTTng tooling is mentioned, use its actual release-specific package name, not a universal required dependency. Verify all pivots, shared dependency examples, and links, and check package availability against the applicable distribution. An actual Linux installation wasn't run during triage.
+
+### dotnet/docs#46915: Finish nullable-safe command-line tutorial handlers
+
+**Issue:** [dotnet/docs#46915](https://github.com/dotnet/docs/issues/46915). **Opened:** June 22, 2025. **Size:** Small. **GHCP suitability:** Strong; coordinate with existing owner `adamsitnik`.
+
+**Why it still applies:** The [tutorial](../docs/standard/commandline/get-started-tutorial.md) now uses `CustomParser` to reject nonexistent explicit file arguments, and the [finished program](../docs/standard/commandline/snippets/get-started-tutorial/csharp/Stage3/Program.cs) materializes filtered lines before overwriting the file. The actual final-stage project nevertheless builds with six `CS8604` warnings at handler arguments under its pinned `System.CommandLine` 2.0.12 dependency.
+
+**Scope and acceptance:** Fix parsed-value nullability consistently across the staged projects and displayed snippets, using APIs supported by the pinned version or explicit guards with the intended parser-error behavior. Don't hide the warnings with a project-wide suppression or regress existing validation. The actual final-stage deletion was run on an owned file and retained exactly the two expected lines; an explicit missing path produced `File does not exist` and parser help before the handler. Preserve both regression cases, verify the default-file workflow, and rebuild every affected stage without nullable warnings. Don't commission missing-file and lazy-enumeration fixes that have already landed.
+
+### dotnet/docs#47008: Explain Orleans Cast and AsReference
+
+**Issue:** [dotnet/docs#47008](https://github.com/dotnet/docs/issues/47008). **Opened:** June 30, 2025. **Size:** Small. **GHCP suitability:** Suitable for a source-backed API explanation; coordinate with existing owner `ReubenBond`.
+
+**Why it still applies:** The [grain-reference guide](../docs/orleans/grains/grain-references.md) doesn't explain the requested helper methods. Current Orleans `GrainExtensions` explicitly documents `Cast<T>` as equivalent to `AsReference<T>`.
+
+**Scope and acceptance:** Add a short example that obtains an appropriately typed grain reference from a grain instance/reference, explains when the helpers are useful, and preserves grain identity. Don't invent different semantics for the two aliases or imply an ordinary C# interface cast proves that a remote implementation supports an interface. Use real generated grain interfaces and verify the resulting reference's identity and calls in the eventual sample. Coordinate the shared helper explanation with the migration example in dotnet/docs#46484.
+
+### dotnet/docs#47101: Explain non-resx embedded-resource names
+
+**Issue:** [dotnet/docs#47101](https://github.com/dotnet/docs/issues/47101). **Opened:** July 4, 2025. **Size:** Small. **GHCP suitability:** Strong; the reported distinction is reproducible.
+
+**Why it still applies:** The [manifest-name guide](../docs/core/resources/manifest-file-names.md) focuses on `.resx` naming and doesn't explain how C# non-resx resource paths treat directory components differently from file names.
+
+**Scope and acceptance:** Add a narrowly qualified C# explanation and example, grounded in MSBuild's manifest-name implementation. An owned SDK 10.0.403 project on .NET 8 and .NET 10 produced `Triage.Resources.Demo_Folder.Demo-File.txt` for `Demo-Folder/Demo-File.txt` and preserved the space in the filename of `Demo Folder/space name.txt`. Both resources were retrieved by their exact emitted names. An explicit `LogicalName` produced and retrieved `custom/Exact-name.txt` unchanged. Explain the override and inspect names with `GetManifestResourceNames`; don't change the compiler's naming rules or generalize the Windows C# fixture to every language/toolchain. Preserve the existing resx-specific rules.
+
+### dotnet/docs#47278: Connect reproducible builds, determinism, and Source Link
+
+**Issue:** [dotnet/docs#47278](https://github.com/dotnet/docs/issues/47278). **Opened:** July 10, 2025. **Size:** Medium. **GHCP suitability:** Suitable for a bounded extension to existing guidance, with library/SDK-owner review.
+
+**Why it still applies:** The [Source Link guide](../docs/standard/library-guidance/sourcelink.md) ends with a deterministic-build link, while [`ContinuousIntegrationBuild`](../docs/core/project-sdk/msbuild-props.md#continuousintegrationbuild) explains path normalization in isolation. Neither gives the requested connected workflow.
+
+**Scope and acceptance:** Extend the existing Source Link guidance and link it from the property reference, rather than make an unapproved documentation-tree reorganization. Base the recipe on [dotnet/reproducible-builds](https://github.com/dotnet/reproducible-builds), current SDK defaults, and actual Source Link requirements. Distinguish deterministic compiler outputs, source/debug metadata, isolated build inputs, and NuGet archive reproducibility. Use the same commit, SDK, configuration, and dependencies in two clean checkout paths; compare the claimed DLL/PDB hashes and inspect the actual source metadata. Don't promise byte-identical packages or universal F#/cross-platform behavior merely because `ContinuousIntegrationBuild` is true. Those reproducibility checks weren't executed during triage.
+
+### dotnet/docs#47561: Link advanced analyzer and Fix All guidance
+
+**Issue:** [dotnet/docs#47561](https://github.com/dotnet/docs/issues/47561). **Opened:** July 24, 2025. **Size:** Small. **GHCP suitability:** Strong; `gewarren` explicitly suggested Copilot.
+
+**Why it still applies:** The [analyzer tutorial's resources](../docs/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md#other-resources) link syntax and semantic introductions but not the deeper analyzer guidance requested by the reporter.
+
+**Scope and acceptance:** Add explained links to the [canonical analyzer documentation directory](https://github.com/dotnet/roslyn/tree/main/docs/analyzers) and [FixAllProvider guidance](https://github.com/dotnet/roslyn/blob/main/docs/analyzers/FixAllProvider.md). The latter exists and covers equivalence keys, provider choices, limitations, and custom providers. Tell readers why those topics matter after the introductory code fix. Prefer that explicitly accepted linking solution to a new analyzer book or unrelated VSIX modernization. Verify destinations and descriptions; no new code is necessary.
+
+### dotnet/docs#47718: Mention TaskToAsyncResult for Task-to-APM adapters
+
+**Issue:** [dotnet/docs#47718](https://github.com/dotnet/docs/issues/47718). **Opened:** August 3, 2025. **Size:** Small. **GHCP suitability:** Strong; coordinate with existing owner `adegeo`.
+
+**Why it still applies:** The [Task/APM guide](../docs/standard/parallel-programming/tpl-and-traditional-async-programming.md) still demonstrates a hand-written adapter without the public .NET 8+ `TaskToAsyncResult` helper.
+
+**Scope and acceptance:** Add the modern helper with an explicit target-version boundary and retain the legacy guidance where applicable. Explain that `Begin` wraps an existing task rather than start work. An owned .NET 8/.NET 10 fixture verified inline callbacks for an already-completed task, an initially incomplete task's later callback, preserved state and callback identity, result `42`, and propagation of the original exception through `End`. Use deterministic completion signals, not timing sleeps. Don't claim the helper is available in .NET Framework, forces asynchronous callback dispatch, or makes `Task.Factory.StartNew` semantically interchangeable with any asynchronous operation.
+
+### dotnet/docs#47981: Align the MCP architecture diagram with host/client roles
+
+**Issue:** [dotnet/docs#47981](https://github.com/dotnet/docs/issues/47981). **Opened:** August 15, 2025. **Size:** Small. **GHCP suitability:** Strong; a bounded diagram/prose correction.
+
+**Why it still applies:** The actual [MCP architecture image](../docs/ai/media/mcp/model-context-protocol-architecture-diagram.png) still draws a separate host box and one GitHub Copilot client connected to three servers. The [article](../docs/ai/get-started-mcp.md) and [canonical MCP architecture](https://modelcontextprotocol.io/docs/learn/architecture) describe an AI host that creates dedicated clients for server connections.
+
+**Scope and acceptance:** Redraw the host boundary around the application and its per-server client components; align labels, prose, and accessible alternative text. Correct the local/remote data-source placement and qualify transport labels rather than imply that every remote connection uses SSE. Inspect the rendered diagram and confirm each client's dedicated server connection. Don't describe GitHub Copilot as one universal protocol client outside its host or expand the task into a new integration/tool-installation tutorial.
+
+### dotnet/docs#47996: Correct the SYSLIB1009 trigger and workaround
+
+**Issue:** [dotnet/docs#47996](https://github.com/dotnet/docs/issues/47996). **Opened:** August 18, 2025. **Size:** Small. **GHCP suitability:** Strong; source and executable diagnostic evidence identify the exact correction.
+
+**Why it still applies:** The [SYSLIB1009 page](../docs/fundamentals/syslib-diagnostics/syslib1009.md) says every logging method must be static. Current generator code instead reports this diagnostic for an instance method that accepts an `ILogger` argument; an instance method that obtains its logger from a field is valid.
+
+**Scope and acceptance:** Describe the actual trigger and alternatives: use a static method with a logger parameter, or a supported instance method with its logger field. Link the main source-generated logging guide and retain the diagnostic's F1 metadata. An owned `Microsoft.Extensions.Logging.Abstractions` 10.0.0 fixture on .NET 8/.NET 10 produced `SYSLIB1009` for the instance-plus-logger-parameter case only; valid field-based and static forms compiled and emitted the expected messages. The warning remains active, so don't delete the page or call it obsolete. Verify corrected examples and the negative diagnostic case without claiming all instance logging methods are invalid.
+
+### dotnet/docs#48210: Explain per-target Framework app configuration
+
+**Issue:** [dotnet/docs#48210](https://github.com/dotnet/docs/issues/48210). **Opened:** September 1, 2025. **Size:** Small. **GHCP suitability:** Strong; a controlled multitargeted build demonstrates the solution.
+
+**Why it still applies:** The [supportedRuntime reference](../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md) explains the CLR version and Framework SKU, but not how one SDK-style source project supplies different executable configurations for multiple Framework targets.
+
+**Scope and acceptance:** Explain that each target has its own output executable/configuration, not one shared output that requires two Framework SKUs. Show conditional `AppConfig` selection, or an equivalently verified SDK-generated workflow. An owned SDK project targeting `net462;net481` built and ran both outputs; their separate `.exe.config` files contained `version="v4.0"` with the matching `.NETFramework,Version=v4.6.2` and `.NETFramework,Version=v4.8.1` SKUs. Inspect both configuration files in the implementation example and preserve the reference's one-Framework-SKU semantics. The runs used the installed Framework runtime; they don't prove behavior on two separately installed historical runtimes. Don't recommend obsolete `net452` for new deployments or substitute modern .NET's `runtimeconfig.json`.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -3267,6 +3371,22 @@ These issues still need their existing PRs to land, with corrections where noted
 
 **Maintainer next action:** Coordinate with `IEvangelist` and `jamesmontemagno` on the existing draft rather than commission a competing book rewrite. Ensure the old entry point leads to approved `Microsoft.Extensions.Http.Resilience` guidance, with a clear legacy warning while the chapter remains published if the owner chooses an interim change. Reuse the already tracked dotnet/docs#40841 migration task for an exact before/after policy example. Don't replace six retries plus the old 404 predicate with an allegedly equivalent default handler: the modern standard handler includes additional strategies and different defaults. Don't close the issue merely because the chapter is deleted or the separate product issue is closed.
 
+### dotnet/docs#46601: Verify and document Visual Studio Native AOT publishing
+
+**Issue:** [dotnet/docs#46601](https://github.com/dotnet/docs/issues/46601). **Opened:** June 8, 2025. **Status:** Partially covered by open, non-draft [dotnet/docs#56686](https://github.com/dotnet/docs/pull/56686).
+
+**Why it still applies:** The actual patch adds a Folder Publish route to the [Native AOT introduction](../docs/core/deploying/native-aot/index.md), with `PublishAot`, the C++ workload, Release configuration, self-contained deployment, and a Windows RID. That is an implementation in progress, not evidence that the specified IDE/version workflow actually produces a Native AOT application.
+
+**Required completion before merge:** Verify the exact supported Visual Studio/SDK/toolset combination and the actual Publish UI workflow. Check profile versus project property placement, native prerequisites, host/target architecture restrictions, ILC execution, and the resulting runnable artifact. A native apphost `.exe`, self-contained publish, or successful CLI command alone doesn't prove the IDE used Native AOT. The Publish UI wasn't exercised during triage. If the proposed IDE workflow isn't supported for the stated version, document the supported boundary and CLI alternative instead of publishing unverified steps. Keep the existing PR rather than create a duplicate assignment.
+
+### dotnet/docs#47988: Complete image-generation response handling
+
+**Issue:** [dotnet/docs#47988](https://github.com/dotnet/docs/issues/47988). **Opened:** August 17, 2025. **Status:** Partially covered by open, non-draft [dotnet/docs#51416](https://github.com/dotnet/docs/pull/51416).
+
+**Why it still applies:** The reporter identifies the OpenAI pivot, but the actual patch changes only the Azure OpenAI program: it requests URI output and checks for a null URI. The [OpenAI sample](../docs/ai/quickstarts/snippets/image-generation/openai/Program.cs) still prints `ImageUri` unconditionally. The SDK has distinct URI and `ImageBytes` response forms; a missing URI alone isn't evidence that the key or model name is wrong.
+
+**Required completion before merge:** Cover the reported pivot and the configured model's actual response contract. Handle a valid byte response or explicitly constrain a supported URI-mode example; don't force URI output on models that only return bytes. Synchronize both pivots and their pinned package APIs, use truthful error messages, and verify any saved image in an owned output location. The current patch's generic key/model diagnosis needs correction. Compile both examples and test URI/byte response handling with controlled fixtures; any paid live generation requires separate authorization. No image-generation request was made during triage.
+
 ## Assignment order
 
 For the quickest independent changes, start with the table escaping, the paired COM wording corrections, or the existing prose-only signposts. Coordinate the instrumentation link with its current owner. Treat the two COM issues as one assignment, and use the existing hosted-service issue rather than duplicate work for dotnet/docs#23440.
@@ -3331,7 +3451,7 @@ Keep the Framework and modern .NET retargeting checklists separate; preserve int
 
 Pair the two memory-lease issues in one article pass and coordinate with their separate target-framework maintenance task. The mutability definitions, host-shutdown correction, throw-helper rationale, struct-deserialization signpost, JSON option/null distinctions, and CA1515 metadata are additional bounded assignments. The WebSocket lifecycle example needs an actual controlled-peer run and networking review, not only a successful compilation.
 
-Review the forty-two distinct existing implementation PRs separately from new assignments; forty-three issue entries share those PRs. The F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review.
+Review existing implementation PRs separately from new assignments; shared PRs can represent multiple issues. The F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review.
 
 For the newest implementations, qualify the proxy pattern's address/port assumptions, distinguish GitHub source preview from the already-working F# Learn rendering, correct both millisecond patterns with real output checks, and verify the nested-greeting request in the complete tracing walkthrough.
 

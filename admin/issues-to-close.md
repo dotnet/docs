@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 725 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#46227](https://github.com/dotnet/docs/issues/46227), opened May 15, 2025.
-- **Results:** 149 closure candidates and 340 [clearly defined fixes](issues-with-defined-fixes.md) (290 assignment candidates and 50 fixes covered by 47 open implementation PRs).
-- **Latest batch:** Issues 701-725, from [dotnet/docs#44751](https://github.com/dotnet/docs/issues/44751) through dotnet/docs#46227: 8 closure candidates, 11 new assignment candidates, and 1 new fix with an open implementation PR.
-- **Remaining:** 123 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 175 are complete and 123 remain. Continue with [dotnet/docs#46246](https://github.com/dotnet/docs/issues/46246), opened May 18, 2025, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 750 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#48210](https://github.com/dotnet/docs/issues/48210), opened September 1, 2025.
+- **Results:** 152 closure candidates and 355 [clearly defined fixes](issues-with-defined-fixes.md) (303 assignment candidates and 52 fixes covered by 49 open implementation PRs).
+- **Latest batch:** Issues 726-750, from [dotnet/docs#46246](https://github.com/dotnet/docs/issues/46246) through dotnet/docs#48210: 3 closure candidates, 13 new assignment candidates, and 2 new fixes with open implementation PRs.
+- **Remaining:** 98 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 200 are complete and 98 remain. Continue with [dotnet/docs#48216](https://github.com/dotnet/docs/issues/48216), opened September 2, 2025, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -1292,3 +1292,27 @@ The current [Spanish .NET 9 overview](https://learn.microsoft.com/es-es/dotnet/c
 The [registration guide](../docs/core/extensions/dependency-injection/service-registration.md) explains that a single-service lookup uses the last registration, while `IEnumerable<T>` retains all registrations. The [scoped-background-service tutorial](../docs/core/extensions/scoped-service.md) supplies the supported explicit-scope pattern. An isolated .NET 8/.NET 10 fixture verified both scoped/singleton registration orders: the last descriptor controlled cross-scope identity, and scope validation rejected root resolution when the last descriptor was scoped.
 
 **Suggested closure explanation:** Registering the same dependency with two lifetimes doesn't tell the container to select whichever lifetime suits a consumer. Keep the explicit async scope in the worker and link the existing registration and lifetime guidance. Don't recommend a service-locator fallback or claim that build-time validation catches every factory or runtime configuration error.
+
+### dotnet/docs#47086: Thread safety of dependency-injection resolution
+
+**Opened:** July 3, 2025. **Confidence:** High for the built-in container question. **Reason:** The current guidance explicitly answers the question and distinguishes container safety from service-instance safety.
+
+The [DI thread-safety section](../docs/core/extensions/dependency-injection/guidelines.md#thread-safety) now says that concurrent resolution from a built `IServiceProvider` or `IServiceScope` is safe for the built-in .NET container. Its note explicitly says that the guarantee doesn't make resolved objects thread-safe. [dotnet/docs#50123](https://github.com/dotnet/docs/pull/50123) merged the clarification; the current text was checked directly.
+
+**Suggested closure explanation:** Link the existing explicit answer. The separate open [dotnet/docs#56682](https://github.com/dotnet/docs/pull/56682) adds similar guidance to the lifetime article, but that optional additional placement doesn't leave the original question unanswered. Don't add a universal implementation guarantee to the `IServiceProvider` interface remarks: third-party providers implement that interface too.
+
+### dotnet/docs#47911: Relative and absolute codeBase locations
+
+**Opened:** August 9, 2025. **Confidence:** High. **Reason:** The existing remarks already explain the requested distinction.
+
+The [codeBase remarks](../docs/framework/configure-apps/file-schema/runtime/codebase-element.md#remarks) state that a strong-named assembly can use a local, intranet, or Internet location, while a private assembly's codebase must be relative to the application directory. The absolute HTTP example accompanies the strong-name identity case; it isn't a rule that every assembly requires an absolute URI.
+
+**Suggested closure explanation:** Point to the existing strong-name/private-assembly distinction and relative-path rule. No source correction is necessary to answer the question. Keep the explanation limited to the .NET Framework configuration mechanism; don't promise arbitrary unsigned assemblies can load from absolute Internet URLs or imply modern .NET uses this configuration element.
+
+### dotnet/docs#48204: Windows Update doesn't download a Framework preview
+
+**Opened:** August 31, 2025. **Confidence:** High for documentation-scope routing, not the cause of the installation failure. **Reason:** The report requests Windows Update troubleshooting without identifying a documentation error.
+
+The [August 26, 2025 release note](../docs/framework/release-notes/2025/08-26-august-cumulative-update-preview.md) provides the applicable update links and distinguishes the Windows offering KB from the .NET Framework update KB. The report supplies no failed documentation link, KB-specific correction, error code, or reproducible defect in that article. Microsoft's [Windows Update troubleshooting guidance](https://support.microsoft.com/en-us/windows/experience/windows-update-troubleshooter) is the appropriate support destination.
+
+**Suggested closure explanation:** Route the download/install problem to Windows Update support with the OS version, exact KB, and error code. Don't claim that the preview installed, that supersedence caused the failure, or that a release note's lack of known issues disproves the user's experience. No documentation-only change is established by this report.

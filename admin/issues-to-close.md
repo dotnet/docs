@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 325 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#33295](https://github.com/dotnet/docs/issues/33295), opened January 3, 2023.
-- **Results:** 60 closure candidates and 129 [clearly defined fixes](issues-with-defined-fixes.md) (113 assignment candidates and 16 fixes with open implementation PRs).
-- **Latest batch:** Issues 301-325, from [dotnet/docs#32112](https://github.com/dotnet/docs/issues/32112) through dotnet/docs#33295: 2 closure candidates, 13 new assignment candidates, and 2 fixes with open implementation PRs.
-- **Remaining:** 523 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 25 are complete and 275 remain. Continue with [dotnet/docs#33307](https://github.com/dotnet/docs/issues/33307), opened January 4, 2023, and stop at position 600. Refresh issue states; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 350 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#33977](https://github.com/dotnet/docs/issues/33977), opened February 11, 2023.
+- **Results:** 68 closure candidates and 141 [clearly defined fixes](issues-with-defined-fixes.md) (121 assignment candidates and 20 fixes with open implementation PRs).
+- **Latest batch:** Issues 326-350, from [dotnet/docs#33307](https://github.com/dotnet/docs/issues/33307) through dotnet/docs#33977: 8 closure candidates, 8 new assignment candidates, and 4 fixes with open implementation PRs.
+- **Remaining:** 498 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 50 are complete and 250 remain. Continue with [dotnet/docs#34173](https://github.com/dotnet/docs/issues/34173), opened February 19, 2023, and stop at position 600. Refresh issue states; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -570,3 +570,67 @@ The [maintainer's earlier confirmation](https://github.com/dotnet/docs/issues/32
 The issue quotes `cpu_feature_guard.cc:193` and the oneDNN/AVX2 optimization message. [TensorFlow v2.10.0 source](https://github.com/tensorflow/tensorflow/blob/v2.10.0/tensorflow/core/platform/cpu_feature_guard.cc#L192-L198) emits that exact text with `LOG(INFO)`. The optional rebuild concerns use of CPU instructions in additional operations; the message doesn't establish that model training failed.
 
 **Suggested closure explanation:** Explain the informational severity and distinguish optional native optimization from a runtime failure. No tutorial change or TensorFlow rebuild is needed solely for this output. A separate exception, termination, or failed result would require its own evidence; this recommendation doesn't claim that the reporter's entire training run succeeded.
+
+### dotnet/docs#33307: Locate the .NET Framework 3.5 offline installer
+
+**Opened:** January 4, 2023. **Confidence:** High for the reported missing download. **Reason:** The current download page explicitly exposes an offline-installer link.
+
+The [live .NET Framework 3.5 SP1 download page](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1) now has separate **Offline installer** and **Web installer** links; the former targets `net35-sp1-offline-installer`. The issue's [product-owner answer](https://github.com/dotnet/docs/issues/33307#issuecomment-1762213326) also explains the historical misleading label. The [installation article](../docs/framework/install/dotnet-35-windows.md#download-the-offline-installer) distinguishes the legacy executable from the installation-media mechanism for Windows 10 and Windows Server 2016 onward, with additional Windows 11 qualifications.
+
+**Suggested closure explanation:** Link the explicitly labeled offline download and the OS-specific instructions. Close the missing-link report without recommending the legacy SP1 executable for every Windows version. The page and link were inspected; the installer wasn't downloaded or executed. Don't treat the still-open historical website naming reports as evidence that the current offline link is absent.
+
+### dotnet/docs#33320: Avoid the obsolete integer-confidence overload
+
+**Opened:** January 4, 2023. **Confidence:** High. **Reason:** Both published anomaly-detection snippets already select the double overload.
+
+The [sales anomaly tutorial](../docs/machine-learning/tutorials/sales-anomaly-detection.md) includes `SnippetAddSpikeTrainer` and `SnippetAddChangePointTrainer` from its [current Program.cs](../docs/machine-learning/tutorials/snippets/sales-anomaly-detection/csharp/Program.cs). Both calls now pass `confidence: 95d`, not the reported integer literal. The double suffix addresses the exact obsolete-overload selection without changing the confidence value.
+
+**Suggested closure explanation:** Close as corrected in both the spike and change-point examples. No further overload change is needed for the original report; this source check doesn't claim a complete training run against every ML.NET version.
+
+### dotnet/docs#33324: Distinguish single-file, ReadyToRun, and Native AOT deployment
+
+**Opened:** January 4, 2023. **Confidence:** High for the requested conceptual distinction. **Reason:** Current guidance explains the separate deployment dimensions and their principal relationship.
+
+The [publishing overview](../docs/core/deploying/index.md) now gives single-file, Native AOT, and ReadyToRun separate explanations and commands. The [single-file guide](../docs/core/deploying/single-file/overview.md) explicitly permits ReadyToRun in a bundled app. The [ReadyToRun guide](../docs/core/deploying/ready-to-run.md) explains mixed IL/native code and continued JIT use, while the [Native AOT guide](../docs/core/deploying/native-aot/index.md) explains publish-time compilation, no JIT, self-contained deployment, and its restrictions.
+
+**Suggested closure explanation:** Link the existing explanations: bundling, partial ahead-of-time compilation, and Native AOT aren't interchangeable names. Close the original distinction request, not a claim that every MSBuild property combination is supported. Runtime-install independence doesn't mean the executable contains no runtime services or has no native dependencies.
+
+### dotnet/docs#33406: Explain Native AOT targets and cross-compilation
+
+**Opened:** January 10, 2023. **Confidence:** High for the missing-guidance request. **Reason:** Dedicated target and host/target guidance now exists.
+
+The [Native AOT overview's platform restrictions](../docs/core/deploying/native-aot/index.md#platformarchitecture-restrictions) supply a release-specific target matrix. The [cross-compilation guide](../docs/core/deploying/native-aot/cross-compile.md) distinguishes cross-architecture from unsupported cross-OS compilation, explains native-toolchain/sysroot requirements, and links container recipes. The [runtime's .NET 9 compilation guide](https://github.com/dotnet/runtime/blob/v9.0.0/src/coreclr/nativeaot/docs/compiling.md#cross-architecture-compilation) independently describes supported host/target arrangements.
+
+**Suggested closure explanation:** Point to the target matrix and dedicated cross-compilation guide rather than leave the original absence-of-guidance question open. Apply the matrix for the selected release; don't project later targets onto .NET 7, promise arbitrary cross-OS builds, or infer QEMU support from a container recipe. Retain current assignee `LakshanF` when the owner reviews closure.
+
+### dotnet/docs#33412: Retire the obsolete AppVeyor fixture reference
+
+**Opened:** January 10, 2023. **Confidence:** High for the specific linked fixture. **Reason:** The article no longer directs readers to the obsolete `appveyor.yml`.
+
+The [continuous-integration article](../docs/devops/dotnet-cli-and-continuous-integration.md) no longer links an `appveyor.yml` or teaches the reported Visual Studio 2015/.NET Core 1.0 fixture. Its AppVeyor section instead describes the service configuration and a Visual Studio 2022 image. The former `dotnet/samples` root `.appveyor.yml` isn't present.
+
+**Suggested closure explanation:** Close the obsolete linked-file report because the current instructions no longer depend on that fixture. Don't claim that every CI example is current: the remaining .NET 6 material is a separate modernization concern. Coordinate closure with current assignee `gewarren`.
+
+### dotnet/docs#33509: Explain whether unused imports can be removed
+
+**Opened:** January 12, 2023. **Confidence:** High. **Reason:** Existing guidance directly answers the question.
+
+The [IDE0005 reference](../docs/fundamentals/code-analysis/style-rules/ide0005.md) explicitly states that unnecessary imports can be removed without changing code semantics and provides before/after examples. The question doesn't identify a missing compiler behavior, a failing sample, or another unresolved documentation requirement.
+
+**Suggested closure explanation:** Link IDE0005 and explain that unused `using` directives can be removed. Don't claim a runtime performance benefit or advise removal of imports that the compiler or tooling still needs.
+
+### dotnet/docs#33600: Distinguish the execution host from a web app's consumers
+
+**Opened:** January 18, 2023. **Confidence:** High for the reported runtime-install ambiguity. **Reason:** Current text explicitly scopes the requirement to the environment that executes the app.
+
+The [publishing overview](../docs/core/deploying/index.md) describes servers, containers, and cloud deployment and consistently places the framework-dependent runtime prerequisite on the environment that runs the app. It contrasts that host requirement with self-contained deployment. A browser or HTTP API caller doesn't execute the server application.
+
+**Suggested closure explanation:** Close the original consumer-versus-host wording report as addressed. Link the framework-dependent/self-contained explanation; don't tell remote web/API users to install .NET, or confuse modern .NET publishing with .NET Framework installation.
+
+### dotnet/docs#33841: Route the Apple authentication key change to its provider
+
+**Opened:** February 2, 2023. **Confidence:** High for ownership. **Reason:** The changed contract belongs to a community authentication package, not the .NET 6 runtime API.
+
+The named option and generator belong to `AspNet.Security.OAuth.Apple` in `aspnet-contrib/AspNet.Security.OAuth.Providers`. The provider's [5.0.0 generator](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/blob/5.0.0/src/AspNet.Security.OAuth.Apple/Internal/DefaultAppleClientSecretGenerator.cs) imports decoded bytes with `ImportPkcs8PrivateKey`; its [6.0.0 generator](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/blob/6.0.0/src/AspNet.Security.OAuth.Apple/Internal/DefaultAppleClientSecretGenerator.cs) imports the option's PEM text with `ImportFromPem`. The [existing provider discussion](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/issues/385#issuecomment-1056507578) identifies the changed PEM-envelope expectation.
+
+**Suggested closure explanation:** Close here as a provider-package migration concern and direct any missing provider release note to its maintainers. Don't add the change to the .NET runtime breaking-change catalog or claim that the closed upstream thread proves the provider's migration documentation is complete. Don't publish the reporter's ad hoc secret-normalization code as a framework workaround.

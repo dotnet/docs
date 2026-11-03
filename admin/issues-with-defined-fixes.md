@@ -5,16 +5,16 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 113 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track sixteen additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 121 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track twenty additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 325 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#33295](https://github.com/dotnet/docs/issues/33295), opened January 3, 2023.
-- **Results:** 129 defined fixes (113 assignment candidates and 16 with open implementation PRs) and 60 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 301-325 add 13 new assignment candidates and 2 fixes with open implementation PRs, alongside 2 closure candidates.
-- **Remaining:** 523 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 25 are complete and 275 remain. Continue with [dotnet/docs#33307](https://github.com/dotnet/docs/issues/33307), opened January 4, 2023, and stop at position 600.
-- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the sixteen active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
+- **Completed batches:** The 350 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#33977](https://github.com/dotnet/docs/issues/33977), opened February 11, 2023.
+- **Results:** 141 defined fixes (121 assignment candidates and 20 with open implementation PRs) and 68 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 326-350 add 8 new assignment candidates and 4 fixes with open implementation PRs, alongside 8 closure candidates.
+- **Remaining:** 498 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 50 are complete and 250 remain. Continue with [dotnet/docs#34173](https://github.com/dotnet/docs/issues/34173), opened February 19, 2023, and stop at position 600.
+- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the twenty active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
 
@@ -1259,6 +1259,86 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Acceptance criteria:** The page's headings expose Native AOT independently of performance, existing links remain valid, and the wording distinguishes runtime independence from absence of all dependencies. Keep the historical version scope and avoid a duplicate deployment tutorial.
 
+### dotnet/docs#33345: Add an introductory LINQ roadmap
+
+**Issue:** [dotnet/docs#33345](https://github.com/dotnet/docs/issues/33345). **Opened:** January 5, 2023. **Size:** Small, prose/navigation only. **GHCP suitability:** Strong with current assignee `BillWagner`'s agreement.
+
+**Why it still applies:** The [LINQ overview](../docs/standard/linq/index.md) still starts with a dense API-oriented sentence and immediately enters examples. Its XML examples don't substitute for a clear introduction or a direct route into the separate [LINQ to XML guide](../docs/standard/linq/linq-xml-overview.md).
+
+**Proposed assignment scope:** Rewrite the introductory paragraph in plain language and add a compact roadmap to the existing LINQ fundamentals, LINQ to XML, and relevant provider guidance. Preserve working examples and current language coverage. The title's landing-page suggestion isn't approval to convert the article to a new YAML format, move the guide, or redesign its entire content set.
+
+**Acceptance criteria:** A new reader can identify LINQ's purpose and navigate directly to LINQ to XML before the long examples. Verify target files and anchors and coordinate the small editorial change with the owner; don't create another tutorial.
+
+### dotnet/docs#33644: Complete CSharpParseOptions override descriptions
+
+**Issue:** [dotnet/docs#33644](https://github.com/dotnet/docs/issues/33644). **Opened:** January 20, 2023. **Size:** Small, API-source change. **GHCP suitability:** Strong after an owning-repository handoff.
+
+**Why it still applies:** The [CSharpParseOptions API XML](https://github.com/dotnet/roslyn-api-docs/blob/main/dotnet/xml/Microsoft.CodeAnalysis.CSharp/CSharpParseOptions.xml) still leaves the `Features` and `Language` summaries as `To be added`, although [ParseOptions](https://github.com/dotnet/roslyn-api-docs/blob/main/dotnet/xml/Microsoft.CodeAnalysis/ParseOptions.xml) documents their base contracts. `PreprocessorSymbolNames` already has a summary, so the original list shouldn't be copied as a list of wholly undocumented properties.
+
+**Proposed assignment scope:** Fill the missing override summaries with the correct inherited/C#-specific meaning and verify the corresponding rendered member pages. Use the API repository's established inheritance/content pattern; don't add conceptual Markdown to this checkout as a substitute for the API fix or advertise experimental feature keys as stable compiler options.
+
+**Acceptance criteria:** Both member pages provide meaningful descriptions consistent with the base contracts, and existing documented overrides remain intact. Arrange the change in `dotnet/roslyn-api-docs` and obtain Roslyn API review before assignment.
+
+### dotnet/docs#33728: Explain runtime registration of a custom type converter
+
+**Issue:** [dotnet/docs#33728](https://github.com/dotnet/docs/issues/33728). **Opened:** January 26, 2023. **Size:** Small to medium, paired-language example and cross-links. **GHCP suitability:** Suitable with component-model/Windows Forms coordination.
+
+**Why it still applies:** The [type-conversion guide's TypeConverter section](../docs/standard/base-types/type-conversion.md#the-typeconverter-class) only describes attribute association. The [Windows Forms team's registration guide](https://github.com/dotnet/winforms/blob/main/docs/serialization/register-custom-type-converter.md) already supplies a concrete provider/descriptor implementation and registration/removal sequence, but that recipe isn't linked from the general conceptual section.
+
+**Proposed assignment scope:** Extend the existing section with the no-source-attribute scenario, a link to the established recipe, and a minimal C#/VB runtime demonstration of `TypeDescriptor` registration and cleanup. Arrange a TypeConverter API-remarks cross-link with its API owner so the original entry point leads to the recipe. Reuse the documented provider pattern rather than invent a converter framework. Coordinate with `lonitra` and the existing [dotnet/winforms#8296](https://github.com/dotnet/winforms/issues/8296) designer-documentation task; don't duplicate that task or promise that process-local runtime registration automatically reaches an out-of-process designer, XAML loader, or every serializer.
+
+**Acceptance criteria:** An owned example changes the converter returned for the selected type, performs the intended conversion, and restores the previous provider afterward. Clarify process/type scope and verify the conceptual/API navigation together. The API-remarks change needs a separate API-owner handoff, not an assumed docs-only publication.
+
+### dotnet/docs#33785: Use a still-valid flexible-type contrast
+
+**Issue:** [dotnet/docs#33785](https://github.com/dotnet/docs/issues/33785). **Opened:** January 30, 2023. **Size:** Small, F# prose and snippet correction. **GHCP suitability:** Strong; the current compiler reproduces a valid replacement distinction.
+
+**Why it still applies:** The [flexible-types guide](../docs/fsharp/language-reference/flexible-types.md) and its [first snippet](../samples/snippets/fsharp/lang-ref-2/snippet4101.fs) still use an inline list-returning lambda to argue that the nonflexible parameter requires an explicit sequence conversion. Current F# accepts that lambda without the cast, so the example no longer proves the stated contrast.
+
+**Proposed assignment scope:** Correct the implicit-conversion explanation and demonstrate the difference with an already-bound `unit -> int list` function passed to ordinary and flexible sequence-returning parameters. Retain the distinct `Seq.concat` lesson. Don't replace the stale example with another case that both declarations accept, or state that flexible types are obsolete.
+
+**Acceptance criteria:** Run the positive and expected-failure examples with the supported stable compiler. In an owned FSI probe, the inline lambda and the prebound function passed to the flexible parameter both printed `1`; the same prebound function passed to `unit -> seq<int>` failed with FS0001. Attempts to select language version 6 were rejected by the installed compiler as out of support, so don't describe that attempted check as historical-version execution evidence.
+
+### dotnet/docs#33866: Explain CSharpSyntaxWalker depth modes and their default
+
+**Issue:** [dotnet/docs#33866](https://github.com/dotnet/docs/issues/33866). **Opened:** February 5, 2023. **Size:** Small, API documentation. **GHCP suitability:** Strong after a Roslyn API-source handoff.
+
+**Why it still applies:** The [walker API XML](https://github.com/dotnet/roslyn-api-docs/blob/main/dotnet/xml/Microsoft.CodeAnalysis.CSharp/CSharpSyntaxWalker.xml) still leaves the constructor's `depth` parameter and the `Depth` summary as placeholders. The class summary mentions tokens without explaining why the default walker doesn't visit them.
+
+**Proposed assignment scope:** Describe `SyntaxWalkerDepth` as traversal categories, not a numeric tree-depth limit. Explain the default `Node`, progressively included token/trivia visits, and descent into structured trivia. Align the constructor, property, and class summaries, and link the enum rather than duplicate unrelated walker internals.
+
+**Acceptance criteria:** Verify all four modes against one syntax tree with tokens, ordinary trivia, and XML documentation trivia. An owned SDK-assembly probe observed no token/trivia callbacks for `Node`, tokens only for `Token`, trivia for `Trivia`, and additional structured-trivia nodes for `StructuredTrivia`. Publish the correction in `dotnet/roslyn-api-docs` with API-owner review, not only in a local conceptual article.
+
+### dotnet/docs#33924: Put the OLS package prerequisite beside the examples
+
+**Issue:** [dotnet/docs#33924](https://github.com/dotnet/docs/issues/33924). **Opened:** February 8, 2023. **Size:** Small, API example prerequisites/navigation. **GHCP suitability:** Strong after ML.NET API-owner coordination.
+
+**Why it still applies:** The reporter [confirms](https://github.com/dotnet/docs/issues/33924#issuecomment-1447321194) that `Microsoft.ML.Mkl.Components` resolves the missing extension, but explicitly retains a request for the package requirement in the example and for trainer discovery. The live API header already names that package; its [owning XML](https://github.com/dotnet/ml-api-docs/blob/live/dotnet/xml/Microsoft.ML/MklComponentsCatalog.xml) still embeds both OLS examples without an explicit prerequisite in their remarks. Don't present the header's package information as absent.
+
+**Proposed assignment scope:** Add a concise package prerequisite beside both OLS examples in `dotnet/ml-api-docs` and link the existing [algorithm/trainer inventory](../docs/machine-learning/how-to-choose-an-ml-net-algorithm.md), which already includes OLS and other regression trainers. Explain that extension availability depends on the relevant trainer package; don't invent a rationale for package partitioning or build a new exhaustive trainer catalog. Coordinate with `luisquintanilla`, who supplied the original package answer.
+
+**Acceptance criteria:** A minimal project with aligned, supported stable ML.NET/MKL package versions resolves `mlContext.Regression.Trainers.Ols` and executes the documented example. Verify any native-platform prerequisites and both rendered example locations. Arrange the API-repository handoff before assignment; a change only to the general algorithm guide won't fix the example's locality.
+
+### dotnet/docs#33939: Add an asynchronous duplex named-pipe example
+
+**Issue:** [dotnet/docs#33939](https://github.com/dotnet/docs/issues/33939). **Opened:** February 9, 2023. **Size:** Medium, paired client/server example. **GHCP suitability:** Suitable as a bounded supplement, not a rewrite of pipe security guidance.
+
+**Why it still applies:** The [named-pipe article](../docs/standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md) demonstrates synchronous request/response and impersonation, but doesn't supply the requested async client/server communication example.
+
+**Proposed assignment scope:** Add a small `PipeDirection.InOut` client/server pair with asynchronous connection and read/write operations, explicit framing, cancellation, and deterministic disposal. Demonstrate traffic in both directions and explain what the sample does and doesn't make simultaneous. Preserve the existing impersonation lesson separately; don't use arbitrary server-side file access just to demonstrate duplex transport. Follow the article's platform boundaries, including Unix-domain-socket implementation details.
+
+**Acceptance criteria:** Execute both endpoints on owned fixtures, show the messages received in each direction, and cover disconnect/cancellation without a hang. Use both C# and VB if the general article adds new runnable samples. Build the projects and verify framing/flush behavior rather than infer duplex correctness from successful compilation.
+
+### dotnet/docs#33969: Make Fuslogvw prerequisites and elevated launch discoverable
+
+**Issue:** [dotnet/docs#33969](https://github.com/dotnet/docs/issues/33969). **Opened:** February 10, 2023. **Size:** Small, Windows setup/troubleshooting. **GHCP suitability:** Suitable with a verified Windows SDK/Visual Studio fixture.
+
+**Why it still applies:** The [Fuslogvw reference](../docs/framework/tools/fuslogvw-exe-assembly-binding-log-viewer.md) tells readers to run the bare command from an elevated developer shell without enough help when the tool isn't installed, the environment isn't initialized, or the shell isn't elevated. The issue's failure to find that route remains distinct from assembly-binding-log interpretation.
+
+**Proposed assignment scope:** Add a prerequisite and launch signpost to the relevant .NET Framework SDK tools and developer-shell instructions. Explain how to start a separate elevated, initialized shell and locate the matching tool; qualify any example installation path and architecture. Don't claim Visual Studio can never launch an elevated shell or that every installation includes the required SDK component. Keep the scope on .NET Framework, not modern .NET assembly diagnostics.
+
+**Acceptance criteria:** On an owned Windows fixture, verify the documented installed component, actual executable location, shell initialization, and elevated launch. No `fuslogvw.exe` was available on the current PATH, and no elevation or viewer launch was attempted during triage. Don't publish a guessed hard-coded SDK path or change shared-machine logging/registry settings to satisfy the check.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -1393,6 +1473,38 @@ These issues still need their existing PRs to land, with corrections where noted
 
 **Maintainer next action:** Review the existing F# 7 draft with its owners rather than duplicate that implementation. Map each feature to the F# 7 announcement/RFC and run examples with the intended language version, including C# interop and expected diagnostics. Review the broad miscellaneous-feature list rather than accept it without source checks. Keep F# 8 as an explicit remaining requirement in a separate version-scoped change, with source mapping, executable examples, and expert review. Don't close the issue after F# 7 alone or merge both release adaptations into one PR.
 
+### dotnet/docs#33488: Offer a text-specific alternative to byte-read loops
+
+**Issue:** [dotnet/docs#33488](https://github.com/dotnet/docs/issues/33488). **Opened:** January 11, 2023. **Status:** Covered by open, non-draft [dotnet/docs#56109](https://github.com/dotnet/docs/pull/56109).
+
+**Why the solution is defined:** The actual patch adds a `StreamReader.ReadToEnd` alternative for text and a separately qualified .NET 7 `ReadExactly` option to the [.NET 6 partial-byte-read compatibility note](../docs/core/compatibility/core-libraries/6.0/partial-byte-reads-in-streams.md). Earlier [dotnet/docs#37752](https://github.com/dotnet/docs/pull/37752) closed unmerged, so it isn't a completed fix.
+
+**Maintainer next action:** Review the existing PR, preserve the byte-loop remedy for binary streams and .NET 6, and verify the text encoding, stream lifetime, and end-of-stream assumptions. Execute the text example and byte-read alternative on their applicable versions. Don't imply that `StreamReader` is a universal binary replacement or that `ReadExactly` existed in .NET 6; don't close before merge.
+
+### dotnet/docs#33546: Improve StartupObject discovery and IDE guidance
+
+**Issue:** [dotnet/docs#33546](https://github.com/dotnet/docs/issues/33546). **Opened:** January 15, 2023. **Status:** Covered by open, non-draft [dotnet/docs#56656](https://github.com/dotnet/docs/pull/56656).
+
+**Why the solution is defined:** The actual patch updates [compiler-option metadata and StartupObject guidance](../docs/csharp/language-reference/compiler-options/advanced.md#startupobject), adds a Visual Studio property-page route, and cross-links the [top-level entry-point restriction](../docs/csharp/fundamentals/program-structure/top-level-statements.md#entry-point-rules). It addresses type-versus-method confusion instead of treating external search ranking as an implementation.
+
+**Maintainer next action:** Verify the UI route for the stated Visual Studio/project version and execute a multiple-entry-point selection plus the top-level-statement restriction. Keep fully qualified type naming and the applicable project boundaries clear. Review the existing PR rather than assign a duplicate, and don't guarantee a particular search-engine result position.
+
+### dotnet/docs#33590: Keep the HTTP tutorial stages and header explanation consistent
+
+**Issue:** [dotnet/docs#33590](https://github.com/dotnet/docs/issues/33590). **Opened:** January 18, 2023. **Status:** Partially covered by open, non-draft [dotnet/docs#56680](https://github.com/dotnet/docs/pull/56680).
+
+**Why the solution is defined:** The [HTTP tutorial](../docs/csharp/tutorials/console-webapiclient.md) retains the reported initial call/signature inconsistency and explanatory gaps. Earlier [dotnet/docs#36896](https://github.com/dotnet/docs/pull/36896) merged but didn't complete every request. The current patch removes the stub's parameter instead of consistently passing the client, and describes the vendor JSON media type as selecting API version 3.
+
+**Maintainer next action:** Correct the existing PR so each instructional stage compiles with matching calls/signatures and the final example still passes its configured `HttpClient`. Distinguish response representation from GitHub REST API version selection; explain both `Accept` and the required `User-Agent` without inventing requirements. Preserve the original `Write`/`WriteLine` output concern and verify the displayed output against the staged/final code. Don't close on the earlier partial merge or assign another parallel implementation.
+
+### dotnet/docs#33722: Keep warning-suppression guidance reusable
+
+**Issue:** [dotnet/docs#33722](https://github.com/dotnet/docs/issues/33722). **Opened:** January 26, 2023. **Status:** Partially covered by open, non-draft [dotnet/docs#56678](https://github.com/dotnet/docs/pull/56678).
+
+**Why the solution is defined:** The actual patch adds local suppression material to [CS0184](../docs/csharp/misc/cs0184.md), but the request and maintainer reply call for reusable generic guidance across compiler-warning pages. Its pragma example also references an undefined `value`. Existing [warning directives](../docs/csharp/language-reference/preprocessor-directives.md#pragma-warning) and [NoWarn guidance](../docs/csharp/language-reference/compiler-options/errors-warnings.md#nowarn) provide shared targets.
+
+**Maintainer next action:** Correct the current example and establish the shared suppression link/content pattern before a bounded, reviewed rollout to applicable warning pages. Preserve existing `NoWarn` entries and restore locally disabled warnings. Don't imply that actual compiler errors can all be suppressed like warnings or duplicate a long generic recipe on hundreds of pages. An owned Roslyn compilation produced one CS0184 without the pragma and none with it; the final published example and project-level form still need their own verification. Don't close the broader request after this one-page patch alone.
+
 ## Assignment order
 
 For the quickest independent changes, start with the table escaping, the paired COM wording corrections, or the existing prose-only signposts. Coordinate the instrumentation link with its current owner. Treat the two COM issues as one assignment, and use the existing hosted-service issue rather than duplicate work for dotnet/docs#23440.
@@ -1431,4 +1543,8 @@ The variance-position illustration, POCO definition, CA1506 suppression choices,
 
 Coordinate the worker/I/O count clarification with `kouvel`. Arrange the JsonTypeInfo API and Bootstrap signpost work in their owning repositories before assignment. Preserve both custom-transform owners and verify modern factory discovery rather than copy the obsolete registration requirement. Complete the existing DataFrame guide instead of replacing its merged work; coordinate the general ONNX guide with its current owner and verify schema/provider assumptions.
 
-Review the sixteen existing implementation PRs separately from new assignments; the F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review. Issues that don't fit either candidate category are omitted for a future task.
+The LINQ roadmap and corrected flexible-type example are additional small changes. Coordinate converter discoverability with the existing Windows Forms task. Arrange the CSharpParseOptions, syntax-walker, and OLS API work in their actual owning repositories; don't assign a docs-only change that can't publish the correction. The duplex pipe sample needs two live endpoints, and Fuslogvw setup needs a verified Windows tool/launch path.
+
+Review the twenty existing implementation PRs separately from new assignments; the F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review.
+
+Keep the new stream-reading alternative text-specific and version-correct. Verify StartupObject's IDE route, correct the HTTP tutorial's staged calls and API-header explanation, and preserve the reusable warning-suppression requirement beyond the CS0184 patch. Issues that don't fit either candidate category are omitted for a future task.

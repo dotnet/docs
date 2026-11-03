@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 425 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#36523](https://github.com/dotnet/docs/issues/36523), opened August 4, 2023.
-- **Results:** 86 closure candidates and 177 [clearly defined fixes](issues-with-defined-fixes.md) (157 assignment candidates and 20 fixes with open implementation PRs).
-- **Latest batch:** Issues 401-425, from [dotnet/docs#35857](https://github.com/dotnet/docs/issues/35857) through dotnet/docs#36523: 7 closure candidates, 14 new assignment candidates, and no new fixes with open implementation PRs.
-- **Remaining:** 423 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 125 are complete and 175 remain. Continue with [dotnet/docs#36538](https://github.com/dotnet/docs/issues/36538), opened August 7, 2023, and stop at position 600. Refresh issue states; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 450 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#37034](https://github.com/dotnet/docs/issues/37034), opened September 9, 2023.
+- **Results:** 90 closure candidates and 190 [clearly defined fixes](issues-with-defined-fixes.md) (170 assignment candidates and 20 fixes with open implementation PRs).
+- **Latest batch:** Issues 426-450, from [dotnet/docs#36538](https://github.com/dotnet/docs/issues/36538) through dotnet/docs#37034: 4 closure candidates, 13 new assignment candidates, and no new fixes with open implementation PRs.
+- **Remaining:** 398 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 150 are complete and 150 remain. Continue with [dotnet/docs#37037](https://github.com/dotnet/docs/issues/37037), opened September 11, 2023, and stop at position 600. Refresh issue states; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -782,3 +782,35 @@ The [Native AOT limitations list](../docs/core/deploying/native-aot/index.md#lim
 The [Option Explicit reference](../docs/visual-basic/language-reference/statements/option-explicit-statement.md) documents the default `On` setting, warns against `Off`, and explains project/compiler settings when a source file omits the statement. An owned Visual Basic compiler probe with no source-level option emitted BC30451 for an undeclared variable under the default options, while an explicit compiler override to `Off` allowed the same source.
 
 **Suggested closure explanation:** Clarify that normal Visual Basic projects don't require the statement to enable the default checking. Decline the request to remove configurable behavior from Visual Basic, JavaScript, and all other languages as outside this documentation issue's scope. Don't claim that `On` can't be overridden, or conflate Option Explicit with Option Strict.
+
+### dotnet/docs#36632: Restrict the Repository pattern to reads
+
+**Opened:** August 10, 2023. **Confidence:** High for the naming objection. **Reason:** The proposed read-only restriction isn't part of the cited pattern.
+
+The issue argues that repository classes must only read data, so an Entity Framework repository with writes misuses the name. Fowler's [Repository catalog entry](https://martinfowler.com/eaaCatalog/repository.html) explicitly describes a collection-like interface through which clients add and remove objects, with persistence operations encapsulated behind that interface. The current [persistence-layer chapter](../docs/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-implementation-entity-framework-core.md) explains custom repositories and Unit of Work, while also recognizing direct `DbContext` use as an alternative.
+
+**Suggested closure explanation:** The requested terminology correction rests on an incorrect restriction of the pattern. Close that precise objection with the catalog reference; don't claim that every repository implementation is ideal, that CQRS requires a write repository, or that the architecture chapter excludes direct EF Core use.
+
+### dotnet/docs#36747: Test DI-aware metrics with MetricCollector
+
+**Opened:** August 18, 2023. **Confidence:** High. **Reason:** The requested unit-test example now exists.
+
+The [custom-metrics testing section](../docs/core/diagnostics/metrics-instrumentation.md#test-with-dependency-injection) builds a fresh service provider, calls `AddMetrics`, resolves the application's metrics holder and `IMeterFactory`, constructs a factory-scoped `MetricCollector<int>`, records a sale, and asserts the measurement count and value. The surrounding text explains isolation between service providers and the parallel-test hazard of shared static meters. Those details address the discussion's DI requirement, rather than only showing a global listener.
+
+The [current collector implementation](https://github.com/dotnet/extensions/blob/main/src/Libraries/Microsoft.Extensions.Diagnostics.Testing/Metrics/MetricCollector.cs) accepts the scope/name/instrument arguments used by the example and filters on the instrument's meter scope. **Suggested closure explanation:** Point to the completed test and coordinate with assignee `noahfalk`. This recommendation verifies the requested content and API contract, not a fresh execution of the article's complete test project.
+
+### dotnet/docs#36749: Create custom metrics through dependency injection
+
+**Opened:** August 18, 2023. **Confidence:** High. **Reason:** The requested alternative to static instruments is documented.
+
+The [DI metrics section](../docs/core/diagnostics/metrics-instrumentation.md#get-a-meter-via-dependency-injection) introduces `IMeterFactory`, defines a custom class that holds counters, registers that class with DI, and injects it into application code. It covers Generic Host registration, `AddMetrics` for a standalone service collection, isolation, automatic meter lifetime, and the associated DI-aware unit test. [dotnet/docs#36781](https://github.com/dotnet/docs/pull/36781) merged on August 26, 2023; the substantive current content, not the merge alone, establishes completion.
+
+**Suggested closure explanation:** The core DI, holder-class, and testability requests are satisfied. The issue suggests a worker-template app as one way to demonstrate the approach; the current example uses ASP.NET Core and explicitly covers Generic Host applicability instead. Don't claim that a separate worker sample was added. Coordinate with assignee `noahfalk`.
+
+### dotnet/docs#36934: Group nullable value and reference type navigation
+
+**Opened:** August 31, 2023. **Confidence:** High for the navigation request. **Reason:** The requested conceptual grouping already exists.
+
+The current [C# table of contents](../docs/csharp/toc.yml) places nullable value types and nullable reference types together under **Null safety**. The [null-safety overview](../docs/csharp/fundamentals/null-safety/index.md), also verified on the published site, introduces the shared topic and links the two concepts. That organization addresses the issue and the maintainer's promised Everyday C# rearrangement without pretending that the runtime representations are identical.
+
+**Suggested closure explanation:** Close the original navigation request against the current TOC and published overview. [dotnet/docs#56679](https://github.com/dotnet/docs/pull/56679) remains open and unmerged, and its patch adds explanatory cross-references rather than the TOC grouping. Review that supplemental PR separately; don't cite it as a merged fix or create a duplicate assignment.

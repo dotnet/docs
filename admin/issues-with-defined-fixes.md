@@ -5,15 +5,15 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 157 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track twenty additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 170 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track twenty additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 425 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#36523](https://github.com/dotnet/docs/issues/36523), opened August 4, 2023.
-- **Results:** 177 defined fixes (157 assignment candidates and 20 with open implementation PRs) and 86 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 401-425 add 14 new assignment candidates and no new fixes with open implementation PRs, alongside 7 closure candidates.
-- **Remaining:** 423 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 125 are complete and 175 remain. Continue with [dotnet/docs#36538](https://github.com/dotnet/docs/issues/36538), opened August 7, 2023, and stop at position 600.
+- **Completed batches:** The 450 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#37034](https://github.com/dotnet/docs/issues/37034), opened September 9, 2023.
+- **Results:** 190 defined fixes (170 assignment candidates and 20 with open implementation PRs) and 90 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 426-450 add 13 new assignment candidates and no new fixes with open implementation PRs, alongside 4 closure candidates.
+- **Remaining:** 398 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 150 are complete and 150 remain. Continue with [dotnet/docs#37037](https://github.com/dotnet/docs/issues/37037), opened September 11, 2023, and stop at position 600.
 - **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the twenty active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
@@ -1704,6 +1704,136 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 **Proposed assignment scope:** Add the `params` exception and explain that a parameter array must occupy the final parameter position. Link the existing language reference and provide a concise signature if helpful. Keep C# parameter arrays/collections and Visual Basic `ParamArray` language/version support distinct; don't claim that any arbitrary required parameter after a token is exempt.
 
 **Acceptance criteria:** Run enabled-rule positive/negative controls for each documented form on the named analyzer/compiler versions. The rule's ordinary cancellation-token-last recommendation and breaking-change warning remain intact.
+
+### dotnet/docs#36539: Explain native-library lookup and Framework architecture constraints
+
+**Issue:** [dotnet/docs#36539](https://github.com/dotnet/docs/issues/36539). **Opened:** August 7, 2023. **Size:** Small. **GHCP suitability:** Suitable for a bounded compatibility clarification, with interop-owner review.
+
+**Why it still applies:** The [P/Invoke introduction](../docs/standard/native-interop/pinvoke.md) points to [native-library loading](../docs/standard/native-interop/native-library-loading.md), but the latter's modern resolver APIs don't answer the reporter's .NET Framework and AnyCPU question. The important distinction is the architecture of the running process, not merely the operating system or managed assembly.
+
+**Bounded fix:** Add a Framework compatibility note and links to Windows DLL search behavior and `DefaultDllImportSearchPathsAttribute`. Distinguish native DLL lookup from managed assembly binding, explain that an in-process native library must match the process architecture, and avoid presenting `NativeLibrary.SetDllImportResolver` as a Framework API. Qualify search behavior by the import, search flags, and OS rather than inventing one universal search order. Don't recommend global current-directory changes or an x86-versus-x64-only rule that misclassifies ARM64.
+
+**Acceptance:** Check Framework availability of every named API and validate any architecture-selection example on the architectures it claims to support. Coordinate with retained dotnet/docs#34916 on modern RID assets without merging its scope into this Framework question. No native loader experiment was executed during triage.
+
+### dotnet/docs#36678: Preserve the timeout budget in both SpinWait latch samples
+
+**Issue:** [dotnet/docs#36678](https://github.com/dotnet/docs/issues/36678). **Opened:** August 14, 2023. **Size:** Small. **GHCP suitability:** Suitable for a paired sample correction with controlled timeout tests.
+
+**Why it still applies:** The [two-phase wait article](../docs/standard/threading/how-to-use-spinwait-to-implement-a-two-phase-wait-operation.md) includes C# and Visual Basic samples that restart the stopwatch inside the outer loop. Both also subtract elapsed time from `Timeout.Infinite` and reject the negative result. An owned probe compiled the exact C# sample without invoking its interactive `Main`; `Wait(Timeout.Infinite)` returned `false` without any signal.
+
+**Bounded fix:** Start elapsed-time accounting once per wait operation, preserve the original finite budget across spins and kernel waits, and handle infinite timeouts separately. Update both language samples and the directly related explanation. Don't certify or redesign unrelated aspects of the demonstration latch.
+
+**Acceptance:** Exercise zero, finite, and infinite timeouts; signal before and after the kernel transition; and verify that repeated iterations can't restart the finite budget. Run both languages with bounded harnesses rather than the interactive sample driver.
+
+### dotnet/docs#36680: Link code-style rules to their analyzer source
+
+**Issue:** [dotnet/docs#36680](https://github.com/dotnet/docs/issues/36680). **Opened:** August 14, 2023. **Size:** Small. **GHCP suitability:** Suitable for an introductory link addition coordinated with assignee `gewarren`.
+
+**Why it still applies:** The [style-rule overview](../docs/fundamentals/code-analysis/style-rules/index.md) doesn't provide the requested implementation source entry point. The discussion supplies IDE0001 as a concrete example. Current Roslyn source still maps `SimplifyNamesDiagnosticId` to `IDE0001` in [IDEDiagnosticIds.cs](https://github.com/dotnet/roslyn/blob/main/src/Analyzers/Core/Analyzers/IDEDiagnosticIds.cs), with its C# implementation in [CSharpSimplifyTypeNamesDiagnosticAnalyzer.cs](https://github.com/dotnet/roslyn/blob/main/src/Features/CSharp/Portable/Diagnostics/Analyzers/CSharpSimplifyTypeNamesDiagnosticAnalyzer.cs).
+
+**Bounded fix:** Add a short source-code pointer and explain how a reader can use a diagnostic ID to locate its implementation. Use the verified example and repository/folder links; don't imply that all IDE analyzers live in one folder or that the documentation table is automatically generated from that file.
+
+**Acceptance:** Follow the links and confirm the shared ID and language-specific implementation. Keep IDE code-style analyzers distinct from CA code-quality analyzers.
+
+### dotnet/docs#36694: State the Azure Artifacts snupkg limitation
+
+**Issue:** [dotnet/docs#36694](https://github.com/dotnet/docs/issues/36694). **Opened:** August 15, 2023. **Size:** Small. **GHCP suitability:** Suitable for a provider-specific note and authoritative link.
+
+**Why it still applies:** The [library NuGet guidance](../docs/standard/library-guidance/nuget.md) recommends symbol packages without the relevant provider qualification. The [NuGet symbol-package guide](/nuget/create-packages/symbol-packages-snupkg) explicitly states that Azure DevOps Artifacts doesn't support debugging via `.snupkg` files.
+
+**Bounded fix:** Add that precise qualification near the symbol-package advice and link the NuGet explanation. Don't broaden the limitation into a claim that Azure Artifacts can't host packages containing PDBs, that all symbol formats are unsupported, or that Source Link supplies a missing PDB.
+
+**Acceptance:** Preserve the distinction between separate `.snupkg` publication, PDBs inside a normal package, and source retrieval. Coordinate with dotnet/docs#25426 and its open [implementation PR](https://github.com/dotnet/docs/pull/56650), plus the retained Source Link clarification in dotnet/docs#22373.
+
+### dotnet/docs#42239: Complete marshaller mode and precedence guidance
+
+**Issue:** [dotnet/docs#42239](https://github.com/dotnet/docs/issues/42239). **Opened:** August 15, 2023. **Size:** Medium. **GHCP suitability:** Suitable for a source-backed shape correction, with interop-owner review.
+
+**Why it still applies:** The [marshaller-shapes reference](../docs/standard/native-interop/custom-marshaller-shapes.md) doesn't fully explain the element-mode requirements or the selection priority raised by the owner. Its stateless bidirectional value example lists `ElementRef`, but not `ElementIn` or `ElementOut`. An owned SDK 10.0.403 generator probe registered an `ElementIn` value marshaller for an array parameter: a one-way implementation failed with SYSLIB1057 for the missing `ConvertToManaged`, while the bidirectional implementation built with no warnings or errors.
+
+**Bounded fix:** Correct the affected mode annotations and explain the supported pinning, caller-buffer, and conversion paths with their applicability and precedence. Use `GetPinnableReference`, not the comment's misspelled method name. Check value and collection shapes separately; don't infer that every similarly named shape supports every optimization.
+
+**Acceptance:** Compile minimal positive and negative generator cases for the documented modes and inspect generated calls for each precedence claim. The triage probe verified the `ElementIn` requirement only; it neither invoked a native function nor established the entire priority matrix.
+
+### dotnet/docs#36706: Make the XML serializer tutorial's Program.cs unambiguous
+
+**Issue:** [dotnet/docs#36706](https://github.com/dotnet/docs/issues/36706). **Opened:** August 16, 2023. **Size:** Small. **GHCP suitability:** Suitable for an executable tutorial correction rather than another package-version-only edit.
+
+**Why it still applies:** The [current tutorial](../docs/core/additional-tools/xml-serializer-generator.md) now selects package 10.0.0, but its sequence tells readers to add `MyClass`, then add a top-level serializer statement. That order after the template's top-level statement produces CS8803. An owned compiler probe reproduced the error and confirmed that the serializer statement before the class compiles.
+
+**Bounded fix:** Supply an explicit complete `Program.cs` or equally unambiguous insertion instructions, with all top-level statements before type declarations. Check the advertised SDK prerequisites against the selected generator package and runtime; don't assume that changing the version alone demonstrates success.
+
+**Acceptance:** Follow the tutorial from a fresh named project, execute the application, and verify that `MyApp.XmlSerializers.dll` actually appears and can be used. The triage probe verified source ordering, not a generator-package restore or serializer-assembly generation.
+
+### dotnet/docs#36739: Document modern SOS ThreadPool options
+
+**Issue:** [dotnet/docs#36739](https://github.com/dotnet/docs/issues/36739). **Opened:** August 17, 2023. **Size:** Small. **GHCP suitability:** Suitable for a command-reference clarification with diagnostics-owner review.
+
+**Why it still applies:** The [modern SOS reference](../docs/core/diagnostics/sos-debugging-extension.md) describes `ThreadPool` without the requested arguments. The reporter uses LLDB, not WinDbg's unrelated `!tp` command. Current [ThreadPoolCommand source](https://github.com/dotnet/diagnostics/blob/main/src/Microsoft.Diagnostics.ExtensionCommands/ThreadPoolCommand.cs) defines `-ti` for the hill-climbing log and `-wi` for queued work items, with explicit option help.
+
+**Bounded fix:** Add syntax, explanations, and the supported help-discovery command for those options. Distinguish modern SOS from the legacy [Framework SOS reference](../docs/framework/tools/sos-dll-sos-debugging-extension.md); don't apply modern flags to an incompatible legacy implementation. Treat newer aliases and summary flags as version-dependent rather than promising them everywhere.
+
+**Acceptance:** Check the selected shipped SOS version's help and exercise the examples against an owned process or dump. No LLDB session or dump inspection was performed during triage.
+
+### dotnet/docs#36744: Correct the OS-default TLS guidance
+
+**Issue:** [dotnet/docs#36744](https://github.com/dotnet/docs/issues/36744). **Opened:** August 17, 2023. **Size:** Small. **GHCP suitability:** Suitable for a precise correction within the now-expanded TLS 1.3 guidance.
+
+**Why it still applies:** The [Framework TLS article](../docs/framework/network-programming/tls.md) now covers TLS 1.3 extensively, but the practical recommendation passes nonexistent `SslProtocols.SystemDefault` to `SslStream`. An owned Framework compiler probe rejected that member with CS0117 and accepted `SslProtocols.None`. `SecurityProtocolType.SystemDefault` is a different enum member and shouldn't be replaced.
+
+**Bounded fix:** Correct the `SslStream` recommendation to the documented OS-default value, distinguish it from obsolete `SslProtocols.Default`, and keep the OS/Framework support qualifications visible. Don't turn a successful compilation or an enum numeric constant into a guarantee that a given OS and peer negotiate TLS 1.3.
+
+**Acceptance:** Compile any accompanying Framework example, check the `SslProtocols.None` API contract and Schannel support documentation, and review the surrounding recommendations for consistency. Triage verified the enum distinction, not a live TLS handshake.
+
+### dotnet/docs#36748: Finish the built-in metrics cross-reference checklist
+
+**Issue:** [dotnet/docs#36748](https://github.com/dotnet/docs/issues/36748). **Opened:** August 18, 2023. **Size:** Small. **GHCP suitability:** Suitable for a bounded link-completion task coordinated with assignee `noahfalk` and the blog owner.
+
+**Why it still applies:** The [built-in metrics catalog](../docs/core/diagnostics/built-in-metrics.md) now exists, the ASP.NET Core guide links to its catalog, and [the semantic-conventions PR](https://github.com/open-telemetry/semantic-conventions/pull/283) merged on December 11, 2023. However, the [RC1 announcement](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-rc-1/#metrics) still links its .NET metrics text to `lmolkova/semantic-conventions` on the `dotnet8-metrics` branch. That isn't the merged upstream definition requested by the final checklist.
+
+**Bounded fix:** Replace the historical fork link with the corresponding current upstream .NET semantic-conventions reference, and finish the checklist's definition-link check in the built-in pages. Check instrument-specific destinations, including the client-duration link in [networking metrics](../docs/core/diagnostics/built-in-metrics-system-net.md), rather than treating a link to the wrong instrument as complete.
+
+**Acceptance:** Verify the final URLs and anchors against the upstream definitions. Coordinate the blog edit through an editor with access; a docs-only PR doesn't complete that external step. Don't recreate the catalog, reopen the merged OTel proposal, or invent standardized definitions for .NET-specific instruments that lack one.
+
+### dotnet/docs#36875: Remove redundant ASP.NET Core metrics setup from successor samples
+
+**Issue:** [dotnet/docs#36875](https://github.com/dotnet/docs/issues/36875). **Opened:** August 28, 2023. **Size:** Small. **GHCP suitability:** Suitable for a coordinated sample cleanup with assignee `samsp-msft`.
+
+**Why it still applies:** The original numbered setup section was replaced, but the successor [OTLP walkthrough](../docs/core/diagnostics/observability-otlp-example.md) still includes a sample with both metrics `AddAspNetCoreInstrumentation()` and `AddMeter("Microsoft.AspNetCore.Hosting")`. The same pattern remains in related OTLP and Prometheus/Grafana/Jaeger snippet programs. Current [instrumentation source](https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/main/src/OpenTelemetry.Instrumentation.AspNetCore/AspNetCoreInstrumentationMeterProviderBuilderExtensions.cs) registers built-in ASP.NET Core meters for applicable targets.
+
+**Bounded fix:** Retain metrics `AddAspNetCoreInstrumentation()` and remove the explicit Hosting meter registration where the selected package already supplies it. Check the other built-in meter registrations against that package's source before removing them, and preserve the custom meters. The extension can do more than subscribe to meters, including version-dependent enrichment, so deleting the extension isn't an equivalent cleanup. Don't remove `AddAspNetCoreInstrumentation()` from the separate tracing pipeline.
+
+**Acceptance:** Build and run the actual referenced samples, verify the expected server/custom metrics and traces, and keep project dependencies consistent with the chosen path. Don't claim that duplicate subscription configuration necessarily emits duplicate measurements; no exporter or backend was run during triage.
+
+### dotnet/docs#36983: Add a position-based GetNullableContext example
+
+**Issue:** [dotnet/docs#36983](https://github.com/dotnet/docs/issues/36983). **Opened:** September 6, 2023. **Size:** Small. **GHCP suitability:** Suitable for a focused API example in the API documentation repository.
+
+**Why it still applies:** The current [SemanticModel XML](https://github.com/dotnet/roslyn-api-docs/blob/main/dotnet/xml/Microsoft.CodeAnalysis/SemanticModel.xml) describes `GetNullableContext(position)` but has no example, and its return/remarks text remains a placeholder. An owned Roslyn probe queried two positions in one syntax tree: after `#nullable enable`, the result was `Enabled`; after `#nullable disable warnings`, it was `AnnotationsEnabled`.
+
+**Bounded fix:** Add a minimal example that creates a syntax tree and compilation, obtains its semantic model, queries explicit source positions, and explains annotations and warnings separately. Place the edit in `dotnet/roslyn-api-docs`, not an unrelated language-guide article.
+
+**Acceptance:** Compile and execute with the documented Roslyn package version, show the context flags at each position, and avoid interpreting nullable context as the flow-state analysis of an individual expression. Include the required imports and package/project setup.
+
+### dotnet/docs#36988: Explain suppression field values and matching scope
+
+**Issue:** [dotnet/docs#36988](https://github.com/dotnet/docs/issues/36988). **Opened:** September 6, 2023. **Size:** Small. **GHCP suitability:** Suitable for a source-backed reference expansion with SDK-owner review.
+
+**Why it still applies:** The moved [package validation overview](../docs/fundamentals/apicompat/package-validation/overview.md) links to the [suppression reference](../docs/fundamentals/apicompat/diagnostic-ids.md#suppression-file), which now lists fields and a sample. Its one-line descriptions still don't establish the accepted `Target`, `Left`, and `Right` values or how rules differ. Closing the separate file-generation follow-up, dotnet/docs#37649, doesn't resolve those format questions.
+
+**Bounded fix:** Explain diagnostic IDs, member/asset target values, comparison operands, baseline applicability, and supported omissions with examples generated by the selected SDK. Base matching claims on [SuppressionEngine](https://github.com/dotnet/sdk/blob/main/src/Compatibility/ApiCompat/Microsoft.DotNet.ApiCompatibility/Logging/SuppressionEngine.cs) and its model. Current source supports particular broader suppression combinations for CP errors only; don't describe every empty field as an unrestricted wildcard or extend CP behavior to PKV rules.
+
+**Acceptance:** Generate representative CP and PKV diagnostics, verify the documented XML and field values, and demonstrate that a targeted suppression leaves unrelated diagnostics visible. Preserve automatic file-generation guidance instead of replacing it with speculative hand-authored formats.
+
+### dotnet/docs#37034: Provide a complete Orleans test project setup
+
+**Issue:** [dotnet/docs#37034](https://github.com/dotnet/docs/issues/37034). **Opened:** September 9, 2023. **Size:** Medium. **GHCP suitability:** Suitable for a runnable setup/sample addition coordinated with assignee `mikekistler`.
+
+**Why it still applies:** The moved [Orleans testing guide](../docs/orleans/implementation/testing.md) now includes substantial cluster/test code, but still lacks the requested complete sample-project link and project/package setup. The final discussion identifies the missing `Microsoft.Orleans.Sdk` reference in the grains project; a page rewrite alone doesn't demonstrate that a reader's separate grain and test projects receive the required generated code.
+
+**Bounded fix:** Add or link a complete minimal sample with the grain project, test project, project references, matching Orleans packages, and the supported SDK/code-generation setup for the selected version. Reuse the upstream [practical testing guide and its referenced sample](https://github.com/dotnet/orleans/blob/main/docs/site/src/content/docs/grains/testing.md) where applicable rather than inventing another cluster harness. Connect the existing test snippets to that sample and distinguish the modern in-process cluster path from older `TestCluster` examples.
+
+**Acceptance:** Restore and run `dotnet test` from the linked project, prove that the sample discovers and activates its grain, and check package requirements in each project. Verify that a copied/downloaded sample doesn't depend on unmentioned parent repository build files. Don't prescribe the old `Microsoft.Orleans.CodeGenerator.MSBuild` 3.7.1 workaround for modern Orleans or add redundant SDK references without checking transitive package behavior. No Orleans packages were restored or test cluster started during triage.
 
 ## Defined fixes already in progress
 

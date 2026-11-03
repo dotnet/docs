@@ -412,7 +412,6 @@ public static IServiceCollection AddDefaultAuthentication(this IHostApplicationB
         var audience = identitySection.GetRequiredValue("Audience");
 
         options.Authority = identityUrl;
-        options.RequireHttpsMetadata = false;
         options.Audience = audience;
         options.TokenValidationParameters.ValidIssuers = [identityUrl];
         options.TokenValidationParameters.ValidateAudience = true;
@@ -424,7 +423,7 @@ public static IServiceCollection AddDefaultAuthentication(this IHostApplicationB
 }
 ```
 
-For endpoints that require authorization, JWT bearer authentication validates the access token's signature, lifetime, issuer, and audience. The `Authority` identifies the trusted IdentityServer instance, and `Audience` identifies the API that accepts the token. The `Audience` value has no effect if `ValidateAudience` is `false`. Keep issuer and audience validation enabled, so the API rejects a token that has a valid signature but an unexpected issuer or audience. Requests to the ordering or basket controller without a valid access token receive a `401 (unauthorized)` HTTP status code.
+For endpoints that require authorization, JWT bearer authentication validates the access token's signature, lifetime, issuer, and audience. The `Authority` identifies the trusted IdentityServer instance, and `Audience` identifies the API that accepts the token. The `Audience` value has no effect if `ValidateAudience` is `false`. Keep issuer and audience validation enabled, so the API rejects a token that has a valid signature but an unexpected issuer or audience. The adapted sample also removes `RequireHttpsMetadata = false`, so the API retrieves the signing keys from the `Authority` only over HTTPS. If you must use an HTTP identity endpoint in a local development environment, set this option to `false` only for that environment. Requests to the ordering or basket controller without a valid access token receive a `401 (unauthorized)` HTTP status code.
 
 ## Making access requests to APIs
 

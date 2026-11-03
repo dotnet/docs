@@ -562,7 +562,6 @@ builder.Services
     })
     .AddJwtBearer(config =>
     {
-        config.RequireHttpsMetadata = false;
         config.SaveToken = true;
         config.TokenValidationParameters = new TokenValidationParameters
         {
@@ -576,7 +575,7 @@ builder.Services
     });
 ```
 
-To prevent the API from accepting tokens intended for another service, keep issuer and audience validation enabled, in addition to signature and lifetime validation. A valid signature alone doesn't establish that a token was issued for this API, particularly when services share signing keys. For more information, see [Configure JWT bearer authentication](/aspnet/core/security/authentication/configure-jwt-bearer-authentication).
+To prevent the API from accepting tokens intended for another service, keep issuer and audience validation enabled, in addition to signature and lifetime validation. A valid signature alone doesn't establish that a token was issued for this API, particularly when services share signing keys. Also don't disable lifetime validation (`ValidateLifetime`) or the expiration requirement (`RequireExpirationTime`), so expired tokens and tokens without an `exp` claim are rejected. Both settings are enabled by default. For more information, see [Configure JWT bearer authentication](/aspnet/core/security/authentication/configure-jwt-bearer-authentication).
 
 While it is possible to configure multiple different authentication schemes within a single project, it is much simpler to configure a single default scheme. For this reason, among others, the eShopOnWeb reference application separates its APIs into their own project, `PublicApi`, separate from the main `Web` project that includes the application's views and Razor Pages.
 

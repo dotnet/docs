@@ -5,16 +5,16 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 250 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track thirty-nine additional issue-level fixes separately because thirty-eight implementation PRs are already open; two issues share one PR, several patches need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 260 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track forty-three additional issue-level fixes separately because forty-two implementation PRs are already open; two issues share one PR, several patches need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 625 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#42480](https://github.com/dotnet/docs/issues/42480), opened September 5, 2024.
-- **Results:** 289 defined fixes (250 assignment candidates and 39 with open implementation PRs) and 122 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 601-625 add 11 new assignment candidates and 3 new issue-level fixes with open implementation PRs, alongside 7 closure candidates. The 39 active entries are covered by 38 distinct PRs.
-- **Remaining:** 223 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 75 are complete and 223 remain. Continue with [dotnet/docs#42512](https://github.com/dotnet/docs/issues/42512), opened September 9, 2024, and finish the snapshot at position 848.
-- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the thirty-eight distinct active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
+- **Completed batches:** The 650 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#43167](https://github.com/dotnet/docs/issues/43167), opened October 23, 2024.
+- **Results:** 303 defined fixes (260 assignment candidates and 43 with open implementation PRs) and 126 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 626-650 add 10 new assignment candidates and 4 new issue-level fixes with open implementation PRs, alongside 4 closure candidates. The 43 active entries are covered by 42 distinct PRs.
+- **Remaining:** 198 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 100 are complete and 198 remain. Continue with [dotnet/docs#43182](https://github.com/dotnet/docs/issues/43182), opened October 23, 2024, and finish the snapshot at position 848.
+- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the forty-two distinct active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
 
@@ -2535,6 +2535,86 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Scope and acceptance:** Revise those five option descriptions and the shared explanation to state the actual diagnostic behavior, with positive and no-diagnostic examples for each relevant setting. Distinguish a preference that disables a particular suggestion from severity `none`, and don't generalize that every Boolean option behaves this way. Confirm each table against its analyzer implementation and a matching diagnostic fixture; don't change analyzer behavior or expand the task into an unbounded audit of every style rule.
 
+### dotnet/docs#42584: Define mutability and readonly in the type-system introduction
+
+**Issue:** [dotnet/docs#42584](https://github.com/dotnet/docs/issues/42584). **Opened:** September 11, 2024. **Size:** Small. **GHCP suitability:** Strong for a short conceptual addition and cross-links.
+
+**Why it still applies:** The [type-system introduction](../docs/csharp/fundamentals/types/index.md) mentions immutability when it compares type constructs, but doesn't define mutable, immutable, or `readonly`. The related class, record, and struct pages don't replace the missing introductory distinction. An owned .NET 8/.NET 10 example confirmed that a readonly struct can still reference a mutable list.
+
+**Scope and acceptance:** Define the three terms and distinguish value/reference semantics from mutability. Explain that `readonly` restricts assignment or mutation through a particular member/reference and doesn't automatically make the reachable object graph immutable. Link the existing readonly and record guidance, including mutable record structs and shallow immutability. Keep examples small and execute any added snippets. Check with the earlier volunteer before parallel implementation, and coordinate with the existing type-selection PR rather than duplicate its matrix.
+
+### dotnet/docs#42655: Correct the historical host-shutdown explanation
+
+**Issue:** [dotnet/docs#42655](https://github.com/dotnet/docs/issues/42655). **Opened:** September 18, 2024. **Size:** Small. **GHCP suitability:** Strong for two source-backed prose corrections.
+
+**Why it still applies:** The [host-shutdown section](../docs/core/extensions/generic-host.md#host-shutdown) still says that `Environment.Exit` raises SIGTERM, where the explanation requires `ProcessExit`, and retains the malformed deadlock sentence shown in the issue's actual screenshot. The linked [runtime investigation](https://github.com/dotnet/runtime/issues/50397) supplies the historical wait-cycle context.
+
+**Scope and acceptance:** Correct the event name and explain that the old `ProcessExit` handler could wait for host shutdown while `Environment.Exit` blocked a thread needed to complete that shutdown. Preserve the before-.NET-6 context and the later POSIX-signal behavior. Don't imply that `Environment.Exit` sends SIGTERM or that current hosting turns an abrupt exit into graceful cleanup. Review the revised paragraph with the hosting owner; the correction doesn't require changing shutdown APIs or running a service on the reviewer's machine.
+
+### dotnet/docs#42805: Explain the throw-helper performance rationale
+
+**Issue:** [dotnet/docs#42805](https://github.com/dotnet/docs/issues/42805). **Opened:** October 2, 2024. **Size:** Small. **GHCP suitability:** Strong for a bounded explanation, not a new performance guarantee.
+
+**Why it still applies:** The [.NET 8 SDK summary](../docs/core/whats-new/dotnet-8/sdk.md) still asserts that throw helpers are more efficient, but doesn't explain why source-level method-call counting is misleading. The runtime's [ThrowHelper rationale](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Private.CoreLib/src/System/ThrowHelper.cs) identifies code-size reduction; related runtime/JIT sources explain the inlinable guard and out-of-line throw pattern.
+
+**Scope and acceptance:** Explain the small nonthrowing guard, cold exception path, and potential inlining/code-size benefit, with a link to the rule or runtime rationale. Qualify the claim so it doesn't promise a speedup for every JIT, caller, or throwing path. Don't claim that manual guards allocate on a successful path or that two C# calls imply two machine calls. If the change includes measured or assembly-level results, reproduce them with a named SDK/runtime and configuration rather than invent a benchmark result.
+
+### dotnet/docs#42878: Include structs in the deserialization introduction
+
+**Issue:** [dotnet/docs#42878](https://github.com/dotnet/docs/issues/42878). **Opened:** October 8, 2024. **Size:** Small. **GHCP suitability:** Strong for terminology and a focused supported-type example.
+
+**Why it still applies:** The [deserialization how-to](../docs/standard/serialization/system-text-json/deserialization.md) still describes the target and generic type parameter only as a class. Its linked [constructor guidance](../docs/standard/serialization/system-text-json/immutability.md#parameterized-constructors) already supports structs, but the introduction doesn't make that capability discoverable. Owned .NET 8/.NET 10 tests deserialized both a mutable property-based struct and a readonly struct with `[JsonConstructor]`.
+
+**Scope and acceptance:** Describe the target as an appropriate .NET type, including classes and structs, and add or link a short struct example. Preserve constructor-selection and public-field rules: the unannotated get-only struct in the same fixture used its default initialization rather than its parameterized constructor. Don't promise every struct is supported or rename Visual Studio's literal **Paste JSON as Classes** command. Execute the published C#/VB examples and retain the existing immutable-type cross-link.
+
+### dotnet/docs#42901: Show how work can outlive a returned task
+
+**Issue:** [dotnet/docs#42901](https://github.com/dotnet/docs/issues/42901). **Opened:** October 9, 2024. **Size:** Small. **GHCP suitability:** Strong for a deterministic lease-lifetime example, paired with dotnet/docs#42921.
+
+**Why it still applies:** [Memory usage rule 4](../docs/standard/memory-and-spans/memory-t-usage-guidelines.md) repeats a compliant example but doesn't show the requested violation. An owned .NET 8/.NET 10 fixture returned an already-completed task while a separately tracked continuation retained the memory. After the caller reused the buffer, that continuation read the changed data; returning the actual consuming task preserved the lease.
+
+**Scope and acceptance:** Contrast an explicitly incorrect detached-operation example with a task that covers all memory access. Use synchronization gates, not sleeps or nondeterministic pool reuse, and explain method return versus the advertised task's terminal state. Retain completed, faulted, and canceled outcomes and the existing task-like scope. Don't suggest that statements after an `await` within the same async operation inherently violate the rule. Coordinate snippet/target changes with dotnet/docs#41980 and the synchronous-rule correction rather than create competing edits.
+
+### dotnet/docs#42921: Apply the synchronous memory lease rule beyond void
+
+**Issue:** [dotnet/docs#42921](https://github.com/dotnet/docs/issues/42921). **Opened:** October 9, 2024. **Size:** Small. **GHCP suitability:** Strong as the same article pass as dotnet/docs#42901.
+
+**Why it still applies:** [Rule 3](../docs/standard/memory-and-spans/memory-t-usage-guidelines.md) still limits its heading and summary to `void`. A synchronous method that returns an `int` can retain and misuse the same buffer after return. The owned .NET 8/.NET 10 gated fixture reproduced that counterexample without file I/O or a timing race.
+
+**Scope and acceptance:** State the synchronous-consumer lease independently of a `void` return type and distinguish it from a contract that explicitly transfers ownership or returns an awaitable lifetime. Update both the summary list and detailed explanation; preserve existing fragment destinations if headings change. Use a simple non-void counterexample alongside the task-returning correction, not a new rule that treats every non-void method as asynchronous.
+
+### dotnet/docs#43001: Add a complete ClientWebSocket lifecycle example
+
+**Issue:** [dotnet/docs#43001](https://github.com/dotnet/docs/issues/43001). **Opened:** October 10, 2024. **Size:** Medium. **GHCP suitability:** Suitable for the explicit client-lifecycle checklist, with networking-owner review.
+
+**Why it still applies:** The [WebSocket article](../docs/fundamentals/networking/websockets.md) covers connection options, a single send/receive, and modern keep-alive behavior, but not the requested receive loop, lifecycle notifications, and bounded reconnection. Keep-alive guidance alone doesn't implement those requirements.
+
+**Scope and acceptance:** Add a minimal, awaitable text-client example with connection, complete-message receive, send, close/error notification, cancellation, and an explicitly illustrative bounded retry policy. Reassemble fragmented messages before UTF-8 decoding, respect supported send/receive concurrency, and create a fresh disposed/replaced `ClientWebSocket` for each reconnect. Don't copy the issue's global mutable socket, fire-and-forget connection, `async void` event pattern, or frame-as-message assumption. Verify a controlled local peer with split UTF-8, orderly close, abrupt disconnect, cancellation, and one reconnect. Don't promise automatic application-message replay, exactly-once delivery, or a production-ready universal reconnection framework.
+
+### dotnet/docs#43054: Explain the scope of shared JSON options
+
+**Issue:** [dotnet/docs#43054](https://github.com/dotnet/docs/issues/43054). **Opened:** October 15, 2024. **Size:** Small. **GHCP suitability:** Strong for a scope clarification and centralized-call example.
+
+**Why it still applies:** The [property-customization guide](../docs/standard/serialization/system-text-json/customize-properties.md) and [options-reuse page](../docs/standard/serialization/system-text-json/configure-options.md) don't directly answer whether "global" means every plain serializer call in a project. Owned .NET 8/.NET 10 tests confirmed that a shared explicit naming policy doesn't change calls that omit options, and that `JsonSerializerOptions.Default` rejects mutation.
+
+**Scope and acceptance:** Explain options-instance versus process-wide scope and show a reusable application wrapper or shared serializer context for centralized calls. Cross-link options reuse and distinguish host-managed ASP.NET Core MVC/HTTP JSON configuration from unrelated direct static calls. Don't invent a mutable global defaults setter or imply configuring one web component changes all serialization in the process. Verify default and configured outputs and thread-safe reuse of the frozen options instance.
+
+### dotnet/docs#43058: Distinguish null handling on reads from write-only ignore settings
+
+**Issue:** [dotnet/docs#43058](https://github.com/dotnet/docs/issues/43058). **Opened:** October 15, 2024. **Size:** Small. **GHCP suitability:** Strong for a concrete option-matrix clarification, not a new serializer feature.
+
+**Why it still applies:** The [ignore-properties guide](../docs/standard/serialization/system-text-json/ignore-properties.md) presents write-side settings, while the [migration table](../docs/standard/serialization/system-text-json/migrate-from-newtonsoft.md) lists `NullValueHandling.Ignore` as supported through `DefaultIgnoreCondition` without a read/write qualification. Owned .NET 8/.NET 10 tests showed that `WhenWritingNull` still assigns a JSON null to an initialized reference property. Obsolete `IgnoreNullValues` preserved that reference default, but all tested settings rejected JSON null for a non-nullable integer.
+
+**Scope and acceptance:** Add the read/write distinction at the question's entry point and qualify the migration row. Link the existing non-nullable-value workaround and preserve its warning that a converter's default value can overwrite a property's initializer. Distinguish missing properties, explicit null, nullable references, and non-nullable values. Don't recommend the obsolete option for new code, equate a write-only ignore condition with read-side default preservation, or advertise a single equivalent process-wide null-ignore switch.
+
+### dotnet/docs#43159: Mark the CA1515 fix as potentially breaking
+
+**Issue:** [dotnet/docs#43159](https://github.com/dotnet/docs/issues/43159). **Opened:** October 22, 2024. **Size:** Small. **GHCP suitability:** Strong for rule metadata and a suppression clarification.
+
+**Why it still applies:** [CA1515](../docs/fundamentals/code-analysis/quality-rules/ca1515.md) still labels a public-to-internal change non-breaking. An executable can expose types to another assembly; an owned compiler fixture compiled that consumer with the public type and produced CS0122 after the same executable type became internal. The rule also permits configuration for library output kinds.
+
+**Scope and acceptance:** Mark the fix as breaking and explain why "typically not referenced" isn't a compatibility guarantee. Mention intentional external/test/framework consumers as a reason to preserve the public contract and suppress the recommendation where appropriate. Verify the small two-assembly before/after case without changes to analyzer behavior, default enablement, or a blanket recommendation to replace public APIs with friend-assembly access.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -2851,6 +2931,38 @@ These issues still need their existing PRs to land, with corrections where noted
 
 **Maintainer next action:** Merge the focused correction after review of current-versus-historical version wording. Preserve the legitimate differences between `required` and `[JsonRequired]`, presence versus non-nullability, and metadata-capable versus serialization-only source-generation modes. Don't use an empty fast-path property collection to claim source generation generally ignores required members.
 
+### dotnet/docs#42512: Refine the type-selection and static-class guidance
+
+**Issue:** [dotnet/docs#42512](https://github.com/dotnet/docs/issues/42512). **Opened:** September 9, 2024. **Status:** Covered by open, non-draft [dotnet/docs#56655](https://github.com/dotnet/docs/pull/56655).
+
+**Evidence:** The actual patch adds a type-selection matrix and static-class design notes to the [class guide](../docs/csharp/fundamentals/types/classes.md), which already has a static-class section. The [type-system introduction](../docs/csharp/fundamentals/types/index.md) also has a selection list. The patch introduces stronger claims that structs require stack allocation and record structs avoid heap allocation, along with a new 16-byte heuristic that conflicts with the introduction's existing 64-byte heuristic.
+
+**Maintainer next action:** Remove allocation guarantees and reconcile the overlapping guidance; don't treat either size heuristic as a language rule. Distinguish value tuples from `System.Tuple`, record equality from deep immutability, and utility-class advice from a claim that static classes can never maintain state. Retain useful extension-member and testability guidance, but don't imply every external operation requires a new interface. Review the matrix with the language owner before merge; don't create another type-selection assignment.
+
+### dotnet/docs#42727: Finish the interpolated raw-string example and JSON cross-links
+
+**Issue:** [dotnet/docs#42727](https://github.com/dotnet/docs/issues/42727). **Opened:** September 26, 2024. **Status:** Covered by open, non-draft [dotnet/docs#56642](https://github.com/dotnet/docs/pull/56642).
+
+**Evidence:** The actual patch adds an extracted `$$` raw-string JSON example, explains literal versus interpolation braces, and adds both serializer and language-reference links. Its exact proposed source compiled and emitted valid Seattle JSON under `en-US` and `fr-FR` on .NET 8/.NET 10; `FormattableString.Invariant` kept numeric formatting valid.
+
+**Maintainer next action:** Keep the serializer recommendation and clarify that interpolation doesn't escape arbitrary string values for JSON. Verify the snippet region and both rendered cross-links, and add the required AI metadata for the substantive new article content. Don't restore the issue's original missing quotation mark, remove invariant numeric formatting, or present handcrafted interpolation as a replacement for serialization of untrusted data.
+
+### dotnet/docs#42764: Add the concrete FakeTimeProvider testing link
+
+**Issue:** [dotnet/docs#42764](https://github.com/dotnet/docs/issues/42764). **Opened:** September 30, 2024. **Status:** Covered by open, non-draft [dotnet/docs#56624](https://github.com/dotnet/docs/pull/56624).
+
+**Evidence:** The actual patch adds a focused tip to the .NET 8 time-abstraction section with the correct `Microsoft.Extensions.Time.Testing.FakeTimeProvider` API and `Microsoft.Extensions.TimeProvider.Testing` package. The [implementation](https://github.com/dotnet/extensions/blob/main/src/Libraries/Microsoft.Extensions.TimeProvider.Testing/FakeTimeProvider.cs) confirms that the concrete synthetic provider derives from `TimeProvider` and supports deterministic tests.
+
+**Maintainer next action:** Check the API/package links and merge the discoverability correction. Preserve the distinction between the base abstraction that enables substitution and the convenient fake implementation; don't repeat the issue's implication that a custom `TimeProvider` subclass can't support tests.
+
+### dotnet/docs#42831: Add friend-assembly attributes without misleading signing advice
+
+**Issue:** [dotnet/docs#42831](https://github.com/dotnet/docs/issues/42831). **Opened:** October 4, 2024. **Status:** Covered by open, non-draft [dotnet/docs#56644](https://github.com/dotnet/docs/pull/56644).
+
+**Evidence:** The actual patch adds `InternalsVisibleToAttribute` and three signing attributes to the [global-attribute reference](../docs/csharp/language-reference/attributes/global.md), with existing friend-assembly and signing links. It doesn't add every optional attribute suggested in the comment thread.
+
+**Maintainer next action:** State the internal-access boundary precisely; a friend assembly doesn't gain arbitrary private-member access. Check signing-attribute platform/legacy constraints and prefer modern project/compiler settings where appropriate rather than recommend old attributes indiscriminately. Resolve the optional attribute-inventory comments explicitly, retain full-public-key versus token distinctions in linked guidance, and add required AI metadata for the new section. Don't close the original missing-entry request before the reviewed PR lands.
+
 ## Assignment order
 
 For the quickest independent changes, start with the table escaping, the paired COM wording corrections, or the existing prose-only signposts. Coordinate the instrumentation link with its current owner. Treat the two COM issues as one assignment, and use the existing hosted-service issue rather than duplicate work for dotnet/docs#23440.
@@ -2913,7 +3025,9 @@ The factory-registration and SQLite-null recipes are additional small, reproduci
 
 Keep the Framework and modern .NET retargeting checklists separate; preserve intentionally historical examples and verify the analyzer tutorial's host/test boundaries. The Azure metrics signpost, MSBuild alias explanation, and one-way analyzer-option tables are additional localized tasks. Coordinate grain-migration details with the Orleans owner, and retain version-specific EF mapping semantics. The non-DI handler recipe needs cancellation/disposal tests, not just a header demonstration.
 
-Review the thirty-eight distinct existing implementation PRs separately from new assignments; thirty-nine issue entries share those PRs. The F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review.
+Pair the two memory-lease issues in one article pass and coordinate with their separate target-framework maintenance task. The mutability definitions, host-shutdown correction, throw-helper rationale, struct-deserialization signpost, JSON option/null distinctions, and CA1515 metadata are additional bounded assignments. The WebSocket lifecycle example needs an actual controlled-peer run and networking review, not only a successful compilation.
+
+Review the forty-two distinct existing implementation PRs separately from new assignments; forty-three issue entries share those PRs. The F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review.
 
 For the newest implementations, qualify the proxy pattern's address/port assumptions, distinguish GitHub source preview from the already-working F# Learn rendering, correct both millisecond patterns with real output checks, and verify the nested-greeting request in the complete tracing walkthrough.
 

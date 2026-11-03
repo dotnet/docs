@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 625 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#42480](https://github.com/dotnet/docs/issues/42480), opened September 5, 2024.
-- **Results:** 122 closure candidates and 289 [clearly defined fixes](issues-with-defined-fixes.md) (250 assignment candidates and 39 fixes covered by 38 open implementation PRs).
-- **Latest batch:** Issues 601-625, from [dotnet/docs#41974](https://github.com/dotnet/docs/issues/41974) through dotnet/docs#42480: 7 closure candidates, 11 new assignment candidates, and 3 new fixes with open implementation PRs.
-- **Remaining:** 223 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 75 are complete and 223 remain. Continue with [dotnet/docs#42512](https://github.com/dotnet/docs/issues/42512), opened September 9, 2024, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 650 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#43167](https://github.com/dotnet/docs/issues/43167), opened October 23, 2024.
+- **Results:** 126 closure candidates and 303 [clearly defined fixes](issues-with-defined-fixes.md) (260 assignment candidates and 43 fixes covered by 42 open implementation PRs).
+- **Latest batch:** Issues 626-650, from [dotnet/docs#42512](https://github.com/dotnet/docs/issues/42512) through dotnet/docs#43167: 4 closure candidates, 10 new assignment candidates, and 4 new fixes with open implementation PRs.
+- **Remaining:** 198 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 100 are complete and 198 remain. Continue with [dotnet/docs#43182](https://github.com/dotnet/docs/issues/43182), opened October 23, 2024, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -1070,3 +1070,37 @@ The [official image article](../docs/architecture/microservices/net-core-net-fra
 The [Visual Studio update guide's Remove out-of-support components section](https://learn.microsoft.com/visualstudio/install/update-visual-studio?view=vs-2022#remove-out-of-support-components) documents both the one-time **Modify** action and the persistent update setting. The [.NET Uninstall tool overview](../docs/core/additional-tools/uninstall-tool-overview.md) correctly limits its ability to remove Visual Studio-installed components; a new standalone uninstall-tool recommendation wouldn't resolve modern installer ownership.
 
 **Suggested closure explanation:** Link to Visual Studio Installer's existing one-time and future-update controls. Close the missing-guidance question without promising that every application can lose an old runtime safely; readers must still check their projects and deployed applications' dependencies. No components were removed during this review.
+
+### dotnet/docs#42627: Document NUnit Category and TestCategory filtering
+
+**Opened:** September 16, 2024. **Confidence:** High for the documented VSTest/NUnit adapter route. **Reason:** Both supported property names now appear in the reference.
+
+The [selective-test guide](../docs/core/testing/selective-unit-tests.md) explicitly lists both `Category` and `TestCategory` for NUnit. The adapter's [filter tests](https://github.com/nunit/nunit3-vs-adapter/blob/main/src/NUnitTestAdapterTests/Filtering/TestFilterTests.cs) exercise both names against the same category trait, including no-category and multiple-category cases. The issue's premise that `Category` is undocumented no longer applies.
+
+**Suggested closure explanation:** Both spellings are documented for NUnit's VSTest adapter and map to its category traits. Link the current property table and adapter tests; don't generalize those aliases to MSTest, xUnit, or every Microsoft.Testing.Platform runner.
+
+### dotnet/docs#42745: Resolve the ActivitySource static-initialization question
+
+**Opened:** September 28, 2024. **Confidence:** High. **Reason:** The runtime owner answered the specific failure and supplied a safe initialization sequence.
+
+In [the runtime owner's answer](https://github.com/dotnet/runtime/issues/110249#issuecomment-2512961687), `ShouldListenTo` reenters the source's initializer before its static property has received a value. The owner identifies an application initialization problem, not an `ActivitySource` bug, and initializes the source before listener registration. Owned .NET 8/.NET 10 fixtures reproduced the circular initialization failure and verified that ordering fix.
+
+**Suggested closure explanation:** Close the question as answered by the runtime owner. Retain the [walkthrough's static-source best practice](../docs/core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md); the failure doesn't justify a blanket warning against static sources. Initialize the source first or match a stable source name without dereferencing an unfinished initializer. Don't prescribe catching the initializer exception and continuing with the failed type.
+
+### dotnet/docs#42812: Complete the .NET 9 SYSLIB documentation checklist
+
+**Opened:** October 3, 2024. **Confidence:** High. **Reason:** Every listed diagnostic now has documentation and a working destination.
+
+Dedicated pages cover [SYSLIB1230](../docs/fundamentals/syslib-diagnostics/syslib1230.md) and [SYSLIB5003](../docs/fundamentals/syslib-diagnostics/syslib5003.md). The [experimental API overview](../docs/fundamentals/syslib-diagnostics/experimental-overview.md) documents SYSLIB5001, SYSLIB5002, SYSLIB5004, and SYSLIB5005, includes their F1 metadata, and explains their shared opt-in/suppression model. All four corresponding `aka.ms/dotnet-warnings/SYSLIB...` routes resolved to that published overview with HTTP 200.
+
+The supporting PRs also merged: [dotnet/docs#42884](https://github.com/dotnet/docs/pull/42884), October 9, 2024; [dotnet/docs#43119](https://github.com/dotnet/docs/pull/43119), October 25, 2024; and [dotnet/docs#43288](https://github.com/dotnet/docs/pull/43288), November 12, 2024.
+
+**Suggested closure explanation:** The requested .NET 9 diagnostic coverage exists, including the experimental overview. Close the checklist; four duplicate standalone pages aren't required. Don't imply that an API introduced as experimental remains experimental in every later release.
+
+### dotnet/docs#43167: Prefer project-level consent for experimental diagnostics
+
+**Opened:** October 23, 2024. **Confidence:** High for the original review comment's scope. **Reason:** The requested section order and recommendation are already present.
+
+The [original review comment](https://github.com/dotnet/docs/pull/43119#discussion_r1811567034) targets `experimental-overview.md`. Its [current suppression section](../docs/fundamentals/syslib-diagnostics/experimental-overview.md#suppress-warnings) now recommends `<NoWarn>` and shows the project-file example before `#pragma`. The introduction also explains that consent applies to a particular experimental diagnostic rather than all experimental features.
+
+**Suggested closure explanation:** The exact section identified by the request now uses the preferred order and explicit project-level recommendation. Coordinate closure with assignee `gewarren`. Preserve the author's clarification that this consent guidance isn't a blanket preference for project-wide suppression of ordinary compiler warnings.

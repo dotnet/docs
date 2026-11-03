@@ -5,15 +5,15 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 310 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track sixty additional issue-level fixes separately because fifty-seven implementation PRs are already open; several issues share PRs, several patches need correction or completion before merge, and five PRs remain drafts. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 314 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track sixty-seven additional issue-level fixes separately because sixty-four implementation PRs are already open; several issues share PRs, several patches need correction or completion before merge, and six PRs remain drafts. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 775 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#50739](https://github.com/dotnet/docs/issues/50739), opened December 23, 2025.
-- **Results:** 370 defined fixes (310 assignment candidates and 60 with open implementation PRs) and 156 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 751-775 add 7 new assignment candidates and 8 new issue-level fixes with open implementation PRs, alongside 4 closure candidates. The 60 active entries are covered by 57 distinct PRs.
-- **Remaining:** 73 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 225 are complete and 73 remain. Continue with [dotnet/docs#50746](https://github.com/dotnet/docs/issues/50746), opened December 23, 2025, and finish the snapshot at position 848.
+- **Completed batches:** The 800 oldest issues in the original open-issue snapshot, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#53502](https://github.com/dotnet/docs/issues/53502), opened April 29, 2026.
+- **Results:** 381 defined fixes (314 assignment candidates and 67 with open implementation PRs) and 159 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 776-800 add 4 new assignment candidates and 7 new issue-level fixes with open implementation PRs, alongside 3 closure candidates. The 67 active entries are covered by 64 distinct PRs.
+- **Remaining:** 48 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 250 are complete and 48 remain. Continue with [dotnet/docs#53522](https://github.com/dotnet/docs/issues/53522), opened May 1, 2026, and finish the snapshot at position 848.
 - **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and actual patches for active implementations. For the 545-file curation draft, the complete file manifest and relevant deletion, replacement, and redirect patches were inspected; this isn't a line-by-line review of the entire replacement book. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
@@ -2863,6 +2863,8 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Scope and acceptance:** Add the outlined page under `docs/csharp/roslyn-sdk`, its TOC entry, and the index link. Explain compile-time source addition and common cases, distinguish consumption from authoring, and use the [official incremental-generator cookbook](https://github.com/dotnet/roslyn/blob/main/docs/features/incremental-generators.cookbook.md) for a current authoring workflow. Give each requested debug/test/package topic substantive guidance or an authoritative focused destination, not empty headings or a claim that the existing paragraph completes the outline. If code is included, build the generator and consuming project, inspect generated output, run the result, and verify any package-based consumption and generator-driver tests. Don't recommend obsolete generator patterns as the default or imply generators modify existing source.
 
+**Related work:** The later-reviewed draft [dotnet/docs#51546](https://github.com/dotnet/docs/pull/51546) supplies an overview and tutorial but doesn't complete the requested testing/distribution outline. Coordinate that remaining work with the draft and dotnet/docs#50950; don't start a competing overview.
+
 ### dotnet/docs#46246: Entra authentication for relational grain storage
 
 **Issue:** [dotnet/docs#46246](https://github.com/dotnet/docs/issues/46246). **Opened:** May 18, 2025. **Size:** Small. **GHCP suitability:** Suitable for a provider-specific recipe with Orleans/SQL review.
@@ -3022,6 +3024,38 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 **Why it still applies:** The [CA1873 page](../docs/fundamentals/code-analysis/quality-rules/ca1873.md) now includes declarations and call sites, so that part of the old complaint is addressed. However, the actual Visual Basic fix declares private partial logging methods with no implementation. An owned fixture compiled that source on .NET 8/.NET 10: an enabled recording logger received zero messages. The corresponding actual C# fix produced two enabled messages and no additional disabled messages.
 
 **Scope and acceptance:** Use supported generated logging for C# and an implemented Visual Basic equivalent, such as a correctly guarded `LoggerMessage.Define` delegate. Show both declaration and invocation, preserve the intended structured information, and verify enabled output plus disabled-path work. Clarify that C# evaluates call arguments before any generated method's internal level check: source generation doesn't magically defer `ExpensiveOperation()` at the caller. Don't require guards around every cheap logging call, but demonstrate the necessary guard for genuinely expensive arguments. Test both languages with a capture logger and observable expensive-work counters; compilation alone misses the erased VB calls.
+
+### dotnet/docs#51205: Explain the two lock-mode exits explicitly
+
+**Issue:** [dotnet/docs#51205](https://github.com/dotnet/docs/issues/51205). **Opened:** January 20, 2026. **Size:** Small. **GHCP suitability:** Strong; prose clarification with a verified API source.
+
+**Why it still applies:** The old supplemental-article URL now redirects to the API reference. Its upgrade/downgrade discussion describes transitions, and its example exits both modes, but it doesn't directly state the requested paired-exit rule beside the upgrade operation. The source is now [dotnet/dotnet-api-docs `ReaderWriterLockSlim.xml`](https://github.com/dotnet/dotnet-api-docs/blob/main/xml/System.Threading/ReaderWriterLockSlim.xml), not a missing file to recreate in this repo.
+
+**Scope and acceptance:** Add a short explanation in that file's Markdown remarks: `EnterWriteLock` while upgradeable read is held doesn't release upgradeable read; balance both successful acquisitions with their corresponding exits, normally using nested `try`/`finally`. An owned .NET 8/.NET 10 probe observed both held flags, upgradeable mode after `ExitWriteLock`, and neither after the final exit. Preserve thread affinity, recursion qualifications, and the existing example. Coordinate the cross-repository API-doc change rather than close the request merely because the old URL redirects.
+
+### dotnet/docs#51314: Qualify grain-persistence ETag guidance by provider
+
+**Issue:** [dotnet/docs#51314](https://github.com/dotnet/docs/issues/51314). **Opened:** January 26, 2026. **Size:** Small to medium. **GHCP suitability:** Suitable for a source-backed clarification, not the issue's proposed universal table.
+
+**Why it still applies:** The [persistence guide](../docs/orleans/grains/grain-persistence/index.md#storage-provider-semantics) explains opaque, optional provider tokens and constraint violations, but doesn't give application-facing read/write/clear guidance. Current Orleans source establishes important exceptions: Azure Table clear can retain a new ETag when it overwrites rather than deletes; Cosmos treats a missing token on write as create, not unconditional overwrite, and can reject a tokenless clear when stored state exists.
+
+**Scope and acceptance:** Add a concise optimistic-concurrency subsection and provider-qualified do/don't guidance. Explain the read-only application-facing persistent-state token separately from mutable storage-provider metadata. Don't tell grain code to set its getter-only token, promise every clear sets null, or claim null universally bypasses checks. Explain stale-token recovery without endorsing blind retries that overwrite another writer. Use current Azure Table/Cosmos implementations as explicit examples, preserve providers that don't use tokens, and obtain Orleans-owner review. Verify stale writes, successful writes, and both clear policies with actual provider tests or an appropriate emulator; no cloud/provider execution occurred during triage.
+
+### dotnet/docs#53177: Correct auto-activation lifecycle claims and examples
+
+**Issue:** [dotnet/docs#53177](https://github.com/dotnet/docs/issues/53177). **Opened:** April 17, 2026. **Size:** Small to medium. **GHCP suitability:** Strong; the behavior and correction are reproducible. **Existing owner:** `gewarren`.
+
+**Why it still applies:** The [auto-activation article](../docs/core/extensions/dependency-injection/auto-activation.md) repeatedly promises activation at `BuildServiceProvider`. The actual implementation registers `AutoActivationHostedService`, whose `StartAsync` resolves the services. The standalone dependency example never starts that hosted service, and the complete host example's comment incorrectly says activation has happened before `RunAsync`.
+
+**Scope and acceptance:** Correct all three registration examples, the complete example's lifecycle comment, and the dependencies example together. Use a Generic Host and demonstrate startup, not construction alone; explain that raw provider construction doesn't run hosted services. An owned fixture using package 10.0.0 on .NET 8/.NET 10 verified zero constructors after both builds and exactly one after host startup for `AddActivatedSingleton`, `ActivateSingleton`, and duplicate `TryAddActivatedSingleton` registrations. Keep the singleton/lifetime guidance, dispose the host, stop bounded examples, and capture constructor ordering. Coordinate the owner's API-description concern separately; don't silently replace hosted activation with manual service resolution.
+
+### dotnet/docs#53502: Complete the remaining Preview 5 coverage
+
+**Issue:** [dotnet/docs#53502](https://github.com/dotnet/docs/issues/53502). **Opened:** April 29, 2026. **Size:** Medium for the remaining bounded pass. **GHCP suitability:** Suitable for the verified source-to-documentation gaps. **Existing owners:** `gewarren` and `Copilot`; continue that assignment, don't assign it again.
+
+**Why it still applies:** A later RC 2 metadata date doesn't prove Preview 5 coverage. The [canonical Preview 5 SDK notes](https://github.com/dotnet/core/blob/main/release-notes/11.0/preview/preview5/sdk.md) describe `CheckSdkVulnerabilities` and NETSDK1236/NETSDK1237, absent from the [current SDK article](../docs/core/whats-new/dotnet-11/sdk.md). The [runtime notes](https://github.com/dotnet/core/blob/main/release-notes/11.0/preview/preview5/runtime.md) describe `DOTNET_GCTrimYoungestKeepPercent`, also absent. The [libraries article](../docs/core/whats-new/dotnet-11/libraries.md) still calls `KillOnParentExit` Windows-only, although the Preview 5 libraries notes explicitly add Linux/Android support.
+
+**Scope and acceptance:** Reconcile those three gaps with the linked release sources and current implementation contracts. Preserve source distinctions: build-time SDK checks are opt-in and cache-backed; an absent cache isn't a clean vulnerability result. Qualify GC trimming by its required latency mode and the process API by platform/version. Keep the work on Preview 5 only, retain later correct content, and don't copy illustrative CVE numbers as real advisories or benchmark claims as universal results. Supply a section-by-section source/adaptation breakdown and expert-review notes in the eventual PR, execute any new samples, and record actual results. The existing JSONL, LINQ, and cryptography sections aren't evidence that these other gaps are complete.
 
 ## Defined fixes already in progress
 
@@ -3494,6 +3528,50 @@ Verify the full outline against the linked F# 8 announcement, complete inline ex
 **Evidence and required completion:** The actual patch adds public `ShouldSerialize...` and `...Specified` patterns to the [XML member-control guide](../docs/standard/serialization/controlling-xml-serialization-using-attributes.md). Its companion boolean examples lack `XmlIgnore`, and its unconditional claim that a missing element sets the flag to false is too strong. An owned .NET 8/.NET 10 fixture confirmed that the unignored flag itself serializes and that a constructor-initialized true flag remains true when the element is absent.
 
 Add the ignored control-member convention and distinguish the usual default-false case from automatic assignment when an element is read. Verify null/empty/nonempty collections, true/false flags, emitted XML, and deserialization in both languages. Preserve the public parameterless boolean method requirement, don't import WinForms `Reset` behavior into `XmlSerializer`, and don't call the existing draft complete before the actual output and flags are correct.
+
+### dotnet/docs#50800: Explain single-file compression's memory tradeoff
+
+**Issue:** [dotnet/docs#50800](https://github.com/dotnet/docs/issues/50800). **Opened:** December 25, 2025. **Status:** Covered by open, non-draft [dotnet/docs#56658](https://github.com/dotnet/docs/pull/56658).
+
+**Evidence and required completion:** The actual patch adds decompression memory overhead to the [single-file guide](../docs/core/deploying/single-file/overview.md). Current runtime `peimagelayout.cpp` confirms anonymous-memory allocation for decompressed assembly images. Keep that source-backed distinction from direct file mapping, including R2R payloads, but distinguish private committed memory from resident/private working set. Don't turn the reporter's unmeasured hundreds-of-megabytes example into an expected cost for every application, or claim compression eliminates every R2R benefit. Require a reproducible publish-and-measure comparison before adding numerical promises; no such memory benchmark was run during triage.
+
+### dotnet/docs#50818: Correct the F# type-test pattern operator
+
+**Issue:** [dotnet/docs#50818](https://github.com/dotnet/docs/issues/50818). **Opened:** December 29, 2025. **Status:** Covered by open, non-draft [dotnet/docs#56493](https://github.com/dotnet/docs/pull/56493).
+
+**Evidence and required completion:** The actual two-line patch changes `?:` to `:?` in the [null-values article](../docs/fsharp/language-reference/values/null-values.md). Owned F# 9-language-mode fixtures reproduced FS0010 for the original spelling with null checking both on and off. Both corrected pattern layouts returned identical string/null/other results. With null checking on, the fixture's nonnullable `obj` annotation also produces genuine nullness warnings; use a suitable nullable input in a complete final example rather than promise the operator typo disappears merely by enabling `Nullable`. Preserve the article's separate F# 9 opt-in explanation.
+
+### dotnet/docs#50950: Complete the Learn-hosted source-generator authoring draft
+
+**Issue:** [dotnet/docs#50950](https://github.com/dotnet/docs/issues/50950). **Opened:** January 7, 2026. **Status:** Partially covered by open **draft** [dotnet/docs#51546](https://github.com/dotnet/docs/pull/51546).
+
+**Evidence and required completion:** The actual draft adds a conceptual overview, incremental-generator tutorial, consuming project, generator, and TOC entries. Its actual pinned generator/demo projects ran during triage and printed Alice's three properties and the claimed description. That's evidence for the simple demonstration, not every advertised input or the whole cookbook.
+
+Preserve a destination for the authoritative incremental-generator cookbook: the draft currently removes that index link and substitutes a specification link, and isn't a literal cookbook import. Obtain `BillWagner`'s placement/scope review. Correct the caching explanation: immutable-looking `TypeInfo` objects without value equality don't establish equivalent pipeline results. Handle or explicitly reject unsupported nested, generic, record, and non-partial targets instead of advertising all class/struct forms; test generated diagnostics and output. Verify generated-file paths and debug steps, add appropriate AI metadata, and coordinate the remaining landing-page testing/distribution outline in dotnet/docs#46227 rather than create competing pages.
+
+### dotnet/docs#51001: Correct and complete the type-comparison matrix
+
+**Issue:** [dotnet/docs#51001](https://github.com/dotnet/docs/issues/51001). **Opened:** January 9, 2026. **Status:** Partially covered by open, non-draft [dotnet/docs#56687](https://github.com/dotnet/docs/pull/56687).
+
+**Evidence and required completion:** The actual patch adds a matrix to the [type overview](../docs/csharp/fundamentals/types/index.md) but incorrectly says ordinary structs don't support `with`. An owned .NET 8/.NET 10 fixture produced an independent modified struct copy. Correct that row, avoid equating reference/value categories with universal heap/inline allocation, and qualify positional-record mutability, shallow immutability, and synthesized `ToString` members. Confirm inherited/customized behavior rather than overstate the default table. Review the issue's separate tutorial-introduction request; C# 9/C# 10 specification links aren't .NET 9/.NET 10 version links to mechanically replace. Obtain owner `BillWagner`'s review before treating this broader request as complete.
+
+### dotnet/docs#51175: Use the canonical LocalService account in both WiX examples
+
+**Issue:** [dotnet/docs#51175](https://github.com/dotnet/docs/issues/51175). **Opened:** January 14, 2026. **Status:** Covered by open, non-draft [dotnet/docs#56672](https://github.com/dotnet/docs/pull/56672).
+
+**Evidence and required completion:** The actual patch changes the inline [installer example](../docs/core/extensions/windows-service-with-installer.md) and its real `Package.wxs` to `NT AUTHORITY\LocalService`. The canonical WiX `ServiceInstall` schema requires fully qualified account names; the original bare value doesn't meet that contract. Keep both representations synchronized, preserve LocalSystem's special/default handling, and don't supply a password for built-in LocalService. Verify elevated install/start/stop/uninstall and resulting service identity in a disposable Windows environment. No service was installed during triage, and the naming fix isn't a substitute for installation permissions or the service's resource permissions.
+
+### dotnet/docs#51289: Clarify the Host API's package prerequisite
+
+**Issue:** [dotnet/docs#51289](https://github.com/dotnet/docs/issues/51289). **Opened:** January 23, 2026. **Status:** Covered by open, non-draft [dotnet/docs#56657](https://github.com/dotnet/docs/pull/56657).
+
+**Evidence and required completion:** The actual patch expands the [configuration article's](../docs/core/extensions/configuration.md) existing Hosting-package instruction and identifies package version 7.0 as the introduction of `Host.CreateApplicationBuilder`. Keep the package/namespace explanation, but don't equate package API availability with the consuming target framework: the draft's blanket instruction that every .NET 6-or-earlier target must use `CreateDefaultBuilder` is too broad. Use supported targets for current examples and qualify older-package alternatives without recommending unsupported runtimes. Verify a fresh console project with the stated package and distinguish missing references/name collisions from a nonexistent API.
+
+### dotnet/docs#51292: Replace obsolete analyzer preset locations
+
+**Issue:** [dotnet/docs#51292](https://github.com/dotnet/docs/issues/51292). **Opened:** January 23, 2026. **Status:** Covered by open, non-draft [dotnet/docs#56669](https://github.com/dotnet/docs/pull/56669).
+
+**Evidence and required completion:** The actual patch replaces obsolete package-cache `.editorconfig`/ruleset copying instructions with MSBuild profiles in the [preset guide](../docs/fundamentals/code-analysis/predefined-configurations.md). Installed SDK 10.0.403 instead contains generated `.globalconfig` profiles under its analyzer `build\config` directory, including security-specific profiles. Prefer the public `AnalysisMode`/category properties over manual SDK-file edits. Verify supported modes/category behavior and the difference between selecting a category and disabling every other category; `dotnet new editorconfig` isn't an export of the effective analyzer preset. Preserve applicable legacy guidance with version qualifications and don't claim an EditorConfig file alone executes analyzers.
 
 ## Assignment order
 

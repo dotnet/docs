@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 775 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#50739](https://github.com/dotnet/docs/issues/50739), opened December 23, 2025.
-- **Results:** 156 closure candidates and 370 [clearly defined fixes](issues-with-defined-fixes.md) (310 assignment candidates and 60 fixes covered by 57 open implementation PRs).
-- **Latest batch:** Issues 751-775, from [dotnet/docs#48216](https://github.com/dotnet/docs/issues/48216) through dotnet/docs#50739: 4 closure candidates, 7 new assignment candidates, and 8 new fixes with open implementation PRs.
-- **Remaining:** 73 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 225 are complete and 73 remain. Continue with [dotnet/docs#50746](https://github.com/dotnet/docs/issues/50746), opened December 23, 2025, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 800 oldest issues in the original open-issue snapshot, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#53502](https://github.com/dotnet/docs/issues/53502), opened April 29, 2026.
+- **Results:** 159 closure candidates and 381 [clearly defined fixes](issues-with-defined-fixes.md) (314 assignment candidates and 67 fixes covered by 64 open implementation PRs).
+- **Latest batch:** Issues 776-800, from [dotnet/docs#50746](https://github.com/dotnet/docs/issues/50746) through dotnet/docs#53502: 3 closure candidates, 4 new assignment candidates, and 7 new fixes with open implementation PRs.
+- **Remaining:** 48 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 250 are complete and 48 remain. Continue with [dotnet/docs#53522](https://github.com/dotnet/docs/issues/53522), opened May 1, 2026, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -1348,3 +1348,27 @@ The [MCP quickstart](../docs/ai/quickstarts/build-mcp-client.md) includes `Micro
 The actual [CacheWorker.StartAsync](../docs/core/extensions/snippets/caching/memory-worker/CacheWorker.cs) acquires the initial permit before it starts background work. The [program](../docs/core/extensions/snippets/caching/memory-worker/Program.cs) awaits host startup before it reads through `PhotoService`. An owned .NET 8/.NET 10 fixture compiled the actual worker, signal, consumer, and photo types; two consumers both remained blocked until a controlled HTTP response populated the cache, then each received one photo.
 
 **Suggested closure explanation:** Changing only the initial count from one to zero would block the worker's own startup acquisition. The existing startup sequence addresses the stated premature-read claim; a `TaskCompletionSource` redesign isn't required for that reason. The fixture covers successful initialization, not every failure path: the worker releases in `finally`, so don't reinterpret this recommendation as an unconditional guarantee that HTTP failure or empty data always yields a populated cache.
+
+### dotnet/docs#51291: Explicit missing files in the command-line tutorial
+
+**Opened:** January 23, 2026. **Confidence:** High for the current final-stage sample. **Reason:** Explicit arguments now receive separate validation.
+
+The [tutorial](../docs/standard/commandline/get-started-tutorial.md) now distinguishes `DefaultValueFactory`, which supplies an omitted option's value, from `CustomParser`, which validates an explicitly supplied filename. The actual final-stage source rejects a nonexistent file before the action runs. The preceding batch executed that source with `System.CommandLine` 2.0.12 and confirmed a parser error instead of the reported file-open stack trace.
+
+**Suggested closure explanation:** The missing-file defect is addressed by the current parser and explanation. Close the original exception report, not the separate remaining nullability task in dotnet/docs#46915. Retain current owner `gewarren`; don't claim the default-value factory validates explicit arguments.
+
+### dotnet/docs#51988: Document the unsafe evolution preview
+
+**Opened:** March 3, 2026. **Confidence:** High for the requested documentation coverage. **Reason:** The preview model and compilation opt-ins are now documented.
+
+The [unsafe-code reference](../docs/csharp/language-reference/unsafe-code.md) now explains requires-unsafe contracts, safe boundaries, relaxed pointer operations, unsafe expressions, field-layout requirements, interop declarations, and the `safe` keyword. The [compiler-option guidance](../docs/csharp/language-reference/compiler-options/language.md#enable-the-updated-memory-safety-rules) distinguishes `LangVersion=preview`, `AllowUnsafeBlocks`, and the separate `updated-memory-safety-rules` opt-in, including mixed-model callers and callees. The C# 15 overview links to that coverage.
+
+**Suggested closure explanation:** The requested expansion beyond the initial compiler announcement now exists. Preserve `BillWagner`'s ownership and the explicit preview/version qualifications; this recommendation doesn't declare the memory-safety model stable or certify every example against every compiler build.
+
+### dotnet/docs#52980: Separate command hierarchy from recursive options
+
+**Opened:** April 10, 2026. **Confidence:** High for the stated scope/confusion. **Reason:** The current stages already separate the concepts and explain their combination.
+
+The [current tutorial](../docs/standard/commandline/get-started-tutorial.md) starts with one root command and one option. Its next command stage explicitly removes the option from the root and attaches it to `read`. Only the later multi-command stage moves `read` beneath `quotes`, makes the shared file option recursive, displays the command hierarchy, and explains that root placement makes the option available to all subcommands. These aren't competing invocation pipelines.
+
+**Suggested closure explanation:** The current staged walkthrough and explicit scope explanation answer the original mental-model concern. Link to those stages and the syntax guide. A preference for a larger chapter reorganization isn't evidence that recursive option scope remains unexplained. Retain owner `gewarren`.

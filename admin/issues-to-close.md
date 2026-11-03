@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 275 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#30506](https://github.com/dotnet/docs/issues/30506), opened August 5, 2022.
-- **Results:** 50 closure candidates and 105 [clearly defined fixes](issues-with-defined-fixes.md) (93 assignment candidates and 12 fixes with open implementation PRs).
-- **Latest batch:** Issues 251-275, from [dotnet/docs#29741](https://github.com/dotnet/docs/issues/29741) through dotnet/docs#30506: 7 closure candidates, 9 new assignment candidates, and 2 fixes with open implementation PRs.
-- **Remaining:** 573 issues from this snapshot are unreviewed. Resume with [dotnet/docs#30639](https://github.com/dotnet/docs/issues/30639), opened August 12, 2022. Refresh issue states before the next batch; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 300 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#32096](https://github.com/dotnet/docs/issues/32096), opened October 31, 2022.
+- **Results:** 58 closure candidates and 114 [clearly defined fixes](issues-with-defined-fixes.md) (100 assignment candidates and 14 fixes with open implementation PRs).
+- **Latest batch:** Issues 276-300, from [dotnet/docs#30639](https://github.com/dotnet/docs/issues/30639) through dotnet/docs#32096: 8 closure candidates, 7 new assignment candidates, and 2 fixes with open implementation PRs.
+- **Remaining:** 548 issues from this snapshot are unreviewed. The requested additional 150 issues (positions 151-300) are complete. Stop here; any future tranche starts with [dotnet/docs#32112](https://github.com/dotnet/docs/issues/32112), opened November 1, 2022. Refresh issue states then; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -488,3 +488,67 @@ The discussion in [dotnet/diagnostics#3542](https://github.com/dotnet/diagnostic
 This report repeats [dotnet/docs#29829](https://github.com/dotnet/docs/issues/29829), including the same source article and document identifiers. The [current article](../docs/core/dependency-loading/understanding-assemblyloadcontext.md) uses **About**, not **Understanding**, in its title and heading.
 
 **Suggested closure explanation:** Close as a duplicate of dotnet/docs#29829 and point to the current title. Neither report requires a URL rename or a broader documentation-title policy change.
+
+### dotnet/docs#30639: Document AOT-compatible library analyzer settings
+
+**Opened:** August 12, 2022. **Confidence:** High. **Reason:** The Native AOT overview now documents the requested library configuration.
+
+The [AOT-compatibility analyzers section](../docs/core/deploying/native-aot/index.md#aot-compatibility-analyzers) shows `IsAotCompatible` in a project file and explains its defaults for `IsTrimmable`, `EnableTrimAnalyzer`, `EnableSingleFileAnalyzer`, and `EnableAotAnalyzer`. It also describes supported analysis targets and conditional configuration for multitargeted libraries. The [library trimming guide](../docs/core/deploying/trimming/prepare-libraries-for-trimming.md) links to that section.
+
+**Suggested closure explanation:** Close as documented in the Native AOT deployment section. The original separate-property recipe has a current aggregate configuration and library-specific explanation. Don't confuse AOT-compatible managed libraries with the different task of exporting a native library.
+
+### dotnet/docs#30682: Request code examples for the event-based asynchronous pattern
+
+**Opened:** August 15, 2022. **Confidence:** High for the general example request. **Reason:** The overview already links to concrete C# and VB examples.
+
+The [EAP overview](../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md) includes a pattern-shaped declaration and directly links to [how to use an EAP component](../docs/standard/asynchronous-programming-patterns/how-to-use-components-that-support-the-event-based-asynchronous-pattern.md). That walkthrough supplies C# and VB code for `PictureBox` completion, error/cancellation handling, and start/cancel buttons. Its related links also provide complete background-operation form walkthroughs.
+
+**Suggested closure explanation:** Answer with the linked component walkthrough rather than add another unspecified example. Distinguish the overview's illustrative declaration from the actual component code, and preserve the examples' Windows Forms context; don't present the declaration alone as a compilable program.
+
+### dotnet/docs#30889: Document Native AOT cross-architecture compilation
+
+**Opened:** August 26, 2022. **Confidence:** High. **Reason:** A dedicated cross-compilation article now explains support and prerequisites.
+
+The [Native AOT cross-compilation guide](../docs/core/deploying/native-aot/cross-compile.md) distinguishes unsupported cross-OS compilation from supported x64/Arm64 cross-architecture scenarios. It describes the Windows, macOS, and Linux toolchain requirements and qualifies its Linux package example rather than guarantee every distribution combination.
+
+**Suggested closure explanation:** Link to the current guide and coordinate closure with assignee `LakshanF`. Don't reinterpret the request as cross-OS support or advise explicit compiler-package references instead of the SDK workflow.
+
+### dotnet/docs#30969: Programmatic access to .NET API documentation
+
+**Opened:** September 1, 2022. **Confidence:** Medium. **Reason:** The discussion provides an authoritative input source for the clarified API-reference question.
+
+After the reporter narrows the request to types and their members, the [maintainer answer](https://github.com/dotnet/docs/issues/30969#issuecomment-1239735719) identifies the reference-pack IntelliSense XML files. The follow-up also points to the public [dotnet/dotnet-api-docs XML source](https://github.com/dotnet/dotnet-api-docs/blob/main/xml/System/Object.xml). That current file contains type/member identifiers, documentation, and assembly-version information that an application can parse.
+
+**Suggested closure explanation:** Close the access question as answered with those XML sources. Don't promise a supported REST endpoint, complete historical coverage from one current file, or a versioned export of every conceptual article. The answer supplies a data source, not a new hosted API.
+
+### dotnet/docs#31175: Refresh library-targeting recommendations
+
+**Opened:** September 14, 2022. **Confidence:** High for the reported outdated starting point. **Reason:** The targeting decision and examples have been refreshed.
+
+The [current targeting guide](../docs/standard/library-guidance/cross-platform-targeting.md) now starts new libraries at `net8.0` or later, makes `netstandard2.0` conditional on broad compatibility or .NET Framework consumers, and distinguishes modern API goals from breadth targeting. Its multitargeting example uses `net8.0` and .NET Standard, explains NuGet's best-match/fallback selection, and discourages redundant outputs when the stated code/dependency conditions don't justify them.
+
+**Suggested closure explanation:** Link to the current decision guidance rather than prescribe the issue's historical `net5.0`/`net6.0` target set. No universal target list fits every library; choose consumers and required APIs first. This recommendation doesn't certify every historical paragraph or make .NET Standard mandatory for modern-only libraries.
+
+### dotnet/docs#31295: Constructor setup versus helpers and xUnit fixtures
+
+**Opened:** September 20, 2022. **Confidence:** Medium. **Reason:** The owner explanation and xUnit's documented lifetimes answer the question without a new general prohibition.
+
+The [article author's reply](https://github.com/dotnet/docs/issues/31295#issuecomment-1252281013) explains the readability preference for visible Arrange steps and helper methods. The reporter's follow-up about fixtures is answered by [xUnit's shared-context documentation](https://xunit.net/docs/shared-context): constructor setup creates fresh context for each test, while class and collection fixtures intentionally share instances over their respective scopes.
+
+**Suggested closure explanation:** Explain the distinction between common setup code and shared object state. Use helpers when they clarify each test's Arrange step; use the appropriate fixture scope when shared context is intentional. Constructor setup isn't inherently invalid, and a fixture recommendation must account for isolation, cleanup, and concurrency rather than treat a readability preference as a framework rule.
+
+### dotnet/docs#31760: Add a Framework HTTP migration guide
+
+**Opened:** October 13, 2022. **Confidence:** High for the requested HTTP migration documentation. **Reason:** The dedicated migration guide now exists.
+
+The [HttpWebRequest-to-HttpClient migration guide](../docs/fundamentals/networking/http/httpclient-migrate-from-httpwebrequest.md) explicitly addresses .NET Framework migration. It supplies GET/POST comparisons, `HttpWebRequest`/handler property mappings, `ServicePointManager` and `ServicePoint` mappings, and notes for missing equivalents, headers, TLS, connection lifetime, and buffering.
+
+**Suggested closure explanation:** Link to the dedicated migration guide rather than only the generic HttpClient overview. Close the request for that guide; a release-specific mapping error or an additional concrete networking scenario would require its own correction rather than establish that the migration article is still absent.
+
+### dotnet/docs#31798: Include the containing class in IDE0002 examples
+
+**Opened:** October 16, 2022. **Confidence:** High. **Reason:** Both language examples now include the requested context.
+
+The [IDE0002 page](../docs/fundamentals/code-analysis/style-rules/ide0002.md) now wraps the C# methods in `class C`. Its VB example also includes `Public Class C`. The qualified and simplified calls visibly refer to members of that class.
+
+**Suggested closure explanation:** Close as addressed in both examples. No further wrapper or language-specific rewrite is needed for the original request.

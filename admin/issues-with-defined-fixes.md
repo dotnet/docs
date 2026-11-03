@@ -5,16 +5,16 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 93 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track twelve additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 100 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track fourteen additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 275 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#30506](https://github.com/dotnet/docs/issues/30506), opened August 5, 2022.
-- **Results:** 105 defined fixes (93 assignment candidates and 12 with open implementation PRs) and 50 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 251-275 add 9 new assignment candidates and 2 fixes with open implementation PRs, alongside 7 closure candidates.
-- **Remaining:** 573 issues from this snapshot are unreviewed. Resume with [dotnet/docs#30639](https://github.com/dotnet/docs/issues/30639), opened August 12, 2022.
-- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the twelve active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
+- **Completed batches:** The 300 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#32096](https://github.com/dotnet/docs/issues/32096), opened October 31, 2022.
+- **Results:** 114 defined fixes (100 assignment candidates and 14 with open implementation PRs) and 58 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 276-300 add 7 new assignment candidates and 2 fixes with open implementation PRs, alongside 8 closure candidates.
+- **Remaining:** 548 issues from this snapshot are unreviewed. The requested additional 150 issues (positions 151-300) are complete. Stop here; any future tranche starts with [dotnet/docs#32112](https://github.com/dotnet/docs/issues/32112), opened November 1, 2022.
+- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the fourteen active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
 
@@ -1059,6 +1059,76 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Acceptance criteria:** Run the affected snippets and confirm unchanged behavior, including the grade example's `81.92` result. The prose, selected snippets, variable names, mutability, and lifetime guidance agree. Coordinate the scope with the current owner rather than redesign the entire namespace documentation.
 
+### dotnet/docs#30741: Link Linux globalization prerequisites from the settings page
+
+**Issue:** [dotnet/docs#30741](https://github.com/dotnet/docs/issues/30741). **Opened:** August 18, 2022. **Size:** Small. **GHCP suitability:** Strong for a qualified prerequisite note and existing recipe link.
+
+**Why it still applies:** The [runtime globalization settings page](../docs/core/runtime-config/globalization.md) describes invariant-mode switches but doesn't tell an Alpine-container reader how to supply ICU. The [owner's follow-up](https://github.com/dotnet/docs/issues/30741#issuecomment-2541979180) and the current [container globalization recipe](https://github.com/dotnet/dotnet-docker/blob/main/samples/enable-globalization.md) provide the missing installation/image guidance.
+
+**Proposed assignment scope:** Add a Linux/container prerequisite note beside invariant mode and link the recipe and [container image choices](../docs/core/docker/container-images.md). Explain that the appropriate ICU libraries/data and a non-invariant configuration are separate requirements. Qualify image layers: Alpine SDK images already include ICU, other Alpine layers can require installation, and suitable `extra` images serve different deployment scenarios. Don't present an environment flag as an installer, claim every Linux image needs the same packages, or equate ICU culture support with translated resource files.
+
+**Acceptance criteria:** Verify the selected supported Alpine image/tag with a real container run and representative culture-sensitive output, then check the installed-package/configuration explanation against the current recipe. Preserve explicit project/runtime configuration precedence and don't repeat the unverified blanket claim that missing data always fails silently.
+
+### dotnet/docs#31009: Add beginner WinDbg setup to unloadability diagnostics
+
+**Issue:** [dotnet/docs#31009](https://github.com/dotnet/docs/issues/31009). **Opened:** September 4, 2022. **Size:** Small to medium. **GHCP suitability:** Suitable for an owned Windows debugger walkthrough, coordinated with the LLDB setup task.
+
+**Why it still applies:** The [unloadability guide](../docs/standard/assembly/unloadability.md#debug-unloading-issues) still begins at the debugger command line and `.loadby sos coreclr`. The owner's installation link answers where to get WinDbg but doesn't add the article's requested launch/attach, break-state, and command-context sequence.
+
+**Proposed assignment scope:** Link current WinDbg installation instructions and show how to open or attach to the guide's example, reach its intended break, confirm SOS readiness, and enter the existing heap/root commands. Distinguish terminal commands from the WinDbg command window and explain the expected managed-process context. Coordinate a single article pass with dotnet/docs#30257; don't create competing Windows/Linux rewrites.
+
+**Acceptance criteria:** From an owned Windows test environment, follow the instructions through a meaningful `LoaderAllocator`/GC-root result. Record debugger/runtime versions and actual commands/output, without treating copied sample addresses as stable. Source inspection establishes the missing setup; no WinDbg session was executed during this review.
+
+### dotnet/docs#31194: Explain svcutil tool-runtime prerequisites separately from the SDK
+
+**Issue:** [dotnet/docs#31194](https://github.com/dotnet/docs/issues/31194). **Opened:** September 15, 2022. **Size:** Small. **GHCP suitability:** Suitable for a version-specific prerequisite correction with a tool-host matrix.
+
+**Why it still applies:** The old version tabs are gone, but the [current guide](../docs/core/additional-tools/dotnet-svcutil-guide.md) only says to install the latest SDK. It doesn't distinguish the tool's execution runtime from the generated project's target. The published stable [8.0.0 package](https://www.nuget.org/packages/dotnet-svcutil/8.0.0) and its [release-tagged project](https://github.com/dotnet/wcf/blob/v8.0.0-rtm-dotnet-svcutil/src/dotnet-svcutil/src/dotnet-svcutil.csproj) identify `net8.0` and `net9.0` tool targets, not the issue's blanket .NET 5 requirement.
+
+**Proposed assignment scope:** Document the current tool version's supported execution prerequisites and distinguish SDK, installed runtime, tool target, and service-client target. Verify the packaged runtime configuration and roll-forward behavior before naming a required additional runtime. Don't restore the outdated tabs, recommend an unsupported .NET 5 installation, or generalize one historical 2.x package's requirements to the entire version family.
+
+**Acceptance criteria:** Install/invoke the pinned current tool in isolated SDK/runtime combinations, capture `--help` startup success or the exact missing-runtime message, and confirm generated code still targets the selected supported project. Package download through the NuGet API failed here with a TLS handshake error; release source and published targets were verified, but tool execution and packaged roll-forward settings weren't. Those checks must precede the prerequisite wording.
+
+### dotnet/docs#31475: Surface code-style build enablement on applicable rule pages
+
+**Issue:** [dotnet/docs#31475](https://github.com/dotnet/docs/issues/31475). **Opened:** September 28, 2022. **Size:** Medium, mostly a shared include and source-backed rule pass. **GHCP suitability:** Strong with per-rule build-support checks.
+
+**Why it still applies:** [IDE0073](../docs/fundamentals/code-analysis/style-rules/ide0073.md) still lacks the requested build-enable explanation before suppression. The [analysis overview](../docs/fundamentals/code-analysis/overview.md#enable-on-build) documents `EnforceCodeStyleInBuild` and warning/error severity, but the applicable rule pages don't surface that recipe. Some other rules already have a shared note that they never run on build.
+
+**Proposed assignment scope:** Add a shared explanation in the current `docs/fundamentals/code-analysis/includes` location and use it on build-capable IDE rule pages. Include the property, required severity, and overview link before suppression, as the maintainer requested. Preserve the existing never-on-build exceptions rather than promise that the property enables every IDE rule. Use current analyzer sources for the rule inventory; don't repeat the issue's unverified historical breaking-change claim.
+
+**Acceptance criteria:** Check each affected rule's support and run representative C# and VB builds. An owned SDK 10.0.403 probe emitted IDE0073 only after the opt-in, while IDE0002 stayed absent despite explicit warning severity, matching its documented IDE-only status. The shared text must explain both outcomes without suggesting a severity setting can make an unsupported rule run on build.
+
+### dotnet/docs#31683: Describe expected behavior through unit-test names
+
+**Issue:** [dotnet/docs#31683](https://github.com/dotnet/docs/issues/31683). **Opened:** October 10, 2022. **Size:** Small, prose only. **GHCP suitability:** Strong; the requested distinction is explicit.
+
+**Why it still applies:** The merged freshness edit in [dotnet/docs#45326](https://github.com/dotnet/docs/pull/45326) changed the disputed sentence, but the [current naming paragraph](../docs/core/testing/unit-testing-best-practices.md#follow-test-naming-standards) still says standards express the test's "purpose and application." That wording doesn't make the requested distinction between descriptive names, the behavior under test, and the test's verification purpose.
+
+**Proposed assignment scope:** State that descriptive test names communicate the method/scenario and expected application behavior, then explain their value as documentation and failure context. Preserve the existing examples and naming convention without implying that every testing style must use one exact name format. Don't broaden the change to test architecture or rewrite unrelated examples.
+
+**Acceptance criteria:** The paragraph names the actor clearly and agrees with its method/scenario/expected-behavior list. A reader can distinguish the tested behavior from the act of verifying it; prose review is sufficient for this localized change.
+
+### dotnet/docs#31941: Explain elastic trivia in the Roslyn API reference
+
+**Issue:** [dotnet/docs#31941](https://github.com/dotnet/docs/issues/31941). **Opened:** October 20, 2022. **Size:** Small to medium. **GHCP suitability:** Suitable after an API-repository maintainer handoff, not as a docs-checkout implementation.
+
+**Why it still applies:** The [API XML](https://github.com/dotnet/roslyn-api-docs/blob/main/dotnet/xml/Microsoft.CodeAnalysis/SyntaxAnnotation.xml) defines `ElasticAnnotation` in one sentence, but its value and remarks remain placeholders. Current Roslyn source identifies the shared marker and tests it on trivia in the formatting engine. The missing explanation can use established behavior rather than invent a new formatter mechanism.
+
+**Proposed assignment scope:** Arrange the issue/assignment in `dotnet/roslyn-api-docs`, then fill the property's value and remarks with a focused explanation of generated elastic trivia and formatter behavior. Link public factory/formatting APIs and add a minimal example under that repository's conventions. Distinguish elastic trivia from selection of a node/subtree for formatting; attaching an annotation doesn't itself invoke the formatter. Don't expose internal `IsElastic` helpers as public APIs or rewrite unrelated member placeholders.
+
+**Acceptance criteria:** Run the example with stated Roslyn/workspace versions and record before/after text and annotation checks. Verify immutable-tree handling and relevant formatting options. Obtain API-owner review and preserve version metadata; a GHCP assignment limited to `dotnet/docs` can't edit the API source.
+
+### dotnet/docs#32096: Identify project files for library-version properties
+
+**Issue:** [dotnet/docs#32096](https://github.com/dotnet/docs/issues/32096). **Opened:** October 31, 2022. **Size:** Small. **GHCP suitability:** Strong; the four property snippets need file/context labels, not a new versioning policy.
+
+**Why it still applies:** The [versioning article](../docs/standard/library-guidance/versioning.md) shows `PackageVersion`, `AssemblyVersion`, `FileVersion`, and `InformationalVersion` XML fragments without saying where to put them. An owned stable-SDK project verified that those properties produce the expected package and assembly metadata.
+
+**Proposed assignment scope:** Explain that the properties belong in a `PropertyGroup` in an SDK-style library's `.csproj` or `.vbproj`. Label each fragment consistently and link shared `Directory.Build.props` configuration if appropriate. Don't direct readers to edit generated `obj` files or conflate package, assembly, file, and informational versions. Coordinate the informational-version wording with the retained Source Link correction in dotnet/docs#22373.
+
+**Acceptance criteria:** Verify the named project-file placement and resulting package/assembly metadata, with both language project names explained. The SDK 10.0.403 probe produced package `1.2.3-beta1`, assembly `1.2.0.0`, file `1.2.3.4`, and informational `triage-probe` from those project properties. If shared props are added to the explanation, verify their import/override behavior too.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -1161,6 +1231,22 @@ These issues still need their existing PRs to land, with corrections where noted
 
 **Maintainer next action:** Complete the existing implementation with executable alternatives and the conceptual/diagnostic links. Explain both directions of the base/derived restriction, including external base assemblies and generic derived types. Distinguish a valid runtime downcast from a new copy or wrapper: a constructor or factory doesn't change an existing base object's runtime type. Verify both the prohibited declarations' diagnostics and the alternatives' actual behavior before merge.
 
+### dotnet/docs#31135: Document a bounded asynchronous concurrency pattern
+
+**Issue:** [dotnet/docs#31135](https://github.com/dotnet/docs/issues/31135). **Opened:** September 13, 2022. **Status:** Covered by open, non-draft [dotnet/docs#56684](https://github.com/dotnet/docs/pull/56684).
+
+**Why the solution is defined:** The existing patch adds `Parallel.ForEachAsync`, a semaphore-gated `Task.WhenAll` pattern, and a comparison to [async scenarios](../docs/csharp/asynchronous-programming/async-scenarios.md). The current article lacks the requested limit, so the open PR is implementation work rather than proof of resolution.
+
+**Maintainer next action:** Complete the undefined helper/result types as executable article-relative snippets and measure peak in-flight operations against the configured maximum. Correct the comparison: `Task.WhenAll` waits for supplied tasks; it doesn't itself start operations or universally allocate those tasks. Semaphore gating can limit active work while still creating one task per input. Add cancellation/error cleanup, distinguish concurrency from request-rate limits, reconcile the article's broad I/O/TPL wording, and fix the encoded-star API reference. Don't close before the corrected, verified examples merge.
+
+### dotnet/docs#32014: Complete CS1961 guidance and error-help discovery
+
+**Issue:** [dotnet/docs#32014](https://github.com/dotnet/docs/issues/32014). **Opened:** October 24, 2022. **Status:** Covered by open, non-draft [dotnet/docs#56685](https://github.com/dotnet/docs/pull/56685).
+
+**Why the solution is defined:** The existing patch extends the [generic type-parameter diagnostics](../docs/csharp/language-reference/compiler-messages/generic-type-parameters-errors.md#type-parameter-variance) with invariant validity and remedies. The original issue's exact catch-all URL still returns the "don't have specifics" page when fetched; adding prose alone doesn't verify Visual Studio help discovery.
+
+**Maintainer next action:** Verify the reported `out T`/`ICollection<T>` diagnostic and corrected alternatives, keep composed variance positions accurate, and don't remove mutability requirements just to select a read-only interface. Use real diagnostic wording rather than a fabricated slash-separated message, and fix the percent-encoded backticks in generic API IDs. Check the actual Visual Studio/F1 help target after publication; existing `f1_keywords` metadata alone doesn't prove the link works. Scope completion to CS1961 rather than promise documentation for every compiler error or selective redirection of every historical catch-all URL.
+
 ## Assignment order
 
 For the quickest independent changes, start with the table escaping, the paired COM wording corrections, or the existing prose-only signposts. Coordinate the instrumentation link with its current owner. Treat the two COM issues as one assignment, and use the existing hosted-service issue rather than duplicate work for dotnet/docs#23440.
@@ -1191,4 +1277,8 @@ The unused model path, remaining glossary distinctions, and CA2253 rationale are
 
 The Process walkthrough needs owned child fixtures and cross-platform timeout/output checks. The COM contract needs Windows MIDL/native execution and coordination with the earlier wording corrections. The LLDB setup needs a fresh Linux run, and the class-library rewrite should link to the current creation tutorial rather than preserve an obsolete taxonomy.
 
-Review the twelve existing implementation PRs separately from new assignments. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Issues that don't fit either candidate category are omitted for a future task.
+The test-naming clarification and version-property file labels are additional small changes. Coordinate versioning edits with the Source Link correction. The globalization signpost has an existing recipe but still needs a selected-container run; the svcutil prerequisites need actual tool/runtime startup checks, not only target-framework metadata.
+
+Coordinate Windows debugger setup with the LLDB task in one article pass. The build-enable include requires a supported/unsupported IDE-rule inventory. Arrange the elastic-trivia API correction in its owning repository before assignment; it isn't a change that a docs-only checkout can publish.
+
+Review the fourteen existing implementation PRs separately from new assignments. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either new implementation early. Issues that don't fit either candidate category are omitted for a future task.

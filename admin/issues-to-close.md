@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 525 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#39781](https://github.com/dotnet/docs/issues/39781), opened March 2, 2024.
-- **Results:** 99 closure candidates and 232 [clearly defined fixes](issues-with-defined-fixes.md) (207 assignment candidates and 25 fixes with open implementation PRs).
-- **Latest batch:** Issues 501-525, from [dotnet/docs#38649](https://github.com/dotnet/docs/issues/38649) through dotnet/docs#39781: 3 closure candidates, 11 new assignment candidates, and 2 new fixes with open implementation PRs.
-- **Remaining:** 323 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 225 are complete and 75 remain. Continue with [dotnet/docs#39852](https://github.com/dotnet/docs/issues/39852), opened March 6, 2024, and stop at position 600. Refresh issue states; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 550 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#40543](https://github.com/dotnet/docs/issues/40543), opened April 18, 2024.
+- **Results:** 104 closure candidates and 248 [clearly defined fixes](issues-with-defined-fixes.md) (219 assignment candidates and 29 fixes with open implementation PRs).
+- **Latest batch:** Issues 526-550, from [dotnet/docs#39852](https://github.com/dotnet/docs/issues/39852) through dotnet/docs#40543: 5 closure candidates, 12 new assignment candidates, and 4 new fixes with open implementation PRs.
+- **Remaining:** 298 issues from this snapshot are unreviewed. Of the requested next 300 issues (positions 526-825), 25 are complete and 275 remain. Continue with [dotnet/docs#40556](https://github.com/dotnet/docs/issues/40556), opened April 19, 2024, and stop at position 825. Refresh issue states; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -886,3 +886,43 @@ The old article redirects to [Create a console application](../docs/core/tutoria
 The [unmanaged-resource example](../docs/standard/garbage-collection/implementing-dispose.md#base-class-with-unmanaged-resources) now describes thread-safe `Dispose(bool)` and the synchronization requirement. Its actual C# and VB sources use `Interlocked.CompareExchange` on an integer guard before the unmanaged release. Both public disposal and finalization enter that guarded method. The article also recommends `SafeHandle` and explains its once-only release guarantee; [dotnet/docs#45173](https://github.com/dotnet/docs/pull/45173) merged March 11, 2025.
 
 **Suggested closure explanation:** Link the guarded examples and SafeHandle explanation. The reported unchecked Boolean pattern is no longer the advanced unmanaged-resource example. An owned check executed the exact current C# class with 1,000 concurrent disposal calls on .NET 8 and .NET 10; that check doesn't establish that arbitrary methods on a disposable object are thread-safe or that callers can race resource use with disposal.
+
+### dotnet/docs#40016: Interpret TensorFlow CPU information messages
+
+**Opened:** March 15, 2024. **Confidence:** High for the quoted output. **Reason:** The report contains informational messages, not a demonstrated tutorial failure.
+
+Every supplied line has TensorFlow's `I` severity prefix. The [TensorFlow CPU-feature implementation](https://github.com/tensorflow/tensorflow/blob/v1.15.0/tensorflow/core/platform/cpu_feature_guard.cc) emits the exact "Your CPU supports instructions that this TensorFlow binary was not compiled to use" text through `LOG(INFO)`. It reports unused CPU optimizations; a separate check handles instructions that a binary requires but the CPU lacks. The issue supplies no exception, failed assertion, or unsuccessful training result.
+
+**Suggested closure explanation:** Explain the informational output and distinguish unused vector instructions from an execution failure. The quoted lines alone don't require a change to the [image-classification tutorial](../docs/machine-learning/tutorials/image-classification-api-transfer-learning.md). Don't recommend rebuilding TensorFlow or suppressing all native logs as a prerequisite, and don't claim that the reporter's training run succeeded. A separate failure would need its actual error and reproduction.
+
+### dotnet/docs#40078: Follow the private-field convention in the Account example
+
+**Opened:** March 19, 2024. **Confidence:** High for the reported field names. **Reason:** The current example already uses the requested underscore prefix.
+
+The actual [Account source](../docs/csharp/language-reference/statements/snippets/lock/Program.cs) declares `_balanceLock` and `_balance`. [dotnet/docs#40714](https://github.com/dotnet/docs/pull/40714) merged May 2, 2024, and the current [lock reference](../docs/csharp/language-reference/statements/lock.md) includes that file. An owned .NET 10 project compiled and executed the exact file, including its modern `System.Threading.Lock`; the concurrent-account example printed `Account's balance is 2000`.
+
+**Suggested closure explanation:** The private-field naming complaint is addressed in the source readers receive. Link the current example rather than assign another field rename. This recommendation doesn't certify every surrounding prose reference or propose replacing the current lock type with an older pattern.
+
+### dotnet/docs#40176: Add examples for CA1844
+
+**Opened:** March 21, 2024. **Confidence:** High. **Reason:** The requested before-and-after example has landed and demonstrates the rule.
+
+[dotnet/docs#49034](https://github.com/dotnet/docs/pull/49034) merged October 27, 2025. The [CA1844 example section](../docs/fundamentals/code-analysis/quality-rules/ca1844.md#example) includes the actual [BadStream and GoodStream implementations](../docs/fundamentals/code-analysis/quality-rules/snippets/csharp/all-rules/ca1844.cs). `BadStream` overrides only array-based asynchronous methods; `GoodStream` also overrides the memory-based methods and forwards its array overloads to them.
+
+**Suggested closure explanation:** Link the existing example and coordinate closure with assignee `gewarren`. An owned build with CA1844 enabled produced two diagnostics on `BadStream` and none on `GoodStream`. Both exact classes compiled and completed a three-byte write/read round trip on .NET 8 and .NET 10. The missing-example request no longer needs another implementation.
+
+### dotnet/docs#40335: Identify AppDomain unloading as Framework-specific
+
+**Opened:** April 5, 2024. **Confidence:** High for the applicability complaint. **Reason:** The current article explicitly excludes modern .NET.
+
+The [AppDomain unloading article](../docs/framework/app-domains/how-to-unload-an-application-domain.md) now includes the [Framework-specific notice](../docs/framework/includes/net-framework-specific.md), which states that the article doesn't apply to newer .NET implementations, including .NET 6 and later. [dotnet/docs#41179](https://github.com/dotnet/docs/pull/41179) merged June 3, 2024. The reported attempt to execute a Framework example on .NET 8 is therefore no longer an unmarked applicability trap.
+
+**Suggested closure explanation:** Link the explicit scope notice and the modern [assembly unloadability guide](../docs/standard/assembly/unloadability.md). Preserve the supported Framework example rather than port it in place. Don't claim that `AssemblyLoadContext` supplies AppDomain isolation or that `AppDomain.Unload` becomes supported on modern .NET.
+
+### dotnet/docs#40543: Correct the Int64 heading and explain signed integer literals
+
+**Opened:** April 18, 2024. **Confidence:** High for the accepted heading correction and literal question. **Reason:** The current API remarks use 64-bit wording, and existing language guidance explains the reported literal behavior.
+
+The supplemental article has been removed in favor of the API reference. Both the [current Int64 XML remarks](https://github.com/dotnet/dotnet-api-docs/blob/main/xml/System/Int64.xml) and the [published API page](https://learn.microsoft.com/dotnet/api/system.int64?view=net-10.0) use "Work with non-decimal 64-bit integer values," not the reported 32-bit heading. The [integer-literal reference](../docs/csharp/language-reference/builtin-types/integral-numeric-types.md#integer-literals) explicitly explains positive literal magnitudes, inferred unsigned types, casts, and `unchecked` conversion.
+
+**Suggested closure explanation:** Close the accepted heading defect against the current destination, and answer the literal question with the existing reference. The [runtime-owner reply](https://github.com/dotnet/docs/issues/40543#issuecomment-2066732167) explains the literal rule and declines the proposed terminology/CLS additions; don't turn those suggestions into an approved new policy. Owned .NET 8 and .NET 10 checks confirmed that both `1 << 31` and the explicit unchecked high-bit literal produce `Int32.MinValue`; the shift isn't an illegal expression. This recommendation doesn't claim that every optional editorial suggestion was implemented.

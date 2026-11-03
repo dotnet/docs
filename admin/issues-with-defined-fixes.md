@@ -5,16 +5,16 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 207 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track twenty-five additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 219 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track twenty-nine additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 525 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#39781](https://github.com/dotnet/docs/issues/39781), opened March 2, 2024.
-- **Results:** 232 defined fixes (207 assignment candidates and 25 with open implementation PRs) and 99 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 501-525 add 11 new assignment candidates and 2 new fixes with open implementation PRs, alongside 3 closure candidates.
-- **Remaining:** 323 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 225 are complete and 75 remain. Continue with [dotnet/docs#39852](https://github.com/dotnet/docs/issues/39852), opened March 6, 2024, and stop at position 600.
-- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the twenty-five active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
+- **Completed batches:** The 550 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#40543](https://github.com/dotnet/docs/issues/40543), opened April 18, 2024.
+- **Results:** 248 defined fixes (219 assignment candidates and 29 with open implementation PRs) and 104 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 526-550 add 12 new assignment candidates and 4 new fixes with open implementation PRs, alongside 5 closure candidates.
+- **Remaining:** 298 issues from this snapshot are unreviewed. Of the requested next 300 issues (positions 526-825), 25 are complete and 275 remain. Continue with [dotnet/docs#40556](https://github.com/dotnet/docs/issues/40556), opened April 19, 2024, and stop at position 825.
+- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the twenty-nine active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
 
@@ -2183,6 +2183,102 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Scope and acceptance:** Update `entity-framework/core/cli/powershell.md` to say that `-OutputDir` also receives the context when `-ContextDir` is omitted, and cross-link the existing target-directory guidance. Preserve paths relative to the project directory. Verify omitted and explicit `-ContextDir` cases through the PMC command; don't assume an explicitly empty string has the same behavior as an omitted parameter, because source distinguishes null from empty paths. Route the assignment to the owning repository without changing EF tooling or filing a duplicate issue automatically.
 
+### dotnet/docs#39852: Correct the version history for delegate variance
+
+**Issue:** [dotnet/docs#39852](https://github.com/dotnet/docs/issues/39852). **Opened:** March 6, 2024. **Size:** Small. **GHCP suitability:** Strong; a localized historical correction.
+
+**Why it still applies and why the solution is defined:** The opening of [Variance in delegates](../docs/csharp/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md) still gives .NET Framework 3.5 as the starting point. The [C# version history](../docs/csharp/whats-new/csharp-version-history.md) lists covariance and contravariance under C# 2.0 and generic variance under C# 4.0. An owned C# 2 language-mode fixture accepted both covariant-return and contravariant-parameter method-group conversions.
+
+**Scope and acceptance:** Correct the opening to distinguish method-group compatibility introduced with C# 2.0 from `in`/`out` generic-delegate variance introduced with C# 4.0/.NET Framework 4. Preserve both generic and nongeneric examples. Don't imply that every delegate API used by a modern example existed in the first supporting release. Verify the two conversion forms with the stated language version and obtain C# review of the historical wording.
+
+### dotnet/docs#39902: Explain custom marshalling at callback boundaries
+
+**Issue:** [dotnet/docs#39902](https://github.com/dotnet/docs/issues/39902). **Opened:** March 12, 2024. **Size:** Medium. **GHCP suitability:** Suitable for a bounded limitation/example addition, with interop-owner review.
+
+**Why it still applies and why the solution is defined:** The [custom-marshalling guide](../docs/standard/native-interop/custom-marshalling-source-generation.md) describes `MarshalUsing` and reverse-call modes without explaining that a `LibraryImport` declaration doesn't generate a custom marshalling stub for a delegate's `Invoke` signature. Owned .NET 8 and .NET 10 probes showed the generated import using `Marshal.GetFunctionPointerForDelegate`. A callback with `MarshalUsing` on its string parameter received `A` from a UTF-32 `AB` buffer, with zero custom-converter calls; explicit conversion returned `AB`.
+
+**Scope and acceptance:** Explain the distinction between the outer generated import, runtime delegate marshalling, and source-generated COM support. Add a minimal, explicitly typed unmanaged callback/manual-conversion example that uses the actual UTF-32 ABI, rather than advertise attributes on a delegate parameter as automatic support. State callback lifetime, calling convention, pointer ownership, and exception-boundary requirements. Execute the eventual example against a native caller, show the conversion result, and review any disabled-runtime-marshalling or Native AOT claims separately. Don't invent a source-generated reverse-P/Invoke feature.
+
+### dotnet/docs#39909: Replace MessagingCenter in the MAUI unit test
+
+**Issue:** [dotnet/docs#39909](https://github.com/dotnet/docs/issues/39909). **Opened:** March 12, 2024. **Size:** Small to medium. **GHCP suitability:** Strong, coordinated with the existing MAUI test-sample task.
+
+**Why it still applies and why the solution is defined:** [Testing message-based communication](../docs/architecture/maui/unit-testing.md#testing-message-based-communication) still subscribes through `MessagingCenter` and expects a `CatalogItem`. The companion [communication chapter](../docs/architecture/maui/communicating-between-components.md) explicitly rejects that API and already defines the replacement: `WeakReferenceMessenger`, `AddProductMessage`, and an integer count payload. Its producer uses `WeakReferenceMessenger.Default`.
+
+**Scope and acceptance:** Update the test and explanation to that actual message contract, with a matching producer version and constructor dependencies. Register a test recipient on the producer's messenger, execute or await the actual command, assert receipt and the count payload, and unregister in a `finally` block. Isolate tests that share the default messenger; don't create a fresh messenger that the producer never uses or invent an injectable constructor. Compile and execute the test with the existing MAUI unit-test bridge work rather than create competing sample rewrites.
+
+### dotnet/docs#40059: Demonstrate exception handling in F# asynchronous expressions
+
+**Issue:** [dotnet/docs#40059](https://github.com/dotnet/docs/issues/40059). **Opened:** March 18, 2024. **Size:** Small to medium. **GHCP suitability:** Strong; focused examples in two existing guides.
+
+**Why it still applies and why the solution is defined:** The [task-expression](../docs/fsharp/language-reference/task-expressions.md) and [async-expression](../docs/fsharp/language-reference/async-expressions.md) guides list exception constructs but don't demonstrate the requested awaited-fault/recovery flow. Owned F# fixtures caught an awaited `InvalidOperationException`, returned `42`, and ran synchronous `finally` cleanup in both expression types. The async workflow didn't execute before it was started.
+
+**Scope and acceptance:** Add paired `try`/`with` recovery and `try`/`finally` cleanup examples with explicit execution/await steps and actual output. Explain that an awaited operation's fault reaches the handler, distinguish cold `Async` workflows from started tasks, and preserve the documented limits of the handler/cleanup forms. Keep cancellation distinct from an ordinary caught failure; don't suggest blanket exception swallowing, asynchronous `finally` support, or that a task automatically runs on a different thread. Execute the published snippets and obtain F# review.
+
+### dotnet/docs#40171: Explain the object-initializer style preference
+
+**Issue:** [dotnet/docs#40171](https://github.com/dotnet/docs/issues/40171). **Opened:** March 21, 2024. **Size:** Small. **GHCP suitability:** Strong, coordinated with assignee `gewarren`.
+
+**Why it still applies and why the solution is defined:** The [IDE0017 reference](../docs/fundamentals/code-analysis/style-rules/ide0017.md) identifies a style rule and shows the transformation, but doesn't answer the reader's question about motivation versus performance.
+
+**Scope and acceptance:** Explain the readability/initialization-style preference and link the existing object-initializer language reference. For the simple equivalent example, describe construction followed by member assignment rather than promise a speedup. Preserve evaluation order and don't generalize equivalence to every constructor overload, side-effecting expression, or initialization scenario. Keep configuration and suppression guidance intact. A performance claim needs a scoped measurement; the clarification doesn't require one.
+
+### dotnet/docs#40172: Show what a Boolean-backed enum means
+
+**Issue:** [dotnet/docs#40172](https://github.com/dotnet/docs/issues/40172). **Opened:** March 21, 2024. **Size:** Small to medium. **GHCP suitability:** Strong for a versioned compatibility example, coordinated with assignee `gewarren`.
+
+**Why it still applies and why the solution is defined:** The [compatibility note](../docs/core/compatibility/core-libraries/8.0/bool-backed-enum.md) describes the changed APIs and says that C# can't declare this enum shape, but supplies no concrete example. An owned Reflection.Emit fixture created the type; `Enum.GetNames` threw `InvalidOperationException` on both .NET 8 and .NET 10, while a byte-backed replacement returned its two names.
+
+**Scope and acceptance:** Add a minimal IL or Reflection.Emit fixture, show a specific affected API before .NET 8 and its .NET 8 failure, and demonstrate the legal byte-backed alternative. Don't write an invalid C# `enum : bool` declaration or equate two logical values with a Boolean underlying type. Execute the historical side on the actual pre-.NET 8 runtime as well as the changed side; the triage checks didn't run that older runtime. Keep the breaking-change scope aligned with the API list rather than claim that every operation on any such value fails.
+
+### dotnet/docs#40177: Add before-and-after examples for CA1842
+
+**Issue:** [dotnet/docs#40177](https://github.com/dotnet/docs/issues/40177). **Opened:** March 21, 2024. **Size:** Small. **GHCP suitability:** Strong, coordinated with assignee `gewarren`.
+
+**Why it still applies and why the solution is defined:** The [CA1842 reference](../docs/fundamentals/code-analysis/quality-rules/ca1842.md) describes unnecessary `Task.WhenAll` wrappers but still lacks the requested example. The fix is to await the one known task directly, not aggregate a single operation.
+
+**Scope and acceptance:** Add executable C# and VB violation/fix examples that keep the enclosing method's result and observable failure behavior intentional. Prefer a nongeneric example for the simplest equivalent transformation. If a generic example is included, preserve the consumer's result shape: owned checks confirmed that `await Task.WhenAll(Task<int>)` produces `int[]`, whereas direct await produces `int`. Enable CA1842 to prove the before diagnostic and clean replacement, and show actual completion/fault results rather than imply an arbitrary array-to-scalar replacement is type-preserving.
+
+### dotnet/docs#40178: Explain why CA1840 prefers the ID-only API
+
+**Issue:** [dotnet/docs#40178](https://github.com/dotnet/docs/issues/40178). **Opened:** March 21, 2024. **Size:** Small. **GHCP suitability:** Strong, coordinated with assignee `gewarren`.
+
+**Why it still applies and why the solution is defined:** [CA1840](../docs/fundamentals/code-analysis/quality-rules/ca1840.md) still calls the replacement "compact and efficient" without explaining why. The .NET 10 sources expose `Environment.CurrentManagedThreadId` directly; `Thread.CurrentThread` instead checks a cached managed thread and has an initialization path before its `ManagedThreadId` is read. The page's two VB examples also incorrectly close a `Sub` with `End Function`.
+
+**Scope and acceptance:** Explain the ID-only intent and the extra thread-object lookup/initialization path the API avoids. Qualify runtime/JIT-dependent costs; don't claim an allocation on every old-form call or a universal measured speedup. Correct both VB terminators as part of the example pass. Compile and execute C# and VB before/after forms, confirm that both return the current managed thread's ID, and verify CA1840 on the old form. Keep managed IDs distinct from operating-system thread IDs.
+
+### dotnet/docs#40264: Separate compiler defaults from SDK output defaults
+
+**Issue:** [dotnet/docs#40264](https://github.com/dotnet/docs/issues/40264). **Opened:** March 29, 2024. **Size:** Small to medium. **GHCP suitability:** Strong for a bounded five-option reference correction.
+
+**Why it still applies and why the solution is defined:** The [output-options reference](../docs/csharp/language-reference/compiler-options/output.md) mixes direct compiler switches, SDK properties, and template settings. Its reference-assembly location already includes the .NET 6.0.200 change, but several defaults remain implicit. An SDK 10.0.403 check of plain SDK libraries targeting .NET 8 and .NET 10 evaluated `OutputType=Library`, `GenerateDocumentationFile=false`, and `ProduceReferenceAssembly=true`. Direct Roslyn compilation without `-target` required an entry point and produced CS5001 for an empty class; explicit `-target:library` accepted the same class.
+
+**Scope and acceptance:** Document defaults or their conditions for all five options, explicitly separating `csc` defaults from SDK evaluation and template overrides. In particular, don't label `library` as the raw compiler's default or imply that XML documentation/reference output is enabled identically in both contexts. Present modern intermediate reference-assembly placement first, with the older-location change as history. Cross-link SDK property documentation and verify evaluated properties plus actual output files with pinned tools; don't turn unset property text into a universal value or equate SDK `Exe` with an assembly filename ending in `.exe`.
+
+### dotnet/docs#40275: Upgrade the remaining .NET 7 action container coherently
+
+**Issue:** [dotnet/docs#40275](https://github.com/dotnet/docs/issues/40275). **Opened:** April 1, 2024. **Size:** Small to medium. **GHCP suitability:** Strong; a bounded project/container version alignment.
+
+**Why it still applies and why the solution is defined:** The old `core/docker/snippets/7.0` sample is gone, but both stages of the [GitHub action Dockerfile](../docs/devops/snippets/create-dotnet-github-action/Dockerfile) still pin the .NET 7 SDK image and its old digest. The actual [action project](../docs/devops/snippets/create-dotnet-github-action/DotNet.GitHubAction/DotNet.GitHubAction.csproj) now targets .NET 8 and references version 10.0.14 hosting/DI packages. Deleting one listed sample didn't resolve the remaining build/runtime mismatch.
+
+**Scope and acceptance:** Align the retained action project and both container stages on stable .NET 10, update the version comment, and resolve a real matching image digest rather than retain the .NET 7 digest under a new tag. Preserve action arguments, workspace access, entry-point behavior, and the existing SDK-bearing final stage. Build and execute the container against the documented action inputs; verify its exit status and `GITHUB_OUTPUT` values without expanding the example's intentional analysis pseudocode into a new implementation. Don't recreate the removed sample, hide the remaining file in the versionsweeper ignore list, or claim that a managed-only publish proves container execution.
+
+### dotnet/docs#40680: Signpost the Windows native-tool environment for static linking
+
+**Issue:** [dotnet/docs#40680](https://github.com/dotnet/docs/issues/40680). **Opened:** April 10, 2024. **Size:** Small. **GHCP suitability:** Suitable for a narrow signpost, with placement confirmed by current owners `nagilson` and `adegeo`.
+
+**Why it still applies and why the solution is defined:** The [Native AOT linking section](../docs/core/deploying/native-aot/interop.md#linking) describes native linker inputs but doesn't identify the architecture-specific Windows native-tool environment. The reporter explicitly confirmed that the x64 Native Tools prompt made the static-dependency build work, whereas a generic Developer Command Prompt and the presence of `cl`/`link` weren't sufficient. The latest owner question concerns where to put the explanation, not an unresolved reproducer.
+
+**Scope and acceptance:** Add a short Windows environment/prerequisite signpost beside the native-link input instructions, with a link to maintained Native AOT prerequisites rather than another full publishing tutorial. State that native library architecture and the compiler/linker environment must match the target RID; use the x64 prompt as the `win-x64` example, not a universal target choice. Confirm placement with both owners, then verify the documented native-library build and AOT link in that environment. Don't assert that every LNK2001 error is a PATH problem or that this reporter-specific resolution diagnoses arbitrary missing symbols.
+
+### dotnet/docs#40440: Publish the CodeDom stream limitations in the API reference
+
+**Issue:** [dotnet/docs#40440](https://github.com/dotnet/docs/issues/40440). **Opened:** April 10, 2024. **Size:** Small. **GHCP suitability:** Strong, but the edit belongs in `dotnet/dotnet-api-docs`, not this checkout.
+
+**Why it still applies and why the solution is defined:** The [Windows Forms source correction](https://github.com/dotnet/winforms/commit/bdb87e21120b0b4a1c9e1c273c00c8c719012235) already explains supported in-memory operations and unsupported stream operations. Released .NET 10 source also throws `PlatformNotSupportedException` from `LoadStore` and the returned store's `Save`. However, the current [central API XML](https://github.com/dotnet/dotnet-api-docs/blob/main/xml/System.ComponentModel.Design.Serialization/CodeDomComponentSerializationService.xml) and [published LoadStore reference](https://learn.microsoft.com/dotnet/api/system.componentmodel.design.serialization.codedomcomponentserializationservice.loadstore?view=windowsdesktop-10.0) still describe loading and list only null/empty-stream exceptions.
+
+**Scope and acceptance:** Update the class remarks and `LoadStore` documentation in that XML file with version-appropriate Framework/modern .NET distinctions and the supported-platform exception. Explain that this implementation's returned store supports in-memory use but not stream persistence. Don't say the entire service is nonfunctional, remove supported in-memory APIs, or mark every implementation of the abstract `SerializationStore.Save` contract unsupported. Verify published moniker-specific output and preserve Framework behavior; a source-comment-only change isn't proof that the API reference is corrected.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -2389,6 +2485,38 @@ These issues still need their existing PRs to land, with corrections where noted
 
 **Maintainer next action:** Complete the existing contribution instead of duplicating it or treating the merged link-only change as proof that every reported setup is fixed. Match scripts to the actual Orleans/provider release, distinguish new installations from upgrades, and verify a clean schema plus an applicable upgrade. Don't instruct readers to execute every migration for every missing-query error. The related merged Orleans SQL Server correction doesn't alone prove the original MySQL path; verify that path and any script ordering explicitly before closure.
 
+### dotnet/docs#40075: Correct the proxy-bypass hostname examples
+
+**Issue:** [dotnet/docs#40075](https://github.com/dotnet/docs/issues/40075). **Opened:** March 19, 2024. **Status:** Covered by open, non-draft [dotnet/docs#56621](https://github.com/dotnet/docs/pull/56621).
+
+**Evidence:** The actual patch changes the hostname class to `[a-zA-Z0-9_-]+` in the [defaultProxy example](../docs/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings.md) and its [bypass-list child reference](../docs/framework/configure-apps/file-schema/network/add-element-for-bypasslist-network-settings.md). An owned .NET Framework `WebProxy` check reproduced the old failure for `www1.contoso.com` and `build-node2.contoso.com`; the proposed pattern bypassed both and rejected `www1.contoso.com.cpandl.com`.
+
+**Maintainer next action:** Finish the existing patch rather than assign another regex edit. Preserve literal backslashes in XML and correct the doubled prose escaping. Qualify "any host" claims: `WebProxy` tests a URI-derived address, and the proposed end-anchored pattern didn't bypass the same hostname on port 8080. Cover the intended hostname/port boundary and suffix negatives with the real Framework API; don't market the character class as a universal DNS validator. Verify the rendered prose and configuration examples before closure.
+
+### dotnet/docs#40168: Make the mutually recursive example visible in the source preview
+
+**Issue:** [dotnet/docs#40168](https://github.com/dotnet/docs/issues/40168). **Opened:** March 21, 2024. **Status:** Covered by open, non-draft [dotnet/docs#56490](https://github.com/dotnet/docs/pull/56490).
+
+**Evidence:** The report points to the GitHub article view, where a DocFX include isn't a normal relative Markdown code link. The actual referenced `snippet4002.fs` exists, and the [published Learn page](https://learn.microsoft.com/dotnet/fsharp/language-reference/functions/recursive-functions-the-rec-keyword) already renders the two mutually recursive functions. The actual PR replaces only that short include with an inline F# block in the [rec reference](../docs/fsharp/language-reference/functions/recursive-functions-the-rec-keyword.md).
+
+**Maintainer next action:** Review the existing two-line source-preview improvement on its actual merits; don't describe it as a missing or uncompiled example on Learn. Verify both the GitHub preview and published output retain `let rec`/`and`. The proposed definitions ran in an owned F# fixture with `Even 4=true` and `Odd 5=true`. Keep the change local rather than migrate the full snippet collection or claim that the open patch has already landed.
+
+### dotnet/docs#40356: Correct the cross-culture millisecond-format example
+
+**Issue:** [dotnet/docs#40356](https://github.com/dotnet/docs/issues/40356). **Opened:** April 8, 2024. **Status:** Covered by open, non-draft [dotnet/docs#56664](https://github.com/dotnet/docs/pull/56664).
+
+**Evidence:** The actual patch replaces the colon-dependent match in both languages of the [millisecond guide](../docs/standard/base-types/how-to-display-milliseconds-in-date-and-time-values.md). Its C# pattern handled compact `HHmmss`, quoted-unit formats, and all 605 installed specific-culture patterns in owned .NET 8/.NET 10 checks. However, the exact proposed VB source compiled and ran but printed the modified full date/time without any milliseconds, even under en-US. The C# pattern also inserted fractional seconds after an escaped literal `\s`, where no seconds token existed.
+
+**Maintainer next action:** Correct the VB regex translation and the escaped/quoted-token boundaries before merge. Check semantic equivalence between the C# raw-string pattern and VB's different string-escaping rules; successful compilation alone didn't prove the fix. Execute both actual language examples for colon-separated, compact, quoted-unit, and escaped-literal formats, and inspect real date output across cultures. Don't claim all custom formats work merely because the installed-culture scan passed, and don't close on the open patch or its stale expected-output comments.
+
+### dotnet/docs#40476: Supply the required query parameter for nested greetings
+
+**Issue:** [dotnet/docs#40476](https://github.com/dotnet/docs/issues/40476). **Opened:** April 13, 2024. **Status:** Covered by open, non-draft [dotnet/docs#56610](https://github.com/dotnet/docs/pull/56610).
+
+**Evidence:** The actual patch adds `/NestedGreeting?nestlevel=5` at the right location in the moved [Prometheus/Grafana/Jaeger walkthrough](../docs/core/diagnostics/observability-prgrja-example.md). The [actual endpoint](../docs/core/diagnostics/snippets/OTel-Prometheus-Grafana-Jaeger/csharp/Program.cs) requires an integer query parameter and recurses until zero. An owned ASP.NET Core harness with that handler returned HTTP 400 without the parameter and, with `?nestlevel=5`, returned all six greeting levels from 5 through 0.
+
+**Maintainer next action:** Complete the existing patch and tie the relative path to the running application's actual HTTP/HTTPS address and port. Preserve the single question mark, the maximum supported level, and the walkthrough's tracing setup. Verify the resulting nested trace in Jaeger before claiming that the pictured visualization was reproduced; the handler check established request binding and recursion, not a full telemetry-stack run. Don't modify the overview instead of the moved walkthrough or create a duplicate assignment.
+
 ## Assignment order
 
 For the quickest independent changes, start with the table escaping, the paired COM wording corrections, or the existing prose-only signposts. Coordinate the instrumentation link with its current owner. Treat the two COM issues as one assignment, and use the existing hosted-service issue rather than duplicate work for dotnet/docs#23440.
@@ -2445,6 +2573,10 @@ Qualify POH guidance for modern CoreCLR without inventing Framework support. Ver
 
 The diagram contrast and span-concatenation explanation are additional localized changes. Coordinate the collection example with the compatibility-note owner, and keep the diagnostic navigation hub distinct from an exhaustive new inventory. Pair the pinnability and handle-lifetime clarifications with interop-owner review. The opt-in JSON recipe and observable-metric test need executed, published examples; the Framework project conversion must retain its Framework target. Route the scaffolding parameter edit to EntityFramework.Docs rather than create an ineffective docs-only patch.
 
-Review the twenty-five existing implementation PRs separately from new assignments; the F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review.
+The delegate-version and object-initializer explanations are additional localized changes. Coordinate the CA1840, CA1842, and Boolean-enum examples with their existing owner, and pair the MAUI messenger test with the existing test bridge. Keep the callback-marshalling addition ABI-specific and the F# exception examples explicit about execution and cancellation. The output-default table needs separate compiler/SDK evidence; the action-container update needs an actual container run. Confirm the Native AOT signpost's placement with its owners, and route the CodeDom API correction to the publishing repository.
+
+Review the twenty-nine existing implementation PRs separately from new assignments; the F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review.
+
+For the newest implementations, qualify the proxy pattern's address/port assumptions, distinguish GitHub source preview from the already-working F# Learn rendering, correct both millisecond patterns with real output checks, and verify the nested-greeting request in the complete tracing walkthrough.
 
 Keep the new stream-reading alternative text-specific and version-correct. Verify StartupObject's IDE route, correct the HTTP tutorial's staged calls and API-header explanation, and preserve the reusable warning-suppression requirement beyond the CS0184 patch. Issues that don't fit either candidate category are omitted for a future task.

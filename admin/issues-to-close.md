@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 600 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#41811](https://github.com/dotnet/docs/issues/41811), opened July 17, 2024.
-- **Results:** 115 closure candidates and 275 [clearly defined fixes](issues-with-defined-fixes.md) (239 assignment candidates and 36 fixes covered by 35 open implementation PRs).
-- **Latest batch:** Issues 576-600, from [dotnet/docs#41338](https://github.com/dotnet/docs/issues/41338) through dotnet/docs#41811: 4 closure candidates, 12 new assignment candidates, and 5 new fixes with open implementation PRs. Two tracked issues share one implementation PR.
-- **Remaining:** 248 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 50 are complete and 248 remain. Continue with [dotnet/docs#41974](https://github.com/dotnet/docs/issues/41974), opened July 31, 2024, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 625 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#42480](https://github.com/dotnet/docs/issues/42480), opened September 5, 2024.
+- **Results:** 122 closure candidates and 289 [clearly defined fixes](issues-with-defined-fixes.md) (250 assignment candidates and 39 fixes covered by 38 open implementation PRs).
+- **Latest batch:** Issues 601-625, from [dotnet/docs#41974](https://github.com/dotnet/docs/issues/41974) through dotnet/docs#42480: 7 closure candidates, 11 new assignment candidates, and 3 new fixes with open implementation PRs.
+- **Remaining:** 223 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 75 are complete and 223 remain. Continue with [dotnet/docs#42512](https://github.com/dotnet/docs/issues/42512), opened September 9, 2024, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -1014,3 +1014,59 @@ The [MAUI ebook index](../docs/architecture/maui/index.md) advertises edition v2
 The [metrics instrumentation guide](../docs/core/diagnostics/metrics-instrumentation.md) explicitly states that observable callbacks aren't synchronized with code that updates their observed values. It assigns synchronization or tolerance of inconsistent state to the application, identifies locks and `Volatile.Read`/`Volatile.Write` as appropriate mechanisms, and supplies adjacent callback-performance guidance.
 
 **Suggested closure explanation:** Link to the existing observable-instrument guidance. The thread safety of instrument APIs doesn't synchronize application-owned measurement state; the current text already makes that distinction, so another duplicate warning isn't needed.
+
+### dotnet/docs#41974: Resolve contradictory CPU counter units
+
+**Opened:** July 31, 2024. **Confidence:** High. **Reason:** The contradictory counter listing has been removed, and the remaining references distinguish the metrics.
+
+The issue's two screenshots show conflicting units in the old `dotnet-counters list` material. The [current command reference](../docs/core/diagnostics/dotnet-counters.md) no longer documents that listing. Its version-qualified EventCounter example labels CPU usage as a percentage, consistent with the [System.Runtime counter definition](../docs/core/diagnostics/available-counters.md#systemruntime-counters), which defines `cpu-usage` relative to the system's CPU resources.
+
+**Suggested closure explanation:** The obsolete, contradictory listing is gone, and the retained EventCounter guidance uses percent consistently. Don't describe the newer `dotnet.process.cpu.time` metric as another name for the old percentage counter; CPU time and CPU usage are distinct measurements.
+
+### dotnet/docs#41981: Retire the obsolete net461 data-protection project alert
+
+**Opened:** August 1, 2024. **Confidence:** High. **Reason:** The flagged project was removed and replaced with platform-qualified projects.
+
+The version sweeper names one legacy DPAPI project, which no longer exists. Merged [dotnet/docs#54853](https://github.com/dotnet/docs/pull/54853), July 22, 2026, migrated the example. The [current article](../docs/standard/security/how-to-use-data-protection.md) references a [.NET Framework 4.8 project](../docs/standard/security/snippets/how-to-use-data-protection/framework/csharp/DataProtectionSample.csproj) and a [net10.0-windows project](../docs/standard/security/snippets/how-to-use-data-protection/net/csharp/DataProtectionSample.csproj). Its text distinguishes the Framework-only `ProtectedMemory` example from Windows-specific `ProtectedData`.
+
+**Suggested closure explanation:** The specific `net461` project has been replaced, and its replacements already target Framework 4.8 and .NET 10 for Windows. Close the obsolete project alert rather than retarget a deleted file or claim that all DPAPI APIs are cross-platform.
+
+### dotnet/docs#41982: Correct the net472 end-of-support premise
+
+**Opened:** August 1, 2024. **Confidence:** High for the support-policy distinction. **Reason:** The alert treats an active .NET Framework version as an unsupported modern .NET release.
+
+All three named projects still target `net472`; their presence isn't evidence that the bot's end-of-support claim is correct. The [.NET Framework support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework) lists .NET Framework 4.7.2 as active and ties applicable support to the parent Windows lifecycle. The issue's `N/A` end date doesn't establish end of support. The [Framework version guide](../docs/framework/install/versions-and-dependencies.md) also explains the relationship between Framework 4.x versions.
+
+**Suggested closure explanation:** Close this blanket unsupported-version alert as inapplicable to .NET Framework 4.7.2. Don't apply modern .NET STS/LTS dates to Framework projects, promise support on every Windows version, or port VSIX and Framework-specific samples merely to satisfy the bot.
+
+### dotnet/docs#41983: Correct the v4.7.2 end-of-support premise
+
+**Opened:** August 1, 2024. **Confidence:** High for the support-policy distinction. **Reason:** The WPF project uses the same active Framework version in traditional project syntax.
+
+The named StringReaderWriter WPF project still declares `v4.7.2`. That spelling identifies .NET Framework 4.7.2, not a separate release with a different lifecycle. The [Framework support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework) lists that version as active subject to its Windows support conditions.
+
+**Suggested closure explanation:** Close the unsupported-version alert on the same basis as dotnet/docs#41982. A separately justified project modernization task would need its own scope; the bot's missing end date doesn't require a WPF port or target change.
+
+### dotnet/docs#42196: Document Native AOT CFG and CET
+
+**Opened:** August 15, 2024. **Confidence:** High. **Reason:** Dedicated documentation now covers both requested protections.
+
+The [Native AOT security page](../docs/core/deploying/native-aot/security.md) includes a Control Flow Guard section with the `ControlFlowGuard` property and a CET Shadow Stack section. It explains the Windows default from .NET 9 and the `CetCompat` opt-out. The issue contains no additional unresolved scenario beyond its CFG/CET documentation title.
+
+**Suggested closure explanation:** Link to the existing Native AOT security guidance and close the documentation request as addressed, in coordination with current assignee `MichalStrehovsky`. Don't infer that every protection or default applies identically to every operating system.
+
+### dotnet/docs#42249: Provide direct discovery links for official container images
+
+**Opened:** August 20, 2024. **Confidence:** High. **Reason:** The current article already supplies the requested discovery route.
+
+The [official image article](../docs/architecture/microservices/net-core-net-framework-containers/official-net-docker-images.md) opens with the Microsoft Artifact Registry catalog and a direct .NET SDK repository link, rather than send readers only to a GitHub repository. The current [dotnet-docker README](https://github.com/dotnet/dotnet-docker) also has a featured-repository list for SDK, ASP.NET Core, runtime, and runtime-dependency images.
+
+**Suggested closure explanation:** Direct image-discovery links now exist at the start of the article. Close the original navigation request without treating unrelated version examples as part of the fix or claiming that a container pull or the registry's interactive tag UI was tested.
+
+### dotnet/docs#42406: Explain removal of Visual Studio's unsupported components
+
+**Opened:** August 31, 2024. **Confidence:** High. **Reason:** Visual Studio documentation now explains the supported installer routes.
+
+The [Visual Studio update guide's Remove out-of-support components section](https://learn.microsoft.com/visualstudio/install/update-visual-studio?view=vs-2022#remove-out-of-support-components) documents both the one-time **Modify** action and the persistent update setting. The [.NET Uninstall tool overview](../docs/core/additional-tools/uninstall-tool-overview.md) correctly limits its ability to remove Visual Studio-installed components; a new standalone uninstall-tool recommendation wouldn't resolve modern installer ownership.
+
+**Suggested closure explanation:** Link to Visual Studio Installer's existing one-time and future-update controls. Close the missing-guidance question without promising that every application can lose an old runtime safely; readers must still check their projects and deployed applications' dependencies. No components were removed during this review.

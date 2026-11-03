@@ -32,19 +32,19 @@ public static class RawStrings
         Console.WriteLine(MultiLineQuotes);
 
         // <InterpolatedRawString>
-        var longitude = 47.6062;
-        var latitude = -122.3321;
+        var latitude = 47.6062;
+        var longitude = -122.3321;
         var city = "Seattle";
 
-        var json = $$"""
+        var json = FormattableString.Invariant($$"""
         {
             "city": "{{city}}",
             "coordinates": {
-                "longitude": {{longitude}},
-                "latitude": {{latitude}}
+                "latitude": {{latitude}},
+                "longitude": {{longitude}}
             }
         }
-        """;
+        """);
         // </InterpolatedRawString>
         Console.WriteLine(json);
     }

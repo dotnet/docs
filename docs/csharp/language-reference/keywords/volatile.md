@@ -59,13 +59,7 @@ When you declare `_shouldStop` as `volatile`, the compiler and runtime ensure th
 Without the `volatile` modifier, the just-in-time (JIT) compiler is allowed to optimize the loop by hoisting the read of `_shouldStop` outside the `while` loop or holding its value in a CPU register. If hoisted, the loop never re-checks the field value in memory, causing the worker thread to loop indefinitely even after the main thread sets `_shouldStop` to `true`.
 
 > [!NOTE]
-> You might observe identical behavior with and without `volatile` when running your program in `Debug` configuration or under an attached debugger. In `Debug` mode, the JIT compiler disables optimizations, so field reads are reloaded from memory on every loop iteration. To observe compiler optimizations like register caching and loop hoisting, build and run the sample in `Release` configuration:
->
-> ```dotnetcli
-> dotnet run -c Release
-> ```
->
-> In addition, CPU hardware architecture affects memory visibility. Architectures with strong hardware memory models (such as x86 and x64) inherently preserve store-load orderings more strictly than weakly ordered architectures (such as ARM64).
+> The behavior without the `volatile` modifier is non-deterministic. Depending on runtime conditions, hardware architecture, and JIT compiler optimizations, different runs or environments might produce varying outcomes.
 >
 > In modern .NET applications, prefer using <xref:System.Threading.CancellationTokenSource> and <xref:System.Threading.CancellationToken> for thread cancellation rather than manual volatile boolean flags.
 

@@ -56,10 +56,10 @@ The following example demonstrates how an auxiliary or worker thread can be crea
 
 When you declare `_shouldStop` as `volatile`, the compiler and runtime ensure that read and write operations on `_shouldStop` are not cached in processor registers across loop iterations and that memory order constraints are respected.
 
-Without the `volatile` modifier, the just-in-time (JIT) compiler is allowed to optimize the loop by hoisting the read of `_shouldStop` outside the `while` loop or holding its value in a CPU register. If hoisted, the loop never re-checks the field value in memory, causing the worker thread to loop indefinitely even after the main thread sets `_shouldStop` to `true`.
+Without the `volatile` modifier, the runtime is allowed to optimize the loop by hoisting the read of `_shouldStop` outside the `while` loop. If hoisted, the loop never re-checks the field value in memory, causing the worker thread to loop indefinitely even after the main thread sets `_shouldStop` to `true`.
 
 > [!NOTE]
-> The behavior without the `volatile` modifier is non-deterministic. Depending on runtime conditions, hardware architecture, and JIT compiler optimizations, different runs or environments might produce varying outcomes.
+> The behavior without the `volatile` modifier is non-deterministic. Depending on runtime conditions, hardware architecture, and compiler or runtime optimizations, different runs or environments might produce varying outcomes.
 >
 > In modern .NET applications, prefer using <xref:System.Threading.CancellationTokenSource> and <xref:System.Threading.CancellationToken> for thread cancellation rather than manual volatile boolean flags.
 

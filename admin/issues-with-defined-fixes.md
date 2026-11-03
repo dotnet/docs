@@ -5,16 +5,16 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 260 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track forty-three additional issue-level fixes separately because forty-two implementation PRs are already open; two issues share one PR, several patches need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 270 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track forty-seven additional issue-level fixes separately because forty-five implementation PRs are already open; two pairs of issues share PRs, several patches need correction or completion before merge, and two PRs remain drafts. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 650 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#43167](https://github.com/dotnet/docs/issues/43167), opened October 23, 2024.
-- **Results:** 303 defined fixes (260 assignment candidates and 43 with open implementation PRs) and 126 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 626-650 add 10 new assignment candidates and 4 new issue-level fixes with open implementation PRs, alongside 4 closure candidates. The 43 active entries are covered by 42 distinct PRs.
-- **Remaining:** 198 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 100 are complete and 198 remain. Continue with [dotnet/docs#43182](https://github.com/dotnet/docs/issues/43182), opened October 23, 2024, and finish the snapshot at position 848.
-- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the forty-two distinct active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
+- **Completed batches:** The 675 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#43966](https://github.com/dotnet/docs/issues/43966), opened December 13, 2024.
+- **Results:** 317 defined fixes (270 assignment candidates and 47 with open implementation PRs) and 132 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 651-675 add 10 new assignment candidates and 4 new issue-level fixes with open implementation PRs, alongside 6 closure candidates. The 47 active entries are covered by 45 distinct PRs.
+- **Remaining:** 173 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 125 are complete and 173 remain. Continue with [dotnet/docs#43996](https://github.com/dotnet/docs/issues/43996), opened December 17, 2024, and finish the snapshot at position 848.
+- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and actual patches for active implementations. For the 545-file curation draft, the complete file manifest and relevant deletion, replacement, and redirect patches were inspected; this isn't a line-by-line review of the entire replacement book. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
 
@@ -827,9 +827,11 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Why it still applies:** The [domain-events chapter](../docs/architecture/microservices/microservice-ddd-cqrs-patterns/domain-events-design-implementation.md) equates a shared scoped context and deferred dispatch with one transaction, yet shows an event handler that calls `SaveEntitiesAsync` again. It doesn't explain the outer transaction that makes the reference application's repeated saves atomic.
 
-**Why the solution is defined:** The actual archived [TransactionBehaviour](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/Services/Ordering/Ordering.API/Application/Behaviors/TransactionBehaviour.cs) begins a transaction around the handler pipeline and commits afterward. [OrderingContext](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/Services/Ordering/Ordering.Infrastructure/OrderingContext.cs) distinguishes `SaveEntitiesAsync`/`SaveChangesAsync` from `CommitTransactionAsync`. Multiple saves inside that explicit transaction aren't separate outer commits.
+**Why the solution is defined:** The actual archived [TransactionBehaviour](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/Behaviors/TransactionBehaviour.cs) begins a transaction around the handler pipeline and commits afterward. [OrderingContext](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Infrastructure/OrderingContext.cs) distinguishes `SaveEntitiesAsync`/`SaveChangesAsync` from `CommitTransactionAsync`. Both source files were rechecked on the archived `dev` branch during the later duplicate review. Multiple saves inside that explicit transaction aren't separate outer commits.
 
 **Proposed assignment scope:** Explain and link the actual outer transaction, distinguish a save from a transaction commit, and qualify the sample's atomicity claims. State that a shared context alone doesn't make several independent saves one transaction. Preserve the chapter's alternative eventual-consistency model. Don't introduce the proposed recursion counter as though it establishes a database transaction or solves arbitrary event-dispatch reentrancy.
+
+**Related scope retained from dotnet/docs#43392:** Explicitly describe the failure/crash window between database commit and in-memory event dispatch, and link durable-event/outbox guidance where delivery must survive that window. Distinguish an in-process mediator from durable cross-process delivery without redefining every eventually consistent aggregate as an actor. The chapter already discusses post-commit inconsistency and persistent event records; extend that explanation rather than introduce a new message-bus implementation. Coordinate the surviving chapter with ebook-curation draft dotnet/docs#43185.
 
 **Acceptance criteria:** Demonstrate with a relational provider that a later handler failure rolls back earlier saves inside the explicit transaction, and contrast the no-outer-transaction case. Don't substitute EF's in-memory provider as transaction evidence. Keep the clarification about the archived design rather than promise exactly-once events or universal atomicity across external services.
 
@@ -2615,6 +2617,86 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Scope and acceptance:** Mark the fix as breaking and explain why "typically not referenced" isn't a compatibility guarantee. Mention intentional external/test/framework consumers as a reason to preserve the public contract and suppress the recommendation where appropriate. Verify the small two-assembly before/after case without changes to analyzer behavior, default enablement, or a blanket recommendation to replace public APIs with friend-assembly access.
 
+### dotnet/docs#43189: Add Rebus at the requested service-bus comparison
+
+**Issue:** [dotnet/docs#43189](https://github.com/dotnet/docs/issues/43189). **Opened:** October 23, 2024. **Size:** Small. **GHCP suitability:** Strong for a neutral inventory/link correction, coordinated with ebook curation.
+
+**Why it still applies:** The [integration-event article](../docs/architecture/microservices/multi-container-microservice-net-applications/integration-event-based-microservice-communications.md) lists NServiceBus, MassTransit, and Brighter but omits Rebus. The adjacent RabbitMQ article already mentions Rebus in additional resources; that isn't the requested comparison location. The curation draft copies that adjacent resource and still doesn't add Rebus to the comparison.
+
+**Scope and acceptance:** Add a concise, linked Rebus entry alongside the higher-level .NET service-bus examples, using the [official project description](https://github.com/rebus-org/Rebus). Distinguish a service-bus library from its broker/transport and keep the list nonexclusive; don't assert feature parity, universal production suitability, or that eShop uses Rebus. Coordinate the destination with draft dotnet/docs#43185 so the edit reaches retained content rather than a chapter due for removal. No new setup guide or sample dependency is needed.
+
+### dotnet/docs#43202: Explain when dictionary assignment is a different alternative
+
+**Issue:** [dotnet/docs#43202](https://github.com/dotnet/docs/issues/43202). **Opened:** October 25, 2024. **Size:** Small. **GHCP suitability:** Strong for a qualified note, not an analyzer-code-fix change.
+
+**Why it still applies:** [CA1864](../docs/fundamentals/code-analysis/quality-rules/ca1864.md) correctly explains that `TryAdd` preserves an existing value, but doesn't discuss the requested indexer alternative. Owned .NET 8/.NET 10 checks confirmed that `TryAdd` retains `existing` while assignment replaces it with `replacement`.
+
+**Scope and acceptance:** Add the indexer only as an option when overwrite/last-value-wins semantics are intended. Retain `TryAdd` as the behavior-preserving replacement for the shown guarded add, and explicitly warn about the existing-key difference. Check absent and existing keys in both documented languages. Don't advertise assignment as an equivalent automatic refactoring or change the analyzer's non-breaking classification to justify a different operation.
+
+### dotnet/docs#43242: Reconcile disposable-transient guidance with handler ownership
+
+**Issue:** [dotnet/docs#43242](https://github.com/dotnet/docs/issues/43242). **Opened:** October 30, 2024. **Size:** Small to medium. **GHCP suitability:** Strong for an ownership/scope clarification with DI/networking review.
+
+**Why it still applies:** The moved [DI guidelines](../docs/core/extensions/dependency-injection/guidelines.md#general-idisposable-guidelines) still contain a blanket prohibition on disposable transients, while the [HTTP factory guide](../docs/core/extensions/httpclient-factory.md#message-handler-scopes-in-ihttpclientfactory) deliberately uses transient handlers. The latter distinguishes a cached handler's private DI scope from an application scope; "scope-aware" doesn't mean blindly change registration to scoped.
+
+**Scope and acceptance:** Qualify the general warning about container-captured transients, root resolution, and early disposal. Explain factory-owned handler scopes/pooling separately from the transient scope-aware outer-handler workaround, and cross-link the existing recipe. The [factory implementation](https://github.com/dotnet/runtime/blob/v10.0.0/src/libraries/Microsoft.Extensions.Http/src/DefaultHttpClientFactory.cs) owns the handler scope and disposes eligible expired entries; client disposal isn't immediate pooled-handler disposal. An owned .NET 8/.NET 10 fixture reused one transient handler across two distinct application scopes and verified that separation without network traffic. Preserve appropriate lifetime cleanup and sensitive-scope-data warnings; don't promise absence of every leak, reuse a singleton delegating-handler instance, or make all handlers scoped.
+
+### dotnet/docs#43409: Document the time-in-jit EventCounter
+
+**Issue:** [dotnet/docs#43409](https://github.com/dotnet/docs/issues/43409). **Opened:** November 11, 2024. **Size:** Small. **GHCP suitability:** Strong for a source-verified catalog row.
+
+**Why it still applies:** The [available-counters catalog](../docs/core/diagnostics/available-counters.md) omits `System.Runtime`'s `time-in-jit`. Tagged runtime source contains the counter in .NET 6, 7, 8, and 10, but not .NET 5.
+
+**Scope and acceptance:** Add the exact name, display name, first-available version, and incrementing semantics from [RuntimeEventSource](https://github.com/dotnet/runtime/blob/v10.0.0/src/libraries/System.Private.CoreLib/src/System/Diagnostics/Tracing/RuntimeEventSource.cs). It samples cumulative compilation time in milliseconds through `IncrementingPollingCounter`, with a one-second display rate scale. Owned .NET 8/.NET 10 listeners observed `CounterType=Sum`, `DisplayUnits=ms`, and `DisplayRateTimeScale=00:00:01`. Explain interval/rate presentation without relabeling the raw counter as a CPU percentage, substituting a newer Meter instrument, or expanding this row into an unbounded inventory audit.
+
+### dotnet/docs#43566: Add the GCAllocationTick V4 payload
+
+**Issue:** [dotnet/docs#43566](https://github.com/dotnet/docs/issues/43566). **Opened:** November 13, 2024. **Size:** Small. **GHCP suitability:** Strong for a manifest-backed event-table addition.
+
+**Why it still applies:** The [modern runtime GC-event guide](../docs/fundamentals/diagnostics/runtime-garbage-collection-events.md) still documents V3 only. The [runtime manifest](https://github.com/dotnet/runtime/blob/v10.0.0/src/coreclr/vm/ClrEtwAll.man) defines event 10, version 4, with the additional `ObjectSize` field. Bounded owned .NET 8/.NET 10 listeners observed V4 and all nine payload names.
+
+**Scope and acceptance:** Document the V4 event and exact field order/types from the manifest, including `AllocationKind` before `ClrInstanceID`, not the reporter's reversed order. Distinguish interval allocation amounts from the triggering object's size, pointer fields from fixed-width integers, and allocation ticks from a record for every allocation. Preserve historical V3 coverage and add an appropriate modern-runtime signpost from the original Framework page rather than imply all Framework versions emit V4. Use a finite allocation fixture and capture the actual event/payload; don't copy the issue's infinite allocation loop.
+
+### dotnet/docs#43570: Document the httpListener timeouts child
+
+**Issue:** [dotnet/docs#43570](https://github.com/dotnet/docs/issues/43570). **Opened:** November 13, 2024. **Size:** Small. **GHCP suitability:** Strong for a Framework schema completion.
+
+**Why it still applies:** The [httpListener schema page](../docs/framework/configure-apps/file-schema/network/httplistener-element-network-settings.md) says it has no child elements. The [reference implementation](https://github.com/microsoft/referencesource/blob/main/System/net/System/Net/Configuration/HttpListenerElement.cs) explicitly registers `timeouts`, backed by `HttpListenerTimeoutsElement`.
+
+**Scope and acceptance:** Add the child to syntax and the child-element table, with a linked explanation of its five `TimeSpan` attributes and `minSendBytesPerSecond`. Verify names, units, defaults, ranges, and HTTP.sys/platform constraints against [the configuration class](https://github.com/microsoft/referencesource/blob/main/System/net/System/Net/Configuration/HttpListenerTimeoutsElement.cs) and its consumer. Validate a mapped application configuration on supported .NET Framework without changes to machine-wide HTTP settings. Don't assume zero means an immediate timeout or present this Framework configuration mechanism as modern .NET configuration. If a separate schema page is needed, include it in the appropriate index and TOC.
+
+### dotnet/docs#43575: Show polymorphism for nested declared-base contracts
+
+**Issue:** [dotnet/docs#43575](https://github.com/dotnet/docs/issues/43575). **Opened:** November 14, 2024. **Size:** Small to medium. **GHCP suitability:** Strong for a minimal nested example, not an unverified serializer bug fix.
+
+**Why it still applies:** The [polymorphism guide](../docs/standard/serialization/system-text-json/polymorphism.md) explains a root declared-base contract but doesn't show a wrapper with nested polymorphic members. Owned .NET 8/.NET 10 examples emitted discriminators and restored the correct derived types for both a base-typed property and `List<Base>` elements. Serializing the concrete derived contract didn't emit that base contract's discriminator.
+
+**Scope and acceptance:** Add a small complete nested-property/collection example in both languages and explain where the base-type attributes, derived registrations, and discriminators belong. Verify actual JSON and deserialized runtime types, and contrast a relevant declared-contract mismatch. Don't claim nested objects are generally unsupported or that the reporter's unspecified model was reproduced and repaired. Preserve opt-in and unrecognized-type limitations instead of adding a universal runtime-type converter.
+
+### dotnet/docs#43598: Explain the Framework boundary in HttpClient lifetime advice
+
+**Issue:** [dotnet/docs#43598](https://github.com/dotnet/docs/issues/43598). **Opened:** November 16, 2024. **Size:** Small. **GHCP suitability:** Suitable for a compatibility rationale with networking-owner review.
+
+**Why it still applies:** The [recommended-use section](../docs/fundamentals/networking/http/httpclient-guidelines.md#recommended-use) offers a long-lived client with `SocketsHttpHandler.PooledConnectionLifetime` for modern .NET, but only recommends `IHttpClientFactory` for Framework without explaining the different transport/DNS-lifetime mechanism.
+
+**Scope and acceptance:** Explain that the modern pooled-connection-lifetime recipe isn't an API available on Framework, not that singleton clients are prohibited there. Distinguish connection reuse from DNS refresh, retain the factory recommendation, and explain that factory/DI support doesn't require an ASP.NET Core web application. Verify any concrete Framework alternative on supported Framework/handler versions before publication; don't copy `PooledConnectionLifetime` into a Framework sample, recommend per-request unmanaged clients, or advertise a universal DNS timeout. Preserve the existing cookie-container caveat.
+
+### dotnet/docs#43627: Explain GroupBy inputs and grouped results before the example
+
+**Issue:** [dotnet/docs#43627](https://github.com/dotnet/docs/issues/43627). **Opened:** November 18, 2024. **Size:** Small. **GHCP suitability:** Strong for a bounded introductory clarification with C# review.
+
+**Why it still applies:** The [grouping guide](../docs/csharp/linq/standard-query-operators/grouping-data.md) already contains prose and noninteger examples, so replacing all examples isn't necessary. Its opening still doesn't explicitly connect source elements, the key-selector input/output, `IGrouping<TKey,TElement>.Key`, and traversal of each group's elements.
+
+**Scope and acceptance:** Before the parity example, explain the LINQ-to-Objects input and nested result shape and add or adapt a small string-key/object example with visible output. An owned .NET 8/.NET 10 fixture grouped rows into `A=[1,3]; B=[2]`, retaining original elements under each key. Contrast those groups with a flat aggregate projection where useful; don't promise that every SQL/provider query materializes identical grouping objects. Retain the useful existing examples and scope the edit separately from the reporter's Excel/PDF workflow or a complete SQL-to-LINQ textbook.
+
+### dotnet/docs#43705: Limit K and zzz equivalence to date formatting
+
+**Issue:** [dotnet/docs#43705](https://github.com/dotnet/docs/issues/43705). **Opened:** November 22, 2024. **Size:** Small. **GHCP suitability:** Strong; the exact parsing distinction is reproduced.
+
+**Why it still applies:** The [K-specifier section](../docs/standard/base-types/custom-date-and-time-format-strings.md#KSpecifier) describes `DateTimeOffset`'s `K`/`zzz` equivalence without a parsing qualification. Owned .NET 8/.NET 10 checks confirmed equal formatted offsets but different `TryParseExact` results for composite patterns: `K` accepted numeric offset, `Z`, and absent offset; `zzz` accepted only the numeric-offset input.
+
+**Scope and acceptance:** State that the equivalence concerns formatting, then add a concise exact-parsing comparison with explicit culture/styles. Distinguish `DateTimeOffset` from `DateTime.Kind`, keep the single-custom-specifier `%K` rule, and explain the local/default interpretation of an omitted offset rather than imply UTC. Verify both formatting equality and all six parse cases; don't close merely because the existing formatting statement is technically true.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -2962,6 +3044,38 @@ These issues still need their existing PRs to land, with corrections where noted
 **Evidence:** The actual patch adds `InternalsVisibleToAttribute` and three signing attributes to the [global-attribute reference](../docs/csharp/language-reference/attributes/global.md), with existing friend-assembly and signing links. It doesn't add every optional attribute suggested in the comment thread.
 
 **Maintainer next action:** State the internal-access boundary precisely; a friend assembly doesn't gain arbitrary private-member access. Check signing-attribute platform/legacy constraints and prefer modern project/compiler settings where appropriate rather than recommend old attributes indiscriminately. Resolve the optional attribute-inventory comments explicitly, retain full-public-key versus token distinctions in linked guidance, and add required AI metadata for the new section. Don't close the original missing-entry request before the reviewed PR lands.
+
+### dotnet/docs#43182: Complete the owner-led ebook curation draft
+
+**Issue:** [dotnet/docs#43182](https://github.com/dotnet/docs/issues/43182). **Opened:** October 23, 2024. **Status:** Covered by open, draft [dotnet/docs#43185](https://github.com/dotnet/docs/pull/43185), coordinated with `IEvangelist` and `jamesmontemagno`.
+
+**Evidence:** The actual 545-file manifest includes 356 removals, 123 additions, 54 renames, and 12 modifications. Relevant patches retire legacy architecture-book content, add the distributed/cloud-native replacement and navigation, and add redirects to downloadable archived books. This is an existing owner-led replacement, not a merged removal or a small unclaimed deletion task.
+
+**Maintainer next action:** Resolve the curation/replacement decision in the draft; validate redirect destinations, retained links/assets, navigation, and publishing results before closure. Coordinate dependent fixes against surviving content and don't create a parallel GHCP book-deletion assignment. The manifest and relevant patches establish the work's scope, not approval of every new architecture claim or a complete review of all 545 files.
+
+### dotnet/docs#43745: Finish the abstract/sealed article's beginner-language pass
+
+**Issue:** [dotnet/docs#43745](https://github.com/dotnet/docs/issues/43745). **Opened:** November 25, 2024. **Status:** Covered by open, non-draft [dotnet/docs#56677](https://github.com/dotnet/docs/pull/56677).
+
+**Evidence:** The actual patch defines base/derived classes and "instantiate," expands the abstract-method explanation, and explains sealed members while retaining existing snippet references. It directly implements the requested less-formal edit pass.
+
+**Maintainer next action:** Complete the existing editorial PR, preserving the distinction between abstract and concrete derived classes. Describe a sealed override as prevention of further overrides, not removal of virtual dispatch from every call; keep devirtualization as an optimization possibility, not a guarantee. Don't assign a duplicate rewrite or claim closure before merge.
+
+### dotnet/docs#43779: Explain lambda parameter modifiers and inferred delegates
+
+**Issue:** [dotnet/docs#43779](https://github.com/dotnet/docs/issues/43779). **Opened:** November 26, 2024. **Status:** Covered by open, non-draft [dotnet/docs#56651](https://github.com/dotnet/docs/pull/56651).
+
+**Evidence:** The actual patch updates the consolidated [lambda-diagnostic guide](../docs/csharp/language-reference/compiler-messages/lambda-expression-errors.md) and explains why an `in` lambda doesn't match `Action<int>`. It offers removal of the modifier, a natural delegate inferred through `var`, or an explicitly declared compatible delegate.
+
+**Maintainer next action:** The installed SDK 10.0.403 compiler reports CS1677 alone for the minimal `Action<int>` mismatch, so don't promise both CS1677 and CS1661 on every compiler. Verify the positive fixes, qualify natural delegate inference by language version, and retain an exact diagnostic resource/message representation rather than invent literal parenthesized message text. Distinguish parameter passing modifiers from generic variance. A custom delegate can express this signature explicitly; don't repeat the reporter's inference that only `var` can express it.
+
+### dotnet/docs#43950: Review modular-monolith coverage in the architecture replacement
+
+**Issue:** [dotnet/docs#43950](https://github.com/dotnet/docs/issues/43950). **Opened:** December 12, 2024. **Status:** Covered in the scope of open, draft [dotnet/docs#43185](https://github.com/dotnet/docs/pull/43185), also tracked for dotnet/docs#43182.
+
+**Evidence:** The actual draft removes the old `common-web-application-architectures.md` and adds a substantive "Modular monoliths" section and diagram in the replacement book's `different-distributed-architectures.md`. The section describes modules, shared-process deployment, and scaling trade-offs. The original author `ardalis` offered to contribute but still requested the docs team's placement approval.
+
+**Maintainer next action:** Decide the replacement/placement with `ardalis` and the curation owners instead of commissioning a competing architecture chapter. Review the draft's blanket claims that modules lack data ownership or that their boundaries matter less: shared process or physical database doesn't by itself preclude logical ownership and enforced module boundaries. Ensure readers of the retired page reach approved replacement guidance, and don't close this issue just because a draft contains the heading.
 
 ## Assignment order
 

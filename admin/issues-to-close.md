@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 650 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#43167](https://github.com/dotnet/docs/issues/43167), opened October 23, 2024.
-- **Results:** 126 closure candidates and 303 [clearly defined fixes](issues-with-defined-fixes.md) (260 assignment candidates and 43 fixes covered by 42 open implementation PRs).
-- **Latest batch:** Issues 626-650, from [dotnet/docs#42512](https://github.com/dotnet/docs/issues/42512) through dotnet/docs#43167: 4 closure candidates, 10 new assignment candidates, and 4 new fixes with open implementation PRs.
-- **Remaining:** 198 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 100 are complete and 198 remain. Continue with [dotnet/docs#43182](https://github.com/dotnet/docs/issues/43182), opened October 23, 2024, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 675 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#43966](https://github.com/dotnet/docs/issues/43966), opened December 13, 2024.
+- **Results:** 132 closure candidates and 317 [clearly defined fixes](issues-with-defined-fixes.md) (270 assignment candidates and 47 fixes covered by 45 open implementation PRs).
+- **Latest batch:** Issues 651-675, from [dotnet/docs#43182](https://github.com/dotnet/docs/issues/43182) through dotnet/docs#43966: 6 closure candidates, 10 new assignment candidates, and 4 new fixes with open implementation PRs.
+- **Remaining:** 173 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 125 are complete and 173 remain. Continue with [dotnet/docs#43996](https://github.com/dotnet/docs/issues/43996), opened December 17, 2024, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -1104,3 +1104,51 @@ The supporting PRs also merged: [dotnet/docs#42884](https://github.com/dotnet/do
 The [original review comment](https://github.com/dotnet/docs/pull/43119#discussion_r1811567034) targets `experimental-overview.md`. Its [current suppression section](../docs/fundamentals/syslib-diagnostics/experimental-overview.md#suppress-warnings) now recommends `<NoWarn>` and shows the project-file example before `#pragma`. The introduction also explains that consent applies to a particular experimental diagnostic rather than all experimental features.
 
 **Suggested closure explanation:** The exact section identified by the request now uses the preferred order and explicit project-level recommendation. Coordinate closure with assignee `gewarren`. Preserve the author's clarification that this consent guidance isn't a blanket preference for project-wide suppression of ordinary compiler warnings.
+
+### dotnet/docs#43392: Correct the deferred domain-event transaction explanation
+
+**Opened:** November 9, 2024. **Confidence:** High for consolidation, not implementation. **Reason:** The older open transaction-boundary issue covers the same faulty explanation; retain the additional reliability concern there.
+
+The [retained dotnet/docs#27904 brief](issues-with-defined-fixes.md#dotnetdocs27904-state-the-transaction-boundary-for-nested-domain-event-saves) addresses the same `SaveEntitiesAsync` example and false inference that a shared scoped context alone establishes one transaction. That brief now explicitly preserves this issue's post-commit crash/failure window and durable-dispatch caveat. The current [chapter](../docs/architecture/microservices/microservice-ddd-cqrs-patterns/domain-events-design-implementation.md) already discusses post-commit inconsistency and persistent event records, but those paragraphs don't repair the misleading transaction comment or guarantee crash-safe in-memory dispatch.
+
+**Suggested closure explanation:** Consolidate with dotnet/docs#27904 and carry over both the explicit outer-transaction correction and post-commit reliability caveat. Don't close as fixed or discard the extra concern as an exact duplicate. Keep the domain/integration distinction about semantic boundaries; eventual consistency doesn't automatically turn aggregates into actors. Coordinate the surviving content with the separate ebook-curation draft before implementation.
+
+### dotnet/docs#43641: Replace OrleansConfiguration.xml in cluster-management guidance
+
+**Opened:** November 19, 2024. **Confidence:** High for the requested XML removal. **Reason:** The current article no longer refers to the legacy XML configuration file.
+
+The [cluster-management article's configuration section](../docs/orleans/implementation/cluster-management.md#configuration) now uses `siloBuilder.Configure<ClusterMembershipOptions>` and shows the option properties. A check of the complete article found no `OrleansConfiguration.xml` reference. The article distinguishes current and historical Orleans version pivots.
+
+**Suggested closure explanation:** The exact legacy-configuration reference has been replaced with options-based configuration. Coordinate with assignee `ReubenBond`; don't interpret closure as a new claim that every membership default or failure-detection estimate is identical across all pivots.
+
+### dotnet/docs#43781: Correct the Host.CreateApplicationBuilder configuration priority
+
+**Opened:** November 26, 2024. **Confidence:** High. **Reason:** The specific priority list now has the requested order.
+
+The [configuration overview](../docs/core/extensions/configuration.md) explicitly orders its defaults from highest to lowest priority and lists environment-specific `appsettings.Environment.json` before `appsettings.json`. It also explains that providers added later override earlier values. The reported inversion isn't present in the current `Host.CreateApplicationBuilder` list.
+
+**Suggested closure explanation:** The environment-specific JSON file now outranks the base JSON file in the exact list identified by the issue. Close as addressed; don't reverse provider-registration order or confuse this list with host-configuration callbacks.
+
+### dotnet/docs#43922: Document dotnet-coverage telemetry and opt-out
+
+**Opened:** December 10, 2024. **Confidence:** High for the documentation request. **Reason:** The tool article now links to a detailed, product-specific telemetry reference.
+
+The [dotnet-coverage Telemetry section](../docs/core/additional-tools/dotnet-coverage.md#telemetry) identifies collection beginning with version 18.10.0 and links to the [coverage-tools telemetry reference](https://learn.microsoft.com/visualstudio/test/microsoft-code-coverage-console-tool-telemetry). That live reference explicitly covers `dotnet-coverage`, enumerates data points, explains Boolean recording rather than verbatim paths/arguments, and documents both `DOTNET_COVERAGE_TELEMETRY_OPTOUT=1` and `DOTNET_CLI_TELEMETRY_OPTOUT=1`.
+
+**Suggested closure explanation:** The requested data description and opt-out instructions now exist and are linked from the tool page. Don't confuse `DOTNET_COVERAGE_NOLOGO` with a telemetry opt-out, infer that older versions collect the same schema, or offer a legal-compliance certification. No coverage command or telemetry transmission was needed to verify the documentation.
+
+### dotnet/docs#43958: Correct the blanket AnalysisLevel latest default
+
+**Opened:** December 13, 2024. **Confidence:** High for duplication, not completion. **Reason:** The older open issue already covers this exact property-reference error.
+
+The [dotnet/docs#29054 brief](issues-with-defined-fixes.md#dotnetdocs29054-state-analysislevel-defaults-by-target-framework-and-sdk) retains both the MSBuild property page and analysis overview. Its SDK 10.0.403 property-evaluation matrix reproduces target-dependent defaults and explicitly configured `latest`. The older issue remains open; the incorrect blanket wording isn't being treated as fixed.
+
+**Suggested closure explanation:** Consolidate with dotnet/docs#29054 rather than assign a second implementation for the same two-page correction. Preserve the supported-target/SDK/explicit-override acceptance matrix and the distinction between analyzer availability, enablement, and severity.
+
+### dotnet/docs#43966: Publish guidance for safe customer-code reproduction
+
+**Opened:** December 13, 2024. **Confidence:** Medium for repository ownership. **Reason:** The guidance has a maintained SDK-contributor home, and the discussion questions a second product-docs article.
+
+[dotnet/sdk#45456](https://github.com/dotnet/sdk/pull/45456) merged on January 30, 2025. The current [Executing Customer Code guide](https://github.com/dotnet/sdk/blob/main/documentation/general/ExecutingCustomerCode.md) contains the substantive contributor guidance, including design-time-build risks, isolated environments, credential precautions, and malicious-repro handling. In the complete issue discussion, a docs maintainer identifies repository/contributor guidance as the appropriate home, and the author accepts closure if the topic doesn't belong in product documentation.
+
+**Suggested closure explanation:** Recommend closure as contributor guidance with an existing canonical SDK home, subject to agreement from `gewarren`, `Forgind`, and `marcpopMSFT`. Preserve the final comment's cross-repository discoverability concern as an ownership/navigation decision; don't claim that visibility is already solved or that a second dotnet/docs article was approved. This recommendation isn't a security audit or an endorsement of absolute safety claims in the linked guide.

@@ -26,7 +26,7 @@ The XPath 1.0 Recommendation states that a collection that's the result of evalu
 
 However, when iterating through a collection returned by a LINQ to XML XPath axis method, the nodes in the collection are returned in document order. This is the case even when accessing the XPath axes where predicates are expressed in terms of reverse document order, such as `preceding` and `preceding-sibling`.
 
-By contrast, most of the LINQ to XML axes return collections in document order. However, two of them, <xref:System.Xml.Linq.XNode.Ancestors%2A> and <xref:System.Xml.Linq.XElement.AncestorsAndSelf%2A>, return collections in reverse document order. The following table enumerates the axes, and indicates the collection order for each:
+By contrast, most of the LINQ to XML axes return collections in document order. However, two of them, <xref:System.Xml.Linq.XNode.Ancestors*> and <xref:System.Xml.Linq.XElement.AncestorsAndSelf*>, return collections in reverse document order. The following table enumerates the axes, and indicates the collection order for each:
 
 |LINQ to XML axis|Ordering|
 |----------------------|--------------|
@@ -94,14 +94,14 @@ There are similar parallels for each of the XPath axes.
 
 |XPath axis|LINQ to XML axis|
 |----------------|----------------------|
-|child (the default axis)|<xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=nameWithType>|
-|Parent (..)|<xref:System.Xml.Linq.XObject.Parent%2A?displayProperty=nameWithType>|
-|attribute axis (@)|<xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=nameWithType><br /><br /> or<br /><br /> <xref:System.Xml.Linq.XElement.Attributes%2A?displayProperty=nameWithType>|
-|ancestor axis|<xref:System.Xml.Linq.XNode.Ancestors%2A?displayProperty=nameWithType>|
-|ancestor-or-self axis|<xref:System.Xml.Linq.XElement.AncestorsAndSelf%2A?displayProperty=nameWithType>|
-|descendant axis (//)|<xref:System.Xml.Linq.XContainer.Descendants%2A?displayProperty=nameWithType><br /><br /> or<br /><br /> <xref:System.Xml.Linq.XContainer.DescendantNodes%2A?displayProperty=nameWithType>|
-|descendant-or-self|<xref:System.Xml.Linq.XElement.DescendantsAndSelf%2A?displayProperty=nameWithType><br /><br /> or<br /><br /> <xref:System.Xml.Linq.XElement.DescendantNodesAndSelf%2A?displayProperty=nameWithType>|
-|following-sibling|<xref:System.Xml.Linq.XNode.ElementsAfterSelf%2A?displayProperty=nameWithType><br /><br /> or<br /><br /> <xref:System.Xml.Linq.XNode.NodesAfterSelf%2A?displayProperty=nameWithType>|
-|preceding-sibling|<xref:System.Xml.Linq.XNode.ElementsBeforeSelf%2A?displayProperty=nameWithType><br /><br /> or<br /><br /> <xref:System.Xml.Linq.XNode.NodesBeforeSelf%2A?displayProperty=nameWithType>|
+|child (the default axis)|<xref:System.Xml.Linq.XContainer.Elements*?displayProperty=nameWithType>|
+|Parent (..)|<xref:System.Xml.Linq.XObject.Parent*?displayProperty=nameWithType>|
+|attribute axis (@)|<xref:System.Xml.Linq.XElement.Attribute*?displayProperty=nameWithType><br /><br /> or<br /><br /> <xref:System.Xml.Linq.XElement.Attributes*?displayProperty=nameWithType>|
+|ancestor axis|<xref:System.Xml.Linq.XNode.Ancestors*?displayProperty=nameWithType>|
+|ancestor-or-self axis|<xref:System.Xml.Linq.XElement.AncestorsAndSelf*?displayProperty=nameWithType>|
+|descendant axis (//)|<xref:System.Xml.Linq.XContainer.Descendants*?displayProperty=nameWithType><br /><br /> or<br /><br /> <xref:System.Xml.Linq.XContainer.DescendantNodes*?displayProperty=nameWithType>|
+|descendant-or-self|<xref:System.Xml.Linq.XElement.DescendantsAndSelf*?displayProperty=nameWithType><br /><br /> or<br /><br /> <xref:System.Xml.Linq.XElement.DescendantNodesAndSelf*?displayProperty=nameWithType>|
+|following-sibling|<xref:System.Xml.Linq.XNode.ElementsAfterSelf*?displayProperty=nameWithType><br /><br /> or<br /><br /> <xref:System.Xml.Linq.XNode.NodesAfterSelf*?displayProperty=nameWithType>|
+|preceding-sibling|<xref:System.Xml.Linq.XNode.ElementsBeforeSelf*?displayProperty=nameWithType><br /><br /> or<br /><br /> <xref:System.Xml.Linq.XNode.NodesBeforeSelf*?displayProperty=nameWithType>|
 |following|No direct equivalent.|
 |preceding|No direct equivalent.|

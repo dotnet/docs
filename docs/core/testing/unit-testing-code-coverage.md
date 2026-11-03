@@ -1,9 +1,7 @@
 ---
 title: Use code coverage for unit testing
 description: Learn how to use the code coverage capabilities for .NET unit tests.
-author: IEvangelist
-ms.author: dapine
-ms.date: 10/22/2025
+ms.date: 03/04/2026
 ai-usage: ai-assisted
 ---
 
@@ -151,7 +149,7 @@ dotnet sln XUnit.Coverage.sln add (ls **/*.csproj) --in-root
 Build the solution using the [`dotnet build`](../tools/dotnet-build.md) command:
 
 ```dotnetcli
-dotnet build
+dotnet build XUnit.Coverage.sln
 ```
 
 If the build is successful, you've created the three projects, appropriately referenced projects and packages, and updated the source code correctly. Well done!
@@ -160,7 +158,7 @@ If the build is successful, you've created the three projects, appropriately ref
 
 There are two types of code coverage tools:
 
-- **DataCollectors:** DataCollectors monitor test execution and collect information about test runs. They report the collected information in various output formats, such as XML and JSON. For more information, see [your first DataCollector](https://github.com/Microsoft/vstest-docs/blob/main/docs/extensions/datacollector.md).
+- **DataCollectors:** DataCollectors monitor test execution and collect information about test runs. They report the collected information in various output formats, such as XML and JSON. For more information, see [your first DataCollector](https://github.com/microsoft/vstest/blob/main/docs/extensions/datacollector.md).
 - **Report generators:** Use data collected from test runs to generate reports, often as styled HTML.
 
 In this section, the focus is on data collector tools.
@@ -285,10 +283,7 @@ dotnet tool install -g dotnet-reportgenerator-globaltool
 Run the tool and provide the desired options, given the output *coverage.cobertura.xml* file from the previous test run.
 
 ```console
-reportgenerator
--reports:"Path\To\TestProject\TestResults\{guid}\coverage.cobertura.xml"
--targetdir:"coveragereport"
--reporttypes:Html
+reportgenerator -reports:"Path\To\TestProject\TestResults\{guid}\coverage.cobertura.xml" -targetdir:"coveragereport" -reporttypes:Html
 ```
 
 After running this command, an HTML file represents the generated report.

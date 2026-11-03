@@ -1,8 +1,9 @@
 ---
 title: dotnet-gcdump diagnostic tool - .NET CLI
 description: Learn how to install and use dotnet-gcdump CLI tool to collect GC (Garbage Collector) dumps of live .NET processes using the .NET EventPipe.
-ms.date: 06/03/2025
+ms.date: 08/24/2026
 ms.topic: reference
+ai-usage: ai-assisted
 ---
 # Heap analysis tool (dotnet-gcdump)
 
@@ -127,12 +128,48 @@ dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-f
   
   By default, dotnet-gcdump listens at the specified address. You can request dotnet-gcdump to connect instead by appending `,connect` after the address. For example, `--diagnostic-port /foo/tool1.socket,connect` will connect to a .NET runtime process that's listening to the `/foo/tool1.socket` Unix domain socket.
 
-- **`--dsrouter {ios|ios-sim|android|android-emu}**
+- **`--dsrouter <ios|ios-sim|android|android-emu>`**
 
   Starts [dotnet-dsrouter](dotnet-dsrouter.md) and connects to it. Requires [dotnet-dsrouter](dotnet-dsrouter.md) to be installed. Run `dotnet-dsrouter -h` for more information.
 
 > [!NOTE]
 > To collect a GC dump using `dotnet-gcdump`, it needs to be run as the same user as the user running target process or as root. Otherwise, the tool will fail to establish a connection with the target process.
+
+### Examples
+
+- Collect a GC dump from a process with process ID 1902:
+
+  ```dotnetcli
+  > dotnet-gcdump collect --process-id 1902
+  Writing gcdump to './20250601_121500_1902.gcdump'...
+      Finished writing 5763432 bytes.
+  ```
+
+- Collect a GC dump from a process with process ID 1902 and save it to a custom path:
+
+  ```dotnetcli
+  > dotnet-gcdump collect --process-id 1902 --output ./myapp-dump.gcdump
+  Writing gcdump to './myapp-dump.gcdump'...
+      Finished writing 5763432 bytes.
+  ```
+
+- Collect a GC dump from a process by name with verbose output:
+
+  ```dotnetcli
+  > dotnet-gcdump collect --name my-aspnet-server --verbose
+  [20:54:11] Starting gcdump collection...
+  [20:54:11] Triggering GC...
+  [20:54:12] Writing gcdump to './20250601_205412_4521.gcdump'...
+      Finished writing 5763432 bytes.
+  ```
+
+- Collect a GC dump with a custom timeout of 60 seconds:
+
+  ```dotnetcli
+  > dotnet-gcdump collect --process-id 1902 --timeout 60
+  Writing gcdump to './20250601_121500_1902.gcdump'...
+      Finished writing 5763432 bytes.
+  ```
 
 ## `dotnet-gcdump ps`
 
@@ -179,6 +216,32 @@ dotnet-gcdump report [-h|--help] [-p|--process-id <pid>] [-t|--report-type <Heap
 
   The type of report to generate. Available options: heapstat (default).
 
+### Examples
+
+- Generate a heap statistics report from a previously created `.gcdump` file:
+
+  ```dotnetcli
+  > dotnet-gcdump report ./20250601_121500_1902.gcdump
+  ```
+
+  The output displays type statistics:
+
+  ```output
+            Size (Bytes) Count       Type
+          ============== =====       ====
+          1,603,588,000  22,000,000  System.String
+            201,096,000   2,010,000  System.Byte[]
+            100,000,000   1,000,000  System.Char[]
+             50,000,000     500,000  System.Object[]
+             25,000,000     250,000  MyApp.Customer
+  ```
+
+- Generate a heap statistics report from a running process with process ID 1902:
+
+  ```dotnetcli
+  > dotnet-gcdump report --process-id 1902
+  ```
+
 ## Troubleshoot
 
 - There is no type information in the gcdump.
@@ -191,7 +254,7 @@ dotnet-gcdump report [-h|--help] [-p|--process-id <pid>] [-t|--report-type <Heap
 
 - `dotnet-gcdump` is unable to generate a `.gcdump` file due to missing information, for example, **[Error] Exception during gcdump: System.ApplicationException: ETL file shows the start of a heap dump but not its completion.**. Or, the `.gcdump` file doesn't include the entire heap.
 
-   `dotnet-gcdump` works by collecting a trace of events emitted by the garbage collector during an induced generation 2 collection. If the heap is sufficiently large, or there isn't enough memory to scale the eventing buffers, then the events required to reconstruct the heap graph from the trace may be dropped. In this case, to diagnose issues with the heap, it's recommended to collect a dump of the process.
+   `dotnet-gcdump` works by collecting events emitted by the garbage collector during an induced generation 2 collection. Versions of dotnet-gcdump that support blocking buffering use it automatically when the target runtime is .NET 11 or later. This prevents event loss when the event buffers fill. On earlier runtimes, collection uses lossy buffering, so large heaps can produce incomplete GC dumps. Events can still be dropped if the runtime can't allocate enough memory, even with blocking buffering. If the GC dump is incomplete, collect a process dump instead.
 
 - `dotnet-gcdump` appears to cause an Out Of Memory issue in a memory constrained environment.
 

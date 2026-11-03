@@ -1,12 +1,16 @@
 ---
 description: "Learn more about: Code Access Security and ADO.NET. Whether the code is allowed to run or not depends on the code's origin or other aspects of its identity."
 title: "Code Access Security"
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
 ---
 # Code access security and ADO.NET
+
+> [!IMPORTANT]
+> Do not use `System.Data.SqlClient` for new development. Use [Microsoft.Data.SqlClient](/sql/connect/ado-net/introduction-microsoft-data-sqlclient-namespace) for new SQL Server data-access code. The examples on this page retain `System.Data.SqlClient` because they demonstrate the built-in .NET Framework provider's code access security permissions. Code access security isn't supported in modern .NET.
 
 .NET Framework offers role-based security as well as code access security (CAS), both of which are implemented using a common infrastructure supplied by the common language runtime (CLR). In the world of unmanaged code, most applications execute with the permissions of the user or principal. As a result, computer systems can be damaged and private data compromised when malicious or error-filled software is run by a user with elevated privileges.
 
@@ -41,7 +45,7 @@ To determine whether code is authorized to access a resource or perform an opera
 
  Implementing both role-based security and code-accessed security (CAS) enhances overall security for your application. Role-based security can be based on a Windows account or a custom identity, making information about the security principal available to the current thread. In addition, applications are often required to provide access to data or resources based on credentials supplied by the user. Typically, such applications check the role of a user and provide access to resources based on those roles.
 
- Role-based security enables a component to identify current users and their associated roles at run time. This information is then mapped using a CAS policy to determine the set of permissions granted at run time. For a specified application domain, the host can change the default role-based security policy and set a default security principal that represents a user and the roles associated with that user.
+ Role-based security enables a component to identify current users and their associated roles at runtime. This information is then mapped using a CAS policy to determine the set of permissions granted at runtime. For a specified application domain, the host can change the default role-based security policy and set a default security principal that represents a user and the roles associated with that user.
 
  The CLR uses permissions to implement its mechanism for enforcing restrictions on managed code. Role-based security permissions provide a mechanism for discovering whether a user (or the agent acting on the user's behalf) has a particular identity or is a member of a specified role. For more information, see [Security Permissions](/previous-versions/dotnet/netframework-4.0/5ba4k1c5(v=vs.100)).
 
@@ -158,6 +162,8 @@ To determine whether code is authorized to access a resource or perform an opera
  The following is a sample permission set for the .NET Framework Data Provider for SQL Server in a partially trusted scenario. For information on creating custom permission sets, see [Configuring Permission Sets Using Caspol.exe](/previous-versions/dotnet/netframework-4.0/4ybs46y6(v=vs.100)).
 
 ```xml
+<!-- Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+     This permission set targets the built-in .NET Framework SQL provider. -->
 <PermissionSet class="System.Security.NamedPermissionSet"
   version="1"
   Name="CustomLocalIntranet"

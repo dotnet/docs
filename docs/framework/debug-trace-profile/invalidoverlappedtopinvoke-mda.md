@@ -51,7 +51,7 @@ The `invalidOverlappedToPinvoke` managed debugging assistant (MDA) is activated 
 
 ## Resolution
 
- Use an <xref:System.Threading.Overlapped> object, calling the <xref:System.Threading.Overlapped.Pack%2A> method to get a <xref:System.Threading.NativeOverlapped> structure that can be passed to the function. If the <xref:System.AppDomain> unloads, the CLR waits until the asynchronous operation completes before freeing the pointer.
+ Use an <xref:System.Threading.Overlapped> object, calling the <xref:System.Threading.Overlapped.Pack*> method to get a <xref:System.Threading.NativeOverlapped> structure that can be passed to the function. If the <xref:System.AppDomain> unloads, the CLR waits until the asynchronous operation completes before freeing the pointer.
 
 ## Effect on the Runtime
 
@@ -77,4 +77,4 @@ The `invalidOverlappedToPinvoke` managed debugging assistant (MDA) is activated 
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../interop/interop-marshalling.md)
+- [Interop Marshaling](../../standard/native-interop/interop-marshalling.md)

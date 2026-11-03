@@ -3,7 +3,7 @@ title: Install and manage SDK templates
 description: Learn how to install .NET templates on Windows, Linux, and macOS. Templates are installed from NuGet, a NuGet package file, or a file system directory.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/08/2025
+ms.date: 04/23/2026
 ms.custom: linux-related-content
 zone_pivot_groups: operating-systems-set-one
 no-loc: ['dotnet new', 'dotnet nuget add source']
@@ -31,11 +31,14 @@ To install a template package from the default NuGet feed, use the `dotnet new i
 dotnet new install Microsoft.DotNet.Web.Spa.ProjectTemplates
 ```
 
-To install a template package from the default NuGet feed with a specific version, use the `dotnet new install {package-id}::{version}` command:
+To install a template package from the default NuGet feed with a specific version, use the `dotnet new install {package-id}@{version}` command:
 
 ```dotnetcli
-dotnet new install Microsoft.DotNet.Web.Spa.ProjectTemplates::2.2.6
+dotnet new install Microsoft.DotNet.Web.Spa.ProjectTemplates@2.2.6
 ```
+
+> [!NOTE]
+> The colon separator `::` was depracated in favor of the `@` character in .NET 9.0.200 SDK.
 
 ### Local NuGet package
 

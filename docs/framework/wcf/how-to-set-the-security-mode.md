@@ -45,7 +45,7 @@ For more information, see WCF security, see [Security Overview](./feature-detail
 
 ## Setting the ClientCredentialType Property
 
-Setting the mode to one of the three values determines how you set the `ClientCredentialType` property. For example, using the <xref:System.ServiceModel.WSHttpBinding> class, setting the mode to `Transport` means you must set the <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A> property of the <xref:System.ServiceModel.HttpTransportSecurity> class to an appropriate value.
+Setting the mode to one of the three values determines how you set the `ClientCredentialType` property. For example, using the <xref:System.ServiceModel.WSHttpBinding> class, setting the mode to `Transport` means you must set the <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType> property of the <xref:System.ServiceModel.HttpTransportSecurity> class to an appropriate value.
 
 ### To set the ClientCredentialType property for Transport mode
 

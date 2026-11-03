@@ -24,7 +24,7 @@ The following CER-related APIs are obsolete:
 However, the following CER-related APIs are *not* obsolete:
 
 - <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareDelegate(System.Delegate)?displayProperty=nameWithType>
-- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod%2A?displayProperty=nameWithType>
+- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod*?displayProperty=nameWithType>
 - <xref:System.Runtime.ConstrainedExecution.CriticalFinalizerObject?displayProperty=nameWithType>
 
 ## Workarounds

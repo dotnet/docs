@@ -190,7 +190,7 @@ The following procedures describe how to access a Windows Communication Foundati
     }  
     ```  
   
-     Notice in the `IOneWayCalculator` interface that the one-way service operations have the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> attribute set to `true` and the request-reply service operation has the attribute set to the default value, `false`. Also notice the `OneWayCalculatorClient` class. This is the class that you will use to call the service.  
+     Notice in the `IOneWayCalculator` interface that the one-way service operations have the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay> attribute set to `true` and the request-reply service operation has the attribute set to the default value, `false`. Also notice the `OneWayCalculatorClient` class. This is the class that you will use to call the service.  
   
 2. Create the client object.  
   

@@ -2,7 +2,7 @@
 title: "Type Relationships in LINQ Query Operations"
 description: Learn how types of variables in a LINQ query relate to each other. LINQ query operations are strongly typed in the data source, in the query, and in execution.
 ms.date: 12/13/2023
-helpviewer_keywords: 
+helpviewer_keywords:
   - "inferring type information [LINQ in C#]"
   - "data sources [LINQ in C#], type relationships"
   - "queries [LINQ in C#], type relationships"
@@ -60,14 +60,14 @@ Although you should understand the type relationships in a query operation, you 
 
 LINQ queries are based on generic types. You do not need an in-depth knowledge of generics before you can start writing queries. However, you may want to understand two basic concepts:
 
-1. When you create an instance of a generic collection class such as <xref:System.Collections.Generic.List%601>, you replace the "T" with the type of objects that the list will hold. For example, a list of strings is expressed as `List<string>`, and a list of `Customer` objects is expressed as `List<Customer>`. A generic list is strongly typed and provides many benefits over collections that store their elements as <xref:System.Object>. If you try to add a `Customer` to a `List<string>`, you will get an error at compile time. It is easy to use generic collections because you do not have to perform run-time type-casting.
-1. <xref:System.Collections.Generic.IEnumerable%601> is the interface that enables generic collection classes to be enumerated by using the `foreach` statement. Generic collection classes support <xref:System.Collections.Generic.IEnumerable%601> just as non-generic collection classes such as <xref:System.Collections.ArrayList> support <xref:System.Collections.IEnumerable>.
+1. When you create an instance of a generic collection class such as <xref:System.Collections.Generic.List`1>, you replace the "T" with the type of objects that the list will hold. For example, a list of strings is expressed as `List<string>`, and a list of `Customer` objects is expressed as `List<Customer>`. A generic list is strongly typed and provides many benefits over collections that store their elements as <xref:System.Object>. If you try to add a `Customer` to a `List<string>`, you will get an error at compile time. It is easy to use generic collections because you do not have to perform run-time type-casting.
+1. <xref:System.Collections.Generic.IEnumerable`1> is the interface that enables generic collection classes to be enumerated by using the `foreach` statement. Generic collection classes support <xref:System.Collections.Generic.IEnumerable`1> just as non-generic collection classes such as <xref:System.Collections.ArrayList> support <xref:System.Collections.IEnumerable>.
 
 For more information about generics, see [Generics](../../fundamentals/types/generics.md).
 
 ## IEnumerable<T\> variables in LINQ queries
 
-LINQ query variables are typed as <xref:System.Collections.Generic.IEnumerable%601> or a derived type such as <xref:System.Linq.IQueryable%601>. When you see a query variable that is typed as `IEnumerable<Customer>`, it just means that the query, when it is executed, will produce a sequence of zero or more `Customer` objects.
+LINQ query variables are typed as <xref:System.Collections.Generic.IEnumerable`1> or a derived type such as <xref:System.Linq.IQueryable`1>. When you see a query variable that is typed as `IEnumerable<Customer>`, it just means that the query, when it is executed, will produce a sequence of zero or more `Customer` objects.
 
 :::code language="csharp" source="./snippets/SnippetApp/TypeRelationships.cs" id="ExplicitType":::
 

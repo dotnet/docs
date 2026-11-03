@@ -8,9 +8,9 @@ ms.assetid: 16c8e869-1791-4cf5-9244-3d3c738f60ec
 
 Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain name.
 
-[**\<configuration>**](../configuration-element.md)
-&nbsp;&nbsp;[**\<uri>**](uri-element-uri-settings.md)
-&nbsp;&nbsp;&nbsp;&nbsp;**\<idn>**
+[`<configuration>`](../configuration-element.md)
+&nbsp;&nbsp;[`<uri>`](uri-element-uri-settings.md)
+&nbsp;&nbsp;&nbsp;&nbsp;`<idn>`
 
 ## Syntax
 

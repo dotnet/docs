@@ -7,7 +7,7 @@ ms.date: 03/18/2024
 
 The `Read()` and `ReadAsync()` methods on <xref:System.IO.Compression.DeflateStream>, <xref:System.IO.Compression.GZipStream>, and <xref:System.Security.Cryptography.CryptoStream> might no longer return as many bytes as were requested.
 
-Previously, <xref:System.IO.Compression.DeflateStream>, <xref:System.IO.Compression.GZipStream>, and <xref:System.Security.Cryptography.CryptoStream> diverged from typical <xref:System.IO.Stream.Read%2A?displayProperty=nameWithType> and <xref:System.IO.Stream.ReadAsync%2A?displayProperty=nameWithType> behavior in the following two ways, both of which this change addresses:
+Previously, <xref:System.IO.Compression.DeflateStream>, <xref:System.IO.Compression.GZipStream>, and <xref:System.Security.Cryptography.CryptoStream> diverged from typical <xref:System.IO.Stream.Read*?displayProperty=nameWithType> and <xref:System.IO.Stream.ReadAsync*?displayProperty=nameWithType> behavior in the following two ways, both of which this change addresses:
 
 - They didn't complete the read operation until either the buffer passed to the read operation was completely filled or the end of the stream was reached.
 - As wrapper streams, they didn't delegate zero-length buffer functionality to the stream they wrap.
@@ -114,14 +114,14 @@ In general, code should:
 
 ## Affected APIs
 
-- <xref:System.IO.Compression.DeflateStream.Read%2A?displayProperty=fullName>
-- <xref:System.IO.Compression.DeflateStream.ReadAsync%2A?displayProperty=fullName>
+- <xref:System.IO.Compression.DeflateStream.Read*?displayProperty=fullName>
+- <xref:System.IO.Compression.DeflateStream.ReadAsync*?displayProperty=fullName>
 - <xref:System.IO.Compression.DeflateStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)?displayProperty=fullName>
-- <xref:System.IO.Compression.GZipStream.Read%2A?displayProperty=fullName>
-- <xref:System.IO.Compression.GZipStream.ReadAsync%2A?displayProperty=fullName>
+- <xref:System.IO.Compression.GZipStream.Read*?displayProperty=fullName>
+- <xref:System.IO.Compression.GZipStream.ReadAsync*?displayProperty=fullName>
 - <xref:System.IO.Compression.GZipStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)?displayProperty=fullName>
-- <xref:System.Security.Cryptography.CryptoStream.Read%2A?displayProperty=fullName>
-- <xref:System.Security.Cryptography.CryptoStream.ReadAsync%2A?displayProperty=fullName>
+- <xref:System.Security.Cryptography.CryptoStream.Read*?displayProperty=fullName>
+- <xref:System.Security.Cryptography.CryptoStream.ReadAsync*?displayProperty=fullName>
 - <xref:System.Security.Cryptography.CryptoStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)?displayProperty=fullName>
 
 ## See also

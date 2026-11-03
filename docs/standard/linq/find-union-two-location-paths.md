@@ -10,14 +10,14 @@ ms.topic: how-to
 
 # How to find a union of two location paths (LINQ to XML)
 
-This article shows how to use <xref:System.Xml.XPath.Extensions.XPathSelectElements%2A> to find the union of the results of two XPath location paths, and how to use the <xref:System.Linq.Enumerable.Concat%2A> standard query operator to do the same thing.
+This article shows how to use <xref:System.Xml.XPath.Extensions.XPathSelectElements*> to find the union of the results of two XPath location paths, and how to use the <xref:System.Linq.Enumerable.Concat*> standard query operator to do the same thing.
 
 ## Example: Find all `Category` and `Price` elements and concatenate them
 
 This example finds all of the `Category` elements and all of the `Price` elements in XML document [Sample XML file: Numerical data](sample-xml-file-numerical-data.md), and concatenates them into a single collection. The XPath expression is `//Category|//Price`.
 
 > [!NOTE]
-> The LINQ to XML query calls <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> to put the results in document order. The XPath expression results are also in document order.
+> The LINQ to XML query calls <xref:System.Xml.Linq.Extensions.InDocumentOrder*> to put the results in document order. The XPath expression results are also in document order.
 
 ```csharp
 XDocument data = XDocument.Load("Data.xml");

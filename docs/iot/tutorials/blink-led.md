@@ -2,7 +2,7 @@
 title: Blink an LED
 description: Learn how to blink an LED with the .NET IoT Libraries.
 author: camsoper
-ms.date: 07/31/2024
+ms.date: 03/07/2026
 ms.topic: tutorial
 ---
 
@@ -46,7 +46,7 @@ The image above depicts the following connections:
 
 Complete the following steps in your preferred development environment:
 
-1. Create a new .NET Console App using either the [.NET CLI](../../core/tools/dotnet-new.md) or [Visual Studio](../../core/tutorials/with-visual-studio.md). Name it *BlinkTutorial*.
+1. Create a new .NET Console App using either the [.NET CLI](../../core/tools/dotnet-new.md) or [Visual Studio](../../core/tutorials/create-console-app.md). Name it *BlinkTutorial*.
 
     ```dotnetcli
     dotnet new console -o BlinkTutorial

@@ -6,7 +6,7 @@ ms.assetid: fe16ff50-7156-4499-9c32-13d8a79dc100
 ---
 # Custom Service Host
 
-The [CustomServiceHost sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how to use a custom derivative of the <xref:System.ServiceModel.ServiceHost> class to alter the run-time behavior of a service. This approach provides a reusable alternative to configuring a large number of services in a common way. The sample also demonstrates how to use the <xref:System.ServiceModel.Activation.ServiceHostFactory> class to use a custom ServiceHost in the Internet Information Services (IIS) or Windows Process Activation Service (WAS) hosting environment.
+The [CustomServiceHost sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how to use a custom derivative of the <xref:System.ServiceModel.ServiceHost> class to alter the runtime behavior of a service. This approach provides a reusable alternative to configuring a large number of services in a common way. The sample also demonstrates how to use the <xref:System.ServiceModel.Activation.ServiceHostFactory> class to use a custom ServiceHost in the Internet Information Services (IIS) or Windows Process Activation Service (WAS) hosting environment.
 
 ## About the scenario
 
@@ -19,7 +19,7 @@ Enabling metadata publishing for a large number of services involves adding the 
 
 ## Implementing a custom ServiceHost
 
-The <xref:System.ServiceModel.ServiceHost> class exposes several useful virtual methods that inheritors can override to alter the run-time behavior of a service. For example, the `ApplyConfiguration`() method reads service configuration information from the configuration store and alters the host's <xref:System.ServiceModel.Description.ServiceDescription> accordingly. The default implementation reads configuration from the application's configuration file. Custom implementations can override `ApplyConfiguration`() to further alter the <xref:System.ServiceModel.Description.ServiceDescription> using imperative code or even replace the default configuration store entirely. For example, to read a service's endpoint configuration from a database instead of the application's configuration file.
+The <xref:System.ServiceModel.ServiceHost> class exposes several useful virtual methods that inheritors can override to alter the runtime behavior of a service. For example, the `ApplyConfiguration`() method reads service configuration information from the configuration store and alters the host's <xref:System.ServiceModel.Description.ServiceDescription> accordingly. The default implementation reads configuration from the application's configuration file. Custom implementations can override `ApplyConfiguration`() to further alter the <xref:System.ServiceModel.Description.ServiceDescription> using imperative code or even replace the default configuration store entirely. For example, to read a service's endpoint configuration from a database instead of the application's configuration file.
 
 In this sample, we want to build a custom ServiceHost that adds the ServiceMetadataBehavior (which enables metadata publishing) even if this behavior is not explicitly added in the service's configuration file. To accomplish this, create a new class that inherits from <xref:System.ServiceModel.ServiceHost> and overrides `ApplyConfiguration`().
 
@@ -146,7 +146,7 @@ Here we have added an additional `Factory` attribute to the `@ServiceHost` direc
 
 ## Running the sample
 
-Although this sample does provide a fully functional client and service implementation, the point of the sample is to illustrate how to alter a service's run-time behavior by means of a custom host., do the following steps:
+Although this sample does provide a fully functional client and service implementation, the point of the sample is to illustrate how to alter a service's runtime behavior by means of a custom host., do the following steps:
 
 ### Observe the effect of the custom host
 

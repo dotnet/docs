@@ -21,15 +21,15 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ## Prerequisites
 
-* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the ".NET Desktop Development" workload installed.
+* [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads/) with the **.NET Desktop Development** workload installed.
 
 * [The phone-calls.csv dataset](https://github.com/dotnet/machinelearning-samples/blob/main/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrEntireDetection/Data/phone-calls.csv).
 
 ## Create a console application
 
-1. Create a C# **Console Application** called "PhoneCallsAnomalyDetection". Click the **Next** button.
+1. Create a C# **Console Application** called "PhoneCallsAnomalyDetection". Select **Next**.
 
-2. Choose .NET 8 as the framework to use. Click the **Create** button.
+2. Choose .NET 8 as the target framework. Select **Create**.
 
 3. Create a directory named *Data* in your project to save your data set files.
 
@@ -117,7 +117,7 @@ Data in ML.NET is represented as an [IDataView interface](xref:Microsoft.ML.IDat
 
     [!code-csharp[LoadData](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#LoadData "loading dataset")]
 
-    The [LoadFromTextFile()](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%60%601%28Microsoft.ML.DataOperationsCatalog,System.String,System.Char,System.Boolean,System.Boolean,System.Boolean,System.Boolean%29) defines the data schema and reads in the file. It takes in the data path variables and returns an `IDataView`.
+    The [LoadFromTextFile()](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile``1%28Microsoft.ML.DataOperationsCatalog,System.String,System.Char,System.Boolean,System.Boolean,System.Boolean,System.Boolean%29) defines the data schema and reads in the file. It takes in the data path variables and returns an `IDataView`.
 
 ## Time series anomaly detection
 
@@ -142,7 +142,7 @@ In the first step, you invoke the `DetectSeasonality` function to determine the 
     }
     ```
 
-2. Use the <xref:Microsoft.ML.TimeSeriesCatalog.DetectSeasonality%2A> function to detect period. Add it to the `DetectPeriod` method with the following code:
+2. Use the <xref:Microsoft.ML.TimeSeriesCatalog.DetectSeasonality*> function to detect period. Add it to the `DetectPeriod` method with the following code:
 
     [!code-csharp[DetectSeasonality](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#DetectSeasonality)]
 
@@ -168,7 +168,7 @@ Period of the series is: 7.
 
 ## Detect Anomaly
 
-In this step, you use the <xref:Microsoft.ML.TimeSeriesCatalog.DetectEntireAnomalyBySrCnn%2A> method to find anomalies.
+In this step, you use the <xref:Microsoft.ML.TimeSeriesCatalog.DetectEntireAnomalyBySrCnn*> method to find anomalies.
 
 ### Create the DetectAnomaly method
 

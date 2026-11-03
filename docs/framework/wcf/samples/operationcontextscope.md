@@ -11,11 +11,11 @@ The [OperationContextScope sample](https://github.com/dotnet/samples/tree/main/f
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
 
-The sample demonstrates how a client can send additional information as a <xref:System.ServiceModel.Channels.MessageHeader> using <xref:System.ServiceModel.OperationContextScope>. An <xref:System.ServiceModel.OperationContextScope> object is created by scoping it to a channel. Headers that must be translated to the remote service can be added to the <xref:System.ServiceModel.OperationContext.OutgoingMessageHeaders%2A> collection. Headers added to this collection can be retrieved on the service by accessing <xref:System.ServiceModel.OperationContext.IncomingMessageHeaders%2A>. Its calls are made on multiple channels and then the headers added to the client only apply to the channel that was used to create the <xref:System.ServiceModel.OperationContextScope>.
+The sample demonstrates how a client can send additional information as a <xref:System.ServiceModel.Channels.MessageHeader> using <xref:System.ServiceModel.OperationContextScope>. An <xref:System.ServiceModel.OperationContextScope> object is created by scoping it to a channel. Headers that must be translated to the remote service can be added to the <xref:System.ServiceModel.OperationContext.OutgoingMessageHeaders*> collection. Headers added to this collection can be retrieved on the service by accessing <xref:System.ServiceModel.OperationContext.IncomingMessageHeaders*>. Its calls are made on multiple channels and then the headers added to the client only apply to the channel that was used to create the <xref:System.ServiceModel.OperationContextScope>.
 
 ## MessageHeaderReader
 
-This is the sample service that receives a message from the client and tries to look up the header in the <xref:System.ServiceModel.OperationContext.IncomingMessageHeaders%2A> collection. The client passes the GUID that it sent in the header and the service retrieves the custom header and, if present, compares it with the GUID passed as the argument by the client.
+This is the sample service that receives a message from the client and tries to look up the header in the <xref:System.ServiceModel.OperationContext.IncomingMessageHeaders*> collection. The client passes the GUID that it sent in the header and the service retrieves the custom header and, if present, compares it with the GUID passed as the argument by the client.
 
 ```csharp
 public bool RetrieveHeader(string guid)
@@ -61,7 +61,7 @@ MessageHeaderReaderClient client1 = new MessageHeaderReaderClient();
 MessageHeaderReaderClient client2 = new MessageHeaderReaderClient();
 ```
 
-Client then creates an OperationContextScope and scopes it to `client1`. It adds a <xref:System.ServiceModel.Channels.MessageHeader> to <xref:System.ServiceModel.OperationContext.OutgoingMessageHeaders%2A> and invokes one call on both clients. It ensures that the header is sent only on `client1` and not on `client2` by checking the return value from the `RetrieveHeader` call.
+Client then creates an OperationContextScope and scopes it to `client1`. It adds a <xref:System.ServiceModel.Channels.MessageHeader> to <xref:System.ServiceModel.OperationContext.OutgoingMessageHeaders*> and invokes one call on both clients. It ensures that the header is sent only on `client1` and not on `client2` by checking the return value from the `RetrieveHeader` call.
 
 ```csharp
 using (new OperationContextScope(client1.InnerChannel))

@@ -5,7 +5,7 @@ ms.date: 08/01/2024
 ---
 # Some X509Certificate2 and X509Certificate constructors are obsolete
 
-The constructors on <xref:System.Security.Cryptography.X509Certificates.X509Certificate> and <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> that accept content as a `byte[]`, `ReadOnlySpan<byte>`, or a `string` file path are obsolete, starting in .NET 9. The <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Import%2A> methods on X509Certificate2Collection are also obsolete. Calling them in code generates warning `SYSLIB0057` at compile time.
+The constructors on <xref:System.Security.Cryptography.X509Certificates.X509Certificate> and <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> that accept content as a `byte[]`, `ReadOnlySpan<byte>`, or a `string` file path are obsolete, starting in .NET 9. The <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Import*> methods on X509Certificate2Collection are also obsolete. Calling them in code generates warning `SYSLIB0057` at compile time.
 
 ## Previous behavior
 

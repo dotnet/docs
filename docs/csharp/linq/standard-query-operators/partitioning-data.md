@@ -19,11 +19,11 @@ The standard query operator methods that partition sequences are listed in the f
 
 | Method names | Description | C# query expression syntax | More information |
 |--|--|--|--|
-| Skip | Skips elements up to a specified position in a sequence. | Not applicable. | <xref:System.Linq.Enumerable.Skip%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Skip%2A?displayProperty=nameWithType> |
-| SkipWhile | Skips elements based on a predicate function until an element doesn't satisfy the condition. | Not applicable. | <xref:System.Linq.Enumerable.SkipWhile%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.SkipWhile%2A?displayProperty=nameWithType> |
-| Take | Takes elements up to a specified position in a sequence. | Not applicable. | <xref:System.Linq.Enumerable.Take%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Take%2A?displayProperty=nameWithType> |
-| TakeWhile | Takes elements based on a predicate function until an element doesn't satisfy the condition. | Not applicable. | <xref:System.Linq.Enumerable.TakeWhile%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.TakeWhile%2A?displayProperty=nameWithType> |
-| Chunk | Splits the elements of a sequence into chunks of a specified maximum size. | Not applicable. | <xref:System.Linq.Enumerable.Chunk%2A?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Chunk%2A?displayProperty=nameWithType> |
+| Skip | Skips elements up to a specified position in a sequence. | Not applicable. | <xref:System.Linq.Enumerable.Skip*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Skip*?displayProperty=nameWithType> |
+| SkipWhile | Skips elements based on a predicate function until an element doesn't satisfy the condition. | Not applicable. | <xref:System.Linq.Enumerable.SkipWhile*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.SkipWhile*?displayProperty=nameWithType> |
+| Take | Takes elements up to a specified position in a sequence. | Not applicable. | <xref:System.Linq.Enumerable.Take*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Take*?displayProperty=nameWithType> |
+| TakeWhile | Takes elements based on a predicate function until an element doesn't satisfy the condition. | Not applicable. | <xref:System.Linq.Enumerable.TakeWhile*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.TakeWhile*?displayProperty=nameWithType> |
+| Chunk | Splits the elements of a sequence into chunks of a specified maximum size. | Not applicable. | <xref:System.Linq.Enumerable.Chunk*?displayProperty=nameWithType><br /><xref:System.Linq.Queryable.Chunk*?displayProperty=nameWithType> |
 
 All the following examples use <xref:System.Linq.Enumerable.Range(System.Int32,System.Int32)?displayProperty=nameWithType> to generate a sequence of numbers from 0 through 7.
 

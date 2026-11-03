@@ -49,10 +49,10 @@ If your regular expression has a hidden bug, fix it. If you had a workaround for
 
 ## Affected APIs
 
-- <xref:System.Text.RegularExpressions.Regex.Count%2A?displayProperty=fullName>
-- <xref:System.Text.RegularExpressions.Regex.EnumerateMatches%2A?displayProperty=fullName>
-- <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=fullName>
-- <xref:System.Text.RegularExpressions.Regex.Match%2A?displayProperty=fullName>
-- <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=fullName>
-- <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=fullName>
-- <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName>
+- <xref:System.Text.RegularExpressions.Regex.Count*?displayProperty=fullName>
+- <xref:System.Text.RegularExpressions.Regex.EnumerateMatches*?displayProperty=fullName>
+- <xref:System.Text.RegularExpressions.Regex.IsMatch*?displayProperty=fullName>
+- <xref:System.Text.RegularExpressions.Regex.Match*?displayProperty=fullName>
+- <xref:System.Text.RegularExpressions.Regex.Matches*?displayProperty=fullName>
+- <xref:System.Text.RegularExpressions.Regex.Replace*?displayProperty=fullName>
+- <xref:System.Text.RegularExpressions.Regex.Split*?displayProperty=fullName>

@@ -10,9 +10,9 @@ f1_keywords:
 The following mutable x509 certificate APIs are marked as obsolete, starting in .NET 6. Using these APIs in code generates warning `SYSLIB0026` at compile time.
 
 - <xref:System.Security.Cryptography.X509Certificates.X509Certificate.%23ctor>
-- <xref:System.Security.Cryptography.X509Certificates.X509Certificate.Import%2A?displayProperty=nameWithType>
+- <xref:System.Security.Cryptography.X509Certificates.X509Certificate.Import*?displayProperty=nameWithType>
 - <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.%23ctor>
-- <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.Import%2A?displayProperty=nameWithType>
+- <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.Import*?displayProperty=nameWithType>
 
 ## Workarounds
 

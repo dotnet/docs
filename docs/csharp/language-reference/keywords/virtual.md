@@ -1,17 +1,20 @@
 ---
 description: "virtual - C# Reference"
 title: "virtual keyword"
-ms.date: 07/20/2015
+ms.date: 01/22/2026
 f1_keywords: 
   - "virtual_CSharpKeyword"
   - "virtual"
 helpviewer_keywords: 
   - "virtual keyword [C#]"
-ms.assetid: 5da9abae-bc1e-434f-8bea-3601b8dcb3b2
 ---
 # virtual (C# Reference)
 
-The `virtual` keyword is used to modify a method, property, indexer, or event declaration and allow for it to be overridden in a derived class. For example, this method can be overridden by any class that inherits it:
+Use the `virtual` keyword to modify a method, property, indexer, or event declaration and allow a derived class to override it.
+
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
+For example, any class that inherits this method can override it:
 
 ```csharp
 public virtual double Area()
@@ -20,17 +23,15 @@ public virtual double Area()
 }
 ```
 
-The implementation of a virtual member can be changed by an [overriding member](override.md) in a derived class. For more information about how to use the `virtual` keyword, see [Versioning with the Override and New Keywords](../../programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md) and [Knowing When to Use Override and New Keywords](../../programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords.md).
+An [overriding member](override.md) in a derived class can change the implementation of a virtual member. For more information about how to use the `virtual` keyword, see [Versioning with the Override and New Keywords](../../programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md) and [Knowing When to Use Override and New Keywords](../../programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords.md).
 
-## Remarks
+When you invoke a virtual method, the runtime checks the type of the object for an overriding member. It calls the overriding member in the most derived class. If no derived class overrides the member, the original member is called.
 
-When a virtual method is invoked, the run-time type of the object is checked for an overriding member. The overriding member in the most derived class is called, which might be the original member, if no derived class has overridden the member.
-
-By default, methods are non-virtual. You cannot override a non-virtual method.
+By default, methods are non-virtual. You can't override a non-virtual method.
 
 The following example shows a virtual property:
 
-[!code-csharp[csrefKeywordsModifiers#26](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#26)]
+:::code language="csharp" source="./snippets/csrefKeywordsModifiers.cs" id="26":::
 
 Virtual properties behave like virtual methods, except for the differences in declaration and invocation syntax.
 
@@ -38,9 +39,9 @@ Virtual properties behave like virtual methods, except for the differences in de
 
 ## Example
 
-In this example, the `Shape` class contains the two coordinates `x`, `y`, and the `Area()` virtual method. Different shape classes such as `Circle`, `Cylinder`, and `Sphere` inherit the `Shape` class, and the surface area is calculated for each figure. Each derived class has its own override implementation of `Area()`.
+In this example, the `Shape` class contains the two coordinates `x` and `y`, and the `Area()` virtual method. Different shape classes such as `Circle`, `Cylinder`, and `Sphere` inherit the `Shape` class, and the surface area is calculated for each figure. Each derived class has its own override implementation of `Area()`.
 
-Notice that the inherited classes `Circle`, `Cylinder`, and `Sphere` all use constructors that initialize the base class, as shown in the following declaration.
+The inherited classes `Circle`, `Cylinder`, and `Sphere` all use constructors that initialize the base class, as shown in the following declaration.
 
 ```csharp
 public Cylinder(double r, double h): base(r, h) {}
@@ -48,7 +49,7 @@ public Cylinder(double r, double h): base(r, h) {}
 
 The following program calculates and displays the appropriate area for each figure by invoking the appropriate implementation of the `Area()` method, according to the object that is associated with the method.
 
-[!code-csharp[csrefKeywordsModifiers#23](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#23)]
+:::code language="csharp" source="./snippets/csrefKeywordsModifiers.cs" id="23":::
 
 ## C# language specification
 

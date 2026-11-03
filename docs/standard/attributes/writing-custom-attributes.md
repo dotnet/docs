@@ -1,7 +1,7 @@
 ---
 title: "Writing Custom Attributes"
 description: Design your own custom attributes in .NET. Custom attributes are essentially classes derived directly or indirectly from System.Attribute.
-ms.date: "08/05/2022"
+ms.date: "03/02/2026"
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "AttributeUsageAttribute class, custom attributes"
   - "Inherited property"
   - "attribute classes, declaring"
+ai-usage: ai-assisted
 ---
 # Write custom attributes
 
@@ -52,7 +53,7 @@ To design custom attributes, you don't need to learn many new concepts. If you'r
 
 ### Inherited Property
 
- The <xref:System.AttributeUsageAttribute.Inherited%2A?displayProperty=nameWithType> property indicates whether your attribute can be inherited by classes that are derived from the classes to which your attribute is applied. This property takes either a `true` (the default) or `false` flag. In the following example, `MyAttribute` has a default <xref:System.AttributeUsageAttribute.Inherited%2A> value of `true`, while `YourAttribute` has an <xref:System.AttributeUsageAttribute.Inherited%2A> value of `false`:
+ The <xref:System.AttributeUsageAttribute.Inherited?displayProperty=nameWithType> property indicates whether your attribute can be inherited by classes that are derived from the classes to which your attribute is applied. This property takes either a `true` (the default) or `false` flag. In the following example, `MyAttribute` has a default <xref:System.AttributeUsageAttribute.Inherited*> value of `true`, while `YourAttribute` has an <xref:System.AttributeUsageAttribute.Inherited*> value of `false`:
 
  [!code-csharp[Conceptual.Attributes.Usage#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#7)]
  [!code-vb[Conceptual.Attributes.Usage#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source2.vb#7)]
@@ -69,9 +70,9 @@ To design custom attributes, you don't need to learn many new concepts. If you'r
 
 ### AllowMultiple Property
 
- The <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=nameWithType> property indicates whether multiple instances of your attribute can exist on an element. If set to `true`, multiple instances are allowed. If set to `false` (the default), only one instance is allowed.
+ The <xref:System.AttributeUsageAttribute.AllowMultiple?displayProperty=nameWithType> property indicates whether multiple instances of your attribute can exist on an element. If set to `true`, multiple instances are allowed. If set to `false` (the default), only one instance is allowed.
 
- In the following example, `MyAttribute` has a default <xref:System.AttributeUsageAttribute.AllowMultiple%2A> value of `false`, while `YourAttribute` has a value of `true`:
+ In the following example, `MyAttribute` has a default <xref:System.AttributeUsageAttribute.AllowMultiple*> value of `false`, while `YourAttribute` has a value of `true`:
 
  [!code-csharp[Conceptual.Attributes.Usage#11](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#11)]
  [!code-vb[Conceptual.Attributes.Usage#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source2.vb#11)]
@@ -81,7 +82,7 @@ To design custom attributes, you don't need to learn many new concepts. If you'r
  [!code-csharp[Conceptual.Attributes.Usage#13](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#13)]
  [!code-vb[Conceptual.Attributes.Usage#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source2.vb#13)]
 
- If both the <xref:System.AttributeUsageAttribute.AllowMultiple%2A> property and the <xref:System.AttributeUsageAttribute.Inherited%2A> property are set to `true`, a class that's inherited from another class can inherit an attribute and have another instance of the same attribute applied in the same child class. If <xref:System.AttributeUsageAttribute.AllowMultiple%2A> is set to `false`, the values of any attributes in the parent class will be overwritten by new instances of the same attribute in the child class.
+ If both the <xref:System.AttributeUsageAttribute.AllowMultiple> property and the <xref:System.AttributeUsageAttribute.Inherited> property are set to `true`, a class that's inherited from another class can inherit an attribute and have another instance of the same attribute applied in the same child class. If <xref:System.AttributeUsageAttribute.AllowMultiple*> is set to `false`, the values of any attributes in the parent class will be overwritten by new instances of the same attribute in the child class.
 
 ## Declaring the Attribute Class
 
@@ -112,7 +113,33 @@ To design custom attributes, you don't need to learn many new concepts. If you'r
 > [!NOTE]
 > In Visual Basic, constructors for an attribute class shouldn't use a `ParamArray` argument.
 
- The following code example shows how an attribute that uses the previous constructor can be applied using optional and required parameters. It assumes that the attribute has one required Boolean value and one optional string property.
+Constructor parameters and public properties of an attribute are restricted to a limited set of types because the runtime must be able to read the attribute values directly from metadata. The valid attribute parameter types are:
+
+- Simple types (C# keyword / Visual Basic keyword / .NET runtime type):
+
+  | C# | Visual Basic | .NET runtime type |
+  |----|-------------|-------------------|
+  | `bool` | `Boolean` | <xref:System.Boolean> |
+  | `byte` | `Byte` | <xref:System.Byte> |
+  | `char` | `Char` | <xref:System.Char> |
+  | `double` | `Double` | <xref:System.Double> |
+  | `float` | `Single` | <xref:System.Single> |
+  | `int` | `Integer` | <xref:System.Int32> |
+  | `long` | `Long` | <xref:System.Int64> |
+  | `short` | `Short` | <xref:System.Int16> |
+  | `string` | `String` | <xref:System.String> |
+
+- <xref:System.Type>.
+- Enum types that are accessible at the attribute usage site.
+- In C#, `object` (when the value is one of the valid attribute argument types or a single-dimensional array of them).
+- Single-dimensional arrays of any of the preceding types.
+
+If you define a constructor that accepts a type outside this list, the attribute compiles successfully, but a compiler error occurs when you try to apply it. For more information about what expressions are allowed when applying an attribute, see [Apply attributes](applying-attributes.md).
+
+> [!NOTE]
+> The types `sbyte`, `ushort`, `uint`, `ulong`, `decimal`, `nint`, and `nuint` aren't valid attribute parameter types, even though they support literal constants.
+
+The following code example shows how an attribute that uses the previous constructor can be applied using optional and required parameters. It assumes that the attribute has one required Boolean value and one optional string property.
 
  [!code-csharp[Conceptual.Attributes.Usage#17](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#17)]
  [!code-vb[Conceptual.Attributes.Usage#17](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source2.vb#17)]

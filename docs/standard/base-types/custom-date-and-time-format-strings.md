@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "formatting [.NET], time"
   - "date and time strings"
 ms.assetid: 98b374e3-0cc2-4c78-ab44-efb671d71984
+ai-usage: ai-assisted
 ---
 
 # Custom date and time format strings
@@ -26,14 +27,12 @@ A date and time format string defines the text representation of a <xref:System.
 
 Custom date and time format strings can be used with both <xref:System.DateTime> and <xref:System.DateTimeOffset> values.
 
-[!INCLUDE[C# interactive-note](~/includes/csharp-interactive-with-utc-partial-note.md)]
-
 In formatting operations, custom date and time format strings can be used either with the `ToString` method of a date and time instance or with a method that supports composite formatting. The following example illustrates both uses.
 
-[!code-csharp-interactive[Formatting.DateAndTime.Custom#17](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/custandformatting1.cs#17)]
+[!code-csharp[Formatting.DateAndTime.Custom#17](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/custandformatting1.cs#17)]
 [!code-vb[Formatting.DateAndTime.Custom#17](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/custandformatting1.vb#17)]
 
-In parsing operations, custom date and time format strings can be used with the <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType>, <xref:System.DateTime.TryParseExact%2A?displayProperty=nameWithType>, <xref:System.DateTimeOffset.ParseExact%2A?displayProperty=nameWithType>, and <xref:System.DateTimeOffset.TryParseExact%2A?displayProperty=nameWithType> methods. These methods require that an input string conforms exactly to a particular pattern for the parse operation to succeed. The following example illustrates a call to the <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method to parse a date that must include a day, a month, and a two-digit year.
+In parsing operations, custom date and time format strings can be used with the <xref:System.DateTime.ParseExact*?displayProperty=nameWithType>, <xref:System.DateTime.TryParseExact*?displayProperty=nameWithType>, <xref:System.DateTimeOffset.ParseExact*?displayProperty=nameWithType>, and <xref:System.DateTimeOffset.TryParseExact*?displayProperty=nameWithType> methods. These methods require that an input string conforms exactly to a particular pattern for the parse operation to succeed. The following example illustrates a call to the <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method to parse a date that must include a day, a month, and a two-digit year.
 
 [!code-csharp[Formatting.DateAndTime.Custom#18](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/custandparsing1.cs#18)]
 [!code-vb[Formatting.DateAndTime.Custom#18](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/custandparsing1.vb#18)]
@@ -121,7 +120,7 @@ The following example includes the "dd" custom format specifier in a custom form
 
 ### <a name="dddSpecifier"></a> The "ddd" custom format specifier
 
-The "ddd" custom format specifier represents the abbreviated name of the day of the week. The localized abbreviated name of the day of the week is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames%2A?displayProperty=nameWithType> property of the current or specified culture.
+The "ddd" custom format specifier represents the abbreviated name of the day of the week. The localized abbreviated name of the day of the week is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames?displayProperty=nameWithType> property of the current or specified culture.
 
 The following example includes the "ddd" custom format specifier in a custom format string.
 
@@ -132,7 +131,7 @@ The following example includes the "ddd" custom format specifier in a custom for
 
 ### <a name="ddddSpecifier"></a> The "dddd" custom format specifier
 
-The "dddd" custom format specifier (plus any number of additional "d" specifiers) represents the full name of the day of the week. The localized name of the day of the week is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.DayNames%2A?displayProperty=nameWithType> property of the current or specified culture.
+The "dddd" custom format specifier (plus any number of additional "d" specifiers) represents the full name of the day of the week. The localized name of the day of the week is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.DayNames?displayProperty=nameWithType> property of the current or specified culture.
 
 The following example includes the "dddd" custom format specifier in a custom format string.
 
@@ -149,7 +148,7 @@ The "f" custom format specifier represents the most significant digit of the sec
 
 If the "f" format specifier is used without other format specifiers, it's interpreted as the "f" standard date and time format specifier. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#UsingSingleSpecifiers) later in this article.
 
-When you use "f" format specifiers as part of a format string supplied to the <xref:System.DateTime.ParseExact%2A>, <xref:System.DateTime.TryParseExact%2A>, <xref:System.DateTimeOffset.ParseExact%2A>, or <xref:System.DateTimeOffset.TryParseExact%2A> method, the number of "f" format specifiers indicates the number of most significant digits of the seconds fraction that must be present to successfully parse the string.
+When you use "f" format specifiers as part of a format string supplied to the <xref:System.DateTime.ParseExact*>, <xref:System.DateTime.TryParseExact*>, <xref:System.DateTimeOffset.ParseExact*>, or <xref:System.DateTimeOffset.TryParseExact*> method, the number of "f" format specifiers indicates the number of most significant digits of the seconds fraction that must be present to successfully parse the string.
 
 The following example includes the "f" custom format specifier in a custom format string.
 
@@ -220,7 +219,7 @@ The "F" custom format specifier represents the most significant digit of the sec
 
 If the "F" format specifier is used without other format specifiers, it's interpreted as the "F" standard date and time format specifier. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#UsingSingleSpecifiers) later in this article.
 
-The number of "F" format specifiers used with the <xref:System.DateTime.ParseExact%2A>, <xref:System.DateTime.TryParseExact%2A>, <xref:System.DateTimeOffset.ParseExact%2A>, or <xref:System.DateTimeOffset.TryParseExact%2A> method indicates the maximum number of most significant digits of the seconds fraction that can be present to successfully parse the string.
+The number of "F" format specifiers used with the <xref:System.DateTime.ParseExact*>, <xref:System.DateTime.TryParseExact*>, <xref:System.DateTimeOffset.ParseExact*>, or <xref:System.DateTimeOffset.TryParseExact*> method indicates the maximum number of most significant digits of the seconds fraction that can be present to successfully parse the string.
 
 The following example includes the "F" custom format specifier in a custom format string.
 
@@ -343,6 +342,9 @@ The following example includes the "H" custom format specifier in a custom forma
 
 The "HH" custom format specifier (plus any number of additional "H" specifiers) represents the hour as a number from 00 to 23; that is, the hour is represented by a zero-based 24-hour clock that counts the hours since midnight. A single-digit hour is formatted with a leading zero.
 
+> [!NOTE]
+> Don't combine "HH" or "H" with the "t" or "tt" AM/PM designator specifier in a parsing format string. The 24-hour clock is incompatible with the AM/PM designator in parsing operations, and throws a <xref:System.FormatException>. Use "h" or "hh" instead.
+
 The following example includes the "HH" custom format specifier in a custom format string.
 
 [!code-csharp[Formatting.DateAndTime.Custom#10](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/Custom1.cs#10)]
@@ -354,13 +356,13 @@ The following example includes the "HH" custom format specifier in a custom form
 
 ### <a name="KSpecifier"></a> The "K" custom format specifier
 
-The "K" custom format specifier represents the time zone information of a date and time value. When this format specifier is used with <xref:System.DateTime> values, the result string is defined by the value of the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property:
+The "K" custom format specifier represents the time zone information of a date and time value. When this format specifier is used with <xref:System.DateTime> values, the result string is defined by the value of the <xref:System.DateTime.Kind?displayProperty=nameWithType> property:
 
-- For the local time zone (a <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property value of <xref:System.DateTimeKind.Local?displayProperty=nameWithType>), this specifier produces a result string containing the local offset from Coordinated Universal Time (UTC); for example, "-07:00".
+- For the local time zone (a <xref:System.DateTime.Kind?displayProperty=nameWithType> property value of <xref:System.DateTimeKind.Local?displayProperty=nameWithType>), this specifier produces a result string containing the local offset from Coordinated Universal Time (UTC); for example, "-07:00".
 
-- For a UTC time (a <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property value of <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>), the result string includes a "Z" character to represent a UTC date.
+- For a UTC time (a <xref:System.DateTime.Kind?displayProperty=nameWithType> property value of <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>), the result string includes a "Z" character to represent a UTC date.
 
-- For a time from an unspecified time zone (a time whose <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property equals <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>), the result is equivalent to <xref:System.String.Empty?displayProperty=nameWithType>.
+- For a time from an unspecified time zone (a time whose <xref:System.DateTime.Kind?displayProperty=nameWithType> property equals <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>), the result is equivalent to <xref:System.String.Empty?displayProperty=nameWithType>.
 
 For <xref:System.DateTimeOffset> values, the "K" format specifier is equivalent to the "zzz" format specifier, and produces a result string containing the <xref:System.DateTimeOffset> value's offset from UTC.
 
@@ -368,7 +370,7 @@ If the "K" format specifier is used without other custom format specifiers, it's
 
 The following example displays the string that results from using the "K" custom format specifier with various <xref:System.DateTime> and <xref:System.DateTimeOffset> values on a system in the U.S. Pacific Time zone.
 
-[!code-csharp-interactive[Formatting.DateAndTime.Custom#12](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/Custom1.cs#12)]
+[!code-csharp[Formatting.DateAndTime.Custom#12](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/Custom1.cs#12)]
 [!code-vb[Formatting.DateAndTime.Custom#12](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/Custom1.vb#12)]
 
 [Back to table](#table)
@@ -427,7 +429,7 @@ The following example includes the "MM" custom format specifier in a custom form
 
 ### <a name="MMM_Specifier"></a> The "MMM" custom format specifier
 
-The "MMM" custom format specifier represents the abbreviated name of the month. The localized abbreviated name of the month is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames%2A?displayProperty=nameWithType> property of the current or specified culture. If there is a "d" or "dd" custom format specifier in the custom format string, it is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthGenitiveNames%2A?displayProperty=nameWithType> property instead, except in .NET Framework. (This is known issue that's fixed in .NET.)
+The "MMM" custom format specifier represents the abbreviated name of the month. The localized abbreviated name of the month is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames?displayProperty=nameWithType> property of the current or specified culture. If there is a "d" or "dd" custom format specifier in the custom format string, it is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthGenitiveNames?displayProperty=nameWithType> property instead, except in .NET Framework. (This is known issue that's fixed in .NET.)
 
 The following example includes the "MMM" custom format specifier in a custom format string.
 
@@ -438,7 +440,7 @@ The following example includes the "MMM" custom format specifier in a custom for
 
 ### <a name="MMMM_Specifier"></a> The "MMMM" custom format specifier
 
-The "MMMM" custom format specifier represents the full name of the month. The localized name of the month is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A?displayProperty=nameWithType> property of the current or specified culture. If there is a "d" or "dd" custom format specifier in the custom format string, it is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.MonthGenitiveNames%2A?displayProperty=nameWithType> property instead.
+The "MMMM" custom format specifier represents the full name of the month. The localized name of the month is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.MonthNames?displayProperty=nameWithType> property of the current or specified culture. If there is a "d" or "dd" custom format specifier in the custom format string, it is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.MonthGenitiveNames?displayProperty=nameWithType> property instead.
 
 The following example includes the "MMMM" custom format specifier in a custom format string.
 
@@ -477,7 +479,7 @@ The following example includes the "ss" custom format specifier in a custom form
 
 ### <a name="tSpecifier"></a> The "t" custom format specifier
 
-The "t" custom format specifier represents the first character of the AM/PM designator. The appropriate localized designator is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A?displayProperty=nameWithType> or <xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A?displayProperty=nameWithType> property of the current or specific culture. The AM designator is used for all times from 0:00:00 (midnight) to 11:59:59.999. The PM designator is used for all times from 12:00:00 (noon) to 23:59:59.999.
+The "t" custom format specifier represents the first character of the AM/PM designator. The appropriate localized designator is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AMDesignator*?displayProperty=nameWithType> or <xref:System.Globalization.DateTimeFormatInfo.PMDesignator?displayProperty=nameWithType> property of the current or specific culture. The AM designator is used for all times from 0:00:00 (midnight) to 11:59:59.999. The PM designator is used for all times from 12:00:00 (noon) to 23:59:59.999.
 
 If the "t" format specifier is used without other custom format specifiers, it's interpreted as the "t" standard date and time format specifier. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#UsingSingleSpecifiers) later in this article.
 
@@ -490,9 +492,12 @@ The following example includes the "t" custom format specifier in a custom forma
 
 ### <a name="ttSpecifier"></a> The "tt" custom format specifier
 
-The "tt" custom format specifier (plus any number of additional "t" specifiers) represents the entire AM/PM designator. The appropriate localized designator is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A?displayProperty=nameWithType> or <xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A?displayProperty=nameWithType> property of the current or specific culture. The AM designator is used for all times from 0:00:00 (midnight) to 11:59:59.999. The PM designator is used for all times from 12:00:00 (noon) to 23:59:59.999.
+The "tt" custom format specifier (plus any number of additional "t" specifiers) represents the entire AM/PM designator. The appropriate localized designator is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AMDesignator*?displayProperty=nameWithType> or <xref:System.Globalization.DateTimeFormatInfo.PMDesignator?displayProperty=nameWithType> property of the current or specific culture. The AM designator is used for all times from 0:00:00 (midnight) to 11:59:59.999. The PM designator is used for all times from 12:00:00 (noon) to 23:59:59.999.
 
 Make sure to use the "tt" specifier for languages for which it's necessary to maintain the distinction between AM and PM. An example is Japanese, for which the AM and PM designators differ in the second character instead of the first character.
+
+> [!NOTE]
+> When you parse a string that includes an AM/PM designator, use the "h" or "hh" hour specifier (12-hour clock) instead of "H" or "HH" (24-hour clock). The 24-hour clock specifier is incompatible with the AM/PM designator in a parsing operation, and throws a <xref:System.FormatException>.
 
 The following example includes the "tt" custom format specifier in a custom format string.
 
@@ -511,7 +516,7 @@ If the "y" format specifier is used without other custom format specifiers, it's
 
 The following example includes the "y" custom format specifier in a custom format string.
 
-[!code-csharp-interactive[Formatting.DateAndTime.Custom#13](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/Custom1.cs#13)]
+[!code-csharp[Formatting.DateAndTime.Custom#13](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/Custom1.cs#13)]
 [!code-vb[Formatting.DateAndTime.Custom#13](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/Custom1.vb#13)]
 
 [Back to table](#table)
@@ -520,9 +525,9 @@ The following example includes the "y" custom format specifier in a custom forma
 
 The "yy" custom format specifier represents the year as a two-digit number. If the year has more than two digits, only the two low-order digits appear in the result. If the two-digit year has fewer than two significant digits, the number is padded with leading zeros to produce two digits.
 
-In a parsing operation, a two-digit year that is parsed using the "yy" custom format specifier is interpreted based on the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=nameWithType> property of the format provider's current calendar. The following example parses the string representation of a date that has a two-digit year by using the default Gregorian calendar of the en-US culture, which, in this case, is the current culture. It then changes the current culture's <xref:System.Globalization.CultureInfo> object to use a <xref:System.Globalization.GregorianCalendar> object whose <xref:System.Globalization.GregorianCalendar.TwoDigitYearMax%2A> property has been modified.
+In a parsing operation, a two-digit year that is parsed using the "yy" custom format specifier is interpreted based on the <xref:System.Globalization.Calendar.TwoDigitYearMax?displayProperty=nameWithType> property of the format provider's current calendar. The following example parses the string representation of a date that has a two-digit year by using the default Gregorian calendar of the en-US culture, which, in this case, is the current culture. It then changes the current culture's <xref:System.Globalization.CultureInfo> object to use a <xref:System.Globalization.GregorianCalendar> object whose <xref:System.Globalization.GregorianCalendar.TwoDigitYearMax> property has been modified.
 
-[!code-csharp-interactive[Formatting.DateAndTime.Custom#19](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/parseexact2digityear1.cs#19)]
+[!code-csharp[Formatting.DateAndTime.Custom#19](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/parseexact2digityear1.cs#19)]
 [!code-vb[Formatting.DateAndTime.Custom#19](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/parseexact2digityear1.vb#19)]
 
 The following example includes the "yy" custom format specifier in a custom format string.
@@ -541,7 +546,7 @@ The "yyy" custom format specifier represents the year with a minimum of three di
 
 The following example includes the "yyy" custom format specifier in a custom format string.
 
-[!code-csharp-interactive[Formatting.DateAndTime.Custom#13](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/Custom1.cs#13)]
+[!code-csharp[Formatting.DateAndTime.Custom#13](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/Custom1.cs#13)]
 [!code-vb[Formatting.DateAndTime.Custom#13](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/Custom1.vb#13)]
 
 [Back to table](#table)
@@ -555,7 +560,7 @@ The "yyyy" custom format specifier represents the year with a minimum of four di
 
 The following example includes the "yyyy" custom format specifier in a custom format string.
 
-[!code-csharp-interactive[Formatting.DateAndTime.Custom#13](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/Custom1.cs#13)]
+[!code-csharp[Formatting.DateAndTime.Custom#13](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/Custom1.cs#13)]
 [!code-vb[Formatting.DateAndTime.Custom#13](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/Custom1.vb#13)]
 
 [Back to table](#table)
@@ -568,7 +573,7 @@ If there are additional "y" specifiers, the number is padded with as many leadin
 
 The following example includes the "yyyyy" custom format specifier in a custom format string.
 
-[!code-csharp-interactive[Formatting.DateAndTime.Custom#13](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/Custom1.cs#13)]
+[!code-csharp[Formatting.DateAndTime.Custom#13](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/Custom1.cs#13)]
 [!code-vb[Formatting.DateAndTime.Custom#13](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/Custom1.vb#13)]
 
 [Back to table](#table)
@@ -593,7 +598,7 @@ If the "z" format specifier is used without other custom format specifiers, it's
 
 The following example includes the "z" custom format specifier in a custom format string.
 
-[!code-csharp-interactive[Formatting.DateAndTime.Custom#14](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/Custom1.cs#14)]
+[!code-csharp[Formatting.DateAndTime.Custom#14](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/Custom1.cs#14)]
 [!code-vb[Formatting.DateAndTime.Custom#14](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/Custom1.vb#14)]
 
 [Back to table](#table)
@@ -614,7 +619,7 @@ With <xref:System.DateTimeOffset> values, this format specifier represents the <
 
 The following example includes the "zz" custom format specifier in a custom format string.
 
-[!code-csharp-interactive[Formatting.DateAndTime.Custom#14](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/Custom1.cs#14)]
+[!code-csharp[Formatting.DateAndTime.Custom#14](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/Custom1.cs#14)]
 [!code-vb[Formatting.DateAndTime.Custom#14](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/Custom1.vb#14)]
 
 [Back to table](#table)
@@ -635,7 +640,7 @@ With <xref:System.DateTimeOffset> values, this format specifier represents the <
 
 The following example includes the "zzz" custom format specifier in a custom format string.
 
-[!code-csharp-interactive[Formatting.DateAndTime.Custom#14](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/Custom1.cs#14)]
+[!code-csharp[Formatting.DateAndTime.Custom#14](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/Custom1.cs#14)]
 [!code-vb[Formatting.DateAndTime.Custom#14](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/Custom1.vb#14)]
 
 [Back to table](#table)
@@ -644,10 +649,10 @@ The following example includes the "zzz" custom format specifier in a custom for
 
 ### <a name="timeSeparator"></a> The ":" custom format specifier
 
-The ":" custom format specifier represents the time separator, which is used to differentiate hours, minutes, and seconds. The appropriate localized time separator is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A?displayProperty=nameWithType> property of the current or specified culture.
+The ":" custom format specifier represents the time separator, which is used to differentiate hours, minutes, and seconds. The appropriate localized time separator is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.TimeSeparator?displayProperty=nameWithType> property of the current or specified culture.
 
 > [!NOTE]
-> To change the time separator for a particular date and time string, specify the separator character within a literal string delimiter. For example, the custom format string `hh'_'dd'_'ss` produces a result string in which "\_" (an underscore) is always used as the time separator. To change the time separator for all dates for a culture, either change the value of the <xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A?displayProperty=nameWithType> property of the current culture, or instantiate a <xref:System.Globalization.DateTimeFormatInfo> object, assign the character to its <xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A> property, and call an overload of the formatting method that includes an <xref:System.IFormatProvider> parameter.
+> To change the time separator for a particular date and time string, specify the separator character within a literal string delimiter. For example, the custom format string `hh'_'dd'_'ss` produces a result string in which "\_" (an underscore) is always used as the time separator. To change the time separator for all dates for a culture, either change the value of the <xref:System.Globalization.DateTimeFormatInfo.TimeSeparator?displayProperty=nameWithType> property of the current culture, or instantiate a <xref:System.Globalization.DateTimeFormatInfo> object, assign the character to its <xref:System.Globalization.DateTimeFormatInfo.TimeSeparator> property, and call an overload of the formatting method that includes an <xref:System.IFormatProvider> parameter.
 
 If the ":" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and throws a <xref:System.FormatException>. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#UsingSingleSpecifiers) later in this article.
 
@@ -655,10 +660,10 @@ If the ":" format specifier is used without other custom format specifiers, it's
 
 ### <a name="dateSeparator"></a> The "/" custom format specifier
 
-The "/" custom format specifier represents the date separator, which is used to differentiate years, months, and days. The appropriate localized date separator is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.DateSeparator%2A?displayProperty=nameWithType> property of the current or specified culture.
+The "/" custom format specifier represents the date separator, which is used to differentiate years, months, and days. The appropriate localized date separator is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.DateSeparator?displayProperty=nameWithType> property of the current or specified culture.
 
 > [!NOTE]
-> To change the date separator for a particular date and time string, specify the separator character within a literal string delimiter. For example, the custom format string `mm'/'dd'/'yyyy` produces a result string in which "/" is always used as the date separator. To change the date separator for all dates for a culture, either change the value of the <xref:System.Globalization.DateTimeFormatInfo.DateSeparator%2A?displayProperty=nameWithType> property of the current culture, or instantiate a <xref:System.Globalization.DateTimeFormatInfo> object, assign the character to its <xref:System.Globalization.DateTimeFormatInfo.DateSeparator%2A> property, and call an overload of the formatting method that includes an <xref:System.IFormatProvider> parameter.
+> To change the date separator for a particular date and time string, specify the separator character within a literal string delimiter. For example, the custom format string `mm'/'dd'/'yyyy` produces a result string in which "/" is always used as the date separator. To change the date separator for all dates for a culture, either change the value of the <xref:System.Globalization.DateTimeFormatInfo.DateSeparator?displayProperty=nameWithType> property of the current culture, or instantiate a <xref:System.Globalization.DateTimeFormatInfo> object, assign the character to its <xref:System.Globalization.DateTimeFormatInfo.DateSeparator> property, and call an overload of the formatting method that includes an <xref:System.IFormatProvider> parameter.
 
 If the "/" format specifier is used without other custom format specifiers, it's interpreted as a standard date and time format specifier and throws a <xref:System.FormatException>. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#UsingSingleSpecifiers) later in this article.
 
@@ -719,7 +724,7 @@ To use any of the custom date and time format specifiers as the only specifier i
 
 For example, "`%h"` is interpreted as a custom date and time format string that displays the hour represented by the current date and time value. You can also use the " h" format string, although this includes a space in the result string along with the hour. The following example illustrates these format strings.
 
-[!code-csharp-interactive[Formatting.DateAndTime.Custom#16](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/literal1.cs#16)]
+[!code-csharp[Formatting.DateAndTime.Custom#16](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/literal1.cs#16)]
 [!code-vb[Formatting.DateAndTime.Custom#16](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/literal1.vb#16)]
 
 #### <a name="escape"></a> Using the Escape character
@@ -733,7 +738,7 @@ To include a backslash in a result string, you must escape it with another backs
 
 The following example uses the escape character to prevent the formatting operation from interpreting the "h" and "m" characters as format specifiers.
 
-[!code-csharp-interactive[Formatting.DateAndTime.Custom#15](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/escape1.cs#15)]
+[!code-csharp[Formatting.DateAndTime.Custom#15](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/escape1.cs#15)]
 [!code-vb[Formatting.DateAndTime.Custom#15](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/escape1.vb#15)]
 
 ### Control Panel settings
@@ -746,7 +751,7 @@ In addition, if you use the <xref:System.Globalization.CultureInfo.%23ctor%28Sys
 
 Formatting is influenced by properties of the current <xref:System.Globalization.DateTimeFormatInfo> object, which is provided implicitly by the current culture or explicitly by the <xref:System.IFormatProvider> parameter of the method that invokes formatting. For the <xref:System.IFormatProvider> parameter, you should specify a <xref:System.Globalization.CultureInfo> object, which represents a culture, or a <xref:System.Globalization.DateTimeFormatInfo> object.
 
-The result string produced by many of the custom date and time format specifiers also depends on properties of the current <xref:System.Globalization.DateTimeFormatInfo> object. Your application can change the result produced by some custom date and time format specifiers by changing the corresponding <xref:System.Globalization.DateTimeFormatInfo> property. For example, the "ddd" format specifier adds an abbreviated weekday name found in the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames%2A> string array to the result string. Similarly, the "MMMM" format specifier adds a full month name found in the <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A> string array to the result string.
+The result string produced by many of the custom date and time format specifiers also depends on properties of the current <xref:System.Globalization.DateTimeFormatInfo> object. Your application can change the result produced by some custom date and time format specifiers by changing the corresponding <xref:System.Globalization.DateTimeFormatInfo> property. For example, the "ddd" format specifier adds an abbreviated weekday name found in the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames*> string array to the result string. Similarly, the "MMMM" format specifier adds a full month name found in the <xref:System.Globalization.DateTimeFormatInfo.MonthNames*> string array to the result string.
 
 ## See also
 

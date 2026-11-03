@@ -70,16 +70,16 @@ If you're a Windows user who relies on enumeration of paths like `C:`, you shoul
 
 ## Affected APIs
 
-- <xref:System.IO.Directory.EnumerateFiles%2A?displayProperty=fullName>
-- <xref:System.IO.Directory.EnumerateDirectories%2A?displayProperty=fullName>
-- <xref:System.IO.Directory.EnumerateFileSystemEntries%2A?displayProperty=fullName>
-- <xref:System.IO.Directory.GetFiles%2A?displayProperty=fullName>
-- <xref:System.IO.Directory.GetDirectories%2A?displayProperty=fullName>
-- <xref:System.IO.Directory.GetFileSystemEntries%2A?displayProperty=fullName>
-- <xref:System.IO.DirectoryInfo.EnumerateFiles%2A?displayProperty=fullName>
-- <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A?displayProperty=fullName>
-- <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A?displayProperty=fullName>
-- <xref:System.IO.DirectoryInfo.GetFiles%2A?displayProperty=fullName>
-- <xref:System.IO.DirectoryInfo.GetDirectories%2A?displayProperty=fullName>
-- <xref:System.IO.DirectoryInfo.GetFileSystemInfos%2A?displayProperty=fullName>
-- <xref:System.IO.Enumeration.FileSystemEnumerable%601.%23ctor(System.String,System.IO.Enumeration.FileSystemEnumerable{%600}.FindTransform,System.IO.EnumerationOptions)>
+- <xref:System.IO.Directory.EnumerateFiles*?displayProperty=fullName>
+- <xref:System.IO.Directory.EnumerateDirectories*?displayProperty=fullName>
+- <xref:System.IO.Directory.EnumerateFileSystemEntries*?displayProperty=fullName>
+- <xref:System.IO.Directory.GetFiles*?displayProperty=fullName>
+- <xref:System.IO.Directory.GetDirectories*?displayProperty=fullName>
+- <xref:System.IO.Directory.GetFileSystemEntries*?displayProperty=fullName>
+- <xref:System.IO.DirectoryInfo.EnumerateFiles*?displayProperty=fullName>
+- <xref:System.IO.DirectoryInfo.EnumerateDirectories*?displayProperty=fullName>
+- <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos*?displayProperty=fullName>
+- <xref:System.IO.DirectoryInfo.GetFiles*?displayProperty=fullName>
+- <xref:System.IO.DirectoryInfo.GetDirectories*?displayProperty=fullName>
+- <xref:System.IO.DirectoryInfo.GetFileSystemInfos*?displayProperty=fullName>
+- <xref:System.IO.Enumeration.FileSystemEnumerable`1.%23ctor(System.String,System.IO.Enumeration.FileSystemEnumerable{`0}.FindTransform,System.IO.EnumerationOptions)>

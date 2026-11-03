@@ -1,8 +1,6 @@
 ---
 title: Create a build validation GitHub workflow
 description: In this quickstart, you will learn how to create a GitHub workflow to validate .NET app compilation.
-author: IEvangelist
-ms.author: dapine
 ms.date: 02/16/2022
 ms.topic: quickstart
 ---

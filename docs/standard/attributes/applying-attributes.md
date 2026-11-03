@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Apply attributes"
 title: "Applying Attributes"
-ms.date: "03/30/2017"
+ms.date: "03/02/2026"
 dev_langs:
   - "csharp"
   - "vb"
@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "assemblies [.NET], attributes"
   - "attributes [.NET], applying"
 ms.topic: how-to
+ai-usage: ai-assisted
 ---
 # Apply attributes
 
@@ -27,6 +28,70 @@ Use the following process to apply an attribute to an element of your code.
  The attribute is emitted into metadata when you compile your code and is available to the common language runtime and any custom tool or application through the runtime reflection services.
 
  By convention, all attribute names end with "Attribute". However, several languages that target the runtime, such as Visual Basic and C#, do not require you to specify the full name of an attribute. For example, if you want to initialize <xref:System.ObsoleteAttribute?displayProperty=nameWithType>, you only need to reference it as **Obsolete**.
+
+## Valid attribute arguments
+
+When you pass arguments to an attribute, use one of the following kinds of expressions:
+
+- Constant expressions (literals, `const`/`Const` values, and enum values).
+- Type expressions (`typeof` in C#, `GetType` in Visual Basic).
+- Name expressions (`nameof` in C#, `NameOf` in Visual Basic), which produce string constants at compile time.
+- Array creation expressions of an attribute parameter type that use only the preceding expressions as element values.
+
+The following types are valid as attribute parameter types:
+
+- Simple types (C# keyword / Visual Basic keyword / .NET runtime type):
+
+  | C# | Visual Basic | .NET runtime type |
+  |----|-------------|-------------------|
+  | `bool` | `Boolean` | <xref:System.Boolean> |
+  | `byte` | `Byte` | <xref:System.Byte> |
+  | `char` | `Char` | <xref:System.Char> |
+  | `double` | `Double` | <xref:System.Double> |
+  | `float` | `Single` | <xref:System.Single> |
+  | `int` | `Integer` | <xref:System.Int32> |
+  | `long` | `Long` | <xref:System.Int64> |
+  | `short` | `Short` | <xref:System.Int16> |
+  | `string` | `String` | <xref:System.String> |
+
+- `object` (in C#, when the value is one of the valid attribute argument types or a single-dimensional array of them).
+- <xref:System.Type>.
+- Enum types that are accessible at the usage site.
+- Single-dimensional arrays of any of the preceding types.
+
+> [!NOTE]
+> The types `sbyte`, `ushort`, `uint`, `ulong`, `decimal`, `nint`, and `nuint` aren't valid attribute parameter types, even though they support literal constants.
+
+The following examples show valid attribute arguments:
+
+```csharp
+[MyAttr(true)]                            // bool literal
+[MyAttr(42)]                              // int literal
+[MyAttr("hello")]                         // string literal
+[MyAttr(MyEnum.Value)]                    // enum value
+[MyAttr(typeof(string))]                  // typeof expression
+[MyAttr(nameof(MyClass))]                 // nameof expression (string constant)
+[MyAttr(new int[] { 1, 2, 3 })]          // array of constants
+[MyAttr(new string[] { "a", "b" })]      // array of strings
+```
+
+```vb
+<MyAttr(True)>                            ' Boolean literal
+<MyAttr(42)>                              ' Integer literal
+<MyAttr("hello")>                         ' String literal
+<MyAttr(MyEnum.Value)>                    ' Enum value
+<MyAttr(GetType(String))>                 ' GetType expression
+<MyAttr(NameOf(MyClass))>                 ' NameOf expression (string constant)
+<MyAttr(New Integer() {1, 2, 3})>         ' Array of constants
+```
+
+The following examples show arguments that cause a compiler error:
+
+```csharp
+string value = "test";
+[MyAttr(value)]        // Error CS0182: not a constant expression
+[MyAttr(GetValue())]   // Error CS0182: method calls aren't allowed
+```
 
 ## Apply an attribute to a method
 

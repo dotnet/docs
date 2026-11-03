@@ -4,8 +4,9 @@ description: Learn how to build reusable UI components with Blazor and how they 
 author: danroth27
 ms.author: daroth
 no-loc: [Blazor]
-ms.date: 04/11/2022
+ms.date: 03/19/2026
 ms.custom: sfi-ropc-nochange
+ai-usage: ai-assisted
 ---
 # Build reusable UI components with Blazor
 
@@ -663,7 +664,37 @@ The output of this component looks like this:
 
 ## Code-behind
 
-A Razor component is typically authored in a single *.razor* file. However, it's also possible to separate the code and markup using a code-behind file. To use a component file, add a C# file that matches the file name of the component file but with a *.cs* extension added (*Counter.razor.cs*). Use the C# file to define a base class for the component. You can name the base class anything you'd like, but it's common to name the class the same as the component class, but with a `Base` extension added (`CounterBase`). The component-based class must also derive from `ComponentBase`. Then, in the Razor component file, add the `@inherits` directive to specify the base class for the component (`@inherits CounterBase`).
+A Razor component is typically authored in a single *.razor* file. However, it's also possible to separate the code and markup using a code-behind file. To use a code-behind file, add a C# file that matches the file name of the component file but with a *.cs* extension added (*Counter.razor.cs*).
+
+The preferred approach is to declare the code-behind class as a `partial` class with the same name as the component. Because the Razor component file already generates a partial class with the same name, the two parts merge at compile time, and you don't need the `@inherits` directive.
+
+*Counter.razor*
+
+```razor
+<h1>Counter</h1>
+
+<p>Current count: @currentCount</p>
+
+<button @onclick="IncrementCount">Click me</button>
+```
+
+*Counter.razor.cs*
+
+```csharp
+public partial class Counter
+{
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
+```
+
+With the partial class approach, members don't need to be `protected`. `private` members are accessible because both parts of the partial class compile into the same class.
+
+Alternatively, you can use a base class. Define a base class that derives from `ComponentBase`, then add the `@inherits` directive in the Razor component file to specify the base class. It's common to name the base class after the component with a `Base` suffix (`CounterBase`).
 
 *Counter.razor*
 
@@ -691,7 +722,7 @@ public class CounterBase : ComponentBase
 }
 ```
 
-The visibility of the component's members in the base class must be `protected` or `public` to be visible to the component class.
+The visibility of members in the base class must be `protected` or `public` to be visible to the component class. Also, with the base class approach, the IDE may show both the component and its base class in IntelliSense lists. Use the partial class approach to avoid that duplication.
 
 ## Additional resources
 

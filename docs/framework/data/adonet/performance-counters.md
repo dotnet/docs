@@ -1,18 +1,21 @@
 ---
 title: "Performance Counters"
 description: Use ADO.NET performance counters to monitor your application status and its connection resources by using Windows Performance Monitor or programmatically.
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
 ---
 # Performance counters in ADO.NET
 
-ADO.NET 2.0 introduced expanded support for performance counters that includes support for both <xref:System.Data.SqlClient> and <xref:System.Data.OracleClient>. The <xref:System.Data.SqlClient> performance counters available in previous versions of ADO.NET have been deprecated and replaced with the new performance counters discussed in this topic. You can use ADO.NET performance counters to monitor the status of your application and the connection resources that it uses. Performance counters can be monitored by using Windows Performance Monitor or can be accessed programmatically using the <xref:System.Diagnostics.PerformanceCounter> class in the <xref:System.Diagnostics> namespace.
+On .NET Framework, Microsoft.Data.SqlClient exposes Windows performance counters to monitor your application and its connection resources. Install the [Microsoft.Data.SqlClient NuGet package](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and use the `Microsoft.Data.SqlClient` namespace for the SQL examples in this article. Read these counters through Windows Performance Monitor or <xref:System.Diagnostics.PerformanceCounter>.
+
+On modern .NET, Microsoft.Data.SqlClient exposes EventCounters instead of Windows performance counters. For more information, see [Event counters in SqlClient](/sql/connect/ado-net/event-counters).
 
 ## Available Performance Counters
 
- Currently there are 14 different performance counters available for <xref:System.Data.SqlClient> and <xref:System.Data.OracleClient> as described in the following table. Note that the names for the individual counters are not localized across regional versions of the Microsoft .NET Framework.
+ On .NET Framework, the following 14 performance counters are available for <xref:Microsoft.Data.SqlClient> and <xref:System.Data.OracleClient>. Note that the names for the individual counters are not localized across regional versions of the Microsoft .NET Framework.
 
 | Performance counter        | Description                                                                    |
 |----------------------------|--------------------------------------------------------------------------------|
@@ -63,7 +66,7 @@ When using Windows Authentication (integrated security), you must monitor both t
 Option Explicit On
 Option Strict On
 
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 Imports System.Diagnostics
 Imports System.Runtime.InteropServices
 
@@ -204,7 +207,7 @@ End Class
 
 ```csharp
 using System;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 

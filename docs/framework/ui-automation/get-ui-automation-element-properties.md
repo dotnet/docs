@@ -21,13 +21,13 @@ ms.topic: how-to
 
 1. Obtain the <xref:System.Windows.Automation.AutomationElement> whose property you wish to get.
 
-2. Call <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A>, or retrieve the <xref:System.Windows.Automation.AutomationElement.Current%2A> property structure and get the value from one of its members.
+2. Call <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue*>, or retrieve the <xref:System.Windows.Automation.AutomationElement.Current> property structure and get the value from one of its members.
 
 ### Get a Cached Property Value
 
 1. Obtain the <xref:System.Windows.Automation.AutomationElement> whose property you wish to get. The property must have been specified in the <xref:System.Windows.Automation.CacheRequest>.
 
-2. Call <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>, or retrieve the <xref:System.Windows.Automation.AutomationElement.Cached%2A> property structure and get the value from one of its members.
+2. Call <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue*>, or retrieve the <xref:System.Windows.Automation.AutomationElement.Cached> property structure and get the value from one of its members.
 
 ## Example
 

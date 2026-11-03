@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Forecast bike rental demand - time series'
 description: This tutorial shows you how to forecast demand for a bike rental service using univariate time-series analysis and ML.NET.
-ms.date: 03/07/2022
+ms.date: 10/19/2026
 ms.topic: tutorial
 ms.custom: mvc
 ms.author: luquinta
@@ -25,7 +25,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the ".NET Desktop Development" workload installed.
+* [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads/) with the **.NET Desktop Development** workload installed.
 
 ## Time series forecasting sample overview
 
@@ -54,7 +54,7 @@ The algorithm used in this tutorial is [Singular Spectrum Analysis(SSA)](http://
     1. Check the **Include prerelease** checkbox.
     1. Select the **Install** button.
     1. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the License Acceptance dialog if you agree with the license terms for the packages listed.
-    1. Repeat these steps for **System.Data.SqlClient** and **Microsoft.ML.TimeSeries**.
+    1. Repeat these steps for **Microsoft.Data.SqlClient** and **Microsoft.ML.TimeSeries**.
 
 ### Prepare and understand the data
 
@@ -66,9 +66,9 @@ The algorithm used in this tutorial is [Singular Spectrum Analysis(SSA)](http://
 
 The original dataset contains several columns corresponding to seasonality and weather. For brevity and because the algorithm used in this tutorial only requires the values from a single numerical column, the original dataset has been condensed to include only the following columns:
 
-- **dteday**: The date of the observation.
-- **year**: The encoded year of the observation (0=2011, 1=2012).
-- **cnt**: The total number of bike rentals for that day.
+* **dteday**: The date of the observation.
+* **year**: The encoded year of the observation (0=2011, 1=2012).
+* **cnt**: The total number of bike rentals for that day.
 
 The original dataset is mapped to a database table with the following schema in a SQL Server database.
 
@@ -92,7 +92,12 @@ The following is a sample of the data:
 
 1. Open *Program.cs* file and replace the existing `using` directives with the following:
 
-    [!code-csharp [ProgramUsings](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L1-L4)]
+    ```csharp
+    using Microsoft.ML;
+    using Microsoft.ML.Data;
+    using Microsoft.ML.Transforms.TimeSeries;
+    using Microsoft.Data.SqlClient;
+    ```
 
 1. Create `ModelInput` class. Below the `Program` class, add the following code.
 
@@ -100,9 +105,9 @@ The following is a sample of the data:
 
     The `ModelInput` class contains the following columns:
 
-    - **RentalDate**: The date of the observation.
-    - **Year**: The encoded year of the observation (0=2011, 1=2012).
-    - **TotalRentals**: The total number of bike rentals for that day.
+    * **RentalDate**: The date of the observation.
+    * **Year**: The encoded year of the observation (0=2011, 1=2012).
+    * **TotalRentals**: The total number of bike rentals for that day.
 
 1. Create `ModelOutput` class below the newly created `ModelInput` class.
 
@@ -110,15 +115,22 @@ The following is a sample of the data:
 
     The `ModelOutput` class contains the following columns:
 
-    - **ForecastedRentals**: The predicted values for the forecasted period.
-    - **LowerBoundRentals**: The predicted minimum values for the forecasted period.
-    - **UpperBoundRentals**: The predicted maximum values for the forecasted period.
+    * **ForecastedRentals**: The predicted values for the forecasted period.
+    * **LowerBoundRentals**: The predicted minimum values for the forecasted period.
+    * **UpperBoundRentals**: The predicted maximum values for the forecasted period.
 
 ### Define paths and initialize variables
 
 1. Below the `using` directives define variables to store the location of your data, connection string, and where to save the trained model.
 
-    [!code-csharp [DefinePaths](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L6-L9)]
+    ```csharp
+    string rootDir = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "../../../"));
+    string dbFilePath = Path.Combine(rootDir, "Data", "DailyDemand.mdf");
+    string modelPath = Path.Combine(rootDir, "MLModel.zip");
+    var connectionString = $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={dbFilePath};Integrated Security=True;Connect Timeout=30;Encrypt=True;TrustServerCertificate=True;";
+    ```
+
+    The certificate trust exception is for this local development database. For production connections, use a trusted server certificate and set `TrustServerCertificate=False`. LocalDB uses Windows authentication.
 
 1. Initialize the `mlContext` variable with a new instance of [`MLContext`](xref:Microsoft.ML.MLContext) by adding the following line after defining the paths.
 
@@ -201,8 +213,8 @@ Evaluate how well the model performs by forecasting next year's data and compari
 
     To evaluate performance, the following metrics are used:
 
-    - **Mean Absolute Error**: Measures how close predictions are to the actual value. This value ranges between 0 and infinity. The closer to 0, the better the quality of the model.
-    - **Root Mean Squared Error**: Summarizes the error in the model. This value ranges between 0 and infinity. The closer to 0, the better the quality of the model.
+    * **Mean Absolute Error**: Measures how close predictions are to the actual value. This value ranges between 0 and infinity. The closer to 0, the better the quality of the model.
+    * **Root Mean Squared Error**: Summarizes the error in the model. This value ranges between 0 and infinity. The closer to 0, the better the quality of the model.
 
 1. Output the metrics to the console.
 
@@ -216,11 +228,11 @@ Evaluate how well the model performs by forecasting next year's data and compari
 
 If you're satisfied with your model, save it for later use in other applications.
 
-1. Below the `Evaluate()` method create a [`TimeSeriesPredictionEngine`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602). [`TimeSeriesPredictionEngine`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602) is a convenience method to make single predictions.
+1. Below the `Evaluate()` method create a [`TimeSeriesPredictionEngine`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine`2). [`TimeSeriesPredictionEngine`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine`2) is a convenience method to make single predictions.
 
     [!code-csharp [CreateTimeSeriesEngine](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L41)]
 
-1. Save the model to a file called `MLModel.zip` as specified by the previously defined `modelPath` variable. Use the [`Checkpoint`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602.CheckPoint%2A) method to save the model.
+1. Save the model to a file called `MLModel.zip` as specified by the previously defined `modelPath` variable. Use the [`Checkpoint`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine`2.CheckPoint%2A) method to save the model.
 
     [!code-csharp [SaveModel](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L42)]
 
@@ -235,7 +247,7 @@ If you're satisfied with your model, save it for later use in other applications
     }
     ```
 
-1. Inside the `Forecast` method, use the [`Predict`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602.Predict%2A) method to forecast rentals for the next seven days.
+1. Inside the `Forecast` method, use the [`Predict`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine`2.Predict%2A) method to forecast rentals for the next seven days.
 
     [!code-csharp [SingleForecast](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L78)]
 
@@ -288,5 +300,5 @@ You can find the source code for this tutorial at the [dotnet/machinelearning-sa
 
 ## Next steps
 
-- [Machine learning tasks in ML.NET](../resources/tasks.md)
-- [Improve model accuracy](../resources/improve-machine-learning-model-ml-net.md)
+* [Machine learning tasks in ML.NET](../resources/tasks.md)
+* [Improve model accuracy](../resources/improve-machine-learning-model-ml-net.md)

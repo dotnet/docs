@@ -1,23 +1,22 @@
 ---
 description: "descending contextual keyword - C# Reference"
 title: "descending contextual keyword"
-ms.date: 07/20/2015
+ms.date: 01/21/2026
 f1_keywords: 
   - "descending"
   - "descending_CSharpKeyword"
 helpviewer_keywords: 
   - "descending keyword [C#]"
-ms.assetid: 8d2cd1e5-9c1c-4dfc-b84c-60e2d3240927
 ---
 # descending (C# Reference)
 
-The `descending` contextual keyword is used in the [orderby clause](./orderby-clause.md) in query expressions to specify that the sort order is from largest to smallest.
+Use the `descending` contextual keyword in the [orderby clause](./orderby-clause.md) of query expressions to specify that the sort order is from largest to smallest.
 
-## Example
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
-The following example shows the use of `descending` in an [orderby clause](./orderby-clause.md).
+The following example shows how to use `descending` in an [orderby clause](./orderby-clause.md).
 
-[!code-csharp[csrefKeywordsContextual#11](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsContextual/CS/csrefKeywordsContextual.cs#11)]
+:::code language="csharp" source="./snippets/csrefKeywordsContextual.cs" id="11":::
 
 ## See also
 

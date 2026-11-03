@@ -1,6 +1,6 @@
 ---
-title: .NET Standard
-description: Learn about .NET Standard, its versions, and the .NET implementations that support it.
+title: .NET Standard overview
+description: Learn what .NET Standard is, which .NET implementations support each version, and why .NET 5 and later versions simplify cross-platform code sharing.
 ms.date: 11/06/2025
 ms.service: dotnet
 ms.subservice: standard-library
@@ -81,7 +81,7 @@ For more information, see [.NET Framework compatibility mode](../core/porting/th
 
 ## .NET Standard libraries and Visual Studio
 
-To build .NET Standard libraries in Visual Studio, make sure you have [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022), [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or Visual Studio 2017 version 15.3 or later installed on Windows.
+To build .NET Standard libraries in Visual Studio, make sure you have [Visual Studio 2019 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link) or Visual Studio 2017 version 15.3 or later installed on Windows.
 
 If you only need to consume .NET Standard 2.0 libraries in your projects, you can also do that in Visual Studio 2015. However, you need NuGet client 3.6 or higher installed. You can download the NuGet client for Visual Studio 2015 from the [NuGet downloads](https://www.nuget.org/downloads) page.
 
@@ -132,9 +132,9 @@ Here are some problems with .NET Standard that help explain why .NET 5 and later
 
   **Solution in .NET 5+:** There's no separation between a .NET 5+ API specification and its implementation. The result is a simplified TFM scheme. There's one TFM prefix for all workloads: `net10.0` is used for libraries, console apps, and web apps. The only variation is a [suffix that specifies platform-specific APIs](frameworks.md#os-specific-tfms) for a particular platform, such as `net10.0-windows`. Thanks to this TFM naming convention, you can easily tell whether a given app can use a given library. No version number equivalents table, like the one for .NET Standard, is needed.
 
-- Platform-unsupported exceptions at run time
+- Platform-unsupported exceptions at runtime
 
-  .NET Standard exposes platform-specific APIs. Your code might compile without errors and appear to be portable to any platform even if it isn't portable. When it runs on a platform that doesn't have an implementation for a given API, you get run-time errors.
+  .NET Standard exposes platform-specific APIs. Your code might compile without errors and appear to be portable to any platform even if it isn't portable. When it runs on a platform that doesn't have an implementation for a given API, you get runtime errors.
 
   **Solution in .NET 5+:** The .NET 5+ SDKs include code analyzers that are enabled by default. The platform compatibility analyzer detects unintentional use of APIs that aren't supported on the platforms you intend to run on. For more information, see [Platform compatibility analyzer](analyzers/platform-compat-analyzer.md).
 
@@ -149,5 +149,5 @@ Here are some problems with .NET Standard that help explain why .NET 5 and later
 
 - [.NET Standard versions (source)](https://github.com/dotnet/standard/blob/v2.1.0/docs/versions.md)
 - [.NET Standard versions (interactive UI)](https://dotnet.microsoft.com/platform/dotnet-standard#versions)
-- [Build a .NET Standard library](../core/tutorials/library-with-visual-studio.md)
+- [Build a .NET Standard library](../core/tutorials/create-class-library.md)
 - [Cross-platform targeting](./library-guidance/cross-platform-targeting.md)

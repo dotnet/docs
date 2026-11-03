@@ -40,7 +40,7 @@ This change can affect [binary compatibility](../../categories.md#binary-compati
 
 ## Reason for change
 
-This change was introduced to improve performance. Tracking internally uses <xref:System.Threading.AsyncLocal%601>, which is expensive and adds non-trivial overhead.
+This change was introduced to improve performance. Tracking internally uses <xref:System.Threading.AsyncLocal`1>, which is expensive and adds non-trivial overhead.
 
 ## Recommended action
 

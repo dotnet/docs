@@ -7,9 +7,9 @@ f1_keywords:
 ---
 # SYSLIB0049: JsonSerializerOptions.AddContext is obsolete
 
-The <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=nameWithType> method is obsolete, starting in .NET 8. Calling it in code generates warning `SYSLIB0049` at compile time.
+The <xref:System.Text.Json.JsonSerializerOptions.AddContext``1?displayProperty=nameWithType> method is obsolete, starting in .NET 8. Calling it in code generates warning `SYSLIB0049` at compile time.
 
-The <xref:System.Text.Json.JsonSerializerOptions.AddContext%60%601?displayProperty=nameWithType> method was introduced in .NET 6 as a means to associate <xref:System.Text.Json.JsonSerializerOptions> instances with a specified <xref:System.Text.Json.Serialization.JsonSerializerContext> type. This method was largely superseded in .NET 7 with the introduction of [contract customization](../../standard/serialization/system-text-json/custom-contracts.md) and the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> property.
+The <xref:System.Text.Json.JsonSerializerOptions.AddContext``1?displayProperty=nameWithType> method was introduced in .NET 6 as a means to associate <xref:System.Text.Json.JsonSerializerOptions> instances with a specified <xref:System.Text.Json.Serialization.JsonSerializerContext> type. This method was largely superseded in .NET 7 with the introduction of [contract customization](../../standard/serialization/system-text-json/custom-contracts.md) and the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> property.
 
 ## Workaround
 

@@ -6,7 +6,7 @@ ms.assetid: c06d386d-e996-4da9-bf3d-05a3b6c0a258
 ---
 # How to: Extend the Async Walkthrough by Using Task.WhenAll (Visual Basic)
 
-You can improve the performance of the async solution in [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md) by using the <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> method. This method asynchronously awaits multiple asynchronous operations, which are represented as a collection of tasks.
+You can improve the performance of the async solution in [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md) by using the <xref:System.Threading.Tasks.Task.WhenAll*?displayProperty=nameWithType> method. This method asynchronously awaits multiple asynchronous operations, which are represented as a collection of tasks.
 
 You might have noticed in the walkthrough that the websites download at different rates. Sometimes one of the websites is very slow, which delays all the remaining downloads. When you run the asynchronous solutions that you build in the walkthrough, you can end the program easily if you don't want to wait, but a better option would be to start all the downloads at the same time and let faster downloads continue without waiting for the one that’s delayed.
 
@@ -58,7 +58,7 @@ You apply the `Task.WhenAll` method to a collection of tasks. The application of
     'Next
     ```
 
-3. Create a collection of tasks. The following code defines a [query](../linq/index.md) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.
+3. Create a collection of tasks. The following code defines a [query](../linq/index.md) that, when executed by the <xref:System.Linq.Enumerable.ToArray*> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.
 
      Add the following code to method `SumPageSizesAsync` after the declaration of `urlList`.
 
@@ -84,7 +84,7 @@ You apply the `Task.WhenAll` method to a collection of tasks. The application of
     'Dim lengths As Integer() = Await whenAllTask
     ```
 
-5. Finally, use the <xref:System.Linq.Enumerable.Sum%2A> method to calculate the sum of the lengths of all the websites. Add the following line to `SumPageSizesAsync`.
+5. Finally, use the <xref:System.Linq.Enumerable.Sum*> method to calculate the sum of the lengths of all the websites. Add the following line to `SumPageSizesAsync`.
 
     ```vb
     Dim total = lengths.Sum()
@@ -131,7 +131,7 @@ You apply the `Task.WhenAll` method to a collection of tasks. The application of
     'Next
     ```
 
-3. Define a [query](../linq/index.md) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.
+3. Define a [query](../linq/index.md) that, when executed by the <xref:System.Linq.Enumerable.ToArray*> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.
 
      Add the following code to method `SumPageSizesAsync` after the declaration of `client` and `urlList`.
 
@@ -157,7 +157,7 @@ You apply the `Task.WhenAll` method to a collection of tasks. The application of
     'Dim lengths As Integer() = Await whenAllTask
     ```
 
-5. Finally, use the <xref:System.Linq.Enumerable.Sum%2A> method to get the sum of the lengths of all the websites. Add the following line to `SumPageSizesAsync`.
+5. Finally, use the <xref:System.Linq.Enumerable.Sum*> method to get the sum of the lengths of all the websites. Add the following line to `SumPageSizesAsync`.
 
     ```vb
     Dim total = lengths.Sum()
@@ -419,5 +419,5 @@ End Class
 
 ## See also
 
-- <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>
+- <xref:System.Threading.Tasks.Task.WhenAll*?displayProperty=nameWithType>
 - [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md)

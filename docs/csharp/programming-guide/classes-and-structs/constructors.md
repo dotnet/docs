@@ -2,7 +2,7 @@
 title: "Constructors"
 description: A constructor in C# is called when a class or struct is created. Use constructors to set defaults, limit instantiation, and write flexible, easy-to-read code.
 ms.date: 03/11/2025
-helpviewer_keywords: 
+helpviewer_keywords:
   - "constructors [C#]"
   - "classes [C#], constructors"
   - "C# language, constructors"
@@ -16,7 +16,7 @@ There are several actions that are part of initializing a new instance. The foll
 1. *Instance fields are set to 0*. This initialization is typically done by the runtime.
 1. *Field initializers run*. The field initializers in the most derived type run.
 1. *Base type field initializers run*. Field initializers starting with the direct base through each base type to <xref:System.Object?displayProperty=fullName>.
-1. *Base instance constructors run*. Any instance constructors, starting with <xref:System.Object.%23ctor%2A?displayProperty=nameWithType> through each base class to the direct base class.
+1. *Base instance constructors run*. Any instance constructors, starting with <xref:System.Object.%23ctor*?displayProperty=nameWithType> through each base class to the direct base class.
 1. *The instance constructor runs*. The instance constructor for the type runs.
 1. *Object initializers run*. If the expression includes any object initializers, they run after the instance constructor runs. Object initializers run in the textual order.
 
@@ -32,7 +32,7 @@ A constructor is a method with the same name as its type. Its method signature c
 
 :::code source="./snippets/constructors/Program.cs" id="InstanceCtor":::
 
-If a constructor can be implemented as a single statement, you can use an [expression body member](../statements-expressions-operators/expression-bodied-members.md). The following example defines a `Location` class whose constructor has a single string parameter, `name`. The expression body definition assigns the argument to the `locationName` field.
+If a constructor can be implemented as a single statement, you can use an [expression body member](../../language-reference/operators/lambda-operator.md#expression-body-definition). The following example defines a `Location` class whose constructor has a single string parameter, `name`. The expression body definition assigns the argument to the `locationName` field.
 
 :::code source="./snippets/constructors/Program.cs" id="ExpressionBodiedCtor":::
 
@@ -62,7 +62,7 @@ A class can also have **both** an Instance and Static constructor defined, and t
 
 ## Partial constructors
 
-Beginning with C# 14, you can declare *partial constructors* in a partial class or struct. Any partial constructor must have a *defining declaration* and an *implementing declaration*. The signatures of the declaring and implementing partial constructors must match according to the rules of [partial members](./partial-classes-and-methods.md#partial-members). The defining declaration of the partial constructor can't use the `: base()` or `: this()` constructor initializer. You add any constructor initializer must be added on the implementing declaration.
+Beginning with C# 14, you can declare *partial constructors* in a partial class or struct. Any partial constructor must have a *defining declaration* and an *implementing declaration*. The signatures of the declaring and implementing partial constructors must match according to the rules of [partial members](./partial-classes-and-methods.md#partial-members). The defining declaration of the partial constructor can't use the `: base()` or `: this()` constructor initializer. Any constructor initializer must be added on the implementing declaration.
 
 ## See also
 

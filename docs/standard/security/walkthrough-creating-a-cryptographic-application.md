@@ -23,7 +23,7 @@ This walkthrough demonstrates how to encrypt and decrypt the contents of a file.
 
 This walkthrough uses the following guidelines for encryption:
 
-- Use the <xref:System.Security.Cryptography.Aes> class, a symmetric algorithm, to encrypt and decrypt data by using its automatically generated <xref:System.Security.Cryptography.SymmetricAlgorithm.Key%2A> and <xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A>.
+- Use the <xref:System.Security.Cryptography.Aes> class, a symmetric algorithm, to encrypt and decrypt data by using its automatically generated <xref:System.Security.Cryptography.SymmetricAlgorithm.Key*> and <xref:System.Security.Cryptography.SymmetricAlgorithm.IV*>.
 - Use the <xref:System.Security.Cryptography.RSA> asymmetric algorithm to encrypt and decrypt the key to the data encrypted by <xref:System.Security.Cryptography.Aes>. Asymmetric algorithms are best used for smaller amounts of data, such as a key.
 
   > [!NOTE]

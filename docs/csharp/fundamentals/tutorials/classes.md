@@ -121,7 +121,7 @@ Start by creating a new type that represents a transaction. The transaction is a
 
 :::code language="csharp" source="./snippets/introduction-to-classes/Transaction.cs":::
 
-Now, let's add a <xref:System.Collections.Generic.List%601> of `Transaction` objects to the `BankAccount` class. Add the following declaration after the constructor in your *BankAccount.cs* file:
+Now, let's add a <xref:System.Collections.Generic.List`1> of `Transaction` objects to the `BankAccount` class. Add the following declaration after the constructor in your *BankAccount.cs* file:
 
 :::code language="csharp" source="./snippets/introduction-to-classes/BankAccount.cs" id="TransactionDeclaration":::
 

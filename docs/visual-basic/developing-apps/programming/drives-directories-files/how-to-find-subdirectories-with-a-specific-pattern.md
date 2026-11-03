@@ -9,7 +9,7 @@ ms.assetid: c9265fd1-7483-4150-8b7f-ff642caa939d
 ---
 # How to: Find Subdirectories with a Specific Pattern in Visual Basic
 
-The <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectories%2A> method returns a read-only collection of strings representing the path names for the subdirectories in a directory. You can use the `wildCards` parameter to specify a specific pattern. If you would like to include the contents of subdirectories in the search, set the `searchType` parameter to `SearchOption.SearchAllSubDirectories`.
+The <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectories*> method returns a read-only collection of strings representing the path names for the subdirectories in a directory. You can use the `wildCards` parameter to specify a specific pattern. If you would like to include the contents of subdirectories in the search, set the `searchType` parameter to `SearchOption.SearchAllSubDirectories`.
 
 An empty collection is returned if no directories matching the specified pattern are found.
 
@@ -43,5 +43,5 @@ The following conditions may cause an exception:
 
 ## See also
 
-- <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectories%2A>
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectories*>
 - [How to: Find Files with a Specific Pattern](how-to-find-files-with-a-specific-pattern.md)

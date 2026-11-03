@@ -24,7 +24,7 @@ The Web Programming Model described in the [WCF Web HTTP Programming Model Overv
 
 - You can use the <xref:System.ServiceModel.Web.WebGetAttribute> and <xref:System.ServiceModel.Web.WebInvokeAttribute> attributes to select between HTTP GET and HTTP POST verbs. If used correctly, this may significantly improve your application’s performance. For more information, see [How to: Choose between HTTP POST and HTTP GET requests for ASP.NET AJAX Endpoints](http-post-and-http-get-requests-for-aspnet-ajax-endpoints.md).
 
-- You can use the <xref:System.ServiceModel.Web.WebGetAttribute.ResponseFormat%2A> and <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat%2A> properties to cause your service to return XML data instead of the default JavaScript Object Notation (JSON). Doing this with the ASP.NET AJAX framework causes the JavaScript client to receive an XML DOM object.
+- You can use the <xref:System.ServiceModel.Web.WebGetAttribute.ResponseFormat*> and <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat> properties to cause your service to return XML data instead of the default JavaScript Object Notation (JSON). Doing this with the ASP.NET AJAX framework causes the JavaScript client to receive an XML DOM object.
 
   > [!WARNING]
   > Your operation must set the content type to text/xml for this to work. Otherwise, the JavaScript client will receive a string containing the XML instead of an XML DOM object.

@@ -21,7 +21,7 @@ You can also opt in to this behavior in .NET 7. To opt in, set the `System.Windo
 
 Starting in .NET 8, top-level forms scale their <xref:System.Windows.Forms.Form.MinimumSize> and <xref:System.Windows.Forms.Form.MaximumSize> values according to the DPI of the monitor when running in <xref:System.Windows.Forms.HighDpiMode.PerMonitorV2?displayProperty=nameWithType> mode. The behavior of your app might change in the following ways:
 
-- Run-time dependencies might be impacted when the minimum and maximum size of the form change.
+- Runtime dependencies might be impacted when the minimum and maximum size of the form change.
 - New <xref:System.Windows.Forms.Form.MinimumSizeChanged> and <xref:System.Windows.Forms.Form.MaximumSizeChanged> events might be raised.
 - The scaled form size now has new constraint values for the minimum and maximum sizes.
 

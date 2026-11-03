@@ -2,7 +2,7 @@
 description: "Learn more about: Math Functions (Visual Basic)"
 title: Math functions
 ms.date: 01/27/2020
-helpviewer_keywords: 
+helpviewer_keywords:
   - "math functions, Visual Basic"
   - "arithmetic operations, math functions"
   - "math routines"
@@ -16,54 +16,54 @@ The methods of the <xref:System.Math?displayProperty=nameWithType> class provide
 ## Remarks
 
 The following table lists methods of the <xref:System.Math?displayProperty=nameWithType> class. You can use these in a Visual Basic program:
-  
+
 |.NET method|Description|
 |---------------------------|-----------------|
-|<xref:System.Math.Abs%2A>|Returns the absolute value of a number.|
-|<xref:System.Math.Acos%2A>|Returns the angle whose cosine is the specified number.|
-|<xref:System.Math.Asin%2A>|Returns the angle whose sine is the specified number.|
-|<xref:System.Math.Atan%2A>|Returns the angle whose tangent is the specified number.|
-|<xref:System.Math.Atan2%2A>|Returns the angle whose tangent is the quotient of two specified numbers.|
-|<xref:System.Math.BigMul%2A>|Returns the full product of two 32-bit numbers.|
-|<xref:System.Math.Ceiling%2A>|Returns the smallest integral value that's greater than or equal to the specified `Decimal` or `Double`.|
-|<xref:System.Math.Cos%2A>|Returns the cosine of the specified angle.|
-|<xref:System.Math.Cosh%2A>|Returns the hyperbolic cosine of the specified angle.|
-|<xref:System.Math.DivRem%2A>|Returns the quotient of two 32-bit or 64-bit signed integers, and also returns the remainder in an output parameter.|
-|<xref:System.Math.Exp%2A>|Returns e (the base of natural logarithms) raised to the specified power.|
-|<xref:System.Math.Floor%2A>|Returns the largest integer that's less than or equal to the specified `Decimal` or `Double` number.|
-|<xref:System.Math.IEEERemainder%2A>|Returns the remainder that results from the division of a specified number by another specified number.|
-|<xref:System.Math.Log%2A>|Returns the natural (base e) logarithm of a specified number or the logarithm of a specified number in a specified base.|
-|<xref:System.Math.Log10%2A>|Returns the base 10 logarithm of a specified number.|
-|<xref:System.Math.Max%2A>|Returns the larger of two numbers.|
-|<xref:System.Math.Min%2A>|Returns the smaller of two numbers.|
-|<xref:System.Math.Pow%2A>|Returns a specified number raised to the specified power.|
-|<xref:System.Math.Round%2A>|Returns a `Decimal` or `Double` value rounded to the nearest integral value or to a specified number of fractional digits.|
-|<xref:System.Math.Sign%2A>|Returns an `Integer` value indicating the sign of a number.|
-|<xref:System.Math.Sin%2A>|Returns the sine of the specified angle.|
-|<xref:System.Math.Sinh%2A>|Returns the hyperbolic sine of the specified angle.|
-|<xref:System.Math.Sqrt%2A>|Returns the square root of a specified number.|
-|<xref:System.Math.Tan%2A>|Returns the tangent of the specified angle.|
-|<xref:System.Math.Tanh%2A>|Returns the hyperbolic tangent of the specified angle.|
-|<xref:System.Math.Truncate%2A>|Calculates the integral part of a specified `Decimal` or `Double` number.|
+|<xref:System.Math.Abs*>|Returns the absolute value of a number.|
+|<xref:System.Math.Acos*>|Returns the angle whose cosine is the specified number.|
+|<xref:System.Math.Asin*>|Returns the angle whose sine is the specified number.|
+|<xref:System.Math.Atan*>|Returns the angle whose tangent is the specified number.|
+|<xref:System.Math.Atan2*>|Returns the angle whose tangent is the quotient of two specified numbers.|
+|<xref:System.Math.BigMul*>|Returns the full product of two 32-bit numbers.|
+|<xref:System.Math.Ceiling*>|Returns the smallest integral value that's greater than or equal to the specified `Decimal` or `Double`.|
+|<xref:System.Math.Cos*>|Returns the cosine of the specified angle.|
+|<xref:System.Math.Cosh*>|Returns the hyperbolic cosine of the specified angle.|
+|<xref:System.Math.DivRem*>|Returns the quotient of two 32-bit or 64-bit signed integers, and also returns the remainder in an output parameter.|
+|<xref:System.Math.Exp*>|Returns e (the base of natural logarithms) raised to the specified power.|
+|<xref:System.Math.Floor*>|Returns the largest integer that's less than or equal to the specified `Decimal` or `Double` number.|
+|<xref:System.Math.IEEERemainder*>|Returns the remainder that results from the division of a specified number by another specified number.|
+|<xref:System.Math.Log*>|Returns the natural (base e) logarithm of a specified number or the logarithm of a specified number in a specified base.|
+|<xref:System.Math.Log10*>|Returns the base 10 logarithm of a specified number.|
+|<xref:System.Math.Max*>|Returns the larger of two numbers.|
+|<xref:System.Math.Min*>|Returns the smaller of two numbers.|
+|<xref:System.Math.Pow*>|Returns a specified number raised to the specified power.|
+|<xref:System.Math.Round*>|Returns a `Decimal` or `Double` value rounded to the nearest integral value or to a specified number of fractional digits.|
+|<xref:System.Math.Sign*>|Returns an `Integer` value indicating the sign of a number.|
+|<xref:System.Math.Sin*>|Returns the sine of the specified angle.|
+|<xref:System.Math.Sinh*>|Returns the hyperbolic sine of the specified angle.|
+|<xref:System.Math.Sqrt*>|Returns the square root of a specified number.|
+|<xref:System.Math.Tan*>|Returns the tangent of the specified angle.|
+|<xref:System.Math.Tanh*>|Returns the hyperbolic tangent of the specified angle.|
+|<xref:System.Math.Truncate*>|Calculates the integral part of a specified `Decimal` or `Double` number.|
 
 The following table lists methods of the <xref:System.Math?displayProperty=nameWithType> class that don't exist in .NET Framework but are added in .NET Standard or .NET Core:
 
 |.NET method|Description|Available in|
 |---------------------------|-----------------|-----------|
-|<xref:System.Math.Acosh%2A>|Returns the angle whose hyperbolic cosine is the specified number.|Starting with .NET Core 2.1 and .NET Standard 2.1|
-|<xref:System.Math.Asinh%2A>|Returns the angle whose hyperbolic sine is the specified number.|Starting with .NET Core 2.1 and .NET Standard 2.1|
-|<xref:System.Math.Atanh%2A>|Returns the angle whose hyperbolic tangent is the specified number.|Starting with .NET Core 2.1 and .NET Standard 2.1|
-|<xref:System.Math.BitDecrement%2A>|Returns the next smallest value that compares less than `x`.|Starting with .NET Core 3.0|
-|<xref:System.Math.BitIncrement%2A>|Returns the next largest value that compares greater than `x`.|Starting with .NET Core 3.0|
-|<xref:System.Math.Cbrt%2A>|Returns the cube root of a specified number.|Starting with .NET Core 2.1 and .NET Standard 2.1|
-|<xref:System.Math.Clamp%2A>|Returns `value` clamped to the inclusive range of `min` and `max`.|Starting with .NET Core 2.0 and .NET Standard 2.1|
-|<xref:System.Math.CopySign%2A>|Returns a value with the magnitude of `x` and the sign of `y`.|Starting with .NET Core 3.0|
-|<xref:System.Math.FusedMultiplyAdd%2A>|Returns (x \* y) + z, rounded as one ternary operation.|Starting with .NET Core 3.0|
-|<xref:System.Math.ILogB%2A>|Returns the base 2 integer logarithm of a specified number.|Starting with .NET Core 3.0|
-|<xref:System.Math.Log2%2A>|Returns the base 2 logarithm of a specified number.|Starting with .NET Core 3.0|
-|<xref:System.Math.MaxMagnitude%2A>|Returns the larger magnitude of two double-precision floating-point numbers.|Starting with .NET Core 3.0|
-|<xref:System.Math.MinMagnitude%2A>|Returns the smaller magnitude of two double-precision floating-point numbers.|Starting with .NET Core 3.0|
-|<xref:System.Math.ScaleB%2A>|Returns x \* 2^n computed efficiently.|Starting with .NET Core 3.0|
+|<xref:System.Math.Acosh*>|Returns the angle whose hyperbolic cosine is the specified number.|Starting with .NET Core 2.1 and .NET Standard 2.1|
+|<xref:System.Math.Asinh*>|Returns the angle whose hyperbolic sine is the specified number.|Starting with .NET Core 2.1 and .NET Standard 2.1|
+|<xref:System.Math.Atanh*>|Returns the angle whose hyperbolic tangent is the specified number.|Starting with .NET Core 2.1 and .NET Standard 2.1|
+|<xref:System.Math.BitDecrement*>|Returns the next smallest value that compares less than `x`.|Starting with .NET Core 3.0|
+|<xref:System.Math.BitIncrement*>|Returns the next largest value that compares greater than `x`.|Starting with .NET Core 3.0|
+|<xref:System.Math.Cbrt*>|Returns the cube root of a specified number.|Starting with .NET Core 2.1 and .NET Standard 2.1|
+|<xref:System.Math.Clamp*>|Returns `value` clamped to the inclusive range of `min` and `max`.|Starting with .NET Core 2.0 and .NET Standard 2.1|
+|<xref:System.Math.CopySign*>|Returns a value with the magnitude of `x` and the sign of `y`.|Starting with .NET Core 3.0|
+|<xref:System.Math.FusedMultiplyAdd*>|Returns (x \* y) + z, rounded as one ternary operation.|Starting with .NET Core 3.0|
+|<xref:System.Math.ILogB*>|Returns the base 2 integer logarithm of a specified number.|Starting with .NET Core 3.0|
+|<xref:System.Math.Log2*>|Returns the base 2 logarithm of a specified number.|Starting with .NET Core 3.0|
+|<xref:System.Math.MaxMagnitude*>|Returns the larger magnitude of two double-precision floating-point numbers.|Starting with .NET Core 3.0|
+|<xref:System.Math.MinMagnitude*>|Returns the smaller magnitude of two double-precision floating-point numbers.|Starting with .NET Core 3.0|
+|<xref:System.Math.ScaleB*>|Returns x \* 2^n computed efficiently.|Starting with .NET Core 3.0|
 
 To use these functions without qualification, import the <xref:System.Math?displayProperty=nameWithType> namespace into your project by adding the following code to the top of your source file:
 
@@ -73,7 +73,7 @@ Imports System.Math
 
 ## Example - Abs
 
-This example uses the <xref:System.Math.Abs%2A> method of the <xref:System.Math> class to compute the absolute value of a number.
+This example uses the <xref:System.Math.Abs*> method of the <xref:System.Math> class to compute the absolute value of a number.
 
 ```vb
 Dim x As Double = Math.Abs(50.3)
@@ -83,11 +83,11 @@ Console.WriteLine(y)
 ' This example produces the following output:
 ' 50.3
 ' 50.3
-```  
+```
 
 ## Example - Atan
 
-This example uses the <xref:System.Math.Atan%2A> method of the <xref:System.Math> class to calculate the value of pi.
+This example uses the <xref:System.Math.Atan*> method of the <xref:System.Math> class to calculate the value of pi.
 
 ```vb
 Public Function GetPi() As Double
@@ -101,7 +101,7 @@ End Function
 
 ## Example - Cos
 
-This example uses the <xref:System.Math.Cos%2A> method of the <xref:System.Math> class to return the cosine of an angle.
+This example uses the <xref:System.Math.Cos*> method of the <xref:System.Math> class to return the cosine of an angle.
 
 ```vb
 Public Function Sec(angle As Double) As Double
@@ -112,7 +112,7 @@ End Function
 
 ## Example - Exp
 
-This example uses the <xref:System.Math.Exp%2A> method of the <xref:System.Math> class to return e raised to a power.
+This example uses the <xref:System.Math.Exp*> method of the <xref:System.Math> class to return e raised to a power.
 
 ```vb
 Public Function Sinh(angle As Double) As Double
@@ -123,7 +123,7 @@ End Function
 
 ## Example - Log
 
-This example uses the <xref:System.Math.Log%2A> method of the <xref:System.Math> class to return the natural logarithm of a number.
+This example uses the <xref:System.Math.Log*> method of the <xref:System.Math> class to return the natural logarithm of a number.
 
 ```vb
 Public Function Asinh(value As Double) As Double
@@ -134,7 +134,7 @@ End Function
 
 ## Example - Round
 
-This example uses the <xref:System.Math.Round%2A> method of the <xref:System.Math> class to round a number to the nearest integer.
+This example uses the <xref:System.Math.Round*> method of the <xref:System.Math> class to round a number to the nearest integer.
 
 ```vb
 Dim myVar2 As Double = Math.Round(2.8)
@@ -145,7 +145,7 @@ Console.WriteLine(myVar2)
 
 ## Example - Sign
 
-This example uses the <xref:System.Math.Sign%2A> method of the <xref:System.Math> class to determine the sign of a number.
+This example uses the <xref:System.Math.Sign*> method of the <xref:System.Math> class to determine the sign of a number.
 
 ```vb
 Dim mySign1 As Integer = Math.Sign(12)
@@ -162,7 +162,7 @@ Console.WriteLine(mySign3)
 
 ## Example - Sin
 
-This example uses the <xref:System.Math.Sin%2A> method of the <xref:System.Math> class to return the sine of an angle.
+This example uses the <xref:System.Math.Sin*> method of the <xref:System.Math> class to return the sine of an angle.
 
 ```vb
 Public Function Csc(angle As Double) As Double
@@ -173,7 +173,7 @@ End Function
 
 ## Example - Sqrt
 
-This example uses the <xref:System.Math.Sqrt%2A> method of the <xref:System.Math> class to calculate the square root of a number.
+This example uses the <xref:System.Math.Sqrt*> method of the <xref:System.Math> class to calculate the square root of a number.
 
 ```vb
 Dim mySqrt1 As Double = Math.Sqrt(4)
@@ -193,7 +193,7 @@ Console.WriteLine(mySqrt4)
 
 ## Example - Tan
 
-This example uses the <xref:System.Math.Tan%2A> method of the <xref:System.Math> class to return the tangent of an angle.
+This example uses the <xref:System.Math.Tan*> method of the <xref:System.Math> class to return the tangent of an angle.
 
 ```vb
 Public Function Ctan(angle As Double) As Double
@@ -204,8 +204,8 @@ End Function
 
 ## See also
 
-- <xref:Microsoft.VisualBasic.VBMath.Rnd%2A>
-- <xref:Microsoft.VisualBasic.VBMath.Randomize%2A>
+- <xref:Microsoft.VisualBasic.VBMath.Rnd*>
+- <xref:Microsoft.VisualBasic.VBMath.Randomize*>
 - <xref:System.Double.NaN>
 - [Derived Math Functions](../keywords/derived-math-functions.md)
 - [Arithmetic Operators](../operators/arithmetic-operators.md)

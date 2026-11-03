@@ -35,7 +35,7 @@ dotnet package add Microsoft.Extensions.Telemetry.Abstractions
 
 ---
 
-## Implementation
+## ILogEnricher implementation
 
 Your custom enricher only needs to implement a single <xref:Microsoft.Extensions.Diagnostics.Enrichment.ILogEnricher.Enrich(Microsoft.Extensions.Diagnostics.Enrichment.IEnrichmentTagCollector)> method.
 During enrichment, this method is called and given an <xref:Microsoft.Extensions.Diagnostics.Enrichment.IEnrichmentTagCollector> instance. The enricher then calls one of the overloads of
@@ -90,4 +90,27 @@ And you register it as shown in the following code <xref:Microsoft.Extensions.De
 var builder = Host.CreateApplicationBuilder();
 builder.Logging.EnableEnrichment();
 builder.Services.AddLogEnricher(new AnotherEnricher("anotherKey", "anotherValue"));
+```
+
+## Static log enrichers
+
+.NET provides <xref:Microsoft.Extensions.Diagnostics.Enrichment.IStaticLogEnricher> to enrich logs with immutable properties throughout the application lifecycle. Static enrichers execute once during startup initialization, delivering significant performance benefits over standard enrichers that execute for each log record. This approach is particularly advantageous in high-throughput logging scenarios, as it eliminates the overhead of redundant enrichment operations for data that remains constant throughout the service's lifetime. Although executed only once at startup, the enrichment results are attached to every single log message produced by your application.
+
+```csharp
+public class StaticEnricher : IStaticLogEnricher
+{
+    public void Enrich(IEnrichmentTagCollector collector)
+    {
+        collector.Add("app.version", "1.0.0");
+        collector.Add("environment", "production");
+    }
+}
+```
+
+And you register it as shown in the following code <xref:Microsoft.Extensions.DependencyInjection.EnrichmentServiceCollectionExtensions.AddStaticLogEnricher``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)>:
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+builder.Logging.EnableEnrichment();
+builder.Services.AddStaticLogEnricher<StaticEnricher>();
 ```

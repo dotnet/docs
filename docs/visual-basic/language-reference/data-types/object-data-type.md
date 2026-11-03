@@ -24,7 +24,7 @@ The default value of `Object` is `Nothing` (a null reference).
 
 ## Data Types
 
-You can assign a variable, constant, or expression of any data type to an `Object` variable. To determine the data type an `Object` variable currently refers to, you can use the <xref:System.Type.GetTypeCode%2A> method of the <xref:System.Type?displayProperty=nameWithType> class. The following example illustrates this.
+You can assign a variable, constant, or expression of any data type to an `Object` variable. To determine the data type an `Object` variable currently refers to, you can use the <xref:System.Type.GetTypeCode*> method of the <xref:System.Type?displayProperty=nameWithType> class. The following example illustrates this.
 
 ```vb
 Dim myObject As Object

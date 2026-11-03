@@ -2,7 +2,6 @@
 title: Choose the right Azure hosting option
 description: Learn which Azure migration path is right for your ASP.NET web application.
 author: CESARDELATORRE
-ms.author: cesardl
 ms.date: 12/14/2023
 ---
 

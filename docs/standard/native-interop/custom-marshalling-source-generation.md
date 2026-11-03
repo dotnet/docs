@@ -22,17 +22,25 @@ The set of methods that the marshalling generator expects from a custom marshall
 
 The <xref:System.Runtime.InteropServices.Marshalling.MarshalMode> specified in a <xref:System.Runtime.InteropServices.Marshalling.CustomMarshallerAttribute> determines the expected marshalling support and shape for the marshaller implementation. All modes support stateless marshaller implementations. Element marshalling modes do not support stateful marshaller implementations.
 
-| `MarshalMode` | Expected support | Can be stateful |
-| --- | --- | --- |
-| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.ManagedToUnmanagedIn> | Managed to unmanaged | Yes |
-| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.ManagedToUnmanagedRef> | Managed to unmanaged and unmanaged to managed | Yes |
-| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.ManagedToUnmanagedOut> | Unmanaged to managed | Yes |
-| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.UnmanagedToManagedIn> | Unmanaged to managed | Yes |
-| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.UnmanagedToManagedRef> | Managed to unmanaged and unmanaged to managed | Yes |
-| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.UnmanagedToManagedOut> | Managed to unmanaged | Yes |
-| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.ElementIn> | Managed to unmanaged | No |
-| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.ElementRef> | Managed to unmanaged and unmanaged to managed | No |
-| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.ElementOut> | Unmanaged to managed | No |
+| `MarshalMode` | Expected support | Applies to | Can be stateful |
+| --- | --- | --- | --- |
+| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.ManagedToUnmanagedIn> | Managed to unmanaged | By-value and `in` parameters in P/Invoke | Yes |
+| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.ManagedToUnmanagedRef> | Managed to unmanaged and unmanaged to managed | `ref` parameters in P/Invoke | Yes |
+| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.ManagedToUnmanagedOut> | Unmanaged to managed | `out` parameters and **return values** in P/Invoke | Yes |
+| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.UnmanagedToManagedIn> | Unmanaged to managed | By-value and `in` parameters in Reverse P/Invoke | Yes |
+| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.UnmanagedToManagedRef> | Managed to unmanaged and unmanaged to managed | `ref` parameters in Reverse P/Invoke | Yes |
+| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.UnmanagedToManagedOut> | Managed to unmanaged | `out` parameters and **return values** in Reverse P/Invoke | Yes |
+| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.ElementIn> | Managed to unmanaged | Elements of collections passed with `in` or by-value | No |
+| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.ElementRef> | Managed to unmanaged and unmanaged to managed | Elements of collections passed with `ref` | No |
+| <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.ElementOut> | Unmanaged to managed | Elements of collections passed with `out` | No |
+
+> [!NOTE]
+> The member names follow the pattern `{CallDirection}{DataFlow}`:
+>
+> - **Call direction** (`ManagedToUnmanaged` or `UnmanagedToManaged`) indicates which side initiates the call. `ManagedToUnmanaged` means managed code calling unmanaged code (P/Invoke). `UnmanagedToManaged` means unmanaged code calling managed code (Reverse P/Invoke, COM).
+> - **Data flow** (`In`, `Out`, or `Ref`) indicates how data moves relative to the call. `In` means data flows from the caller to the callee. `Out` means data flows from the callee back to the caller&mdash;this includes both `out` parameters and return values. `Ref` means data flows in both directions.
+>
+> For example, `ManagedToUnmanagedOut` is used for `out` parameters and return values when managed code calls unmanaged code. Even though the name starts with "ManagedToUnmanaged", the marshaller for this mode converts *from* the unmanaged representation *to* the managed representation, because the data flows back to the managed caller.
 
 Use <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.Default?displayProperty=nameWithType> to indicate that the marshaller implementation applies to any supported mode, based on the methods it implements. If you specify a marshaller for a more specific `MarshalMode`, that marshaller takes precedence over one marked as `Default`.
 
@@ -169,7 +177,7 @@ To create a custom marshaller for a generic collection type, you can use the <xr
 
 Apply the <xref:System.Runtime.InteropServices.Marshalling.ContiguousCollectionMarshallerAttribute> to a marshaller entry-point type to indicate that it's for contiguous collections. The marshaller entry-point type must have one more type parameter than the associated managed type. The last type parameter is a placeholder and will be filled in by the source generator with the unmanaged type for the collection's element type.
 
-For example, you can specify custom marshalling for a <xref:System.Collections.Generic.List%601>. In the following code, `ListMarshaller` is both the entry point and the implementation. It conforms to one of the [marshaller shapes](./custom-marshaller-shapes.md) expected for custom marshalling of a collection. (Note that it's an incomplete example.)
+For example, you can specify custom marshalling for a <xref:System.Collections.Generic.List`1>. In the following code, `ListMarshaller` is both the entry point and the implementation. It conforms to one of the [marshaller shapes](./custom-marshaller-shapes.md) expected for custom marshalling of a collection. (Note that it's an incomplete example.)
 
 ```csharp
 [ContiguousCollectionMarshaller]
@@ -206,7 +214,7 @@ public unsafe static class ListMarshaller<T, TUnmanagedElement> where TUnmanaged
 }
 ```
 
-The `ListMarshaller` in the example is a stateless collection marshaller that implements support for marshalling from managed to unmanaged and from unmanaged to managed for a <xref:System.Collections.Generic.List%601>. In the following P/Invoke example, `ListMarshaller` will be used to marshal the collection container for the parameter from managed to unmanaged and to marshal the collection container for the return value from unmanaged to managed. The source generator will generate code to copy the elements from the parameter `list` to the container provided by the marshaller. Since `int` is blittable, the elements themselves do not need to be marshalled. <xref:System.Runtime.InteropServices.Marshalling.MarshalUsingAttribute.CountElementName> indicates that the `numValues` parameter should be used as the element count when marshalling the return value from unmanaged to managed.
+The `ListMarshaller` in the example is a stateless collection marshaller that implements support for marshalling from managed to unmanaged and from unmanaged to managed for a <xref:System.Collections.Generic.List`1>. In the following P/Invoke example, `ListMarshaller` will be used to marshal the collection container for the parameter from managed to unmanaged and to marshal the collection container for the return value from unmanaged to managed. The source generator will generate code to copy the elements from the parameter `list` to the container provided by the marshaller. Since `int` is blittable, the elements themselves do not need to be marshalled. <xref:System.Runtime.InteropServices.Marshalling.MarshalUsingAttribute.CountElementName> indicates that the `numValues` parameter should be used as the element count when marshalling the return value from unmanaged to managed.
 
 ```csharp
 [LibraryImport("nativelib")]

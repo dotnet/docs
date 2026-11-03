@@ -33,7 +33,7 @@ The [CustomTracking sample](https://github.com/dotnet/samples/tree/main/framewor
 
  The tracking participant API allows extension of the tracking runtime with a user provided tracking participant that can include custom logic to handle <xref:System.Activities.Tracking.TrackingRecord> objects emitted by the workflow runtime.
 
- To write a tracking participant the user must implement <xref:System.Activities.Tracking.TrackingParticipant>. Specifically, the <xref:System.Activities.Tracking.TrackingParticipant.Track%2A> method has to be implemented by the custom participant. This method is called when a <xref:System.Activities.Tracking.TrackingRecord> is emitted by the workflow runtime.
+ To write a tracking participant the user must implement <xref:System.Activities.Tracking.TrackingParticipant>. Specifically, the <xref:System.Activities.Tracking.TrackingParticipant.Track*> method has to be implemented by the custom participant. This method is called when a <xref:System.Activities.Tracking.TrackingRecord> is emitted by the workflow runtime.
 
 ```csharp
 public abstract class TrackingParticipant
@@ -45,7 +45,7 @@ public abstract class TrackingParticipant
 }
 ```
 
- The complete tracking participant is implemented in the ConsoleTrackingParticipant.cs file. The following code example is the <xref:System.Activities.Tracking.TrackingParticipant.Track%2A> method for the custom tracking participant.
+ The complete tracking participant is implemented in the ConsoleTrackingParticipant.cs file. The following code example is the <xref:System.Activities.Tracking.TrackingParticipant.Track*> method for the custom tracking participant.
 
 ```csharp
 protected override void Track(TrackingRecord record, TimeSpan timeout)

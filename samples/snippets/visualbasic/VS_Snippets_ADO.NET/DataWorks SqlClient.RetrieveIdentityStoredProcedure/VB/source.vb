@@ -2,7 +2,7 @@
 Option Strict On
 
 Imports System.Data
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 
 Module Class1
 

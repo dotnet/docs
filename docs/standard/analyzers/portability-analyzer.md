@@ -25,7 +25,7 @@ Once you've converted your project to target the new platform, like .NET Core, y
 To begin using the .NET Portability Analyzer in Visual Studio, you first need to [clone and build the dotnet-apiport project](https://github.com/microsoft/dotnet-apiport/blob/dev/docs/Console/README.md#run-the-tool-in-an-offline-mode). It works on Visual Studio 2017 and Visual Studio 2019 versions.
 
 > [!IMPORTANT]
-> The .NET Portability Analyzer is not supported in Visual Studio 2022.
+> The .NET Portability Analyzer is not supported in Visual Studio 2022 and later versions.
 
 ### Solution-wide view
 

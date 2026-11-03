@@ -46,7 +46,7 @@ If you're currently using the switch (or the `DOTNET_SYSTEM_IO_USENET5COMPATFILE
 - <xref:System.IO.File.OpenWrite(System.String)?displayProperty=fullName>
 - <xref:System.IO.FileSystemAclExtensions.Create(System.IO.FileInfo,System.IO.FileMode,System.Security.AccessControl.FileSystemRights,System.IO.FileShare,System.Int32,System.IO.FileOptions,System.Security.AccessControl.FileSecurity)?displayProperty=fullName>
 - <xref:System.IO.FileInfo.Create?displayProperty=fullName>
-- <xref:System.IO.FileInfo.Open%2A?displayProperty=fullName>
+- <xref:System.IO.FileInfo.Open*?displayProperty=fullName>
 - <xref:System.IO.FileInfo.OpenRead?displayProperty=fullName>
 - <xref:System.IO.FileInfo.OpenWrite?displayProperty=fullName>
 

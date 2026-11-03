@@ -39,8 +39,7 @@ namespace interpolated_string_handler.Version3
         }
         // </AppendWhenEnabled>
 
-        // Not part of the pattern, but needed to retrieve the formatted string
-        internal string GetFormattedText() => builder.ToString();
+        public override string ToString() => builder.ToString();
     }
 
     public enum LogLevel
@@ -67,7 +66,7 @@ namespace interpolated_string_handler.Version3
         public void LogMessage(LogLevel level, [InterpolatedStringHandlerArgument("", "level")] LogInterpolatedStringHandler builder)
         {
             if (EnabledLevel < level) return;
-            Console.WriteLine(builder.GetFormattedText());
+            Console.WriteLine(builder.ToString());
         }
         // </ArgumentsToHandlerConstructor>
     }

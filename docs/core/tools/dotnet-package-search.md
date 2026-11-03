@@ -34,7 +34,7 @@ The `dotnet package search` command searches for a NuGet package.
 
 ## Options
 
-- [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](includes/cli-configfile.md)]
 
 - **`--exact-match`**
 
@@ -45,7 +45,7 @@ The `dotnet package search` command searches for a NuGet package.
 
     The format options are `table` and `json`. The default is `table`.
 
-- [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+- [!INCLUDE [interactive](includes/cli-interactive.md)]
 
 - **`--prerelease`**
 
@@ -63,9 +63,9 @@ The `dotnet package search` command searches for a NuGet package.
 
     The number of results to return. The default value is 20.
 
-- [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Examples
 

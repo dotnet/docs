@@ -5,7 +5,7 @@ ms.date: 01/16/2024
 ---
 # ComponentDesigner.Initialize throws ArgumentNullException
 
-<xref:System.ComponentModel.Design.ComponentDesigner.Initialize%2A?displayProperty=nameWithType> was updated to throw an <xref:System.ArgumentNullException> if the component argument is `null`.
+<xref:System.ComponentModel.Design.ComponentDesigner.Initialize*?displayProperty=nameWithType> was updated to throw an <xref:System.ArgumentNullException> if the component argument is `null`.
 
 ## Version introduced
 
@@ -13,11 +13,11 @@ ms.date: 01/16/2024
 
 ## Previous behavior
 
-Previously, <xref:System.ComponentModel.Design.ComponentDesigner.Initialize%2A?displayProperty=nameWithType> accepted a `null` argument, but resulted in a <xref:System.NullReferenceException> or other exception later on.
+Previously, <xref:System.ComponentModel.Design.ComponentDesigner.Initialize*?displayProperty=nameWithType> accepted a `null` argument, but resulted in a <xref:System.NullReferenceException> or other exception later on.
 
 ## New behavior
 
-Starting in .NET 9, <xref:System.ComponentModel.Design.ComponentDesigner.Initialize%2A?displayProperty=nameWithType> throws an <xref:System.ArgumentNullException> if the argument is `null`.
+Starting in .NET 9, <xref:System.ComponentModel.Design.ComponentDesigner.Initialize*?displayProperty=nameWithType> throws an <xref:System.ArgumentNullException> if the argument is `null`.
 
 ## Change category
 
@@ -29,8 +29,8 @@ During the process of enabling nullability in the code file, it was discovered t
 
 ## Recommended action
 
-Make sure you don't call <xref:System.ComponentModel.Design.ComponentDesigner.Initialize%2A?displayProperty=nameWithType> with a `null` argument.
+Make sure you don't call <xref:System.ComponentModel.Design.ComponentDesigner.Initialize*?displayProperty=nameWithType> with a `null` argument.
 
 ## Affected APIs
 
-- <xref:System.ComponentModel.Design.ComponentDesigner.Initialize%2A?displayProperty=fullName>
+- <xref:System.ComponentModel.Design.ComponentDesigner.Initialize*?displayProperty=fullName>

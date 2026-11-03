@@ -14,9 +14,9 @@ ms.assetid: 6201b7da-bcb7-49f7-b9f5-ba1fe05573b9
 
 Contains cryptography settings.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<mscorlib>**](mscorlib-element-for-cryptography-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<cryptographySettings>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<mscorlib>`](mscorlib-element-for-cryptography-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<cryptographySettings>`
 
 ## Syntax
 
@@ -49,7 +49,7 @@ Contains cryptography settings.
 
 ## Example
 
- The following example shows how use the `<cryptographySettings>` element to contain cryptography name mappings and OID mappings. This example configures the runtime so that <xref:System.Security.Cryptography.HashAlgorithm.Create%2A?displayProperty=nameWithType> returns a `MyHashClass` object and the `MyCryptoClass` class maps to the object identifier 1.3.36.2.1.
+ The following example shows how use the `<cryptographySettings>` element to contain cryptography name mappings and OID mappings. This example configures the runtime so that <xref:System.Security.Cryptography.HashAlgorithm.Create*?displayProperty=nameWithType> returns a `MyHashClass` object and the `MyCryptoClass` class maps to the object identifier 1.3.36.2.1.
 
 ```xml
 <configuration>

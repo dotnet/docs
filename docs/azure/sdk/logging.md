@@ -64,7 +64,7 @@ The SDK includes the <xref:Azure.Core.Diagnostics.AzureEventSourceListener?displ
 A core tenet of the Azure SDK for .NET client libraries is to simplify the ability to view comprehensive logs in real time. The `CreateConsoleLogger` method allows you to send logs to the console window with a single line of code:
 
 ```csharp
-using AzureEventSourceListener listener = 
+using AzureEventSourceListener listener =
     AzureEventSourceListener.CreateConsoleLogger();
 ```
 
@@ -75,7 +75,7 @@ If you implement trace listeners, you can use the `CreateTraceLogger` method to 
 This example specifies a log level of verbose:
 
 ```csharp
-using AzureEventSourceListener listener = 
+using AzureEventSourceListener listener =
     AzureEventSourceListener.CreateTraceLogger(EventLevel.Verbose);
 ```
 
@@ -127,14 +127,14 @@ Using the Azure Service Bus library as an example, complete the following steps:
     dotnet add package Microsoft.Extensions.Azure
     ```
 
-1. In *Program.cs*, register the Azure SDK library's client via a call to the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method:
+1. In *Program.cs*, register the Azure SDK library's client via a call to the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients*> extension method:
 
     ```csharp
     using Azure.Identity;
     using Microsoft.Extensions.Azure;
-    
+
     // code omitted for brevity
-    
+
     builder.Services.AddAzureClients(azureBuilder =>
     {
         azureBuilder.AddServiceBusClient(
@@ -177,7 +177,7 @@ In these scenarios, complete the following steps:
 
     :::code language="csharp" source="snippets/logging/Program.cs" id="RegisterServiceWithDI" highlight="8":::
 
-1. Fetch the log forwarder service from the DI container and invoke its <xref:Microsoft.Extensions.Azure.AzureEventSourceLogForwarder.Start%2A> method. For example, using constructor injection in an ASP.NET Core Razor Pages page model class:
+1. Fetch the log forwarder service from the DI container and invoke its <xref:Microsoft.Extensions.Azure.AzureEventSourceLogForwarder.Start*> method. For example, using constructor injection in an ASP.NET Core Razor Pages page model class:
 
     :::code language="csharp" source="snippets/logging/Pages/Index.cshtml.cs" id="FetchServiceAndStart" highlight="6-7":::
 
@@ -225,12 +225,12 @@ When troubleshooting unexpected behavior with a client library, it's helpful to 
 
 By default, logging of the aforementioned content is disabled. To enable logging of the HTTP request and response bodies, complete the following steps:
 
-1. Set the client options object's <xref:Azure.Core.DiagnosticsOptions.IsLoggingContentEnabled%2A> property to `true`, and pass the options object to the client's constructor. For example, to log HTTP requests and responses for the Azure Key Vault Secrets library:
+1. Set the client options object's <xref:Azure.Core.DiagnosticsOptions.IsLoggingContentEnabled> property to `true`, and pass the options object to the client's constructor. For example, to log HTTP requests and responses for the Azure Key Vault Secrets library:
 
     ```csharp
     var clientOptions = new SecretClientOptions
     {
-        Diagnostics = 
+        Diagnostics =
         {
             IsLoggingContentEnabled = true
         }

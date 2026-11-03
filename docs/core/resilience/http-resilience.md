@@ -1,9 +1,7 @@
 ---
 title: "Build resilient HTTP apps: Key development patterns"
 description: Learn how to build resilient HTTP apps using the Microsoft.Extensions.Http.Resilience NuGet package.
-author: IEvangelist
-ms.author: dapine
-ms.date: 10/22/2025
+ms.date: 02/24/2026
 ai-usage: ai-assisted
 ---
 
@@ -33,12 +31,12 @@ For more information, see [dotnet package add](../tools/dotnet-package-add.md) o
 
 ## Add resilience to an HTTP client
 
-To add resilience to an <xref:System.Net.Http.HttpClient>, you chain a call on the <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> type that is returned from calling any of the available <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> methods. For more information, see [IHttpClientFactory with .NET](../extensions/httpclient-factory.md).
+To add resilience to an <xref:System.Net.Http.HttpClient>, you chain a call on the <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> type that is returned from calling any of the available <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient*> methods. For more information, see [IHttpClientFactory with .NET](../extensions/httpclient-factory.md).
 
 There are several resilience-centric extensions available. Some are standard, thus employing various industry best practices, and others are more customizable. When adding resilience, you should only add one resilience handler and avoid stacking handlers. If you need to add multiple resilience handlers, you should consider using the `AddResilienceHandler` extension method, which allows you to customize the resilience strategies.
 
 > [!IMPORTANT]
-> All examples within this article rely on the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> API, from the [Microsoft.Extensions.Http](https://www.nuget.org/packages/Microsoft.Extensions.Http) library, which returns an <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance. The <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance is used to configure the <xref:System.Net.Http.HttpClient> and add the resilience handler.
+> All examples within this article rely on the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient*> API, from the [Microsoft.Extensions.Http](https://www.nuget.org/packages/Microsoft.Extensions.Http) library, which returns an <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance. The <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance is used to configure the <xref:System.Net.Http.HttpClient> and add the resilience handler. If you need to add resilience to a `static` or *singleton* `HttpClient` without a DI container, see [Resilience with static clients](../../fundamentals/networking/http/httpclient-guidelines.md#resilience-with-static-clients).
 
 ## Add standard resilience handler
 
@@ -209,7 +207,7 @@ There are many options available for each of the resilience strategies. For more
 
 ### Dynamic reload
 
-Polly supports dynamic reloading of the configured resilience strategies. This means that you can change the configuration of the resilience strategies at run time. To enable dynamic reload, use the appropriate `AddResilienceHandler` overload that exposes the `ResilienceHandlerContext`. Given the context, call `EnableReloads` of the corresponding resilience strategy options:
+Polly supports dynamic reloading of the configured resilience strategies. This means that you can change the configuration of the resilience strategies at runtime. To enable dynamic reload, use the appropriate `AddResilienceHandler` overload that exposes the `ResilienceHandlerContext`. Given the context, call `EnableReloads` of the corresponding resilience strategy options:
 
 :::code language="csharp" source="snippets/http-resilience/Program.CustomHandler.cs" id="advanced":::
 
@@ -217,7 +215,7 @@ The preceding code:
 
 - Adds a resilience handler with the name `"AdvancedPipeline"` as the `pipelineName` to the service container.
 - Enables the reloads of the `"AdvancedPipeline"` pipeline whenever the named `RetryStrategyOptions` options change.
-- Retrieves the named options from the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> service.
+- Retrieves the named options from the <xref:Microsoft.Extensions.Options.IOptionsMonitor`1> service.
 - Adds a retry strategy with the retrieved options to the resilience builder.
 
 For more information, see [Polly docs: Advanced dependency injection](https://www.pollydocs.org/advanced/dependency-injection#dynamic-reloads).
@@ -234,7 +232,7 @@ For more information, see [Options pattern in .NET](../extensions/options.md).
 
 ## Example usage
 
-Your app relies on [dependency injection](../extensions/dependency-injection.md) to resolve the `ExampleClient` and its corresponding <xref:System.Net.Http.HttpClient>. The code builds the <xref:System.IServiceProvider> and resolves the `ExampleClient` from it.
+Your app relies on [dependency injection](../extensions/dependency-injection/overview.md) to resolve the `ExampleClient` and its corresponding <xref:System.Net.Http.HttpClient>. The code builds the <xref:System.IServiceProvider> and resolves the `ExampleClient` from it.
 
 :::code language="csharp" source="snippets/http-resilience/Program.cs" id="usage":::
 

@@ -1,7 +1,8 @@
 ---
 title: dotnet nuget update source command
 description: The dotnet nuget update source command updates an existing source in your NuGet configuration files. 
-ms.date: 10/28/2025
+ms.date: 11/03/2026
+ai-usage: ai-assisted
 ---
 # dotnet nuget update source
 
@@ -20,6 +21,7 @@ ms.date: 10/28/2025
 dotnet nuget update source <NAME> [--source <SOURCE>] [--username <USER>]
     [--password <PASSWORD>] [--store-password-in-clear-text]
     [--valid-authentication-types <TYPES>] [--configfile <FILE>]
+    [--min-publish-age-hours <HOURS>]
 
 dotnet nuget update source -h|--help
 ```
@@ -36,7 +38,13 @@ The `dotnet nuget update source` command updates an existing source in your NuGe
 
 ## Options
 
-- [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](includes/cli-configfile.md)]
+
+- **`--min-publish-age-hours <HOURS>`**
+
+  Sets the minimum package publish age for this source in nonnegative whole hours. When `dotnet package add` or `dotnet package update` automatically selects a version, it excludes versions from this source that haven't reached the minimum age, unless the package matches a configured exception. Sets the `minPublishAgeHours` attribute in *nuget.config*. Set the option to `0` to remove the source's minimum age. If you omit the option, the existing value stays unchanged. Available starting with .NET SDK 11.0.100.
+
+  For package-selection behavior, exceptions, and restore limitations, see [Minimum package publish age](/nuget/consume-packages/minimum-package-publish-age).
 
 - **`-p|--password <PASSWORD>`**
 
@@ -72,6 +80,18 @@ The `dotnet nuget update source` command updates an existing source in your NuGe
 
   ```dotnetcli
   dotnet nuget update source mySource --source c:\packages
+  ```
+
+- Set a 72-hour minimum package publish age for `nuget.org`:
+
+  ```dotnetcli
+  dotnet nuget update source nuget.org --min-publish-age-hours 72
+  ```
+
+- Remove the minimum package publish age for `nuget.org`:
+
+  ```dotnetcli
+  dotnet nuget update source nuget.org --min-publish-age-hours 0
   ```
 
 ## See also

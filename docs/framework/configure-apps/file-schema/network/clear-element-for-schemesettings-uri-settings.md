@@ -8,10 +8,10 @@ ms.assetid: 65098332-ce61-4542-ab8d-e7dc0257d31f
 
 Clears all existing scheme settings.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<uri>**](uri-element-uri-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<schemeSettings>**](schemesettings-element-uri-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<uri>`](uri-element-uri-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<schemeSettings>`](schemesettings-element-uri-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<clear>`
 
 ## Syntax
 
@@ -77,7 +77,7 @@ Clears all existing scheme settings.
 - <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>
 - <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>
 - <xref:System.Configuration.UriSection?displayProperty=nameWithType>
-- <xref:System.Configuration.UriSection.SchemeSettings%2A?displayProperty=nameWithType>
+- <xref:System.Configuration.UriSection.SchemeSettings*?displayProperty=nameWithType>
 - <xref:System.GenericUriParserOptions?displayProperty=nameWithType>
 - <xref:System.Uri?displayProperty=nameWithType>
 - [Network Settings Schema](index.md)

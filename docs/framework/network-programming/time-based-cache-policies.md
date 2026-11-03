@@ -36,7 +36,7 @@ A time-based cache policy defines the freshness of cached entries using the time
 - Cache synchronization date
 
 > [!NOTE]
-> Using the default time-based cache policy should not be confused with setting a default cache policy for your application. The default time-based policy is a specific policy that can be used at the request or application level. The default cache policy for your application is a policy (location-based or time-based) that takes effect when no policy is set on a request. For details on setting a default cache policy for your application, see <xref:System.Net.WebRequest.DefaultCachePolicy%2A>.
+> Using the default time-based cache policy should not be confused with setting a default cache policy for your application. The default time-based policy is a specific policy that can be used at the request or application level. The default cache policy for your application is a policy (location-based or time-based) that takes effect when no policy is set on a request. For details on setting a default cache policy for your application, see <xref:System.Net.WebRequest.DefaultCachePolicy*>.
 
 ### Maximum Age
 

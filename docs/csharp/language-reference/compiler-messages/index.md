@@ -1,12 +1,9 @@
 ---
 description: "C# Compiler Errors"
 title: "Compiler messages"
-ms.date: 05/21/2024
+ms.date: 05/19/2026
 helpviewer_keywords: 
   - "C# language, compiler errors"
-  - "Visual C# compiler, errors"
-  - "errors [C#]"
-ms.assetid: 57262ab1-6c50-4f9c-81ad-9fba48477416
 ---
 # C# Compiler Errors
 

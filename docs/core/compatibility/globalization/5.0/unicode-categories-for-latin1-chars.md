@@ -35,11 +35,11 @@ This change was made so that the categories returned by the <xref:System.Char> t
 
 ## Affected APIs
 
-- <xref:System.Char.GetUnicodeCategory%2A?displayProperty=fullName>
-- <xref:System.Char.IsLetter%2A?displayProperty=fullName>
-- <xref:System.Char.IsPunctuation%2A?displayProperty=fullName>
-- <xref:System.Char.IsSymbol%2A?displayProperty=fullName>
-- <xref:System.Char.IsLower%2A?displayProperty=fullName>
+- <xref:System.Char.GetUnicodeCategory*?displayProperty=fullName>
+- <xref:System.Char.IsLetter*?displayProperty=fullName>
+- <xref:System.Char.IsPunctuation*?displayProperty=fullName>
+- <xref:System.Char.IsSymbol*?displayProperty=fullName>
+- <xref:System.Char.IsLower*?displayProperty=fullName>
 
 Additionally, any class that depends on <xref:System.Char> to obtain the Unicode character category, for example, <xref:System.Text.RegularExpressions.Regex>, is affected by this change.
 

@@ -122,8 +122,8 @@ The following example illustrates the use of the single-line syntax.
 
 ## See also
 
-- <xref:Microsoft.VisualBasic.Interaction.Choose%2A>
-- <xref:Microsoft.VisualBasic.Interaction.Switch%2A>
+- <xref:Microsoft.VisualBasic.Interaction.Choose*>
+- <xref:Microsoft.VisualBasic.Interaction.Switch*>
 - [#If...Then...#Else Directives](../directives/if-then-else-directives.md)
 - [Select...Case Statement](select-case-statement.md)
 - [Nested Control Structures](../../programming-guide/language-features/control-flow/nested-control-structures.md)

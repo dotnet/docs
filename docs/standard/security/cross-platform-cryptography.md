@@ -1,13 +1,15 @@
 ---
-title: "Cross-platform cryptography in .NET"
+title: "Cross-platform cryptography"
 description: Learn about cryptographic capabilities on platforms supported by .NET.
-ms.date: "11/04/2025"
+ms.date: 08/03/2026
 ms.subservice: standard-library
+ms.topic: reference
 helpviewer_keywords:
   - "cryptography, cross-platform"
   - "encryption, cross-platform"
+ai-usage: ai-assisted
 ---
-# Cross-Platform Cryptography in .NET
+# Cross-platform cryptography in .NET
 
 Cryptographic operations in .NET are done by operating system (OS) libraries. This dependency has advantages:
 
@@ -76,7 +78,7 @@ The underlying ciphers and chaining are done by the system libraries.
 
 Authenticated encryption (AE) support is provided for AES-CCM, AES-GCM, and ChaCha20Poly1305 via the <xref:System.Security.Cryptography.AesCcm?displayProperty=fullName>, <xref:System.Security.Cryptography.AesGcm?displayProperty=fullName>, and <xref:System.Security.Cryptography.ChaCha20Poly1305?displayProperty=fullName> classes, respectively.
 
-Since authenticated encryption requires newer platform APIs to support the algorithm, support may not be present on all platforms. The `IsSupported` static property on the classes for the algorithm can be used to detect at runtime if the current platform supports the algorithm or not.
+Since authenticated encryption requires newer platform APIs to support the algorithm, support might not be present on all platforms. To detect at runtime whether the current platform supports the algorithm, you can use the `IsSupported` static property on the class for the algorithm.
 
 | Cipher + Mode     | Windows                 | Linux          | macOS   | iOS, tvOS, MacCatalyst | Android       | Browser |
 |-------------------|-------------------------|----------------|---------|------------------------|---------------|---------|
@@ -117,9 +119,10 @@ Support for AES-GCM and ChaCha20Poly1305 is available starting in .NET 9 on iOS 
   The <xref:System.Security.Cryptography.AesGcm> class supports only 96-bit (12-byte) nonces.
 
 * Tag Sizes
+
   On Windows and Linux, the <xref:System.Security.Cryptography.AesGcm> class supports creating or processing 96, 104, 112, 120, and 128-bit (12, 13, 14, 15, and 16-byte) tags. On Apple platforms, the tag size is limited to 128-bit (16-byte) due to limitations of the CryptoKit framework.
 
-### ChaCha20Poly1305 keys, nonces, and tags.
+### ChaCha20Poly1305 keys, nonces, and tags
 
 ChaCha20Poly1305 has a fixed size for the key, nonce, and authentication tag. ChaCha20Poly1305 always uses a 256-bit key, a 96-bit (12-byte) nonce, and 128-bit (16-byte) tag.
 
@@ -159,9 +162,9 @@ Padding and digest support vary by platform:
 
 * Windows CryptoAPI (CAPI) is used whenever [`new RSACryptoServiceProvider()`](xref:System.Security.Cryptography.RSACryptoServiceProvider) is used.
 * Windows Cryptography API Next Generation (CNG) is used whenever [`new RSACng()`](xref:System.Security.Cryptography.RSACng) is used.
-* The object returned by <xref:System.Security.Cryptography.RSA.Create%2A?displayProperty=nameWithType> is internally powered by Windows CNG. This use of Windows CNG is an implementation detail and is subject to change.
-* The <xref:System.Security.Cryptography.X509Certificates.RSACertificateExtensions.GetRSAPublicKey%2A> extension method for <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> returns an <xref:System.Security.Cryptography.RSACng> instance. This use of <xref:System.Security.Cryptography.RSACng> is an implementation detail and is subject to change.
-* The <xref:System.Security.Cryptography.X509Certificates.RSACertificateExtensions.GetRSAPrivateKey%2A> extension method for <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> currently prefers an <xref:System.Security.Cryptography.RSACng> instance, but if <xref:System.Security.Cryptography.RSACng> can't open the key, <xref:System.Security.Cryptography.RSACryptoServiceProvider> will be attempted. The preferred provider is an implementation detail and is subject to change.
+* The object returned by <xref:System.Security.Cryptography.RSA.Create*?displayProperty=nameWithType> is internally powered by Windows CNG. This use of Windows CNG is an implementation detail and is subject to change.
+* The <xref:System.Security.Cryptography.X509Certificates.RSACertificateExtensions.GetRSAPublicKey*> extension method for <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> returns an <xref:System.Security.Cryptography.RSACng> instance. This use of <xref:System.Security.Cryptography.RSACng> is an implementation detail and is subject to change.
+* The <xref:System.Security.Cryptography.X509Certificates.RSACertificateExtensions.GetRSAPrivateKey*> extension method for <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> currently prefers an <xref:System.Security.Cryptography.RSACng> instance, but if <xref:System.Security.Cryptography.RSACng> can't open the key, <xref:System.Security.Cryptography.RSACryptoServiceProvider> will be attempted. The preferred provider is an implementation detail and is subject to change.
 
 #### RSA native interop
 
@@ -276,9 +279,9 @@ DSA (Digital Signature Algorithm) key generation is performed by the system libr
 
 * Windows CryptoAPI (CAPI) is used whenever [`new DSACryptoServiceProvider()`](xref:System.Security.Cryptography.DSACryptoServiceProvider) is used.
 * Windows Cryptography API Next Generation (CNG) is used whenever [`new DSACng()`](xref:System.Security.Cryptography.DSACng) is used.
-* The object returned by <xref:System.Security.Cryptography.DSA.Create%2A?displayProperty=nameWithType> is internally powered by Windows CNG. This use of Windows CNG is an implementation detail and is subject to change.
-* The <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPublicKey%2A> extension method for <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> returns a <xref:System.Security.Cryptography.DSACng> instance. This use of <xref:System.Security.Cryptography.DSACng> is an implementation detail and is subject to change.
-* The <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPrivateKey%2A> extension method for <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> prefers an <xref:System.Security.Cryptography.DSACng> instance, but if <xref:System.Security.Cryptography.DSACng> can't open the key, <xref:System.Security.Cryptography.DSACryptoServiceProvider> will be attempted.  The preferred provider is an implementation detail and is subject to change.
+* The object returned by <xref:System.Security.Cryptography.DSA.Create*?displayProperty=nameWithType> is internally powered by Windows CNG. This use of Windows CNG is an implementation detail and is subject to change.
+* The <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPublicKey*> extension method for <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> returns a <xref:System.Security.Cryptography.DSACng> instance. This use of <xref:System.Security.Cryptography.DSACng> is an implementation detail and is subject to change.
+* The <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPrivateKey*> extension method for <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> prefers an <xref:System.Security.Cryptography.DSACng> instance, but if <xref:System.Security.Cryptography.DSACng> can't open the key, <xref:System.Security.Cryptography.DSACryptoServiceProvider> will be attempted.  The preferred provider is an implementation detail and is subject to change.
 
 #### DSA native interop
 
@@ -363,24 +366,24 @@ SLH-DSA has a pure and prehash variant (HashSLH-DSA). The following table reflec
 
 | Algorithm                              | Windows                       | Linux          | Apple | Android | Browser |
 |----------------------------------------|-------------------------------|----------------|-------|---------|---------|
-| MLDSA44-RSA2048-PSS-SHA256             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
-| MLDSA44-RSA2048-PKCS15-SHA256          | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA44-RSA2048-PSS-SHA256             | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA44-RSA2048-PKCS15-SHA256          | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 | MLDSA44-Ed25519-SHA512                 | ❌                            | ❌             | ❌    | ❌      | ❌      |
 | MLDSA44-ECDSA-P256-SHA256              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
-| MLDSA65-RSA3072-PSS-SHA512             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
-| MLDSA65-RSA3072-PKCS15-SHA512          | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
-| MLDSA65-RSA4096-PSS-SHA512             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
-| MLDSA65-RSA4096-PKCS15-SHA512          | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-RSA3072-PSS-SHA512             | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-RSA3072-PKCS15-SHA512          | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-RSA4096-PSS-SHA512             | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-RSA4096-PKCS15-SHA512          | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 | MLDSA65-ECDSA-P256-SHA512              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 | MLDSA65-ECDSA-P384-SHA512              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
-| MLDSA65-ECDSA-brainpoolP256r1-SHA512   | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-ECDSA-brainpoolP256r1-SHA512   | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 | MLDSA65-Ed25519-SHA512                 | ❌                            | ❌             | ❌    | ❌      | ❌      |
 | MLDSA87-ECDSA-P384-SHA512              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
-| MLDSA87-ECDSA-brainpoolP384r1-SHA512   | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA87-ECDSA-brainpoolP384r1-SHA512   | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 | MLDSA87-Ed448-SHAKE256                 | ❌                            | ❌             | ❌    | ❌      | ❌      |
-| MLDSA87-RSA3072-PSS-SHA512             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
-| MLDSA87-RSA4096-PSS-SHA512             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
-| MLDSA87-ECDSA-P521-SHA512              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA87-RSA3072-PSS-SHA512             | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA87-RSA4096-PSS-SHA512             | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA87-ECDSA-P521-SHA512              | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 
 #### Native interop composite ML-DSA
 
@@ -421,7 +424,7 @@ Windows and Linux both emit DER-encoded PKCS7 blobs. macOS emits indefinite-leng
 
 ### X509Store
 
-On Windows, the <xref:System.Security.Cryptography.X509Certificates.X509Store> class is a representation of the Windows Certificate Store APIs. Those APIs work the same in .NET Core and .NET 5 as they do in .NET Framework.
+On Windows, the <xref:System.Security.Cryptography.X509Certificates.X509Store> class is a representation of the Windows Certificate Store APIs. Those APIs work the same in .NET as they do in .NET Framework.
 
 On non-Windows, the <xref:System.Security.Cryptography.X509Certificates.X509Store> class is a projection of system trust decisions (read-only), user trust decisions (read-write), and user key storage (read-write).
 
@@ -454,6 +457,21 @@ On macOS, the `CurrentUser\My` store is the user's default keychain, which is `l
 On Linux, the `LocalMachine\Root` store is an interpretation of the CA bundle in the default path for OpenSSL.
 
 On macOS, the `CurrentUser\Root` store is an interpretation of the `SecTrustSettings` results for the user trust domain. The `LocalMachine\Root` store is an interpretation of the `SecTrustSettings` results for the admin and system trust domains.
+
+##### Trusted root certificate locations on Linux
+
+On Linux, .NET uses OpenSSL (libssl) to locate trusted root certificates. OpenSSL determines the certificate store location using environment variables (`SSL_CERT_FILE` and `SSL_CERT_DIR`) and distribution-specific default paths. When the root store directory configured for OpenSSL doesn't contain any certificates, .NET falls back to checking `/etc/ssl/certs`. This fallback ensures compatibility with distributions like SUSE Linux Enterprise Server (SLES) where the directory specified by `SSL_CERT_DIR` might only contain certificates with the `BEGIN TRUSTED CERTIFICATE` format, which .NET doesn't support as root certificates.
+
+This fallback only occurs when:
+
+1. The `SSL_CERT_DIR` environment variable isn't explicitly set.
+1. The default certificate directory contains no usable certificates.
+
+If your certificates aren't loading correctly, verify that:
+
+* Your certificate files are in PEM format with the `BEGIN CERTIFICATE` marker (not `BEGIN TRUSTED CERTIFICATE`).
+* The `SSL_CERT_DIR` and `SSL_CERT_FILE` environment variables point to the correct locations, if set.
+* The certificate bundle file or directory has the appropriate read permissions.
 
 #### The Intermediate store
 

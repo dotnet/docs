@@ -31,12 +31,12 @@ If none of these constructors are available, a <xref:System.NotSupportedExceptio
 ## Recommended action
 
 - If you own the type and it's feasible, make the parameterless constructor public.
-- Otherwise, implement a <xref:System.Text.Json.Serialization.JsonConverter%601> for the type and control the deserialization behavior. You can call a non-public constructor from a <xref:System.Text.Json.Serialization.JsonConverter%601> implementation if C# accessibility rules for that scenario allow it.
+- Otherwise, implement a <xref:System.Text.Json.Serialization.JsonConverter`1> for the type and control the deserialization behavior. You can call a non-public constructor from a <xref:System.Text.Json.Serialization.JsonConverter`1> implementation if C# accessibility rules for that scenario allow it.
 
 ## Affected APIs
 
-- <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=fullName>
-- <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.Deserialize*?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.DeserializeAsync*?displayProperty=fullName>
 
 <!--
 

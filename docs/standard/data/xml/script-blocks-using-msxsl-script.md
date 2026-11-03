@@ -12,14 +12,14 @@ ms.assetid: fde6f43f-c594-486f-abcb-2211197fae20
 > [!NOTE]
 > Script blocks are supported only in .NET Framework. They are _not_ supported on .NET Core or .NET 5 or later.
 
-The <xref:System.Xml.Xsl.XslCompiledTransform> class supports embedded scripts using the `msxsl:script` element. When the style sheet is loaded, any defined functions are compiled to common intermediate language (CIL) by the Code Document Object Model (CodeDOM) and are executed during run time. The assembly generated from the embedded script block is separate than the assembly generated for the style sheet.
+The <xref:System.Xml.Xsl.XslCompiledTransform> class supports embedded scripts using the `msxsl:script` element. When the style sheet is loaded, any defined functions are compiled to common intermediate language (CIL) by the Code Document Object Model (CodeDOM) and are executed during runtime. The assembly generated from the embedded script block is separate than the assembly generated for the style sheet.
 
 ## Enable XSLT script
 
-Support for embedded scripts is an optional XSLT setting on the <xref:System.Xml.Xsl.XslCompiledTransform> class. Script support is disabled by default. To enable script support, create an <xref:System.Xml.Xsl.XsltSettings> object with the <xref:System.Xml.Xsl.XsltSettings.EnableScript%2A> property set to `true` and pass the object to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method.
+Support for embedded scripts is an optional XSLT setting on the <xref:System.Xml.Xsl.XslCompiledTransform> class. Script support is disabled by default. To enable script support, create an <xref:System.Xml.Xsl.XsltSettings> object with the <xref:System.Xml.Xsl.XsltSettings.EnableScript> property set to `true` and pass the object to the <xref:System.Xml.Xsl.XslCompiledTransform.Load*> method.
 
 > [!WARNING]
-> Starting in .NET 10, the <xref:System.Xml.Xsl.XsltSettings.EnableScript%2A> property is marked as obsolete and generates warning SYSLIB0062. Since script blocks aren't supported on .NET Core or .NET 5+, this property has no effect and setting it to `true` throws a <xref:System.PlatformNotSupportedException> at run time.
+> Starting in .NET 10, the <xref:System.Xml.Xsl.XsltSettings.EnableScript> property is marked as obsolete and generates warning SYSLIB0062. Since script blocks aren't supported on .NET Core or .NET 5+, this property has no effect and setting it to `true` throws a <xref:System.PlatformNotSupportedException> at runtime.
 
 > [!NOTE]
 > XSLT scripting should be enabled only if you require script support and you are working in a fully trusted environment.
@@ -34,7 +34,7 @@ Support for embedded scripts is an optional XSLT setting on the <xref:System.Xml
 
  The `msxsl` prefix is bound to the `urn:schemas-microsoft-com:xslt` namespace URI. The style sheet must include the `xmlns:msxsl=urn:schemas-microsoft-com:xslt` namespace declaration.
 
- The `language` attribute is optional. Its value is the code language of the embedded code block. The language is mapped to the appropriate CodeDOM compiler using the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A?displayProperty=nameWithType> method. The <xref:System.Xml.Xsl.XslCompiledTransform> class can support any Microsoft .NET language, assuming the appropriate provider is installed on the machine and is registered in the system.codedom section of the machine.config file. If a `language` attribute is not specified, the language defaults to JScript. The language name is not case-sensitive so 'JavaScript' and 'javascript' are equivalent.
+ The `language` attribute is optional. Its value is the code language of the embedded code block. The language is mapped to the appropriate CodeDOM compiler using the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider*?displayProperty=nameWithType> method. The <xref:System.Xml.Xsl.XslCompiledTransform> class can support any Microsoft .NET language, assuming the appropriate provider is installed on the machine and is registered in the system.codedom section of the machine.config file. If a `language` attribute is not specified, the language defaults to JScript. The language name is not case-sensitive so 'JavaScript' and 'javascript' are equivalent.
 
  The `implements-prefix` attribute is mandatory. This attribute is used to declare a namespace and associate it with the script block. The value of this attribute is the prefix that represents the namespace. This prefix can be defined somewhere in a style sheet.
 

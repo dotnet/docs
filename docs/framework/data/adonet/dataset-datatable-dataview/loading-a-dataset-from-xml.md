@@ -70,7 +70,7 @@ dataSet.ReadXml(xmlSR, XmlReadMode.IgnoreSchema);
 ```
 
 > [!NOTE]
-> If you call `ReadXml` to load a very large file, you may encounter slow performance. To ensure best performance for **ReadXml**, on a large file, call the <xref:System.Data.DataTable.BeginLoadData%2A> method for each table in the <xref:System.Data.DataSet>, and then call **ReadXml**. Finally, call <xref:System.Data.DataTable.EndLoadData%2A> for each table in the <xref:System.Data.DataSet>, as shown in the following example.
+> If you call `ReadXml` to load a very large file, you may encounter slow performance. To ensure best performance for **ReadXml**, on a large file, call the <xref:System.Data.DataTable.BeginLoadData*> method for each table in the <xref:System.Data.DataSet>, and then call **ReadXml**. Finally, call <xref:System.Data.DataTable.EndLoadData*> for each table in the <xref:System.Data.DataSet>, as shown in the following example.
 
 ```vb
 Dim dataTable As DataTable
@@ -111,11 +111,11 @@ foreach (DataTable dataTable in dataSet.Tables)
 
 ## Merging Data from XML
 
- If the <xref:System.Data.DataSet> already contains data, the new data from the XML is added to the data already present in the <xref:System.Data.DataSet>. `ReadXml` does not merge from the XML into the <xref:System.Data.DataSet> any row information with matching primary keys. To overwrite existing row information with new information from XML, use `ReadXml` to create a new <xref:System.Data.DataSet>, and then <xref:System.Data.DataSet.Merge%2A> the new <xref:System.Data.DataSet> into the existing <xref:System.Data.DataSet>. Note that loading a DiffGram using `ReadXML` with an `XmlReadMode` of `DiffGram` will merge rows that have the same unique identifier.
+ If the <xref:System.Data.DataSet> already contains data, the new data from the XML is added to the data already present in the <xref:System.Data.DataSet>. `ReadXml` does not merge from the XML into the <xref:System.Data.DataSet> any row information with matching primary keys. To overwrite existing row information with new information from XML, use `ReadXml` to create a new <xref:System.Data.DataSet>, and then <xref:System.Data.DataSet.Merge*> the new <xref:System.Data.DataSet> into the existing <xref:System.Data.DataSet>. Note that loading a DiffGram using `ReadXML` with an `XmlReadMode` of `DiffGram` will merge rows that have the same unique identifier.
 
 ## See also
 
-- <xref:System.Data.DataSet.Merge%2A?displayProperty=nameWithType>
+- <xref:System.Data.DataSet.Merge*?displayProperty=nameWithType>
 - [Using XML in a DataSet](using-xml-in-a-dataset.md)
 - [DiffGrams](diffgrams.md)
 - [Deriving DataSet Relational Structure from XML Schema (XSD)](deriving-dataset-relational-structure-from-xml-schema-xsd.md)

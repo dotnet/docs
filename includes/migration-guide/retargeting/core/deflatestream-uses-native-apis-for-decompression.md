@@ -2,13 +2,13 @@
 
 #### Details
 
-Starting with the .NET Framework 4.7.2, the implementation of decompression in the `T:System.IO.Compression.DeflateStream` class has changed to use native Windows APIs by default. Typically, this results in a substantial performance improvement. All .NET applications targeting the .NET Framework version 4.7.2 or higher use the native implementation.This change might result in some differences in behavior, which include:
+Starting with .NET Framework 4.7.2, the implementation of decompression in the <xref:System.IO.Compression.DeflateStream> class has changed to use native Windows APIs by default. Typically, this results in a substantial performance improvement. All .NET applications targeting .NET Framework version 4.7.2 or higher use the native implementation. This change might result in some differences in behavior, which include:
 
-- Exception messages may be different. However, the type of exception thrown remains the same.
-- Some special situations, such as not having enough memory to complete an operation, may be handled differently.
-- There are known differences for parsing gzip header (note: only `GZipStream` set for decompression is affected):
-- Exceptions when parsing invalid headers may be thrown at different times.
-- The native implementation enforces that values for some reserved flags inside the gzip header (i.e. [FLG](http://www.zlib.org/rfc-gzip.html#header-trailer)) are set according to the specification, which may cause it to throw an exception where previously invalid values were ignored.
+- Exception messages might be different. However, the type of exception thrown remains the same.
+- Some special situations, such as not having enough memory to complete an operation, might be handled differently.
+- There are known differences when parsing gzip headers (only when `GZipStream` is used for decompression).
+- Exceptions when parsing invalid headers might be thrown at different times.
+- The native implementation enforces that values for some reserved flags inside the gzip header are set according to the specification, which might cause it to throw an exception where previously invalid values were ignored.
 
 #### Suggestion
 

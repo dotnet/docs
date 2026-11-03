@@ -14,7 +14,7 @@ public class Example
          Console.WriteLine("There are no command line arguments.");
          return;
       }
-      if (! Directory.Exists(args[0])) {
+      if (!Directory.Exists(args[0])) {
          Console.WriteLine("The directory does not exist.");
          return;
       }

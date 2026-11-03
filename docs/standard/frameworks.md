@@ -1,7 +1,7 @@
 ---
 title: Target frameworks in SDK-style projects - .NET
 description: Learn about target frameworks for .NET apps and libraries.
-ms.date: 11/06/2025
+ms.date: 04/15/2026
 ms.service: dotnet
 ms.custom: updateeachrelease
 ms.subservice: standard-library
@@ -99,7 +99,7 @@ Use these guidelines to determine which TFM to use in your app:
 
 #### OS version in TFMs
 
-You can also specify an optional OS version at the end of an OS-specific TFM, for example, `net8.0-ios17.2`. The version indicates which APIs are available to your app or library. It doesn't control the OS version that your app or library supports at run time. It's used to select the reference assemblies that your project compiles against, and to select assets from NuGet packages. Think of this version as the "platform version" or "OS API version" to disambiguate it from the run-time OS version.
+You can also specify an optional OS version at the end of an OS-specific TFM, for example, `net8.0-ios17.2`. The version indicates which APIs are available to your app or library. It doesn't control the OS version that your app or library supports at runtime. It's used to select the reference assemblies that your project compiles against, and to select assets from NuGet packages. Think of this version as the "platform version" or "OS API version" to disambiguate it from the runtime OS version.
 
 The .NET SDK is designed to be able to support newly released APIs for an individual platform without a new version of the base TFM. This enables you to access platform-specific functionality without waiting for a major release of .NET. You can gain access to these newly released APIs by incrementing the platform version in the TFM. For example, if the Android platform added API level 34 APIs in a .NET 8.0.x SDK update, you could access them by using the TFM `net8.0-android34.0`.
 
@@ -130,7 +130,7 @@ If your app references a package that has multiple assets for different TFMs, th
 
 #### Support older OS versions
 
-Although a platform-specific app or library is compiled against APIs from a specific version of that OS, you can make it compatible with earlier OS versions by adding the `SupportedOSPlatformVersion` property to your project file. The `SupportedOSPlatformVersion` property indicates the minimum OS version required to run your app or library. If you don't explicitly specify this minimum run-time OS version in the project, it defaults to the platform version from the TFM.
+Although a platform-specific app or library is compiled against APIs from a specific version of that OS, you can make it compatible with earlier OS versions by adding the `SupportedOSPlatformVersion` property to your project file. The `SupportedOSPlatformVersion` property indicates the minimum OS version required to run your app or library. If you don't explicitly specify this minimum runtime OS version in the project, it defaults to the platform version from the TFM.
 
 For your app to run correctly on an older OS version, it can't call APIs that don't exist on that version of the OS. However, you can add guards around calls to newer APIs so they are only called when running on a version of the OS that supports them. This pattern allows you to design your app or library to support running on older OS versions while taking advantage of newer OS functionality when running on newer OS versions.
 
@@ -207,6 +207,35 @@ public class MyClass
     }
 }
 ```
+
+### TargetFramework values are aliases
+
+The `TargetFramework` property value (for example, `net10.0`) is a friendly name—an alias—that the .NET SDK translates into canonical moniker properties. Specifically, the SDK sets the following properties from the `TargetFramework` value:
+
+- `TargetFrameworkMoniker` (for example, `.NETCoreApp,Version=v10.0`)
+- `TargetFrameworkIdentifier` (for example, `.NETCoreApp`)
+- `TargetFrameworkVersion` (for example, `v10.0`)
+- `TargetPlatformMoniker`, `TargetPlatformIdentifier`, and `TargetPlatformVersion` (when targeting a specific platform)
+
+NuGet and the .NET SDK use these moniker properties—not the `TargetFramework` string—for package compatibility checks and build logic. This translation already happens for OS-specific TFMs. For example, `net10.0-windows` translates to `TargetFrameworkMoniker` = `.NETCoreApp,Version=v10.0` and `TargetPlatformMoniker` = `Windows,Version=7.0`.
+
+Because the alias is just a name, the `TargetFramework` value can be any alphanumeric string, as long as the corresponding moniker properties are set correctly. The following project file uses a custom alias named `banana` and explicitly sets the moniker properties so that the project builds and restores for .NET 10.0:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>banana</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'banana' ">
+    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
+    <TargetFrameworkMoniker>.NETCoreApp,Version=v10.0</TargetFrameworkMoniker>
+  </PropertyGroup>
+</Project>
+```
+
+For more information about these properties, see the [TargetFramework](../core/project-sdk/msbuild-props.md#targetframework) MSBuild property reference.
 
 ## Preprocessor symbols
 

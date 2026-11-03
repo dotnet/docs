@@ -4,60 +4,60 @@ title: "<message> of <netHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 9def5a35-475d-40d6-b716-ccdbd93863c7
 ---
-# \<message> of \<netHttpBinding>
+# `<message>` of `<netHttpBinding>`
 
-Defines the settings for message-level security of the [\<netHttpBinding>](nethttpbinding.md).  
-  
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<netHttpBinding>**](nethttpbinding.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-nethttpbinding.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<message>**  
-  
-## Syntax  
-  
-```xml  
+Defines the settings for message-level security of the [\<netHttpBinding>](nethttpbinding.md).
+
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<system.serviceModel>`](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<bindings>`](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`<netHttpBinding>`](nethttpbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<binding>`\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`<security>`](security-of-nethttpbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<message>`
+
+## Syntax
+
+```xml
 <message algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
          clientCredentialType="UserName/Certificate" />
-```  
-  
-## Attributes and Elements  
+```
 
- The following sections describe attributes, child elements, and parent elements  
-  
-### Attributes  
-  
-|Attribute|Description|  
-|---------------|-----------------|  
-|algorithmSuite|Sets the message encryption and key-wrap algorithms. This attribute is of type <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>, which specifies the algorithms and the key sizes. These algorithms map to those specified in the Security Policy Language (WS-SecurityPolicy) specification.<br /><br /> The default value is `Basic256`.|  
-|clientCredentialType|Specifies the type of credential to be used when performing client authentication using message-based security. The default is `UserName`.|  
-  
-## clientCredentialType Attribute  
-  
-|Value|Description|  
-|-----------|-----------------|  
-|UserName|-   Requires the client be authenticated to the server with a UserName credential. This credential needs to be specified using the <`clientCredentials`> element.<br />-   WCF does not support sending a password digest or deriving keys using passwords and using such keys for message security. Therefore, WCF enforces that the transport be secured when using UserName credentials. For the `basicHttpBinding`, this requires setting up an SSL channel.|  
-|Certificate|Requires that the client be authenticated to the server using a certificate. The client credential in this case needs to be specified using <`clientCredentials`> and the <`clientCertificate`>. In addition, when using message security mode, the client needs to be provisioned with the service certificate. The service credential in this case needs to be specified using <xref:System.ServiceModel.Description.ClientCredentials> class or `ClientCredentials` behavior element and specifying the service certificate using the \<serviceCertificate> element of serviceCredentials.|  
-  
-### Child Elements  
+## Attributes and Elements
 
- None  
-  
-### Parent Elements  
-  
-|Element|Description|  
-|-------------|-----------------|  
-|<`security`> element of <`netHttpBinding`>|Defines the security capabilities for the <`netHttpBinding`> Element.|  
-  
-## Example  
+ The following sections describe attributes, child elements, and parent elements
 
- This sample demonstrates how to implement an application that uses the basicHttpBinding and message security. In the following configuration example for a service, the endpoint definition specifies the basicHttpBinding and references a binding configuration named `Binding1`. The certificate that the service uses to authenticate itself to the client is set in the `behaviors` section of the configuration file under the `serviceCredentials` element. The validation mode that applies to the certificate that the client uses to authenticate itself to the service is also set in the `behaviors` section under the `clientCertificate` element.  
-  
- The same binding and security details are specified in the client configuration file.  
-  
-```xml  
+### Attributes
+
+|Attribute|Description|
+|---------------|-----------------|
+|algorithmSuite|Sets the message encryption and key-wrap algorithms. This attribute is of type <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>, which specifies the algorithms and the key sizes. These algorithms map to those specified in the Security Policy Language (WS-SecurityPolicy) specification.<br /><br /> The default value is `Basic256`.|
+|clientCredentialType|Specifies the type of credential to be used when performing client authentication using message-based security. The default is `UserName`.|
+
+## clientCredentialType Attribute
+
+|Value|Description|
+|-----------|-----------------|
+|UserName|-   Requires the client be authenticated to the server with a UserName credential. This credential needs to be specified using the <`clientCredentials`> element.<br />-   WCF does not support sending a password digest or deriving keys using passwords and using such keys for message security. Therefore, WCF enforces that the transport be secured when using UserName credentials. For the `basicHttpBinding`, this requires setting up an SSL channel.|
+|Certificate|Requires that the client be authenticated to the server using a certificate. The client credential in this case needs to be specified using <`clientCredentials`> and the <`clientCertificate`>. In addition, when using message security mode, the client needs to be provisioned with the service certificate. The service credential in this case needs to be specified using <xref:System.ServiceModel.Description.ClientCredentials> class or `ClientCredentials` behavior element and specifying the service certificate using the \<serviceCertificate> element of serviceCredentials.|
+
+### Child Elements
+
+ None
+
+### Parent Elements
+
+|Element|Description|
+|-------------|-----------------|
+|<`security`> element of <`netHttpBinding`>|Defines the security capabilities for the <`netHttpBinding`> Element.|
+
+## Example
+
+ This sample demonstrates how to implement an application that uses the basicHttpBinding and message security. In the following configuration example for a service, the endpoint definition specifies the basicHttpBinding and references a binding configuration named `Binding1`. The certificate that the service uses to authenticate itself to the client is set in the `behaviors` section of the configuration file under the `serviceCredentials` element. The validation mode that applies to the certificate that the client uses to authenticate itself to the service is also set in the `behaviors` section under the `clientCertificate` element.
+
+ The same binding and security details are specified in the client configuration file.
+
+```xml
 <system.serviceModel>
   <services>
     <service name="Microsoft.ServiceModel.Samples.CalculatorService"
@@ -117,8 +117,8 @@ Defines the settings for message-level security of the [\<netHttpBinding>](netht
     </serviceBehaviors>
   </behaviors>
 </system.serviceModel>
-```  
-  
+```
+
 ## See also
 
 - [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)

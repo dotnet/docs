@@ -63,7 +63,7 @@ HRESULT DefineAssemblyRef (
 
  One `AssemblyRef` metadata structure must be defined for each assembly that this assembly references.
 
- At run time, the details of a referenced assembly are passed to the assembly resolver with an indication that they represent the "as built" information. The assembly resolver then applies policy.
+ At runtime, the details of a referenced assembly are passed to the assembly resolver with an indication that they represent the "as built" information. The assembly resolver then applies policy.
 
 ## Requirements
 

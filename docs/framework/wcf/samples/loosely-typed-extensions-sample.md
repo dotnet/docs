@@ -65,7 +65,7 @@ This document contains the following pieces of extension data:
 
 ## Writing Extension Data
 
-Attribute extensions are created by adding entries to the <xref:System.ServiceModel.Syndication.SyndicationFeed.AttributeExtensions%2A> collection as shown in the following sample code.
+Attribute extensions are created by adding entries to the <xref:System.ServiceModel.Syndication.SyndicationFeed.AttributeExtensions*> collection as shown in the following sample code.
 
 ```csharp
 //Attribute extensions are stored in a dictionary indexed by
@@ -73,7 +73,7 @@ Attribute extensions are created by adding entries to the <xref:System.ServiceMo
 feed.AttributeExtensions.Add(new XmlQualifiedName("myAttribute", ""), "someValue");
 ```
 
-Element extensions are created by adding entries to the <xref:System.ServiceModel.Syndication.SyndicationFeed.ElementExtensions%2A> collection. These extensions can by basic values such as strings, XML serializations of .NET Framework objects, or XML nodes coded by hand.
+Element extensions are created by adding entries to the <xref:System.ServiceModel.Syndication.SyndicationFeed.ElementExtensions*> collection. These extensions can by basic values such as strings, XML serializations of .NET Framework objects, or XML nodes coded by hand.
 
 The following sample code creates an extension element named `simpleString`.
 
@@ -103,7 +103,7 @@ feed.ElementExtensions.Add(new XElement("xElementExtension",
 
 ## Reading Extension Data
 
-The values for attribute extensions can be obtained by looking up the attribute in the <xref:System.ServiceModel.Syndication.SyndicationFeed.AttributeExtensions%2A> collection by its <xref:System.Xml.XmlQualifiedName> as shown in the following sample code.
+The values for attribute extensions can be obtained by looking up the attribute in the <xref:System.ServiceModel.Syndication.SyndicationFeed.AttributeExtensions*> collection by its <xref:System.Xml.XmlQualifiedName> as shown in the following sample code.
 
 ```csharp
 Console.WriteLine( feed.AttributeExtensions[ new XmlQualifiedName( "myAttribute", "" )]);

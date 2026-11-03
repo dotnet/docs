@@ -1,7 +1,8 @@
 ---
 title: NuGet and .NET libraries
 description: Best practice recommendations for packaging with NuGet for .NET libraries.
-ms.date: 01/15/2019
+ms.date: 03/19/2026
+ai-usage: ai-assisted
 ---
 # NuGet
 
@@ -44,7 +45,7 @@ A NuGet package supports many [metadata properties](/nuget/reference/nuspec). Th
 | `PackageVersion`                   | `version`                  | NuGet package version. For more information, see [NuGet package version](./versioning.md#nuget-package-version).             |
 | `Title`                            | `title`                    | A human-friendly title of the package. It defaults to the `PackageId`.             |
 | `Description`                      | `description`              | A long description of the package displayed in UI.             |
-| `Authors`                          | `authors`                  | A comma-separated list of package authors, matching the profile names on nuget.org.             |
+| `Authors`                          | `authors`                  | A comma-separated list of package author display names (for example, `James Newton-King`). These names are displayed as plain text on NuGet.org and are not linked to NuGet.org profiles. |
 | `PackageTags`                      | `tags`                     | A space or semicolon-delimited list of tags and keywords that describe the package. Tags are used when searching for packages.             |
 | `PackageIcon`                   | `icon`                  | A path to an image in the package to use as a package icon. Read more about [`icon` metadata](/nuget/reference/nuspec#icon). |
 | `PackageProjectUrl`                | `projectUrl`               | A URL for the project homepage or source repository.             |

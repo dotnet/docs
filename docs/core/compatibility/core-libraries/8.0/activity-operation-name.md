@@ -42,7 +42,7 @@ This change is unlikely to cause breaks as using `null` when creating `Activity`
 
 ## Affected APIs
 
-- <xref:System.Diagnostics.Activity.%23ctor%2A> constructor
+- <xref:System.Diagnostics.Activity.%23ctor*> constructor
 - <xref:System.Diagnostics.Activity.OperationName?displayProperty=fullName>
-- <xref:System.Diagnostics.ActivitySource.CreateActivity%2A?displayProperty=fullName>
-- <xref:System.Diagnostics.ActivitySource.StartActivity%2A?displayProperty=fullName>
+- <xref:System.Diagnostics.ActivitySource.CreateActivity*?displayProperty=fullName>
+- <xref:System.Diagnostics.ActivitySource.StartActivity*?displayProperty=fullName>

@@ -34,5 +34,5 @@ Close or disconnect the pipe after everything has been written.
 ## Affected APIs
 
 - <xref:System.IO.FileStream.WriteByte(System.Byte)?displayProperty=fullName>
-- <xref:System.IO.FileStream.Write%2A?displayProperty=fullName>
-- <xref:System.IO.FileStream.WriteAsync%2A?displayProperty=fullName>
+- <xref:System.IO.FileStream.Write*?displayProperty=fullName>
+- <xref:System.IO.FileStream.WriteAsync*?displayProperty=fullName>

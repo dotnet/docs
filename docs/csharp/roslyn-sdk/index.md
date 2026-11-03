@@ -22,6 +22,11 @@ Instead of being opaque source-code-in and object-code-out translators,
 through Roslyn, compilers become platforms: APIs that you can use for
 code-related tasks in your tools and applications.
 
+> [!WARNING]
+> Use the .NET Compiler Platform (Roslyn) APIs only with inputs and extensions that you fully trust. Malformed or malicious inputs can cause unexpected behavior, including out-of-bounds memory access, crashes, or hangs. Analyzers and source generators execute code in your environment, so load and run them only from trusted sources.
+>
+> For related guidance, see the remarks for <xref:System.Reflection.Metadata> and [Secure MSBuild usage best practices](/visualstudio/msbuild/msbuild-security-best-practices#run-build-only-on-sources-you-know-and-reviewed).
+
 ## .NET Compiler Platform SDK concepts
 
 The .NET Compiler Platform SDK dramatically lowers the barrier

@@ -36,7 +36,7 @@ app.MapGet("/weatherforecast", async (BlobServiceClient client) =>
             summaries[Random.Shared.Next(summaries.Length)]
         ))
         .ToArray();
-    return blobs.FirstOrDefault().Name;
+    return blobs.FirstOrDefault()?.Name ?? string.Empty;
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();

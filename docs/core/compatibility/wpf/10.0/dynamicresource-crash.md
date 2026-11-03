@@ -8,7 +8,7 @@ ms.custom: https://github.com/dotnet/docs/issues/46089
 
 # Incorrect usage of DynamicResource causes application crash
 
-Applications that use `DynamicResource` incorrectly now crash at run time.
+Applications that use `DynamicResource` incorrectly now crash at runtime.
 
 ## Version introduced
 

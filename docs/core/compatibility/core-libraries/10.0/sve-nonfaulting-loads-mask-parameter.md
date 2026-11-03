@@ -52,7 +52,7 @@ This change was necessary because a nonfaulting load updates the first fault reg
 
 ## Affected APIs
 
-- <xref:System.Runtime.Intrinsics.Arm.Sve.LoadVectorNonFaulting%2A?displayProperty=fullName>
+- <xref:System.Runtime.Intrinsics.Arm.Sve.LoadVectorNonFaulting*?displayProperty=fullName>
 - <xref:System.Runtime.Intrinsics.Arm.Sve.LoadVectorByteNonFaultingZeroExtendToInt16(System.Byte*)?displayProperty=fullName>
 - <xref:System.Runtime.Intrinsics.Arm.Sve.LoadVectorByteNonFaultingZeroExtendToInt32(System.Byte*)?displayProperty=fullName>
 - <xref:System.Runtime.Intrinsics.Arm.Sve.LoadVectorByteNonFaultingZeroExtendToInt64(System.Byte*)?displayProperty=fullName>

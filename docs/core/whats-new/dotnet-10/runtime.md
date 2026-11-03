@@ -264,7 +264,7 @@ For more information about de-abstraction improvements in .NET 10, see [dotnet/r
 
 #### Delegates
 
-When source code is compiled to IL, each delegate is transformed into a closure class with a method corresponding to the delegate's definition and fields matching any captured variables. At run time, a closure object is created to instantiate the captured variables, along with a `Func` object to invoke the delegate. If escape analysis determines the `Func` object won't outlive its current scope, the JIT allocates it on the stack.
+When source code is compiled to IL, each delegate is transformed into a closure class with a method corresponding to the delegate's definition and fields matching any captured variables. At runtime, a closure object is created to instantiate the captured variables, along with a `Func` object to invoke the delegate. If escape analysis determines the `Func` object won't outlive its current scope, the JIT allocates it on the stack.
 
 Consider the following `Main` method:
 

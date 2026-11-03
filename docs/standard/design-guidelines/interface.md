@@ -28,11 +28,11 @@ Although most APIs are best modeled using classes and structs, there are cases i
 
  ✔️ DO provide at least one type that is an implementation of an interface.
 
- Doing this helps to validate the design of the interface. For example, <xref:System.Collections.Generic.List%601> is an implementation of the <xref:System.Collections.Generic.IList%601> interface.
+ Doing this helps to validate the design of the interface. For example, <xref:System.Collections.Generic.List`1> is an implementation of the <xref:System.Collections.Generic.IList`1> interface.
 
  ✔️ DO provide at least one API that consumes each interface you define (a method taking the interface as a parameter or a property typed as the interface).
 
- Doing this helps to validate the interface design. For example, <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=nameWithType> consumes the <xref:System.Collections.Generic.IComparer%601?displayProperty=nameWithType> interface.
+ Doing this helps to validate the interface design. For example, <xref:System.Collections.Generic.List`1.Sort*?displayProperty=nameWithType> consumes the <xref:System.Collections.Generic.IComparer`1?displayProperty=nameWithType> interface.
 
  ❌ DO NOT add members to an interface that has previously shipped.
 

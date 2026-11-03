@@ -15,10 +15,10 @@ ms.assetid: 14e95627-dd79-4b82-ac85-e682aa3a31d8
 
 Encapsulates binding policy and assembly location for each assembly. Use one `dependentAssembly` element for each assembly.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-runtime.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<dependentAssembly>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<assemblyBinding>`](assemblybinding-element-for-runtime.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<dependentAssembly>`
 
 ## Syntax
 

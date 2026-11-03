@@ -2,7 +2,7 @@
 title: Grain identity
 description: Learn about grain identities in .NET Orleans.
 ms.date: 03/31/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Grain identity
@@ -44,7 +44,7 @@ public class DictionaryGrain<K, V> : IDictionaryGrain<K, V>
 }
 ```
 
-The grain class has two generic parameters, so a backtick `` ` `` followed by the generic arity, 2, is added to the end of the grain type name `dict` to create the grain type name ``dict`2``. This is specified in the attribute on the grain class: `[GrainType("dict`2")]`.
+The grain class has two generic parameters, so a backtick `` ` `` followed by the generic arity, 2, is added to the end of the grain type name `dict` to create the grain type name ``dict`2``. This is specified in the attribute on the grain class: ``[GrainType("dict`2")]``.
 
 ## Grain keys
 
@@ -135,13 +135,13 @@ public interface IExampleGrain : Orleans.IGrainWithIntegerCompoundKey
 }
 ```
 
-In client code, this adds a second argument to the <xref:Orleans.IGrainFactory.GetGrain%2A?displayProperty=nameWithType> method on the grain factory:
+In client code, this adds a second argument to the <xref:Orleans.IGrainFactory.GetGrain*?displayProperty=nameWithType> method on the grain factory:
 
 ```csharp
 var grain = grainFactory.GetGrain<IExample>(0, "a string!", null);
 ```
 
-To access the compound key in the grain, call an overload of the <xref:Orleans.GrainExtensions.GetPrimaryKey%2A?displayProperty=nameWithType> method (such as <xref:Orleans.GrainExtensions.GetPrimaryKeyLong%2A?displayProperty=nameWithType>):
+To access the compound key in the grain, call an overload of the <xref:Orleans.GrainExtensions.GetPrimaryKey*> method (such as <xref:Orleans.GrainExtensions.GetPrimaryKeyLong*>):
 
 ```csharp
 public class ExampleGrain : Orleans.Grain, IExampleGrain

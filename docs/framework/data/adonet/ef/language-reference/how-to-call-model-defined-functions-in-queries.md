@@ -15,7 +15,7 @@ This topic describes how to call functions that are defined in the conceptual mo
 
 ## To call a function defined in the conceptual model
 
-1. Add a common language runtime (CLR) method to your application that maps to the function defined in the conceptual model. To map the method, you must apply an <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> to the method. Note that the <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.NamespaceName%2A> and <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.FunctionName%2A> parameters of the attribute are the namespace name of the conceptual model and the function name in the conceptual model respectively. Function name resolution for LINQ is case sensitive.
+1. Add a common language runtime (CLR) method to your application that maps to the function defined in the conceptual model. To map the method, you must apply an <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> to the method. Note that the <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.NamespaceName*> and <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.FunctionName*> parameters of the attribute are the namespace name of the conceptual model and the function name in the conceptual model respectively. Function name resolution for LINQ is case sensitive.
 
 2. Call the function in a LINQ to Entities query.
 

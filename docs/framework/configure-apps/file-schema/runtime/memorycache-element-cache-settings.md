@@ -12,9 +12,9 @@ ms.assetid: 182a622f-f7cf-472d-9d0b-451d2fd94525
 
 Defines an element that is used to configure a cache that is based on the <xref:System.Runtime.Caching.MemoryCache> class. The <xref:System.Runtime.Caching.Configuration.MemoryCacheElement> class defines a [memoryCache](memorycache-element-cache-settings.md) element that you can use to configure the cache. Multiple instances of the <xref:System.Runtime.Caching.MemoryCache> class can be used in a single application. Each `memoryCache` element in the configuration file can contain settings for a named <xref:System.Runtime.Caching.MemoryCache> instance.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.runtime.caching>**](system-runtime-caching-element-cache-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<memoryCache>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<system.runtime.caching>`](system-runtime-caching-element-cache-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<memoryCache>`
 
 ## Syntax
 
@@ -53,7 +53,7 @@ Defines an element that is used to configure a cache that is based on the <xref:
 
 |Element|Description|
 |-------------|-----------------|
-|[\<configuration>](../configuration-element.md)|Specifies the root element in every configuration file that is used by the common language runtime and .NET Framework applications.|
+|[`<configuration>`](../configuration-element.md)|Specifies the root element in every configuration file that is used by the common language runtime and .NET Framework applications.|
 |[\<system.runtime.caching>](system-runtime-caching-element-cache-settings.md)|Contains types that let you implement output caching in applications that are built into the .NET Framework.|
 
 ## Remarks
@@ -64,11 +64,11 @@ Defines an element that is used to configure a cache that is based on the <xref:
 
  The initialization process then determines whether any configuration entries were overridden, by using the optional collection of name/value pairs of configuration information in the constructor. If you pass any one of the following values in the name/value pair collection, these values override information obtained from the configuration file:
 
-- <xref:System.Runtime.Caching.Configuration.MemoryCacheElement.CacheMemoryLimitMegabytes%2A>
+- <xref:System.Runtime.Caching.Configuration.MemoryCacheElement.CacheMemoryLimitMegabytes*>
 
-- <xref:System.Runtime.Caching.Configuration.MemoryCacheElement.PhysicalMemoryLimitPercentage%2A>
+- <xref:System.Runtime.Caching.Configuration.MemoryCacheElement.PhysicalMemoryLimitPercentage*>
 
-- <xref:System.Runtime.Caching.MemoryCache.PollingInterval%2A>
+- <xref:System.Runtime.Caching.MemoryCache.PollingInterval>
 
 ## Example
 

@@ -61,6 +61,15 @@ This section describes the unmanaged enumerations that the debugging API uses.
  [CorDebugJITCompilerFlagsDeprecated enumeration](cordebugjitcompilerflagsdeprecated-enumeration.md)\
  Obsolete. Use the `CORDEBUG_JIT_DEFAULT` member of the [CorDebugJITCompilerFlags](../../../core/unmanaged-api/debugging/icordebug/cordebugjitcompilerflags-enumeration.md) enumeration instead.
 
+ [DacpObjectType Enumeration](dacpobjecttype-enumeration.md)\
+ Indicates the type of runtime object.
+
+ [ModuleMapType Enumeration](modulemaptype-enumeration.md)\
+ Indicates the kind of module map to traverse.
+
+ [VCSHeapType Enumeration](vcsheaptype-enumeration.md)\
+ Identifies a virtual call stub heap type.
+
 ## Related Sections
 
  [Debugging Coclasses](debugging-coclasses.md)

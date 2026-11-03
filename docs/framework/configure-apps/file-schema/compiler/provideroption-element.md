@@ -14,11 +14,11 @@ ms.assetid: 014f2e0b-c0b5-4fc4-92d3-73f02978b2a1
 
 Specifies the compiler version attributes for a language provider.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.codedom>**](system-codedom-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<compilers>**](compilers-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<compiler>**](compiler-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<providerOption>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<system.codedom>`](system-codedom-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<compilers>`](compilers-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`<compiler>`](compiler-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<providerOption>`
 
 ## Syntax
 
@@ -61,7 +61,7 @@ Specifies the compiler version attributes for a language provider.
 
  You can make the version specification global by adding the `<providerOption>` element to the .NET Framework 2.0 Machine.config or root Web.config file. If you update the default compiler version to 3.5 in the Machine.config file, you can change it back to 2.0 on a per-application basis by using the `<providerOption>` element in the application configuration file.
 
- CodeDOM code provider implementers can process custom options by providing a constructor that takes a `providerOptions` parameter of type <xref:System.Collections.Generic.IDictionary%602>.
+ CodeDOM code provider implementers can process custom options by providing a constructor that takes a `providerOptions` parameter of type <xref:System.Collections.Generic.IDictionary`2>.
 
 ## Example
 

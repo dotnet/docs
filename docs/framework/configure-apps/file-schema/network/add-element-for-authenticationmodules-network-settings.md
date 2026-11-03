@@ -16,10 +16,10 @@ ms.assetid: 333c5fb0-a2ab-4db8-8531-a7fe37bb9b5b
 
 Adds an authentication module to the application.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<authenticationModules>**](authenticationmodules-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<system.net>`](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<authenticationModules>`](authenticationmodules-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<add>`
 
 ## Syntax
 
@@ -37,7 +37,7 @@ Adds an authentication module to the application.
 
 |**Attribute**|**Description**|
 |-------------------|---------------------|
-|`type`|The fully qualified type name (indicated by the <xref:System.Type.FullName%2A> property) and the assembly name (indicated by the <xref:System.Reflection.Assembly.FullName%2A> property), separated by a comma.|
+|`type`|The fully qualified type name (indicated by the <xref:System.Type.FullName> property) and the assembly name (indicated by the <xref:System.Reflection.Assembly.FullName> property), separated by a comma.|
 
 ### Child Elements
 

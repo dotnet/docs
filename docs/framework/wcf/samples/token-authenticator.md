@@ -277,7 +277,7 @@ Use the following steps to create a custom token authenticator:
     serviceHost.Description.Behaviors.Add(serviceCredential);
     ```
 
-To display the caller's information, you can use the <xref:System.ServiceModel.ServiceSecurityContext.PrimaryIdentity%2A> as shown in the following code. The <xref:System.ServiceModel.ServiceSecurityContext.Current%2A> contains claims information about the current caller.
+To display the caller's information, you can use the <xref:System.ServiceModel.ServiceSecurityContext.PrimaryIdentity*> as shown in the following code. The <xref:System.ServiceModel.ServiceSecurityContext.Current*> contains claims information about the current caller.
 
 ```csharp
 static void DisplayIdentityInformation()

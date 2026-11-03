@@ -3,7 +3,7 @@ description: "Learn more about: Comparison Operators (Visual Basic)"
 title: "Comparison Operators in Visual Basic"
 titleSuffix: ""
 ms.date: 07/20/2015
-f1_keywords: 
+f1_keywords:
   - "vb.<>"
   - "vb.>="
   - "vb.<="
@@ -58,31 +58,31 @@ The following are the comparison operators defined in Visual Basic.
  These operators compare two expressions to determine whether or not they are equal, and if not, how they differ. `Is`, `IsNot`, and `Like` are discussed in detail on separate Help pages. The relational comparison operators are discussed in detail on this page.
 
 ## Syntax
-  
+
 ```vb
-result = expression1 comparisonoperator expression2  
-result = object1 [Is | IsNot] object2  
-result = string Like pattern  
-```  
-  
+result = expression1 comparisonoperator expression2
+result = object1 [Is | IsNot] object2
+result = string Like pattern
+```
+
 ## Parts
 
- `result`  
+ `result`
  Required. A `Boolean` value representing the result of the comparison.
 
- `expression1`, `expression2`  
+ `expression1`, `expression2`
  Required. Any expression.
 
- `comparisonoperator`  
+ `comparisonoperator`
  Required. Any relational comparison operator.
 
- `object1`, `object2`  
+ `object1`, `object2`
  Required. Any reference object names.
 
- `string`  
+ `string`
  Required. Any `String` expression.
 
- `pattern`  
+ `pattern`
  Required. Any `String` expression or range of characters.
 
 ## Remarks
@@ -127,7 +127,7 @@ result = string Like pattern
 
 ### Locale Dependence
 
- When you set `Option Compare Text`, the result of a string comparison can depend on the locale in which the application is running. Two characters might compare as equal in one locale but not in another. If you are using a string comparison to make important decisions, such as whether to accept an attempt to log on, you should be alert to locale sensitivity. Consider either setting `Option Compare Binary` or calling the <xref:Microsoft.VisualBasic.Strings.StrComp%2A>, which takes the locale into account.
+ When you set `Option Compare Text`, the result of a string comparison can depend on the locale in which the application is running. Two characters might compare as equal in one locale but not in another. If you are using a string comparison to make important decisions, such as whether to accept an attempt to log on, you should be alert to locale sensitivity. Consider either setting `Option Compare Binary` or calling the <xref:Microsoft.VisualBasic.Strings.StrComp*>, which takes the locale into account.
 
 ## Typeless Programming with Relational Comparison Operators
 

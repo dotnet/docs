@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "managed to unmanaged garbage collection"
   - "managed debugging assistants (MDAs), garbage collection"
   - "threading [.NET Framework], managed debugging assistants"
-  - "garbage collection, run-time errors"
+  - "garbage collection, runtime errors"
 ms.assetid: 7417f837-805e-4fed-a430-ca919c8421dc
 ---
 # gcManagedToUnmanaged MDA
@@ -26,11 +26,11 @@ The `gcManagedToUnmanaged` managed debugging assistant (MDA) causes a garbage co
 
 ## Cause
 
- If an unmanaged component is not reference counting a managed COM object correctly, then the runtime could collect a managed object exposed to COM when the unmanaged component still holds a reference to the object. The runtime calls <xref:System.Runtime.InteropServices.Marshal.Release%2A> during garbage collections, so if the user component uses the object before the garbage collection occurs, then it will not yet have been collected. This is the source of the nondeterminism.
+ If an unmanaged component is not reference counting a managed COM object correctly, then the runtime could collect a managed object exposed to COM when the unmanaged component still holds a reference to the object. The runtime calls <xref:System.Runtime.InteropServices.Marshal.Release*> during garbage collections, so if the user component uses the object before the garbage collection occurs, then it will not yet have been collected. This is the source of the nondeterminism.
 
 ## Resolution
 
- Enabling this assistant reduces the time between when the object is eligible for collection and <xref:System.Runtime.InteropServices.Marshal.Release%2A> is called, helping to track down which unmanaged component first tries to access the collected object.
+ Enabling this assistant reduces the time between when the object is eligible for collection and <xref:System.Runtime.InteropServices.Marshal.Release*> is called, helping to track down which unmanaged component first tries to access the collected object.
 
 ## Effect on the Runtime
 
@@ -54,5 +54,5 @@ The `gcManagedToUnmanaged` managed debugging assistant (MDA) causes a garbage co
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../interop/interop-marshalling.md)
+- [Interop Marshaling](../../standard/native-interop/interop-marshalling.md)
 - [gcUnmanagedToManaged](gcunmanagedtomanaged-mda.md)

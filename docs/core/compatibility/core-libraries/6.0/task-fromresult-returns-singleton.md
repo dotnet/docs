@@ -5,15 +5,15 @@ ms.date: 10/01/2021
 ---
 # Task.FromResult may return singleton
 
-<xref:System.Threading.Tasks.Task.FromResult%60%601(%60%600)?displayProperty=nameWithType> may now return a cached <xref:System.Threading.Tasks.Task%601> instance rather than always creating a new instance.
+<xref:System.Threading.Tasks.Task.FromResult``1(``0)?displayProperty=nameWithType> may now return a cached <xref:System.Threading.Tasks.Task`1> instance rather than always creating a new instance.
 
 ## Old behavior
 
-In previous versions, <xref:System.Threading.Tasks.Task.FromResult%60%601(%60%600)?displayProperty=nameWithType> would always allocate a new <xref:System.Threading.Tasks.Task%601>, regardless of the type of `T` or the result value.
+In previous versions, <xref:System.Threading.Tasks.Task.FromResult``1(``0)?displayProperty=nameWithType> would always allocate a new <xref:System.Threading.Tasks.Task`1>, regardless of the type of `T` or the result value.
 
 ## New behavior
 
-For some `T` types and some result values, <xref:System.Threading.Tasks.Task.FromResult%60%601(%60%600)?displayProperty=nameWithType> may return a cached singleton object rather than allocating a new object. For example, it is likely that every call to `Task.FromResult(true)` will return the same already-completed `Task<bool>` object.
+For some `T` types and some result values, <xref:System.Threading.Tasks.Task.FromResult``1(``0)?displayProperty=nameWithType> may return a cached singleton object rather than allocating a new object. For example, it is likely that every call to `Task.FromResult(true)` will return the same already-completed `Task<bool>` object.
 
 ## Version introduced
 
@@ -25,7 +25,7 @@ This change can affect [binary compatibility](../../categories.md#binary-compati
 
 ## Reason for change
 
-Many developers expected <xref:System.Threading.Tasks.Task.FromResult%60%601(%60%600)?displayProperty=nameWithType> to behave similarly to asynchronous methods, which already performed such caching. Developers that knew about the allocation behavior often maintained their own cache to avoid the performance cost of always allocating for these commonly used values. For example:
+Many developers expected <xref:System.Threading.Tasks.Task.FromResult``1(``0)?displayProperty=nameWithType> to behave similarly to asynchronous methods, which already performed such caching. Developers that knew about the allocation behavior often maintained their own cache to avoid the performance cost of always allocating for these commonly used values. For example:
 
 ```csharp
 private static readonly Task<bool> s_trueTask = Task.FromResult(true);
@@ -35,7 +35,7 @@ Now, such custom caches are no longer required for values such as <xref:System.B
 
 ## Recommended action
 
-Unless you're using reference equality to check whether one `Task` instance is the same as another `Task` instance, you should not be impacted by this change. If you are using such reference equality and need to continue this checking, use the following code to be guaranteed to always get back a unique <xref:System.Threading.Tasks.Task%601> instance:
+Unless you're using reference equality to check whether one `Task` instance is the same as another `Task` instance, you should not be impacted by this change. If you are using such reference equality and need to continue this checking, use the following code to be guaranteed to always get back a unique <xref:System.Threading.Tasks.Task`1> instance:
 
 ```csharp
 private static Task<T> NewInstanceFromResult<T>(T result)
@@ -51,4 +51,4 @@ private static Task<T> NewInstanceFromResult<T>(T result)
 
 ## Affected APIs
 
-- <xref:System.Threading.Tasks.Task.FromResult%60%601(%60%600)?displayProperty=fullName>
+- <xref:System.Threading.Tasks.Task.FromResult``1(``0)?displayProperty=fullName>

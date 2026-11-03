@@ -2,10 +2,13 @@
 title: "Floating point-to-integer conversions are saturating"
 description: Learn about the breaking change in .NET 9 where floating point-to-integer conversions have saturating behavior.
 ms.date: 09/03/2024
+ai-usage: ai-assisted
 ---
 # Floating point-to-integer conversions are saturating
 
 Floating point-to-integer conversions now have *saturating* behavior on x86 and x64 machines. Saturating behavior means that if the converted value is too small or large for the target type, the value is set to the minimum or maximum value, respectively, for that type.
+
+In .NET 11, this behavior extends to unchecked conversions to `sbyte`, `byte`, `short`, `ushort`, and `char` on CoreCLR (including its interpreter) and Native AOT, but not Mono. For details, see [Floating-point conversions to small integral types are saturating](../11/fp-to-small-integer.md).
 
 ## Previous behavior
 

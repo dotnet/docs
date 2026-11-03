@@ -1,15 +1,13 @@
 ---
 title: Use scoped services within a BackgroundService
 description: Learn how to use scoped services within a BackgroundService in .NET.
-author: IEvangelist
-ms.author: dapine
-ms.date: 05/27/2025
+ms.date: 05/27/2026
 ms.topic: tutorial
 ---
 
 # Use scoped services within a `BackgroundService`
 
-When you register implementations of <xref:Microsoft.Extensions.Hosting.IHostedService> using any of the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A> extension methods—the service is registered as a singleton. There might be scenarios where you'd like to rely on a scoped service. For more information, see [Dependency injection in .NET: Service lifetimes](dependency-injection.md#service-lifetimes).
+When you register implementations of <xref:Microsoft.Extensions.Hosting.IHostedService> using any of the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService*> extension methods, the service is registered as a singleton. There might be scenarios where you'd like to rely on a scoped service. For more information, see [Service lifetimes](dependency-injection/service-lifetimes.md).
 
 In this tutorial, you learn how to:
 
@@ -24,15 +22,14 @@ In this tutorial, you learn how to:
 ## Prerequisites
 
 - The [.NET 8.0 SDK or later](https://dotnet.microsoft.com/download/dotnet/8.0)
-- A .NET integrated development environment (IDE)
-  - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
+- A .NET integrated development environment (IDE), for example, [Visual Studio](https://visualstudio.microsoft.com)
 
 <!-- ## Create a new project -->
 [!INCLUDE [file-new-worker](includes/file-new-worker.md)]
 
 ## Create scoped services
 
-To use [scoped services](dependency-injection.md#scoped) within a `BackgroundService`, create a scope with the <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory.CreateScope?displayProperty=nameWithType> API. No scope is created for a hosted service by default. The scoped background service contains the background task's logic.
+To use [scoped services](dependency-injection/service-lifetimes.md#scoped) within a `BackgroundService`, create an async scope with the <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.CreateAsyncScope*> API. No scope is created for a hosted service by default. The scoped background service contains the background task's logic.
 
 :::code source="snippets/workers/scoped-service/IScopedProcessingService.cs":::
 
@@ -50,7 +47,7 @@ Replace the existing `Worker` class with the following C# code, and rename the f
 
 :::code source="snippets/workers/scoped-service/ScopedBackgroundService.cs" highlight="14-24":::
 
-In the preceding code, while the `stoppingToken` isn't canceled, the `IServiceScopeFactory` is used to create a scope. From the `IServiceScope`, the `IScopedProcessingService` is resolved. The `DoWorkAsync` method is awaited, and the `stoppingToken` is passed to the method. Finally, the execution is delayed for 10 seconds and the loop continues. Each time the `DoWorkAsync` method is called, a new instance of the `DefaultScopedProcessingService` is created and the instance identifier is logged.
+In the preceding code, while the `stoppingToken` isn't canceled, the `IServiceScopeFactory` is used to create an async scope. From the `AsyncServiceScope`, the `IScopedProcessingService` is resolved. The `DoWorkAsync` method is awaited, and the `stoppingToken` is passed to the method. Finally, the execution is delayed for 10 seconds and the loop continues. Each time the `DoWorkAsync` method is called, a new instance of the `DefaultScopedProcessingService` is created and the instance identifier is logged.
 
 Replace the template *Program.cs* file contents with the following C# code:
 
@@ -58,7 +55,7 @@ Replace the template *Program.cs* file contents with the following C# code:
 
 The services are registered in (*Program.cs*). The hosted service is registered with the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService*> extension method.
 
-For more information on registering services, see [Dependency injection in .NET](dependency-injection.md).
+For more information on registering services, see [Dependency injection in .NET](dependency-injection/overview.md).
 
 ## Verify service functionality
 

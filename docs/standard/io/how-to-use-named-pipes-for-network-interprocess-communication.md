@@ -21,6 +21,9 @@ Named pipes provide interprocess communication between a pipe server and one or 
 > [!IMPORTANT]
 > .NET on Linux uses Unix Domain Sockets (UDS) for the implementation of these APIs.
 
+> [!NOTE]
+> Starting in .NET 11, when you create a <xref:System.IO.Pipes.NamedPipeServerStream> with <xref:System.IO.Pipes.PipeOptions.CurrentUserOnly?displayProperty=nameWithType> on Unix, the underlying socket file is set to mode `0600` (owner read/write only) at bind time. Previously, the socket file inherited permissions from the process umask. For more information, see [NamedPipeServerStream with PipeOptions.CurrentUserOnly tightens Unix socket file permissions](../../core/compatibility/core-libraries/11/namedpipeserverstream-unix-permissions.md).
+
  To implement name pipes, use the <xref:System.IO.Pipes.NamedPipeServerStream> and <xref:System.IO.Pipes.NamedPipeClientStream> classes.
 
 ## Example 1
@@ -43,6 +46,6 @@ Named pipes provide interprocess communication between a pipe server and one or 
 ## See also
 
 - <xref:System.Security.Principal.TokenImpersonationLevel>
-- <xref:System.IO.Pipes.NamedPipeServerStream.GetImpersonationUserName%2A>
+- <xref:System.IO.Pipes.NamedPipeServerStream.GetImpersonationUserName*>
 - [Pipes](pipe-operations.md)
 - [How to: Use Anonymous Pipes for Local Interprocess Communication](how-to-use-anonymous-pipes-for-local-interprocess-communication.md)

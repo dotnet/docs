@@ -10,7 +10,7 @@ class Program
         // <delayOption>
         Option<int> delayOption = new("--delay")
         {
-            Description = "An option whose argument is parsed as an int.",
+            Description = "An option whose argument is parsed as an int",
             CustomParser = result =>
             {
                 if (!result.Tokens.Any())

@@ -26,7 +26,7 @@ The `asynchronousThreadAbort` managed debugging assistant (MDA) is activated whe
 
 ## Cause
 
- Code in one thread called the <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method on a target thread to introduce an asynchronous thread abort. The thread abort is asynchronous because the code that makes the call to <xref:System.Threading.Thread.Abort%2A> is running on a different thread than the target of the abort operation. Synchronous thread aborts should not cause a problem because the thread performing the <xref:System.Threading.Thread.Abort%2A> should have done so only at a safe checkpoint where application state is consistent.
+ Code in one thread called the <xref:System.Threading.Thread.Abort*?displayProperty=nameWithType> method on a target thread to introduce an asynchronous thread abort. The thread abort is asynchronous because the code that makes the call to <xref:System.Threading.Thread.Abort*> is running on a different thread than the target of the abort operation. Synchronous thread aborts should not cause a problem because the thread performing the <xref:System.Threading.Thread.Abort*> should have done so only at a safe checkpoint where application state is consistent.
 
  Asynchronous thread aborts present a problem because they are processed at unpredictable points in the target thread's execution. To avoid this, code written to run on a thread that might be aborted in this manner would need to handle a <xref:System.Threading.ThreadAbortException> at almost every line of code, taking care to put application data back into a consistent state. It is not realistic to expect code to be written with this problem in mind or to write code that protects against all possible circumstances.
 
@@ -36,7 +36,7 @@ The `asynchronousThreadAbort` managed debugging assistant (MDA) is activated whe
 
 ## Resolution
 
- Avoid code design that requires the use of asynchronous thread aborts. There are several approaches more appropriate for interruption of a target thread that do not require a call to <xref:System.Threading.Thread.Abort%2A>. The safest is to introduce a mechanism, such as a common property, that signals the target thread to request an interrupt. The target thread checks the signal at certain safe checkpoints. If it notices that an interrupt has been requested, it can shut down gracefully.
+ Avoid code design that requires the use of asynchronous thread aborts. There are several approaches more appropriate for interruption of a target thread that do not require a call to <xref:System.Threading.Thread.Abort*>. The safest is to introduce a mechanism, such as a common property, that signals the target thread to request an interrupt. The target thread checks the signal at certain safe checkpoints. If it notices that an interrupt has been requested, it can shut down gracefully.
 
 ## Effect on the Runtime
 
@@ -58,7 +58,7 @@ The `asynchronousThreadAbort` managed debugging assistant (MDA) is activated whe
 
 ## Example
 
- Activating the `asynchronousThreadAbort` MDA requires only a call to <xref:System.Threading.Thread.Abort%2A> on a separate running thread. Consider the consequences if the contents of the thread start function were a set of more complex operations which might be interrupted at any arbitrary point by the abort.
+ Activating the `asynchronousThreadAbort` MDA requires only a call to <xref:System.Threading.Thread.Abort*> on a separate running thread. Consider the consequences if the contents of the thread start function were a set of more complex operations which might be interrupted at any arbitrary point by the abort.
 
 ```csharp
 using System.Threading;

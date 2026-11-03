@@ -49,7 +49,7 @@ When reading the registry from a Web application, the current user depends on th
 
 It is more secure to write data to the user folder (<xref:Microsoft.Win32.Registry.CurrentUser>) rather than to the local computer (<xref:Microsoft.Win32.Registry.LocalMachine>).
 
-When you create a registry value, you need to decide what to do if that value already exists. Another process, perhaps a malicious one, may have already created the value and have access to it. When you put data in the registry value, the data is available to the other process. To prevent this, use the <xref:Microsoft.Win32.RegistryKey.GetValue%2A> method. It returns `Nothing` if the key does not already exist.
+When you create a registry value, you need to decide what to do if that value already exists. Another process, perhaps a malicious one, may have already created the value and have access to it. When you put data in the registry value, the data is available to the other process. To prevent this, use the <xref:Microsoft.Win32.RegistryKey.GetValue*> method. It returns `Nothing` if the key does not already exist.
 
 It is not secure to store secrets, such as passwords, in the registry as plain text, even if the registry key is protected by ACLs (Access Control Lists).
 
@@ -74,6 +74,6 @@ To run this process, your assembly requires a privilege level granted by the <xr
 ## See also
 
 - <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>
-- <xref:Microsoft.VisualBasic.MyServices.RegistryProxy.CurrentUser%2A>
-- <xref:Microsoft.Win32.RegistryKey.CreateSubKey%2A>
+- <xref:Microsoft.VisualBasic.MyServices.RegistryProxy.CurrentUser*>
+- <xref:Microsoft.Win32.RegistryKey.CreateSubKey*>
 - [Reading from and Writing to the Registry](reading-from-and-writing-to-the-registry.md)

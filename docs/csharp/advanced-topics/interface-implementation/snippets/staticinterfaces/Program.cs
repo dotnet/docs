@@ -7,6 +7,16 @@ for (int i = 0; i < 10; i++)
     Console.WriteLine(str++);
 // </TestRepeat>
 
+// <TestDescribe>
+static void PrintDescription<T>() where T : IDescribable<T>
+{
+    Console.WriteLine(T.Describe());
+}
+
+PrintDescription<Widget>();
+PrintDescription<Gadget>();
+// </TestDescribe>
+
 // <TestAddition>
 var pt = new Point<int>(3, 4);
 

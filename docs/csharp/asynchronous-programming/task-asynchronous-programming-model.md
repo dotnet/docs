@@ -64,7 +64,7 @@ The following characteristics summarize what makes the previous example an async
 - The name of an async method, by convention, ends with an "Async" suffix.
 - The return type is one of the following types:
 
-  - <xref:System.Threading.Tasks.Task%601> if your method has a return statement in which the operand has type `TResult`.
+  - <xref:System.Threading.Tasks.Task`1> if your method has a return statement in which the operand has type `TResult`.
   - <xref:System.Threading.Tasks.Task> if your method has no return statement or has a return statement with no operand.
   - `void` if you're writing an async event handler.
   - Any other type that has a `GetAwaiter` method.
@@ -87,11 +87,11 @@ The numbers in the diagram correspond to the following steps, initiated when a c
 
 1. A calling method calls and awaits the `GetUrlContentLengthAsync` async method.
 
-1. `GetUrlContentLengthAsync` creates an <xref:System.Net.Http.HttpClient> instance and calls the <xref:System.Net.Http.HttpClient.GetStringAsync%2A> asynchronous method to download the contents of a website as a string.
+1. `GetUrlContentLengthAsync` creates an <xref:System.Net.Http.HttpClient> instance and calls the <xref:System.Net.Http.HttpClient.GetStringAsync*> asynchronous method to download the contents of a website as a string.
 
 1. Something happens in `GetStringAsync` that suspends its progress. Perhaps it must wait for a website to download or some other blocking activity. To avoid blocking resources, `GetStringAsync` yields control to its caller, `GetUrlContentLengthAsync`.
 
-     `GetStringAsync` returns a <xref:System.Threading.Tasks.Task%601>, where `TResult` is a string, and `GetUrlContentLengthAsync` assigns the task to the `getStringTask` variable. The task represents the ongoing process for the call to `GetStringAsync`, with a commitment to produce an actual string value when the work is complete.
+     `GetStringAsync` returns a <xref:System.Threading.Tasks.Task`1>, where `TResult` is a string, and `GetUrlContentLengthAsync` assigns the task to the `getStringTask` variable. The task represents the ongoing process for the call to `GetStringAsync`, with a commitment to produce an actual string value when the work is complete.
 
 1. Because `getStringTask` isn't awaited yet, `GetUrlContentLengthAsync` can continue with other work that doesn't depend on the final result from `GetStringAsync`. That work is represented by a call to the synchronous method `DoIndependentWork`.
 
@@ -113,7 +113,7 @@ If you're new to asynchronous programming, take a minute to consider the differe
 
 ## API async methods
 
-You might be wondering where to find methods such as `GetStringAsync` that support async programming. .NET Framework 4.5 or higher and .NET Core contain many members that work with `async` and `await`. You can recognize them by the "Async" suffix appended to the member name, and by their return type of <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. For example, the `System.IO.Stream` class contains methods such as <xref:System.IO.Stream.CopyToAsync%2A>, <xref:System.IO.Stream.ReadAsync%2A>, and <xref:System.IO.Stream.WriteAsync%2A> alongside the synchronous methods <xref:System.IO.Stream.CopyTo%2A>, <xref:System.IO.Stream.Read%2A>, and <xref:System.IO.Stream.Write%2A>.
+You might be wondering where to find methods such as `GetStringAsync` that support async programming. .NET Framework 4.5 or higher and .NET Core contain many members that work with `async` and `await`. You can recognize them by the "Async" suffix appended to the member name, and by their return type of <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task`1>. For example, the `System.IO.Stream` class contains methods such as <xref:System.IO.Stream.CopyToAsync*>, <xref:System.IO.Stream.ReadAsync*>, and <xref:System.IO.Stream.WriteAsync*> alongside the synchronous methods <xref:System.IO.Stream.CopyTo*>, <xref:System.IO.Stream.Read*>, and <xref:System.IO.Stream.Write*>.
 
 The Windows Runtime also contains many methods that you can use with `async` and `await` in Windows apps. For more information, see [Threading and async programming](/windows/uwp/threading-async/) for UWP development, and [Asynchronous programming (Windows Store apps)](/previous-versions/windows/apps/hh464924(v=win.10)) and [Quickstart: Calling asynchronous APIs in C# or Visual Basic](/previous-versions/windows/apps/hh452713(v=win.10)) if you use earlier versions of the Windows Runtime.
 
@@ -121,9 +121,9 @@ The Windows Runtime also contains many methods that you can use with `async` and
 
 Async methods are intended to be non-blocking operations. An `await` expression in an async method doesn't block the current thread while the awaited task is running. Instead, the expression signs up the rest of the method as a continuation and returns control to the caller of the async method.
 
-The `async` and `await` keywords don't cause extra threads to be created. Async methods don't require multithreading because an async method doesn't run on its own thread. The method runs on the current synchronization context and uses time on the thread only when the method is active. You can use <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> to move CPU-bound work to a background thread, but a background thread doesn't help with a process that's just waiting for results to become available.
+The `async` and `await` keywords don't cause extra threads to be created. Async methods don't require multithreading because an async method doesn't run on its own thread. The method runs on the current synchronization context and uses time on the thread only when the method is active. You can use <xref:System.Threading.Tasks.Task.Run*?displayProperty=nameWithType> to move CPU-bound work to a background thread, but a background thread doesn't help with a process that's just waiting for results to become available.
 
-The async-based approach to asynchronous programming is preferable to existing approaches in almost every case. In particular, this approach is better than the <xref:System.ComponentModel.BackgroundWorker> class for I/O-bound operations because the code is simpler and you don't have to guard against race conditions. In combination with the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> method, async programming is better than <xref:System.ComponentModel.BackgroundWorker> for CPU-bound operations because async programming separates the coordination details of running your code from the work that `Task.Run` transfers to the thread pool.
+The async-based approach to asynchronous programming is preferable to existing approaches in almost every case. In particular, this approach is better than the <xref:System.ComponentModel.BackgroundWorker> class for I/O-bound operations because the code is simpler and you don't have to guard against race conditions. In combination with the <xref:System.Threading.Tasks.Task.Run*?displayProperty=nameWithType> method, async programming is better than <xref:System.ComponentModel.BackgroundWorker> for CPU-bound operations because async programming separates the coordination details of running your code from the work that `Task.Run` transfers to the thread pool.
 
 ## Async and await
 
@@ -144,15 +144,15 @@ An async method typically contains one or more occurrences of an `await` operato
 
 ## Return types and parameters
 
-An async method typically returns a <xref:System.Threading.Tasks.Task> or a <xref:System.Threading.Tasks.Task%601>. Inside an async method, an `await` operator is applied to a task that's returned from a call to another async method.
+An async method typically returns a <xref:System.Threading.Tasks.Task> or a <xref:System.Threading.Tasks.Task`1>. Inside an async method, an `await` operator is applied to a task that's returned from a call to another async method.
 
-You specify <xref:System.Threading.Tasks.Task%601> as the return type if the method contains a [`return`](../language-reference/statements/jump-statements.md#the-return-statement) statement that specifies an operand of type `TResult`.
+You specify <xref:System.Threading.Tasks.Task`1> as the return type if the method contains a [`return`](../language-reference/statements/jump-statements.md#the-return-statement) statement that specifies an operand of type `TResult`.
 
 You use <xref:System.Threading.Tasks.Task>  as the return type if the method has no return statement or has a return statement that doesn't return an operand.
 
-You can also specify any other return type, if the type includes a `GetAwaiter` method. <xref:System.Threading.Tasks.ValueTask%601> is an example of such a type. It's available in the [System.Threading.Tasks.Extension](https://www.nuget.org/packages/System.Threading.Tasks.Extensions/) NuGet package.
+You can also specify any other return type, if the type includes a `GetAwaiter` method. <xref:System.Threading.Tasks.ValueTask`1> is an example of such a type. It's available in the [System.Threading.Tasks.Extension](https://www.nuget.org/packages/System.Threading.Tasks.Extensions/) NuGet package.
 
-The following example shows how you declare and call a method that returns a <xref:System.Threading.Tasks.Task%601> or a <xref:System.Threading.Tasks.Task>:
+The following example shows how you declare and call a method that returns a <xref:System.Threading.Tasks.Task`1> or a <xref:System.Threading.Tasks.Task>:
 
 ```csharp
 async Task<int> GetTaskOfTResultAsync()
@@ -193,10 +193,10 @@ For more information and examples, see [Async return types (C#)](async-return-ty
 
 Asynchronous APIs in Windows Runtime programming have one of the following return types, which are similar to tasks:
 
-- <xref:Windows.Foundation.IAsyncOperation%601>, which corresponds to <xref:System.Threading.Tasks.Task%601>
+- <xref:Windows.Foundation.IAsyncOperation`1>, which corresponds to <xref:System.Threading.Tasks.Task`1>
 - <xref:Windows.Foundation.IAsyncAction>, which corresponds to <xref:System.Threading.Tasks.Task>
-- <xref:Windows.Foundation.IAsyncActionWithProgress%601>
-- <xref:Windows.Foundation.IAsyncOperationWithProgress%602>
+- <xref:Windows.Foundation.IAsyncActionWithProgress`1>
+- <xref:Windows.Foundation.IAsyncOperationWithProgress`2>
 
 ## Naming convention
 
@@ -212,7 +212,7 @@ You can ignore the convention where an event, base class, or interface contract 
 | [Async return types (C#)](async-return-types.md) | Illustrates the types that async methods can return, and explains when each type is appropriate. |
 | Cancel tasks with a cancellation token as a signaling mechanism. | Shows how to add the following functionality to your async solution:<br><br> - [Cancel a list of tasks (C#)](cancel-an-async-task-or-a-list-of-tasks.md)<br>- [Cancel tasks after a period of time (C#)](cancel-async-tasks-after-a-period-of-time.md)<br>- [Process asynchronous task as they complete (C#)](start-multiple-async-tasks-and-process-them-as-they-complete.md) |
 | [Using async for file access (C#)](using-async-for-file-access.md) | Lists and demonstrates the benefits of using async and await to access files. |
-| [Task-based asynchronous pattern (TAP)](../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) | Describes an asynchronous pattern. The pattern is based on the <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> types. |
+| [Task-based asynchronous pattern (TAP)](../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) | Describes an asynchronous pattern. The pattern is based on the <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task`1> types. |
 | [Async Videos on Channel 9](/shows/browse?terms=async) | Provides links to various videos about async programming. |
 
 ## See also

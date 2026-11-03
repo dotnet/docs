@@ -3,7 +3,7 @@ title: Install .NET on Linux without using a package manager
 description: Demonstrates how to install the .NET SDK and the .NET Runtime on Linux without a package manager. Use the install script or manually extract the binaries.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/08/2025
+ms.date: 04/23/2026
 ms.custom: linux-related-content, updateeachrelease
 ---
 
@@ -149,7 +149,7 @@ The following commands use Bash to set the environment variable `DOTNET_ROOT` to
 DOTNET_FILE=dotnet-sdk-9.0.306-linux-x64.tar.gz
 export DOTNET_ROOT=$(pwd)/.dotnet
 
-mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
+mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" --no-same-owner -C "$DOTNET_ROOT"
 
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 ```
@@ -253,4 +253,4 @@ Set the following two environment variables in your shell profile:
 
 - [.NET CLI overview](../tools/index.md)
 - [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
-- [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)
+- [Tutorial: Create a console application with .NET](../tutorials/create-console-app.md)

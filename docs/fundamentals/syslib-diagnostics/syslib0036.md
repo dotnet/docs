@@ -7,9 +7,9 @@ f1_keywords:
 ---
 # SYSLIB0036: Regex.CompileToAssembly is obsolete
 
-The <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method is marked as obsolete, starting in .NET 7. Using this API in code generates warning `SYSLIB0036` at compile time.
+The <xref:System.Text.RegularExpressions.Regex.CompileToAssembly*?displayProperty=nameWithType> method is marked as obsolete, starting in .NET 7. Using this API in code generates warning `SYSLIB0036` at compile time.
 
-In .NET 5, .NET 6, and all versions of .NET Core, <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> throws a <xref:System.PlatformNotSupportedException>. In .NET Framework, <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> allows a regular expression instance to be compiled into an assembly.
+In .NET 5, .NET 6, and all versions of .NET Core, <xref:System.Text.RegularExpressions.Regex.CompileToAssembly*?displayProperty=nameWithType> throws a <xref:System.PlatformNotSupportedException>. In .NET Framework, <xref:System.Text.RegularExpressions.Regex.CompileToAssembly*?displayProperty=nameWithType> allows a regular expression instance to be compiled into an assembly.
 
 ## Workaround
 

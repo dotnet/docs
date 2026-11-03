@@ -85,8 +85,8 @@ This change was implemented in the parsing logic that affects all numeric types.
 - <xref:System.UInt16.ToString(System.String)?displayProperty=fullName>
 - <xref:System.UInt16.ToString(System.String,System.IFormatProvider)?displayProperty=fullName>
 - <xref:System.UInt16.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)?displayProperty=fullName>
-- <xref:System.Numerics.BigInteger.Parse%2A?displayProperty=fullName>
-- <xref:System.Numerics.BigInteger.TryParse%2A?displayProperty=fullName>
+- <xref:System.Numerics.BigInteger.Parse*?displayProperty=fullName>
+- <xref:System.Numerics.BigInteger.TryParse*?displayProperty=fullName>
 - <xref:System.Int64.ToString(System.String)?displayProperty=fullName>
 - <xref:System.Int64.ToString(System.String,System.IFormatProvider)?displayProperty=fullName>
 - <xref:System.Int64.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)?displayProperty=fullName>

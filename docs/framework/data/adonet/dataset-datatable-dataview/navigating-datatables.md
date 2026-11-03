@@ -11,7 +11,7 @@ ms.assetid: 202026a1-ec79-435e-b507-12a77f5011b2
 
 The <xref:System.Data.DataTableReader> obtains the contents of one or more <xref:System.Data.DataTable> objects in the form of one or more read-only, forward-only result sets.
 
- A <xref:System.Data.DataTableReader> may contain multiple result sets if it is created by using the <xref:System.Data.DataSet.CreateDataReader%2A> method. When there is more than one result set, the <xref:System.Data.DataTableReader.NextResult%2A> method advances the cursor to the next result set. This is a forward-only process. It is not possible to return to a previous result set.
+ A <xref:System.Data.DataTableReader> may contain multiple result sets if it is created by using the <xref:System.Data.DataSet.CreateDataReader*> method. When there is more than one result set, the <xref:System.Data.DataTableReader.NextResult*> method advances the cursor to the next result set. This is a forward-only process. It is not possible to return to a previous result set.
 
 ## Example
 

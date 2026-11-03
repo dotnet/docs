@@ -45,9 +45,9 @@ This topic discusses how access is restricted on the types of resources that <xr
 
  `PermissionSetAttribute(SecurityAction.LinkDemand, Name := "FullTrust")`
 
-- <xref:System.Transactions.Transaction.EnlistDurable%2A?displayProperty=nameWithType>
+- <xref:System.Transactions.Transaction.EnlistDurable*?displayProperty=nameWithType>
 
-- <xref:System.Transactions.Transaction.EnlistPromotableSinglePhase%2A>
+- <xref:System.Transactions.Transaction.EnlistPromotableSinglePhase*>
 
 - <xref:System.Transactions.TransactionInterop>
 
@@ -55,9 +55,9 @@ This topic discusses how access is restricted on the types of resources that <xr
 
 - <xref:System.Transactions.HostCurrentTransactionCallback>
 
-- <xref:System.Transactions.TransactionManager.Reenlist%2A>
+- <xref:System.Transactions.TransactionManager.Reenlist*>
 
-- <xref:System.Transactions.TransactionManager.RecoveryComplete%2A>
+- <xref:System.Transactions.TransactionManager.RecoveryComplete*>
 
 - <xref:System.Transactions.TransactionScope.%23ctor%28System.Transactions.TransactionScopeOption%2CSystem.Transactions.TransactionOptions%2CSystem.Transactions.EnterpriseServicesInteropOption%29>
 

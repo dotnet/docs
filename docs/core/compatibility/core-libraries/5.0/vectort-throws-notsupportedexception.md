@@ -5,17 +5,17 @@ ms.date: 11/01/2020
 ---
 # Vector\<T> always throws NotSupportedException for unsupported types
 
-<xref:System.Numerics.Vector%601?displayProperty=nameWithType> now always throws a <xref:System.NotSupportedException> for unsupported type parameters.
+<xref:System.Numerics.Vector`1?displayProperty=nameWithType> now always throws a <xref:System.NotSupportedException> for unsupported type parameters.
 
 ## Change description
 
-Previously, members of <xref:System.Numerics.Vector%601> would not always throw a <xref:System.NotSupportedException> when `T` was an [unsupported type](#unsupported-types). The exception wasn't always thrown because of code paths that supported hardware acceleration. For example, `Vector<bool> + Vector<bool>` returned `default` instead of throwing an exception on platforms that have no hardware acceleration, such as Arm32. For unsupported types, <xref:System.Numerics.Vector%601> members exhibited inconsistent behavior across different platforms and hardware configurations.
+Previously, members of <xref:System.Numerics.Vector`1> would not always throw a <xref:System.NotSupportedException> when `T` was an [unsupported type](#unsupported-types). The exception wasn't always thrown because of code paths that supported hardware acceleration. For example, `Vector<bool> + Vector<bool>` returned `default` instead of throwing an exception on platforms that have no hardware acceleration, such as Arm32. For unsupported types, <xref:System.Numerics.Vector`1> members exhibited inconsistent behavior across different platforms and hardware configurations.
 
-Starting in .NET 5, <xref:System.Numerics.Vector%601> members always throw a <xref:System.NotSupportedException> on all hardware configurations when `T` is not a supported type.
+Starting in .NET 5, <xref:System.Numerics.Vector`1> members always throw a <xref:System.NotSupportedException> on all hardware configurations when `T` is not a supported type.
 
 ### Unsupported types
 
-The supported types for the type parameter of <xref:System.Numerics.Vector%601> are:
+The supported types for the type parameter of <xref:System.Numerics.Vector`1> are:
 
 - `byte`
 - `sbyte`
@@ -36,11 +36,11 @@ The supported types have not changed, however, they may change in the future.
 
 ## Recommended action
 
-Don't use an unsupported type for the type parameter of <xref:System.Numerics.Vector%601>.
+Don't use an unsupported type for the type parameter of <xref:System.Numerics.Vector`1>.
 
 ## Affected APIs
 
-- <xref:System.Numerics.Vector%601?displayProperty=fullName> and all its members
+- <xref:System.Numerics.Vector`1?displayProperty=fullName> and all its members
 
 <!--
 

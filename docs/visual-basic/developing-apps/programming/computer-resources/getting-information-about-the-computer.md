@@ -16,12 +16,12 @@ This table lists tasks commonly accomplished through the `My.Computer.Info` obje
 
 |To|See|
 |---|---|
-|Determine how much virtual address space is available for the computer on which the application is installed|<xref:Microsoft.VisualBasic.Devices.ComputerInfo.TotalVirtualMemory%2A>|
-|Determine the platform type of the computer on which the application is running|<xref:Microsoft.VisualBasic.Devices.ComputerInfo.OSPlatform%2A>|
-|Determine the operating system of the computer on which the application is running|<xref:Microsoft.VisualBasic.Devices.ComputerInfo.OSFullName%2A>|
-|Determine what service packs have been installed on the computer on which the application is running|<xref:Microsoft.VisualBasic.Devices.ComputerInfo.OSVersion%2A>|
-|Determine the installed `UICulture` on the computer on which the application is running.|<xref:Microsoft.VisualBasic.Devices.ComputerInfo.InstalledUICulture%2A>|
+|Determine how much virtual address space is available for the computer on which the application is installed|<xref:Microsoft.VisualBasic.Devices.ComputerInfo.TotalVirtualMemory*>|
+|Determine the platform type of the computer on which the application is running|<xref:Microsoft.VisualBasic.Devices.ComputerInfo.OSPlatform*>|
+|Determine the operating system of the computer on which the application is running|<xref:Microsoft.VisualBasic.Devices.ComputerInfo.OSFullName*>|
+|Determine what service packs have been installed on the computer on which the application is running|<xref:Microsoft.VisualBasic.Devices.ComputerInfo.OSVersion*>|
+|Determine the installed `UICulture` on the computer on which the application is running.|<xref:Microsoft.VisualBasic.Devices.ComputerInfo.InstalledUICulture*>|
 
 ## See also
 
-- <xref:Microsoft.VisualBasic.Devices.ServerComputer.Info%2A>
+- <xref:Microsoft.VisualBasic.Devices.ServerComputer.Info*>

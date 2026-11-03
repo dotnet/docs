@@ -28,7 +28,7 @@ public class Example
       // Decode the string.
       string str2 = cp1252.GetString(bytes);
       Console.WriteLine($"String round-tripped: {str.Equals(str2)}");
-      if (! str.Equals(str2)) {
+      if (!str.Equals(str2)) {
          Console.WriteLine(str2);
          foreach (var ch in str2)
             Console.Write("{0} ", Convert.ToUInt16(ch).ToString("X4"));

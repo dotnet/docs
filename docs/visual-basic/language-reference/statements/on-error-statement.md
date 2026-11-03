@@ -2,9 +2,9 @@
 description: "Learn more about: On Error Statement (Visual Basic)"
 title: "On Error Statement"
 ms.date: 07/20/2015
-f1_keywords: 
+f1_keywords:
   - "vb.OnError"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Visual Basic code, control flow"
   - "Resume Next statement [Visual Basic]"
   - "errors [Visual Basic], trapping"
@@ -56,30 +56,30 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
  An "enabled" error handler is one that is turned on by an `On Error` statement. An "active" error handler is an enabled handler that is in the process of handling an error.
 
  If an error occurs while an error handler is active (between the occurrence of the error and a `Resume`, `Exit Sub`, `Exit Function`, or `Exit Property` statement), the current procedure's error handler cannot handle the error. Control returns to the calling procedure.
-  
+
  If the calling procedure has an enabled error handler, it is activated to handle the error. If the calling procedure's error handler is also active, control passes back through previous calling procedures until an enabled, but inactive, error handler is found. If no such error handler is found, the error is fatal at the point at which it actually occurred.
-  
+
  Each time the error handler passes control back to a calling procedure, that procedure becomes the current procedure. Once an error is handled by an error handler in any procedure, execution resumes in the current procedure at the point designated by the `Resume` statement.
-  
+
 > [!NOTE]
 > An error-handling routine is not a `Sub` procedure or a `Function` procedure. It is a section of code marked by a line label or a line number.
-  
+
 ## Number Property
 
- Error-handling routines rely on the value in the `Number` property of the `Err` object to determine the cause of the error. The routine should test or save relevant property values in the `Err` object before any other error can occur or before a procedure that might cause an error is called. The property values in the `Err` object reflect only the most recent error. The error message associated with `Err.Number` is contained in `Err.Description`.  
-  
-## Throw Statement  
+ Error-handling routines rely on the value in the `Number` property of the `Err` object to determine the cause of the error. The routine should test or save relevant property values in the `Err` object before any other error can occur or before a procedure that might cause an error is called. The property values in the `Err` object reflect only the most recent error. The error message associated with `Err.Number` is contained in `Err.Description`.
+
+## Throw Statement
 
  An error that is raised with the `Err.Raise` method sets the `Exception` property to a newly created instance of the <xref:System.Exception> class. In order to support the raising of exceptions of derived exception types, a `Throw` statement is supported in the language. This takes a single parameter that is the exception instance to be thrown. The following example shows how these features can be used with the existing exception handling support:
 
- [!code-vb[VbVbalrErrorHandling#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrErrorHandling/VB/Class1.vb#17)]  
-  
+ [!code-vb[VbVbalrErrorHandling#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrErrorHandling/VB/Class1.vb#17)]
+
  Notice that the `On Error GoTo` statement traps all errors, regardless of the exception class.
-  
+
 ## On Error Resume Next
 
  `On Error Resume Next` causes execution to continue with the statement immediately following the statement that caused the run-time error, or with the statement immediately following the most recent call out of the procedure containing the `On Error Resume Next` statement. This statement allows execution to continue despite a run-time error. You can place the error-handling routine where the error would occur rather than transferring control to another location within the procedure. An `On Error Resume Next` statement becomes inactive when another procedure is called, so you should execute an `On Error Resume Next` statement in each called routine if you want inline error handling within that routine.
-  
+
 > [!NOTE]
 > The `On Error Resume Next` construct may be preferable to `On Error GoTo` when handling errors generated during access to other objects. Checking `Err` after each interaction with an object removes ambiguity about which object was accessed by the code. You can be sure which object placed the error code in `Err.Number`, as well as which object originally generated the error (the object specified in `Err.Source`).
 
@@ -122,10 +122,10 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
 
 ## See also
 
-- <xref:Microsoft.VisualBasic.Information.Err%2A>
-- <xref:Microsoft.VisualBasic.ErrObject.Number%2A>
-- <xref:Microsoft.VisualBasic.ErrObject.Description%2A>
-- <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>
+- <xref:Microsoft.VisualBasic.Information.Err*>
+- <xref:Microsoft.VisualBasic.ErrObject.Number*>
+- <xref:Microsoft.VisualBasic.ErrObject.Description*>
+- <xref:Microsoft.VisualBasic.ErrObject.LastDllError*>
 - [End Statement](end-statement.md)
 - [Exit Statement](exit-statement.md)
 - [Resume Statement](resume-statement.md)

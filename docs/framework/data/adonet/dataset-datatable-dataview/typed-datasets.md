@@ -10,7 +10,7 @@ Along with late bound access to values through weakly typed variables, the <xref
 
  A typed `DataSet` is a class that derives from a **DataSet**. As such, it inherits all the methods, events, and properties of a **DataSet**. Additionally, a typed `DataSet` provides strongly typed methods, events, and properties. This means you can access tables and columns by name, instead of using collection-based methods. Aside from the improved readability of the code, a typed `DataSet` also allows the Visual Studio .NET code editor to automatically complete lines as you type.
 
- Additionally, the strongly typed `DataSet` provides access to values as the correct type at compile time. With a strongly typed **DataSet**, type mismatch errors are caught when the code is compiled rather than at run time.
+ Additionally, the strongly typed `DataSet` provides access to values as the correct type at compile time. With a strongly typed **DataSet**, type mismatch errors are caught when the code is compiled rather than at runtime.
 
 ## In This Section
 

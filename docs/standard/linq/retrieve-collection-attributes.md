@@ -10,7 +10,7 @@ ms.topic: how-to
 
 # How to retrieve a collection of attributes (LINQ to XML)
 
-This article shows the use of the <xref:System.Xml.Linq.XElement.Attributes%2A> method to retrieve the attributes of an element.
+This article shows the use of the <xref:System.Xml.Linq.XElement.Attributes*> method to retrieve the attributes of an element.
 
 ## Example: Iterate through the attributes of an element
 

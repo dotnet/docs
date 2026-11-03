@@ -14,7 +14,7 @@ This topic outlines the basic steps required to create and dynamically update th
 > [!NOTE]
 > Dynamic updates occur only in memory, and do not result in the modification of configuration files.
 
- Both regularCalc and roundingCalc support the same operations of add, subtract, multiply and divide; however, roundingCalc rounds all calculations to the nearest integer value before returning. A configuration file is used to configure the service to route all messages to the regularCalc service. After the Routing Service has been started, <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration%2A> is used to reconfigure the service to route messages to the roundingCalc service.
+ Both regularCalc and roundingCalc support the same operations of add, subtract, multiply and divide; however, roundingCalc rounds all calculations to the nearest integer value before returning. A configuration file is used to configure the service to route all messages to the regularCalc service. After the Routing Service has been started, <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration*> is used to reconfigure the service to route messages to the roundingCalc service.
 
 ### Implement Initial Configuration
 
@@ -75,7 +75,7 @@ This topic outlines the basic steps required to create and dynamically update th
 
 ## Implement Dynamic Configuration
 
- Dynamic configuration of the Routing Service can only be performed in code by creating a new <xref:System.ServiceModel.Routing.RoutingConfiguration> and using <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration%2A> to replace the current configuration.  For this example, the Routing Service is self-hosted within a console application. After the application has started, you can modify the routing configuration by entering ‘regular’ or ‘rounding’ at the console window to configure the destination endpoint that messages are routed to; regularCalc when ‘regular’ is entered, otherwise roundingCalc when ‘rounding’ is entered.
+ Dynamic configuration of the Routing Service can only be performed in code by creating a new <xref:System.ServiceModel.Routing.RoutingConfiguration> and using <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration*> to replace the current configuration.  For this example, the Routing Service is self-hosted within a console application. After the application has started, you can modify the routing configuration by entering ‘regular’ or ‘rounding’ at the console window to configure the destination endpoint that messages are routed to; regularCalc when ‘regular’ is entered, otherwise roundingCalc when ‘rounding’ is entered.
 
 1. The following `using` directives must be added in order to support the Routing Service.
 
@@ -114,7 +114,7 @@ This topic outlines the basic steps required to create and dynamically update th
     }
     ```
 
-3. To dynamically update the routing configuration, a new routing configuration must be created. This must contain all endpoints, filters and filter tables that are required for the new routing configuration, as it will completely replace the existing routing configuration. In order to use the new routing configuration, you must invoke <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration%2A> and pass the new configuration.
+3. To dynamically update the routing configuration, a new routing configuration must be created. This must contain all endpoints, filters and filter tables that are required for the new routing configuration, as it will completely replace the existing routing configuration. In order to use the new routing configuration, you must invoke <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration*> and pass the new configuration.
 
      Add the following code to the while loop defined previously to allow the service to be reconfigured based on user input.
 

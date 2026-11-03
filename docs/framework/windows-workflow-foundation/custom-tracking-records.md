@@ -23,7 +23,7 @@ protected override void Execute(CodeActivityContext context)
 }
 ```
 
-A <xref:System.Activities.Tracking.CustomTrackingRecord> is emitted in a code activity by invoking the <xref:System.Activities.NativeActivityContext.Track%2A> method on the `ActivityContext`.
+A <xref:System.Activities.Tracking.CustomTrackingRecord> is emitted in a code activity by invoking the <xref:System.Activities.NativeActivityContext.Track*> method on the `ActivityContext`.
 
 ## See also
 

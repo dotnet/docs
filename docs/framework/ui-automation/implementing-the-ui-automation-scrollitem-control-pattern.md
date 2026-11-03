@@ -33,7 +33,7 @@ ms.assetid: 903bab5c-80c1-44d7-bdc2-0a418893b987
 
 |Required members|Member type|Notes|
 |----------------------|-----------------|-----------|
-|<xref:System.Windows.Automation.Provider.IScrollItemProvider.ScrollIntoView%2A>|-   Method|None|
+|<xref:System.Windows.Automation.Provider.IScrollItemProvider.ScrollIntoView*>|-   Method|None|
 
  This control pattern has no associated properties or events.
 
@@ -45,7 +45,7 @@ ms.assetid: 903bab5c-80c1-44d7-bdc2-0a418893b987
 
 |Exception Type|Condition|
 |--------------------|---------------|
-|<xref:System.InvalidOperationException>|If an item cannot be scrolled into view:<br /><br /> -   <xref:System.Windows.Automation.ScrollItemPattern.ScrollIntoView%2A>|
+|<xref:System.InvalidOperationException>|If an item cannot be scrolled into view:<br /><br /> -   <xref:System.Windows.Automation.ScrollItemPattern.ScrollIntoView*>|
 
 ## See also
 

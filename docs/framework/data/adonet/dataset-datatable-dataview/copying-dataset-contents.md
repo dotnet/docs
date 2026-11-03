@@ -15,9 +15,9 @@ You can create a copy of a <xref:System.Data.DataSet> so that you can work with 
 
 - Create a `DataSet` that contains the schema of an existing **DataSet**, but only rows that have been modified. You can return all rows that have been modified, or specify a specific **DataRowState**. For more information about row states, see [Row States and Row Versions](row-states-and-row-versions.md).
 
-- Copy the schema, or relational structure, of the `DataSet` only, without copying any rows. Rows can be imported into an existing <xref:System.Data.DataTable> using <xref:System.Data.DataTable.ImportRow%2A>.
+- Copy the schema, or relational structure, of the `DataSet` only, without copying any rows. Rows can be imported into an existing <xref:System.Data.DataTable> using <xref:System.Data.DataTable.ImportRow*>.
 
- To create an exact copy of the `DataSet` that includes both schema and data, use the <xref:System.Data.DataSet.Copy%2A> method of the **DataSet**. The following code example shows how to create an exact copy of the **DataSet**.
+ To create an exact copy of the `DataSet` that includes both schema and data, use the <xref:System.Data.DataSet.Copy*> method of the **DataSet**. The following code example shows how to create an exact copy of the **DataSet**.
 
 ```vb
 Dim copyDataSet As DataSet = customerDataSet.Copy()
@@ -27,7 +27,7 @@ Dim copyDataSet As DataSet = customerDataSet.Copy()
 DataSet copyDataSet = customerDataSet.Copy();
 ```
 
- To create a copy of a `DataSet` that includes schema and only the data representing **Added**, **Modified**, or `Deleted` rows, use the <xref:System.Data.DataSet.GetChanges%2A> method of the **DataSet**. You can also use `GetChanges` to return only rows with a specified row state by passing a `DataRowState` value when calling **GetChanges**. The following code example shows how to pass a `DataRowState` when calling **GetChanges**.
+ To create a copy of a `DataSet` that includes schema and only the data representing **Added**, **Modified**, or `Deleted` rows, use the <xref:System.Data.DataSet.GetChanges*> method of the **DataSet**. You can also use `GetChanges` to return only rows with a specified row state by passing a `DataRowState` value when calling **GetChanges**. The following code example shows how to pass a `DataRowState` when calling **GetChanges**.
 
 ```vb
 ' Copy all changes.
@@ -44,7 +44,7 @@ DataSet changeDataSet = customerDataSet.GetChanges();
 DataSet addedDataSet= customerDataSet.GetChanges(DataRowState.Added);
 ```
 
- To create a copy of a `DataSet` that only includes schema, use the <xref:System.Data.DataSet.Clone%2A> method of the **DataSet**. You can also add existing rows to the cloned `DataSet` using the `ImportRow` method of the **DataTable**. `ImportRow` adds data, row state, and row version information to the specified table. Column values are added only where the column name matches and the data type is compatible.
+ To create a copy of a `DataSet` that only includes schema, use the <xref:System.Data.DataSet.Clone*> method of the **DataSet**. You can also add existing rows to the cloned `DataSet` using the `ImportRow` method of the **DataTable**. `ImportRow` adds data, row state, and row version information to the specified table. Column values are added only where the column name matches and the data type is compatible.
 
  The following code example creates a clone of a `DataSet` and then adds the rows from the original `DataSet` to the `Customers` table in the `DataSet` clone for customers where the `CountryRegion` column has the value "Germany".
 

@@ -23,23 +23,23 @@ This topic shows how to change the cryptographic provider used to provide an X.5
 
 ## Procedures
 
- Every security token that has an associated security key or keys must implement the <xref:System.IdentityModel.Tokens.SecurityToken.SecurityKeys%2A> property, which returns a collection of keys from the security token instance. If the token is an X.509 security token, the collection contains a single instance of the <xref:System.IdentityModel.Tokens.X509AsymmetricSecurityKey> class that represents both public and private keys associated with the certificate. To replace the default cryptographic provider used to provide the certificate's keys, create a new implementation of this class.
+ Every security token that has an associated security key or keys must implement the <xref:System.IdentityModel.Tokens.SecurityToken.SecurityKeys> property, which returns a collection of keys from the security token instance. If the token is an X.509 security token, the collection contains a single instance of the <xref:System.IdentityModel.Tokens.X509AsymmetricSecurityKey> class that represents both public and private keys associated with the certificate. To replace the default cryptographic provider used to provide the certificate's keys, create a new implementation of this class.
 
 #### To create a custom X.509 asymmetric key
 
 1. Define a new class derived from the <xref:System.IdentityModel.Tokens.X509AsymmetricSecurityKey> class.
 
-2. Override the <xref:System.IdentityModel.Tokens.SecurityKey.KeySize%2A> read-only property. This property returns the actual key size of the certificate's public/private key pair.
+2. Override the <xref:System.IdentityModel.Tokens.SecurityKey.KeySize*> read-only property. This property returns the actual key size of the certificate's public/private key pair.
 
-3. Override the <xref:System.IdentityModel.Tokens.SecurityKey.DecryptKey%2A> method. This method is called by the WCF security framework to decrypt a symmetric key with the certificate's private key. (The key was previously encrypted with the certificate's public key.)
+3. Override the <xref:System.IdentityModel.Tokens.SecurityKey.DecryptKey*> method. This method is called by the WCF security framework to decrypt a symmetric key with the certificate's private key. (The key was previously encrypted with the certificate's public key.)
 
-4. Override the <xref:System.IdentityModel.Tokens.AsymmetricSecurityKey.GetAsymmetricAlgorithm%2A> method. This method is called by the WCF security framework to obtain an instance of the <xref:System.Security.Cryptography.AsymmetricAlgorithm> class that represents the cryptographic provider for either the certificate's private or public key, depending on the parameters passed to the method.
+4. Override the <xref:System.IdentityModel.Tokens.AsymmetricSecurityKey.GetAsymmetricAlgorithm*> method. This method is called by the WCF security framework to obtain an instance of the <xref:System.Security.Cryptography.AsymmetricAlgorithm> class that represents the cryptographic provider for either the certificate's private or public key, depending on the parameters passed to the method.
 
-5. Optional. Override the <xref:System.IdentityModel.Tokens.AsymmetricSecurityKey.GetHashAlgorithmForSignature%2A> method. Override this method if a different implementation of the <xref:System.Security.Cryptography.HashAlgorithm> class is required.
+5. Optional. Override the <xref:System.IdentityModel.Tokens.AsymmetricSecurityKey.GetHashAlgorithmForSignature*> method. Override this method if a different implementation of the <xref:System.Security.Cryptography.HashAlgorithm> class is required.
 
-6. Override the <xref:System.IdentityModel.Tokens.AsymmetricSecurityKey.GetSignatureFormatter%2A> method. This method returns an instance of the <xref:System.Security.Cryptography.AsymmetricSignatureFormatter> class that is associated with the certificate's private key.
+6. Override the <xref:System.IdentityModel.Tokens.AsymmetricSecurityKey.GetSignatureFormatter*> method. This method returns an instance of the <xref:System.Security.Cryptography.AsymmetricSignatureFormatter> class that is associated with the certificate's private key.
 
-7. Override the <xref:System.IdentityModel.Tokens.SecurityKey.IsSupportedAlgorithm%2A> method. This method is used to indicate whether a particular cryptographic algorithm is supported by the security key implementation.
+7. Override the <xref:System.IdentityModel.Tokens.SecurityKey.IsSupportedAlgorithm*> method. This method is used to indicate whether a particular cryptographic algorithm is supported by the security key implementation.
 
      [!code-csharp[c_CustomX509Token#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customx509token/cs/source.cs#1)]
      [!code-vb[c_CustomX509Token#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customx509token/vb/source.vb#1)]

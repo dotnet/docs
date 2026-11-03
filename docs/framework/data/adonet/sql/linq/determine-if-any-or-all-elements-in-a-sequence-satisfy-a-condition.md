@@ -9,9 +9,9 @@ ms.assetid: 339ec145-826c-46d2-8cf2-3acd252cd072
 ---
 # Determine if Any or All Elements in a Sequence Satisfy a Condition
 
-The <xref:System.Linq.Enumerable.All%2A> operator returns `true` if all elements in a sequence satisfy a condition.
+The <xref:System.Linq.Enumerable.All*> operator returns `true` if all elements in a sequence satisfy a condition.
 
- The <xref:System.Linq.Queryable.Any%2A> operator returns `true` if any element in a sequence satisfies a condition.
+ The <xref:System.Linq.Queryable.Any*> operator returns `true` if any element in a sequence satisfies a condition.
 
 ## Example 1
 
@@ -28,7 +28,7 @@ The <xref:System.Linq.Enumerable.All%2A> operator returns `true` if all elements
 
 ## Example 3
 
- The following C# example returns a sequence of customers whose orders have a `ShipCity` beginning with "C". Also included in the return are customers who have no orders. (By design, the <xref:System.Linq.Queryable.All%2A> operator returns `true` for an empty sequence.) Customers with no orders are eliminated in the console output by using the `Count` operator.
+ The following C# example returns a sequence of customers whose orders have a `ShipCity` beginning with "C". Also included in the return are customers who have no orders. (By design, the <xref:System.Linq.Queryable.All*> operator returns `true` for an empty sequence.) Customers with no orders are eliminated in the console output by using the `Count` operator.
 
  [!code-csharp[DLinqQueryExamples#38](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#38)]
 

@@ -39,7 +39,7 @@ ms.assetid: 3cfe875f-b0c0-413d-9703-5f14e6a1a30e
 
 |Required member|Member type|Notes|
 |---------------------|-----------------|-----------|
-|<xref:System.Windows.Automation.TogglePattern.Toggle%2A>|Method|None|
+|<xref:System.Windows.Automation.TogglePattern.Toggle*>|Method|None|
 |<xref:System.Windows.Automation.TogglePatternIdentifiers.ToggleStateProperty>|Property|None|
 
  This control pattern has no associated events.

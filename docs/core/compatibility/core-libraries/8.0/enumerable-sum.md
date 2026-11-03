@@ -5,7 +5,7 @@ ms.date: 11/08/2023
 ---
 # Enumerable.Sum throws new OverflowException for some inputs
 
-.NET 8 adds support for vectorization in the <xref:System.Linq.Enumerable.Sum%2A?displayProperty=nameWithType> methods where applicable. As a side-effect of that change, the vectorized implementation can change the order in which the different elements are added. While this shouldn't change the final result in successful runs, it can result in unexpected <xref:System.OverflowException> exceptions for certain sets of pathological inputs.
+.NET 8 adds support for vectorization in the <xref:System.Linq.Enumerable.Sum*?displayProperty=nameWithType> methods where applicable. As a side-effect of that change, the vectorized implementation can change the order in which the different elements are added. While this shouldn't change the final result in successful runs, it can result in unexpected <xref:System.OverflowException> exceptions for certain sets of pathological inputs.
 
 ## Previous behavior
 
@@ -104,4 +104,4 @@ If your code is impacted by the change, you can either:
 
 ## Affected APIs
 
-- <xref:System.Linq.Enumerable.Sum%2A?displayProperty=fullName>
+- <xref:System.Linq.Enumerable.Sum*?displayProperty=fullName>

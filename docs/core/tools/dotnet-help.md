@@ -29,7 +29,7 @@ The `dotnet help` command opens up the reference page for more detailed informat
 
 ## Options
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
 ## Examples
 

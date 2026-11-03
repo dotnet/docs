@@ -25,8 +25,8 @@ public sealed class MyTests
         IConfigurationRoot config = new ConfigurationBuilder().AddUserSecrets<MyTests>().Build();
 
         string endpoint = config["AZURE_OPENAI_ENDPOINT"];
-        string model = config["AZURE_OPENAI_GPT_NAME"];
         string tenantId = config["AZURE_TENANT_ID"];
+        string model = "gpt-5";
 
         // Get an instance of Microsoft.Extensions.AI's <see cref="IChatClient"/>
         // interface for the selected LLM endpoint.

@@ -30,6 +30,9 @@ The following algorithms are retrainable in ML.NET:
 
 ## Load pretrained model
 
+> [!IMPORTANT]
+> Only load models from trusted sources. Loading models from untrusted sources is a security risk.
+
 First, load the pretrained model into your application. To learn more about loading training pipelines and models, see [Save and load a trained model](save-load-machine-learning-models-ml-net.md).
 
 ```csharp
@@ -48,7 +51,7 @@ ITransformer trainedModel = mlContext.Model.Load("ogd_model.zip", out modelSchem
 
 ## Extract pretrained model parameters
 
-Once the model is loaded, extract the learned model parameters by accessing the [`Model`](xref:Microsoft.ML.Data.PredictionTransformerBase%601.Model%2A) property of the pretrained model. The pretrained model was trained using the linear regression model [`OnlineGradientDescentTrainer`](xref:Microsoft.ML.Trainers.OnlineGradientDescentTrainer), which creates a [`RegressionPredictionTransformer`](xref:Microsoft.ML.Data.RegressionPredictionTransformer%601) that outputs [`LinearRegressionModelParameters`](xref:Microsoft.ML.Trainers.LinearRegressionModelParameters). These model parameters contain the learned bias and weights or coefficients of the model. These values are used as a starting point for the new retrained model.
+Once the model is loaded, extract the learned model parameters by accessing the [`Model`](xref:Microsoft.ML.Data.PredictionTransformerBase`1.Model%2A) property of the pretrained model. The pretrained model was trained using the linear regression model [`OnlineGradientDescentTrainer`](xref:Microsoft.ML.Trainers.OnlineGradientDescentTrainer), which creates a [`RegressionPredictionTransformer`](xref:Microsoft.ML.Data.RegressionPredictionTransformer`1) that outputs [`LinearRegressionModelParameters`](xref:Microsoft.ML.Trainers.LinearRegressionModelParameters). These model parameters contain the learned bias and weights or coefficients of the model. These values are used as a starting point for the new retrained model.
 
 ```csharp
 // Extract trained model parameters

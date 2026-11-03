@@ -11,7 +11,7 @@ ms.assetid: 96278bb7-6eab-4612-8594-ceebfc887d81
 
 To reclaim objects, the garbage collector (GC) must stop all the executing threads in an application. The period of time during which the garbage collector is active is referred to as its *latency*.
 
-In some situations, such as when an application retrieves data or displays content, a full garbage collection can occur at a critical time and impede performance. You can adjust the intrusiveness of the garbage collector by setting the <xref:System.Runtime.GCSettings.LatencyMode%2A?displayProperty=nameWithType> property to one of the <xref:System.Runtime.GCLatencyMode?displayProperty=nameWithType> values.
+In some situations, such as when an application retrieves data or displays content, a full garbage collection can occur at a critical time and impede performance. You can adjust the intrusiveness of the garbage collector by setting the <xref:System.Runtime.GCSettings.LatencyMode?displayProperty=nameWithType> property to one of the <xref:System.Runtime.GCLatencyMode?displayProperty=nameWithType> values.
 
 ## Low latency settings
 
@@ -27,7 +27,7 @@ During low latency periods, generation 2 collections are suppressed unless the f
 
 - The system receives a low memory notification from the operating system.
 
-- Application code induces a collection by calling the <xref:System.GC.Collect%2A?displayProperty=nameWithType> method and specifying 2 for the `generation` parameter.
+- Application code induces a collection by calling the <xref:System.GC.Collect*?displayProperty=nameWithType> method and specifying 2 for the `generation` parameter.
 
 ## Scenarios
 
@@ -50,7 +50,7 @@ When you use [GCLatencyMode.LowLatency](xref:System.Runtime.GCLatencyMode.LowLat
 
 - While in the low latency mode, minimize the number of new allocations, in particular allocations onto the large object heap and pinned objects.
 
-- Be aware of threads that could be allocating. Because the <xref:System.Runtime.GCSettings.LatencyMode%2A> property setting is process-wide, <xref:System.OutOfMemoryException> exceptions can be generated on any thread that is allocating.
+- Be aware of threads that could be allocating. Because the <xref:System.Runtime.GCSettings.LatencyMode> property setting is process-wide, <xref:System.OutOfMemoryException> exceptions can be generated on any thread that is allocating.
 
 - Wrap the low latency code in constrained execution regions. For more information, see [Constrained execution regions](../../framework/performance/constrained-execution-regions.md).
 

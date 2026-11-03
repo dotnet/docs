@@ -1,6 +1,4 @@
-﻿using System;
-
-Console.WriteLine("Hello world!");
+﻿Console.WriteLine("Hello, World!");
 
 namespace YourNamespace
 {
@@ -20,12 +18,5 @@ namespace YourNamespace
 
     enum YourEnum
     {
-    }
-
-    namespace YourNestedNamespace
-    {
-        struct YourStruct
-        {
-        }
     }
 }

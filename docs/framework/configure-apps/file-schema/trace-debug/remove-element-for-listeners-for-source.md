@@ -13,12 +13,12 @@ ms.assetid: 3ff6b578-273d-407f-b07f-8251f1f9f5d0
 
 Removes a listener from the `Listeners` collection for a trace source.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<sources>**](sources-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<source>**](source-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<listeners>**](listeners-element-for-source.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<system.diagnostics>`](system-diagnostics-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<sources>`](sources-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`<source>`](source-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`<listeners>`](listeners-element-for-source.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<remove>`
 
 ## Syntax
 
@@ -54,7 +54,7 @@ Removes a listener from the `Listeners` collection for a trace source.
 
  The `<remove>` element removes a specified listener from the `Listeners` collection for a trace source.
 
- You can remove an element from the `Listeners` collection for a trace source programmatically by calling the <xref:System.Diagnostics.TraceListenerCollection.Remove%2A> method on the <xref:System.Diagnostics.TraceSource.Listeners%2A> property of the <xref:System.Diagnostics.TraceSource> instance.
+ You can remove an element from the `Listeners` collection for a trace source programmatically by calling the <xref:System.Diagnostics.TraceListenerCollection.Remove*> method on the <xref:System.Diagnostics.TraceSource.Listeners> property of the <xref:System.Diagnostics.TraceSource> instance.
 
  This element can be used in the machine configuration file (Machine.config) and the application configuration file.
 
@@ -81,7 +81,7 @@ Removes a listener from the `Listeners` collection for a trace source.
 
 ## See also
 
-- <xref:System.Diagnostics.TraceSource.Listeners%2A>
+- <xref:System.Diagnostics.TraceSource.Listeners*>
 - <xref:System.Diagnostics.TraceSource>
 - [Trace and Debug Settings Schema](index.md)
 - [\<clear>](clear-element-for-listeners-for-source.md)

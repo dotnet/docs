@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "stack depth"
   - "platform invoke stack imbalance"
   - "MDAs (managed debugging assistants), platform invoke"
-  - "platform invoke, run-time errors"
+  - "platform invoke, runtime errors"
   - "PInvokeStackImbalance MDA"
   - "managed debugging assistants (MDAs), platform invoke"
 ms.assetid: 34ddc6bd-1675-4f35-86aa-de1645d5c631
@@ -59,4 +59,4 @@ The MDA message gives the name of the platform invoke method call that is causin
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../interop/interop-marshalling.md)
+- [Interop Marshaling](../../standard/native-interop/interop-marshalling.md)

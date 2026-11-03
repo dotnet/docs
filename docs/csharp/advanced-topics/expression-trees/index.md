@@ -17,12 +17,12 @@ You already write code that uses Expression trees. Entity Framework's LINQ APIs 
 When you want to have a richer interaction, you need to use *Expression Trees*. Expression Trees represent code as a structure that you examine, modify, or execute. These tools give you the power to manipulate code during run time. You write code that examines running algorithms, or injects new capabilities. In more advanced scenarios, you modify running algorithms and even translate C# expressions into another form for execution in another environment.
 
 You compile and run code represented by expression trees. Building and running expression trees enables dynamic modification of executable code, the execution of LINQ queries in various databases, and the creation of dynamic queries. For more information about expression trees in LINQ, see [How to use expression trees to build dynamic queries](../../linq/how-to-build-dynamic-queries.md).
-  
+
 Expression trees are also used in the dynamic language runtime (DLR) to provide interoperability between dynamic languages and .NET and to enable compiler writers to emit expression trees instead of Microsoft intermediate language (CIL). For more information about the DLR, see [Dynamic Language Runtime Overview](../../../framework/reflection-and-codedom/dynamic-language-runtime-overview.md).
 
 You can have the C# or Visual Basic compiler create an expression tree for you based on an anonymous lambda expression, or you can create expression trees manually by using the <xref:System.Linq.Expressions> namespace.
 
-When a lambda expression is assigned to a variable of type <xref:System.Linq.Expressions.Expression%601>, the compiler emits code to build an expression tree that represents the lambda expression.
+When a lambda expression is assigned to a variable of type <xref:System.Linq.Expressions.Expression`1>, the compiler emits code to build an expression tree that represents the lambda expression.
 
 The following code examples demonstrate how to have the C# compiler create an expression tree that represents the lambda expression `num => num < 5`.
 
@@ -47,7 +47,7 @@ Expression trees don't support new expression node types. It would be a breaking
 - [Conditional methods](../../language-reference/preprocessor-directives.md#conditional-compilation) removed from the output
 - [`base` access](../../language-reference/keywords/base.md)
 - Method group expressions, including [*address-of* (`&`)](../../language-reference/operators/pointer-related-operators.md) a method group, and anonymous method expressions
-- References to [local functions](../../programming-guide/classes-and-structs/local-functions.md)
+- References to [local functions](../../fundamentals/building-software/local-functions.md)
 - Statements, including assignment (`=`) and statement bodied expressions
 - [Partial methods](../../language-reference/keywords/partial-member.md) with only a defining declaration
 - [Unsafe pointer operations](../../language-reference/unsafe-code.md#pointer-types)
@@ -64,6 +64,6 @@ Expression trees don't support new expression node types. It would be a breaking
 - Expressions using <xref:System.Index?displayProperty=nameWithType> or <xref:System.Range?displayProperty=nameWithType>, [index "from end" (`^`) operator](../../language-reference/operators/member-access-operators.md#index-from-end-operator-) or [range expressions (`..`)](../../language-reference/operators/member-access-operators.md#range-operator-)
 - [`async` lambda expressions or `await` expressions](../../language-reference/operators/lambda-expressions.md#async-lambdas), including [`await foreach` and `await using`](../../language-reference/operators/await.md#asynchronous-streams-and-disposables)
 - [Tuple literals, tuple conversions, tuple `==` or `!=`, or `with` expressions](../../language-reference/builtin-types/value-tuples.md)
-- [Discards (`_`)](../../fundamentals/functional/discards.md), [deconstructing assignment](../../fundamentals/functional/deconstruct.md), [pattern matching `is` operator, or the pattern matching `switch` expression](../../language-reference/operators/patterns.md)
+- [Discards (`_`)](../../fundamentals/patterns/discards.md), [deconstructing assignment](../../fundamentals/patterns/deconstruct.md), [pattern matching `is` operator, or the pattern matching `switch` expression](../../language-reference/operators/patterns.md)
 - COM call with `ref` omitted on the arguments
 - [`ref`](../../language-reference/keywords/ref.md), [`in`](../../language-reference/keywords/method-parameters.md#in-parameter-modifier) or [`out`](../../language-reference/keywords/method-parameters.md#out-parameter-modifier) parameters, `ref` return values, `out` arguments, or any values of [`ref struct` type](../../language-reference/builtin-types/ref-struct.md)

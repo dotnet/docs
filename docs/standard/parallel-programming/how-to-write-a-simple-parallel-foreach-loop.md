@@ -13,28 +13,28 @@ ms.assetid: cb5fab92-1c19-499e-ae91-8b7525dd875f
 ---
 # How to: Write a simple Parallel.ForEach loop
 
-This article shows how to use a <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> loop to enable data parallelism over any <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> data source.
+This article shows how to use a <xref:System.Threading.Tasks.Parallel.ForEach*?displayProperty=nameWithType> loop to enable data parallelism over any <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable`1?displayProperty=nameWithType> data source.
 
 > [!NOTE]
 > This documentation uses lambda expressions to define delegates in PLINQ. If you aren't familiar with lambda expressions in C# or Visual Basic, see [Lambda expressions in PLINQ and TPL](lambda-expressions-in-plinq-and-tpl.md).
 
 ## Example
 
-This example demonstrates <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> for CPU-intensive operations. When you run the example, it randomly generates 2 million numbers and tries to filter to prime numbers. The first case iterates over the collection via a `for` loop. The second case iterates over the collection via <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType>. The resulting time taken by each iteration is displayed when the application is finished.
+This example demonstrates <xref:System.Threading.Tasks.Parallel.ForEach*?displayProperty=nameWithType> for CPU-intensive operations. When you run the example, it randomly generates 2 million numbers and tries to filter to prime numbers. The first case iterates over the collection via a `for` loop. The second case iterates over the collection via <xref:System.Threading.Tasks.Parallel.ForEach*?displayProperty=nameWithType>. The resulting time taken by each iteration is displayed when the application is finished.
 
 [!code-csharp[TPL_Parallel#03](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_parallel/cs/simpleforeach.cs#03)]
 [!code-vb[TPL_Parallel#03](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_parallel/vb/simpleforeach.vb#03)]
 
-A <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> loop works like a <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> loop. The loop partitions the source collection and schedules the work on multiple threads based on the system environment. The more processors on the system, the faster the parallel method runs. For some source collections, a sequential loop might be faster, depending on the size of the source and the kind of work the loop performs. For more information about performance, see [Potential pitfalls in data and task parallelism](potential-pitfalls-in-data-and-task-parallelism.md).
+A <xref:System.Threading.Tasks.Parallel.ForEach*?displayProperty=nameWithType> loop works like a <xref:System.Threading.Tasks.Parallel.For*?displayProperty=nameWithType> loop. The loop partitions the source collection and schedules the work on multiple threads based on the system environment. The more processors on the system, the faster the parallel method runs. For some source collections, a sequential loop might be faster, depending on the size of the source and the kind of work the loop performs. For more information about performance, see [Potential pitfalls in data and task parallelism](potential-pitfalls-in-data-and-task-parallelism.md).
 
 For more information about parallel loops, see [How to: Write a simple Parallel.For loop](how-to-write-a-simple-parallel-for-loop.md).
 
-To use the <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> loop with a non-generic collection, you can use the <xref:System.Linq.Enumerable.Cast%2A?displayProperty=nameWithType> extension method to convert the collection to a generic collection, as shown in the following example:
+To use the <xref:System.Threading.Tasks.Parallel.ForEach*?displayProperty=nameWithType> loop with a non-generic collection, you can use the <xref:System.Linq.Enumerable.Cast*?displayProperty=nameWithType> extension method to convert the collection to a generic collection, as shown in the following example:
 
 [!code-csharp[TPL_Parallel#07](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_parallel/cs/nongeneric.cs#07)]
 [!code-vb[TPL_Parallel#07](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_parallel/vb/nongeneric.vb#07)]
 
-You can also use Parallel LINQ (PLINQ) to parallelize the processing of <xref:System.Collections.Generic.IEnumerable%601> data sources. PLINQ enables you to use declarative query syntax to express the loop behavior. For more information, see [Parallel LINQ (PLINQ)](introduction-to-plinq.md).
+You can also use Parallel LINQ (PLINQ) to parallelize the processing of <xref:System.Collections.Generic.IEnumerable`1> data sources. PLINQ enables you to use declarative query syntax to express the loop behavior. For more information, see [Parallel LINQ (PLINQ)](introduction-to-plinq.md).
 
 ## Compile and run the code
 

@@ -27,7 +27,7 @@ ai-usage: ai-generated
 
 ## Cause
 
-A call to <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Throws%2A>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsAsync%2A>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExactly%2A>, or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExactlyAsync%2A> contains multiple statements in the action delegate.
+A call to <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Throws*>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsAsync*>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExactly*>, or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExactlyAsync*> contains multiple statements in the action delegate.
 
 ## Rule description
 

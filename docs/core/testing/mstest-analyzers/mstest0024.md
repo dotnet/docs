@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0024: Do not store TestContext in a static member"
 description: "Learn about code analysis rule MSTEST0024: Do not store TestContext in a static member"
-ms.date: 03/19/2024
+ms.date: 08/06/2026
 f1_keywords:
 - MSTEST0024
 - DoNotStoreStaticTestContextAnalyzer
@@ -10,6 +10,7 @@ helpviewer_keywords:
 - MSTEST0024
 author: Evangelink
 ms.author: amauryleve
+ai-usage: ai-assisted
 ---
 # MSTEST0024: Do not store TestContext in a static member
 
@@ -28,9 +29,11 @@ ms.author: amauryleve
 
 This rule raises a diagnostic when an assignment to a `static` member of a `TestContext` parameter is done.
 
+Starting with MSTest 4.4, the rule also detects coalescing assignments, such as `s_testContext ??= testContext`, and deconstruction assignments that store `TestContext` in a static member.
+
 ## Rule description
 
-The `TestContext` parameter passed to each initialize method (`[AssemblyInitialize]` or `[ClassInitialize]`) is specific to the current context and is not updated on each test execution. Storing, for reuse, this `TextContext` object will most of the time lead to issues.
+The `TestContext` parameter passed to each initialize method (`[AssemblyInitialize]` or `[ClassInitialize]`) is specific to the current context and is not updated on each test execution. Storing, for reuse, this `TestContext` object will most of the time lead to issues.
 
 ## How to fix violations
 

@@ -13,10 +13,10 @@ ms.assetid: 3afa1586-e1b8-473d-8985-c3fc90cf561b
 
 Enables or disables networking performance counters.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<settings>**](settings-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<performanceCounters>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<system.net>`](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<settings>`](settings-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<performanceCounters>`
 
 ## Syntax
 
@@ -54,7 +54,7 @@ Enables or disables networking performance counters.
 
  The default value is that networking performance counters are disabled.
 
- The <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=nameWithType> property can be used to get the current value of the `enabled` attribute from applicable configuration files.
+ The <xref:System.Net.Configuration.PerformanceCountersElement.Enabled?displayProperty=nameWithType> property can be used to get the current value of the `enabled` attribute from applicable configuration files.
 
 ## Example
 
@@ -75,6 +75,6 @@ Enables or disables networking performance counters.
 ## See also
 
 - <xref:System.Net.Configuration.PerformanceCountersElement?displayProperty=nameWithType>
-- <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=nameWithType>
+- <xref:System.Net.Configuration.PerformanceCountersElement.Enabled?displayProperty=nameWithType>
 - [Network Settings Schema](index.md)
 - [Networking Performance Counters](../../../debug-trace-profile/performance-counters.md#networking-performance-counters)

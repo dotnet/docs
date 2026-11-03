@@ -32,7 +32,7 @@ public class NestedValue
 
 ## New behavior
 
-Starting in .NET 8, the same code from the [Previous behavior](#previous-behavior) section throws an <xref:System.InvalidOperationException> at run time.
+Starting in .NET 8, the same code from the [Previous behavior](#previous-behavior) section throws an <xref:System.InvalidOperationException> at runtime.
 
 > System.InvalidOperationException: The type 'System.ReadOnlySpan`1[System.Byte]' of property 'Span' on type 'NestedValue' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
 
@@ -70,4 +70,4 @@ If this change is problematic for you, you can:
 
 ## Affected APIs
 
-- <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.Deserialize*?displayProperty=fullName>

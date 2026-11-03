@@ -15,7 +15,7 @@ In this sample, the service is hosted by Internet Information Services (IIS) and
 
 ## Service
 
-The `Person` class has the <xref:System.Runtime.Serialization.DataContractAttribute> attribute applied, with the <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A> field set to `true` to declare it as a reference type. All properties have the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute applied.
+The `Person` class has the <xref:System.Runtime.Serialization.DataContractAttribute> attribute applied, with the <xref:System.Runtime.Serialization.DataContractAttribute.IsReference> field set to `true` to declare it as a reference type. All properties have the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute applied.
 
 ```csharp
 [DataContract(IsReference=true)]
@@ -104,5 +104,5 @@ A social network that consists of five `Person` objects is created. The client c
 
 ## See also
 
-- <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A>
+- <xref:System.Runtime.Serialization.DataContractAttribute.IsReference>
 - [Interoperable Object References](../feature-details/interoperable-object-references.md)

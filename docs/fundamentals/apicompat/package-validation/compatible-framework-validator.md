@@ -1,6 +1,6 @@
 ---
 title: Validating Different Runtimes
-description: Learn about validating the run-time and compile-time assemblies applicable for supported target frameworks and runtimes.
+description: Learn about validating the runtime and compile-time assemblies applicable for supported target frameworks and runtimes.
 ms.date: 09/29/2021
 ---
 
@@ -31,7 +31,7 @@ lib/net6.0/A.dll
 runtimes/unix/lib/net6.0/A.dll
 ```
 
-`lib\net6.0\A.dll` is always used at compile time, regardless of the underlying operating system. `lib\net6.0\A.dll` is also used at run time for non-Unix systems. However, `runtimes\unix\lib\net6.0\A.dll` is used at run time for Unix systems.
+`lib\net6.0\A.dll` is always used at compile time, regardless of the underlying operating system. `lib\net6.0\A.dll` is also used at runtime for non-Unix systems. However, `runtimes\unix\lib\net6.0\A.dll` is used at runtime for Unix systems.
 
 When you try to pack this project, you get the following error:
 

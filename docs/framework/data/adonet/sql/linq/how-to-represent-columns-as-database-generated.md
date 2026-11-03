@@ -6,13 +6,13 @@ ms.assetid: 6524b8a6-e5d2-4a3b-8e08-beafc4a84fd2
 ---
 # How to: Represent Columns as Database-Generated
 
-Use the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> property on the <xref:System.Data.Linq.Mapping.ColumnAttribute> attribute to designate a field or property as representing a database-generated column.  
+Use the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated> property on the <xref:System.Data.Linq.Mapping.ColumnAttribute> attribute to designate a field or property as representing a database-generated column.  
   
- For code examples, see <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>.  
+ For code examples, see <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated>.  
   
 ### To designate a field or property as representing a database-generated column  
   
-1. Add the <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> property to the <xref:System.Data.Linq.Mapping.ColumnAttribute> attribute.  
+1. Add the <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated> property to the <xref:System.Data.Linq.Mapping.ColumnAttribute> attribute.  
   
 2. Set the property value to `true`.  
   

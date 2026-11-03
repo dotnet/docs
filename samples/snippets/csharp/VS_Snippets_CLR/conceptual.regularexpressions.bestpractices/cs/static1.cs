@@ -62,7 +62,7 @@ public class CurrencyForm : Form
    // <Snippet2>
    public void OKButton_Click(object sender, EventArgs e)
    {
-      if (! String.IsNullOrEmpty(sourceCurrency.Text))
+      if (!String.IsNullOrEmpty(sourceCurrency.Text))
          if (RegexLib.IsValidCurrency(sourceCurrency.Text))
             PerformConversion();
          else

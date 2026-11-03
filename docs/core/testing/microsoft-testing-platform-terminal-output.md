@@ -1,0 +1,78 @@
+---
+title: Microsoft.Testing.Platform (MTP) terminal output
+description: Learn about the built-in terminal test reporter in MTP, including output modes, ANSI support, and progress indicators.
+author: evangelink
+ms.author: amauryleve
+ms.date: 10/01/2026
+ai-usage: ai-assisted
+---
+
+# Terminal output
+
+The terminal test reporter is the built-in implementation of status and progress reporting to the terminal (console). It's part of the core **Microsoft.Testing.Platform (MTP)** and doesn't require any additional NuGet packages.
+
+## Output modes
+
+MTP supports these output modes:
+
+- `Minimal` reports failed result blocks.
+- `Normal` reports failed and skipped result blocks. It also contains the banner, warning messages, and run summary.
+  ![Output with 1 failed test and a summary](./media/test-output-and-summary.png)
+
+- `Detailed` reports all result blocks.
+  ![Output with 1 failed, and 1 passed test and a summary](./media/test-output-and-summary-with-passed.png)
+
+`Minimal` is available starting with MTP 2.4.
+
+## ANSI
+
+Internally there are 2 different output formatters that auto-detect the terminal capability to handle [ANSI escape codes](/windows/console/console-virtual-terminal-sequences).
+
+- The ANSI formatter is used when the terminal is capable of rendering the escape codes.
+- The non-ANSI formatter is used when the terminal can't handle the escape codes, when `--no-ansi` is used, or when output is redirected.
+
+The default is to auto-detect the capabilities.
+
+## Progress
+
+A progress indicator is written to terminal. The progress indicator shows the number of passed tests, failed tests, and skipped tests, followed by the name of the tested assembly, its target framework, and architecture.
+
+![A progress bar with 23 passed tests, 0 failed tests and 0 skipped tests](./media/test-progress-bar.png)
+
+The progress bar is written based on the selected mode:
+
+- ANSI, the progress bar is animated, sticking to the bottom of the screen and is refreshed every 500ms. The progress bar hides once test execution is done.
+- non-ANSI, the progress bar is written to screen as is every 3 seconds. The progress remains in the output.
+
+### Direct console output and progress redraw
+
+To animate the progress bar, the ANSI progress renderer takes control of the terminal cursor and repeatedly redraws the bottom of the screen. Any text that's written directly to `stdout` or `stderr` outside the test framework's capture path can be overwritten or removed during this redraw. For example, a `Console.WriteLine` call from assembly-level or session-level lifecycle code (such as a `Before(Assembly)` or `Before(TestSession)` hook), or from an extension, might flash briefly and then disappear when the progress bar refreshes.
+
+This behavior is distinct from *captured* per-test standard output and standard error. Output that a test writes while it runs is captured by the framework and shown according to `--show-stdout` and `--show-stderr`, so the progress bar doesn't overwrite it.
+
+If you author a test framework, attach captured text through [`StandardOutputProperty` and `StandardErrorProperty`](./microsoft-testing-platform-architecture-test-framework.md#captured-test-output). The platform doesn't automatically capture direct console writes from custom frameworks.
+
+If your code must write directly to the console and you need that output to remain visible, disable progress (`--progress off` in MTP 2.3.0+, or `--no-progress` in earlier versions). Alternatively, disable ANSI (`--ansi off` in MTP 2.3.0+, or `--no-ansi` in earlier versions) to use the non-ANSI progress output, which appends new lines instead of redrawing in place and doesn't overwrite prior direct output.
+
+## Options
+
+| Option | MTP version | Description |
+|---|---|---|
+| `--no-progress` | — | Disables reporting progress to screen. Deprecated in MTP 2.3.0 in favor of `--progress off`. |
+| `--progress` | 2.3.0 | Controls whether progress is shown. Valid values are `auto` (default), `on` (also accepts `true`, `enable`, `1`), and `off` (also accepts `false`, `disable`, `0`). |
+| `--no-ansi` | — | Disables outputting ANSI escape characters to screen. |
+| `--ansi` | 2.3.0 | Controls whether ANSI escape characters are emitted. Valid values are `auto` (default), `on` (also accepts `true`, `enable`, `1`), and `off` (also accepts `false`, `disable`, `0`). |
+| `--output` | — | Specifies the output verbosity for test results. Valid values are `Minimal`, `Normal`, and `Detailed`. The default is `Normal`. `Minimal` requires MTP 2.4 or later. |
+| `--show-test-results <OUTCOME>` | 2.4.0 | Selects result blocks by outcome. Use `passed`, `failed`, `skipped`, `all`, or `none`. `failed` also includes errors, timeouts, and cancellations. |
+| `--show-stdout` | 2.2.1 | Determines when to show captured standard output of a test. Valid values are `All`, `Failed`, and `None`. Default is `All`. |
+| `--show-stderr` | 2.2.1 | Determines when to show captured error output of a test. Valid values are `All`, `Failed`, and `None`. Default is `All`. |
+| `--show-flaky-tests` | 2.4.0 | Controls the `flaky:` summary and the **Flaky tests** list for tests that pass after a retry. Use `on` or `off`; the default is `on`. Applies to MSTest `[Retry]` and the [retry extension](microsoft-testing-platform-retry.md). |
+| `--show-slowest-tests` | 2.4.0 | Shows the requested number of slowest tests in the summary. For a multi-module run, MTP reports the slowest tests for each module. |
+
+Combine `passed`, `failed`, and `skipped` with commas, spaces, or repeated `--show-test-results` options. Don't combine `all` or `none` with another value. An explicit `--show-test-results` value overrides the `--output` preset regardless of option order. The filter changes result blocks only; progress and summary counts remain unchanged.
+
+> [!NOTE]
+> A dash (—) in the **MTP version** column marks core options that aren't tied to a specific version because they've been available since the platform's initial releases.
+
+> [!NOTE]
+> Starting with MTP 2.3.0, when MTP detects that it runs inside an LLM or AI tool environment, it suppresses the startup banner and changes the default of `--show-stdout` and `--show-stderr` from `All` to `Failed` to reduce noise.

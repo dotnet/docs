@@ -1,9 +1,10 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 11/07/2025
+ms.date: 09/21/2026
 ms.topic: reference
 ms.custom: updateeachrelease
+ai-usage: ai-assisted
 ---
 # MSBuild reference for .NET SDK projects
 
@@ -62,6 +63,8 @@ The `ApiCompatValidateAssemblies` property enables a series of validations on th
 
 - [GenerateAssemblyInfo](#generateassemblyinfo)
 - [GeneratedAssemblyInfoFile](#generatedassemblyinfofile)
+- [IncludeSourceRevisionInInformationalVersion](#includesourcerevisionininformationalversion)
+- [SourceRevisionId](#sourcerevisionid)
 
 ### GenerateAssemblyInfo
 
@@ -89,6 +92,30 @@ The `GeneratedAssemblyInfoFile` property defines the relative or absolute path o
 </PropertyGroup>
 ```
 
+### IncludeSourceRevisionInInformationalVersion
+
+The `IncludeSourceRevisionInInformationalVersion` property controls whether the [`SourceRevisionId`](#sourcerevisionid) value is appended to the `InformationalVersion` assembly attribute. The default value is `true`. Set it to `false` to disable this behavior:
+
+```xml
+<PropertyGroup>
+  <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+</PropertyGroup>
+```
+
+For more information, see [Source Link included in the .NET SDK](../compatibility/sdk/8.0/source-link.md).
+
+### SourceRevisionId
+
+The `SourceRevisionId` property holds the source control revision ID for the build, such as a Git commit hash. Starting in .NET 8, the .NET SDK automatically populates this property with the commit hash when [Source Link](https://github.com/dotnet/sourcelink) is present. When set, its value is appended to the `InformationalVersion` assembly attribute.
+
+```xml
+<PropertyGroup>
+  <SourceRevisionId>abc1234</SourceRevisionId>
+</PropertyGroup>
+```
+
+For more information, see [Source Link included in the .NET SDK](../compatibility/sdk/8.0/source-link.md).
+
 ## Framework properties
 
 The following MSBuild properties are documented in this section:
@@ -107,6 +134,9 @@ The `TargetFramework` property specifies the target framework version for the ap
 </PropertyGroup>
 ```
 
+> [!NOTE]
+> The `TargetFramework` value is an alias. The .NET SDK parses it and sets the canonical moniker properties: `TargetFrameworkMoniker`, `TargetFrameworkIdentifier`, `TargetFrameworkVersion`, and, if applicable, `TargetPlatformIdentifier`, `TargetPlatformVersion`, and `TargetPlatformMoniker`. If you use a custom alias, you can set these properties directly in your project file.
+
 For more information, see [Target frameworks in SDK-style projects](../../standard/frameworks.md).
 
 ### TargetFrameworks
@@ -114,13 +144,16 @@ For more information, see [Target frameworks in SDK-style projects](../../standa
 Use the `TargetFrameworks` property when you want your app to target multiple platforms. For a list of valid target framework monikers, see [Target frameworks in SDK-style projects](../../standard/frameworks.md#supported-target-frameworks).
 
 > [!NOTE]
-> If `TargetFrameworks` (plural) is specified, `TargetFramework` (singular) is ignored.
+> If `TargetFramework` (singular) is specified, `TargetFrameworks` (plural) is ignored, and the project builds as a single-target project.
 
 ```xml
 <PropertyGroup>
   <TargetFrameworks>net8.0;net462</TargetFrameworks>
 </PropertyGroup>
 ```
+
+> [!NOTE]
+> Starting with .NET SDK 10.0.300, multiple values can resolve to the same effective framework. For example, `<TargetFrameworks>linux;mac</TargetFrameworks>` is valid where both aliases resolve to `net10.0` as the target framework.
 
 For more information, see [Target frameworks in SDK-style projects](../../standard/frameworks.md).
 
@@ -370,7 +403,9 @@ The following MSBuild properties are documented in this section:
 - [PublishDocumentationFile](#publishdocumentationfile)
 - [PublishDocumentationFiles](#publishdocumentationfiles)
 - [PublishReferencesDocumentationFiles](#publishreferencesdocumentationfiles)
+- [PublishReferencesSymbols](#publishreferencessymbols)
 - [PublishRelease](#publishrelease)
+- [PublishRuntimeIdentifier](#publishruntimeidentifier)
 - [PublishSelfContained](#publishselfcontained)
 - [RollForward](#rollforward)
 - [RuntimeFrameworkVersion](#runtimeframeworkversion)
@@ -379,6 +414,7 @@ The following MSBuild properties are documented in this section:
 - [SatelliteResourceLanguages](#satelliteresourcelanguages)
 - [SelfContained](#selfcontained)
 - [UseAppHost](#useapphost)
+- [UseNativeLibPrefix](#usenativelibprefix)
 
 ### AppendTargetFrameworkToOutputPath
 
@@ -478,9 +514,9 @@ This property is useful if you run `dotnet publish` on a solution file, as it al
 
 ### PreserveCompilationContext
 
-The `PreserveCompilationContext` property allows a built or published application to compile more code at run time using the same settings that were used at build time. The assemblies referenced at build time will be copied into the *ref* subdirectory of the output directory. The names of the reference assemblies are stored in the application's *.deps.json* file along with the options passed to the compiler. You can retrieve this information using the <xref:Microsoft.Extensions.DependencyModel.DependencyContext.CompileLibraries?displayProperty=nameWithType> and <xref:Microsoft.Extensions.DependencyModel.DependencyContext.CompilationOptions?displayProperty=nameWithType> properties.
+The `PreserveCompilationContext` property allows a built or published application to compile more code at runtime using the same settings that were used at build time. The assemblies referenced at build time will be copied into the *ref* subdirectory of the output directory. The names of the reference assemblies are stored in the application's *.deps.json* file along with the options passed to the compiler. You can retrieve this information using the <xref:Microsoft.Extensions.DependencyModel.DependencyContext.CompileLibraries?displayProperty=nameWithType> and <xref:Microsoft.Extensions.DependencyModel.DependencyContext.CompilationOptions?displayProperty=nameWithType> properties.
 
-This functionality is mostly used internally by ASP.NET Core MVC and Razor pages to support run-time compilation of Razor files.
+This functionality is mostly used internally by ASP.NET Core MVC and Razor pages to support runtime compilation of Razor files.
 
 ```xml
 <PropertyGroup>
@@ -525,7 +561,11 @@ This property is an enablement flag for several other properties that control wh
 
 ### PublishReferencesDocumentationFiles
 
-When this property is `true`, XML documentation files for the project's references are copied to the publish directory, instead of just run-time assets like DLL files. This property defaults to `true`.
+When this property is `true`, XML documentation files for the project's references are copied to the publish directory, instead of just runtime assets like DLL files. This property defaults to `true`.
+
+### PublishReferencesSymbols
+
+When this property is `true`, symbol files (also known as PDB files) for the project's references are copied to the publish directory, instead of just runtime assets like DLL files. This property defaults to `true`.
 
 ### PublishRelease
 
@@ -542,9 +582,19 @@ The `PublishRelease` property informs `dotnet publish` to use the `Release` conf
 > - Starting in the .NET 8 SDK, `PublishRelease` defaults to `true` for projects that target .NET 8 or later. For more information, see ['dotnet publish' uses Release configuration](../compatibility/sdk/8.0/dotnet-publish-config.md).
 > - This property does not affect the behavior of `dotnet build /t:Publish`, and it changes the configuration only when publishing via the .NET CLI.
 
+### PublishRuntimeIdentifier
+
+Specify a single [runtime identifier (RID)](../rid-catalog.md) for publish operations only. This property was introduced in .NET 7. It doesn't affect build operations. During publish, `PublishRuntimeIdentifier` sets `RuntimeIdentifier`. If you pass `RuntimeIdentifier` as a global property, that value takes precedence.
+
+```xml
+<PropertyGroup>
+  <PublishRuntimeIdentifier>linux-x64</PublishRuntimeIdentifier>
+</PropertyGroup>
+```
+
 ### PublishSelfContained
 
-The `PublishSelfContained` property informs `dotnet publish` to publish an app as a [self-contained app](../deploying/index.md#self-contained-deployment). This property is useful when you can't use the `--self-contained` argument for the [dotnet publish](../tools/dotnet-publish.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `PublishSelfContained` MSBuild property to a project or *Directory.Build.Props* file.
+The `PublishSelfContained` property informs `dotnet publish` to publish an app as a [self-contained app](../deploying/index.md#publish-as-self-contained). This property is useful when you can't use the `--self-contained` argument for the [dotnet publish](../tools/dotnet-publish.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `PublishSelfContained` MSBuild property to a project or *Directory.Build.Props* file.
 
 This property was introduced in .NET 7. It's similar to the [SelfContained](#selfcontained) property, except that it's specific to the `publish` verb. It's recommended to use `PublishSelfContained` instead of `SelfContained`.
 
@@ -624,7 +674,7 @@ The `SatelliteResourceLanguages` property lets you specify which languages you w
 
 ### SelfContained
 
-The `SelfContained` property informs `dotnet build` and `dotnet publish` to build or publish an app as a [self-contained app](../deploying/index.md#self-contained-deployment). This property is useful when you can't use the `--self-contained` argument with the [dotnet](../tools/dotnet.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `SelfContained` MSBuild property to a project or *Directory.Build.Props* file.
+The `SelfContained` property informs `dotnet build` and `dotnet publish` to build or publish an app as a [self-contained app](../deploying/index.md#publish-as-self-contained). This property is useful when you can't use the `--self-contained` argument with the [dotnet](../tools/dotnet.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `SelfContained` MSBuild property to a project or *Directory.Build.Props* file.
 
 This property is similar to the [PublishSelfContained](#publishselfcontained) property. It's recommended to use `PublishSelfContained` instead of `SelfContained` when possible.
 
@@ -645,6 +695,20 @@ The `UseAppHost` property controls whether or not a native executable is created
 ```
 
 For more information about deployment, see [.NET application deployment](../deploying/index.md).
+
+### UseNativeLibPrefix
+
+The `UseNativeLibPrefix` property controls whether NativeAOT applies the `lib` prefix to non-executable native library outputs on Unix platforms. By default, the `lib` prefix is applied, which aligns with Unix naming conventions for shared and static libraries (for example, `libmylib.so`, `libmylib.a`).
+
+Set `UseNativeLibPrefix` to `false` to opt out of the default behavior:
+
+```xml
+<PropertyGroup>
+  <UseNativeLibPrefix>false</UseNativeLibPrefix>
+</PropertyGroup>
+```
+
+This property was introduced in .NET 11. For more information, see [NativeAOT uses lib prefix for native library outputs on Unix](../compatibility/interop/11/nativeaot-lib-prefix.md).
 
 ## Trim-related properties
 
@@ -684,9 +748,6 @@ C# compiler options, such as `LangVersion` and `Nullable`, can also be specified
 ### ContinuousIntegrationBuild
 
 The `ContinuousIntegrationBuild` property indicates whether a build is executing on a continuous integration (CI) server. When set to `true`, this property enables settings that only apply to official builds as opposed to local builds on a developer machine. For example, stored file paths are normalized for official builds. But on a local development machine, the debugger isn't able to find local source files if file paths are normalized.
-
-> [!NOTE]
-> Currently, setting this property to `true` works only if you add either a specific [SourceLink](https://github.com/dotnet/sourcelink) provider package reference or a `<SourceRoot Include="$(MyDirectory)" />` item. For more information, see [dotnet/roslyn issue 55860](https://github.com/dotnet/roslyn/issues/55860).
 
 You can use your CI system's variable to conditionally set the `ContinuousIntegrationBuild` property. For example, the variable name for Azure Pipelines is `TF_BUILD`:
 
@@ -878,6 +939,9 @@ Use the `DefaultItemExcludes` property to define glob patterns for files and fol
   <DefaultItemExcludes>$(DefaultItemExcludes);**/*.myextension</DefaultItemExcludes>
 </PropertyGroup>
 ```
+
+> [!NOTE]
+> The `DefaultItemExcludes` property excludes files and folders from being watched by `dotnet watch`. For more information, see [Ignore specified folders and files from `dotnet watch`](../tools/dotnet-watch.md#ignore-specified-files-and-folders).
 
 ### DefaultItemExcludesInProjectFolder
 
@@ -1099,6 +1163,7 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 ### EnforceCodeStyleInBuild
 
 [.NET code style analysis](../../fundamentals/code-analysis/overview.md#code-style-analysis) is disabled, by default, on build for all .NET projects. You can enable code style analysis for .NET projects by setting the `EnforceCodeStyleInBuild` property to `true`.
+(But for performance reasons, a [handful of code-style rules](https://github.com/dotnet/roslyn/blob/7c69ea6a9a16bd8ded79ce0d7c0256d59736d486/src/Analyzers/Core/Analyzers/EnforceOnBuildValues.cs#L140) that apply only in the Visual Studio IDE won't be run.)
 
 ```xml
 <PropertyGroup>
@@ -1460,6 +1525,10 @@ The following table summarizes the diagnostics and behaviors affected by `SDKAna
 | 10.0.100         | 'Restore' package pruning       | [PrunePackageReference](/nuget/consume-packages/package-references-in-project-files#prunepackagereference) is enabled by default for projects that target .NET 8+ or .NET Standard 2.0+. |
 | 10.0.100         | 'Restore' resolver with lock files | Uses improved, [.NET 9 dependency graph resolver](/nuget/consume-packages/package-references-in-project-files#nuget-dependency-resolver) instead of legacy dependency graph resolver (.NET 8 SDK and earlier). |
 | 10.0.100         | 'Restore' behavior for PackageReference without a version | Emits [NU1015](/nuget/reference/errors-and-warnings/nu1015) error instead of [NU1603](/nuget/reference/errors-and-warnings/nu1603) warning. |
+| 10.0.300         | 'Restore' multi-targeting with duplicate target frameworks | Enables [multi-targeting with duplicate target frameworks](/nuget/consume-packages/package-references-in-project-files#multi-targeting-with-duplicate-frameworks) using `TargetFramework` alias. |
+| 10.0.300         | `TargetFramework` character validation | Emits [NU1019](/nuget/reference/errors-and-warnings/nu1019) error for path separator characters (`/` or `\`) in a `TargetFramework` property, and [NU1019](/nuget/reference/errors-and-warnings/nu1019) warning for non-ASCII characters. |
+| 11.0.100         | MonoAndroid framework deprecation warning | Emits [NU1703](/nuget/reference/errors-and-warnings/nu1703) warning when a package uses the deprecated `MonoAndroid` framework instead of a modern .NET target framework moniker. |
+| 11.0.100         | `TargetFramework` non-ASCII character validation | Changes [NU1019](/nuget/reference/errors-and-warnings/nu1019) from a warning to an error when a `TargetFramework` property contains non-ASCII characters. |
 
 > [!NOTE]
 > The behavior enabled by the `SdkAnalysisLevel` value ages out (expires) after three major releases. For example, version 11.0.100 only respects values down to 8.0.100. In version 12.0.100, features that could, in previous versions, be disabled by setting an `SdkAnalysisLevel` value of 8.0.100 would no longer be disabled.
@@ -1485,19 +1554,31 @@ The following MSBuild properties are documented in this section:
 
 ### IsTestingPlatformApplication
 
-When your project references the [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) package, setting `IsTestingPlatformApplication` to `true` (which is also the default value if not specified) does the following:
+The `IsTestingPlatformApplication` property identifies a project as an MTP test application. When .NET 10 or a later SDK runs `dotnet test` in MTP mode against a solution or project, it evaluates this property to classify each project. Test framework and platform NuGet packages normally set the property through restored MSBuild imports.
+
+When your project imports the [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) package, the package defaults `IsTestingPlatformApplication` to `true` if you haven't set it. A `true` value does the following:
 
 - Generates the entry point to the test project.
 - Generates the configuration file.
 - Detects the extensions.
 
-Setting the property to `false` disables the transitive dependency to the package. A *transitive dependency* is when a project that references another project that references a given package behaves as if *it* references the package. You'd typically set this property to `false` in a non-test project that references a test project. For more information, see [error CS8892](../testing/microsoft-testing-platform-faq.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
+When `dotnet test` classifies evaluated projects in MTP mode, the property values produce the following results:
+
+| `IsTestingPlatformApplication` | [`IsTestProject`](#istestproject) | Classification |
+| --- | --- | --- |
+| `true` | Any value | MTP test application |
+| `false` or empty | `true` | VSTest test project |
+| `false` or empty | `false` or empty | Not a test project |
+
+If you skip restore and the restored package imports aren't available, `IsTestingPlatformApplication` can remain empty and project discovery can fail. For more information, see [`No test projects were found`](../testing/microsoft-testing-platform-troubleshooting.md#dotnet-test-reports-no-test-projects-were-found).
+
+Setting the property to `false` disables the transitive dependency to the package. A *transitive dependency* is when a project that references another project that references a given package behaves as if *it* references the package. You'd typically set this property to `false` in a non-test project that references a test project. For more information, see [error CS8892](../testing/microsoft-testing-platform-troubleshooting.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
 
 If your test project references MSTest, NUnit, or xUnit, this property is set to the same value as [EnableMSTestRunner](#enablemstestrunner), [EnableNUnitRunner](#enablenunitrunner), or `UseMicrosoftTestingPlatformRunner` (for xUnit).
 
 ### Enable\[NugetPackageNameWithoutDots\]
 
-Use a property with the pattern `Enable[NugetPackageNameWithoutDots]` to enable or disable Microsoft.Testing.Platform extensions.
+Use a property with the pattern `Enable[NugetPackageNameWithoutDots]` to enable or disable Microsoft.Testing.Platform (MTP) extensions.
 
 For example, to enable the crash dump extension (NuGet package [Microsoft.Testing.Extensions.CrashDump](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CrashDump)), set the `EnableMicrosoftTestingExtensionsCrashDump` to `true`.
 
@@ -1517,7 +1598,7 @@ For more information, see [Playwright](../testing/unit-testing-mstest-sdk.md#tes
 
 ### EnableMSTestRunner
 
-The `EnableMSTestRunner` property enables or disables the use of the [MSTest runner](../testing/unit-testing-mstest-runner-intro.md). The MSTest runner is a lightweight and portable alternative to VSTest. This property is available in MSTest 3.2 and later versions.
+The `EnableMSTestRunner` property enables or disables the use of [MTP](../testing/unit-testing-mstest-running-tests.md), a lightweight and portable alternative to VSTest. This property is available in MSTest 3.2 and later versions.
 
 > [!NOTE]
 > If your project specifies the [MSTest SDK](../testing/unit-testing-mstest-sdk.md), you don't need to set this property. It's set automatically.
@@ -1528,13 +1609,13 @@ The `EnableNUnitRunner` property enables or disables the use of the [NUnit runne
 
 ## UseMicrosoftTestingPlatformRunner
 
-The `UseMicrosoftTestingPlatformRunner` property enables or disables the use of Microsoft.Testing.Platform runner in [xUnit.v3](https://xunit.net) test projects.
+The `UseMicrosoftTestingPlatformRunner` property enables or disables the use of MTP runner in [xUnit.v3](https://xunit.net) test projects.
 
 ### GenerateTestingPlatformEntryPoint
 
-Setting the `GenerateTestingPlatformEntryPoint` property to `false` disables the automatic generation of the program entry point in test projects that use [Microsoft.Testing.Platform](../testing/microsoft-testing-platform-intro.md). You might want to set this property to `false` when you manually define an entry point, or when you reference a test project from an executable that also has an entry point.
+Setting the `GenerateTestingPlatformEntryPoint` property to `false` disables the automatic generation of the program entry point in test projects that use [MTP](../testing/microsoft-testing-platform-intro.md). You might want to set this property to `false` when you manually define an entry point, or when you reference a test project from an executable that also has an entry point.
 
-For more information, see [error CS8892](../testing/microsoft-testing-platform-faq.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
+For more information, see [error CS8892](../testing/microsoft-testing-platform-troubleshooting.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
 
 To control the generation of the entry point in a VSTest project, use the `GenerateProgramFile` property.
 
@@ -1544,13 +1625,13 @@ The `GenerateTestingPlatformConfigurationFile` property is only available when [
 
 ### TestingPlatformCaptureOutput
 
-The `TestingPlatformCaptureOutput` property controls whether all console output that a test executable writes is captured and hidden from the user when you use `dotnet test` to run `Microsoft.Testing.Platform` tests. By default, the console output is hidden. This output includes the banner, version information, and formatted test information. Set this property to `false` to show this information together with MSBuild output.
+The `TestingPlatformCaptureOutput` property controls whether all console output that a test executable writes is captured and hidden from the user when you use `dotnet test` to run MTP tests. By default, the console output is hidden. This output includes the banner, version information, and formatted test information. Set this property to `false` to show this information together with MSBuild output.
 
-For more information, see [Show complete platform output](../testing/microsoft-testing-platform-integration-dotnet-test.md#show-complete-platform-output).
+For more information, see [Show complete platform output](../testing/unit-testing-with-dotnet-test.md#show-complete-platform-output).
 
 ### TestingPlatformCommandLineArguments
 
-The `TestingPlatformCaptureOutput` property lets you specify command-line arguments to the test app when you use `dotnet test` to run `Microsoft.Testing.Platform` tests. The following project file snippet shows an example.
+The `TestingPlatformCommandLineArguments` property lets you specify command-line arguments to the test app when you use `dotnet test` to run MTP tests. The following project file snippet shows an example.
 
 ```xml
 <PropertyGroup>
@@ -1559,12 +1640,14 @@ The `TestingPlatformCaptureOutput` property lets you specify command-line argume
 </PropertyGroup>
 ```
 
+You can also use conditions to pass different arguments to projects that use different test frameworks or extensions. For more information, see [Solutions with mixed test frameworks or extensions](../testing/unit-testing-with-dotnet-test.md#solutions-with-mixed-test-frameworks-or-extensions).
+
 ### TestingPlatformDotnetTestSupport
 
-The `TestingPlatformDotnetTestSupport` property enables testing Microsoft.Testing.Platform apps when using the VSTest mode of `dotnet test`.
+The `TestingPlatformDotnetTestSupport` property enables testing MTP apps when using the VSTest mode of `dotnet test`.
 
 > [!NOTE]
-> Don't call `dotnet test` on a solution that has both VSTest and Microsoft.Testing.Platform projects, as that scenario is not supported.
+> Don't call `dotnet test` on a solution that has both VSTest and MTP projects, as that scenario is not supported.
 
 For more information, see [Testing with 'dotnet test'](../testing/unit-testing-with-dotnet-test.md).
 
@@ -1582,7 +1665,7 @@ When you use the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md), th
 | `None`         | No extensions are enabled.                                                                    |
 | `AllMicrosoft` | Enable all extensions shipped by Microsoft (including extensions with a restrictive license). |
 
-For more information, see [Microsoft.Testing.Platform profile](../testing/unit-testing-mstest-sdk.md#microsofttestingplatform-profile).
+For more information, see [MTP profile](../testing/unit-testing-mstest-sdk.md#microsofttestingplatform-profile).
 
 ## VSTest&ndash;related properties
 
@@ -1600,7 +1683,7 @@ The `IsTestProject` property is set to `true` by the [Microsoft.NET.Test.Sdk NuG
 
 ### UseVSTest
 
-Set the `UseVSTest` property to `true` to switch from Microsoft.Testing.Platform to the [VSTest](/visualstudio/test/vstest-console-options) runner when using the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md).
+Set the `UseVSTest` property to `true` to switch from MTP to the [VSTest](/visualstudio/test/vstest-console-options) runner when using the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md).
 
 ## MSTest&ndash;related properties
 
@@ -1684,8 +1767,29 @@ The `EnableDynamicLoading` property indicates that an assembly is a dynamically 
 
 The following properties concern code in generated files:
 
+- [CompilerGeneratedFilesOutputPath](#compilergeneratedfilesoutputpath)
 - [DisableImplicitNamespaceImports](#disableimplicitnamespaceimports)
+- [EmitCompilerGeneratedFiles](#emitcompilergeneratedfiles)
 - [ImplicitUsings](#implicitusings)
+
+### CompilerGeneratedFilesOutputPath
+
+The `CompilerGeneratedFilesOutputPath` property specifies the directory where source generator output files are written when [EmitCompilerGeneratedFiles](#emitcompilergeneratedfiles) is set to `true`. The path can be absolute or relative to the project directory. If you don't set this property, the generated files are placed in a *generated* subdirectory under the intermediate output path (usually *obj/\<configuration\>/\<targetframework\>/generated*).
+
+```xml
+<PropertyGroup>
+  <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+  <CompilerGeneratedFilesOutputPath>Generated</CompilerGeneratedFilesOutputPath>
+</PropertyGroup>
+```
+
+If you set this property to a path inside your project's source tree, the generated files might be picked up as source files by future builds. To avoid double-compilation, exclude the generated files from the `Compile` item:
+
+```xml
+<ItemGroup>
+  <Compile Remove="$(CompilerGeneratedFilesOutputPath)\**\*.cs" />
+</ItemGroup>
+```
 
 ### DisableImplicitNamespaceImports
 
@@ -1696,6 +1800,20 @@ The `DisableImplicitNamespaceImports` property can be used to disable implicit n
   <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
 </PropertyGroup>
 ```
+
+### EmitCompilerGeneratedFiles
+
+The `EmitCompilerGeneratedFiles` property controls whether source generator output files are written to disk during the build. Set this property to `true` to enable this behavior. By default, source generator output exists only in memory and isn't written to disk.
+
+```xml
+<PropertyGroup>
+  <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+</PropertyGroup>
+```
+
+When you set this property to `true`, the generated files are placed in a *generated* subdirectory under the intermediate output path (usually *obj/\<configuration\>/\<targetframework\>/generated*) unless you specify a different location using the [CompilerGeneratedFilesOutputPath](#compilergeneratedfilesoutputpath) property.
+
+Writing generated files to disk lets you inspect them. Only commit generated files to source control when you have a specific reason, such as when generators aren't available in your build environment or when you need reviewed, deterministic generated artifacts.
 
 ### ImplicitUsings
 
@@ -1718,6 +1836,7 @@ To define an explicit `global using` directive, add a [Using](#using) item.
 
 - [AssemblyMetadata](#assemblymetadata)
 - [InternalsVisibleTo](#internalsvisibleto)
+- [FrameworkReference](#frameworkreference)
 - [PackageReference](#packagereference)
 - [TrimmerRootAssembly](#trimmerrootassembly)
 - [Using](#using)

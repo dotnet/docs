@@ -11,7 +11,7 @@ class Program
         // <symbols>
         Option<FileInfo> fileOption = new("--file")
         {
-            Description = "The file to read and display on the console."
+            Description = "The file to read and display on the console"
         };
 
         RootCommand rootCommand = new("Sample app for System.CommandLine");

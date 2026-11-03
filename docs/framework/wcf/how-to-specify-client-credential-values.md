@@ -44,7 +44,7 @@ This example sets the security mode to Transport mode and sets the client creden
 
 2. Create an instance of the WCF client using the generated code.
 
-3. On the client class, set the <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> property of the <xref:System.ServiceModel.ClientBase%601> class to an appropriate value. This example sets the property to an X.509 certificate using the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A> method of the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential> class.
+3. On the client class, set the <xref:System.ServiceModel.ClientBase`1.ClientCredentials> property of the <xref:System.ServiceModel.ClientBase`1> class to an appropriate value. This example sets the property to an X.509 certificate using the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate*> method of the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential> class.
 
      [!code-csharp[c_TcpService#4](../../../samples/snippets/csharp/VS_Snippets_CFX/c_tcpservice/cs/source.cs#4)]
      [!code-vb[c_TcpService#4](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_tcpservice/vb/source.vb#4)]
@@ -91,9 +91,9 @@ This example sets the security mode to Transport mode and sets the client creden
 ## See also
 
 - <xref:System.ServiceModel.NetTcpBinding>
-- <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential.SetCertificate%2A>
+- <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential.SetCertificate*>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential>
-- <xref:System.ServiceModel.ClientBase%601>
+- <xref:System.ServiceModel.ClientBase`1>
 - <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential>
 - [Programming WCF Security](./feature-details/programming-wcf-security.md)
 - [Selecting a Credential Type](./feature-details/selecting-a-credential-type.md)

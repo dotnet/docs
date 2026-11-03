@@ -9,7 +9,7 @@ Most databases have a procedural dialect of SQL that you can use to define your 
 
 ## Scalar functions
 
-Scalar functions return a single, scalar value for each row in a query. Define new scalar functions and override the built-in ones using <xref:Microsoft.Data.Sqlite.SqliteConnection.CreateFunction%2A>.
+Scalar functions return a single, scalar value for each row in a query. Define new scalar functions and override the built-in ones using <xref:Microsoft.Data.Sqlite.SqliteConnection.CreateFunction*>.
 
 See [Data types](types.md) for a list of supported parameter and return types for the `func` argument.
 
@@ -39,7 +39,7 @@ The following example shows how to define the regexp function to enable its corr
 
 ## Aggregate functions
 
-Aggregate functions return a single, aggregated value for all the rows in a query. Define and override aggregate functions using <xref:Microsoft.Data.Sqlite.SqliteConnection.CreateAggregate%2A>.
+Aggregate functions return a single, aggregated value for all the rows in a query. Define and override aggregate functions using <xref:Microsoft.Data.Sqlite.SqliteConnection.CreateAggregate*>.
 
 The `seed` argument specifies the initial state of the context. Use this to avoid closures also.
 

@@ -24,8 +24,8 @@ internal static class Version_4
         for (var level = LogLevel.Critical; level <= LogLevel.Trace; level++)
         {
             Console.WriteLine(level);
-            logger.LogMessage(level, $"{level}: Increment index a few times {index++}, {index++}, {index++}, {index++}, {index++}");
-            numberOfIncrements += 5;
+            logger.LogMessage(level, $"{level}: Increment index {index++}");
+            numberOfIncrements++;
         }
         Console.WriteLine($"Value of index {index}, value of numberOfIncrements: {numberOfIncrements}");
 

@@ -1,6 +1,6 @@
 ---
 title: "Fuslogvw.exe (Assembly Binding Log Viewer)"
-description: Use Fuslogvw.exe, the Assembly Binding Log Viewer. This viewer shows assembly bind details, which helps diagnose why .NET can't find an assembly at run time.
+description: Use Fuslogvw.exe, the Assembly Binding Log Viewer. This viewer shows assembly bind details, which helps diagnose why .NET can't find an assembly at runtime.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "failed assembly binds"
@@ -13,7 +13,7 @@ ms.assetid: e32fa443-0778-4cc3-bf36-5c8ea297d296
 ---
 # Fuslogvw.exe (Assembly Binding Log Viewer)
 
-The Assembly Binding Log Viewer displays details for assembly binds. This information helps you diagnose why the .NET Framework cannot locate an assembly at run time. These failures are usually the result of an assembly deployed to the wrong location, a native image that is no longer valid, or a mismatch in version numbers or cultures. The common language runtime's failure to locate an assembly typically shows up as a <xref:System.TypeLoadException> in your application.
+The Assembly Binding Log Viewer displays details for assembly binds. This information helps you diagnose why the .NET Framework cannot locate an assembly at runtime. These failures are usually the result of an assembly deployed to the wrong location, a native image that is no longer valid, or a mismatch in version numbers or cultures. The common language runtime's failure to locate an assembly typically shows up as a <xref:System.TypeLoadException> in your application.
 
 > [!IMPORTANT]
 > You must run fuslogvw.exe with administrator privileges.
@@ -136,7 +136,7 @@ By default, Fuslogvw.exe logs normal assembly bind requests. Alternatively, you 
 
 - In the **Log Categories** group, select the **Native Images** option button.
 
-The following log shows a failure caused by a dependency that did not exist when the native image was created for the application. If the dependencies at run time differ from the dependencies when Ngen.exe is run, binding to a native image is not allowed.
+The following log shows a failure caused by a dependency that did not exist when the native image was created for the application. If the dependencies at runtime differ from the dependencies when Ngen.exe is run, binding to a native image is not allowed.
 
 ```output
 *** Assembly Binder Log Entry  (12/8/2006 @ 5:22:07 PM) ***
@@ -217,7 +217,7 @@ You can use the **Log Settings** dialog to perform the following actions.
   See the Important note regarding assemblies that are loaded as domain neutral.
 
 > [!IMPORTANT]
-> When an assembly is loaded as domain neutral, for example by setting the <xref:System.AppDomainSetup.LoaderOptimization%2A> property to <xref:System.LoaderOptimization.MultiDomain?displayProperty=nameWithType> or <xref:System.LoaderOptimization.MultiDomainHost?displayProperty=nameWithType>, turning on logging might leak memory in some cases. This can happen if a log entry is made when a domain-neutral module is loaded into an application domain, and later the application domain is unloaded. The log entry might not be released until the process ends. Some debuggers automatically turn on logging.
+> When an assembly is loaded as domain neutral, for example by setting the <xref:System.AppDomainSetup.LoaderOptimization> property to <xref:System.LoaderOptimization.MultiDomain?displayProperty=nameWithType> or <xref:System.LoaderOptimization.MultiDomainHost?displayProperty=nameWithType>, turning on logging might leak memory in some cases. This can happen if a log entry is made when a domain-neutral module is loaded into an application domain, and later the application domain is unloaded. The log entry might not be released until the process ends. Some debuggers automatically turn on logging.
 
 ### To enable a custom log path
 

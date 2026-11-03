@@ -2,7 +2,7 @@
 title: Orleans lifecycle
 description: Learn the various lifecycles of .NET Orleans apps.
 ms.date: 03/30/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Orleans lifecycle overview
@@ -39,7 +39,7 @@ public interface ILifecycleObserver
 }
 ```
 
-Both <xref:Orleans.ILifecycleObserver.OnStart%2A?displayProperty=nameWithType> and <xref:Orleans.ILifecycleObserver.OnStop%2A?displayProperty=nameWithType> are called when the subscribed stage is reached during startup or shutdown.
+Both <xref:Orleans.ILifecycleObserver.OnStart*?displayProperty=nameWithType> and <xref:Orleans.ILifecycleObserver.OnStop*?displayProperty=nameWithType> are called when the subscribed stage is reached during startup or shutdown.
 
 ## Utilities
 

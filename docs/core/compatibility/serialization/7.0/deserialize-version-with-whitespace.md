@@ -55,5 +55,5 @@ internal sealed class VersionConverter : JsonConverter<Version>
 
 ## Affected APIs
 
-- <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=fullName>
-- <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.Deserialize*?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.DeserializeAsync*?displayProperty=fullName>

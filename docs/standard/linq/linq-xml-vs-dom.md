@@ -171,7 +171,7 @@ LINQ to XML further simplifies XML programming by removing support for entities 
 
 ## Support for fragments
 
-LINQ to XML doesn't provide an equivalent for the `XmlDocumentFragment` class. In many cases, however, the `XmlDocumentFragment` concept can be handled by the result of a query that's typed as <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XNode>, or <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>.
+LINQ to XML doesn't provide an equivalent for the `XmlDocumentFragment` class. In many cases, however, the `XmlDocumentFragment` concept can be handled by the result of a query that's typed as <xref:System.Collections.Generic.IEnumerable`1> of <xref:System.Xml.Linq.XNode>, or <xref:System.Collections.Generic.IEnumerable`1> of <xref:System.Xml.Linq.XElement>.
 
 ## Support for XPathNavigator
 

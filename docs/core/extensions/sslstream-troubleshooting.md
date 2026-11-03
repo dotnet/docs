@@ -3,7 +3,8 @@ title: Troubleshoot SslStream authentication issues
 description: Learn how to troubleshoot and investigate issues when performing authentication with SslStream in .NET.
 author: rzikm
 ms.author: radekzikmund
-ms.date: 03/13/2023
+ms.date: 08/24/2026
+ai-usage: ai-assisted
 ---
 
 # Troubleshoot `SslStream` authentication issues
@@ -27,6 +28,22 @@ Unfortunately, for client application the only solution is to add the certificat
 ## Handshake failed with ephemeral keys
 
 On Windows, you may encounter the `(0x8009030E): No credentials are available in the security package` error message when attempting to use certificates with ephemeral keys. This behavior is due to a bug in the underlying OS API (Schannel). More relevant info and workarounds can be found on the associated [GitHub issue](https://github.com/dotnet/runtime/issues/23749).
+
+## Handshake message exceeds the Schannel limit
+
+On Windows, you might hit a handshake failure when a fragmented TLS handshake message exceeds the size limit that Schannel enforces. In this case, `SslStream` surfaces an <xref:System.Security.Authentication.AuthenticationException> whose inner <xref:System.ComponentModel.Win32Exception> reports error `0x80090326` (`SEC_E_ILLEGAL_MESSAGE`) and the message `The message received was unexpected or badly formatted`. You're most likely to produce large handshake messages when you use large certificate chains or when a peer sends a long list of acceptable certificate issuers during mutual TLS authentication.
+
+Because this error isn't specific to message size, confirm the cause before you change any Schannel configuration. Use a packet-capture tool to inspect the handshake messages and their sizes.
+
+If the capture confirms that a handshake message exceeds the limit, ask an administrator to create one of the following `DWORD` values under `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Messaging`:
+
+| Value | Applies to | Default |
+| --- | --- | --- |
+| `MessageLimitClient` | Messages that a TLS client accepts. | `0x8000` bytes |
+| `MessageLimitServer` | Messages that a TLS server accepts when it doesn't use client authentication. | `0x4000` bytes |
+| `MessageLimitServerClientAuth` | Messages that a TLS server accepts when it uses client authentication. | `0x8000` bytes |
+
+Set the smallest value that accepts the expected handshake message. Schannel supports values up to `0x10000` bytes. Don't change these settings unless you've confirmed the cause, because they affect the entire machine and larger limits increase memory use for each security context. For more information and registry-editing precautions, see [Messaging - fragment parsing](/windows-server/security/tls/tls-registry-settings#messaging--fragment-parsing).
 
 ## Client and server do not possess a common algorithm
 

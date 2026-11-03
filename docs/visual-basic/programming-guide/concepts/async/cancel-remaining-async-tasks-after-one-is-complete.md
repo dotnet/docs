@@ -6,7 +6,7 @@ ms.assetid: c928b5a1-622f-4441-8baf-adca1dde197f
 ---
 # Cancel Remaining Async Tasks after One Is Complete (Visual Basic)
 
-By using the <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType> method together with a <xref:System.Threading.CancellationToken>, you can cancel all remaining tasks when one task is complete. The `WhenAny` method takes an argument that’s a collection of tasks. The method starts all the tasks and returns a single task. The single task is complete when any task in the collection is complete.
+By using the <xref:System.Threading.Tasks.Task.WhenAny*?displayProperty=nameWithType> method together with a <xref:System.Threading.CancellationToken>, you can cancel all remaining tasks when one task is complete. The `WhenAny` method takes an argument that’s a collection of tasks. The method starts all the tasks and returns a single task. The single task is complete when any task in the collection is complete.
 
 This example demonstrates how to use a cancellation token in conjunction with `WhenAny` to hold onto the first task to finish from the collection of tasks and to cancel the remaining tasks. Each task downloads the contents of a website. The example displays the length of the contents of the first download to complete and cancels the other downloads.
 
@@ -55,13 +55,13 @@ Async Function ProcessURLAsync(url As String, client As HttpClient, ct As Cancel
 End Function
 ```
 
-In `AccessTheWebAsync`, this example uses a query, the  <xref:System.Linq.Enumerable.ToArray%2A> method, and the `WhenAny` method to create and start an array of tasks. The application of `WhenAny` to the array returns a single task that, when awaited, evaluates to the first task to reach completion in the array of tasks.
+In `AccessTheWebAsync`, this example uses a query, the  <xref:System.Linq.Enumerable.ToArray*> method, and the `WhenAny` method to create and start an array of tasks. The application of `WhenAny` to the array returns a single task that, when awaited, evaluates to the first task to reach completion in the array of tasks.
 
 Make the following changes in `AccessTheWebAsync`. Asterisks mark the changes in the code file.
 
 1. Comment out or delete the loop.
 
-2. Create a query that, when executed, produces a collection of generic tasks. Each call to `ProcessURLAsync` returns a <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer.
+2. Create a query that, when executed, produces a collection of generic tasks. Each call to `ProcessURLAsync` returns a <xref:System.Threading.Tasks.Task`1> where `TResult` is an integer.
 
     ```vb
     ' ***Create a query that, when executed, returns a collection of tasks.
@@ -76,7 +76,7 @@ Make the following changes in `AccessTheWebAsync`. Asterisks mark the changes in
     Dim downloadTasks As Task(Of Integer)() = downloadTasksQuery.ToArray()
     ```
 
-4. Call `WhenAny` on the collection of tasks. `WhenAny` returns a `Task(Of Task(Of Integer))` or `Task<Task<int>>`.  That is, `WhenAny` returns a task that evaluates to a single `Task(Of Integer)` or `Task<int>` when it’s awaited. That single task is the first task in the collection to finish. The task that finished first is assigned to `finishedTask`. The type of `finishedTask` is <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer because that's the return type of `ProcessURLAsync`.
+4. Call `WhenAny` on the collection of tasks. `WhenAny` returns a `Task(Of Task(Of Integer))` or `Task<Task<int>>`.  That is, `WhenAny` returns a task that evaluates to a single `Task(Of Integer)` or `Task<int>` when it’s awaited. That single task is the first task in the collection to finish. The task that finished first is assigned to `finishedTask`. The type of `finishedTask` is <xref:System.Threading.Tasks.Task`1> where `TResult` is an integer because that's the return type of `ProcessURLAsync`.
 
     ```vb
     ' ***Call WhenAny and then await the result. The task that finishes
@@ -84,7 +84,7 @@ Make the following changes in `AccessTheWebAsync`. Asterisks mark the changes in
     Dim finishedTask As Task(Of Integer) = Await Task.WhenAny(downloadTasks)
     ```
 
-5. In this example, you’re interested only in the task that finishes first. Therefore, use <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> to cancel the remaining tasks.
+5. In this example, you’re interested only in the task that finishes first. Therefore, use <xref:System.Threading.CancellationTokenSource.Cancel*?displayProperty=nameWithType> to cancel the remaining tasks.
 
     ```vb
     ' ***Cancel the rest of the downloads. You just want the first one.
@@ -233,7 +233,7 @@ End Class
 
 ## See also
 
-- <xref:System.Threading.Tasks.Task.WhenAny%2A>
+- <xref:System.Threading.Tasks.Task.WhenAny*>
 - [Fine-Tuning Your Async Application (Visual Basic)](fine-tuning-your-async-application.md)
 - [Asynchronous Programming with Async and Await (Visual Basic)](index.md)
 - [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)

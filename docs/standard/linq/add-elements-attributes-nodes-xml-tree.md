@@ -18,15 +18,15 @@ The following methods add child content to an <xref:System.Xml.Linq.XElement> or
 
 |Method|Description|
 |------------|-----------------|
-|<xref:System.Xml.Linq.XContainer.Add%2A>|Adds content at the end of the child content of the <xref:System.Xml.Linq.XContainer>.|
-|<xref:System.Xml.Linq.XContainer.AddFirst%2A>|Adds content at the beginning of the child content of the <xref:System.Xml.Linq.XContainer>.|
+|<xref:System.Xml.Linq.XContainer.Add*>|Adds content at the end of the child content of the <xref:System.Xml.Linq.XContainer>.|
+|<xref:System.Xml.Linq.XContainer.AddFirst*>|Adds content at the beginning of the child content of the <xref:System.Xml.Linq.XContainer>.|
 
 The following methods add content as sibling nodes of an <xref:System.Xml.Linq.XNode>. The most common node to which you add sibling content is <xref:System.Xml.Linq.XElement>, although you can add valid sibling content to other types of nodes such as <xref:System.Xml.Linq.XText> or <xref:System.Xml.Linq.XComment>.
 
 |Method|Description|
 |------------|-----------------|
-|<xref:System.Xml.Linq.XNode.AddAfterSelf%2A>|Adds content after the <xref:System.Xml.Linq.XNode>.|
-|<xref:System.Xml.Linq.XNode.AddBeforeSelf%2A>|Adds content before the <xref:System.Xml.Linq.XNode>.|
+|<xref:System.Xml.Linq.XNode.AddAfterSelf*>|Adds content after the <xref:System.Xml.Linq.XNode>.|
+|<xref:System.Xml.Linq.XNode.AddBeforeSelf*>|Adds content before the <xref:System.Xml.Linq.XNode>.|
 
 ## Example: Create two XML trees and modify one of them
 

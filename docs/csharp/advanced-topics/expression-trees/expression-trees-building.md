@@ -15,7 +15,7 @@ You start with the addition expression you've been working with throughout these
 
 :::code language="csharp" source="snippets/BuildExpressions.cs" id="AddExpression":::
 
-To construct that expression tree, you first construct the leaf nodes. The leaf nodes are constants. Use the <xref:System.Linq.Expressions.Expression.Constant%2A> method to create the nodes:
+To construct that expression tree, you first construct the leaf nodes. The leaf nodes are constants. Use the <xref:System.Linq.Expressions.Expression.Constant*> method to create the nodes:
 
 :::code language="csharp" source="snippets/BuildExpressions.cs" id="BuildConstantLeaves":::
 

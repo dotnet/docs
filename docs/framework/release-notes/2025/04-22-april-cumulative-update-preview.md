@@ -3,7 +3,7 @@ title: April 2025 cumulative update preview
 description: Learn about the improvements in the .NET Framework April 2025 cumulative update preview.
 ms.date: 04/22/2025
 ---
-# April 2025 cumulative update preview
+# .NET Framework April 2025 cumulative update preview
 
 _Released April 22, 2025_
 

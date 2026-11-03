@@ -13,7 +13,7 @@ A *query* is a set of instructions that describes what data to retrieve from a g
 
 Generally, the source data is organized logically as a sequence of elements of the same kind. For example, an SQL database table contains a sequence of rows. In an XML file, there's a "sequence" of XML elements (although XML elements are organized hierarchically in a tree structure). An in-memory collection contains a sequence of objects.
 
-From an application's viewpoint, the specific type and structure of the original source data isn't important. The application always sees the source data as an <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Linq.IQueryable%601> collection. For example, in LINQ to XML, the source data is made visible as an `IEnumerable`\<<xref:System.Xml.Linq.XElement>>.
+From an application's viewpoint, the specific type and structure of the original source data isn't important. The application always sees the source data as an <xref:System.Collections.Generic.IEnumerable`1> or <xref:System.Linq.IQueryable`1> collection. For example, in LINQ to XML, the source data is made visible as an `IEnumerable`\<<xref:System.Xml.Linq.XElement>>.
 
 Given this source sequence, a query might do one of three things:
 
@@ -35,7 +35,7 @@ Given this source sequence, a query might do one of three things:
 
     :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics3":::
 
-    In the previous example, note the use of parentheses around the query expression before the call to the <xref:System.Linq.Enumerable.Count%2A?displayProperty=nameWithType> method. You can also use a new variable to store the concrete result.
+    In the previous example, note the use of parentheses around the query expression before the call to the <xref:System.Linq.Enumerable.Count*?displayProperty=nameWithType> method. You can also use a new variable to store the concrete result.
 
     :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics4":::
 

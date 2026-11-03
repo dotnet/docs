@@ -8,20 +8,19 @@ f1_keywords:
 helpviewer_keywords:
   - "section Element"
   - "<section> Element"
-ms.assetid: ec7d4110-2403-47ac-8218-499bfe9d5ddb
 ---
 # `<section>` element
 
 Contains a configuration section declaration.
 
-[**\<configuration>**](configuration-element.md)\
-&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<section>**
+[`<configuration>`](configuration-element.md)\
+&nbsp;&nbsp;[`<configSections>`](configsections-element-for-configuration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<section>`
 
-[**\<configuration>**](configuration-element.md)\
-&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<sectionGroup>**](sectiongroup-element-for-configsections.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<section>**
+[`<configuration>`](configuration-element.md)\
+&nbsp;&nbsp;[`<configSections>`](configsections-element-for-configuration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<sectionGroup>`](sectiongroup-element-for-configsections.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<section>`
 
 ## Syntax
 
@@ -34,26 +33,26 @@ Contains a configuration section declaration.
 
 ## Required attributes
 
-|           | Description |
-| --------- | ----------- |
-| `name`  | Specifies the name of the configuration section. |
-| `type`  | Specifies the name of the configuration section handler class that reads the section from the configuration file. The type value has the syntax "fully-qualified-section-handler-class-name, simple-assembly-name". The simple assembly name is the root filename without the *.dll* file extension. |
+| Attribute | Description                                      |
+|-----------|--------------------------------------------------|
+| `name`    | Specifies the name of the configuration section. |
+| `type`    | Specifies the name of the configuration section handler class that reads the section from the configuration file. The type value has the syntax "fully-qualified-section-handler-class-name, simple-assembly-name". The simple assembly name is the root filename without the *.dll* file extension. |
 
 ## Optional attributes
 
 The following attributes are applicable only for ASP.NET applications. The configuration system ignores these attributes for other application types.
 
-|                     | Description |
+| Optional attribute  | Description |
 | ------------------- | ----------- |
-| `allowDefinition` | Specifies which configuration file the section can be used in. Use one of the following values:<br><br>**Everywhere**<br>Allows the section to be used in any configuration file. This is the default.<br>**MachineOnly**<br>Allows the section to be used only in the machine configuration file (*Machine.config*).<br>**MachineToApplication**<br>Allows the section to be used in the machine configuration file or the application configuration file. |
-| `allowLocation`   | Determines whether the section can be used within the `<location>` element. Use one of the following values:<br><br>**true**<br>Allows the section to be used within the `<location>` element. This is the default.<br>**false**<br>Does not allow the section to be used within the `<location>` element. |
+| `allowDefinition`   | Specifies which configuration file the section can be used in. Use one of the following values:<br><br>**Everywhere**<br>Allows the section to be used in any configuration file. This is the default.<br>**MachineOnly**<br>Allows the section to be used only in the machine configuration file (*Machine.config*).<br>**MachineToApplication**<br>Allows the section to be used in the machine configuration file or the application configuration file. |
+| `allowLocation`     | Determines whether the section can be used within the `<location>` element. Use one of the following values:<br><br>**true**<br>Allows the section to be used within the `<location>` element. This is the default.<br>**false**<br>Does not allow the section to be used within the `<location>` element. |
 
 ## Parent elements
 
-|     | Description |
-| --- | ----------- |
-| [`<configSections>` Element](configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
-| [`<sectionGroup>` Element](sectiongroup-element-for-configsections.md) | Defines a namespace for configuration sections. |
+| Parent element                                                    | Description                                     |
+|-------------------------------------------------------------------|-------------------------------------------------|
+| [`<configSections>`](configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
+| [`<sectionGroup>`](sectiongroup-element-for-configsections.md)    | Defines a namespace for configuration sections. |
 
 > [!NOTE]
 > A `<section>` element is a child element of either `<configSections>` or `<sectionGroup>` but not both.

@@ -1,10 +1,14 @@
 ---
 description: "Learn more about EntityClient Provider for Entity Framework, a data provider used by Entity Framework apps to access data described in a conceptual model."
 title: "EntityClient Provider for the Entity Framework"
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
+ai-usage: ai-assisted
 ms.custom: sfi-ropc-nochange
 ---
 # EntityClient Provider for Entity Framework
+
+> [!IMPORTANT]
+> Do not use `System.Data.SqlClient` for new development. Use [Microsoft.Data.SqlClient](/sql/connect/ado-net/introduction-microsoft-data-sqlclient-namespace) for new SQL Server data-access code. The built-in Entity Framework SQL provider described here uses `System.Data.SqlClient`. To change that provider, you must migrate the Entity Framework integration, not just replace a namespace. The provider-independent EntityClient APIs on this page also support other data providers.
 
 The EntityClient provider is a data provider used by Entity Framework applications to access data described in a conceptual model. For information about conceptual models, see [Modeling and Mapping](modeling-and-mapping.md). EntityClient uses other .NET Framework data providers to access the data source. For example, EntityClient uses the .NET Framework Data Provider for SQL Server (SqlClient) when accessing a SQL Server database. For information about the SqlClient provider, see [SqlClient for the Entity Framework](sqlclient-for-the-entity-framework.md). The EntityClient provider is implemented in the <xref:System.Data.EntityClient> namespace.
 
@@ -20,7 +24,7 @@ The EntityClient provider is a data provider used by Entity Framework applicatio
 
  The Entity SQL language is a storage-independent dialect of SQL that works directly with conceptual entity schemas and supports Entity Data Model concepts such as inheritance and relationships. The <xref:System.Data.EntityClient.EntityCommand> class is used to execute an Entity SQL command against an entity model. When you construct <xref:System.Data.EntityClient.EntityCommand> objects, you can specify a stored procedure name or a query text. The Entity Framework works with storage-specific data providers to translate generic Entity SQL into storage-specific queries. For more information about writing Entity SQL queries, see [Entity SQL Language](./language-reference/entity-sql-language.md).
 
- The following example creates an <xref:System.Data.EntityClient.EntityCommand> object and assigns an Entity SQL query text to its <xref:System.Data.EntityClient.EntityCommand.CommandText%2A?displayProperty=nameWithType> property. This Entity SQL query requests products ordered by the list price from the conceptual model. The following code has no knowledge of the storage model at all.
+ The following example creates an <xref:System.Data.EntityClient.EntityCommand> object and assigns an Entity SQL query text to its <xref:System.Data.EntityClient.EntityCommand.CommandText?displayProperty=nameWithType> property. This Entity SQL query requests products ordered by the list price from the conceptual model. The following code has no knowledge of the storage model at all.
 
  ```csharp
 EntityCommand cmd = conn.CreateCommand();
@@ -33,7 +37,7 @@ cmd.CommandText = @"SELECT VALUE p
 
  When a query is executed, it is parsed and converted into a canonical command tree. All subsequent processing is performed on the command tree. The command tree is the means of communication between the <xref:System.Data.EntityClient> and the underlying .NET Framework data provider, such as <xref:System.Data.SqlClient>.
 
- The <xref:System.Data.EntityClient.EntityDataReader> exposes the results of executing a <xref:System.Data.EntityClient.EntityCommand> against a conceptual model. To execute the command that returns the <xref:System.Data.EntityClient.EntityDataReader>, call <xref:System.Data.EntityClient.EntityCommand.ExecuteReader%2A>. The <xref:System.Data.EntityClient.EntityDataReader> implements <xref:System.Data.IExtendedDataRecord> to describe rich structured results.
+ The <xref:System.Data.EntityClient.EntityDataReader> exposes the results of executing a <xref:System.Data.EntityClient.EntityCommand> against a conceptual model. To execute the command that returns the <xref:System.Data.EntityClient.EntityDataReader>, call <xref:System.Data.EntityClient.EntityCommand.ExecuteReader*>. The <xref:System.Data.EntityClient.EntityDataReader> implements <xref:System.Data.IExtendedDataRecord> to describe rich structured results.
 
 ## Managing Transactions
 

@@ -87,8 +87,10 @@ Get started with the following development tools:
 
 ## See also
 
+- [Create a minimal MCP client using .NET](quickstarts/build-mcp-client.md)
+- [Create a minimal MCP server using C# and publish to NuGet](quickstarts/build-mcp-server.md)
 - [MCP C# SDK documentation](https://modelcontextprotocol.github.io/csharp-sdk/index.html)
 - [MCP C# SDK API documentation](https://modelcontextprotocol.github.io/csharp-sdk/api/ModelContextProtocol.html)
 - [MCP C# SDK README](https://github.com/modelcontextprotocol/csharp-sdk/blob/main/README.md)
-- [Microsoft partners with Anthropic to create official C# SDK for Model Context Protocol](https://devblogs.microsoft.com/blog/microsoft-partners-with-anthropic-to-create-official-c-sdk-for-model-context-protocol)
-- [Build a Model Context Protocol (MCP) server in C#](https://devblogs.microsoft.com/dotnet/build-a-model-context-protocol-mcp-server-in-csharp/)
+- [Blog: Microsoft partners with Anthropic to create official C# SDK for Model Context Protocol](https://devblogs.microsoft.com/blog/microsoft-partners-with-anthropic-to-create-official-c-sdk-for-model-context-protocol)
+- [Blog: Build a Model Context Protocol (MCP) server in C#](https://devblogs.microsoft.com/dotnet/build-a-model-context-protocol-mcp-server-in-csharp/)

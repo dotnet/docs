@@ -157,7 +157,7 @@ The following options are available only when `dotnet` runs an application by us
 
 - **`--runtimeconfig <PATH>`**
 
-  Path to a *runtimeconfig.json* file. A *runtimeconfig.json* file contains run-time settings and is typically named *\<applicationname>.runtimeconfig.json*. For more information, see [.NET runtime configuration settings](../runtime-config/index.md#runtimeconfigjson).
+  Path to a *runtimeconfig.json* file. A *runtimeconfig.json* file contains runtime settings and is typically named *\<applicationname>.runtimeconfig.json*. For more information, see [.NET runtime configuration settings](../runtime-config/index.md#runtimeconfigjson).
 
 ## dotnet commands
 

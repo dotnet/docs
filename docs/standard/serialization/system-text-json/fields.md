@@ -16,4 +16,4 @@ By default, fields aren't serialized. Use the <xref:System.Text.Json.JsonSeriali
 :::code language="csharp" source="snippets/how-to-contd/csharp/Fields.cs" highlight="15,17,19,31-34":::
 :::code language="vb" source="snippets/how-to-contd/vb/Fields.vb" :::
 
-To ignore read-only fields, use the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType> global setting.
+To ignore read-only fields, use the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields*?displayProperty=nameWithType> global setting.

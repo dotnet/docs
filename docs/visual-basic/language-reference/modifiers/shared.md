@@ -31,7 +31,7 @@ Sharing does not alter the access level of a member. For example, a class member
 
 - **Accessing.** You access a shared element by qualifying it with its class or structure name, not with the variable name of a specific instance of its class or structure. You do not even have to create an instance of a class or structure to access its shared members.
 
-     The following example calls the shared procedure <xref:System.Double.IsNaN%2A> exposed by the <xref:System.Double> structure.
+     The following example calls the shared procedure <xref:System.Double.IsNaN*> exposed by the <xref:System.Double> structure.
 
      ```vb
      If Double.IsNaN(result) Then Console.WriteLine("Result is mathematically undefined.")
@@ -46,7 +46,7 @@ Sharing does not alter the access level of a member. For example, a class member
 - **Accessing through an Instance Variable.** It is possible to access a shared element by qualifying it with the name of a variable that contains a specific instance of its class or structure. Although this usually works as expected, the compiler generates a warning message and makes the access through the class or structure name instead of the variable.
 
 - **Accessing through an Instance Expression.** If you access a shared element through an expression that returns an instance of its class or structure, the compiler makes the access through the class or structure name instead of evaluating the expression. This access produces unexpected results if you intended the expression to perform other actions as well as returning the instance. The following example illustrates this situation.
-  
+
     ```vb
     Sub Main()
         ' The following line is the preferred way to access Total.
@@ -87,7 +87,7 @@ The `Shared` modifier can be used in these contexts:
 - [Operator Statement](../statements/operator-statement.md)
 - [Property Statement](../statements/property-statement.md)
 - [Sub Statement](../statements/sub-statement.md)
-  
+
 ## See also
 
 - [Shadows](shadows.md)

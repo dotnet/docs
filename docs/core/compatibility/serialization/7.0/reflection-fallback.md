@@ -26,9 +26,9 @@ Since `MyContext` does not include `Poco2` in its serializable types, the serial
 ```output
 System.InvalidOperationException:
 
-'Metadata for type 'Poco2' was not provided to the serializer. The serializer method used does not 
-support reflection-based creation of serialization-related type metadata. If using source generation, 
-ensure that all root types passed to the serializer have been indicated with 'JsonSerializableAttribute', 
+'Metadata for type 'Poco2' was not provided to the serializer. The serializer method used does not
+support reflection-based creation of serialization-related type metadata. If using source generation,
+ensure that all root types passed to the serializer have been indicated with 'JsonSerializableAttribute',
 along with any types that might be serialized polymorphically.
 ```
 
@@ -116,8 +116,8 @@ Starting in .NET 7, you can re-enable reflection fallback globally using the pro
 - <xref:System.Text.Json.JsonSerializer.Serialize(System.IO.Stream,System.Object,System.Type,System.Text.Json.JsonSerializerOptions)?displayProperty=fullName>
 - <xref:System.Text.Json.JsonSerializer.Serialize(System.Object,System.Type,System.Text.Json.JsonSerializerOptions)?displayProperty=fullName>
 - <xref:System.Text.Json.JsonSerializer.Serialize(System.Text.Json.Utf8JsonWriter,System.Object,System.Type,System.Text.Json.JsonSerializerOptions)?displayProperty=fullName>
-- <xref:System.Text.Json.JsonSerializer.Serialize%60%601(%60%600,System.Text.Json.JsonSerializerOptions)?displayProperty=fullName>
-- <xref:System.Text.Json.JsonSerializer.Serialize%60%601(System.IO.Stream,%60%600,System.Text.Json.JsonSerializerOptions)?displayProperty=fullName>
-- <xref:System.Text.Json.JsonSerializer.Serialize%60%601(System.Text.Json.Utf8JsonWriter,%60%600,System.Text.Json.JsonSerializerOptions)?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.Serialize``1(``0,System.Text.Json.JsonSerializerOptions)?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.Serialize``1(System.IO.Stream,``0,System.Text.Json.JsonSerializerOptions)?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.Serialize``1(System.Text.Json.Utf8JsonWriter,``0,System.Text.Json.JsonSerializerOptions)?displayProperty=fullName>
 - <xref:System.Text.Json.JsonSerializer.SerializeAsync(System.IO.Stream,System.Object,System.Type,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)?displayProperty=fullName>
-- <xref:System.Text.Json.JsonSerializer.SerializeAsync%60%601(System.IO.Stream,%60%600,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.SerializeAsync``1(System.IO.Stream,``0,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)?displayProperty=fullName>

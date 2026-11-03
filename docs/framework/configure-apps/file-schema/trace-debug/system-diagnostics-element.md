@@ -14,8 +14,8 @@ ms.assetid: 3f348f42-fa72-4ff2-aa1c-bb9eecad4bb2
 
 Specifies trace listeners that collect, store, and route messages and the level where a trace switch is set.
 
-[**\<configuration>**](../configuration-element.md)
-&nbsp;&nbsp;**\<system.diagnostics>**
+[`<configuration>`](../configuration-element.md)
+&nbsp;&nbsp;`<system.diagnostics>`
 
 ## Syntax
 
@@ -36,7 +36,7 @@ Specifies trace listeners that collect, store, and route messages and the level 
 
 |Element|Description|
 |-------------|-----------------|
-|[\<assert>](assert-element.md)|Specifies whether to display a message box when you call the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method; also specifies the name of the file to write messages to.|
+|[\<assert>](assert-element.md)|Specifies whether to display a message box when you call the <xref:System.Diagnostics.Debug.Assert*?displayProperty=nameWithType> method; also specifies the name of the file to write messages to.|
 |[\<performanceCounters>](performancecounters-element.md)|Specifies the size of the global memory shared by performance counters.|
 |[\<sharedListeners>](sharedlisteners-element.md)|Contains listeners that any source or trace element can reference. Listeners identified as shared listeners can be added to sources or traces by name.|
 |[\<sources>](sources-element.md)|Specifies trace sources that initiate tracing messages.|

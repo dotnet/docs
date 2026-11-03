@@ -45,18 +45,18 @@ string text = string.Format("{0:C}", 100);
 
 If you're using .NET 7 on Windows Server 2019 or Windows 10 client versions 1703, 1709, 1803, or 1809, we recommend testing your app or service before shipping it to ensure the behavior is as expected and doesn't break any users.
 
-If you wish to continue using NLS globalization APIs, you can set a [run-time switch](../../../runtime-config/globalization.md#nls) to revert to that behavior. For more information about the available switches, see the [.NET globalization and ICU](../../../../core/extensions/globalization-icu.md) article.
+If you wish to continue using NLS globalization APIs, you can set a [runtime switch](../../../runtime-config/globalization.md#nls) to revert to that behavior. For more information about the available switches, see the [.NET globalization and ICU](../../../../core/extensions/globalization-icu.md) article.
 
 ## Affected APIs
 
-- <xref:System.Span%601?displayProperty=fullName>
+- <xref:System.Span`1?displayProperty=fullName>
 - <xref:System.String?displayProperty=fullName>
 - Most types in the <xref:System.Globalization?displayProperty=fullName> namespace
-- <xref:System.Array.Sort%2A?displayProperty=fullName> (when sorting an array of strings)
-- <xref:System.Collections.Generic.List%601.Sort?displayProperty=fullName> (when the list elements are strings)
-- <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=fullName> (when the keys are strings)
-- <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName> (when the keys are strings)
-- <xref:System.Collections.Generic.SortedSet%601?displayProperty=fullName> (when the set contains strings)
+- <xref:System.Array.Sort*?displayProperty=fullName> (when sorting an array of strings)
+- <xref:System.Collections.Generic.List`1.Sort?displayProperty=fullName> (when the list elements are strings)
+- <xref:System.Collections.Generic.SortedDictionary`2?displayProperty=fullName> (when the keys are strings)
+- <xref:System.Collections.Generic.SortedList`2?displayProperty=fullName> (when the keys are strings)
+- <xref:System.Collections.Generic.SortedSet`1?displayProperty=fullName> (when the set contains strings)
 
 ## See also
 

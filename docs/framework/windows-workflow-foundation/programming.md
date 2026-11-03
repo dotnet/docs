@@ -27,7 +27,7 @@ This section contains a set of primer topics that you should understand to becom
  Topics that describes how to use bookmarks and messaging activities.
 
  [Exceptions, Transactions, and Compensation](exceptions-transactions-and-compensation.md)
- Topics that describe how to use exception handlers, transactions, and compensation to handle run-time errors.
+ Topics that describe how to use exception handlers, transactions, and compensation to handle runtime errors.
 
  [Hosting Workflows](hosting-workflows.md)
  Topics that describe the details for writing workflow host applications.

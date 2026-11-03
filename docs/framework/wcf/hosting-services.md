@@ -8,9 +8,9 @@ ms.assetid: 192be927-6be2-4fda-98f0-e513c4881acc
 ---
 # Hosting services
 
-To become active, a service must be hosted within a run-time environment that creates it and controls its context and lifetime. Windows Communication Foundation (WCF) services are designed to run in any Windows process that supports managed code.
+To become active, a service must be hosted within a runtime environment that creates it and controls its context and lifetime. Windows Communication Foundation (WCF) services are designed to run in any Windows process that supports managed code.
 
-WCF provides a unified programming model for building service-oriented applications. This programming model remains consistent and is independent of the run-time environment in which the service is deployed. In practice, this means that the code for your services looks much the same whatever the hosting option.
+WCF provides a unified programming model for building service-oriented applications. This programming model remains consistent and is independent of the runtime environment in which the service is deployed. In practice, this means that the code for your services looks much the same whatever the hosting option.
 
 These hosting options range from running inside a console application to server environments such as a Windows service running within a worker process managed by Internet Information Services (IIS) or by Windows Process Activation Service (WAS). Developers choose the hosting environment that satisfies the service's deployment requirements. These requirements might derive from the platform on which the application is deployed, the transport on which it must send and receive messages, or on the type of process recycling and other process management required to ensure adequate availability, or on some other management or reliability requirements. The next section provides information and guidance on hosting options.
 

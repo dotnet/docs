@@ -55,7 +55,7 @@ namespace OverviewSnippets
                 while (moreItemsToAdd)
                 {
                     Data data = GetData();
-                    // Blocks if numbers.Count == dataItems.BoundedCapacity
+                    // Blocks if dataItems.Count == dataItems.BoundedCapacity
                     dataItems.Add(data);
                 }
                 // Let consumer know we are done.

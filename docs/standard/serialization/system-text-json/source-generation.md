@@ -27,7 +27,7 @@ To use source generation with all defaults (both modes, default options):
 1. Specify the type to serialize or deserialize by applying <xref:System.Text.Json.Serialization.JsonSerializableAttribute> to the context class.
 1. Call a <xref:System.Text.Json.JsonSerializer> method that either:
 
-   - Takes a <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo%601> instance, or
+   - Takes a <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo`1> instance, or
    - Takes a <xref:System.Text.Json.Serialization.JsonSerializerContext> instance, or
    - Takes a <xref:System.Text.Json.JsonSerializerOptions> instance and you've set its <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver?displayProperty=nameWithType> property to the `Default` property of the context type.
 
@@ -45,7 +45,7 @@ The types of `WeatherForecast` members don't need to be explicitly specified wit
 
 :::code language="csharp" source="snippets/source-generation/csharp/ObjectProperties.cs" id="WF":::
 
-And you know that at run time it might have `boolean` and `int` objects:
+And you know that at runtime it might have `boolean` and `int` objects:
 
 :::code language="csharp" source="snippets/source-generation/csharp/ObjectProperties.cs" id="WFInit":::
 
@@ -61,7 +61,7 @@ In the following examples, the static `Default` property of the context type pro
 
 #### Serialization examples
 
-Using <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo%601>:
+Using <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo`1>:
 
 :::code language="csharp" source="snippets/source-generation/csharp/BothModesNoOptions.cs" id="SerializeWithTypeInfo":::
 
@@ -75,7 +75,7 @@ Using <xref:System.Text.Json.JsonSerializerOptions>:
 
 #### Deserialization examples
 
-Using <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo%601>:
+Using <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo`1>:
 
 :::code language="csharp" source="snippets/source-generation/csharp/BothModesNoOptions.cs" id="DeserializeWithTypeInfo":::
 
@@ -138,9 +138,9 @@ You can specify metadata-based mode or serialization-optimization mode for an en
 
 ## Source-generation support in ASP.NET Core
 
-In Blazor apps, use overloads of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A?displayProperty=nameWithType> extension methods that take a source generation context or `TypeInfo<TValue>`.
+In Blazor apps, use overloads of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync*?displayProperty=nameWithType> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync*?displayProperty=nameWithType> extension methods that take a source generation context or `TypeInfo<TValue>`.
 
-Starting with .NET 8, you can also use overloads of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsAsyncEnumerable%2A?displayProperty=nameWithType> extension methods that accept a source generation context or `TypeInfo<TValue>`.
+Starting with .NET 8, you can also use overloads of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsAsyncEnumerable*?displayProperty=nameWithType> extension methods that accept a source generation context or `TypeInfo<TValue>`.
 
 In Razor Pages, MVC, SignalR, and Web API apps, use the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver?displayProperty=nameWithType> property to specify the context.
 
@@ -165,7 +165,7 @@ services.AddControllers().AddJsonOptions(
 
 ## Disable reflection defaults
 
-Because System.Text.Json uses reflection by default, calling a basic serialization method can break Native AOT apps, which doesn't support all required reflection APIs. These breaks can be challenging to diagnose since they can be unpredictable, and apps are often debugged using the CoreCLR runtime, where reflection works. Instead, if you explicitly disable reflection-based serialization, breaks are easier to diagnose. Code that uses reflection-based serialization will cause an <xref:System.InvalidOperationException> with a descriptive message to be thrown at run time.
+Because System.Text.Json uses reflection by default, calling a basic serialization method can break Native AOT apps, which doesn't support all required reflection APIs. These breaks can be challenging to diagnose since they can be unpredictable, and apps are often debugged using the CoreCLR runtime, where reflection works. Instead, if you explicitly disable reflection-based serialization, breaks are easier to diagnose. Code that uses reflection-based serialization will cause an <xref:System.InvalidOperationException> with a descriptive message to be thrown at runtime.
 
 To disable default reflection in your app, set the `JsonSerializerIsReflectionEnabledByDefault` MSBuild property to `false` in your project file:
 
@@ -242,13 +242,13 @@ Any change made to the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoReso
 
 ## Serialize enum fields as strings
 
-By default, enums are serialized as numbers. To [serialize a specific enum's fields as strings](#jsonstringenumconvertert-converter) when using source generation, annotate it with the <xref:System.Text.Json.Serialization.JsonStringEnumConverter%601> converter. Or to set a [blanket policy](#blanket-policy) for all enumerations, use the <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> attribute.
+By default, enums are serialized as numbers. To [serialize a specific enum's fields as strings](#jsonstringenumconvertert-converter) when using source generation, annotate it with the <xref:System.Text.Json.Serialization.JsonStringEnumConverter`1> converter. Or to set a [blanket policy](#blanket-policy) for all enumerations, use the <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> attribute.
 
 ### `JsonStringEnumConverter<T>` converter
 
-To serialize enum names as strings using source generation, use the <xref:System.Text.Json.Serialization.JsonStringEnumConverter%601> converter. (The non-generic <xref:System.Text.Json.Serialization.JsonStringEnumConverter> type is not supported by the Native AOT runtime.)
+To serialize enum names as strings using source generation, use the <xref:System.Text.Json.Serialization.JsonStringEnumConverter`1> converter. (The non-generic <xref:System.Text.Json.Serialization.JsonStringEnumConverter> type is not supported by the Native AOT runtime.)
 
-Annotate the enumeration type with the <xref:System.Text.Json.Serialization.JsonStringEnumConverter%601> converter using the <xref:System.Text.Json.Serialization.JsonConverterAttribute> attribute:
+Annotate the enumeration type with the <xref:System.Text.Json.Serialization.JsonStringEnumConverter`1> converter using the <xref:System.Text.Json.Serialization.JsonConverterAttribute> attribute:
 
 :::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithConverterEnum":::
 
@@ -272,7 +272,7 @@ The resulting JSON looks like the following example:
 
 ### Blanket policy
 
-Instead of using the <xref:System.Text.Json.Serialization.JsonStringEnumConverter%601> type, you can apply a blanket policy to serialize enums as strings by using the <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute>. Create a <xref:System.Text.Json.Serialization.JsonSerializerContext> class and annotate it with the <xref:System.Text.Json.Serialization.JsonSerializableAttribute> *and <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute>* attributes:
+Instead of using the <xref:System.Text.Json.Serialization.JsonStringEnumConverter`1> type, you can apply a blanket policy to serialize enums as strings by using the <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute>. Create a <xref:System.Text.Json.Serialization.JsonSerializerContext> class and annotate it with the <xref:System.Text.Json.Serialization.JsonSerializableAttribute> *and <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute>* attributes:
 
 :::code language="csharp" source="snippets/how-to/csharp/RoundtripEnumSourceGeneration.cs" id="Context2":::
 

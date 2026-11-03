@@ -90,7 +90,7 @@ printfn $"{twoByTwo}"
 
 The F# core library defines slices for a limited set of types. If you wish to define slices for more data types, you can do so either in the type definition itself or in a type extension.
 
-For example, here's how you might define slices for the <xref:System.ArraySegment%601> class to allow for convenient data manipulation:
+For example, here's how you might define slices for the <xref:System.ArraySegment`1> class to allow for convenient data manipulation:
 
 ```fsharp
 open System
@@ -105,7 +105,7 @@ let arr = ArraySegment [| 1 .. 10 |]
 let slice = arr[2..5] //[ 3; 4; 5]
 ```
 
-Another example using the <xref:System.Span%601> and <xref:System.ReadOnlySpan%601> types:
+Another example using the <xref:System.Span`1> and <xref:System.ReadOnlySpan`1> types:
 
 ```fsharp
 open System

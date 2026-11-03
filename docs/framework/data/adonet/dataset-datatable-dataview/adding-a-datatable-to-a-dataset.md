@@ -9,7 +9,7 @@ ms.assetid: 556d29a3-8fc9-4e38-b3ee-c188f7e7b155
 ---
 # Adding a DataTable to a DataSet
 
-ADO.NET enables you to create <xref:System.Data.DataTable> objects and add them to an existing <xref:System.Data.DataSet>. You can set constraint information for a <xref:System.Data.DataTable> by using the <xref:System.Data.DataTable.PrimaryKey%2A> and <xref:System.Data.DataColumn.Unique%2A> properties.
+ADO.NET enables you to create <xref:System.Data.DataTable> objects and add them to an existing <xref:System.Data.DataSet>. You can set constraint information for a <xref:System.Data.DataTable> by using the <xref:System.Data.DataTable.PrimaryKey*> and <xref:System.Data.DataColumn.Unique> properties.
 
 ## Example
 
@@ -25,11 +25,11 @@ ADO.NET enables you to create <xref:System.Data.DataTable> objects and add them 
  The case-sensitivity behavior does not apply if only one table or relation has a particular name. For example, if the <xref:System.Data.DataSet> has only **Table1**, you can reference it using **dataSet.Tables["TABLE1"]**.
 
 > [!NOTE]
-> The <xref:System.Data.DataSet.CaseSensitive%2A> property of the <xref:System.Data.DataSet> does not affect this behavior. The <xref:System.Data.DataSet.CaseSensitive%2A> property applies to the data in the <xref:System.Data.DataSet> and affects sorting, searching, filtering, enforcing constraints, and so on.
+> The <xref:System.Data.DataSet.CaseSensitive> property of the <xref:System.Data.DataSet> does not affect this behavior. The <xref:System.Data.DataSet.CaseSensitive> property applies to the data in the <xref:System.Data.DataSet> and affects sorting, searching, filtering, enforcing constraints, and so on.
 
 ## Namespace Support
 
- In versions of ADO.NET earlier than 2.0, two tables could not have the same name, even if they were in different namespaces. This limitation was removed in ADO.NET 2.0. A <xref:System.Data.DataSet> can contain two tables that have the same <xref:System.Data.DataTable.TableName%2A> property value but different <xref:System.Data.DataTable.Namespace%2A> property values.
+ In versions of ADO.NET earlier than 2.0, two tables could not have the same name, even if they were in different namespaces. This limitation was removed in ADO.NET 2.0. A <xref:System.Data.DataSet> can contain two tables that have the same <xref:System.Data.DataTable.TableName> property value but different <xref:System.Data.DataTable.Namespace> property values.
 
 ## See also
 

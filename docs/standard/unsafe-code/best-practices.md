@@ -127,7 +127,7 @@ but then the pointer is exposed outside of the `fixed` block. This creates a dan
 ### Recommendations
 
 1. ✔️ DO make sure that pointers in `fixed` blocks do not leave the defined scope.
-2. ✔️ DO prefer safe low-level primitives with built-in escape analysis, such as C#'s [ref struct](../../csharp/language-reference/builtin-types/ref-struct.md). For more information, see [Low-level struct improvements](~/_csharplang/proposals/csharp-11.0/low-level-struct-improvements.md).
+2. ✔️ DO prefer safe low-level primitives with built-in escape analysis, such as C#'s [ref struct](../../csharp/language-reference/builtin-types/ref-struct.md). For more information, see [Safe context constraint](/dotnet/csharp/language-reference/language-specification/structs#16515-safe-context-constraint).
 
 ## 3. Internal implementation details of the runtime and libraries
 
@@ -705,7 +705,7 @@ the intended logic.
 
 ## 15. Fixed-size buffers
 
-Fixed-size buffers were useful for interop scenarios with data sources from other languages or platforms. They then were replaced by safer and more convenient [inline arrays](~/_csharplang/proposals/csharp-12.0/inline-arrays.md).
+Fixed-size buffers were useful for interop scenarios with data sources from other languages or platforms. They then were replaced by safer and more convenient [inline arrays](~/_csharpstandard/standard/structs.md#166-inline-arrays).
 An example of a fixed-size buffer (requires `unsafe` context) is the following snippet:
 
 ```csharp
@@ -719,7 +719,7 @@ MyStruct m = new();
 ms.data[10] = 0; // Out-of-bounds write, undefined behavior.
 ```
 
-A modern and a safer alternative is [inline arrays](~/_csharplang/proposals/csharp-12.0/inline-arrays.md):
+A modern and a safer alternative is [inline arrays](~/_csharpstandard/standard/structs.md#166-inline-arrays):
 
 ```csharp
 [System.Runtime.CompilerServices.InlineArray(8)]

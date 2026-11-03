@@ -2,10 +2,10 @@
 title: "Data Contract Names"
 description: Discover data contract and member naming rules and default behavior of the WCF infrastructure, which support communication by using equivalent data contracts.
 ms.date: "03/30/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data contracts [WCF], naming"
 ms.assetid: 31f87e6c-247b-48f5-8e94-b9e1e33d8d09
 ---
@@ -27,7 +27,7 @@ Basic rules regarding naming data contracts include:
 
 A data contract namespace takes the form of a Uniform Resource Identifier (URI). The URI can be either absolute or relative. By default, data contracts for a particular type are assigned a namespace that comes from the common language runtime (CLR) namespace of that type.
 
-By default, any given CLR namespace (in the format *Clr.Namespace*) is mapped to the namespace `http://schemas.datacontract.org/2004/07/Clr.Namespace`. To override this default, apply the <xref:System.Runtime.Serialization.ContractNamespaceAttribute> attribute to the entire module or assembly. Alternatively, to control the data contract namespace for each type, set the <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A> property of the <xref:System.Runtime.Serialization.DataContractAttribute>.
+By default, any given CLR namespace (in the format *Clr.Namespace*) is mapped to the namespace `http://schemas.datacontract.org/2004/07/Clr.Namespace`. To override this default, apply the <xref:System.Runtime.Serialization.ContractNamespaceAttribute> attribute to the entire module or assembly. Alternatively, to control the data contract namespace for each type, set the <xref:System.Runtime.Serialization.DataContractAttribute.Namespace> property of the <xref:System.Runtime.Serialization.DataContractAttribute>.
 
 > [!NOTE]
 > The `http://schemas.microsoft.com/2003/10/Serialization` namespace is reserved and cannot be used as a data contract namespace.
@@ -37,11 +37,11 @@ By default, any given CLR namespace (in the format *Clr.Namespace*) is mapped to
 
 ## Data Contract Names
 
-The default name of a data contract for a given type is the name of that type. To override the default, set the <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> property of the <xref:System.Runtime.Serialization.DataContractAttribute> to an alternative name. Special rules for generic types are described in "Data Contract Names for Generic Types" later in this topic.
+The default name of a data contract for a given type is the name of that type. To override the default, set the <xref:System.Runtime.Serialization.DataContractAttribute.Name> property of the <xref:System.Runtime.Serialization.DataContractAttribute> to an alternative name. Special rules for generic types are described in "Data Contract Names for Generic Types" later in this topic.
 
 ## Data Member Names
 
-The default name of a data member for a given field or property is the name of that field or property. To override the default, set the <xref:System.Runtime.Serialization.DataMemberAttribute.Name%2A> property of the <xref:System.Runtime.Serialization.DataMemberAttribute> to an alternative value.
+The default name of a data member for a given field or property is the name of that field or property. To override the default, set the <xref:System.Runtime.Serialization.DataMemberAttribute.Name> property of the <xref:System.Runtime.Serialization.DataMemberAttribute> to an alternative value.
 
 ### Examples
 
@@ -65,14 +65,14 @@ In this example, the type `Drawing<Square,RegularRedBrush>` has the data contrac
 
 ## Customizing data contract names for generic types
 
-Sometimes, the data contract names generated for generic types, as described previously, are unacceptable. For example, you may know in advance that you will not run into name collisions and may want to remove the hash. In this case, you can use the <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A?displayProperty=nameWithType> property to specify a different way to generate names. You can use numbers in curly braces inside of the `Name` property to refer to data contract names of the generic parameters. (0 refers to the first parameter, 1 refers to the second, and so on.) You can use a number (#) sign inside curly braces to refer to the hash. You can use each of these references multiple times or not at all.
+Sometimes, the data contract names generated for generic types, as described previously, are unacceptable. For example, you may know in advance that you will not run into name collisions and may want to remove the hash. In this case, you can use the <xref:System.Runtime.Serialization.DataContractAttribute.Name?displayProperty=nameWithType> property to specify a different way to generate names. You can use numbers in curly braces inside of the `Name` property to refer to data contract names of the generic parameters. (0 refers to the first parameter, 1 refers to the second, and so on.) You can use a number (#) sign inside curly braces to refer to the hash. You can use each of these references multiple times or not at all.
 
 For example, the preceding generic `Drawing` type could have been declared as shown in the following example.
 
 [!code-csharp[c_DataContractNames#3](~/samples/snippets/csharp/VS_Snippets_CFX/c_datacontractnames/cs/source.cs#3)]
 [!code-vb[c_DataContractNames#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_datacontractnames/vb/source.vb#3)]
 
-In this case, the type `Drawing<Square,RegularRedBrush>` has the data contract name "Drawing_using_RedBrush_brush_and_Square_shape". Note that because there is a "{#}" in the <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> property, the hash is not a part of the name, and thus the type is susceptible to naming collisions; for example, the type `Drawing<Square,SpecialRedBrush>` would have exactly the same data contract name.
+In this case, the type `Drawing<Square,RegularRedBrush>` has the data contract name "Drawing_using_RedBrush_brush_and_Square_shape". Note that because there is a "{#}" in the <xref:System.Runtime.Serialization.DataContractAttribute.Name> property, the hash is not a part of the name, and thus the type is susceptible to naming collisions; for example, the type `Drawing<Square,SpecialRedBrush>` would have exactly the same data contract name.
 
 ## See also
 

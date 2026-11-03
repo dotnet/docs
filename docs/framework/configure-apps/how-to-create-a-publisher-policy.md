@@ -68,16 +68,13 @@ In this command:
 
 - The `processorArchitecture` argument identifies the platform targeted by a processor-specific assembly.
 
-  > [!NOTE]
-  > The ability to target a specific processor architecture is available starting with .NET Framework 2.0.
-
-The ability to target a specific processor architecture is available starting with .NET Framework 2.0. The following command creates a publisher policy assembly called `policy.1.0.myAssembly` from a publisher policy file called `pub.config`, assigns a strong name to the assembly using the key pair in the `sgKey.snk` file, and specifies that the assembly targets the x86 processor architecture.
+The following command creates a publisher policy assembly called `policy.1.0.myAssembly` from a publisher policy file called `pub.config`, assigns a strong name to the assembly using the key pair in the `sgKey.snk` file, and specifies that the assembly targets the x86 processor architecture.
 
 ```console
 al /link:pub.config /out:policy.1.0.myAssembly.dll /keyfile:sgKey.snk /platform:x86
 ```
 
-The publisher policy assembly must match the processor architecture of the assembly that it applies to. Thus, if your assembly has a <xref:System.Reflection.AssemblyName.ProcessorArchitecture%2A> value of <xref:System.Reflection.ProcessorArchitecture.MSIL>, the publisher policy assembly for that assembly must be created with `/platform:anycpu`. You must provide a separate publisher policy assembly for each processor-specific assembly.
+The publisher policy assembly must match the processor architecture of the assembly that it applies to. Thus, if your assembly has a <xref:System.Reflection.AssemblyName.ProcessorArchitecture> value of <xref:System.Reflection.ProcessorArchitecture.MSIL>, the publisher policy assembly for that assembly must be created with `/platform:anycpu`. You must provide a separate publisher policy assembly for each processor-specific assembly.
 
 A consequence of this rule is that in order to change the processor architecture for an assembly, you must change the major or minor component of the version number, so that you can supply a new publisher policy assembly with the correct processor architecture. The old publisher policy assembly cannot service your assembly once your assembly has a different processor architecture.
 

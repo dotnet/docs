@@ -21,7 +21,6 @@ The following table is a list of currently supported .NET releases on SLES. Thes
 |--------|-----------|
 | 16.0   | 10, 9, 8  |
 | 15.7   | 10, 9, 8  |
-| 15.6   | 10, 9, 8  |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -119,11 +118,16 @@ This section provides information on common errors you might get while using the
 
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you must make sure these libraries are installed:
 
+- ca-certificates
+- glibc
 - krb5
+- libgcc_s1
 - libicu
-- libopenssl1_1
+- libopenssl3
+- libstdc++6
+- timezone
 
-If the target runtime environment's OpenSSL version is 1.1 or newer, install the `compat-openssl10` package.
+For .NET 8, `libz1` (zlib) is also required.
 
 Dependencies can be installed with the `zypper install` command. The following snippet demonstrates installing the `krb5` library:
 
@@ -137,4 +141,4 @@ For more information about the dependencies, see [Self-contained Linux apps](htt
 
 - [.NET CLI overview](../tools/index.md)
 - [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
-- [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)
+- [Tutorial: Create a console application with .NET](../tutorials/create-console-app.md)

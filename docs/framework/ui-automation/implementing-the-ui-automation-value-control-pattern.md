@@ -38,7 +38,7 @@ Example of an Editable List Item
  ![Color picker with yellow highlighted.](./media/uia-valuepattern-colorpicker.png "UIA_ValuePattern_ColorPicker")
 Example of Color Swatch String Mapping
 
-- A control should have its <xref:System.Windows.Automation.AutomationElement.IsEnabledProperty> set to `true` and its <xref:System.Windows.Automation.ValuePattern.IsReadOnlyProperty> set to `false` before allowing a call to <xref:System.Windows.Automation.Provider.IValueProvider.SetValue%2A>.
+- A control should have its <xref:System.Windows.Automation.AutomationElement.IsEnabledProperty> set to `true` and its <xref:System.Windows.Automation.ValuePattern.IsReadOnlyProperty> set to `false` before allowing a call to <xref:System.Windows.Automation.Provider.IValueProvider.SetValue*>.
 
 <a name="Required_Members_for_the_IValueProvider_Interface"></a>
 
@@ -50,7 +50,7 @@ Example of Color Swatch String Mapping
 |----------------------|-----------------|-----------|
 |<xref:System.Windows.Automation.ValuePattern.IsReadOnlyProperty>|Property|None|
 |<xref:System.Windows.Automation.ValuePattern.ValueProperty>|Property|None|
-|<xref:System.Windows.Automation.ValuePattern.SetValue%2A>|Method|None|
+|<xref:System.Windows.Automation.ValuePattern.SetValue*>|Method|None|
 
 <a name="Exceptions"></a>
 
@@ -60,9 +60,9 @@ Example of Color Swatch String Mapping
 
 |Exception type|Condition|
 |--------------------|---------------|
-|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.ValuePattern.SetValue%2A><br /><br /> -   If locale-specific information is passed to a control in an incorrect format such as an incorrectly formatted date.|
-|<xref:System.ArgumentException>|<xref:System.Windows.Automation.ValuePattern.SetValue%2A><br /><br /> -   If a new value cannot be converted from a string to a format the control recognizes.|
-|<xref:System.Windows.Automation.ElementNotEnabledException>|<xref:System.Windows.Automation.ValuePattern.SetValue%2A><br /><br /> -   When an attempt is made to manipulate a control that is not enabled.|
+|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.ValuePattern.SetValue*><br /><br /> -   If locale-specific information is passed to a control in an incorrect format such as an incorrectly formatted date.|
+|<xref:System.ArgumentException>|<xref:System.Windows.Automation.ValuePattern.SetValue*><br /><br /> -   If a new value cannot be converted from a string to a format the control recognizes.|
+|<xref:System.Windows.Automation.ElementNotEnabledException>|<xref:System.Windows.Automation.ValuePattern.SetValue*><br /><br /> -   When an attempt is made to manipulate a control that is not enabled.|
 
 ## See also
 

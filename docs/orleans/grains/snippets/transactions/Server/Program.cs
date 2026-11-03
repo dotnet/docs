@@ -1,4 +1,6 @@
-﻿await Host.CreateDefaultBuilder(args)
+using Azure.Data.Tables;
+
+await Host.CreateDefaultBuilder(args)
     .UseOrleans((_, silo) =>
     {
         silo.UseLocalhostClustering();
@@ -8,7 +10,7 @@
         {
             silo.AddAzureTableTransactionalStateStorage(
                 "TransactionStore", 
-                options => options.ConfigureTableServiceClient(connectionString));
+                options => options.TableServiceClient = new TableServiceClient(connectionString));
         }
         else
         {

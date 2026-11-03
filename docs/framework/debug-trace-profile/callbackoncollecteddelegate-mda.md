@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "callbackOnCollectedDelegate MDA"
   - "managed debugging assistants (MDAs), garbage collection"
   - "call back collected delegates"
-  - "garbage collection, run-time errors"
+  - "garbage collection, runtime errors"
   - "delegates [.NET Framework], garbage collection"
 ms.assetid: 398b0ce0-5cc9-4518-978d-b8263aa21e5b
 ---
@@ -118,5 +118,5 @@ public class Entry
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../interop/interop-marshalling.md)
+- [Interop Marshaling](../../standard/native-interop/interop-marshalling.md)
 - [gcUnmanagedToManaged](gcunmanagedtomanaged-mda.md)

@@ -10,11 +10,11 @@ Conversion methods change the type of input objects.
 
  Conversion operations in LINQ queries are useful in a variety of applications. The following are some examples:
 
-- The <xref:System.Linq.Enumerable.AsEnumerable%2A?displayProperty=nameWithType> method can be used to hide a type's custom implementation of a standard query operator.
+- The <xref:System.Linq.Enumerable.AsEnumerable*?displayProperty=nameWithType> method can be used to hide a type's custom implementation of a standard query operator.
 
-- The <xref:System.Linq.Enumerable.OfType%2A?displayProperty=nameWithType> method can be used to enable non-parameterized collections for LINQ querying.
+- The <xref:System.Linq.Enumerable.OfType*?displayProperty=nameWithType> method can be used to enable non-parameterized collections for LINQ querying.
 
-- The <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType>, <xref:System.Linq.Enumerable.ToDictionary%2A?displayProperty=nameWithType>, <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType>, and <xref:System.Linq.Enumerable.ToLookup%2A?displayProperty=nameWithType> methods can be used to force immediate query execution instead of deferring it until the query is enumerated.
+- The <xref:System.Linq.Enumerable.ToArray*?displayProperty=nameWithType>, <xref:System.Linq.Enumerable.ToDictionary*?displayProperty=nameWithType>, <xref:System.Linq.Enumerable.ToList*?displayProperty=nameWithType>, and <xref:System.Linq.Enumerable.ToLookup*?displayProperty=nameWithType> methods can be used to force immediate query execution instead of deferring it until the query is enumerated.
 
 ## Methods
 
@@ -24,14 +24,14 @@ The conversion methods in this table whose names start with "As" change the stat
 
 |Method Name|Description|Visual Basic Query Expression Syntax|More Information|
 |-----------------|-----------------|------------------------------------------|----------------------|
-|AsEnumerable|Returns the input typed as <xref:System.Collections.Generic.IEnumerable%601>.|Not applicable.|<xref:System.Linq.Enumerable.AsEnumerable%2A?displayProperty=nameWithType>|
-|AsQueryable|Converts a (generic) <xref:System.Collections.IEnumerable> to a (generic) <xref:System.Linq.IQueryable>.|Not applicable.|<xref:System.Linq.Queryable.AsQueryable%2A?displayProperty=nameWithType>|
-|Cast|Casts the elements of a collection to a specified type.|`From … As …`|<xref:System.Linq.Enumerable.Cast%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Cast%2A?displayProperty=nameWithType>|
-|OfType|Filters values, depending on their ability to be cast to a specified type.|Not applicable.|<xref:System.Linq.Enumerable.OfType%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OfType%2A?displayProperty=nameWithType>|
-|ToArray|Converts a collection to an array. This method forces query execution.|Not applicable.|<xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType>|
-|ToDictionary|Puts elements into a <xref:System.Collections.Generic.Dictionary%602> based on a key selector function. This method forces query execution.|Not applicable.|<xref:System.Linq.Enumerable.ToDictionary%2A?displayProperty=nameWithType>|
-|ToList|Converts a collection to a <xref:System.Collections.Generic.List%601>. This method forces query execution.|Not applicable.|<xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType>|
-|ToLookup|Puts elements into a <xref:System.Linq.Lookup%602> (a one-to-many dictionary) based on a key selector function. This method forces query execution.|Not applicable.|<xref:System.Linq.Enumerable.ToLookup%2A?displayProperty=nameWithType>|
+|AsEnumerable|Returns the input typed as <xref:System.Collections.Generic.IEnumerable`1>.|Not applicable.|<xref:System.Linq.Enumerable.AsEnumerable*?displayProperty=nameWithType>|
+|AsQueryable|Converts a (generic) <xref:System.Collections.IEnumerable> to a (generic) <xref:System.Linq.IQueryable>.|Not applicable.|<xref:System.Linq.Queryable.AsQueryable*?displayProperty=nameWithType>|
+|Cast|Casts the elements of a collection to a specified type.|`From … As …`|<xref:System.Linq.Enumerable.Cast*?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Cast*?displayProperty=nameWithType>|
+|OfType|Filters values, depending on their ability to be cast to a specified type.|Not applicable.|<xref:System.Linq.Enumerable.OfType*?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OfType*?displayProperty=nameWithType>|
+|ToArray|Converts a collection to an array. This method forces query execution.|Not applicable.|<xref:System.Linq.Enumerable.ToArray*?displayProperty=nameWithType>|
+|ToDictionary|Puts elements into a <xref:System.Collections.Generic.Dictionary`2> based on a key selector function. This method forces query execution.|Not applicable.|<xref:System.Linq.Enumerable.ToDictionary*?displayProperty=nameWithType>|
+|ToList|Converts a collection to a <xref:System.Collections.Generic.List`1>. This method forces query execution.|Not applicable.|<xref:System.Linq.Enumerable.ToList*?displayProperty=nameWithType>|
+|ToLookup|Puts elements into a <xref:System.Linq.Lookup`2> (a one-to-many dictionary) based on a key selector function. This method forces query execution.|Not applicable.|<xref:System.Linq.Enumerable.ToLookup*?displayProperty=nameWithType>|
 
 ## Query Expression Syntax Example
 

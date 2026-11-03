@@ -3,10 +3,10 @@ title: "How to: Compress and extract files"
 description: Compress & extract files using System.IO.Compression. See examples using ZipFile, ZipArchive, ZipArchiveEntry, DeflateStream, & GZipStream.
 ms.date: "08/10/2022"
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "I/O [.NET], compression"
   - "compression"
   - "compress files"
@@ -43,7 +43,7 @@ To run the sample, create a *start* folder in your program folder and populate i
 
 ## Example 2: Extract specific file extensions
 
-The following example iterates through the contents of an existing *.zip* file and extracts files with a *.txt* extension. It uses the <xref:System.IO.Compression.ZipArchive> class to access the *.zip* file, and the <xref:System.IO.Compression.ZipArchiveEntry> class to inspect the individual entries. The extension method <xref:System.IO.Compression.ZipFileExtensions.ExtractToFile%2A> for the <xref:System.IO.Compression.ZipArchiveEntry> object is available in the <xref:System.IO.Compression.ZipFileExtensions?displayProperty=nameWithType> class.
+The following example iterates through the contents of an existing *.zip* file and extracts files with a *.txt* extension. It uses the <xref:System.IO.Compression.ZipArchive> class to access the *.zip* file, and the <xref:System.IO.Compression.ZipArchiveEntry> class to inspect the individual entries. The extension method <xref:System.IO.Compression.ZipFileExtensions.ExtractToFile*> for the <xref:System.IO.Compression.ZipArchiveEntry> object is available in the <xref:System.IO.Compression.ZipFileExtensions?displayProperty=nameWithType> class.
 
 To run the sample, place a *.zip* file called *result.zip* in your program folder. When prompted, provide a folder name to extract to.
 
@@ -69,9 +69,9 @@ You can also use the <xref:System.IO.Compression.GZipStream> and <xref:System.IO
 
 ## See also
 
-- <xref:System.IO.Compression.ZipArchive>  
-- <xref:System.IO.Compression.ZipFile>  
-- <xref:System.IO.Compression.ZipArchiveEntry>  
-- <xref:System.IO.Compression.DeflateStream>  
-- <xref:System.IO.Compression.GZipStream>  
+- <xref:System.IO.Compression.ZipArchive>
+- <xref:System.IO.Compression.ZipFile>
+- <xref:System.IO.Compression.ZipArchiveEntry>
+- <xref:System.IO.Compression.DeflateStream>
+- <xref:System.IO.Compression.GZipStream>
 - [File and stream I/O](index.md)

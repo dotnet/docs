@@ -1,8 +1,6 @@
 ---
 title: "Tutorial: Create a GitHub Action with .NET"
 description: Learn how to create a GitHub Action with a containerized .NET app.
-author: IEvangelist
-ms.author: dapine
 ms.date: 12/14/2023
 ms.topic: tutorial
 ---
@@ -62,7 +60,7 @@ The `Program` file is simplified for brevity, to explore the full sample source,
 
 - [Top-level statements](../csharp/tutorials/top-level-statements.md)
 - [Generic Host](../core/extensions/generic-host.md)
-- [Dependency injection](../core/extensions/dependency-injection.md)
+- [Dependency injection](../core/extensions/dependency-injection/overview.md)
 
 External project or package references can be used, and registered with dependency injection. The `Get<TService>` is a static local function, which requires the `IHost` instance, and is used to resolve required services. With the `CommandLine.Parser.Default` singleton, the app gets a `parser` instance from the `args`. When the arguments are unable to be parsed, the app exits with a non-zero exit code. For more information, see [Setting exit codes for actions](https://docs.github.com/actions/creating-actions/setting-exit-codes-for-actions).
 
@@ -217,7 +215,7 @@ For more information, see [GitHub Docs: Working with the Container registry](htt
 ## See also
 
 - [.NET Generic Host](../core/extensions/generic-host.md)
-- [Dependency injection in .NET](../core/extensions/dependency-injection.md)
+- [Dependency injection in .NET](../core/extensions/dependency-injection/overview.md)
 - [Code metrics values](/visualstudio/code-quality/code-metrics-values)
 - [Open-source GitHub Action build in .NET](https://github.com/svrooij/dotnet-feeder/) with a [workflow](https://github.com/svrooij/dotnet-feeder/blob/main/.github/workflows/build.yml) for building and pushing the docker image automatically.
 

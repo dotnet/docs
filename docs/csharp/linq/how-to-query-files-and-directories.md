@@ -17,7 +17,7 @@ This example shows how to find all files that have a specified file name extensi
 
 ## How to group files by extension
 
-This example shows how LINQ can be used to perform advanced grouping and sorting operations on lists of files or folders. It also shows how to page output in the console window by using the <xref:System.Linq.Enumerable.Skip%2A> and <xref:System.Linq.Enumerable.Take%2A> methods.
+This example shows how LINQ can be used to perform advanced grouping and sorting operations on lists of files or folders. It also shows how to page output in the console window by using the <xref:System.Linq.Enumerable.Skip*> and <xref:System.Linq.Enumerable.Take*> methods.
 
 The following query shows how to group the contents of a specified directory tree by the file name extension.
 
@@ -27,7 +27,7 @@ The output from this program can be long, depending on the details of the local 
 
 ## How to query for the total number of bytes in a set of folders
 
-This example shows how to retrieve the total number of bytes used by all the files in a specified folder and all its subfolders. The <xref:System.Linq.Enumerable.Sum%2A> method adds the values of all the items selected in the `select` clause. You can modify this query to retrieve the biggest or smallest file in the specified directory tree by calling the <xref:System.Linq.Enumerable.Min%2A> or <xref:System.Linq.Enumerable.Max%2A> method instead of <xref:System.Linq.Enumerable.Sum%2A>.
+This example shows how to retrieve the total number of bytes used by all the files in a specified folder and all its subfolders. The <xref:System.Linq.Enumerable.Sum*> method adds the values of all the items selected in the `select` clause. You can modify this query to retrieve the biggest or smallest file in the specified directory tree by calling the <xref:System.Linq.Enumerable.Min*> or <xref:System.Linq.Enumerable.Max*> method instead of <xref:System.Linq.Enumerable.Sum*>.
 
 :::code language="csharp" source="./snippets/HowToFilesAndDirectories/Program.cs" id="QueryByFileSize":::
 
@@ -43,7 +43,7 @@ The following example contains five separate queries that show how to query and 
 
 :::code language="csharp" source="./snippets/HowToFilesAndDirectories/Program.cs" id="MoreQueriesOnFileSizes":::
 
-To return one or more complete <xref:System.IO.FileInfo> objects, the query first must examine each one in the data source, and then sort them by the value of their Length property. Then it can return the single one or the sequence with the greatest lengths. Use <xref:System.Linq.Enumerable.First%2A> to return the first element in a list. Use <xref:System.Linq.Enumerable.Take%2A> to return the first n number of elements. Specify a descending sort order to put the smallest elements at the start of the list.
+To return one or more complete <xref:System.IO.FileInfo> objects, the query first must examine each one in the data source, and then sort them by the value of their Length property. Then it can return the single one or the sequence with the greatest lengths. Use <xref:System.Linq.Enumerable.First*> to return the first element in a list. Use <xref:System.Linq.Enumerable.Take*> to return the first n number of elements. Specify a descending sort order to put the smallest elements at the start of the list.
 
 ## How to query for duplicate files in a directory tree
 
@@ -70,14 +70,14 @@ This example demonstrates three ways to compare two file listings:
 - By querying for the set difference to retrieve the files that are in one folder but not the other.
 
 The techniques shown here can be adapted to compare sequences of objects of any type.
-  
+
 The `FileComparer` class shown here demonstrates how to use a custom comparer class together with the Standard Query Operators. The class isn't intended for use in real-world scenarios. It just uses the name and length in bytes of each file to determine whether the contents of each folder are identical or not. In a real-world scenario, you should modify this comparer to perform a more rigorous equality check.
 
 :::code language="csharp" source="./snippets/HowToFilesAndDirectories/CompareDirectoryContents.cs" id="CompareDirectoryContents":::
 
 ## How to reorder the fields of a delimited file
 
-A comma-separated value (CSV) file is a text file that is often used to store spreadsheet data or other tabular data represented by rows and columns. By using the <xref:System.String.Split%2A> method to separate the fields, it's easy to query and manipulate CSV files using LINQ. In fact, the same technique can be used to reorder the parts of any structured line of text; it isn't limited to CSV files.
+A comma-separated value (CSV) file is a text file that is often used to store spreadsheet data or other tabular data represented by rows and columns. By using the <xref:System.String.Split*> method to separate the fields, it's easy to query and manipulate CSV files using LINQ. In fact, the same technique can be used to reorder the parts of any structured line of text; it isn't limited to CSV files.
 
 In the following example, assume that the three columns represent students' "family name," "first name", and "ID." The fields are in alphabetical order based on the students' family names. The query produces a new sequence in which the ID column appears first, followed by a second column that combines the student's first name and family name. The lines are reordered according to the ID field. The results are saved into a new file and the original data isn't modified. The following text shows the contents of the *spreadsheet1.csv* file used in the following example:
 
@@ -125,7 +125,7 @@ The following text shows the contents of *scores.csv*. Assume that the first col
 
 :::code language="txt" source="./snippets/HowToFilesAndDirectories/scores.csv":::
 
-The following text shows how to use the <xref:System.String.Split%2A> method to convert each line of text into an array. Each array element represents a column. Finally, the text in each column is converted to its numeric representation.
+The following text shows how to use the <xref:System.String.Split*> method to convert each line of text into an array. Each array element represents a column. Finally, the text in each column is converted to its numeric representation.
 
 :::code language="csharp" source="./snippets/HowToFilesAndDirectories/SumColumns.cs" id="SumColumns":::
 

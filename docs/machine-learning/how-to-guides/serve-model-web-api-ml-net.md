@@ -15,13 +15,13 @@ Learn how to serve a pretrained ML.NET machine learning model on the web using a
 
 ## Prerequisites
 
-- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/#download) with the **ASP.NET and web development workload**.
+- [Visual Studio 2022 or later](https://visualstudio.microsoft.com/vs/#download) with the **ASP.NET and web development workload**.
 - PowerShell.
 - Pre-trained model. Use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model or download this [pretrained sentiment analysis machine learning model](https://github.com/dotnet/samples/blob/main/machine-learning/models/sentimentanalysis/sentiment_model.zip).
 
 ## Create ASP.NET Core Web API project
 
-1. Start Visual Studio 2022 and select **Create a new project**.
+1. Start Visual Studio and select **Create a new project**.
 1. In the **Create a new project** dialog:
 
     - Enter `Web API` in the search box.
@@ -99,11 +99,14 @@ In your *Program.cs* file:
 
 ## Register PredictionEnginePool for use in the application
 
-To make a single prediction, you have to create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602). [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. Additionally, you have to create an instance of it everywhere it is needed within your application. As your application grows, this process can become unmanageable. For improved performance and thread safety, use a combination of dependency injection and the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) objects for use throughout your application.
+To make a single prediction, you have to create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine`2). [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine`2) is not thread-safe. Additionally, you have to create an instance of it everywhere it is needed within your application. As your application grows, this process can become unmanageable. For improved performance and thread safety, use a combination of dependency injection and the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool`1) of [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine`2) objects for use throughout your application.
 
 The following link provides more information if you want to learn more about [dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection).
 
 Add the following code to your *Program.cs* file:
+
+> [!IMPORTANT]
+> Only add models from trusted sources. Adding models from untrusted sources is a security risk.
 
 ```csharp
 builder.Services.AddPredictionEnginePool<ModelInput, ModelOutput>()

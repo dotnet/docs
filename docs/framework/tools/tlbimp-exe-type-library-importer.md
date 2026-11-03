@@ -127,7 +127,7 @@ void SomeMethod(out bool x);
 
 - [Tools](index.md)
 - [Tlbexp.exe (Type Library Exporter)](tlbexp-exe-type-library-exporter.md)
-- [Importing a Type Library as an Assembly](../interop/importing-a-type-library-as-an-assembly.md)
+- [Importing a Type Library as an Assembly](../../standard/native-interop/importing-a-type-library-as-an-assembly.md)
 - [Type Library to Assembly Conversion Summary](/previous-versions/dotnet/netframework-4.0/k83zzh38(v=vs.100))
 - [Ildasm.exe (IL Disassembler)](ildasm-exe-il-disassembler.md)
 - [Sn.exe (Strong Name Tool)](sn-exe-strong-name-tool.md)

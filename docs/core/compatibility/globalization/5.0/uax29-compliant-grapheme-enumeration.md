@@ -7,7 +7,7 @@ ms.date: 04/07/2020
 
 Prior to this change, <xref:System.Globalization.StringInfo?displayProperty=fullName> and <xref:System.Globalization.TextElementEnumerator?displayProperty=fullName> didn't properly handle all grapheme clusters. Some graphemes were split into their constituent components instead of being kept together. Now, <xref:System.Globalization.StringInfo> and <xref:System.Globalization.TextElementEnumerator> process grapheme clusters according to the latest version of the Unicode Standard.
 
-In addition, the <xref:Microsoft.VisualBasic.Strings.StrReverse%2A?displayProperty=fullName> method, which reverses the characters in a string in Visual Basic, now also follows the Unicode standard for grapheme clusters.
+In addition, the <xref:Microsoft.VisualBasic.Strings.StrReverse*?displayProperty=fullName> method, which reverses the characters in a string in Visual Basic, now also follows the Unicode standard for grapheme clusters.
 
 ## Change description
 
@@ -80,7 +80,7 @@ Grapheme 1: "🤷🏽‍♀️"
 (1 grapheme(s) total.)
 ```
 
-In addition, starting in .NET 5, the <xref:Microsoft.VisualBasic.Strings.StrReverse%2A?displayProperty=fullName> method, which reverses the characters in a string in Visual Basic, now also follows the Unicode standard for grapheme clusters.
+In addition, starting in .NET 5, the <xref:Microsoft.VisualBasic.Strings.StrReverse*?displayProperty=fullName> method, which reverses the characters in a string in Visual Basic, now also follows the Unicode standard for grapheme clusters.
 
 These changes are part of a wider set of Unicode and UTF-8 improvements in .NET, including an extended grapheme cluster enumeration API to complement the Unicode scalar-value enumeration APIs that were introduced with the <xref:System.Text.Rune?displayProperty=fullName> type in .NET Core 3.0.
 
@@ -96,7 +96,7 @@ You don't need to take any action. Your apps will automatically behave in a more
 
 - <xref:System.Globalization.StringInfo?displayProperty=fullName>
 - <xref:System.Globalization.TextElementEnumerator?displayProperty=fullName>
-- <xref:Microsoft.VisualBasic.Strings.StrReverse%2A?displayProperty=fullName>
+- <xref:Microsoft.VisualBasic.Strings.StrReverse*?displayProperty=fullName>
 
 <!--
 

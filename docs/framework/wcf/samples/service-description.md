@@ -6,7 +6,7 @@ ms.assetid: 7034b5d6-d608-45f3-b57d-ec135f83ff24
 ---
 # Service Description
 
-The [ServiceDescription sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how a service can retrieve its service description information at run time. The sample is based on the [Getting Started](getting-started-sample.md), with an additional service operation defined to return descriptive information about the service. The information that is returned lists the base addresses and endpoints for the service. The service provides this information using the <xref:System.ServiceModel.OperationContext>, <xref:System.ServiceModel.ServiceHost>, and <xref:System.ServiceModel.Description.ServiceDescription> classes.
+The [ServiceDescription sample](https://github.com/dotnet/samples/tree/main/framework/wcf) demonstrates how a service can retrieve its service description information at runtime. The sample is based on the [Getting Started](getting-started-sample.md), with an additional service operation defined to return descriptive information about the service. The information that is returned lists the base addresses and endpoints for the service. The service provides this information using the <xref:System.ServiceModel.OperationContext>, <xref:System.ServiceModel.ServiceHost>, and <xref:System.ServiceModel.Description.ServiceDescription> classes.
 
 In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).
 
@@ -32,7 +32,7 @@ public interface IServiceDescriptionCalculator
 }
 ```
 
-The implementation code for `GetServiceDescriptionInfo` uses the <xref:System.ServiceModel.Description.ServiceDescription> to list the service endpoints. Because service endpoints can have relative addresses, it first lists the base addresses for the service. To get all of this information, the code obtains its operation context using <xref:System.ServiceModel.OperationContext.Current%2A>. The <xref:System.ServiceModel.ServiceHost> and its <xref:System.ServiceModel.Description.ServiceDescription> object are retrieved from the operation context. To list the base endpoints for the service, the code iterates through the service host's <xref:System.ServiceModel.ServiceHostBase.BaseAddresses%2A> collection. To list the service endpoints for the service, the code iterates through the service description's endpoints collection.
+The implementation code for `GetServiceDescriptionInfo` uses the <xref:System.ServiceModel.Description.ServiceDescription> to list the service endpoints. Because service endpoints can have relative addresses, it first lists the base addresses for the service. To get all of this information, the code obtains its operation context using <xref:System.ServiceModel.OperationContext.Current*>. The <xref:System.ServiceModel.ServiceHost> and its <xref:System.ServiceModel.Description.ServiceDescription> object are retrieved from the operation context. To list the base endpoints for the service, the code iterates through the service host's <xref:System.ServiceModel.ServiceHostBase.BaseAddresses*> collection. To list the service endpoints for the service, the code iterates through the service description's endpoints collection.
 
 ```csharp
 public string GetServiceDescriptionInfo()

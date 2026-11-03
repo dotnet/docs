@@ -14,19 +14,19 @@ ms.assetid: 53a3b505-4b27-444b-b079-0eb84a97cfd8
 
 In the .NET Framework, types have a concept of *default values*. For example, for any reference type the default value is `null`, and for an integer type it is zero. It is occasionally desirable to omit a data member from serialized data when it is set to its default value. Because the member has a default value, an actual value need not be serialized; this has a performance advantage.  
   
- To omit a member from serialized data, set the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> property of the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to `false` (the default is `true`).  
+ To omit a member from serialized data, set the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue> property of the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to `false` (the default is `true`).  
   
 > [!NOTE]
-> You should set the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> property to `false` if there is a specific need to do so, such as for interoperability or data size reduction.  
+> You should set the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue> property to `false` if there is a specific need to do so, such as for interoperability or data size reduction.  
   
 ## Example  
 
- The following code has several members with the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> set to `false`.  
+ The following code has several members with the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue> set to `false`.  
   
  [!code-csharp[DataMemberAttribute#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/datamemberattribute/cs/overview.cs#4)]
  [!code-vb[DataMemberAttribute#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/datamemberattribute/vb/overview.vb#4)]  
   
- If an instance of this class is serialized, the result is as follows: `employeeName` and `employeeID` is serialized. The null value for `employeeName` and the zero value for `employeeID` is explicitly part of the serialized data. However, the `position`, `salary`, and `bonus` members are not serialized. Finally, `targetSalary` is serialized as usual, even though the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> property is set to `false`, because 57800 does not match the .NET default value for an integer, which is zero.  
+ If an instance of this class is serialized, the result is as follows: `employeeName` and `employeeID` is serialized. The null value for `employeeName` and the zero value for `employeeID` is explicitly part of the serialized data. However, the `position`, `salary`, and `bonus` members are not serialized. Finally, `targetSalary` is serialized as usual, even though the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue> property is set to `false`, because 57800 does not match the .NET default value for an integer, which is zero.  
   
 ### XML Representation  
 
@@ -44,19 +44,19 @@ In the .NET Framework, types have a concept of *default values*. For example, fo
   
 ### Interaction with IsRequired  
 
- As discussed in [Data Contract Versioning](data-contract-versioning.md), the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute has an <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> property (the default is `false`). The property indicates whether a given data member must be present in the serialized data when it is being deserialized. If `IsRequired` is set to `true`, (which indicates that a value must be present) and <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> is set to `false` (indicating that the value must not be present if it is set to its default value), default values for this data member cannot be serialized because the results would be contradictory. If such a data member is set to its default value (usually `null` or zero) and a serialization is attempted, a <xref:System.Runtime.Serialization.SerializationException> is thrown.  
+ As discussed in [Data Contract Versioning](data-contract-versioning.md), the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute has an <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired> property (the default is `false`). The property indicates whether a given data member must be present in the serialized data when it is being deserialized. If `IsRequired` is set to `true`, (which indicates that a value must be present) and <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue> is set to `false` (indicating that the value must not be present if it is set to its default value), default values for this data member cannot be serialized because the results would be contradictory. If such a data member is set to its default value (usually `null` or zero) and a serialization is attempted, a <xref:System.Runtime.Serialization.SerializationException> is thrown.  
   
 ### Schema Representation  
 
  The details of the XML Schema definition language (XSD) schema representation of data members when the `EmitDefaultValue` property is set to `false` are discussed in [Data Contract Schema Reference](data-contract-schema-reference.md). However, the following is a brief overview:  
   
-- When the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> is set to `false`, it is represented in the schema as an annotation specific to Windows Communication Foundation (WCF). There is no interoperable way to represent this information. In particular, the "default" attribute in the schema is not used for this purpose, the `minOccurs` attribute is affected only by the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> setting, and the `nillable` attribute is affected only by the type of the data member.  
+- When the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue> is set to `false`, it is represented in the schema as an annotation specific to Windows Communication Foundation (WCF). There is no interoperable way to represent this information. In particular, the "default" attribute in the schema is not used for this purpose, the `minOccurs` attribute is affected only by the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired> setting, and the `nillable` attribute is affected only by the type of the data member.  
   
 - The actual default value to use is not present in the schema. It is up to the receiving endpoint to appropriately interpret a missing element.  
   
- On schema import, the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> property is automatically set to `false` whenever the WCF-specific annotation mentioned previously is detected. It is also set to `false` for reference types that have the `nillable` property set to `false` to support specific interoperability scenarios that commonly occur when consuming ASP.NET Web services.  
+ On schema import, the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue> property is automatically set to `false` whenever the WCF-specific annotation mentioned previously is detected. It is also set to `false` for reference types that have the `nillable` property set to `false` to support specific interoperability scenarios that commonly occur when consuming ASP.NET Web services.  
   
 ## See also
 
-- <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A>
+- <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue>
 - <xref:System.Runtime.Serialization.DataMemberAttribute>

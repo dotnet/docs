@@ -7,15 +7,15 @@ f1_keywords:
 ---
 # SYSLIB0054: Thread.VolatileRead and Thread.VolatileWrite are obsolete
 
-All overloads of the <xref:System.Threading.Thread.VolatileRead%2A?displayProperty=nameWithType> and <xref:System.Threading.Thread.VolatileWrite%2A?displayProperty=nameWithType> methods are obsolete, starting in .NET 9. Calling them in code generates warning `SYSLIB0054` at compile time.
+All overloads of the <xref:System.Threading.Thread.VolatileRead*?displayProperty=nameWithType> and <xref:System.Threading.Thread.VolatileWrite*?displayProperty=nameWithType> methods are obsolete, starting in .NET 9. Calling them in code generates warning `SYSLIB0054` at compile time.
 
 ## Reason for obsoletion
 
-The .NET Framework implementation of the 64-bit overloads of the <xref:System.Threading.Thread.VolatileRead%2A?displayProperty=nameWithType> and <xref:System.Threading.Thread.VolatileWrite%2A?displayProperty=nameWithType> methods had incorrect atomicity. In .NET (Core), the implementation was changed to delegate to the <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> and <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType>, respectively, which provide proper acquire/release semantics. In addition, the methods in the <xref:System.Threading.Thread> class don't include an overload that accepts a Boolean argument, whereas the <xref:System.Threading.Volatile> methods do. The methods were obsoleted to encourage use of the <xref:System.Threading.Volatile> methods.
+The .NET Framework implementation of the 64-bit overloads of the <xref:System.Threading.Thread.VolatileRead*?displayProperty=nameWithType> and <xref:System.Threading.Thread.VolatileWrite*?displayProperty=nameWithType> methods had incorrect atomicity. In .NET (Core), the implementation was changed to delegate to the <xref:System.Threading.Volatile.Read*?displayProperty=nameWithType> and <xref:System.Threading.Volatile.Write*?displayProperty=nameWithType>, respectively, which provide proper acquire/release semantics. In addition, the methods in the <xref:System.Threading.Thread> class don't include an overload that accepts a Boolean argument, whereas the <xref:System.Threading.Volatile> methods do. The methods were obsoleted to encourage use of the <xref:System.Threading.Volatile> methods.
 
 ## Workaround
 
-Call <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> or <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType> instead.
+Call <xref:System.Threading.Volatile.Read*?displayProperty=nameWithType> or <xref:System.Threading.Volatile.Write*?displayProperty=nameWithType> instead.
 
 ## Suppress a warning
 

@@ -10,14 +10,14 @@ helpviewer_keywords:
   - "add element for <sharedListeners>"
 ms.assetid: 1595e1bc-2492-421f-8384-7f382eb8eb57
 ---
-# `<add>` Element for \<sharedListeners>
+# `<add>` element for `<sharedListeners>`
 
-Adds a listener to the `sharedListeners` collection. `sharedListeners` is a collection of listeners that any [\<source>](source-element.md) or [\<trace>](trace-element.md) can reference.  By default, listeners in the `sharedListeners` collection are not placed in a `Listeners` collection. They must be added by name to the [\<source>](source-element.md) or [\<trace>](trace-element.md). It is not possible to get the listeners in the `sharedListeners` collection in code at run time.
+Adds a listener to the `sharedListeners` collection. `sharedListeners` is a collection of listeners that any [\<source>](source-element.md) or [\<trace>](trace-element.md) can reference.  By default, listeners in the `sharedListeners` collection are not placed in a `Listeners` collection. They must be added by name to the [\<source>](source-element.md) or [\<trace>](trace-element.md). It is not possible to get the listeners in the `sharedListeners` collection in code at runtime.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<sharedListeners>**](sharedlisteners-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<system.diagnostics>`](system-diagnostics-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<sharedListeners>`](sharedlisteners-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<add>`
 
 ## Syntax
 
@@ -67,7 +67,7 @@ Adds a listener to the `sharedListeners` collection. `sharedListeners` is a coll
 
 |Trace listener class|initializeData attribute value|
 |--------------------------|------------------------------------|
-|<xref:System.Diagnostics.ConsoleTraceListener>|The `useErrorStream` value for the <xref:System.Diagnostics.ConsoleTraceListener.%23ctor%2A> constructor.  Set the `initializeData` attribute to "`true`" to write trace and debug output to the standard error stream; set it to "`false`" to write to the standard output stream.|
+|<xref:System.Diagnostics.ConsoleTraceListener>|The `useErrorStream` value for the <xref:System.Diagnostics.ConsoleTraceListener.%23ctor*> constructor.  Set the `initializeData` attribute to "`true`" to write trace and debug output to the standard error stream; set it to "`false`" to write to the standard output stream.|
 |<xref:System.Diagnostics.DelimitedListTraceListener>|The name of the file the <xref:System.Diagnostics.DelimitedListTraceListener> writes to.|
 |<xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType>|The name of an existing event log source.|
 |<xref:System.Diagnostics.EventSchemaTraceListener?displayProperty=nameWithType>|The name of the file that the <xref:System.Diagnostics.EventSchemaTraceListener> writes to.|

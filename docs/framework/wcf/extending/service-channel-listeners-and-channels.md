@@ -43,8 +43,8 @@ message = UdpConstants.MessageEncoder.ReadMessage(
 );
 ```
 
-Because the same datagram channel represents messages that arrive from a number of sources, the `UdpChannelListener` is a singleton listener. There is at most one active <xref:System.ServiceModel.Channels.IChannel> associated with this listener at a time. The sample generates another one only if a channel that is returned by the <xref:System.ServiceModel.Channels.ChannelListenerBase%601.AcceptChannel%2A> method is subsequently disposed. When a message is received, it's enqueued into this singleton channel.
+Because the same datagram channel represents messages that arrive from a number of sources, the `UdpChannelListener` is a singleton listener. There is at most one active <xref:System.ServiceModel.Channels.IChannel> associated with this listener at a time. The sample generates another one only if a channel that is returned by the <xref:System.ServiceModel.Channels.ChannelListenerBase`1.AcceptChannel*> method is subsequently disposed. When a message is received, it's enqueued into this singleton channel.
 
 ### UdpInputChannel
 
-The `UdpInputChannel` class implements <xref:System.ServiceModel.Channels.IInputChannel>. It consists of a queue of incoming messages that is populated by the `UdpChannelListener`'s socket. These messages are dequeued by the <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> method.
+The `UdpInputChannel` class implements <xref:System.ServiceModel.Channels.IInputChannel>. It consists of a queue of incoming messages that is populated by the `UdpChannelListener`'s socket. These messages are dequeued by the <xref:System.ServiceModel.Channels.IInputChannel.Receive*> method.

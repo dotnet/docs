@@ -22,7 +22,7 @@ One of the primary functions of a <xref:System.Data.DataRelation> is to allow na
 
  Notice that when the `DataRelation` is created for the `Customers` and `Orders` tables, no value is specified for the `createConstraints` flag (the default is **true**). This assumes that all the rows in the `Orders` table have a `CustomerID` value that exists in the parent `Customers` table. If a `CustomerID` exists in the `Orders` table that does not exist in the `Customers` table, a <xref:System.Data.ForeignKeyConstraint> causes an exception to be thrown.
 
- When the child column might contain values that the parent column does not contain, set the `createConstraints` flag to `false` when adding the **DataRelation**. In the example, the `createConstraints` flag is set to `false` for the `DataRelation` between the `Orders` table and the `OrderDetails` table. This enables the application to return all the records from the `OrderDetails` table and only a subset of records from the `Orders` table without generating a run-time exception. The expanded sample generates output in the following format.
+ When the child column might contain values that the parent column does not contain, set the `createConstraints` flag to `false` when adding the **DataRelation**. In the example, the `createConstraints` flag is set to `false` for the `DataRelation` between the `Orders` table and the `OrderDetails` table. This enables the application to return all the records from the `OrderDetails` table and only a subset of records from the `Orders` table without generating a runtime exception. The expanded sample generates output in the following format.
 
 ```output
 Customer ID: NORTS

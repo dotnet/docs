@@ -21,22 +21,22 @@ The following paragraphs describe the differences between the Standard Query Ope
 
 ### Concat
 
-The <xref:System.Linq.Enumerable.Concat%2A> method is defined for ordered multisets where the order of the receiver and the order of the argument are the same. <xref:System.Linq.Enumerable.Concat%2A> works as `UNION ALL` over the multisets followed by the common order.
+The <xref:System.Linq.Enumerable.Concat*> method is defined for ordered multisets where the order of the receiver and the order of the argument are the same. <xref:System.Linq.Enumerable.Concat*> works as `UNION ALL` over the multisets followed by the common order.
 
-The final step is ordering in SQL before results are produced. <xref:System.Linq.Enumerable.Concat%2A> does not preserve the order of its arguments. To ensure appropriate ordering, you must explicitly order the results of <xref:System.Linq.Enumerable.Concat%2A>.
+The final step is ordering in SQL before results are produced. <xref:System.Linq.Enumerable.Concat*> does not preserve the order of its arguments. To ensure appropriate ordering, you must explicitly order the results of <xref:System.Linq.Enumerable.Concat*>.
 
 ### Intersect, Except, Union
 
-The <xref:System.Linq.Enumerable.Intersect%2A> and <xref:System.Linq.Enumerable.Except%2A> methods are well defined only on sets. The semantics for multisets is undefined.
+The <xref:System.Linq.Enumerable.Intersect*> and <xref:System.Linq.Enumerable.Except*> methods are well defined only on sets. The semantics for multisets is undefined.
 
-The <xref:System.Linq.Enumerable.Union%2A> method is defined for multisets as the unordered concatenation of the multisets (effectively the result of the UNION ALL clause in SQL).
+The <xref:System.Linq.Enumerable.Union*> method is defined for multisets as the unordered concatenation of the multisets (effectively the result of the UNION ALL clause in SQL).
 
 ### Take, Skip
 
-<xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> methods are well defined only against *ordered sets*. The semantics for unordered sets or multisets are undefined.
+<xref:System.Linq.Enumerable.Take*> and <xref:System.Linq.Enumerable.Skip*> methods are well defined only against *ordered sets*. The semantics for unordered sets or multisets are undefined.
 
 > [!NOTE]
-> <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> have certain limitations when they are used in queries against SQL Server 2000. For more information, see the "Skip and Take Exceptions in SQL Server 2000" entry in [Troubleshooting](troubleshooting.md).
+> <xref:System.Linq.Enumerable.Take*> and <xref:System.Linq.Enumerable.Skip*> have certain limitations when they are used in queries against SQL Server 2000. For more information, see the "Skip and Take Exceptions in SQL Server 2000" entry in [Troubleshooting](troubleshooting.md).
 
 Because of limitations on ordering in SQL, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] tries to move the ordering of the argument of these methods to the result of the method. For example, consider the following [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] query:
 
@@ -61,9 +61,9 @@ WHERE (NOT (EXISTS(
 ORDER BY [t0].[CustomerID]
 ```
 
-It becomes obvious that all the specified ordering must be consistent when <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> are chained together. Otherwise, the results are undefined.
+It becomes obvious that all the specified ordering must be consistent when <xref:System.Linq.Enumerable.Take*> and <xref:System.Linq.Enumerable.Skip*> are chained together. Otherwise, the results are undefined.
 
-Both <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> are well-defined for non-negative, constant integral arguments based on the Standard Query Operator specification.
+Both <xref:System.Linq.Enumerable.Take*> and <xref:System.Linq.Enumerable.Skip*> are well-defined for non-negative, constant integral arguments based on the Standard Query Operator specification.
 
 ### Operators with No Translation
 
@@ -71,11 +71,11 @@ The following methods are not translated by [!INCLUDE[vbtecdlinq](../../../../..
 
 |Operators|Rationale|
 |---------------|---------------|
-|<xref:System.Linq.Enumerable.TakeWhile%2A>, <xref:System.Linq.Enumerable.SkipWhile%2A>|SQL queries operate on multisets, not on sequences. `ORDER BY` must be the last clause applied to the results. For this reason, there is no general-purpose translation for these two methods.|
-|<xref:System.Linq.Enumerable.Reverse%2A>|Translation of this method is possible for an ordered set but is not currently translated by [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].|
-|<xref:System.Linq.Enumerable.Last%2A>, <xref:System.Linq.Enumerable.LastOrDefault%2A>|Translation of these methods is possible for an ordered set but is not currently translated by [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].|
-|<xref:System.Linq.Enumerable.ElementAt%2A>, <xref:System.Linq.Enumerable.ElementAtOrDefault%2A>|SQL queries operate on multisets, not on indexable sequences.|
-|<xref:System.Linq.Enumerable.DefaultIfEmpty%2A> (overload with default arg)|In general, a default value cannot be specified for an arbitrary tuple. Null values for tuples are possible in some cases through outer joins.|
+|<xref:System.Linq.Enumerable.TakeWhile*>, <xref:System.Linq.Enumerable.SkipWhile*>|SQL queries operate on multisets, not on sequences. `ORDER BY` must be the last clause applied to the results. For this reason, there is no general-purpose translation for these two methods.|
+|<xref:System.Linq.Enumerable.Reverse*>|Translation of this method is possible for an ordered set but is not currently translated by [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].|
+|<xref:System.Linq.Enumerable.Last*>, <xref:System.Linq.Enumerable.LastOrDefault*>|Translation of these methods is possible for an ordered set but is not currently translated by [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].|
+|<xref:System.Linq.Enumerable.ElementAt*>, <xref:System.Linq.Enumerable.ElementAtOrDefault*>|SQL queries operate on multisets, not on indexable sequences.|
+|<xref:System.Linq.Enumerable.DefaultIfEmpty*> (overload with default arg)|In general, a default value cannot be specified for an arbitrary tuple. Null values for tuples are possible in some cases through outer joins.|
 
 ## Expression Translation
 
@@ -89,15 +89,15 @@ The value of `null` in collation is defined by SQL Server. [!INCLUDE[vbtecdlinq]
 
 ### Aggregates
 
-The Standard Query Operator aggregate method <xref:System.Linq.Enumerable.Sum%2A> evaluates to zero for an empty sequence or for a sequence that contains only nulls. In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], the semantics of SQL are left unchanged, and <xref:System.Linq.Enumerable.Sum%2A> evaluates to `null` instead of zero for an empty sequence or for a sequence that contains only nulls.
+The Standard Query Operator aggregate method <xref:System.Linq.Enumerable.Sum*> evaluates to zero for an empty sequence or for a sequence that contains only nulls. In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], the semantics of SQL are left unchanged, and <xref:System.Linq.Enumerable.Sum*> evaluates to `null` instead of zero for an empty sequence or for a sequence that contains only nulls.
 
-SQL limitations on intermediate results apply to aggregates in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]. The <xref:System.Linq.Enumerable.Sum%2A> of 32-bit integer quantities is not computed by using 64-bit results. Overflow might occur for a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translation of <xref:System.Linq.Enumerable.Sum%2A>, even if the Standard Query Operator implementation does not cause an overflow for the corresponding in-memory sequence.
+SQL limitations on intermediate results apply to aggregates in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]. The <xref:System.Linq.Enumerable.Sum*> of 32-bit integer quantities is not computed by using 64-bit results. Overflow might occur for a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translation of <xref:System.Linq.Enumerable.Sum*>, even if the Standard Query Operator implementation does not cause an overflow for the corresponding in-memory sequence.
 
-Likewise, the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translation of <xref:System.Linq.Enumerable.Average%2A> of integer values is computed as an `integer`, not as a `double`.
+Likewise, the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translation of <xref:System.Linq.Enumerable.Average*> of integer values is computed as an `integer`, not as a `double`.
 
 ### Entity Arguments
 
-[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] enables entity types to be used in the <xref:System.Linq.Enumerable.GroupBy%2A> and <xref:System.Linq.Enumerable.OrderBy%2A> methods. In the translation of these operators, the use of an argument of a type is considered to be the equivalent to specifying all members of that type. For example, the following code is equivalent:
+[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] enables entity types to be used in the <xref:System.Linq.Enumerable.GroupBy*> and <xref:System.Linq.Enumerable.OrderBy*> methods. In the translation of these operators, the use of an argument of a type is considered to be the equivalent to specifying all members of that type. For example, the following code is equivalent:
 
 [!code-csharp[DLinqSQOTranslation#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSQOTranslation/cs/Program.cs#2)]
 [!code-vb[DLinqSQOTranslation#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSQOTranslation/vb/Module1.vb#2)]
@@ -106,15 +106,15 @@ Likewise, the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)
 
 Equality of arguments is required in the implementation of the following methods:
 
-- <xref:System.Linq.Enumerable.Contains%2A>
+- <xref:System.Linq.Enumerable.Contains*>
 
-- <xref:System.Linq.Enumerable.Skip%2A>
+- <xref:System.Linq.Enumerable.Skip*>
 
-- <xref:System.Linq.Enumerable.Union%2A>
+- <xref:System.Linq.Enumerable.Union*>
 
-- <xref:System.Linq.Enumerable.Intersect%2A>
+- <xref:System.Linq.Enumerable.Intersect*>
 
-- <xref:System.Linq.Enumerable.Except%2A>
+- <xref:System.Linq.Enumerable.Except*>
 
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports equality and comparison for *flat* arguments, but not for arguments that are or contain sequences. A flat argument is a type that can be mapped to a SQL row. A projection of one or more entity types that can be statically determined not to contain a sequence is considered a flat argument.
 
@@ -223,7 +223,7 @@ SQL Server 2000 (through SP4) binder has some idiosyncrasies that are triggered 
 
 ### Skip and Take Operators
 
-<xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> have certain limitations when they are used in queries against SQL Server 2000. For more information, see the "Skip and Take Exceptions in SQL Server 2000" entry in [Troubleshooting](troubleshooting.md).
+<xref:System.Linq.Enumerable.Take*> and <xref:System.Linq.Enumerable.Skip*> have certain limitations when they are used in queries against SQL Server 2000. For more information, see the "Skip and Take Exceptions in SQL Server 2000" entry in [Troubleshooting](troubleshooting.md).
 
 ## Object Materialization
 
@@ -237,19 +237,19 @@ Materialization creates CLR objects from rows that are returned by one or more S
 
   - Type casts in projections
 
-- Methods that follow the <xref:System.Linq.Enumerable.AsEnumerable%2A> method are *executed locally*. This method does not cause immediate execution.
+- Methods that follow the <xref:System.Linq.Enumerable.AsEnumerable*> method are *executed locally*. This method does not cause immediate execution.
 
 - You can use a `struct` as the return type of a query result or as a member of the result type. Entities are required to be classes. Anonymous types are materialized as class instances, but named structs (non-entities) can be used in projection.
 
-- A member of the return type of a query result can be of type <xref:System.Linq.IQueryable%601>. It is materialized as a local collection.
+- A member of the return type of a query result can be of type <xref:System.Linq.IQueryable`1>. It is materialized as a local collection.
 
 - The following methods cause the *immediate materialization* of the sequence that the methods are applied to:
 
-  - <xref:System.Linq.Enumerable.ToList%2A>
+  - <xref:System.Linq.Enumerable.ToList*>
 
-  - <xref:System.Linq.Enumerable.ToDictionary%2A>
+  - <xref:System.Linq.Enumerable.ToDictionary*>
 
-  - <xref:System.Linq.Enumerable.ToArray%2A>
+  - <xref:System.Linq.Enumerable.ToArray*>
 
 ## See also
 

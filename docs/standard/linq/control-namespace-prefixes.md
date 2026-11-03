@@ -18,7 +18,7 @@ Another reason is that you want users to edit the XML document manually, and you
 
 To control namespace prefixes, you insert attributes that declare namespaces. If you declare the namespaces with specific prefixes, LINQ to XML will attempt to honor the namespace prefixes when serializing.
 
-To create an attribute that declares a namespace with a prefix, you create an attribute where the namespace of the name of the attribute is <xref:System.Xml.Linq.XNamespace.Xmlns%2A>, and the name of the attribute is the namespace prefix. The value of the attribute is the URI of the namespace.
+To create an attribute that declares a namespace with a prefix, you create an attribute where the namespace of the name of the attribute is <xref:System.Xml.Linq.XNamespace.Xmlns*>, and the name of the attribute is the namespace prefix. The value of the attribute is the URI of the namespace.
 
 ## Example: Create two namespaces that have prefixes
 

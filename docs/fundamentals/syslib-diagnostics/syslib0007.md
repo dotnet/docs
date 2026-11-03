@@ -7,7 +7,7 @@ f1_keywords:
 ---
 # SYSLIB0007: Default implementations of cryptography algorithms not supported
 
-The cryptographic configuration system in .NET Framework doesn't allow for proper cryptographic agility and isn't present in .NET Core and .NET 5+. .NET's backward-compatibility requirements also prohibit the framework from updating certain cryptographic APIs to keep up with advances in cryptography. As a result, the following APIs are marked obsolete, starting in .NET 5. Use of these APIs generates warning `SYSLIB0007` at compile time and a <xref:System.PlatformNotSupportedException> at run time.
+The cryptographic configuration system in .NET Framework doesn't allow for proper cryptographic agility and isn't present in .NET Core and .NET 5+. .NET's backward-compatibility requirements also prohibit the framework from updating certain cryptographic APIs to keep up with advances in cryptography. As a result, the following APIs are marked obsolete, starting in .NET 5. Use of these APIs generates warning `SYSLIB0007` at compile time and a <xref:System.PlatformNotSupportedException> at runtime.
 
 - <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create?displayProperty=fullName>
 - <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=fullName>

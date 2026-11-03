@@ -35,7 +35,7 @@ Starting with Windows Vista, Windows enables users to change the dots per inch (
 
  Suppose you design a dialog box with a button at coordinates (100, 48). When this dialog box is displayed at the default 96 dpi, the button is located at physical coordinates of (100, 48). At 120 dpi, it is located at physical coordinates of (125, 60). But the logical coordinates are the same at any dpi setting: (100, 48).
 
- Logical coordinates are important, because they make the behavior of the operating system and applications consistent regardless of the dpi setting. For example, <xref:System.Windows.Forms.Cursor.Position%2A?displayProperty=nameWithType> normally returns the logical coordinates. If you move the cursor over an element in a dialog box, the same coordinates are returned regardless of the dpi setting. If you draw a control at (100, 100), it is drawn to those logical coordinates, and will occupy the same relative position at any dpi setting.
+ Logical coordinates are important, because they make the behavior of the operating system and applications consistent regardless of the dpi setting. For example, <xref:System.Windows.Forms.Cursor.Position*?displayProperty=nameWithType> normally returns the logical coordinates. If you move the cursor over an element in a dialog box, the same coordinates are returned regardless of the dpi setting. If you draw a control at (100, 100), it is drawn to those logical coordinates, and will occupy the same relative position at any dpi setting.
 
 <a name="Scaling_in_UI_Automation_Clients"></a>
 
@@ -43,17 +43,17 @@ Starting with Windows Vista, Windows enables users to change the dots per inch (
 
  The UI Automation API does not use logical coordinates. The following methods and properties either return physical coordinates or take them as parameters.
 
-- <xref:System.Windows.Automation.AutomationElement.GetClickablePoint%2A>
+- <xref:System.Windows.Automation.AutomationElement.GetClickablePoint*>
 
-- <xref:System.Windows.Automation.AutomationElement.TryGetClickablePoint%2A>
+- <xref:System.Windows.Automation.AutomationElement.TryGetClickablePoint*>
 
 - <xref:System.Windows.Automation.AutomationElement.ClickablePointProperty>
 
-- <xref:System.Windows.Automation.AutomationElement.FromPoint%2A>
+- <xref:System.Windows.Automation.AutomationElement.FromPoint*>
 
-- <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.BoundingRectangle%2A>
+- <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.BoundingRectangle*>
 
- By default, a UI Automation client application running in a non-96- dpi environment will not be able to obtain correct results from these methods and properties. For example, because the cursor position is in logical coordinates, the client cannot simply pass these coordinates to <xref:System.Windows.Automation.AutomationElement.FromPoint%2A> to obtain the element that is under the cursor. In addition, the application will not be able to correctly place windows outside its client area.
+ By default, a UI Automation client application running in a non-96- dpi environment will not be able to obtain correct results from these methods and properties. For example, because the cursor position is in logical coordinates, the client cannot simply pass these coordinates to <xref:System.Windows.Automation.AutomationElement.FromPoint*> to obtain the element that is under the cursor. In addition, the application will not be able to correctly place windows outside its client area.
 
  The solution is in two parts.
 
@@ -70,7 +70,7 @@ Starting with Windows Vista, Windows enables users to change the dots per inch (
      [!code-vb[UIAClient_snip#185](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#185)]
 
 > [!CAUTION]
-> Do not use <xref:System.Windows.Forms.Cursor.Position%2A?displayProperty=nameWithType>. The behavior of this property outside client windows in a scaled environment is undefined.
+> Do not use <xref:System.Windows.Forms.Cursor.Position*?displayProperty=nameWithType>. The behavior of this property outside client windows in a scaled environment is undefined.
 
  If your application performs direct cross-process communication with non- dpi-aware applications, you may have convert between logical and physical coordinates by using the Win32 functions `PhysicalToLogicalPoint` and `LogicalToPhysicalPoint`.
 

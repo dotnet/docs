@@ -34,5 +34,5 @@ In most cases, no action is needed. If your code was affected by the bug, then t
 
 ## Affected APIs
 
-- <xref:System.Runtime.Serialization.DataContractSerializer.ReadObject%2A?displayProperty=fullName>
-- <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject%2A?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.DataContractSerializer.ReadObject*?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject*?displayProperty=fullName>

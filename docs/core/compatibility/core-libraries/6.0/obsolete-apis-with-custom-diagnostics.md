@@ -19,7 +19,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 | [SYSLIB0013](../../../../fundamentals/syslib-diagnostics/syslib0013.md) | <xref:System.Uri.EscapeUriString(System.String)?displayProperty=nameWithType> can corrupt the URI string in some cases. Consider using <xref:System.Uri.EscapeDataString(System.String)?displayProperty=nameWithType> for query string components instead. | Warning |
 | [SYSLIB0014](../../../../fundamentals/syslib-diagnostics/syslib0014.md) | <xref:System.Net.WebRequest>, <xref:System.Net.HttpWebRequest>, <xref:System.Net.ServicePoint>, and <xref:System.Net.WebClient> are obsolete. Use <xref:System.Net.Http.HttpClient> instead. | Warning |
 | [SYSLIB0015](../../../../fundamentals/syslib-diagnostics/syslib0015.md) | <xref:System.Runtime.CompilerServices.DisablePrivateReflectionAttribute> has no effect in .NET 6+. | Warning |
-| [SYSLIB0016](../../../../fundamentals/syslib-diagnostics/syslib0016.md) | Use the <xref:System.Drawing.Graphics.GetContextInfo%2A?displayProperty=nameWithType> overloads that accept arguments for better performance and fewer allocations. | Warning |
+| [SYSLIB0016](../../../../fundamentals/syslib-diagnostics/syslib0016.md) | Use the <xref:System.Drawing.Graphics.GetContextInfo*?displayProperty=nameWithType> overloads that accept arguments for better performance and fewer allocations. | Warning |
 | [SYSLIB0017](../../../../fundamentals/syslib-diagnostics/syslib0017.md) | Strong-name signing is not supported and throws <xref:System.PlatformNotSupportedException>. | Warning |
 | [SYSLIB0018](../../../../fundamentals/syslib-diagnostics/syslib0018.md) | Reflection-only loading is not supported and throws <xref:System.PlatformNotSupportedException>. | Warning |
 | [SYSLIB0019](../../../../fundamentals/syslib-diagnostics/syslib0019.md) | The <xref:System.Runtime.InteropServices.RuntimeEnvironment?displayProperty=nameWithType> members <xref:System.Runtime.InteropServices.RuntimeEnvironment.SystemConfigurationFile>, <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsIntPtr(System.Guid,System.Guid)>, and <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsObject(System.Guid,System.Guid)> are no longer supported and throw <xref:System.PlatformNotSupportedException>. | Warning |
@@ -78,7 +78,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 
 ### SYSLIB0018
 
-- <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=fullName>
+- <xref:System.Reflection.Assembly.ReflectionOnlyLoad*?displayProperty=fullName>
 - <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom(System.String)?displayProperty=fullName>
 - <xref:System.Type.ReflectionOnlyGetType(System.String,System.Boolean,System.Boolean)?displayProperty=fullName>
 
@@ -130,9 +130,9 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 ### SYSLIB0026
 
 - <xref:System.Security.Cryptography.X509Certificates.X509Certificate.%23ctor>
-- <xref:System.Security.Cryptography.X509Certificates.X509Certificate.Import%2A?displayProperty=nameWithType>
+- <xref:System.Security.Cryptography.X509Certificates.X509Certificate.Import*?displayProperty=nameWithType>
 - <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.%23ctor>
-- <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.Import%2A?displayProperty=nameWithType>
+- <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.Import*?displayProperty=nameWithType>
 
 ### SYSLIB0027
 

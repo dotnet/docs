@@ -40,7 +40,7 @@ The following procedures show how to define and execute a simple dynamic method 
    [!code-csharp[DynamicMethodHowTo#5](../../../samples/snippets/csharp/VS_Snippets_CLR/DynamicMethodHowTo/cs/source.cs#5)]
    [!code-vb[DynamicMethodHowTo#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/DynamicMethodHowTo/vb/source.vb#5)]
 
-1. Create an instance of the delegate (declared in step 1) that represents the dynamic method by calling the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A> method. Creating the delegate completes the method, and any further attempts to change the method — for example, adding more CIL — are ignored. The following code creates the delegate and invokes it, using a generic delegate.
+1. Create an instance of the delegate (declared in step 1) that represents the dynamic method by calling the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate*> method. Creating the delegate completes the method, and any further attempts to change the method — for example, adding more CIL — are ignored. The following code creates the delegate and invokes it, using a generic delegate.
 
    [!code-csharp[DynamicMethodHowTo#6](../../../samples/snippets/csharp/VS_Snippets_CLR/DynamicMethodHowTo/cs/source.cs#6)]
    [!code-vb[DynamicMethodHowTo#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/DynamicMethodHowTo/vb/source.vb#6)]
@@ -70,7 +70,7 @@ The following procedures show how to define and execute a simple dynamic method 
 1. Create an instance of the delegate (declared in step 1) that represents the dynamic method by calling the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%28System.Type%2CSystem.Object%29> method overload. Creating the delegate completes the method, and any further attempts to change the method&mdash;for example, adding more CIL&mdash;are ignored.
 
    > [!NOTE]
-   > You can call the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A> method multiple times to create delegates bound to other instances of the target type.
+   > You can call the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate*> method multiple times to create delegates bound to other instances of the target type.
 
    The following code binds the method to a new instance of the `Example` class whose private test field is set to 42. That is, each time the delegate is invoked the instance of `Example` is passed to the first parameter of the method.
 

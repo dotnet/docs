@@ -23,7 +23,7 @@ You can prevent a class from being instantiated by making the constructor privat
 
 For more information, see [Private Constructors](./private-constructors.md).
 
-Constructors for [struct](../../language-reference/builtin-types/struct.md) types resemble class constructors. When a struct type is instantiated with `new`, the runtime invokes a constructor. When a `struct` is set to its `default` value, the runtime initializes all memory in the struct to 0. If you declare any field initializers in a `struct` type, you must supply a parameterless constructor. For more information, see the [Struct initialization and default values](../../language-reference/builtin-types/struct.md#struct-initialization-and-default-values) section of the [Structure types](../../language-reference/builtin-types/struct.md) article.
+Constructors for [struct](../../language-reference/builtin-types/struct.md) types resemble class constructors. When a struct type is instantiated with `new`, the runtime invokes a constructor. When a `struct` is set to its `default` value, the runtime initializes all memory in the struct to 0. Beginning with C# 11, field initializers in a `struct` type run in any declared constructor, and the compiler initializes any fields that the constructor doesn't assign, so you don't need to declare a parameterless constructor. For more information, see the [Struct initialization and default values](../../language-reference/builtin-types/struct.md#struct-initialization-and-default-values) section of the [Structure types](../../language-reference/builtin-types/struct.md) article.
 
 The following code uses the parameterless constructor for <xref:System.Int32>, so that you're assured that the integer is initialized:
 

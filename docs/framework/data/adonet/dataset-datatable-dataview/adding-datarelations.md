@@ -29,7 +29,7 @@ customerOrders.Relations.Add("CustOrders",
   customerOrders.Tables["Orders"].Columns["CustID"]);
 ```
 
- A `DataRelation` also has a `Nested` property which, when set to **true**, causes the rows from the child table to be nested within the associated row from the parent table when written as XML elements using <xref:System.Data.DataSet.WriteXml%2A> . For more information, see [Using XML in a DataSet](using-xml-in-a-dataset.md).
+ A `DataRelation` also has a `Nested` property which, when set to **true**, causes the rows from the child table to be nested within the associated row from the parent table when written as XML elements using <xref:System.Data.DataSet.WriteXml*> . For more information, see [Using XML in a DataSet](using-xml-in-a-dataset.md).
 
 ## See also
 

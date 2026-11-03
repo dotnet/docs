@@ -10,7 +10,7 @@ Custom activity templates are used to customize the configuration of activities,
 
  The first procedure in this topic describes how to create a custom activity template for a **Delay** activity and the second procedure describes briefly how to make it available in a Workflow Designer to verify that the custom template works.
 
- Custom activity templates must implement the <xref:System.Activities.Presentation.IActivityTemplateFactory>. The interface has a single <xref:System.Activities.Presentation.IActivityTemplateFactory.Create%2A> method with which you can create and configure the activity instances used in the template.
+ Custom activity templates must implement the <xref:System.Activities.Presentation.IActivityTemplateFactory>. The interface has a single <xref:System.Activities.Presentation.IActivityTemplateFactory.Create*> method with which you can create and configure the activity instances used in the template.
 
 ## To create a template for the Delay activity
 

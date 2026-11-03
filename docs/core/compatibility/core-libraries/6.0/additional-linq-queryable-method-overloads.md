@@ -30,21 +30,21 @@ The new overloads were added to extend the LINQ `Queryable` API.
 
 ## Recommended action
 
-If you're a query-provider library author, ensure that your reflection code is tolerant of method overload additions. For example, use a <xref:System.Type.GetMethod%2A?displayProperty=nameWithType> overload that explicitly accepts the method's parameter types.
+If you're a query-provider library author, ensure that your reflection code is tolerant of method overload additions. For example, use a <xref:System.Type.GetMethod*?displayProperty=nameWithType> overload that explicitly accepts the method's parameter types.
 
 ## Affected APIs
 
 New overloads were added for the following <xref:System.Linq.Queryable> extension methods:
 
-- <xref:System.Linq.Queryable.ElementAt%2A?displayProperty=fullName>
-- <xref:System.Linq.Queryable.ElementAtOrDefault%2A?displayProperty=fullName>
-- <xref:System.Linq.Queryable.Take%2A?displayProperty=fullName>
-- <xref:System.Linq.Queryable.Min%2A?displayProperty=fullName>
-- <xref:System.Linq.Queryable.Max%2A?displayProperty=fullName>
-- <xref:System.Linq.Queryable.FirstOrDefault%2A?displayProperty=fullName>
-- <xref:System.Linq.Queryable.LastOrDefault%2A?displayProperty=fullName>
-- <xref:System.Linq.Queryable.SingleOrDefault%2A?displayProperty=fullName>
-- <xref:System.Linq.Queryable.Zip%2A?displayProperty=fullName>
+- <xref:System.Linq.Queryable.ElementAt*?displayProperty=fullName>
+- <xref:System.Linq.Queryable.ElementAtOrDefault*?displayProperty=fullName>
+- <xref:System.Linq.Queryable.Take*?displayProperty=fullName>
+- <xref:System.Linq.Queryable.Min*?displayProperty=fullName>
+- <xref:System.Linq.Queryable.Max*?displayProperty=fullName>
+- <xref:System.Linq.Queryable.FirstOrDefault*?displayProperty=fullName>
+- <xref:System.Linq.Queryable.LastOrDefault*?displayProperty=fullName>
+- <xref:System.Linq.Queryable.SingleOrDefault*?displayProperty=fullName>
+- <xref:System.Linq.Queryable.Zip*?displayProperty=fullName>
 
 <!--
 

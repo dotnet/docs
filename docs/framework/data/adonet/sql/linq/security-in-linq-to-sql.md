@@ -1,10 +1,14 @@
 ---
 description: "Learn more about: Security in LINQ to SQL"
 title: "Security in LINQ to SQL"
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
+ai-usage: ai-assisted
 ms.assetid: d49787f7-414e-4c71-aa33-80a5895536b1
 ---
 # Security in LINQ to SQL
+
+> [!IMPORTANT]
+> Do not use `System.Data.SqlClient` for new development. Use [Microsoft.Data.SqlClient](/sql/connect/ado-net/introduction-microsoft-data-sqlclient-namespace) for new SQL Server data-access code. The connection guidance on this page retains `System.Data.SqlClient` because .NET Framework's built-in LINQ to SQL provider requires it. Changing the connection type alone doesn't migrate LINQ to SQL.
 
 Security risks are always present when you connect to a database. Although LINQ to SQL may include some new ways to work with data in SQL Server, it does not provide any additional security mechanisms.  
   

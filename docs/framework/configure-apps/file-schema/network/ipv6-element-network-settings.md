@@ -14,10 +14,10 @@ ms.assetid: 10b79aef-327b-4718-a892-e11f55e4d169
 
 Enables Internet Protocol version 6 (IPv6) responses from obsolete members of the <xref:System.Net.Dns> class.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<settings>**](settings-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<ipv6>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<system.net>`](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<settings>`](settings-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<ipv6>`
 
 ## Syntax
 
@@ -49,7 +49,7 @@ Enables Internet Protocol version 6 (IPv6) responses from obsolete members of th
 
 ## Remarks
 
- This setting enables IPv6 support for the obsolete members of the <xref:System.Net.Dns> class: <xref:System.Net.Dns.BeginGetHostByName%2A>, <xref:System.Net.Dns.BeginResolve%2A>, <xref:System.Net.Dns.EndGetHostByName%2A>, <xref:System.Net.Dns.EndResolve%2A>, <xref:System.Net.Dns.GetHostByAddress%2A>, <xref:System.Net.Dns.GetHostByName%2A>, and <xref:System.Net.Dns.Resolve%2A>. For other members of the <xref:System.Net?displayProperty=nameWithType> namespace, IPv6 addresses may be returned if IPv6 is enabled in the operating system.
+ This setting enables IPv6 support for the obsolete members of the <xref:System.Net.Dns> class: <xref:System.Net.Dns.BeginGetHostByName*>, <xref:System.Net.Dns.BeginResolve*>, <xref:System.Net.Dns.EndGetHostByName*>, <xref:System.Net.Dns.EndResolve*>, <xref:System.Net.Dns.GetHostByAddress*>, <xref:System.Net.Dns.GetHostByName*>, and <xref:System.Net.Dns.Resolve*>. For other members of the <xref:System.Net?displayProperty=nameWithType> namespace, IPv6 addresses may be returned if IPv6 is enabled in the operating system.
 
 ## Configuration Files
 
@@ -73,5 +73,5 @@ Enables Internet Protocol version 6 (IPv6) responses from obsolete members of th
 
 - <xref:System.Net?displayProperty=nameWithType>
 - <xref:System.Net.Dns?displayProperty=nameWithType>
-- <xref:System.Net.Sockets.Socket.OSSupportsIPv6%2A?displayProperty=nameWithType>
+- <xref:System.Net.Sockets.Socket.OSSupportsIPv6*?displayProperty=nameWithType>
 - [Network Settings Schema](index.md)

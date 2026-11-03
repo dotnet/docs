@@ -12,7 +12,7 @@ ms.topic: how-to
 
 This example builds on the previous example, [Retrieve the text of the paragraphs](retrieve-text-paragraphs.md), by refactoring the concatenation of strings using a pure function that's implemented as an extension method.
 
-The previous example used the <xref:System.Linq.Enumerable.Aggregate%2A> standard query operator to concatenate multiple strings into one string. However, it's more convenient to write an extension method to do this, because the resulting query is smaller and simpler.
+The previous example used the <xref:System.Linq.Enumerable.Aggregate*> standard query operator to concatenate multiple strings into one string. However, it's more convenient to write an extension method to do this, because the resulting query is smaller and simpler.
 
 ## Example: Retrieve the paragraphs, their styles, and their text
 

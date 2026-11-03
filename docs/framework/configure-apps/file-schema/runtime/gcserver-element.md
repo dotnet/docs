@@ -14,8 +14,8 @@ ms.assetid: 8d25b80e-2581-4803-bd87-a59528e3cb03
 
 Specifies whether the common language runtime runs server garbage collection.
 
-[\<configuration>](../configuration-element.md)\
-&nbsp;&nbsp;[\<runtime>](runtime-element.md)\
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;\<gcServer>
 
 ## Syntax
@@ -55,7 +55,7 @@ None.
 
 ## Remarks
 
-The common language runtime (CLR) supports two types of garbage collection: workstation garbage collection, which is available on all systems, and server garbage collection, which is available on multiprocessor systems. Use the `gcServer` element to control the type of garbage collection the CLR performs. Use the <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType> property to determine if server garbage collection is enabled.
+The common language runtime (CLR) supports two types of garbage collection: workstation garbage collection, which is available on all systems, and server garbage collection, which is available on multiprocessor systems. Use the `gcServer` element to control the type of garbage collection the CLR performs. Use the <xref:System.Runtime.GCSettings.IsServerGC?displayProperty=nameWithType> property to determine if server garbage collection is enabled.
 
 For single-processor computers, the default workstation garbage collection should be the fastest option. Either workstation or server can be used for two-processor computers. Server garbage collection should be the fastest option for more than two processors. Most commonly, multiprocessor server systems disable server GC and use workstation GC instead when many instances of a server app run on the same machine.
 
@@ -87,7 +87,7 @@ The following example enables server garbage collection:
 ## See also
 
 - [Configure apps by using configuration files](../../index.md)
-- <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>
+- <xref:System.Runtime.GCSettings.IsServerGC?displayProperty=nameWithType>
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
 - [To disable concurrent garbage collection](gcconcurrent-element.md#to-disable-background-garbage-collection)

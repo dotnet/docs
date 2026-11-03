@@ -12,11 +12,11 @@ ms.topic: how-to
 
 To create an encoded XML document, you add an <xref:System.Xml.Linq.XDeclaration> to the XML tree, setting the encoding to the desired code page name.
 
-Any value returned by <xref:System.Text.Encoding.WebName%2A> is a valid value.
+Any value returned by <xref:System.Text.Encoding.WebName*> is a valid value.
 
-If you read an encoded document, the <xref:System.Xml.Linq.XDeclaration.Encoding%2A> property will be set to the code page name.
+If you read an encoded document, the <xref:System.Xml.Linq.XDeclaration.Encoding> property will be set to the code page name.
 
-If you set <xref:System.Xml.Linq.XDeclaration.Encoding%2A> to a valid code page name, LINQ to XML will serialize with the specified encoding.
+If you set <xref:System.Xml.Linq.XDeclaration.Encoding*> to a valid code page name, LINQ to XML will serialize with the specified encoding.
 
 ## Example: Create two documents that have different encoding and identify the encoding.
 
@@ -112,4 +112,4 @@ Encoding of loaded document is:utf-16
 
 ## See also
 
-- <xref:System.Xml.Linq.XDeclaration.Encoding%2A?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XDeclaration.Encoding*?displayProperty=nameWithType>

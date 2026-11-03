@@ -14,10 +14,10 @@ ms.assetid: c59c9494-149b-4ce6-b38d-371f896ae85c
 
 Contains mappings of classes to friendly names.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<mscorlib>**](mscorlib-element-for-cryptography-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptographySettings>**](cryptographysettings-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<cryptoNameMapping>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<mscorlib>`](mscorlib-element-for-cryptography-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<cryptographySettings>`](cryptographysettings-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<cryptoNameMapping>`
 
 ## Syntax
 
@@ -52,7 +52,7 @@ Contains mappings of classes to friendly names.
 
 ## Example
 
- The following example shows how to use the `<cryptoNameMapping>` element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> method to return a `MyCryptoRSAClass` object.
+ The following example shows how to use the `<cryptoNameMapping>` element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName*?displayProperty=nameWithType> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create*> method to return a `MyCryptoRSAClass` object.
 
 ```xml
 <configuration>

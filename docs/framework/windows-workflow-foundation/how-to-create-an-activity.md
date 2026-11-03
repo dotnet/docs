@@ -38,7 +38,7 @@ Activities are the core unit of behavior in WF. The execution logic of an activi
      [!code-vb[CFX_WF_GettingStarted#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/readint.vb#1)]
 
     > [!NOTE]
-    > The `ReadInt` activity derives from <xref:System.Activities.NativeActivity%601> instead of <xref:System.Activities.CodeActivity>, which is the default for the code activity template. <xref:System.Activities.CodeActivity%601> can be used if the activity provides a single result, which is exposed through the <xref:System.Activities.Activity%601.Result%2A> argument, but <xref:System.Activities.CodeActivity%601> does not support the use of bookmarks, so <xref:System.Activities.NativeActivity%601> is used.
+    > The `ReadInt` activity derives from <xref:System.Activities.NativeActivity`1> instead of <xref:System.Activities.CodeActivity>, which is the default for the code activity template. <xref:System.Activities.CodeActivity`1> can be used if the activity provides a single result, which is exposed through the <xref:System.Activities.Activity`1.Result*> argument, but <xref:System.Activities.CodeActivity`1> does not support the use of bookmarks, so <xref:System.Activities.NativeActivity`1> is used.
 
 ## Create the Prompt activity
 
@@ -97,7 +97,7 @@ For instructions on how to create a workflow by using these activities, see the 
 ## See also
 
 - <xref:System.Activities.CodeActivity>
-- <xref:System.Activities.NativeActivity%601>
+- <xref:System.Activities.NativeActivity`1>
 - [Designing and Implementing Custom Activities](designing-and-implementing-custom-activities.md)
 - [Getting Started Tutorial](getting-started-tutorial.md)
 - [How to: Create a Workflow](how-to-create-a-workflow.md)

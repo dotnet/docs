@@ -29,8 +29,8 @@ ms.assetid: ac178408-1485-436f-8d3e-eee3bf80cb24
 
 |Required member|Member type|Notes|
 |---------------------|-----------------|-----------|
-|<xref:System.Windows.Automation.Provider.ITableItemProvider.GetColumnHeaderItems%2A>|Method|None|
-|<xref:System.Windows.Automation.Provider.ITableItemProvider.GetRowHeaderItems%2A>|Method|None|
+|<xref:System.Windows.Automation.Provider.ITableItemProvider.GetColumnHeaderItems*>|Method|None|
+|<xref:System.Windows.Automation.Provider.ITableItemProvider.GetRowHeaderItems*>|Method|None|
 
  This control pattern has no associated properties or events.
 

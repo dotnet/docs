@@ -31,7 +31,7 @@ The example creates a data file called *Test.data* in the current directory, cre
 - <xref:System.IO.BinaryReader>
 - <xref:System.IO.BinaryWriter>
 - <xref:System.IO.FileStream>
-- <xref:System.IO.FileStream.Seek%2A?displayProperty=nameWithType>
+- <xref:System.IO.FileStream.Seek*?displayProperty=nameWithType>
 - <xref:System.IO.SeekOrigin>
 - [How to: Enumerate directories and files](how-to-enumerate-directories-and-files.md)
 - [How to: Open and append to a log file](how-to-open-and-append-to-a-log-file.md)

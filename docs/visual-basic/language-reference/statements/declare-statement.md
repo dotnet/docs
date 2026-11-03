@@ -142,7 +142,7 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute> provides an alterna
 
 ## See also
 
-- <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>
+- <xref:Microsoft.VisualBasic.ErrObject.LastDllError*>
 - [Imports Statement (.NET Namespace and Type)](imports-statement-net-namespace-and-type.md)
 - [AddressOf Operator](../operators/addressof-operator.md)
 - [Function Statement](function-statement.md)

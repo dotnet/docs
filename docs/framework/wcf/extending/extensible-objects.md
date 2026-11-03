@@ -12,11 +12,11 @@ The extensible object pattern is used to either extend existing runtime classes 
 
 ## The IExtensibleObject\<T> Pattern
 
-There are three interfaces in the extensible object pattern: <xref:System.ServiceModel.IExtensibleObject%601>, <xref:System.ServiceModel.IExtension%601>, and <xref:System.ServiceModel.IExtensionCollection%601>.
+There are three interfaces in the extensible object pattern: <xref:System.ServiceModel.IExtensibleObject`1>, <xref:System.ServiceModel.IExtension`1>, and <xref:System.ServiceModel.IExtensionCollection`1>.
 
-The <xref:System.ServiceModel.IExtensibleObject%601> interface is implemented by types that allow <xref:System.ServiceModel.IExtension%601> objects to customize their functionality.
+The <xref:System.ServiceModel.IExtensibleObject`1> interface is implemented by types that allow <xref:System.ServiceModel.IExtension`1> objects to customize their functionality.
 
-Extensible objects allow dynamic aggregation of <xref:System.ServiceModel.IExtension%601> objects. <xref:System.ServiceModel.IExtension%601> objects are characterized by the following interface:
+Extensible objects allow dynamic aggregation of <xref:System.ServiceModel.IExtension`1> objects. <xref:System.ServiceModel.IExtension`1> objects are characterized by the following interface:
 
 ```csharp
 public interface IExtension<T>
@@ -27,23 +27,23 @@ where T : IExtensibleObject<T>
 }
 ```
 
-The type restriction guarantees that extensions can only be defined for classes that are <xref:System.ServiceModel.IExtensibleObject%601>. <xref:System.ServiceModel.IExtension%601.Attach%2A> and <xref:System.ServiceModel.IExtension%601.Detach%2A> provide notification of aggregation or disaggregation.
+The type restriction guarantees that extensions can only be defined for classes that are <xref:System.ServiceModel.IExtensibleObject`1>. <xref:System.ServiceModel.IExtension`1.Attach*> and <xref:System.ServiceModel.IExtension`1.Detach*> provide notification of aggregation or disaggregation.
 
 It is valid for implementations to restrict when they may be added and removed from an owner. For example, you can disallow removal entirely, disallowing adding or removing extensions when the owner or extension are in a certain state, disallow adding to multiple owners concurrently, or allow only a single addition followed by a single remove.
 
-<xref:System.ServiceModel.IExtension%601> does not imply any interactions with other standard managed interfaces. Specifically, the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method on the owner object does not normally detach its extensions.
+<xref:System.ServiceModel.IExtension`1> does not imply any interactions with other standard managed interfaces. Specifically, the <xref:System.IDisposable.Dispose*?displayProperty=nameWithType> method on the owner object does not normally detach its extensions.
 
-When an extension is added to the collection, <xref:System.ServiceModel.IExtension%601.Attach%2A> is called before it goes into the collection. When an extension is removed from the collection, <xref:System.ServiceModel.IExtension%601.Detach%2A> is called after it is removed. This means (assuming appropriate synchronization) an extension can count on only being found in the collection while it is between <xref:System.ServiceModel.IExtension%601.Attach%2A> and <xref:System.ServiceModel.IExtension%601.Detach%2A>.
+When an extension is added to the collection, <xref:System.ServiceModel.IExtension`1.Attach*> is called before it goes into the collection. When an extension is removed from the collection, <xref:System.ServiceModel.IExtension`1.Detach*> is called after it is removed. This means (assuming appropriate synchronization) an extension can count on only being found in the collection while it is between <xref:System.ServiceModel.IExtension`1.Attach*> and <xref:System.ServiceModel.IExtension`1.Detach*>.
 
-The object passed to <xref:System.ServiceModel.IExtensionCollection%601.FindAll%2A> or <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> need not be <xref:System.ServiceModel.IExtension%601> (for example, you can pass any object), but the returned extension is an <xref:System.ServiceModel.IExtension%601>.
+The object passed to <xref:System.ServiceModel.IExtensionCollection`1.FindAll*> or <xref:System.ServiceModel.IExtensionCollection`1.Find*> need not be <xref:System.ServiceModel.IExtension`1> (for example, you can pass any object), but the returned extension is an <xref:System.ServiceModel.IExtension`1>.
 
-If no extension in the collection is an <xref:System.ServiceModel.IExtension%601>, <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> returns null, and <xref:System.ServiceModel.IExtensionCollection%601.FindAll%2A> returns an empty collection. If multiple extensions implement <xref:System.ServiceModel.IExtension%601>, <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> returns one of them. The value returned from <xref:System.ServiceModel.IExtensionCollection%601.FindAll%2A> is a snapshot.
+If no extension in the collection is an <xref:System.ServiceModel.IExtension`1>, <xref:System.ServiceModel.IExtensionCollection`1.Find*> returns null, and <xref:System.ServiceModel.IExtensionCollection`1.FindAll*> returns an empty collection. If multiple extensions implement <xref:System.ServiceModel.IExtension`1>, <xref:System.ServiceModel.IExtensionCollection`1.Find*> returns one of them. The value returned from <xref:System.ServiceModel.IExtensionCollection`1.FindAll*> is a snapshot.
 
-There are two main scenarios. The first scenario uses the <xref:System.ServiceModel.IExtensibleObject%601.Extensions%2A> property as a type-based dictionary to insert state on an object to enable another component to look it up using the type.
+There are two main scenarios. The first scenario uses the <xref:System.ServiceModel.IExtensibleObject`1.Extensions> property as a type-based dictionary to insert state on an object to enable another component to look it up using the type.
 
-The second scenario uses the <xref:System.ServiceModel.IExtension%601.Attach%2A> and <xref:System.ServiceModel.IExtension%601.Detach%2A> properties to enable an object to participate in custom behavior, such as registering for events, watching state transitions, and so on.
+The second scenario uses the <xref:System.ServiceModel.IExtension`1.Attach*> and <xref:System.ServiceModel.IExtension`1.Detach*> methods to enable an object to participate in custom behavior, such as registering for events, watching state transitions, and so on.
 
-The <xref:System.ServiceModel.IExtensionCollection%601> interface is a collection of the <xref:System.ServiceModel.IExtension%601> objects that allow for retrieving the <xref:System.ServiceModel.IExtension%601> by its type. <xref:System.ServiceModel.IExtensionCollection%601.Find%2A?displayProperty=nameWithType> returns the most recently added object that is an <xref:System.ServiceModel.IExtension%601> of that type.
+The <xref:System.ServiceModel.IExtensionCollection`1> interface is a collection of the <xref:System.ServiceModel.IExtension`1> objects that allow for retrieving the <xref:System.ServiceModel.IExtension`1> by its type. <xref:System.ServiceModel.IExtensionCollection`1.Find*?displayProperty=nameWithType> returns the most recently added object that is an <xref:System.ServiceModel.IExtension`1> of that type.
 
 ### Extensible Objects in Windows Communication Foundation
 
@@ -63,6 +63,6 @@ The following code example shows the use of a simple extension to track <xref:Sy
 
 ## See also
 
-- <xref:System.ServiceModel.IExtensibleObject%601>
-- <xref:System.ServiceModel.IExtension%601>
-- <xref:System.ServiceModel.IExtensionCollection%601>
+- <xref:System.ServiceModel.IExtensibleObject`1>
+- <xref:System.ServiceModel.IExtension`1>
+- <xref:System.ServiceModel.IExtensionCollection`1>

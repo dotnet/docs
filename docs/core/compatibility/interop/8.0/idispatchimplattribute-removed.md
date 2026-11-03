@@ -5,11 +5,11 @@ ms.date: 08/22/2023
 ---
 # IDispatchImplAttribute API is removed
 
-The <xref:System.Runtime.InteropServices.IDispatchImplAttribute> implementation has officially been removed from .NET. This type was only discoverable at run time and its removal has no impact on visible API surface area. However, if an assembly targeting .NET Framework uses this type and is loaded in .NET 8 or a later version, the runtime will throw a <xref:System.TypeLoadException>.
+The <xref:System.Runtime.InteropServices.IDispatchImplAttribute> implementation has officially been removed from .NET. This type was only discoverable at runtime and its removal has no impact on visible API surface area. However, if an assembly targeting .NET Framework uses this type and is loaded in .NET 8 or a later version, the runtime will throw a <xref:System.TypeLoadException>.
 
 ## Previous behavior
 
-The <xref:System.Runtime.InteropServices.IDispatchImplAttribute> type could be found at run time, but none of the documented semantics of the deprecated attribute applied.
+The <xref:System.Runtime.InteropServices.IDispatchImplAttribute> type could be found at runtime, but none of the documented semantics of the deprecated attribute applied.
 
 ## New behavior
 

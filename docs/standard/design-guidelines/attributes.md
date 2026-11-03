@@ -17,9 +17,9 @@ ms.assetid: ee0038ef-b247-4747-a650-3c5c5cd58d8b
 
  Attributes can have one or more properties that carry additional data related to the attribute. For example, `ObsoleteAttribute` could carry additional information about the release in which a type or a member got deprecated and the description of the new APIs replacing the obsolete API.
 
- Some properties of an attribute must be specified when the attribute is applied. These are referred to as the required properties or required arguments, because they are represented as positional constructor parameters. For example, the <xref:System.Diagnostics.ConditionalAttribute.ConditionString%2A> property of the <xref:System.Diagnostics.ConditionalAttribute> is a required property.
+ Some properties of an attribute must be specified when the attribute is applied. These are referred to as the required properties or required arguments, because they are represented as positional constructor parameters. For example, the <xref:System.Diagnostics.ConditionalAttribute.ConditionString> property of the <xref:System.Diagnostics.ConditionalAttribute> is a required property.
 
- Properties that do not necessarily have to be specified when the attribute is applied are called optional properties (or optional arguments). They are represented by settable properties. Compilers provide special syntax to set these properties when an attribute is applied. For example, the <xref:System.AttributeUsageAttribute.Inherited%2A?displayProperty=nameWithType> property represents an optional argument.
+ Properties that do not necessarily have to be specified when the attribute is applied are called optional properties (or optional arguments). They are represented by settable properties. Compilers provide special syntax to set these properties when an attribute is applied. For example, the <xref:System.AttributeUsageAttribute.Inherited?displayProperty=nameWithType> property represents an optional argument.
 
  ✔️ DO name custom attribute classes with the suffix "Attribute."
 

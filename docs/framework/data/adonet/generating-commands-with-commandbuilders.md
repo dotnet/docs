@@ -9,7 +9,7 @@ ms.assetid: 6e3fb8b5-373b-4f9e-ab03-a22693df8e91
 ---
 # Generating Commands with CommandBuilders
 
-When the `SelectCommand` property is dynamically specified at run time, such as through a query tool that takes a textual command from the user, you may not be able to specify the appropriate `InsertCommand`, `UpdateCommand`, or `DeleteCommand` at design time. If your <xref:System.Data.DataTable> maps to or is generated from a single database table, you can take advantage of the <xref:System.Data.Common.DbCommandBuilder> object to automatically generate the `DeleteCommand`, `InsertCommand`, and `UpdateCommand` of the <xref:System.Data.Common.DbDataAdapter>.
+When the `SelectCommand` property is dynamically specified at runtime, such as through a query tool that takes a textual command from the user, you may not be able to specify the appropriate `InsertCommand`, `UpdateCommand`, or `DeleteCommand` at design time. If your <xref:System.Data.DataTable> maps to or is generated from a single database table, you can take advantage of the <xref:System.Data.Common.DbCommandBuilder> object to automatically generate the `DeleteCommand`, `InsertCommand`, and `UpdateCommand` of the <xref:System.Data.Common.DbDataAdapter>.
 
  As a minimum requirement, you must set the `SelectCommand` property in order for automatic command generation to work. The table schema retrieved by the `SelectCommand` property determines the syntax of the automatically generated INSERT, UPDATE, and DELETE statements.
 
@@ -29,7 +29,7 @@ When the `SelectCommand` property is dynamically specified at run time, such as 
 
 |Command|Rule|
 |-------------|----------|
-|`InsertCommand`|Inserts a row at the data source for all rows in the table with a <xref:System.Data.DataRow.RowState%2A> of <xref:System.Data.DataRowState.Added>. Inserts values for all columns that are updateable (but not columns such as identities, expressions, or timestamps).|
+|`InsertCommand`|Inserts a row at the data source for all rows in the table with a <xref:System.Data.DataRow.RowState*> of <xref:System.Data.DataRowState.Added>. Inserts values for all columns that are updateable (but not columns such as identities, expressions, or timestamps).|
 |`UpdateCommand`|Updates rows at the data source for all rows in the table with a `RowState` of <xref:System.Data.DataRowState.Modified>. Updates the values of all columns except for columns that are not updateable, such as identities or expressions. Updates all rows where the column values at the data source match the primary key column values of the row, and where the remaining columns at the data source match the original values of the row. For more information, see "Optimistic Concurrency Model for Updates and Deletes," later in this topic.|
 |`DeleteCommand`|Deletes rows at the data source for all rows in the table with a `RowState` of <xref:System.Data.DataRowState.Deleted>. Deletes all rows where the column values match the primary key column values of the row, and where the remaining columns at the data source match the original values of the row. For more information, see "Optimistic Concurrency Model for Updates and Deletes," later in this topic.|
 

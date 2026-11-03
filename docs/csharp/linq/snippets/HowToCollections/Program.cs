@@ -270,4 +270,7 @@ static void ArghArrayList()
         Console.WriteLine(s.LastName + ": " + s.ExamScores[0]);
     // </QueryArrayList>
 }
-public record Student(string FirstName, string LastName, int[] ExamScores, int ID=0);
+
+// <StudentDefinition>
+public record Student(string FirstName, string LastName, int[] ExamScores, int ID = 0);
+// </StudentDefinition>

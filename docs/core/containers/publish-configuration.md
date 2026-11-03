@@ -2,12 +2,39 @@
 title: Containerize a .NET app reference
 description: Reference material for containerizing a .NET app and configuring the container image.
 ms.topic: reference
-ms.date: 04/22/2025
+ms.date: 08/04/2026
+ai-usage: ai-assisted
 ---
 
 # Containerize a .NET app reference
 
 In this reference article, you learn how to configure the container image generated when you publish a .NET app as a container. This article covers the various properties that you can set to control the image, the execution environment, and the commands that are run when the container starts.
+
+The following MSBuild properties and items are available for container configuration:
+
+| Property or item | Description |
+|---|---|
+| [`ContainerAppCommand`](#containerappcommand) | The logical entry point of the app. |
+| [`ContainerAppCommandArgs`](#containerappcommandargs) | Logically required arguments for the app. |
+| [`ContainerAppCommandInstruction`](#containerappcommandinstruction) | Controls how the entrypoint and command are combined. |
+| [`ContainerArchiveOutputPath`](#containerarchiveoutputpath) | Path to write the container image as a _tar.gz_ archive. |
+| [`ContainerBaseImage`](#containerbaseimage) | The base image to use for the container. |
+| [`ContainerDefaultArgs`](#containerdefaultargs) | User-overridable default arguments for the app. |
+| [`ContainerEntrypoint`](#containerentrypoint) | (**Deprecated**) The binary run when the container starts. |
+| [`ContainerEntrypointArgs`](#containerentrypointargs) | (**Deprecated**) Default arguments for `ContainerEntrypoint`. |
+| [`ContainerEnvironmentVariable`](#containerenvironmentvariable) | Environment variables added to the container. |
+| [`ContainerFamily`](#containerfamily) | The family variant of the base image, for example `alpine`. |
+| [`ContainerImageFormat`](#containerimageformat) | The image format: `Docker` or `OCI`. |
+| [`ContainerImageTag`](#containerimagetag) | The tag or tags generated for the image. |
+| [`ContainerLabel`](#containerlabel) | Metadata labels added to the container image. |
+| [`ContainerPort`](#containerport) | TCP or UDP ports exposed by the container. |
+| [`ContainerPublishInParallel`](#containerpublishinparallel) | Controls whether multi-RID publishing runs in parallel. |
+| [`ContainerRegistry`](#containerregistry) | The destination registry for the published image. |
+| [`ContainerRepository`](#containerrepository) | The name of the container image. |
+| [`ContainerRuntimeIdentifier(s)`](#containerruntimeidentifiers) | The OS and architecture for the container. |
+| [`ContainerUser`](#containeruser) | The default user the container runs as. |
+| [`ContainerWorkingDirectory`](#containerworkingdirectory) | The working directory inside the container. |
+| [`LocalRegistry`](#localregistry) | The local container tool to use, such as Docker, Podman, `wslc`, or Apple's `container` CLI. |
 
 ## Configure container properties
 
@@ -44,7 +71,7 @@ If you set a value here, you should set the fully qualified name of the image to
 </PropertyGroup>
 ```
 
-With .NET SDK version 8.0.200, the `ContainerBaseImage` inference is improved to optimize the size and security:
+Starting with .NET SDK version 8.0.200, the `ContainerBaseImage` inference is improved to optimize the size and security:
 
 - Targeting the `linux-musl-x64` or `linux-musl-arm64` Runtime Identifiers, automatically chooses the `alpine` image variants to ensure your project runs:
   - If the project uses `PublishAot=true` then the `nightly/runtime-deps` `jammy-chiseled-aot` variant of the base image for best size and security.
@@ -90,6 +117,9 @@ To specify multiple container runtime identifiers for multi-architecture images,
 > The `ContainerRuntimeIdentifiers` property must be a subset of the `RuntimeIdentifiers` property. If this condition isn't met, critical parts of the build pipeline might fail.
 >
 > Setting multiple `ContainerRuntimeIdentifiers` results in a multi-architecture image being created. For more information, see [Multi-architecture images](#multi-architecture-images).
+
+> [!NOTE]
+> Starting with .NET 8, Microsoft's container images no longer include Windows variants in the manifest list. To target Windows, use a specific image tag as your `ContainerBaseImage`, for example `mcr.microsoft.com/dotnet/aspnet:8.0-nanoserver-ltsc2022`.
 
 For more information regarding the runtime identifiers supported by .NET, see [RID catalog](../rid-catalog.md).
 
@@ -142,7 +172,7 @@ The container image tag property controls the tags that are generated for the im
 
 Tags are often used to refer to different versions of an app, but they can also refer to different operating system distributions, or even different configurations.
 
-Starting with .NET 8, when a tag isn't provided the default is `latest`.
+Starting with .NET 8, when a tag isn't provided the default is `latest`. In prior versions, the default tag was the `Version` of the project.
 
 To override the default, specify either of the following properties:
 
@@ -188,7 +218,7 @@ Tags can only contain up to 127 alphanumeric characters, periods, underscores, a
 
 ### `ContainerLabel`
 
-The container label adds a metadata label to the container. Labels are often used to store version and authoring metadata for use by security scanners and other infrastructure tools. You can specify any number of container labels.
+The container label adds a metadata label to the container. Labels have no impact on the container at runtime, but are often used to store version and authoring metadata for use by security scanners and other infrastructure tools. You can specify any number of container labels.
 
 The `ContainerLabel` node has two attributes:
 
@@ -223,6 +253,8 @@ The following properties control runtime-specific execution behavior and multi-a
 - [`ContainerAppCommandArgs`](#containerappcommandargs)
 - [`ContainerAppCommandInstruction`](#containerappcommandinstruction)
 - [`ContainerDefaultArgs`](#containerdefaultargs)
+- [`ContainerEntrypoint`](#containerentrypoint) (deprecated)
+- [`ContainerEntrypointArgs`](#containerentrypointargs) (deprecated)
 - [`ContainerEnvironmentVariable`](#containerenvironmentvariable)
 - [`ContainerPort`](#containerport)
 - [`ContainerPublishInParallel`](#containerpublishinparallel)
@@ -302,9 +334,47 @@ The `ContainerDefaultArgs` configuration has a single `Include` property, which 
 </ItemGroup>
 ```
 
+### `ContainerEntrypoint`
+
+> [!NOTE]
+> This item is deprecated as of .NET 8. Use [`ContainerAppCommand`](#containerappcommand) instead, with [`ContainerAppCommandInstruction`](#containerappcommandinstruction) set to `Entrypoint` or `DefaultArgs`.
+
+The container entrypoint controls the binary that runs by default when the container starts. By default, for builds that create an executable binary, that binary is set as the `ContainerEntrypoint`. For builds that don't create an executable binary, `dotnet path/to/application.dll` is used.
+
+The `ContainerEntrypoint` configuration has a single `Include` property, which represents the command, option, or argument to use in the entrypoint command:
+
+```xml
+<ItemGroup>
+  <ContainerEntrypoint Include="dotnet" />
+  <ContainerEntrypoint Include="ef" />
+
+  <!-- This shorthand syntax means the same thing, note the semicolon separating the tokens. -->
+  <ContainerEntrypoint Include="dotnet;ef" />
+</ItemGroup>
+```
+
+### `ContainerEntrypointArgs`
+
+> [!NOTE]
+> This item is deprecated as of .NET 8. Use [`ContainerAppCommandArgs`](#containerappcommandargs) instead, with [`ContainerAppCommandInstruction`](#containerappcommandinstruction) set to `Entrypoint` or `DefaultArgs`.
+
+The container entrypoint args item controls the default arguments provided to the `ContainerEntrypoint`. Use this when the `ContainerEntrypoint` is a program the user might want to use on its own.
+
+The `ContainerEntrypointArgs` configuration has a single `Include` property, which represents the option or argument to apply to the `ContainerEntrypoint` command:
+
+```xml
+<ItemGroup>
+  <ContainerEntrypointArgs Include="database" />
+  <ContainerEntrypointArgs Include="update" />
+
+  <!-- This is the shorthand syntax for the same idea -->
+  <ContainerEntrypointArgs Include="database;update" />
+</ItemGroup>
+```
+
 ### `ContainerEnvironmentVariable`
 
-The container environment variable node allows you to add environment variables to the container. Environment variables are accessible to the app running in the container immediately, and are often used to change the run-time behavior of the running app.
+The container environment variable node allows you to add environment variables to the container. Environment variables are accessible to the app running in the container immediately, and are often used to change the runtime behavior of the running app.
 
 The `ContainerEnvironmentVariable` node has two attributes:
 
@@ -453,18 +523,22 @@ For notes on working with these registries, see the [registry-specific notes](ht
 
 ### `LocalRegistry`
 
-The `LocalRegistry` MSBuild property specifies the local container tooling to use when pushing to local sources. Supported values are `docker` and `podman`. If not set, the SDK determines the tool based on availability:
+The `LocalRegistry` MSBuild property specifies the local container tooling to use when pushing to local sources. Supported values are `Docker`, `Podman`, `Wslc`, and `MacOSContainer`.
 
+If not set, the SDK determines the tool based on availability. Starting in .NET 11, the SDK prefers platform-native tools before Docker and Podman:
+
+- On Windows, if `wslc` exists and its service runs, `wslc` is used.
+- On macOS, if Apple's `container` CLI exists and its service runs, `container` is used.
 - If both `docker` and `podman` exist, and `docker` is an alias for `podman`, then `podman` is used.
 - If only `docker` exists, `docker` is used.
 - If only `podman` exists, `podman` is used.
-- If neither exists, an error is thrown.
+- If no supported local tool exists, an error is thrown.
 
 To explicitly set the local registry tool, use the following configuration:
 
 ```xml
 <PropertyGroup>
-  <LocalRegistry>podman</LocalRegistry>
+  <LocalRegistry>Podman</LocalRegistry>
 </PropertyGroup>
 ```
 

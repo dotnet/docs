@@ -14,10 +14,10 @@ ms.assetid: 10318725-9666-4d65-ab61-b94c64e59f13
 
 Adds a new proxy module to the application.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<defaultProxy>**](defaultproxy-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<module>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<system.net>`](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<defaultProxy>`](defaultproxy-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<module>`
 
 ## Syntax
 
@@ -35,7 +35,7 @@ Adds a new proxy module to the application.
 
 |**Attribute**|**Description**|
 |-------------------|---------------------|
-|`type`|The fully qualified type name (indicated by the <xref:System.Type.FullName%2A> property) and the assembly name (indicated by the <xref:System.Reflection.Assembly.FullName%2A> property), separated by a comma, that implements the proxy.|
+|`type`|The fully qualified type name (indicated by the <xref:System.Type.FullName> property) and the assembly name (indicated by the <xref:System.Reflection.Assembly.FullName> property), separated by a comma, that implements the proxy.|
 
 ### Child Elements
 

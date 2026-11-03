@@ -10,11 +10,11 @@ ms.topic: how-to
 
 # How to find a single descendant using the Descendants method (LINQ to XML)
 
-You can use the <xref:System.Xml.Linq.XContainer.Descendants%2A> axis method to find a single uniquely-named descendant element. This technique is especially useful when you want to find a particular descendant with a specific name, and may be faster and easier to use than navigating the XML tree.
+You can use the <xref:System.Xml.Linq.XContainer.Descendants*> axis method to find a single uniquely-named descendant element. This technique is especially useful when you want to find a particular descendant with a specific name, and may be faster and easier to use than navigating the XML tree.
 
 ## Example: Use XContainer.Descendants to find a single uniquely-named descendant element
 
-This example uses the <xref:System.Linq.Enumerable.First%2A> standard query operator.
+This example uses the <xref:System.Linq.Enumerable.First*> standard query operator.
 
 ```csharp
 XElement root = XElement.Parse(@"<Root>

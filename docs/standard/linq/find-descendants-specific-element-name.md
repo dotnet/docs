@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # How to find descendants with a specific element name (LINQ to XML)
 
-Sometimes you want to find all descendants with a specific name. You could write code to iterate through all of the descendants, but it's easier to use the <xref:System.Xml.Linq.XContainer.Descendants%2A> axis.
+Sometimes you want to find all descendants with a specific name. You could write code to iterate through all of the descendants, but it's easier to use the <xref:System.Xml.Linq.XContainer.Descendants*> axis.
 
 ## Example: Find descendants with a specific element name
 
@@ -162,4 +162,4 @@ Some text that's broken up into multiple segments.
 
 ## See also
 
-- <xref:System.Xml.Linq.XContainer.Descendants%2A>
+- <xref:System.Xml.Linq.XContainer.Descendants*>

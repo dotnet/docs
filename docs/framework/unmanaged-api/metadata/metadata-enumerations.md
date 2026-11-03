@@ -15,7 +15,7 @@ This section describes the unmanaged enumerations that the metadata API uses.
 ## In This Section
 
 [AssemblyFlags enumeration](assemblyflags-enumeration.md)\
-Contains values that describe the run-time features of an assembly.
+Contains values that describe the runtime features of an assembly.
 
  [CeeSectionAttr Enumeration](ceesectionattr-enumeration.md)\
  Provides values that specify the attributes of a section for use by the [ICeeGen](iceegen-interface.md) interface.

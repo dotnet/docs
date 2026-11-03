@@ -105,7 +105,7 @@ For a service with a BasicHttpContextBinding endpoint, *Svcutil.exe* generates a
 |/wrapped|Controls whether special-casing is used for document-literal styled documents with wrapped parameters. Use the **/wrapped** switch with the [Service Model Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) tool to specify normal casing.|
 
 > [!NOTE]
-> When the service binding is one of the system-provided bindings (see [System-Provided Bindings](system-provided-bindings.md)), and the <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A> property is set to either `None` or `Sign`, Svcutil generates a configuration file using the [\<customBinding>](../configure-apps/file-schema/wcf/custombinding.md) element instead of the expected system-provided element. For example, if the service uses the `<wsHttpBinding>` element with the `ProtectionLevel` set to `Sign`, the generated configuration has `<customBinding>` in the bindings section instead of `<wsHttpBinding>`. For more information about the protection level, see [Understanding Protection Level](understanding-protection-level.md).
+> When the service binding is one of the system-provided bindings (see [System-Provided Bindings](system-provided-bindings.md)), and the <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel> property is set to either `None` or `Sign`, Svcutil generates a configuration file using the [\<customBinding>](../configure-apps/file-schema/wcf/custombinding.md) element instead of the expected system-provided element. For example, if the service uses the `<wsHttpBinding>` element with the `ProtectionLevel` set to `Sign`, the generated configuration has `<customBinding>` in the bindings section instead of `<wsHttpBinding>`. For more information about the protection level, see [Understanding Protection Level](understanding-protection-level.md).
 
 ### Metadata Export
 
@@ -165,7 +165,7 @@ By default, Svcutil.exe uses the bindings defined in the <xref:System.ServiceMod
 
 ### XmlSerializer Type Generation
 
-Services and client applications that use data types that are serializable using the <xref:System.Xml.Serialization.XmlSerializer> generate and compile serialization code for those data types at run time, which can result in slow start-up performance.
+Services and client applications that use data types that are serializable using the <xref:System.Xml.Serialization.XmlSerializer> generate and compile serialization code for those data types at runtime, which can result in slow start-up performance.
 
 > [!NOTE]
 > Pre-generated serialization code can only be used in client applications and not in services.

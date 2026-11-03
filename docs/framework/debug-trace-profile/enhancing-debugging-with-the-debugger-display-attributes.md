@@ -23,7 +23,7 @@ Debugger display attributes allow the developer of the type, who specifies and b
 
 ## Using the DebuggerDisplayAttribute
 
-The <xref:System.Diagnostics.DebuggerDisplayAttribute.%23ctor%2A> constructor has a single argument: a string to be displayed in the value column for instances of the type. This string can contain braces ({ and }). The text within a pair of braces is evaluated as an expression. For example, the following C# code causes "Count = 4" to be displayed when the plus sign (+) is selected to expand the debugger display for an instance of `MyHashtable`.
+The <xref:System.Diagnostics.DebuggerDisplayAttribute.%23ctor*> constructor has a single argument: a string to be displayed in the value column for instances of the type. This string can contain braces ({ and }). The text within a pair of braces is evaluated as an expression. For example, the following C# code causes "Count = 4" to be displayed when the plus sign (+) is selected to expand the debugger display for an instance of `MyHashtable`.
 
 ```csharp
 [DebuggerDisplay("Count = {count}")]
@@ -59,7 +59,7 @@ public static string y = "Test String";
 
 ## Using the DebuggerTypeProxy
 
- Use the <xref:System.Diagnostics.DebuggerTypeProxyAttribute> attribute when you need to significantly and fundamentally change the debugging view of a type, but not change the type itself. The <xref:System.Diagnostics.DebuggerTypeProxyAttribute> attribute is used to specify a display proxy for a type, allowing a developer to tailor the view for the type.  This attribute, like the <xref:System.Diagnostics.DebuggerDisplayAttribute>, can be used at the assembly level, in which case the <xref:System.Diagnostics.DebuggerTypeProxyAttribute.Target%2A> property specifies the type for which the proxy will be used. The recommended usage is that this attribute specifies a private nested type that occurs within the type to which the attribute is applied.  An expression evaluator that supports type viewers checks for this attribute when a type is displayed. If the attribute is found, the expression evaluator substitutes the display proxy type for the type the attribute is applied to.
+ Use the <xref:System.Diagnostics.DebuggerTypeProxyAttribute> attribute when you need to significantly and fundamentally change the debugging view of a type, but not change the type itself. The <xref:System.Diagnostics.DebuggerTypeProxyAttribute> attribute is used to specify a display proxy for a type, allowing a developer to tailor the view for the type.  This attribute, like the <xref:System.Diagnostics.DebuggerDisplayAttribute>, can be used at the assembly level, in which case the <xref:System.Diagnostics.DebuggerTypeProxyAttribute.Target> property specifies the type for which the proxy will be used. The recommended usage is that this attribute specifies a private nested type that occurs within the type to which the attribute is applied.  An expression evaluator that supports type viewers checks for this attribute when a type is displayed. If the attribute is found, the expression evaluator substitutes the display proxy type for the type the attribute is applied to.
 
  When the <xref:System.Diagnostics.DebuggerTypeProxyAttribute> is present, the debugger variable window displays only the public members of the proxy type. Private members are not displayed. The behavior of the data window is not changed by attribute-enhanced views.
 

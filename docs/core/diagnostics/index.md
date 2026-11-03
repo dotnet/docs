@@ -31,7 +31,7 @@ Instrumentation is code that is added to a software project to record what it is
 
 [Logging](logging-tracing.md) is a technique where code is instrumented to produce a log, a record of interesting events that occurred while the program was running. Often a baseline set of log events are configured on by default and more extensive logging can be enabled on-demand to diagnose particular problems. Performance overhead is variable depending on how much data is being logged.
 
-For most cases, whether adding logging to an existing project or creating a new project, the [ILogger infrastructure](../extensions/logging.md) is a good default choice. `ILogger` supports fast structured logging, flexible configuration, and a collection of [common sinks](../extensions/logging-providers.md#built-in-logging-providers) including the console, which is what you see when running an ASP.NET app. Additionally, the `ILogger` interface can also serve as a facade over many [third party logging implementations](../extensions/logging-providers.md#third-party-logging-providers) that offer rich functionality and extensibility.
+For most cases, whether adding logging to an existing project or creating a new project, the [ILogger infrastructure](../extensions/logging/overview.md) is a good default choice. `ILogger` supports fast structured logging, flexible configuration, and a collection of [common sinks](../extensions/logging/providers.md#built-in-logging-providers) including the console, which is what you see when running an ASP.NET app. Additionally, the `ILogger` interface can also serve as a facade over many [third party logging implementations](../extensions/logging/providers.md#third-party-logging-providers) that offer rich functionality and extensibility.
 
 ### Metrics
 
@@ -48,7 +48,7 @@ There are multiple ways that the instrumentation data can be egressed from the a
 - [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started-console/README.md) - a cross-platform, vendor-neutral standard for collecting and exporting telemetry
 - [.NET CLI tools](./tools-overview.md) such as [dotnet-counters](./dotnet-counters.md)
 - [dotnet-monitor](./dotnet-monitor.md) - an agent for collecting traces and telemetry
-- Third-party libraries or app code can read the information from the <xref:System.Diagnostics.Metrics?displayProperty=nameWithType>, <xref:Microsoft.Extensions.Logging.ILogger%601>, and <xref:System.Diagnostics.Activity?displayProperty=nameWithType> APIs.
+- Third-party libraries or app code can read the information from the <xref:System.Diagnostics.Metrics?displayProperty=nameWithType>, <xref:Microsoft.Extensions.Logging.ILogger`1>, and <xref:System.Diagnostics.Activity?displayProperty=nameWithType> APIs.
 
 ## Specialized diagnostics
 

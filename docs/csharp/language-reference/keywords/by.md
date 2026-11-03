@@ -1,23 +1,22 @@
 ---
 description: "by contextual keyword - C# Reference"
 title: "by contextual keyword"
-ms.date: 07/20/2015
+ms.date: 01/21/2026
 f1_keywords: 
   - "by"
   - "by_CSharpKeyword"
 helpviewer_keywords: 
   - "by keyword [C#]"
-ms.assetid: efe6f0e3-be40-4df2-a144-c7db968ae052
 ---
 # by (C# Reference)
 
-The `by` contextual keyword is used in the `group` clause in a query expression to specify how the returned items should be grouped. For more information, see [group clause](./group-clause.md).
+Use the `by` contextual keyword in the `group` clause of a query expression to specify how to group the returned items. For more information, see [group clause](./group-clause.md).
 
-## Example
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
-The following example shows the use of the `by` contextual keyword in a `group` clause to specify that the students should be grouped according to the first letter of the last name of each student.
+The following example shows how to use the `by` contextual keyword in a `group` clause to group students by the first letter of each student's last name.
 
-[!code-csharp[csrefKeywordsContextual#10](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsContextual/CS/csrefKeywordsContextual.cs#10)]
+:::code language="csharp" source="./snippets/csrefKeywordsContextual.cs" id="10":::
 
 ## See also
 

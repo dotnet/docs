@@ -61,7 +61,7 @@ Available starting in: .NET 9.
 | ---- | --------------- | ----------- | ----------- |
 | `dotnet.gc.heap.total_allocated` | <xref:System.Diagnostics.Metrics.Counter`1> | `By` | The *approximate* number of bytes allocated on the managed GC heap since the process started. The returned value does not include any native allocations. |
 
-This metric reports the same values as calling <xref:System.GC.GetTotalAllocatedBytes%2A?displayProperty=nameWithType>. For more information about the .NET GC, see the [.NET garbage collection guide](../../standard/garbage-collection/fundamentals.md).
+This metric reports the same values as calling <xref:System.GC.GetTotalAllocatedBytes*?displayProperty=nameWithType>. For more information about the .NET GC, see the [.NET garbage collection guide](../../standard/garbage-collection/fundamentals.md).
 
 Available starting in: .NET 9.
 
@@ -88,7 +88,7 @@ Available starting in: .NET 9.
 The .NET GC divides the heap into generations. In addition to the standard numbered generations, the GC also puts some objects into two special generations:
 
 - Large object heap (LOH) stores .NET objects that are very large compared to typical objects.
-- Pinned object heap (POH) stores objects allocated using the <xref:System.GC.AllocateArray%2A?displayProperty=nameWithType> API when the `pinned` parameter is true.
+- Pinned object heap (POH) stores objects allocated using the <xref:System.GC.AllocateArray*?displayProperty=nameWithType> API when the `pinned` parameter is true.
 
 Both of these special generations are collected during `gen2` GC collections. For more information about the .NET GC, see the [.NET Garbage collection guide](../../standard/garbage-collection/fundamentals.md).
 
@@ -130,7 +130,7 @@ Available starting in: .NET 9.
 | -------- | --------------- | ----------- | -------------- |
 | `dotnet.jit.compiled_il.size` | <xref:System.Diagnostics.Metrics.Counter`1> | `By` | Count of bytes of intermediate language that have been compiled since the process started. |
 
-This metric reports the same values as calling <xref:System.Runtime.JitInfo.GetCompiledILBytes%2A?displayProperty=nameWithType>.
+This metric reports the same values as calling <xref:System.Runtime.JitInfo.GetCompiledILBytes*?displayProperty=nameWithType>.
 
 When you build a .NET app, managed code is initially compiled from a high-level language like C#, VB, or F# into [Intermediate language](../../standard/managed-code.md#intermediate-language--execution) (IL). Then when the program is run, the .NET just-in-time (JIT) compiler converts the IL into machine code.
 
@@ -144,7 +144,7 @@ Available starting in: .NET 9.
 | -------- | --------------- | ----------- | -------------- |
 | `dotnet.jit.compiled_methods` | <xref:System.Diagnostics.Metrics.Counter`1> | `{method}` | The number of times the JIT compiler (re)compiled methods since the process started. |
 
-This metric reports the same values as calling <xref:System.Runtime.JitInfo.GetCompiledMethodCount%2A?displayProperty=nameWithType>.
+This metric reports the same values as calling <xref:System.Runtime.JitInfo.GetCompiledMethodCount*?displayProperty=nameWithType>.
 
 When you build a .NET app, managed code is initially compiled from a high-level language like C#, VB, or F# into [Intermediate language](../../standard/managed-code.md#intermediate-language--execution) (IL). Then when the program is run, the .NET just-in-time (JIT) compiler converts the IL into machine code.
 
@@ -158,7 +158,7 @@ Available starting in: .NET 9.
 | -------- | --------------- | ----------- | -------------- |
 | `dotnet.jit.compilation.time` | <xref:System.Diagnostics.Metrics.Counter`1> | `s` | The amount of time the JIT compiler has spent compiling methods since the process started. |
 
-This metric reports the same values as calling <xref:System.Runtime.JitInfo.GetCompilationTime%2A?displayProperty=nameWithType>.
+This metric reports the same values as calling <xref:System.Runtime.JitInfo.GetCompilationTime*?displayProperty=nameWithType>.
 
 When you build a .NET app, managed code is initially compiled from a high-level language like C#, VB, or F# into [Intermediate language](../../standard/managed-code.md#intermediate-language--execution) (IL). Then when the program is run, the .NET just-in-time (JIT) compiler converts the IL into machine code.
 
@@ -210,7 +210,7 @@ Available starting in: .NET 9.
 
 This metric reports the same values as calling <xref:System.Threading.Monitor.LockContentionCount?displayProperty=nameWithType>.
 
-.NET supports using any managed object as a lock, either with APIs such as <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> or with the [lock statement](../../csharp/language-reference/statements/lock.md). If one thread already holds a lock while a second thread tries to acquire it, this is called _lock contention_.
+.NET supports using any managed object as a lock, either with APIs such as <xref:System.Threading.Monitor.Enter*?displayProperty=nameWithType> or with the [lock statement](../../csharp/language-reference/statements/lock.md). If one thread already holds a lock while a second thread tries to acquire it, this is called _lock contention_.
 
 Available starting in: .NET 9.
 

@@ -57,7 +57,7 @@ Orleans is a reliable and scalable framework for building distributed applicatio
 The preceding diagram shows that the client is the server-side Blazor app. It's composed of several services that consume a corresponding Orleans grain. Each service pairs with an Orleans grain as follows:
 
 - `InventoryService`: Consumes the `IInventoryGrain` where inventory is partitioned by product category.
-- `ProductService`: Consumes the `IProductGrain` where a single product is tethered to a single grain instance by `Id`.
+- `ProductService`: Consumes the `IProductGrain` where a single product is tethered to a single grain instance by <xref:Orleans.IdAttribute>.
 - `ShoppingCartService`: Consumes the `IShoppingCartGrain` where a single user only has a single shopping cart instance regardless of consuming clients.
 
 The solution contains three projects:
@@ -138,7 +138,7 @@ Once you configure Azure App Service with virtual network (VNet) integration and
 - Which IP address other hosts in your virtual network can use to contact a given app instance; and
 - Which ports on that IP address will be routed to that app instance
 
-The `WEBSITE_PRIVATE_IP` variable specifies an IP routable from the VNet, but not necessarily an IP address the app instance can directly bind to. For this reason, instruct the host to bind to all internal addresses by passing `listenOnAnyHostAddress: true` to the `ConfigureEndpoints` method call. The following example configures an `ISiloBuilder` instance to consume the injected environment variables and listen on the correct interfaces:
+The `WEBSITE_PRIVATE_IP` variable specifies an IP routable from the VNet, but not necessarily an IP address the app instance can directly bind to. For this reason, instruct the host to bind to all internal addresses by passing `listenOnAnyHostAddress: true` to the `ConfigureEndpoints` method call. The following example configures an <xref:Orleans.Hosting.ISiloBuilder> instance to consume the injected environment variables and listen on the correct interfaces:
 
 ```csharp
 var endpointAddress = IPAddress.Parse(builder.Configuration["WEBSITE_PRIVATE_IP"]!);
@@ -557,7 +557,7 @@ As source code is updated and changes are `push`ed to the `main` branch of the r
 
 In addition to the visualizer from the Bicep extension, the Azure portal resource group page looks similar to the following example after provisioning and deploying the application:
 
-:::image type="content" source="media/shopping-cart-resources.png" alt-text="Azure Portal: Orleans shopping cart sample app resources." lightbox="media/shopping-cart-resources.png":::
+:::image type="content" source="media/shopping-cart-resources.png" alt-text="Azure portal: Orleans shopping cart sample app resources." lightbox="media/shopping-cart-resources.png":::
 
 ## See also
 

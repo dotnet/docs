@@ -9,13 +9,13 @@ ms.update-cycle: 3650-days
 
 # What's new in the SDK and tooling for .NET 10
 
-This article describes new features and enhancements in the .NET SDK for .NET 10.
+This article describes new features and enhancements in the .NET SDK for .NET 10. You can [download .NET 10 here](https://get.dot.net/10).
 
 ## .NET tools enhancements
 
 ### Platform-specific .NET tools
 
-.NET tools can now be published with support for multiple RuntimeIdentifiers (RIDs) in a single package. Tool authors can bundle binaries for all supported platforms, and the .NET CLI will select the correct one at install or run time. This makes cross-platform tool authoring and distribution much easier.
+.NET tools can now be published with support for multiple RuntimeIdentifiers (RIDs) in a single package. Tool authors can bundle binaries for all supported platforms, and the .NET CLI will select the correct one at install or runtime. This makes cross-platform tool authoring and distribution much easier.
 
 These enhanced tools support various packaging variations:
 
@@ -121,7 +121,7 @@ Starting with .NET 10, `msbuild.exe` and Visual Studio 2026 can run MSBuild task
 
 ### Configure .NET tasks
 
-For task authors, it's easy to opt into this new behavior. Just change your `UsingTask` declaration to tell MSBuild about your task.
+For task authors, it's easy to opt in to this new behavior. Just change your `UsingTask` declaration to tell MSBuild about your task.
 
 ```xml
 <UsingTask TaskName="MyTask"
@@ -265,9 +265,9 @@ Console apps can now create container images via `dotnet publish /t:PublishConta
 
 A new `<ContainerImageFormat>` property allows you to explicitly set the format of container images to either `Docker` or `OCI`. This property overrides the default behavior, which depends on the base image format and whether the container is multi-architecture.
 
-## Support for Microsoft Testing Platform in `dotnet test`
+## Support for Microsoft.Testing.Platform (MTP) in `dotnet test`
 
-Starting in .NET 10, `dotnet test` natively supports [Microsoft.Testing.Platform](../../testing/microsoft-testing-platform-intro.md). To enable this feature, add the following configuration to your *global.json* file:
+Starting in .NET 10, `dotnet test` natively supports [MTP](../../testing/microsoft-testing-platform-intro.md). To enable this feature, add the following configuration to your *global.json* file:
 
 ```json
 {

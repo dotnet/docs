@@ -57,7 +57,7 @@ The example in this topic transforms content from an XML source document to HTML
 
 3. After the code to create the source XML document, add the following code to retrieve all the `<Book>` elements from the object and transform them into an HTML document. The list of `<Book>` elements is created by using a LINQ query that returns a collection of <xref:System.Xml.Linq.XElement> objects that contain the transformed HTML. You can use embedded expressions to put the values from the source document in the new XML format.
 
-     The resulting HTML document is written to a file by using the <xref:System.Xml.Linq.XElement.Save%2A> method.
+     The resulting HTML document is written to a file by using the <xref:System.Xml.Linq.XElement.Save*> method.
 
     ```vb
     Dim htmlOutput =
@@ -80,7 +80,7 @@ The example in this topic transforms content from an XML source document to HTML
 
 4. After `Sub Main` of `Module1`, add a new method (`Sub`) to transform a `<Description>` node into the specified HTML format. This method is called by the code in the previous step and is used to preserve the format of the `<Description>` elements.
 
-     This method replaces sub-elements of the `<Description>` element with HTML. The `ReplaceWith` method is used to preserve the location of the sub-elements. The transformed content of the `<Description>` element is included in an HTML paragraph (\<p>) element. The <xref:System.Xml.Linq.XContainer.Nodes%2A> property is used to retrieve the transformed content of the `<Description>` element. This ensures that sub-elements are included in the transformed content.
+     This method replaces sub-elements of the `<Description>` element with HTML. The `ReplaceWith` method is used to preserve the location of the sub-elements. The transformed content of the `<Description>` element is included in an HTML paragraph (\<p>) element. The <xref:System.Xml.Linq.XContainer.Nodes> property is used to retrieve the transformed content of the `<Description>` element. This ensures that sub-elements are included in the transformed content.
 
      Add the following code after `Sub Main` of `Module1`.
 

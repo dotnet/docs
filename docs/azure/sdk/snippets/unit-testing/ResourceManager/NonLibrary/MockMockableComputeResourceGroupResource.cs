@@ -26,12 +26,16 @@ public sealed class MockResourceGroupResource : ResourceGroupResource
     }
 
     internal MockResourceGroupResource(ArmClient client, ResourceIdentifier id) : base(client, id)
-    {}
+    {
+        // Initialize with an empty mock to satisfy non-null contract
+        _mockableComputeResourceGroupResource =
+            new MockMockableComputeResourceGroupResource(new MockVirtualMachineCollection(client, id));
+    }
 
     public override T GetCachedClient<T>(Func<ArmClient, T> factory) where T : class
     {
         if (typeof(T) == typeof(MockableComputeResourceGroupResource))
-            return _mockableComputeResourceGroupResource as T;
+            return (T)(object)_mockableComputeResourceGroupResource;
         return base.GetCachedClient(factory);
     }
 }

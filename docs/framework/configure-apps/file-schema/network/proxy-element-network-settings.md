@@ -14,10 +14,10 @@ ms.assetid: 37a548d8-fade-4ac5-82ec-b49b6c6cb22a
 
 Defines a proxy server.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<defaultProxy>**](defaultproxy-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<proxy>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<system.net>`](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<defaultProxy>`](defaultproxy-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<proxy>`
 
 ## Syntax
 
@@ -65,7 +65,7 @@ Defines a proxy server.
 
  The `scriptLocation` attribute refers to the automatic detection of proxy configuration scripts. The <xref:System.Net.WebProxy> class will attempt to locate a configuration script (usually named Wpad.dat) when the **Use automatic configuration script** option is selected for the connection in Internet properties. If `bypassonlocal` is set to any value, `scriptLocation` is ignored.
 
- An exception is thrown if the `proxyaddress` attribute specifies an invalid default proxy. The <xref:System.Exception.InnerException%2A> property on the exception should have more information about the root cause of the error.
+ An exception is thrown if the `proxyaddress` attribute specifies an invalid default proxy. The <xref:System.Exception.InnerException> property on the exception should have more information about the root cause of the error.
 
 ## Configuration Files
 

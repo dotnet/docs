@@ -10,7 +10,7 @@ A workflow service must be hosted for it to respond to incoming messages. Workfl
 
 ## Hosting in a managed application
 
- To host a workflow service in a managed application, use the <xref:System.ServiceModel.Activities.WorkflowServiceHost> class. The <xref:System.ServiceModel.Activities.WorkflowServiceHost> constructor allows you to specify a singleton workflow service instance, a workflow service definition, or an activity that uses the workflow messaging activities. Calling <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> causes the service to start listening for incoming messages.
+ To host a workflow service in a managed application, use the <xref:System.ServiceModel.Activities.WorkflowServiceHost> class. The <xref:System.ServiceModel.Activities.WorkflowServiceHost> constructor allows you to specify a singleton workflow service instance, a workflow service definition, or an activity that uses the workflow messaging activities. Calling <xref:System.ServiceModel.Channels.CommunicationObject.Open*> causes the service to start listening for incoming messages.
 
 ## Hosting under IIS or WAS
 

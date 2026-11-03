@@ -31,19 +31,19 @@ The following code example shows the use of the <xref:System.Xml.Linq.XDocument.
 
 ## To load XML from a stream
 
-To populate an XML literal such as an <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XDocument> object from a stream, you can use the `Load` method or the <xref:System.Xml.Linq.XNode.ReadFrom%2A?displayProperty=nameWithType> method.
+To populate an XML literal such as an <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XDocument> object from a stream, you can use the `Load` method or the <xref:System.Xml.Linq.XNode.ReadFrom*?displayProperty=nameWithType> method.
 
-The following code example shows the use of the <xref:System.Xml.Linq.XNode.ReadFrom%2A> method to populate an <xref:System.Xml.Linq.XDocument> object with XML from an XML stream.
+The following code example shows the use of the <xref:System.Xml.Linq.XNode.ReadFrom*> method to populate an <xref:System.Xml.Linq.XDocument> object with XML from an XML stream.
 
 [!code-vb[VbXMLSamples#46](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples15.vb#46)]
 
 ## See also
 
-- <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=nameWithType>
-- <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=nameWithType>
-- <xref:System.Xml.Linq.XElement.Parse%2A?displayProperty=nameWithType>
-- <xref:System.Xml.Linq.XDocument.Parse%2A?displayProperty=nameWithType>
-- <xref:System.Xml.Linq.XNode.ReadFrom%2A?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XDocument.Load*?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XElement.Load*?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XElement.Parse*?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XDocument.Parse*?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XNode.ReadFrom*?displayProperty=nameWithType>
 - [XML Literals](../../../language-reference/xml-literals/index.md)
 - [XML](index.md)
 - [Manipulating XML in Visual Basic](manipulating-xml.md)

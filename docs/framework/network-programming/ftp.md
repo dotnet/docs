@@ -3,7 +3,7 @@ title: "FTP - .NET Framework"
 titleSuffix: ""
 description: Learn about the comprehensive support for the FTP protocol that .NET Framework provides with the FtpWebRequest and FtpWebResponse classes.
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "FTP"
 ms.assetid: 9b43f8b4-89d7-46a7-89fc-71aca916dd32
 ---
@@ -20,4 +20,4 @@ For more information, see the following topics: [How to: Download Files with FTP
 
 ## FTP and proxies
 
-If a proxy (specified by the <xref:System.Net.FtpWebRequest.Proxy%2A> property) is an HTTP proxy, then only the <xref:System.Net.WebRequestMethods.Ftp.DownloadFile>, <xref:System.Net.WebRequestMethods.Ftp.ListDirectory>, and <xref:System.Net.WebRequestMethods.Ftp.ListDirectoryDetails> commands are supported.
+If a proxy (specified by the <xref:System.Net.FtpWebRequest.Proxy> property) is an HTTP proxy, then only the <xref:System.Net.WebRequestMethods.Ftp.DownloadFile>, <xref:System.Net.WebRequestMethods.Ftp.ListDirectory>, and <xref:System.Net.WebRequestMethods.Ftp.ListDirectoryDetails> commands are supported.

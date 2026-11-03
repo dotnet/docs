@@ -2,7 +2,7 @@
 title: Serialization of control characters with DataContractJsonSerializer
 description: Learn about the way control characters serialization has changed to conform to ECMAScript V6 and V8 in .NET Framework 4.7.
 ms.date: 04/07/2017
-helpviewer_keywords: 
+helpviewer_keywords:
   - ".NET Framework 4.7 retargeting changes"
   - "retargeting changes"
   - "DataContractJsonSerializer changes"
@@ -19,7 +19,7 @@ In .NET Framework 4.6.2 and earlier versions, the <xref:System.Runtime.Serializa
 
 For apps that target versions of .NET Framework starting with .NET Framework 4.7, serialization of these control characters is compatible with ECMAScript V6 and V8. The following APIs are affected:
 
-- <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject%2A>
+- <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject*>
 
 ## Mitigation
 

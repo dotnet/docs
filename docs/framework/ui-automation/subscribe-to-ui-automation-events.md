@@ -21,7 +21,7 @@ ms.topic: how-to
 
 ## Example 1
 
- The following example code registers an event handler for the event that is raised when a control such as a button is invoked, and removes it when the application form closes. The event is identified by an <xref:System.Windows.Automation.AutomationEvent> passed as a parameter to <xref:System.Windows.Automation.Automation.AddAutomationEventHandler%2A>.
+ The following example code registers an event handler for the event that is raised when a control such as a button is invoked, and removes it when the application form closes. The event is identified by an <xref:System.Windows.Automation.AutomationEvent> passed as a parameter to <xref:System.Windows.Automation.Automation.AddAutomationEventHandler*>.
 
  [!code-csharp[UIAClient_snip#101](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#101)]
  [!code-vb[UIAClient_snip#101](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#101)]
@@ -35,7 +35,7 @@ ms.topic: how-to
 
 ## See also
 
-- <xref:System.Windows.Automation.Automation.AddAutomationEventHandler%2A>
-- <xref:System.Windows.Automation.Automation.RemoveAllEventHandlers%2A>
-- <xref:System.Windows.Automation.Automation.RemoveAutomationEventHandler%2A>
+- <xref:System.Windows.Automation.Automation.AddAutomationEventHandler*>
+- <xref:System.Windows.Automation.Automation.RemoveAllEventHandlers*>
+- <xref:System.Windows.Automation.Automation.RemoveAutomationEventHandler*>
 - [UI Automation Events Overview](ui-automation-events-overview.md)

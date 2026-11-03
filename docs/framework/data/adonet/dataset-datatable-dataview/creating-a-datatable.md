@@ -17,7 +17,7 @@ A <xref:System.Data.DataTable>, which represents one table of in-memory relation
 
  When you first create a **DataTable**, it does not have a schema (that is, a structure). To define the schema of the table, you must create and add <xref:System.Data.DataColumn> objects to the `Columns` collection of the table. You can also define a primary key column for the table, and create and add `Constraint` objects to the `Constraints` collection of the table. After you have defined the schema for a **DataTable**, you can add rows of data to the table by adding `DataRow` objects to the `Rows` collection of the table.
 
- You are not required to supply a value for the <xref:System.Data.DataTable.TableName%2A> property when you create a **DataTable**; you can specify the property at another time, or you can leave it empty. However, when you add a table without a `TableName` value to a **DataSet**, the table will be given an incremental default name of Table*N*, starting with "Table" for Table0.
+ You are not required to supply a value for the <xref:System.Data.DataTable.TableName> property when you create a **DataTable**; you can specify the property at another time, or you can leave it empty. However, when you add a table without a `TableName` value to a **DataSet**, the table will be given an incremental default name of Table*N*, starting with "Table" for Table0.
 
 > [!NOTE]
 > We recommend that you avoid the "Table*N*" naming convention when you supply a `TableName` value, because the name you supply may conflict with an existing default table name in the **DataSet**. If the supplied name already exists, an exception is thrown.

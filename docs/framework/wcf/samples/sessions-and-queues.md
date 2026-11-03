@@ -70,7 +70,7 @@ public class OrderTakerService : IOrderTaker
 }
 ```
 
-The service is self hosted. When using the MSMQ transport, the queue used must be created in advance. This can be done manually or through code. In this sample, the service contains <xref:System.Messaging> code to check for the existence of the queue and creates it, if necessary. The queue name is read from the configuration file using the <xref:System.Configuration.ConfigurationManager.AppSettings%2A> class.
+The service is self hosted. When using the MSMQ transport, the queue used must be created in advance. This can be done manually or through code. In this sample, the service contains <xref:System.Messaging> code to check for the existence of the queue and creates it, if necessary. The queue name is read from the configuration file using the <xref:System.Configuration.ConfigurationManager.AppSettings*> class.
 
 ```csharp
 // Host the service within this EXE console application.
@@ -125,7 +125,7 @@ The MSMQ queue name is specified in an appSettings section of the configuration 
 </system.serviceModel>
 ```
 
-The client creates a transaction scope. All messages in the session are sent to the queue within the transaction scope, causing it to be treated as an atomic unit where all messages succeed or fail. The transaction is committed by calling <xref:System.Transactions.TransactionScope.Complete%2A>.
+The client creates a transaction scope. All messages in the session are sent to the queue within the transaction scope, causing it to be treated as an atomic unit where all messages succeed or fail. The transaction is committed by calling <xref:System.Transactions.TransactionScope.Complete*>.
 
 ```csharp
 //Create a transaction scope.
@@ -200,7 +200,7 @@ Purchase Order: 7c86fef0-2306-4c51-80e6-bcabcc1a6e5e
 
 3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).
 
-By default with the <xref:System.ServiceModel.NetMsmqBinding>, transport security is enabled. There are two relevant properties for MSMQ transport security namely, <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A> and <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A>`.` By default, the authentication mode is set to `Windows` and the protection level is set to `Sign`. For MSMQ to provide the authentication and signing feature, it must be part of a domain and the active directory integration option for MSMQ must be installed. If you run this sample on a computer that does not satisfy these criteria, you receive an error.
+By default with the <xref:System.ServiceModel.NetMsmqBinding>, transport security is enabled. There are two relevant properties for MSMQ transport security namely, <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode*> and <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel*>`.` By default, the authentication mode is set to `Windows` and the protection level is set to `Sign`. For MSMQ to provide the authentication and signing feature, it must be part of a domain and the active directory integration option for MSMQ must be installed. If you run this sample on a computer that does not satisfy these criteria, you receive an error.
 
 ### Run the sample on a computer joined to a workgroup
 
@@ -254,4 +254,4 @@ By default with the <xref:System.ServiceModel.NetMsmqBinding>, transport securit
 2. Ensure that you change the configuration on both the server and the client before you run the sample.
 
     > [!NOTE]
-    > Setting security mode to `None` is equivalent to setting <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A>, <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A>, and `Message` security to `None`.
+    > Setting security mode to `None` is equivalent to setting <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode*>, <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel*>, and `Message` security to `None`.

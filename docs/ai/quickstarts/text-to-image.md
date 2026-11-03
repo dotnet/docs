@@ -1,7 +1,7 @@
 ---
 title: Quickstart - Generate images from text using AI
 description: Learn how to use Microsoft.Extensions.AI to generate images from text prompts using AI models in a .NET application.
-ms.date: 10/21/2025
+ms.date: 03/04/2026
 ms.topic: quickstart
 ai-usage: ai-assisted
 ---
@@ -44,17 +44,16 @@ Complete the following steps to create a .NET console application that generates
 
     ```dotnetcli
     dotnet add package Azure.AI.OpenAI
-    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
+    dotnet add package Microsoft.Extensions.AI.OpenAI
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```
 
-1. Run the following commands to add [app secrets](/aspnet/core/security/app-secrets) for your Azure OpenAI endpoint, model name, and API key:
+1. Run the following commands to add [app secrets](/aspnet/core/security/app-secrets) for your Azure OpenAI endpoint and API key:
 
     ```bash
     dotnet user-secrets init
     dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-Azure-OpenAI-endpoint>
-    dotnet user-secrets set AZURE_OPENAI_GPT_NAME gpt-image-1
     dotnet user-secrets set AZURE_OPENAI_API_KEY <your-azure-openai-api-key>
     ```
 
@@ -120,7 +119,7 @@ The `Aspire.Azure.AI.OpenAI` package provides extension methods to register Azur
 
    :::code language="csharp" source="snippets/text-to-image/hosting/Program.cs" id="SnippetSetup":::
 
-   The <xref:Microsoft.Extensions.Hosting.AspireAzureOpenAIExtensions.AddAzureOpenAIClient(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.String,System.Action{Aspire.Azure.AI.OpenAI.AzureOpenAISettings},System.Action{Azure.Core.Extensions.IAzureClientBuilder{Azure.AI.OpenAI.AzureOpenAIClient,Azure.AI.OpenAI.AzureOpenAIClientOptions}})> method registers the Azure OpenAI client with dependency injection. The connection string (named `"openai"`) is retrieved from configuration, typically from `appsettings.json` or environment variables:
+   The [AddAzureOpenAIClient](https://aspire.dev/reference/api/csharp/aspire.azure.ai.openai/aspireazureopenaiextensions/methods/#addazureopenaiclient) method registers the Azure OpenAI client with dependency injection. The connection string (named `"openai"`) is retrieved from configuration, typically from `appsettings.json` or environment variables:
 
    ```json
    {
@@ -157,7 +156,7 @@ This hosting approach provides several benefits:
 - **Dependency injection**: The image generator is available throughout your application via DI.
 - **Lifecycle management**: Services are properly initialized and disposed of by the hosting infrastructure.
 - **Testability**: Mock implementations can be easily substituted for testing.
-- **Integration with .NET Aspire**: When using .NET Aspire, the `AddAzureOpenAIClient` method integrates with service discovery and telemetry.
+- **Integration with Aspire**: When using Aspire, the `AddAzureOpenAIClient` method integrates with service discovery and telemetry.
 
 ## Best practices
 
@@ -173,7 +172,7 @@ When implementing text-to-image generation in your applications, consider these 
 
 When you no longer need the Azure OpenAI resource, delete it to avoid incurring charges:
 
-1. In the [Azure Portal](https://portal.azure.com), navigate to your Azure OpenAI resource.
+1. In the [Azure portal](https://portal.azure.com), navigate to your Azure OpenAI resource.
 1. Select the resource and then select **Delete**.
 
 ## Next steps

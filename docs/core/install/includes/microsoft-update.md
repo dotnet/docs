@@ -18,6 +18,7 @@ While most users prefer to be kept up to date, it is possible to block .NET upda
 | .NET version | Registry key | Name | Type | Value |
 | -------------- | :--------- | :---------- | :---------- | :---------- |
 | All | HKLM\SOFTWARE\Microsoft\\.NET | BlockMU | REG_DWORD | 0x00000001 |
+| .NET 10 | HKLM\SOFTWARE\Microsoft\\.NET\10.0 | BlockMU | REG_DWORD | 0x00000001 |
 | .NET 9 | HKLM\SOFTWARE\Microsoft\\.NET\9.0 | BlockMU | REG_DWORD | 0x00000001 |
 | .NET 8 | HKLM\SOFTWARE\Microsoft\\.NET\8.0 | BlockMU | REG_DWORD | 0x00000001 |
 | .NET 7 | HKLM\SOFTWARE\Microsoft\\.NET\7.0 | BlockMU | REG_DWORD | 0x00000001 |
@@ -33,6 +34,7 @@ Updates for server operating systems are supported by WSUS and Microsoft Update 
 | .NET version | Registry key | Name | Type | Value |
 | -------------- | :--------- | :---------- | :---------- | :---------- |
 | All | HKLM\SOFTWARE\Microsoft\\.NET | AllowAUOnServerOS | REG_DWORD | 0x00000001 |
+| .NET 10 | HKLM\SOFTWARE\Microsoft\\.NET\10.0 | AllowAUOnServerOS | REG_DWORD | 0x00000001 |
 | .NET 9 | HKLM\SOFTWARE\Microsoft\\.NET\9.0 | AllowAUOnServerOS | REG_DWORD | 0x00000001 |
 | .NET 8 | HKLM\SOFTWARE\Microsoft\\.NET\8.0 | AllowAUOnServerOS | REG_DWORD | 0x00000001 |
 | .NET 7 | HKLM\SOFTWARE\Microsoft\\.NET\7.0 | AllowAUOnServerOS | REG_DWORD | 0x00000001 |

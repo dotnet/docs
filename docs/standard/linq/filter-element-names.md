@@ -10,7 +10,7 @@ ms.topic: how-to
 
 # How to filter on element names (LINQ to XML)
 
-When you call one of the methods that return <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, you can filter on the element name.
+When you call one of the methods that return <xref:System.Collections.Generic.IEnumerable`1> of <xref:System.Xml.Linq.XElement>, you can filter on the element name.
 
 ## Example: Retrieve descendants filtered to a specified name
 
@@ -44,15 +44,15 @@ ProductName:Lawnmower
 ProductName:Baby Monitor
 ```
 
-The other methods that return <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement> collections follow the same pattern. Their signatures are similar to <xref:System.Xml.Linq.XContainer.Elements%2A> and <xref:System.Xml.Linq.XContainer.Descendants%2A>. The following is the complete list of methods that have similar method signatures:
+The other methods that return <xref:System.Collections.Generic.IEnumerable`1> of <xref:System.Xml.Linq.XElement> collections follow the same pattern. Their signatures are similar to <xref:System.Xml.Linq.XContainer.Elements*> and <xref:System.Xml.Linq.XContainer.Descendants*>. The following is the complete list of methods that have similar method signatures:
 
-- <xref:System.Xml.Linq.XNode.Ancestors%2A>
-- <xref:System.Xml.Linq.XContainer.Descendants%2A>
-- <xref:System.Xml.Linq.XContainer.Elements%2A>
-- <xref:System.Xml.Linq.XNode.ElementsAfterSelf%2A>
-- <xref:System.Xml.Linq.XNode.ElementsBeforeSelf%2A>
-- <xref:System.Xml.Linq.XElement.AncestorsAndSelf%2A>
-- <xref:System.Xml.Linq.XElement.DescendantsAndSelf%2A>
+- <xref:System.Xml.Linq.XNode.Ancestors*>
+- <xref:System.Xml.Linq.XContainer.Descendants*>
+- <xref:System.Xml.Linq.XContainer.Elements*>
+- <xref:System.Xml.Linq.XNode.ElementsAfterSelf*>
+- <xref:System.Xml.Linq.XNode.ElementsBeforeSelf*>
+- <xref:System.Xml.Linq.XElement.AncestorsAndSelf*>
+- <xref:System.Xml.Linq.XElement.DescendantsAndSelf*>
 
 ## Example: Retrieve from XML that's in a namespace
 

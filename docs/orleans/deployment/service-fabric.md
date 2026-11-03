@@ -16,17 +16,17 @@ Whether creating a new Service Fabric Application or adding Orleans to an existi
 
 The Silo lifecycle follows the typical communication listener lifecycle:
 
-- Initialized with <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.OpenAsync%2A?displayProperty=nameWithType>.
-- Gracefully terminated with <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.CloseAsync%2A?displayProperty=nameWithType>.
-- Or abruptly terminated with <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.Abort%2A?displayProperty=nameWithType>.
+- Initialized with <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.OpenAsync*?displayProperty=nameWithType>.
+- Gracefully terminated with <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.CloseAsync*?displayProperty=nameWithType>.
+- Or abruptly terminated with <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.Abort*?displayProperty=nameWithType>.
 
 Since Orleans Silos can live within the confines of the <xref:Microsoft.Extensions.Hosting.IHost>, the implementation of `ICommunicationListener` is a wrapper around the `IHost`. The `IHost` initializes in the `OpenAsync` method and gracefully terminates in the `CloseAsync` method:
 
 | `ICommunicationListener`                                                                                             | `IHost` interactions                                                              |
 | -------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.OpenAsync%2A>                      | The `IHost` instance is created and a call to <xref:Microsoft.Extensions.Hosting.IHost.StartAsync%2A> is made. |
-| <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.CloseAsync%2A>                     | A call to <xref:Microsoft.Extensions.Hosting.IHost.StopAsync%2A> on the host instance is awaited. |
-| <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.Abort%2A>                          | A call to <xref:Microsoft.Extensions.Hosting.IHost.StopAsync%2A> is forcefully evaluated with `GetAwaiter().GetResult()`. |
+| <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.OpenAsync*>                      | The `IHost` instance is created and a call to <xref:Microsoft.Extensions.Hosting.IHost.StartAsync*> is made. |
+| <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.CloseAsync*>                     | A call to <xref:Microsoft.Extensions.Hosting.IHost.StopAsync*> on the host instance is awaited. |
+| <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.Abort*>                          | A call to <xref:Microsoft.Extensions.Hosting.IHost.StopAsync*> is forcefully evaluated with `GetAwaiter().GetResult()`. |
 
 ## Cluster support
 
@@ -58,5 +58,5 @@ Pulling these two classes together, the following example shows the complete _Pr
 
 In the preceding code:
 
-- The <xref:Microsoft.ServiceFabric.Services.Runtime.ServiceRuntime.RegisterServiceAsync%2A?displayProperty=nameWithType> method registers the `OrleansHostedStatelessService` class with the Service Fabric runtime.
+- The <xref:Microsoft.ServiceFabric.Services.Runtime.ServiceRuntime.RegisterServiceAsync*?displayProperty=nameWithType> method registers the `OrleansHostedStatelessService` class with the Service Fabric runtime.
 - The `CreateHostAsync` delegate creates the `IHost` instance.

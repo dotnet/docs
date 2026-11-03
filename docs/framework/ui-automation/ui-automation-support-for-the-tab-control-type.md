@@ -65,8 +65,8 @@ ms.assetid: f8be2732-836d-4e4d-85e2-73aa39479bf4
 |Control Pattern/Pattern Property|Support/Value|Notes|
 |---------------------------------------|--------------------|-----------|
 |<xref:System.Windows.Automation.Provider.ISelectionProvider>|Yes|All tab controls must support the Selection pattern.|
-|<xref:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired%2A>|True|Tab controls always require that a selection be made.|
-|<xref:System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple%2A>|False|Tab controls are always single-selection containers.|
+|<xref:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired>|True|Tab controls always require that a selection be made.|
+|<xref:System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple>|False|Tab controls are always single-selection containers.|
 |<xref:System.Windows.Automation.Provider.IScrollProvider>|Depends|The Scroll pattern must be supported in the tab control has widgets that allow for a set of tab items to be scrolled through.|
 
 <a name="Required_UI_Automation_Events"></a>

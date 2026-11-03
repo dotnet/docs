@@ -19,18 +19,18 @@ Claim comparison involves comparing the three parts of a claim (type, right, and
 [!code-csharp[c_CustomClaimComparison#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customclaimcomparison/cs/c_customclaimcomparison.cs#9)]
 [!code-vb[c_CustomClaimComparison#9](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaimcomparison/vb/source.vb#9)]
 
-Both claims have a claim type of <xref:System.IdentityModel.Claims.ClaimTypes.Name%2A>, a right of <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>, and a resource of the string "someone". As all three parts of the claim are equal, the claims themselves are equal.
+Both claims have a claim type of <xref:System.IdentityModel.Claims.ClaimTypes.Name*>, a right of <xref:System.IdentityModel.Claims.Rights.PossessProperty*>, and a resource of the string "someone". As all three parts of the claim are equal, the claims themselves are equal.
 
-The built-in claim types are compared using the <xref:System.IdentityModel.Claims.Claim.Equals%2A> method. Claim-specific comparison code is used where necessary. For example, given the following two user principal name (UPN) claims, the comparison code in the <xref:System.IdentityModel.Claims.Claim.Equals%2A> method returns `true`, assuming `example\someone` identifies the same domain user as `someone@example.com`.
+The built-in claim types are compared using the <xref:System.IdentityModel.Claims.Claim.Equals*> method. Claim-specific comparison code is used where necessary. For example, given the following two user principal name (UPN) claims, the comparison code in the <xref:System.IdentityModel.Claims.Claim.Equals*> method returns `true`, assuming `example\someone` identifies the same domain user as `someone@example.com`.
 
 [!code-csharp[c_CustomClaimComparison#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customclaimcomparison/cs/c_customclaimcomparison.cs#4)]
 [!code-vb[c_CustomClaimComparison#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaimcomparison/vb/source.vb#4)]
 
-Custom claim types can also be compared using the <xref:System.IdentityModel.Claims.Claim.Equals%2A> method. However, in cases where the type returned by the <xref:System.IdentityModel.Claims.Claim.Resource%2A> property of the claim is something other than a primitive type, the <xref:System.IdentityModel.Claims.Claim.Equals%2A> returns `true` only if the values returned by the `Resource` properties are equal according to the <xref:System.IdentityModel.Claims.Claim.Equals%2A> method. In cases where this is not appropriate, the custom type returned by the `Resource` property should override the <xref:System.IdentityModel.Claims.Claim.Equals%2A> and <xref:System.Object.GetHashCode%2A> methods to perform whatever custom processing is necessary.
+Custom claim types can also be compared using the <xref:System.IdentityModel.Claims.Claim.Equals*> method. However, in cases where the type returned by the <xref:System.IdentityModel.Claims.Claim.Resource> property of the claim is something other than a primitive type, the <xref:System.IdentityModel.Claims.Claim.Equals*> returns `true` only if the values returned by the `Resource` properties are equal according to the <xref:System.IdentityModel.Claims.Claim.Equals*> method. In cases where this is not appropriate, the custom type returned by the `Resource` property should override the <xref:System.IdentityModel.Claims.Claim.Equals*> and <xref:System.Object.GetHashCode*> methods to perform whatever custom processing is necessary.
 
 ## Comparing built-in claims
 
-1. Given two instances of the <xref:System.IdentityModel.Claims.Claim> class, use the <xref:System.IdentityModel.Claims.Claim.Equals%2A> to make the comparison, as shown in the following code.
+1. Given two instances of the <xref:System.IdentityModel.Claims.Claim> class, use the <xref:System.IdentityModel.Claims.Claim.Equals*> to make the comparison, as shown in the following code.
 
      [!code-csharp[c_CustomClaimComparison#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customclaimcomparison/cs/c_customclaimcomparison.cs#5)]
      [!code-vb[c_CustomClaimComparison#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaimcomparison/vb/source.vb#5)]
@@ -42,14 +42,14 @@ Custom claim types can also be compared using the <xref:System.IdentityModel.Cla
      [!code-csharp[c_CustomClaimComparison#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customclaimcomparison/cs/c_customclaimcomparison.cs#6)]
      [!code-vb[c_CustomClaimComparison#6](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaimcomparison/vb/source.vb#6)]
 
-2. For custom claims with structure or class based resource types, the resource type should override the <xref:System.IdentityModel.Claims.Claim.Equals%2A> method.
+2. For custom claims with structure or class based resource types, the resource type should override the <xref:System.IdentityModel.Claims.Claim.Equals*> method.
 
 3. First check whether the `obj` parameter is `null`, and if so, return `false`.
 
      [!code-csharp[c_CustomClaimComparison#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customclaimcomparison/cs/c_customclaimcomparison.cs#7)]
      [!code-vb[c_CustomClaimComparison#7](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaimcomparison/vb/source.vb#7)]
 
-4. Next call <xref:System.Object.ReferenceEquals%2A> and pass `this` and `obj` as parameters. If it returns `true`, then return `true`.
+4. Next call <xref:System.Object.ReferenceEquals*> and pass `this` and `obj` as parameters. If it returns `true`, then return `true`.
 
      [!code-csharp[c_CustomClaimComparison#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customclaimcomparison/cs/c_customclaimcomparison.cs#8)]
      [!code-vb[c_CustomClaimComparison#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaimcomparison/vb/source.vb#8)]

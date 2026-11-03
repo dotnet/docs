@@ -24,11 +24,11 @@ ms.topic: how-to
 
 - Obtain an <xref:System.Windows.Automation.InvokePattern> object from any UI Automation element found that supports the <xref:System.Windows.Automation.InvokePattern> control pattern.
 
-- Use <xref:System.Windows.Automation.InvokePattern.Invoke%2A> to invoke the control from a client event handler.
+- Use <xref:System.Windows.Automation.InvokePattern.Invoke*> to invoke the control from a client event handler.
 
 ## Example
 
- This example uses the <xref:System.Windows.Automation.AutomationElement.TryGetCurrentPattern%2A> method of the <xref:System.Windows.Automation.AutomationElement> class to generate an <xref:System.Windows.Automation.InvokePattern> object and invoke a control by using the <xref:System.Windows.Automation.InvokePattern.Invoke%2A> method.
+ This example uses the <xref:System.Windows.Automation.AutomationElement.TryGetCurrentPattern*> method of the <xref:System.Windows.Automation.AutomationElement> class to generate an <xref:System.Windows.Automation.InvokePattern> object and invoke a control by using the <xref:System.Windows.Automation.InvokePattern.Invoke*> method.
 
 [!code-csharp[InvokePatternApp#1100](../../../samples/snippets/csharp/VS_Snippets_Wpf/InvokePatternApp/CSharp/InvokePatternApp/InvokePatternApp.cs#1100)]
 [!code-vb[InvokePatternApp#1100](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/InvokePatternApp/VisualBasic/InvokePatternClient/Client.vb#1100)]

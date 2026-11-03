@@ -1,12 +1,18 @@
 ---
 description: "Learn more about: The Context Connection"
 title: "The Context Connection"
-ms.date: "03/30/2017"
+ms.date: "10/21/2026"
+ai-usage: ai-assisted
 ms.assetid: e443ca86-9243-4234-a822-ed10a53a9de0
 ---
 # The Context Connection
 
-The problem of internal data access is a fairly common scenario. That is, you wish to access the same server on which your common language runtime (CLR) stored procedure or function is executing. One option is to create a connection using <xref:System.Data.SqlClient.SqlConnection>, specify a connection string that points to the local server, and open the connection. This requires specifying credentials for logging in. The connection is in a different database session than the stored procedure or function, it may have different `SET` options, it is in a separate transaction, it does not see your temporary tables, and so on. If your managed stored procedure or function code is executing in the SQL Server process, it is because someone connected to that server and executed a SQL statement to invoke it. You probably want the stored procedure or function to execute in the context of that connection, along with its transaction, `SET` options, and so on. This is called the context connection.  
+> [!IMPORTANT]
+> Don't use `System.Data.SqlClient` for new development. Use <xref:Microsoft.Data.SqlClient> instead for standalone client applications. The exception is common language runtime (CLR) code inside SQL Server: context connections with `Context Connection=true` require the .NET Framework provider <xref:System.Data.SqlClient>. Microsoft.Data.SqlClient doesn't support context connections.
+
+A CLR stored procedure or function often needs to access the server where it executes. You can open a separate connection with <xref:System.Data.SqlClient.SqlConnection> and a connection string for the local server, but that requires login credentials. The new connection uses a different session and transaction, might have different `SET` options, and doesn't see the caller's temporary tables.
+
+To use the caller's session, open a context connection instead. The stored procedure or function then uses the connection that invoked it, including that connection's transaction and `SET` options.
   
  The context connection lets you execute Transact-SQL statements in the same context that your code was invoked in the first place. For more detailed information, see [The Context Connection](/sql/relational-databases/clr-integration/data-access/context-connection).
   

@@ -47,8 +47,8 @@ The [.NET API reference documentation](../../api/index.md) provides documentatio
 .NET includes a set of data structures that are the workhorses of many .NET apps. These are mostly collections, but also include other types.
 
 - <xref:System.Array> - Represents an array of strongly typed objects that can be accessed by index. Has a fixed size, per its construction.
-- <xref:System.Collections.Generic.List%601> - Represents a strongly typed list of objects that can be accessed by index. Is automatically resized as needed.
-- <xref:System.Collections.Generic.Dictionary%602> - Represents a collection of values that are indexed by a key. Values can be accessed via key. Is automatically resized as needed.
+- <xref:System.Collections.Generic.List`1> - Represents a strongly typed list of objects that can be accessed by index. Is automatically resized as needed.
+- <xref:System.Collections.Generic.Dictionary`2> - Represents a collection of values that are indexed by a key. Values can be accessed via key. Is automatically resized as needed.
 - <xref:System.Uri> - Provides an object representation of a uniform resource identifier (URI) and easy access to the parts of the URI.
 - <xref:System.DateTime> - Represents an instant in time, typically expressed as a date and time of day.
 

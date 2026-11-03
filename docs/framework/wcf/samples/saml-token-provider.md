@@ -113,7 +113,7 @@ The following steps show how to develop a custom SAML token provider and integra
 
      The sample implements a custom SAML token provider that returns a security token based on a SAML assertion that is provided at construction time.
 
-     To perform this task, the custom token provider is derived from the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> class and overrides the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetTokenCore%2A> method. This method creates and returns a new `SecurityToken`.
+     To perform this task, the custom token provider is derived from the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> class and overrides the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetTokenCore*> method. This method creates and returns a new `SecurityToken`.
 
     ```csharp
     protected override SecurityToken GetTokenCore(TimeSpan timeout)

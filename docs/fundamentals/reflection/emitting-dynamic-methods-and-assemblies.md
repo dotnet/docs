@@ -1,6 +1,6 @@
 ---
 title: "Emitting Dynamic Methods and Assemblies"
-description: Emit dynamic methods and assemblies using the System.Reflection.Emit namespace, which allows a compiler or tool to emit metadata and CIL code at run time.
+description: Emit dynamic methods and assemblies using the System.Reflection.Emit namespace, which allows a compiler or tool to emit metadata and CIL code at runtime.
 ms.date: 03/27/2024
 helpviewer_keywords:
   - "reflection emit"
@@ -11,15 +11,15 @@ helpviewer_keywords:
 ---
 # Emit dynamic methods and assemblies
 
-This section describes a set of managed types in the <xref:System.Reflection.Emit> namespace that allow a compiler or tool to emit metadata and common intermediate language (CIL) at run time and optionally generate a portable executable (PE) file on disk. Script engines and compilers are the primary users of this namespace. In this section, the functionality provided by the <xref:System.Reflection.Emit> namespace is referred to as *reflection emit*.
+This section describes a set of managed types in the <xref:System.Reflection.Emit> namespace that allow a compiler or tool to emit metadata and common intermediate language (CIL) at runtime and optionally generate a portable executable (PE) file on disk. Script engines and compilers are the primary users of this namespace. In this section, the functionality provided by the <xref:System.Reflection.Emit> namespace is referred to as *reflection emit*.
 
 Reflection emit provides the following capabilities:
 
-- Define lightweight global methods at run time, using the <xref:System.Reflection.Emit.DynamicMethod> class, and execute them using delegates.
-- Define assemblies at run time and then run them and/or save them to disk.
-- Define assemblies at run time, run them, and then unload them and allow garbage collection to reclaim their resources.
-- Define modules in new assemblies at run time and then run and/or save them to disk.
-- Define types in modules at run time, create instances of these types, and invoke their methods.
+- Define lightweight global methods at runtime, using the <xref:System.Reflection.Emit.DynamicMethod> class, and execute them using delegates.
+- Define assemblies at runtime and then run them and/or save them to disk.
+- Define assemblies at runtime, run them, and then unload them and allow garbage collection to reclaim their resources.
+- Define modules in new assemblies at runtime and then run and/or save them to disk.
+- Define types in modules at runtime, create instances of these types, and invoke their methods.
 - Define symbolic information for defined modules that can be used by tools such as debuggers and code profilers.
 
 In addition to the managed types in the <xref:System.Reflection.Emit> namespace, there are unmanaged metadata interfaces that are described in [Metadata interfaces (.NET Framework)](../../framework/unmanaged-api/metadata/metadata-interfaces.md) and [Metadata interfaces (.NET)](../../core/unmanaged-api/metadata/interfaces/metadata-interfaces.md). Managed reflection emit provides stronger semantic error checking and a higher level of abstraction of the metadata than the unmanaged metadata interfaces.

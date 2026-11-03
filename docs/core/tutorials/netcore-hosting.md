@@ -16,9 +16,9 @@ This article gives an overview of the steps necessary to start the .NET runtime 
 
 ## Prerequisites
 
-Because hosts are native applications, this tutorial covers constructing a C++ application to host .NET. You need a C++ development environment (such as that provided by [Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)).
+Because hosts are native applications, this tutorial covers constructing a C++ application to host .NET. You need a C++ development environment (such as that provided by [Visual Studio](https://aka.ms/vsdownload?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link)).
 
-You also need to build a .NET component to test the host with, so you should install the [latests .NET SDK](https://dotnet.microsoft.com/download). It includes the necessary headers and libraries to link with.
+You also need to build a .NET component to test the host with, so you should install the [latest .NET SDK](https://dotnet.microsoft.com/download). It includes the necessary headers and libraries to link with.
 
 ## Hosting APIs
 
@@ -69,7 +69,7 @@ The `hostfxr_initialize_for_runtime_config` and `hostfxr_get_runtime_delegate` f
 
 ### Step 3 - Load managed assembly and get function pointer to a managed method
 
-The runtime delegate is called to load the managed assembly and get a function pointer to a managed method. The delegate requires the assembly path, type name, and method name as inputs and returns a function pointer that can be used to invoke the managed method.
+The runtime delegate is called to load the managed assembly and get a function pointer to a managed method. The delegate requires the assembly path, assembly-qualified type name, and method name as inputs and returns a function pointer that can be used to invoke the managed method.
 
 [!code-cpp[HostFxrHost#LoadAndGet](~/samples/snippets/core/tutorials/netcore-hosting/csharp/HostWithHostFxr/src/NativeHost/nativehost.cpp#LoadAndGet)]
 
@@ -79,7 +79,7 @@ By passing `nullptr` as the delegate type name when calling the runtime delegate
 public delegate int ComponentEntryPoint(IntPtr args, int sizeBytes);
 ```
 
-A different signature can be used by specifying the delegate type name when calling the runtime delegate.
+A different signature can be used by specifying an assembly-qualified delegate type name when calling the runtime delegate.
 
 ### Step 4 - Run managed code!
 

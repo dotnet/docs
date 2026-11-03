@@ -53,17 +53,17 @@ WCF has a common state machine that is used for managing the lifecycle of object
 
 - Created: This is the state of a <xref:System.ServiceModel.ICommunicationObject> when it is first instantiated. No input/output (I/O) occurs in this state.
 
-- Opening: Objects transition to this state when <xref:System.ServiceModel.ICommunicationObject.Open%2A> is called. At this point properties are made immutable, and input/output can begin. This transition is valid only from the Created state.
+- Opening: Objects transition to this state when <xref:System.ServiceModel.ICommunicationObject.Open*> is called. At this point properties are made immutable, and input/output can begin. This transition is valid only from the Created state.
 
 - Opened: Objects transition to this state when the open process completes. This transition is valid only from the Opening state. At this point, the object is fully usable for transfer.
 
-- Closing: Objects transition to this state when <xref:System.ServiceModel.ICommunicationObject.Close%2A> is called for a graceful shutdown. This transition is valid only from the Opened state.
+- Closing: Objects transition to this state when <xref:System.ServiceModel.ICommunicationObject.Close*> is called for a graceful shutdown. This transition is valid only from the Opened state.
 
 - Closed: In the Closed state objects are no longer usable. In general, most configuration is still accessible for inspection, but no communication can occur. This state is equivalent to being disposed.
 
 - Faulted: In the Faulted state, objects are accessible to inspection but no longer usable. When a non-recoverable error occurs, the object transitions into this state. The only valid transition from this state is into the `Closed` state.
 
-There are events that fire for each state transition. The <xref:System.ServiceModel.ICommunicationObject.Abort%2A> method can be called at any time, and causes the object to transition immediately from its current state into the Closed state. Calling <xref:System.ServiceModel.ICommunicationObject.Abort%2A> terminates any unfinished work.
+There are events that fire for each state transition. The <xref:System.ServiceModel.ICommunicationObject.Abort*> method can be called at any time, and causes the object to transition immediately from its current state into the Closed state. Calling <xref:System.ServiceModel.ICommunicationObject.Abort*> terminates any unfinished work.
 
 <a name="ChannelAndChannelListener"></a>
 
@@ -83,7 +83,7 @@ In this sample, the factory implementation is contained in UdpChannelFactory.cs 
 
 ### The UDP Channel Factory
 
-The `UdpChannelFactory` derives from <xref:System.ServiceModel.Channels.ChannelFactoryBase>. The sample overrides <xref:System.ServiceModel.Channels.ChannelFactoryBase.GetProperty%2A> to provide access to the message version of the message encoder. The sample also overrides <xref:System.ServiceModel.Channels.ChannelFactoryBase.OnClose%2A> so that we can tear down our instance of <xref:System.ServiceModel.Channels.BufferManager> when the state machine transitions.
+The `UdpChannelFactory` derives from <xref:System.ServiceModel.Channels.ChannelFactoryBase>. The sample overrides <xref:System.ServiceModel.Channels.ChannelFactoryBase.GetProperty*> to provide access to the message version of the message encoder. The sample also overrides <xref:System.ServiceModel.Channels.ChannelFactoryBase.OnClose*> so that we can tear down our instance of <xref:System.ServiceModel.Channels.BufferManager> when the state machine transitions.
 
 #### The UDP Output Channel
 

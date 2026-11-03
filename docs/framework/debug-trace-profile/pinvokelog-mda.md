@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "signatures, platform invoke"
   - "MDAs (managed debugging assistants), platform invoke"
-  - "platform invoke, run-time errors"
+  - "platform invoke, runtime errors"
   - "platform invoke log"
   - "PInvokeLog MDA"
   - "managed debugging assistants (MDAs), platform invoke"
@@ -45,4 +45,4 @@ The `pInvokeLog` managed debugging assistant (MDA) is activated for each unique 
 ## See also
 
 - [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
-- [Consuming Unmanaged DLL Functions](../interop/consuming-unmanaged-dll-functions.md)
+- [Consuming Unmanaged DLL Functions](../../standard/native-interop/consuming-unmanaged-dll-functions.md)

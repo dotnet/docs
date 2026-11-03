@@ -12,6 +12,8 @@ Module Module1
 
         '        Dim db As New Northwnd("c:\northwnd.mdf")
         ' <Snippet1>
+        ' Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+        ' LINQ to SQL's built-in provider requires System.Data.SqlClient.
         ' DataContext takes a connection string.
         Dim db As New DataContext("…\Northwind.mdf")
 
@@ -37,6 +39,8 @@ Module Module1
     End Sub
 
     ' <Snippet2>
+    ' Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+    ' LINQ to SQL's built-in provider requires System.Data.SqlClient.
     Partial Public Class Northwind
         Inherits DataContext
         Public Customers As Table(Of Customer)
@@ -57,11 +61,13 @@ Module Module1
 
     Sub thirdsnippet()
         ' <Snippet4>
+        ' Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+        ' LINQ to SQL's built-in provider requires System.Data.SqlClient.
         Dim conString = "Data Source=.\SQLEXPRESS;AttachDbFilename=c:\northwind.mdf; Integrated Security=True;Connect Timeout=30;User Instance=True"
         Dim northwindCon = New SqlConnection(conString)
         northwindCon.Open()
 
-        Dim db = New Northwnd("...")
+        Dim db = New Northwnd(northwindCon)
         Dim northwindTransaction = northwindCon.BeginTransaction()
 
         Try
@@ -98,6 +104,8 @@ Module Module1
 
     Sub other()
         ' <Snippet5>
+        ' Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+        ' LINQ to SQL's built-in provider requires System.Data.SqlClient.
         Dim db As New Northwind("...\Northwnd.mdf")
 
         Dim query = _

@@ -12,9 +12,9 @@ Whenever an attempt to execute a query is made, the query pipeline looks up its 
 
  Query plan caching is configurable through the <xref:System.Data.EntityClient.EntityCommand>.
 
- To enable or disable query plan caching through <xref:System.Data.EntityClient.EntityCommand.EnablePlanCaching%2A?displayProperty=nameWithType>, set this property to `true` or `false`. Disabling plan caching for individual dynamic queries that are unlikely to be used more then once improves performance.
+ To enable or disable query plan caching through <xref:System.Data.EntityClient.EntityCommand.EnablePlanCaching?displayProperty=nameWithType>, set this property to `true` or `false`. Disabling plan caching for individual dynamic queries that are unlikely to be used more then once improves performance.
 
- You can enable query plan caching through <xref:System.Data.Objects.ObjectQuery.EnablePlanCaching%2A>.
+ You can enable query plan caching through <xref:System.Data.Objects.ObjectQuery.EnablePlanCaching>.
 
 ## Recommended Practice
 

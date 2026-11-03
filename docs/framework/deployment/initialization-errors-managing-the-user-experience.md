@@ -80,7 +80,7 @@ The CLR activation system provides the same behavior and UI on Windows 8 as it d
 ![Dialog box for 3.5 install on Windows 8](./media/initialization-errors-managing-the-user-experience/install-framework-on-demand-dialog.png "Prompt for installing the .NET Framework 3.5 on demand")
 
 > [!NOTE]
-> The .NET Framework 4.5 replaces the .NET Framework 4 (CLR 4) on the user's computer. Therefore, .NET Framework 4 applications run seamlessly, without displaying this dialog box, on Windows 8.
+> The .NET Framework 4.5+ replaces the .NET Framework 4 (CLR 4) on the user's computer. Therefore, .NET Framework 4 applications run seamlessly, without displaying this dialog box, on Windows 8.
 
 When the .NET Framework 3.5 is installed, users can run applications that depend on .NET Framework 2.0, 3.0, or 3.5 on their Windows 8 computers. They can also run .NET Framework 1.0 and 1.1 applications, provided that those applications are not explicitly configured to run only on the .NET Framework 1.0 or 1.1. See [Migrating from the .NET Framework 1.1](../migration-guide/migrating-from-the-net-framework-1-1.md).
 

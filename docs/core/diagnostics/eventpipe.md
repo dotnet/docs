@@ -1,8 +1,9 @@
 ---
 title: EventPipe Overview
 description: Learn about EventPipe and how to use it for tracing your .NET applications to diagnose performance issues.
-ms.date: 09/03/2024
+ms.date: 10/12/2026
 ms.topic: overview
+ai-usage: ai-assisted
 ---
 
 # EventPipe
@@ -25,18 +26,20 @@ To learn more about the NetTrace format, see the [NetTrace format documentation]
 
 EventPipe is part of the .NET runtime and is designed to work the same way across all the platforms .NET Core supports. This allows tracing tools based on EventPipe, such as `dotnet-counters`, `dotnet-gcdump`, and `dotnet-trace`, to work seamlessly across platforms.
 
-However, because EventPipe is a runtime built-in component, its scope is limited to managed code and the runtime itself. EventPipe events include stacktraces with managed code frame information only. If you want events generated from other unmanaged user-mode libraries, CPU sampling for native code, or kernel events you should use OS-specific tracing tools such as ETW or perf_events. On Linux the [perfcollect tool](./trace-perfcollect-lttng.md) helps automate using perf_events and [LTTng](https://en.wikipedia.org/wiki/LTTng).
+However, because EventPipe is a runtime built-in component, its scope is limited to managed code and the runtime itself. Without other tracing tools, EventPipe events include stack traces with managed code frame information only. To get events from other unmanaged user-mode libraries, CPU sampling for native code, or kernel events, use OS-specific tracing tools such as ETW or perf_events. On Linux, the [perfcollect tool](./trace-perfcollect-lttng.md) helps automate using perf_events and [LTTng](https://en.wikipedia.org/wiki/LTTng).
 
-Another major difference between EventPipe and ETW/perf_events is admin/root privilege requirement. To trace an application using ETW or perf_events you need to be an admin/root. Using EventPipe, you can trace applications as long as the tracer (for example, `dotnet-trace`) is run as the same user as the user that launched the application.
+Starting in .NET 10, EventPipe on Linux can emit events as [user_events](https://docs.kernel.org/trace/user_events.html), enabling collection of managed events, OS/kernel events, and native callstacks in a single unified trace. This mode requires admin/root privileges and Linux kernel 6.4+. For more information, see [`dotnet-trace collect-linux`](./dotnet-trace.md#dotnet-trace-collect-linux).
+
+Another major difference between EventPipe and ETW/perf_events is admin/root privilege requirement. To trace an application using ETW or perf_events you need to be an admin/root. Using standard EventPipe, you can trace applications as long as the tracer (for example, `dotnet-trace`) is run as the same user as the user that launched the application. The EventPipe (user_events) mode described earlier requires admin/root privileges because it interacts with OS-level tracing infrastructure.
 
 The following table is a summary of the differences between EventPipe and ETW/perf_events.
 
-|Feature|EventPipe|ETW|perf_events|
-|-------|---------|---|-----------|
-|Cross-platform|Yes|No (only on Windows)|No (only on supported Linux distros)|
-|Require admin/root privilege|No|Yes|Yes|
-|Can get OS/kernel events|No|Yes|Yes|
-|Can resolve native callstacks|No|Yes|Yes|
+|Feature|EventPipe|EventPipe (user_events)|ETW|perf_events|
+|-------|---------|----------------------|---|-----------|
+|Cross-platform|Yes|No (only on supported Linux distros)|No (only on Windows)|No (only on supported Linux distros)|
+|Require admin/root privilege|No|Yes|Yes|Yes|
+|Can get OS/kernel events|No|Yes|Yes|Yes|
+|Can resolve native callstacks|No|Yes|Yes|Yes|
 
 ## Use EventPipe to trace your .NET application
 
@@ -78,9 +81,15 @@ However, you can use the following environment variables to set up an EventPipe 
 * `DOTNET_EventPipeCircularMB`: A hexadecimal value that represents the size of EventPipe's internal buffer in megabytes. This configuration value is only used when EventPipe is configured to run via `DOTNET_EnableEventPipe`. The default buffer size is 1024MB which translates to this environment variable being set to `400`, since `0x400` == `1024`.
 
   > [!NOTE]
-  > If the target process writes events too frequently, it can overflow this buffer and some events might be dropped. If too many events are getting dropped, increase the buffer size to see if the number of dropped events reduces. If the number of dropped events does not decrease with a larger buffer size, it may be due to a slow reader preventing the target process' buffers from being flushed.
+  > If the target process writes events too frequently, it can overflow this buffer, and some events might be dropped. If the runtime drops too many events, set `DOTNET_EventPipeBufferingMode=1` with `DOTNET_EventPipeOutputStreaming=1` or increase the buffer size to see if the number of dropped events decreases. If the number of dropped events does not decrease with a larger buffer size, a slow reader might prevent the target process's buffers from being flushed.
+
+* `DOTNET_EventPipeBufferingMode`: Available in .NET 11 and later. This setting controls how the startup EventPipe session handles recording an event when the in-memory buffer is full. Set it to `0` (default) to drop events that would overflow the buffer, or `1` to pause event-writing threads until buffer space becomes available. `1` requires a streaming session (see `DOTNET_EventPipeOutputStreaming`).
+
+* `DOTNET_EventPipeOutputStreaming`: Set this to `1` to stream the startup EventPipe session's events to disk as quickly as possible after they occur. By default, events are stored in memory and not written to disk until the application is exiting. A streaming session is required for `DOTNET_EventPipeBufferingMode=1` to take effect.
 
 * `DOTNET_EventPipeProcNumbers`: Set this to `1` to enable capturing processor numbers in EventPipe event headers. The default value is `0`.
+
+* `DOTNET_EventPipeThreadSamplingRate`: Available in .NET 10.0.10 and later. Sets the interval, in milliseconds, for the EventPipe thread time sampling profiler. When set to `0` or omitted, the runtime uses its built-in default of 1 ms (~1,000 Hz). Builds without threading support, such as single-threaded WebAssembly, use a default of 5 ms (~200 Hz). This setting is process-global and affects all EventPipe sessions, including on-demand traces started by tools such as [dotnet-trace](./dotnet-trace.md). Setting a large value reduces sampling overhead but also reduces the resolution of any trace collected during the process lifetime.
 
 * `DOTNET_EventPipeConfig`: Sets up the EventPipe session configuration when starting an EventPipe session with `DOTNET_EnableEventPipe`.
   The syntax is as follows:

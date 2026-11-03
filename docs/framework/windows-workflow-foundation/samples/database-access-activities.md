@@ -75,7 +75,7 @@ Public class DbUpdate: AsyncCodeActivity
 
 Executes a query that retrieves a single value from the database.
 
-This class performs its work asynchronously (it derives from <xref:System.Activities.AsyncCodeActivity%601> and uses its asynchronous capabilities).
+This class performs its work asynchronously (it derives from <xref:System.Activities.AsyncCodeActivity`1> and uses its asynchronous capabilities).
 
 The connection information can be configured by setting a provider invariant name (`ProviderName`) and the connection string (`ConnectionString`) or just using a connection string configuration name (`ConfigFileSectionName`) from the application configuration file.
 
@@ -83,7 +83,7 @@ The connection information can be configured by setting a provider invariant nam
 
 The query to be executed is configured in its `Sql` property and the parameters are passed through the `Parameters` collection.
 
-After `DbQueryScalar` is executed, the scalar is returned in the `Result out` argument (of type `TResult`, that is defined in the base class <xref:System.Activities.AsyncCodeActivity%601>).
+After `DbQueryScalar` is executed, the scalar is returned in the `Result out` argument (of type `TResult`, that is defined in the base class <xref:System.Activities.AsyncCodeActivity`1>).
 
 ```csharp
 public class DbQueryScalar<TResult> : AsyncCodeActivity<TResult>
@@ -131,7 +131,7 @@ public class DbQueryScalar<TResult> : AsyncCodeActivity<TResult>
 
 ## DbQuery
 
-Executes a query that retrieves a list of objects. After the query is executed, a mapping function is executed (it can be <xref:System.Func%601><`DbDataReader`, `TResult`> or an <xref:System.Activities.ActivityFunc%601><`DbDataReader`, `TResult`>). This mapping function gets a record in a `DbDataReader` and maps it to the object to be returned.
+Executes a query that retrieves a list of objects. After the query is executed, a mapping function is executed (it can be <xref:System.Func`1><`DbDataReader`, `TResult`> or an <xref:System.Activities.ActivityFunc`1><`DbDataReader`, `TResult`>). This mapping function gets a record in a `DbDataReader` and maps it to the object to be returned.
 
 The connection information can be configured by setting a provider invariant name (`ProviderName`) and the connection string (`ConnectionString`) or just using a connection string configuration name (`ConfigFileSectionName`) from the application configuration file.
 
@@ -139,7 +139,7 @@ The connection information can be configured by setting a provider invariant nam
 
 The query to be executed is configured in its `Sql` property and the parameters are passed through the `Parameters` collection.
 
-The results of the SQL query are retrieved using a `DbDataReader`. The activity iterates through the `DbDataReader` and maps the rows in the `DbDataReader` to an instance of `TResult`. The user of `DbQuery` has to provide the mapping code and this can be done in two ways: using a <xref:System.Func%601><`DbDataReader`, `TResult`> or an <xref:System.Activities.ActivityFunc%601><`DbDataReader`, `TResult`>. In the first case, the map is done in a single pulse of execution. Therefore, it is faster, but this cannot be serialized to XAML. In the last case, the map is performed in multiple pulses. Therefore, it might be slower but can be serialized to XAML and authored declaratively (any existing activity can participate in the mapping).
+The results of the SQL query are retrieved using a `DbDataReader`. The activity iterates through the `DbDataReader` and maps the rows in the `DbDataReader` to an instance of `TResult`. The user of `DbQuery` has to provide the mapping code and this can be done in two ways: using a <xref:System.Func`1><`DbDataReader`, `TResult`> or an <xref:System.Activities.ActivityFunc`1><`DbDataReader`, `TResult`>. In the first case, the map is done in a single pulse of execution. Therefore, it is faster, but this cannot be serialized to XAML. In the last case, the map is performed in multiple pulses. Therefore, it might be slower but can be serialized to XAML and authored declaratively (any existing activity can participate in the mapping).
 
 ```csharp
 public class DbQuery<TResult> : AsyncCodeActivity<IList<TResult>> where TResult : class
@@ -189,8 +189,8 @@ public class DbQuery<TResult> : AsyncCodeActivity<IList<TResult>> where TResult 
 | ConfigName       | Name of the configuration file section where the connection information is stored. When this argument is set `ProviderName` and `ConnectionString` are not required. |
 | Sql              | The SQL command to be executed.                                                                              |
 | Parameters       | Collection of the parameters of the SQL query.                                                               |
-| Mapper           | Mapping function (<xref:System.Func%601><`DbDataReader`, `TResult`>) that takes a record in the `DataReader` obtained as result of executing the query and returns an instance of an object of type `TResult` to be added to the `Result` collection.<br /><br /> In this case, mapping is done in a single pulse of execution, but it cannot be authored declaratively using the designer. |
-| MapperFunc       | Mapping function (<xref:System.Activities.ActivityFunc%601><`DbDataReader`, `TResult`>) that takes a record in the `DataReader` obtained as result of executing the query and returns an instance of an object of type `TResult` to be added to the `Result` collection.<br /><br /> In this case, the mapping is done in multiple pulses of execution. This function can be serialized to XAML and authored declaratively (any existing activity can participate in the mapping). |
+| Mapper           | Mapping function (<xref:System.Func`1><`DbDataReader`, `TResult`>) that takes a record in the `DataReader` obtained as result of executing the query and returns an instance of an object of type `TResult` to be added to the `Result` collection.<br /><br /> In this case, mapping is done in a single pulse of execution, but it cannot be authored declaratively using the designer. |
+| MapperFunc       | Mapping function (<xref:System.Activities.ActivityFunc`1><`DbDataReader`, `TResult`>) that takes a record in the `DataReader` obtained as result of executing the query and returns an instance of an object of type `TResult` to be added to the `Result` collection.<br /><br /> In this case, the mapping is done in multiple pulses of execution. This function can be serialized to XAML and authored declaratively (any existing activity can participate in the mapping). |
 | Result           | List of objects obtained as result of executing the query and executing the mapping function for each record in the `DataReader`. |
 
 [!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
@@ -205,7 +205,7 @@ The connection information can be configured by setting a provider invariant nam
 
 The query to be executed is configured in its `Sql` property and the parameters are passed through the `Parameters` collection.
 
-After the `DbQueryDataSet` is executed the `DataSet` is returned in the `Result out` argument (of type `TResult`, that is defined in the base class <xref:System.Activities.AsyncCodeActivity%601>).
+After the `DbQueryDataSet` is executed the `DataSet` is returned in the `Result out` argument (of type `TResult`, that is defined in the base class <xref:System.Activities.AsyncCodeActivity`1>).
 
 ```csharp
 public class DbQueryDataSet : AsyncCodeActivity<DataSet>

@@ -13,7 +13,7 @@ In previous .NET versions, the <xref:System.Windows.Forms.TextFormatFlags.Modify
 
 ## Reason for change
 
-Passing a string to <xref:System.Windows.Forms.TextRenderer.MeasureText%2A?displayProperty=nameWithType> with <xref:System.Windows.Forms.TextFormatFlags.ModifyString?displayProperty=nameWithType> alters the string in some situations. This behavior breaks the string immutability promise and may lead to a fatal .NET runtime state corruption.
+Passing a string to <xref:System.Windows.Forms.TextRenderer.MeasureText*?displayProperty=nameWithType> with <xref:System.Windows.Forms.TextFormatFlags.ModifyString?displayProperty=nameWithType> alters the string in some situations. This behavior breaks the string immutability promise and may lead to a fatal .NET runtime state corruption.
 
 ## Version introduced
 

@@ -19,16 +19,18 @@ Recommended configuration:
 - <xref:Orleans.Configuration.GrainVersioningOptions.DefaultVersionSelectorStrategy> set to <xref:Orleans.Versions.Selector.AllCompatibleVersions>.
 
 ```csharp
-var silo = new HostBuilder()
-    .UseOrleans(builder =>
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.Configure<GrainVersioningOptions>(options =>
     {
-        builder.Configure<GrainVersioningOptions>(options =>
-        {
-            options.DefaultCompatibilityStrategy = nameof(BackwardCompatible);
-            options.DefaultVersionSelectorStrategy = nameof(AllCompatibleVersions);
-        })
-    })
-    .Build();
+        options.DefaultCompatibilityStrategy = nameof(BackwardCompatible);
+        options.DefaultVersionSelectorStrategy = nameof(AllCompatibleVersions);
+    });
+});
+
+using var host = builder.Build();
+await host.RunAsync();
 ```
 
 When using this configuration, "old" clients can talk to activations on both versions of silos. Newer clients and silos only trigger new activations on newer silos.
@@ -45,16 +47,18 @@ Recommended configuration:
 - <xref:Orleans.Configuration.GrainVersioningOptions.DefaultVersionSelectorStrategy> set to <xref:Orleans.Versions.Selector.MinimumVersion>.
 
 ```csharp
-var silo = new HostBuilder()
-    .UseOrleans(builder =>
+var builder = Host.CreateApplicationBuilder(args);
+builder.UseOrleans(siloBuilder =>
+{
+    siloBuilder.Configure<GrainVersioningOptions>(options =>
     {
-        builder.Configure<GrainVersioningOptions>(options =>
-        {
-            options.DefaultCompatibilityStrategy = nameof(BackwardCompatible);
-            options.DefaultVersionSelectorStrategy = nameof(MinimumVersion);
-        })
-    })
-    .Build();
+        options.DefaultCompatibilityStrategy = nameof(BackwardCompatible);
+        options.DefaultVersionSelectorStrategy = nameof(MinimumVersion);
+    });
+});
+
+using var host = builder.Build();
+await host.RunAsync();
 ```
 
 Suggested deployment steps:

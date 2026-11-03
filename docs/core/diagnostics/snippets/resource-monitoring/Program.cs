@@ -31,7 +31,6 @@ await StartMonitoringAsync(monitor, token);
 async Task StartMonitoringAsync(IResourceMonitor monitor, CancellationToken cancellationToken)
 {
     var table = new Table()
-        .Centered()
         .Title("Resource Monitoring", new Style(foreground: Color.Purple, decoration: Decoration.Bold))
         .Caption("Updates every three seconds. *GTD: Guaranteed ", new Style(decoration: Decoration.Dim))
         .RoundedBorder()

@@ -16,7 +16,7 @@ WCF Client 8.0 GA
 
 ## Previous behavior
 
-The removed APIs were previously suppressed from IntelliSense suggestions, however, projects that used them compiled successfully. Using any of the removed APIs resulted in a <xref:System.PlatformNotSupportedException> at run time.
+The removed APIs were previously suppressed from IntelliSense suggestions, however, projects that used them compiled successfully. Using any of the removed APIs resulted in a <xref:System.PlatformNotSupportedException> at runtime.
 
 ## New behavior
 
@@ -28,7 +28,7 @@ This change can affect [source compatibility](../../categories.md#source-compati
 
 ## Reason for change
 
-The [affected APIs](#affected-apis) were never implemented on .NET, and any calls to these APIs previously resulted in a run-time exception. Thus the decision was made to remove them completely.
+The [affected APIs](#affected-apis) were never implemented on .NET, and any calls to these APIs previously resulted in a runtime exception. Thus the decision was made to remove them completely.
 
 ## Recommended action
 

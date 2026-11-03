@@ -52,7 +52,7 @@ Then add the following changes to the MainWindow.xaml.vb file of that project.
         Dim cts As CancellationTokenSource
     ```
 
-2. Add the following event handler for the **Cancel** button. The event handler uses the <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> method to notify `cts` when the user requests cancellation.
+2. Add the following event handler for the **Cancel** button. The event handler uses the <xref:System.Threading.CancellationTokenSource.Cancel*?displayProperty=nameWithType> method to notify `cts` when the user requests cancellation.
 
     ```vb
     ' ***Add an event handler for the Cancel button.
@@ -73,7 +73,7 @@ Then add the following changes to the MainWindow.xaml.vb file of that project.
       cts = New CancellationTokenSource()
       ```
 
-    - In the call to `AccessTheWebAsync`, which downloads the contents of a specified website, send the <xref:System.Threading.CancellationTokenSource.Token%2A?displayProperty=nameWithType> property of `cts` as an argument. The `Token` property propagates the message if cancellation is requested. Add a catch block that displays a message if the user chooses to cancel the download operation. The following code shows the changes.
+    - In the call to `AccessTheWebAsync`, which downloads the contents of a specified website, send the <xref:System.Threading.CancellationTokenSource.Token?displayProperty=nameWithType> property of `cts` as an argument. The `Token` property propagates the message if cancellation is requested. Add a catch block that displays a message if the user chooses to cancel the download operation. The following code shows the changes.
 
       ```vb
       Try
@@ -204,7 +204,7 @@ To extend the example yourself, step by step, follow the instructions in the "Do
     Next
     ```
 
-4. Because `AccessTheWebAsync` displays the lengths, the method doesn't need to return anything. Remove the return statement, and change the return type of the method to <xref:System.Threading.Tasks.Task> instead of <xref:System.Threading.Tasks.Task%601>.
+4. Because `AccessTheWebAsync` displays the lengths, the method doesn't need to return anything. Remove the return statement, and change the return type of the method to <xref:System.Threading.Tasks.Task> instead of <xref:System.Threading.Tasks.Task`1>.
 
     ```vb
     Async Function AccessTheWebAsync(ct As CancellationToken) As Task

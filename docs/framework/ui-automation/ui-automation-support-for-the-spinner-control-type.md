@@ -67,7 +67,7 @@ ms.assetid: 3a29d185-65d8-42e3-bcc3-7f43e96f40c5
 |Control Pattern/Pattern Property|Support/Value|Notes|
 |---------------------------------------|--------------------|-----------|
 |<xref:System.Windows.Automation.Provider.ISelectionProvider>|Depends|Spinner controls that have a list of items to be selected must support this pattern.|
-|<xref:System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple%2A>|False|Spinner controls are always single selection containers.|
+|<xref:System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple>|False|Spinner controls are always single selection containers.|
 |<xref:System.Windows.Automation.Provider.IRangeValueProvider>|Depends|Spinner controls that span a numeric range can support this pattern.|
 |<xref:System.Windows.Automation.Provider.IValueProvider>|Depends|Spinner controls that span a discrete set of options or numbers can support this pattern.|
 

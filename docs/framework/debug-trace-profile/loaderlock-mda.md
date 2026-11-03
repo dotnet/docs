@@ -20,7 +20,7 @@ The `loaderLock` managed debugging assistant (MDA) detects attempts to execute m
 
 ## Symptoms
 
- The most common failure when executing code inside the operating system's loader lock is that threads will deadlock when attempting to call other Win32 functions that also require the loader lock.  Examples of such functions are `LoadLibrary`, `GetProcAddress`, `FreeLibrary`, and `GetModuleHandle`.  The application might not directly call these functions; the common language runtime (CLR) might call these functions as the result of a higher level call like <xref:System.Reflection.Assembly.Load%2A> or the first call to a platform invoke method.
+ The most common failure when executing code inside the operating system's loader lock is that threads will deadlock when attempting to call other Win32 functions that also require the loader lock.  Examples of such functions are `LoadLibrary`, `GetProcAddress`, `FreeLibrary`, and `GetModuleHandle`.  The application might not directly call these functions; the common language runtime (CLR) might call these functions as the result of a higher level call like <xref:System.Reflection.Assembly.Load*> or the first call to a platform invoke method.
 
  Deadlocks can also occur if a thread is waiting for another thread to start or finish.  When a thread starts or finishes executing, it must acquire the operating system's loader lock to deliver events to affected DLLs.
 

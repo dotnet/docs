@@ -1,7 +1,7 @@
 ---
 title: "Connection Strings"
 description: Learn about connection strings in ADO.NET, which contain initialization information passed as a parameter from a data provider to a data source.
-ms.date: "10/10/2018"
+ms.date: "10/19/2026"
 ms.custom: sfi-ropc-nochange
 ---
 
@@ -49,18 +49,18 @@ Keyword=a=b=c
 
 Since each value is read till the next semicolon or the end of string, the value in the latter example is `a=b=c`, and the final semicolon is optional.
 
-All connection strings share the same basic syntax described previously. The set of recognized keywords depends on the provider, however, and has evolved over the years from earlier APIs such as *ODBC*. The *.NET Framework* data provider for *SQL Server* (`SqlClient`) supports many keywords from older APIs, but is generally more flexible and accepts synonyms for many of the common connection string keywords.
+All connection strings share the same basic syntax described previously. The set of recognized keywords depends on the provider, however, and has evolved over the years from earlier APIs such as *ODBC*. Microsoft.Data.SqlClient supports many keywords from older APIs, but is generally more flexible and accepts synonyms for many of the common connection string keywords.
 
 Typing mistakes can cause errors. For example, `Integrated Security=true` is valid, but `IntegratedSecurity=true` causes an error.
 
-Connection strings constructed manually at run time from unvalidated user input are vulnerable to string-injection attacks and jeopardize security at the data source. To address these problems, *ADO.NET* 2.0 introduced [connection string builders](connection-string-builders.md) for each *.NET Framework* data provider. These connection string builders expose parameters as strongly typed properties and make it possible to validate the connection string before it's sent to the data source.
+Connection strings constructed manually at runtime from unvalidated user input are vulnerable to string-injection attacks and jeopardize security at the data source. To address these problems, *ADO.NET* 2.0 introduced [connection string builders](connection-string-builders.md) for each *.NET Framework* data provider. These connection string builders expose parameters as strongly typed properties and make it possible to validate the connection string before it's sent to the data source.
 
 [!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ## In this section
 
 [Connection String Builders](connection-string-builders.md)\
-Demonstrates how to use the `ConnectionStringBuilder` classes to construct valid connection strings at run time.
+Demonstrates how to use the `ConnectionStringBuilder` classes to construct valid connection strings at runtime.
 
 [Connection Strings and Configuration Files](connection-strings-and-configuration-files.md)\
 Demonstrates how to store and retrieve connection strings in configuration files.

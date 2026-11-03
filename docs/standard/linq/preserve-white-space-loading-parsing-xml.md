@@ -19,10 +19,10 @@ This article describes the white space behavior of methods that populate XML tre
 
 The following methods in the <xref:System.Xml.Linq.XElement> and <xref:System.Xml.Linq.XDocument> classes populate an XML tree. You can populate an XML tree from a file, a <xref:System.IO.TextReader>, an <xref:System.Xml.XmlReader>, or a string:
 
-- <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=nameWithType>
-- <xref:System.Xml.Linq.XElement.Parse%2A?displayProperty=nameWithType>
-- <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=nameWithType>
-- <xref:System.Xml.Linq.XDocument.Parse%2A?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XElement.Load*?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XElement.Parse*?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XDocument.Load*?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XDocument.Parse*?displayProperty=nameWithType>
 
 If the method doesn't take <xref:System.Xml.Linq.LoadOptions> as an argument, the method won't preserve insignificant white space.
 

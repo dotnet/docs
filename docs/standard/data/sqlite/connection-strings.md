@@ -118,6 +118,9 @@ A value indicating which [virtual file system (VFS)](https://www.sqlite.org/vfs.
 
 You can use <xref:Microsoft.Data.Sqlite.SqliteConnectionStringBuilder> as a strongly typed way of creating connection strings. It can also be used to prevent connection string injection attacks.
 
+> [!NOTE]
+> In the following example, `baseConnectionString` is an existing connection string, such as `Data Source=EncryptionSample.db`.
+
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/EncryptionSample/Program.cs?name=snippet_ConnectionStringBuilder)]
 
 ## Examples

@@ -45,7 +45,7 @@ The recommended credential reuse strategy differs by .NET application type.
 
 # [ASP.NET Core](#tab/aspdotnet)
 
-To implement credential reuse, use the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential%2A> method from `Microsoft.Extensions.Azure`. Consider an ASP.NET Core app hosted on Azure App Service in both production and staging environments. Environment variable `ASPNETCORE_ENVIRONMENT` is set to either `Production` or `Staging` to differentiate between these two non-development environments. In both production and staging, the user-assigned variant of `ManagedIdentityCredential` is used to authenticate the Key Vault Secrets and Blob Storage clients.
+To implement credential reuse, use the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential*> method from `Microsoft.Extensions.Azure`. Consider an ASP.NET Core app hosted on Azure App Service in both production and staging environments. Environment variable `ASPNETCORE_ENVIRONMENT` is set to either `Production` or `Staging` to differentiate between these two non-development environments. In both production and staging, the user-assigned variant of `ManagedIdentityCredential` is used to authenticate the Key Vault Secrets and Blob Storage clients.
 
 When the app runs on a local development machine, where `ASPNETCORE_ENVIRONMENT` is set to `Development`, a chained sequence of developer tool credentials is used instead. This approach ensures environment-appropriate credentials are used, enhancing security and simplifying credential management.
 
@@ -65,7 +65,7 @@ In non-ASP.NET Core apps, credential reuse is accomplished by passing the same c
 
 If you use an Azure Identity library credential outside the context of [an Azure SDK client library that depends on Azure Core](../packages.md#libraries-using-azurecore), it becomes your responsibility to manage [token lifetime](/entra/identity-platform/access-tokens#token-lifetime) and caching behavior in your app.
 
-The <xref:Azure.Core.AccessToken.RefreshOn%2A> property on `AccessToken`, which provides a hint to consumers as to when token refresh can be attempted, will be automatically used by Azure SDK client libraries that depend on the Azure Core library to refresh the token. For direct usage of Azure Identity library [credentials that support token caching](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/samples/TokenCache.md#credentials-supporting-token-caching), the underlying MSAL cache automatically refreshes proactively when the `RefreshOn` time occurs. This design allows the client code to call `GetToken` each time a token is needed and delegate the refresh to the library.
+The <xref:Azure.Core.AccessToken.RefreshOn> property on `AccessToken`, which provides a hint to consumers as to when token refresh can be attempted, will be automatically used by Azure SDK client libraries that depend on the Azure Core library to refresh the token. For direct usage of Azure Identity library [credentials that support token caching](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/samples/TokenCache.md#credentials-supporting-token-caching), the underlying MSAL cache automatically refreshes proactively when the `RefreshOn` time occurs. This design allows the client code to call `GetToken` each time a token is needed and delegate the refresh to the library.
 
 To only call `GetToken` when necessary, observe the `RefreshOn` date and proactively attempt to refresh the token after that time. The specific implementation is up to the customer.
 
@@ -86,7 +86,7 @@ The Azure Identity library for .NET allows you to authenticate via managed ident
 - **When to use:** For production scenarios where resilience is important
 - **How to activate:** Take one of the following approaches:
   - Use `DefaultAzureCredential` with environment variable `AZURE_TOKEN_CREDENTIALS` set to `ManagedIdentityCredential`
-  
+
     > [!IMPORTANT]
     > This `DefaultAzureCredential` approach only operates in resilient mode when using `Azure.Identity` package version 1.16.0 or later. In earlier versions, this approach operates in "fail fast" mode.
 
@@ -94,7 +94,7 @@ The Azure Identity library for .NET allows you to authenticate via managed ident
   - Use `ManagedIdentityCredential` directly
 - **How it works:** The time interval between retries starts at 0.8 seconds, and a maximum of five retries are attempted with exponential backoff, by default. This mode is optimized for resilience but introduces potentially unwanted delays in the development inner loop.
 
-    To change the default retry settings, use the <xref:Azure.Core.ClientOptions.Retry%2A> property on `DefaultAzureCredentialOptions` or `ManagedIdentityCredentialOptions`. For example, retry a maximum of three times, with a starting interval of 0.5 seconds:
+    To change the default retry settings, use the <xref:Azure.Core.ClientOptions.Retry> property on `DefaultAzureCredentialOptions` or `ManagedIdentityCredentialOptions`. For example, retry a maximum of three times, with a starting interval of 0.5 seconds:
 
     :::code language="csharp" source="../snippets/authentication/best-practices/CCA/Program.cs" id="snippet_retries" highlight="5-9":::
 

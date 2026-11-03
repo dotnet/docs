@@ -3,7 +3,7 @@ title: "How to handle an exception using try-catch"
 description: Learn how to handle an exception using a try-catch block. See a code example and view additional available resources.
 ms.topic: how-to
 ms.date: 05/14/2021
-helpviewer_keywords: 
+helpviewer_keywords:
   - "exception handling [C#], try/catch blocks"
   - "exceptions [C#], try/catch blocks"
   - "try/catch blocks [C#]"
@@ -20,4 +20,4 @@ In this example, <xref:System.IndexOutOfRangeException> isn't the most appropria
 
 ## Comments
 
-The code that causes an exception is enclosed in the `try` block. A `catch` statement is added immediately after it to handle `IndexOutOfRangeException`, if it occurs. The `catch` block handles the `IndexOutOfRangeException` and throws the more appropriate `ArgumentOutOfRangeException` instead. In order to provide the caller with as much information as possible, consider specifying the original exception as the <xref:System.Exception.InnerException%2A> of the new exception. Because the <xref:System.Exception.InnerException%2A> property is [read-only](../../programming-guide/classes-and-structs/properties.md), you must assign it in the constructor of the new exception.
+The code that causes an exception is enclosed in the `try` block. A `catch` statement is added immediately after it to handle `IndexOutOfRangeException`, if it occurs. The `catch` block handles the `IndexOutOfRangeException` and throws the more appropriate `ArgumentOutOfRangeException` instead. In order to provide the caller with as much information as possible, consider specifying the original exception as the <xref:System.Exception.InnerException*> of the new exception. Because the <xref:System.Exception.InnerException> property is [read-only](../../programming-guide/classes-and-structs/properties.md), you must assign it in the constructor of the new exception.

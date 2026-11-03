@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
+- [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads/).
 - [Download the dataset](https://aka.ms/mlnet-object-detection-tutorial-dataset) of 50 stop-sign images.
 - Azure account. If you don't have one, [create a free Azure account](https://aka.ms/AMLFree).
 
@@ -205,6 +205,9 @@ With the empty `IDataView` created, the pipeline can be built to do the predicti
     - **outputColumnNames** - A string array containing the names of all of the output column names, which can be found when analyzing the ONNX model in Netron.
     - **inputColumnNames** - A string array containing the names of all of the input column name, which can also be found when analyzing the ONNX model in Netron.
 
+   > [!IMPORTANT]
+   > Only apply models from trusted sources. Applying models from untrusted sources is a security risk.
+
    ```csharp
    .Append(context.Transforms.ApplyOnnxModel(outputColumnNames: new string[] { "detected_boxes", "detected_scores", "detected_classes" }, inputColumnNames: new string[] { "image_tensor" }, modelFile: "./Model/model.onnx"));
    ```
@@ -275,7 +278,7 @@ Loop through the file paths to make a prediction with the model and output the r
     var prediction = predictionEngine.Predict(new StopSignInput { Image = testImage });
     ```
 
-1. With the prediction, you can get the bounding boxes. Use the <xref:System.Linq.Enumerable.Chunk%2A> method to determine how many objects the model has detected. Do this by taking the count of the predicted bounding boxes and dividing that by the number of labels that were predicted. For example, if you had three objects detected in an image, there would be 12 items in the `BoundingBoxes` array and three labels predicted. The `Chunk` method would then give you three arrays of four to represent the bounding boxes for each object.
+1. With the prediction, you can get the bounding boxes. Use the <xref:System.Linq.Enumerable.Chunk*> method to determine how many objects the model has detected. Do this by taking the count of the predicted bounding boxes and dividing that by the number of labels that were predicted. For example, if you had three objects detected in an image, there would be 12 items in the `BoundingBoxes` array and three labels predicted. The `Chunk` method would then give you three arrays of four to represent the bounding boxes for each object.
 
     ```csharp
     var boundingBoxes = prediction.BoundingBoxes.Chunk(prediction.BoundingBoxes.Count() / prediction.PredictedLabels.Count());

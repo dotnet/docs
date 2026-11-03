@@ -6,7 +6,7 @@ no-loc: [System.Text.Json, Newtonsoft.Json]
 ---
 # Required properties
 
-You can mark certain properties to signify that they must be present in the JSON payload for deserialization to succeed. Similarly, you can set an option to specify that all non-optional constructor parameters are present in the JSON payload. If one or more of these required properties is not present, the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> methods throw a <xref:System.Text.Json.JsonException>.
+You can mark certain properties to signify that they must be present in the JSON payload for deserialization to succeed. Similarly, you can set an option to specify that all non-optional constructor parameters are present in the JSON payload. If one or more of these required properties is not present, the <xref:System.Text.Json.JsonSerializer.Deserialize*?displayProperty=nameWithType> methods throw a <xref:System.Text.Json.JsonException>.
 
 There are three ways to mark a property or field as required for JSON deserialization:
 

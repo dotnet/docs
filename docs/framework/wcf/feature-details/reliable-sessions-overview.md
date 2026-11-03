@@ -65,7 +65,7 @@ You can stack a reliable session on different underlying channel types, and the 
 | `IRequestSessionChannel`                        | Yes               | Yes                      | No               | No                      |
 | `IDuplexSessionChannel`                         | No                | No                       | Yes              | Yes                     |
 
-&#8224;The supported channel types are the values available for the generic `TChannel` parameter value that is passed into the <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.BuildChannelFactory%60%601%28System.ServiceModel.Channels.BindingContext%29> method.
+&#8224;The supported channel types are the values available for the generic `TChannel` parameter value that is passed into the <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.BuildChannelFactory``1%28System.ServiceModel.Channels.BindingContext%29> method.
 
 The following table lists the types of session channels supported on the server as a function of the underlying channel type.
 
@@ -75,7 +75,7 @@ The following table lists the types of session channels supported on the server 
 | `IReplySessionChannel`                          | Yes             | Yes                    | No               | No                      |
 | `IDuplexSessionChannel`                         | No              | No                     | Yes              | Yes                     |
 
-&#8225;The supported channel types are the values available for the generic `TChannel` parameter value that is passed into the <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.BuildChannelListener%60%601%28System.ServiceModel.Channels.BindingContext%29> method.
+&#8225;The supported channel types are the values available for the generic `TChannel` parameter value that is passed into the <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.BuildChannelListener``1%28System.ServiceModel.Channels.BindingContext%29> method.
 
 ## Reliable sessions and security
 

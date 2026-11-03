@@ -2,8 +2,6 @@
 title: What's new in .NET 5
 description: Learn about .NET 5, a cross-platform and open-source development platform that is the next evolution of .NET Core.
 ms.date: 07/26/2022
-ms.author: dapine
-author: IEvangelist
 ms.update-cycle: 3650-days
 ---
 
@@ -26,7 +24,7 @@ ASP.NET Core 5.0 is based on .NET 5 but retains the name "Core" to avoid confusi
 - [App trimming](https://devblogs.microsoft.com/dotnet/app-trimming-in-net-5)
 - Windows Arm64 and Arm64 intrinsics
 - Tooling support for dump debugging
-- The runtime libraries are 80% annotated for [nullable reference types](../../csharp/nullable-references.md)
+- The runtime libraries are 80% annotated for [nullable reference types](../../csharp/fundamentals/null-safety/nullable-reference-types.md)
 - Performance improvements:
   - [Garbage Collection (GC)](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5/#gc)
   - [System.Text.Json](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5/#json)

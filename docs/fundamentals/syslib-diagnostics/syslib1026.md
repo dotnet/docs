@@ -8,7 +8,7 @@ f1_keywords:
 
 # SYSLIB1026: C# language version not supported by the source generator
 
-The logging source generator generates code using the [nullable](../../csharp/nullable-references.md) feature, which is only supported starting in C# 8.
+The logging source generator generates code using the [nullable](../../csharp/fundamentals/null-safety/nullable-reference-types.md) feature, which is only supported starting in C# 8.
 
 ## Workarounds
 

@@ -7,7 +7,7 @@ ms.date: "03/30/2017"
 
 Protecting access to your data source is one of the most important goals when securing an application. A connection string presents a potential vulnerability if it isn't secured. Storing connection information in plain text or persisting it in memory risks compromising your entire system. Connection strings embedded in your source code can be read using the [Ildasm.exe (IL Disassembler)](../../tools/ildasm-exe-il-disassembler.md) to view common intermediate language (CIL) in a compiled assembly.
 
-Security vulnerabilities involving connection strings can arise based on the type of authentication used, how connection strings are persisted in memory and on disk, and the techniques used to construct them at run time.
+Security vulnerabilities involving connection strings can arise based on the type of authentication used, how connection strings are persisted in memory and on disk, and the techniques used to construct them at runtime.
 
 [!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 

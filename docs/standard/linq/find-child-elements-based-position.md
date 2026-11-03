@@ -10,9 +10,9 @@ ms.topic: how-to
 
 # How to find child elements based on position (LINQ to XML)
 
-This article shows how to use <xref:System.Xml.XPath.Extensions.XPathSelectElements%2A> to find elements based on element position – for example, to find the second element, or the third through the fifth. It also shows two ways to use LINQ to XML query to do the same thing.
+This article shows how to use <xref:System.Xml.XPath.Extensions.XPathSelectElements*> to find elements based on element position – for example, to find the second element, or the third through the fifth. It also shows two ways to use LINQ to XML query to do the same thing.
 
-There are two approaches to writing this LINQ to XML query in a lazy way. You can use the <xref:System.Linq.Enumerable.Skip%2A> and <xref:System.Linq.Enumerable.Take%2A> operators, or you can use the <xref:System.Linq.Enumerable.Where%2A> overload that takes an index. When you use the <xref:System.Linq.Enumerable.Where%2A> overload, you use a lambda expression that takes two arguments. The following example shows both methods of selecting based on position.
+There are two approaches to writing this LINQ to XML query in a lazy way. You can use the <xref:System.Linq.Enumerable.Skip*> and <xref:System.Linq.Enumerable.Take*> operators, or you can use the <xref:System.Linq.Enumerable.Where*> overload that takes an index. When you use the <xref:System.Linq.Enumerable.Where*> overload, you use a lambda expression that takes two arguments. The following example shows both methods of selecting based on position.
 
 ## Example: Find the second through the fourth `Test` elements
 

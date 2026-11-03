@@ -5,7 +5,7 @@ ms.date: 11/18/2022
 ---
 # GetFolderPath behavior on Unix
 
-Starting in .NET 8, the behavior of <xref:System.Environment.GetFolderPath%2A?displayProperty=nameWithType> on Unix operating systems has changed.
+Starting in .NET 8, the behavior of <xref:System.Environment.GetFolderPath*?displayProperty=nameWithType> on Unix operating systems has changed.
 
 ## Change description
 

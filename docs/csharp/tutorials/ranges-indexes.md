@@ -59,7 +59,7 @@ The following sample shows many of the reasons for those choices. Modify `x`, `y
 
 :::code language="csharp" source="snippets/RangesIndexes/IndicesAndRanges.cs" id="SnippetIndicesAndRanges_Semantics":::
 
-Not only arrays support indices and ranges. You can also use indices and ranges with [string](../language-reference/builtin-types/reference-types.md#the-string-type), <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>.
+Not only arrays support indices and ranges. You can also use indices and ranges with [string](../language-reference/builtin-types/reference-types.md#the-string-type), <xref:System.Span`1>, or <xref:System.ReadOnlySpan`1>.
 
 ### Implicit range operator expression conversions
 
@@ -74,18 +74,18 @@ When using the range operator expression syntax, the compiler implicitly convert
 
 Indexes and ranges provide clear, concise syntax to access a single element or a range of elements in a sequence. An index expression typically returns the type of the elements of a sequence. A range expression typically returns the same sequence type as the source sequence.
 
-Any type that provides an [indexer](../programming-guide/indexers/index.md) with an <xref:System.Index> or <xref:System.Range> parameter explicitly supports indices or ranges respectively. An indexer that takes a single <xref:System.Range> parameter may return a different sequence type, such as <xref:System.Span%601?displayProperty=nameWithType>.
+Any type that provides an [indexer](../programming-guide/indexers/index.md) with an <xref:System.Index> or <xref:System.Range> parameter explicitly supports indices or ranges respectively. An indexer that takes a single <xref:System.Range> parameter may return a different sequence type, such as <xref:System.Span`1?displayProperty=nameWithType>.
 
 > [!IMPORTANT]
 > The performance of code using the range operator depends on the type of the sequence operand.
 >
-> The time complexity of the range operator depends on the sequence type. For example, if the sequence is a `string` or an array, then the result is a copy of the specified section of the input, so the time complexity is *O(N)* (where N is the length of the range). On the other hand, if it's a <xref:System.Span%601?displayProperty=nameWithType> or a <xref:System.Memory%601?displayProperty=nameWithType>, the result references the same backing store, which means there is no copy and the operation is *O(1)*.
+> The time complexity of the range operator depends on the sequence type. For example, if the sequence is a `string` or an array, then the result is a copy of the specified section of the input, so the time complexity is *O(N)* (where N is the length of the range). On the other hand, if it's a <xref:System.Span`1?displayProperty=nameWithType> or a <xref:System.Memory`1?displayProperty=nameWithType>, the result references the same backing store, which means there is no copy and the operation is *O(1)*.
 >
 > In addition to the time complexity, this causes extra allocations and copies, impacting performance. In performance sensitive code, consider using `Span<T>` or `Memory<T>` as the sequence type, since the range operator does not allocate for them.
 
 A type is **countable** if it has a property named `Length` or `Count` with an accessible getter and a return type of `int`. A countable type that doesn't explicitly support indices or ranges may provide an implicit support for them. For more information, see the [Implicit Index support](~/_csharpstandard/standard/ranges.md#1842-implicit-index-support) and [Implicit Range support](~/_csharpstandard/standard/ranges.md#1843-implicit-range-support) sections of the [feature proposal note](~/_csharpstandard/standard/ranges.md). Ranges using implicit range support return the same sequence type as the source sequence.
 
-For example, the following .NET types support both indices and ranges: <xref:System.String>, <xref:System.Span%601>, and <xref:System.ReadOnlySpan%601>. The <xref:System.Collections.Generic.List%601> supports indices but doesn't support ranges.
+For example, the following .NET types support both indices and ranges: <xref:System.String>, <xref:System.Span`1>, and <xref:System.ReadOnlySpan`1>. The <xref:System.Collections.Generic.List`1> supports indices but doesn't support ranges.
 
 <xref:System.Array> has more nuanced behavior. Single dimension arrays support both indices and ranges. Multi-dimensional arrays don't support indexers or ranges. The indexer for a multi-dimensional array has multiple parameters, not a single parameter. Jagged arrays, also referred to as an array of arrays, support both ranges and indexers. The following example shows how to iterate a rectangular subsection of a jagged array. It iterates the section in the center, excluding the first and last three rows, and the first and last two columns from each selected row:
 

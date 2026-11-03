@@ -16,23 +16,23 @@ One difference between keeping the information as attributes or as child element
 
 ## SetAttributeValue and SetElementValue
 
-The two methods that facilitate keeping name-value pairs are <xref:System.Xml.Linq.XElement.SetAttributeValue%2A> and <xref:System.Xml.Linq.XElement.SetElementValue%2A>. These two methods have similar semantics.
+The two methods that facilitate keeping name-value pairs are <xref:System.Xml.Linq.XElement.SetAttributeValue*> and <xref:System.Xml.Linq.XElement.SetElementValue*>. These two methods have similar semantics.
 
-<xref:System.Xml.Linq.XElement.SetAttributeValue%2A> can add, modify, and remove attributes of an element.
+<xref:System.Xml.Linq.XElement.SetAttributeValue*> can add, modify, and remove attributes of an element.
 
-- If you call <xref:System.Xml.Linq.XElement.SetAttributeValue%2A> with a name of an attribute that doesn't exist, the method creates a new attribute and adds it to the specified element.
-- If you call <xref:System.Xml.Linq.XElement.SetAttributeValue%2A> with a name of an existing attribute and with some specified content, the contents of the attribute are replaced with the specified content.
-- If you call <xref:System.Xml.Linq.XElement.SetAttributeValue%2A> with a name of an existing attribute, and specify `null` for the content, the attribute is removed from its parent.
+- If you call <xref:System.Xml.Linq.XElement.SetAttributeValue*> with a name of an attribute that doesn't exist, the method creates a new attribute and adds it to the specified element.
+- If you call <xref:System.Xml.Linq.XElement.SetAttributeValue*> with a name of an existing attribute and with some specified content, the contents of the attribute are replaced with the specified content.
+- If you call <xref:System.Xml.Linq.XElement.SetAttributeValue*> with a name of an existing attribute, and specify `null` for the content, the attribute is removed from its parent.
 
-<xref:System.Xml.Linq.XElement.SetElementValue%2A> can add, modify, and remove child elements of an element.
+<xref:System.Xml.Linq.XElement.SetElementValue*> can add, modify, and remove child elements of an element.
 
-- If you call <xref:System.Xml.Linq.XElement.SetElementValue%2A> with a name of a child element that doesn't exist, the method creates a new element and adds it to the specified element.
-- If you call <xref:System.Xml.Linq.XElement.SetElementValue%2A> with a name of an existing element and with some specified content, the contents of the element are replaced with the specified content.
-- If you call <xref:System.Xml.Linq.XElement.SetElementValue%2A> with a name of an existing element, and specify `null` for the content, the element is removed from its parent.
+- If you call <xref:System.Xml.Linq.XElement.SetElementValue*> with a name of a child element that doesn't exist, the method creates a new element and adds it to the specified element.
+- If you call <xref:System.Xml.Linq.XElement.SetElementValue*> with a name of an existing element and with some specified content, the contents of the element are replaced with the specified content.
+- If you call <xref:System.Xml.Linq.XElement.SetElementValue*> with a name of an existing element, and specify `null` for the content, the element is removed from its parent.
 
 ## Example: Use `SetAttributeValue` to create and maintain a list of name-value pairs
 
-The following example creates an element with no attributes. It then uses the <xref:System.Xml.Linq.XElement.SetAttributeValue%2A> method to create and maintain a list of name-value pairs.
+The following example creates an element with no attributes. It then uses the <xref:System.Xml.Linq.XElement.SetAttributeValue*> method to create and maintain a list of name-value pairs.
 
 ```csharp
 // Create an element with no content.
@@ -86,7 +86,7 @@ This example produces the following output:
 
 ## Example: Use `SetElementValue` to create and maintain a list of name-value pairs
 
-The following example creates an element with no child elements. It then uses the <xref:System.Xml.Linq.XElement.SetElementValue%2A> method to create and maintain a list of name-value pairs.
+The following example creates an element with no child elements. It then uses the <xref:System.Xml.Linq.XElement.SetElementValue*> method to create and maintain a list of name-value pairs.
 
 ```csharp
 // Create an element with no content.
@@ -163,5 +163,5 @@ This example produces the following output:
 
 ## See also
 
-- <xref:System.Xml.Linq.XElement.SetAttributeValue%2A>
-- <xref:System.Xml.Linq.XElement.SetElementValue%2A>
+- <xref:System.Xml.Linq.XElement.SetAttributeValue*>
+- <xref:System.Xml.Linq.XElement.SetElementValue*>

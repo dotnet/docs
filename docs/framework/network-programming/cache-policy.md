@@ -30,7 +30,7 @@ A cache policy defines rules that are used to determine whether a request can be
 
  You can define a cache policy for all requests made by your application or for individual requests. When you specify both an application-level cache policy and a request-level cache policy, the request-level policy is used. You can specify an application-level cache policy programmatically or by using the application or machine configuration files. For more information, see [`<requestCaching>` Element (Network Settings)](../configure-apps/file-schema/network/requestcaching-element-network-settings.md).
 
- To create a cache policy, you must create a policy object by creating an instance of the <xref:System.Net.Cache.RequestCachePolicy> or <xref:System.Net.Cache.HttpRequestCachePolicy> class. To specify the policy on a request, set the request's <xref:System.Net.WebRequest.CachePolicy%2A> property to the policy object. When setting an application-level policy programmatically, set the <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A> property to the policy object.
+ To create a cache policy, you must create a policy object by creating an instance of the <xref:System.Net.Cache.RequestCachePolicy> or <xref:System.Net.Cache.HttpRequestCachePolicy> class. To specify the policy on a request, set the request's <xref:System.Net.WebRequest.CachePolicy> property to the policy object. When setting an application-level policy programmatically, set the <xref:System.Net.HttpWebRequest.DefaultCachePolicy> property to the policy object.
 
  For code examples that demonstrate creating and using cache policies, see [Configuring Caching in Network Applications](configuring-caching-in-network-applications.md).
 

@@ -179,7 +179,7 @@ In the following example, the statement parameters use a class that has operator
 
 ## See also
 
-- <xref:System.Collections.Generic.List%601>
+- <xref:System.Collections.Generic.List`1>
 - [Loop Structures](../../programming-guide/language-features/control-flow/loop-structures.md)
 - [While...End While Statement](while-end-while-statement.md)
 - [Do...Loop Statement](do-loop-statement.md)

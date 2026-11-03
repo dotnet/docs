@@ -1,7 +1,8 @@
 ---
 title: "Supported types in System.Text.Json"
 description: "Learn which types are supported for serialization by the APIs in the System.Text.Json namespace."
-ms.date: 11/25/2024
+ms.date: 08/18/2026
+ai-usage: ai-assisted
 no-loc: [System.Text.Json]
 ms.topic: reference
 ---
@@ -29,7 +30,7 @@ The following code snippet shows the serialization of a simple struct.
 
 .NET collection types serialize as JSON arrays. <xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> supports a collection type for serialization if it:
 
-* Derives from <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IAsyncEnumerable%601>.
+* Derives from <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IAsyncEnumerable`1>.
 * Contains elements that are serializable.
 
 The serializer calls the <xref:System.Collections.IEnumerable.GetEnumerator> method and writes the elements.
@@ -79,26 +80,27 @@ The following sections are organized by namespace and show which types are suppo
 
 | Type                                                      | Serialization | Deserialization |
 |-----------------------------------------------------------|---------------|-----------------|
-| <xref:System.Collections.Generic.Dictionary%602> \*      | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.HashSet%601>             | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.IAsyncEnumerable%601> †  | ✔️         | ✔️              |
-| <xref:System.Collections.Generic.ICollection%601>         | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.IDictionary%602> \*     | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.IEnumerable%601>         | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.IList%601>               | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.IReadOnlyCollection%601> | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.IReadOnlyDictionary%602> \* | ✔️        | ✔️              |
-| <xref:System.Collections.Generic.IReadOnlyList%601>       | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.ISet%601>                | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.KeyValuePair%602>        | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.LinkedList%601>          | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.LinkedListNode%601>      | ✔️           | ❌              |
-| <xref:System.Collections.Generic.List%601>                | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.Queue%601>               | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.SortedDictionary%602> \* | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.SortedList%602> \*      | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.SortedSet%601>           | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.Stack%601> ‡             | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.Dictionary`2> \*      | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.HashSet`1>             | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IAsyncEnumerable`1> †  | ✔️         | ✔️              |
+| <xref:System.Collections.Generic.ICollection`1>         | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IDictionary`2> \*     | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IEnumerable`1>         | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IList`1>               | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IReadOnlyCollection`1> | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IReadOnlyDictionary`2> \* | ✔️        | ✔️              |
+| <xref:System.Collections.Generic.IReadOnlyList`1>       | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IReadOnlySet`1> §       | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.ISet`1>                | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.KeyValuePair`2>        | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.LinkedList`1>          | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.LinkedListNode`1>      | ✔️           | ❌              |
+| <xref:System.Collections.Generic.List`1>                | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.Queue`1>               | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.SortedDictionary`2> \* | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.SortedList`2> \*      | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.SortedSet`1>           | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.Stack`1> ‡             | ✔️           | ✔️              |
 
 \* See [Supported key types](#supported-key-types).
 
@@ -106,17 +108,28 @@ The following sections are organized by namespace and show which types are suppo
 
 ‡ See [Support round trip for `Stack` types](converters-how-to.md#support-round-trip-for-stack-types).
 
+§ `System.Text.Json` supports <xref:System.Collections.Generic.IReadOnlySet`1> in .NET 11 and later versions. When you deserialize the interface, the serializer creates a <xref:System.Collections.Generic.HashSet`1> instance. For generated metadata, <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.CreateIReadOnlySetInfo*?displayProperty=nameWithType> creates the collection contract.
+
 #### IAsyncEnumerable\<T>
 
 The following examples use streams as a representation of any async source of data. The source could be files on a local machine, or results from a database query or web service API call.
 
 ##### Stream serialization
 
-`System.Text.Json` supports serializing <xref:System.Collections.Generic.IAsyncEnumerable%601> values as JSON arrays, as shown in the following example:
+`System.Text.Json` supports serializing <xref:System.Collections.Generic.IAsyncEnumerable`1> values as JSON arrays, as shown in the following example:
 
 :::code language="csharp" source="snippets/supported-types/csharp/IAsyncEnumerableSerialize.cs" highlight="15":::
 
-`IAsyncEnumerable<T>` values are only supported by the asynchronous serialization methods, such as <xref:System.Text.Json.JsonSerializer.SerializeAsync%2A?displayProperty=nameWithType>.
+`IAsyncEnumerable<T>` values are only supported by the asynchronous serialization methods, such as <xref:System.Text.Json.JsonSerializer.SerializeAsync*?displayProperty=nameWithType>.
+
+In .NET 11 and later versions, <xref:System.Text.Json.JsonSerializer.SerializeAsyncEnumerable*?displayProperty=nameWithType> writes an `IAsyncEnumerable<T>` sequence to either a <xref:System.IO.Stream> or a <xref:System.IO.Pipelines.PipeWriter>. With the default `topLevelValues: false`, the method writes a single root-level JSON array. Set `topLevelValues: true` to write [JSON Lines](https://jsonlines.org/) instead, where each element is a separate top-level value:
+
+```json
+{"id":1,"name":"apple"}
+{"id":2,"name":"banana"}
+```
+
+The method writes a single line feed (LF), `\n`, after every value, including the last. It always uses LF, regardless of <xref:System.Text.Json.JsonSerializerOptions.NewLine?displayProperty=nameWithType>. The method ignores <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType>, so each value remains on one line.
 
 ##### Stream deserialization
 
@@ -124,9 +137,9 @@ The `DeserializeAsyncEnumerable` method supports streaming deserialization, as s
 
 :::code language="csharp" source="snippets/supported-types/csharp/IAsyncEnumerableDeserialize.cs" highlight="11":::
 
-The `DeserializeAsyncEnumerable` method only supports reading from root-level JSON arrays.
+By default, <xref:System.Text.Json.JsonSerializer.DeserializeAsyncEnumerable*?displayProperty=nameWithType> reads elements from a single root-level JSON array. Set `topLevelValues: true` to read a sequence of whitespace-separated top-level values instead. This input format is a superset of JSON Lines. Overloads accept either a <xref:System.IO.Stream> or a <xref:System.IO.Pipelines.PipeReader>.
 
-The <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A> method supports `IAsyncEnumerable<T>`, but its signature doesn't allow streaming. It returns the final result as a single value, as shown in the following example.
+The <xref:System.Text.Json.JsonSerializer.DeserializeAsync*> method supports `IAsyncEnumerable<T>`, but its signature doesn't allow streaming. It returns the final result as a single value, as shown in the following example.
 
 :::code language="csharp" source="snippets/supported-types/csharp/IAsyncEnumerableDeserializeNonStreaming.cs" highlight="16":::
 
@@ -136,18 +149,18 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 
 | Type                                                              | Serialization | Deserialization |
 |-------------------------------------------------------------------|---------------|-----------------|
-| <xref:System.Collections.Immutable.IImmutableDictionary%602> †    | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.IImmutableList%601>            | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.IImmutableQueue%601>           | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.IImmutableSet%601>             | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.IImmutableStack%601> \*       | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableArray%601>            | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableDictionary%602> †     | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableHashSet%601>          | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableQueue%601>            | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableSortedDictionary%602> † | ✔️         | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableSortedSet%601>        | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableStack%601> \*        | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.IImmutableDictionary`2> †    | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.IImmutableList`1>            | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.IImmutableQueue`1>           | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.IImmutableSet`1>             | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.IImmutableStack`1> \*       | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.ImmutableArray`1>            | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.ImmutableDictionary`2> †     | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.ImmutableHashSet`1>          | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.ImmutableQueue`1>            | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.ImmutableSortedDictionary`2> † | ✔️         | ✔️              |
+| <xref:System.Collections.Immutable.ImmutableSortedSet`1>        | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.ImmutableStack`1> \*        | ✔️           | ✔️              |
 
 \* See [Support round trip for `Stack` types](converters-how-to.md#support-round-trip-for-stack-types).
 
@@ -171,11 +184,11 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 
 | Type                                                          | Serialization | Deserialization |
 |---------------------------------------------------------------|---------------|-----------------|
-| <xref:System.Collections.Concurrent.BlockingCollection%601>   | ✔️           | ❌              |
-| <xref:System.Collections.Concurrent.ConcurrentBag%601>        | ✔️           | ❌              |
-| <xref:System.Collections.Concurrent.ConcurrentDictionary%602> † | ✔️      | ✔️              |
-| <xref:System.Collections.Concurrent.ConcurrentQueue%601>      | ✔️           | ✔️              |
-| <xref:System.Collections.Concurrent.ConcurrentStack%601> \*  | ✔️           | ✔️              |
+| <xref:System.Collections.Concurrent.BlockingCollection`1>   | ✔️           | ❌              |
+| <xref:System.Collections.Concurrent.ConcurrentBag`1>        | ✔️           | ❌              |
+| <xref:System.Collections.Concurrent.ConcurrentDictionary`2> † | ✔️      | ✔️              |
+| <xref:System.Collections.Concurrent.ConcurrentQueue`1>      | ✔️           | ✔️              |
+| <xref:System.Collections.Concurrent.ConcurrentStack`1> \*  | ✔️           | ✔️              |
 
 \* See [Support round trip for `Stack` types](converters-how-to.md#support-round-trip-for-stack-types).
 
@@ -185,12 +198,12 @@ In this example, the deserializer buffers all `IAsyncEnumerable<T>` contents in 
 
 | Type                                                           | Serialization | Deserialization |
 |----------------------------------------------------------------|---------------|-----------------|
-| <xref:System.Collections.ObjectModel.Collection%601>           | ✔️            | ✔️             |
-| [KeyedCollection\<string, TValue>](xref:System.Collections.ObjectModel.KeyedCollection%602) \* |✔️|❌|
-| <xref:System.Collections.ObjectModel.ObservableCollection%601> | ✔️            | ✔️             |
-| <xref:System.Collections.ObjectModel.ReadOnlyCollection%601>   | ✔️            | ❌             |
-| <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602>   | ✔️            | ❌             |
-| <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection%601> | ✔️    | ❌             |
+| <xref:System.Collections.ObjectModel.Collection`1>           | ✔️            | ✔️             |
+| [KeyedCollection\<string, TValue>](xref:System.Collections.ObjectModel.KeyedCollection`2) \* |✔️|❌|
+| <xref:System.Collections.ObjectModel.ObservableCollection`1> | ✔️            | ✔️             |
+| <xref:System.Collections.ObjectModel.ReadOnlyCollection`1>   | ✔️            | ❌             |
+| <xref:System.Collections.ObjectModel.ReadOnlyDictionary`2>   | ✔️            | ❌             |
+| <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection`1> | ✔️    | ❌             |
 
 \* Non-`string` keys are not supported.
 
@@ -208,17 +221,17 @@ A custom collection is supported for deserialization if it:
 * Has a parameterless constructor.
 * Contains element types that are supported by <xref:System.Text.Json.JsonSerializer>.
 * Implements or inherits one or more of the following interfaces or classes:
-  * <xref:System.Collections.Concurrent.ConcurrentQueue%601>
-  * <xref:System.Collections.Concurrent.ConcurrentStack%601> \*
-  * <xref:System.Collections.Generic.ICollection%601>
+  * <xref:System.Collections.Concurrent.ConcurrentQueue`1>
+  * <xref:System.Collections.Concurrent.ConcurrentStack`1> \*
+  * <xref:System.Collections.Generic.ICollection`1>
   * <xref:System.Collections.IDictionary>
-  * <xref:System.Collections.Generic.IDictionary%602> †
+  * <xref:System.Collections.Generic.IDictionary`2> †
   * <xref:System.Collections.IList>
-  * <xref:System.Collections.Generic.IList%601>
+  * <xref:System.Collections.Generic.IList`1>
   * <xref:System.Collections.Queue>
-  * <xref:System.Collections.Generic.Queue%601>
+  * <xref:System.Collections.Generic.Queue`1>
   * <xref:System.Collections.Stack> \*
-  * <xref:System.Collections.Generic.Stack%601> \*
+  * <xref:System.Collections.Generic.Stack`1> \*
 
   \* See [Support round trip for `Stack` types](converters-how-to.md#support-round-trip-for-stack-types).
 
@@ -240,11 +253,15 @@ For more information about known issues, see the [open issues in System.Text.Jso
 
 When used as the keys of `Dictionary` and `SortedList` types, the following types have built-in support:
 
+* <xref:System.Numerics.BFloat16> (.NET 11 and later)
 * `Boolean`
 * `Byte`
 * `DateTime`
 * `DateTimeOffset`
 * `Decimal`
+* <xref:System.Numerics.Decimal32> (.NET 11 and later)
+* <xref:System.Numerics.Decimal64> (.NET 11 and later)
+* <xref:System.Numerics.Decimal128> (.NET 11 and later)
 * `Double`
 * `Enum`
 * `Guid`
@@ -263,6 +280,35 @@ When used as the keys of `Dictionary` and `SortedList` types, the following type
 * <xref:System.Version>
 
 In addition, the <xref:System.Text.Json.Serialization.JsonConverter`1.WriteAsPropertyName(System.Text.Json.Utf8JsonWriter,`0,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> and <xref:System.Text.Json.Serialization.JsonConverter`1.ReadAsPropertyName(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> methods let you add dictionary key support for any type of your choosing.
+
+## BFloat16 and decimal floating-point types
+
+Starting in .NET 11, `System.Text.Json` includes built-in converters for the <xref:System.Numerics.BFloat16>, <xref:System.Numerics.Decimal32>, <xref:System.Numerics.Decimal64>, and <xref:System.Numerics.Decimal128> types. Finite values serialize as JSON numbers.
+
+These types behave like the other built-in numeric types:
+
+* Dictionary-key conversion supports all four types.
+* They honor <xref:System.Text.Json.Serialization.JsonNumberHandling>, including the `"NaN"`, `"Infinity"`, and `"-Infinity"` literals through <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowNamedFloatingPointLiterals>.
+
+<xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices> exposes converter properties for source-generated metadata. The properties are <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.BFloat16Converter?displayProperty=nameWithType>, <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.Decimal32Converter?displayProperty=nameWithType>, <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.Decimal64Converter?displayProperty=nameWithType>, and <xref:System.Text.Json.Serialization.Metadata.JsonMetadataServices.Decimal128Converter?displayProperty=nameWithType>.
+
+## F# discriminated unions
+
+Starting in .NET 11, `System.Text.Json` serializes and deserializes F# discriminated unions, including class, struct, and recursive unions:
+
+```fsharp
+type Shape =
+    | Point
+    | Circle of radius: float
+```
+
+* A case without fields serializes as a JSON string that contains the case name, such as `"Point"`.
+* A case that has fields serializes as a JSON object. The object contains a `$type` discriminator followed by the case's named fields, such as `{"$type":"Circle","radius":3.14}`.
+
+<xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType> applies to case names and field names. A case-level <xref:System.Text.Json.Serialization.JsonPropertyNameAttribute> takes precedence. To use a discriminator property name other than `$type`, set <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute.TypeDiscriminatorPropertyName?displayProperty=nameWithType>.
+
+> [!IMPORTANT]
+> F# discriminated union support is reflection-only. It requires dynamic code and untrimmed reflection metadata. You can't use it with `System.Text.Json` source generation or Native AOT.
 
 ## Unsupported types
 

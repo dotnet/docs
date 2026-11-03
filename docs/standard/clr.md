@@ -1,10 +1,10 @@
 ---
 title: "Common Language Runtime (CLR) overview - .NET"
 titleSuffix: ""
-description: Get started with common language runtime (CLR), .NET's run-time environment. The CLR runs code and provides services to make the development process easier.
+description: Get started with common language runtime (CLR), .NET's runtime environment. The CLR runs code and provides services to make the development process easier.
 ms.date: 10/21/2025
 ms.custom: devdivchpfy22
-helpviewer_keywords: 
+helpviewer_keywords:
   - "compiling source code, runtime functionality"
   - "code, execution"
   - "managed data"
@@ -21,14 +21,14 @@ ai-usage: ai-assisted
 ---
 # Common Language Runtime (CLR) overview
 
-.NET provides a run-time environment called the common language runtime that runs the code and provides services that make the development process easier.
+.NET provides a runtime environment called the common language runtime that runs the code and provides services that make the development process easier.
 
 Compilers and tools expose the common language runtime's functionality and enable you to write code that benefits from the managed execution environment. Code that you develop with a language compiler that targets the runtime is called managed code. Managed code benefits from features such as cross-language integration, cross-language exception handling, enhanced security, versioning and deployment support, a simplified model for component interaction, and debugging and profiling services.
 
 > [!NOTE]
-> Compilers and tools can produce output that the common language runtime can consume because the type system, the format of metadata, and the run-time environment (the virtual execution system) are all defined by a public standard, the ECMA Common Language Infrastructure specification. For more information, see [ECMA C# and Common Language Infrastructure Specifications](../fundamentals/standards.md).
+> Compilers and tools can produce output that the common language runtime can consume because the type system, the format of metadata, and the runtime environment (the virtual execution system) are all defined by a public standard, the ECMA Common Language Infrastructure specification. For more information, see [ECMA C# and Common Language Infrastructure Specifications](../fundamentals/standards.md).
 
-To enable the runtime to provide services to managed code, language compilers must emit metadata that describes the types, members, and references in your code. Metadata is stored with the code; every loadable common language runtime portable executable (PE) file contains metadata. The runtime uses metadata to locate and load classes, lay out instances in memory, resolve method invocations, generate native code, enforce security, and set run-time context boundaries.
+To enable the runtime to provide services to managed code, language compilers must emit metadata that describes the types, members, and references in your code. Metadata is stored with the code; every loadable common language runtime portable executable (PE) file contains metadata. The runtime uses metadata to locate and load classes, lay out instances in memory, resolve method invocations, generate native code, enforce security, and set runtime context boundaries.
 
 The runtime automatically handles object layout and manages references to objects, releasing them when they're no longer being used. Objects whose lifetimes are managed this way are called managed data. Garbage collection eliminates memory leaks and some other common programming errors. If your code is managed, you can use managed data, unmanaged data, or both in your .NET application. Because language compilers supply their own types, such as primitive types, you might not always know or need to know whether your data is being managed.
 

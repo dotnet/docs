@@ -29,7 +29,7 @@ The previous behavior was incorrect, as no default parameter values were specifi
 
 ## Recommended action
 
-If you use <xref:System.Reflection.Emit.TypeBuilder.DefineConstructor%2A?displayProperty=nameWithType> or <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%2A?displayProperty=nameWithType>, make sure consumers of the generated types' methods don't rely on the <xref:System.Reflection.ParameterInfo.HasDefaultValue?displayProperty=nameWithType> property being `true`.
+If you use <xref:System.Reflection.Emit.TypeBuilder.DefineConstructor*?displayProperty=nameWithType> or <xref:System.Reflection.Emit.TypeBuilder.DefineMethod*?displayProperty=nameWithType>, make sure consumers of the generated types' methods don't rely on the <xref:System.Reflection.ParameterInfo.HasDefaultValue?displayProperty=nameWithType> property being `true`.
 
 ## Affected APIs
 

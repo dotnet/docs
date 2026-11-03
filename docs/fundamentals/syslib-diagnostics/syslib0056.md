@@ -7,15 +7,15 @@ f1_keywords:
 ---
 # SYSLIB0056: Assembly.LoadFrom that takes an AssemblyHashAlgorithm is obsolete
 
-The overload of <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> that takes an <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm> is obsolete, starting in .NET 9. Calling it in code generates warning `SYSLIB0056` at compile time.
+The overload of <xref:System.Reflection.Assembly.LoadFrom*?displayProperty=nameWithType> that takes an <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm> is obsolete, starting in .NET 9. Calling it in code generates warning `SYSLIB0056` at compile time.
 
 ## Reason for obsoletion
 
-<xref:System.Reflection.Assembly.LoadFrom(System.String,System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)?displayProperty=nameWithType> unconditionally throws a <xref:System.NotSupportedException>. This is a poor development experience. The overload looks like a valid API until it's used, and it throws at run time. Marking it as obsolete gives the necessary design-time signal to not use it.
+<xref:System.Reflection.Assembly.LoadFrom(System.String,System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)?displayProperty=nameWithType> unconditionally throws a <xref:System.NotSupportedException>. This is a poor development experience. The overload looks like a valid API until it's used, and it throws at runtime. Marking it as obsolete gives the necessary design-time signal to not use it.
 
 ## Workaround
 
-Use an overload of <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> that doesn't take an <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm>.
+Use an overload of <xref:System.Reflection.Assembly.LoadFrom*?displayProperty=nameWithType> that doesn't take an <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm>.
 
 ## Suppress a warning
 

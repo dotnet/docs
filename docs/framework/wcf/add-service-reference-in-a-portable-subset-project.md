@@ -38,7 +38,7 @@ When adding a service reference in a portable subset project, the following rest
   
 - The <xref:System.Runtime.Serialization.DataContractSerializer> will always be used for faults.  
   
-- <xref:System.ServiceModel.MessageContractAttribute.IsWrapped%2A> is not supported in portable subset projects.  
+- <xref:System.ServiceModel.MessageContractAttribute.IsWrapped> is not supported in portable subset projects.  
   
 ## See also
 

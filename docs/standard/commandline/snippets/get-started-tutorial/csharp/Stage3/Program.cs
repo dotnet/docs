@@ -11,47 +11,38 @@ class Program
         Option<FileInfo> fileOption = new("--file")
         {
             Description = "An option whose argument is parsed as a FileInfo",
-            Required = true,
-            DefaultValueFactory = result =>
+            DefaultValueFactory = _ => new FileInfo("sampleQuotes.txt"),
+            CustomParser = result =>
             {
-                if (result.Tokens.Count == 0)
-                {
-                    return new FileInfo("sampleQuotes.txt");
-
-                }
-                string filePath = result.Tokens.Single().Value;
-                if (!File.Exists(filePath))
+                var file = new FileInfo(result.Tokens.Single().Value);
+                if (!file.Exists)
                 {
                     result.AddError("File does not exist");
-                    return null;
                 }
-                else
-                {
-                    return new FileInfo(filePath);
-                }
+                return file;
             }
         };
         // </fileoption>
 
         Option<int> delayOption = new("--delay")
         {
-            Description = "Delay between lines, specified as milliseconds per character in a line.",
+            Description = "Delay between lines, specified as milliseconds per character in a line",
             DefaultValueFactory = parseResult => 42
         };
         Option<ConsoleColor> fgcolorOption = new("--fgcolor")
         {
-            Description = "Foreground color of text displayed on the console.",
+            Description = "Foreground color of text displayed on the console",
             DefaultValueFactory = parseResult => ConsoleColor.White
         };
         Option<bool> lightModeOption = new("--light-mode")
         {
-            Description = "Background color of text displayed on the console: default is black, light mode is white."
+            Description = "Background color of text displayed on the console: default is black, light mode is white"
         };
 
         // <optionsandargs>
         Option<string[]> searchTermsOption = new("--search-terms")
         {
-            Description = "Strings to search for when deleting entries.",
+            Description = "Strings to search for when deleting entries",
             Required = true,
             AllowMultipleArgumentsPerToken = true
         };
@@ -128,7 +119,7 @@ class Program
     {
         Console.WriteLine("Deleting from file");
 
-        var lines = File.ReadLines(file.FullName).Where(line => searchTerms.All(s => !line.Contains(s)));
+        var lines = File.ReadLines(file.FullName).Where(line => searchTerms.All(s => !line.Contains(s))).ToList();
         File.WriteAllLines(file.FullName, lines);
     }
     internal static void AddToFile(FileInfo file, string quote, string byline)

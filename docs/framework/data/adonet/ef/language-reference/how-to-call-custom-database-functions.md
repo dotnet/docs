@@ -2,7 +2,7 @@
 description: "Learn more about: How to: Call Custom Database Functions"
 title: "How to: Call Custom Database Functions"
 ms.date: "03/30/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 4354e5eb-dd45-469d-97fb-1c495705ee59
@@ -25,9 +25,9 @@ The procedure below provides a high-level outline for calling a custom database 
 
      For more information, see [Function Element (SSDL)](/ef/ef6/modeling/designer/advanced/edmx/ssdl-spec#function-element-ssdl).
 
-3. Add a corresponding method to a class in your application code and apply a <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> to the method Note that the <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.NamespaceName%2A> and <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.FunctionName%2A> parameters of the attribute are the namespace name of the conceptual model and the function name in the conceptual model respectively. Function name resolution for LINQ is case sensitive.
+3. Add a corresponding method to a class in your application code and apply a <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> to the method Note that the <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.NamespaceName*> and <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.FunctionName*> parameters of the attribute are the namespace name of the conceptual model and the function name in the conceptual model respectively. Function name resolution for LINQ is case sensitive.
 
-4. Call the method in a LINQ to Entities query.  
+4. Call the method in a LINQ to Entities query.
 
 ## Example 1
 

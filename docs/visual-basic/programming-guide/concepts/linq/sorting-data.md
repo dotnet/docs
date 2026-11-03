@@ -18,11 +18,11 @@ The standard query operator methods that sort data are listed in the following s
 
 |Method Name|Description|Visual Basic Query Expression Syntax|More Information|
 |-----------------|-----------------|------------------------------------------|----------------------|
-|OrderBy|Sorts values in ascending order.|`Order By`|<xref:System.Linq.Enumerable.OrderBy%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OrderBy%2A?displayProperty=nameWithType>|
-|OrderByDescending|Sorts values in descending order.|`Order By … Descending`|<xref:System.Linq.Enumerable.OrderByDescending%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OrderByDescending%2A?displayProperty=nameWithType>|
-|ThenBy|Performs a secondary sort in ascending order.|`Order By …, …`|<xref:System.Linq.Enumerable.ThenBy%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.ThenBy%2A?displayProperty=nameWithType>|
-|ThenByDescending|Performs a secondary sort in descending order.|`Order By …, … Descending`|<xref:System.Linq.Enumerable.ThenByDescending%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.ThenByDescending%2A?displayProperty=nameWithType>|
-|Reverse|Reverses the order of the elements in a collection.|Not applicable.|<xref:System.Linq.Enumerable.Reverse%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Reverse%2A?displayProperty=nameWithType>|
+|OrderBy|Sorts values in ascending order.|`Order By`|<xref:System.Linq.Enumerable.OrderBy*?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OrderBy*?displayProperty=nameWithType>|
+|OrderByDescending|Sorts values in descending order.|`Order By … Descending`|<xref:System.Linq.Enumerable.OrderByDescending*?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OrderByDescending*?displayProperty=nameWithType>|
+|ThenBy|Performs a secondary sort in ascending order.|`Order By …, …`|<xref:System.Linq.Enumerable.ThenBy*?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.ThenBy*?displayProperty=nameWithType>|
+|ThenByDescending|Performs a secondary sort in descending order.|`Order By …, … Descending`|<xref:System.Linq.Enumerable.ThenByDescending*?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.ThenByDescending*?displayProperty=nameWithType>|
+|Reverse|Reverses the order of the elements in a collection.|Not applicable.|<xref:System.Linq.Enumerable.Reverse*?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Reverse*?displayProperty=nameWithType>|
 
 ## Query Expression Syntax Examples
 

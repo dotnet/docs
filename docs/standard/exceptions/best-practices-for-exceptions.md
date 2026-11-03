@@ -55,7 +55,7 @@ The approach to choose depends on how often you expect the event to occur.
 
 ### Call `Try*` methods to avoid exceptions
 
-If the performance cost of exceptions is prohibitive, some .NET library methods provide alternative forms of error handling. For example, <xref:System.Int32.Parse%2A?displayProperty=nameWithType> throws an <xref:System.OverflowException> if the value to be parsed is too large to be represented by <xref:System.Int32>. However, <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> doesn't throw this exception. Instead, it returns a Boolean and has an `out` parameter that contains the parsed valid integer upon success. <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A?displayProperty=nameWithType> has similar behavior for attempting to get a value from a dictionary.
+If the performance cost of exceptions is prohibitive, some .NET library methods provide alternative forms of error handling. For example, <xref:System.Int32.Parse*?displayProperty=nameWithType> throws an <xref:System.OverflowException> if the value to be parsed is too large to be represented by <xref:System.Int32>. However, <xref:System.Int32.TryParse*?displayProperty=nameWithType> doesn't throw this exception. Instead, it returns a Boolean and has an `out` parameter that contains the parsed valid integer upon success. <xref:System.Collections.Generic.Dictionary`2.TryGetValue*?displayProperty=nameWithType> has similar behavior for attempting to get a value from a dictionary.
 
 ### Catch cancellation and asynchronous exceptions
 
@@ -231,19 +231,19 @@ It's common for a class to throw the same exception from different places in its
 
 Some key .NET exception types have such static `throw` helper methods that allocate and throw the exception. You should call these methods instead of constructing and throwing the corresponding exception type:
 
-- <xref:System.ArgumentNullException.ThrowIfNull%2A?displayProperty=nameWithType>
+- <xref:System.ArgumentNullException.ThrowIfNull*?displayProperty=nameWithType>
 - <xref:System.ArgumentException.ThrowIfNullOrEmpty(System.String,System.String)?displayProperty=nameWithType>
 - <xref:System.ArgumentException.ThrowIfNullOrWhiteSpace(System.String,System.String)?displayProperty=nameWithType>
-- <xref:System.ArgumentOutOfRangeException.ThrowIfZero%60%601(%60%600,System.String)?displayProperty=nameWithType>
-- <xref:System.ArgumentOutOfRangeException.ThrowIfNegative%60%601(%60%600,System.String)?displayProperty=nameWithType>
-- <xref:System.ArgumentOutOfRangeException.ThrowIfEqual%60%601(%60%600,%60%600,System.String)?displayProperty=nameWithType>
-- <xref:System.ArgumentOutOfRangeException.ThrowIfLessThan%60%601(%60%600,%60%600,System.String)?displayProperty=nameWithType>
-- <xref:System.ArgumentOutOfRangeException.ThrowIfNotEqual%60%601(%60%600,%60%600,System.String)?displayProperty=nameWithType>
-- <xref:System.ArgumentOutOfRangeException.ThrowIfNegativeOrZero%60%601(%60%600,System.String)?displayProperty=nameWithType>
-- <xref:System.ArgumentOutOfRangeException.ThrowIfGreaterThan%60%601(%60%600,%60%600,System.String)?displayProperty=nameWithType>
-- <xref:System.ArgumentOutOfRangeException.ThrowIfLessThanOrEqual%60%601(%60%600,%60%600,System.String)?displayProperty=nameWithType>
-- <xref:System.ArgumentOutOfRangeException.ThrowIfGreaterThanOrEqual%60%601(%60%600,%60%600,System.String)?displayProperty=nameWithType>
-- <xref:System.ObjectDisposedException.ThrowIf%2A?displayProperty=nameWithType>
+- <xref:System.ArgumentOutOfRangeException.ThrowIfZero``1(``0,System.String)?displayProperty=nameWithType>
+- <xref:System.ArgumentOutOfRangeException.ThrowIfNegative``1(``0,System.String)?displayProperty=nameWithType>
+- <xref:System.ArgumentOutOfRangeException.ThrowIfEqual``1(``0,``0,System.String)?displayProperty=nameWithType>
+- <xref:System.ArgumentOutOfRangeException.ThrowIfLessThan``1(``0,``0,System.String)?displayProperty=nameWithType>
+- <xref:System.ArgumentOutOfRangeException.ThrowIfNotEqual``1(``0,``0,System.String)?displayProperty=nameWithType>
+- <xref:System.ArgumentOutOfRangeException.ThrowIfNegativeOrZero``1(``0,System.String)?displayProperty=nameWithType>
+- <xref:System.ArgumentOutOfRangeException.ThrowIfGreaterThan``1(``0,``0,System.String)?displayProperty=nameWithType>
+- <xref:System.ArgumentOutOfRangeException.ThrowIfLessThanOrEqual``1(``0,``0,System.String)?displayProperty=nameWithType>
+- <xref:System.ArgumentOutOfRangeException.ThrowIfGreaterThanOrEqual``1(``0,``0,System.String)?displayProperty=nameWithType>
+- <xref:System.ObjectDisposedException.ThrowIf*?displayProperty=nameWithType>
 
 > [!TIP]
 > The following code analysis rules can help you find places in your code where you can take advantage of these static `throw` helpers: [CA1510](../../fundamentals/code-analysis/quality-rules/ca1510.md), [CA1511](../../fundamentals/code-analysis/quality-rules/ca1511.md), [CA1512](../../fundamentals/code-analysis/quality-rules/ca1512.md), and [CA1513](../../fundamentals/code-analysis/quality-rules/ca1513.md).

@@ -38,7 +38,7 @@ When you deserialize JSON into a `char` target, make sure the string consists of
 
 ## Affected APIs
 
-- <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=fullName>
+- <xref:System.Text.Json.JsonSerializer.Deserialize*?displayProperty=fullName>
 
 <!--
 

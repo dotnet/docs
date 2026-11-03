@@ -198,7 +198,7 @@ In this expression, you encounter nodes of all these types:
 1. Conditional (the `? :` expression)
 1. Method Call Expression (calling `Range()` and `Aggregate()`)
 
-One way to modify the visitor algorithm is to keep executing it, and write the node type every time you reach your `default` clause. After a few iterations, you've see each of the potential nodes. Then, you have all you need. The result would be something like this:
+One way to modify the visitor algorithm is to keep executing it, and write the node type every time you reach your `default` clause. After a few iterations, you've seen all the potential nodes. At that point, you have everything you need. The result would be something like this:
 
 :::code language="csharp" source="snippets/Visitors2.cs" id="UpdatedVisitor":::
 

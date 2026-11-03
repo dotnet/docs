@@ -13,9 +13,9 @@ ms.assetid: ff2294ec-fb82-4b0c-933e-ae185433fc7b
 
 Clears all previously defined settings in a section.
 
-[**\<configuration>**](configuration-element.md)\
-&nbsp;&nbsp;[**\<sectionName>**](custom-element-2.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
+[`<configuration>`](configuration-element.md)\
+&nbsp;&nbsp;[`<sectionName>`](custom-element-2.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<clear>`
 
 ## Syntax
 
@@ -29,9 +29,9 @@ None
 
 ## Parent element
 
-|     | Description |
-| --- | ------------|
-| [`<sectionName>` Element](custom-element-2.md) | Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes. |
+| Parent element                         | Description |
+|----------------------------------------|-------------|
+| [`<sectionName>`](custom-element-2.md) | Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes. |
 
 ## Child elements
 

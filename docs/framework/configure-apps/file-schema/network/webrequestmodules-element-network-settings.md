@@ -14,8 +14,8 @@ ms.assetid: 1263de11-3e0a-4f94-97c9-710b2ae53817
 
 Specifies modules to use to request information from network hosts.
 
-[**\<configuration>**](../configuration-element.md)
-&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)
+[`<configuration>`](../configuration-element.md)
+&nbsp;&nbsp;[`<system.net>`](system-net-element-network-settings.md)
 &nbsp;&nbsp;&nbsp;&nbsp;\<webRequestModules>
 
 ## Syntax

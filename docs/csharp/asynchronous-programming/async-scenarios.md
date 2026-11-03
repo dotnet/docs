@@ -1,5 +1,5 @@
 ---
-title: Asynchronous programming scenarios 
+title: Asynchronous programming scenarios
 description: Learn about the C# language-level asynchronous programming model provided by .NET Core and explore example code for I/O-bound and CPU-bound scenarios.
 author: BillWagner
 ms.date: 03/12/2025
@@ -16,7 +16,7 @@ C# has a language-level asynchronous programming model that allows you to easily
 The `Task` and `Task<T>` objects represent the core of asynchronous programming. These objects are used to model asynchronous operations by supporting the `async` and `await` keywords. In most cases, the model is fairly simple for both I/O-bound and CPU-bound scenarios. Inside an `async` method:
 
 - **I/O-bound code** starts an operation represented by a `Task` or `Task<T>` object within the `async` method.
-- **CPU-bound code** starts an operation on a background thread with the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> method.
+- **CPU-bound code** starts an operation on a background thread with the <xref:System.Threading.Tasks.Task.Run*?displayProperty=nameWithType> method.
 
 In both cases, an active `Task` represents an asynchronous operation that might not be complete.
 
@@ -119,8 +119,8 @@ private async void OnSeeTheDotNetsButtonClick(object sender, RoutedEventArgs e)
 
 In some scenarios, the code needs to retrieve multiple pieces of data concurrently. The `Task` APIs provide methods that enable you to write asynchronous code that performs a nonblocking wait on multiple background jobs:
 
-- <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> method
-- <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType> method
+- <xref:System.Threading.Tasks.Task.WhenAll*?displayProperty=nameWithType> method
+- <xref:System.Threading.Tasks.Task.WhenAny*?displayProperty=nameWithType> method
 
 The following example shows how you might grab `User` object data for a set of `userId` objects.
 
@@ -132,7 +132,7 @@ You can write this code more succinctly by using LINQ:
 
 Although you write less code by using LINQ, exercise caution when mixing LINQ with asynchronous code. LINQ uses deferred (or lazy) execution, which means that without immediate evaluation, async calls don't happen until the sequence is enumerated.
 
-The previous example is correct and safe, because it uses the <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> method to immediately evaluate the LINQ query and store the tasks in an array. This approach ensures the `id => GetUserAsync(id)` calls execute immediately and all tasks start concurrently, just like the `foreach` loop approach. Always use <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> or <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> when creating tasks with LINQ to ensure immediate execution and concurrent task execution. Here's an example that demonstrates using `ToList()` with `Task.WhenAny` to process tasks as they complete:
+The previous example is correct and safe, because it uses the <xref:System.Linq.Enumerable.ToArray*?displayProperty=nameWithType> method to immediately evaluate the LINQ query and store the tasks in an array. This approach ensures the `id => GetUserAsync(id)` calls execute immediately and all tasks start concurrently, just like the `foreach` loop approach. Always use <xref:System.Linq.Enumerable.ToArray*?displayProperty=nameWithType> or <xref:System.Linq.Enumerable.ToList*?displayProperty=nameWithType> when creating tasks with LINQ to ensure immediate execution and concurrent task execution. Here's an example that demonstrates using `ToList()` with `Task.WhenAny` to process tasks as they complete:
 
 :::code language="csharp" source="snippets/async-scenarios/Program.cs" ID="ProcessTasksAsTheyComplete":::
 
@@ -140,7 +140,7 @@ In this example, `ToList()` creates a list that supports the `Remove()` operatio
 
 Although you write less code by using LINQ, exercise caution when mixing LINQ with asynchronous code. LINQ uses deferred (or lazy) execution. Asynchronous calls don't happen immediately as they do in a `foreach` loop, unless you force the generated sequence to iterate with a call to the `.ToList()` or `.ToArray()` method.
 
-You can choose between <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> based on your scenario:
+You can choose between <xref:System.Linq.Enumerable.ToArray*?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.ToList*?displayProperty=nameWithType> based on your scenario:
 
 - Use `ToArray()` when you plan to process all tasks together, such as with `Task.WhenAll`. Arrays are efficient for scenarios where the collection size is fixed.
 - Use `ToList()` when you need to dynamically manage tasks, such as with `Task.WhenAny` where you might remove completed tasks from the collection as they finish.
@@ -211,7 +211,7 @@ In scenarios, you might need to block on asynchronous operations when the `await
 When you must block synchronously on a `Task`, here are the available approaches, listed from most to least preferred:
 
 - [Use GetAwaiter().GetResult()](#use-getawaitergetresult)
-- [Use Task.Run for complex scenarios](#use-taskrun-for-complex-scenarios)  
+- [Use Task.Run for complex scenarios](#use-taskrun-for-complex-scenarios)
 - [Use Wait() and Result](#use-wait-and-result)
 
 #### Use GetAwaiter().GetResult()

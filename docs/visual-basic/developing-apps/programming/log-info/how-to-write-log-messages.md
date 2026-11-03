@@ -26,8 +26,8 @@ Make sure the data you write to the log does not include sensitive information s
 ## See also
 
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
-- <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>
-- <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A>
+- <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry*>
+- <xref:Microsoft.VisualBasic.Logging.Log.WriteException*>
 - [Working with Application Logs](working-with-application-logs.md)
 - [How to: Log Exceptions](how-to-log-exceptions.md)
 - [Walkthrough: Determining Where My.Application.Log Writes Information](walkthrough-determining-where-my-application-log-writes-information.md)

@@ -23,7 +23,7 @@ Tracing is a way for you to monitor the execution of your application while it i
 
  The term *instrumentation* refers to an ability to monitor or measure the level of a product's performance and to diagnose errors. In programming, this means the ability of an application to incorporate:
 
-- **Code tracing** - Receiving informative messages about the execution of an application at run time.
+- **Code tracing** - Receiving informative messages about the execution of an application at runtime.
 
 - **Debugging** - Tracking down and fixing programming errors in an application under development. For more information, see [Debugging](/visualstudio/debugger/debugger-feature-tour).
 
@@ -33,7 +33,7 @@ Tracing is a way for you to monitor the execution of your application while it i
 
  Instrumenting your application by placing trace statements at strategic locations in your code is especially useful for distributed applications. By using trace statements you can instrument an application not only to display information when things go wrong, but also to monitor how well the application is performing.
 
- The <xref:System.Diagnostics.TraceSource> class provides enhanced tracing features and can be used in place of the static methods of the older <xref:System.Diagnostics.Trace> and <xref:System.Diagnostics.Debug> tracing classes. The familiar <xref:System.Diagnostics.Trace> and <xref:System.Diagnostics.Debug> classes are still widely used, but the <xref:System.Diagnostics.TraceSource> class is recommended for new tracing commands, such as <xref:System.Diagnostics.TraceSource.TraceEvent%2A> and <xref:System.Diagnostics.TraceSource.TraceData%2A>.
+ The <xref:System.Diagnostics.TraceSource> class provides enhanced tracing features and can be used in place of the static methods of the older <xref:System.Diagnostics.Trace> and <xref:System.Diagnostics.Debug> tracing classes. The familiar <xref:System.Diagnostics.Trace> and <xref:System.Diagnostics.Debug> classes are still widely used, but the <xref:System.Diagnostics.TraceSource> class is recommended for new tracing commands, such as <xref:System.Diagnostics.TraceSource.TraceEvent*> and <xref:System.Diagnostics.TraceSource.TraceData*>.
 
  The <xref:System.Diagnostics.Trace> and <xref:System.Diagnostics.Debug> classes are identical, except that procedures and functions of the <xref:System.Diagnostics.Trace> class are compiled by default into release builds, but those of the <xref:System.Diagnostics.Debug> class are not.
 
@@ -95,9 +95,9 @@ System.Diagnostics.Debug.WriteLine("Hello World!");
 
     - Use the **Trace** and **Debug** compiler directives for the command-line method of compiling. For more information, see [Compiling Conditionally with Trace and Debug](how-to-compile-conditionally-with-trace-and-debug.md). Use this when compiling from the command line.
 
-7. If a problem occurs during run time, turn on the appropriate trace switch. For more information, see [Configuring Trace Switches](how-to-create-initialize-and-configure-trace-switches.md).
+7. If a problem occurs during runtime, turn on the appropriate trace switch. For more information, see [Configuring Trace Switches](how-to-create-initialize-and-configure-trace-switches.md).
 
-     The tracing code writes tracing messages to a specified target, for example, a screen, a text file, or an event log. The type of listener you included in the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collection determines the target.
+     The tracing code writes tracing messages to a specified target, for example, a screen, a text file, or an event log. The type of listener you included in the <xref:System.Diagnostics.Trace.Listeners*?displayProperty=nameWithType> collection determines the target.
 
 8. Analyze the tracing messages to identify and understand the problem in the application.
 
@@ -105,19 +105,19 @@ System.Diagnostics.Debug.WriteLine("Hello World!");
 
  When you create a distributed application, you might find it difficult to test the application in the manner in which it will be used. Few development teams have the capability to test all possible combinations of operating systems or Web browsers (including all the localized language options), or to simulate the high number of users that will access the application at the same time. Under these circumstances, you cannot test how a distributed application will respond to high volumes, different setups, and unique end-user behaviors. Also, many parts of a distributed application have no user interface with which you can interact directly or view the activity of those parts.
 
- However, you can compensate for this by enabling distributed applications to describe certain events of interest to system administrators, especially things that go wrong, by *instrumenting* the application — that is, by placing trace statements at strategic locations in your code. Then if something unexpected occurs at run time (for example, excessively slow response time), you can determine the likely cause.
+ However, you can compensate for this by enabling distributed applications to describe certain events of interest to system administrators, especially things that go wrong, by *instrumenting* the application — that is, by placing trace statements at strategic locations in your code. Then if something unexpected occurs at runtime (for example, excessively slow response time), you can determine the likely cause.
 
- With trace statements you can avoid the difficult task of examining the original source code, modifying it, recompiling, and attempting to produce the run-time error within the debugging environment. Remember that you can instrument an application not only to display errors, but also to monitor performance.
+ With trace statements you can avoid the difficult task of examining the original source code, modifying it, recompiling, and attempting to produce the runtime error within the debugging environment. Remember that you can instrument an application not only to display errors, but also to monitor performance.
 
 ## Strategic Placement of Trace Statements
 
- You must exercise special care when placing your trace statements for use during run time. You must consider what tracing information is likely to be needed in a deployed application, so that all likely tracing scenarios are adequately covered. Because applications that use tracing vary widely, however, there are no general guidelines for strategic placement of tracing. For more information on placing trace statements, see [How to: Add Trace Statements to Application Code](how-to-add-trace-statements-to-application-code.md).
+ You must exercise special care when placing your trace statements for use during runtime. You must consider what tracing information is likely to be needed in a deployed application, so that all likely tracing scenarios are adequately covered. Because applications that use tracing vary widely, however, there are no general guidelines for strategic placement of tracing. For more information on placing trace statements, see [How to: Add Trace Statements to Application Code](how-to-add-trace-statements-to-application-code.md).
 
 ## Output from Tracing
 
- Trace output is collected by objects called *listeners*. A listener is an object that receives trace output and writes it to an output device (usually a window, log, or text file). When a trace listener is created, it is typically added to the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collection, allowing the listener to receive all trace output.
+ Trace output is collected by objects called *listeners*. A listener is an object that receives trace output and writes it to an output device (usually a window, log, or text file). When a trace listener is created, it is typically added to the <xref:System.Diagnostics.Trace.Listeners*?displayProperty=nameWithType> collection, allowing the listener to receive all trace output.
 
- Tracing information is always written at least to the default <xref:System.Diagnostics.Trace> output target, the <xref:System.Diagnostics.DefaultTraceListener>. If for some reason you have deleted the <xref:System.Diagnostics.DefaultTraceListener> without adding any other listeners to the <xref:System.Diagnostics.Trace.Listeners%2A> collection, you will not receive any tracing messages. For more information, see [Trace Listeners](trace-listeners.md).
+ Tracing information is always written at least to the default <xref:System.Diagnostics.Trace> output target, the <xref:System.Diagnostics.DefaultTraceListener>. If for some reason you have deleted the <xref:System.Diagnostics.DefaultTraceListener> without adding any other listeners to the <xref:System.Diagnostics.Trace.Listeners*> collection, you will not receive any tracing messages. For more information, see [Trace Listeners](trace-listeners.md).
 
  The six <xref:System.Diagnostics.Debug> members and <xref:System.Diagnostics.Trace> methods that write tracing information are listed in the following table.
 
@@ -130,7 +130,7 @@ System.Diagnostics.Debug.WriteLine("Hello World!");
 |`WriteLine`|The specified text and a carriage return.|
 |`WriteLineIf`|The specified text and a carriage return, if the condition specified as an argument in the `WriteLineIf` statement is satisfied.|
 
- All listeners in the <xref:System.Diagnostics.Trace.Listeners%2A> collection receive the messages described in the above table, but the actions taken may vary depending on what kind of listener receives the message. For example, the <xref:System.Diagnostics.DefaultTraceListener> displays an assertion dialog box when it receives a `Fail` or failed `Assert` notification, but a <xref:System.Diagnostics.TextWriterTraceListener> simply writes the output to its stream.
+ All listeners in the <xref:System.Diagnostics.Trace.Listeners*> collection receive the messages described in the above table, but the actions taken may vary depending on what kind of listener receives the message. For example, the <xref:System.Diagnostics.DefaultTraceListener> displays an assertion dialog box when it receives a `Fail` or failed `Assert` notification, but a <xref:System.Diagnostics.TextWriterTraceListener> simply writes the output to its stream.
 
  You can produce custom results by implementing your own listener. A custom trace listener might, for example, display the messages to a message box, or connect to a database to add messages to a table. All custom listeners should support the six methods mentioned above. For more information on creating developer-defined listeners, see <xref:System.Diagnostics.TraceListener> in the .NET Framework reference.
 

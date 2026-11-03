@@ -31,7 +31,7 @@ There are several different ways to analyze and manipulate your strings. Some of
 
  [!code-vb[VbVbalrStrings#45](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#45)]
 
- In the preceding example, the <xref:System.String.Compare%2A?displayProperty=nameWithType> method is a shared method that accepts two instances of `String` as arguments.
+ In the preceding example, the <xref:System.String.Compare*?displayProperty=nameWithType> method is a shared method that accepts two instances of `String` as arguments.
 
 #### Instance Methods
 
@@ -39,7 +39,7 @@ There are several different ways to analyze and manipulate your strings. Some of
 
  [!code-vb[VbVbalrStrings#46](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#46)]
 
- In this example, the <xref:System.String.Substring%2A?displayProperty=nameWithType> method is a method of the instance of `String` (that is, `aString`). It performs an operation on `aString` and assigns that value to `bString`.
+ In this example, the <xref:System.String.Substring*?displayProperty=nameWithType> method is a method of the instance of `String` (that is, `aString`). It performs an operation on `aString` and assigns that value to `bString`.
 
  For more information, see the documentation for the <xref:System.String> class.
 

@@ -10,7 +10,7 @@ ms.date: 09/09/2024
 
 Under normal circumstances, calling APIs annotated with <xref:System.Diagnostics.CodeAnalysis.RequiresDynamicCodeAttribute> in an app published with native AOT triggers warning [IL3050 (Avoid calling members annotated with 'RequiresDynamicCodeAttribute' when publishing as native AOT)](warnings/il3050.md). APIs that trigger the warning might not behave correctly after AOT compilation.
 
-Some APIs annotated RequiresDynamicCode can still be used without triggering the warning when called in a specific pattern. When used as part of a pattern, the call to the API can be statically analyzed by the compiler, does not generate a warning, and behaves as expected at run time.
+Some APIs annotated RequiresDynamicCode can still be used without triggering the warning when called in a specific pattern. When used as part of a pattern, the call to the API can be statically analyzed by the compiler, does not generate a warning, and behaves as expected at runtime.
 
 ## Enum.GetValues(Type) Method
 

@@ -12,8 +12,6 @@ ms.topic: how-to
 
 # How to configure the parser in System.CommandLine
 
-[!INCLUDE [scl-preview](./includes/preview.md)]
-
 Parsing and invocation are two separate steps, so each of them has their own configuration:
 
 - <xref:System.CommandLine.ParserConfiguration> is a class that provides properties to configure the parsing. It is an optional argument for every `Parse` method, such as <xref:System.CommandLine.Command.Parse*?displayProperty=nameWithType> and <xref:System.CommandLine.Parsing.CommandLineParser.Parse*?displayProperty=nameWithType>.

@@ -16,9 +16,9 @@ ms.assetid: bf598873-83b7-48de-8955-00b0504fbad0
 
 Specifies whether to disable the caching of binding failures that occur because the assembly was not found by probing.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<disableCachingBindingFailures>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<runtime>`](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;`<disableCachingBindingFailures>`
 
 ## Syntax
 

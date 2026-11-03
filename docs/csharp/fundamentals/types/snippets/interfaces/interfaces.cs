@@ -1,73 +1,119 @@
-﻿using System;
+﻿namespace Interfaces;
 
-namespace objectoriented
+// <Equatable>
+interface IEquatable<T>
 {
-    namespace ExampleFromBCL
-    {
-        //<SnippetEquatable>
-        interface IEquatable<T>
-        {
-            bool Equals(T obj);
-        }
-        //</SnippetEquatable>
-    }
-
-    //<SnippetImplementEquatable>
-    public class Car : IEquatable<Car>
-    {
-        public string? Make { get; set; }
-        public string? Model { get; set; }
-        public string? Year { get; set; }
-
-        // Implementation of IEquatable<T> interface
-        public bool Equals(Car? car)
-        {
-            return (this.Make, this.Model, this.Year) ==
-                (car?.Make, car?.Model, car?.Year);
-        }
-    }
-    //</SnippetImplementEquatable>
-
-    // <SnippetInternalInterfaceExample>
-    // Internal type that cannot be exposed publicly
-    internal class InternalConfiguration
-    {
-        public string Setting { get; set; } = "";
-    }
-
-    // Internal interface that CAN be implemented with public members
-    // because it only uses public types in its signature
-    internal interface ILoggable
-    {
-        void Log(string message); // string is public, so this works with implicit implementation
-    }
-
-    // Interface with internal accessibility using internal types
-    internal interface IConfigurable
-    {
-        void Configure(InternalConfiguration config); // Internal type prevents implicit implementation
-    }
-
-    // This class shows both implicit and explicit interface implementation
-    public class ServiceImplementation : ILoggable, IConfigurable
-    {
-        // Implicit implementation works for ILoggable because string is public
-        public void Log(string message)
-        {
-            Console.WriteLine($"Log: {message}");
-        }
-
-        // Explicit implementation required for IConfigurable because it uses internal types
-        void IConfigurable.Configure(InternalConfiguration config)
-        {
-            // Implementation here
-            Console.WriteLine($"Configured with: {config.Setting}");
-        }
-        
-        // If we tried implicit implementation for IConfigurable, this wouldn't compile:
-        // public void Configure(InternalConfiguration config) // Error: cannot expose internal type
-    }
-    // </SnippetInternalInterfaceExample>
-
-
+    bool Equals(T obj);
 }
+// </Equatable>
+
+// <ImplementEquatable>
+public class Car : IEquatable<Car>
+{
+    public string? Make { get; set; }
+    public string? Model { get; set; }
+    public string? Year { get; set; }
+
+    public bool Equals(Car? car) =>
+        car is not null &&
+        (Make, Model, Year) == (car.Make, car.Model, car.Year);
+}
+// </ImplementEquatable>
+
+// <DeclareInterface>
+interface ILogger
+{
+    void Log(string message);
+    string Name { get; }
+}
+// </DeclareInterface>
+
+// <ImplementInterface>
+public class ConsoleLogger : ILogger
+{
+    public string Name => "Console";
+
+    public void Log(string message) =>
+        Console.WriteLine($"[{Name}] {message}");
+}
+
+public class FileLogger : ILogger
+{
+    public string Name => "File";
+
+    public void Log(string message)
+    {
+        // In a real app, write to a file
+        Console.WriteLine($"[{Name}] Writing to file: {message}");
+    }
+}
+// </ImplementInterface>
+
+// <ExplicitImplementation>
+interface IMetric
+{
+    double GetDistance(); // Returns meters
+}
+
+interface IImperial
+{
+    double GetDistance(); // Returns feet
+}
+
+public class Runway(double meters) : IMetric, IImperial
+{
+    // Explicit implementation for IMetric
+    double IMetric.GetDistance() => meters;
+
+    // Explicit implementation for IImperial
+    double IImperial.GetDistance() => meters * 3.28084;
+}
+// </ExplicitImplementation>
+
+// <InterfaceInheritance>
+interface IDrawable
+{
+    void Draw();
+}
+
+interface IShape : IDrawable
+{
+    double Area { get; }
+}
+
+public class Circle(double radius) : IShape
+{
+    public double Area => Math.PI * radius * radius;
+
+    public void Draw() =>
+        Console.WriteLine($"Drawing circle with area {Area:F2}");
+}
+// </InterfaceInheritance>
+
+// <InternalInterfaceExample>
+internal class InternalConfiguration
+{
+    public string Setting { get; set; } = "";
+}
+
+internal interface ILoggable
+{
+    void Log(string message);
+}
+
+internal interface IConfigurable
+{
+    void Configure(InternalConfiguration config);
+}
+
+public class ServiceImplementation : ILoggable, IConfigurable
+{
+    // Implicit implementation: ILoggable uses only public types in its signature
+    public void Log(string message) =>
+        Console.WriteLine($"Log: {message}");
+
+    // Explicit implementation: IConfigurable uses internal types
+    void IConfigurable.Configure(InternalConfiguration config) =>
+        Console.WriteLine($"Configured with: {config.Setting}");
+}
+// </InternalInterfaceExample>

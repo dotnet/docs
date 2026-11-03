@@ -2,7 +2,7 @@
 title: .NET breaking changes reference
 description: Learn how to navigate the .NET breaking changes reference.
 ms.date: 06/24/2025
-ms.topic: article
+ms.topic: concept-article
 ---
 # Breaking changes in .NET
 
@@ -22,5 +22,5 @@ You can also view individual issues that detail the breaking changes introduced 
 
 - [API removal in .NET](api-removal.md)
 - [.NET runtime compatibility](../versions/index.md#net-runtime-compatibility)
-- [Migrate from .NET Framework to .NET Core](../porting/index.md)
+- [Migrate from .NET Framework to .NET Core](../porting/framework-overview.md)
 - [Breaking changes for migration from .NET Framework to .NET Core](fx-core.md)

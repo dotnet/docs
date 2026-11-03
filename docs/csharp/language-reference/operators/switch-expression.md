@@ -1,18 +1,20 @@
 ---
 title: "switch expression - Evaluate a pattern match expression using the `switch` expression"
 description: Learn about the C# `switch` expression that provides switch-like semantics based on pattern matching. You can compute a value based on which pattern an input variable matches.
-ms.date: 11/28/2022
+ms.date: 03/20/2026
 f1_keywords:
   - "switch-expression_CSharpKeyword"
 helpviewer_keywords:
   - "switch expression [C#]"
   - "pattern matching [C#]"
 ---
-# switch expression - pattern matching expressions using the `switch` keyword
+# `switch` expression - pattern matching expressions using the `switch` keyword
 
-You use the `switch` expression to evaluate a single expression from a list of candidate expressions based on a pattern match with an input expression. For information about the `switch` statement that supports `switch`-like semantics in a statement context, see the [`switch` statement](../statements/selection-statements.md#the-switch-statement) section of the [Selection statements](../statements/selection-statements.md) article.
+Use the `switch` expression to evaluate a single expression from a list of candidate expressions. The evaluation is based on a pattern match with an input expression. For information about the `switch` statement that supports `switch`-like semantics in a statement context, see the [`switch` statement](../statements/selection-statements.md#the-switch-statement) section of the [Selection statements](../statements/selection-statements.md) article.
 
-The following example demonstrates a `switch` expression, which converts values of an [`enum`](../builtin-types/enum.md) representing visual directions in an online map to the corresponding cardinal directions:
+[!INCLUDE[csharp-version-note](../includes/initial-version.md)]
+
+The following example demonstrates a `switch` expression. It converts values of an [`enum`](../builtin-types/enum.md) representing visual directions in an online map to the corresponding cardinal directions:
 
 :::code language="csharp" source="snippets/shared/SwitchExpressions.cs" id="SnippetBasicStructure":::
 
@@ -21,10 +23,10 @@ The preceding example shows the basic elements of a `switch` expression:
 - An expression followed by the `switch` keyword. In the preceding example, it's the `direction` method parameter.
 - The *`switch` expression arms*, separated by commas. Each `switch` expression arm contains a *pattern*, an optional [*case guard*](#case-guards), the `=>` token, and an *expression*.
 
-At the preceding example, a `switch` expression uses the following patterns:
+In the preceding example, a `switch` expression uses the following patterns:
 
 - A [constant pattern](patterns.md#constant-pattern): to handle the defined values of the `Direction` enumeration.
-- A [discard pattern](patterns.md#discard-pattern): to handle any integer value that doesn't have the corresponding member of the `Direction` enumeration (for example, `(Direction)10`). That makes the `switch` expression [exhaustive](#non-exhaustive-switch-expressions).
+- A [discard pattern](patterns.md#discard-pattern): to handle any integer value that doesn't have the corresponding member of the `Direction` enumeration (for example, `(Direction)10`). That pattern makes the `switch` expression [exhaustive](#nonexhaustive-switch-expressions).
 
 > [!IMPORTANT]
 > For information about the patterns supported by the `switch` expression and more examples, see [Patterns](patterns.md).
@@ -35,22 +37,26 @@ The compiler generates an error when a lower `switch` expression arm can't be ch
 
 ## Case guards
 
-A pattern may be not expressive enough to specify the condition for the evaluation of an arm's expression. In such a case, you can use a *case guard*. A *case guard* is another condition that must be satisfied together with a matched pattern. A case guard must be a Boolean expression. You specify a case guard after the `when` keyword that follows a pattern, as the following example shows:
+A pattern might not be expressive enough to specify the condition for the evaluation of an arm's expression. In such a case, use a *case guard*. A *case guard* is another condition that must be satisfied together with a matched pattern. A case guard must be a Boolean expression. Specify a case guard after the `when` keyword that follows a pattern, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/SwitchExpressions.cs" id="CaseGuardExample":::
 
 The preceding example uses [property patterns](patterns.md#property-pattern) with nested [var patterns](patterns.md#var-pattern).
 
-## Non-exhaustive switch expressions
+## Nonexhaustive switch expressions
 
 If none of a `switch` expression's patterns matches an input value, the runtime throws an exception. In .NET Core 3.0 and later versions, the exception is a <xref:System.Runtime.CompilerServices.SwitchExpressionException?displayProperty=nameWithType>. In .NET Framework, the exception is an <xref:System.InvalidOperationException>. In most cases, the compiler generates a warning if a `switch` expression doesn't handle all possible input values. [List patterns](patterns.md#list-patterns) don't generate a warning when all possible inputs aren't handled.
+
+For [union types](../builtin-types/union.md), a `switch` expression is exhaustive when it handles all case types. A catch-all arm isn't needed. If the null state of the union's `Value` property is "maybe null," you must also handle `null` to avoid a warning. For more information, see [Union exhaustiveness](../builtin-types/union.md#union-exhaustiveness).
+
+A default generated union can contain `null` even when all case types are nonnullable, such as an element of a newly allocated union array or a value created with `default`. The compiler doesn't necessarily warn about an omitted `null` arm in that situation, but the switch still throws if no arm matches. Handle `null` when default union contents can reach the switch. Prefer a `null` arm to a `var` or discard arm so that adding a new case type still produces a non-exhaustiveness warning.
 
 > [!TIP]
 > To guarantee that a `switch` expression handles all possible input values, provide a `switch` expression arm with a [discard pattern](patterns.md#discard-pattern).
 
 ## C# language specification
 
-For more information, see the [`switch` expression](~/_csharpstandard/standard/expressions.md#1211-switch-expression) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [`switch` expression](~/_csharpstandard/standard/expressions.md#1212-switch-expression) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 
@@ -58,5 +64,5 @@ For more information, see the [`switch` expression](~/_csharpstandard/standard/e
 - [Add missing cases to switch expression (style rule IDE0072)](../../../fundamentals/code-analysis/style-rules/ide0072.md)
 - [C# operators and expressions](index.md)
 - [Patterns](patterns.md)
-- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/pattern-matching.md)
+- [Tutorial: Build algorithms using pattern matching](../../fundamentals/tutorials/build-algorithms-using-pattern-matching.md)
 - [`switch` statement](../statements/selection-statements.md#the-switch-statement)

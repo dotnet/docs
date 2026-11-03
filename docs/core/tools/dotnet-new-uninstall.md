@@ -23,7 +23,7 @@ dotnet new uninstall <PATH|NUGET_ID>
 The `dotnet new uninstall` command uninstalls a template package at the `PATH` or `NUGET_ID` provided. When the `<PATH|NUGET_ID>` value isn't specified, all currently installed template packages and their associated templates are displayed. When specifying `NUGET_ID`, don't include the version number.
 
 > [!NOTE]
-> [!INCLUDE [new syntax](../../../includes/dotnet-new-7-0-syntax.md)]
+> [!INCLUDE [new syntax](includes/dotnet-new-7-0-syntax.md)]
 >
 > Examples of the old syntax:
 >
@@ -51,9 +51,9 @@ The `dotnet new uninstall` command uninstalls a template package at the `PATH` o
 
   Enables diagnostic output. Available since .NET SDK 7.0.100.
 
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](includes/cli-help.md)]
 
-- [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
+- [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
 ## Examples
 
@@ -74,4 +74,4 @@ The `dotnet new uninstall` command uninstalls a template package at the `PATH` o
 - [dotnet new command](dotnet-new.md)
 - [dotnet new list command](dotnet-new-list.md)
 - [dotnet new search command](dotnet-new-search.md)
-- [Custom templates for dotnet new](custom-templates.md)
+- [.NET templates for authors](templates.md)

@@ -35,7 +35,7 @@ typedef enum CLR_DEBUGGING_PROCESS_FLAGS
 |Member|Description|
 |------------|-----------------|
 |`CLR_DEBUGGING_MANAGED_EVENT_PENDING`|This runtime has a non-catch-up managed debugger event to send. See the Remarks section for the distinction between catch-up and non-catch-up events.|
-|`CLR_DEBUGGING_MANAGED_EVENT_DEBUGGER_LAUNCH`|The managed event that is pending is a <xref:System.Diagnostics.Debugger.Launch%2A?displayProperty=nameWithType> request.|
+|`CLR_DEBUGGING_MANAGED_EVENT_DEBUGGER_LAUNCH`|The managed event that is pending is a <xref:System.Diagnostics.Debugger.Launch*?displayProperty=nameWithType> request.|
 
 ## Remarks
 

@@ -37,13 +37,13 @@ The <xref:System.String> object is immutable. Every time you use one of the meth
  [!code-csharp[Conceptual.StringBuilder#2](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/Example.cs#2)]
  [!code-vb[Conceptual.StringBuilder#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#2)]
 
- Additionally, you can use the read/write <xref:System.Text.StringBuilder.Capacity%2A> property to set the maximum length of your object. The following example uses the **Capacity** property to define the maximum object length.
+ Additionally, you can use the read/write <xref:System.Text.StringBuilder.Capacity> property to set the maximum length of your object. The following example uses the **Capacity** property to define the maximum object length.
  [!code-csharp[Conceptual.StringBuilder#3](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/Example.cs#3)]
  [!code-vb[Conceptual.StringBuilder#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#3)]
 
- The <xref:System.Text.StringBuilder.EnsureCapacity%2A> method can be used to check the capacity of the current **StringBuilder**. If the capacity is greater than the passed value, no change is made; however, if the capacity is smaller than the passed value, the current capacity is changed to match the passed value.
+ The <xref:System.Text.StringBuilder.EnsureCapacity*> method can be used to check the capacity of the current **StringBuilder**. If the capacity is greater than the passed value, no change is made; however, if the capacity is smaller than the passed value, the current capacity is changed to match the passed value.
 
- The <xref:System.Text.StringBuilder.Length%2A> property can also be viewed or set. If you set the **Length** property to a value that is greater than the **Capacity** property, the **Capacity** property is automatically changed to the same value as the **Length** property. Setting the **Length** property to a value that is less than the length of the string within the current **StringBuilder** shortens the string.
+ The <xref:System.Text.StringBuilder.Length> property can also be viewed or set. If you set the **Length** property to a value that is greater than the **Capacity** property, the **Capacity** property is automatically changed to the same value as the **Length** property. Setting the **Length** property to a value that is less than the length of the string within the current **StringBuilder** shortens the string.
 
 ## Modifying the StringBuilder String
 
@@ -51,11 +51,11 @@ The <xref:System.String> object is immutable. Every time you use one of the meth
 
 |Method name|Use|
 |-----------------|---------|
-|<xref:System.Text.StringBuilder.Append%2A?displayProperty=nameWithType>|Appends information to the end of the current **StringBuilder**.|
-|<xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>|Replaces a format specifier passed in a string with formatted text.|
-|<xref:System.Text.StringBuilder.Insert%2A?displayProperty=nameWithType>|Inserts a string or object into the specified index of the current **StringBuilder**.|
-|<xref:System.Text.StringBuilder.Remove%2A?displayProperty=nameWithType>|Removes a specified number of characters from the current **StringBuilder**.|
-|<xref:System.Text.StringBuilder.Replace%2A?displayProperty=nameWithType>|Replaces all occurrences of a specified character or string in the current **StringBuilder** with another specified character or string.|
+|<xref:System.Text.StringBuilder.Append*?displayProperty=nameWithType>|Appends information to the end of the current **StringBuilder**.|
+|<xref:System.Text.StringBuilder.AppendFormat*?displayProperty=nameWithType>|Replaces a format specifier passed in a string with formatted text.|
+|<xref:System.Text.StringBuilder.Insert*?displayProperty=nameWithType>|Inserts a string or object into the specified index of the current **StringBuilder**.|
+|<xref:System.Text.StringBuilder.Remove*?displayProperty=nameWithType>|Removes a specified number of characters from the current **StringBuilder**.|
+|<xref:System.Text.StringBuilder.Replace*?displayProperty=nameWithType>|Replaces all occurrences of a specified character or string in the current **StringBuilder** with another specified character or string.|
 
 ### Append
 
@@ -65,13 +65,13 @@ The <xref:System.String> object is immutable. Every time you use one of the meth
 
 ### AppendFormat
 
- The <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType> method adds text to the end of the <xref:System.Text.StringBuilder> object. It supports the [composite formatting feature](composite-formatting.md) by calling the <xref:System.IFormattable> implementation of the object or objects to be formatted. Therefore, it accepts the standard format strings for numeric, date and time, and enumeration values, the custom format strings for numeric and date and time values, and the format strings defined for custom types. (For information about formatting, see [Formatting Types](formatting-types.md).) You can use this method to customize the format of variables and append those values to a <xref:System.Text.StringBuilder>. The following example uses the <xref:System.Text.StringBuilder.AppendFormat%2A> method to place an integer value formatted as a currency value at the end of a <xref:System.Text.StringBuilder> object.
+ The <xref:System.Text.StringBuilder.AppendFormat*?displayProperty=nameWithType> method adds text to the end of the <xref:System.Text.StringBuilder> object. It supports the [composite formatting feature](composite-formatting.md) by calling the <xref:System.IFormattable> implementation of the object or objects to be formatted. Therefore, it accepts the standard format strings for numeric, date and time, and enumeration values, the custom format strings for numeric and date and time values, and the format strings defined for custom types. (For information about formatting, see [Formatting Types](formatting-types.md).) You can use this method to customize the format of variables and append those values to a <xref:System.Text.StringBuilder>. The following example uses the <xref:System.Text.StringBuilder.AppendFormat*> method to place an integer value formatted as a currency value at the end of a <xref:System.Text.StringBuilder> object.
  [!code-csharp[Conceptual.StringBuilder#5](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/Example.cs#5)]
  [!code-vb[Conceptual.StringBuilder#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#5)]
 
 ### Insert
 
- The <xref:System.Text.StringBuilder.Insert%2A> method adds a string or object to a specified position in the current <xref:System.Text.StringBuilder> object. The following example uses this method to insert a word into the sixth position of a <xref:System.Text.StringBuilder> object.
+ The <xref:System.Text.StringBuilder.Insert*> method adds a string or object to a specified position in the current <xref:System.Text.StringBuilder> object. The following example uses this method to insert a word into the sixth position of a <xref:System.Text.StringBuilder> object.
  [!code-csharp[Conceptual.StringBuilder#6](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/Example.cs#6)]
  [!code-vb[Conceptual.StringBuilder#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#6)]
 
@@ -89,7 +89,7 @@ The <xref:System.String> object is immutable. Every time you use one of the meth
 
 ## Converting a StringBuilder Object to a String
 
- You must convert the <xref:System.Text.StringBuilder> object to a <xref:System.String> object before you can pass the string represented by the <xref:System.Text.StringBuilder> object to a method that has a <xref:System.String> parameter or display it in the user interface. You do this conversion by calling the <xref:System.Text.StringBuilder.ToString%2A?displayProperty=nameWithType> method. The following example calls a number of <xref:System.Text.StringBuilder> methods and then calls the <xref:System.Text.StringBuilder.ToString?displayProperty=nameWithType> method to display the string.
+ You must convert the <xref:System.Text.StringBuilder> object to a <xref:System.String> object before you can pass the string represented by the <xref:System.Text.StringBuilder> object to a method that has a <xref:System.String> parameter or display it in the user interface. You do this conversion by calling the <xref:System.Text.StringBuilder.ToString*?displayProperty=nameWithType> method. The following example calls a number of <xref:System.Text.StringBuilder> methods and then calls the <xref:System.Text.StringBuilder.ToString?displayProperty=nameWithType> method to display the string.
 
  [!code-csharp[Conceptual.StringBuilder#10](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/tostringexample1.cs#10)]
  [!code-vb[Conceptual.StringBuilder#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/tostringexample1.vb#10)]

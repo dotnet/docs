@@ -28,7 +28,7 @@ ms.assetid: 75159ef8-bd43-4d13-acb7-1f1fe9253160
 
 - UI Automation tree structure—the required UI Automation tree structure for the control.
 
- When a control meets the conditions for a particular control type, the <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.ControlType%2A> property value will indicate that control type.
+ When a control meets the conditions for a particular control type, the <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.ControlType> property value will indicate that control type.
 
 <a name="Current_UI_Automation_Control_Types"></a>
 

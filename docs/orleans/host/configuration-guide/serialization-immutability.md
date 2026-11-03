@@ -2,7 +2,7 @@
 title: Serialization of immutable types in Orleans
 description: Learn how .NET Orleans handles type immutability in the context of serialization.
 ms.date: 05/23/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Serialization of immutable types in Orleans
@@ -23,11 +23,11 @@ Note that all three processes—copying, serializing, and deserializing—respec
 
 In many cases, deep copying is unnecessary. For instance, consider a scenario where a web front-end receives a byte array from its client and passes that request, including the byte array, to a grain for processing. The front-end process does nothing with the array after passing it to the grain; specifically, it doesn't reuse the array for future requests. Inside the grain, the byte array is parsed to fetch input data but isn't modified. The grain returns another byte array it created back to the web client and discards the array immediately after returning it. The web front-end passes the result byte array back to its client without modification.
 
-In such a scenario, there's no need to copy either the request or response byte arrays. Unfortunately, the Orleans runtime can't figure this out automatically, as it can't determine whether the web front-end or the grain modifies the arrays later. Ideally, a .NET mechanism would indicate that a value is no longer modified. Lacking that, we've added Orleans-specific mechanisms: the <xref:Orleans.Concurrency.Immutable%601> wrapper class and the <xref:Orleans.Concurrency.ImmutableAttribute>.
+In such a scenario, there's no need to copy either the request or response byte arrays. Unfortunately, the Orleans runtime can't figure this out automatically, as it can't determine whether the web front-end or the grain modifies the arrays later. Ideally, a .NET mechanism would indicate that a value is no longer modified. Lacking that, we've added Orleans-specific mechanisms: the <xref:Orleans.Concurrency.Immutable`1> wrapper class and the <xref:Orleans.Concurrency.ImmutableAttribute>.
 
-### Use the `[Immutable]` attribute to mark a type, parameter, property, or field as immutable
+### Use the <xref:Orleans.Concurrency.ImmutableAttribute> attribute to mark a type, parameter, property, or field as immutable
 
-For user-defined types, you can add the <xref:Orleans.Concurrency.ImmutableAttribute> to the type. This instructs the Orleans serializer to avoid copying instances of this type. The following code snippet demonstrates using `[Immutable]` to denote an immutable type. This type won't be copied during transmission.
+For user-defined types, you can add the <xref:Orleans.Concurrency.ImmutableAttribute> to the type. This instructs the Orleans serializer to avoid copying instances of this type. The following code snippet demonstrates using <xref:Orleans.Concurrency.ImmutableAttribute> to denote an immutable type. This type won't be copied during transmission.
 
 ```csharp
 [Immutable]
@@ -62,17 +62,17 @@ Sometimes, you might not control the object; for example, it might be a `List<in
     {
         [Id(0), Immutable]
         public List<int> ReferenceData { get; set; }
-        
+
         [Id(1)]
         public List<int> RunningTotals { get; set; }
     }
     ```
 
-### Use `Immutable<T>`
+### Use <xref:Orleans.Concurrency.Immutable`1>
 
-Use the <xref:Orleans.Concurrency.Immutable%601> wrapper class to indicate a value can be considered immutable; that is, the underlying value won't be modified, so no copying is required for safe sharing. Note that using `Immutable<T>` implies neither the provider nor the recipient of the value will modify it in the future. It's a mutual, dual-sided commitment, not a one-sided one.
+Use the <xref:Orleans.Concurrency.Immutable`1> wrapper class to indicate a value can be considered immutable; that is, the underlying value won't be modified, so no copying is required for safe sharing. Note that using <xref:Orleans.Concurrency.Immutable`1> implies neither the provider nor the recipient of the value will modify it in the future. It's a mutual, dual-sided commitment, not a one-sided one.
 
-To use `Immutable<T>` in your grain interface, pass `Immutable<T>` instead of `T`. For instance, in the scenario described above, the grain method was:
+To use <xref:Orleans.Concurrency.Immutable`1> in your grain interface, pass <xref:Orleans.Concurrency.Immutable`1> instead of `T`. For instance, in the scenario described above, the grain method was:
 
 ```csharp
 Task<byte[]> ProcessRequest(byte[] request);
@@ -84,7 +84,7 @@ Which would then become:
 Task<Immutable<byte[]>> ProcessRequest(Immutable<byte[]> request);
 ```
 
-To create an `Immutable<T>`, simply use its constructor:
+To create an <xref:Orleans.Concurrency.Immutable`1>, simply use its constructor:
 
 ```csharp
 Immutable<byte[]> immutable = new(buffer);

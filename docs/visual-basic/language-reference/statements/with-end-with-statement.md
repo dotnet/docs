@@ -86,7 +86,7 @@ The following example demonstrates how `With...End With` statements work with st
 
 ## See also
 
-- <xref:System.Collections.Generic.List%601>
+- <xref:System.Collections.Generic.List`1>
 - [Nested Control Structures](../../programming-guide/language-features/control-flow/nested-control-structures.md)
 - [Object Initializers: Named and Anonymous Types](../../programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
 - [Anonymous Types](../../programming-guide/language-features/objects-and-classes/anonymous-types.md)

@@ -110,7 +110,7 @@ CUShort(expression)
 
 ## Part
 
-`expression`  
+`expression`
 Required. Any expression of the source data type.
 
 ## Return Value Data Type
@@ -178,15 +178,15 @@ Dim i3 As Integer = CInt(Math.Round(s))        ' Result: 174
 
      If the fractional part is exactly 0.5, the integer conversion functions round it to the nearest even integer. For example, 0.5 rounds to 0, and 1.5 and 2.5 both round to 2. This is sometimes called *banker's rounding*, and its purpose is to compensate for a bias that could accumulate when adding many such numbers together.
 
-     `CInt` and `CLng` differ from the <xref:Microsoft.VisualBasic.Conversion.Int%2A> and <xref:Microsoft.VisualBasic.Conversion.Fix%2A> functions, which truncate, rather than round, the fractional part of a number. Also, `Fix` and `Int` always return a value of the same data type as you pass in.
+     `CInt` and `CLng` differ from the <xref:Microsoft.VisualBasic.Conversion.Int*> and <xref:Microsoft.VisualBasic.Conversion.Fix*> functions, which truncate, rather than round, the fractional part of a number. Also, `Fix` and `Int` always return a value of the same data type as you pass in.
 
-- **Date/Time Conversions.** Use the <xref:Microsoft.VisualBasic.Information.IsDate%2A> function to determine if a value can be converted to a date and time. `CDate` recognizes date literals and time literals but not numeric values. To convert a Visual Basic 6.0 `Date` value to a `Date` value in Visual Basic 2005 or later versions, you can use the <xref:System.DateTime.FromOADate%2A?displayProperty=nameWithType> method.
+- **Date/Time Conversions.** Use the <xref:Microsoft.VisualBasic.Information.IsDate*> function to determine if a value can be converted to a date and time. `CDate` recognizes date literals and time literals but not numeric values. To convert a Visual Basic 6.0 `Date` value to a `Date` value in Visual Basic 2005 or later versions, you can use the <xref:System.DateTime.FromOADate*?displayProperty=nameWithType> method.
 
-- **Neutral Date/Time Values.** The [Date Data Type](../data-types/date-data-type.md) always contains both date and time information. For purposes of type conversion, Visual Basic considers 1/1/0001 (January 1 of the year 1) to be a *neutral value* for the date, and 00:00:00 (midnight) to be a neutral value for the time. If you convert a `Date` value to a string, `CStr` does not include neutral values in the resulting string. For example, if you convert `#January 1, 0001 9:30:00#` to a string, the result is "9:30:00 AM"; the date information is suppressed. However, the date information is still present in the original `Date` value and can be recovered with functions such as <xref:Microsoft.VisualBasic.DateAndTime.DatePart%2A> function.
+- **Neutral Date/Time Values.** The [Date Data Type](../data-types/date-data-type.md) always contains both date and time information. For purposes of type conversion, Visual Basic considers 1/1/0001 (January 1 of the year 1) to be a *neutral value* for the date, and 00:00:00 (midnight) to be a neutral value for the time. If you convert a `Date` value to a string, `CStr` does not include neutral values in the resulting string. For example, if you convert `#January 1, 0001 9:30:00#` to a string, the result is "9:30:00 AM"; the date information is suppressed. However, the date information is still present in the original `Date` value and can be recovered with functions such as <xref:Microsoft.VisualBasic.DateAndTime.DatePart*> function.
 
 - **Culture Sensitivity.** The type conversion functions involving strings perform conversions based on the current culture settings for the application. For example, `CDate` recognizes date formats according to the locale setting of your system. You must provide the day, month, and year in the correct order for your locale, or the date might not be interpreted correctly. A long date format is not recognized if it contains a day-of-the-week string, such as "Wednesday".
 
-     If you need to convert to or from a string representation of a value in a format other than the one specified by your locale, you cannot use the Visual Basic type conversion functions. To do this, use the `ToString(IFormatProvider)` and `Parse(String, IFormatProvider)` methods of that value's type. For example, use <xref:System.Double.Parse%2A?displayProperty=nameWithType> when converting a string to a `Double`, and use <xref:System.Double.ToString%2A?displayProperty=nameWithType> when converting a value of type `Double` to a string.
+     If you need to convert to or from a string representation of a value in a format other than the one specified by your locale, you cannot use the Visual Basic type conversion functions. To do this, use the `ToString(IFormatProvider)` and `Parse(String, IFormatProvider)` methods of that value's type. For example, use <xref:System.Double.Parse*?displayProperty=nameWithType> when converting a string to a `Double`, and use <xref:System.Double.ToString*?displayProperty=nameWithType> when converting a value of type `Double` to a string.
 
 ## CType Operator
 
@@ -212,7 +212,7 @@ The following example uses the `CChar` function to convert the first character o
 
 [!code-vb[VbVbalrFunctions#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#3)]
 
-The input argument to `CChar` must be of data type `Char` or `String`. You cannot use `CChar` to convert a number to a character, because `CChar` cannot accept a numeric data type. The following example obtains a number representing a code point (character code) and converts it to the corresponding character. It uses the <xref:Microsoft.VisualBasic.Interaction.InputBox%2A> function to obtain the string of digits, `CInt` to convert the string to type `Integer`, and `ChrW` to convert the number to type `Char`.
+The input argument to `CChar` must be of data type `Char` or `String`. You cannot use `CChar` to convert a number to a character, because `CChar` cannot accept a numeric data type. The following example obtains a number representing a code point (character code) and converts it to the corresponding character. It uses the <xref:Microsoft.VisualBasic.Interaction.InputBox*> function to obtain the string of digits, `CInt` to convert the string to type `Integer`, and `ChrW` to convert the number to type `Char`.
 
 [!code-vb[VbVbalrFunctions#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#4)]
 
@@ -302,16 +302,16 @@ The following example uses the `CUShort` function to convert a numeric value to 
 
 ## See also
 
-- <xref:Microsoft.VisualBasic.Strings.Asc%2A>
-- <xref:Microsoft.VisualBasic.Strings.AscW%2A>
-- <xref:Microsoft.VisualBasic.Strings.Chr%2A>
-- <xref:Microsoft.VisualBasic.Strings.ChrW%2A>
-- <xref:Microsoft.VisualBasic.Conversion.Int%2A>
-- <xref:Microsoft.VisualBasic.Conversion.Fix%2A>
-- <xref:Microsoft.VisualBasic.Strings.Format%2A>
-- <xref:Microsoft.VisualBasic.Conversion.Hex%2A>
-- <xref:Microsoft.VisualBasic.Conversion.Oct%2A>
-- <xref:Microsoft.VisualBasic.Conversion.Str%2A>
-- <xref:Microsoft.VisualBasic.Conversion.Val%2A>
+- <xref:Microsoft.VisualBasic.Strings.Asc*>
+- <xref:Microsoft.VisualBasic.Strings.AscW*>
+- <xref:Microsoft.VisualBasic.Strings.Chr*>
+- <xref:Microsoft.VisualBasic.Strings.ChrW*>
+- <xref:Microsoft.VisualBasic.Conversion.Int*>
+- <xref:Microsoft.VisualBasic.Conversion.Fix*>
+- <xref:Microsoft.VisualBasic.Strings.Format*>
+- <xref:Microsoft.VisualBasic.Conversion.Hex*>
+- <xref:Microsoft.VisualBasic.Conversion.Oct*>
+- <xref:Microsoft.VisualBasic.Conversion.Str*>
+- <xref:Microsoft.VisualBasic.Conversion.Val*>
 - [Conversion Functions](conversion-functions.md)
 - [Type Conversions in Visual Basic](../../programming-guide/language-features/data-types/type-conversions.md)

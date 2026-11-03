@@ -23,7 +23,7 @@ You can assign any method from any accessible class or struct that matches the d
 
 The ability to refer to a method as a parameter makes delegates ideal for defining callback methods. You can write a method that compares two objects in your application. The method can then be used in a delegate for a sort algorithm. Because the comparison code is separate from the library, the sort method can be more general.
 
-[Function pointers](~/_csharplang/proposals/csharp-9.0/function-pointers.md) support similar scenarios, where you need more control over the calling convention. The code associated with a delegate is invoked by using a virtual method added to a delegate type. When you work with function pointers, you can specify different conventions.
+[Function pointers](~/_csharpstandard/standard/unsafe-code.md#2433-function-pointers) support similar scenarios, where you need more control over the calling convention. The code associated with a delegate is invoked by using a virtual method added to a delegate type. When you work with function pointers, you can specify different conventions.
 
 ## Explore delegate characteristics
 

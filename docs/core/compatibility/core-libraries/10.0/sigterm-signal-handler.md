@@ -35,7 +35,7 @@ The termination signal handlers registered by the .NET runtime by default were b
 
 - No action is necessary for typical ASP.NET applications or applications that use higher-level APIs such as <xref:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.UseConsoleLifetime*?displayProperty=nameWithType> to handle app-model specific concerns. These higher-level APIs register handlers for SIGTERM and other signals as appropriate.
 
-- If you want to handle termination signals without taking a dependency on higher-level libraries, you can replicate the previous behavior by creating termination signal handlers in your `Main` method using the <xref:System.Runtime.InteropServices.PosixSignalRegistration.Create%2A?displayProperty=nameWithType> API:
+- If you want to handle termination signals without taking a dependency on higher-level libraries, you can replicate the previous behavior by creating termination signal handlers in your `Main` method using the <xref:System.Runtime.InteropServices.PosixSignalRegistration.Create*?displayProperty=nameWithType> API:
 
 ```csharp
 static void Main()

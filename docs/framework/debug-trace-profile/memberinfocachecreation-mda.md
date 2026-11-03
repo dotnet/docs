@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "member info cache creation"
   - "MemberInfoCacheCreation MDA"
-  - "reflection, run-time errors"
+  - "reflection, runtime errors"
   - "MDAs (managed debugging assistants), cache"
   - "cache [.NET Framework], reflection"
   - "managed debugging assistants (MDAs), cache"

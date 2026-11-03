@@ -31,7 +31,7 @@ The `dotnet nuget remove source` command removes an existing source from your Nu
 
 ## Options
 
-- [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](includes/cli-configfile.md)]
 
 ## Examples
 

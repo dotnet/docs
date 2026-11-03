@@ -12,7 +12,7 @@ ms.assetid: 0face17f-43ca-417b-9b33-737c0fc360df
 This article covers how a client can access a service operation asynchronously. The service in this article implements the `ICalculator` interface. The client can call the operations on this interface asynchronously by using the event-driven asynchronous calling model. (For more information about the event-based asynchronous calling model, see [Multithreaded Programming with the Event-based Asynchronous Pattern](../../../standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)). For an example that shows how to implement an operation asynchronously in a service, see [How to: Implement an Asynchronous Service Operation](../how-to-implement-an-asynchronous-service-operation.md). For more information about synchronous and asynchronous operations, see [Synchronous and Asynchronous Operations](../synchronous-and-asynchronous-operations.md).
 
 > [!NOTE]
-> The event-driven asynchronous calling model is not supported when using a <xref:System.ServiceModel.ChannelFactory%601>. For information about making asynchronous calls using the <xref:System.ServiceModel.ChannelFactory%601>, see [How to: Call Operations Asynchronously Using a Channel Factory](how-to-call-operations-asynchronously-using-a-channel-factory.md).
+> The event-driven asynchronous calling model is not supported when using a <xref:System.ServiceModel.ChannelFactory`1>. For information about making asynchronous calls using the <xref:System.ServiceModel.ChannelFactory`1>, see [How to: Call Operations Asynchronously Using a Channel Factory](how-to-call-operations-asynchronously-using-a-channel-factory.md).
 
 ## Procedure
 
@@ -46,7 +46,7 @@ This article covers how a client can access a service operation asynchronously. 
      [!code-csharp[EventAsync#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/eventasync/cs/client.cs#4)]
      [!code-vb[EventAsync#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/eventasync/vb/client.vb#4)]
 
-3. Prior to calling the operation, use a new generic <xref:System.EventHandler%601?displayProperty=nameWithType> of type `<operationName>``EventArgs` to add the handler method (created in the preceding step) to the `<operationName>``Completed` event. Then call the `<operationName>``Async` method. For example:
+3. Prior to calling the operation, use a new generic <xref:System.EventHandler`1?displayProperty=nameWithType> of type `<operationName>``EventArgs` to add the handler method (created in the preceding step) to the `<operationName>``Completed` event. Then call the `<operationName>``Async` method. For example:
 
      [!code-csharp[EventAsync#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/eventasync/cs/client.cs#5)]
      [!code-vb[EventAsync#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/eventasync/vb/client.vb#5)]

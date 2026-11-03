@@ -1,31 +1,21 @@
 namespace ImmutableRecord;
 
-// <ImmutableRecord>
-public record Person(string FirstName, string LastName)
-{
-    public required string[] PhoneNumbers { get; init; }
-}
+public record Person(string FirstName, string LastName);
 
 public class Program
 {
     public static void Main()
     {
-        Person person1 = new("Nancy", "Davolio") { PhoneNumbers = new string[1] };
-        Console.WriteLine(person1);
-        // output: Person { FirstName = Nancy, LastName = Davolio, PhoneNumbers = System.String[] }
+        // <WithExpression>
+        var original = new Person("Grace", "Hopper");
+        var modified = original with { FirstName = "Margaret" };
 
-        Person person2 = person1 with { FirstName = "John" };
-        Console.WriteLine(person2);
-        // output: Person { FirstName = John, LastName = Davolio, PhoneNumbers = System.String[] }
-        Console.WriteLine(person1 == person2); // output: False
+        Console.WriteLine(original); // Person { FirstName = Grace, LastName = Hopper }
+        Console.WriteLine(modified); // Person { FirstName = Margaret, LastName = Hopper }
+        Console.WriteLine(original == modified); // False
 
-        person2 = person1 with { PhoneNumbers = new string[1] };
-        Console.WriteLine(person2);
-        // output: Person { FirstName = Nancy, LastName = Davolio, PhoneNumbers = System.String[] }
-        Console.WriteLine(person1 == person2); // output: False
-
-        person2 = person1 with { };
-        Console.WriteLine(person1 == person2); // output: True
+        var copy = original with { };
+        Console.WriteLine(original == copy); // True
+        // </WithExpression>
     }
 }
-// </ImmutableRecord>

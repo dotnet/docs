@@ -5,7 +5,7 @@ ms.date: 09/06/2023
 ---
 # RuntimeIdentifier returns platform for which the runtime was built
 
-<xref:System.Runtime.InteropServices.RuntimeInformation.RuntimeIdentifier?displayProperty=nameWithType> returns the platform for which the runtime was built, rather than a value computed at run time.
+<xref:System.Runtime.InteropServices.RuntimeInformation.RuntimeIdentifier?displayProperty=nameWithType> returns the platform for which the runtime was built, rather than a value computed at runtime.
 
 ## Previous behavior
 
@@ -25,11 +25,11 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-This change is in line with a .NET 8 change to [RID-specific asset resolution](../../deployment/8.0/rid-asset-list.md) and the move away from a distro-aware runtime. <xref:System.Runtime.InteropServices.RuntimeInformation.RuntimeIdentifier?displayProperty=nameWithType> is an opaque value that should represent the platform on which the host or runtime considers itself to be running. In .NET 8, that corresponds to the platform for which the host or runtime is built, rather than an RID computed at run time.
+This change is in line with a .NET 8 change to [RID-specific asset resolution](../../deployment/8.0/rid-asset-list.md) and the move away from a distro-aware runtime. <xref:System.Runtime.InteropServices.RuntimeInformation.RuntimeIdentifier?displayProperty=nameWithType> is an opaque value that should represent the platform on which the host or runtime considers itself to be running. In .NET 8, that corresponds to the platform for which the host or runtime is built, rather than an RID computed at runtime.
 
 ## Recommended action
 
-<xref:System.Runtime.InteropServices.RuntimeInformation.RuntimeIdentifier?displayProperty=nameWithType> is an opaque value and not intended to be parsed into its component parts. For the OS version of the actual machine an application is running on, use <xref:System.Environment.OSVersion?displayProperty=nameWithType>. For a description, use <xref:System.Runtime.InteropServices.RuntimeInformation.OSDescription?displayProperty=nameWithType>. For a specific ID (distro) and corresponding version on Linux, you can read the [os-release](https://www.freedesktop.org/software/systemd/man/os-release.html) file.
+<xref:System.Runtime.InteropServices.RuntimeInformation.RuntimeIdentifier?displayProperty=nameWithType> is an opaque value and not intended to be parsed into its component parts. For the OS version of the actual machine an application is running on, use <xref:System.Environment.OSVersion?displayProperty=nameWithType>. For a description, use <xref:System.Runtime.InteropServices.RuntimeInformation.OSDescription?displayProperty=nameWithType>. For a specific ID (distro) and corresponding version on Linux, you can read the [os-release](https://www.freedesktop.org/software/systemd/man/latest/os-release.html) file.
 
 ## Affected APIs
 

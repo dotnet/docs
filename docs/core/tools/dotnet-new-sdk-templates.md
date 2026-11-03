@@ -40,6 +40,7 @@ The following table shows the templates that come preinstalled with the .NET SDK
 | Directory.Build.targets file | [`buildtargets`](#buildtargets) |  | Config | 8.0.100 |
 | Dotnet local tool manifest file | `tool-manifest` |  | Config | 3.0 |
 | EditorConfig file | [`editorconfig`](#editorconfig) |  | Config | 6.0 |
+| .gitignore file | `gitignore` |  | Config | 3.0 |
 | global.json file | [`globaljson`](#globaljson) |  | Config | 2.0 |
 | MSTest Test Class | [`mstest-class`](#mstest-class) | [C#], F#, VB | Test/MSTest | 1.0 |
 | MSTest Test Project | [`mstest`](#mstest) | [C#], F#, VB | Test/MSTest | 1.0 |
@@ -224,7 +225,7 @@ The ability to create a project for an earlier TFM depends on having that versio
    The runner/platform for the test project. The possible values are:
 
   - `VSTest` - VSTest platform (Default).
-  - `MSTest` - Microsoft.Testing.Platform.
+  - `MSTest` - Microsoft.Testing.Platform (MTP).
 
 - **`--coverage-tool <COVERAGE_TOOL>`**
 
@@ -235,7 +236,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`--extensions-profile <EXTENSIONS_PROFILE>`**
 
-  The SDK extensions profile when using Microsoft.Testing.Platform. The possible values are:
+  The SDK extensions profile when using MTP. The possible values are:
 
   - `Default` - Default extensions profile (Default).
   - `None` - No extensions are enabled.
@@ -708,7 +709,7 @@ API Controller with or without read/write actions.
 
 - **`--test-runner <TEST_RUNNER>`**
 
-  This option was introduced in .NET 10 SDK and specifies the test runner to use, either VSTest or Microsoft.Testing.Platform. The default is VSTest.
+  This option was introduced in .NET 10 SDK and specifies the test runner to use, either VSTest or MTP. The default is VSTest.
 
 ### `sln`
 
@@ -1005,6 +1006,6 @@ The following table shows templates that have been discontinued and no longer co
 
 - [dotnet new command](dotnet-new.md)
 - [dotnet new list command](dotnet-new-list.md)
-- [Custom templates for dotnet new](custom-templates.md)
+- [.NET templates for authors](templates.md)
 - [Create a custom template for dotnet new](../tutorials/cli-templates-create-item-template.md)
 - [Implicit using directives](../project-sdk/overview.md#implicit-using-directives)

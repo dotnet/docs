@@ -25,14 +25,14 @@ ms.assetid: 234d11a0-7ce7-4309-8989-2f4720e02f78
 
 - Grid coordinates are zero-based with the upper left (or upper right cell depending on locale) having coordinates (0, 0).
 
-- If a cell is empty, a UI Automation element must still be returned in order to support the <xref:System.Windows.Automation.Provider.IGridItemProvider.ContainingGrid%2A> property for that cell. This is possible when the layout of child elements in the grid is similar to a ragged array (see example below).
+- If a cell is empty, a UI Automation element must still be returned in order to support the <xref:System.Windows.Automation.Provider.IGridItemProvider.ContainingGrid> property for that cell. This is possible when the layout of child elements in the grid is similar to a ragged array (see example below).
 
  ![Windows Explorer view showing ragged layout.](./media/uia-gridpattern-ragged-array.PNG "UIA_GridPattern_Ragged_Array")
 Example of a Grid Control with Empty Coordinates
 
 - A grid with a single item is still required to implement <xref:System.Windows.Automation.Provider.IGridProvider> if it is logically considered to be a grid. The number of child items in the grid is immaterial.
 
-- Hidden rows and columns, depending on the provider implementation, may be loaded in the UI Automation tree and therefore will be reflected in the <xref:System.Windows.Automation.GridPattern.GridPatternInformation.RowCount%2A> and <xref:System.Windows.Automation.GridPattern.GridPatternInformation.ColumnCount%2A> properties. If the hidden rows and columns have not yet been loaded, they should not be counted.
+- Hidden rows and columns, depending on the provider implementation, may be loaded in the UI Automation tree and therefore will be reflected in the <xref:System.Windows.Automation.GridPattern.GridPatternInformation.RowCount*> and <xref:System.Windows.Automation.GridPattern.GridPatternInformation.ColumnCount> properties. If the hidden rows and columns have not yet been loaded, they should not be counted.
 
 - <xref:System.Windows.Automation.Provider.IGridProvider> does not enable active manipulation of a grid; <xref:System.Windows.Automation.Provider.ITransformProvider> must be implemented to enable this functionality.
 
@@ -48,9 +48,9 @@ Example of a Grid Control with Empty Coordinates
 
 |Required members|Type|Notes|
 |----------------------|----------|-----------|
-|<xref:System.Windows.Automation.Provider.IGridProvider.RowCount%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.IGridProvider.ColumnCount%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.IGridProvider.GetItem%2A>|Method|None|
+|<xref:System.Windows.Automation.Provider.IGridProvider.RowCount*>|Property|None|
+|<xref:System.Windows.Automation.Provider.IGridProvider.ColumnCount*>|Property|None|
+|<xref:System.Windows.Automation.Provider.IGridProvider.GetItem*>|Method|None|
 
  This control pattern has no associated events.
 
@@ -62,8 +62,8 @@ Example of a Grid Control with Empty Coordinates
 
 |Exception type|Condition|
 |--------------------|---------------|
-|<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IGridProvider.GetItem%2A><br /><br /> -   If the requested row coordinate is larger than the <xref:System.Windows.Automation.Provider.IGridProvider.RowCount%2A> or the column coordinate is larger than the <xref:System.Windows.Automation.Provider.IGridProvider.ColumnCount%2A>.|
-|<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IGridProvider.GetItem%2A><br /><br /> -   If either of the requested row or column coordinates is less than zero.|
+|<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IGridProvider.GetItem*><br /><br /> -   If the requested row coordinate is larger than the <xref:System.Windows.Automation.Provider.IGridProvider.RowCount*> or the column coordinate is larger than the <xref:System.Windows.Automation.Provider.IGridProvider.ColumnCount*>.|
+|<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IGridProvider.GetItem*><br /><br /> -   If either of the requested row or column coordinates is less than zero.|
 
 ## See also
 

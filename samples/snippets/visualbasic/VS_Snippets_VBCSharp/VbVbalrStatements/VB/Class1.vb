@@ -599,7 +599,7 @@ Public Class Class1
 
 
     '********************************************************************
-    '<Snippet52>
+    '<Snippet59>
     Class SampleCollection
         ' Define a local collection to store strings.
         Private items As New List(Of String)
@@ -637,7 +637,7 @@ Public Class Class1
             items.Add(item)
         End Sub
     End Class
-    '</Snippet52>
+    '</Snippet59>
 
 
     '********************************************************************

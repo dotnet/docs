@@ -71,14 +71,14 @@ Async streams and the associated language support address all those concerns. Th
 
 These new language features depend on three new interfaces added to .NET Standard 2.1 and implemented in .NET Core 3.0:
 
-- <xref:System.Collections.Generic.IAsyncEnumerable%601?displayProperty=nameWithType>
-- <xref:System.Collections.Generic.IAsyncEnumerator%601?displayProperty=nameWithType>
+- <xref:System.Collections.Generic.IAsyncEnumerable`1?displayProperty=nameWithType>
+- <xref:System.Collections.Generic.IAsyncEnumerator`1?displayProperty=nameWithType>
 - <xref:System.IAsyncDisposable?displayProperty=nameWithType>
 
 These three interfaces should be familiar to most C# developers. They behave in a manner similar to their synchronous counterparts:
 
-- <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>
-- <xref:System.Collections.Generic.IEnumerator%601?displayProperty=nameWithType>
+- <xref:System.Collections.Generic.IEnumerable`1?displayProperty=nameWithType>
+- <xref:System.Collections.Generic.IEnumerator`1?displayProperty=nameWithType>
 - <xref:System.IDisposable?displayProperty=nameWithType>
 
 One type that may be unfamiliar is <xref:System.Threading.Tasks.ValueTask?displayProperty=nameWithType>. The `ValueTask` struct provides a similar API to the <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> class. `ValueTask` is used in these interfaces for performance reasons.
@@ -111,7 +111,7 @@ Replace that code with the following `await foreach` loop:
 
 :::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetEnumerateAsyncStream" :::
 
-The new interface <xref:System.Collections.Generic.IAsyncEnumerator%601> derives from <xref:System.IAsyncDisposable>. That means the preceding loop will asynchronously dispose the stream when the loop finishes. You can imagine the loop looks like the following code:
+The new interface <xref:System.Collections.Generic.IAsyncEnumerator`1> derives from <xref:System.IAsyncDisposable>. That means the preceding loop will asynchronously dispose the stream when the loop finishes. You can imagine the loop looks like the following code:
 
 ```csharp
 int num = 0;
@@ -131,15 +131,15 @@ try
 }
 ```
 
-By default, stream elements are processed in the captured context. If you want to disable capturing of the context, use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%2A?displayProperty=nameWithType> extension method. For more information about synchronization contexts and capturing the current context, see the article on [consuming the Task-based asynchronous pattern](../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md).
+By default, stream elements are processed in the captured context. If you want to disable capturing of the context, use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait*?displayProperty=nameWithType> extension method. For more information about synchronization contexts and capturing the current context, see the article on [consuming the Task-based asynchronous pattern](../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md).
 
 Async streams support cancellation using the same protocol as other `async` methods. You would modify the signature for the async iterator method as follows to support cancellation:
 
 :::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetGenerateWithCancellation" :::
 
-The <xref:System.Runtime.CompilerServices.EnumeratorCancellationAttribute?displayProperty=nameWithType> attribute causes the compiler to generate code for the <xref:System.Collections.Generic.IAsyncEnumerator%601> that makes the token passed to `GetAsyncEnumerator` visible to the body of the async iterator as that argument. Inside `runQueryAsync`, you could examine the state of the token and cancel further work if requested.
+The <xref:System.Runtime.CompilerServices.EnumeratorCancellationAttribute?displayProperty=nameWithType> attribute causes the compiler to generate code for the <xref:System.Collections.Generic.IAsyncEnumerator`1> that makes the token passed to `GetAsyncEnumerator` visible to the body of the async iterator as that argument. Inside `runQueryAsync`, you could examine the state of the token and cancel further work if requested.
 
-You use another extension method, <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation%2A>, to pass the cancellation token to the async stream. You would modify the loop enumerating the issues as follows:
+You use another extension method, <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation*>, to pass the cancellation token to the async stream. You would modify the loop enumerating the issues as follows:
 
 :::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetEnumerateWithCancellation" :::
 

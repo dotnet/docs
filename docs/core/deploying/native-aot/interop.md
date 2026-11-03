@@ -4,6 +4,7 @@ description: Learn about native code interop with Native AOT.
 author: MichalStrehovsky
 ms.author: michals
 ms.date: 05/17/2023
+ai-usage: ai-assisted
 ---
 # Native code interop with Native AOT
 
@@ -13,7 +14,7 @@ While native code interop works similarly in Native AOT and non-AOT deployments,
 
 ## Direct P/Invoke calls
 
-The P/Invoke calls in AOT-compiled binaries are bound lazily at run time by default, for better compatibility. You can configure the AOT compiler to generate direct calls for selected P/Invoke methods that are bound during startup by the dynamic loader that comes with the operating system. The unmanaged libraries and entry points referenced via direct calls must always be available at run time, otherwise the native binary fails to start.
+The P/Invoke calls in AOT-compiled binaries are bound lazily at runtime by default, for better compatibility. You can configure the AOT compiler to generate direct calls for selected P/Invoke methods that are bound during startup by the dynamic loader that comes with the operating system. The unmanaged libraries and entry points referenced via direct calls must always be available at runtime, otherwise the native binary fails to start.
 
 The benefits of direct P/Invoke calls are:
 
@@ -47,7 +48,7 @@ On Windows, Native AOT uses a prepopulated list of direct P/Invoke methods that 
 
 ### Linking
 
-To statically link against an unmanaged library, you need to specify `<NativeLibrary Include="filename" />` pointing to a `.lib` file on Windows and a `.a` file on Unix-like systems.
+To statically link against one or more unmanaged libraries, you need to specify `<NativeLibrary Include="filename" />` pointing to a `.lib` file on Windows and a `.a` file on Unix-like systems for each library.
 
 Examples:
 
@@ -60,6 +61,10 @@ Examples:
   <NativeLibrary Include="Dependency.a" Condition="!$(RuntimeIdentifier.StartsWith('win'))" />
 </ItemGroup>
 ```
+
+If the specified native library has a dependency on other static libraries, then `NativeLibrary` items will need to be added for each of the transitive depenencies as well, otherwise the native linker will fail because of missing symbols.
+
+Platform conventions are followed when it comes to the format of `NativeLibrary` entries. The underlying native linker may search standard library paths or allow rooted file paths.
 
 To specify additional flags to the native linker, use the `<LinkerArg>` item.
 
@@ -81,3 +86,5 @@ The Native AOT compiler exports methods annotated with <xref:System.Runtime.Inte
 public C entry points. This makes it possible to either dynamically or statically link the AOT compiled modules into external
 programs. Only methods marked `UnmanagedCallersOnly` in the published assembly are considered. Methods in project references or NuGet packages won't be exported.
 For more information, see [NativeLibrary sample](https://github.com/dotnet/samples/tree/main/core/nativeaot/NativeLibrary/README.md).
+
+Methods annotated with `UnmanagedCallersOnly` don't perform marshalling and require blittable parameter and return types. Starting in .NET 11, when runtime marshalling is enabled, Native AOT throws <xref:System.InvalidProgramException> if an unmanaged caller invokes such a method with a non-blittable signature, such as a `bool` return type or a `char` parameter. The exception causes the process to terminate (fail fast) and can't be caught to recover from the invalid signature. Use blittable equivalents or, for supported unmanaged types, [disable runtime marshalling](../../../standard/native-interop/disabled-marshalling.md) in the assembly that declares the method. For details, see [Native AOT rejects non-blittable UnmanagedCallersOnly signatures](../../compatibility/interop/11/unmanagedcallersonly-non-blittable.md).

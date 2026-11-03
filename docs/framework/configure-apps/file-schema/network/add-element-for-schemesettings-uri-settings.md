@@ -8,10 +8,10 @@ ms.assetid: 594a7b3b-af23-4cfa-b616-0b2dddb1a705
 
 Adds a scheme setting for a scheme name.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<uri>**](uri-element-uri-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<schemeSettings>**](schemesettings-element-uri-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<uri>`](uri-element-uri-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<schemeSettings>`](schemesettings-element-uri-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<add>`
 
 ## Syntax
 
@@ -87,7 +87,7 @@ Adds a scheme setting for a scheme name.
 - <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>
 - <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>
 - <xref:System.Configuration.UriSection?displayProperty=nameWithType>
-- <xref:System.Configuration.UriSection.SchemeSettings%2A?displayProperty=nameWithType>
+- <xref:System.Configuration.UriSection.SchemeSettings*?displayProperty=nameWithType>
 - <xref:System.GenericUriParserOptions?displayProperty=nameWithType>
 - <xref:System.Uri?displayProperty=nameWithType>
 - [Network Settings Schema](index.md)

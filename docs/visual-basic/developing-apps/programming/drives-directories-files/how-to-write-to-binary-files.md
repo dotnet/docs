@@ -10,7 +10,7 @@ ms.assetid: 59fae125-de5b-4c96-883c-209f4a55112c
 ---
 # How to: Write to Binary Files in Visual Basic
 
-The <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A> method writes data to a binary file. If the `append` parameter is `True`, it will append the data to the file; otherwise data in the file is overwritten.
+The <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes*> method writes data to a binary file. If the `append` parameter is `True`, it will append the data to the file; otherwise data in the file is overwritten.
 
 If the specified path excluding the file name is not valid, a <xref:System.IO.DirectoryNotFoundException> exception will be thrown. If the path is valid but the file does not exist, the file will be created.
 
@@ -40,5 +40,5 @@ The following conditions may create an exception:
 
 ## See also
 
-- <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A>
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes*>
 - [How to: Write Text to Files](how-to-write-text-to-files.md)

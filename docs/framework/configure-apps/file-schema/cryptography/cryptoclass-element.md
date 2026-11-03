@@ -14,12 +14,12 @@ ms.assetid: 03db52ef-010e-44ea-b6fd-b9c900ecad50
 
 Contains a cryptography class that has a mapping to a friendly name in the [\<nameEntry>](nameentry-element.md) element.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<mscorlib>**](mscorlib-element-for-cryptography-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptographySettings>**](cryptographysettings-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptoNameMapping>**](cryptonamemapping-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptoClasses>**](cryptoclasses-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<cryptoClass>**
+[`<configuration>`](../configuration-element.md)\
+&nbsp;&nbsp;[`<mscorlib>`](mscorlib-element-for-cryptography-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[`<cryptographySettings>`](cryptographysettings-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`<cryptoNameMapping>`](cryptonamemapping-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`<cryptoClasses>`](cryptoclasses-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<cryptoClass>`
 
 ## Syntax
 
@@ -53,7 +53,7 @@ Contains a cryptography class that has a mapping to a friendly name in the [\<na
 
 ## Example
 
- The following example shows how use the `<cryptoClass>` element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> method to return a `MyCryptoRSAClass` object.
+ The following example shows how use the `<cryptoClass>` element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName*?displayProperty=nameWithType> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create*> method to return a `MyCryptoRSAClass` object.
 
 ```xml
 <configuration>

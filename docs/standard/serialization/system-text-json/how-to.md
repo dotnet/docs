@@ -23,7 +23,7 @@ This article shows how to use the <xref:System.Text.Json?displayProperty=fullNam
 > [!TIP]
 > You can use AI assistance to [serialize to JSON](#use-ai-to-serialize-to-json).
 
-To write JSON to a string or to a file, call the <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> method.
+To write JSON to a string or to a file, call the <xref:System.Text.Json.JsonSerializer.Serialize*?displayProperty=nameWithType> method.
 
 ## Serialization examples
 
@@ -89,12 +89,12 @@ Here's an example showing how a class that contains collection properties and a 
 
 It's 5-10% faster to serialize to a UTF-8 byte array than to use the string-based methods. That's because the bytes (as UTF-8) don't need to be converted to strings (UTF-16).
 
-To serialize to a UTF-8 byte array, call the <xref:System.Text.Json.JsonSerializer.SerializeToUtf8Bytes%2A?displayProperty=nameWithType> method:
+To serialize to a UTF-8 byte array, call the <xref:System.Text.Json.JsonSerializer.SerializeToUtf8Bytes*?displayProperty=nameWithType> method:
 
 :::code language="csharp" source="snippets/how-to/csharp/RoundtripToUtf8.cs" id="Serialize":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripToUtf8.vb" id="Serialize":::
 
-A <xref:System.Text.Json.JsonSerializer.Serialize%2A> overload that takes a <xref:System.Text.Json.Utf8JsonWriter> is also available.
+A <xref:System.Text.Json.JsonSerializer.Serialize*> overload that takes a <xref:System.Text.Json.Utf8JsonWriter> is also available.
 
 ## Serialize to formatted JSON
 

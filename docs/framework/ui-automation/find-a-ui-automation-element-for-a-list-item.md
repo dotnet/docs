@@ -20,7 +20,7 @@ ms.topic: how-to
 
 ## Example
 
- The following example shows two ways of retrieving a specified item from a list, one using <xref:System.Windows.Automation.TreeWalker> and the other using <xref:System.Windows.Automation.AutomationElement.FindAll%2A>.
+ The following example shows two ways of retrieving a specified item from a list, one using <xref:System.Windows.Automation.TreeWalker> and the other using <xref:System.Windows.Automation.AutomationElement.FindAll*>.
 
  The first technique tends to be faster for Win32 controls, but the second is faster for Windows Presentation Foundation (WPF) controls.
 

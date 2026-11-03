@@ -9,16 +9,16 @@
 [![GitHub pulls-unmerged](https://img.shields.io/github/issues-search/dotnet/docs?label=unmerged%20pull%20requests&query=is%3Apr%20is%3Aclosed%20is%3Aunmerged&color=red)](https://github.com/dotnet/docs/pulls?q=is%3Apr+is%3Aclosed+is%3Aunmerged)
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/9215/badge)](https://www.bestpractices.dev/projects/9215)
 
-This repository contains the conceptual documentation for .NET. The [.NET documentation site](https://learn.microsoft.com/dotnet) is built from multiple repositories in addition to this one:
+This repository contains the conceptual documentation for .NET. The [.NET documentation site](https://learn.microsoft.com/dotnet) is built from multiple repositories:
 
-- [ASP.NET Core](https://github.com/dotnet/AspNetCore.Docs)
-- [.NET Aspire](https://github.com/dotnet/docs-aspire)
-- [.NET Desktop workloads](https://github.com/dotnet/docs-desktop)
-- [.NET MAUI](https://github.com/dotnet/docs-maui)
-- [Entity Framework 6/Core](https://github.com/dotnet/EntityFramework.Docs)
+- [.NET docs](https://github.com/dotnet/docs)
+- [ASP.NET Core docs](https://github.com/dotnet/AspNetCore.Docs)
+- [.NET Desktop workloads docs](https://github.com/dotnet/docs-desktop)
+- [.NET MAUI docs](https://github.com/dotnet/docs-maui)
+- [Entity Framework docs](https://github.com/dotnet/EntityFramework.Docs)
 - [Community toolkit](https://github.com/MicrosoftDocs/communitytoolkit)
 
-API reference documentation is published from the following repositories. The following reference API repositories are public. Only some accept issues and pull requests, although some folders in `dotnet-api-docs` use the product repository as the source of truth. Others are pass-through repositories because API reference is generated directly from the `///` in the product source. 
+API reference documentation is published from the following repositories:
 
 - [.NET API reference](https://github.com/dotnet/dotnet-api-docs)
 - [.NET MAUI API reference](https://github.com/dotnet/maui-api-docs)
@@ -26,6 +26,8 @@ API reference documentation is published from the following repositories. The fo
 - [Entity Framework 6/Core API reference](https://github.com/dotnet/EntityFramework.ApiDocs)
 - [Roslyn API reference](https://github.com/dotnet/roslyn-api-docs)
 - [Community toolkit API reference](https://github.com/MicrosoftDocs/community-toolkit-api-ref-dotnet)
+
+These API reference doc repositories are public. Only some accept issues and pull requests. Others are pass-through repositories because API reference is generated directly from the `///` in the product source. Some folders in `dotnet-api-docs` use the product repository as the source of truth.
 
 The C# language specification documentation comes from the following two repositories:
 
@@ -36,7 +38,7 @@ Our team's tasks are tracked in our [project boards](https://github.com/dotnet/d
 
 ## :purple_heart: Contribute
 
-We welcome contributions to help us improve and complete the .NET docs. This is a very large repo, covering a large area. If this is your first visit, see the [Contributor guide](https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute) for information on working with us. Look for issues labeled [`help wanted` :label:](https://github.com/dotnet/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22+) for ideas to get started. 
+We welcome contributions to help us improve and complete the .NET docs. This is a very large repo, covering a large area. If this is your first visit, see the [Contributor guide](https://learn.microsoft.com/contribute/content/dotnet/dotnet-contribute) for information on working with us. Look for issues labeled [`help wanted` :label:](https://github.com/dotnet/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22+) for ideas to get started.
 
 Before submitting a PR with 3rd party dependencies, see our policy on [3rd party dependencies](admin/3rdPartyDependencies.md).
 
@@ -52,7 +54,6 @@ to clarify expected behavior in our community. For more information, see the [.N
 ## :octocat: GitHub Action workflows
 
 - [![Live branch protection](https://github.com/dotnet/docs/actions/workflows/live-protection.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/live-protection.yml): Adds a comment to PRs that were not automated, but rather manually created that target the `live` branch.
-- [![Close stale issues](https://github.com/dotnet/docs/actions/workflows/stale.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/stale.yml):  Closes stale issues that have not been updated in 180 days.
 - [![`dependabot` auto-approve and auto-merge](https://github.com/dotnet/docs/actions/workflows/dependabot-approve-and-automerge.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/dependabot-approve-and-automerge.yml):  Automatically approves and auto-merges PRs originating from the `dependabbot[bot]`.
 - [![Generate what's new article](https://github.com/dotnet/docs/actions/workflows/whats-new.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/whats-new.yml):  Creates a PR to generate the "What's new" article on the first of every month.
 - [![Markdownlint](https://github.com/dotnet/docs/actions/workflows/markdownlint.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/markdownlint.yml):  The current status for the entire repositories Markdown linter status.
@@ -60,6 +61,5 @@ to clarify expected behavior in our community. For more information, see the [.N
 - [![OPS status checker](https://github.com/dotnet/docs/actions/workflows/check-for-build-warnings.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/check-for-build-warnings.yml):  Builds the site for the PR in context, and verifies the build reporting either, `success`, `warnings`, or `error`.
 - [![Snippets 5000](https://github.com/dotnet/docs/actions/workflows/snippets5000.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/snippets5000.yml):  Custom .NET build validation, locates code impacted by a PR, and builds.
 - [![Target supported version](https://github.com/dotnet/docs/actions/workflows/version-sweep.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/version-sweep.yml):  Runs monthly, creating issues on projects that target .NET versions that are out of support.
-- [![Update dependabot.yml](https://github.com/dotnet/docs/actions/workflows/dependabot-bot.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/dependabot-bot.yml):  Automatically updates the `dependabot` configuration weekly, but only if required.
 - [![quest import](https://github.com/dotnet/docs/actions/workflows/quest.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/quest.yml): Automatically synchronizes issues with Quest (Azure DevOps).
 - [![bulk quest import](https://github.com/dotnet/docs/actions/workflows/quest-bulk.yml/badge.svg)](https://github.com/dotnet/docs/actions/workflows/quest-bulk.yml): Manual bulk import of issues into Quest (Azure DevOps).

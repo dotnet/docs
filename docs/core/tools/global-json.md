@@ -2,7 +2,7 @@
 title: global.json overview
 description: Learn how to use the global.json file to set the .NET SDK version when running .NET CLI commands.
 ms.topic: how-to
-ms.date: 10/22/2025
+ms.date: 03/05/2026
 ms.custom: "updateeachrelease"
 ai-usage: ai-assisted
 ---
@@ -23,7 +23,10 @@ If you always want to use the latest SDK version that is installed on your machi
 }
 ```
 
-The .NET SDK looks for a *global.json* file in the current working directory (which isn't necessarily the same as the project directory) or one of its ancestor directories.
+You rely on two components in the .NET SDK to search for a *global.json* file. Each component starts from a different location and searches up through ancestor directories:
+
+- **.NET SDK muxer** handles `dotnet` CLI commands. It starts from the current working directory, which isn't necessarily the same as the project directory.
+- **.NET MSBuild project SDK resolver** resolves project SDKs during builds. It starts from the directory that contains a solution file, if one exists. If no solution file exists, it starts from the directory that contains the current project file. If neither file exists, it uses the current working directory.
 
 For information about specifying the runtime version instead of the SDK version, see [Target frameworks](../../standard/frameworks.md).
 
@@ -87,7 +90,9 @@ The following table shows the possible values for the `rollForward` key:
 | `latestFeature` | Uses the highest installed feature band and patch level that matches the requested major and minor with a feature band and patch level that's greater than or equal to the specified value. <br> If not found, fails. |
 | `latestMinor` | Uses the highest installed minor, feature band, and patch level that matches the requested major with a minor, feature band, and patch level that's greater than or equal to the specified value. <br> If not found, fails. |
 | `latestMajor` | Uses the highest installed .NET SDK with a version that's greater than or equal to the specified value. <br> If not found, fail. |
-| `disable`     | Doesn't roll forward. An exact match is required. |
+| `disable`     | Doesn't roll forward; an exact match is required.† |
+
+ <sup>† When you use [package lock files](../install/upgrade.md#package-lock-files), set `rollForward` to `disable` so the SDK version and dependency graph stay in lockstep. For related issues, see <https://github.com/dotnet/aspnetcore/issues/65061> and <https://github.com/dotnet/sdk/issues/48795>.</sup>
 
 #### `paths`
 
@@ -222,7 +227,7 @@ The following example shows an invalid version specified. The output of the comm
 }
 ```
 
-The following example shows how to specify `Microsoft.Testing.Platform` as the test runner:
+The following example shows how to specify `Microsoft.Testing.Platform` (MTP) as the test runner:
 
 ```json
 {

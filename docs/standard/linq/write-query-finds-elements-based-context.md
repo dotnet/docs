@@ -172,8 +172,8 @@ id = 6
 
 ## See also
 
-- <xref:System.Xml.Linq.XElement.Parse%2A>
-- <xref:System.Xml.Linq.XContainer.Descendants%2A>
-- <xref:System.Xml.Linq.XNode.ElementsAfterSelf%2A>
-- <xref:System.Linq.Enumerable.FirstOrDefault%2A>
+- <xref:System.Xml.Linq.XElement.Parse*>
+- <xref:System.Xml.Linq.XContainer.Descendants*>
+- <xref:System.Xml.Linq.XNode.ElementsAfterSelf*>
+- <xref:System.Linq.Enumerable.FirstOrDefault*>
 - [Basic Queries (LINQ to XML) (Visual Basic)](./find-element-specific-attribute.md)

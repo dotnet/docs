@@ -23,7 +23,7 @@ If your collection contains elements of only one data type, you can use one of t
 
 ## Using a Simple Collection
 
-The examples in this section use the generic <xref:System.Collections.Generic.List%601> class, which enables you to work with a strongly typed list of objects.
+The examples in this section use the generic <xref:System.Collections.Generic.List`1> class, which enables you to work with a strongly typed list of objects.
 
 The following example creates a list of strings and then iterates through the strings by using a [For Each…Next](../../language-reference/statements/for-each-next-statement.md) statement.
 
@@ -90,7 +90,7 @@ Next
 'Output: chinook pink sockeye
 ```
 
-The following example removes elements from a generic list. Instead of a `For Each` statement, a [For…Next](../../language-reference/statements/for-next-statement.md) statement that iterates in descending order is used. This is because the <xref:System.Collections.Generic.List%601.RemoveAt%2A> method causes elements after a removed element to have a lower index value.
+The following example removes elements from a generic list. Instead of a `For Each` statement, a [For…Next](../../language-reference/statements/for-next-statement.md) statement that iterates in descending order is used. This is because the <xref:System.Collections.Generic.List`1.RemoveAt*> method causes elements after a removed element to have a lower index value.
 
 ```vb
 Dim numbers As New List(Of Integer) From
@@ -113,7 +113,7 @@ numbers.ForEach(
 ' Output: 0 2 4 6 8
 ```
 
-For the type of elements in the <xref:System.Collections.Generic.List%601>, you can also define your own class. In the following example, the `Galaxy` class that is used by the <xref:System.Collections.Generic.List%601> is defined in the code.
+For the type of elements in the <xref:System.Collections.Generic.List`1>, you can also define your own class. In the following example, the `Galaxy` class that is used by the <xref:System.Collections.Generic.List`1> is defined in the code.
 
 ```vb
 Private Sub IterateThroughList()
@@ -170,11 +170,11 @@ The following table lists some of the frequently used classes of the <xref:Syste
 
 |Class|Description|
 |---|---|
-|<xref:System.Collections.Generic.Dictionary%602>|Represents a collection of key/value pairs that are organized based on the key.|
-|<xref:System.Collections.Generic.List%601>|Represents a list of objects that can be accessed by index. Provides methods to search, sort, and modify lists.|
-|<xref:System.Collections.Generic.Queue%601>|Represents a first in, first out (FIFO) collection of objects.|
-|<xref:System.Collections.Generic.SortedList%602>|Represents a collection of key/value pairs that are sorted by key based on the associated <xref:System.Collections.Generic.IComparer%601> implementation.|
-|<xref:System.Collections.Generic.Stack%601>|Represents a last in, first out (LIFO) collection of objects.|
+|<xref:System.Collections.Generic.Dictionary`2>|Represents a collection of key/value pairs that are organized based on the key.|
+|<xref:System.Collections.Generic.List`1>|Represents a list of objects that can be accessed by index. Provides methods to search, sort, and modify lists.|
+|<xref:System.Collections.Generic.Queue`1>|Represents a first in, first out (FIFO) collection of objects.|
+|<xref:System.Collections.Generic.SortedList`2>|Represents a collection of key/value pairs that are sorted by key based on the associated <xref:System.Collections.Generic.IComparer`1> implementation.|
+|<xref:System.Collections.Generic.Stack`1>|Represents a last in, first out (LIFO) collection of objects.|
 
 For additional information, see [Commonly Used Collection Types](../../../standard/collections/commonly-used-collection-types.md), [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md), and <xref:System.Collections.Generic?displayProperty=nameWithType>.
 
@@ -186,7 +186,7 @@ In the .NET Framework 4 or newer, the collections in the <xref:System.Collection
 
 The classes in the <xref:System.Collections.Concurrent> namespace should be used instead of the corresponding types in the <xref:System.Collections.Generic?displayProperty=nameWithType> and <xref:System.Collections?displayProperty=nameWithType> namespaces whenever multiple threads are accessing the collection concurrently. For more information, see [Thread-Safe Collections](../../../standard/collections/thread-safe/index.md) and <xref:System.Collections.Concurrent>.
 
-Some classes included in the <xref:System.Collections.Concurrent> namespace are <xref:System.Collections.Concurrent.BlockingCollection%601>, <xref:System.Collections.Concurrent.ConcurrentDictionary%602>, <xref:System.Collections.Concurrent.ConcurrentQueue%601>, and <xref:System.Collections.Concurrent.ConcurrentStack%601>.
+Some classes included in the <xref:System.Collections.Concurrent> namespace are <xref:System.Collections.Concurrent.BlockingCollection`1>, <xref:System.Collections.Concurrent.ConcurrentDictionary`2>, <xref:System.Collections.Concurrent.ConcurrentQueue`1>, and <xref:System.Collections.Concurrent.ConcurrentStack`1>.
 
 <a name="BKMK_Collections"></a>
 
@@ -225,7 +225,7 @@ For more information, see <xref:Microsoft.VisualBasic.Collection>.
 
 ## Implementing a Collection of Key/Value Pairs
 
-The <xref:System.Collections.Generic.Dictionary%602> generic collection enables you to access to elements in a collection by using the key of each element. Each addition to the dictionary consists of a value and its associated key. Retrieving a value by using its key is fast because the `Dictionary` class is implemented as a hash table.
+The <xref:System.Collections.Generic.Dictionary`2> generic collection enables you to access to elements in a collection by using the key of each element. Each addition to the dictionary consists of a value and its associated key. Retrieving a value by using its key is fast because the `Dictionary` class is implemented as a hash table.
 
 The following example creates a `Dictionary` collection and iterates through the dictionary by using a `For Each` statement.
 
@@ -291,7 +291,7 @@ Private Function BuildDictionary2() As Dictionary(Of String, Element)
 End Function
 ```
 
-The following example uses the <xref:System.Collections.Generic.Dictionary%602.ContainsKey%2A> method and the <xref:System.Collections.Generic.Dictionary%602.Item%2A> property of `Dictionary` to quickly find an item by key. The `Item` property enables you to access an item in the `elements` collection by using the `elements(symbol)` code in Visual Basic.
+The following example uses the <xref:System.Collections.Generic.Dictionary`2.ContainsKey*> method and the <xref:System.Collections.Generic.Dictionary`2.Item*> property of `Dictionary` to quickly find an item by key. The `Item` property enables you to access an item in the `elements` collection by using the `elements(symbol)` code in Visual Basic.
 
 ```vb
 Private Sub FindInDictionary(ByVal symbol As String)
@@ -306,7 +306,7 @@ Private Sub FindInDictionary(ByVal symbol As String)
 End Sub
 ```
 
-The following example instead uses the <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A> method quickly find an item by key.
+The following example instead uses the <xref:System.Collections.Generic.Dictionary`2.TryGetValue*> method quickly find an item by key.
 
 ```vb
 Private Sub FindInDictionary2(ByVal symbol As String)
@@ -373,11 +373,11 @@ End Class
 
 ## Sorting a Collection
 
-The following example illustrates a procedure for sorting a collection. The example sorts instances of the `Car` class that are stored in a <xref:System.Collections.Generic.List%601>. The `Car` class implements the <xref:System.IComparable%601> interface, which requires that the <xref:System.IComparable%601.CompareTo%2A> method be implemented.
+The following example illustrates a procedure for sorting a collection. The example sorts instances of the `Car` class that are stored in a <xref:System.Collections.Generic.List`1>. The `Car` class implements the <xref:System.IComparable`1> interface, which requires that the <xref:System.IComparable`1.CompareTo*> method be implemented.
 
-Each call to the <xref:System.IComparable%601.CompareTo%2A> method makes a single comparison that is used for sorting. User-written code in the `CompareTo` method returns a value for each comparison of the current object with another object. The value returned is less than zero if the current object is less than the other object, greater than zero if the current object is greater than the other object, and zero if they are equal. This enables you to define in code the criteria for greater than, less than, and equal.
+Each call to the <xref:System.IComparable`1.CompareTo*> method makes a single comparison that is used for sorting. User-written code in the `CompareTo` method returns a value for each comparison of the current object with another object. The value returned is less than zero if the current object is less than the other object, greater than zero if the current object is greater than the other object, and zero if they are equal. This enables you to define in code the criteria for greater than, less than, and equal.
 
-In the `ListCars` method, the `cars.Sort()` statement sorts the list. This call to the <xref:System.Collections.Generic.List%601.Sort%2A> method of the <xref:System.Collections.Generic.List%601> causes the `CompareTo` method to be called automatically for the `Car` objects in the `List`.
+In the `ListCars` method, the `cars.Sort()` statement sorts the list. This call to the <xref:System.Collections.Generic.List`1.Sort*> method of the <xref:System.Collections.Generic.List`1> causes the `CompareTo` method to be called automatically for the `Car` objects in the `List`.
 
 ```vb
 Public Sub ListCars()
@@ -453,13 +453,13 @@ End Class
 
 ## Defining a Custom Collection
 
-You can define a collection by implementing the <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Collections.IEnumerable> interface. For additional information, see [Enumerating a Collection](/previous-versions/dotnet/netframework-4.0/hwyysy67(v=vs.100)).
+You can define a collection by implementing the <xref:System.Collections.Generic.IEnumerable`1> or <xref:System.Collections.IEnumerable> interface. For additional information, see [Enumerating a Collection](/previous-versions/dotnet/netframework-4.0/hwyysy67(v=vs.100)).
 
 Although you can define a custom collection, it is usually better to instead use the collections that are included in the .NET Framework, which are described in [Kinds of Collections](#kinds-of-collections) earlier in this topic.
 
-The following example defines a custom collection class named `AllColors`. This class implements the <xref:System.Collections.IEnumerable> interface, which requires that the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method be implemented.
+The following example defines a custom collection class named `AllColors`. This class implements the <xref:System.Collections.IEnumerable> interface, which requires that the <xref:System.Collections.IEnumerable.GetEnumerator*> method be implemented.
 
-The `GetEnumerator` method returns an instance of the `ColorEnumerator` class. `ColorEnumerator` implements the <xref:System.Collections.IEnumerator> interface, which requires that the <xref:System.Collections.IEnumerator.Current%2A> property, <xref:System.Collections.IEnumerator.MoveNext%2A> method, and <xref:System.Collections.IEnumerator.Reset%2A> method be implemented.
+The `GetEnumerator` method returns an instance of the `ColorEnumerator` class. `ColorEnumerator` implements the <xref:System.Collections.IEnumerator> interface, which requires that the <xref:System.Collections.IEnumerator.Current> property, <xref:System.Collections.IEnumerator.MoveNext*> method, and <xref:System.Collections.IEnumerator.Reset*> method be implemented.
 
 ```vb
 Public Sub ListColors()

@@ -40,7 +40,7 @@ Starting in .NET 8, you can change the deserialization behavior to modify (*popu
 - For a property that's an object with properties, its mutable properties are updated to the JSON values but the object reference itself doesn't change.
 - For a struct type property, the effective behavior is that for its mutable properties, any existing values are kept and new values from the JSON are added. However, unlike a reference property, the object itself isn't reused since it's a value type. Instead, a copy of the struct is modified and then reassigned to the property. For an example, see [Struct property example](#struct-property-example).
 
-  A struct property must have a setter; otherwise, an <xref:System.InvalidOperationException> is thrown at run time.
+  A struct property must have a setter; otherwise, an <xref:System.InvalidOperationException> is thrown at runtime.
 
 > [!NOTE]
 > The populate behavior currently doesn't work for types that have a parameterized constructor. For more information, see [dotnet/runtime issue 92877](https://github.com/dotnet/runtime/issues/92877).

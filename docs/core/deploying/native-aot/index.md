@@ -66,7 +66,7 @@ The Native AOT deployment model uses an ahead-of-time compiler to compile IL to 
   ```
 
 > [!NOTE]
-> To run a Native AOT app, the target machine needs the same [dependencies](../../install/linux-ubuntu-decision.md#dependencies) as a self-contained .NET app, except for `libgcc-s1` and `libstdc++6`. The `libicu` package (for example, `libicu74` on Ubuntu 24.04) isn't needed if the app runs in [globalization-invariant mode](../../runtime-config/globalization.md#invariant-mode).
+> To run a Native AOT app, the target machine needs the same [dependencies](../../install/linux-ubuntu-decision.md#dependencies) as a self-contained .NET app, except for `libgcc-s1` and `libstdc++6`. The `libicu` package (for example, `libicu78` on Ubuntu 26.04) isn't needed if the app runs in [globalization-invariant mode](../../runtime-config/globalization.md#invariant-mode).
 
 # [macOS](#tab/macOS)
 

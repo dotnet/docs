@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 575 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#41335](https://github.com/dotnet/docs/issues/41335), opened June 7, 2024.
-- **Results:** 111 closure candidates and 258 [clearly defined fixes](issues-with-defined-fixes.md) (227 assignment candidates and 31 fixes with open implementation PRs).
-- **Latest batch:** Issues 551-575, from [dotnet/docs#40556](https://github.com/dotnet/docs/issues/40556) through dotnet/docs#41335: 7 closure candidates, 8 new assignment candidates, and 2 new fixes with open implementation PRs.
-- **Remaining:** 273 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 25 are complete and 273 remain. Continue with [dotnet/docs#41338](https://github.com/dotnet/docs/issues/41338), opened June 7, 2024, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 600 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#41811](https://github.com/dotnet/docs/issues/41811), opened July 17, 2024.
+- **Results:** 115 closure candidates and 275 [clearly defined fixes](issues-with-defined-fixes.md) (239 assignment candidates and 36 fixes covered by 35 open implementation PRs).
+- **Latest batch:** Issues 576-600, from [dotnet/docs#41338](https://github.com/dotnet/docs/issues/41338) through dotnet/docs#41811: 4 closure candidates, 12 new assignment candidates, and 5 new fixes with open implementation PRs. Two tracked issues share one implementation PR.
+- **Remaining:** 248 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 50 are complete and 248 remain. Continue with [dotnet/docs#41974](https://github.com/dotnet/docs/issues/41974), opened July 31, 2024, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -982,3 +982,35 @@ The [current CompareOptions XML](https://github.com/dotnet/dotnet-api-docs/blob/
 The issue's registration uses `AddScoped<IContatoAppService, IContatoAppService>()`. The maintainer explains that the second type must be a concrete implementation. The [current DI overview](../docs/core/extensions/dependency-injection/overview.md#the-concept) explicitly registers an interface with its concrete class and links to the dedicated [service-lifetime examples](../docs/core/extensions/dependency-injection/service-lifetimes.md). The reporter's later application-specific failure doesn't establish another defect in those examples.
 
 **Suggested closure explanation:** Link the maintainer's answer and the current registration/lifetime guidance. On .NET 8 and .NET 10, an owned interface-to-interface registration failed with "Cannot instantiate implementation type," while the equivalent interface-to-concrete scoped registration resolved successfully. Close the general documentation question without claiming to have diagnosed or repaired the reporter's separate application, dependency graph, or circular dependencies.
+
+### dotnet/docs#41457: Remove compiler-lowered entry-point details from the Main overview
+
+**Opened:** June 17, 2024. **Confidence:** High. **Reason:** The requested simplification is already present.
+
+The [current Main overview](../docs/csharp/fundamentals/program-structure/main-command-line.md) explains entry-point signatures, arguments, asynchronous completion, and exit codes without the old compiler-generated entry-point implementation. [dotnet/docs#52082](https://github.com/dotnet/docs/pull/52082), merged March 19, 2026, contains the program-structure revision. The reporter and maintainer asked to remove hidden lowering details, not the useful explanation that asynchronous entry points complete before the application exits.
+
+**Suggested closure explanation:** The current overview no longer includes the generated `Main`/awaiter boilerplate that prompted the issue. Close the simplification request against the revised page without requiring unrelated changes to entry-point behavior or terminology.
+
+### dotnet/docs#41492: Remove the obsolete code-analysis GitHub action reference
+
+**Opened:** June 20, 2024. **Confidence:** High. **Reason:** The obsolete action section was removed.
+
+[dotnet/docs#41940](https://github.com/dotnet/docs/pull/41940), merged July 30, 2024, removed the code-analysis action from the [.NET GitHub action reference](../docs/devops/dotnet-github-action-reference.md). The current page lists the version-sweeper action, not the discontinued code-analysis workflow reported here.
+
+**Suggested closure explanation:** Close against the merged removal and current reference. Don't retain a task to update an action that the guide no longer recommends, or conflate the issue with separate maintenance work on custom-action Dockerfiles.
+
+### dotnet/docs#41530: Supply the current MAUI ebook edition
+
+**Opened:** June 22, 2024. **Confidence:** High for the current download. **Reason:** The advertised version and downloaded PDF now agree.
+
+The [MAUI ebook index](../docs/architecture/maui/index.md) advertises edition v2.0. Followed through `https://aka.ms/maui-ebook`, the current download landing page links to the [actual PDF](https://github.com/dotnet-architecture/eBooks/blob/main/current/maui/Enterprise-Application-Patterns-Using-.NET-MAUI.pdf). Downloaded the PDF, verified its readable PDF structure, and extracted its opening pages: the edition line reads **EDITION v2.0**. The alias first returns an HTML landing page; its filename or HTTP redirect alone doesn't establish the book edition.
+
+**Suggested closure explanation:** The current download supplies edition v2.0, resolving the reported v1/v2 mismatch. Link to the verified download, without treating the retained 2022 copyright year as an edition number or claiming that every chapter was audited.
+
+### dotnet/docs#41627: Explain synchronization for observable metric callbacks
+
+**Opened:** July 2, 2024. **Confidence:** High. **Reason:** The current instrumentation guide directly answers the question.
+
+The [metrics instrumentation guide](../docs/core/diagnostics/metrics-instrumentation.md) explicitly states that observable callbacks aren't synchronized with code that updates their observed values. It assigns synchronization or tolerance of inconsistent state to the application, identifies locks and `Volatile.Read`/`Volatile.Write` as appropriate mechanisms, and supplies adjacent callback-performance guidance.
+
+**Suggested closure explanation:** Link to the existing observable-instrument guidance. The thread safety of instrument APIs doesn't synchronize application-owned measurement state; the current text already makes that distinction, so another duplicate warning isn't needed.

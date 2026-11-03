@@ -5,16 +5,16 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 227 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track thirty-one additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 239 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track thirty-six additional issue-level fixes separately because thirty-five implementation PRs are already open; two issues share one PR, several patches need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 575 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#41335](https://github.com/dotnet/docs/issues/41335), opened June 7, 2024.
-- **Results:** 258 defined fixes (227 assignment candidates and 31 with open implementation PRs) and 111 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 551-575 add 8 new assignment candidates and 2 new fixes with open implementation PRs, alongside 7 closure candidates.
-- **Remaining:** 273 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 25 are complete and 273 remain. Continue with [dotnet/docs#41338](https://github.com/dotnet/docs/issues/41338), opened June 7, 2024, and finish the snapshot at position 848.
-- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the thirty-one active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
+- **Completed batches:** The 600 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#41811](https://github.com/dotnet/docs/issues/41811), opened July 17, 2024.
+- **Results:** 275 defined fixes (239 assignment candidates and 36 with open implementation PRs) and 115 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 576-600 add 12 new assignment candidates and 5 new issue-level fixes with open implementation PRs, alongside 4 closure candidates. The 36 active entries are covered by 35 distinct PRs.
+- **Remaining:** 248 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 50 are complete and 248 remain. Continue with [dotnet/docs#41974](https://github.com/dotnet/docs/issues/41974), opened July 31, 2024, and finish the snapshot at position 848.
+- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the thirty-five distinct active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
 
@@ -2351,6 +2351,102 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Scope and acceptance:** Explain the structured key/value state used by normal logging extensions, including `"{OriginalFormat}"`, and show how a provider can inspect it through public enumerable interfaces. Preserve the generic `TState` contract and the formatter fallback for nonstructured callers; keep the exception argument distinct from state. Owned .NET 8/.NET 10 executions captured `OrderId`, `Customer`, and the original template, accepted a plain-string state, and received the separate exception. Verify those cases and a source-generated logging call in the final example. Don't reflect into internal `FormattedLogValues`, parse the formatted message to recover properties, or promise that every `ILogger.Log<TState>` caller supplies a key/value list. Coordinate changes to the same sample with the scope task dotnet/docs#37874.
 
+### dotnet/docs#41369: Introduce optional SDK workloads
+
+**Issue:** [dotnet/docs#41369](https://github.com/dotnet/docs/issues/41369). **Opened:** June 11, 2024. **Size:** Small. **GHCP suitability:** Strong; add a conceptual bridge rather than another command reference.
+
+**Why it still applies:** The [SDK overview](../docs/core/sdk.md) doesn't explain workloads. The [workload-install reference](../docs/core/tools/dotnet-workload-install.md) already defines optional SDK additions for application types, but readers must reach that command page to learn the concept.
+
+**Scope and acceptance:** Add a short workloads section to the SDK overview that distinguishes optional platform/tooling components from project NuGet dependencies and installed runtimes. Use .NET MAUI and WebAssembly AOT as examples, and link to workload discovery, installation, listing, and workload sets. Explain SDK/version context without promising a universal list of workload IDs or that every .NET app needs a workload. Preserve the command references as the detailed source; don't run installation commands as part of this explanatory change.
+
+### dotnet/docs#41421: Correct the Finalize reference's blanket managed-object rule
+
+**Issue:** [dotnet/docs#41421](https://github.com/dotnet/docs/issues/41421). **Opened:** June 13, 2024. **Size:** Small. **GHCP suitability:** Suitable for a narrow API-reference correction, with GC-owner review.
+
+**Why it still applies:** The old supplemental article has moved into the [Object XML reference](https://github.com/dotnet/dotnet-api-docs/blob/main/xml/System/Object.xml). Its `Finalize` remarks still prohibit calls on all objects except the base class while its example calls a referenced `Stopwatch`. The same remarks describe unordered finalization and also assert that an object can be resurrected only once. An owned .NET 8/.NET 10 fixture safely accessed a retained `Stopwatch` and, with explicit `ReRegisterForFinalize`, resurrected an object twice before its third finalizer pass.
+
+**Scope and acceptance:** Edit the `Finalize` remarks in the API repository, not the removed local Markdown file. Distinguish managed-object reachability from the unspecified finalization/cleanup order of finalizable dependencies; don't claim that arbitrary dependency state remains safe. Reconcile the resurrection sentence with explicit re-registration and the existing API explanation. Keep deterministic disposal and `SafeHandle` as the recommended resource-management approach, and qualify any touched shutdown/output claims by runtime. Have a GC owner review the wording; a successful `Stopwatch` fixture isn't proof that all managed-object operations are safe in finalizers.
+
+### dotnet/docs#41515: Distinguish native host-context cleanup from runtime unloading
+
+**Issue:** [dotnet/docs#41515](https://github.com/dotnet/docs/issues/41515). **Opened:** June 21, 2024. **Size:** Small. **GHCP suitability:** Strong for a lifecycle explanation, with hosting-owner review.
+
+**Why it still applies:** The [native-host tutorial](../docs/core/tutorials/netcore-hosting.md) names `hostfxr_close` and limits the process to one runtime, but doesn't directly explain the cleanup/repeated-initialization question. Its actual native sample already closes the host context after it obtains the delegate; adding another close call wouldn't unload CoreCLR. The [hosting design](https://github.com/dotnet/runtime/blob/main/docs/design/features/native-hosting.md) explicitly describes compatible contexts attaching to the existing runtime and reusable function pointers.
+
+**Scope and acceptance:** Add a concise lifecycle note beside initialization and cross-link the limitations. Explain that closing a host context releases that context, not the process's loaded runtime; reuse delegates for repeated managed calls, and don't present compatible reinitialization as a fresh runtime. Distinguish assembly-load-context unloading from runtime teardown. Preserve the existing close/error paths, and verify repeated callbacks in an owned native host before adding runnable lifecycle code. Don't invent a supported CoreCLR unload/restart API or claim a native execution that wasn't performed.
+
+### dotnet/docs#41539: Qualify Windows analysis of source-built Linux runtime dumps
+
+**Issue:** [dotnet/docs#41539](https://github.com/dotnet/docs/issues/41539). **Opened:** June 24, 2024. **Size:** Small. **GHCP suitability:** Strong for a version/tool-qualified limitation, with diagnostics-owner review.
+
+**Why it still applies:** The [Linux-dump guide](../docs/core/diagnostics/debug-linux-dumps.md) discusses matching private runtime binaries in its Linux section but makes an unqualified Windows cross-debugging claim. The [cDAC tracking discussion](https://github.com/dotnet/runtime/issues/99298) distinguishes the tightly coupled existing DAC from a portable replacement whose supported commands and rollout remain version-dependent.
+
+**Scope and acceptance:** Qualify the Windows route for custom/source-built Linux runtimes: the selected tool needs a compatible Windows DAC for the exact target runtime, which needn't be available for that private build. Link the matching-binary guidance and give Linux-native analysis as the fallback. Have the diagnostics owner confirm the tool/version matrix and reproduce any newly advertised cDAC route. Don't suggest loading a Linux `.so` as a Windows DAC, claim that all Linux dumps fail on Windows, or treat a portability roadmap as a completed general solution.
+
+### dotnet/docs#49641: Explain generated-code classification for analyzer authors
+
+**Issue:** [dotnet/docs#49641](https://github.com/dotnet/docs/issues/49641). **Opened:** June 27, 2024. **Size:** Small. **GHCP suitability:** Strong for a source-backed API explanation, with Roslyn-owner review.
+
+**Why it still applies:** The [ConfigureGeneratedCodeAnalysis API XML](https://github.com/dotnet/roslyn-api-docs/blob/main/dotnet/xml/Microsoft.CodeAnalysis.Diagnostics/AnalysisContext.xml) still leaves the method's remarks as "To be added." The [analyzer driver](https://github.com/dotnet/roslyn/blob/main/src/Compilers/Core/Portable/DiagnosticAnalyzer/AnalyzerDriver.cs) applies explicit `generated_code` configuration before filename/header heuristics; the issue's `.gen.cs` suffix isn't one of those automatic filename conventions.
+
+**Scope and acceptance:** Explain current recognized filename/header conventions, the explicit `.editorconfig` override, and the difference between generated-code analysis and diagnostic-reporting flags. Distinguish file heuristics from symbol-level `GeneratedCodeAttribute` and compiler-generated-source behavior rather than promise one exhaustive permanent rule. An owned SDK Roslyn analyzer confirmed `.gen.cs` as ordinary code, five recognized filename forms and an auto-generated header as generated, explicit true/false overrides, and suppression of an attributed type. Reproduce those cases for the documented Roslyn version and review the source-generator/attribute boundaries with the owner. Don't invent a `.gen.cs` default or advise renaming every generator output when explicit configuration solves the case.
+
+### dotnet/docs#41573: Prevent the Iris tutorial from saving a GitHub HTML page as data
+
+**Issue:** [dotnet/docs#41573](https://github.com/dotnet/docs/issues/41573). **Opened:** June 27, 2024. **Size:** Small. **GHCP suitability:** Strong; the attachment supplies a reproducible root cause.
+
+**Why it still applies:** The [Iris tutorial](../docs/machine-learning/tutorials/iris-clustering.md) links to a GitHub `blob` page as its dataset download. The reporter's attached ZIP contains `iris.data`, but that file begins with `<!DOCTYPE html>` and contains the GitHub file-viewer page, not numeric CSV rows. With the tutorial's exact four-column schema, that attachment reproduced "Failed to initialize clusters: too few examples" on ML.NET 3.0.1 and 5.0.1. The actual dataset trained successfully with 150 rows and three cluster distances.
+
+**Scope and acceptance:** Link to the raw dataset or explicitly direct readers to GitHub's raw-download control. Explain that the saved file must contain the five CSV columns, not HTML, and include a brief first-row/data-format check in the preparation instructions. Execute the current tutorial with the actual dataset and preserve the useful distinction between the reported saved-page error and other possible causes of too few valid training examples. Don't change the cluster count, invent a package downgrade, or replace this confirmed download problem with generic model-tuning advice.
+
+### dotnet/docs#41673: Add actionable exemplar configuration and correlation guidance
+
+**Issue:** [dotnet/docs#41673](https://github.com/dotnet/docs/issues/41673). **Opened:** July 8, 2024. **Size:** Medium. **GHCP suitability:** Strong for the specified OpenTelemetry/Aspire recipe, with diagnostics review.
+
+**Why it still applies:** The [current OTLP walkthrough](../docs/core/diagnostics/observability-otlp-example.md) explains exemplar dots and trace navigation, but doesn't explain configuration, selection, and instrumentation context. The [OpenTelemetry .NET exemplar guide](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/metrics/exemplars/README.md) supplies the existing filter APIs and requirements.
+
+**Scope and acceptance:** Extend the existing walkthrough or add a linked diagnostics article with the requested Aspire example. Pin compatible OpenTelemetry/dashboard versions, show the supported exemplar filter, record histogram measurements inside the appropriate recorded activity, and export both metrics and traces to the same usable backend. Explain sampling/filtering, activity lifetime, and backend support; don't turn trace IDs into metric dimensions or promise an exemplar for every measurement. Execute the example, inspect the exported exemplar's trace/span IDs, and verify navigation to that trace in Aspire before producing screenshots or claiming UI success. Add a TOC entry if the implementation creates a page; don't duplicate the current introductory paragraph as the whole fix.
+
+### dotnet/docs#41682: Match dependency-arrow prose to the actual architecture diagram
+
+**Issue:** [dotnet/docs#41682](https://github.com/dotnet/docs/issues/41682). **Opened:** July 9, 2024. **Size:** Very small. **GHCP suitability:** Strong for a localized correction, with architecture-owner review.
+
+**Why it still applies:** The [web-architecture chapter](../docs/architecture/modern-web-apps-azure/common-web-application-architectures.md) says solid arrows mean compile-time dependencies and dashed arrows mean runtime-only dependencies. Inspection of its actual figure 5-8 shows the opposite legend distinction: dashed gray arrows denote compile-time dependencies, and the solid black UI-to-Infrastructure arrow denotes an optional compile-time dependency.
+
+**Scope and acceptance:** Correct the prose to match the current legend, and explain the optional composition-root reference without relabeling it runtime-only. Check both the rendered image and surrounding explanation; don't rely on the issue's mistaken description of the arrow style. Keep a general configuration/IoC redesign out of this bounded correction, and don't silently redraw the diagram to introduce a different dependency policy.
+
+### dotnet/docs#41683: Document HttpContent constructor header defaults
+
+**Issue:** [dotnet/docs#41683](https://github.com/dotnet/docs/issues/41683). **Opened:** July 9, 2024. **Size:** Small. **GHCP suitability:** Strong; the default values and explicit-header remedy are reproducible.
+
+**Why it still applies:** The [HTTP content section](../docs/fundamentals/networking/http/httpclient.md#understand-http-content) still lists subclasses without their default `Content-Type` values. [dotnet/runtime#102923](https://github.com/dotnet/runtime/issues/102923) confirms the Android native handler's absent-header behavior; the reporter later confirmed that setting the header explicitly worked.
+
+**Scope and acceptance:** Replace the list with a table that separates constructor defaults from handler-supplied values. Owned .NET 8/.NET 10 checks found no default for `ByteArrayContent`, `StreamContent`, or `ReadOnlyMemoryContent`; form, JSON, string, and multipart content supplied their expected media types, charset parameters, or generated boundaries. Include a short explicit `application/octet-stream` example and a platform-qualified Android caveat. Verify all eight listed types and don't publish a fixed multipart boundary as the universal default. Don't call the behavior random, imply an Android-device run, or recommend Base64 or a handler replacement instead of the confirmed explicit header.
+
+### dotnet/docs#41739: Complete the application-facing feature-switch guidance
+
+**Issue:** [dotnet/docs#41739](https://github.com/dotnet/docs/issues/41739). **Opened:** July 12, 2024. **Size:** Small. **GHCP suitability:** Strong for the owner-approved subset, coordinated with assignee `LakshanF`.
+
+**Why it still applies:** The [trim-feature table](../docs/core/deploying/trimming/trimming-options.md#trim-framework-library-features) lacks `PredefinedCulturesOnly`, `JsonSerializerIsReflectionEnabledByDefault`, and the scoped WebAssembly `HybridGlobalization` guidance. It also sends readers to an implementation-details table rather than directly supplying the requested public mappings. Maintainers explicitly distinguish application-facing switches from app-model internals and unsafe escape hatches.
+
+**Scope and acceptance:** Add those three supported entries or direct links to their existing feature documentation, with current version/platform limits. An owned SDK 10.0.403 build emitted and read back the requested debugger, EventSource, resource-key, predefined-culture, JSON-reflection, and native-HTTP mappings; the hybrid WebAssembly case still needs its platform-specific check. For the approved application-facing switches, document only verified MSBuild/AppContext mappings and distinguish build-time feature removal from runtime configuration: a runtime switch can't restore trimmed code. Confirm the mappings against SDK output and current runtime sources, especially the platform-specific hybrid/native-handler cases. Don't publish every item in the original issue, promote underscored/app-model switches to supported app APIs, or restore removed BinaryFormatter functionality. Coordinate the narrowed scope with the current owner rather than duplicate ownership.
+
+### dotnet/docs#41772: Clarify the legacy DDD sample's application/infrastructure dependencies
+
+**Issue:** [dotnet/docs#41772](https://github.com/dotnet/docs/issues/41772). **Opened:** July 16, 2024. **Size:** Small. **GHCP suitability:** Suitable for a source-backed architecture clarification, with owner review.
+
+**Why it still applies:** The [DDD chapter](../docs/architecture/microservices/microservice-ddd-cqrs-patterns/ddd-oriented-microservice.md) and its diagram say that the application depends on infrastructure "through DI" without separating bootstrap wiring from business dependencies. The archived [Ordering.API project](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Ordering.API.csproj) really references Infrastructure, while its [create-order handler](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/Commands/CreateOrderCommandHandler.cs) consumes the domain `IOrderRepository` contract.
+
+**Scope and acceptance:** Explain that the legacy API project includes the composition root and therefore references implementations for registration, while business handlers can depend on domain abstractions. Distinguish that concrete sample arrangement from a mandatory outward dependency for every application layer or strict Clean Architecture. Cross-link the existing architecture explanation and check the diagram/text against the archived `dev` sources; the repository's default `repo_moved` branch doesn't contain the old project. Don't falsely remove its real reference in prose, attribute a universal Clean Architecture rule to DDD, or redesign the sample as part of this clarification.
+
+### dotnet/docs#41811: Identify the correct service principal by stable IDs
+
+**Issue:** [dotnet/docs#41811](https://github.com/dotnet/docs/issues/41811). **Opened:** July 17, 2024. **Size:** Small. **GHCP suitability:** Strong for a scoped identity-selection clarification, with Azure-owner review.
+
+**Why it still applies:** The [local-development authentication page](../docs/azure/sdk/authentication/local-development-service-principal.md) includes shared Azure instructions that select a principal by display name. The [current group include](https://github.com/MicrosoftDocs/azure-dev-docs/blob/main/articles/includes/authentication/create-entra-group.md) distinguishes application ID from object ID, but its name-prefix lookup doesn't resolve same-name identities. The actual issue screenshots confirm the ambiguous picker, not why those particular duplicate entries exist.
+
+**Scope and acceptance:** Explain how the local app-registration principal differs from a deployed app's managed identity, including slot-specific identities. Match the tenant and actual credential's client/application ID to the service-principal object ID before group membership or role assignment; use a precise ID lookup rather than choose by display name alone. Update the shared include in `MicrosoftDocs/azure-dev-docs` where appropriate and coordinate its other language consumers. Validate any CLI recipe and portal labels without publishing real identifiers or granting access during triage. Don't always choose the managed identity, use the app-registration object's ID as the principal ID, infer the screenshots' exact cause, or grant both ambiguous principals access.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -2605,6 +2701,44 @@ These issues still need their existing PRs to land, with corrections where noted
 
 **Maintainer next action:** Separate raw database-client/EF integrations from actual abstraction providers, or replace those rows with verified matching connectors. Limit each connector's capabilities to its backend; don't imply that one NoSQL package handles MongoDB vCore. Check current package names, API/abstraction versions, prerelease status, and authoritative engine licenses. In particular, [Redis licensing](https://redis.io/legal/licenses/) differs by version: 7.4 is source-available, while Redis 8 includes an AGPLv3 open-source option. Don't replace the stale blanket classification with another blanket claim, confuse a connector's license with the server's, or treat a mirror's missing package as proof that NuGet.org lacks it. Complete the existing PR rather than create a duplicate inventory assignment.
 
+### dotnet/docs#41390: Replace the empty COM example with a practical class
+
+**Issue:** [dotnet/docs#41390](https://github.com/dotnet/docs/issues/41390). **Opened:** June 11, 2024. **Status:** Covered by open, non-draft [dotnet/docs#56690](https://github.com/dotnet/docs/pull/56690), shared with dotnet/docs#37861.
+
+**Evidence and next action:** The actual calculator/property/method/event patch addresses this practical-example request as well as the earlier [COM demonstration task](#dotnetdocs37861-demonstrate-com-properties-methods-and-events). Keep both issues associated with that one implementation rather than create another assignment or close against an unmerged change. Preserve the earlier review's case-sensitive snippet-path correction and native COM activation/event-delivery checks; a managed-only example execution doesn't prove COM connection points.
+
+### dotnet/docs#41394: Explain byte-array migration without changing the write contract accidentally
+
+**Issue:** [dotnet/docs#41394](https://github.com/dotnet/docs/issues/41394). **Opened:** June 11, 2024. **Status:** Covered by open, non-draft [dotnet/docs#56654](https://github.com/dotnet/docs/pull/56654).
+
+**Evidence:** The actual migration-guide patch correctly distinguishes default Base64 writes from reads: Newtonsoft.Json also accepts numeric byte arrays, whereas System.Text.Json requires Base64 by default. Owned .NET 8/.NET 10 runs with Newtonsoft.Json 13.0.4 confirmed those defaults and the proposed converter's dual-read behavior. Its registered `Write` method instead emits a number array, changing the write contract even when only read compatibility was requested; malformed, out-of-range, fractional, and wrong-token inputs were rejected.
+
+**Maintainer next action:** Preserve Base64 writes unless numeric-array output is an explicit, documented migration requirement. Show converter registration, extract the long example into the required snippet project, update AI-usage metadata for the added section, and verify both accepted formats, invalid inputs, null handling, and output. Don't describe ordinary serialization as different between the two libraries or merge a hidden wire-format change into a read-compatibility recipe.
+
+### dotnet/docs#41401: Demonstrate how code consumes a custom attribute
+
+**Issue:** [dotnet/docs#41401](https://github.com/dotnet/docs/issues/41401). **Opened:** June 12, 2024. **Status:** Covered by open, non-draft [dotnet/docs#56675](https://github.com/dotnet/docs/pull/56675).
+
+**Evidence:** The actual patch adds range metadata to `PlayerAccount.Level` and reads it through reflection. Its exact source ran on .NET 8 and .NET 10 and printed "Property 'Level' must be between 1 and 100." It never constructs an account, reads its value, or performs validation, despite calling the example "read and act."
+
+**Maintainer next action:** Either supply a small explicit consumer that checks values and demonstrates pass/fail behavior, or label the existing example as metadata inspection rather than validation. Explain that the attribute doesn't automatically execute application policy. Correct the encoded generic-method backticks in the new API cross-reference, and keep the distinction between attribute construction when metadata is requested and arbitrary interception/AOP. Complete the existing implementation rather than assign a duplicate example.
+
+### dotnet/docs#41509: Remove the premature AutoML trial-history accessor
+
+**Issue:** [dotnet/docs#41509](https://github.com/dotnet/docs/issues/41509). **Opened:** June 20, 2024. **Status:** Covered by open, non-draft [dotnet/docs#56519](https://github.com/dotnet/docs/pull/56519).
+
+**Evidence:** The actual patch removes the initial monitor's `GetCompletedTrials() => _completedTrials` member. That initial field doesn't exist and isn't required by `IMonitor`; the later optional **Persist trials** section deliberately adds the field, initialization, accessor, and completed-trial collection. With Microsoft.ML.AutoML 0.23.1, the original class produced CS0103 on both .NET 8 and .NET 10, and the patched class compiled and implemented `IMonitor`.
+
+**Maintainer next action:** Merge the focused correction after confirming the initial and later extended monitor remain coherent. Don't add an unused collection to the first example or remove the later persistence feature. Preserve the distinction from unrelated optional-exception handling in the existing sample; the compile error doesn't require a monitor redesign.
+
+### dotnet/docs#41762: Separate syntax-tree iteration from its later transformation
+
+**Issue:** [dotnet/docs#41762](https://github.com/dotnet/docs/issues/41762). **Opened:** July 15, 2024. **Status:** Covered by open, non-draft [dotnet/docs#56652](https://github.com/dotnet/docs/pull/56652).
+
+**Evidence:** The actual patch gives `SnippetIterateTrees` its own nontransforming loop inside `#if false` and retains the active transformation loop outside that region. The exact proposed program and current rewriter compiled and executed against owned source copies, not the repository's files. The iteration region contains setup but no visitor call or file write.
+
+**Maintainer next action:** Verify documentation extraction/rendering as well as compilation: the disabled source region must still render as the iteration-only step, and the next step must show the transformation once. Confirm snippet markers and article progression without an active duplicate loop or preprocessor directives in the displayed snippet. A build alone doesn't prove the disabled region was extracted correctly.
+
 ## Assignment order
 
 For the quickest independent changes, start with the table escaping, the paired COM wording corrections, or the existing prose-only signposts. Coordinate the instrumentation link with its current owner. Treat the two COM issues as one assignment, and use the existing hosted-service issue rather than duplicate work for dotnet/docs#23440.
@@ -2665,10 +2799,14 @@ The delegate-version and object-initializer explanations are additional localize
 
 The factory-registration and SQLite-null recipes are additional small, reproducible changes. Keep the stream warning scoped to the unfinished half of the Orleans request, and the custom-logger explanation coordinated with the existing scope work. The provider inventory needs exact EventSource names, not metric names. Preserve the xUnit walkthrough's test sequence; the multiclass warm-start and typed MTP client recipes need complete executable fixtures and their stated schema/metadata boundaries.
 
-Review the thirty-one existing implementation PRs separately from new assignments; the F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review.
+Review the thirty-five distinct existing implementation PRs separately from new assignments; thirty-six issue entries share those PRs. The F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review.
 
 For the newest implementations, qualify the proxy pattern's address/port assumptions, distinguish GitHub source preview from the already-working F# Learn rendering, correct both millisecond patterns with real output checks, and verify the nested-greeting request in the complete tracing walkthrough.
 
 Correct the analyzer tutorial's negatively worded checkbox instruction, and distinguish real vector-abstraction providers from native clients in the existing inventory PR. Verify backend coverage and version-specific package/license claims before merge.
+
+The workload introduction, Iris raw-download correction, arrow-legend correction, and HTTP content table are additional bounded assignments. Coordinate public feature-switch guidance with its current owner, and send the Finalize and generated-code reference changes to their actual API repositories. The native-host lifecycle, private-runtime dump, exemplar, DDD dependency, and identity-selection clarifications need their specified specialist or platform checks.
+
+For the new active entries, keep the two COM issues on one PR, preserve Base64 writes in the byte-array migration recipe unless explicitly changed, and distinguish attribute metadata inspection from real validation. Retain the AutoML monitor's staged optional persistence, and verify documentation extraction for the disabled iteration-only source region.
 
 Keep the new stream-reading alternative text-specific and version-correct. Verify StartupObject's IDE route, correct the HTTP tutorial's staged calls and API-header explanation, and preserve the reusable warning-suppression requirement beyond the CS0184 patch. Issues that don't fit either candidate category are omitted for a future task.

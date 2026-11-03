@@ -17,7 +17,7 @@ You can use managed thread local storage (TLS) to store data that's unique to a 
 
 - Use data slots when your actual requirements might be discovered only at runtime. Data slots are slower and more awkward to use than thread-relative static fields, and data is stored as type <xref:System.Object>, so you must cast it to the correct type before you use it.
 
-Managed .NET provides thread-local storage capabilities through thread-relative static fields marked with <xref:System.ThreadStaticAttribute>, the <xref:System.Threading.ThreadLocal%601> class, and data slots. Managed TLS is managed internally by the .NET runtime rather than consuming operating system thread-local storage slots for each variable.
+.NET provides thread-local storage capabilities through thread-relative static fields marked with <xref:System.ThreadStaticAttribute>, the <xref:System.Threading.ThreadLocal%601> class, and data slots. Thread-local storage is typically managed internally by the .NET runtime rather than consuming operating system thread-local storage slots for each variable.
 
 You can use the <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType> class to create thread-local objects that are initialized lazily when the object is first consumed. For more information, see [Lazy Initialization](../../framework/performance/lazy-initialization.md).
 

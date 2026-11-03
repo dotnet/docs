@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 700 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#44731](https://github.com/dotnet/docs/issues/44731), opened February 10, 2025.
-- **Results:** 141 closure candidates and 328 [clearly defined fixes](issues-with-defined-fixes.md) (279 assignment candidates and 49 fixes covered by 47 open implementation PRs).
-- **Latest batch:** Issues 676-700, from [dotnet/docs#43996](https://github.com/dotnet/docs/issues/43996) through dotnet/docs#44731: 9 closure candidates, 9 new assignment candidates, and 2 new fixes with open implementation PRs.
-- **Remaining:** 148 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 150 are complete and 148 remain. Continue with [dotnet/docs#44751](https://github.com/dotnet/docs/issues/44751), opened February 11, 2025, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 725 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#46227](https://github.com/dotnet/docs/issues/46227), opened May 15, 2025.
+- **Results:** 149 closure candidates and 340 [clearly defined fixes](issues-with-defined-fixes.md) (290 assignment candidates and 50 fixes covered by 47 open implementation PRs).
+- **Latest batch:** Issues 701-725, from [dotnet/docs#44751](https://github.com/dotnet/docs/issues/44751) through dotnet/docs#46227: 8 closure candidates, 11 new assignment candidates, and 1 new fix with an open implementation PR.
+- **Remaining:** 123 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 175 are complete and 123 remain. Continue with [dotnet/docs#46246](https://github.com/dotnet/docs/issues/46246), opened May 18, 2025, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -1228,3 +1228,67 @@ The current [AutoGen project README](https://github.com/microsoft/autogen) expli
 The [run/debug guide's CI tab](../docs/core/testing/microsoft-testing-platform-run-and-debug.md) now includes `dotnet test` and the MTP-aware Azure Pipelines task. Its linked [runner-selection guide](../docs/core/testing/unit-testing-with-dotnet-test.md#mtp-mode-of-dotnet-test) documents .NET 10 SDK/MTP 1.7-or-later requirements and `global.json`. The [MTP CLI reference](../docs/core/tools/dotnet-test-mtp.md) documents solution selection, built-module globbing, and `--max-parallel-test-modules`, whose default is the processor count.
 
 **Suggested closure explanation:** Link to solution-wide MTP-mode `dotnet test` and the parallel-module option. A solution must include its test projects, and module-glob execution requires matching built modules. Don't promise the same dedicated mode on older SDKs, confuse module concurrency with test-case parallelism, or describe a sequential `foreach` loop as the resolution.
+
+### dotnet/docs#44751: Add .NET AI template documentation
+
+**Opened:** February 11, 2025. **Confidence:** High for the original quickstart/setup request. **Reason:** The template quickstart and provider-specific environment instructions now exist.
+
+The [AI template quickstart](../docs/ai/quickstarts/ai-templates.md) includes template installation, project creation, configuration, and a run/test walkthrough. Its actual [Azure OpenAI include](../docs/ai/quickstarts/includes/ai-templates-azure-openai.md) explains model deployments, developer authentication, roles, and the endpoint setting. The [OpenAI](../docs/ai/quickstarts/includes/ai-templates-openai.md) and [Ollama](../docs/ai/quickstarts/includes/ai-templates-ollama.md) includes supply their corresponding prerequisites, credentials or local models, and creation workflows.
+
+**Suggested closure explanation:** The requested initial template onboarding documentation is published. Coordinate closure with existing owners `JeremyLikness` and `alexwolfmsft`. Don't describe the local-vector-store walkthrough as instructions for the separately proposed Azure AI Search variant, or claim that a paid cloud deployment or local model run was performed during triage. The minimal non-template RAG requests remain separate.
+
+### dotnet/docs#45064: Add ASP.NET Core authentication and authorization metrics
+
+**Opened:** February 27, 2025. **Confidence:** High. **Reason:** The current metrics catalog explicitly documents the requested instruments.
+
+The published [authentication and authorization metrics reference](https://learn.microsoft.com/aspnet/core/metrics/security?view=aspnetcore-10.0) documents `aspnetcore.authorization.attempts` and the authentication duration, challenge, forbid, sign-in, and sign-out instruments, including units and attributes. The [catalog entry point](https://learn.microsoft.com/aspnet/core/metrics/built-in?view=aspnetcore-10.0) links that reference and explicitly limits these metrics to ASP.NET Core 10.0 or later. Its source now lives in `dotnet/AspNetCore.Docs`, not the original local metrics file.
+
+**Suggested closure explanation:** Link to the current catalog and security metrics page; the documentation-specific request is addressed. Don't infer .NET 8 availability from the original URL's version selector. The separate [dotnet/aspnetcore#60468](https://github.com/dotnet/aspnetcore/issues/60468) follow-up is closed as completed, but that status alone doesn't prove every OpenTelemetry normative specification changed.
+
+### dotnet/docs#45073: Private-field naming in the C# specification
+
+**Opened:** February 28, 2025. **Confidence:** High for source ownership. **Reason:** The proposed standards edit belongs in the canonical specification repository.
+
+The published [attributes chapter](https://learn.microsoft.com/dotnet/csharp/language-reference/language-specification/attributes) identifies its source as [dotnet/csharpstandard's attributes chapter](https://github.com/dotnet/csharpstandard/blob/alpha-v13/standard/attributes.md). That source still contains `isInitialized`; the recommendation isn't a claim that the field was renamed. The specification is included from the standards repository rather than maintained in the reported `dotnet/docs` file.
+
+**Suggested closure explanation:** Close here with a pointer to the canonical source for any editorial consistency proposal. An underscore prefix is a naming convention, not a C# validity requirement. Don't edit generated or absent content in this checkout, declare the example illegal, or transfer/file another issue without authorization.
+
+### dotnet/docs#45327: C# tour challenge answers render raw directives
+
+**Opened:** March 13, 2025. **Confidence:** High. **Reason:** All four current published answers contain rendered C# code.
+
+The four original screenshots were inspected. The current published HTML for [Hello World](https://learn.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/hello-world), [numbers](https://learn.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/numbers-in-csharp), [branches and loops](https://learn.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/branches-and-loops), and [collections](https://learn.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/list-collection) now contains an actual `<pre><code class="lang-csharp">` answer inside each article's `<details>` element. None of those answer elements contains the literal `:::code` directive shown in the screenshots.
+
+**Suggested closure explanation:** The four published challenge answers now render as code. No speculative markup change is needed. The evidence is the generated answer HTML for each affected page, not merely a changed snippet path or removal of the old interactive attribute.
+
+### dotnet/docs#45927: Explain the SQLite base connection string
+
+**Opened:** April 26, 2025. **Confidence:** High. **Reason:** The current page explicitly defines the placeholder and supplies a value.
+
+The [connection-string guide](../docs/standard/data/sqlite/connection-strings.md) now explains that `baseConnectionString` represents an existing connection string and gives `Data Source=EncryptionSample.db` as an example. The same page describes the semicolon-separated keyword/value format and supported keywords.
+
+**Suggested closure explanation:** Point to the explicit note and example rather than add another explanation of the same placeholder. Keep the existing warning that `Password` doesn't add encryption when the native SQLite library doesn't support it; clarifying a connection string isn't proof that an arbitrary SQLite build supports encryption.
+
+### dotnet/docs#45956: Socket example compilation and complete projects
+
+**Opened:** April 29, 2025. **Confidence:** High for the reported compilation/setup question. **Reason:** Complete projects exist, compile, and accompany explicit run instructions.
+
+The [socket guide](../docs/fundamentals/networking/sockets/socket-services.md#run-the-sample-client-and-server) gives separate server/client run commands and says to start the server first. Its [server project](../docs/fundamentals/networking/snippets/socket/socket-server/socket-server.csproj) and [client project](../docs/fundamentals/networking/snippets/socket/socket-client/socket-client.csproj) include complete programs and reference the shared helper project. Both actual projects built successfully with SDK 10.0.403, with zero warnings and errors and all outputs redirected outside the checkout. The reporter also confirmed in the discussion that the code worked after placement in an async entry-point workflow.
+
+**Suggested closure explanation:** Link the complete projects and the run section; the excerpt isn't intended to be pasted outside any entry point in an arbitrary legacy project. No remaining compiler diagnostic is supplied. These build results don't certify the helper's network-address selection, arbitrary port availability, or a full network exchange, and don't imply TCP preserves application-message boundaries.
+
+### dotnet/docs#46045: Spanish SLM abbreviation
+
+**Opened:** May 7, 2025. **Confidence:** High. **Reason:** The reported translation is corrected in the published localized page.
+
+The current [Spanish .NET 9 overview](https://learn.microsoft.com/es-es/dotnet/core/whats-new/dotnet-9/overview) uses `SLM y LLM`, not the reported `SLA`, in its AI discussion. The live localized text was checked directly; the recommendation doesn't depend on access to the internal translation work item mentioned in the discussion.
+
+**Suggested closure explanation:** The published Spanish abbreviation is now correct. No English source edit or additional translation request is needed for this specific typo. Don't infer the status of unrelated localized passages.
+
+### dotnet/docs#46061: Register a dependency twice to choose its lifetime
+
+**Opened:** May 9, 2025. **Confidence:** High. **Reason:** Existing guidance answers the question, and the proposed automatic lifetime selection isn't container behavior.
+
+The [registration guide](../docs/core/extensions/dependency-injection/service-registration.md) explains that a single-service lookup uses the last registration, while `IEnumerable<T>` retains all registrations. The [scoped-background-service tutorial](../docs/core/extensions/scoped-service.md) supplies the supported explicit-scope pattern. An isolated .NET 8/.NET 10 fixture verified both scoped/singleton registration orders: the last descriptor controlled cross-scope identity, and scope validation rejected root resolution when the last descriptor was scoped.
+
+**Suggested closure explanation:** Registering the same dependency with two lifetimes doesn't tell the container to select whichever lifetime suits a consumer. Keep the explicit async scope in the worker and link the existing registration and lifetime guidance. Don't recommend a service-locator fallback or claim that build-time validation catches every factory or runtime configuration error.

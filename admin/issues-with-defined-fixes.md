@@ -5,15 +5,15 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 279 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track forty-nine additional issue-level fixes separately because forty-seven implementation PRs are already open; two pairs of issues share PRs, several patches need correction or completion before merge, and two PRs remain drafts. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 290 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track fifty additional issue-level fixes separately because forty-seven implementation PRs are already open; several issues share PRs, several patches need correction or completion before merge, and two PRs remain drafts. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 700 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#44731](https://github.com/dotnet/docs/issues/44731), opened February 10, 2025.
-- **Results:** 328 defined fixes (279 assignment candidates and 49 with open implementation PRs) and 141 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 676-700 add 9 new assignment candidates and 2 new issue-level fixes with open implementation PRs, alongside 9 closure candidates. The 49 active entries are covered by 47 distinct PRs.
-- **Remaining:** 148 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 150 are complete and 148 remain. Continue with [dotnet/docs#44751](https://github.com/dotnet/docs/issues/44751), opened February 11, 2025, and finish the snapshot at position 848.
+- **Completed batches:** The 725 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#46227](https://github.com/dotnet/docs/issues/46227), opened May 15, 2025.
+- **Results:** 340 defined fixes (290 assignment candidates and 50 with open implementation PRs) and 149 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 701-725 add 11 new assignment candidates and 1 new issue-level fix with an open implementation PR, alongside 8 closure candidates. The 50 active entries are covered by 47 distinct PRs.
+- **Remaining:** 123 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 175 are complete and 123 remain. Continue with [dotnet/docs#46246](https://github.com/dotnet/docs/issues/46246), opened May 18, 2025, and finish the snapshot at position 848.
 - **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and actual patches for active implementations. For the 545-file curation draft, the complete file manifest and relevant deletion, replacement, and redirect patches were inspected; this isn't a line-by-line review of the entire replacement book. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
@@ -2775,6 +2775,94 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Scope and acceptance:** Reconcile all 22 items with the current text and record which are already satisfied. Simplify the three steps, distinguish an ASP.NET endpoint handler from `HttpMessageHandler`, link captive-dependency/pitfall terms, make the scoped lifetime explicit rather than infer it from the string key, and explain the typed-wrapper/underlying-named-client distinction. Replace the difficult diff with clear before/after examples, reduce unnecessary emphasis/quotes/feeling words, explain the DNS-lifetime choice without a universal interval, and show why global keyed defaults allow unknown names plus when opt-out is useful. Explain `AnyKey` as a sentinel property value, not a magic client-name string or a license to resolve the sentinel directly on .NET 10. Follow repository style rather than automatically add the optional emoji headings or move critical prose into code comments. Preserve lifetime, handler-scope, and registration-order semantics, and execute any changed examples on their stated supported versions.
 
+### dotnet/docs#44977: Use the instrumentation APIs for built-in meter selection
+
+**Issue:** [dotnet/docs#44977](https://github.com/dotnet/docs/issues/44977). **Opened:** February 20, 2025. **Size:** Small. **GHCP suitability:** Strong; release-tagged instrumentation source establishes the replacement.
+
+**Why it still applies:** The [OpenTelemetry walkthrough's program](../docs/core/diagnostics/snippets/OTel-Prometheus-Grafana-Jaeger/csharp/Program.cs) still explicitly selects the Hosting, Kestrel, HTTP client, and DNS meters alongside `AddAspNetCoreInstrumentation`. The actual open [dotnet/docs#56489](https://github.com/dotnet/docs/pull/56489) patch changes only two comment typos, not the requested meter registrations; it isn't a substantive implementation of this request.
+
+**Scope and acceptance:** Preserve `greeterMeter.Name` and the exporters. For the selected supported packages, use the metrics `AddAspNetCoreInstrumentation` and `AddHttpClientInstrumentation` APIs instead of redundant built-in meter-name strings. The [ASP.NET Core instrumentation 1.19.0 source](https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.AspNetCore-1.19.0/src/OpenTelemetry.Instrumentation.AspNetCore/AspNetCoreInstrumentationMeterProviderBuilderExtensions.cs) selects Hosting and Kestrel; the HTTP instrumentation implementation selects both `System.Net.Http` and `System.Net.NameResolution` on modern .NET. Declare the HTTP instrumentation dependency explicitly where needed, synchronize the explanation, and coordinate the incidental typo PR. Restore/build the actual tutorial and observe all four intended meter families after suitable traffic; don't silently drop Kestrel or DNS data, confuse tracing and metrics overloads, or claim that a source inspection constitutes an exporter run.
+
+### dotnet/docs#45142: Explain native dependencies and the Playwright container example
+
+**Issue:** [dotnet/docs#45142](https://github.com/dotnet/docs/issues/45142). **Opened:** March 5, 2025. **Size:** Small. **GHCP suitability:** Strong for the remaining explanation and authoritative example link.
+
+**Why it still applies:** The [Dockerfile tutorial](../docs/core/docker/build-container.md) already links SDK publishing at the start, during the tutorial, and in its next steps. Don't assign those links as missing work. The remaining requested Playwright/native-dependency explanation isn't present, and the console-template detail is covered separately by dotnet/docs#45858.
+
+**Scope and acceptance:** Add a concise choice/limitations note and an explained link to the [official Playwright .NET Docker example](https://playwright.dev/dotnet/docs/docker). Explain that SDK publishing doesn't execute arbitrary Dockerfile `RUN` instructions: install OS/browser dependencies in a suitable prebuilt/custom base image or use an appropriate Dockerfile workflow. Don't claim a Dockerfile is always required when extra dependencies exist. Preserve the official distinction that the image contains browsers/system dependencies but not the application's Playwright package, and retain version/runtime compatibility and trusted-testing/sandbox qualifications. No new browser-installation recipe is necessary. If an executable example is added instead of a source-backed explanation/link, require an actual compatible container/browser run; Docker wasn't available during triage.
+
+### dotnet/docs#45330: Include standalone Orleans serialization as a migration option
+
+**Issue:** [dotnet/docs#45330](https://github.com/dotnet/docs/issues/45330). **Opened:** March 13, 2025. **Size:** Medium. **GHCP suitability:** Suitable with Orleans and serialization-owner review.
+
+**Why it still applies:** [Choose a serializer](../docs/standard/serialization/binaryformatter-migration-guide/choose-a-serializer.md) lists JSON, DataContractSerializer, MessagePack, and protobuf-net, but not Orleans serialization. The [Orleans guide](../docs/orleans/host/configuration-guide/serialization.md) describes its graph/type features without the requested standalone migration signpost.
+
+**Scope and acceptance:** Add a neutral, source-backed option and link to the standalone example proposed in dotnet/docs#45923. Explain the separate package, generated/custom codec requirements for applicable user types, graph/reference behavior, and wire-format incompatibility with existing BinaryFormatter payloads. Validate any comparison-table additions rather than infer performance, arbitrary-type support, or AOT guarantees. An isolated `Microsoft.Orleans.Serialization` 10.0.0 fixture on .NET 8 and .NET 10 used `AddSerializer`, `Serializer`, `SerializeToArray`, and `Deserialize` without an Orleans host; its two dictionary entries retained their shared three-element list after a 31-byte round trip. That fixture proves neither NRBF migration nor safety for untrusted input. Obtain owner approval of trust-boundary and type-filter guidance; don't market a universal drop-in, unconditionally safe replacement or invent an independent support SLA.
+
+### dotnet/docs#45459: Add a C#-to-F# nullable interop example
+
+**Issue:** [dotnet/docs#45459](https://github.com/dotnet/docs/issues/45459). **Opened:** March 21, 2025. **Size:** Small. **GHCP suitability:** Strong for a self-contained interop addition.
+
+**Why it still applies:** The [nullable-value-types guide](../docs/fsharp/language-reference/nullable-value-types.md) explains F# members and nullable conversion but doesn't demonstrate a C# library method with an `int?` parameter. The issue's MSTest observation doesn't identify a specific failing version or overload.
+
+**Scope and acceptance:** Add a minimal C# library method and F# consumer with both present and absent values. An SDK 10.0.403 C# library/FSI fixture returned `value=42` for a well-typed integer argument and `null` for `Nullable<int>()`. Preserve implicit conversion for eligible member calls rather than require explicit wrapping everywhere. Explain nullable values versus F# options and link existing interop guidance. Keep the example standalone and run the published projects. If MSTest overloads are added, pin the actual supported package and reproduce their overload resolution; don't claim the generic fixture fixes an unspecified test-framework defect.
+
+### dotnet/docs#45785: Distinguish native GUID references from managed ref syntax
+
+**Issue:** [dotnet/docs#45785](https://github.com/dotnet/docs/issues/45785). **Opened:** April 11, 2025. **Size:** Small. **GHCP suitability:** Strong; the ambiguity has a concrete native-call check.
+
+**Why it still applies:** The [GUID interop section](../docs/standard/native-interop/best-practices.md#guids) permits either `ref` or `LPStruct`, then says `LPStruct` is only for `ref` GUID parameters. The latter phrase doesn't distinguish a native GUID-reference ABI from a managed declaration that literally contains `ref`.
+
+**Scope and acceptance:** Explain native by-value GUID versus `REFGUID`/GUID-pointer arguments and show the corresponding supported managed declaration shapes. An isolated Windows .NET 8/.NET 10 `DllImport` fixture called `StringFromCLSID` with both `ref Guid` and `[MarshalAs(UnmanagedType.LPStruct)] Guid`; both returned `{00112233-4455-6677-8899-AABBCCDDEEFF}`, and the allocated strings were freed. Clarify the existing warning without suggesting the two managed forms should be combined. Preserve input/output direction and ABI requirements. Don't generalize the runtime-marshalling result to `LibraryImport` source-generator support; validate any separately proposed source-generated signature.
+
+### dotnet/docs#45837: Explain the two SR-CNN APIs and parameter effects
+
+**Issue:** [dotnet/docs#45837](https://github.com/dotnet/docs/issues/45837). **Opened:** April 16, 2025. **Size:** Medium. **GHCP suitability:** Suitable with ML.NET review and executed comparison examples.
+
+**Why it still applies:** The [phone-call tutorial](../docs/machine-learning/tutorials/phone-calls-anomaly-detection.md) sets options without explaining their effects. It actually calls `DetectEntireAnomalyBySrCnn`, while the issue names the distinct streaming `DetectAnomalyBySrCnn` API. A description of four entire-series options alone wouldn't answer the streaming-window question.
+
+**Scope and acceptance:** Make the API distinction explicit, explain the tutorial's threshold, sensitivity, detection mode, and period, and link an API-specific streaming example that explains its window parameters. Use the actual [streaming implementation](https://github.com/dotnet/machinelearning/blob/main/src/Microsoft.ML.TimeSeries/SRCNNAnomalyDetector.cs) and corresponding algorithm/options code, not copied parameter names from the other detector. Supply deterministic, one-variable-at-a-time comparisons with valid parameter combinations and actual score/flag/boundary output. Explain qualitative effects and constraints without promising a monotonic anomaly count for every window change. Keep the phone-call workflow intact, distinguish modes' output shapes, and require native-dependency-compatible execution evidence; no ML training/comparison run was performed during triage.
+
+### dotnet/docs#45858: Use a console app for the SDK container tutorial
+
+**Issue:** [dotnet/docs#45858](https://github.com/dotnet/docs/issues/45858). **Opened:** April 18, 2025. **Size:** Medium. **GHCP suitability:** Strong; the maintainer approves the template change and the SDK cutoff is verifiable.
+
+**Why it still applies:** The [SDK publishing tutorial](../docs/core/containers/sdk-publish.md) still creates a worker, describes its indefinite loop, and shows worker logs. The [overview](../docs/core/containers/overview.md#publishing-project-considerations) still unconditionally requires console apps to opt in with `EnableSdkContainerSupport`.
+
+**Scope and acceptance:** Replace the worker-specific project, tree, prerequisite, output, and lifecycle explanations with a minimal console workflow, updating its snippet project and navigation consistently. Qualify opt-in guidance by SDK version: the [9.0.300 targets](https://github.com/dotnet/sdk/blob/v9.0.300/src/Containers/packaging/build/Microsoft.NET.Build.Containers.targets) default `EnableSdkContainerSupport` to `true` for non-library output. SDK 10.0.403 property evaluation likewise returned `true` for this review's executable project without an explicit setting. Preserve the requirement on older supported SDKs; target framework alone doesn't determine the behavior. Distinguish daemon-free image/archive creation from container execution, which still needs a runtime. Verify console output, image publication, and expected termination in an appropriate container environment; property evaluation isn't proof that an image was built or run.
+
+### dotnet/docs#45923: Demonstrate Orleans serialization without a silo
+
+**Issue:** [dotnet/docs#45923](https://github.com/dotnet/docs/issues/45923). **Opened:** April 25, 2025. **Size:** Small to medium. **GHCP suitability:** Strong; coordinate one shared sample with dotnet/docs#45330.
+
+**Why it still applies:** The [serialization guide](../docs/orleans/host/configuration-guide/serialization.md) explains Orleans type/field semantics but doesn't supply a minimal standalone serialize/deserialize program.
+
+**Scope and acceptance:** Add a small executable with the standalone serialization package, explicit serializer setup, a byte-array round trip, and disposal. A .NET 8/.NET 10 fixture using package 10.0.0 and `ServiceCollection.AddSerializer` successfully preserved values and a shared reference without a silo, grain, or Orleans client. Use that supported setup or another verified public factory; don't invent a `Serializer.Create` API. The request's DI-free setup is a preference, not evidence that the standard setup requires a running Orleans host. Explain the small container honestly. For a custom payload, include the appropriate SDK/source generator and member metadata, then verify actual codec discovery and round-trip behavior rather than manually invoke a codec.
+
+### dotnet/docs#45955: Document the completionlist XML tag's IDE behavior
+
+**Issue:** [dotnet/docs#45955](https://github.com/dotnet/docs/issues/45955). **Opened:** April 29, 2025. **Size:** Small to medium. **GHCP suitability:** Strong with Roslyn/IDE review.
+
+**Why it still applies:** [Recommended XML documentation tags](../docs/csharp/language-reference/xmldoc/recommended-tags.md) doesn't explain `<completionlist cref="T"/>`. Roslyn's [C# provider](https://github.com/dotnet/roslyn/blob/main/src/Features/CSharp/Portable/Completion/CompletionProviders/EnumAndCompletionListTagCompletionProvider.cs) explicitly resolves the tag, and its [completion tests](https://github.com/dotnet/roslyn/blob/main/src/EditorFeatures/CSharpTest/Completion/CompletionProviders/EnumAndCompletionListTagCompletionProviderTests.cs) cover referenced types, members, and invalid/inaccessible targets.
+
+**Scope and acceptance:** Add a clearly IDE-scoped explanation, syntax, a valid accessible type/member example, and appropriate navigation/search metadata. Distinguish compiler XML emission and `cref` resolution from a supported IDE's actual completion behavior. Don't imply every editor supports the tag, that suggestions enforce assignment compatibility, or that it changes runtime behavior; the provider tests even include a member of another result type. Build the documentation-comment example and verify the described completions in the supported IDE or focused provider tests. A successful compiler build alone isn't proof of IntelliSense behavior.
+
+### dotnet/docs#45958: Correct HTTPS proxy-URI guidance
+
+**Issue:** [dotnet/docs#45958](https://github.com/dotnet/docs/issues/45958). **Opened:** April 30, 2025. **Size:** Small. **GHCP suitability:** Strong; current runtime behavior reproduces the contradiction.
+
+**Why it still applies:** The [HTTP client guide](../docs/fundamentals/networking/http/httpclient.md#configure-the-proxy-per-client) still says an environment proxy URL must begin with `http`, not `https`, while the [Azure proxy guide](../docs/azure/sdk/configure-proxy.md) permits both. This isn't merely disagreement about the variable named `HTTPS_PROXY`.
+
+**Scope and acceptance:** Correct the surrounding default-proxy/environment-variable section for modern .NET and retain version qualifications for older implementations. Distinguish the destination scheme selected by `HTTP_PROXY`/`HTTPS_PROXY` from the transport scheme of the proxy URI itself. An isolated .NET 8/.NET 10 fixture accepted an `https://` environment proxy URI and successfully sent an HTTP request over TLS to an owned loopback proxy. It pinned only its temporary server certificate, changed process-local variables, and didn't change certificate trust or machine proxy settings. Keep a plain-HTTP proxy URI valid for HTTPS destinations via CONNECT; don't prescribe globally disabling certificate validation or relabel the Azure example as inherently wrong.
+
+### dotnet/docs#46227: Add a source-generator documentation landing page
+
+**Issue:** [dotnet/docs#46227](https://github.com/dotnet/docs/issues/46227). **Opened:** May 15, 2025. **Size:** Medium to large. **GHCP suitability:** Suitable for the explicit outline, with `BillWagner`'s Roslyn SDK placement review.
+
+**Why it still applies:** The [Roslyn SDK introduction](../docs/csharp/roslyn-sdk/index.md#source-generators) contains a short source-generator description and cookbook link, not the requested landing page covering purpose, use cases, consumption, creation, debugging, testing, and distribution.
+
+**Scope and acceptance:** Add the outlined page under `docs/csharp/roslyn-sdk`, its TOC entry, and the index link. Explain compile-time source addition and common cases, distinguish consumption from authoring, and use the [official incremental-generator cookbook](https://github.com/dotnet/roslyn/blob/main/docs/features/incremental-generators.cookbook.md) for a current authoring workflow. Give each requested debug/test/package topic substantive guidance or an authoritative focused destination, not empty headings or a claim that the existing paragraph completes the outline. If code is included, build the generator and consuming project, inspect generated output, run the result, and verify any package-based consumption and generator-driver tests. Don't recommend obsolete generator patterns as the default or imply generators modify existing source.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -3170,6 +3258,14 @@ These issues still need their existing PRs to land, with corrections where noted
 **Evidence:** The actual patch changes only `They sent` to `They are sent` in the [keep-alive section](../docs/fundamentals/networking/websockets.md#keep-alive-strategies). It doesn't complete the other three checklist items: API cross-references, the implication of the default interval when setting `KeepAliveTimeout`, and the conjunction/false-positive-abort explanation.
 
 **Maintainer next action:** Complete the remaining edits through the owner-led work or a coordinated follow-up, not a duplicate typo PR. Preserve the requirement for a pending receive to process incoming PONGs and explain that a responsive peer can still time out if the application doesn't process its frames. Use valid API DocIds without encoding the overload `*` as `%2A`. Don't change the protocol, default values, or timeout behavior, and don't close the whole checklist merely because the one-line PR merges.
+
+### dotnet/docs#45522: Replace the legacy HTTP Polly recommendation during curation
+
+**Issue:** [dotnet/docs#45522](https://github.com/dotnet/docs/issues/45522). **Opened:** March 26, 2025. **Status:** The affected chapter is removed by open, draft [dotnet/docs#43185](https://github.com/dotnet/docs/pull/43185), also tracked for dotnet/docs#43182 and dotnet/docs#43950; the replacement path still needs correction.
+
+**Evidence:** The [current retry chapter](../docs/architecture/microservices/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly.md) still recommends `Microsoft.Extensions.Http.Polly`. The actual curation patch deletes that exact chapter but redirects its URL to the old microservices PDF, not the [current HTTP resilience guide](../docs/core/resilience/http-resilience.md). Deletion plus an obsolete PDF destination doesn't complete the requested modern-package guidance. The related dotnet/aspnetcore#62721 issue closed as a duplicate, not evidence that this documentation was fixed.
+
+**Maintainer next action:** Coordinate with `IEvangelist` and `jamesmontemagno` on the existing draft rather than commission a competing book rewrite. Ensure the old entry point leads to approved `Microsoft.Extensions.Http.Resilience` guidance, with a clear legacy warning while the chapter remains published if the owner chooses an interim change. Reuse the already tracked dotnet/docs#40841 migration task for an exact before/after policy example. Don't replace six retries plus the old 404 predicate with an allegedly equivalent default handler: the modern standard handler includes additional strategies and different defaults. Don't close the issue merely because the chapter is deleted or the separate product issue is closed.
 
 ## Assignment order
 

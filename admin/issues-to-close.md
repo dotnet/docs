@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 750 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#48210](https://github.com/dotnet/docs/issues/48210), opened September 1, 2025.
-- **Results:** 152 closure candidates and 355 [clearly defined fixes](issues-with-defined-fixes.md) (303 assignment candidates and 52 fixes covered by 49 open implementation PRs).
-- **Latest batch:** Issues 726-750, from [dotnet/docs#46246](https://github.com/dotnet/docs/issues/46246) through dotnet/docs#48210: 3 closure candidates, 13 new assignment candidates, and 2 new fixes with open implementation PRs.
-- **Remaining:** 98 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 200 are complete and 98 remain. Continue with [dotnet/docs#48216](https://github.com/dotnet/docs/issues/48216), opened September 2, 2025, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 775 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#50739](https://github.com/dotnet/docs/issues/50739), opened December 23, 2025.
+- **Results:** 156 closure candidates and 370 [clearly defined fixes](issues-with-defined-fixes.md) (310 assignment candidates and 60 fixes covered by 57 open implementation PRs).
+- **Latest batch:** Issues 751-775, from [dotnet/docs#48216](https://github.com/dotnet/docs/issues/48216) through dotnet/docs#50739: 4 closure candidates, 7 new assignment candidates, and 8 new fixes with open implementation PRs.
+- **Remaining:** 73 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 225 are complete and 73 remain. Continue with [dotnet/docs#50746](https://github.com/dotnet/docs/issues/50746), opened December 23, 2025, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -1316,3 +1316,35 @@ The [codeBase remarks](../docs/framework/configure-apps/file-schema/runtime/code
 The [August 26, 2025 release note](../docs/framework/release-notes/2025/08-26-august-cumulative-update-preview.md) provides the applicable update links and distinguishes the Windows offering KB from the .NET Framework update KB. The report supplies no failed documentation link, KB-specific correction, error code, or reproducible defect in that article. Microsoft's [Windows Update troubleshooting guidance](https://support.microsoft.com/en-us/windows/experience/windows-update-troubleshooter) is the appropriate support destination.
 
 **Suggested closure explanation:** Route the download/install problem to Windows Update support with the OS version, exact KB, and error code. Don't claim that the preview installed, that supersedence caused the failure, or that a release note's lack of known issues disproves the user's experience. No documentation-only change is established by this report.
+
+### dotnet/docs#48677: TestContext.CancellationToken doesn't exist
+
+**Opened:** September 23, 2025. **Confidence:** High for the current API. **Reason:** The property now exists, and the reporter confirms the version-dependent discrepancy is resolved.
+
+The current [MSTEST0049 guide](../docs/core/testing/mstest-analyzers/mstest0049.md) uses `TestContext.CancellationToken`. Current `microsoft/testfx` source defines that public property as `CancellationTokenSource.Token`; the discussion links the introducing commit and includes the reporter's acknowledgment that the code is now correct.
+
+**Suggested closure explanation:** The current property name is valid. Readers on an older package need the corresponding older API or an appropriate MSTest package update, not a blanket replacement of today's documentation with `CancellationTokenSource`. The analyzer's introduction version doesn't prove that every later convenience API existed in that same release. The recommendation relies on source and the reporter's confirmation, not the screenshot alone.
+
+### dotnet/docs#49427: MCP quickstart's chat-client adapter method
+
+**Opened:** October 23, 2025. **Confidence:** High for the reported missing method. **Reason:** The current method exists and the actual sample compiles.
+
+The [MCP quickstart](../docs/ai/quickstarts/build-mcp-client.md) includes `Microsoft.Extensions.AI.OpenAI`, and its [program](../docs/ai/quickstarts/snippets/mcp-client/program.cs) imports `Microsoft.Extensions.AI` and calls `AsIChatClient()`, not `AsIChat`. Current upstream source declares that extension for the OpenAI `ChatClient` returned by `GetChatClient`. The actual pinned [project](../docs/ai/quickstarts/snippets/mcp-client/MinimalMCPClient.csproj) built with zero warnings and errors under SDK 10.0.403.
+
+**Suggested closure explanation:** The adapter is available with the documented package and namespace; no method-renaming edit is needed. The build doesn't establish that the placeholder endpoint, transport command, credentials, or remote tool invocation work. No MCP server or paid model call was launched.
+
+### dotnet/docs#50400: Update the MEAI experimental diagnostic IDs
+
+**Opened:** December 9, 2025. **Confidence:** High for the linked decision. **Reason:** The upstream outcome retains the shared ID and the existing diagnostic reference reflects it.
+
+[dotnet/extensions#7116](https://github.com/dotnet/extensions/pull/7116) merged on January 16, 2026. It groups experiments behind feature-specific source constants but deliberately keeps their public diagnostic ID as `MEAI001`. The current [canonical diagnostics list](https://github.com/dotnet/extensions/blob/main/docs/list-of-diagnostics.md#experiments) lists `MEAI001` for AI experiments, and the local [image-generation guide](../docs/ai/quickstarts/text-to-image.md) uses that same ID.
+
+**Suggested closure explanation:** No migration to newly numbered MEAI diagnostics resulted from the linked PR. Keep the existing shared-ID guidance; don't mistake internal constant names for new public warning codes or invent a family of numbered documentation pages. This doesn't assert that every experimental API remains experimental indefinitely.
+
+### dotnet/docs#50562: CacheSignal's initial semaphore count
+
+**Opened:** December 12, 2025. **Confidence:** High for the reported startup-order claim. **Reason:** The report overlooks the producer's startup acquisition.
+
+The actual [CacheWorker.StartAsync](../docs/core/extensions/snippets/caching/memory-worker/CacheWorker.cs) acquires the initial permit before it starts background work. The [program](../docs/core/extensions/snippets/caching/memory-worker/Program.cs) awaits host startup before it reads through `PhotoService`. An owned .NET 8/.NET 10 fixture compiled the actual worker, signal, consumer, and photo types; two consumers both remained blocked until a controlled HTTP response populated the cache, then each received one photo.
+
+**Suggested closure explanation:** Changing only the initial count from one to zero would block the worker's own startup acquisition. The existing startup sequence addresses the stated premature-read claim; a `TaskCompletionSource` redesign isn't required for that reason. The fixture covers successful initialization, not every failure path: the worker releases in `finally`, so don't reinterpret this recommendation as an unconditional guarantee that HTTP failure or empty data always yields a populated cache.

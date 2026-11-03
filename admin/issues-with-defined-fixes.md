@@ -5,15 +5,15 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 303 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track fifty-two additional issue-level fixes separately because forty-nine implementation PRs are already open; several issues share PRs, several patches need correction or completion before merge, and two PRs remain drafts. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 310 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track sixty additional issue-level fixes separately because fifty-seven implementation PRs are already open; several issues share PRs, several patches need correction or completion before merge, and five PRs remain drafts. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 750 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#48210](https://github.com/dotnet/docs/issues/48210), opened September 1, 2025.
-- **Results:** 355 defined fixes (303 assignment candidates and 52 with open implementation PRs) and 152 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 726-750 add 13 new assignment candidates and 2 new issue-level fixes with open implementation PRs, alongside 3 closure candidates. The 52 active entries are covered by 49 distinct PRs.
-- **Remaining:** 98 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 200 are complete and 98 remain. Continue with [dotnet/docs#48216](https://github.com/dotnet/docs/issues/48216), opened September 2, 2025, and finish the snapshot at position 848.
+- **Completed batches:** The 775 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#50739](https://github.com/dotnet/docs/issues/50739), opened December 23, 2025.
+- **Results:** 370 defined fixes (310 assignment candidates and 60 with open implementation PRs) and 156 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 751-775 add 7 new assignment candidates and 8 new issue-level fixes with open implementation PRs, alongside 4 closure candidates. The 60 active entries are covered by 57 distinct PRs.
+- **Remaining:** 73 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 225 are complete and 73 remain. Continue with [dotnet/docs#50746](https://github.com/dotnet/docs/issues/50746), opened December 23, 2025, and finish the snapshot at position 848.
 - **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and actual patches for active implementations. For the 545-file curation draft, the complete file manifest and relevant deletion, replacement, and redirect patches were inspected; this isn't a line-by-line review of the entire replacement book. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
@@ -2967,6 +2967,62 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Scope and acceptance:** Explain that each target has its own output executable/configuration, not one shared output that requires two Framework SKUs. Show conditional `AppConfig` selection, or an equivalently verified SDK-generated workflow. An owned SDK project targeting `net462;net481` built and ran both outputs; their separate `.exe.config` files contained `version="v4.0"` with the matching `.NETFramework,Version=v4.6.2` and `.NETFramework,Version=v4.8.1` SKUs. Inspect both configuration files in the implementation example and preserve the reference's one-Framework-SKU semantics. The runs used the installed Framework runtime; they don't prove behavior on two separately installed historical runtimes. Don't recommend obsolete `net452` for new deployments or substitute modern .NET's `runtimeconfig.json`.
 
+### dotnet/docs#48473: Refresh bare-bones Orleans Kubernetes deployment
+
+**Issue:** [dotnet/docs#48473](https://github.com/dotnet/docs/issues/48473). **Opened:** September 12, 2025. **Size:** Medium. **GHCP suitability:** Suitable for the explicit two-part outline; coordinate with existing owner `ReubenBond`.
+
+**Why it still applies:** The [Kubernetes guide](../docs/orleans/deployment/kubernetes.md) still centers `Microsoft.Orleans.Hosting.Kubernetes` and its integration-specific requirements. It doesn't implement the requested package-independent baseline with stated single-cluster/single-Deployment assumptions.
+
+**Scope and acceptance:** State those assumptions and supply the minimal application endpoint/options configuration and matching Kubernetes manifest without `UseKubernetesHosting`. Preserve a real distributed membership provider; removing the hosting integration doesn't make Kubernetes itself an Orleans clustering provider. Reconcile package-specific environment requirements, RBAC, and troubleshooting with the new setup, and distinguish the optional Aspire route from the manual baseline. Build the silo and validate actual multi-pod membership, addressing, and graceful shutdown in an authorized test cluster. Don't infer deployment success from YAML syntax alone or retain API permissions needed only by the removed integration. No Kubernetes deployment was run during triage.
+
+### dotnet/docs#48910: Document LogProperties and TagProvider
+
+**Issue:** [dotnet/docs#48910](https://github.com/dotnet/docs/issues/48910). **Opened:** October 5, 2025. **Size:** Medium. **GHCP suitability:** Suitable for the narrowed annotation gap identified by `meaghanlewis`.
+
+**Why it still applies:** Sampling, buffering, and enrichment articles exist, but the current [source-generated logging guide](../docs/core/extensions/logging/source-generation.md) doesn't explain the requested telemetry-generator annotations. Current upstream `TagProviderAttribute` and generator tests provide concrete signatures and expected structured tags.
+
+**Scope and acceptance:** Add focused guidance for property expansion, ignored/nested properties, and a custom provider that writes named tags through `ITagCollector`. Use the [official telemetry logging samples](https://github.com/dotnet/extensions-samples/tree/aaae284846366e5c122b2760c4060712b862c060/src/Telemetry/Logging) and current package/generator setup rather than treat the annotations as features of every `LoggerMessage` generator. Capture actual structured state to verify tag names, null behavior, and custom values; console message text alone doesn't prove enrichment. Qualify classification/redaction limitations and generator/language support. Don't duplicate the existing sampling/buffering documentation or assume a Visual Basic attribute declaration receives a C# source-generator implementation.
+
+### dotnet/docs#49446: Integrate image generation with chat responses
+
+**Issue:** [dotnet/docs#49446](https://github.com/dotnet/docs/issues/49446). **Opened:** October 24, 2025. **Size:** Medium. **GHCP suitability:** Suitable now that public source exposes the required integration; coordinate with existing owner `gewarren`.
+
+**Why it still applies:** The merged standalone [text-to-image tutorial](../docs/ai/quickstarts/text-to-image.md) doesn't cover chat-client integration or typed image content in streamed chat responses. Current `dotnet/extensions` source and tests provide `ImageGeneratingChatClient`, `HostedImageGenerationTool`, streaming replacement of function results, and OpenAI Responses partial-image conversion.
+
+**Scope and acceptance:** Add the requested chat workflow and streaming-content handling, linked from the existing tutorial and AI TOC. Use the actual released/experimental package APIs and content types, preserve `MEAI001` qualifications, and show how a consumer handles image content instead of printing every update as text. Distinguish a completed image arriving in a stream from native partial-image events; the two aren't interchangeable guarantees. Validate middleware order and both response paths with controlled image fixtures, and preserve complete final image data. Obtain separate authorization for paid live generation. Don't close this issue merely because dotnet/docs#49391 merged or claim an existing standalone generator tutorial demonstrates streamed chat images.
+
+### dotnet/docs#49557: Explain the function client's captured service provider
+
+**Issue:** [dotnet/docs#49557](https://github.com/dotnet/docs/issues/49557). **Opened:** November 1, 2025. **Size:** Small. **GHCP suitability:** Suitable for a source-backed clarification, with existing owner `gewarren` and `ericstj`.
+
+**Why it still applies:** The [function-data guide](../docs/ai/how-to/access-data-in-functions.md#dependency-injection) says the client's provider reaches function arguments, but doesn't spell out builder-time capture, root-versus-scoped lifetimes, or the empty-provider default. The [function-calling quickstart](../docs/ai/quickstarts/use-function-calling.md) needs the corresponding signpost. Current `UseFunctionInvocation` source passes the builder's provider into the middleware.
+
+**Scope and acceptance:** Explain `ChatClientBuilder.Build(IServiceProvider)` and `AIFunctionArguments.Services`, with a lifetime-correct example that distinguishes building a client with a scope from passing a different provider to an unrelated object later. Verify service identity and disposal across two scopes with a controlled function-call client; no model access is necessary. Don't capture scoped dependencies in a singleton or claim that the unspecified Agent constructor's possible bug has been reproduced or fixed. Limit the brief to the proven provider flow rather than invent a universal per-invocation override.
+
+### dotnet/docs#50386: Explain analyzer-template project target roles
+
+**Issue:** [dotnet/docs#50386](https://github.com/dotnet/docs/issues/50386). **Opened:** December 8, 2025. **Size:** Small to medium. **GHCP suitability:** Suitable for a version-specific troubleshooting addition to the existing analyzer tutorial.
+
+**Why it still applies:** The [tutorial](../docs/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md#explore-the-analyzer-template) lists five projects and the analyzer's .NET Standard requirement, but doesn't explain the reported old test-runtime target versus the Framework VSIX host. Current canonical Roslyn template source now targets `net8.0` for tests; that doesn't prove the reporter's installed extension shipped that revision.
+
+**Scope and acceptance:** Distinguish analyzer/code-fix compatibility, test execution, and the VSIX host, and show how to identify/update or safely retarget an older generated test project to a supported runtime. Keep host-compatible targets and packages; don't retarget every project to .NET 10 or recommend installing .NET Core 3.1 as the default remedy. Coordinate with the existing sample-retargeting and CS8032 briefs. Verify the supported template/version's build, tests, and IDE-host workflow separately. The retrieved installer image marks .NET Core 3.1 unsupported; the other attachment was unavailable, so no additional visual claim or reproduced VS2026 UI behavior is asserted.
+
+### dotnet/docs#50577: Show how to attach built-in command-line validators
+
+**Issue:** [dotnet/docs#50577](https://github.com/dotnet/docs/issues/50577). **Opened:** December 14, 2025. **Size:** Small. **GHCP suitability:** Strong; concrete API calls and outcomes are verified.
+
+**Why it still applies:** The [validation guide](../docs/standard/commandline/how-to-customize-parsing-and-validation.md#validators) demonstrates a custom validator and lists built-ins, but doesn't show how to call them. The reporter's actual screenshot identifies that missing connection.
+
+**Scope and acceptance:** Add small option/argument examples that call `AcceptExistingOnly`, `AcceptLegalFileNamesOnly`, and `AcceptOnlyFromAmong`, then explain registration before parsing. An owned `System.CommandLine` 2.0.12 fixture on .NET 8/.NET 10 accepted valid input and rejected a missing file, an illegal Windows filename, and an unlisted value. Show actual parser errors without invoking the action for invalid input, and qualify platform-dependent filename rules. Don't suggest that passing a method name to `Validators.Add` is interchangeable with calling these configuration methods.
+
+### dotnet/docs#50739: Make the CA1873 logging examples work in both languages
+
+**Issue:** [dotnet/docs#50739](https://github.com/dotnet/docs/issues/50739). **Opened:** December 23, 2025. **Size:** Small to medium. **GHCP suitability:** Strong; the current examples contain a reproducible language-specific defect.
+
+**Why it still applies:** The [CA1873 page](../docs/fundamentals/code-analysis/quality-rules/ca1873.md) now includes declarations and call sites, so that part of the old complaint is addressed. However, the actual Visual Basic fix declares private partial logging methods with no implementation. An owned fixture compiled that source on .NET 8/.NET 10: an enabled recording logger received zero messages. The corresponding actual C# fix produced two enabled messages and no additional disabled messages.
+
+**Scope and acceptance:** Use supported generated logging for C# and an implemented Visual Basic equivalent, such as a correctly guarded `LoggerMessage.Define` delegate. Show both declaration and invocation, preserve the intended structured information, and verify enabled output plus disabled-path work. Clarify that C# evaluates call arguments before any generated method's internal level check: source generation doesn't magically defer `ExpensiveOperation()` at the caller. Don't require guards around every cheap logging call, but demonstrate the necessary guard for genuinely expensive arguments. Test both languages with a capture logger and observable expensive-work counters; compilation alone misses the erased VB calls.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -3386,6 +3442,58 @@ These issues still need their existing PRs to land, with corrections where noted
 **Why it still applies:** The reporter identifies the OpenAI pivot, but the actual patch changes only the Azure OpenAI program: it requests URI output and checks for a null URI. The [OpenAI sample](../docs/ai/quickstarts/snippets/image-generation/openai/Program.cs) still prints `ImageUri` unconditionally. The SDK has distinct URI and `ImageBytes` response forms; a missing URI alone isn't evidence that the key or model name is wrong.
 
 **Required completion before merge:** Cover the reported pivot and the configured model's actual response contract. Handle a valid byte response or explicitly constrain a supported URI-mode example; don't force URI output on models that only return bytes. Synchronize both pivots and their pinned package APIs, use truthful error messages, and verify any saved image in an owned output location. The current patch's generic key/model diagnosis needs correction. Compile both examples and test URI/byte response handling with controlled fixtures; any paid live generation requires separate authorization. No image-generation request was made during triage.
+
+### dotnet/docs#48230: Add actionable CA2219 cleanup guidance
+
+**Issue:** [dotnet/docs#48230](https://github.com/dotnet/docs/issues/48230). **Opened:** September 3, 2025. **Status:** Partially covered by open, non-draft [dotnet/docs#56653](https://github.com/dotnet/docs/pull/56653).
+
+**Evidence and required completion:** The actual patch adds cleanup catch/log, filter, and `FailFast` sections to the [CA2219 guide](../docs/fundamentals/code-analysis/quality-rules/ca2219.md). Its blanket cleanup catch can swallow the only failure when the primary operation succeeds; logging also isn't universally nonthrowing. Refine the policy to preserve the primary failure without silently reporting success for a failed cleanup, and test primary-only, cleanup-only, and combined failures with preserved exception information. Keep `FailFast` limited to established unrecoverable corruption, not routine disposal/PInvoke errors, and distinguish explicit throws detected by the analyzer from arbitrary called-method failures. Obtain exception/interop-owner review before merge rather than present the proposed broad catch as a universally correct remedy.
+
+### dotnet/docs#48478: Fix the command-line completion root
+
+**Issue:** [dotnet/docs#48478](https://github.com/dotnet/docs/issues/48478). **Opened:** September 13, 2025. **Status:** Covered by open, non-draft [dotnet/docs#50124](https://github.com/dotnet/docs/pull/50124).
+
+**Evidence and required completion:** The [current program](../docs/standard/commandline/snippets/tab-completion/csharp/Program.cs) invokes a `DateCommand` directly. The actual patch introduces a `RootCommand`, adds the date command as a subcommand, and invokes the root asynchronously. Verify actual completion requests return the completion-source dates rather than execute the scheduling action. Synchronize command paths and article/shell examples with the newly explicit subcommand, and keep normal invocation and help working. Merely constructing a root or compiling doesn't demonstrate tab-completion integration.
+
+### dotnet/docs#48552: Finish the provider-switching how-to
+
+**Issue:** [dotnet/docs#48552](https://github.com/dotnet/docs/issues/48552). **Opened:** September 16, 2025. **Status:** Partially covered by draft [dotnet/docs#48554](https://github.com/dotnet/docs/pull/48554); the issue is already assigned to Copilot.
+
+**Evidence and required completion:** The actual draft adds environment-based chat/embedding selection, routing, evaluation, configuration, DI examples, and a TOC entry. It mixes preview package generations, contains an explicitly unimplemented OpenAI branch, resolves scoped services from the root provider, and leaves placeholder endpoints in executable paths. Reconcile current compatible packages, fix scope/disposal handling, make configuration failures explicit, and build every referenced project. Use controlled clients to verify selection, streaming, embedding shape, and error reporting before authorized provider runs; a length heuristic isn't a measured model-quality evaluator. Don't swap embedding models against an existing index without addressing dimensions/model compatibility and reindexing. Keep the existing draft and coordinate with the community contributor instead of launching a duplicate assignment.
+
+### dotnet/docs#48559: Complete the DefaultTraceListener table entry
+
+**Issue:** [dotnet/docs#48559](https://github.com/dotnet/docs/issues/48559). **Opened:** September 17, 2025. **Status:** Partially covered by open, non-draft [dotnet/docs#50120](https://github.com/dotnet/docs/pull/50120).
+
+**Evidence and required completion:** The actual patch adds a row to the [listener table](../docs/framework/configure-apps/file-schema/trace-debug/add-element-for-listeners-for-trace.md), but omits the angle brackets around its xref and describes output behavior instead of the column's `initializeData` value. `DefaultTraceListener` has a parameterless constructor, while Framework configuration uses supplied initialization data to select a one-argument constructor. Explain that this listener doesn't take a log name/string constructor argument and show valid omitted/empty initialization rather than invent a value. Verify actual .NET Framework configuration, preserve the existing default-listener distinction, and don't use modern .NET's different configuration behavior as proof.
+
+### dotnet/docs#48694: Qualify CA1847 for LINQ-provider translation
+
+**Issue:** [dotnet/docs#48694](https://github.com/dotnet/docs/issues/48694). **Opened:** September 24, 2025. **Status:** Partially covered by open, non-draft [dotnet/docs#56681](https://github.com/dotnet/docs/pull/56681).
+
+**Evidence and required completion:** The actual patch adds suppression advice to the [CA1847 guide](../docs/fundamentals/code-analysis/quality-rules/ca1847.md), but its recommendation to suppress database expression-tree uses generally is too broad. Current EF Core translators support character arguments in cases that older providers didn't. Limit advice to the actual provider/version and unsupported overload, retain the in-memory performance rationale, and verify both a translation failure and a supported translation. Prefer query translation inspection and controlled tests to a blanket claim that EF cannot translate `Contains(char)` or always needs suppression.
+
+### dotnet/docs#49926: Correct the Protobuf serialization draft
+
+**Issue:** [dotnet/docs#49926](https://github.com/dotnet/docs/issues/49926). **Opened:** November 16, 2025. **Status:** Partially covered by draft [dotnet/docs#49927](https://github.com/dotnet/docs/pull/49927); the issue is already assigned to Copilot.
+
+**Evidence and required completion:** The actual patch adds the package and registration to the [configuration](../docs/orleans/host/configuration-guide/serialization-configuration.md) and [customization](../docs/orleans/host/configuration-guide/serialization-customization.md) guides. Its `isSupported:` named argument doesn't match current source: `AddProtobufSerializer` has a parameterless overload or an overload with `isSerializable` and `isCopyable`. Use the correct version's actual signatures and generated `IMessage` types; don't treat every arbitrary class in a matching namespace as a Protobuf message. Build and round-trip a real generated message, verify copy behavior and links, and qualify the difference between Orleans serialization integration and a standalone Protobuf wire contract. The draft must be corrected and completed, not treated as delivered documentation.
+
+### dotnet/docs#50099: Complete and verify the F# 8 article draft
+
+**Issue:** [dotnet/docs#50099](https://github.com/dotnet/docs/issues/50099). **Opened:** November 24, 2025. **Status:** Partially covered by draft [dotnet/docs#50100](https://github.com/dotnet/docs/pull/50100); the issue is already assigned to Copilot.
+
+**Evidence and required completion:** The current [F# 8 page](../docs/fsharp/whats-new/fsharp-8.md) is only an announcement link. The actual draft adds language, diagnostic, tooling, performance, and library sections plus eight `.fsx` files. All eight reviewed scripts ran successfully with the installed compiler's F# 8 language mode, including matching record updates, factorial results `120`, and collection sum `1112`. That isn't verification against the original F# 8 compiler/Core package, every inline example, or IDE behavior; the FSI run didn't display the claimed negative tail-call warning.
+
+Verify the full outline against the linked F# 8 announcement, complete inline examples' missing support types/imports, move long blocks into executable snippets, and test the actual diagnostic cases in the applicable compiled configuration. Qualify historical benchmark numbers and experimental switches, and provide the repository-required copied/adapted/generated source breakdown and appropriate AI metadata. Keep F# 7's separate draft independent; neither version's article completes the other.
+
+### dotnet/docs#50596: Complete XmlSerializer conditional-member guidance
+
+**Issue:** [dotnet/docs#50596](https://github.com/dotnet/docs/issues/50596). **Opened:** December 16, 2025. **Status:** Partially covered by open, non-draft [dotnet/docs#56659](https://github.com/dotnet/docs/pull/56659).
+
+**Evidence and required completion:** The actual patch adds public `ShouldSerialize...` and `...Specified` patterns to the [XML member-control guide](../docs/standard/serialization/controlling-xml-serialization-using-attributes.md). Its companion boolean examples lack `XmlIgnore`, and its unconditional claim that a missing element sets the flag to false is too strong. An owned .NET 8/.NET 10 fixture confirmed that the unignored flag itself serializes and that a constructor-initialized true flag remains true when the element is absent.
+
+Add the ignored control-member convention and distinguish the usual default-false case from automatic assignment when an element is read. Verify null/empty/nonempty collections, true/false flags, emitted XML, and deserialization in both languages. Preserve the public parameterless boolean method requirement, don't import WinForms `Reset` behavior into `XmlSerializer`, and don't call the existing draft complete before the actual output and flags are correct.
 
 ## Assignment order
 

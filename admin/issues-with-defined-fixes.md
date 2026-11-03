@@ -5,16 +5,16 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 170 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track twenty additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 184 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track twenty-one additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 450 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#37034](https://github.com/dotnet/docs/issues/37034), opened September 9, 2023.
-- **Results:** 190 defined fixes (170 assignment candidates and 20 with open implementation PRs) and 90 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 426-450 add 13 new assignment candidates and no new fixes with open implementation PRs, alongside 4 closure candidates.
-- **Remaining:** 398 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 150 are complete and 150 remain. Continue with [dotnet/docs#37037](https://github.com/dotnet/docs/issues/37037), opened September 11, 2023, and stop at position 600.
-- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the twenty active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
+- **Completed batches:** The 475 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#37748](https://github.com/dotnet/docs/issues/37748), opened October 26, 2023.
+- **Results:** 205 defined fixes (184 assignment candidates and 21 with open implementation PRs) and 93 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 451-475 add 14 new assignment candidates and 1 new fix with an open implementation PR, alongside 3 closure candidates.
+- **Remaining:** 373 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 175 are complete and 125 remain. Continue with [dotnet/docs#37757](https://github.com/dotnet/docs/issues/37757), opened October 27, 2023, and stop at position 600.
+- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the twenty-one active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
 
@@ -1835,6 +1835,146 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Acceptance:** Restore and run `dotnet test` from the linked project, prove that the sample discovers and activates its grain, and check package requirements in each project. Verify that a copied/downloaded sample doesn't depend on unmentioned parent repository build files. Don't prescribe the old `Microsoft.Orleans.CodeGenerator.MSBuild` 3.7.1 workaround for modern Orleans or add redundant SDK references without checking transitive package behavior. No Orleans packages were restored or test cluster started during triage.
 
+### dotnet/docs#37103: Refresh Activity status output
+
+**Issue:** [dotnet/docs#37103](https://github.com/dotnet/docs/issues/37103). **Opened:** September 13, 2023. **Size:** Small. **GHCP suitability:** Strong; finish the remaining code/output mismatch.
+
+**Why it still applies:** The [instrumentation walkthrough](../docs/core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md) already calls `Activity.SetStatus`, but its subsequent complete console output still shows the old `otel.status_code` and `otel.status_description` tags. Replacing the correct API again or closing on that partial update would miss the stale output.
+
+**Bounded fix:** Regenerate the affected output from the documented status example with an explicit compatible OpenTelemetry console-exporter version. Explain native activity status separately from user tags. An owned run with exporter 1.19.1 emitted `StatusCode: Error` and `Activity.StatusDescription`, not the legacy status tags.
+
+**Acceptance:** The displayed output matches the selected runnable example, including the status description and ordinary tags. Preserve the existing `SetStatus` call and don't present exporter-specific formatting as an immutable Activity API contract.
+
+### dotnet/docs#37108: Identify the test framework used by the examples
+
+**Issue:** [dotnet/docs#37108](https://github.com/dotnet/docs/issues/37108). **Opened:** September 13, 2023. **Size:** Small. **GHCP suitability:** Strong; a localized introduction and related correction.
+
+**Why it still applies:** The [unit-testing best-practices article](../docs/core/testing/unit-testing-best-practices.md) doesn't identify its sample framework at the introduction. Its linked source imports `Xunit`, uses `[Fact]`, and references xUnit 2.9.3. A later lifecycle note misleadingly says that xUnit 2 removed `SetUp` and `TearDown`.
+
+**Bounded fix:** State near the introduction that the examples use xUnit while the general principles apply more broadly. Correct the lifecycle note: xUnit uses constructors and disposal for per-test setup and cleanup; don't attribute another framework's attributes to an older xUnit version.
+
+**Acceptance:** A reader can identify the sample framework before the first example. The lifecycle explanation agrees with the linked test source and xUnit guidance without rewriting framework-neutral practices or migrating the test suite.
+
+### dotnet/docs#37148: Detect .NET Framework 4 in the legacy PowerShell example
+
+**Issue:** [dotnet/docs#37148](https://github.com/dotnet/docs/issues/37148). **Opened:** September 18, 2023. **Size:** Small. **GHCP suitability:** Strong; coordinate with assignee `gewarren` and dotnet/docs#36240.
+
+**Why it still applies:** The legacy script in [Determine installed .NET Framework versions](../docs/framework/install/how-to-determine-which-versions-are-installed.md) filters out `v4` although its section promises versions 1-4. The adjacent `Release`-key instructions cover 4.5 and later, not 4.0. An owned synthetic registry fixture confirmed that the filter drops an installed 4.0 entry.
+
+**Bounded fix:** Read registry values explicitly, include installed `v4` Client/Full profiles where applicable, and avoid carrying values from an earlier key into a later result. Preserve the distinction between `Version`/`Install` checks for older releases and `Release` checks for 4.5+. Coordinate the compatible registry-access pattern with the existing task rather than produce competing rewrites.
+
+**Acceptance:** Read-only fixtures cover 3.5, 4.0 Client/Full, 4.5+, and missing/uninstalled entries without duplicate or inherited version output. Check the claimed PowerShell compatibility; don't silently replace an older-host example with a modern-only command. No Server 2003 installation was exercised during triage.
+
+### dotnet/docs#37195: Restore the missing cancellation link in the dataflow diagram
+
+**Issue:** [dotnet/docs#37195](https://github.com/dotnet/docs/issues/37195). **Opened:** September 20, 2023. **Size:** Small. **GHCP suitability:** Strong; coordinate with assignee `adegeo`.
+
+**Why it still applies:** The current diagram in the [Windows Forms dataflow walkthrough](../docs/standard/parallel-programming/walkthrough-using-dataflow-in-a-windows-forms-application.md) omits the `loadBitmaps` to `operationCancelled` edge. The actual C# source links those blocks. Both the current image and the reporter's proposed replacement were inspected; the proposed image adds that edge.
+
+**Bounded fix:** Use the supplied correction, subject to normal image review, to update `dataflow-winforms-image-processing.png` in the article's media folder. Preserve the existing block names, other edges, readability, and reference path.
+
+**Acceptance:** Compare the rendered diagram with the source's cancellation `LinkTo` calls and confirm that the missing direct edge appears. Don't redesign the pipeline or infer a new cancellation behavior from the picture.
+
+### dotnet/docs#37217: Document both CompilationUnitSyntax.Accept overloads
+
+**Issue:** [dotnet/docs#37217](https://github.com/dotnet/docs/issues/37217). **Opened:** September 22, 2023. **Size:** Small. **GHCP suitability:** Strong; route the API correction through `dotnet/roslyn-api-docs`.
+
+**Why it still applies:** Current `CompilationUnitSyntax` API XML still contains placeholder documentation for both `Accept(CSharpSyntaxVisitor)` and `Accept<TResult>(CSharpSyntaxVisitor<TResult>)`. The generic member has its own XML name, so a search for only the exact `Accept` name misses half the request.
+
+**Bounded fix:** Document visitor dispatch, each visitor parameter, and the generic return value with a small example. Explain that dispatch to `VisitCompilationUnit` doesn't itself promise a recursive walk over every descendant. An owned Roslyn probe invoked the void visitor once and returned a two-member count from the generic visitor.
+
+**Acceptance:** Both overloads render useful summaries and parameter/return documentation on the API site. Execute the final example and distinguish a visitor's explicit recursion from syntax-walker traversal. Don't add an unrelated conceptual article in this repository that leaves the API placeholders unchanged.
+
+### dotnet/docs#37282: Qualify Native AOT EventPipe provider support by release
+
+**Issue:** [dotnet/docs#37282](https://github.com/dotnet/docs/issues/37282). **Opened:** September 27, 2023. **Size:** Small. **GHCP suitability:** Suitable for a source-backed clarification with assignee `LakshanF`.
+
+**Why it still applies:** [Native AOT diagnostics](../docs/core/deploying/native-aot/diagnostics.md) still gives vague partial-provider guidance and links to the general runtime-provider catalog. The original .NET 8 limitation isn't a timeless rule: the final owner update in [dotnet/runtime#92734](https://github.com/dotnet/runtime/issues/92734) identifies SampleProfiler support in .NET 10 through merged [dotnet/runtime#108083](https://github.com/dotnet/runtime/pull/108083). Released .NET 10 runtime source includes that implementation.
+
+**Bounded fix:** Explain the documented provider subset and release differences, including .NET 10 sampling support. Distinguish missing managed-method rundown from unavailable sampling, and describe the external native-symbol requirements for stack interpretation. Link the Native AOT-specific guidance from the general provider page where needed.
+
+**Acceptance:** Claims match the selected released runtime and owner guidance, with no blanket statement that SampleProfiler never works on Native AOT or that all CoreCLR events are available. Any capture recipe must demonstrate the selected provider and usable symbol resolution on its stated platform. No Native AOT publish/trace was executed during triage.
+
+### dotnet/docs#37370: Add a concrete JSON source-generation contract example
+
+**Issue:** [dotnet/docs#37370](https://github.com/dotnet/docs/issues/37370). **Opened:** October 3, 2023. **Size:** Medium. **GHCP suitability:** Suitable for the bounded documentation/example subset of the discussion.
+
+**Why it still applies:** The [source-generation guide](../docs/standard/serialization/system-text-json/source-generation.md) now explains transitive types, collection roots, multiple contexts, and reflection control, but still lacks the requested small, connected DTO example that applies those rules together. Related dotnet/docs#37363 closed as a duplicate of this issue, not as evidence of completion.
+
+**Bounded fix:** Add one complete three-type DTO scenario with an explicit context and a realistic collection/API root. Explain nested types, a nested type reused independently, and additional collection contracts. Reuse the existing context-composition and reflection-disable guidance instead of inventing a new generator API or duplicating the whole guide.
+
+**Acceptance:** Run the example with reflection disabled. Demonstrate the successful graph/root contracts and an unregistered collection failure, then show the explicit contract that fixes it. If the example uses ASP.NET Core, verify the actual endpoint and serializer configuration rather than only direct serialization. An owned .NET 10 probe confirmed the graph, standalone nested root, missing collection metadata, and combined-context behavior; it didn't start an HTTP server.
+
+### dotnet/docs#37404: Explain how to discover assemblies in a framework reference
+
+**Issue:** [dotnet/docs#37404](https://github.com/dotnet/docs/issues/37404). **Opened:** October 9, 2023. **Size:** Small. **GHCP suitability:** Strong; coordinate with assignee `gewarren`.
+
+**Why it still applies:** The [FrameworkReference section](../docs/core/project-sdk/msbuild-props.md#frameworkreference) explains the shared framework but gives no route to discover its compile-time assemblies. The owner points to `Microsoft.AspNetCore.App.Ref`, which provides a defined reference rather than a guessed list of all similarly named packages.
+
+**Bounded fix:** Link the versioned ASP.NET Core reference pack and explain how to inspect the installed targeting pack's `ref` directory. Distinguish reference assemblies, runtime implementation assemblies, and independently distributed packages. An installed .NET 10 pack contained `Microsoft.Extensions.Hosting` but not `Microsoft.Extensions.Http.Resilience`, which illustrates why name prefixes don't establish inclusion.
+
+**Acceptance:** The discovery route matches the reader's selected framework version. Don't promise that every `Microsoft.Extensions.*` package belongs to `Microsoft.AspNetCore.App`, maintain an unversioned static inventory, or replace `FrameworkReference` with a runtime implementation package.
+
+### dotnet/docs#37490: Clarify ITypeSymbol.IsTupleType
+
+**Issue:** [dotnet/docs#37490](https://github.com/dotnet/docs/issues/37490). **Opened:** October 13, 2023. **Size:** Small. **GHCP suitability:** Strong; update the owning Roslyn API documentation.
+
+**Why it still applies:** Current `ITypeSymbol.IsTupleType` XML still contains the incomplete phrase "tuple ." and placeholder remarks. The question concerns the semantic symbol API, not merely tuple syntax.
+
+**Bounded fix:** Define the property and contrast compiler-recognized `System.ValueTuple` types with the reference-type `System.Tuple` family. An owned Roslyn check returned true for tuple syntax, explicit `ValueTuple<int, string>`, `ValueTuple<int>`, and non-generic `ValueTuple`, and false for `System.Tuple<int, string>`. Don't incorrectly require two or more elements in the API description.
+
+**Acceptance:** Replace the API placeholders in `dotnet/roslyn-api-docs`, verify the examples with the supported Roslyn version, and check the rendered API page. Preserve the distinction between language syntax restrictions and the property values returned for explicit framework types.
+
+### dotnet/docs#37501: Link a complete Orleans streaming application
+
+**Issue:** [dotnet/docs#37501](https://github.com/dotnet/docs/issues/37501). **Opened:** October 14, 2023. **Size:** Medium. **GHCP suitability:** Suitable for a focused sample/discoverability fix.
+
+**Why it still applies:** The [streaming quickstart](../docs/orleans/streaming/streams-quick-start.md) now names `Microsoft.Orleans.Streaming` and `AddMemoryStreams`, but still lacks the requested complete application/source link. The package note alone doesn't provide the missing grain contracts, host/client setup, or usable identifier behind the partial snippets.
+
+**Bounded fix:** Link and verify the existing [Simple streaming sample](https://github.com/dotnet/samples/tree/main/orleans/Streaming/Simple), whose structure includes client, grain interface, grain, and silo projects. Align the quickstart with the selected runnable sample and package version rather than recreate another full tutorial or retain an invalid placeholder GUID.
+
+**Acceptance:** Follow the linked setup from a clean sample checkout, start the silo/client, and observe a produced item at the consumer. Check all required package/project references and keep the article's identifiers/configuration consistent. File existence alone isn't execution evidence; no Orleans cluster was started during triage.
+
+### dotnet/docs#37550: Explain the Windows-prefixed runtime provider on Linux
+
+**Issue:** [dotnet/docs#37550](https://github.com/dotnet/docs/issues/37550). **Opened:** October 17, 2023. **Size:** Small. **GHCP suitability:** Strong; a transport/scope clarification with a verified collection example.
+
+**Why it still applies:** The [well-known provider catalog](../docs/core/diagnostics/well-known-event-providers.md) lists `Microsoft-Windows-DotNETRuntime` without explaining whether its name restricts it to Windows. The [EventPipe overview](../docs/core/diagnostics/eventpipe.md) explicitly documents cross-platform runtime-event collection but isn't connected to that question.
+
+**Bounded fix:** Explain that the historical provider name doesn't make CoreCLR's EventPipe events Windows-only. Link the EventPipe collection route and give a minimal Linux runtime/GC collection example with appropriate keywords. Distinguish provider identity from ETW transport, and coordinate Native AOT qualifications with dotnet/docs#37282.
+
+**Acceptance:** Capture and inspect the stated event on Linux with the selected runtime/tool version. Don't claim that all ETW events, OS/kernel events, or Native AOT providers become available merely because EventPipe works cross-platform. Linux capture wasn't executed during triage.
+
+### dotnet/docs#37644: Demonstrate out-of-process DiagnosticSource collection
+
+**Issue:** [dotnet/docs#37644](https://github.com/dotnet/docs/issues/37644). **Opened:** October 19, 2023. **Size:** Medium. **GHCP suitability:** Strong; the owner supplies a bounded bridge/walkthrough design.
+
+**Why it still applies:** The [DiagnosticSource guide](../docs/core/diagnostics/diagnosticsource-diagnosticlistener.md) only incidentally links `DiagnosticSourceEventSource`; it doesn't show the requested out-of-process collector. The owner identifies EventPipe, TraceEvent, and the bridge's filter/property-transform protocol as the implementation route.
+
+**Bounded fix:** Add a minimal emitter and separate collector using `Microsoft-Diagnostics-DiagnosticSource`, `Microsoft.Diagnostics.NETCore.Client`, and TraceEvent. Explain provider keywords, `FilterAndPayloadSpecs`, named property extraction, process selection, and bounded session shutdown. Use the actual bridge protocol rather than substitute an in-process `EventListener` example.
+
+**Acceptance:** Build both projects and collect a filtered payload from the separate process. An owned .NET 10 two-process check used client 0.2.750501 and TraceEvent 3.2.8, received exactly the extracted `requestId` value `42`, excluded a sibling secret field, and stopped both processes. The final walkthrough still needs its own execution evidence. Explain that reflection-based payload discovery isn't a recommended trimming/Native AOT recipe.
+
+### dotnet/docs#37664: Distinguish delegate completion waits from EndInvoke
+
+**Issue:** [dotnet/docs#37664](https://github.com/dotnet/docs/issues/37664). **Opened:** October 21, 2023. **Size:** Small. **GHCP suitability:** Strong; clarify the legacy contract without recommending it for modern .NET.
+
+**Why it still applies:** [Call synchronous methods asynchronously](../docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md) explains blocking but doesn't clearly answer why a reader would wait on the handle before `EndInvoke`. Its applicability text also doesn't clearly delimit delegate `BeginInvoke`/`EndInvoke` to .NET Framework.
+
+**Bounded fix:** Explain that `EndInvoke` alone suffices when the caller only wants to wait and retrieve the result; a wait handle adds timed waits or coordinated waits. Require one `EndInvoke` to retrieve results/propagate failures even after a successful wait. State the .NET Framework limitation and point modern .NET readers to task-based alternatives.
+
+**Acceptance:** Verify on .NET Framework that a timed wait can return false, a signaled wait doesn't itself retrieve the result or throw the delegate's exception, and a second `EndInvoke` fails. Owned Framework executions confirmed those distinctions, a result of `42`, and exception propagation through `EndInvoke`. Don't publish a modern .NET sample that calls the unsupported delegate methods or imply that a timeout cancels the operation.
+
+### dotnet/docs#37744: Distinguish WinDbg package versions from debugger-engine versions
+
+**Issue:** [dotnet/docs#37744](https://github.com/dotnet/docs/issues/37744). **Opened:** October 26, 2023. **Size:** Small. **GHCP suitability:** Strong; align the related Windows installation notes.
+
+**Why it still applies:** Both [dotnet-sos](../docs/core/diagnostics/dotnet-sos.md) and [dotnet-debugger-extensions](../docs/core/diagnostics/dotnet-debugger-extensions.md) retain an unexplained `10.0.18317.1001` threshold. The question compares that value with the separately numbered modern WinDbg application.
+
+**Bounded fix:** Identify the threshold as a debugger-engine/tool build, not a numeric minimum for the Store application's package version. Link the [current WinDbg installation page](https://learn.microsoft.com/windows-hardware/drivers/debugger/), which says modern WinDbg was formerly WinDbg Preview and shares the classic engine. Distinguish modern auto-loading from legacy/manual SOS installation and provide the documented load/inspection fallback.
+
+**Acceptance:** Both tool pages use consistent terminology and current WinDbg naming. Check the actual extension/loading behavior on the stated distribution before promising automatic loading; don't compare a `1.x` package number numerically with a `10.x` engine build. The archived diagnostics installation guide supports the historical distinction but explicitly defers maintained guidance to this repository; a Windows debugger session wasn't started during triage.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -2001,6 +2141,14 @@ These issues still need their existing PRs to land, with corrections where noted
 
 **Maintainer next action:** Correct the current example and establish the shared suppression link/content pattern before a bounded, reviewed rollout to applicable warning pages. Preserve existing `NoWarn` entries and restore locally disabled warnings. Don't imply that actual compiler errors can all be suppressed like warnings or duplicate a long generic recipe on hundreds of pages. An owned Roslyn compilation produced one CS0184 without the pragma and none with it; the final published example and project-level form still need their own verification. Don't close the broader request after this one-page patch alone.
 
+### dotnet/docs#37262: Show collection equality limits in the record example
+
+**Issue:** [dotnet/docs#37262](https://github.com/dotnet/docs/issues/37262). **Opened:** September 27, 2023. **Status:** Covered by open, non-draft [dotnet/docs#56667](https://github.com/dotnet/docs/pull/56667).
+
+**Why the solution is defined:** The actual two-file patch expands the [record equality example](../docs/csharp/fundamentals/types/records.md) to compare records that share an array with a record that has a distinct equal-content array. Its proposed source compiled and produced `True`, `False`, and `False` in an owned .NET 10 run.
+
+**Maintainer next action:** Review the existing PR instead of assigning another implementation. Replace `%60` with literal backticks in the API xref, qualify equality claims for the actual collection types rather than every possible collection, and correct the new paragraph that describes all generated record properties as `init`-only: positional record structs are read-write unless `readonly`. Verify that the published snippet regions expose every required declaration and remain consistent with the earlier `Person` examples. Merge only after those corrections; an open patch isn't closure evidence.
+
 ## Assignment order
 
 For the quickest independent changes, start with the table escaping, the paired COM wording corrections, or the existing prose-only signposts. Coordinate the instrumentation link with its current owner. Treat the two COM issues as one assignment, and use the existing hosted-service issue rather than duplicate work for dotnet/docs#23440.
@@ -2055,6 +2203,6 @@ Coordinate the two string-marshalling tasks as one coherent update, with actual 
 
 Qualify POH guidance for modern CoreCLR without inventing Framework support. Verify the selected YARP package's platform dependencies before publishing universal claims. The PowerShell correction must stay read-only, and the MAUI test bridge must demonstrate compatible target frameworks and matching constructor dependencies.
 
-Review the twenty existing implementation PRs separately from new assignments; the F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review.
+Review the twenty-one existing implementation PRs separately from new assignments; the F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review.
 
 Keep the new stream-reading alternative text-specific and version-correct. Verify StartupObject's IDE route, correct the HTTP tutorial's staged calls and API-header explanation, and preserve the reusable warning-suppression requirement beyond the CS0184 patch. Issues that don't fit either candidate category are omitted for a future task.

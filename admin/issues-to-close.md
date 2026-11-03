@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 450 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#37034](https://github.com/dotnet/docs/issues/37034), opened September 9, 2023.
-- **Results:** 90 closure candidates and 190 [clearly defined fixes](issues-with-defined-fixes.md) (170 assignment candidates and 20 fixes with open implementation PRs).
-- **Latest batch:** Issues 426-450, from [dotnet/docs#36538](https://github.com/dotnet/docs/issues/36538) through dotnet/docs#37034: 4 closure candidates, 13 new assignment candidates, and no new fixes with open implementation PRs.
-- **Remaining:** 398 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 150 are complete and 150 remain. Continue with [dotnet/docs#37037](https://github.com/dotnet/docs/issues/37037), opened September 11, 2023, and stop at position 600. Refresh issue states; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 475 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#37748](https://github.com/dotnet/docs/issues/37748), opened October 26, 2023.
+- **Results:** 93 closure candidates and 205 [clearly defined fixes](issues-with-defined-fixes.md) (184 assignment candidates and 21 fixes with open implementation PRs).
+- **Latest batch:** Issues 451-475, from [dotnet/docs#37037](https://github.com/dotnet/docs/issues/37037) through dotnet/docs#37748: 3 closure candidates, 14 new assignment candidates, and 1 new fix with an open implementation PR.
+- **Remaining:** 373 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 175 are complete and 125 remain. Continue with [dotnet/docs#37757](https://github.com/dotnet/docs/issues/37757), opened October 27, 2023, and stop at position 600. Refresh issue states; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -814,3 +814,27 @@ The [DI metrics section](../docs/core/diagnostics/metrics-instrumentation.md#get
 The current [C# table of contents](../docs/csharp/toc.yml) places nullable value types and nullable reference types together under **Null safety**. The [null-safety overview](../docs/csharp/fundamentals/null-safety/index.md), also verified on the published site, introduces the shared topic and links the two concepts. That organization addresses the issue and the maintainer's promised Everyday C# rearrangement without pretending that the runtime representations are identical.
 
 **Suggested closure explanation:** Close the original navigation request against the current TOC and published overview. [dotnet/docs#56679](https://github.com/dotnet/docs/pull/56679) remains open and unmerged, and its patch adds explanatory cross-references rather than the TOC grouping. Review that supplemental PR separately; don't cite it as a merged fix or create a duplicate assignment.
+
+### dotnet/docs#37359: Collect metrics programmatically from another process
+
+**Opened:** October 3, 2023. **Confidence:** High for the answered support question. **Reason:** The owner supplied the requested collection options, and the reporter accepted the explanation.
+
+The complete discussion distinguishes the [in-process MeterListener example](../docs/core/diagnostics/metrics-collection.md#create-a-custom-collection-tool-using-the-net-meterlistener-api) from programmatic out-of-process collection. The owner explains both an OpenTelemetry/OTLP exporter and the `MetricsEventSource` bridge with EventPipe and TraceEvent; the reporter thanks the owner and accepts the answer. Follow-up questions about counter rates don't establish that `MeterListener` works across processes or require a new metric instrument.
+
+**Suggested closure explanation:** Close as an answered usage question, and preserve the owner's two out-of-process approaches in the closure reply. Don't claim that the current article contains a complete custom out-of-process walkthrough or that every current counter display shows both totals and rates. A separate bounded walkthrough request remains distinct from this accepted answer.
+
+### dotnet/docs#37580: Assign the transaction in the SQLite bulk-insert sample
+
+**Opened:** October 18, 2023. **Confidence:** High. **Reason:** The provider already associates the sample's command with the active transaction.
+
+The [bulk-insert sample](../docs/standard/data/sqlite/bulk-insert.md) starts a transaction before it calls `connection.CreateCommand()`. `Microsoft.Data.Sqlite` assigns the connection's active transaction to the command it creates; the [CreateCommand contract](https://learn.microsoft.com/dotnet/api/microsoft.data.sqlite.sqliteconnection.createcommand) and current provider source confirm that behavior. An owned SQLite 10.0.0 check verified reference identity between the active transaction and `command.Transaction`, inserted and read a value, and committed. The exact repository sample also completed its 150,000-row insert.
+
+**Suggested closure explanation:** No explicit transaction assignment is missing from this provider-specific sample. Explain the `CreateCommand()` behavior and link the contract. Don't generalize the behavior to `SqlClient`, commands created before the transaction, or commands constructed through a different path.
+
+### dotnet/docs#37748: Update the System.CommandLine tutorial after API renames
+
+**Opened:** October 26, 2023. **Confidence:** High for the reported API-renaming mismatch. **Reason:** The tutorial now uses the modern API consistently.
+
+The current [command-line tutorial](../docs/standard/commandline/get-started-tutorial.md) and all four staged projects use `System.CommandLine` 2.0.12 and the revised API rather than the old beta names identified in the issue. An owned .NET 10 harness compiled and executed the exact current stage sources with that package: the root commands, the `read` subcommand, and the final `quotes read` command all read the supplied input. Existing nullable warnings in later stages don't indicate the reported renamed-API failure.
+
+**Suggested closure explanation:** Close the precise 2023 API-renaming gap against the current tutorial and snippets, with assignee `tdykstra` informed. Don't claim that every library article or every tutorial command path was verified, and don't close broader historical beta-documentation issues solely on this evidence.

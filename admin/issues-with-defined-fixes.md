@@ -5,16 +5,16 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 196 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track twenty-three additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 207 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track twenty-five additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 500 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#38645](https://github.com/dotnet/docs/issues/38645), opened December 7, 2023.
-- **Results:** 219 defined fixes (196 assignment candidates and 23 with open implementation PRs) and 96 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 476-500 add 12 new assignment candidates and 2 new fixes with open implementation PRs, alongside 3 closure candidates.
-- **Remaining:** 348 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 200 are complete and 100 remain. Continue with [dotnet/docs#38649](https://github.com/dotnet/docs/issues/38649), opened December 7, 2023, and stop at position 600.
-- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the twenty-three active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
+- **Completed batches:** The 525 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#39781](https://github.com/dotnet/docs/issues/39781), opened March 2, 2024.
+- **Results:** 232 defined fixes (207 assignment candidates and 25 with open implementation PRs) and 99 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 501-525 add 11 new assignment candidates and 2 new fixes with open implementation PRs, alongside 3 closure candidates.
+- **Remaining:** 323 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 225 are complete and 75 remain. Continue with [dotnet/docs#39852](https://github.com/dotnet/docs/issues/39852), opened March 6, 2024, and stop at position 600.
+- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the twenty-five active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
 
@@ -2095,6 +2095,94 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Acceptance:** Verify the counter-instance example with an owned .NET Framework process and the modern diagnostic route with the selected runtime. Confirm that the event explanation doesn't promise a collection for every LOH allocation. An owned modern check allocated three 90,000-byte generation-2 arrays without an intervening generation-2 collection; that result doesn't establish a universal AllocationTick sampling interval.
 
+### dotnet/docs#38661: Make the workspace diagram readable in dark mode
+
+**Issue:** [dotnet/docs#38661](https://github.com/dotnet/docs/issues/38661). **Opened:** December 7, 2023. **Size:** Small. **GHCP suitability:** Strong; the owner accepted the localized visual correction.
+
+**Why it still applies and why the solution is defined:** The [workspace article](../docs/csharp/roslyn-sdk/work-with-workspace.md#solutions-projects-and-documents) still embeds `media/work-with-workspace/workspace-obj-relations.png`. Visual inspection confirms dark connector labels and lines outside the white boxes; the 604-by-371 PNG has a transparent background. That combination loses contrast on dark backgrounds.
+
+**Scope and acceptance:** Preserve the diagram's labels, relationships, and dimensions, and give the asset an opaque light background or an equivalent theme-safe treatment. Verify the actual rendered article in both light and dark themes, including small connector captions and arrowheads. Don't redraw the model or change its technical meaning to fix contrast.
+
+### dotnet/docs#38687: Show explicit opt-in JSON member selection
+
+**Issue:** [dotnet/docs#38687](https://github.com/dotnet/docs/issues/38687). **Opened:** December 9, 2023. **Size:** Small. **GHCP suitability:** Suitable for a focused example using the existing contract-customization mechanism.
+
+**Why it still applies and why the solution is defined:** The [migration guide](../docs/standard/serialization/system-text-json/migrate-from-newtonsoft.md#systemruntimeserialization-attributes) already states that `DataContract` and `DataMember` aren't built-in System.Text.Json contracts and links a custom resolver. The [custom-contract guide](../docs/standard/serialization/system-text-json/custom-contracts.md#modifiers) explains property removal, but doesn't directly demonstrate the requested opt-in member policy.
+
+**Scope and acceptance:** Add a short opt-in recipe and a discoverability link between those existing sections. Distinguish an explicit DTO from a custom resolver that retains only marked members; state exactly which attributes and semantics the example implements, rather than advertise full DataContractSerializer compatibility or endorse a third-party package. Prove that an unmarked member neither appears in output nor accepts input. An owned .NET 8/.NET 10 modifier check produced only `{"PublicValue":7}` and ignored an unmarked input member; the default serializer included both public properties. Keep reflection-based customization distinct from source-generated contracts and validate the eventual published language samples.
+
+### dotnet/docs#38701: Explain why span concatenation also changes the call
+
+**Issue:** [dotnet/docs#38701](https://github.com/dotnet/docs/issues/38701). **Opened:** December 11, 2023. **Size:** Small. **GHCP suitability:** Strong; the correction is a local explanation and paired example.
+
+**Why it still applies and why the solution is defined:** [CA1845](../docs/fundamentals/code-analysis/quality-rules/ca1845.md#how-to-fix-violations) already lists both required changes, but its before/after example changes the concatenation syntax without explaining the span overload. The proposed `AsSpan(...) + "..."` replacement isn't valid C#: an owned build produced CS0019.
+
+**Scope and acceptance:** Explain that the span-based `string.Concat` overload avoids intermediate substring strings and that `+` isn't the demonstrated span API. For a controlled comparison, optionally use `string.Concat` in both versions. Preserve the final string and avoid claims of zero total allocation. Owned .NET 8 and .NET 10 checks returned `fwutzle---fwobz` from both valid forms; verify CA1845's diagnostic and code fix against the eventual published examples.
+
+### dotnet/docs#39216: Explain populated collections after DI constructor selection
+
+**Issue:** [dotnet/docs#39216](https://github.com/dotnet/docs/issues/39216). **Opened:** January 22, 2024. **Size:** Small. **GHCP suitability:** Suitable for an example in the existing compatibility note, coordinated with assignee `gewarren`.
+
+**Why it still applies and why the solution is defined:** The [existing .NET 8 change](../docs/core/compatibility/extensions/8.0/activatorutilities-createinstance-behavior.md) already documents the longest-resolvable-constructor rule. It doesn't illustrate that DI can resolve `IEnumerable<T>` for a collection's copy constructor, producing a populated collection instead of the empty collection expected by a deserializer.
+
+**Scope and acceptance:** Extend that note rather than create a duplicate breaking-change article. Demonstrate two registrations, the selected collection constructor, and explicit parameterless construction when an empty collection is required. Distinguish DI activation from ordinary construction and don't suggest changing framework collection constructors or relying on their declaration order. Owned .NET 8 and .NET 10 checks returned two elements through `ActivatorUtilities` and zero through parameterless `Activator.CreateInstance`. Verify the historical comparison against the relevant package versions before publishing a before/after claim, and check `GetServiceOrCreateInstance` separately.
+
+### dotnet/docs#39222: Distinguish handle ownership from owner lifetime
+
+**Issue:** [dotnet/docs#39222](https://github.com/dotnet/docs/issues/39222). **Opened:** January 23, 2024. **Size:** Small. **GHCP suitability:** Suitable for a bounded interop clarification with interop-owner review.
+
+**Why it still applies and why the solution is defined:** The [best-practices guide](../docs/standard/native-interop/best-practices.md#keeping-managed-objects-alive) still says to replace `HandleRef` with `SafeHandle` without explaining the original wrapper object's lifetime. The actual HandleRef API remarks establish that the wrapper stays alive through the P/Invoke; merely wrapping its borrowed pointer doesn't establish ownership or preserve that wrapper.
+
+**Scope and acceptance:** Explain owned SafeHandle-based resource design versus a borrowed handle whose managed owner must remain alive. Don't recommend two owners for one native resource, claim that a non-owning SafeHandle automatically roots the original owner, or describe HandleRef as obsolete. Clarify the role of `GC.KeepAlive` after the native call without presenting a universal mechanical conversion. Align the conceptual guide with the HandleRef API remarks through `dotnet/dotnet-api-docs` where needed. Any new native example needs an actual lifetime/release fixture, not only a managed compilation.
+
+### dotnet/docs#39274: Connect compiler diagnostics and analyzer configuration
+
+**Issue:** [dotnet/docs#39274](https://github.com/dotnet/docs/issues/39274). **Opened:** January 26, 2024. **Size:** Small. **GHCP suitability:** Suitable for the bounded navigation hub the owner approved.
+
+**Why it still applies and why the solution is defined:** The [compiler-message landing page](../docs/csharp/language-reference/compiler-messages/index.md) still focuses on CS diagnostics and compiler options. It doesn't provide the requested bridge to [code-quality rules](../docs/fundamentals/code-analysis/quality-rules/index.md), [code-style rules](../docs/fundamentals/code-analysis/style-rules/index.md), and their distinct configuration mechanisms. The owner accepted a central index without competing diagnostic F1 tags.
+
+**Scope and acceptance:** Expand the existing landing page with a compact CS/CA/IDE navigation and configuration map, and identify where currently undocumented compiler messages are tracked. Link maintained inventories rather than promise a complete hand-maintained table of every diagnostic. Keep compiler warning levels, warning waves, analyzer enablement, severity, and nullable settings distinct; don't copy the issue's proposed `9999`/`latest` guarantee or its analysis-level matrix. Verify destinations and representative help routes, preserve diagnostic-specific F1 ownership, and obtain compiler/analyzer-owner review.
+
+### dotnet/docs#39347: Poll observable instruments in metrics tests
+
+**Issue:** [dotnet/docs#39347](https://github.com/dotnet/docs/issues/39347). **Opened:** January 31, 2024. **Size:** Small. **GHCP suitability:** Strong; the API contract and reproduction define the missing step.
+
+**Why it still applies and why the solution is defined:** [Test custom metrics](../docs/core/diagnostics/metrics-instrumentation.md#test-custom-metrics) demonstrates counters but never calls `MetricCollector<T>.RecordObservableInstruments`. The collector's source delegates that method to `MeterListener.RecordObservableInstruments`; taking a snapshot alone doesn't request an observable callback.
+
+**Scope and acceptance:** Add a minimal observable-gauge test beside the counter examples and explain when to poll, then inspect the snapshot. Show that another poll adds another observation rather than silently replacing the first. Keep meter/collector disposal and test isolation explicit. Owned checks with Microsoft.Extensions.Diagnostics.Testing 10.0.0 on .NET 8 and .NET 10 saw an empty snapshot before polling, `150` after the first poll, and `150,42` after the second. Execute the eventual test and link the method's API reference; don't make fake-time advancement a substitute for collection.
+
+### dotnet/docs#39352: Convert the two remaining Framework detection projects
+
+**Issue:** [dotnet/docs#39352](https://github.com/dotnet/docs/issues/39352). **Opened:** February 1, 2024. **Size:** Small. **GHCP suitability:** Suitable for a two-project conversion with Windows build verification.
+
+**Why it still applies and why the solution is defined:** The Framework-version detection [C# project](../docs/framework/install/snippets/how-to-determine-which-versions-are-installed/csharp/FrameworkVersions.csproj) and [VB project](../docs/framework/install/snippets/how-to-determine-which-versions-are-installed/vb/FrameworkVersions.vbproj) still use ToolsVersion/import-based project files and target .NET Framework 4.8.1. The third, XmlDocument WinForms project in the auto-generated issue no longer exists, so it isn't a reason to recreate that sample or declare the whole issue resolved.
+
+**Scope and acceptance:** Convert only the two remaining projects to SDK style while retaining `net481`, output type, namespaces, startup selection, snippet files/regions, and configuration behavior. Resolve generated/explicit assembly metadata duplication and preserve VB's `My` resources/settings deliberately. Build Debug and Release on Windows with the Framework reference assemblies, and compare the read-only registry output with the baseline. Don't retarget this Framework-detection example to modern .NET or add a blanket versionsweeper exclusion to hide the outstanding conversion.
+
+### dotnet/docs#39649: Explain implicit stream subscription constructors
+
+**Issue:** [dotnet/docs#39649](https://github.com/dotnet/docs/issues/39649). **Opened:** February 23, 2024. **Size:** Small. **GHCP suitability:** Suitable for version-matched examples from the existing Orleans contract.
+
+**Why it still applies and why the solution is defined:** The [subscription guide](../docs/orleans/streaming/streams-programming-apis.md#explicit-and-implicit-subscriptions) only illustrates a namespace string. Actual Orleans 7.2.7 and 10.0.0 source defines all-namespace, exact-namespace, and predicate-type constructors, an optional named stream-ID mapper, and a predicate-instance constructor for derived-attribute extensibility.
+
+**Scope and acceptance:** Explain those choices and demonstrate ordinary attribute usage with a parameterless custom predicate type, including `PredicatePattern`/provider reconstruction requirements. Don't put an arbitrary predicate instance in attribute arguments or confuse namespace matching with stream-ID mapping. Retain the separate observer-attachment requirement. Compile against each documented Orleans pivot and prove matching/nonmatching namespaces; include a real provider/consumer check for any delivery or mapper example.
+
+### dotnet/docs#39654: Stop treating pinnability as a blittability test
+
+**Issue:** [dotnet/docs#39654](https://github.com/dotnet/docs/issues/39654). **Opened:** February 24, 2024. **Size:** Small. **GHCP suitability:** Strong for the source-backed correction, with interop-owner review.
+
+**Why it still applies and why the solution is defined:** The [blittability section](../docs/standard/native-interop/best-practices.md#blittable-types-when-runtime-marshalling-is-enabled) and a later struct-performance paragraph both claim that a pinned GCHandle tests blittability. The runtime actually checks pinnability. Owned .NET 8 and .NET 10 probes successfully pinned a boxed Boolean even though its managed size was one byte and its default marshaled size was four; a reference-containing list was rejected.
+
+**Scope and acceptance:** Correct both occurrences and distinguish reference-free/pinnable storage from matching a specific native representation. Preserve the separate enabled/disabled-runtime-marshalling rules and Boolean conversion explanation. Don't replace the test with another universal blittability predicate or claim that pinning changes an ABI. Verify the Boolean and reference-containing cases and review native-layout wording against the selected marshalling model.
+
+### dotnet/docs#39771: Clarify the default scaffolded context directory
+
+**Issue:** [dotnet/docs#39771](https://github.com/dotnet/docs/issues/39771). **Opened:** March 1, 2024. **Size:** Small. **GHCP suitability:** Strong, but the edit belongs in `dotnet/EntityFramework.Docs`, not this checkout.
+
+**Why it still applies and why the solution is defined:** The live [Scaffold-DbContext table](https://learn.microsoft.com/ef/core/cli/powershell#scaffold-dbcontext) still describes `-OutputDir` only as the entity-class directory and doesn't state the context default. The linked scaffolding guide already explains separate directories, and EF Core 10's `DatabaseOperations.ScaffoldContext` defaults an omitted context directory to the resolved output directory.
+
+**Scope and acceptance:** Update `entity-framework/core/cli/powershell.md` to say that `-OutputDir` also receives the context when `-ContextDir` is omitted, and cross-link the existing target-directory guidance. Preserve paths relative to the project directory. Verify omitted and explicit `-ContextDir` cases through the PMC command; don't assume an explicitly empty string has the same behavior as an omitted parameter, because source distinguishes null from empty paths. Route the assignment to the owning repository without changing EF tooling or filing a duplicate issue automatically.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -2285,6 +2373,22 @@ These issues still need their existing PRs to land, with corrections where noted
 
 **Maintainer next action:** Correct byte/character units and avoid treating source-text size as an exact heap threshold; account for metadata addressing, repeated strings, and overhead. Version the experimental option: the owner identifies SDK 9.0.200/Visual Studio 17.13 availability, and the feature isn't a universal supported fix for every older compiler or VB project. Test a real CS8103 fixture, the resource alternative, flag-enabled execution, and relevant reflection behavior; preserve the distinction from CS9274/CS9315 and verify F1 discovery. Don't close on the open patch or recommend an experimental compiler mode without its restrictions.
 
+### dotnet/docs#38651: Give the programming-concepts landing page useful scope
+
+**Issue:** [dotnet/docs#38651](https://github.com/dotnet/docs/issues/38651). **Opened:** December 7, 2023. **Status:** Covered by open, non-draft [dotnet/docs#56688](https://github.com/dotnet/docs/pull/56688).
+
+**Evidence:** The current landing page principally links variance and iterators, matching the original navigation concern. The actual one-file patch adds a broader map of paradigms and advanced topics and removes the old Framework-performance detour. Its relative article links resolve in the current checkout.
+
+**Maintainer next action:** Review the existing patch with the C# owner rather than assign another rewrite. Confirm that the proposed taxonomy and variance placement satisfy the accepted navigation request; adding a broad index doesn't itself move the variance subtree under generics. Keep descriptions aligned with the linked articles, verify rendered navigation, and avoid implying that links alone supply new conceptual tutorials. Don't close on an open patch or expand this into an unapproved guide-wide reorganization.
+
+### dotnet/docs#38870: Complete version-specific ADO.NET schema guidance
+
+**Issue:** [dotnet/docs#38870](https://github.com/dotnet/docs/issues/38870). **Opened:** December 25, 2023. **Status:** Covered by open, non-draft [dotnet/docs#56247](https://github.com/dotnet/docs/pull/56247).
+
+**Evidence:** [dotnet/docs#54410](https://github.com/dotnet/docs/pull/54410) merged July 29, 2026, adding migration-directory links for existing schema upgrades. The current guide contains those links. The actual remaining patch also points users with missing-required-query setup errors toward migrations; the original reporter specifically identified `CleanupDefunctSiloEntriesKey`. Contributor `adarsh6980` already owns the proposed implementation.
+
+**Maintainer next action:** Complete the existing contribution instead of duplicating it or treating the merged link-only change as proof that every reported setup is fixed. Match scripts to the actual Orleans/provider release, distinguish new installations from upgrades, and verify a clean schema plus an applicable upgrade. Don't instruct readers to execute every migration for every missing-query error. The related merged Orleans SQL Server correction doesn't alone prove the original MySQL path; verify that path and any script ordering explicitly before closure.
+
 ## Assignment order
 
 For the quickest independent changes, start with the table escaping, the paired COM wording corrections, or the existing prose-only signposts. Coordinate the instrumentation link with its current owner. Treat the two COM issues as one assignment, and use the existing hosted-service issue rather than duplicate work for dotnet/docs#23440.
@@ -2339,6 +2443,8 @@ Coordinate the two string-marshalling tasks as one coherent update, with actual 
 
 Qualify POH guidance for modern CoreCLR without inventing Framework support. Verify the selected YARP package's platform dependencies before publishing universal claims. The PowerShell correction must stay read-only, and the MAUI test bridge must demonstrate compatible target frameworks and matching constructor dependencies.
 
-Review the twenty-three existing implementation PRs separately from new assignments; the F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review.
+The diagram contrast and span-concatenation explanation are additional localized changes. Coordinate the collection example with the compatibility-note owner, and keep the diagnostic navigation hub distinct from an exhaustive new inventory. Pair the pinnability and handle-lifetime clarifications with interop-owner review. The opt-in JSON recipe and observable-metric test need executed, published examples; the Framework project conversion must retain its Framework target. Route the scaffolding parameter edit to EntityFramework.Docs rather than create an ineffective docs-only patch.
+
+Review the twenty-five existing implementation PRs separately from new assignments; the F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review.
 
 Keep the new stream-reading alternative text-specific and version-correct. Verify StartupObject's IDE route, correct the HTTP tutorial's staged calls and API-header explanation, and preserve the reusable warning-suppression requirement beyond the CS0184 patch. Issues that don't fit either candidate category are omitted for a future task.

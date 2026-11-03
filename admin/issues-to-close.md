@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 500 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#38645](https://github.com/dotnet/docs/issues/38645), opened December 7, 2023.
-- **Results:** 96 closure candidates and 219 [clearly defined fixes](issues-with-defined-fixes.md) (196 assignment candidates and 23 fixes with open implementation PRs).
-- **Latest batch:** Issues 476-500, from [dotnet/docs#37757](https://github.com/dotnet/docs/issues/37757) through dotnet/docs#38645: 3 closure candidates, 12 new assignment candidates, and 2 new fixes with open implementation PRs.
-- **Remaining:** 348 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 200 are complete and 100 remain. Continue with [dotnet/docs#38649](https://github.com/dotnet/docs/issues/38649), opened December 7, 2023, and stop at position 600. Refresh issue states; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 525 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#39781](https://github.com/dotnet/docs/issues/39781), opened March 2, 2024.
+- **Results:** 99 closure candidates and 232 [clearly defined fixes](issues-with-defined-fixes.md) (207 assignment candidates and 25 fixes with open implementation PRs).
+- **Latest batch:** Issues 501-525, from [dotnet/docs#38649](https://github.com/dotnet/docs/issues/38649) through dotnet/docs#39781: 3 closure candidates, 11 new assignment candidates, and 2 new fixes with open implementation PRs.
+- **Remaining:** 323 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 225 are complete and 75 remain. Continue with [dotnet/docs#39852](https://github.com/dotnet/docs/issues/39852), opened March 6, 2024, and stop at position 600. Refresh issue states; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -862,3 +862,27 @@ The referenced [end-to-end movie sample's Data directory](https://github.com/dot
 The [tutorial](../docs/machine-learning/tutorials/movie-recommendation.md) explicitly teaches matrix factorization to predict a numeric movie rating. The [end-to-end sample README](https://github.com/dotnet/machinelearning-samples/blob/main/samples/csharp/end-to-end-apps/Recommendation-MovieRecommender/README.md) describes its web application and includes an **Alternate Approaches** table that contrasts field-aware factorization machines, matrix factorization, and one-class recommendation. Its actual model source uses text-featurized identifiers and `BinaryClassification.Trainers.FieldAwareFactorizationMachine`, rather than the tutorial's rating-regression trainer.
 
 **Suggested closure explanation:** Answer with the documented algorithm, prediction-task, and application-shape differences, and link the existing comparison table. The similarly named projects aren't duplicate implementations of one identical model. Don't claim that the old web app is current, that its training pipeline was executed, or that its score is interchangeable with the tutorial's predicted rating.
+
+### dotnet/docs#38671: Update the VS Code tutorial for C# Dev Kit
+
+**Opened:** December 8, 2023. **Confidence:** High for the obsolete project-configuration instructions. **Reason:** The replacement tutorials now use C# Dev Kit instead of the old explicit configuration-file workflow.
+
+The old article redirects to [Create a console application](../docs/core/tutorials/create-console-app.md), whose VS Code pivot requires C# Dev Kit through its prerequisite include and uses **Create .NET Project**. The companion [debug tutorial](../docs/core/tutorials/debug-console-app.md#start-debugging) uses **C#: Launch startup project** and **C#: Debug Active File**, rather than instructions that require generated `launch.json` and `tasks.json` files. [dotnet/docs#51719](https://github.com/dotnet/docs/pull/51719) merged March 3, 2026; the current source confirms the new workflow, not just a redirect.
+
+**Suggested closure explanation:** Close the reported mismatch between the old C#-extension-only tutorial and C# Dev Kit, with assignee `tdykstra` informed. Link the replacement creation and debugging pivots. Don't promise that Dev Kit always creates those configuration files or claim that a fresh interactive VS Code session was executed during triage.
+
+### dotnet/docs#38989: Remove obsolete crossgen setup from PerfCollect guidance
+
+**Opened:** January 5, 2024. **Confidence:** High. **Reason:** The exact obsolete instructions were removed.
+
+[dotnet/docs#39200](https://github.com/dotnet/docs/pull/39200) merged January 22, 2024. Its patch removes the entire framework-symbol section that required readers to obtain `crossgen`, copy it beside the runtime, or disable precompiled code as a workaround. The [current guide](../docs/core/diagnostics/trace-perfcollect-lttng.md#prepare-your-machine) instead explains automatic framework-method resolution and keeps separate instructions for native runtime symbols.
+
+**Suggested closure explanation:** The requested documentation cleanup has landed. Link the merged change and current guide. This recommendation doesn't claim that every historical runtime or every native-symbol scenario works without additional symbols, and it doesn't resolve unrelated container permissions or LTTng failures.
+
+### dotnet/docs#39770: Explain thread safety in the dispose pattern
+
+**Opened:** March 1, 2024. **Confidence:** High for the requested disposal/finalizer guard. **Reason:** The current text and both language examples explicitly address concurrent cleanup.
+
+The [unmanaged-resource example](../docs/standard/garbage-collection/implementing-dispose.md#base-class-with-unmanaged-resources) now describes thread-safe `Dispose(bool)` and the synchronization requirement. Its actual C# and VB sources use `Interlocked.CompareExchange` on an integer guard before the unmanaged release. Both public disposal and finalization enter that guarded method. The article also recommends `SafeHandle` and explains its once-only release guarantee; [dotnet/docs#45173](https://github.com/dotnet/docs/pull/45173) merged March 11, 2025.
+
+**Suggested closure explanation:** Link the guarded examples and SafeHandle explanation. The reported unchecked Boolean pattern is no longer the advanced unmanaged-resource example. An owned check executed the exact current C# class with 1,000 concurrent disposal calls on .NET 8 and .NET 10; that check doesn't establish that arbitrary methods on a disposable object are thread-safe or that callers can race resource use with disposal.

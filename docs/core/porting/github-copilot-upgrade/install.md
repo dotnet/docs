@@ -118,7 +118,7 @@ Install the `microsoft/upgrade-agent-plugins` marketplace through the GitHub Cop
 
 1. Click [this link](https://github.com/copilot/app/launch?entry_point=upgrade_agent_docs&open=ghapp%3A%2F%2Fplugins%2Fmarketplace%2Fadd%3Fsource%3Dmicrosoft%2Fupgrade-agent-plugins) to automatically open the **Settings** > **Plugins** window in the GitHub Copilot app.
 1. In the **Add plugin marketplace** dialog, select **Allow**.
-1. Go to the **Customize** view and search for `upgrade-agent`. Under the **All marketplaces** dropdown, select the `upgrade-agent-plugins`, and select **Install** on the **upgrade-agent** plugin.
+1. Go to the **Customize** view and search for `upgrade-agent`. Under the **All marketplaces** dropdown, select the `upgrade-agent-plugins`, and select **Install** on the `upgrade-agent` plugin.
 
 > [!IMPORTANT]
 > If the plugin's button displays **Install** again after you select it, the installation failed. Close all instances of Visual Studio, Visual Studio Code, and Copilot CLI, and then try again.

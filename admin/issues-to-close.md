@@ -5,16 +5,16 @@ ai-usage: ai-generated
 
 # Issue closure recommendations
 
-Recommend closing the following issues because current documentation addresses the request, an authoritative answer resolves the documentation question, the affected sample has been superseded, or another tracked issue covers the same work. These are recommendations only: no issues have been closed, commented on, labeled, or assigned.
+Recommend closing the following issues because current documentation addresses the request, an authoritative answer resolves the documentation question, the affected sample has been superseded, another tracked issue covers the same work, or the proposal belongs to another documentation set. These are recommendations only: no issues have been closed, commented on, labeled, or assigned.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 675 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#43966](https://github.com/dotnet/docs/issues/43966), opened December 13, 2024.
-- **Results:** 132 closure candidates and 317 [clearly defined fixes](issues-with-defined-fixes.md) (270 assignment candidates and 47 fixes covered by 45 open implementation PRs).
-- **Latest batch:** Issues 651-675, from [dotnet/docs#43182](https://github.com/dotnet/docs/issues/43182) through dotnet/docs#43966: 6 closure candidates, 10 new assignment candidates, and 4 new fixes with open implementation PRs.
-- **Remaining:** 173 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 125 are complete and 173 remain. Continue with [dotnet/docs#43996](https://github.com/dotnet/docs/issues/43996), opened December 17, 2024, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 700 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#44731](https://github.com/dotnet/docs/issues/44731), opened February 10, 2025.
+- **Results:** 141 closure candidates and 328 [clearly defined fixes](issues-with-defined-fixes.md) (279 assignment candidates and 49 fixes covered by 47 open implementation PRs).
+- **Latest batch:** Issues 676-700, from [dotnet/docs#43996](https://github.com/dotnet/docs/issues/43996) through dotnet/docs#44731: 9 closure candidates, 9 new assignment candidates, and 2 new fixes with open implementation PRs.
+- **Remaining:** 148 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 150 are complete and 148 remain. Continue with [dotnet/docs#44751](https://github.com/dotnet/docs/issues/44751), opened February 11, 2025, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -1152,3 +1152,79 @@ The [dotnet/docs#29054 brief](issues-with-defined-fixes.md#dotnetdocs29054-state
 [dotnet/sdk#45456](https://github.com/dotnet/sdk/pull/45456) merged on January 30, 2025. The current [Executing Customer Code guide](https://github.com/dotnet/sdk/blob/main/documentation/general/ExecutingCustomerCode.md) contains the substantive contributor guidance, including design-time-build risks, isolated environments, credential precautions, and malicious-repro handling. In the complete issue discussion, a docs maintainer identifies repository/contributor guidance as the appropriate home, and the author accepts closure if the topic doesn't belong in product documentation.
 
 **Suggested closure explanation:** Recommend closure as contributor guidance with an existing canonical SDK home, subject to agreement from `gewarren`, `Forgind`, and `marcpopMSFT`. Preserve the final comment's cross-repository discoverability concern as an ownership/navigation decision; don't claim that visibility is already solved or that a second dotnet/docs article was approved. This recommendation isn't a security audit or an endorsement of absolute safety claims in the linked guide.
+
+### dotnet/docs#43996: Missing CS8955 documentation
+
+**Opened:** December 17, 2024. **Confidence:** High. **Reason:** The diagnostic and its resolution are now documented.
+
+The consolidated [using-directive diagnostics article](../docs/csharp/language-reference/compiler-messages/using-directive-errors.md#file-scoped-namespace) includes CS8955 in its F1/help metadata, diagnostic list, and file-scoped namespace section. It explains that a file can't mix file-scoped and block-scoped namespace declarations and directs the reader to choose one style. A March 2026 issue comment independently identifies that coverage.
+
+**Suggested closure explanation:** Link to the consolidated CS8955 explanation and namespace reference. A separate diagnostic page isn't necessary; don't base closure on an unrelated diagnostic PR or imply that an unmerged patch supplies the current explanation.
+
+### dotnet/docs#44084: Missing downloadable NER sample data
+
+**Opened:** December 26, 2024. **Confidence:** High for duplication, not completion. **Reason:** Older open dotnet/docs#43317 already tracks the same Model Builder NER data gap.
+
+The [Model Builder dataset table](../docs/machine-learning/automate-training-with-model-builder.md#example-datasets) still lacks the requested NER download. The older [dotnet/docs#43317](https://github.com/dotnet/docs/issues/43317) remains open and includes the missing sample/data-format problem. Closing this duplicate wouldn't imply that either the data or loader instructions have been supplied.
+
+**Suggested closure explanation:** Consolidate with dotnet/docs#43317 and preserve the request for a downloadable sample that the actual Model Builder NER loader accepts. Don't substitute a generic trainer's BIO/CoNLL format or classify the canonical issue as fixed.
+
+### dotnet/docs#44193: Additional CA1853 suppression reason for dictionary updates
+
+**Opened:** January 9, 2025. **Confidence:** Medium. **Reason:** The proposed conditional work doesn't require a redundant lookup or an additional suppression exemption.
+
+`Dictionary.Remove(key)` returns whether it removed an entry. Use that result to guard the remaining copy/clear/reassignment work instead of first calling `ContainsKey`. An owned, compilable equivalent on .NET 8 and .NET 10 preserved the result and the original dictionary alias for both an existing and a missing key: the existing-key path copied the survivors and cleared the original; the absent-key path didn't. The reporter's literal collection-expression example isn't compilable as written, so this wasn't execution of the unchanged issue code.
+
+**Suggested closure explanation:** Explain the Boolean-returning `Remove` alternative and link to [CA1853](../docs/fundamentals/code-analysis/quality-rules/ca1853.md). Don't recommend removal of the conditional side effects, promise a contractual dictionary move-to-end operation, or claim that every analyzer code fix handles additional statements correctly. A reproducible unsafe analyzer transformation would be a separate analyzer defect, not evidence that the extra lookup is inherently required.
+
+### dotnet/docs#44233: Edit the introduction to records
+
+**Opened:** January 13, 2025. **Confidence:** High for the quoted passage. **Reason:** The requested equality explanation has already been rewritten.
+
+The [record introduction](../docs/csharp/fundamentals/types/records.md) now separates the `record` modifier from class/struct semantics. Its value-equality section compares plain classes, plain structs, record classes, and record structs, then explains the example and the reference comparison of array properties. The quoted paragraph no longer appears. The inheritance section also preserves the run-time-type distinction.
+
+An owned .NET 8/.NET 10 fixture confirmed that equal-content but distinct arrays don't make two records equal, a shared array can, and a derived record isn't equal to its base-record counterpart.
+
+**Suggested closure explanation:** Close the specific edit-pass request as addressed by the current introduction and examples. Don't describe record equality as recursive collection equality or rely on another open type-comparison PR to supply text that's already present.
+
+### dotnet/docs#44496: Azure DevOps for Agile System of Systems
+
+**Opened:** January 23, 2025. **Confidence:** High for repository scope. **Reason:** The proposal explicitly targets Azure DevOps documentation, not .NET documentation.
+
+The proposed TOC location is **Learn / Azure / Azure DevOps / Azure DevOps for Agile SoS**. Its abstract concerns Azure DevOps, digital-thread coordination, and OpsHub Integration Manager, without a .NET API, runtime, language, or application-development task. The appropriate destination is the [Azure DevOps documentation](https://learn.microsoft.com/azure/devops/), subject to that team's content and third-party-product policies.
+
+**Suggested closure explanation:** Close as a proposal for a different documentation set and direct the proposer to Azure DevOps content owners. Don't claim that the proposed article already exists, endorse its marketing or reliability claims, or transfer/create an issue without maintainer approval.
+
+### dotnet/docs#44562: Replace the Prometheus endpoint mapping API
+
+**Opened:** January 28, 2025. **Confidence:** High for API coexistence; package-execution limits noted below. **Reason:** The middleware API doesn't replace the endpoint-routing API used by the tutorial.
+
+Current exporter source exposes both [MapPrometheusScrapingEndpoint](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.Prometheus.AspNetCore/PrometheusExporterEndpointRouteBuilderExtensions.cs) for endpoint routing and [UseOpenTelemetryPrometheusScrapingEndpoint](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.Prometheus.AspNetCore/PrometheusExporterApplicationBuilderExtensions.cs) for middleware. The [tutorial](../docs/core/diagnostics/observability-prgrja-example.md) uses a `WebApplication`, and merged [dotnet/docs#50357](https://github.com/dotnet/docs/pull/50357) already adds the required `--prerelease` package-install flag.
+
+Owned .NET 8/.NET 10 applications served `/metrics` successfully with either API and returned the recorded counter value `3`. Those executions used exporter `1.9.0-beta.2`, available on the official Microsoft mirror. The repository's `1.16.0-beta.1` dependency wasn't available there, so they aren't a build claim for the tutorial's exact current dependency set.
+
+**Suggested closure explanation:** Retain the valid endpoint-routing form and explain the two integration styles. Don't replace a supported API merely because the middleware alternative also works. A failure with a specific restored package set needs its actual versions and compiler/runtime diagnostic.
+
+### dotnet/docs#44568: .NET agent ecosystem overview
+
+**Opened:** January 28, 2025. **Confidence:** High. **Reason:** Current ecosystem and agent guidance supply the requested selection overview.
+
+The [.NET AI ecosystem overview](../docs/ai/dotnet-ai-ecosystem.md) now provides an objective-to-technology table, describes the libraries and their roles, distinguishes direct model calls from agent orchestration, and compares a prebuilt Copilot SDK harness with Microsoft Agent Framework. The [agents article](../docs/ai/conceptual/agents.md) explains agent/workflow patterns. The linked [Agent Framework overview](https://learn.microsoft.com/agent-framework/overview/) supplies C# package/start instructions and explicitly identifies the framework as the successor to AutoGen and Semantic Kernel.
+
+**Suggested closure explanation:** Link to the maintained ecosystem selection guide and agent concepts rather than add another overview based on the 2025 framework landscape. Don't present an ordinary MEAI chat call as a multi-agent framework or imply that every provider package has identical maturity.
+
+### dotnet/docs#44569: New .NET multi-agent tutorial using AutoGen
+
+**Opened:** January 28, 2025. **Confidence:** High for the changed product direction. **Reason:** The requested framework-specific investment has been superseded by official successor guidance.
+
+The current [AutoGen project README](https://github.com/microsoft/autogen) explicitly says that the project is no longer maintained and directs new users to Microsoft Agent Framework. That statement concerns the project's maintenance policy; the repository's live GitHub `archived` flag was still `false` when checked. The [Agent Framework overview](https://learn.microsoft.com/agent-framework/overview/) confirms the succession and links migration guidance, while this repository's [agent concepts](../docs/ai/conceptual/agents.md) already describe multi-agent patterns and link to the current framework.
+
+**Suggested closure explanation:** Close the new AutoGen-specific tutorial proposal as superseded and use the supported framework's .NET workflow documentation for new work. Don't claim that dotnet/docs shipped the originally requested AutoGen tutorial, that all old AutoGen applications stop working, or that a migration was executed during triage.
+
+### dotnet/docs#44687: CI guidance for multiple test projects
+
+**Opened:** February 5, 2025. **Confidence:** High for the current SDK workflow. **Reason:** Current MTP guidance covers solution-wide execution without a per-project command list.
+
+The [run/debug guide's CI tab](../docs/core/testing/microsoft-testing-platform-run-and-debug.md) now includes `dotnet test` and the MTP-aware Azure Pipelines task. Its linked [runner-selection guide](../docs/core/testing/unit-testing-with-dotnet-test.md#mtp-mode-of-dotnet-test) documents .NET 10 SDK/MTP 1.7-or-later requirements and `global.json`. The [MTP CLI reference](../docs/core/tools/dotnet-test-mtp.md) documents solution selection, built-module globbing, and `--max-parallel-test-modules`, whose default is the processor count.
+
+**Suggested closure explanation:** Link to solution-wide MTP-mode `dotnet test` and the parallel-module option. A solution must include its test projects, and module-glob execution requires matching built modules. Don't promise the same dedicated mode on older SDKs, confuse module concurrency with test-case parallelism, or describe a sequential `foreach` loop as the resolution.

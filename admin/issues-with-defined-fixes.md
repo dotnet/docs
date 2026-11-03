@@ -5,15 +5,15 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 270 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track forty-seven additional issue-level fixes separately because forty-five implementation PRs are already open; two pairs of issues share PRs, several patches need correction or completion before merge, and two PRs remain drafts. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 279 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track forty-nine additional issue-level fixes separately because forty-seven implementation PRs are already open; two pairs of issues share PRs, several patches need correction or completion before merge, and two PRs remain drafts. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 675 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#43966](https://github.com/dotnet/docs/issues/43966), opened December 13, 2024.
-- **Results:** 317 defined fixes (270 assignment candidates and 47 with open implementation PRs) and 132 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 651-675 add 10 new assignment candidates and 4 new issue-level fixes with open implementation PRs, alongside 6 closure candidates. The 47 active entries are covered by 45 distinct PRs.
-- **Remaining:** 173 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 125 are complete and 173 remain. Continue with [dotnet/docs#43996](https://github.com/dotnet/docs/issues/43996), opened December 17, 2024, and finish the snapshot at position 848.
+- **Completed batches:** The 700 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#44731](https://github.com/dotnet/docs/issues/44731), opened February 10, 2025.
+- **Results:** 328 defined fixes (279 assignment candidates and 49 with open implementation PRs) and 141 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 676-700 add 9 new assignment candidates and 2 new issue-level fixes with open implementation PRs, alongside 9 closure candidates. The 49 active entries are covered by 47 distinct PRs.
+- **Remaining:** 148 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 150 are complete and 148 remain. Continue with [dotnet/docs#44751](https://github.com/dotnet/docs/issues/44751), opened February 11, 2025, and finish the snapshot at position 848.
 - **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and actual patches for active implementations. For the 545-file curation draft, the complete file manifest and relevant deletion, replacement, and redirect patches were inspected; this isn't a line-by-line review of the entire replacement book. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
@@ -2697,6 +2697,84 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Scope and acceptance:** State that the equivalence concerns formatting, then add a concise exact-parsing comparison with explicit culture/styles. Distinguish `DateTimeOffset` from `DateTime.Kind`, keep the single-custom-specifier `%K` rule, and explain the local/default interpretation of an omitted offset rather than imply UTC. Verify both formatting equality and all six parse cases; don't close merely because the existing formatting statement is technically true.
 
+### dotnet/docs#44115: Explain restricted access for development-certificate exports
+
+**Issue:** [dotnet/docs#44115](https://github.com/dotnet/docs/issues/44115). **Opened:** December 31, 2024. **Size:** Small. **GHCP suitability:** Strong; clarify the export precondition and private-key protection without changing certificate behavior.
+
+**Why it still applies:** The [export-path option](../docs/core/tools/dotnet-dev-certs.md#options) still says that directories must exist and access should be restricted without explaining the intended restriction. Both issue screenshots were inspected: the failed workflow identifies a nonexistent destination directory, not an administrator requirement.
+
+**Scope and acceptance:** Explain that the caller first creates the destination directory and gives the exporting account write access. For exports that include a private key, limit access to the intended user/service identities to protect the key. Distinguish that recommendation from an assertion that the CLI validates a particular ACL or requires elevation. The [certificate-manager source](https://github.com/dotnet/aspnetcore/blob/main/src/Shared/CertificateGeneration/CertificateManager.cs) rejects a nonexistent export directory; platform implementations handle permissions differently. Keep any Unix mode example platform-specific and don't translate it into a Windows numeric permission recipe. Use prose and existing option links; don't clean, trust, or export certificates or alter the user's certificate stores to verify this clarification.
+
+### dotnet/docs#44121: Distinguish Native AOT thread-pool selection from startup configuration
+
+**Issue:** [dotnet/docs#44121](https://github.com/dotnet/docs/issues/44121). **Opened:** January 1, 2025. **Size:** Small. **GHCP suitability:** Strong, with Native AOT review.
+
+**Why it still applies:** The [Windows thread-pool section](../docs/core/runtime-config/threading.md#windows-thread-pool) presents the runtimeconfig, environment-variable, and MSBuild settings together but doesn't explain the Native AOT build-time boundary.
+
+**Why the solution is defined:** The [.NET 10 Native AOT targets](https://github.com/dotnet/runtime/blob/v10.0.0/src/coreclr/nativeaot/BuildIntegration/Microsoft.NETCore.Native.targets) default `UseWindowsThreadPool` to `true` on Windows. The installed SDK 10.0.403 targets mark the corresponding runtime-host option `Trim="true"`, and the [runtime property](https://github.com/dotnet/runtime/blob/v10.0.0/src/libraries/System.Private.CoreLib/src/System/Threading/ThreadPool.Windows.cs) has the feature-switch definition.
+
+**Scope and acceptance:** Add a Native AOT note and qualify the settings table: select the pool with the MSBuild property before AOT publication, rather than edit a runtimeconfig file or environment variable after publication. For non-AOT applications, describe startup configuration, not arbitrary live toggling. Preserve the existing Windows/default/version/API limitations. Source inspection established this brief; no Native AOT executable was published during triage. If the implementation adds a behavioral example, publish both property values with a supported Windows AOT toolchain and verify that post-publication environment changes don't select the other pool.
+
+### dotnet/docs#44566: Complete the minimal cloud RAG flow with grounded answer generation
+
+**Issue:** [dotnet/docs#44566](https://github.com/dotnet/docs/issues/44566). **Opened:** January 28, 2025. **Size:** Medium. **GHCP suitability:** Suitable for a bounded extension of existing code, with AI-content review.
+
+**Why it still applies:** The [minimal vector-search quickstart](../docs/ai/vector-stores/how-to/build-vector-search-app.md) already supports OpenAI/Azure OpenAI and an in-memory store, but it only prints a retrieved record. Its RAG metadata doesn't supply the missing chat-answer step. The larger web-app templates aren't the minimal hand-built example requested by this issue.
+
+**Scope and acceptance:** Reuse the quickstart's dataset, embedding/search flow, and provider pivots. Add an `IChatClient` call grounded in the retrieved descriptions, explain retrieval versus generation, and show an answer tied to the source records. Distinguish chat and embedding model configuration; retain secret/authentication guidance and handle empty retrieval explicitly. Don't add Azure Storage, a web UI, agents, or multiple new vector backends merely to illustrate naive RAG. Coordinate shared sample changes with dotnet/docs#44567. Build both provider variants, test the retrieval-to-prompt contract without network access, and record an actual configured-model run before publication rather than invent a response. Triage didn't provision cloud resources or execute paid model calls.
+
+### dotnet/docs#44567: Add a minimal fully local RAG variant
+
+**Issue:** [dotnet/docs#44567](https://github.com/dotnet/docs/issues/44567). **Opened:** January 28, 2025. **Size:** Medium. **GHCP suitability:** Suitable with existing owner `gewarren` and AI-content review.
+
+**Why it still applies:** The [Ollama template instructions](../docs/ai/quickstarts/includes/ai-templates-ollama.md) provide a local web application, while the [local-chat quickstart](../docs/ai/quickstarts/chat-local-model.md) doesn't add retrieval. Neither alone supplies the requested minimal local RAG walkthrough.
+
+**Scope and acceptance:** Adapt the small retrieval/grounded-generation flow from dotnet/docs#44566 to an Ollama chat model, a local embedding model, and a local vector store. Reuse the supported local-client APIs demonstrated by current guides; an in-memory store is sufficient for the minimal example, with its persistence limits stated. Qdrant is an example in the request, not a requirement to add a distributed deployment. Match the vector dimensions to the selected embedding model rather than retain the cloud example's dimensions unchanged. Document model downloads and Ollama prerequisites, then verify ingestion, retrieval, and a grounded answer with local inference and no Azure/OpenAI service dependency. Don't claim that initial model acquisition requires no network or that a cloud-only vector-search sample is fully local. No model server was installed or run during triage.
+
+### dotnet/docs#44570: Add a source-backed semantic image-search example
+
+**Issue:** [dotnet/docs#44570](https://github.com/dotnet/docs/issues/44570). **Opened:** January 28, 2025. **Size:** Medium. **GHCP suitability:** Suitable as one reviewed multimodal retrieval example, not a survey of image AI.
+
+**Why it still applies:** The existing [vector-search quickstart](../docs/ai/vector-stores/how-to/build-vector-search-app.md) embeds text descriptions. The [text-to-image quickstart](../docs/ai/quickstarts/text-to-image.md) generates images; it doesn't retrieve existing images by semantic similarity.
+
+**Why the solution is defined:** The official [multimodal image-retrieval guide](https://learn.microsoft.com/azure/ai-services/computer-vision/how-to/image-retrieval) documents `retrieval:vectorizeImage` and `retrieval:vectorizeText`, API version `2024-02-01`, model compatibility, and geographic availability.
+
+**Scope and acceptance:** Add one small C# walkthrough under `docs/ai`, with a TOC entry and article-relative snippets. Use the documented REST operations unless a verified .NET SDK exposes those specific operations; don't invent an image-vectorization SDK method. Store image identifiers and vectors, vectorize a text query with the same multimodal model version, and return matching images. Verify vector dimensions and ranking with a small, approved, nonsensitive dataset; don't mix ordinary text-only embeddings with image vectors. Reuse established vector-store/search helpers rather than copy unchecked cosine arithmetic from another page. Include service/region/authentication prerequisites and actual authorized-run evidence before publication. No images were uploaded to a model service during triage.
+
+### dotnet/docs#44571: Connect Document Intelligence extraction to the RAG ingestion flow
+
+**Issue:** [dotnet/docs#44571](https://github.com/dotnet/docs/issues/44571). **Opened:** January 28, 2025. **Size:** Medium. **GHCP suitability:** Suitable for one bounded extraction-to-retrieval example, with AI-content review.
+
+**Why it still applies:** The [data-ingestion guide](../docs/ai/conceptual/data-ingestion.md) lists an Azure Document Intelligence reader as future work, not an available integration. A generic ingestion explanation doesn't demonstrate the requested document-service workflow.
+
+**Why the solution is defined:** The official [C# Document Intelligence quickstart](https://learn.microsoft.com/azure/ai-services/document-intelligence/quickstarts/get-started-sdks-rest-api?view=doc-intel-4.0.0&pivots=programming-language-csharp) documents the `Azure.AI.DocumentIntelligence` client and stable `2024-11-30` service API for extraction/layout analysis.
+
+**Scope and acceptance:** Use the official client to extract content from a small approved document, preserve source/page information, and pass the content into the existing chunk/embed/store/retrieve flow. Reuse dotnet/docs#44566 for grounded answer generation instead of creating another unrelated chatbot. Explain that Document Intelligence extracts content; it isn't itself the vector database, search index, or answer-generating model. Don't install a promised reader as if it already shipped. Add the walkthrough/navigation under `docs/ai` and link it from ingestion guidance. Build the client sample, verify extraction and retrieval against an authorized service with nonsensitive input, and record actual results. Triage didn't upload documents or provision services.
+
+### dotnet/docs#44653: Complete the metric-range reference and correct migration guidance
+
+**Issue:** [dotnet/docs#44653](https://github.com/dotnet/docs/issues/44653). **Opened:** February 3, 2025. **Size:** Small, with coordinated API-reference work. **GHCP suitability:** Strong with existing owner `evgenyfedorov2`.
+
+**Why it still applies:** The [metrics catalog](../docs/core/diagnostics/built-in-metrics-diagnostics.md) already documents Windows/Linux range defaults and both range options. However, the [migration section](../docs/core/diagnostics/diagnostic-resource-monitoring.md#migrate-to-metrics-based-resource-monitoring) describes the utilization metrics as `[0, 1]` without those qualifications. The canonical [API XML](https://github.com/dotnet/dotnet-api-docs/blob/main/xml/Microsoft.Extensions.Diagnostics.ResourceMonitoring/ResourceMonitoringOptions.xml) still contains `To be added.` for this property's summary, value, and remarks, and the published reference shows its definition without that explanation.
+
+**Scope and acceptance:** Align the migration bullets with the catalog, explain the Windows `UseZeroToOneRangeForMetrics` option and its current `false` default, and distinguish the Linux-specific option/default. Coordinate completion of the existing API member's XML with the API-docs owner; its DocId is `P:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceMonitoringOptions.UseZeroToOneRangeForMetrics`. The merged [dotnet/extensions#5473](https://github.com/dotnet/extensions/pull/5473) and current source supply the contract, but source comments aren't proof that reference content rendered. Keep metric normalization separate from the deprecated `ResourceUtilization` percentage properties, retain version/experimental qualifications, and verify both conceptual and rendered reference output. Don't create a duplicate API page or claim that all current defaults changed to ratios.
+
+### dotnet/docs#44720: Complete the generic and inherited Orleans surrogate example
+
+**Issue:** [dotnet/docs#44720](https://github.com/dotnet/docs/issues/44720). **Opened:** February 7, 2025. **Size:** Medium. **GHCP suitability:** Suitable with Orleans review from `ReubenBond`.
+
+**Why it still applies:** The [serialization guide](../docs/orleans/host/configuration-guide/serialization.md) and its [surrogate examples](../docs/orleans/host/configuration-guide/snippets/serialization/SurrogateExamples.cs) cover a simple value type and inheritance through `IPopulator`. They don't demonstrate the issue's nested `Foo<T>`/`Bar`/`BarY`/`Baz` composition.
+
+**Scope and acceptance:** Adapt the owner-assisted example into a complete, registered, generated-serializer sample using the existing snippet project and applicable Orleans pivots. Correct the `BazConverter`'s wrong return types and undefined parameter reference, include converter registration and member IDs where required, and explain generic versus run-time derived-type handling. Don't copy `[Immutable]` onto an arbitrary mutable object graph or assume that manually calling a converter proves serializer discovery. Verify actual Orleans serialization round trips for both a concrete generic payload and a base-declared derived payload, preserving nested values and derived members. Retain the existing inheritance/populator guidance and document any supported graph restrictions. The full composite round trip wasn't executed during triage; require that evidence in the implementation PR before publication.
+
+### dotnet/docs#44730: Finish the keyed HttpClient editorial checklist
+
+**Issue:** [dotnet/docs#44730](https://github.com/dotnet/docs/issues/44730). **Opened:** February 10, 2025. **Size:** Small to medium. **GHCP suitability:** Strong with existing owner `CarnaViire`; the 22-item checklist bounds the pass.
+
+**Why it still applies:** The [keyed-client guide](../docs/core/extensions/httpclient-factory-keyed-di.md) still contains the dense three-step paragraph, ambiguous request-handler wording, unexplained example relationships, and the highlighted tone/formatting issues. The actual merged patch for [dotnet/docs#56470](https://github.com/dotnet/docs/pull/56470) only removes quotes around `happen`; it doesn't complete the checklist. The `AnyKey` API link and a pooled-connection-lifetime example already exist, so don't describe those as entirely absent.
+
+**Scope and acceptance:** Reconcile all 22 items with the current text and record which are already satisfied. Simplify the three steps, distinguish an ASP.NET endpoint handler from `HttpMessageHandler`, link captive-dependency/pitfall terms, make the scoped lifetime explicit rather than infer it from the string key, and explain the typed-wrapper/underlying-named-client distinction. Replace the difficult diff with clear before/after examples, reduce unnecessary emphasis/quotes/feeling words, explain the DNS-lifetime choice without a universal interval, and show why global keyed defaults allow unknown names plus when opt-out is useful. Explain `AnyKey` as a sentinel property value, not a magic client-name string or a license to resolve the sentinel directly on .NET 10. Follow repository style rather than automatically add the optional emoji headings or move critical prose into code comments. Preserve lifetime, handler-scope, and registration-order semantics, and execute any changed examples on their stated supported versions.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -3076,6 +3154,22 @@ These issues still need their existing PRs to land, with corrections where noted
 **Evidence:** The actual draft removes the old `common-web-application-architectures.md` and adds a substantive "Modular monoliths" section and diagram in the replacement book's `different-distributed-architectures.md`. The section describes modules, shared-process deployment, and scaling trade-offs. The original author `ardalis` offered to contribute but still requested the docs team's placement approval.
 
 **Maintainer next action:** Decide the replacement/placement with `ardalis` and the curation owners instead of commissioning a competing architecture chapter. Review the draft's blanket claims that modules lack data ownership or that their boundaries matter less: shared process or physical database doesn't by itself preclude logical ownership and enforced module boundaries. Ensure readers of the retired page reach approved replacement guidance, and don't close this issue just because a draft contains the heading.
+
+### dotnet/docs#44428: Correct struct discriminated-union fields for F# 9 and later
+
+**Issue:** [dotnet/docs#44428](https://github.com/dotnet/docs/issues/44428). **Opened:** January 18, 2025. **Status:** Covered by open, non-draft [dotnet/docs#56620](https://github.com/dotnet/docs/pull/56620).
+
+**Evidence:** The issue screenshot was inspected. The actual patch names the differently typed fields `case1`, `case2`, and `case3`, removes the incorrect union-case-name claim, and explains generated `Item` names and same-name/same-type sharing. SDK 10.0.403 FSI with language versions `9.0` and `10.0` reported FS3585 for the unnamed string/int/double version. The corrected example executed with `Case2=42`; a same-name/same-type two-case union also compiled and ran.
+
+**Maintainer next action:** Review the existing PR, preserving the distinction between unique union-case names and field-name/type compatibility. Don't describe all shared field names as forbidden in F# 9 or claim that an actual F# 9 compiler installation was used for the language-version checks. Close only after the correction merges.
+
+### dotnet/docs#44731: Complete WebSocket keep-alive follow-up edits
+
+**Issue:** [dotnet/docs#44731](https://github.com/dotnet/docs/issues/44731). **Opened:** February 10, 2025. **Status:** Partially covered by open, non-draft [dotnet/docs#56469](https://github.com/dotnet/docs/pull/56469), with existing owner `CarnaViire`.
+
+**Evidence:** The actual patch changes only `They sent` to `They are sent` in the [keep-alive section](../docs/fundamentals/networking/websockets.md#keep-alive-strategies). It doesn't complete the other three checklist items: API cross-references, the implication of the default interval when setting `KeepAliveTimeout`, and the conjunction/false-positive-abort explanation.
+
+**Maintainer next action:** Complete the remaining edits through the owner-led work or a coordinated follow-up, not a duplicate typo PR. Preserve the requirement for a pending receive to process incoming PONGs and explain that a responsive peer can still time out if the application doesn't process its frames. Use valid API DocIds without encoding the overload `*` as `%2A`. Don't change the protocol, default values, or timeout behavior, and don't close the whole checklist merely because the one-line PR merges.
 
 ## Assignment order
 

@@ -5,15 +5,15 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 143 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track twenty additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 157 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track twenty additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 400 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#35828](https://github.com/dotnet/docs/issues/35828), opened June 14, 2023.
-- **Results:** 163 defined fixes (143 assignment candidates and 20 with open implementation PRs) and 79 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 376-400 add 13 new assignment candidates and no new fixes with open implementation PRs, alongside 4 closure candidates.
-- **Remaining:** 448 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 100 are complete and 200 remain. Continue with [dotnet/docs#35857](https://github.com/dotnet/docs/issues/35857), opened June 17, 2023, and stop at position 600.
+- **Completed batches:** The 425 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#36523](https://github.com/dotnet/docs/issues/36523), opened August 4, 2023.
+- **Results:** 177 defined fixes (157 assignment candidates and 20 with open implementation PRs) and 86 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 401-425 add 14 new assignment candidates and no new fixes with open implementation PRs, alongside 7 closure candidates.
+- **Remaining:** 423 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 125 are complete and 175 remain. Continue with [dotnet/docs#36538](https://github.com/dotnet/docs/issues/36538), opened August 7, 2023, and stop at position 600.
 - **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the twenty active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
@@ -1559,6 +1559,152 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Acceptance criteria:** Follow the instructions on Windows against an owned, known-state process dump and record the expected thread/stack result. Mark intentional sample waits as such rather than claim every blocked stack is a deadlock. Don't commit production dumps, which can contain secrets. Triage confirmed the concrete introduction gap but didn't run a debugger session.
 
+### dotnet/docs#35887: Qualify profiler object-size padding for the pinned object heap
+
+**Issue:** [dotnet/docs#35887](https://github.com/dotnet/docs/issues/35887). **Opened:** June 20, 2023. **Size:** Small. **GHCP suitability:** Suitable for a source-backed clarification with profiler/GC-owner review.
+
+**Why it still applies:** The [GetObjectSize remarks](../docs/framework/unmanaged-api/profiling/icorprofilerinfo-getobjectsize-method.md#remarks) list SOH and LOH alignment, but omit POH; the [GetObjectSize2 page](../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-getobjectsize2-method.md) doesn't explain padding. The shared profiler interfaces also serve modern CoreCLR, whereas these pages retain .NET Framework requirements.
+
+**Why the solution is defined:** In [.NET 10 GC source](https://github.com/dotnet/runtime/blob/v10.0.0/src/coreclr/gc/gc.cpp), `GCHeap::Alloc` selects `poh_generation` for `GC_ALLOC_PINNED_OBJECT_HEAP`, then calls `allocate_uoh_object`; that allocator rounds size with `AlignQword` and checks eight-byte object alignment. The [profiler implementation](https://github.com/dotnet/runtime/blob/v10.0.0/src/coreclr/vm/proftoeeinterfaceimpl.cpp) returns object size, not the allocator's trailing heap padding.
+
+**Proposed assignment scope:** Add a version-qualified modern-CoreCLR POH alignment note and make it discoverable from `GetObjectSize2`. Preserve the legacy Framework contract and the recommendation to use `GetObjectSize2`; don't imply that .NET Framework has POH, that every pinned SOH object moves to POH, or that Windows-specific alignment statements describe every runtime/platform.
+
+**Acceptance criteria:** GC/profiler owners confirm the Windows x86/x64 values and version scope against the actual allocation path, and both API pages lead to the clarification. No native profiler/32-bit heap walk was executed during triage; include that platform evidence if the implementation adds a heap-walking example rather than only the source-backed note.
+
+### dotnet/docs#35927: Align the introductory metrics samples
+
+**Issue:** [dotnet/docs#35927](https://github.com/dotnet/docs/issues/35927). **Opened:** June 22, 2023. **Size:** Medium. **GHCP suitability:** Strong; two named articles and their sample/filter references define the work.
+
+**Why it still applies:** [Create metrics](../docs/core/diagnostics/metrics-instrumentation.md#create-a-custom-metric) still uses `HatCo.Store`, `hatco.store.hats_sold`, and a fixed four-hat transaction. [Collect metrics](../docs/core/diagnostics/metrics-collection.md#create-an-example-app) uses the `HatCo.HatStore`/`hats-sold` sample with random transactions. The samples aren't already identical. The closed [dotnet/AspNetCore.Docs#29621](https://github.com/dotnet/AspNetCore.Docs/issues/29621) redirects the same request here; it isn't implementation evidence.
+
+**Proposed assignment scope:** Use one shared minimal console sample for both introductions, with consistent meter/instrument names and transaction behavior. Start from the collection article's existing `snippet` region, update the creation article's corresponding explanation, and align each affected listener filter, collection command, and output label. Preserve separately labeled OpenTelemetry/Prometheus extensions; don't import those dependencies into the first minimal example. The source file's default `SECOND` branch differs from the displayed first region, so explicitly build the intended branch or isolate the shared example.
+
+**Acceptance criteria:** Both introductions display the same baseline code and describe its actual cadence/values. Build/run that baseline and demonstrate that the exact documented meter filter receives its counter measurements; verify the collector-specific variants separately.
+
+### dotnet/docs#35932: Name the emitted desktop application configuration file
+
+**Issue:** [dotnet/docs#35932](https://github.com/dotnet/docs/issues/35932). **Opened:** June 23, 2023. **Size:** Small. **GHCP suitability:** Strong; a localized filename clarification.
+
+**Why it still applies:** The [automatic binding-redirection guide](../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md#disable-automatic-binding-redirects-in-desktop-apps) calls the output configuration file `app.config` immediately before stating that source `app.config` isn't modified. The naming still obscures where a desktop developer should inspect generated redirects.
+
+**Proposed assignment scope:** Distinguish source `App.config` from the generated `<application>.exe.config` beside a .NET Framework desktop executable. Explain that automatic redirects modify the emitted configuration, not the source file. Preserve the separately documented web-app `web.config` prompt and the existing enable/disable behavior; don't apply Framework binding redirects to modern .NET. Installed SDK MSBuild targets confirm the generated intermediate filename uses `$(TargetFileName).config`.
+
+**Acceptance criteria:** A desktop reader can identify source and output files without treating them as the same path. If an example artifact is added, build a small Framework desktop fixture and show the output redirect and unchanged source; no binding-conflict build was run during triage.
+
+### dotnet/docs#35947: Explain the Azure compute quota prerequisite
+
+**Issue:** [dotnet/docs#35947](https://github.com/dotnet/docs/issues/35947). **Opened:** June 25, 2023. **Size:** Small. **GHCP suitability:** Strong for a prerequisite/troubleshooting note, with ML owner review.
+
+**Why it still applies:** The [object-detection tutorial](../docs/machine-learning/tutorials/object-detection-model-builder.md) already includes compute selection/creation instructions, but its prerequisites don't explain the reported zero-vCPU subscription quota failure. Adding another generic create-compute step alone wouldn't address the actual error.
+
+**Why the solution is defined:** [Azure Machine Learning quota guidance](https://learn.microsoft.com/azure/machine-learning/how-to-manage-quotas?view=azureml-api-2) distinguishes regional total cores, VM-family cores, offer-dependent limits, and quota requests. Some specialized/GPU families start at zero. Those existing instructions supply the missing resolution path.
+
+**Proposed assignment scope:** Add a short prerequisite and signpost beside compute selection: confirm quota for the selected region/VM family and request an eligible increase through the current Azure workflow before training. Link maintained quota and compute guidance instead of copying portal screenshots. Don't assert that every trial/plan has the same limit, promise a free GPU or approved increase, or silently provision billable resources.
+
+**Acceptance criteria:** The reported zero-quota error leads to the correct quota checks and conditional request path. Retain the existing compute steps and state subscription/region assumptions. No Azure resource or training job was created during triage.
+
+### dotnet/docs#36045: Simplify the partial JSON reader without losing stream correctness
+
+**Issue:** [dotnet/docs#36045](https://github.com/dotnet/docs/issues/36045). **Opened:** June 28, 2023. **Size:** Medium. **GHCP suitability:** Suitable for a bounded sample refactor with current assignee `gewarren` and serialization-owner review.
+
+**Why it still applies:** The [stream-reader section](../docs/standard/serialization/system-text-json/use-utf8jsonreader.md#read-from-a-stream-using-utf8jsonreader) still displays the large buffer/logging example. Proposed [dotnet/docs#38755](https://github.com/dotnet/docs/pull/38755) closed unmerged, so it didn't complete the simplification.
+
+**Proposed assignment scope:** Refactor the example into a readable token loop and a focused refill helper, with concise output that demonstrates state preservation and buffer growth. Preserve the existing explanation of partial tokens, leftover bytes, BOM handling, and bounded progress. Count actual bytes read, retain only valid leftover bytes, grow when a token fills the buffer, and distinguish a short read from confirmed EOF. Correct the existing fixture's trailing comma under default reader options. Don't copy the linked gist verbatim: an owned complete-parser check rejected its current raw-string payload because a JSON object remains unclosed; an early property match doesn't validate a whole document.
+
+**Acceptance criteria:** Compile/run the published example and test small buffers, tokens larger than the initial buffer, fragmented reads, final partial buffers, absent target properties, and invalid/truncated JSON. Validate the entire fixture independently even if the demonstrated search stops early. Preserve the documented Visual Basic limitation/C# helper arrangement; don't promise direct use of a ref struct from Visual Basic or equate every short `Stream.Read` with EOF.
+
+### dotnet/docs#36104: Separate synchronous semaphore blocking from async waits
+
+**Issue:** [dotnet/docs#36104](https://github.com/dotnet/docs/issues/36104). **Opened:** July 5, 2023. **Size:** Small. **GHCP suitability:** Strong; precise API semantics and localized prose.
+
+**Why it still applies:** The [semaphore guide](../docs/standard/threading/semaphore-and-semaphoreslim.md) introduces `WaitAsync` but still says a zero count blocks the requesting thread without qualification. An owned zero-count probe obtained an incomplete task, allowed caller progress, released a permit, and completed the wait.
+
+**Proposed assignment scope:** Explain that synchronous `Wait` blocks until entry, whereas `WaitAsync` returns a task and `await` can suspend a logical operation without occupying a waiting thread. Describe the count as a limit on concurrent entries/operations, not exclusively distinct OS threads; async operations can coordinate through the same semaphore. Preserve the lack of thread/task ownership enforcement and the need to release only acquired permits, normally in `finally`. Coordinate this edit with [dotnet/docs#35180](https://github.com/dotnet/docs/issues/35180)'s platform wording in the same article.
+
+**Acceptance criteria:** A reader can distinguish blocking and asynchronous acquisition and understand an async I/O concurrency limit. Any new example demonstrates the actual bound, handles cancellation/acquisition correctly, and doesn't claim a continuation must resume on the original thread.
+
+### dotnet/docs#36240: Remove the unnecessary PowerShell 5 cmdlet dependency
+
+**Issue:** [dotnet/docs#36240](https://github.com/dotnet/docs/issues/36240). **Opened:** July 12, 2023. **Size:** Small. **GHCP suitability:** Strong for a read-only detection correction.
+
+**Why it still applies:** The moved [Framework version-detection guide](../docs/framework/install/how-to-determine-which-versions-are-installed.md#query-the-registry-using-powershell) still calls `Get-ItemPropertyValue` without a minimum-version note. That cmdlet isn't available in the older PowerShell versions identified in the report.
+
+**Proposed assignment scope:** Use `Get-ItemProperty` and explicitly read `.Release` before the existing version switch, so the example doesn't need the newer convenience cmdlet. Preserve descending greater-than-or-equal release checks and the no-detection message. Don't copy the reporter's installer branch: its `Invoke-WebRequest` isn't a PowerShell 2 solution, its download variables aren't defined, and it reports installation success without checking the installer.
+
+**Acceptance criteria:** The read-only old/new retrieval forms produce the same release value and classification, with explicit behavior for absent keys. A current Windows probe confirmed both forms return `534296`; PowerShell 2/4 weren't executed during triage. Validate any promised down-level compatibility in the applicable host rather than infer it from a successful newer-host run. Don't install Framework, edit the registry, or introduce an OS-upgrade recipe.
+
+### dotnet/docs#36242: Align the string-marshalling overview with current guidance
+
+**Issue:** [dotnet/docs#36242](https://github.com/dotnet/docs/issues/36242). **Opened:** July 13, 2023. **Size:** Small. **GHCP suitability:** Strong with current assignee `gewarren` and interop-owner review.
+
+**Why it still applies:** The old Framework route now leads to the [standard string-marshalling overview](../docs/standard/native-interop/marshalling-strings.md). Its table still presents `StringBuilder` output and archived examples without the performance/encoding context from [current best practices](../docs/standard/native-interop/best-practices.md#string-parameters). A path move didn't reconcile the guidance.
+
+**Proposed assignment scope:** Add a prominent current-guidance link and qualify the legacy `StringBuilder`/archived examples. Explain that `StringBuilder` remains a supported runtime-marshalling technique but isn't the default efficient choice for output buffers; signpost caller-owned `char[]`/`byte[]` buffers and their size/encoding contracts. Preserve native ABI-specific valid cases and distinguish modern `LibraryImport` availability from .NET Framework `DllImport`. Coordinate the concrete examples with [dotnet/docs#36243](https://github.com/dotnet/docs/issues/36243) rather than create two competing rewrites.
+
+**Acceptance criteria:** The overview no longer reads as an unconditional recommendation of the expensive pattern, its links reach the current guidance/examples, and no text claims that Framework supports `LibraryImport` or that every native string uses the same encoding or allocator.
+
+### dotnet/docs#36243: Demonstrate input strings and native output buffers
+
+**Issue:** [dotnet/docs#36243](https://github.com/dotnet/docs/issues/36243). **Opened:** July 13, 2023. **Size:** Medium. **GHCP suitability:** Suitable for two bounded native-call examples with interop-owner review.
+
+**Why it still applies:** The [best-practices String parameters section](../docs/standard/native-interop/best-practices.md#string-parameters) supplies recommendations and allocation explanations, but still lacks runnable examples of the recommended input/output patterns.
+
+**Proposed assignment scope:** Add a read-only UTF-16 input-string example and a caller-owned output-buffer example with explicit capacity, returned length, terminator handling, and error handling. Windows `GetFileAttributesW` and `GetCurrentDirectoryW` provide concrete non-destructive APIs for those two cases; label that platform scope. Use supported C# `LibraryImport` where applicable and an equivalent Visual Basic `DllImport` form, with exact declarations and current guidance. Show an `ArrayPool` buffer returned in `finally` if pooling is demonstrated. Don't pass an immutable/interned `string` as a writable `[Out]` buffer or confuse a native-owned string with a caller-owned buffer.
+
+**Acceptance criteria:** Execute both language examples on Windows, including a non-ASCII path and a buffer-resize case, and record actual native results. Verify allocation/ownership, native count units, and null termination against the Win32 contracts; a managed-only build isn't evidence that marshalling works. Cross-link the companion overview correction instead of duplicating all of its legacy examples.
+
+### dotnet/docs#36262: Qualify the YARP telemetry package's platform dependencies
+
+**Issue:** [dotnet/docs#36262](https://github.com/dotnet/docs/issues/36262). **Opened:** July 14, 2023. **Size:** Small. **GHCP suitability:** Strong for the documentation claim; exclude the separate library-extraction proposal.
+
+**Why it still applies:** After the telemetry article split, both [events](../docs/fundamentals/networking/telemetry/events.md#yarptelemetryconsumption) and [event counters](../docs/fundamentals/networking/telemetry/event-counters.md) still say `Yarp.Telemetry.Consumption` works in "any .NET application." Released YARP 2.3.0 [telemetry project source](https://github.com/dotnet/yarp/blob/v2.3.0/src/TelemetryConsumption/Yarp.Telemetry.Consumption.csproj) references the reverse-proxy project, whose [project file](https://github.com/dotnet/yarp/blob/v2.3.0/src/ReverseProxy/Yarp.ReverseProxy.csproj) requires `Microsoft.AspNetCore.App`.
+
+**Proposed assignment scope:** Replace both universal claims with compatible-framework/platform qualifications. Explain that use outside a reverse-proxy app doesn't remove the package's dependencies, and that platforms without the required ASP.NET Core shared framework, such as Android, aren't covered by the claim. Preserve supported non-web console scenarios. Link native `EventListener`/counter guidance where appropriate without promising identical telemetry support on every mobile runtime.
+
+**Acceptance criteria:** Check the dependency chain for the actual published package/version used by the article and validate representative supported-console versus Android-target restore/build behavior. Released 2.3.0 and current source were inspected, but NuGet metadata retrieval failed and no MAUI restore was run during triage. A component extraction in `dotnet/yarp` (formerly `microsoft/reverse-proxy`) requires a separate product decision; don't include it in this docs assignment.
+
+### dotnet/docs#36368: Add the missing MAUI test-project setup bridge
+
+**Issue:** [dotnet/docs#36368](https://github.com/dotnet/docs/issues/36368). **Opened:** July 24, 2023. **Size:** Medium. **GHCP suitability:** Suitable for a focused setup/example correction with MAUI owner review.
+
+**Why it still applies:** The [architecture chapter](../docs/architecture/maui/unit-testing.md) names MSTest and links alternatives, but doesn't show how a host-side test project references app code with compatible target frameworks. Its displayed `OrderDetailViewModel` constructor and later test invocation also disagree, so naming a framework alone doesn't provide the requested working example.
+
+**Why the solution is defined:** The current [MAUI unit-testing guide](https://learn.microsoft.com/dotnet/maui/deployment/unit-testing) supplies concrete class-library/app-project target-framework and reference setup. Use that canonical recipe rather than invent platform compatibility or require device execution for every view-model test.
+
+**Proposed assignment scope:** Add a short host-side test-project setup section and link the maintained MAUI configuration steps, using a supported .NET target. Keep the chapter's MSTest convention explicit; the canonical guide's xUnit recommendation isn't permission to mix attributes/assertions from different frameworks. Provide one matching model/view-model constructor, mock dependencies, project reference, and passing test. Distinguish host-side unit tests from tests that require platform services or UI.
+
+**Acceptance criteria:** Start from the documented projects and run the test command on the named SDK/platform without constructor or TFM incompatibilities. Show that the test uses mocked services rather than live servers. No MAUI workload, emulator, or referenced application test suite was installed or run during triage.
+
+### dotnet/docs#36373: Make the Enumeration sample nullable-correct
+
+**Issue:** [dotnet/docs#36373](https://github.com/dotnet/docs/issues/36373). **Opened:** July 24, 2023. **Size:** Small. **GHCP suitability:** Strong; actual compiler diagnostics bound the correction.
+
+**Why it still applies:** An owned compilation of the exact [Enumeration base class](../docs/architecture/microservices/microservice-ddd-cqrs-patterns/enumeration-classes-over-enum-types.md#implement-an-enumeration-base-class), with necessary imports and nullable analysis enabled, emitted CS8765 for `Equals(object)`, CS8767 for `CompareTo(object)`, and CS0659 for equality without a hash override.
+
+**Proposed assignment scope:** Match the nullable override/interface signatures, handle null and invalid comparison arguments explicitly, and supply a hash implementation consistent with the existing runtime-type/Id equality rule. Preserve equality for distinct instances with the same derived type and Id, and preserve the class's reflection-based enumeration purpose. Include necessary imports in the runnable sample; don't disable nullable analysis, hide the warnings with pragmas, or add an unrelated enumeration-library redesign.
+
+**Acceptance criteria:** Compile the complete base/derived examples with nullable warnings as errors, and test null/non-enumeration equality, valid ordering, null/invalid comparison behavior, and equal values' hash codes. Explain any intentional `IComparable` null-handling correction; don't promise collision-free hashes. Keep the displayed excerpt aligned with its verified executable.
+
+### dotnet/docs#36405: Replace the deprecated Key Vault FlexVolume reference
+
+**Issue:** [dotnet/docs#36405](https://github.com/dotnet/docs/issues/36405). **Opened:** July 26, 2023. **Size:** Small. **GHCP suitability:** Strong; a vendor-identified successor resolves the named reference.
+
+**Why it still applies:** The [centralized-configuration chapter](../docs/architecture/cloud-native/centralized-configuration.md#azure-key-vault) still recommends Key Vault FlexVolume. The [provider README](https://github.com/Azure/kubernetes-keyvault-flexvol#readme) explicitly marks that solution deprecated/unsupported and directs newer Kubernetes users to the Azure Key Vault provider for Secrets Store CSI Driver.
+
+**Proposed assignment scope:** Replace the obsolete recommendation with a short, accurate reference to the [current AKS Key Vault/Secrets Store CSI Driver guide](https://learn.microsoft.com/azure/aks/csi-secrets-store-driver). Explain the secret-as-mounted-volume role and delegate prerequisites, identity/authorization, and rotation limitations to maintained guidance. Don't copy the old installer manifest or silently present its client-secret authentication model as the current CSI setup.
+
+**Acceptance criteria:** No active FlexVolume recommendation remains in the affected paragraph, the successor link resolves, and the wording doesn't promise automatic refresh of every application configuration source. Keep the work a prose/link update; no AKS cluster or Key Vault resources need to be created for it.
+
+### dotnet/docs#36504: Document the CA1068 params exception
+
+**Issue:** [dotnet/docs#36504](https://github.com/dotnet/docs/issues/36504). **Opened:** August 3, 2023. **Size:** Small. **GHCP suitability:** Strong; analyzer execution confirms the missing case.
+
+**Why it still applies:** The [CA1068 special cases](../docs/fundamentals/code-analysis/quality-rules/ca1068.md#special-cases) list optional and ref/out parameters but omit the trailing parameter-array exception. An SDK 10.0.403 probe explicitly enabled CA1068: a required `string` after the token produced the one expected diagnostic, while trailing `params string[]`, a supported `params IEnumerable<string>` collection, and an optional parameter didn't.
+
+**Proposed assignment scope:** Add the `params` exception and explain that a parameter array must occupy the final parameter position. Link the existing language reference and provide a concise signature if helpful. Keep C# parameter arrays/collections and Visual Basic `ParamArray` language/version support distinct; don't claim that any arbitrary required parameter after a token is exempt.
+
+**Acceptance criteria:** Run enabled-rule positive/negative controls for each documented form on the named analyzer/compiler versions. The rule's ordinary cancellation-token-last recommendation and breaking-change warning remain intact.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -1772,6 +1918,12 @@ Arrange the shared Azure Bicep include and incremental-generator API work in the
 The global-using F1 metadata, CQRS forward reference, and placeholder-casing recommendation are small, source-backed changes. Coordinate the F1 lookup with the existing IDE assignee. Pair the missing Toolkit namespace with prerequisite/binding-context checks; don't assume a prefix-only edit makes a current sample runnable.
 
 Route the entry-block and AddSource rendering corrections through Roslyn API documentation; the latter needs rendered-output evidence, not another unmerged compiler patch. Keep the mobile GC change runtime-specific and link maintained platform references. The SDK install, certificate-tool, and dump-introduction tasks need isolated platform validation; the F# overview needs release-by-release factual review rather than unsourced historical reconstruction.
+
+The output-config filename, async semaphore wording, CA1068 exception, and deprecated FlexVolume reference are additional small changes. Pair semaphore edits with the existing platform correction. Keep quota guidance conditional on the actual subscription/region rather than promise compute availability.
+
+Coordinate the two string-marshalling tasks as one coherent update, with actual native execution for new examples. Align the metrics examples and all collection filters together. The JSON simplification needs complete valid fixtures and partial-read regressions; the Enumeration correction needs nullable and equality-contract checks, not warning suppression.
+
+Qualify POH guidance for modern CoreCLR without inventing Framework support. Verify the selected YARP package's platform dependencies before publishing universal claims. The PowerShell correction must stay read-only, and the MAUI test bridge must demonstrate compatible target frameworks and matching constructor dependencies.
 
 Review the twenty existing implementation PRs separately from new assignments; the F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review.
 

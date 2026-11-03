@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 400 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#35828](https://github.com/dotnet/docs/issues/35828), opened June 14, 2023.
-- **Results:** 79 closure candidates and 163 [clearly defined fixes](issues-with-defined-fixes.md) (143 assignment candidates and 20 fixes with open implementation PRs).
-- **Latest batch:** Issues 376-400, from [dotnet/docs#35043](https://github.com/dotnet/docs/issues/35043) through dotnet/docs#35828: 4 closure candidates, 13 new assignment candidates, and no new fixes with open implementation PRs.
-- **Remaining:** 448 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 100 are complete and 200 remain. Continue with [dotnet/docs#35857](https://github.com/dotnet/docs/issues/35857), opened June 17, 2023, and stop at position 600. Refresh issue states; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 425 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#36523](https://github.com/dotnet/docs/issues/36523), opened August 4, 2023.
+- **Results:** 86 closure candidates and 177 [clearly defined fixes](issues-with-defined-fixes.md) (157 assignment candidates and 20 fixes with open implementation PRs).
+- **Latest batch:** Issues 401-425, from [dotnet/docs#35857](https://github.com/dotnet/docs/issues/35857) through dotnet/docs#36523: 7 closure candidates, 14 new assignment candidates, and no new fixes with open implementation PRs.
+- **Remaining:** 423 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 125 are complete and 175 remain. Continue with [dotnet/docs#36538](https://github.com/dotnet/docs/issues/36538), opened August 7, 2023, and stop at position 600. Refresh issue states; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -726,3 +726,59 @@ The [Resgen reference](../docs/framework/tools/resgen-exe-resource-file-generato
 The [property-declaration diagnostic article](../docs/csharp/language-reference/compiler-messages/property-declaration-errors.md#required-members) includes CS9035 in its diagnostic list, `f1_keywords`, and required-member resolution section. The live article also contains the diagnostic. An owned compiler run emitted **error** CS9035 for an omitted required property and no errors after an object initializer supplied it.
 
 **Suggested closure explanation:** Close the missing-message documentation request and link the existing required-members explanation rather than create a duplicate `cs9035.md`. Correct the issue's warning/error distinction. A live Visual Studio F1 lookup wasn't exercised; if routing still fails in a specific IDE version, retain that concrete publishing/help-routing problem separately rather than claim the topic is absent.
+
+### dotnet/docs#35940: Resolve the missing Console import in the objects examples
+
+**Opened:** June 23, 2023. **Confidence:** High for the reported import failure. **Reason:** Both current examples explicitly import System and execute.
+
+The [objects article](../docs/csharp/fundamentals/object-oriented/objects.md) now includes standalone [class](../docs/csharp/fundamentals/object-oriented/snippets/objects/Program.cs) and [struct](../docs/csharp/fundamentals/object-oriented/snippets/objects/Application.cs) programs. Both begin with `using System;`; neither depends on an interactive host supplying that import. An owned compiler/execution probe used the exact files without implicit global usings. The class example printed Leopold/6, Molly/16, and Molly/16; the struct example printed Alex/9, Spencer/7, and Alex/9, as documented.
+
+**Suggested closure explanation:** Close the specific `Console`-not-found report because the current displayed files explicitly import the namespace and run. Don't infer anything about the former interactive host's imports, or claim that unrelated prose about value-type storage has been reviewed and corrected.
+
+### dotnet/docs#36100: Find the documented AssemblyAttribute item syntax
+
+**Opened:** July 4, 2023. **Confidence:** High. **Reason:** The linked destination now contains the syntax missing from the earlier fix.
+
+The [GenerateAssemblyInfo property documentation](../docs/core/project-sdk/msbuild-props.md#generateassemblyinfo) links to [Set assembly attributes in a project file](../docs/standard/assembly/set-attributes-project-file.md#set-arbitrary-attributes). That destination explicitly demonstrates a fully qualified `AssemblyAttribute Include`, `_Parameter1`, `_Parameter2`, and the generated `AssemblyMetadataAttribute`, with a link for non-string parameter forms. An owned SDK 10.0.403 project followed the pattern and generated an attribute whose reflected key/value were `BuildDate=2026-11-03`.
+
+**Suggested closure explanation:** Close the missing-syntax request and link directly to the arbitrary-attributes section. The issue correctly observed that an earlier link alone didn't solve the problem; the current destination's actual example, not that earlier PR's closure, resolves it. Coordinate the recommendation with current assignee `gewarren`; don't extend it to unrelated version-property or Source Link claims.
+
+### dotnet/docs#36399: Keep trimming annotations and AOT code-generation guidance in their existing topics
+
+**Opened:** July 26, 2023. **Confidence:** High. **Reason:** Both requested concepts already have dedicated explanations, identified by the runtime owner.
+
+The [runtime-owner reply](https://github.com/dotnet/docs/issues/36399#issuecomment-1652916205) identifies [trim-warning guidance](../docs/core/deploying/trimming/fixing-warnings.md) for `DynamicallyAccessedMembers` and [AOT-warning guidance](../docs/core/deploying/native-aot/fixing-warnings.md) for runtime code generation. The current trimming page demonstrates annotation requirements and propagation, reflection alternatives, and source generators. The AOT page explains build-time native-code availability and demonstrates a `MakeGenericType` pattern that raises IL3050 and fails after AOT compilation.
+
+**Suggested closure explanation:** Answer the placement question with those existing topics rather than duplicate the preview-blog paragraphs in the overview. Preserve the distinction between member preservation and native-code generation: an annotation doesn't generate arbitrary missing native code, and `MakeGenericType` isn't a promise that every possible invocation fails in every AOT app.
+
+### dotnet/docs#36463: Distinguish a misleading time-zone label from a DST-invalid time
+
+**Opened:** July 31, 2023. **Confidence:** High for the technical distinction. **Reason:** The proposed new category doesn't describe an additional TimeZoneInfo time-validity state.
+
+The [time-zone overview](../docs/standard/datetime/time-zone-overview.md#time-zone-essentials) explicitly defines invalid and ambiguous times as consequences of a regional zone's adjustment rules. A confusing EST label in an email signature doesn't establish either condition, and a fixed UTC-05:00 offset doesn't stop representing valid instants during summer. An owned Windows probe represented July 1, 2023 at 12:00 with that offset and converted the same instant to 13:00 at UTC-04:00 in the regional Windows `Eastern Standard Time` zone.
+
+**Suggested closure explanation:** Explain the label-versus-adjustment-rule distinction instead of adding the proposed "time zone is inoperative" definition to the .NET glossary. Human ambiguity in an email signature is real, but it doesn't make the timestamp nonexistent. Don't equate the Windows zone ID's standard-time wording with a year-round fixed offset, or claim to resolve a support team's signature policy through a runtime documentation change.
+
+### dotnet/docs#36489: Explain Turkish casing before the comparison example
+
+**Opened:** August 2, 2023. **Confidence:** High. **Reason:** The requested lead-in already precedes the sample.
+
+The [culture-sensitive comparison section](../docs/standard/base-types/best-practices-strings.md#string-comparisons-that-use-the-current-culture) explicitly explains ordinary English I/i, Turkish capital dotted I (`U+0130`), and lowercase dotless i (`U+0131`) before the bill/BILL example. An owned culture-specific probe confirmed the two Turkish mappings and that case-insensitive BILL/Bill equality is true for English and false for Turkish.
+
+**Suggested closure explanation:** Close the missing-explanation request and point to the existing lead-in. Don't repeat the issue's claim that lowercase `i` doesn't exist in Turkish; the distinction concerns its uppercase partner.
+
+### dotnet/docs#36502: Follow the Native AOT diagnostics limitation link
+
+**Opened:** August 2, 2023. **Confidence:** High. **Reason:** The overview now links the requested diagnostics documentation.
+
+The [Native AOT limitations list](../docs/core/deploying/native-aot/index.md#limitations-of-native-aot-deployment) directly links "Diagnostic support for debugging and profiling" to [Diagnostics and instrumentation](../docs/core/deploying/native-aot/diagnostics.md). The destination contains actual capability/limitation guidance for telemetry, development-time diagnostics, native debugging, CPU profiling, and heap analysis, with version qualifications. The overview's native-debug-information discussion links there too.
+
+**Suggested closure explanation:** Close the precise follow-up requested by [the review comment](https://github.com/dotnet/docs/pull/36397#discussion_r1275315265). The link and substantive destination, not merely the parent PR's merge, establish completion. Coordinate with current assignees `Rick-Anderson` and `LakshanF`; don't interpret closure as verification that every diagnostics capability is identical across all releases.
+
+### dotnet/docs#36523: Explain the existing Option Explicit default
+
+**Opened:** August 4, 2023. **Confidence:** High for the documentation question. **Reason:** Explicit declarations already default to On; removing the language option is a separate language-design proposal.
+
+The [Option Explicit reference](../docs/visual-basic/language-reference/statements/option-explicit-statement.md) documents the default `On` setting, warns against `Off`, and explains project/compiler settings when a source file omits the statement. An owned Visual Basic compiler probe with no source-level option emitted BC30451 for an undeclared variable under the default options, while an explicit compiler override to `Off` allowed the same source.
+
+**Suggested closure explanation:** Clarify that normal Visual Basic projects don't require the statement to enable the default checking. Decline the request to remove configurable behavior from Visual Basic, JavaScript, and all other languages as outside this documentation issue's scope. Don't claim that `On` can't be overridden, or conflate Option Explicit with Option Strict.

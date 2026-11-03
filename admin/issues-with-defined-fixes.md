@@ -5,16 +5,16 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 100 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track fourteen additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 113 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track sixteen additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 300 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#32096](https://github.com/dotnet/docs/issues/32096), opened October 31, 2022.
-- **Results:** 114 defined fixes (100 assignment candidates and 14 with open implementation PRs) and 58 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 276-300 add 7 new assignment candidates and 2 fixes with open implementation PRs, alongside 8 closure candidates.
-- **Remaining:** 548 issues from this snapshot are unreviewed. The requested additional 150 issues (positions 151-300) are complete. Stop here; any future tranche starts with [dotnet/docs#32112](https://github.com/dotnet/docs/issues/32112), opened November 1, 2022.
-- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the fourteen active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
+- **Completed batches:** The 325 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#33295](https://github.com/dotnet/docs/issues/33295), opened January 3, 2023.
+- **Results:** 129 defined fixes (113 assignment candidates and 16 with open implementation PRs) and 60 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 301-325 add 13 new assignment candidates and 2 fixes with open implementation PRs, alongside 2 closure candidates.
+- **Remaining:** 523 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 25 are complete and 275 remain. Continue with [dotnet/docs#33307](https://github.com/dotnet/docs/issues/33307), opened January 4, 2023, and stop at position 600.
+- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the sixteen active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
 
@@ -1129,6 +1129,136 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Acceptance criteria:** Verify the named project-file placement and resulting package/assembly metadata, with both language project names explained. The SDK 10.0.403 probe produced package `1.2.3-beta1`, assembly `1.2.0.0`, file `1.2.3.4`, and informational `triage-probe` from those project properties. If shared props are added to the explanation, verify their import/override behavior too.
 
+### dotnet/docs#32332: Illustrate variance positions beside the explanation
+
+**Issue:** [dotnet/docs#32332](https://github.com/dotnet/docs/issues/32332). **Opened:** November 8, 2022. **Size:** Small. **GHCP suitability:** Strong for a localized example, not another variance overview.
+
+**Why it still applies:** The [generics article](../docs/standard/generics/covariance-and-contravariance.md) now has clearer introductory definitions and existing assignment examples. However, the requested paragraph about return and parameter positions still lacks an adjacent declaration example that connects those positions to generic delegates and interfaces. Don't describe the entire article as lacking examples.
+
+**Proposed assignment scope:** Add a compact, paired C#/VB illustration beside that paragraph, or reuse appropriate existing snippet regions. Show covariant output and contravariant input in both a generic interface and a generic delegate. Connect the declarations to safe assignments with the article's `Base`/`Derived` vocabulary, and retain the deeper examples rather than duplicate a second tutorial.
+
+**Acceptance criteria:** Compile the examples in both languages and identify which declared positions permit each conversion. Preserve the reference-type limitation and invariant counterexample. Don't imply that variance annotations belong on ordinary classes or that every syntactic occurrence of a type parameter has the same composed variance.
+
+### dotnet/docs#32337: Explain CA1305's UI-culture diagnostics
+
+**Issue:** [dotnet/docs#32337](https://github.com/dotnet/docs/issues/32337). **Opened:** November 8, 2022. **Size:** Small. **GHCP suitability:** Strong; the missing diagnostic family is present in current analyzer source.
+
+**Why it still applies:** [CA1305](../docs/fundamentals/code-analysis/quality-rules/ca1305.md) describes omitted format providers, but not explicit `CurrentUICulture`/`InstalledUICulture` arguments. The [current analyzer](https://github.com/dotnet/sdk/blob/main/src/Microsoft.CodeAnalysis.NetAnalyzers/src/Microsoft.CodeAnalysis.NetAnalyzers/Microsoft.NetCore.Analyzers/Runtime/SpecifyIFormatProvider.cs) still declares and reports the UI-culture variants.
+
+**Proposed assignment scope:** Extend the cause, rationale, fixes, and suppression guidance for this case. Distinguish resource-language selection, user regional formatting, installed UI language, and invariant machine-readable output. Explain when an intentional formatting policy justifies a narrow suppression; don't suggest that every explicit provider satisfies the rule or that changing the resource language is the fix.
+
+**Acceptance criteria:** Demonstrate the diagnostic and corrected behavior in both documentation languages. An SDK 10.0.403 probe emitted CA1305 for both UI-culture properties and formatted the same number as `19,50` with German current culture versus `19.50` with English UI culture. Record the chosen cultures and justify any suppression rather than copy the existing omitted-provider rationale unchanged.
+
+### dotnet/docs#32685: State JsonTypeInfo customization limits on the APIs
+
+**Issue:** [dotnet/docs#32685](https://github.com/dotnet/docs/issues/32685). **Opened:** November 21, 2022. **Size:** Medium. **GHCP suitability:** Suitable after an API-repository handoff and a version-specific member pass.
+
+**Why it still applies:** The [conceptual article](../docs/standard/serialization/system-text-json/custom-contracts.md) now maps common modifications to kinds, and several API members already state their restrictions. However, [JsonTypeInfo API XML](https://github.com/dotnet/dotnet-api-docs/blob/main/xml/System.Text.Json.Serialization.Metadata/JsonTypeInfo.xml) still describes `CreateObject` and `PolymorphismOptions` failures with the uninformative "current metadata Kind" wording called out by the issue. The [runtime owner](https://github.com/dotnet/docs/issues/32685#issuecomment-1333598965) explicitly requests individual-API documentation because support changes by release.
+
+**Proposed assignment scope:** Arrange the work in `dotnet/dotnet-api-docs` and identify the remaining vague members, including the generic `JsonTypeInfo<T>.CreateObject` surface. State actual supported kinds and other setter restrictions from matching release source. Preserve existing accurate member documentation and version metadata instead of replacing it with a timeless conceptual matrix.
+
+**Acceptance criteria:** Use mutable resolver-produced metadata and distinguish kind restrictions, converter capability, and metadata locks. An SDK 10 probe accepted factories for representative object/list/dictionary contracts and rejected `None`; release source separately checks converter support, so those results don't prove that every enumerable accepts a factory. Check preview .NET 11 union behavior separately rather than extrapolate from .NET 10. Obtain API-owner review before publication.
+
+### dotnet/docs#32773: Respect historical offsets in ambiguous-time examples
+
+**Issue:** [dotnet/docs#32773](https://github.com/dotnet/docs/issues/32773). **Opened:** November 28, 2022. **Size:** Small to medium. **GHCP suitability:** Strong; deterministic custom-zone fixtures expose the error.
+
+**Why it still applies:** [Automatic resolution](../docs/standard/datetime/resolve-ambiguous-times.md) still subtracts `BaseUtcOffset` in both languages, ignoring a historical `BaseUtcOffsetDelta`. The [user-choice article](../docs/standard/datetime/let-users-resolve-ambiguous-times.md) still explains the same invalid comparison, and its VB snippet uses it for standard/daylight labels. The C# user-choice snippet already displays offsets without those labels.
+
+**Proposed assignment scope:** Preserve the automatic example's standard-time policy with the appropriate time-zone conversion API rather than manual base-offset arithmetic. Correct both articles' prose and affected language regions. For user choice, either present the actual offsets consistently or classify a chosen `DateTimeOffset` through the zone; don't restore the invalid base comparison or assume the smaller offset always means standard time. Keep the separate runtime API proposal outside this fix.
+
+**Acceptance criteria:** Exercise nonzero base-offset deltas, positive and negative daylight deltas, both user choices, and relevant `DateTime.Kind` inputs. Owned SDK 10 fixtures found a one-hour error in the original arithmetic for both daylight-delta signs; `ConvertTimeToUtc` preserved the standard-time choice. The negative-delta fixture also disproved the proposed smaller-offset shortcut. Verify C# and VB outputs without changing the machine's time zone.
+
+### dotnet/docs#32822: Distinguish worker-thread settings from legacy I/O counts
+
+**Issue:** [dotnet/docs#32822](https://github.com/dotnet/docs/issues/32822). **Opened:** December 1, 2022. **Size:** Small. **GHCP suitability:** Strong with runtime-owner review; coordinate with current assignee `kouvel`.
+
+**Why it still applies:** [Minimum-thread configuration](../docs/core/runtime-config/threading.md#minimum-threads) correctly names worker threads but links `SetMinThreads` without explaining its second parameter. The [owner's answer](https://github.com/dotnet/docs/issues/32822#issuecomment-1352484294) confirms no corresponding I/O-count setting and explains the changed implementation. [.NET 10 portable-pool source](https://github.com/dotnet/runtime/blob/v10.0.0/src/libraries/System.Private.CoreLib/src/System/Threading/PortableThreadPool.cs) retains legacy I/O counts for validation/reporting, separately from worker-thread control.
+
+**Proposed assignment scope:** Add the requested distinction beside the setting and link the existing Windows-thread-pool exception. Explain the supported implementation/version boundaries without inventing a completion-port configuration key, claiming all API parameters are ignored, or treating a reported legacy count as a separate live completion-thread pool.
+
+**Acceptance criteria:** Check modern portable-pool behavior against the owner/source, preserve older Framework distinctions, and respect `UseWindowsThreadPool`'s documented unsupported settings/APIs. Don't recommend the removed .NET 7 revert switch as a supported .NET 8+ solution. Any API-reference amendment requires coordination with its owning repository.
+
+### dotnet/docs#32842: Document custom mapping and saved-model persistence
+
+**Issue:** [dotnet/docs#32842](https://github.com/dotnet/docs/issues/32842). **Opened:** December 2, 2022. **Size:** Medium. **GHCP suitability:** Strong for a source-backed how-to; coordinate with `luisquintanilla` and `michaelgsharp`.
+
+**Why it still applies:** The [transforms reference](../docs/machine-learning/resources/transforms.md#custom-transformations) lists `CustomMapping`, and the TensorFlow tutorial uses one, but neither supplies the requested define/use/save walkthrough. The official [basic example](https://github.com/dotnet/machinelearning/blob/main/docs/samples/Microsoft.ML.Samples/Dynamic/Transforms/CustomMapping.cs) and [save/load example](https://github.com/dotnet/machinelearning/blob/main/docs/samples/Microsoft.ML.Samples/Dynamic/Transforms/CustomMappingSaveAndLoad.cs) establish a concrete implementation pattern.
+
+**Proposed assignment scope:** Add a focused custom-mapping how-to and navigation that covers input/output schemas, pipeline integration, a named contract, and its attributed factory for persistence. Explain why the null-contract example can't be saved. Use the existing sample as source, not a proposal for a new transformer framework. Verify release-specific assembly discovery: the source itself qualifies explicit `RegisterAssembly` as necessary only for old versions, so don't mandate that historical step for every current package.
+
+**Acceptance criteria:** Run both language samples through transform, save, and reload with a fresh context/process, and compare the actual row results. Pin the supported package version and record any discovery requirements. Keep this concrete child task separate from broad ML.NET trackers and preserve both owners' coordination.
+
+### dotnet/docs#32884: Signpost the reported Bootstrap license-path deployment collision
+
+**Issue:** [dotnet/docs#32884](https://github.com/dotnet/docs/issues/32884). **Opened:** December 5, 2022. **Size:** Small, prose only. **GHCP suitability:** Suitable after a handoff to `dotnet/AspNetCore.Docs`.
+
+**Why it still applies:** The original path now redirects to the [ASP.NET Core article](https://github.com/dotnet/AspNetCore.Docs/blob/main/aspnetcore/breaking-changes/6/identity-bootstrap4-to-5.md). Its current text doesn't include the [maintainer-approved narrow signpost](https://github.com/dotnet/docs/issues/32884#issuecomment-1489411553). A later reporter supplies the same `Identity\lib\bootstrap\LICENSE` error after a .NET 6-to-8 upgrade.
+
+**Proposed assignment scope:** In the owning article, add the approved additional-information note that links this issue for the specific reported Web Deploy path/error. Distinguish the reported file/directory collision from proof that every access-denied error has that cause. Don't expand the note into a universal migration requirement, a broad deletion instruction, or advice to grant indiscriminate Full Control.
+
+**Acceptance criteria:** Preserve Bootstrap-selection guidance and the existing redirect. Match the actual error/path and attribute the workaround to the discussion rather than claim a verified product fix. Any added cleanup procedure needs a safe, owned deployment reproduction and must preserve the required license file; the bounded signpost doesn't require such a procedure.
+
+### dotnet/docs#32905: Make CA1506 suppression choices explicit
+
+**Issue:** [dotnet/docs#32905](https://github.com/dotnet/docs/issues/32905). **Opened:** December 7, 2022. **Size:** Small. **GHCP suitability:** Strong; project-wide suppression has a direct SDK reproduction.
+
+**Why it still applies:** [CA1506](../docs/fundamentals/code-analysis/quality-rules/ca1506.md) now shows pragma and configuration-file suppression, but not the explicitly requested `NoWarn` alternative. Its threshold section and related links don't explain the choice between one violation, a scoped rule setting, and project-wide suppression.
+
+**Proposed assignment scope:** Clarify those scopes and add an append-preserving project-property example with appropriate `.csproj`/`.vbproj` context. Link shared `Directory.Build.props` or command-line usage rather than replace the rule page with a build-configuration tutorial. Distinguish suppression from a justified threshold change, and don't recommend suppression merely to avoid a code-quality decision.
+
+**Acceptance criteria:** Enable the rule with a controlled threshold, show its diagnostic, and verify that `NoWarn` removes CA1506 without discarding other warnings or existing property entries. An SDK 10 probe emitted two CA1506 diagnostics before suppression and none afterward while retaining CA1305. Explain the scope in plain language and verify both language project forms.
+
+### dotnet/docs#32978: Distinguish POCOs from data-only DTOs
+
+**Issue:** [dotnet/docs#32978](https://github.com/dotnet/docs/issues/32978). **Opened:** December 10, 2022. **Size:** Small, primarily prose. **GHCP suitability:** Strong; the contradiction has identified source text.
+
+**Why it still applies:** The [POCO glossary entry](../docs/standard/glossary.md#poco) still forbids methods, events, inheritance, and interfaces. The [domain-model guide](../docs/architecture/microservices/microservice-ddd-cqrs-patterns/microservice-domain-model.md#rich-domain-model-versus-anemic-domain-model) explicitly describes entities with behavior, so the restrictive glossary creates the reported contradiction.
+
+**Proposed assignment scope:** Define POCO in terms of ordinary CLR objects without mandatory framework-specific base types or contracts. Explain that POCOs can contain behavior and that a data-only DTO is one use, not the definition. Correct the blanket member/inheritance prohibitions and cross-link the domain-model explanation if useful. Don't strip methods from domain entities or mandate DDD for simple CRUD models.
+
+**Acceptance criteria:** The glossary and domain-model guidance agree about behavior and distinguish a dependency requirement from an absolute ban on inheritance/interfaces. Preserve the existing rich/anemic trade-off and obtain architecture review. Prose review suffices unless the change adds a new code example.
+
+### dotnet/docs#33257: Complete the DataFrame guide's string-input option
+
+**Issue:** [dotnet/docs#33257](https://github.com/dotnet/docs/issues/33257). **Opened:** December 28, 2022. **Size:** Small. **GHCP suitability:** Strong for a remaining checklist item, not a replacement guide.
+
+**Why it still applies:** [dotnet/docs#34470](https://github.com/dotnet/docs/pull/34470) merged on March 8, 2023, and the [published guide](../docs/machine-learning/how-to-guides/getting-started-dataframe.md) covers installation, file loading, inspection, transformations, combination, and saving. However, the issue explicitly names string input as well as file input; that option remains absent. [Current API source](https://github.com/dotnet/machinelearning/blob/main/src/Microsoft.Data.Analysis/DataFrame.IO.cs) names the real method `LoadCsvFromString`, not the issue's abbreviated `LoadCsvString`.
+
+**Proposed assignment scope:** Add the missing in-memory CSV alternative to the existing load-data section and connect it to the same downstream workflow. Preserve the completed guide and navigation; don't reopen the entire outline or invent `Describe`/`LoadCsvString` APIs in place of `Description`/`LoadCsvFromString`.
+
+**Acceptance criteria:** With a stated package version, run file and string loading against the same valid CSV and compare row/column counts, types, and representative values. Keep C#/VB examples consistent and verify that the subsequent transformation, merge, and save still work. Don't close solely because the original guide PR merged while the named input option remains undocumented.
+
+### dotnet/docs#33258: Add the general ONNX model-consumption guide
+
+**Issue:** [dotnet/docs#33258](https://github.com/dotnet/docs/issues/33258). **Opened:** December 28, 2022. **Size:** Medium to large. **GHCP suitability:** Suitable for the explicit outline, coordinated with current assignee `luisquintanilla`.
+
+**Why it still applies:** [dotnet/docs#33532](https://github.com/dotnet/docs/pull/33532) closed without merging, despite its closing reference and the issue's `in-pr` label. The proposed how-to isn't in the checkout. The existing [object-detection tutorial](../docs/machine-learning/tutorials/object-detection-onnx.md) and [save/load guide](../docs/machine-learning/how-to-guides/save-load-machine-learning-models-ml-net.md) provide pieces, not the requested general schema/hardware/pipeline guide.
+
+**Proposed assignment scope:** Complete the specified how-to: ONNX use cases, model inspection with Netron, input/output names and shapes, POCO mappings, shape overrides, CPU/GPU prerequisites, and the prediction pipeline. Reuse verified existing examples and the abandoned PR only as an outline, not proof of working code. Cover the requested pretrained/Azure export categories with current capability and lifecycle qualifications; don't imply that every AutoML model or service export supports ONNX. Add the page to the existing ML.NET TOC and check redirects.
+
+**Acceptance criteria:** Run an available, identified model through the documented CPU path and record real outputs. Verify any advertised GPU path with its provider/package/hardware requirements rather than promise untested fallback or universal acceleration. Check every schema dimension and preserve preprocessing compatibility. Map adapted source sections and flag generated material for expert review; don't infer completion from the closed PR.
+
+### dotnet/docs#33273: Correct CRLF parsing across ReadOnlySequence segments
+
+**Issue:** [dotnet/docs#33273](https://github.com/dotnet/docs/issues/33273). **Opened:** December 30, 2022. **Size:** Small to medium. **GHCP suitability:** Strong; the published implementations supply a direct regression comparison.
+
+**Why it still applies:** The [buffers article](../docs/standard/io/buffers.md) still includes the defective manual `snippet6` from [MyClass.cs](../samples/snippets/csharp/buffers/MyClass.cs). A CR without a following LF can leave invalid search state, and direct access to an empty next segment also fails. The same file's `snippet10` already implements the intended contract through `SequenceReader`.
+
+**Proposed assignment scope:** Correct the manual example and any affected explanation/callers to preserve the existing complete-CRLF contract. Reuse the known-correct helper where appropriate instead of inventing a competing parser. Don't assume the suggested one-line index reset fixes repeated CRs, later valid delimiters, and empty segments. Keep the low-level slicing explanation consistent with the final code.
+
+**Acceptance criteria:** Cover array-backed and linked segments, CRLF within/across segments, missing LF, trailing CR, multiple CRs, empty segments, and empty lines. A false result must preserve the input; success must return the line without CRLF and consume exactly through the delimiter. An owned nine-case linked-segment run against the actual source passed only five cases with the manual helper and all nine with the existing `SequenceReader` helper. Add regression evidence for the final published snippet rather than merely show it compiles.
+
+### dotnet/docs#33293: Give Native AOT its own .NET 7 feature section
+
+**Issue:** [dotnet/docs#33293](https://github.com/dotnet/docs/issues/33293). **Opened:** January 3, 2023. **Size:** Small, prose/navigation only. **GHCP suitability:** Strong; the requested prominence change is explicit.
+
+**Why it still applies:** [What's new in .NET 7](../docs/core/whats-new/dotnet-7.md#performance) still presents Native AOT only as a performance-list item. The issue specifically asks for a standalone section so deployment-oriented readers don't miss the feature.
+
+**Proposed assignment scope:** Promote the existing feature description to a peer-level Native AOT section and link the established deployment guidance. Explain the .NET 7 console-app/trimming context without importing later release capabilities. Correct the unqualified "no external dependencies" wording: an app can avoid an installed .NET runtime while retaining native platform dependencies. Don't imply that AOT first made every self-contained CLI deployment possible.
+
+**Acceptance criteria:** The page's headings expose Native AOT independently of performance, existing links remain valid, and the wording distinguishes runtime independence from absence of all dependencies. Keep the historical version scope and avoid a duplicate deployment tutorial.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -1247,6 +1377,22 @@ These issues still need their existing PRs to land, with corrections where noted
 
 **Maintainer next action:** Verify the reported `out T`/`ICollection<T>` diagnostic and corrected alternatives, keep composed variance positions accurate, and don't remove mutability requirements just to select a read-only interface. Use real diagnostic wording rather than a fabricated slash-separated message, and fix the percent-encoded backticks in generic API IDs. Check the actual Visual Studio/F1 help target after publication; existing `f1_keywords` metadata alone doesn't prove the link works. Scope completion to CS1961 rather than promise documentation for every compiler error or selective redirection of every historical catch-all URL.
 
+### dotnet/docs#32996: Cover the CS0281 public-key mismatch
+
+**Issue:** [dotnet/docs#32996](https://github.com/dotnet/docs/issues/32996). **Opened:** December 13, 2022. **Status:** Covered by open, non-draft [dotnet/docs#56661](https://github.com/dotnet/docs/pull/56661).
+
+**Why the solution is defined:** The actual patch adds the missing public-key diagnostic and project-signing guidance to [CS0281](../docs/csharp/misc/cs0281.md). However, its example still combines a fixed public-key literal with newly generated keys and relies on assembly version/culture changes while claiming to demonstrate a key mismatch. The reporter's granting assembly is unsigned, which the patch's strong-named-grantor-only explanation doesn't cover.
+
+**Maintainer next action:** Correct and execute the existing PR's reproductions rather than assign a duplicate. Demonstrate matching assembly names with missing/wrong consumer keys, derive the attribute's full public key from the actual fixture, and verify the corresponding correction. Preserve the original name-mismatch case separately, distinguish public keys from tokens, and explain applicable signing/toolchain boundaries. Don't change signing policy or remove signing as a universal fix, and don't close before the verified correction merges.
+
+### dotnet/docs#33166: Replace F# release-note pointers with verified documentation
+
+**Issue:** [dotnet/docs#33166](https://github.com/dotnet/docs/issues/33166). **Opened:** December 21, 2022. **Status:** Partially covered by open, draft [dotnet/docs#50098](https://github.com/dotnet/docs/pull/50098); current assignees are `BillWagner` and `Copilot`.
+
+**Why the solution is defined:** [F# 7](../docs/fsharp/whats-new/fsharp-7.md) and [F# 8](../docs/fsharp/whats-new/fsharp-8.md) still contain only announcement links. The [maintainer's latest direction](https://github.com/dotnet/docs/issues/33166#issuecomment-3398616215) explicitly requires documentation for both versions. The current draft adds F# 7 sections and examples, but doesn't address F# 8. Earlier [dotnet/docs#49119](https://github.com/dotnet/docs/pull/49119) closed unmerged and explicitly warns of fabricated content; it isn't completion evidence.
+
+**Maintainer next action:** Review the existing F# 7 draft with its owners rather than duplicate that implementation. Map each feature to the F# 7 announcement/RFC and run examples with the intended language version, including C# interop and expected diagnostics. Review the broad miscellaneous-feature list rather than accept it without source checks. Keep F# 8 as an explicit remaining requirement in a separate version-scoped change, with source mapping, executable examples, and expert review. Don't close the issue after F# 7 alone or merge both release adaptations into one PR.
+
 ## Assignment order
 
 For the quickest independent changes, start with the table escaping, the paired COM wording corrections, or the existing prose-only signposts. Coordinate the instrumentation link with its current owner. Treat the two COM issues as one assignment, and use the existing hosted-service issue rather than duplicate work for dotnet/docs#23440.
@@ -1281,4 +1427,8 @@ The test-naming clarification and version-property file labels are additional sm
 
 Coordinate Windows debugger setup with the LLDB task in one article pass. The build-enable include requires a supported/unsupported IDE-rule inventory. Arrange the elastic-trivia API correction in its owning repository before assignment; it isn't a change that a docs-only checkout can publish.
 
-Review the fourteen existing implementation PRs separately from new assignments. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either new implementation early. Issues that don't fit either candidate category are omitted for a future task.
+The variance-position illustration, POCO definition, CA1506 suppression choices, and Native AOT feature prominence are additional localized tasks. Keep the UI-culture explanation distinct from omitted-provider fixes. The ambiguous-time correction needs historical and negative-daylight fixtures in both languages; the CRLF parser needs full delimiter/state regressions, not only an index reset.
+
+Coordinate the worker/I/O count clarification with `kouvel`. Arrange the JsonTypeInfo API and Bootstrap signpost work in their owning repositories before assignment. Preserve both custom-transform owners and verify modern factory discovery rather than copy the obsolete registration requirement. Complete the existing DataFrame guide instead of replacing its merged work; coordinate the general ONNX guide with its current owner and verify schema/provider assumptions.
+
+Review the sixteen existing implementation PRs separately from new assignments; the F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review. Issues that don't fit either candidate category are omitted for a future task.

@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 300 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#32096](https://github.com/dotnet/docs/issues/32096), opened October 31, 2022.
-- **Results:** 58 closure candidates and 114 [clearly defined fixes](issues-with-defined-fixes.md) (100 assignment candidates and 14 fixes with open implementation PRs).
-- **Latest batch:** Issues 276-300, from [dotnet/docs#30639](https://github.com/dotnet/docs/issues/30639) through dotnet/docs#32096: 8 closure candidates, 7 new assignment candidates, and 2 fixes with open implementation PRs.
-- **Remaining:** 548 issues from this snapshot are unreviewed. The requested additional 150 issues (positions 151-300) are complete. Stop here; any future tranche starts with [dotnet/docs#32112](https://github.com/dotnet/docs/issues/32112), opened November 1, 2022. Refresh issue states then; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 325 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#33295](https://github.com/dotnet/docs/issues/33295), opened January 3, 2023.
+- **Results:** 60 closure candidates and 129 [clearly defined fixes](issues-with-defined-fixes.md) (113 assignment candidates and 16 fixes with open implementation PRs).
+- **Latest batch:** Issues 301-325, from [dotnet/docs#32112](https://github.com/dotnet/docs/issues/32112) through dotnet/docs#33295: 2 closure candidates, 13 new assignment candidates, and 2 fixes with open implementation PRs.
+- **Remaining:** 523 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 25 are complete and 275 remain. Continue with [dotnet/docs#33307](https://github.com/dotnet/docs/issues/33307), opened January 4, 2023, and stop at position 600. Refresh issue states; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -552,3 +552,21 @@ The [HttpWebRequest-to-HttpClient migration guide](../docs/fundamentals/networki
 The [IDE0002 page](../docs/fundamentals/code-analysis/style-rules/ide0002.md) now wraps the C# methods in `class C`. Its VB example also includes `Public Class C`. The qualified and simplified calls visibly refer to members of that class.
 
 **Suggested closure explanation:** Close as addressed in both examples. No further wrapper or language-specific rewrite is needed for the original request.
+
+### dotnet/docs#32983: Match the MAUI app and unit-test target frameworks
+
+**Opened:** December 11, 2022. **Confidence:** High for the original target-framework mismatch. **Reason:** The sample now supplies a matching platform-neutral target.
+
+The [current chapter](../docs/architecture/maui/unit-testing.md) uses MSTest rather than the reported .NET 7 xUnit setup. In the linked sample, [ClientApp.csproj](https://github.com/dotnet/eShop/blob/main/src/ClientApp/ClientApp.csproj) includes `net10.0` alongside its platform-specific targets and omits executable output for that neutral target. [ClientApp.UnitTests.csproj](https://github.com/dotnet/eShop/blob/main/tests/ClientApp.UnitTests/ClientApp.UnitTests.csproj) targets the same `net10.0` and references the app.
+
+The [maintainer's earlier confirmation](https://github.com/dotnet/docs/issues/32983#issuecomment-2138587623) independently reports successful tests after the .NET 8 update. Current source verifies that the neutral-target mechanism remains; this review didn't run the MAUI test suite or certify every dependency.
+
+**Suggested closure explanation:** The sample no longer asks a neutral test project to reference only platform-specific app targets. Link the matching project files and updated chapter. Close the original framework-compatibility report without claiming every MAUI UI API works in a platform-neutral unit test.
+
+### dotnet/docs#33121: Interpret the TensorFlow CPU-feature message
+
+**Opened:** December 20, 2022. **Confidence:** High for the quoted message. **Reason:** The reported output is informational, not an exception or an instruction required to run the tutorial.
+
+The issue quotes `cpu_feature_guard.cc:193` and the oneDNN/AVX2 optimization message. [TensorFlow v2.10.0 source](https://github.com/tensorflow/tensorflow/blob/v2.10.0/tensorflow/core/platform/cpu_feature_guard.cc#L192-L198) emits that exact text with `LOG(INFO)`. The optional rebuild concerns use of CPU instructions in additional operations; the message doesn't establish that model training failed.
+
+**Suggested closure explanation:** Explain the informational severity and distinguish optional native optimization from a runtime failure. No tutorial change or TensorFlow rebuild is needed solely for this output. A separate exception, termination, or failed result would require its own evidence; this recommendation doesn't claim that the reporter's entire training run succeeded.

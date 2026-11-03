@@ -128,7 +128,7 @@ public static IEnumerable<ApiScope> GetApiScopes()
 
 When a client requests one of these scopes, IdentityServer adds the name of the linked API resource to the access token's `aud` claim. For example, a token for the `basket` scope has `basket` as its audience. Set each API's `Identity:Audience` configuration value to the name of its API resource.
 
-An API scope alone doesn't add an API-specific audience to the token. If your deployment defines only scopes, access tokens have no `aud` claim and an API that validates the audience rejects them. In that case, define API resources and request new access tokens. Don't disable audience validation. For more information, see [API Resources](https://docs.duendesoftware.com/identityserver/fundamentals/resources/api-resources/) in the IdentityServer documentation.
+An API scope alone doesn't add an API-specific audience to the token. If your deployment defines only scopes, access tokens by default have no `aud` claim, and an API that validates the audience rejects them. If you enable the `EmitStaticAudienceClaim` option, IdentityServer adds a shared `{issuer}/resources` audience instead. That audience is the same for every API, so it doesn't identify a specific API. To restrict each token to its intended API, define API resources and request new access tokens. Don't disable audience validation. For more information, see [API Resources](https://docs.duendesoftware.com/identityserver/fundamentals/resources/api-resources/) and [API Scopes](https://docs.duendesoftware.com/identityserver/fundamentals/resources/api-scopes/) in the IdentityServer documentation.
 
 ### Configuring identity resources
 

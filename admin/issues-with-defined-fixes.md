@@ -5,16 +5,16 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 184 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track twenty-one additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 196 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track twenty-three additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 475 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#37748](https://github.com/dotnet/docs/issues/37748), opened October 26, 2023.
-- **Results:** 205 defined fixes (184 assignment candidates and 21 with open implementation PRs) and 93 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 451-475 add 14 new assignment candidates and 1 new fix with an open implementation PR, alongside 3 closure candidates.
-- **Remaining:** 373 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 175 are complete and 125 remain. Continue with [dotnet/docs#37757](https://github.com/dotnet/docs/issues/37757), opened October 27, 2023, and stop at position 600.
-- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the twenty-one active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
+- **Completed batches:** The 500 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#38645](https://github.com/dotnet/docs/issues/38645), opened December 7, 2023.
+- **Results:** 219 defined fixes (196 assignment candidates and 23 with open implementation PRs) and 96 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 476-500 add 12 new assignment candidates and 2 new fixes with open implementation PRs, alongside 3 closure candidates.
+- **Remaining:** 348 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 200 are complete and 100 remain. Continue with [dotnet/docs#38649](https://github.com/dotnet/docs/issues/38649), opened December 7, 2023, and stop at position 600.
+- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the twenty-three active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
 
@@ -1975,6 +1975,126 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Acceptance:** Both tool pages use consistent terminology and current WinDbg naming. Check the actual extension/loading behavior on the stated distribution before promising automatic loading; don't compare a `1.x` package number numerically with a `10.x` engine build. The archived diagnostics installation guide supports the historical distinction but explicitly defers maintained guidance to this repository; a Windows debugger session wasn't started during triage.
 
+### dotnet/docs#37757: State P/Invoke source-generation target requirements
+
+**Issue:** [dotnet/docs#37757](https://github.com/dotnet/docs/issues/37757). **Opened:** October 27, 2023. **Size:** Small. **GHCP suitability:** Strong; an interop-owner answer defines the missing qualification.
+
+**Why it still applies:** The [P/Invoke source-generation guide](../docs/standard/native-interop/pinvoke-source-generation.md) says that the .NET 7 SDK includes the generator but doesn't clearly distinguish SDK availability from target-framework support. The [owner's answer](https://github.com/dotnet/docs/issues/37757#issuecomment-1821447683) explicitly rejects .NET Standard 2.0 because generated code depends on newer runtime APIs.
+
+**Bounded fix:** Add an applicability note that explains the supported modern .NET targets and version-specific generated-code dependencies. Link the existing [.NET 7+ recommendation](../docs/standard/native-interop/best-practices.md) and explain the compatible `DllImport`/multitargeting alternative without promising a generator NuGet package or copied-attribute workaround.
+
+**Acceptance:** A reader can't mistake installation of a newer SDK for supported `LibraryImport` generation in a `netstandard2.0` asset. Verify any multitargeted example on each stated target and don't imply that every later generator emits code compatible with the original .NET 7 API surface.
+
+### dotnet/docs#37788: Explain how to prepare managed libraries for Native AOT
+
+**Issue:** [dotnet/docs#37788](https://github.com/dotnet/docs/issues/37788). **Opened:** October 29, 2023. **Size:** Medium. **GHCP suitability:** Strong; coordinate with assignee `jtschuster`.
+
+**Why it still applies:** The [Native AOT overview](../docs/core/deploying/native-aot/index.md#aot-compatibility-analyzers) now documents `IsAotCompatible`, including its analyzer defaults and target requirements, but doesn't supply the requested library test-app workflow. The [trimming preparation guide](../docs/core/deploying/trimming/prepare-libraries-for-trimming.md) supplies a related test-app pattern, not a complete Native AOT preparation recipe. The native-library export page addresses a different task.
+
+**Bounded fix:** Add a focused managed-library preparation guide, connect the existing analyzer material, and show a small console test app that roots the library for complete analysis and publishes with Native AOT. The discussion explicitly approves the [owner's library-compatibility blog](https://devblogs.microsoft.com/dotnet/creating-aot-compatible-libraries/) as source material. Keep release-specific claims aligned with one selected supported example version.
+
+**Acceptance:** Demonstrate analysis warnings and their correction, publish and execute the test app with the stated native toolchain, and explain why a normal library build alone doesn't analyze every dependency implementation. Preserve conditional settings for older targets, add the TOC entry, and identify copied/adapted source content in the implementation PR. Don't confuse AOT-compatible managed assemblies with exporting a native DLL.
+
+### dotnet/docs#37817: Document an SDK servicing update before Visual Studio updates
+
+**Issue:** [dotnet/docs#37817](https://github.com/dotnet/docs/issues/37817). **Opened:** October 31, 2023. **Size:** Small. **GHCP suitability:** Strong; coordinate with assignee `gewarren`.
+
+**Why it still applies:** The [SDK/Visual Studio versioning guide](../docs/core/porting/versioning-sdk-msbuild-vs.md) explains separate SDK installations, and the [upgrade guide](../docs/core/install/upgrade.md) explains version control, but neither gives the requested short security-servicing playbook for a customer who can't update Visual Studio yet.
+
+**Bounded fix:** Add a linked procedure: identify the supported SDK feature band for the existing Visual Studio, install its newer servicing SDK, and inspect/update `global.json` selection. Explain `latestPatch` where the reader intentionally wants the newest installed patch in that feature band. Don't recommend a jump to an incompatible feature band or a persistent `RuntimeFrameworkVersion` override as the normal solution.
+
+**Acceptance:** Verify SDK selection and a build with the unchanged target framework in the stated Visual Studio/SDK pairing. Explain the difference between updating development tools and patching a deployed app; self-contained apps still require an updated publication. Preserve deliberate SDK pinning rather than advise every customer to delete `global.json`.
+
+### dotnet/docs#37852: Correct the POCO definition behind the domain-model contradiction
+
+**Issue:** [dotnet/docs#37852](https://github.com/dotnet/docs/issues/37852). **Opened:** November 1, 2023. **Size:** Small. **GHCP suitability:** Strong; a paired terminology correction.
+
+**Why it still applies:** The [DDD chapter](../docs/architecture/microservices/microservice-ddd-cqrs-patterns/ddd-oriented-microservice.md) allows behavior in POCO entities, but its linked [glossary](../docs/standard/glossary.md#poco) forbids methods and interfaces and equates POCOs with DTOs. The reporter's contradiction follows the actual linked definition, not merely a misunderstanding to dismiss.
+
+**Bounded fix:** Define POCO as a plain CLR object without required infrastructure-framework coupling, not necessarily a data-only DTO. Clarify that ordinary domain behavior, domain-owned base classes, and interfaces don't inherently disqualify an object. Align the chapter's wording with its [concrete domain-model example](../docs/architecture/microservices/microservice-ddd-cqrs-patterns/net-core-microservice-domain-model.md#implement-domain-entities-as-poco-classes), which already explains those distinctions.
+
+**Acceptance:** The glossary and both domain explanations agree. Preserve the persistence-ignorance guidance and the distinction from an anemic model; don't remove business logic from the sample or claim that a POCO must avoid every base class or interface.
+
+### dotnet/docs#37864: Document startup EventPipe provider arguments
+
+**Issue:** [dotnet/docs#37864](https://github.com/dotnet/docs/issues/37864). **Opened:** November 2, 2023. **Size:** Small. **GHCP suitability:** Strong; coordinate with assignee `tommcdon`.
+
+**Why it still applies:** The [environment-variable reference](../docs/core/diagnostics/eventpipe.md#trace-using-environment-variables) still documents only three `DOTNET_EventPipeConfig` fields. Released .NET 10 `ep_enable_2` source parses a fourth argument field. An owned startup trace delivered `Example=42` to an EventSource through that field and captured its emitted value.
+
+**Bounded fix:** Document the fourth field, hexadecimal keywords, decimal levels, and a verified shell-specific example. Explain parser delimiter limitations: the released helper splits at commas and colons and doesn't provide a general quoted-value escape. Don't promise that every `dotnet-trace --providers` string, nested filter expression, empty field, or repeated-provider entry has identical environment-variable behavior.
+
+**Acceptance:** Start a child app through environment variables alone and inspect the resulting trace to prove that the argument reached the provider. Include a representative supported built-in provider case and explicitly delimit any unsupported argument syntax rather than invent a quoting workaround.
+
+### dotnet/docs#37874: Explain and demonstrate scopes in a custom logging provider
+
+**Issue:** [dotnet/docs#37874](https://github.com/dotnet/docs/issues/37874). **Opened:** November 2, 2023. **Size:** Medium. **GHCP suitability:** Strong; the framework's scope-provider contract supplies the implementation path.
+
+**Why it still applies:** The moved [custom-provider guide](../docs/core/extensions/logging/custom-provider.md) doesn't explain scopes. Its actual logger implements `BeginScope` as a no-op, so the current sample compiles but doesn't preserve scope information. An owned check compiled the exact logger and confirmed its null scope result; the problem isn't a missing `CreateScope` member on `ILogger`.
+
+**Bounded fix:** Explain the intentional no-op and add a focused scope-support path that uses `ISupportExternalScope` and `IExternalScopeProvider`, including how the provider receives scope state and includes it in log output. Reuse framework scope storage rather than create a global mutable stack, and link the existing consumer-side scope overview.
+
+**Acceptance:** Use the logger through `LoggerFactory`; verify nested scopes, disposal, and independent asynchronous operations without duplicated scope entries or cross-request state leaks. Preserve the simple provider's color/configuration behavior and don't confuse logging scopes with dependency-injection service scopes.
+
+### dotnet/docs#37999: Clarify HTTP content ownership, buffering, and decoding
+
+**Issue:** [dotnet/docs#37999](https://github.com/dotnet/docs/issues/37999). **Opened:** November 10, 2023. **Size:** Medium. **GHCP suitability:** Suitable for the three source-backed documentation corrections, with networking-owner review.
+
+**Why it still applies:** Current `HttpContent` XML doesn't clearly document supplied-stream ownership or `ReadAsStringAsync` charset/BOM/UTF-8 selection. The [HTTP migration guide](../docs/fundamentals/networking/http/httpclient-migrate-from-httpwebrequest.md#usage-of-buffering-properties) now describes response buffering, but doesn't resolve all three concerns. The [complete runtime discussion](https://github.com/dotnet/runtime/issues/94471) supplies the owner's answers; its closure redirects the remaining work here.
+
+**Bounded fix:** Route API remarks through `dotnet/dotnet-api-docs`: don't dispose the supplied serialization stream, use `leaveOpen` for wrappers, and throw to fail content production. Explain charset selection, BOM detection, and the UTF-8 default without promising general encoding sniffing. Connect the conceptual HttpClient guidance to `ResponseHeadersRead`, including the `SendAsync` route for a POST and response/stream lifetime.
+
+**Acceptance:** Verify a failed request-content producer, a slow streamed response, and representative charset/BOM/default-decoding cases against a controlled server. Preserve the difference between generic `HttpContent` behavior and HttpClient's completion option. Don't copy the discussion's erroneous claim that network JSON can freely use any encoding; keep RFC requirements distinct from the API's decoder behavior.
+
+### dotnet/docs#40841: Provide a migration path from legacy HTTP Polly handlers
+
+**Issue:** [dotnet/docs#40841](https://github.com/dotnet/docs/issues/40841). **Opened:** November 14, 2023. **Size:** Medium. **GHCP suitability:** Strong; the owner explicitly agrees that a guide is needed.
+
+**Why it still applies:** The [resilience overview](../docs/core/resilience/index.md) deprecates `Microsoft.Extensions.Http.Polly`, while [HTTP resilience guidance](../docs/core/resilience/http-resilience.md) explains the replacement APIs without a before/after migration. Its standard handler adds multiple strategies, so a mechanical API rename doesn't preserve every old policy.
+
+**Bounded fix:** Add a focused migration guide for one representative named/typed client, map its legacy retry/timeout configuration to an explicit resilience pipeline, and link the remaining strategy references. Explain default strategy ordering, timeout scope, state sharing, retry predicates, unsafe-method retries, and removal of the old handler registration where those affect the migration.
+
+**Acceptance:** Pin compatible package versions and execute before/after cases with a deterministic test handler, including transient failure, success, timeout, and a non-idempotent request. Don't claim universal policy equivalence, stack old/new handlers accidentally, or promise that Upgrade Assistant performs the migration based on a speculative discussion. Preserve this transferred issue's original creation date in triage order.
+
+### dotnet/docs#38262: Document StreamReader's corrected decoder flush at EOF
+
+**Issue:** [dotnet/docs#38262](https://github.com/dotnet/docs/issues/38262). **Opened:** November 15, 2023. **Size:** Small. **GHCP suitability:** Suitable for a precise .NET 8 compatibility entry with assignee `gewarren`.
+
+**Why it still applies:** The issue reports a specific missing compatibility note, not a request to restore silent data loss. Merged [dotnet/runtime#69888](https://github.com/dotnet/runtime/pull/69888), assigned to .NET 8, explains the EOF decoder-flush fix and the prior missing `DecoderFallbackException`. An owned .NET 10 check produced the replacement character with default UTF-8 and the exception with strict UTF-8.
+
+**Bounded fix:** Add the .NET 8 entry using the breaking-change template and relevant index/TOC. Describe incomplete encoded input at EOF, replacement fallback, and strict decoder behavior. Keep the separate ICU/NLS string-comparison observations out of the cause of the decoding change.
+
+**Acceptance:** Run the original minimal input on the documented before/after runtime versions and verify both fallback configurations. State the actual affected APIs and fix invalid/incomplete input where appropriate; don't recommend a culture switch or silently discarding data as the general workaround. The owned modern-runtime check isn't a substitute for the final .NET 7/.NET 8 comparison.
+
+### dotnet/docs#38290: Fix the BinaryFormatter alternatives list
+
+**Issue:** [dotnet/docs#38290](https://github.com/dotnet/docs/issues/38290). **Opened:** November 17, 2023. **Size:** Small. **GHCP suitability:** Strong; coordinate with assignee `gewarren`.
+
+**Why it still applies:** The [security guide](../docs/standard/serialization/binaryformatter-security-guide.md#preferred-alternatives) still lists `BinaryReader` and `BinaryWriter` "for XML and JSON" under serializers. The newer [serializer chooser](../docs/standard/serialization/binaryformatter-migration-guide/choose-a-serializer.md) already documents MessagePack and protobuf-net for compact binary formats, but the original list remains misleading.
+
+**Bounded fix:** Remove the incorrect low-level I/O recommendation from the serializer list and connect readers to the existing migration chooser, including its binary-format options and trade-offs. Explain that no alternative is a universal drop-in replacement rather than promise identical performance, payload size, or type support.
+
+**Acceptance:** The original entry no longer presents primitive binary readers/writers as XML/JSON object serializers. Preserve the security warnings and maintained migration links; don't introduce another custom binary format, unsafe compatibility switch, or unsupported claim that the original issue was fully resolved by a different page.
+
+### dotnet/docs#38328: Explain when to choose JSON source-generation modes
+
+**Issue:** [dotnet/docs#38328](https://github.com/dotnet/docs/issues/38328). **Opened:** November 19, 2023. **Size:** Small. **GHCP suitability:** Strong; coordinate with assignee `gewarren` and dotnet/docs#37370.
+
+**Why it still applies:** The [how-to](../docs/standard/serialization/system-text-json/source-generation.md#specify-source-generation-mode) shows configuration and the companion mode pages describe capabilities, but the choice still lacks the owner's direct default recommendation. The discussion explains that the default emits both modes and usually avoids a needless functionality/size trade-off.
+
+**Bounded fix:** Add a short decision guide: normally retain the default, use metadata for deserialization/required fallback contracts, and treat serialization-only generation as a deliberate restriction for a verified serialization-only workload. Link the existing mode/capability pages and qualify streaming fast-path behavior by release instead of repeating an obsolete blanket async limitation.
+
+**Acceptance:** Verify a default round trip, metadata-only round trip, and serialization-only deserialization failure; owned .NET 10 checks confirmed those cases and the generated handler differences. Don't reuse the old example's native-image sizes as universal measurements or say that the default supports every possible model/options combination.
+
+### dotnet/docs#38558: Complete LOH diagnostic scope and event distinctions
+
+**Issue:** [dotnet/docs#38558](https://github.com/dotnet/docs/issues/38558). **Opened:** December 2, 2023. **Size:** Small. **GHCP suitability:** Suitable for the remaining diagnostic clarification with assignee `gewarren`.
+
+**Why it still applies:** Merged [dotnet/docs#39683](https://github.com/dotnet/docs/pull/39683) fixed the category/counter names and added lightboxes for the ETW images. The [current article](../docs/standard/garbage-collection/large-object-heap.md) still leaves an instance-name placeholder and blurs an allocation event with the conditions for a generation-2 collection. Those remaining questions aren't resolved by that partial merge.
+
+**Bounded fix:** Qualify the legacy `.NET CLR Memory` counters, explain how to select an owned Framework process using its `Process ID` counter, and point modern .NET readers to current runtime diagnostics. Distinguish allocation notifications from budget-driven full collections and qualify the illustrative trace. Add the same full-size-image access to the first counter screenshot if needed; the current source image was inspected and doesn't need an invented missing-image fix.
+
+**Acceptance:** Verify the counter-instance example with an owned .NET Framework process and the modern diagnostic route with the selected runtime. Confirm that the event explanation doesn't promise a collection for every LOH allocation. An owned modern check allocated three 90,000-byte generation-2 arrays without an intervening generation-2 collection; that result doesn't establish a universal AllocationTick sampling interval.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -2149,6 +2269,22 @@ These issues still need their existing PRs to land, with corrections where noted
 
 **Maintainer next action:** Review the existing PR instead of assigning another implementation. Replace `%60` with literal backticks in the API xref, qualify equality claims for the actual collection types rather than every possible collection, and correct the new paragraph that describes all generated record properties as `init`-only: positional record structs are read-write unless `readonly`. Verify that the published snippet regions expose every required declaration and remain consistent with the earlier `Person` examples. Merge only after those corrections; an open patch isn't closure evidence.
 
+### dotnet/docs#37861: Demonstrate COM properties, methods, and events
+
+**Issue:** [dotnet/docs#37861](https://github.com/dotnet/docs/issues/37861). **Opened:** November 2, 2023. **Status:** Covered by open, non-draft [dotnet/docs#56690](https://github.com/dotnet/docs/pull/56690).
+
+**Why the solution is defined:** The actual patch replaces empty interfaces/classes in the [COM class example](../docs/csharp/advanced-topics/interop/example-com-class.md) with a calculator, a property, operations, and event interfaces. Its source compiled in an owned .NET 10 wrapper; managed calls returned `5` and `20`, updated the property, and raised the expected completion/clear events.
+
+**Maintainer next action:** Review the existing PR rather than assign another implementation. Correct the snippet reference's `ExampleCOMClass` casing to match the changed `ExampleComClass` directory on case-sensitive builds. State the intended runtime/COM hosting model and verify native activation, property access, and event subscriptions with its registration/type-library steps. Managed C# event invocation doesn't prove COM connection-point delivery, and the new link to modern COM hosting doesn't replace that evidence.
+
+### dotnet/docs#37987: Explain CS8103 string-heap limits and supported workarounds
+
+**Issue:** [dotnet/docs#37987](https://github.com/dotnet/docs/issues/37987). **Opened:** November 9, 2023. **Status:** Covered by open, non-draft [dotnet/docs#56666](https://github.com/dotnet/docs/pull/56666).
+
+**Why the solution is defined:** The actual patch adds CS8103 to the [string-literal diagnostic article](../docs/csharp/language-reference/compiler-messages/string-literal.md), removes its catch-all F1 entry, and gives resource/assembly-splitting and experimental compiler-feature alternatives. The [compiler feature contract](https://github.com/dotnet/roslyn/blob/main/docs/features/string-literals-data-section.md) documents the flag, threshold, eligible literals, experimental status, and C#-only scope.
+
+**Maintainer next action:** Correct byte/character units and avoid treating source-text size as an exact heap threshold; account for metadata addressing, repeated strings, and overhead. Version the experimental option: the owner identifies SDK 9.0.200/Visual Studio 17.13 availability, and the feature isn't a universal supported fix for every older compiler or VB project. Test a real CS8103 fixture, the resource alternative, flag-enabled execution, and relevant reflection behavior; preserve the distinction from CS9274/CS9315 and verify F1 discovery. Don't close on the open patch or recommend an experimental compiler mode without its restrictions.
+
 ## Assignment order
 
 For the quickest independent changes, start with the table escaping, the paired COM wording corrections, or the existing prose-only signposts. Coordinate the instrumentation link with its current owner. Treat the two COM issues as one assignment, and use the existing hosted-service issue rather than duplicate work for dotnet/docs#23440.
@@ -2203,6 +2339,6 @@ Coordinate the two string-marshalling tasks as one coherent update, with actual 
 
 Qualify POH guidance for modern CoreCLR without inventing Framework support. Verify the selected YARP package's platform dependencies before publishing universal claims. The PowerShell correction must stay read-only, and the MAUI test bridge must demonstrate compatible target frameworks and matching constructor dependencies.
 
-Review the twenty-one existing implementation PRs separately from new assignments; the F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review.
+Review the twenty-three existing implementation PRs separately from new assignments; the F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review.
 
 Keep the new stream-reading alternative text-specific and version-correct. Verify StartupObject's IDE route, correct the HTTP tutorial's staged calls and API-header explanation, and preserve the reusable warning-suppression requirement beyond the CS0184 patch. Issues that don't fit either candidate category are omitted for a future task.

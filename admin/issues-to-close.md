@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 475 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#37748](https://github.com/dotnet/docs/issues/37748), opened October 26, 2023.
-- **Results:** 93 closure candidates and 205 [clearly defined fixes](issues-with-defined-fixes.md) (184 assignment candidates and 21 fixes with open implementation PRs).
-- **Latest batch:** Issues 451-475, from [dotnet/docs#37037](https://github.com/dotnet/docs/issues/37037) through dotnet/docs#37748: 3 closure candidates, 14 new assignment candidates, and 1 new fix with an open implementation PR.
-- **Remaining:** 373 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 175 are complete and 125 remain. Continue with [dotnet/docs#37757](https://github.com/dotnet/docs/issues/37757), opened October 27, 2023, and stop at position 600. Refresh issue states; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 500 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#38645](https://github.com/dotnet/docs/issues/38645), opened December 7, 2023.
+- **Results:** 96 closure candidates and 219 [clearly defined fixes](issues-with-defined-fixes.md) (196 assignment candidates and 23 fixes with open implementation PRs).
+- **Latest batch:** Issues 476-500, from [dotnet/docs#37757](https://github.com/dotnet/docs/issues/37757) through dotnet/docs#38645: 3 closure candidates, 12 new assignment candidates, and 2 new fixes with open implementation PRs.
+- **Remaining:** 348 issues from this snapshot are unreviewed. Of the requested additional 300 issues (positions 301-600), 200 are complete and 100 remain. Continue with [dotnet/docs#38649](https://github.com/dotnet/docs/issues/38649), opened December 7, 2023, and stop at position 600. Refresh issue states; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -838,3 +838,27 @@ The [bulk-insert sample](../docs/standard/data/sqlite/bulk-insert.md) starts a t
 The current [command-line tutorial](../docs/standard/commandline/get-started-tutorial.md) and all four staged projects use `System.CommandLine` 2.0.12 and the revised API rather than the old beta names identified in the issue. An owned .NET 10 harness compiled and executed the exact current stage sources with that package: the root commands, the `read` subcommand, and the final `quotes read` command all read the supplied input. Existing nullable warnings in later stages don't indicate the reported renamed-API failure.
 
 **Suggested closure explanation:** Close the precise 2023 API-renaming gap against the current tutorial and snippets, with assignee `tdykstra` informed. Don't claim that every library article or every tutorial command path was verified, and don't close broader historical beta-documentation issues solely on this evidence.
+
+### dotnet/docs#38551: Document baseline package validation strict mode
+
+**Opened:** December 1, 2023. **Confidence:** High. **Reason:** The property, semantics, and both requested use cases are documented.
+
+The [strict-mode overview](../docs/fundamentals/apicompat/overview.md#strict-mode) distinguishes equality checks from compatibility checks, names servicing as a use case, and explains how `ApiCompatGenerateSuppressionFile=true` records compatibility differences. It directly lists `EnableStrictModeForBaselineValidation`; the [property reference](../docs/core/project-sdk/msbuild-props.md#enablestrictmodeforbaselinevalidation) specifies baseline checks and the default of `false`. [dotnet/docs#38533](https://github.com/dotnet/docs/pull/38533), from which the issue originated, merged December 3, 2023.
+
+**Suggested closure explanation:** Link the overview and baseline property reference, and close as documented with assignee `gewarren` informed. The absence of a second strict-mode tutorial in the baseline example isn't an undocumented property or use case.
+
+### dotnet/docs#38644: Supply the movie sample's training and test files
+
+**Opened:** December 7, 2023. **Confidence:** High for the missing-files report. **Reason:** Both exact files now exist and are accessible.
+
+The referenced [end-to-end movie sample's Data directory](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/end-to-end-apps/Recommendation-MovieRecommender/MovieRecommender_Model/Data) contains `ratings_train.csv` and `ratings_test.csv`, alongside `ratings.csv`. Both exact raw-file requests returned HTTP 200, with the expected four-column header and data rows. The [current tutorial](../docs/machine-learning/tutorials/movie-recommendation.md#download-your-data) also supplies its own explicit downloads, named `recommendation-ratings-train.csv` and `recommendation-ratings-test.csv`; those links returned HTTP 200 as well.
+
+**Suggested closure explanation:** Point to the exact files and distinguish the legacy end-to-end app from the tutorial's matrix-factorization sample. No new dataset is needed for the missing-files complaint. These checks establish file availability, not that the legacy application or its data-preparation helper was rebuilt and trained successfully.
+
+### dotnet/docs#38645: Explain the two movie-recommendation models
+
+**Opened:** December 7, 2023. **Confidence:** High for the comparison question. **Reason:** The existing guides and actual trainer calls identify different designs.
+
+The [tutorial](../docs/machine-learning/tutorials/movie-recommendation.md) explicitly teaches matrix factorization to predict a numeric movie rating. The [end-to-end sample README](https://github.com/dotnet/machinelearning-samples/blob/main/samples/csharp/end-to-end-apps/Recommendation-MovieRecommender/README.md) describes its web application and includes an **Alternate Approaches** table that contrasts field-aware factorization machines, matrix factorization, and one-class recommendation. Its actual model source uses text-featurized identifiers and `BinaryClassification.Trainers.FieldAwareFactorizationMachine`, rather than the tutorial's rating-regression trainer.
+
+**Suggested closure explanation:** Answer with the documented algorithm, prediction-task, and application-shape differences, and link the existing comparison table. The similarly named projects aren't duplicate implementations of one identical model. Don't claim that the old web app is current, that its training pipeline was executed, or that its score is interchangeable with the tutorial's predicted rating.

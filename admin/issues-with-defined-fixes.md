@@ -5,16 +5,16 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 219 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track twenty-nine additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 227 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track thirty-one additional defined fixes separately because implementation PRs are already open; several need correction or completion before merge, and one remains a draft. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 550 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#40543](https://github.com/dotnet/docs/issues/40543), opened April 18, 2024.
-- **Results:** 248 defined fixes (219 assignment candidates and 29 with open implementation PRs) and 104 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 526-550 add 12 new assignment candidates and 4 new fixes with open implementation PRs, alongside 5 closure candidates.
-- **Remaining:** 298 issues from this snapshot are unreviewed. Of the requested next 300 issues (positions 526-825), 25 are complete and 275 remain. Continue with [dotnet/docs#40556](https://github.com/dotnet/docs/issues/40556), opened April 19, 2024, and stop at position 825.
-- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the twenty-nine active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
+- **Completed batches:** The 575 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#41335](https://github.com/dotnet/docs/issues/41335), opened June 7, 2024.
+- **Results:** 258 defined fixes (227 assignment candidates and 31 with open implementation PRs) and 111 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 551-575 add 8 new assignment candidates and 2 new fixes with open implementation PRs, alongside 7 closure candidates.
+- **Remaining:** 273 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 25 are complete and 273 remain. Continue with [dotnet/docs#41338](https://github.com/dotnet/docs/issues/41338), opened June 7, 2024, and finish the snapshot at position 848.
+- **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and the patches of the thirty-one active implementation PRs. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
 
@@ -2279,6 +2279,78 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Scope and acceptance:** Update the class remarks and `LoadStore` documentation in that XML file with version-appropriate Framework/modern .NET distinctions and the supported-platform exception. Explain that this implementation's returned store supports in-memory use but not stream persistence. Don't say the entire service is nonfunctional, remove supported in-memory APIs, or mark every implementation of the abstract `SerializationStore.Save` contract unsupported. Verify published moniker-specific output and preserve Framework behavior; a source-comment-only change isn't proof that the API reference is corrected.
 
+### dotnet/docs#40643: Show how to register a JsonConverterFactory
+
+**Issue:** [dotnet/docs#40643](https://github.com/dotnet/docs/issues/40643). **Opened:** April 27, 2024. **Size:** Small. **GHCP suitability:** Strong; extend the existing factory example rather than introduce another converter design.
+
+**Why it still applies:** The [converter guide](../docs/standard/serialization/system-text-json/converters-how-to.md#sample-factory-pattern-converter) explains the factory and inner converter, but its explicit registration examples use basic converters. The later open-generic attribute discussion doesn't show how to register this existing factory on supported .NET 8/.NET 10 versions.
+
+**Why the solution is defined:** A factory instance belongs in `JsonSerializerOptions.Converters`; the serializer calls its `CreateConverter` method. An owned run linked the exact `DictionaryTKeyEnumTValueConverter.cs` source, selected `DictionaryEnumConverterInner` through `GetConverter`, and round-tripped `{"Monday":42}` on both runtimes. Output alone wouldn't prove selection because the built-in dictionary converter also supports enum keys.
+
+**Scope and acceptance:** Add a short factory-registration example beside the factory pattern, and link to it from the existing registration section. Register the factory once, then serialize and deserialize a matching enum-keyed dictionary with the same options. Explain that callers don't manually instantiate the private inner converter or call `CreateConverter` for normal serialization. Verify the selected converter and round-trip result on supported runtimes; don't imply that this reflection-based generic factory is Native AOT-safe.
+
+### dotnet/docs#40736: List built-in ASP.NET Core EventSource providers
+
+**Issue:** [dotnet/docs#40736](https://github.com/dotnet/docs/issues/40736). **Opened:** May 3, 2024. **Size:** Small. **GHCP suitability:** Strong, with ASP.NET Core diagnostics-owner review.
+
+**Why it still applies:** The ASP.NET Core section of [well-known event providers](../docs/core/diagnostics/well-known-event-providers.md) still supplies a logging link instead of the requested provider inventory.
+
+**Why the solution is defined:** Released ASP.NET Core 10 source defines `Microsoft.AspNetCore.Hosting` in [HostingEventSource](https://github.com/dotnet/aspnetcore/blob/v10.0.0/src/Hosting/Hosting/src/Internal/HostingEventSource.cs) and `Microsoft-AspNetCore-Server-Kestrel` in [KestrelEventSource](https://github.com/dotnet/aspnetcore/blob/v10.0.0/src/Servers/Kestrel/Core/src/Internal/Infrastructure/KestrelEventSource.cs). Their event declarations establish the names, identifiers, and levels; those provider names aren't interchangeable with dotted meter or counter names.
+
+**Scope and acceptance:** Replace the placeholder with a concise, version-scoped table for Hosting and Kestrel, their purpose, and links to maintained diagnostic guidance/source. Include a working `dotnet-trace` provider-selection example if needed; verify it against an owned HTTP application and identify the emitted request/connection events. Keep `Microsoft-Extensions-Logging` separate from those built-in sources. Don't promise an exhaustive inventory across every ASP.NET Core release or use a metric name as an EventSource selector.
+
+### dotnet/docs#40799: Add a typed MTP discovery and execution walkthrough
+
+**Issue:** [dotnet/docs#40799](https://github.com/dotnet/docs/issues/40799). **Opened:** May 8, 2024. **Size:** Medium. **GHCP suitability:** Suitable for a bounded client recipe, coordinated with current assignee `nohwnd`.
+
+**Why it still applies:** The [server-mode guide](../docs/core/testing/microsoft-testing-platform-server-mode.md) now identifies the canonical source-only C# client, but doesn't demonstrate initialization, discovery metadata, selected execution, and result collection. The 2024 reply that no TranslationLayer-like client was planned no longer describes the whole current surface. `--list-tests json` also exists now, but listing names alone doesn't answer the custom-UI requirement.
+
+**Why the solution is defined:** The actual [client interface](https://github.com/microsoft/testfx/blob/main/src/Platform/Microsoft.Testing.Platform.ServerMode.Client.Sources/Client/IMtpServerClient.cs) exposes initialization, discovery, filtered/selected execution, ordered node-update events, and asynchronous shutdown. Node updates retain their raw property bag as well as common typed fields. The upstream [client acceptance test](https://github.com/microsoft/testfx/blob/main/test/IntegrationTests/MSTest.Acceptance.IntegrationTests/MtpServerClientAcceptanceTests.cs) already demonstrates discovery and execution through the source package; no reflection into internal host constructors or fragile console parser is necessary.
+
+**Scope and acceptance:** Add an article-relative executable example that consumes a released `Microsoft.Testing.Platform.ServerMode.Client.Sources` version and drives a small MSTest application. Capture discovered node IDs, display names, categories/custom test properties actually supplied by that framework, selected execution updates, and final results. Explain the raw property-bag shape rather than promise that every arbitrary framework object becomes JSON metadata. Respect negotiated `MultiRequestSupport`; use separate sessions when required, and don't confuse `IsStateful` with that capability. Verify successful discovery, metadata preservation, one filtered run, failure reporting, cancellation, and awaited shutdown without a leaked child process. Link the JSON-listing alternative with its version/banner requirements, and retain the distinction from the SDK's internal `dotnettestcli` protocol.
+
+### dotnet/docs#40832: Complete the heterogeneous-cluster stream configuration warning
+
+**Issue:** [dotnet/docs#40832](https://github.com/dotnet/docs/issues/40832). **Opened:** May 9, 2024. **Size:** Small. **GHCP suitability:** Strong for the remaining streaming clarification, with Orleans-owner review.
+
+**Why it still applies:** The [reminder guide](../docs/orleans/grains/timers-and-reminders.md) already warns that all silos, including silos without reminder grains, must receive the reminder configuration. The issue also requests the corresponding streaming warning. The [stream quick-start](../docs/orleans/streaming/streams-quick-start.md) and [provider guidance](../docs/orleans/streaming/stream-providers.md) don't supply that explicit heterogeneous-cluster requirement.
+
+**Scope and acceptance:** Add the all-silo requirement beside the quick-start's stream-provider configuration, and cross-link the existing reminder warning rather than duplicate or rewrite it. Explain that silos in the heterogeneous cluster need the required common logical stream-provider configuration even if a particular silo doesn't host the stream-using grain types. Have the Orleans owner confirm the provider-specific wording; don't equate compatible provider/backend registration with identical values for every silo option, prescribe silo-only registrations on clients, or invent an unverified runtime failure mechanism.
+
+### dotnet/docs#40860: Document SQLite null-parameter values
+
+**Issue:** [dotnet/docs#40860](https://github.com/dotnet/docs/issues/40860). **Opened:** May 13, 2024. **Size:** Small. **GHCP suitability:** Strong; the affected [parameters article](../docs/standard/data/sqlite/parameters.md) remains in this repository.
+
+**Why it still applies:** The article explains names, types, and sizes but doesn't distinguish an unset/null CLR parameter value from SQL `NULL`. An owned Microsoft.Data.Sqlite 10.0.13 check reproduced "Value must be set" for a parameter whose value was C# `null`; explicit `DBNull.Value` returned SQL `NULL`.
+
+**Scope and acceptance:** Add a short null-values section with a parameterized nullable-value example that supplies `DBNull.Value` for a missing value and preserves a non-null value. Use the actual `DBNull.Value` API, not the issue's `Db.Null` typo. Execute C# and Visual Basic equivalents against an in-memory database, assert `IsDBNull` for the null case, and round-trip a non-null value that contains an apostrophe. Keep SQL parameterization intact; don't recommend interpolation, a magic string `"NULL"`, or treat an uninitialized parameter as SQL `NULL`.
+
+### dotnet/docs#41074: Demonstrate MaximumEntropy multiclass warm-start training
+
+**Issue:** [dotnet/docs#41074](https://github.com/dotnet/docs/issues/41074). **Opened:** May 25, 2024. **Size:** Medium. **GHCP suitability:** Strong for a trainer-specific example, not a generic promise of incremental learning.
+
+**Why it still applies:** The [retraining guide](../docs/machine-learning/how-to-guides/retrain-model-ml-net.md) names `MaximumEntropyModelParameters` but demonstrates only regression extraction and training. It doesn't show the corresponding multiclass transformer or the two-argument trainer call requested by the issue.
+
+**Why the solution is defined:** The trainer provides `Fit(IDataView, MaximumEntropyModelParameters)`. An owned ML.NET 5.0.1 fixture trained a three-class model, saved and loaded its `MulticlassPredictionTransformer<MaximumEntropyModelParameters>`, and passed its `Model` to that overload. On .NET 8 and .NET 10, the warm-start result scored 18 rows with three finite scores each.
+
+**Scope and acceptance:** Add the trainer-specific extraction, compatible data preparation, `Fit(newData, originalParameters)`, and save/load path alongside the existing regression example. Preserve the label-key mapping, feature schema, and known class set across both datasets. Execute the complete example and inspect the resulting model/output; don't cast multiclass parameters to the regression type, promise support for new classes, equate warm-start optimization with online learning, or claim an accuracy improvement from a successful call alone. Coordinate with the separate calibrated-model extraction task, dotnet/docs#28677, without replacing that binary-model fix.
+
+### dotnet/docs#41305: Add PrimeService to the solution before the first edit
+
+**Issue:** [dotnet/docs#41305](https://github.com/dotnet/docs/issues/41305). **Opened:** June 5, 2024. **Size:** Small. **GHCP suitability:** Strong; reorder the existing tutorial without changing its test-driven progression.
+
+**Why it still applies:** The original URL now serves a conceptual `dotnet test` article, but the moved [xUnit tutorial](../docs/core/testing/unit-testing-csharp-with-xunit.md) still tells readers to rename/edit `Class1.cs` before `dotnet sln add`. That sequence prevents a reader who opens the new solution in Solution Explorer from seeing the library at the point where the tutorial asks for an edit.
+
+**Scope and acceptance:** Move the existing solution-add step immediately after library creation and before file edits. Update both the narrative and the equivalent command sequence so they agree, preserve working directories/project paths, and leave the intentional failing/passing tests in order. Verify a fresh CLI execution and solution membership at the first edit; check the IDE route if claiming that specific UI experience. Don't add an unconditional clean/rebuild requirement based only on a later comment, or edit the replacement conceptual page instead of the actual walkthrough.
+
+### dotnet/docs#41327: Explain structured state in the custom logger
+
+**Issue:** [dotnet/docs#41327](https://github.com/dotnet/docs/issues/41327). **Opened:** June 6, 2024. **Size:** Small. **GHCP suitability:** Strong for the remaining explanation, coordinated with assignee `gewarren`.
+
+**Why it still applies:** [dotnet/docs#51524](https://github.com/dotnet/docs/pull/51524), merged February 5, 2026, corrected the orphaned snippet fragment and line range in the [custom-provider guide](../docs/core/extensions/logging/custom-provider.md). It didn't add the requested explanation of message-template properties or the original template carried in state. Closing the whole issue because the fragment was repaired would lose that remaining requirement.
+
+**Scope and acceptance:** Explain the structured key/value state used by normal logging extensions, including `"{OriginalFormat}"`, and show how a provider can inspect it through public enumerable interfaces. Preserve the generic `TState` contract and the formatter fallback for nonstructured callers; keep the exception argument distinct from state. Owned .NET 8/.NET 10 executions captured `OrderId`, `Customer`, and the original template, accepted a plain-string state, and received the separate exception. Verify those cases and a source-generated logging call in the final example. Don't reflect into internal `FormattedLogValues`, parse the formatted message to recover properties, or promise that every `ILogger.Log<TState>` caller supplies a key/value list. Coordinate changes to the same sample with the scope task dotnet/docs#37874.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -2517,6 +2589,22 @@ These issues still need their existing PRs to land, with corrections where noted
 
 **Maintainer next action:** Complete the existing patch and tie the relative path to the running application's actual HTTP/HTTPS address and port. Preserve the single question mark, the maximum supported level, and the walkthrough's tracing setup. Verify the resulting nested trace in Jaeger before claiming that the pictured visualization was reproduced; the handler check established request binding and recursion, not a full telemetry-stack run. Don't modify the overview instead of the moved walkthrough or create a duplicate assignment.
 
+### dotnet/docs#40769: Update analyzer tutorial entry-point instructions
+
+**Issue:** [dotnet/docs#40769](https://github.com/dotnet/docs/issues/40769). **Opened:** May 6, 2024. **Status:** Covered by open, non-draft [dotnet/docs#56676](https://github.com/dotnet/docs/pull/56676).
+
+**Evidence:** The actual patch adds a top-level-template explanation to the [analyzer/code-fix tutorial](../docs/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md) and updates later local-variable exercises. The initial template analyzer needs an explicit named type; a synthesized top-level entry point doesn't supply the source class declaration the exercise expects. However, the proposed instruction says to *uncheck* **Do not use top-level statements** to obtain an explicit class, reversing the checkbox's meaning.
+
+**Maintainer next action:** Correct the instruction to *check* that box, or retain the explicit `class MyClass { }` alternative. Keep the initial named-type analyzer distinct from the completed local-declaration analyzer: an owned build of the exact current `MakeConstAnalyzer` reported one valid diagnostic for both top-level locals and locals inside `Main`. Verify the initial warning, both later entry-point forms, and the code fix in the experimental Visual Studio instance before merge. Don't introduce an unnecessary claim that the finished analyzer can't process top-level statements or assign a duplicate patch.
+
+### dotnet/docs#41093: Complete the vector-store provider inventory
+
+**Issue:** [dotnet/docs#41093](https://github.com/dotnet/docs/issues/41093). **Opened:** May 28, 2024. **Status:** Covered by open, non-draft [dotnet/docs#56647](https://github.com/dotnet/docs/pull/56647).
+
+**Evidence:** The actual patch adds an engine/package table to the moved [vector-store overview](../docs/ai/vector-stores/overview.md), including OSS choices. It also retains the surrounding claim that every listed package implements `VectorStore`/`VectorStoreCollection`. The [Pgvector packages](https://github.com/pgvector/pgvector-dotnet) instead supply Npgsql/EF Core integration, not those provider implementations. The Cosmos row describes both NoSQL and MongoDB vCore even though the linked [CommunityToolkit package](https://www.nuget.org/packages/CommunityToolkit.VectorData.AzureCosmosDB) identifies itself as the NoSQL provider. Several other entries have only preview/alpha versions in the checked package feed.
+
+**Maintainer next action:** Separate raw database-client/EF integrations from actual abstraction providers, or replace those rows with verified matching connectors. Limit each connector's capabilities to its backend; don't imply that one NoSQL package handles MongoDB vCore. Check current package names, API/abstraction versions, prerelease status, and authoritative engine licenses. In particular, [Redis licensing](https://redis.io/legal/licenses/) differs by version: 7.4 is source-available, while Redis 8 includes an AGPLv3 open-source option. Don't replace the stale blanket classification with another blanket claim, confuse a connector's license with the server's, or treat a mirror's missing package as proof that NuGet.org lacks it. Complete the existing PR rather than create a duplicate inventory assignment.
+
 ## Assignment order
 
 For the quickest independent changes, start with the table escaping, the paired COM wording corrections, or the existing prose-only signposts. Coordinate the instrumentation link with its current owner. Treat the two COM issues as one assignment, and use the existing hosted-service issue rather than duplicate work for dotnet/docs#23440.
@@ -2575,8 +2663,12 @@ The diagram contrast and span-concatenation explanation are additional localized
 
 The delegate-version and object-initializer explanations are additional localized changes. Coordinate the CA1840, CA1842, and Boolean-enum examples with their existing owner, and pair the MAUI messenger test with the existing test bridge. Keep the callback-marshalling addition ABI-specific and the F# exception examples explicit about execution and cancellation. The output-default table needs separate compiler/SDK evidence; the action-container update needs an actual container run. Confirm the Native AOT signpost's placement with its owners, and route the CodeDom API correction to the publishing repository.
 
-Review the twenty-nine existing implementation PRs separately from new assignments; the F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review.
+The factory-registration and SQLite-null recipes are additional small, reproducible changes. Keep the stream warning scoped to the unfinished half of the Orleans request, and the custom-logger explanation coordinated with the existing scope work. The provider inventory needs exact EventSource names, not metric names. Preserve the xUnit walkthrough's test sequence; the multiclass warm-start and typed MTP client recipes need complete executable fixtures and their stated schema/metadata boundaries.
+
+Review the thirty-one existing implementation PRs separately from new assignments; the F# 7 PR remains a draft and only partially covers its issue. Correct the unhandled-exception method name and static-lambda diagnostic IDs, complete the CA2000 two-example verification, refine the CS8032 version advice/tutorial signpost, and verify the CS1574 diagnostics and all three original help routes before merge. Check the packaged-PDB clarification against an isolated consumer, and coordinate it with the existing Source Link task. Complete the HTTPS reference and SOAP-version checks in the WCF PR, and add real conceptual examples to the conversion-operator PR. Measure the async concurrency limit and verify CS1961 help discovery rather than close either implementation early. Verify real CS0281 key fixtures, and preserve the separate F# 8 requirement after the F# 7 source-backed review.
 
 For the newest implementations, qualify the proxy pattern's address/port assumptions, distinguish GitHub source preview from the already-working F# Learn rendering, correct both millisecond patterns with real output checks, and verify the nested-greeting request in the complete tracing walkthrough.
+
+Correct the analyzer tutorial's negatively worded checkbox instruction, and distinguish real vector-abstraction providers from native clients in the existing inventory PR. Verify backend coverage and version-specific package/license claims before merge.
 
 Keep the new stream-reading alternative text-specific and version-correct. Verify StartupObject's IDE route, correct the HTTP tutorial's staged calls and API-header explanation, and preserve the reusable warning-suppression requirement beyond the CS0184 patch. Issues that don't fit either candidate category are omitted for a future task.

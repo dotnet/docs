@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 550 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#40543](https://github.com/dotnet/docs/issues/40543), opened April 18, 2024.
-- **Results:** 104 closure candidates and 248 [clearly defined fixes](issues-with-defined-fixes.md) (219 assignment candidates and 29 fixes with open implementation PRs).
-- **Latest batch:** Issues 526-550, from [dotnet/docs#39852](https://github.com/dotnet/docs/issues/39852) through dotnet/docs#40543: 5 closure candidates, 12 new assignment candidates, and 4 new fixes with open implementation PRs.
-- **Remaining:** 298 issues from this snapshot are unreviewed. Of the requested next 300 issues (positions 526-825), 25 are complete and 275 remain. Continue with [dotnet/docs#40556](https://github.com/dotnet/docs/issues/40556), opened April 19, 2024, and stop at position 825. Refresh issue states; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 575 oldest open issues, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#41335](https://github.com/dotnet/docs/issues/41335), opened June 7, 2024.
+- **Results:** 111 closure candidates and 258 [clearly defined fixes](issues-with-defined-fixes.md) (227 assignment candidates and 31 fixes with open implementation PRs).
+- **Latest batch:** Issues 551-575, from [dotnet/docs#40556](https://github.com/dotnet/docs/issues/40556) through dotnet/docs#41335: 7 closure candidates, 8 new assignment candidates, and 2 new fixes with open implementation PRs.
+- **Remaining:** 273 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 25 are complete and 273 remain. Continue with [dotnet/docs#41338](https://github.com/dotnet/docs/issues/41338), opened June 7, 2024, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -926,3 +926,59 @@ The [AppDomain unloading article](../docs/framework/app-domains/how-to-unload-an
 The supplemental article has been removed in favor of the API reference. Both the [current Int64 XML remarks](https://github.com/dotnet/dotnet-api-docs/blob/main/xml/System/Int64.xml) and the [published API page](https://learn.microsoft.com/dotnet/api/system.int64?view=net-10.0) use "Work with non-decimal 64-bit integer values," not the reported 32-bit heading. The [integer-literal reference](../docs/csharp/language-reference/builtin-types/integral-numeric-types.md#integer-literals) explicitly explains positive literal magnitudes, inferred unsigned types, casts, and `unchecked` conversion.
 
 **Suggested closure explanation:** Close the accepted heading defect against the current destination, and answer the literal question with the existing reference. The [runtime-owner reply](https://github.com/dotnet/docs/issues/40543#issuecomment-2066732167) explains the literal rule and declines the proposed terminology/CLS additions; don't turn those suggestions into an approved new policy. Owned .NET 8 and .NET 10 checks confirmed that both `1 << 31` and the explicit unchecked high-bit literal produce `Int32.MinValue`; the shift isn't an illegal expression. This recommendation doesn't claim that every optional editorial suggestion was implemented.
+
+### dotnet/docs#40587: Recognize the existing polymorphic serialization example
+
+**Opened:** April 22, 2024. **Confidence:** High. **Reason:** The example already serializes a derived instance through its base-type contract.
+
+The [polymorphism guide](../docs/standard/serialization/system-text-json/polymorphism.md) declares `WeatherForecastWithCity` as a derived type of `WeatherForecastBase`, annotates the base contract with `JsonDerivedType`, and serializes a base-typed variable. The [referenced example](../docs/standard/serialization/system-text-json/snippets/how-to/csharp/SerializePolymorphic.cs) explicitly calls `Serialize<WeatherForecastBase>`. The absence of a virtual method doesn't remove that type relationship or the serializer's configured derived-type behavior.
+
+**Suggested closure explanation:** Point to the base-typed variable, the derived-type annotation, and the JSON `City` property. An owned fixture with those exact class definitions and the same base-type serialization call emitted `"City":"Milwaukee"` on .NET 8 and .NET 10. Coordinate closure with assignee `gewarren`; don't add virtual members to create a requirement that System.Text.Json doesn't impose.
+
+### dotnet/docs#40633: Refresh the Portuguese CRUD startup example
+
+**Opened:** April 26, 2024. **Confidence:** High for the reported English/Portuguese mismatch. **Reason:** The published Portuguese example now uses the same Program.cs startup pattern as the English source.
+
+The issue points specifically to the Swagger setup that formerly differed between the English and pt-BR versions of the [CRUD microservice chapter](../docs/architecture/microservices/multi-container-microservice-net-applications/data-driven-crud-microservice.md). The [current published pt-BR page](https://learn.microsoft.com/pt-br/dotnet/architecture/microservices/multi-container-microservice-net-applications/data-driven-crud-microservice) now says `Program.cs` and shows `builder.Services.AddSwaggerGen`, `app.UseSwagger()`, and `app.Environment.IsDevelopment()`, matching the current English section. Its DbContext registration also uses `builder.Services`.
+
+**Suggested closure explanation:** The particular translation lag reported in April 2024 is no longer present in the published startup examples. Close that mismatch rather than assign a translation of code already synchronized. Don't claim that the entire legacy eShopOnContainers chapter, its screenshots, or every third-party API has been modernized or validated against .NET 10.
+
+### dotnet/docs#40754: Identify the Reflection.Emit example's Framework target
+
+**Opened:** May 4, 2024. **Confidence:** High. **Reason:** The article now explicitly identifies the Framework-only save APIs and the modern alternative.
+
+The [generic-type Reflection.Emit how-to](../docs/fundamentals/reflection/how-to-define-a-generic-type-with-reflection-emit.md) now includes ".NET Framework" in its title and an important notice explaining that the sample uses APIs unavailable in modern .NET. It links to `PersistedAssemblyBuilder` guidance for modern assembly persistence. [dotnet/docs#51035](https://github.com/dotnet/docs/pull/51035) merged January 15, 2026.
+
+**Suggested closure explanation:** Close the unmarked-target complaint against the explicit scope notice. The exact current C# source compiled against Framework reference assemblies, executed under Framework, saved `GenericEmitExample1.dll`, and printed the expected generic constraints. Preserve that supported example; don't claim that `PersistedAssemblyBuilder`, introduced in .NET 9, is a .NET 8 replacement or that the original save calls work on .NET 8.
+
+### dotnet/docs#40763: Consolidate external logger-scope guidance under the existing task
+
+**Opened:** May 5, 2024. **Confidence:** High. **Reason:** The earlier custom-provider scope issue already covers this implementation requirement.
+
+The request asks why a custom logger needs an external scope provider and how to use it. The existing [dotnet/docs#37874 assignment brief](issues-with-defined-fixes.md#dotnetdocs37874-explain-and-demonstrate-scopes-in-a-custom-logging-provider) covers the same [custom-provider article](../docs/core/extensions/logging/custom-provider.md), including `ISupportExternalScope`, `IExternalScopeProvider`, scope enumeration, and the replacement of the sample's no-op `BeginScope`.
+
+**Suggested closure explanation:** Close as a duplicate of [dotnet/docs#37874](https://github.com/dotnet/docs/issues/37874), and retain the external-provider rationale and setup in that primary task. The current no-op sample isn't fixed yet; the reason for closure is duplicate work, not implemented scope support. Keep the separate structured-state requirement in dotnet/docs#41327 visible.
+
+### dotnet/docs#40862: Correct the early-bailout helper's return type
+
+**Opened:** May 13, 2024. **Confidence:** High. **Reason:** Both current language examples already return a task whose result is the original operation.
+
+The [early-bailout discussion](../docs/standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md#early-bailout) includes the current helper as `async Task<Task>` in [C#](../docs/standard/asynchronous-programming-patterns/snippets/consuming-the-task-based-asynchronous-pattern/csharp/Program.cs) and `Task(Of Task)` in [Visual Basic](../docs/standard/asynchronous-programming-patterns/snippets/consuming-the-task-based-asynchronous-pattern/vb/Program.vb). Returning `asyncOp` therefore matches the declared result type. The surrounding text explicitly says that early bailout doesn't cancel the underlying operation.
+
+**Suggested closure explanation:** The reported return-type mismatch is absent from both current snippets. An owned execution of the C# helper on .NET 8 and .NET 10 preserved a completed task's identity, returned an incomplete original task for a pre-canceled wait, and observed that task's later fault. Don't remove the returned task or unconditionally await the underlying operation, which would change the intended early-bailout contract.
+
+### dotnet/docs#41052: Explain ICU comparison behavior and update the examples
+
+**Opened:** May 23, 2024. **Confidence:** High for the owner-approved corrections. **Reason:** Both documentation destinations now contain the requested backend explanation and revised examples.
+
+The [current CompareOptions XML](https://github.com/dotnet/dotnet-api-docs/blob/main/xml/System.Globalization/CompareOptions.xml) and [published reference](https://learn.microsoft.com/dotnet/api/system.globalization.compareoptions?view=net-10.0) explain ICU's equivalent `None`/`StringSort` behavior, link to the NLS restoration guidance, and include the contributor's expanded option examples. The modernized string-sort examples in C#, F#, and Visual Basic retain the older output but explicitly qualify the modern default. The [globalization guide](../docs/core/extensions/globalization-icu.md#string-sorting-and-systemglobalizationcompareoptions) also explains the backend distinction; [dotnet/docs#41661](https://github.com/dotnet/docs/pull/41661) merged August 1, 2024.
+
+**Suggested closure explanation:** Close the missing-behavior and outdated-example request against both current destinations, not merely the merged conceptual-page PR. The exact current C# sort example ran in fresh .NET 8 and .NET 10 processes: ICU produced identical orders, while explicit NLS selection reproduced the two distinct legacy orders. Describe equivalent behavior under ICU, not enum aliases: `None` remains 0 and `StringSort` remains 536870912. Don't claim that selecting a modern .NET version prevents an application from using NLS.
+
+### dotnet/docs#41082: Resolve the interface-to-interface DI registration question
+
+**Opened:** May 26, 2024. **Confidence:** High for the reported registration mistake. **Reason:** The maintainer's concrete-type correction and current lifetime guides answer the documentation question.
+
+The issue's registration uses `AddScoped<IContatoAppService, IContatoAppService>()`. The maintainer explains that the second type must be a concrete implementation. The [current DI overview](../docs/core/extensions/dependency-injection/overview.md#the-concept) explicitly registers an interface with its concrete class and links to the dedicated [service-lifetime examples](../docs/core/extensions/dependency-injection/service-lifetimes.md). The reporter's later application-specific failure doesn't establish another defect in those examples.
+
+**Suggested closure explanation:** Link the maintainer's answer and the current registration/lifetime guidance. On .NET 8 and .NET 10, an owned interface-to-interface registration failed with "Cannot instantiate implementation type," while the equivalent interface-to-concrete scoped registration resolved successfully. Close the general documentation question without claiming to have diagnosed or repaired the reporter's separate application, dependency graph, or circular dependencies.

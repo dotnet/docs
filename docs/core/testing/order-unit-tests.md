@@ -121,6 +121,24 @@ To order tests explicitly, NUnit provides an [`OrderAttribute`](https://docs.nun
 :::code language="csharp" source="snippets/order-unit-tests/csharp/NUnit.TestProject/ByOrder.cs":::
 
 :::zone-end
+:::zone pivot="tunit"
+
+## Order by dependency
+
+TUnit runs tests in parallel by default and doesn't guarantee an order between them. To make one test run after another, apply the `[DependsOn]` attribute to the dependent test. TUnit runs the dependent test only after the tests it depends on finish, while tests without dependencies still run in parallel. You can apply `[DependsOn]` multiple times to the same test.
+
+:::code language="csharp" source="snippets/order-unit-tests/csharp/TUnit.TestProject/ByDependency.cs":::
+
+If a dependency fails, TUnit skips the dependent test. To run the dependent test anyway, set `ProceedOnFailure` to `true`, for example `[DependsOn(nameof(Test1), ProceedOnFailure = true)]`. A dependent test can read the results of the tests it depends on through `TestContext.Current.Dependencies.GetTests`.
+
+When the test you depend on is overloaded, specify its parameter types:
+
+:::code language="csharp" source="snippets/order-unit-tests/csharp/TUnit.TestProject/ByOverloadedDependency.cs":::
+
+> [!NOTE]
+> Tests should ideally be independent of each other. Reserve `[DependsOn]` for scenarios where independent tests are impractical, such as expensive multi-step workflows.
+
+:::zone-end
 
 ## Next steps
 

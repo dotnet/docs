@@ -1,36 +1,49 @@
 ---
+title: Guidance for .NET library dependency versions
+description: Learn about the strategies and recommendations for choosing dependency versions when you build a library that targets multiple .NET versions.
+ms.date: 11/04/2026
 ai-usage: ai-assisted
 ---
 # Guidance for .NET library dependency versions
 
-When building libraries that target multiple .NET versions, choosing dependency versions has implications for compatibility, servicing, and ecosystem health. This document outlines the main strategies, their tradeoffs, and recommendations.
+When you build libraries that target multiple .NET versions, choosing dependency versions has implications for compatibility, servicing, and ecosystem health. This article outlines the main strategies, their tradeoffs, and recommendations.
 
 ---
 
-## **Overview**
+## Overview
 
-Library authors face challenges when deciding which version of a .NET dependency to reference. Newer versions have more API and features, but may require a local redistribution increasing servicing responsibilities of the library and size of the application.  The decision impacts:
+Library authors face challenges when deciding which version of a .NET dependency to reference. Newer versions have more APIs and features but might require a local redistribution, which increases servicing responsibilities of the library and size of the application. The decision impacts:
 
-- **Friction of updates** on older runtimes.  Friction of updates are any of the cost associated with taking a new version of a libary.  This could be the set of changes introduced between major versions of a dependency, the application size due to more app-local dependencies, the application startup performance due to using app-local dependencies without pre-generated native images, etc.
-- **Development cost** in maintaining the solution.  Here development cost is the cost of doing work in the latest codebase.  This might be managing more complex projects with conditions, the total number of dependencies that need to be updated regularly, the cost of maintaining local source to account for missing features in older dependencies (polyfills), dealing with ifdefs around inconsistent API/features across versions, etc. 
-- **Servicing cost** in managing supported releases.  Here servicing cost is the ongoing cost in keeping release branches building, up to date, and compliant with all supported build tools.
+- **Friction of updates** on older runtimes. Friction of updates is the cost associated with taking a new version of a library. For example, this friction could be the set of changes introduced between major versions of a dependency, the application size due to more app-local dependencies, or the application startup performance due to using app-local dependencies without pregenerated native images.
+- **Development cost** in maintaining the solution, which is the cost of doing work in the latest codebase. For example, this cost might be managing more complex projects with conditions, the total number of dependencies that need to be updated regularly, maintaining local source to account for missing features in older dependencies (polyfills), or dealing with ifdefs around inconsistent APIs or features across versions.
+- **Servicing cost** in managing supported releases. Servicing cost is the ongoing cost of keeping release branches building, up to date, and compliant with all supported build tools.
 
 This guidance provides options, tradeoffs, and a decision matrix to help you choose the best approach.
-✔️ DO be deliberate in choosing a dependency policy for your library
+
+✔️ DO be deliberate in choosing a dependency policy for your library.
+
 ✔️ DO remove out of support target frameworks from your package.
-✔️ CONSIDER choosing an approach that minimizes development costs and adjusting based on customer feedback
-✔️ CONSIDER changing your approach through the lifecycle of your library
-❌ DO NOT assume any policy is incorrect, all policies are technically sound and supported with different tradeoffs for consumption
+
+✔️ CONSIDER choosing an approach that minimizes development costs and adjusting based on customer feedback.
+
+✔️ CONSIDER changing your approach through the lifecycle of your library.
+
+❌ DO NOT assume any policy is incorrect. All policies are technically sound and supported with different tradeoffs for consumption.
 
 ---
 
-## **Strategies for Dependency Version Selection**
+## Strategies for dependency version selection
 
-### **Option 1: Latest supported versions**
+Compare the following three strategies to choose a dependency policy for your library.
 
-Reference the latest supported version of the dependency across all target frameworks.  For example at the time this document was written when .NET 10.0 is the latest current release a project would reference reference 10.0 packages on `netstandard2.0`, `net8.0`, `net9.0`, and `net10.0`.
-> **Note:** The lifetime of the latest Short-Term Support (STS) release now aligns with the latest LTS release, so choosing “latest” effectively means choosing the latest supported version regardless of STS or LTS designation.
-> **Note:** Not all packages support targeting older frameworks in their latest version. For example: `Microsoft.AspNetCore.Authorization`.  These packages must be excluded from this policy and must always follow option 2 when used.
+### Option 1: Latest supported versions
+
+Reference the latest supported version of the dependency across all target frameworks. For example, if .NET 10.0 is the latest current release, a project would reference 10.0 packages on `netstandard2.0`, `net8.0`, `net9.0`, and `net10.0`.
+
+> [!NOTE]
+>
+> - The lifetime of the latest Standard Term Support (STS) release aligns with the latest Long Term Support (LTS) release, so choosing "latest" effectively means choosing the latest supported version regardless of STS or LTS designation. For current support dates, see the [.NET support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+> - Not all packages support targeting older frameworks in their latest version, for example, `Microsoft.AspNetCore.Authorization`. If you reference these packages, exclude them from this policy and follow option 2 instead.
 
 **Pros**
 
@@ -41,34 +54,34 @@ Reference the latest supported version of the dependency across all target frame
 **Cons**
 
 - Users targeting older TFMs will get the latest version's behavior, including any potential breaking changes.
-- Larger number of packages to update in comparison to relying on framework provided API.
-- May create friction for customers who are not on the latest supported runtime.
-- May prevent consumption in enviroments where dependencies are managed by a host application - eg: MSBuild, Visual Studio, Azure Functions V1.
+- Larger number of packages to update in comparison to relying on framework-provided APIs.
+- Might create friction for customers who aren't on the latest supported runtime.
+- Might prevent consumption in environments where dependencies are managed by a host application, for example, MSBuild, Visual Studio, and Azure Functions V1.
 
 ---
 
-### **Option 2: TFM-specific versions**
+### Option 2: TFM-specific versions
 
-Reference different dependency versions per Target Framework Moniker (TFM).  Don't reference packages when the framework provides the API.  For example: 8.0 packages on `net8.0`, 9.0 packages on `net9.0`, and so on.
+Reference different dependency versions per target framework moniker (TFM). Don't reference packages when the framework provides the API. For example, reference 8.0 packages on `net8.0` and 9.0 packages on `net9.0`.
 
 **Pros**
 
 - Minimizes change for apps running on older runtimes.
-- Minimizes app-local libraries app size on older runtimes.  Uses runtime optimized library on older runtimes.
+- Minimizes app size by reducing app-local libraries on older runtimes. Uses runtime-optimized libraries on older runtimes.
 
 **Cons**
 
-- Reduced API available to library which may lead to more complex implementations (polyfills).  Polyfills increase the total cost of devlopment and servicing.
+- Reduced API surface available to the library, which might lead to more complex implementations (polyfills). Polyfills increase the total cost of development and servicing.
 - Slows innovation in libraries.
-- Greater complexity of infrastructure to maintain seperate dependency sets per target framework.  Central packagge management and dependabot can be be configured to work with this, but it's challenging to get it right.
+- Greater complexity of infrastructure to maintain separate dependency sets per target framework. You can configure central package management and Dependabot to work with this, but it's challenging to get it right.
 
 ---
 
-### **Option 3: Branching**
+### Option 3: Branching
 
-Reference the latest supported version of the dependency across all target frameworks, but create a new release branch your when you change major versions of dependencies.  This is the same as Option 1, but retaining a supported branch allows consumers to choose between staying on older supported packages or getting new features.
+Reference the latest supported version of the dependency across all target frameworks, but create a new release branch when you change major versions of dependencies. This is the same as option 1, but retaining a supported branch allows consumers to choose between staying on older supported packages or getting new features.
 
-❌ AVOID using branching as a way to remove support for in-support frameworks as this removes the feature/support choice for users.
+❌ AVOID using branching as a way to remove support for in-support frameworks as this approach removes the feature/support choice for users.
 
 **Pros**
 
@@ -80,92 +93,106 @@ Reference the latest supported version of the dependency across all target frame
 **Cons**
 
 - Increased infrastructure cost to maintain concurrent branches.
-- No new features for folks who want to stay on older dependencies.
+- No new features for consumers who want to stay on older dependencies.
 
 ---
 
-## **Decision matrix**
+## Decision matrix
 
-| Strategy                              | Update Friction  | Development Cost |  Servicing Cost  |
+| Strategy                              | Update friction  | Development cost |  Servicing cost  |
 |---------------------------------------|------------------|------------------|------------------|
-| Latest Supported Versions (Option 1)  | Moderate         | Low              | Moderate         |
-| TFM-Specific Versions (Option 2)      | Low              | High             | Low / Moderate   |
+| Latest supported versions (option 1)  | Moderate         | Low              | Moderate         |
+| TFM-specific versions (option 2)      | Low              | High             | Low / Moderate   |
 | Branching                             | Low              | Low              | High             |
 
 ---
 
-## **Key tradeoffs**
+## Key tradeoffs
 
-- **Friction vs. Innovation:** Latest versions offer new features but have more friction for existing applications on older runtimes.
-- **Development cost:** Configuring multiple dependency groups, dependency updates for those, and managing API gaps can all accumulate to slow down innovation in a fast moving library.
-- **Servicing cost:** More package dependencies means more updates.  More branches mean more concurrent builds that need to stay healthy. Additional code in the form of polyfills means more LOC with potential bugs.
-
----
-
-## **Recommended guidance**
-
-- Option 1: Recommended for libraries moving fast and undergoing lots of innovation and feature development.  Consumers are more likely to be on the latest framework.
-- Option 2: Recommended for libraries that are stable and do not require new features.  Could be a transition strategy when a library reaches maturity and stops taking large features.
-- Option 3: Recommended for libraries that are part of .NET or receive strong customer feedback that option 1 is limiting consumption or blocking adoption.  Could be a transition strategy when Option 1 has too much friction.
+- **Friction vs. innovation:** Latest versions offer new features but have more friction for existing applications on older runtimes.
+- **Development cost:** Configuring multiple dependency groups, updating dependencies for those, and managing API gaps can all accumulate to slow down innovation in a fast-moving library.
+- **Servicing cost:** More package dependencies mean more updates. More branches mean more concurrent builds that need to stay healthy. Additional code in the form of polyfills means more lines of code with potential bugs.
 
 ---
 
-## **Examples**
+## Recommended guidance
+
+- Option 1: Recommended for libraries moving fast and undergoing lots of innovation and feature development. Consumers are more likely to be on the latest framework.
+- Option 2: Recommended for libraries that are stable and don't require new features. Could be a transition strategy when a library reaches maturity and stops taking large features.
+- Option 3: Recommended for libraries that are part of .NET or receive strong customer feedback that option 1 is limiting consumption or blocking adoption. Could be a transition strategy when option 1 has too much friction.
+
+---
+
+## Examples
+
+These examples use `Microsoft.Extensions.Logging.Abstractions`, which isn't part of the .NET shared framework. Version 10.0.0 of the package depends on `System.Diagnostics.DiagnosticSource` 10.0.0 when targeting `net8.0` or `net9.0`, but relies on the shared framework for that API when targeting `net10.0`. This transitive dependency means that your dependency policy affects framework libraries even when you don't reference them directly. For the dependency groups, see [Microsoft.Extensions.Logging.Abstractions 10.0.0](https://www.nuget.org/packages/Microsoft.Extensions.Logging.Abstractions/10.0.0#dependencies-body-tab).
 
 ### Example 1: Latest supported version
+
+Referencing version 10.0.0 across all targets brings an app-local copy of `System.Diagnostics.DiagnosticSource` 10.0.0 into .NET 8 and .NET 9 apps instead of using the version in their shared framework.
+
 ```xml
 <PropertyGroup>
   <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
 </PropertyGroup>
 <ItemGroup>
-  <PackageReference Include="System.IO.Packaging" Version="10.0.0" />
+  <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.0" />
   <PackageReference Include="System.Text.Json" Version="10.0.0" />
 </ItemGroup>
 ```
 
 ### Example 2: TFM-specific versions
+
+Match the logging package version to each target framework to avoid bringing in a newer app-local `System.Diagnostics.DiagnosticSource`. Omit a direct `System.Text.Json` reference because each target framework already provides it.
+
 ```xml
 <PropertyGroup>
   <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
 </PropertyGroup>
 <ItemGroup>
-  <PackageReference Condition="'$(TargetFramework)' == 'net8.0'" Include="System.IO.Packaging" Version="8.0.0" />
-  <PackageReference Condition="'$(TargetFramework)' == 'net9.0'" Include="System.IO.Packaging" Version="9.0.0" />
-  <PackageReference Condition="'$(TargetFramework)' == 'net10.0'" Include="System.IO.Packaging" Version="10.0.0" />
+  <PackageReference Condition="'$(TargetFramework)' == 'net8.0'" Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+  <PackageReference Condition="'$(TargetFramework)' == 'net9.0'" Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
+  <PackageReference Condition="'$(TargetFramework)' == 'net10.0'" Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.0" />
   <!-- Note that System.Text.Json is absent as it is provided by the framework -->
 </ItemGroup>
 ```
 
 ### Example 3: Branching
-Branch: release/8.0
+
+The following branches illustrate the target frameworks and dependency versions at each release. Remove target frameworks from a supported branch when those frameworks reach end of support.
+
+Branch: `release/8.0`
+
 ```xml
 <PropertyGroup>
   <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
 </PropertyGroup>
 <ItemGroup>
-  <PackageReference Include="System.IO.Packaging" Version="8.0.0" />
+  <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
   <PackageReference Include="System.Text.Json" Version="8.0.0" />
 </ItemGroup>
 ```
 
-Branch: release/9.0
+Branch: `release/9.0`
+
 ```xml
 <PropertyGroup>
   <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
 </PropertyGroup>
 <ItemGroup>
-  <PackageReference Include="System.IO.Packaging" Version="9.0.0" />
+  <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
   <PackageReference Include="System.Text.Json" Version="9.0.0" />
 </ItemGroup>
 ```
 
-Branch: release/10.0
+Branch: `release/10.0`
+
 ```xml
 <PropertyGroup>
   <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
 </PropertyGroup>
 <ItemGroup>
-  <PackageReference Include="System.IO.Packaging" Version="10.0.0" />
+  <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.0" />
   <PackageReference Include="System.Text.Json" Version="10.0.0" />
 </ItemGroup>
 ```

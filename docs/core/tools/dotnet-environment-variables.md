@@ -41,7 +41,7 @@ There are several global HTTP environment variable settings:
 - `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT`
   - When set to `false` or `0`, disables HTTP/2 support, which is enabled by default.
 - `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP3SUPPORT`
-  - When set to `true` or `1`, enables HTTP/3 support, which is disabled by default.
+  - When set to `false` or `0`, disables HTTP/3 support, which is enabled by default.
 - `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2FLOWCONTROL_DISABLEDYNAMICWINDOWSIZING`
   - When set to `false` or `0`, overrides the default and disables the HTTP/2 dynamic window scaling algorithm.
 - `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_FLOWCONTROL_MAXSTREAMWINDOWSIZE`
@@ -252,7 +252,7 @@ Starting in Visual Studio 2026, MSBuild in Visual Studio _also_ ensures that `DO
 
 ### `DOTNET_LAUNCH_PROFILE`
 
-The [dotnet run](dotnet-run.md) command sets this variable to the selected launch profile.
+The [`dotnet run` command](dotnet-run.md#launch-profiles) sets this variable to the selected launch profile.
 
 Given the following _launchSettings.json_ file:
 

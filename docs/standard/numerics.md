@@ -3,6 +3,7 @@ description: "Learn more about: Numerics in .NET"
 title: "Numerics in .NET"
 titleSuffix: ""
 ms.date: 04/23/2021
+ai-usage: ai-assisted
 helpviewer_keywords:
   - "SIMD"
   - "System.Numerics.Vectors"
@@ -110,6 +111,10 @@ The .NET SIMD-enabled types include the following:
 The SIMD-enabled types are implemented in such a way that they can be used with non-SIMD-enabled hardware or JIT compilers. To take advantage of SIMD instructions, your 64-bit apps must be run by the runtime that uses the RyuJIT compiler, which is included in .NET Core and in .NET Framework 4.6 and later versions. It adds SIMD support when targeting 64-bit processors.
 
 For more information, see [Use SIMD-accelerated numeric types](simd.md).
+
+## Tensors
+
+The [System.Numerics.Tensors](https://www.nuget.org/packages/System.Numerics.Tensors) package provides multidimensional tensor types and operations over spans. For shape and stride conventions, supported overlapping operations, and differences from NumPy, see [Tensor shapes, storage, and NumPy differences](tensor-shapes-and-storage.md).
 
 ## See also
 

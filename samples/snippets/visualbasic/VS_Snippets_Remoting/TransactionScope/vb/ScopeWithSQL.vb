@@ -2,7 +2,7 @@
 Option Strict On
 
 Imports System.Data
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 Imports System.Transactions
 
 Module Module1
@@ -34,6 +34,12 @@ Module Module1
       ByVal connectString1 As String, ByVal connectString2 As String, _
       ByVal commandText1 As String, ByVal commandText2 As String) As Integer
 
+#If NET7_0_OR_GREATER Then
+        If Not OperatingSystem.IsWindows() Then
+            Throw New PlatformNotSupportedException("This distributed transaction example requires Windows and Microsoft Distributed Transaction Coordinator.")
+        End If
+        TransactionManager.ImplicitDistributedTransactions = True
+#End If
         ' Initialize the return value to zero and create a StringWriter to display results.
         Dim returnValue As Integer = 0
         Dim writer As System.IO.StringWriter = New System.IO.StringWriter
@@ -74,6 +80,7 @@ Module Module1
                 scope.Complete()
             End Using
         Catch ex As TransactionAbortedException
+            returnValue = 0
             writer.WriteLine("TransactionAbortedException Message: {0}", ex.Message)
         End Try
 
@@ -93,4 +100,3 @@ Module Module1
     End Function
 
 End Module
-

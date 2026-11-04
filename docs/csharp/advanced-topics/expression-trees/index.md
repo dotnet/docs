@@ -47,7 +47,7 @@ Expression trees don't support new expression node types. It would be a breaking
 - [Conditional methods](../../language-reference/preprocessor-directives.md#conditional-compilation) removed from the output
 - [`base` access](../../language-reference/keywords/base.md)
 - Method group expressions, including [*address-of* (`&`)](../../language-reference/operators/pointer-related-operators.md) a method group, and anonymous method expressions
-- References to [local functions](../../programming-guide/classes-and-structs/local-functions.md)
+- References to [local functions](../../fundamentals/building-software/local-functions.md)
 - Statements, including assignment (`=`) and statement bodied expressions
 - [Partial methods](../../language-reference/keywords/partial-member.md) with only a defining declaration
 - [Unsafe pointer operations](../../language-reference/unsafe-code.md#pointer-types)
@@ -64,6 +64,6 @@ Expression trees don't support new expression node types. It would be a breaking
 - Expressions using <xref:System.Index?displayProperty=nameWithType> or <xref:System.Range?displayProperty=nameWithType>, [index "from end" (`^`) operator](../../language-reference/operators/member-access-operators.md#index-from-end-operator-) or [range expressions (`..`)](../../language-reference/operators/member-access-operators.md#range-operator-)
 - [`async` lambda expressions or `await` expressions](../../language-reference/operators/lambda-expressions.md#async-lambdas), including [`await foreach` and `await using`](../../language-reference/operators/await.md#asynchronous-streams-and-disposables)
 - [Tuple literals, tuple conversions, tuple `==` or `!=`, or `with` expressions](../../language-reference/builtin-types/value-tuples.md)
-- [Discards (`_`)](../../fundamentals/functional/discards.md), [deconstructing assignment](../../fundamentals/functional/deconstruct.md), [pattern matching `is` operator, or the pattern matching `switch` expression](../../language-reference/operators/patterns.md)
+- [Discards (`_`)](../../fundamentals/patterns/discards.md), [deconstructing assignment](../../fundamentals/patterns/deconstruct.md), [pattern matching `is` operator, or the pattern matching `switch` expression](../../language-reference/operators/patterns.md)
 - COM call with `ref` omitted on the arguments
 - [`ref`](../../language-reference/keywords/ref.md), [`in`](../../language-reference/keywords/method-parameters.md#in-parameter-modifier) or [`out`](../../language-reference/keywords/method-parameters.md#out-parameter-modifier) parameters, `ref` return values, `out` arguments, or any values of [`ref struct` type](../../language-reference/builtin-types/ref-struct.md)

@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) Hot Reload
 description: Learn about the MTP Hot Reload extension for running tests with hot reload.
 author: evangelink
 ms.author: amauryleve
-ms.date: 02/25/2026
+ms.date: 08/28/2026
 ai-usage: ai-assisted
 ---
 
@@ -24,6 +24,8 @@ builder.TestHost.AddHotReloadProvider();
 ## Hot reload
 
 Hot reload lets you modify your app's managed source code while the application is running, without the need to manually pause or hit a breakpoint. Simply make a supported change while the app is running and select the **Apply code changes** button in Visual Studio to apply your edits.
+
+If you use an AI coding assistant, the [`mtp-hot-reload` .NET Agent Skill](https://github.com/dotnet/skills/tree/main/plugins/dotnet-test/skills/mtp-hot-reload) guides the assistant through setup and recovery from unsupported edits. This skill isn't an MTP extension or CLI plugin.
 
 > [!NOTE]
 > The current version is limited to supporting hot reload in "console mode" only. There is currently no support for hot reload in Test Explorer for Visual Studio or Visual Studio Code.

@@ -192,7 +192,7 @@ The `AsyncMethodBuilder` attribute can be applied to an async method to override
 
 You use these attributes to specify that a type is an *interpolated string handler*. The .NET 6 library already includes <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=nameWithType> for scenarios where you use an interpolated string as the argument for a `string` parameter. You might have other instances where you want to control how interpolated strings are processed. You apply the <xref:System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute?displayProperty=nameWithType> to the type that implements your handler. You apply the <xref:System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute?displayProperty=nameWithType> to parameters of that type's constructor.
 
-You can learn more about building an interpolated string handler in the [interpolated string expression handlers](~/_csharpstandard/standard/attributes.md#235101-custom-interpolated-string-expression-handlers) clause of the C# standard.
+You can learn more about building an interpolated string handler in the [interpolated string expression handlers](~/_csharpstandard/standard/attributes.md#235111-custom-interpolated-string-expression-handlers) clause of the C# standard.
 
 ## `ModuleInitializer` attribute
 
@@ -263,7 +263,7 @@ Overload resolution considers the two methods equally good for some argument typ
 
 :::code language="csharp" source="snippets/OrpaSnippets.cs" ID="SnippetOrpaExample":::
 
-All overloads with a lower priority than the highest overload priority are removed from the set of applicable methods. Methods without this attribute have the overload priority set to the default of zero. Library authors should use this attribute as a last resort when adding a new and better method overload. Library authors should have a deep understanding of how [Overload resolution](~/_csharplang/proposals/csharp-13.0/overload-resolution-priority.md#overload-resolution-priority) impacts choosing the better method. Otherwise, unexpected errors can result.
+All overloads with a lower priority than the highest overload priority are removed from the set of applicable methods. Methods without this attribute have the overload priority set to the default of zero. Library authors should use this attribute as a last resort when adding a new and better method overload. Library authors should have a deep understanding of how [overload resolution priority](~/_csharpstandard/standard/attributes.md#23515-the-overloadresolutionpriority-attribute) impacts choosing the better method. Otherwise, unexpected errors can result.
 
 ## EnumeratorCancellation attribute
 

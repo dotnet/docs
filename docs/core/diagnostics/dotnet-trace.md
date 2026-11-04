@@ -1,9 +1,10 @@
 ---
 title: dotnet-trace diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-trace CLI tool to collect .NET traces of a running process without the native profiler, by using the .NET EventPipe.
-ms.date: 06/10/2026
+ms.date: 08/24/2026
 ms.topic: reference
 ms.custom: sfi-ropc-nochange
+ai-usage: ai-assisted
 ---
 # dotnet-trace performance analysis utility
 
@@ -85,6 +86,7 @@ Collects a diagnostic trace from a running process or launches a child process a
 
 ```dotnetcli
 dotnet-trace collect
+    [--buffering-mode <Drop|Block>]
     [--buffersize <size>]
     [--clreventlevel <clreventlevel>]
     [--clrevents <clrevents>]
@@ -107,6 +109,15 @@ dotnet-trace collect
 ```
 
 ### Options
+
+- **`--buffering-mode <Drop|Block>`**
+
+  Available in `dotnet-trace` version 10.0.750501 and later.
+
+  Sets how the runtime buffers events. Accepts `Drop` or `Block` (case-insensitive), and defaults to `Drop`.
+
+  - `Drop` (default): Events are dropped when the buffer overflows.
+  - `Block`: Threads emitting events wait until there is room in the buffer to store them. Events may still be dropped under uncommon error conditions such as memory exhaustion. `Block` requires a .NET 11+ target runtime and can make the traced application slower because event-emitting threads pause while the buffer stays full.
 
 - **`--buffersize <size>`**
 
@@ -232,7 +243,7 @@ dotnet-trace collect
   | Profile      | Description                                              |
   |--------------|----------------------------------------------------------|
   | `dotnet-common` | Lightweight .NET runtime diagnostics designed to stay low overhead.<br>Includes GC, AssemblyLoader, Loader, JIT, Exceptions, Threading, JittedMethodILToNativeMap, and Compilation events<br>Equivalent to `--providers "Microsoft-Windows-DotNETRuntime:0x100003801D:4"`. |
-  | `dotnet-sampled-thread-time` | Samples .NET thread stacks (~100 Hz) to identify hotspots over time. Uses the runtime sample profiler with managed stacks. |
+  | `dotnet-sampled-thread-time` | Samples .NET thread stacks at the runtime's default rate (~1000 Hz, every 1 ms in builds with multithreading enabled) to estimate how much wall clock time code is using. |
   | `gc-verbose` | Tracks GC collections and samples object allocations.    |
   | `gc-collect` | Tracks GC collections only at very low overhead.         |
   | `database`   | Captures ADO.NET and Entity Framework database commands. |
@@ -289,9 +300,6 @@ dotnet-trace collect
 > - When you specify a stopping event through the `--stopping-event-*` options, as the EventStream is being parsed asynchronously, there will be some events that pass through between the time a trace event matching the specified stopping event options is parsed and the EventPipeSession is stopped.
 
 ## dotnet-trace collect-linux
-
-> [!NOTE]
-> The `collect-linux` verb is a new preview feature and relies on an updated version of the .nettrace file format. The latest PerfView release supports these trace files, but other ways of using the trace file, such as [`convert`](#dotnet-trace-convert) and [`report`](#dotnet-trace-report), might not work yet.
 
 Collects diagnostic traces using perf_events, a Linux OS technology. `collect-linux` enables the following additional features over [`collect`](#dotnet-trace-collect).
 
@@ -731,12 +739,6 @@ This example captures CPU samples for all processes on the machine. Any processe
 
   ```output
   $ sudo dotnet-trace collect-linux
-  ==========================================================================================
-  The collect-linux verb is a new preview feature and relies on an updated version of the
-  .nettrace file format. The latest PerfView release supports these trace files but other
-  ways of using the trace file may not work yet. For more details, see the docs at
-  https://learn.microsoft.com/dotnet/core/diagnostics/dotnet-trace.
-  ==========================================================================================
   No providers, profiles, ClrEvents, or PerfEvents were specified, defaulting to trace profiles 'dotnet-common' + 'cpu-sampling'.
 
   Provider Name                           Keywords            Level               Enabled By
@@ -760,12 +762,6 @@ For environments with multiple .NET versions installed, running `collect-linux` 
 
   ```output
   $ dotnet-trace collect-linux --probe
-  ==========================================================================================
-  The collect-linux verb is a new preview feature and relies on an updated version of the
-  .nettrace file format. The latest PerfView release supports these trace files but other
-  ways of using the trace file may not work yet. For more details, see the docs at
-  https://learn.microsoft.com/dotnet/core/diagnostics/dotnet-trace.
-  ==========================================================================================
   Probing .NET processes for support of the EventPipe UserEvents IPC command used by collect-linux. Requires runtime '10.0.0' or later.
   .NET processes that support the command:
   3802935 MyApp

@@ -1,7 +1,8 @@
 ---
 title: dotnet nuget add source command
 description: The dotnet nuget add source command adds a new package source to your NuGet configuration files. 
-ms.date: 10/28/2025
+ms.date: 11/03/2026
+ai-usage: ai-assisted
 ---
 # dotnet nuget add source
 
@@ -20,6 +21,7 @@ ms.date: 10/28/2025
 dotnet nuget add source <PACKAGE_SOURCE_PATH> [--name <SOURCE_NAME>] [--username <USER>]
     [--password <PASSWORD>] [--store-password-in-clear-text]
     [--valid-authentication-types <TYPES>] [--configfile <FILE>] [--allow-insecure-connections]
+    [--min-publish-age-hours <HOURS>]
 
 dotnet nuget add source -h|--help
 ```
@@ -48,6 +50,12 @@ The `dotnet nuget add source` command adds a new package source to your NuGet co
 - **`-n|--name <SOURCE_NAME>`**
 
   Name of the source.
+
+- **`--min-publish-age-hours <HOURS>`**
+
+  Sets the minimum package publish age for this source in nonnegative whole hours. When `dotnet package add` or `dotnet package update` automatically selects a version, it excludes versions from this source that haven't reached the minimum age, unless the package matches a configured exception. Sets the `minPublishAgeHours` attribute in *nuget.config*. Omit the option or set it to `0` to add a source with no minimum age. Available starting with .NET SDK 11.0.100.
+
+  For package-selection behavior, exceptions, and restore limitations, see [Minimum package publish age](/nuget/consume-packages/minimum-package-publish-age).
 
 - **`-p|--password <PASSWORD>`**
 
@@ -81,6 +89,12 @@ The `dotnet nuget add source` command adds a new package source to your NuGet co
   dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org
   ```
 
+- Add `nuget.org` with a 72-hour minimum package publish age:
+
+  ```dotnetcli
+  dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --min-publish-age-hours 72
+  ```
+
 - Add `c:\packages` as a local source:
 
   ```dotnetcli
@@ -100,6 +114,8 @@ The `dotnet nuget add source` command adds a new package source to your NuGet co
   ```
 
 ## See also
+
+- [Configure an HTTPS client certificate for a package source](dotnet-nuget-add-client-cert.md)
 
 - [Security best practices for managing package source credentials](/nuget/consume-packages/consuming-packages-authenticated-feeds#security-best-practices-for-managing-credentials)
 

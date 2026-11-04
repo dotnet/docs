@@ -2,7 +2,8 @@
 title: .NET SDK and .NET CLI telemetry
 description: The .NET SDK and the .NET CLI collect usage information and send it to Microsoft. Learn what data is collected and how to opt out.
 author: KathleenDollard
-ms.date: 10/07/2025
+ms.date: 10/01/2026
+ai-usage: ai-assisted
 ---
 # .NET SDK and .NET CLI telemetry
 
@@ -50,13 +51,25 @@ To disable this message and the .NET welcome message, set the `DOTNET_NOLOGO` en
 
 ## Data points
 
-The telemetry feature doesn't collect personal data, such as usernames or email addresses. It doesn't scan your code and doesn't extract project-level data, such as name, repository, or author. It doesn't extract the contents of any data files accessed or created by your apps, dumps of any memory occupied by your apps' objects, or the contents of the clipboard. The data is sent securely to Microsoft servers by using [Azure Monitor](https://azure.microsoft.com/services/monitor/) technology. The data is held under restricted access and published under strict security controls from secure [Azure Storage](https://azure.microsoft.com/services/storage/) systems.
+Except for [Microsoft employee usage classification](#microsoft-employee-usage-classification), telemetry doesn't collect personal data, such as usernames or email addresses. For a positive classification outside of Continuous Integration pipelines (CI), telemetry can report a normalized local Microsoft employee account alias and corporate domain. It doesn't report a full email address. It doesn't scan your code and doesn't extract project-level data, such as name, repository, or author. It doesn't extract the contents of any data files accessed or created by your apps, dumps of any memory occupied by your apps' objects, or the contents of the clipboard. The data is sent securely to Microsoft servers by using [Azure Monitor](https://azure.microsoft.com/services/monitor/) technology. The data is held under restricted access and published under strict security controls from secure [Azure Storage](https://azure.microsoft.com/services/storage/) systems.
 
 Protecting your privacy is important to Microsoft. If you suspect the telemetry is collecting sensitive data or the data is being insecurely or inappropriately handled, file an issue in the [dotnet/sdk](https://github.com/dotnet/sdk/issues) repository.
 
 For more information about your privacy and personal data collected, see the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement?msockid=07e1f252f95a6b9423b5e360f8e06a61).
 
 The following tabs show the telemetry data captured by SDK version:
+
+# [.NET 11](#tab/dotnet11)
+
+- **SDK version 11.0.200 and later:**
+  - The CLI classifies whether the current user is a Microsoft employee. For more information, see [Microsoft employee usage classification](#microsoft-employee-usage-classification).
+
+- **SDK version 11.0.100 and later:**
+  - Roslyn compiler output cache telemetry:
+    - Whether the compiler found and restored a cached compilation result.
+    - The outcome of an attempt to store a compilation result in the cache.
+    - The compiler language (C# or Visual Basic).
+    - Time spent computing the cache key, restoring a cached result, storing a result, and compiling and emitting on a cache miss.
 
 # [.NET 10](#tab/dotnet10)
 
@@ -186,6 +199,21 @@ The following tabs show the telemetry data captured by SDK version:
   - Telemetry profile: an optional value only used with explicit user opt-in and used internally at Microsoft.
 
 ---
+
+### Microsoft employee usage classification
+
+Starting with .NET 11 SDK 11.0.200, the CLI detects evidence that the current user is a Microsoft employee. This classification measures Microsoft employee usage of the .NET CLI. Using Microsoft products doesn't cause a positive classification.
+
+| Tag | Data |
+| --- | --- |
+| `dotnet.cli.is_microsoft_internal` | Whether detection found evidence that the current user is a Microsoft employee. |
+| `dotnet.cli.microsoft_internal_source` | The source that found Microsoft employee evidence. Reported only for a positive result. |
+| `dotnet.cli.microsoft_internal_alias` | A normalized local Microsoft employee account alias. Reported only for a positive result outside CI. |
+| `dotnet.cli.microsoft_internal_domain` | A normalized corporate domain. Reported only for a positive result outside CI. |
+
+Outside CI, the CLI can use existing GitHub credentials to query whether an account belongs to the Microsoft organization. The CLI sends the credentials only to GitHub's API for this check. The CLI never caches the credentials or adds them to telemetry. GitHub logins aren't used as telemetry aliases.
+
+The CLI doesn't run GitHub identity probes in CI. The CLI also suppresses alias and domain values in CI.
 
 ### Collected options
 

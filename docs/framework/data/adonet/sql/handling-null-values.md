@@ -1,7 +1,7 @@
 ---
 title: "Handling Null Values"
-description: Learn about how the .NET Framework Data Provider for SQL Server handles null, and read about null and SqlBoolean, three-valued logic, and assigning null values.
-ms.date: "03/30/2017"
+description: Learn about SQL null values, SqlBoolean, three-valued logic, and how to assign null values with System.Data.SqlTypes.
+ms.date: "10/23/2026"
 dev_langs:
   - "csharp"
   - "vb"
@@ -9,7 +9,7 @@ ms.assetid: f18b288f-b265-4bbe-957f-c6833c0645ef
 ---
 # Handling Null Values
 
-A null value in a relational database is used when the value in a column is unknown or missing. A null is neither an empty string (for character or datetime data types) nor a zero value (for numeric data types). The ANSI SQL-92 specification states that a null must be the same for all data types, so that all nulls are handled consistently. The <xref:System.Data.SqlTypes> namespace provides null semantics by implementing the <xref:System.Data.SqlTypes.INullable> interface. Each of the data types in <xref:System.Data.SqlTypes> has its own `IsNull` property and a `Null` value that can be assigned to an instance of that data type.
+A null value in a relational database is used when the value in a column is unknown or missing. A null is neither an empty string (for character or `datetime` data types) nor a zero value (for numeric data types). The ANSI SQL-92 specification states that a null must be the same for all data types, so that all nulls are handled consistently. The <xref:System.Data.SqlTypes> namespace provides null semantics by implementing the <xref:System.Data.SqlTypes.INullable> interface. Each of the data types in <xref:System.Data.SqlTypes> has its own `IsNull` property and a `Null` value that can be assigned to an instance of that data type.
 
 > [!NOTE]
 > The .NET Framework version 2.0 introduced support for nullable value types, which allow programmers to extend a value type to represent all values of the underlying type. These CLR nullable value types represent an instance of the <xref:System.Nullable> structure. This capability is especially useful when value types are boxed and unboxed, providing enhanced compatibility with object types. CLR nullable value types are not intended for storage of database nulls because an ANSI SQL null does not behave the same way as a `null` reference (or `Nothing` in Visual Basic). For working with database ANSI SQL null values, use <xref:System.Data.SqlTypes> nulls rather than <xref:System.Nullable>. For more information on working with CLR value nullable types in Visual Basic see [Nullable Value Types](../../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md), and for C# see [Nullable value types](../../../../csharp/language-reference/builtin-types/nullable-value-types.md).
@@ -28,15 +28,15 @@ A null value in a relational database is used when the value in a column is unkn
 
 ## Nulls and SqlBoolean
 
- Comparison between any <xref:System.Data.SqlTypes> will return a <xref:System.Data.SqlTypes.SqlBoolean>. The `IsNull` function for each `SqlType` returns a <xref:System.Data.SqlTypes.SqlBoolean> and can be used to check for null values. The following truth tables show how the AND, OR, and NOT operators function in the presence of a null value. (T=true, F=false, and U=unknown, or null.)
+ Comparison between any <xref:System.Data.SqlTypes> will return a <xref:System.Data.SqlTypes.SqlBoolean>. The `IsNull` function for each `SqlType` returns a <xref:System.Data.SqlTypes.SqlBoolean> and can be used to check for null values. The following truth tables show how the `AND`, `OR`, and `NOT` operators function in the presence of a null value. (T=true, F=false, and U=unknown, or null.)
 
  ![Truth Table](./media/truthtable-bpuedev11.gif "TruthTable_bpuedev11")
 
 ### Understanding the ANSI_NULLS Option
 
- <xref:System.Data.SqlTypes> provides the same semantics as when the ANSI_NULLS option is set on in SQL Server. All arithmetic operators (+, -, \*, /, %), bitwise operators (~, &, \|), and most functions return null if any of the operands or arguments is null, except for the property `IsNull`.
+ <xref:System.Data.SqlTypes> provides the same semantics as when the `ANSI_NULLS` option is set on in SQL Server. All arithmetic operators (+, -, \*, /, %), bitwise operators (~, &, \|), and most functions return null if any of the operands or arguments is null, except for the property `IsNull`.
 
- The ANSI SQL-92 standard does not support *columnName* = NULL in a WHERE clause. In SQL Server, the ANSI_NULLS option controls both default nullability in the database and evaluation of comparisons against null values. If ANSI_NULLS is turned on (the default), the IS NULL operator must be used in expressions when testing for null values. For example, the following comparison always yields unknown when ANSI_NULLS is on:
+ The ANSI SQL-92 standard does not support *columnName* = `NULL` in a `WHERE` clause. In SQL Server, the `ANSI_NULLS` option controls both default nullability in the database and evaluation of comparisons against null values. If `ANSI_NULLS` is turned on (the default), the `IS NULL` operator must be used in expressions when testing for null values. For example, the following comparison always yields unknown when `ANSI_NULLS` is on:
 
 ```sql
 colname > NULL
@@ -48,7 +48,7 @@ colname > NULL
 colname > @MyVariable
 ```
 
- Use the IS NULL or IS NOT NULL predicate to test for a null value. This can add complexity to the WHERE clause. For example, the TerritoryID column in the AdventureWorks Customer table allows null values. If a SELECT statement is to test for null values in addition to others, it must include an IS NULL predicate:
+ Use the `IS NULL` or `IS NOT NULL` predicate to test for a null value. This can add complexity to the `WHERE` clause. For example, the `TerritoryID` column in the AdventureWorks `Customer` table allows null values. If a `SELECT` statement is to test for null values in addition to others, it must include an `IS NULL` predicate:
 
 ```sql
 SELECT CustomerID, AccountNumber, TerritoryID
@@ -57,9 +57,9 @@ WHERE TerritoryID IN (1, 2, 3)
    OR TerritoryID IS NULL
 ```
 
- If you set ANSI_NULLS off in SQL Server, you can create expressions that use the equality operator to compare to null. However, you can't prevent different connections from setting null options for that connection. Using IS NULL to test for null values always works, regardless of the ANSI_NULLS settings for a connection.
+ If you set `ANSI_NULLS` off in SQL Server, you can create expressions that use the equality operator to compare to null. However, you can't prevent different connections from setting null options for that connection. Using `IS NULL` to test for null values always works, regardless of the `ANSI_NULLS` settings for a connection.
 
- Setting ANSI_NULLS off is not supported in a `DataSet`, which always follows the ANSI SQL-92 standard for handling null values in <xref:System.Data.SqlTypes>.
+ Setting `ANSI_NULLS` off is not supported in a `DataSet`, which always follows the ANSI SQL-92 standard for handling null values in <xref:System.Data.SqlTypes>.
 
 ## Assigning Null Values
 
@@ -114,7 +114,7 @@ isColumnNull=True, ID=Null, Description=Null
 
 3. All non-null values, including defaults, are always written out while serializing to XML. This is unlike XSD/XML semantics where a null value (xsi:nil) is explicit and the default value is implicit (if not present in XML, a validating parser can get it from an associated XSD schema). The opposite is true for a `DataTable`: a null value is implicit and the default value is explicit.
 
-4. All missing column values for rows read from XML input are assigned NULL. Rows created using <xref:System.Data.DataTable.NewRow*> or similar methods are assigned the DataColumn's default value.
+4. All missing column values for rows read from XML input are assigned `NULL`. Rows created using <xref:System.Data.DataTable.NewRow*> or similar methods are assigned the DataColumn's default value.
 
 5. The <xref:System.Data.DataRow.IsNull*> method returns `true` for both `DbNull.Value` and `INullable.Null`.
 

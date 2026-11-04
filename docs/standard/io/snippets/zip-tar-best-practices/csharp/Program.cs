@@ -301,18 +301,23 @@ void TarStreamingRead(Stream archiveStream, string destDir)
     TarEntry? entry;
     while ((entry = reader.GetNextEntry()) is not null)
     {
-        // DataStream is only valid until the next GetNextEntry() call,
-        // so consume or copy the data before advancing.
         if (entry.DataStream is not null)
         {
+            // DataStream is only valid until the next GetNextEntry() call,
+            // so consume
             string destPath = Path.Join(destDir, entry.Name);
             using var fileStream = File.Create(destPath);
             entry.DataStream.CopyTo(fileStream);
+
+            // Alternatively, you can copy the entry contents into
+            // in a separate MemoryStream that remains valid after advancing:
+            if (entry.Length < 1_000_000) // Example limit
+            {
+                MemoryStream memoryStream = new MemoryStream();
+                entry.DataStream.CopyTo(memoryStream);
+                // memoryStream can be used after GetNextEntry() is called again
+            }
         }
     }
-
-    // Alternatively, pass copyContents: true to retain entry data
-    // in a separate MemoryStream that remains valid after advancing:
-    // entry = reader.GetNextEntry(copyContents: true);
 }
 // </TarStreaming>

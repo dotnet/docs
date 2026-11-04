@@ -1,12 +1,16 @@
 ---
 description: "Learn more about: Code Access Security and ADO.NET. Whether the code is allowed to run or not depends on the code's origin or other aspects of its identity."
 title: "Code Access Security"
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
 ---
 # Code access security and ADO.NET
+
+> [!IMPORTANT]
+> Do not use `System.Data.SqlClient` for new development. Use [Microsoft.Data.SqlClient](/sql/connect/ado-net/introduction-microsoft-data-sqlclient-namespace) for new SQL Server data-access code. The examples on this page retain `System.Data.SqlClient` because they demonstrate the built-in .NET Framework provider's code access security permissions. Code access security isn't supported in modern .NET.
 
 .NET Framework offers role-based security as well as code access security (CAS), both of which are implemented using a common infrastructure supplied by the common language runtime (CLR). In the world of unmanaged code, most applications execute with the permissions of the user or principal. As a result, computer systems can be damaged and private data compromised when malicious or error-filled software is run by a user with elevated privileges.
 
@@ -158,6 +162,8 @@ To determine whether code is authorized to access a resource or perform an opera
  The following is a sample permission set for the .NET Framework Data Provider for SQL Server in a partially trusted scenario. For information on creating custom permission sets, see [Configuring Permission Sets Using Caspol.exe](/previous-versions/dotnet/netframework-4.0/4ybs46y6(v=vs.100)).
 
 ```xml
+<!-- Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+     This permission set targets the built-in .NET Framework SQL provider. -->
 <PermissionSet class="System.Security.NamedPermissionSet"
   version="1"
   Name="CustomLocalIntranet"

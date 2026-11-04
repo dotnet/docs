@@ -11,7 +11,7 @@ The minimum supported Android API level for .NET 11 has been raised from 21 (And
 
 ## Version introduced
 
-.NET 11 Preview 4
+.NET 11 Preview 5
 
 ## Previous behavior
 
@@ -27,7 +27,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-Migrating the Android runtime from Mono to CoreCLR requires Android API 24 or later.
+.NET 11 uses CoreCLR by default, which requires Android API 24 or later. In Preview 5, .NET for Android unified the minimum API level at 24 for Mono, CoreCLR, and NativeAOT.
 
 ## Recommended action
 

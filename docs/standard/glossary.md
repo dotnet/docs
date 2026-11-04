@@ -312,8 +312,6 @@ There are other shared frameworks. The *ASP.NET Core shared framework* refers to
 
 For [framework-dependent apps](../core/deploying/index.md#publish-as-framework-dependent), the shared framework consists of libraries that are contained in assemblies installed in a folder on the machine that runs the app. For [self-contained apps](../core/deploying/index.md#publish-as-self-contained), the shared framework assemblies are included with the app.
 
-For more information, see [Deep-dive into .NET Core primitives, part 2: the shared framework](https://natemcmaster.com/blog/2018/08/29/netcore-primitives-2/).
-
 ## stack
 
 A set of programming technologies that are used together to build and run applications.

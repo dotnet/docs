@@ -1,7 +1,7 @@
 ---
 title: dotnet test command with VSTest
 description: The dotnet test command is used to execute unit tests in a given project using VSTest.
-ms.date: 07/19/2026
+ms.date: 09/12/2026
 ai-usage: ai-assisted
 ---
 # dotnet test with VSTest
@@ -36,6 +36,7 @@ dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
     [--interactive]
     [-l|--logger <LOGGER>]
     [--no-build]
+    [--no-dependencies]
     [--nologo]
     [--no-restore]
     [-o|--output <OUTPUT_DIRECTORY>]
@@ -236,6 +237,10 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - **`--no-build`**
 
   Doesn't build the test project before running it. It also implicitly sets the `--no-restore` flag.
+
+- **`--no-dependencies`**
+
+  Skips building project-to-project references. Available starting with .NET 11 Preview 6.
 
 - **`--nologo`**
 

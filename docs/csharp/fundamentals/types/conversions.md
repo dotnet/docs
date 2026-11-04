@@ -91,5 +91,5 @@ For advanced conversion behavior and all overloads, review the API reference for
 
 - [Type system overview](index.md)
 - [Built-in types and literals](built-in-types.md)
-- [Pattern matching](../functional/pattern-matching.md)
+- [Pattern matching](../patterns/pattern-matching.md)
 - [How to safely cast by using pattern matching and the is and as operators](../tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md)

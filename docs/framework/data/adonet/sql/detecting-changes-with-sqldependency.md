@@ -1,7 +1,8 @@
 ---
 title: "Detecting Changes with SqlDependency"
 description: Associate a SqlDependency object with a SqlCommand to detect when query results differ from those originally retrieved in ADO.NET.
-ms.date: "03/30/2017"
+ms.date: "10/21/2026"
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -10,31 +11,33 @@ ms.custom: sfi-ropc-nochange
 
 # Detect changes with SqlDependency
 
-A <xref:System.Data.SqlClient.SqlDependency> object can be associated with a <xref:System.Data.SqlClient.SqlCommand> in order to detect when query results differ from those originally retrieved. You can also assign a delegate to the `OnChange` event, which will fire when the results change for an associated command. You must associate the <xref:System.Data.SqlClient.SqlDependency> with the command before you execute the command. The `HasChanges` property of the <xref:System.Data.SqlClient.SqlDependency> can also be used to determine if the query results have changed since the data was first retrieved.
+To detect when query results differ from those originally retrieved, associate the <xref:Microsoft.Data.SqlClient.SqlDependency> object with the <xref:Microsoft.Data.SqlClient.SqlCommand> before you execute the command. Subscribe to the `OnChange` event to receive a notification when the results change. You can also check the dependency's `HasChanges` property to determine whether the results have changed.
 
 ## Security Considerations
 
-The dependency infrastructure relies on a <xref:System.Data.SqlClient.SqlConnection> that is opened when <xref:System.Data.SqlClient.SqlDependency.Start*> is called in order to receive notifications that the underlying data has changed for a given command. The ability for a client to initiate the call to `SqlDependency.Start` is controlled through the use of <xref:System.Data.SqlClient.SqlClientPermission> and code access security attributes. For more information, see [Enabling Query Notifications](enabling-query-notifications.md) and [Code Access Security and ADO.NET](../code-access-security.md).
+To receive notifications when the underlying data changes, call <xref:Microsoft.Data.SqlClient.SqlDependency.Start*>. The dependency infrastructure opens the <xref:Microsoft.Data.SqlClient.SqlConnection> for the listener. Grant the database principal the required Service Broker and query notification permissions. Code access security isn't supported in modern .NET. For more information, see [Enabling Query Notifications](enabling-query-notifications.md).
 
 ### Example
 
 The following steps illustrate how to declare a dependency, execute a command, and receive a notification when the result set changes:
 
-1. Initiate a `SqlDependency` connection to the server.
+1. At application initialization, call `SqlDependency.Start` to start the client listener.
 
-2. Create <xref:System.Data.SqlClient.SqlConnection> and <xref:System.Data.SqlClient.SqlCommand> objects to connect to the server and define a Transact-SQL statement.
+1. Create <xref:Microsoft.Data.SqlClient.SqlConnection> and <xref:Microsoft.Data.SqlClient.SqlCommand> objects to connect to the server and define a Transact-SQL (T-SQL) statement.
 
-3. Create a new `SqlDependency` object, or use an existing one, and bind it to the `SqlCommand` object. Internally, this creates a <xref:System.Data.Sql.SqlNotificationRequest> object and binds it to the command object as needed. This notification request contains an internal identifier that uniquely identifies this `SqlDependency` object. It also starts the client listener if it is not already active.
+1. Create or reuse the `SqlDependency` object and associate it with the `SqlCommand` object. The dependency creates and associates the <xref:Microsoft.Data.Sql.SqlNotificationRequest> object with the command as needed. The notification request contains an internal identifier for the dependency. The constructor doesn't start the listener.
 
-4. Subscribe an event handler to the `OnChange` event of the `SqlDependency` object.
+1. Subscribe an event handler to the `OnChange` event of the `SqlDependency` object.
 
-5. Execute the command using any of the `Execute` methods of the `SqlCommand` object. Because the command is bound to the notification object, the server recognizes that it must generate a notification, and the queue information will point to the dependencies queue.
+1. Execute the command with one of its `Execute` methods. Because the command includes a notification request, the server registers the query for notifications to the specified queue.
 
-6. Stop the `SqlDependency` connection to the server.
+1. At application termination, call `SqlDependency.Stop` with the same connection string and queue name.
 
 If any user subsequently changes the underlying data, Microsoft SQL Server detects that there is a notification pending for such a change, and posts a notification that is processed and forwarded to the client through the underlying `SqlConnection` that was created by calling `SqlDependency.Start`. The client listener receives the invalidation message. The client listener then locates the associated `SqlDependency` object and fires the `OnChange` event.
 
-The following code fragment shows the design pattern you would use to create a sample application.
+The following code fragment shows the design pattern for a sample application. Install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package and import `Microsoft.Data.SqlClient` in C# or Visual Basic.
+
+These fragments use an existing Service Broker queue. Set `queueName` to the queue's unqualified name and `notificationOptions` to `service=<service-name>;local database=<database-name>`. Specify the service that routes notifications to that queue. Pass the same connection string and queue name to `Start` and `Stop`. For more information, see [Enable query notifications](enabling-query-notifications.md).
 
 ```vb
 Sub Initialization()
@@ -50,7 +53,7 @@ Sub SomeMethod()
       connection)
 
         ' Create a dependency and associate it with the SqlCommand.
-        Dim dependency As New SqlDependency(command)
+        Dim dependency As New SqlDependency(command, notificationOptions, 0)
         ' Maintain the reference in a class member.
         ' Subscribe to the SqlDependency event.
         AddHandler dependency.OnChange, AddressOf OnDependencyChange
@@ -92,7 +95,7 @@ void SomeMethod()
     {
 
         // Create a dependency and associate it with the SqlCommand.
-        SqlDependency dependency=new SqlDependency(command);
+        SqlDependency dependency=new SqlDependency(command, notificationOptions, 0);
         // Maintain the reference in a class member.
 
         // Subscribe to the SqlDependency event.

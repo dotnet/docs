@@ -15,6 +15,7 @@ f1_keywords:
   - "CS9385"
   - "CS9386"
   - "CS9387"
+  - "CS9395"
 helpviewer_keywords:
   - "CS9370"
   - "CS9371"
@@ -29,7 +30,8 @@ helpviewer_keywords:
   - "CS9385"
   - "CS9386"
   - "CS9387"
-ms.date: 06/26/2026
+  - "CS9395"
+ms.date: 09/14/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings for union type and closed hierarchy declarations
@@ -53,6 +55,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9385**](#union-member-provider-requirements): *A union type must have at least one union creation member.*
 - [**CS9386**](#union-member-provider-requirements): *A union member provider type must have an instance 'Value' property of type 'object?' or 'object'. The property must have a public get accessor.*
 - [**CS9387**](#union-member-provider-requirements): *A 'union' declaration cannot use a union member provider interface.*
+- [**CS9395**](#closed-hierarchy-restrictions): *'System.Runtime.CompilerServices.IsClosedTypeAttribute.DerivedTypes' must be an instance property with public get and set accessors, no parameters, and type 'System.Type[]'.*
 
 ## Union declaration requirements
 
@@ -101,6 +104,7 @@ To correct these errors, apply the following changes to your union member provid
 - **CS9382**: *'type': cannot use a closed type 'type' from another assembly as a base type.*
 - **CS9383**: *'type': The type parameter 'parameter' must be referenced in the base type 'type' because the base type is closed.*
 - **CS9384**: *'type': a closed type cannot be marked abstract because it is always implicitly abstract.*
+- **CS9395**: *'System.Runtime.CompilerServices.IsClosedTypeAttribute.DerivedTypes' must be an instance property with public get and set accessors, no parameters, and type 'System.Type[]'.*
 
 A closed type hierarchy restricts which types can derive from a base type. The compiler enforces these restrictions to ensure that the set of derived types is known and exhaustive. For the complete rules, see the [closed hierarchies feature specification](~/_csharplang/proposals/csharp-15.0/closed-hierarchies.md).
 
@@ -111,3 +115,4 @@ To correct these errors, apply the following changes to your closed hierarchy de
 - Don't derive from a closed type declared in another assembly (**CS9382**). Closed hierarchies must have all their subtypes defined in the same assembly as the base type. This restriction enables the compiler to perform exhaustive pattern matching. Move the derived type into the same assembly as the closed base type, or remove the inheritance relationship.
 - Ensure that each type parameter of a generic subtype appears in the base type reference when the base type is closed (**CS9383**). Because a closed hierarchy requires exhaustive knowledge of all subtypes, every type parameter on a subtype must be constrained through the base type. If a type parameter isn't referenced in the base type, the compiler can't enumerate all possible instantiations.
 - Remove the `abstract` modifier from a closed type declaration (**CS9384**). A closed type is always implicitly abstract because it serves as a base for a finite set of derived types. Adding `abstract` explicitly is redundant and disallowed to avoid confusion about whether the type has different semantics than other closed types.
+- Correct the `IsClosedTypeAttribute` definition so that `DerivedTypes`, when present, is a public instance property of type `System.Type[]` with public `get` and `set` accessors and no parameters (**CS9395**).

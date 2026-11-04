@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform vs VSTest - .NET test platform comparison
 description: Compare Microsoft.Testing.Platform (MTP) and VSTest to choose the right .NET test platform for your projects, CI pipelines, and IDE integration.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 08/06/2026
+ms.date: 09/30/2026
 ai-usage: ai-assisted
 ---
 
@@ -29,9 +29,9 @@ Use the following scenarios to choose quickly.
 | Use case | Choose | Why |
 |---|---|---|
 | You need Native AOT or trimming test execution scenarios. | MTP | MTP supports these modern deployment scenarios, while VSTest doesn't. |
-| You're testing classic UWP, modern .NET UWP with `UseUwp`, or another AppContainer project. | VSTest | The MTP packaged-app extension supports full-trust packaged desktop hosts, not AppContainer hosts. |
+| You're testing classic UWP, modern .NET UWP with `UseUwp`, or a WinUI 3 AppContainer project. | MTP with MSTest 4.5 or later | MTP 2.5 supports package activation, exact package-SID pipe authorization, and result artifact recovery through the MSTest.Sdk app-model sidecar. |
 | You're testing an unpackaged WinUI 3 app. | MTP | MTP can run inside the WinUI app and start its executable directly. |
-| You're testing a packaged full-trust WinUI 3 app. | VSTest | Use VSTest until the experimental MTP extension for package registration and AUMID activation becomes available in a public NuGet package. |
+| You're testing a packaged full-trust WinUI 3 app. | MTP with MSTest 4.5 or later | MSTest.Sdk registers the package and activates the test host by AUMID. |
 | You need to mix .NET tests and non-.NET test adapters (for example JavaScript or C++ adapters). | VSTest | VSTest supports mixed-language adapter scenarios, while MTP is .NET-specific. |
 | You want test projects to behave like regular executables (`dotnet run`, direct executable run, `dotnet watch`, and startup-project F5 flows). | MTP | MTP is executable-first, so test apps run like standard .NET apps in local and CI workflows. |
 | You rely on long-established integrations across existing tooling. | VSTest | VSTest has the longest compatibility track record across existing products, tasks, and pipelines. MTP support is growing in the ecosystem, but some integrations may lag behind VSTest. |
@@ -40,6 +40,8 @@ Use the following scenarios to choose quickly.
 | You are blocked by a VSTest-specific issue or behavior in your current workflow. | MTP | In many scenarios, the same workflow isn't affected when moved to MTP because of differences in runtime model and extension architecture. |
 
 If your specific use case isn't listed, both platforms are valid choices.
+
+The complete Windows application matrix across classic UWP, modern UWP, packaged and unpackaged WinUI 3, and WinUI 3 AppContainer hosts requires MSTest 4.5 and MTP 2.5 or later. For older versions, keep your existing VSTest configuration for UWP projects.
 
 ## Integration and tooling support
 
@@ -73,4 +75,4 @@ For complete details about `dotnet test` modes and arguments, see [Testing with 
 - Understand VSTest options: [VSTest options](/visualstudio/test/vstest-console-options)
 - Migrate from VSTest: [Migrate from VSTest to MTP](./migrating-vstest-microsoft-testing-platform.md)
 - Add capabilities: [MTP features](./microsoft-testing-platform-features.md)
-- Test WinUI 3 apps: [Test WinUI 3 apps with MSTest and MTP](./unit-testing-mstest-winui.md)
+- Test Windows apps: [Test UWP and WinUI 3 apps with MSTest and MTP](./unit-testing-mstest-winui.md)

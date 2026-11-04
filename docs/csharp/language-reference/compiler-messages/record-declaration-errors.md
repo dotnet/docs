@@ -24,6 +24,7 @@ f1_keywords:
   - "CS8907"
   - "CS8908"
   - "CS8913"
+  - "CS9391"
 helpviewer_keywords:
   - "CS8851"
   - "CS8857"
@@ -47,14 +48,15 @@ helpviewer_keywords:
   - "CS8907"
   - "CS8908"
   - "CS8913"
-ms.date: 04/29/2026
+  - "CS9391"
+ms.date: 09/14/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings for record declarations
 
 The C# compiler generates errors and warnings when you misuse [record types](../builtin-types/record.md). Record types provide built-in members that implement value-based equality. These diagnostics help you follow the rules for declaring and using record types.
 
-<!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
+<!-- The text in this list generates issues for Acrolinx, because it doesn't use contractions.
 That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 - [**CS8851**](#equality-members): *'type' defines 'Equals' but not 'GetHashCode'*
@@ -78,6 +80,7 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS8906**](#synthesized-member-signatures): *Record equality contract property 'member' must have a get accessor.*
 - [**CS8908**](#positional-members): *The type 'type' may not be used for a field of a record.*
 - [**CS8913**](#positional-members): *The positional member 'member' found corresponding to this parameter is hidden.*
+- [**CS9391**](#synthesized-member-signatures): *Record member 'member' must be declared explicitly because 'base member' is abstract.*
 
 In addition, this article covers the following warning:
 
@@ -96,6 +99,7 @@ In addition, this article covers the following warning:
 - **CS8877**: *Record member 'member' may not be static.*
 - **CS8879**: *Record member 'member' must be private.*
 - **CS8906**: *Record equality contract property 'member' must have a get accessor.*
+- **CS9391**: *Record member 'member' must be declared explicitly because 'base member' is abstract.*
 
 When you explicitly declare a member that the compiler would otherwise synthesize for a [record type](../builtin-types/record.md), your declaration must match the expected signature, accessibility, and modifiers. For the complete rules, see the [records specification](~/_csharpstandard/standard/classes.md#1516-record-classes) in the C# language specification.
 
@@ -111,6 +115,7 @@ To correct these errors, apply the following changes to your explicitly declared
 - Ensure that your explicitly declared member overrides the expected method from `object` or from the base record type. For example, the `Equals` method must override `object.Equals`, and `GetHashCode` must override `object.GetHashCode`. The compiler checks that these members participate in the correct override chain so that [value-based equality](../builtin-types/record.md#value-equality) and other synthesized behaviors work correctly across the type hierarchy (**CS8869**, **CS8871**).
 - Ensure that your explicitly declared `EqualityContract` property overrides the base record's `EqualityContract` property. The compiler relies on the override chain for the equality contract to distinguish record types at run time within the [inheritance hierarchy](../builtin-types/record.md#equality-in-inheritance-hierarchies) (**CS8876**).
 - Add a `get` accessor to the `EqualityContract` property. The compiler reads the equality contract at run time to determine whether two record instances are of the same type, so the property must be readable (**CS8906**).
+- Explicitly declare and implement the reported member in the derived record. The compiler can't synthesize that member when its generated body would call the reported abstract base member (**CS9391**).
 
 ## Positional members
 
@@ -123,10 +128,10 @@ When you declare a [positional record](../builtin-types/record.md#positional-syn
 
 To correct these errors, apply the following changes to your positional record declarations:
 
-- Change any explicitly declared member that corresponds to a positional parameter so it's a readable instance property or field with the same type as the parameter. The compiler needs the member to be readable and type-compatible so that the synthesized `Deconstruct` method and [positional pattern matching](../../fundamentals/functional/pattern-matching.md) can access the value correctly (**CS8866**).
+- Change any explicitly declared member that corresponds to a positional parameter so it's a readable instance property or field with the same type as the parameter. The compiler needs the member to be readable and type-compatible so that the synthesized `Deconstruct` method and [positional pattern matching](../../fundamentals/patterns/pattern-matching.md) can access the value correctly (**CS8866**).
 - Ensure that each positional parameter initializes its corresponding property in the constructor body when you provide an explicit constructor. The compiler raises a warning when a parameter goes unused because it typically indicates a typo or a mismatch between the parameter name and the property name, which would leave the property uninitialized (**CS8907**).
 - Change the type of a field declared in a record to a type that's valid in that context. Certain types, such as `Span<T>` or other `ref struct` types, can't be used as fields in a record because record types require all fields to be compatible with heap allocation and value-based equality (**CS8908**).
-- Remove the `new` modifier from a member in a derived record that hides a positional member from the base record. When a positional member is hidden, the compiler can't match the positional parameter to its corresponding property, which breaks the synthesized `Deconstruct` method and positional [pattern matching](../../fundamentals/functional/pattern-matching.md) (**CS8913**).
+- Remove the `new` modifier from a member in a derived record that hides a positional member from the base record. When a positional member is hidden, the compiler can't match the positional parameter to its corresponding property, which breaks the synthesized `Deconstruct` method and positional [pattern matching](../../fundamentals/patterns/pattern-matching.md) (**CS8913**).
 
 ## Equality members
 
@@ -134,11 +139,11 @@ To correct these errors, apply the following changes to your positional record d
 - **CS8857**: *The receiver of a `with` expression must have a non-void type.*
 - **CS8858**: *The receiver type 'type' is not a valid record type and is not a struct type.*
 
-[Record types](../builtin-types/record.md) provide built-in [value-based equality](../builtin-types/record.md#value-equality). These diagnostics arise when your declarations conflict with the equality contract. For the complete rules on equality, see [equality comparisons](../../programming-guide/statements-expressions-operators/equality-comparisons.md).
+[Record types](../builtin-types/record.md) provide built-in [value-based equality](../builtin-types/record.md#value-equality). These diagnostics arise when your declarations conflict with the equality contract. For the complete rules on equality, see [C# equality comparisons](../../fundamentals/expressions/equality.md).
 
 To correct these errors, apply the following changes:
 
-- Add a `GetHashCode` method whenever you define an `Equals` method. The [equality contract](../../programming-guide/statements-expressions-operators/equality-comparisons.md) requires that objects considered equal produce the same hash code, so the compiler enforces that these two methods are always defined together (**CS8851**).
+- Add a `GetHashCode` method whenever you define an `Equals` method. The [equivalence contract](../operators/equality-operators.md#implement-equality-yourself-when-a-type-cant-be-a-record) requires that objects considered equal produce the same hash code, so the compiler enforces that these two methods are always defined together (**CS8851**).
 - Change the receiver of a `with` expression so that it's a [record type](../builtin-types/record.md) or a [struct type](../builtin-types/struct.md). The `with` expression creates a modified copy by using the `record` copy constructor, or value copy semantics for `struct` types (**CS8858**).
 - Ensure the receiver of a [`with` expression](../operators/with-expression.md) has a non-void type. The `with` expression produces a new copy of the receiver, so the receiver must evaluate to a value that can be copied (**CS8857**).
 

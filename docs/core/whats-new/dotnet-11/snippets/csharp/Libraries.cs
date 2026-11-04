@@ -1,9 +1,13 @@
 ﻿using System.Buffers;
+using System.Collections;
 using System.Diagnostics;
+using System.Formats.Cbor;
 using System.Formats.Tar;
 using System.Globalization;
 using System.IO.Compression;
 using System.IO.Pipelines;
+using System.Numerics;
+using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
@@ -25,6 +29,19 @@ public static class LibrariesExamples
         Console.WriteLine(result.StandardOutput);
         Console.WriteLine($"Exit code: {result.ExitStatus.ExitCode}");
         // </ProcessRunAndCapture>
+    }
+
+    static async Task ProcessSignalExample()
+    {
+        // <ProcessSignal>
+        if (OperatingSystem.IsLinux() || OperatingSystem.IsMacOS())
+        {
+            using Process process = Process.Start("sleep", "30")!;
+            process.Signal(PosixSignal.SIGTERM);
+            ProcessExitStatus status = await process.WaitForExitStatusAsync();
+            Console.WriteLine(status);
+        }
+        // </ProcessSignal>
     }
 
     static void ZLibEncoderSpanExample()
@@ -87,7 +104,7 @@ public static class LibrariesExamples
     {
         // <JsonTypeInfoGeneric>
         JsonSerializerOptions options = new(JsonSerializerDefaults.Web);
-        options.MakeReadOnly();
+        options.MakeReadOnly(populateMissingResolver: true);
 
         // Before: manual downcast required
         JsonTypeInfo<MyRecord> info1 = (JsonTypeInfo<MyRecord>)options.GetTypeInfo(typeof(MyRecord));
@@ -108,6 +125,7 @@ public static class LibrariesExamples
     {
         // <JsonNamingIgnore>
         // Type-level JsonIgnore: all members use WhenWritingNull by default
+        // Type-level JsonNamingPolicy: ReleaseVersion uses snake_case
         // Per-member JsonNamingPolicy: EventName uses camelCase even though the
         // serializer options use PascalCase
         var options = new JsonSerializerOptions
@@ -115,10 +133,10 @@ public static class LibrariesExamples
             PropertyNamingPolicy = JsonNamingPolicy.PascalCase
         };
 
-        var data = new EventData { EventName = "Launch", Notes = null };
+        var data = new EventData { EventName = "Launch", ReleaseVersion = "11", Notes = null };
         string json = JsonSerializer.Serialize(data, options);
         Console.WriteLine(json);
-        // {"eventName":"Launch"}  -- Notes omitted (null), EventName camel-cased
+        // {"eventName":"Launch","release_version":"11"}  -- Notes omitted (null), EventName camel-cased
         // </JsonNamingIgnore>
     }
 
@@ -220,6 +238,18 @@ public static class LibrariesExamples
         // </LinqJoins>
     }
 
+    static void BitArraySpanConstructorExample()
+    {
+        // <BitArraySpanConstructor>
+        Span<byte> bytes = stackalloc byte[] { 0b_0000_0011, 0b_1000_0000 };
+        var bits = new BitArray(bytes);
+
+        Console.WriteLine(bits[0]);  // True
+        Console.WriteLine(bits[1]);  // True
+        Console.WriteLine(bits[15]); // True
+        // </BitArraySpanConstructor>
+    }
+
     static void EqualityComparerCreateExample()
     {
         // <EqualityComparerCreate>
@@ -281,19 +311,59 @@ public static class LibrariesExamples
             }
         }
 
-        var pipe = new Pipe();
+        using var arrayStream = new MemoryStream();
+        PipeWriter arrayPipe = PipeWriter.Create(arrayStream);
 
         // Write a JSON array: [0,1,2,3,4]
         await JsonSerializer.SerializeAsyncEnumerable(
-            pipe.Writer,
+            arrayPipe,
             GenerateNumbers());
+        await arrayPipe.CompleteAsync();
 
-        // Write NDJSON (one value per line): 0\n1\n2\n3\n4\n
+        using var jsonlStream = new MemoryStream();
+        PipeWriter jsonlPipe = PipeWriter.Create(jsonlStream);
+
+        // Write JSON Lines (one value per line): 0\n1\n2\n3\n4\n
         await JsonSerializer.SerializeAsyncEnumerable(
-            pipe.Writer,
+            jsonlPipe,
             GenerateNumbers(),
             topLevelValues: true);
+        await jsonlPipe.CompleteAsync();
         // </JsonSerializeAsyncEnumerablePipe>
+    }
+
+    static void JsonNumericTypesExample()
+    {
+        // <JsonNumericTypes>
+        var measurement = new Measurement((Decimal64)1.229m);
+        string json = JsonSerializer.Serialize(measurement);
+        Console.WriteLine(json); // {"Voltage":1.229}
+
+        Measurement? roundTripped = JsonSerializer.Deserialize<Measurement>(json);
+        Console.WriteLine(roundTripped); // Measurement { Voltage = 1.229 }
+        // </JsonNumericTypes>
+    }
+
+    static void JsonUnionSerializationExample()
+    {
+        // <JsonUnionSerialization>
+        Reading reading = new("hello");
+        string json = JsonSerializer.Serialize(reading);
+        Reading copy = JsonSerializer.Deserialize<Reading>(json);
+        Console.WriteLine(json); // "hello"
+        Console.WriteLine(copy.Value); // hello
+        // </JsonUnionSerialization>
+    }
+
+    static void JsonUnionStructuralClassifierExample()
+    {
+        // <JsonUnionStructuralClassifier>
+        PetUnion? pet = JsonSerializer.Deserialize<PetUnion>(
+            """{"Name":"Misty","Lives":9}""",
+            PetJsonContext.Default.PetUnion);
+
+        Console.WriteLine(pet?.Value is Cat); // True
+        // </JsonUnionStructuralClassifier>
     }
 
     static void X25519KeyExchangeExample()
@@ -312,6 +382,60 @@ public static class LibrariesExamples
         // </X25519KeyExchange>
     }
 
+    static void AesKeyWrapExample()
+    {
+        // <AesKeyWrap>
+        using Aes aes = Aes.Create();
+        aes.Key = RandomNumberGenerator.GetBytes(32); // AES-256 key-encryption key
+
+        byte[] keyToWrap = RandomNumberGenerator.GetBytes(24); // Multiple of 8 bytes
+
+        // Unpadded AES Key Wrap (RFC 3394)
+        byte[] wrapped = aes.EncryptKeyWrap(keyToWrap);
+        byte[] unwrapped = aes.DecryptKeyWrap(wrapped);
+        Console.WriteLine(keyToWrap.SequenceEqual(unwrapped)); // True
+
+        // Padded AES-KWP (RFC 5649) accepts a plaintext of any length
+        byte[] arbitraryLengthKey = RandomNumberGenerator.GetBytes(19);
+        byte[] wrappedPadded = aes.EncryptKeyWrapPadded(arbitraryLengthKey);
+        byte[] unwrappedPadded = aes.DecryptKeyWrapPadded(wrappedPadded);
+        Console.WriteLine(arbitraryLengthKey.SequenceEqual(unwrappedPadded)); // True
+        // </AesKeyWrap>
+    }
+
+    static void CborIncrementalReadExample()
+    {
+        // <CborIncrementalRead>
+        ReadOnlyMemory<byte> firstChunk = new byte[] { 0x82, 0x0a };
+        ReadOnlyMemory<byte> nextChunk = new byte[] { 0x14 };
+
+        // Incremental reading requires CborConformanceMode.Lax.
+        var reader = new CborReader(
+            firstChunk,
+            new CborReaderOptions { ConformanceMode = CborConformanceMode.Lax },
+            isFinalBlock: false);
+
+        reader.ReadStartArray();
+        int first = reader.ReadInt32(); // 10
+
+        if (reader.PeekState() == CborReaderState.NeedsMoreData)
+        {
+            // Slide in the next chunk after the reader consumes all the buffered bytes.
+            if (reader.BytesRemaining == 0)
+            {
+                reader.SlideData(nextChunk, isFinalBlock: true);
+            }
+            else
+            {
+                throw new InvalidOperationException("Buffer management omitted from the sample.");
+            }
+        }
+
+        int second = reader.ReadInt32(); // 20
+        reader.ReadEndArray();
+        // </CborIncrementalRead>
+    }
+
     static void NullableUnderlyingTypeExample()
     {
         // <NullableUnderlyingType>
@@ -327,11 +451,32 @@ public static class LibrariesExamples
 
 record MyRecord(string Name, int Value);
 
+[JsonNamingPolicy(JsonKnownNamingPolicy.SnakeCaseLower)]
 [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
 sealed class EventData
 {
     [JsonNamingPolicy(JsonKnownNamingPolicy.CamelCase)]
     public string EventName { get; set; } = "";
 
+    public string ReleaseVersion { get; set; } = "";
+
     public string? Notes { get; set; }
 }
+
+readonly record struct Measurement(Decimal64 Voltage);
+
+// <JsonUnionType>
+public union Reading(int, string);
+// </JsonUnionType>
+
+// <JsonUnionStructuralType>
+[JsonUnion(TypeClassifier = typeof(JsonUnionTypeStructuralClassifier))]
+public union PetUnion(Dog, Cat);
+
+public sealed record Dog(string Name, string Breed);
+
+public sealed record Cat(string Name, int Lives);
+// </JsonUnionStructuralType>
+
+[JsonSerializable(typeof(PetUnion))]
+internal partial class PetJsonContext : JsonSerializerContext;

@@ -1,47 +1,54 @@
 ---
 title: "Obtaining a DbProviderFactory"
 description: Learn how to obtain a DbProviderFactory from the DbProviderFactories class to work with specific data sources in .NET Framework.
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
 ---
 # Obtaining a DbProviderFactory
 
-The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves passing information about a data provider to the <xref:System.Data.Common.DbProviderFactories> class. Based on this information, the <xref:System.Data.Common.DbProviderFactories.GetFactory*> method creates a strongly typed provider factory. For example, to create a <xref:System.Data.SqlClient.SqlClientFactory>, you can pass `GetFactory` a string with the provider name specified as "System.Data.SqlClient". The other overload of `GetFactory` takes a <xref:System.Data.DataRow>. Once you create the provider factory, you can then use its methods to create additional objects. Some of the methods of a `SqlClientFactory` include <xref:System.Data.SqlClient.SqlClientFactory.CreateConnection*>, <xref:System.Data.SqlClient.SqlClientFactory.CreateCommand*>, and <xref:System.Data.SqlClient.SqlClientFactory.CreateDataAdapter*>.
+The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves passing information about a data provider to the <xref:System.Data.Common.DbProviderFactories> class. Based on this information, the <xref:System.Data.Common.DbProviderFactories.GetFactory*> method returns a strongly typed provider factory. For example, after you register <xref:Microsoft.Data.SqlClient.SqlClientFactory>, pass `GetFactory` the provider name `Microsoft.Data.SqlClient`. Another overload of `GetFactory` takes a <xref:System.Data.DataRow>. Once you obtain the provider factory, you can then use its methods to create additional objects. Some of the methods of a `SqlClientFactory` include <xref:Microsoft.Data.SqlClient.SqlClientFactory.CreateConnection*>, <xref:Microsoft.Data.SqlClient.SqlClientFactory.CreateCommand*>, and <xref:Microsoft.Data.SqlClient.SqlClientFactory.CreateDataAdapter*>.
 
 > [!NOTE]
 > The <xref:System.Data.OracleClient.OracleClientFactory>, <xref:System.Data.Odbc.OdbcFactory>, and <xref:System.Data.OleDb.OleDbFactory> classes also provide similar functionality.
 
 ## Registering DbProviderFactories
 
- Each .NET Framework data provider that supports a factory-based class registers configuration information in the `DbProviderFactories` section of the **machine.config** file on the local computer. The following configuration file fragment shows the syntax and format for <xref:System.Data.SqlClient>.
+Install the [Microsoft.Data.SqlClient NuGet package](https://www.nuget.org/packages/Microsoft.Data.SqlClient) before you register its factory.
+
+On .NET Framework, add the following `system.data` section inside the `configuration` element of your application's `app.config` or `web.config` file. The `remove` element avoids duplicate registrations inherited from another configuration file.
 
 ```xml
 <system.data>
   <DbProviderFactories>
-    <add name="SqlClient Data Provider"
-     invariant="System.Data.SqlClient"
-     description=".Net Framework Data Provider for SqlServer"
-     type="System.Data.SqlClient.SqlClientFactory, System.Data,
-     Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    <remove invariant="Microsoft.Data.SqlClient" />
+    <add name="Microsoft SqlClient Data Provider"
+     invariant="Microsoft.Data.SqlClient"
+     description="Microsoft SqlClient Data Provider for SQL Server"
+     type="Microsoft.Data.SqlClient.SqlClientFactory, Microsoft.Data.SqlClient"
     />
   </DbProviderFactories>
 </system.data>
 ```
 
- The `invariant` attribute identifies the underlying data provider. This three-part naming syntax is also used when creating a new factory and for identifying the provider in an application configuration file so that the provider name, along with its associated connection string, can be retrieved at runtime.
+On modern .NET, configuration files don't register provider factories. Before you call `GetFactory`, call <xref:System.Data.Common.DbProviderFactories.RegisterFactory(System.String,System.Data.Common.DbProviderFactory)> with `Microsoft.Data.SqlClient` as the provider name and <xref:Microsoft.Data.SqlClient.SqlClientFactory.Instance> as the factory instance. `RegisterFactory` isn't available on .NET Framework.
+
+The following examples register the factory in code for modern .NET. For .NET Framework, use the previous configuration entry and omit any `RegisterFactory` call.
+
+The invariant provider name identifies the underlying data provider. Use the same name for factory lookups and the `providerName` attribute of a connection string.
 
 ## Retrieving Provider Information
 
- You can retrieve information about all of the data providers installed on the local computer by using the <xref:System.Data.Common.DbProviderFactories.GetFactoryClasses*> method. It returns a <xref:System.Data.DataTable> named `DbProviderFactories` that contains the columns described in the following table.
+ You can retrieve information about registered data providers by using the <xref:System.Data.Common.DbProviderFactories.GetFactoryClasses*> method. It returns a <xref:System.Data.DataTable> named `DbProviderFactories` that contains the columns described in the following table. The example values correspond to the .NET Framework configuration entry shown previously; assembly version details depend on the installed package.
 
 | Column ordinal | Column name     | Example output                             | Description                               |
 |----------------|-----------------|--------------------------------------------|-------------------------------------------|
-| 0              | `Name`        | SqlClient Data Provider                    | Readable name for the data provider       |
-| 1              | `Description` | .Net Framework Data Provider for SqlServer | Readable description of the data provider |
-| 2              | `InvariantName` | System.Data.SqlClient | Name that can be used programmatically to refer to the data provider|
-| 3              | `AssemblyQualifiedName` | System.Data.SqlClient.SqlClientFactory, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 | Fully qualified name of the factory class, which contains enough information to instantiate the object |
+| 0              | `Name`        | Microsoft SqlClient Data Provider                    | Readable name for the data provider       |
+| 1              | `Description` | Microsoft SqlClient Data Provider for SQL Server | Readable description of the data provider |
+| 2              | `InvariantName` | Microsoft.Data.SqlClient | Name that can be used programmatically to refer to the data provider|
+| 3              | `AssemblyQualifiedName` | Microsoft.Data.SqlClient.SqlClientFactory, Microsoft.Data.SqlClient | Assembly-qualified name of the factory class |
 
  This `DataTable` can be used to enable a user to select a <xref:System.Data.DataRow> at runtime. The selected `DataRow` can then be passed to the <xref:System.Data.Common.DbProviderFactories.GetFactory*> method to create a strongly typed <xref:System.Data.Common.DbProviderFactory>. A selected <xref:System.Data.DataRow> can be passed to the `GetFactory` method to create the desired `DbProviderFactory` object.
 
@@ -63,9 +70,9 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
   <connectionStrings>
     <clear/>
     <add name="NorthwindSQL"
-     providerName="System.Data.SqlClient"
+     providerName="Microsoft.Data.SqlClient"
      connectionString=
-     "Data Source=MSSQL1;Initial Catalog=Northwind;Integrated Security=true"
+     "Data Source=&lt;server&gt;;Initial Catalog=Northwind;Integrated Security=true;Encrypt=true"
     />
 
     <add name="NorthwindAccess"
@@ -81,7 +88,7 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
 
 ### Retrieve a Connection String by Provider Name
 
- In order to create a provider factory, you must supply a connection string as well as the provider name. This example demonstrates how to retrieve a connection string from an application configuration file by passing the provider name in the invariant format "*System.Data.ProviderName*". The code iterates through the <xref:System.Configuration.ConnectionStringSettingsCollection>. It returns the <xref:System.Configuration.ConnectionStringSettings.ProviderName*> on success; otherwise `null` (`Nothing` in Visual Basic). If there are multiple entries for a provider, the first one found is returned. For more information and examples of retrieving connection strings from configuration files, see [Connection Strings and Configuration Files](connection-strings-and-configuration-files.md).
+ To create a connection through a provider factory, supply a connection string as well as the provider name. This example demonstrates how to retrieve a connection string from an application configuration file by passing the invariant provider name, such as `Microsoft.Data.SqlClient`. The code iterates through the <xref:System.Configuration.ConnectionStringSettingsCollection>. It returns the matching connection string on success; otherwise `null` (`Nothing` in Visual Basic). If there are multiple entries for a provider, the first one found is returned. For more information and examples of retrieving connection strings from configuration files, see [Connection Strings and Configuration Files](connection-strings-and-configuration-files.md).
 
 > [!NOTE]
 > A reference to `System.Configuration.dll` is required in order for the code to run.
@@ -91,7 +98,7 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
 
 ## Creating the DbProviderFactory and DbConnection
 
- This example demonstrates how to create a <xref:System.Data.Common.DbProviderFactory> and <xref:System.Data.Common.DbConnection> object by passing it the provider name in the format "*System.Data.ProviderName*" and a connection string. A `DbConnection` object is returned on success; `null` (`Nothing` in Visual Basic) on any error.
+ This example demonstrates how to create a <xref:System.Data.Common.DbProviderFactory> and <xref:System.Data.Common.DbConnection> object by passing it the invariant provider name, such as `Microsoft.Data.SqlClient`, and a connection string. A `DbConnection` object is returned on success; `null` (`Nothing` in Visual Basic) on any error.
 
  The code obtains the `DbProviderFactory` by calling <xref:System.Data.Common.DbProviderFactories.GetFactory*>. Then the <xref:System.Data.Common.DbProviderFactory.CreateConnection*> method creates the <xref:System.Data.Common.DbConnection> object and the <xref:System.Data.Common.DbConnection.ConnectionString> property is set to the connection string.
 

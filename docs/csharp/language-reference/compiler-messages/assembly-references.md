@@ -20,6 +20,8 @@ f1_keywords:
  - "CS7079"
  - "CS8090"
  - "CS8203"
+ - "CS8206"
+ - "CS8356"
  - "CS9286"
 helpviewer_keywords:
  - "CS0012"
@@ -40,19 +42,21 @@ helpviewer_keywords:
  - "CS7079"
  - "CS8090"
  - "CS8203"
+ - "CS8206"
+ - "CS8356"
  - "CS9286"
-ms.date: 05/27/2025
+ms.date: 09/23/2026
+ai-usage: ai-assisted
 ---
 # Resolve errors and warnings related to assembly references
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 - [**CS0012**](#missing-references): *The type 'type' is defined in an assembly that is not referenced. You must add a reference to assembly 'assembly'.*
 - [**CS0234**](#missing-references): *The type or namespace name does not exist in the namespace (are you missing an assembly reference?)*
 - [**CS0246**](#missing-references): *The type or namespace name could not be found (are you missing a using directive or an assembly reference?)*
 - [**CS0400**](#missing-references): *The type or namespace name could not be found in the global namespace (are you missing an assembly reference?)*
-- [**CS0735**](#type-forwarding): *Invalid type specified as an argument for <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> attribute.*
 - [**CS1068**](#type-forwarding): *The type name could not be found in the global namespace. This type has been forwarded to another assembly. Consider adding a reference to that assembly.*
 - [**CS1069**](#type-forwarding): *The type name could not be found in the namespace. This type has been forwarded to another assembly. Consider adding a reference to that assembly.*
 - [**CS1070**](#type-forwarding): *The type name could not be found. This type has been forwarded to another assembly. Consider adding a reference to that assembly.*
@@ -66,9 +70,11 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS7079**](#invalid-assembly-reference): *The type is defined in a module that has not been added. You must add the module.*
 - [**CS8090**](#invalid-assembly-reference): *There is an error in a referenced assembly.*
 - [**CS8203**](#invalid-assembly-reference): *Invalid assembly name.*
+- [**CS8206**](#type-forwarding): *Module 'module name' in assembly 'assembly name' is forwarding the type 'type name' to multiple assemblies: 'first assembly name' and 'second assembly name'.*
+- [**CS8356**](#duplicate-references): *Predefined type 'type name' is declared in multiple referenced assemblies: 'first assembly name' and 'second assembly name'*
 - [**CS9286**](#missing-references): *Type does not contain a definition and no accessible extension member for receiver type could be found (are you missing a using directive or an assembly reference?)*
 
-In addition, the following warnings are covered in this article:
+In addition, this article covers the following warnings:
 
 - [**CS1683**](#invalid-assembly-reference): *Reference to type 'Type Name' claims it is defined in this assembly, but it is not defined in source or any added modules.*
 
@@ -79,6 +85,7 @@ The following errors and warnings indicate that you're missing an assembly refer
 - **CS0012**: *The type 'type' is defined in an assembly that is not referenced. You must add a reference to assembly 'assembly'.*
 - **CS0234**: *The type or namespace name does not exist in the namespace (are you missing an assembly reference?)*
 - **CS0246**: *The type or namespace name could not be found (are you missing a using directive or an assembly reference?)*
+- [**CS1714**](#missing-references): *The base class or interface of this type could not be resolved or is invalid.*
 - **CS9286**: *Type does not contain a definition and no accessible extension member for receiver type could be found (are you missing a using directive or an assembly reference?)*
 
 These compiler errors indicate one of these problems in your code:
@@ -123,8 +130,11 @@ If the assembly appears to be referenced in your project but you still receive C
 - **CS1068**: *The type name could not be found in the global namespace. This type has been forwarded to another assembly. Consider adding a reference to that assembly.*
 - **CS1069**: *The type name could not be found in the namespace. This type has been forwarded to another assembly. Consider adding a reference to that assembly.*
 - **CS1070**: *The type name could not be found. This type has been forwarded to another assembly. Consider adding a reference to that assembly.*
+- **CS8206**: *Module 'module name' in assembly 'assembly name' is forwarding the type 'type name' to multiple assemblies: 'first assembly name' and 'second assembly name'.*
 
-These errors indicate an error referencing a type forwarded to a different assembly. To address any of these errors, add a reference to the assembly indicated in the error message.
+CS1068, CS1069, and CS1070 indicate an error referencing a type forwarded to a different assembly. Add a reference to the assembly indicated in the error message.
+
+CS8206 indicates conflicting type-forwarder metadata in a referenced assembly or module. The same type is forwarded to more than one destination assembly. Use corrected or rebuilt dependencies that forward the type to one destination. Ensure package and assembly versions are consistent, or remove the reference that introduces the conflicting metadata. Source aliases or unrelated changes to local type declarations don't correct the referenced metadata.
 
 ## Duplicate references
 
@@ -132,17 +142,21 @@ The following errors indicate a duplicate assembly reference:
 
 - **CS1704**: *An assembly with the same simple name has already been imported. Try removing one of the references or sign them to enable side-by-side.*
 - **CS1760**: *Multiple assemblies refer to the same metadata but only one is a linked reference (specified using /link option); consider removing one of the references.*
+- **CS8356**: *Predefined type 'type name' is declared in multiple referenced assemblies: 'first assembly name' and 'second assembly name'*
 
-To fix these errors, you must either remove one of the references, or resolve the duplication. Causes for duplication include:
+To fix these errors, remove one of the references or resolve the duplication. Causes for duplication include:
 
-- Multiple unsigned assemblies have the same name.
+- Multiple unsigned assemblies with the same name.
 - Your project references multiple versions of the same assembly.
+
+For CS8356, remove or replace the duplicate or incompatible reference that defines the same predefined runtime type. Ensure the project targets one coherent framework and reference-assembly set. Don't add another source definition of the predefined type.
 
 ## Invalid assembly reference
 
 The following errors indicate that an assembly reference is invalid:
 
 - **CS7008**: *The assembly name is reserved and cannot be used as a reference in an interactive session.*
+- **CS7068**: *Reference to type claims it is defined in this assembly, but it is not defined in source or any added modules.*
 - **CS7069**: *Reference to type claims it is defined in another assembly, but it could not be found.*
 - **CS7071**: *Assembly reference is invalid and cannot be resolved.*
 - **CS7079**: *The type is defined in a module that has not been added. You must add the module.*
@@ -153,4 +167,4 @@ The following warning also indicates an invalid reference assembly:
 
 - **CS1683**: *Reference to type 'Type Name' claims it is defined in this assembly, but it is not defined in source or any added modules*
 
-Check that the assembly name is spelled correctly. The referenced assembly file might be invalid.
+Check that you spelled the assembly name correctly. The referenced assembly file might be invalid.

@@ -1,7 +1,7 @@
 ---
 title: "DataAdapter Parameters"
 description: Learn about the properties of DbDataAdapter that return data from a data source and manage changes to the data source.
-ms.date: "03/30/2017"
+ms.date: "10/23/2026"
 dev_langs:
   - "csharp"
   - "vb"
@@ -11,7 +11,7 @@ ms.assetid: f21e6aba-b76d-46ad-a83e-2ad8e0af1e12
 
 The <xref:System.Data.Common.DbDataAdapter> has four properties that are used to retrieve data from and update data to the data source: the <xref:System.Data.Common.DbDataAdapter.SelectCommand> property returns data from the data source; and the <xref:System.Data.Common.DbDataAdapter.InsertCommand> , <xref:System.Data.Common.DbDataAdapter.UpdateCommand>, and <xref:System.Data.Common.DbDataAdapter.DeleteCommand> properties are used to manage changes at the data source. The `SelectCommand` property must be set before you call the `Fill` method of the `DataAdapter`. The `InsertCommand`, `UpdateCommand`, or `DeleteCommand` properties must be set before the `Update` method of the `DataAdapter` is called, depending on what changes were made to the data in the <xref:System.Data.DataTable>. For example, if rows have been added, the `InsertCommand` must be set before you call `Update`. When `Update` is processing an inserted, updated, or deleted row, the `DataAdapter` uses the respective `Command` property to process the action. Current information about the modified row is passed to the `Command` object through the `Parameters` collection.
 
- When you update a row at the data source, you call the UPDATE statement, which uses a unique identifier to identify the row in the table to be updated. The unique identifier is typically the value of a primary key field. The UPDATE statement uses parameters that contain both the unique identifier and the columns and values to be updated, as shown in the following Transact-SQL statement.
+ When you update a row at the data source, you call the `UPDATE` statement, which uses a unique identifier to identify the row in the table to be updated. The unique identifier is typically the value of a primary key field. The `UPDATE` statement uses parameters that contain both the unique identifier and the columns and values to be updated, as shown in the following Transact-SQL statement.
 
 ```sql
 UPDATE Customers SET CompanyName = @CompanyName
@@ -21,10 +21,10 @@ UPDATE Customers SET CompanyName = @CompanyName
 > [!NOTE]
 > The syntax for parameter placeholders depends on the data source. This example shows placeholders for a SQL Server data source. Use question mark (?) placeholders for <xref:System.Data.OleDb> and <xref:System.Data.Odbc> parameters.
 
- In this Visual Basic example, the `CompanyName` field is updated with the value of the `@CompanyName` parameter for the row where `CustomerID` equals the value of the `@CustomerID` parameter. The parameters retrieve information from the modified row using the <xref:System.Data.SqlClient.SqlParameter.SourceColumn> property of the <xref:System.Data.SqlClient.SqlParameter> object. The following are the parameters for the previous sample UPDATE statement. The code assumes that the variable `adapter` represents a valid <xref:System.Data.SqlClient.SqlDataAdapter> object.
+ In this Visual Basic example, the `CompanyName` field is updated with the value of the `@CompanyName` parameter for the row where `CustomerID` equals the value of the `@CustomerID` parameter. The parameters retrieve information from the modified row using the <xref:Microsoft.Data.SqlClient.SqlParameter.SourceColumn> property of the <xref:Microsoft.Data.SqlClient.SqlParameter> object. The following are the parameters for the previous sample `UPDATE` statement. The code assumes that the variable `adapter` represents a valid <xref:Microsoft.Data.SqlClient.SqlDataAdapter> object.
 
 ```vb
-adapter.Parameters.Add( _
+adapter.UpdateCommand.Parameters.Add( _
   "@CompanyName", SqlDbType.NChar, 15, "CompanyName")
 Dim parameter As SqlParameter = _
   adapter.UpdateCommand.Parameters.Add("@CustomerID", _
@@ -54,7 +54,7 @@ parameter.SourceVersion = DataRowVersion.Original
 
 ## Working with SqlClient Parameters
 
- The following example demonstrates how to create a <xref:System.Data.SqlClient.SqlDataAdapter> and set the <xref:System.Data.Common.DataAdapter.MissingSchemaAction*> to <xref:System.Data.MissingSchemaAction.AddWithKey> in order to retrieve additional schema information from the database. The <xref:System.Data.SqlClient.SqlDataAdapter.SelectCommand>, <xref:System.Data.SqlClient.SqlDataAdapter.InsertCommand>, <xref:System.Data.SqlClient.SqlDataAdapter.UpdateCommand>, and <xref:System.Data.SqlClient.SqlDataAdapter.DeleteCommand> properties set and their corresponding <xref:System.Data.SqlClient.SqlParameter> objects added to the <xref:System.Data.SqlClient.SqlCommand.Parameters*> collection. The method returns a `SqlDataAdapter` object.
+ The following example demonstrates how to create a <xref:Microsoft.Data.SqlClient.SqlDataAdapter> and set the <xref:System.Data.Common.DataAdapter.MissingSchemaAction*> to <xref:System.Data.MissingSchemaAction.AddWithKey> in order to retrieve additional schema information from the database. The <xref:Microsoft.Data.SqlClient.SqlDataAdapter.SelectCommand>, <xref:Microsoft.Data.SqlClient.SqlDataAdapter.InsertCommand>, <xref:Microsoft.Data.SqlClient.SqlDataAdapter.UpdateCommand>, and <xref:Microsoft.Data.SqlClient.SqlDataAdapter.DeleteCommand> properties set and their corresponding <xref:Microsoft.Data.SqlClient.SqlParameter> objects added to the <xref:Microsoft.Data.SqlClient.SqlCommand.Parameters*> collection. The method returns a `SqlDataAdapter` object.
 
  [!code-csharp[Classic WebData SqlDataAdapter.SqlDataAdapter Example#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlDataAdapter.SqlDataAdapter Example/CS/source.cs#1)]
  [!code-vb[Classic WebData SqlDataAdapter.SqlDataAdapter Example#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlDataAdapter.SqlDataAdapter Example/VB/source.vb#1)]
@@ -71,7 +71,7 @@ Dim insertSQL AS String = _
   "INSERT INTO Customers (CustomerID, CompanyName) VALUES (?, ?)"
 Dim updateSQL AS String = _
   "UPDATE Customers SET CustomerID = ?, CompanyName = ? " & _
-  WHERE CustomerID = ?"
+  "WHERE CustomerID = ?"
 Dim deleteSQL As String = "DELETE FROM Customers WHERE CustomerID = ?"
 ```
 

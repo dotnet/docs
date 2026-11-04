@@ -729,6 +729,8 @@ Module Module1
 
     Sub SBUDT544355()
         ' <SnippetSBUDT544355>
+        ' Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+        ' This Entity Framework model uses the built-in .NET Framework SQL provider.
         Using context As New AdventureWorksEntities()
             Dim productsList = _
                 From product In context.Products _
@@ -845,6 +847,8 @@ Module Module1
 
     Sub UIntAsQueryParam()
         ' <SnippetUIntAsQueryParam>
+        ' Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+        ' This Entity Framework model uses the built-in .NET Framework SQL provider.
         Using context As New AdventureWorksEntities()
             Dim saleId As UInteger = UInt32.Parse("48000")
 
@@ -886,6 +890,8 @@ Module Module1
 
     Sub SBUDT543840()
         ' <SnippetSBUDT543840>
+        ' Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+        ' This Entity Framework model uses the built-in .NET Framework SQL provider.
         Using context As New AdventureWorksEntities()
             ' Ordering information is lost when executed against a SQL Server 2005
             ' database running with a compatibility level of "80".
@@ -931,6 +937,8 @@ Module Module1
 
     Sub SBUDT555877()
         ' <SnippetSBUDT555877>
+        ' Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+        ' This Entity Framework model uses the built-in .NET Framework SQL provider.
         Using context As New AdventureWorksEntities()
 
             Dim contact As Contact = context.Contacts.FirstOrDefault()
@@ -1225,6 +1233,8 @@ Module Module1
 
     Sub ProjectToAnonType()
         '<snippetProjToAnonType1>
+        ' Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+        ' This Entity Framework model uses the built-in .NET Framework SQL provider.
         Using context As New AdventureWorksEntities()
             Dim resultWithoutRelatedObjects = context.Contacts. _
                 Include("SalesOrderHeaders"). _
@@ -1235,6 +1245,8 @@ Module Module1
         End Using
         '</snippetProjToAnonType1>
         '<snippetProjToAnonType2>
+        ' Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+        ' This Entity Framework model uses the built-in .NET Framework SQL provider.
         Using context As New AdventureWorksEntities()
             Dim resultWithRelatedObjects = context.Contacts. _
                 Include("SalesOrderHeaders"). _

@@ -124,6 +124,10 @@ Use `dynamic` when interacting with COM APIs, dynamic languages, or reflection-h
 
 ## See also
 
+<!-- Remove this HTML comment after dotnet/docs#55469 is merged and this branch is rebased.
+- [Operators](../expressions/operators.md)
+-->
+
 - [Type system overview](index.md)
 - [Built-in types (C# reference)](../../language-reference/builtin-types/built-in-types.md)
 - [Integral numeric types](../../language-reference/builtin-types/integral-numeric-types.md)

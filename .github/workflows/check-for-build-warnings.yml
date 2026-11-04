@@ -1,7 +1,7 @@
 name: 'OPS status checker'
 
 on:
-  pull_request_target:
+  pull_request:
     types: [opened, synchronize, reopened]
 
 permissions:
@@ -13,16 +13,14 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       statuses: read
-      pull-requests: write
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@b09bb98e06d4d774595224525879c09bc6e98c40 # v2.20.1
+        uses: step-security/harden-runner@46b06cea07f9e64621fdf066ba77ac6915163d43 # v2.22.3
         with:
           egress-policy: audit
 
       - name: Wait for OPS status check to start
         run: sleep 180
-
-      - uses: dotnet/docs-tools/actions/status-checker@main
+      - uses: dotnet/docs-actions/status-checker@e92e67a4b93ea5976eea3d65af4b2082818c7045 # main
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}

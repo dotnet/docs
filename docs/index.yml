@@ -132,6 +132,9 @@ conceptualContent:
         - url: core/tools/index.md
           itemType: overview
           text: .NET CLI overview
+        - url: core/tools/dotnetup/index.md
+          itemType: overview
+          text: dotnetup toolchain manager
         - url: core/project-sdk/msbuild-props.md
           itemType: reference
           text: MSBuild property reference
@@ -151,7 +154,7 @@ conceptualContent:
     # Card
     - title: Migrate and upgrade
       links:
-        - url: core/porting/index.md
+        - url: core/porting/framework-overview.md
           itemType: overview
           text: Port from .NET Framework to .NET
         - url: core/compatibility/breaking-changes.md

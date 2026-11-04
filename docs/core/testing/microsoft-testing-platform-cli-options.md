@@ -3,13 +3,16 @@ title: Microsoft.Testing.Platform (MTP) CLI options reference
 description: Find platform and extension command-line options for MTP in one place.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 07/09/2026
+ms.date: 10/26/2026
 ai-usage: ai-assisted
 ---
 
 # Microsoft.Testing.Platform (MTP) CLI options reference
 
 This article gives a central entry point for MTP command-line options.
+
+> [!IMPORTANT]
+> Platform options are available from MTP itself. Extension options are available only when each targeted test application registers the extension package that provides them. Add the package directly, or use a test SDK configuration or profile that includes it. If a test application doesn't register the extension, the run fails with exit code 5 because the option is unrecognized.
 
 ## Platform options
 
@@ -62,7 +65,7 @@ This article gives a central entry point for MTP command-line options.
 
 - **`--diagnostic`**
 
-  Enables the diagnostic logging. The default log level is `Trace`. The file is written in the output directory with the following name format, `log_[MMddHHssfff].diag`.
+  Enables diagnostic logging. The default log level is `Trace`. For each test source, MTP writes `<asm>_<tfm>_<arch>_<timestamp>.diag`. If a timestamp collides, MTP adds a process and counter suffix instead of overwriting the existing file.
 
 - **`--diagnostic-synchronous-write`**
 
@@ -77,7 +80,7 @@ This article gives a central entry point for MTP command-line options.
 
 - **`--diagnostic-file-prefix`**
 
-  The prefix for the log file name. Defaults to `"log"`.
+  The prefix for the log file name. The default is `<asm>_<tfm>_<arch>`.
 
   > [!NOTE]
   > Available in MTP starting with version 2.0.0. It replaces the previous `--diagnostic-output-fileprefix` option, which was removed in MTP 2.0.0.
@@ -86,6 +89,13 @@ This article gives a central entry point for MTP command-line options.
 
   Defines the verbosity level when the `--diagnostic` switch is used. The available values are `Trace`, `Debug`, `Information`, `Warning`, `Error`, or `Critical`.
 
+- **`--enable-dynamic-extensions`**
+
+  Enables loading extensions declared by `*.testingplatformextensions.json` manifest files next to the test application. Dynamic extensions are disabled by default. For security requirements and the manifest schema, see [Load extensions dynamically](./microsoft-testing-platform-architecture-extensions.md#load-extensions-dynamically).
+
+  > [!NOTE]
+  > This option is available in MTP starting with version 2.4.0.
+
 - **`--exit-on-process-exit`**
 
   Exit the test process if dependent process exits. PID must be provided.
@@ -93,6 +103,8 @@ This article gives a central entry point for MTP command-line options.
 - **`--filter-uid`**
 
   Filters the tests to run by their test node UIDs. Accepts one or more UIDs.
+
+  Framework authors must honor `TestNodeUidListFilter` for discovery and execution. For implementation guidance, see [Honor request filters](./microsoft-testing-platform-architecture-test-framework.md#honor-request-filters).
 
   > [!NOTE]
   > This option is available in MTP starting with version 1.8.0. Starting with MTP 2.3.0, you can't combine `--filter-uid` with `--treenode-filter`; specifying both fails command-line validation with the `InvalidCommandLine` exit code.
@@ -125,14 +137,21 @@ This article gives a central entry point for MTP command-line options.
 
 - **`--maximum-failed-tests`**
 
-  Specifies the maximum number of tests failures that, when reached, will stop the test run. Support for this switch requires framework authors to implement the `IGracefulStopTestExecutionCapability` capability. The exit code when reaching that amount of test failures is 13. For more information, see [MTP exit codes](microsoft-testing-platform-troubleshooting.md#exit-codes).
+  Specifies a positive maximum number of test failures. When the failure count reaches the maximum, MTP requests a graceful stop and returns exit code `13`. Tests that are already in progress can finish, so the final failure count can exceed the maximum. For more information, see [MTP exit codes](microsoft-testing-platform-troubleshooting.md#exit-codes).
+
+  Framework authors must implement and register [`IGracefulStopTestExecutionCapability`](./microsoft-testing-platform-architecture-capabilities.md#igracefulstoptestexecutioncapability) and register the option provider with `AddMaximumFailedTestsService`. The capability documentation includes implementation and registration examples. Test authors don't need to implement the capability if their framework already supports the option.
 
   > [!NOTE]
   > This feature is available in MTP starting with version 1.5.
 
 - **`--minimum-expected-tests`**
 
-  Specifies the minimum number of tests that are expected to run. By default, at least one test is expected to run.
+  Specifies a positive minimum number of tests that must run. When the run executes fewer tests, including zero, it exits with code `9`. An explicit minimum supersedes `--zero-tests-policy`.
+
+  With `dotnet test`, this option applies to the whole run when it's specified before `--`, and to each test module when it's specified after `--`. For more information, see [Whole-run and per-module minimums](../tools/dotnet-test-mtp.md#whole-run-and-per-module-minimums).
+
+  > [!NOTE]
+  > `--minimum-expected-tests 0` is invalid. To suppress the zero-tests exit code, use `--ignore-exit-code 8`.
 
 - **`--no-banner`**
 
@@ -141,6 +160,20 @@ This article gives a central entry point for MTP command-line options.
 - **`--results-directory`**
 
   The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the test application.
+
+- **`--server`**
+
+  Starts the test application in JSON-RPC server mode for editor, IDE, or tool integration. Omit the value or use `jsonrpc`. For a supported source-only client, see [MTP server mode](./microsoft-testing-platform-server-mode.md).
+
+  > [!IMPORTANT]
+  > The `dotnettestcli` value and its transport arguments are internal to the .NET SDK integration. Don't pass them manually.
+
+- **`--show-slowest-tests`**
+
+  Shows the requested number of slowest tests in the terminal summary. When a run contains multiple test modules, MTP reports the slowest tests for each module.
+
+  > [!NOTE]
+  > This option is available in MTP starting with version 2.4.0.
 
 - **`--timeout`**
 
@@ -155,31 +188,36 @@ This article gives a central entry point for MTP command-line options.
 
 - **`--zero-tests-policy`**
 
-  Controls whether a run that executes no tests because every test was skipped is treated as a failure. Valid values are `allow-skipped` (default) and `strict`. With `allow-skipped`, an all-skipped run succeeds; with `strict`, it fails with exit code 8 (the behavior before 2.3.0).
+  Controls whether a run that executes no tests because every test was skipped is treated as a failure. Valid values are `allow-skipped` (default) and `strict`. With `allow-skipped`, an all-skipped run succeeds. With `strict`, it fails with exit code `8`. An explicit `--minimum-expected-tests` value supersedes this policy and uses exit code `9` when the minimum isn't met.
 
   > [!NOTE]
-  > This option is available in MTP starting with version 2.3.0.
+  > This option is available in MTP starting with version 2.3.0. With `dotnet test`, pass the option after `--` to forward it to each test module. When you don't set a global minimum, the .NET 11 SDK determines the whole-run zero-tests verdict separately. For more information, see [Whole-run and per-module minimums](../tools/dotnet-test-mtp.md#whole-run-and-per-module-minimums).
 
 ## Extension options by scenario
 
-Use the following table to find extension options quickly.
+Use the following table to find each extension's package and options. A test SDK profile can supply a package instead of a direct package reference.
 
-| Scenario | Feature documentation |
-|---|---|
-| Collect code coverage | [Code coverage](./microsoft-testing-platform-code-coverage.md) |
-| Collect crash or hang dumps | [Crash and hang dumps](./microsoft-testing-platform-crash-hang-dumps.md) |
-| Generate test reports (for example TRX) | [Test reports](./microsoft-testing-platform-test-reports.md) |
-| Customize terminal output | [Terminal output](./microsoft-testing-platform-terminal-output.md) |
-| Apply hosting-level controls | [Hot Reload](./microsoft-testing-platform-hot-reload.md) |
-| Retry failed tests | [Retry](./microsoft-testing-platform-retry.md#retry) |
-| Run tests that use Microsoft Fakes | [Microsoft Fakes](./microsoft-testing-platform-fakes.md) |
-| Emit OpenTelemetry traces and metrics | [OpenTelemetry](./microsoft-testing-platform-open-telemetry.md) |
+| Scenario | Required component | Feature documentation |
+|---|---|---|
+| Collect code coverage | `Microsoft.Testing.Extensions.CodeCoverage` or `coverlet.MTP` | [Code coverage](./microsoft-testing-platform-code-coverage.md) |
+| Collect crash or hang dumps | `Microsoft.Testing.Extensions.CrashDump` or `Microsoft.Testing.Extensions.HangDump` | [Crash and hang dumps](./microsoft-testing-platform-crash-hang-dumps.md) |
+| Generate test reports | The extension package for the selected format, such as `Microsoft.Testing.Extensions.TrxReport` | [Test reports](./microsoft-testing-platform-test-reports.md) |
+| Customize terminal output | MTP core (no additional package) | [Terminal output](./microsoft-testing-platform-terminal-output.md) |
+| Retry failed tests | `Microsoft.Testing.Extensions.Retry` | [Retry](./microsoft-testing-platform-retry.md#retry) |
 
 ## Discover options in your test app
 
-Run your test executable with `--help` to list the options available for your current extension set.
+Run your test executable with `--help`, or run `dotnet test --help` in MTP mode, to list the options available for your current extension set.
+
+Starting with MTP 2.4, an unknown option error suggests a uniquely matching option name when one is available. If the option belongs to a known Microsoft-provided extension that the test application hasn't registered, the error also identifies the NuGet package that provides the option.
 
 For advanced diagnostics of registered providers and options, run with `--info`.
+
+## Run a registered tool
+
+Some extensions register commands that process artifacts instead of executing tests. Pass the command name as the test application's first positional argument. For example, the TRX extension provides [`merge-trx` and `ms-trxcompare`](./microsoft-testing-platform-test-reports.md#merge-trx-files-manually).
+
+Run the application with `--info` to list registered tools and their command-line options. These commands belong to the test application; they aren't `dotnet tool` commands.
 
 ## See also
 

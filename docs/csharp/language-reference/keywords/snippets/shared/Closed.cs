@@ -42,7 +42,8 @@ public static class ClosedSwitchExamples
         Running(var percent) => $"{percent}% complete",
         Completed(var elapsed) => $"finished in {elapsed.TotalSeconds:F1}s",
         Failed(var error) => $"failed: {error}",
-        // No warning: 'X' is constrained to a closed type, so its direct descendants exhaust the switch.
+        // No warning: 'X' is constrained to a closed type, so the compiler treats
+        // this switch as exhaustive because every direct descendant is handled.
     };
     //</TypeParameterConstrained>
 }

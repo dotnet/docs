@@ -1,7 +1,8 @@
 ---
 title: "Patterns - Pattern matching using the is and switch expressions."
 description: "Learn about the patterns supported by the `is` and `switch` expressions. Combine multiple patterns using the `and`, `or`, and `not` operators."
-ms.date: 06/05/2026
+ms.date: 10/19/2026
+ai-usage: ai-assisted
 f1_keywords:
   - "and_CSharpKeyword"
   - "or_CSharpKeyword"
@@ -39,7 +40,7 @@ In those constructs, you can match an input expression against any of the follow
 
 [Logical](#logical-patterns), [property](#property-pattern), [positional](#positional-pattern), and [list](#list-patterns) patterns are *recursive* patterns. That is, they can contain *nested* patterns.
 
-For an example of how to use those patterns to build a data-driven algorithm, see [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/pattern-matching.md).
+For an example of how to use those patterns to build a data-driven algorithm, see [Tutorial: Build algorithms using pattern matching](../../fundamentals/tutorials/build-algorithms-using-pattern-matching.md).
 
 ## Declaration and type patterns
 
@@ -209,7 +210,7 @@ Use a *positional pattern* to deconstruct an expression and match the resulting 
 
 :::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="BasicExample":::
 
-In the preceding example, the type of an expression contains the [Deconstruct](../../fundamentals/functional/deconstruct.md) method, which the pattern uses to deconstruct an expression result.
+In the preceding example, the type of an expression contains the [Deconstruct](../../fundamentals/patterns/deconstruct.md) method, which the pattern uses to deconstruct an expression result.
 
 >[!IMPORTANT]
 > The order of members in a positional pattern must match the order of parameters in the `Deconstruct` method. The code generated for the positional pattern calls the `Deconstruct` method.
@@ -274,7 +275,7 @@ For more information, see the [Discard pattern](~/_csharpstandard/standard/patte
 
 ## Parenthesized pattern
 
-You can put parentheses around any pattern. Typically, you do this to emphasize or change the precedence in [logical patterns](#logical-patterns), as the following example shows:
+You can put parentheses around any pattern. Typically, you use parentheses to emphasize or change the precedence in [logical patterns](#logical-patterns), as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="ChangedPrecedence":::
 
@@ -300,6 +301,8 @@ You can also nest a subpattern within a slice pattern, as the following example 
 
 For more information, see [List pattern](~/_csharpstandard/standard/patterns.md#11211-list-pattern) in the C# language specification.
 
+Starting with C# 15, extension indexing members can also supply the count and element access needed by a list pattern. For an example, see [Extension indexers](../keywords/extension.md#index-and-range-access).
+
 ## Closed hierarchy patterns
 
 Starting in C# 15, a `switch` expression whose governing type is a [`closed`](../keywords/closed.md) class is *exhaustive* when its arms handle every direct descendant of that class. The compiler doesn't require a default arm because the switch is exhaustive:
@@ -320,7 +323,7 @@ For example, a closed `public` base class can have an `internal` direct descenda
 
 To restore exhaustiveness in assembly 2, add a discard arm (`_ => ...`), add a base class arm (`Shape` in the preceding example), or make every direct descendant at least as accessible as the closed base type.
 
-When the governing type is nullable, `null` is an additional value the switch must handle. A switch over `PaymentMethod?` that omits a `null` arm isn't exhaustive even when every direct descendant is matched.
+When the governing type is nullable, `null` is an extra value the switch must handle. A switch over `PaymentMethod?` that omits a `null` arm isn't exhaustive even when every direct descendant is matched.
 
 Derivation from a closed class isn't transitive: a non-closed descendant of a closed class can be derived from in other assemblies. The compiler only treats the *direct* descendants as the exhaustive set. To make a switch over a descendant also benefit from exhaustiveness checking, declare the descendant `closed` (or `sealed`).
 
@@ -355,11 +358,11 @@ If you want exhaustiveness to follow the hierarchy further down, declare `Car` i
 
 A switch whose governing type is `Vehicle` has choices: Code that handles `Car` and `Truck` is still exhaustive, because the `Car` arm covers every subtype of `Car`. Marking `Car` `closed` simply gives you a second option for that switch. You can keep the single `Car` arm, or replace it with one arm per direct descendant of `Car` (alongside the `Truck` arm) and still be exhaustive.
 
-Marking `Car` `closed` also makes it implicitly `abstract`, which means you can no longer create instances of `Car` directly. That might not fit your design. If you need `Car` to remain instantiable, leave it open and dispatch on the specific subtypes you care about by ordering arms as shown earlier.
+Marking `Car` `closed` also makes it implicitly `abstract`, which means you can no longer create instances of `Car` directly. That condition might not fit your design. If you need `Car` to remain instantiable, leave it open and dispatch on the specific subtypes you care about by ordering arms as shown earlier.
 
 ### Type parameter governing types
 
-A `switch` expression whose governing type is a type parameter constrained to a closed class is exhaustive on the same terms as a switch over the closed class itself. To dispatch on a closed hierarchy from generic code, constrain the type parameter to the closed base and handle every direct descendant:
+The [closed hierarchies feature specification](~/_csharplang/proposals/csharp-15.0/closed-hierarchies.md#exhaustiveness-of-type-parameters-constrained-to-closed-type) defines a `switch` expression whose governing type is a type parameter constrained to a closed class as exhaustive on the same terms as a switch over the closed class itself. So, generic code can dispatch on a closed hierarchy by constraining the type parameter to the closed base and handling every direct descendant:
 
 :::code language="csharp" source="snippets/patterns/ClosedHierarchyPatterns.cs" id="TypeParamGoverningType":::
 
@@ -367,25 +370,28 @@ For more information, see the [closed modifier](../keywords/closed.md). For the 
 
 ## Union patterns
 
-Starting with C# 15, when the incoming value of a pattern is a [union type](../builtin-types/union.md), patterns generally *unwrap* the union. The pattern applies to the union's `Value` property rather than the union value itself. This behavior makes the union transparent to pattern matching:
+C# 15 introduces [union types](../builtin-types/union.md). When you apply a type or declaration pattern to a union expression, the pattern tests the union's contents rather than the union instance. For example, these case types each have a `Name` property, and `Dog` also has a `Breed` property:
 
 ```csharp
 public record class Cat(string Name);
-public record class Dog(string Name);
-public union Pet(Cat, Dog);
-
-string Describe(Pet pet) => pet switch
-{
-    Dog d => d.Name,
-    Cat c => c.Name,
-};
+public record class Dog(string Name, string Breed);
 ```
 
-Three patterns are exceptions: the discard `_` pattern, the `var` pattern, and the `not` pattern apply to the union value itself, not its `Value` property.
+The following `Pet` union exposes its own read-only `Name` property, which delegates to the contained case:
 
-The `null` pattern checks whether the union's `Value` is null. For class-based unions, `null` also succeeds when the union reference itself is null.
+:::code language="csharp" source="../builtin-types/snippets/unions/UnionPatternMatching.cs" id="UnionWithProperty":::
 
-When a union type provides the *non-boxing access pattern* (`HasValue` and `TryGetValue` members), the compiler uses those members to avoid boxing value-type cases during pattern matching.
+Typed recursive patterns also test the contents: `Dog { Breed: "Labrador" }` reads the contained dog's `Breed`, a property the union doesn't have. In contrast, untyped property and positional patterns and list patterns use members of the union instance. Here, `{ Name: "Rex" }` reads the union's `Name` property, so it matches either a cat or a dog with that name:
+
+:::code language="csharp" source="../builtin-types/snippets/unions/UnionPatternMatching.cs" id="PropertyMatching":::
+
+These rules apply in both `is` and `switch` expressions. The discard `_` pattern matches the incoming union, and a `var` pattern captures it without unwrapping.
+
+The `null` pattern checks whether the union's contents are null. It also succeeds when a class-based union reference or nullable union wrapper is null. The `not` pattern negates its nested pattern, so `pet is not null` tests for non-null contents. An empty untyped property pattern, `pet is { }`, instead tests the union instance: it matches a nonnullable struct union even when its contents are null.
+
+A type pattern must be compatible with at least one case type. For the preceding `Pet` declaration, `pet is Pet` produces compiler error CS8121 rather than testing the union instance. It can succeed for a recursive declaration such as `union Pet(Cat, Dog, Pet)`, because `Pet` is then a case type. Recursive unions make these tests easy to misinterpret: this pattern tests for a contained `Pet`, not the outer instance. Prefer nonrecursive union declarations.
+
+When a union type provides the *non-boxing access pattern*, the compiler calls `TryGetValue` for type-pattern checks and `HasValue` for null-pattern checks, avoiding boxing for value-type cases. Each member applies to its own pattern kind—neither is a fallback for the other. When a member is missing, the compiler checks the `Value` property for that pattern instead.
 
 For more information, see [Union matching](../builtin-types/union.md#union-pattern-matching). For the specification, see [Unions](~/_csharplang/proposals/csharp-15.0/unions.md).
 
@@ -400,5 +406,5 @@ For more information, see the [Patterns and pattern matching](~/_csharpstandard/
 ## See also
 
 - [C# operators and expressions](index.md)
-- [Pattern matching overview](../../fundamentals/functional/pattern-matching.md)
-- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../fundamentals/tutorials/pattern-matching.md)
+- [Pattern matching overview](../../fundamentals/patterns/pattern-matching.md)
+- [Tutorial: Build algorithms using pattern matching](../../fundamentals/tutorials/build-algorithms-using-pattern-matching.md)

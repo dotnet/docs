@@ -2,7 +2,7 @@
 title: Monitor upgrades with the Upgrade Dashboard
 description: "Learn how to use the Upgrade Dashboard to monitor progress, review assessment results, inspect dependencies, and check upgrade settings."
 ms.topic: concept-article
-ms.date: 08/03/2026
+ms.date: 09/21/2026
 ai-usage: ai-assisted
 
 #customer intent: As a developer using GitHub Copilot upgrade, I want to understand the Upgrade Dashboard so that I can monitor my upgrade progress and review assessment results visually.
@@ -18,6 +18,9 @@ The Upgrade Dashboard provides a visual view of a GitHub Copilot upgrade session
 - Inspect NuGet package compatibility.
 - Check the upgrade strategy and settings.
 - Publish the assessment as a private GitHub gist for team review.
+
+> [!NOTE]
+> Dashboard fields depend on the active scenario and technology pack. The project, target framework, NuGet package, and compatibility views in this article describe a .NET version upgrade.
 
 In the GitHub Copilot app for desktop, the dashboard opens as a side panel. In other environments, such as the GitHub Copilot CLI or an IDE, it opens in your browser.
 
@@ -178,5 +181,6 @@ Use the **Log**, **Commits**, and **By file** subtabs to review activity. Each l
 ## Related content
 
 - [What is GitHub Copilot upgrade?](overview.md)
-- [Upgrade with GitHub Copilot](how-to-upgrade-with-github-copilot.md)
-- [Scenarios and skills reference](scenarios-and-skills.md)
+- [Upgrade .NET projects](dotnet-overview.md)
+- [Upgrade JavaScript and TypeScript projects](javascript-typescript-overview.md)
+- [.NET scenarios and skills](dotnet-scenarios-and-skills.md)

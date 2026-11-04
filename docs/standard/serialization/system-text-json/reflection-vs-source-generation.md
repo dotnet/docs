@@ -1,7 +1,8 @@
 ---
 title: How to choose reflection or source generation in System.Text.Json
 description: "Learn how to choose reflection or source generation in System.Text.Json."
-ms.date: 10/30/2023
+ms.date: 08/18/2026
+ai-usage: ai-assisted
 no-loc: [System.Text.Json]
 ---
 
@@ -42,6 +43,9 @@ Source generation can be used in two modes:
 
 Source generation for `System.Text.Json` requires C# 9.0 or a later version.
 
+> [!NOTE]
+> F# discriminated union support works only in reflection mode. It requires dynamic code and untrimmed reflection metadata. You can't use it with source generation or Native AOT. For more information, see [F# discriminated unions](supported-types.md#f-discriminated-unions).
+
 ## Feature comparison
 
 Choose reflection or source-generation modes based on the following benefits that each one offers:
@@ -50,7 +54,7 @@ Choose reflection or source-generation modes based on the following benefits tha
 |------------------------------------------------------|------------|---------------------|----------------------------|
 | Simpler to code.                                     | ✔️        | ❌                  | ❌                        |
 | Simpler to debug.                                    | ❌        | ✔️                  | ✔️                        |
-| Supports non-public members.                         | ✔️        | ✔️<sup>*</sup>      | ✔️<sup>*</sup>            |
+| Supports `[JsonInclude]` on non-public members.      | ✔️        | ✔️<sup>*</sup>      | ✔️<sup>*</sup>            |
 | Supports all available serialization customizations. | ✔️        | ❌<sup>†</sup>      | ❌<sup>†</sup>            |
 | Reduces start-up time.                               | ❌        | ✔️                  | ✔️                        |
 | Reduces private memory usage.                        | ❌        | ✔️                  | ✔️                        |
@@ -58,5 +62,5 @@ Choose reflection or source-generation modes based on the following benefits tha
 | Facilitates trim-safe app size reduction.            | ❌        | ✔️                  | ✔️                        |
 | Increases serialization throughput.                  | ❌        | ❌                  | ✔️                        |
 
-\* The source generator supports *some* non-public members, for example, internal types in the same assembly.
-† Source-generated contracts can be modified using the contract customization API.
+\* Starting in .NET 11, source generation supports `private`, `internal`, and `protected` members that you explicitly mark with [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute). It also supports `private`, `internal`, and `protected` accessors on properties that you mark with `[JsonInclude]`. Metadata-based source generation supports inaccessible constructors that you mark with [[JsonConstructor]](xref:System.Text.Json.Serialization.JsonConstructorAttribute). Generated setters run only for `init`-only properties that appear in the JSON, so omitted properties keep their initializer values. In .NET 10 and earlier versions, source generation doesn't support `private` or `protected` members or accessors, or inaccessible constructors. The generated context can access `internal` members and accessors only when they share an assembly. For more information, see [Non-public members and constructors](source-generation-modes.md#non-public-members-and-constructors).
+† Use the contract customization API to modify source-generated contracts.

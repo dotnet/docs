@@ -8,7 +8,6 @@ public static class Program
         ElseIfExample();
         SwitchStatementExample();
         SwitchWhenExample();
-        TernaryExample();
     }
 
     private static void IfElseExample()
@@ -104,16 +103,4 @@ public static class Program
         // </SwitchWhen>
     }
 
-    private static void TernaryExample()
-    {
-        // <Ternary>
-        int hour = 9;
-
-        // The conditional operator ?: chooses between two values in a single
-        // expression: condition ? valueIfTrue : valueIfFalse.
-        string greeting = hour < 12 ? "Good morning" : "Good afternoon";
-
-        Console.WriteLine(greeting); // => Good morning
-        // </Ternary>
-    }
 }

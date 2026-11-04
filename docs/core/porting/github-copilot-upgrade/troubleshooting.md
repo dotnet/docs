@@ -1,17 +1,17 @@
 ---
 title: Troubleshoot GitHub Copilot upgrade
-description: "Find solutions to common problems when you use GitHub Copilot upgrade for .NET, including workflow, build, Git, performance, and customization issues."
+description: "Find solutions to common GitHub Copilot upgrade workflow, build, package, Git, performance, and customization problems."
 ms.topic: troubleshooting-general
-ms.date: 07/07/2026
+ms.date: 09/21/2026
 ai-usage: ai-assisted
 
-#customer intent: As a developer, I want to troubleshoot issues with GitHub Copilot upgrade so that I can resolve problems and continue my .NET upgrade.
+#customer intent: As a developer, I want to troubleshoot GitHub Copilot upgrade so that I can resolve problems and continue my project upgrade.
 
 ---
 
 # Troubleshoot GitHub Copilot upgrade
 
-This article covers common issues you might encounter when you use GitHub Copilot upgrade for .NET, organized by category. Each entry follows a problem, cause, and solution format so you can find and resolve issues quickly.
+This article covers common issues you might encounter when you use GitHub Copilot upgrade. Each entry follows a problem, cause, and solution format so you can find and resolve issues quickly.
 
 ## Workflow issues
 
@@ -19,12 +19,12 @@ These issues relate to scenario discovery, resuming work, and task state.
 
 ### Agent says "no scenarios found"
 
-**Cause:** The agent doesn't recognize the workspace as a .NET project.
+**Cause:** The agent doesn't recognize a supported project or can't find its project files from the workspace root.
 
 **Solution:**
 
-1. Verify that the workspace root contains a `.sln`, `.csproj`, or `.vbproj` file.
-1. Ask the agent: _"What solution or project file are you using?"_
+1. Verify that the workspace contains recognizable project files. For example, check for a `.sln` or project file in a .NET workspace, or a `package.json` file in a JavaScript or TypeScript workspace.
+1. Ask the agent: _"Which project files and technologies did you detect?"_
 1. If your solution or project file is in a subdirectory, open that directory as the workspace root or point the agent to the file explicitly.
 
 ### Agent can't resume previous work
@@ -61,12 +61,14 @@ Be explicit about what you want. Instead of _"upgrade my project,"_ say:
 - _"I want to upgrade to .NET 10."_
 - _"I want to upgrade from Newtonsoft.Json to System.Text.Json."_
 - _"Convert my project to SDK-style format."_
+- _"Upgrade all dependencies in this JavaScript project."_
+- _"Upgrade this project to TypeScript 7."_
 
 Add scenario preferences to `scenario-instructions.md` to prevent future mismatches.
 
 ## Build and compilation issues
 
-These issues relate to build failures, NuGet restore problems, and code generation errors.
+These issues relate to build failures, package restore or installation problems, and code generation errors.
 
 ### Build fails after agent's changes
 
@@ -87,6 +89,17 @@ These issues relate to build failures, NuGet restore problems, and code generati
 - **For private feeds:** Authenticate to the feed before you start the upgrade.
 - **For incompatible packages:** Tell the agent which package is problematic. The agent can search for compatible versions or suggest alternative packages.
 - **For feed connectivity issues:** Verify that you can run `dotnet restore` manually. Fix any feed issues first, then let the agent retry.
+
+### npm package installation fails
+
+**Cause:** The configured package manager is unavailable, the lock file conflicts with the package manifest, a private registry requires authentication, or package versions can't satisfy peer dependency constraints.
+
+**Solution:**
+
+1. Confirm that the repository declares and uses the expected package manager.
+1. Authenticate to private registries before you restart the upgrade.
+1. Ask the agent to report the dependency or peer dependency conflict without changing unrelated packages.
+1. Resolve environment or package-manager installation problems, and then ask the agent to retry through the JavaScript and TypeScript upgrade workflow.
 
 ### Agent generates code that doesn't compile
 

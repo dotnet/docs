@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # nameof expression (C# reference)
 
-A `nameof` expression produces the name of a variable, type, or member as the string constant. A `nameof` expression is evaluated at compile time and has no effect at run time. When the operand is a type or a namespace, the produced name isn't [fully qualified](~/_csharpstandard/standard/basic-concepts.md#783-fully-qualified-names).
+A `nameof` expression produces the name of a variable, type, or member as the string constant. A `nameof` expression is evaluated at compile time and has no effect at run time. When the operand is a type or a namespace, the produced name isn't [fully qualified](~/_csharpstandard/standard/basic-concepts.md#773-fully-qualified-names).
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 

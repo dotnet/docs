@@ -132,7 +132,7 @@ C# 9 was released with .NET 5. It's the default language version for any assembl
   - [Native sized integers](~/_csharpstandard/standard/types.md#836-integral-types)
   - [Function pointers](~/_csharpstandard/standard/unsafe-code.md#2433-function-pointers)
   - [Suppress emitting localsinit flag](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-9.0/skip-localsinit.md)
-  - [Module initializers](~/_csharpstandard/standard/attributes.md#23510-the-moduleinitializer-attribute)
+  - [Module initializers](~/_csharpstandard/standard/attributes.md#23511-the-moduleinitializer-attribute)
   - [New features for partial methods](~/_csharpstandard/standard/classes.md#1569-partial-methods)
 - [Fit and finish features](#fit-and-finish-features)
   - [Target-typed `new` expressions](~/_csharpstandard/standard/expressions.md#128172-object-creation-expressions)
@@ -149,7 +149,7 @@ C# 9 continues three of the themes from previous releases: removing ceremony, se
 
 The introduction of [`records`](../language-reference/builtin-types/record.md) provides a concise syntax for reference types that follow value semantics for equality. You use these types to define data containers that typically define minimal behavior. [Init-only setters](../language-reference/keywords/init.md) provide the capability for nondestructive mutation (`with` expressions) in records. C# 9 also adds [covariant return types](~/_csharpstandard/standard/classes.md#1565-override-methods) so that derived records can override virtual methods and return a type derived from the base method's return type.
 
-The [pattern matching](../fundamentals/functional/pattern-matching.md) capabilities expanded in several ways. Numeric types now support *range patterns*. Patterns can be combined using `and`, `or`, and `not` patterns. Parentheses can be added to clarify more complex patterns:
+The [pattern matching](../fundamentals/patterns/pattern-matching.md) capabilities expanded in several ways. Numeric types now support *range patterns*. Patterns can be combined using `and`, `or`, and `not` patterns. Parentheses can be added to clarify more complex patterns:
 
 C# 9 includes new pattern matching improvements:
 
@@ -211,7 +211,7 @@ C# 8.0 is the first major C# release that specifically targets .NET Core. Some f
   - Tuple patterns
   - Positional patterns
 - [Using declarations](../language-reference/statements/using.md)
-- [Static local functions](../programming-guide/classes-and-structs/local-functions.md)
+- [Static local functions](../fundamentals/building-software/local-functions.md)
 - Lambda expressions, anonymous methods, and local functions can declare parameters that shadow local variables and parameters from an enclosing scope.
 - [Disposable ref structs](../language-reference/builtin-types/ref-struct.md)
 - [Nullable reference types](../language-reference/builtin-types/nullable-reference-types.md)
@@ -303,15 +303,15 @@ C# version 7.0 was released with Visual Studio 2017. This version has some evolu
 
 - Out variables
 - [Tuples and deconstruction](../language-reference/builtin-types/value-tuples.md)
-- [Pattern matching](../fundamentals/functional/pattern-matching.md)
-- [Local functions](../programming-guide/classes-and-structs/local-functions.md)
-- [Expanded expression bodied members](../programming-guide/statements-expressions-operators/expression-bodied-members.md)
+- [Pattern matching](../fundamentals/patterns/pattern-matching.md)
+- [Local functions](../fundamentals/building-software/local-functions.md)
+- [Expanded expression bodied members](../language-reference/operators/lambda-operator.md#expression-body-definition)
 - [Ref locals](../language-reference/statements/declarations.md#reference-variables)
 - [Ref returns](../language-reference/statements/jump-statements.md#ref-returns)
 
 Other features included:
 
-- [Discards](../fundamentals/functional/discards.md)
+- [Discards](../fundamentals/patterns/discards.md)
 - [Binary Literals and Digit Separators](../language-reference/builtin-types/integral-numeric-types.md#integer-literals)
 - [Throw expressions](../language-reference/statements/exception-handling-statements.md#the-throw-expression)
 
@@ -403,7 +403,7 @@ Let's take a look at some major features of C# 2.0, released in 2005, along with
 - [Partial types](../programming-guide/classes-and-structs/partial-classes-and-methods.md#partial-classes)
 - [Anonymous methods](../language-reference/operators/delegate-operator.md)
 - [Nullable value types](../language-reference/builtin-types/nullable-value-types.md)
-- [Iterators](../programming-guide/concepts/iterators.md)
+- [Iterators](../fundamentals/building-software/iterators.md)
 - [Covariance and contravariance](../programming-guide/concepts/covariance-contravariance/index.md)
 
 Other C# 2.0 features added capabilities to existing features:
@@ -442,7 +442,7 @@ The major features of C# 1.0 included:
 - [Properties](../programming-guide/classes-and-structs/properties.md)
 - [Delegates](../delegates-overview.md)
 - [Operators and expressions](../language-reference/operators/index.md)
-- [Statements](../programming-guide/statements-expressions-operators/statements.md)
+- [Statements](../fundamentals/statements/index.md)
 - [Attributes](/dotnet/csharp/advanced-topics/reflection-and-attributes)
 
 _Article_ [_originally published on the NDepend blog_](https://blog.ndepend.com/c-versions-look-language-history/)_, courtesy of Erik Dietrich and Patrick Smacchia._

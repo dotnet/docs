@@ -1,24 +1,25 @@
 ---
 title: "Connection String Syntax"
 description: Learn about syntax of connection strings in ADO.NET. The syntax for each provider is documented in its ConnectionString property.
-ms.date: "05/22/2018"
+ms.date: "10/19/2026"
+ai-usage: ai-assisted
 ---
 # Connection string syntax
 
-Each .NET Framework data provider has a `Connection` object that inherits from <xref:System.Data.Common.DbConnection> as well as a provider-specific <xref:System.Data.Common.DbConnection.ConnectionString> property. The specific connection string syntax for each provider is documented in its `ConnectionString` property. The following table lists the four data providers that are included in .NET Framework.
+Each ADO.NET data provider has a `Connection` object that inherits from <xref:System.Data.Common.DbConnection> as well as a provider-specific <xref:System.Data.Common.DbConnection.ConnectionString> property. The specific connection string syntax for each provider is documented in its `ConnectionString` property. The following table lists Microsoft.Data.SqlClient and three providers included in .NET Framework.
 
-| .NET Framework data provider | Description |
+| Data provider | Description |
 |------------------------------|-------------|
-|<xref:System.Data.SqlClient>|Provides data access for Microsoft SQL Server. For more information on connection string syntax, see <xref:System.Data.SqlClient.SqlConnection.ConnectionString>.|
+|<xref:Microsoft.Data.SqlClient>|Provides data access for Microsoft SQL Server through the [Microsoft.Data.SqlClient NuGet package](https://www.nuget.org/packages/Microsoft.Data.SqlClient). For more information on connection string syntax, see <xref:Microsoft.Data.SqlClient.SqlConnection.ConnectionString>.|
 |<xref:System.Data.OleDb>|Provides data access for data sources exposed using OLE DB. For more information on connection string syntax, see <xref:System.Data.OleDb.OleDbConnection.ConnectionString>.|
 |<xref:System.Data.Odbc>|Provides data access for data sources exposed using ODBC. For more information on connection string syntax, see <xref:System.Data.Odbc.OdbcConnection.ConnectionString>.|
 |<xref:System.Data.OracleClient>|Provides data access for Oracle version 8.1.7 or later. For more information on connection string syntax, see <xref:System.Data.OracleClient.OracleConnection.ConnectionString>.|
 
 ## Connection string builders
 
- ADO.NET 2.0 introduced the following connection string builders for the .NET Framework data providers.
+ Use the connection string builder for your data provider.
 
-- <xref:System.Data.SqlClient.SqlConnectionStringBuilder>
+- <xref:Microsoft.Data.SqlClient.SqlConnectionStringBuilder>
 - <xref:System.Data.OleDb.OleDbConnectionStringBuilder>
 - <xref:System.Data.Odbc.OdbcConnectionStringBuilder>
 - <xref:System.Data.OracleClient.OracleConnectionStringBuilder>
@@ -27,7 +28,7 @@ Each .NET Framework data provider has a `Connection` object that inherits from <
 
 ## Windows authentication
 
-Windows Authentication (sometimes referred to as *integrated security*) can be used to connect to data sources that support it. The syntax employed in the connection string varies by provider. The following table shows the Windows Authentication syntax used with the .NET Framework data providers.
+Windows Authentication (sometimes referred to as *integrated security*) can be used to connect to data sources that support it. The syntax employed in the connection string varies by provider. The following table shows the Windows Authentication syntax used with these data providers.
 
 | Provider       | Syntax                                                                                     |
 |----------------|--------------------------------------------------------------------------------------------|
@@ -43,22 +44,19 @@ Windows Authentication (sometimes referred to as *integrated security*) can be u
 
 ## SqlClient connection strings
 
-The syntax for a <xref:System.Data.SqlClient.SqlConnection> connection string is documented in the <xref:System.Data.SqlClient.SqlConnection.ConnectionString?displayProperty=nameWithType> property. You can use the <xref:System.Data.SqlClient.SqlConnection.ConnectionString> property to get or set a connection string for a SQL Server database. If you need to connect to an earlier version of SQL Server, you must use the .NET Framework Data Provider for OleDb (<xref:System.Data.OleDb>). Most connection string keywords also map to properties in the <xref:System.Data.SqlClient.SqlConnectionStringBuilder>.
+The syntax for a <xref:Microsoft.Data.SqlClient.SqlConnection> connection string is documented in the <xref:Microsoft.Data.SqlClient.SqlConnection.ConnectionString?displayProperty=nameWithType> property. You can use the <xref:Microsoft.Data.SqlClient.SqlConnection.ConnectionString> property to get or set a connection string for a SQL Server database. Most connection string keywords also map to properties in the <xref:Microsoft.Data.SqlClient.SqlConnectionStringBuilder>.
 
 > [!IMPORTANT]
 > The default setting for the `Persist Security Info` keyword is `false`. Setting it to `true` or `yes` allows security-sensitive information, including the user ID and password, to be obtained from the connection after the connection has been opened. Keep `Persist Security Info` set to `false` to ensure that an untrusted source does not have access to sensitive connection string information.
 
 ### Windows authentication with SqlClient
 
- Each of the following forms of syntax uses Windows Authentication to connect to the `AdventureWorks` database on a local server.
+ Each of the following forms of syntax uses Windows Authentication to connect to the `AdventureWorks` database on the specified server.
 
 ```csharp
-"Persist Security Info=False;Integrated Security=true;
-    Initial Catalog=AdventureWorks;Server=MSSQL1"
-"Persist Security Info=False;Integrated Security=SSPI;
-    database=AdventureWorks;server=(local)"
-"Persist Security Info=False;Trusted_Connection=True;
-    database=AdventureWorks;server=(local)"
+"Persist Security Info=False;Integrated Security=true;Initial Catalog=AdventureWorks;Server=<server>;Encrypt=true"
+"Persist Security Info=False;Integrated Security=SSPI;database=AdventureWorks;server=<server>;Encrypt=true"
+"Persist Security Info=False;Trusted_Connection=True;database=AdventureWorks;server=<server>;Encrypt=true"
 ```
 
 [!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
@@ -83,14 +81,14 @@ When you connect to Azure SQL Database or to Azure SQL Data Warehouse and provid
 To connect to a named instance of SQL Server, use the *server name\instance name* syntax.
 
 ```csharp
-"Data Source=MySqlServer\\MSSQL1;"
+"Data Source=<server>\\<instance>;Encrypt=true;"
 ```
 
-You can also set the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.DataSource> property of the `SqlConnectionStringBuilder` to the instance name when building a connection string. The <xref:System.Data.SqlClient.SqlConnection.DataSource> property of a <xref:System.Data.SqlClient.SqlConnection> object is read-only.
+You can also set the <xref:Microsoft.Data.SqlClient.SqlConnectionStringBuilder.DataSource> property of the `SqlConnectionStringBuilder` to the instance name when building a connection string. The <xref:Microsoft.Data.SqlClient.SqlConnection.DataSource> property of a <xref:Microsoft.Data.SqlClient.SqlConnection> object is read-only.
 
 ### Type system version changes
 
- The `Type System Version` keyword in a <xref:System.Data.SqlClient.SqlConnection.ConnectionString?displayProperty=nameWithType> specifies the client-side representation of SQL Server types. See <xref:System.Data.SqlClient.SqlConnection.ConnectionString?displayProperty=nameWithType> for more information about the `Type System Version` keyword.
+ The `Type System Version` keyword in a <xref:Microsoft.Data.SqlClient.SqlConnection.ConnectionString?displayProperty=nameWithType> specifies the client-side representation of SQL Server types. For more information about the `Type System Version` keyword, see <xref:Microsoft.Data.SqlClient.SqlConnection.ConnectionString?displayProperty=nameWithType>.
 
 ## Connect and attach to SQL Server Express user instances
 
@@ -100,34 +98,20 @@ You can also set the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.Data
 
 ## Use TrustServerCertificate
 
- The `TrustServerCertificate` keyword is valid only when connecting to a SQL Server instance with a valid certificate. When `TrustServerCertificate` is set to `true`, the transport layer will use SSL to encrypt the channel and bypass walking the certificate chain to validate trust.
+ With `Encrypt=true`, `TrustServerCertificate=true` encrypts the connection but bypasses server certificate validation. Keep `TrustServerCertificate=false` for production connections and configure a verifiable server certificate.
 
 ```csharp
 "TrustServerCertificate=true;"
 ```
 
-> [!NOTE]
-> If `TrustServerCertificate` is set to `true` and encryption is turned on, the encryption level specified on the server will be used even if `Encrypt` is set to `false` in the connection string. The connection will fail otherwise.
+> [!CAUTION]
+> If you bypass certificate validation, the client can't verify the server's identity. With `Encrypt=Strict`, Microsoft.Data.SqlClient always validates the server certificate and ignores `TrustServerCertificate`.
 
 ### Enable encryption
 
- To enable encryption when a certificate has not been provisioned on the server, the **Force Protocol Encryption** and the **Trust Server Certificate** options must be set in SQL Server Configuration Manager. In this case, encryption will use a self-signed server certificate without validation if no verifiable certificate has been provisioned on the server.
+ Microsoft.Data.SqlClient defaults to `Encrypt=Mandatory`, equivalent to `Encrypt=true`, and `TrustServerCertificate=false`. The client requires encryption and validates the server certificate. If the certificate isn't trusted or doesn't match the server name, the connection fails.
 
- Application settings cannot reduce the level of security configured in SQL Server, but can optionally strengthen it. An application can request encryption by setting the `TrustServerCertificate` and `Encrypt` keywords to `true`, guaranteeing that encryption takes place even when a server certificate has not been provisioned and **Force Protocol Encryption** has not been configured for the client. However, if `TrustServerCertificate` is not enabled in the client configuration, a provisioned server certificate is still required.
-
- The following table describes all cases.
-
-|Force Protocol Encryption client setting|Trust Server Certificate client setting|Encrypt/Use Encryption for Data connection string/attribute|Trust Server Certificate connection string/attribute|Result|
-|----------------------------------------------|---------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------|------------|
-|No|N/A|No (default)|Ignored|No encryption occurs.|
-|No|N/A|Yes|No (default)|Encryption occurs only if there is a verifiable server certificate, otherwise the connection attempt fails.|
-|No|N/A|Yes|Yes|Encryption always occurs, but may use a self-signed server certificate.|
-|Yes|No|Ignored|Ignored|Encryption occurs only if there is a verifiable server certificate; otherwise, the connection attempt fails.|
-|Yes|Yes|No (default)|Ignored|Encryption always occurs, but may use a self-signed server certificate.|
-|Yes|Yes|Yes|No (default)|Encryption occurs only if there is a verifiable server certificate; otherwise, the connection attempt fails.|
-|Yes|Yes|Yes|Yes|Encryption always occurs, but may use a self-signed server certificate.|
-
- For more information, see [Using Encryption Without Validation](/sql/relational-databases/native-client/features/using-encryption-without-validation).
+ For remote connections, specify `Encrypt=true` and configure a server certificate that the client trusts. If you migrate from System.Data.SqlClient, don't assume its encryption defaults apply to Microsoft.Data.SqlClient. For more information, see [Encryption and certificate validation in Microsoft.Data.SqlClient](/sql/connect/ado-net/encryption-and-certificate-validation).
 
 ## OleDb connection strings
 

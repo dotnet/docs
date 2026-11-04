@@ -57,19 +57,19 @@ The following table shows the predefined explicit conversions between the built-
 
 | From                                       | To     |
 |--------------------------------------------|--------|
-| [sbyte](integral-numeric-types.md)         | `byte`, `ushort`, `uint`, `ulong`, or `nuint` |
-| [byte](integral-numeric-types.md)          | `sbyte` |
-| [short](integral-numeric-types.md)         | `sbyte`, `byte`, `ushort`, `uint`, `ulong`, or `nuint` |
-| [ushort](integral-numeric-types.md)        | `sbyte`, `byte`, or `short` |
-| [int](integral-numeric-types.md)           | `sbyte`, `byte`, `short`, `ushort`, `uint`, `ulong`, or `nuint` |
-| [uint](integral-numeric-types.md)          | `sbyte`, `byte`, `short`, `ushort`, `int`, or `nint` |
-| [long](integral-numeric-types.md)          | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `ulong`, `nint`, or `nuint` |
-| [ulong](integral-numeric-types.md)         | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `nint`, or `nuint` |
-| [float](floating-point-numeric-types.md)   | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `decimal`, `nint`, or `nuint` |
-| [double](floating-point-numeric-types.md)  | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `decimal`, `nint`, or `nuint` |
-| [decimal](floating-point-numeric-types.md) | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `nint`, or `nuint` |
-| [nint](integral-numeric-types.md)          | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `ulong`, or `nuint` |
-| [nuint](integral-numeric-types.md)         | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, or `nint` |
+| [`sbyte`](integral-numeric-types.md)         | `byte`, `ushort`, `uint`, `ulong`, or `nuint` |
+| [`byte`](integral-numeric-types.md)          | `sbyte` |
+| [`short`](integral-numeric-types.md)         | `sbyte`, `byte`, `ushort`, `uint`, `ulong`, or `nuint` |
+| [`ushort`](integral-numeric-types.md)        | `sbyte`, `byte`, or `short` |
+| [`int`](integral-numeric-types.md)           | `sbyte`, `byte`, `short`, `ushort`, `uint`, `ulong`, or `nuint` |
+| [`uint`](integral-numeric-types.md)          | `sbyte`, `byte`, `short`, `ushort`, `int`, or `nint` |
+| [`long`](integral-numeric-types.md)          | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `ulong`, `nint`, or `nuint` |
+| [`ulong`](integral-numeric-types.md)         | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `nint`, or `nuint` |
+| [`float`](floating-point-numeric-types.md)   | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `decimal`, `nint`, or `nuint` |
+| [`double`](floating-point-numeric-types.md)  | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `decimal`, `nint`, or `nuint` |
+| [`decimal`](floating-point-numeric-types.md) | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `nint`, or `nuint` |
+| [`nint`](integral-numeric-types.md)          | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `ulong`, or `nuint` |
+| [`nuint`](integral-numeric-types.md)         | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, or `nint` |
 
 > [!NOTE]
 > An explicit numeric conversion might result in data loss or throw an exception, typically an <xref:System.OverflowException>.
@@ -90,6 +90,9 @@ Also note that:
   - If the source value is too small to be represented as a `decimal`, the result becomes zero.
   - If the source value is NaN (not a number), infinity, or too large to be represented as a `decimal`, an <xref:System.OverflowException> is thrown.
 - When you convert `decimal` to `float` or `double`, the source value is rounded to the nearest `float` or `double` value, respectively.
+
+  > [!NOTE]
+  > Starting in .NET 11, conversions between `decimal` and `float` or `double` are correctly rounded. Previously, these conversions could round through intermediate values or discard significant digits. For more information, see [Decimal and BigInteger floating-point conversions are correctly rounded](../../../core/compatibility/core-libraries/11/decimal-biginteger-floating-point-conversions.md).
 
 ## C# language specification
 

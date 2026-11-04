@@ -1,7 +1,7 @@
 ---
-title: Implementing reads/queries in a CQRS microservice
+title: Implement Reads/Queries in a CQRS Microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the implementation of the queries side of CQRS on the ordering microservice in eShopOnContainers using Dapper.
-ms.date: 01/13/2021
+ms.date: 10/19/2026
 ---
 # Implement reads/queries in a CQRS microservice
 
@@ -41,6 +41,8 @@ Dapper is an open-source project (original created by Sam Saffron), and is part 
 
 You also need to add a `using` directive so your code has access to the Dapper extension methods.
 
+For SQL Server access, install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package.
+
 When you use Dapper in your code, you directly use the <xref:Microsoft.Data.SqlClient.SqlConnection> class available in the <xref:Microsoft.Data.SqlClient> namespace. Through the QueryAsync method and other extension methods that extend the <xref:Microsoft.Data.SqlClient.SqlConnection> class, you can run queries in a straightforward and performant way.
 
 ## Dynamic versus static ViewModels
@@ -56,7 +58,7 @@ As shown in the following code, a `ViewModel` can be directly returned by the qu
 ```csharp
 using Dapper;
 using Microsoft.Extensions.Configuration;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Threading.Tasks;
 using System.Dynamic;
 using System.Collections.Generic;
@@ -102,7 +104,7 @@ In the following example, you can see how the query is returning data by using a
 ```csharp
 using Dapper;
 using Microsoft.Extensions.Configuration;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Threading.Tasks;
 using System.Dynamic;
 using System.Collections.Generic;

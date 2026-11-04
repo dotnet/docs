@@ -1,7 +1,7 @@
 ---
 title: "Lambda expressions, delegates, and events"
 description: Learn what lambda expressions are in C#, how delegates work as the type system support for lambda expressions, how to use the built-in Func and Action types, and how events use delegates for notifications.
-ms.date: 04/27/2026
+ms.date: 10/27/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -90,6 +90,10 @@ Events are built on delegates. An event is a delegate field with extra restricti
 
 The .NET convention for event delegate types is <xref:System.EventHandler`1?displayProperty=nameWithType>, where `T` is the type of data included with the notification. Its signature always has two parameters: the `sender` (the object that raised the event) and the event data of type `T`.
 
+:::code language="csharp" source="snippets/delegates-lambdas/Program.cs" ID="MessagePublisher":::
+
+The following snippet shows its use:
+
 :::code language="csharp" source="snippets/delegates-lambdas/Program.cs" ID="MinimalEventIntro":::
 
 Walking through the code:
@@ -102,7 +106,8 @@ Subscribing is optional. The `?.Invoke(...)` in the `Publish` method means the e
 
 ## See also
 
+- [Lambda expressions](../building-software/lambdas.md)
 - [Type system overview](index.md)
 - [Methods](../../methods.md)
-- [Pattern matching](../functional/pattern-matching.md)
+- [Pattern matching](../patterns/pattern-matching.md)
 - [Events (C# programming guide)](../../programming-guide/events/index.md)

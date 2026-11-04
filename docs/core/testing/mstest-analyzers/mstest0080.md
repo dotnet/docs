@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0080: Use CICondition attribute instead of environment checks"
 description: "Learn about code analysis rule MSTEST0080: Use CICondition attribute instead of environment checks"
-ms.date: 08/06/2026
+ms.date: 10/01/2026
 f1_keywords:
 - MSTEST0080
 - UseCIConditionAttributeInsteadOfEnvironmentCheckAnalyzer
@@ -24,7 +24,7 @@ dev_langs:
 | **Fix is breaking or non-breaking** | Non-breaking                                       |
 | **Enabled by default**              | Yes                                                |
 | **Default severity**                | Info                                               |
-| **Introduced in version**           | 4.4.0 (preview)                                    |
+| **Introduced in version**           | 4.4.0                                              |
 | **Is there a code fix**             | Yes, for C# only                                   |
 
 ## Cause

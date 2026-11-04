@@ -1,25 +1,36 @@
 ---
 title: GitHub Copilot upgrade overview
-description: "Learn about GitHub Copilot upgrade, a Copilot agent available across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com that upgrades .NET projects to newer versions of .NET."
+description: "Learn how GitHub Copilot upgrade assesses, plans, executes, and validates upgrades for supported project technologies."
 titleSuffix: ""
 ms.topic: overview
-ms.date: 07/07/2026
+ms.date: 09/21/2026
 ai-usage: ai-assisted
 
-#customer intent: As a developer, I want to learn about what GitHub Copilot upgrade is, so that I understand its capabilities and how I can take advantage of it.
+#customer intent: As a developer, I want to understand GitHub Copilot upgrade so that I can determine whether it supports my project and upgrade goal.
 
 ---
 
 # What is GitHub Copilot upgrade?
 
-GitHub Copilot upgrade is a GitHub Copilot agent that helps you upgrade projects to newer versions of .NET quickly and confidently. It guides you through assessment, solution recommendations, code fixes, and validation across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com.
+GitHub Copilot upgrade is a GitHub Copilot agent that helps you upgrade and modernize supported projects. It guides you through assessment, recommendations, code changes, and validation across Visual Studio, Visual Studio Code, GitHub Copilot CLI, and GitHub.com.
 
 Use this agent to:
 
-- Upgrade to a newer version of .NET.
-- Modernize your .NET app, especially when upgrading from .NET Framework.
+- Upgrade frameworks, compilers, and dependencies.
+- Modernize application architecture and replace libraries.
 - Assess your application's code, configuration, and dependencies.
 - Validate that your app builds and tests successfully.
+
+## Supported technologies
+
+Choose the technology pack that matches your project:
+
+| Technology | Supported work |
+|---|---|
+| [.NET](dotnet-overview.md) | Upgrade .NET and .NET Framework projects, modernize project files, replace libraries, and migrate application architectures. |
+| [JavaScript and TypeScript](javascript-typescript-overview.md) | Upgrade npm dependencies and the TypeScript compiler, repair compatibility problems, and validate application behavior. |
+
+Each technology pack can provide its own scenarios, focused capabilities, prerequisites, and validation process. Additional technology packs can extend the agent without changing the shared workflow concepts.
 
 ## Scenarios
 
@@ -36,8 +47,10 @@ The agent provides multiple end-to-end modernization workflows called _scenarios
 | **Aspire integration** | Adds [Aspire](https://aspire.dev) support for inner-loop and Azure deployment. | _"Add Aspire to my app"_ |
 | **Aspire version upgrade** | Upgrades existing Aspire applications to newer versions. | _"Upgrade my Aspire version"_ |
 | **WebForms-to-Blazor upgrade** | Upgrades ASP.NET Web Forms applications to Blazor. | _"Migrate my Web Forms app to Blazor"_ |
+| **JavaScript and TypeScript dependency upgrade** | Updates selected npm packages or all project dependencies and repairs breaking changes. | _"Upgrade all dependencies in this project"_ |
+| **TypeScript compiler upgrade** | Moves a project through TypeScript compiler versions and resolves new compiler errors. | _"Upgrade TypeScript to version 7"_ |
 
-For a full reference of all scenarios and 30+ built-in upgrade skills, see [Scenarios and skills reference](scenarios-and-skills.md).
+For technology-specific details, see [.NET scenarios and skills](dotnet-scenarios-and-skills.md) or [JavaScript and TypeScript capabilities](javascript-typescript-capabilities.md).
 
 ## Provide feedback
 
@@ -67,7 +80,7 @@ The upgrade agent supports upgrading C# and Visual Basic projects of the followi
 - Console apps
 - Test projects (MSTest, NUnit, and xUnit)
 
-To start an upgrade, see [Upgrade a .NET app with GitHub Copilot upgrade](how-to-upgrade-with-github-copilot.md).
+To start an upgrade, see [Upgrade a .NET app with GitHub Copilot upgrade](dotnet-how-to-upgrade-with-github-copilot.md).
 
 ### Supported upgrade paths
 
@@ -162,10 +175,10 @@ The tool collects data about project types, intent to upgrade, and upgrade durat
 ## Related content
 
 - [Install GitHub Copilot upgrade](install.md)
-- [Upgrade a .NET app with GitHub Copilot upgrade](how-to-upgrade-with-github-copilot.md)
+- [Upgrade a .NET app with GitHub Copilot upgrade](dotnet-how-to-upgrade-with-github-copilot.md)
 - [Monitor upgrades with the Upgrade Dashboard](dashboard.md)
 - [Core concepts](concepts.md)
-- [Scenarios and skills reference](scenarios-and-skills.md)
+- [.NET scenarios and skills](dotnet-scenarios-and-skills.md)
 - [Best practices](best-practices.md)
 - [Troubleshoot GitHub Copilot upgrade](troubleshooting.md)
 - [GitHub Copilot upgrade FAQ](faq.yml)

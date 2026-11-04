@@ -1,13 +1,14 @@
 ---
 description: "Learn more about: Data Tracing in ADO.NET"
 title: "Data Tracing"
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
+ai-usage: ai-assisted
 ms.assetid: a6a752a5-d2a9-4335-a382-b58690ccb79f
 ---
 
 # Data Tracing in ADO.NET
 
-ADO.NET features built-in data tracing functionality that is supported by the .NET data providers for SQL Server, Oracle, OLE DB and ODBC, as well as the ADO.NET <xref:System.Data.DataSet>, and the SQL Server network protocols.
+Microsoft.Data.SqlClient exposes data access tracing through the `Microsoft.Data.SqlClient.EventSource` event source. Other ADO.NET components, such as the .NET Framework providers for Oracle, OLE DB, and ODBC, and <xref:System.Data.DataSet>, have their own tracing facilities.
 
 Tracing data access API calls can help diagnose the following problems:
 
@@ -23,19 +24,19 @@ Tracing data access API calls can help diagnose the following problems:
 
 To support different trace technologies, tracing is extensible, so a developer can trace a problem at any level of the application stack. Although tracing is not an ADO.NET-only feature, Microsoft providers take advantage of generalized tracing and instrumentation APIs.
 
-For more information about setting and configuring managed tracing in ADO.NET, see [Tracing Data Access](/previous-versions/sql/sql-server-2012/hh880086(v=msdn.10)).
+For more information about how to collect Microsoft.Data.SqlClient traces, see [Enable EventSource tracing in SqlClient](/sql/connect/ado-net/enable-eventsource-tracing).
 
 ## Accessing Diagnostic Information in the Extended Events Log
 
-In the .NET Framework Data Provider for SQL Server, data access tracing ([Data Access Tracing](/previous-versions/sql/sql-server-2012/hh880086(v=msdn.10))) has been updated to make it easier to correlate client events with diagnostic information, such as connection failures, from the server's connectivity ring buffer and application performance information in the extended events log. For information about reading the extended events log, see [View Event Session Data](/previous-versions/sql/sql-server-2012/hh710068(v=sql.110)).
+Use Microsoft.Data.SqlClient connection IDs to correlate client events with server diagnostic information, such as connection failures, in the connectivity ring buffer and extended events log. For information about how to read the extended events log, see [View Event Session Data](/previous-versions/sql/sql-server-2012/hh710068(v=sql.110)).
 
-For connection operations, ADO.NET will send a client connection ID. If the connection fails, you can access the connectivity ring buffer ([Connectivity troubleshooting in SQL Server 2008 with the Connectivity Ring Buffer](/archive/blogs/sql_protocols/connectivity-troubleshooting-in-sql-server-2008-with-the-connectivity-ring-buffer)) and find the `ClientConnectionID` field and get diagnostic information about the connection failure. Client connection IDs are logged in the ring buffer only if an error occurs. (If a connection fails before sending the prelogin packet, a client connection ID will not be generated.) The client connection ID is a 16-byte GUID. You can also find the client connection ID in the extended events target output, if the `client_connection_id` action is added to events in an extended events session. You can enable data access tracing and rerun the connection command and observe the `ClientConnectionID` field in the data access trace, if you need further client driver diagnostic assistance.
+For connection operations, Microsoft.Data.SqlClient sends a client connection ID during the prelogin exchange. If the connection fails, look for the `ClientConnectionID` field in the connectivity ring buffer to obtain diagnostic information about the connection failure. Client connection IDs are logged in the ring buffer only if an error occurs. If a connection fails before the prelogin exchange, the server won't receive the ID. The client connection ID is a 16-byte GUID. You can also find the client connection ID in the extended events target output if you add the `client_connection_id` action to events in an extended events session.
 
-You can get the client connection ID programmatically by using the `SqlConnection.ClientConnectionID` property.
+To get the client connection ID programmatically, use <xref:Microsoft.Data.SqlClient.SqlConnection.ClientConnectionId>.
 
-The `ClientConnectionID` is available for a <xref:System.Data.SqlClient.SqlConnection> object that successfully establishes  a connection. If a connection attempt fails, `ClientConnectionID` may be available via `SqlException.ToString`.
+The connection ID is available for <xref:Microsoft.Data.SqlClient.SqlConnection> after it successfully establishes a connection. If a connection attempt fails, the ID might be available through <xref:Microsoft.Data.SqlClient.SqlException.ClientConnectionId>.
 
-ADO.NET also sends a thread-specific activity ID. The activity ID is captured in the extended events sessions if the sessions are started with the TRACK_CAUSALITY option enabled. For performance issues with an active connection, you can get the activity ID from the client's data access trace (`ActivityID` field) and then locate the activity ID in the extended events output. The activity ID in extended events is a 16-byte GUID (not the same as the GUID for the client connection ID) appended with a four-byte sequence number. The sequence number represents the order of a request within a thread and indicates the relative ordering of batch and RPC statements for the thread. The `ActivityID` is currently optionally sent for SQL batch statements and RPC requests when data access tracing is enabled on and the 18th bit in the data access tracing configuration word is turned ON.
+Microsoft.Data.SqlClient also sends a thread-specific activity ID for batch statements and remote procedure call (RPC) requests when its event source is enabled and the server supports trace headers. To capture the activity ID in an extended events session, enable `TRACK_CAUSALITY`. For performance issues with an active connection, locate the activity ID in the client trace and then in the extended events output. The activity ID contains a 16-byte GUID and a four-byte sequence number. The sequence number indicates the relative order of requests within a thread. The legacy data access tracing configuration word doesn't configure Microsoft.Data.SqlClient's event source.
 
 The following is a sample that uses Transact-SQL to start an extended events session that will be stored in a ring buffer and will record the activity ID sent from a client on RPC and batch operations.
 

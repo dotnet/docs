@@ -1,5 +1,5 @@
 items:
-  - name: GitHub Copilot upgrade for .NET
+  - name: GitHub Copilot upgrade
     href: index.yml
   - name: Overview
     href: overview.md
@@ -11,25 +11,40 @@ items:
     href: dashboard.md
   - name: Working with the agent
     href: working-with-agent.md
-  - name: Scenarios and skills reference
-    href: scenarios-and-skills.md
   - name: Customization
     href: customization.md
+  - name: Best practices
+    href: best-practices.md
+  - name: Troubleshooting
+    href: troubleshooting.md
   - name: FAQ
     href: faq.yml
     displayName: copilot, upgrade
 
-  - name: Upgrade .NET apps
+  - name: Upgrade .NET projects
     expanded: true
     items:
-      - name: How to upgrade with GitHub Copilot
-        href: how-to-upgrade-with-github-copilot.md
-      - name: How to apply custom upgrade instructions
-        href: how-to-custom-upgrade-instructions.md
-      - name: Best practices
-        href: best-practices.md
-      - name: Troubleshooting
-        href: troubleshooting.md
+      - name: Overview
+        href: dotnet-overview.md
+      - name: Upgrade a .NET app
+        href: dotnet-how-to-upgrade-with-github-copilot.md
+      - name: Apply custom .NET upgrade instructions
+        href: dotnet-how-to-custom-upgrade-instructions.md
+      - name: .NET scenarios and skills
+        href: dotnet-scenarios-and-skills.md
+      - name: Migrate .NET apps to Azure
+        href: ../../../azure/migration/appmod/overview.md
 
-  - name: Migrate .NET apps to Azure
-    href: ../../../azure/migration/appmod/overview.md
+  - name: Upgrade JavaScript and TypeScript projects
+    expanded: true
+    items:
+      - name: Overview
+        href: javascript-typescript-overview.md
+      - name: Upgrade dependencies
+        href: javascript-typescript-upgrade-dependencies.md
+      - name: Upgrade the TypeScript compiler
+        href: javascript-typescript-upgrade-typescript.md
+      - name: Validate an upgraded application
+        href: javascript-typescript-validate-application.md
+      - name: JavaScript and TypeScript capabilities
+        href: javascript-typescript-capabilities.md

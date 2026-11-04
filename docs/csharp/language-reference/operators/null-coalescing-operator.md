@@ -57,7 +57,7 @@ The `??` and `??=` operators are useful in the following scenarios:
 
   :::code language="csharp" source="snippets/shared/NullCoalescingOperator.cs" id="WithThrowExpression":::
 
-  The preceding example also demonstrates how to use [expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md) to define a property.
+  The preceding example also demonstrates how to use [expression-bodied members](lambda-operator.md#expression-body-definition) to define a property.
 
 - Use the `??=` operator to replace code of the following form:
 

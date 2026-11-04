@@ -1,10 +1,10 @@
 ### YamlMime:FAQ
 metadata:
-  title: GitHub Copilot upgrade for .NET FAQ
-  description: "This article answers frequently asked questions about GitHub Copilot upgrade for .NET."
+  title: GitHub Copilot upgrade FAQ
+  description: "Find answers to frequently asked questions about GitHub Copilot upgrade and its supported technology packs."
   titleSuffix: ""
   ms.topic: faq
-  ms.date: 07/07/2026
+  ms.date: 09/21/2026
 
 title: GitHub Copilot upgrade FAQ
 summary: |
@@ -27,7 +27,7 @@ sections:
     questions:
       - question: What can the agent do?
         answer: |
-          GitHub Copilot upgrade helps you upgrade your .NET (.NET, .NET Core, and .NET Framework) projects to newer versions of .NET. It upgrades dependencies and fixes errors in code after the upgrade. The agent performs the following steps in a Copilot chat session:
+          GitHub Copilot upgrade helps you upgrade and modernize supported projects. Technology packs provide workflows for .NET, JavaScript, and TypeScript projects. The agent performs the following steps in a Copilot chat session:
 
           - Analyzes your projects and proposes an upgrade plan.
           - Runs a series of tasks to upgrade your projects according to the plan.
@@ -52,7 +52,7 @@ sections:
 
       - question: Can I customize or guide the agent?
         answer: |
-          The agent uses customization Copilot provides, such as instruction files and skills. Customization is based on what your Copilot supports. The agent includes 30+ built-in upgrade skills that load automatically based on the technologies detected in your codebase. You can also create custom skills and scenarios. For more information, see [Apply custom upgrade instructions](how-to-custom-upgrade-instructions.md).
+          The agent uses customization Copilot provides, such as instruction files and skills. Customization is based on what your Copilot supports. Built-in upgrade skills load automatically based on the technologies detected in your codebase. You can also create custom skills and scenarios. For more information, see [Customize GitHub Copilot upgrade](customization.md).
 
           If you manually adjust a fix, provide additional instructions in chat, or update the Markdown in the plan file, the agent learns from that interaction in the short term. Preferences and decisions are saved to `scenario-instructions.md` in the `.github/upgrades/` folder so they persist across sessions.
 
@@ -79,7 +79,7 @@ sections:
     questions:
       - question: What can the agent upgrade?
         answer: |
-          GitHub Copilot upgrade helps you upgrade your .NET projects. The agent supports multiple scenarios beyond framework upgrades, including Aspire integration, SDK-style conversion, Newtonsoft.Json upgrade, SqlClient upgrade, Azure Functions upgrade, and Semantic Kernel to Microsoft Agent Framework upgrade. For a full reference, see [Scenarios and skills reference](scenarios-and-skills.md).
+          GitHub Copilot upgrade helps you upgrade your .NET projects. The agent supports multiple scenarios beyond framework upgrades, including Aspire integration, SDK-style conversion, Newtonsoft.Json upgrade, SqlClient upgrade, Azure Functions upgrade, and Semantic Kernel to Microsoft Agent Framework upgrade. For a full reference, see [.NET scenarios and skills](dotnet-scenarios-and-skills.md).
 
           The agent works with these project types:
 
@@ -115,6 +115,20 @@ sections:
       - question: Can I partially accept the agent's changes?
         answer: |
           Yes. Because each task is committed separately, you can cherry-pick specific commits by using standard Git commands. Review the commit history with `git log --oneline` and use `git cherry-pick` to select individual changes.
+
+  - name: Upgrade JavaScript and TypeScript projects
+    questions:
+      - question: What JavaScript and TypeScript upgrades are supported?
+        answer: |
+          The agent can update selected npm packages or all project dependencies, upgrade the TypeScript compiler across major versions, repair compatibility problems, and validate application behavior. For details, see [Upgrade JavaScript and TypeScript projects](javascript-typescript-overview.md).
+
+      - question: Can the agent upgrade JavaScript projects without TypeScript?
+        answer: |
+          Yes. JavaScript-only projects don't need a `tsconfig.json`. The agent preserves valid JavaScript and uses the project's build, test, and runtime behavior to validate dependency updates.
+
+      - question: How does the agent validate a JavaScript or TypeScript upgrade?
+        answer: |
+          The agent captures a baseline before the upgrade and repeats the relevant checks afterward. Based on the project, checks can include compilation, bundler builds, tests, command-line execution, server startup, endpoint probes, and browser flows. For details, see [Validate a JavaScript or TypeScript application](javascript-typescript-validate-application.md).
 
   - name: Migrate to Azure
     questions:

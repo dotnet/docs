@@ -1,14 +1,14 @@
 ---
 title: "Breaking change: Minimum hardware requirements updated"
-description: "Learn about the breaking change in .NET 11 where minimum hardware requirements have been updated for x86/x64 and Arm64 architectures."
-ms.date: 01/09/2026
+description: "Learn about the breaking change in .NET 11 where x86/x64 minimum hardware requirements and x86/x64 and Arm64 ReadyToRun targets have been updated."
+ms.date: 08/15/2026
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/48045
 ---
 
 # Minimum hardware requirements updated
 
-The minimum hardware requirements for .NET 11 have been updated to require more modern instruction sets on both x86/x64 and Arm64 architectures. Additionally, the ReadyToRun (R2R) compilation targets have been updated to take advantage of newer hardware capabilities.
+The minimum hardware requirements for .NET 11 have been updated to require more modern instruction sets on x86/x64 architectures. Additionally, the ReadyToRun (R2R) compilation targets for x86/x64 and Arm64 have been updated to take advantage of newer hardware capabilities.
 
 ### Arm64
 
@@ -16,13 +16,13 @@ For Apple, there's no change to the minimum hardware or the `ReadyToRun` target.
 
 For Linux, there's no change to the minimum hardware. .NET continues to support devices such as Raspberry Pi that might only provide support for the `AdvSimd` instruction set. The `ReadyToRun` target has been updated to include the `LSE` instruction set, which might result in additional jitting overhead if you launch an application.
 
-For Windows, the baseline is updated to require the `LSE` instruction set. This is [required by Windows 11](/windows-hardware/design/minimum/minimum-hardware-requirements-overview) and by [all Arm64 CPUs officially supported by Windows 10](/windows-hardware/design/minimum/windows-processor-requirements). Additionally, it's inline with the `Arm SBSA` (Server Base System Architecture) requirements. The `ReadyToRun` target has been updated to be `armv8.2-a + RCPC` (this provides support for at least `AdvSimd`, `CRC`, `LSE`, `RCPC`, and `RDMA`), which covers the majority of hardware officially supported.
+For Windows, there's no change to the minimum hardware. .NET continues to support `armv8.0-a` devices, including Windows 10 IoT devices that don't provide the `LSE` instruction set. The `ReadyToRun` target has been updated to be `armv8.2-a + RCPC` (this provides support for at least `AdvSimd`, `CRC`, `LSE`, `RCPC`, and `RDMA`), which covers the majority of hardware officially supported. Devices that don't meet this target can still run .NET, but affected `ReadyToRun` images fall back to JIT compilation.
 
 | OS      | Previous JIT/AOT minimum | New JIT/AOT minimum | Previous R2R target | New R2R target   |
 |---------|--------------------------|---------------------|---------------------|------------------|
 | Apple   | Apple M1                 | (No change)         | Apple M1            | (No change)      |
 | Linux   | armv8.0-a                | (No change)         | armv8.0-a           | armv8.0-a + LSE  |
-| Windows | armv8.0-a                | armv8.0-a + LSE     | armv8.0-a           | armv8.2-a + RCPC |
+| Windows | armv8.0-a                | (No change)         | armv8.0-a           | armv8.2-a + RCPC |
 
 ### x86/x64
 
@@ -46,7 +46,7 @@ By default, .NET successfully launched and ran on older hardware. Individual app
 
 ## New behavior
 
-Starting with .NET 11, .NET fails to run on older hardware and might print a message similar to the following. (In some scenarios, a more descriptive message might be provided that lists the concrete hardware requirements for a given operating system and architecture.)
+Starting with .NET 11, .NET fails to run on x86/x64 hardware that doesn't support the `x86-64-v2` instruction set and might print a message similar to the following. (In some scenarios, a more descriptive message might be provided that lists the concrete hardware requirements for a given operating system and architecture.)
 
 > The current CPU is missing one or more of the baseline instruction sets.
 
@@ -60,11 +60,13 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 .NET supports a broad range of hardware, often above and beyond the minimum hardware requirements put in place by the underlying operating system (OS). .NET also has built-in support for taking advantage of the hardware it's actively running on for JIT scenarios. However, this support adds significant complexity to the codebase, particularly for much older hardware that's unlikely to still be in use. Additionally, it defines a "lowest common denominator" that AOT targets must default to which can, in some domain-specific scenarios, lead to reduced performance for applications.
 
-The update to the minimum baseline was made to reduce the maintenance complexity of the codebase and to better align with the documented (and often enforced) hardware requirements of the underlying OS.
+The update to the x86/x64 minimum baseline was made to reduce the maintenance complexity of the codebase and to better align with the documented (and often enforced) hardware requirements of the underlying OS. The Arm64 minimum baseline remains unchanged so that .NET continues to support hardware that's supported by Windows 10 IoT.
 
 ## Recommended action
 
-If you're using hardware that's no longer supported, consider updating. Such hardware is officially out of support and might not boot on operating system versions that are supported by .NET.
+If you're using x86/x64 hardware that's no longer supported, consider updating. Such hardware is officially out of support and might not boot on operating system versions that are supported by .NET.
+
+No action is required for supported Arm64 hardware that doesn't meet the new `ReadyToRun` target, but applications might have additional startup overhead when affected `ReadyToRun` images fall back to JIT compilation.
 
 ## Affected APIs
 

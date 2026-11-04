@@ -1,8 +1,9 @@
 ---
 title: EventPipe Overview
 description: Learn about EventPipe and how to use it for tracing your .NET applications to diagnose performance issues.
-ms.date: 03/19/2026
+ms.date: 10/12/2026
 ms.topic: overview
+ai-usage: ai-assisted
 ---
 
 # EventPipe
@@ -80,11 +81,15 @@ However, you can use the following environment variables to set up an EventPipe 
 * `DOTNET_EventPipeCircularMB`: A hexadecimal value that represents the size of EventPipe's internal buffer in megabytes. This configuration value is only used when EventPipe is configured to run via `DOTNET_EnableEventPipe`. The default buffer size is 1024MB which translates to this environment variable being set to `400`, since `0x400` == `1024`.
 
   > [!NOTE]
-  > If the target process writes events too frequently, it can overflow this buffer and some events might be dropped. If too many events are getting dropped, increase the buffer size to see if the number of dropped events reduces. If the number of dropped events does not decrease with a larger buffer size, it may be due to a slow reader preventing the target process' buffers from being flushed.
+  > If the target process writes events too frequently, it can overflow this buffer, and some events might be dropped. If the runtime drops too many events, set `DOTNET_EventPipeBufferingMode=1` with `DOTNET_EventPipeOutputStreaming=1` or increase the buffer size to see if the number of dropped events decreases. If the number of dropped events does not decrease with a larger buffer size, a slow reader might prevent the target process's buffers from being flushed.
+
+* `DOTNET_EventPipeBufferingMode`: Available in .NET 11 and later. This setting controls how the startup EventPipe session handles recording an event when the in-memory buffer is full. Set it to `0` (default) to drop events that would overflow the buffer, or `1` to pause event-writing threads until buffer space becomes available. `1` requires a streaming session (see `DOTNET_EventPipeOutputStreaming`).
+
+* `DOTNET_EventPipeOutputStreaming`: Set this to `1` to stream the startup EventPipe session's events to disk as quickly as possible after they occur. By default, events are stored in memory and not written to disk until the application is exiting. A streaming session is required for `DOTNET_EventPipeBufferingMode=1` to take effect.
 
 * `DOTNET_EventPipeProcNumbers`: Set this to `1` to enable capturing processor numbers in EventPipe event headers. The default value is `0`.
 
-* `DOTNET_EventPipeThreadSamplingRate`: Available in .NET 11 and later. Sets the interval, in milliseconds, for the EventPipe thread time sampling profiler. When set to `0` or omitted, the runtime uses its built-in default of 10 ms (~100 Hz). This setting is process-global and affects all EventPipe sessions, including on-demand traces started by tools such as [dotnet-trace](./dotnet-trace.md). Setting a large value reduces sampling overhead but also reduces the resolution of any trace collected during the process lifetime.
+* `DOTNET_EventPipeThreadSamplingRate`: Available in .NET 10.0.10 and later. Sets the interval, in milliseconds, for the EventPipe thread time sampling profiler. When set to `0` or omitted, the runtime uses its built-in default of 1 ms (~1,000 Hz). Builds without threading support, such as single-threaded WebAssembly, use a default of 5 ms (~200 Hz). This setting is process-global and affects all EventPipe sessions, including on-demand traces started by tools such as [dotnet-trace](./dotnet-trace.md). Setting a large value reduces sampling overhead but also reduces the resolution of any trace collected during the process lifetime.
 
 * `DOTNET_EventPipeConfig`: Sets up the EventPipe session configuration when starting an EventPipe session with `DOTNET_EnableEventPipe`.
   The syntax is as follows:

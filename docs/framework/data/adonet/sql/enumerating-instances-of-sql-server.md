@@ -1,7 +1,8 @@
 ---
 description: "Learn more about: Enumerating Instances of SQL Server (ADO.NET)"
 title: "Enumerating Instances of SQL Server"
-ms.date: "03/30/2017"
+ms.date: "10/23/2026"
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -9,26 +10,28 @@ ms.assetid: ddf1c83c-9d40-45e6-b04d-9828c6cbbfdc
 ---
 # Enumerating Instances of SQL Server (ADO.NET)
 
-SQL Server permits applications to find SQL Server instances within the current network. The <xref:System.Data.Sql.SqlDataSourceEnumerator> class exposes this information to the application developer, providing a <xref:System.Data.DataTable> containing information about all the visible servers. This returned table contains a list of server instances available on the network that matches the list provided when a user attempts to create a new connection, and expands the drop-down list containing all the available servers on the **Connection Properties** dialog box. The results displayed are not always complete.
+SQL Server permits applications to find SQL Server instances within the current network. The <xref:Microsoft.Data.Sql.SqlDataSourceEnumerator> class returns the visible servers in the <xref:System.Data.DataTable> object. The table lists the server instances available on the network, like the server list in the **Connection Properties** dialog box. The results aren't always complete.
+
+With Microsoft.Data.SqlClient, <xref:Microsoft.Data.Sql.SqlDataSourceEnumerator.GetDataSources*> requires Windows with native networking. On Linux, macOS, or Windows with managed networking enabled, the method throws <xref:System.NotImplementedException>. In those environments, specify the server address and port directly in your connection string instead of server discovery.
 
 > [!NOTE]
 > As with most Windows services, it is best to run the SQL Browser service with the least possible privileges.
 
 ## Retrieving an Enumerator Instance
 
- In order to retrieve the table containing information about the available SQL Server instances, you must first retrieve an enumerator, using the shared/static <xref:System.Data.Sql.SqlDataSourceEnumerator.Instance> property:
+To retrieve information about available SQL Server instances, first retrieve an enumerator with the shared/static <xref:Microsoft.Data.Sql.SqlDataSourceEnumerator.Instance> property:
 
 ```vb
-Dim instance As System.Data.Sql.SqlDataSourceEnumerator = _
-   System.Data.Sql.SqlDataSourceEnumerator.Instance
+Dim instance As Microsoft.Data.Sql.SqlDataSourceEnumerator = _
+   Microsoft.Data.Sql.SqlDataSourceEnumerator.Instance
 ```
 
 ```csharp
-System.Data.Sql.SqlDataSourceEnumerator instance =
-   System.Data.Sql.SqlDataSourceEnumerator.Instance
+Microsoft.Data.Sql.SqlDataSourceEnumerator instance =
+   Microsoft.Data.Sql.SqlDataSourceEnumerator.Instance;
 ```
 
- Once you have retrieved the static instance, you can call the <xref:System.Data.Sql.SqlDataSourceEnumerator.GetDataSources*> method, which returns a <xref:System.Data.DataTable> containing information about the available servers:
+After you retrieve the static instance, call <xref:Microsoft.Data.Sql.SqlDataSourceEnumerator.GetDataSources*> to retrieve information about available servers in the <xref:System.Data.DataTable> object:
 
 ```vb
 Dim dataTable As System.Data.DataTable = instance.GetDataSources()
@@ -42,10 +45,10 @@ System.Data.DataTable dataTable = instance.GetDataSources();
 
 |Column|Description|
 |------------|-----------------|
-|**ServerName**|Name of the server.|
-|**InstanceName**|Name of the server instance. Blank if the server is running as the default instance.|
-|**IsClustered**|Indicates whether the server is part of a cluster.|
-|**Version**|Version of the server. For example:<br /><br /> -   9.00.x (SQL Server 2005)<br />-   10.0.xx (SQL Server 2008)<br />-   10.50.x (SQL Server 2008 R2)<br />-   11.0.xx (SQL Server 2012)|
+|`ServerName`|Name of the server.|
+|`InstanceName`|Name of the server instance. Blank if the server is running as the default instance.|
+|`IsClustered`|Indicates whether the server is part of a cluster.|
+|`Version`|Version of the server. For example:<br /><br /> -   9.00.x (SQL Server 2005)<br />-   10.0.xx (SQL Server 2008)<br />-   10.50.x (SQL Server 2008 R2)<br />-   11.0.xx (SQL Server 2012)|
 
 ## Enumeration Limitations
 
@@ -54,16 +57,17 @@ System.Data.DataTable dataTable = instance.GetDataSources();
  Listed servers may or may not have additional information such as `IsClustered` and version. This is dependent on how the list was obtained. Servers listed through the SQL Server browser service will have more details than those found through the Windows infrastructure, which will list only the name.
 
 > [!NOTE]
-> Server enumeration is only available when running in full-trust. Assemblies running in a partially-trusted environment will not be able to use it, even if they have the <xref:System.Data.SqlClient.SqlClientPermission> Code Access Security (CAS) permission.
+> Modern .NET doesn't support code access security or partial-trust execution. For server discovery, allow the required SQL Server Browser network traffic.
 
- SQL Server provides information for the <xref:System.Data.Sql.SqlDataSourceEnumerator> through the use of an external Windows service named SQL Browser. This service is enabled by default, but administrators may turn it off or disable it, making the server instance invisible to this class.
+SQL Server provides information for the <xref:Microsoft.Data.Sql.SqlDataSourceEnumerator> through the external Windows service SQL Browser. This service is enabled by default, but administrators might turn it off or disable it, making the server instance invisible to this class.
 
 ## Example
 
- The following console application retrieves information about all of the visible SQL Server instances and displays the information in the console window.
+ The following console application retrieves information about visible SQL Server instances and displays the information in the console window. Install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package.
 
 ```vb
-Imports System.Data.Sql
+Imports Microsoft.Data.Sql
+Imports System.Data
 
 Module Module1
   Sub Main()
@@ -91,7 +95,7 @@ End Module
 ```
 
 ```csharp
-using System.Data.Sql;
+using Microsoft.Data.Sql;
 
 class Program
 {

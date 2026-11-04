@@ -67,8 +67,8 @@ You may need to convert an object to a different type.
 You may create types that define their own rules for equality or define a
 natural ordering among objects of that type.
 
-- [Test for reference-based equality](../programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md).
-- [Define value-based equality for a type](../programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md).
+- [Test for reference-based equality](../fundamentals/expressions/equality.md#use-objectreferenceequals-to-test-identity-directly).
+- [Define value-based equality for a type](../language-reference/operators/equality-operators.md#implement-equality-yourself-when-a-type-cant-be-a-record).
 
 ## Exception handling
 

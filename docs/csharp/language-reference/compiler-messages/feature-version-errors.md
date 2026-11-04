@@ -1,6 +1,9 @@
 ---
+
 title: Resolve errors related to language version and features
+
 description: Several compiler errors indicate that your configured language version doesn't support a feature you're using. This article shows how to fix those errors and warnings.
+
 f1_keywords:
   - "CS0171"
   - "CS0188"
@@ -32,7 +35,7 @@ f1_keywords:
   - "CS8511" # ERR_ConstantPatternVsOpenType  An expression of type '{0}' cannot be handled by a pattern of type '{1}'
   - "CS8192" # ERR_BadLanguageVersion   Provided language version is unsupported or invalid
   - "CS8627" # ERR_NullableUnconstrainedTypeParameter  A nullable type parameter must be known to be a value type or non-nullable reference type
-  - "CS8630" # ERR_NullableOptionNotAvailable  Invalid '{0}' value: '{1}' for C# {2}. Please use language version '{3}' or greater
+  - "CS8630" # ERR_CompilationOptionNotAvailable  Invalid '{0}' value: '{1}' for C# {2}. Please use language version '{3}' or greater.
   - "CS8314" # ERR_PatternWrongGenericTypeInVersion  An expression of type '{0}' cannot be handled by a pattern of type
   - "CS8652" # ERR_FeatureInPreview  The feature '{0}' is currently in Preview and *unsupported*. To use Preview features, use the 'preview' language version
   - "CS8701" # ERR_RuntimeDoesNotSupportDefaultInterfaceImplementation  Target runtime doesn't support default interface implementation.
@@ -75,6 +78,7 @@ f1_keywords:
   - "CS9328"
   - "CS9346" # ERR_EncUpdateRequiresEmittingExplicitInterfaceImplementationNotSupportedByTheRuntime
   - "CS9352" # ERR_RuntimeDoesNotSupportExtendedLayoutTypes  The target runtime does not support extended layout types.
+  - "CS9399" # ERR_FeatureNotAvailableInVersion15  Feature '{0}' is not available in C# 15.0. Please use language version {1} or greater.
 helpviewer_keywords:
   - "CS0171"
   - "CS0188"
@@ -149,14 +153,16 @@ helpviewer_keywords:
   - "CS9328"
   - "CS9346"
   - "CS9352"
-ms.date: 05/07/2026
+  - "CS9399"
+ms.date: 10/20/2026
+ai-usage: ai-assisted
 ---
 # Resolve errors and warnings for language features and versions
 
 This article covers the following compiler errors and warnings:
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 - [**CS0171**](#breaking-changes-on-struct-initialization): *Field 'name' must be fully assigned before control is returned to the caller. Consider updating to language version 'version' to auto-default the field.*
 - [**CS0188**](#breaking-changes-on-struct-initialization): *The 'this' object cannot be used before all of its fields have been assigned. Consider updating to language version 'version' to auto-default the unassigned fields.*
@@ -188,7 +194,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8511**](#feature-not-available-in-language-version): *An expression of type 'type' cannot be handled by a pattern of type 'type'. Please use language version 'version' or greater to match an open type with a constant pattern.*
 - [**CS8627**](#feature-not-available-in-language-version): *A nullable type parameter must be known to be a value type or non-nullable reference type unless language version 'version' or greater is used. Consider changing the language version or adding a 'class', 'struct', or type constraint.*
 - [**CS8630**](#feature-not-available-in-language-version): *Invalid 'option' value: 'value' for C# version. Please use language version 'version' or greater.*
-- [**CS8652**](#experimental-and-preview-features): *The feature is currently in Preview and unsupported. To use Preview features, use the 'preview' language version.*
+- [**CS8652**](#experimental-and-preview-features): *The feature 'feature' is currently in Preview and \*unsupported\*. To use Preview features, use the `preview` language version.*
 - [**CS8701**](#target-runtime-doesnt-support-feature): *Target runtime doesn't support default interface implementation.*
 - [**CS8702**](#target-runtime-doesnt-support-feature): *'member' cannot implement interface member 'member' in type 'type' because the target runtime doesn't support default interface implementation.*
 - [**CS8703**](#feature-not-available-in-language-version): *The modifier 'modifier' is not valid for this item in C# version. Please use language version 8.0 or greater.*
@@ -227,10 +233,11 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9268**](#experimental-and-preview-features): *'type' is for evaluation purposes only and is subject to change or removal in future updates: 'message'. Suppress this diagnostic to proceed.*
 - [**CS9269**](#implementation-specific-attributes): *UnscopedRefAttribute is only valid in C# 11 or later or when targeting net7.0 or later.*
 - [**CS9271**](#implementation-specific-attributes): *The type 'Microsoft.CodeAnalysis.EmbeddedAttribute' must be non-generic, internal, non-file, sealed, non-static, have a parameterless constructor, inherit from System.Attribute, and be able to be applied to any type.*
-- [**CS9327**](#feature-not-available-in-language-version): *Feature is not available in C# 14.0. Please use language version 'version' or greater.*
+- [**CS9327**](#feature-not-available-in-language-version): *Feature 'feature' is not available in C# 14.0. Please use language version `version` or greater.*
 - [**CS9328**](#target-runtime-doesnt-support-feature): *Method 'method' uses a feature that is not supported by runtime async currently. Opt the method out of runtime async by attributing it with 'System.Runtime.CompilerServices.RuntimeAsyncMethodGenerationAttribute(false)'.*
 - [**CS9346**](#target-runtime-doesnt-support-feature): *Update requires emitting explicit interface implementation, which is not supported by the runtime without restarting the application.*
 - [**CS9352**](#target-runtime-doesnt-support-feature): *The target runtime does not support extended layout types.*
+- [**CS9399**](#feature-not-available-in-language-version): *Feature 'feature' is not available in C# 15.0. Please use language version 'version' or greater.*
 
 The cause behind all these errors and warnings is that either the compiler or the runtime doesn't support a feature you're using. The resolution depends on whether the issue is a language version configuration problem, a language version mismatch, a runtime limitation, or an experimental feature.
 
@@ -269,7 +276,7 @@ To learn more about the language versions supported for each framework version, 
 ## Feature not available in language version
 
 - **CS1738**: *Named argument specifications must appear after all fixed arguments have been specified.*
-- **CS8022, CS8023, CS8024, CS8025, CS8026, CS8059, CS8107, CS8302, CS8320, CS8370, CS8400, CS8773, CS8936, CS9058, CS9202, CS9260, CS9327**: *Feature is not available in C# X. Please use language version Y or greater.*
+- **CS8022, CS8023, CS8024, CS8025, CS8026, CS8059, CS8107, CS8302, CS8320, CS8370, CS8400, CS8773, CS8936, CS9058, CS9202, CS9260**: *Feature is not available in C# X. Please use language version Y or greater.*
 - **CS8306**: *Tuple element name is inferred. Please use language version 7.1 or greater to access an element by its inferred name.*
 - **CS8314**: *An expression of type 'type' cannot be handled by a pattern of type 'type' in C# version. Please use language version 'version' or greater.*
 - **CS8371**: *Field-targeted attributes on auto-properties are not supported in language version 7.3.*
@@ -285,11 +292,12 @@ To learn more about the language versions supported for each framework version, 
 - **CS8957**: *Conditional expression is not valid in language version 8.0 because a common type was not found between types.*
 - **CS8967**: *Newlines inside a non-verbatim interpolated string are not supported in C# 10.0.*
 - **CS9194**: *Argument may not be passed with the 'ref' keyword. To pass 'ref' arguments to 'in' parameters, upgrade to language version 12 or greater.*
+- **CS9327**: *Feature 'feature' is not available in C# 14.0. Please use language version 'version' or greater.*
+- **CS9399**: *Feature 'feature' is not available in C# 15.0. Please use language version 'version' or greater.*
 
 These errors all indicate that you're using a language feature that requires a newer C# version than your project currently targets. To resolve these errors, use one of the following options:
 
 - Upgrade the target framework so the compiler automatically selects the required language version. Each target framework maps to a default C# version. For example, .NET 8 defaults to C# 12, .NET 9 defaults to C# 13, and .NET 10 defaults to C# 14. See the table in [Language version configuration errors](#language-version-configuration-errors) for the full mapping.
-
 - Set the `<LangVersion>` element in your project file to the required version or higher. For example, to enable C# 12 features, add `<LangVersion>12</LangVersion>` to a `<PropertyGroup>` in your project file.
 
 If you can't upgrade, avoid the feature that triggered the error. The error message names the feature and the required version. The following list provides additional context for specific errors:
@@ -298,11 +306,20 @@ If you can't upgrade, avoid the feature that triggered the error. The error mess
 - Access tuple elements by their declared name rather than the inferred name, or upgrade to C# 7.1 or later (**CS8306**).
 - Use `$@"..."` instead of `@$"..."` for interpolated verbatim strings in C# versions before 8.0 (**CS8401**).
 - Add explicit type constraints to nullable type parameters, or upgrade to C# 9 or later which relaxes this requirement (**CS8627**).
-- Upgrade to C# 8.0 or later to enable nullable annotations and the nullable context (**CS8630**).
+- Match the option to the language version named in the message (**CS8630**). For example, nullable options require C# 8.0 or later. In the experimental Roslyn `MemorySafetyRulesVersion` API, selecting `Version2` requires the `preview` language version; selecting C# 15.0 isn't sufficient.
 - Add explicit casts in conditional expressions where the two branches have no common type, or upgrade to C# 9 or later for target-typed conditional expressions (**CS8957**).
 - Move newlines outside of interpolated string expressions, or upgrade to C# 11 or later (**CS8967**).
 - Use the `in` keyword instead of `ref` when passing arguments to `in` parameters, or upgrade to C# 12 or later (**CS9194**).
 - Implement non-public interface members explicitly rather than implicitly, or upgrade to C# 9 or later (**CS8704**).
+
+Numbered-version gates and preview gates describe different problems:
+
+- **CS9327** means the project uses C# 14.0, but the named feature requires a later language version. For example, collection expression arguments require C# 15.
+- **CS9399** is the corresponding general numbered-version gate for a project using C# 15.0. Follow the feature and required version in the actual diagnostic. It isn't the error for activating the updated memory safety rules.
+- **CS8652** means the feature remains in preview. For example, using the `safe` modifier with `LangVersion` set to `15.0` requires changing it to `preview`, not just selecting the newest numbered version.
+- **CS8630** can instead report that a compilation option requires another language version. For example, the experimental `MemorySafetyRulesVersion` value `2` requires `preview` even when the compilation contains no source code, because the compiler validates the option independently of the source code.
+
+For the separate syntax and enforcement opt-ins for the preview memory safety model, see [Enable the updated memory safety rules](../compiler-options/language.md#enable-the-updated-memory-safety-rules).
 
 ## Target runtime doesn't support feature
 
@@ -324,7 +341,7 @@ If you can't upgrade, avoid the feature that triggered the error. The error mess
 - **CS9346**: *Update requires emitting explicit interface implementation, which is not supported by the runtime without restarting the application.*
 - **CS9352**: *The target runtime does not support extended layout types.*
 
-These errors differ from language version errors because upgrading the `<LangVersion>` alone doesn't resolve them. The target runtime (specified by `<TargetFramework>`) must also support the feature at the CLR/runtime level.
+These errors generally require support from the target runtime (specified by `<TargetFramework>`), not just a newer `<LangVersion>`. One exception is non-virtual static interface members: starting with C# 15, declaring and using them no longer requires default-interface-implementation runtime support. If CS8701 occurs for such a member, an SDK that supports C# 15 and `<LangVersion>15.0</LangVersion>` can resolve it without changing the target framework. Instance default implementations, static abstract or virtual members, and protected interface-member accessibility retain their runtime requirements. For more information, see [Static interface members and runtime support](../keywords/interface.md#static-interface-members-and-runtime-support).
 
 Upgrade the `<TargetFramework>` in your project file to a version that supports the required feature. The following list shows which features require which minimum runtime:
 
@@ -367,21 +384,27 @@ Make custom calling convention types `public` (**CS8891**). If you define a cust
 
 - **CS8058**: *Feature 'feature' is experimental and unsupported; use '/features:feature' to enable.*
 - **CS8305**: *'type' is for evaluation purposes only and is subject to change or removal in future updates.*
-- **CS8652**: *The feature is currently in Preview and unsupported. To use Preview features, use the 'preview' language version.*
+- **CS8652**: *The feature 'feature' is currently in Preview and \*unsupported\*. To use Preview features, use the `preview` language version.*
 - **CS9204**: *'type' is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.*
 - **CS9211**: *The diagnosticId argument to the 'Experimental' attribute must be a valid identifier.*
 - **CS9268**: *'type' is for evaluation purposes only and is subject to change or removal in future updates: 'message'. Suppress this diagnostic to proceed.*
 
-These diagnostics indicate that you're using a feature or type that's marked as experimental or is only available in the preview language version.
+These diagnostics indicate that you're using an experimental compiler feature, a preview language feature, or a symbol marked as experimental.
 
 > [!WARNING]
 > Experimental features are subject to change. The APIs might change, or they might be removed in future updates. Including experimental features is a way for library authors to get feedback on ideas and concepts for future development. Use extreme caution when using any feature marked as experimental.
 
 Set `<LangVersion>preview</LangVersion>` in your project file to use preview language features (**CS8652**). Preview features aren't yet finalized and might change in future releases.
 
-Suppress the specific diagnostic ID to acknowledge the experimental nature of the API (**CS8058**, **CS8305**, **CS9204**, **CS9268**). Library authors mark APIs with <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=fullName> to indicate they're subject to change. You can suppress the diagnostic by using `#pragma warning disable` or by adding the diagnostic ID to `<NoWarn>` in your project file.
+Enable the named experimental compiler feature with `/features:<feature>`, as directed in the **CS8058** message.
 
-Ensure the `diagnosticId` argument to `[Experimental]` is a valid C# identifier (**CS9211**). The identifier must follow standard naming rules. It can't contain spaces, special characters, or start with a digit. You can also declare your own experimental features by using the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=fullName>.
+**CS8305** indicates that the symbol is marked with `Windows.Foundation.Metadata.ExperimentalAttribute`. Suppress **CS8305** only when you accept that the marked symbol can change or be removed.
+
+If you're consuming an API marked with <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=fullName>, suppress a valid reported diagnostic ID only when you accept that the API can change or be removed. Use `#pragma warning disable` or add the ID to `<NoWarn>` in your project file. Diagnostic IDs read from metadata aren't revalidated. An invalid ID, such as one that contains a space, can be reported but might not be suppressible with `#pragma`. In that case, contact the API author or update the dependency.
+
+If you're authoring an experimental API, the compiler reports the `diagnosticId` from <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=fullName> when it isn't null, empty, or composed only of whitespace. Otherwise, the compiler reports **CS9204** if `Message` is null or empty and **CS9268** otherwise.
+
+For an attribute declared in source, an invalid `diagnosticId` also produces **CS9211** at the attribute declaration. Ensure the ID is a valid C# identifier: It must start with an underscore or a Unicode letter. Each later character must be a Unicode letter, decimal digit, connecting character such as an underscore, combining character, or formatting character. Because metadata IDs aren't revalidated, API authors should always choose a valid ID. You can declare your own experimental APIs by using the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=fullName>.
 
 ## Breaking changes on struct initialization
 

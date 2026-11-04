@@ -1,34 +1,39 @@
 ---
 description: "Learn more about ASP.NET applications using wait handles. The Wait models provide a more flexible way of processing multiple asynchronous operations."
 title: "ASP.NET Applications Using Wait Handles"
-ms.date: "03/30/2017"
+ms.date: "10/23/2026"
 dev_langs:
   - "csharp"
   - "vb"
 ---
 # ASP.NET applications using wait handles
 
+Install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package to use these examples. Microsoft.Data.SqlClient supports the `BeginExecute` and `EndExecute` methods shown here without an asynchronous connection-string option. Don't add `Asynchronous Processing=true`; Microsoft.Data.SqlClient doesn't support that keyword. For new code, prefer `ExecuteReaderAsync` and `ExecuteNonQueryAsync` with `await`, and use `Task.WhenAny` or `Task.WhenAll` to coordinate operations without blocking a request thread.
+
 The callback and polling models for handling asynchronous operations are useful when your application is processing only one asynchronous operation at a time. The Wait models provide a more flexible way of processing multiple asynchronous operations. There are two Wait models, named for the <xref:System.Threading.WaitHandle> methods used to implement them: the Wait (Any) model and the Wait (All) model.
 
- To use either Wait model, you need to use the <xref:System.IAsyncResult.AsyncWaitHandle> property of the <xref:System.IAsyncResult> object returned by the <xref:System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery*>, <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader*>, or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader*> methods. The <xref:System.Threading.WaitHandle.WaitAny*> and <xref:System.Threading.WaitHandle.WaitAll*> methods both require you to send the <xref:System.Threading.WaitHandle> objects as an argument, grouped together in an array.
+To use either Wait model, use the <xref:System.IAsyncResult.AsyncWaitHandle> property of the <xref:System.IAsyncResult> object returned by the <xref:Microsoft.Data.SqlClient.SqlCommand.BeginExecuteNonQuery*>, <xref:Microsoft.Data.SqlClient.SqlCommand.BeginExecuteReader*>, or <xref:Microsoft.Data.SqlClient.SqlCommand.BeginExecuteXmlReader*> methods. Pass an array of <xref:System.Threading.WaitHandle> objects to <xref:System.Threading.WaitHandle.WaitAny*> or <xref:System.Threading.WaitHandle.WaitAll*>.
 
  Both Wait methods monitor the asynchronous operations, waiting for completion. The <xref:System.Threading.WaitHandle.WaitAny*> method waits for any of the operations to complete or time out. Once you know a particular operation is complete, you can process its results and then continue waiting for the next operation to complete or time out. The <xref:System.Threading.WaitHandle.WaitAll*> method waits for all of the processes in the array of <xref:System.Threading.WaitHandle> instances to complete or time out before continuing.
 
- The Wait models' benefit is most striking when you need to run multiple operations of some length on different servers, or when your server is powerful enough to process all the queries at the same time. In the examples presented here, three queries emulate long processes by adding WAITFOR commands of varying lengths to inconsequential SELECT queries.
+ The Wait models' benefit is most striking when you need to run multiple operations of some length on different servers, or when your server is powerful enough to process all the queries at the same time. In the examples presented here, three queries emulate long processes by adding `WAITFOR` commands of varying lengths to inconsequential `SELECT` queries.
 
 ## Example: Wait (Any) Model
 
- The following example illustrates the Wait (Any) model. Once three asynchronous processes are started, the <xref:System.Threading.WaitHandle.WaitAny*> method is called to wait for the completion of any one of them. As each process completes, the <xref:System.Data.SqlClient.SqlCommand.EndExecuteReader*> method is called and the resulting <xref:System.Data.SqlClient.SqlDataReader> object is read. At this point, a real-world application would likely use the <xref:System.Data.SqlClient.SqlDataReader> to populate a portion of the page. In this simple example, the time the process completed is added to a text box corresponding to the process. Taken together, the times in the text boxes illustrate the point: Code is executed each time a process completes.
+The following example illustrates the Wait (Any) model. After it starts three asynchronous operations, the code calls <xref:System.Threading.WaitHandle.WaitAny*> to wait for any operation to complete. For each completed operation, the code calls <xref:Microsoft.Data.SqlClient.SqlCommand.EndExecuteReader*> and reads the resulting <xref:Microsoft.Data.SqlClient.SqlDataReader>. An application can use those results to populate part of the page. The example instead adds the completion time to the corresponding text box. Each time records when the code processes a completed operation.
+
+Because completed handles remain signaled, the example removes each completed operation from the pending lists before it waits again.
 
  To set up this example, create a new ASP.NET Web Site project. Place a <xref:System.Web.UI.WebControls.Button> control and four <xref:System.Web.UI.WebControls.TextBox> controls on the page (accepting the default name for each control).
 
- Add the following code to the form's class, modifying the connection string as necessary for your environment.
+Add the following code to the form's class. In both Wait model examples, replace the ellipsis returned by `GetConnectionString` with your connection string. For a remote server with Windows integrated authentication, use `Server=<server>;Database=<database>;Integrated Security=true;Encrypt=true`. Replace `<server>` and `<database>` with your server and database names, and configure a server certificate that the client trusts. For other authentication options, see [Connection string syntax](/sql/connect/ado-net/connection-string-syntax).
 
 ```vb
 ' Add these to the top of the class
 Imports System
+Imports System.Collections.Generic
 Imports System.Data
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 Imports System.Threading
 
 ' Add this code to the page's class:
@@ -36,11 +41,7 @@ Imports System.Threading
         ' To avoid storing the connection string in your code,
         ' you can retrieve it from a configuration file.
 
-        ' If you have not included "Asynchronous Processing=true"
-        ' in the connection string, the command will not be able
-        ' to execute asynchronously.
-        Return "..." & _
-          "Asynchronous Processing=true"
+        Return "..."
     End Function
 
     Sub Button1_Click( _
@@ -72,29 +73,30 @@ Imports System.Threading
             "SELECT * FROM Production.Product " & _
             "WHERE ProductNumber = 'BL-2036'"
 
-        Dim waitHandles(2) As WaitHandle
+        Dim waitHandles As New List(Of WaitHandle)
+        Dim pending As New List(Of Integer) From {0, 1, 2}
         Try
             ' For each process, open a connection and begin execution.
             ' Use the IAsyncResult object returned by
             ' BeginExecuteReader to add a WaitHandle for the process
-            ' to the array.
+            ' to the pending list.
             connection1.Open()
             Dim command1 As New SqlCommand(commandText1, connection1)
             Dim result1 As IAsyncResult = _
              command1.BeginExecuteReader()
-            waitHandles(0) = result1.AsyncWaitHandle
+            waitHandles.Add(result1.AsyncWaitHandle)
 
             connection2.Open()
             Dim command2 As New SqlCommand(commandText2, connection2)
             Dim result2 As IAsyncResult = _
              command2.BeginExecuteReader()
-            waitHandles(1) = result2.AsyncWaitHandle
+            waitHandles.Add(result2.AsyncWaitHandle)
 
             connection3.Open()
             Dim command3 As New SqlCommand(commandText3, connection3)
             Dim result3 As IAsyncResult = _
              command3.BeginExecuteReader()
-            waitHandles(2) = result3.AsyncWaitHandle
+            waitHandles.Add(result3.AsyncWaitHandle)
 
             Dim index As Integer
             For countWaits As Integer = 1 To 3
@@ -102,7 +104,10 @@ Imports System.Threading
                 ' The return value is either the index of the
                 ' array element whose process just completed, or
                 ' the WaitTimeout value.
-                index = WaitHandle.WaitAny(waitHandles, 60000, False)
+                index = WaitHandle.WaitAny(waitHandles.ToArray(), 60000, False)
+                If index = WaitHandle.WaitTimeout Then
+                    Throw New Exception("Timeout")
+                End If
                 ' This example doesn't actually do anything with the
                 ' data returned by the processes, but the code opens
                 ' readers for each just to demonstrate the concept.
@@ -110,7 +115,7 @@ Imports System.Threading
                 ' controls on the page, the example adds the time
                 ' the process was completed to the corresponding
                 ' text box.
-                Select Case index
+                Select Case pending(index)
                     Case 0
                         Dim reader1 As SqlDataReader
                         reader1 = command1.EndExecuteReader(result1)
@@ -139,10 +144,9 @@ Imports System.Threading
                              System.DateTime.Now.ToLongTimeString()
                         End If
                         reader3.Close()
-                    Case WaitHandle.WaitTimeout
-                        Throw New Exception("Timeout")
                 End Select
-
+                waitHandles.RemoveAt(index)
+                pending.RemoveAt(index)
             Next
         Catch ex As Exception
             TextBox4.Text = ex.ToString
@@ -157,6 +161,7 @@ Imports System.Threading
 ```csharp
 // Add the following using directives, if they aren't already there.
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Configuration;
 using System.Web;
@@ -166,17 +171,14 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Threading;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 // Add this code to the page's class
 string GetConnectionString()
      //  To avoid storing the connection string in your code,
      //  you can retrieve it from a configuration file.
-     //  If you have not included "Asynchronous Processing=true"
-     //  in the connection string, the command will not be able
-     //  to execute asynchronously.
 {
-     return "/* Rest of connection string */" + "Asynchronous Processing=true";
+     return "...";
 }
 void Button1_Click(object sender, System.EventArgs e)
 {
@@ -208,7 +210,7 @@ void Button1_Click(object sender, System.EventArgs e)
           //  For each process, open a connection and begin
           //  execution. Use the IAsyncResult object returned by
           //  BeginExecuteReader to add a WaitHandle for the
-          //  process to the array.
+          //  process to the pending list.
      {
           connection1.Open();
           SqlCommand command1 =
@@ -228,9 +230,10 @@ void Button1_Click(object sender, System.EventArgs e)
           IAsyncResult result3 = command3.BeginExecuteReader();
           WaitHandle waitHandle3 = result3.AsyncWaitHandle;
 
-          WaitHandle[] waitHandles = {
+          List<WaitHandle> waitHandles = new List<WaitHandle> {
                waitHandle1, waitHandle2, waitHandle3
           };
+          List<int> pending = new List<int> { 0, 1, 2 };
 
           int index;
           for (int countWaits = 0; countWaits <= 2; countWaits++)
@@ -240,8 +243,12 @@ void Button1_Click(object sender, System.EventArgs e)
                //  of the array element whose process just
                //  completed, or the WaitTimeout value.
 
-               index = WaitHandle.WaitAny(waitHandles,
+               index = WaitHandle.WaitAny(waitHandles.ToArray(),
                     60000, false);
+               if (index == WaitHandle.WaitTimeout)
+               {
+                    throw new Exception("Timeout");
+               }
                //  This example doesn't actually do anything with
                //  the data returned by the processes, but the
                //  code opens readers for each just to demonstrate
@@ -251,7 +258,7 @@ void Button1_Click(object sender, System.EventArgs e)
                //  the process was completed to the corresponding
                //  text box.
 
-               switch (index)
+               switch (pending[index])
                {
                     case 0:
                          SqlDataReader reader1;
@@ -289,10 +296,9 @@ void Button1_Click(object sender, System.EventArgs e)
                          }
                          reader3.Close();
                          break;
-                    case WaitHandle.WaitTimeout:
-                         throw new Exception("Timeout");
-                         break;
                }
+               waitHandles.RemoveAt(index);
+               pending.RemoveAt(index);
           }
      }
      catch (Exception ex)
@@ -319,7 +325,7 @@ void Button1_Click(object sender, System.EventArgs e)
 ' Add these to the top of the class
 Imports System
 Imports System.Data
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 Imports System.Threading
 
 ' Add this code to the page's class:
@@ -327,11 +333,7 @@ Imports System.Threading
         ' To avoid storing the connection string in your code,
         ' you can retrieve it from a configuration file.
 
-        ' If you have not included "Asynchronous Processing=true"
-        ' in the connection string, the command will not be able
-        ' to execute asynchronously.
-        Return "..." & _
-          "Asynchronous Processing=true"
+        Return "..."
     End Function
     Sub Button1_Click( _
      ByVal sender As Object, ByVal e As System.EventArgs)
@@ -447,18 +449,14 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Threading;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 // Add this code to the page's class
 string GetConnectionString()
     //  To avoid storing the connection string in your code,
     //  you can retrieve it from a configuration file.
-    //  If you have not included "Asynchronous Processing=true"
-    //  in the connection string, the command will not be able
-    //  to execute asynchronously.
 {
-    return "..." +
-        "Asynchronous Processing=true";
+    return "...";
 }
 void Button1_Click(object sender, System.EventArgs e)
 {

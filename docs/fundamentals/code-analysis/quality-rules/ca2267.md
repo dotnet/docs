@@ -1,0 +1,95 @@
+---
+title: "CA2267: Quote whitespace in file-based program directive values"
+description: "Learn about code analysis rule CA2267 - Quote whitespace in file-based program directive values"
+ms.date: 08/21/2026
+f1_keywords:
+  - CA2267
+helpviewer_keywords:
+  - CA2267
+dev_langs:
+  - CSharp
+ai-usage: ai-assisted
+---
+
+# CA2267: Quote whitespace in file-based program directive values
+
+| Property                            | Value                                                    |
+|-------------------------------------|----------------------------------------------------------|
+| **Rule ID**                         | CA2267                                                   |
+| **Title**                           | Quote whitespace in file-based program directive values  |
+| **Category**                        | [Usage](usage-warnings.md)                               |
+| **Fix is breaking or non-breaking** | Non-breaking                                             |
+| **Enabled by default in .NET 11**   | As warning                                               |
+| **Applicable languages**            | C#                                                       |
+
+## Cause
+
+The value of a file-based program `#:` directive contains unquoted whitespace.
+
+## Rule description
+
+Before quoting was supported, whitespace in a file-based program `#:` directive value was taken literally. That form still works but is deprecated. Wrap values that contain whitespace in double quotes (`"`) so they're parsed unambiguously.
+
+This rule applies to the `#:sdk`, `#:property`, `#:package`, `#:project`, `#:ref`, `#:include`, and `#:exclude` directives. It's reported only when the value has an unambiguous, semantics-preserving quoted equivalent, so applying the fix never changes the meaning of the directive.
+
+For more information about file-based apps and their directives, see [File-based apps](../../../core/sdk/file-based-apps.md#supported-directives).
+
+## How to fix violations
+
+Add double quotes around the semantic value so whitespace is parsed unambiguously. For compound forms, such as a property assignment or a package name and version, quote the part after the separator. Keep any intentional whitespace around the separator outside the quotes.
+
+In Visual Studio, you can also apply the **Add quotes around the directive value** code fix.
+
+## Example
+
+The following code snippet shows a violation of CA2267.
+
+```csharp
+#:property Description=Hello World
+```
+
+The following code snippet fixes the violation.
+
+```csharp
+#:property Description="Hello World"
+```
+
+The code fix preserves whitespace around separators and between the directive kind and its value. For example, the following directives align names and separators:
+
+```csharp
+#:property Prop  = Value
+#:package  First @ 1.0
+```
+
+The code fix adds quotes without changing that alignment:
+
+```csharp
+#:property Prop  = "Value"
+#:package  First @ "1.0"
+```
+
+## When to suppress warnings
+
+It's not recommended to suppress this warning. The quoted form is the supported way to include whitespace in a directive value, and the unquoted form is deprecated.
+
+## Suppress a warning
+
+For file-based apps, suppress a single violation by adding a `#:property` directive to the entry point file.
+
+```csharp
+#:property NoWarn=$(NoWarn);CA2267
+```
+
+To disable the rule for a file, folder, or project, set its severity to `none` in the [configuration file](../configuration-files.md).
+
+```ini
+[*.cs]
+dotnet_diagnostic.CA2267.severity = none
+```
+
+For more information, see [How to suppress code analysis warnings](../suppress-warnings.md).
+
+## See also
+
+- [File-based apps](../../../core/sdk/file-based-apps.md#supported-directives)
+- [Usage rules](usage-warnings.md)

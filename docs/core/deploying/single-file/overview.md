@@ -205,7 +205,7 @@ We have some recommendations for fixing common scenarios:
 
 - To access files next to the executable, use <xref:System.AppContext.BaseDirectory?displayProperty=nameWithType>.
 
-- To find the file name of the executable, use the first element of <xref:System.Environment.GetCommandLineArgs?displayProperty=nameWithType>, or starting with .NET 6, use the file name from <xref:System.Environment.ProcessPath>.
+- To find the executable path, use <xref:System.Environment.ProcessPath?displayProperty=nameWithType>. Starting in .NET 11, <xref:System.Environment.GetCommandLineArgs?displayProperty=nameWithType> preserves the invocation name, which might differ from the executable path.
 
 - To avoid shipping loose files entirely, consider using [embedded resources](../../extensions/create-resource-files.md).
 

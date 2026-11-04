@@ -1,17 +1,17 @@
 ---
 title: Best practices for GitHub Copilot upgrade
-description: "Learn best practices for using GitHub Copilot upgrade to upgrade .NET projects, including preparation, collaboration tips, common pitfalls, and recovery strategies."
+description: "Learn how to prepare projects, collaborate with the agent, avoid common upgrade problems, and recover from unsuccessful changes."
 ms.topic: best-practice
-ms.date: 07/07/2026
+ms.date: 09/21/2026
 ai-usage: ai-assisted
 
-#customer intent: As a developer, I want to follow best practices when using GitHub Copilot upgrade so that I can get the best results from my .NET upgrades and avoid common problems.
+#customer intent: As a developer, I want to follow best practices when I use GitHub Copilot upgrade so that I can improve upgrade results and avoid common problems.
 
 ---
 
 # Best practices for GitHub Copilot upgrade
 
-Follow these guidelines to get the best results from GitHub Copilot upgrade when upgrading .NET projects.
+Follow these guidelines to get the best results from GitHub Copilot upgrade across supported technologies. Technology-specific package managers, build systems, and validation tools might require additional preparation.
 
 ## Before you start
 
@@ -119,13 +119,13 @@ Watch for these common issues that can slow down or complicate an upgrade.
 
 The agent works project-by-project, so large solutions take time. Be patient and monitor progress. Consider starting with one representative project end-to-end before committing to the full solution. A single-project pilot surfaces systemic issues early.
 
-### Private NuGet feeds
+### Private package feeds
 
-For private NuGet feeds, authenticate before starting the upgrade (for example, through your organization's credential provider or feed configuration). Without authentication, package restore failures block progress.
+For private NuGet or npm feeds, authenticate before you start the upgrade. Use your organization's credential provider or package-manager configuration. Without authentication, package restore or installation failures block progress.
 
-### Custom MSBuild targets and imports
+### Custom build logic
 
-Complex build customizations, such as custom `.targets` files, conditional imports, or non-standard build logic, can confuse the assessment and cause unexpected build failures. If your solution has these customizations, mention them in chat or in `scenario-instructions.md` so the agent can account for them.
+Complex build customizations, such as custom MSBuild `.targets` files, package scripts, conditional imports, or nonstandard build tools, can confuse the assessment and cause unexpected failures. If your project has these customizations, mention them in chat or in `scenario-instructions.md` so the agent can account for them.
 
 ### Session timeouts
 
@@ -225,6 +225,6 @@ Your original code is untouched. If you're working without source control, resto
 ## Related content
 
 - [What is GitHub Copilot upgrade?](overview.md)
-- [Upgrade a .NET app with GitHub Copilot upgrade](how-to-upgrade-with-github-copilot.md)
+- [Upgrade a .NET app with GitHub Copilot upgrade](dotnet-how-to-upgrade-with-github-copilot.md)
 - [Core concepts](concepts.md)
 - [Troubleshoot GitHub Copilot upgrade](troubleshooting.md)

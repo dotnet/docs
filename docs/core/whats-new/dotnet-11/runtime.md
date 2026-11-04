@@ -2,14 +2,14 @@
 title: What's new in .NET 11 runtime
 description: Learn about the new features introduced in the .NET 11 runtime.
 titleSuffix: ""
-ms.date: 08/12/2026
+ms.date: 10/13/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in the .NET 11 runtime
 
-This article describes new features in the .NET runtime for .NET 11. It was last updated for Preview 7.
+This article describes new features in the .NET runtime for .NET 11. It was last updated for release candidate 2 (RC 2).
 
 ## Updated minimum hardware requirements
 
@@ -152,12 +152,11 @@ The runtime now detects when a continuation has nothing to restore and skips the
 - **Redundant checked context removal:** The JIT can now prove and remove redundant checked arithmetic contexts—for example, when a value is already known to be in range. This optimization eliminates unnecessary overflow checks in generated code.
 - **Switch expression folding:** Multi-target `switch` expressions now fold into simpler branchless checks when the targets are a small set of constants, for example `x is 0 or 1 or 2 or 3 or 4`.
 - **Faster uint-to-float/double casts:** Casting `uint` to `float` or `double` is faster on pre-AVX-512 x86 hardware.
-- **Devirtualization in ReadyToRun images:** ReadyToRun (R2R) images can now devirtualize non-shared generic virtual method calls, improving performance of ahead-of-time compiled code for generic scenarios.
 - **SVE2 intrinsics:** New Arm SVE2 (Scalable Vector Extension 2) intrinsics are available: `ShiftRightLogicalNarrowingSaturate(Even|Odd)`. These expand the set of vectorized operations available on Arm hardware that supports SVE2.
 - **`Math.BigMul` on x64:** `Math.BigMul(long, long, out long)` is now significantly faster on x64. The JIT generates a single `MUL r/m64` instruction when both operands are 64-bit values and the caller requests the high half of the result, eliminating the previous helper call.
 - **Single-IG prolog restriction removed:** The JIT no longer requires the function prolog to fit in a single instruction group (IG). Complex prologues with many saved registers, large stack allocations, or runtime-async state setup no longer trigger fallback paths.
 - **`SELECT(cond, cns, cns)` folding:** The JIT now folds conditional selects whose two branches both produce the same constant into just that constant—for example, `condition ? 42 : 42` becomes `42`. This fold eliminates unnecessary comparisons that can appear after earlier optimizations unify branches.
-- **AVX-VNNI-512 intrinsics:** `AvxVnni.V51` adds 512-bit dot-product intrinsics for CPUs that support `AVX512-VNNI`.
+- **AVX-VNNI-512 intrinsics:** <xref:System.Runtime.Intrinsics.X86.AvxVnni.V512?displayProperty=nameWithType> exposes 512-bit forms of the `AVX-VNNI` multiply-add intrinsics on CPUs with `AVX512-VNNI` support.
 - **Saturating floating-point conversions:** Unchecked `float` and `double` conversions to small integer types now saturate to type bounds instead of wrapping through intermediate truncation.
 - **ARM64 `Vector<T>` by reference for SVE:** When the runtime is compiled with ARM SVE support, `Vector<T>` values are passed by reference rather than by value, aligning with the ARM calling convention for scalable types and enabling better code generation for SVE-intensive code.
 
@@ -172,6 +171,41 @@ static bool IsAdmin(string role) => role == "Admin";
 ```
 
 The optimization applies to string literals, `const string` fields, and UTF-8 literals (for example, `"PNG"u8`).
+
+### Devirtualization improvements
+
+The JIT can now devirtualize generic virtual methods, including non-shared generic virtual methods and shared generic virtual methods that don't require a runtime lookup. Default interface methods declared on generic interfaces can now be devirtualized as well.
+
+In addition, the result of `Activator.CreateInstance<T>()` is now treated as having an exact type, allowing the JIT to devirtualize subsequent calls made on the returned object.
+
+These improvements unlock further downstream optimizations such as inlining and constant folding, reducing runtime dispatch overhead and improving performance. For example:
+
+```csharp
+IfaceGeneric<string> caller = new Caller<string>();
+Iface obj = Activator.CreateInstance<Impl>();
+caller.DefaultImpl(obj, "test"); // Can be optimized down to Console.WriteLine("test")
+
+interface Iface
+{
+    void GenericMethod<T>(T value);
+}
+
+interface IfaceGeneric<T>
+{
+    void DefaultImpl(Iface obj, T value) => obj.GenericMethod(value);
+}
+
+class Impl : Iface
+{
+    public void GenericMethod<T>(T value) => Console.WriteLine(value);
+}
+
+class Caller<T> : IfaceGeneric<T>
+{
+}
+```
+
+Here the JIT can determine the exact implementation behind both interface calls, devirtualize them, inline through the call chain, and ultimately fold the code down to the equivalent of `Console.WriteLine("test")`.
 
 ### Eliminating bounds checks after an empty-span guard
 
@@ -205,7 +239,7 @@ These optimizations are most visible after inlining, where guards from different
 
 .NET 11 includes several new hardware intrinsics and code generation improvements:
 
-- **F16C acceleration for `Half` ↔ `float` conversions on x64:** When the CPU supports F16C (most AVX2-capable hardware), conversions between <xref:System.Half> and `float`/`double` now use the dedicated `vcvtph2ps`/`vcvtps2ph` instructions instead of helper calls.
+- **Hardware FP16 instructions for `Half` arithmetic and conversions:** The JIT uses hardware FP16 instructions for <xref:System.Half> arithmetic and conversions when the processor supports them. On x64, arithmetic uses AVX10.1, while conversions between `Half` and `float` can use F16C (available on most AVX2-capable hardware). On Arm64, arithmetic uses the optional FP16 instruction set, while conversions between `Half` and `float` or `double` use baseline Arm64 instructions. The optimization requires no application changes and preserves the existing ABI representation of `Half`.
 - **Better cost modeling for x86/x64 SIMD:** The JIT's floating-point execution and size costs previously reflected x87-era assumptions. Updated costs that reflect modern SSE/AVX hardware let the JIT make better decisions about hoisting and common subexpression elimination (CSE) around SIMD code.
 - **Faster `DotProduct` on AVX:** Lowering for `Vector128.Dot`-style operations now emits a `mul + permute + add` sequence instead of `vdpps`/`vdppd` when AVX is available, which is consistently faster.
 - **Faster `IndexOfAnyAsciiSearcher` on Arm64:** Arm64 versions of `Vector*.Count`, `IndexOf`, and `LastIndexOf` no longer route through `ExtractMostSignificantBits`, yielding a 5–50% improvement in workloads that use these APIs in their core loop.
@@ -248,7 +282,7 @@ The .NET runtime can now initialize on machines with more than 1024 logical proc
 
 A new in-process crash reporting mechanism captures diagnostic information from within the crashing process before it terminates. Previously, crash diagnostics were collected by an out-of-process monitor. While the out-of-process approach is safe, it can miss information that's only available inside the dying process. The new in-process path logs the managed stack trace, module list, and key runtime state to a well-known path before the process exits.
 
-This capability is specific to mobile platforms.
+This capability originated on mobile platforms and is now also available on Linux and macOS. When `DOTNET_DbgEnableMiniDump` isn't enabled, set `DOTNET_EnableCrashReport=1` or `DOTNET_EnableCrashReportOnly=1` to select the in-process reporter. Existing `createdump` behavior remains in place when minidumps are enabled.
 
 ## NativeAOT: faster interface dispatch
 
@@ -278,6 +312,32 @@ Vector128<int> powers = Vector128.CreateGeometricSequence(1, 2);
 ```
 
 These APIs are available on `Vector128<T>`, `Vector256<T>`, `Vector512<T>`, `Vector64<T>`, and `Vector<T>`. They're building blocks for image processing, audio digital signal processing (DSP), and other SIMD-intensive workloads that need fine-grained control over vector element layout.
+
+## File locking on iOS and tvOS
+
+On iOS and tvOS, including simulators, CoreCLR now disables advisory file locking by default. A <xref:System.IO.FileStream> that acquired an advisory lock could cause the operating system to terminate an app when the app entered the background while it held the lock. As a result, <xref:System.IO.FileShare> restrictions are no longer enforced by those locks on iOS and tvOS, including between handles in the same process. Mac Catalyst and other platforms keep their existing defaults.
+
+If your app relies on `FileShare` enforcement and you accept the risk of suspension-related termination, restore file locking by using either of the following settings:
+
+- Set the `DOTNET_SYSTEM_IO_DISABLEFILELOCKING` environment variable to `0`.
+- Set the `System.IO.DisableFileLocking` runtime configuration property to `false`. For example, in the *runtimeconfig.json* file:
+
+  ```json
+  {
+    "configProperties": {
+      "System.IO.DisableFileLocking": false
+    }
+  }
+  ```
+
+## Reliability fixes
+
+The runtime includes fixes for the following issues:
+
+- On Linux, the SDK no longer crashes on Red Hat Enterprise Linux (RHEL) 8 on Arm64, and the runtime correctly traverses cgroup v2 memory limits at the root of the hierarchy.
+- Generic virtual method dispatch no longer hangs after repeated <xref:System.Runtime.Loader.AssemblyLoadContext> unloads.
+- <xref:System.Collections.Concurrent.ConcurrentQueue`1.TryDequeue*> no longer spuriously reports an empty queue while a segment freezes during growth. <xref:System.Collections.Concurrent.ConcurrentQueue`1.TryPeek*> has the same reliability fix.
+- On Windows, garbage collection works correctly on machines with multiple CPU groups.
 
 ## Runtime diagnostics
 

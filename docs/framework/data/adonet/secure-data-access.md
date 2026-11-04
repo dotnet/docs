@@ -1,7 +1,7 @@
 ---
 description: "Learn more about secure data access and understand the security mechanisms available in the underlying data store or database."
 title: "Secure Data Access"
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
 ms.assetid: 473ebd69-21a3-4627-b95e-4e04d035c56f
 ms.custom: sfi-ropc-nochange
 ---
@@ -11,7 +11,7 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
 
 ## Authentication, Authorization, and Permissions
 
-When connecting to Microsoft SQL Server, you can use Windows Authentication, also known as Integrated Security, which uses the identity of the current active Windows user rather than passing a user ID and password. Using Windows Authentication is recommended for on-premises databases because user credentials aren't exposed in the connection string. If you can't use Windows Authentication to connect to SQL Server, then consider creating connection strings at runtime using the <xref:System.Data.SqlClient.SqlConnectionStringBuilder>.
+When connecting to Microsoft SQL Server, you can use Windows Authentication, also known as Integrated Security, which uses the identity of the current active Windows user rather than passing a user ID and password. Using Windows Authentication is recommended for on-premises databases because user credentials aren't exposed in the connection string. If you can't use Windows Authentication to connect to SQL Server, then consider creating connection strings at runtime using the <xref:Microsoft.Data.SqlClient.SqlConnectionStringBuilder>.
 
 [!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 

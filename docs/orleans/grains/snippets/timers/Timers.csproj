@@ -9,7 +9,7 @@
     <PackageReference Include="Microsoft.Orleans.Reminders.AdoNet" Version="10.0.0" />
     <PackageReference Include="Microsoft.Orleans.Reminders.AzureStorage" Version="10.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0" />
-    <PackageReference Include="Azure.Identity" Version="1.17.0" />
+    <PackageReference Include="Azure.Identity" Version="1.21.0" />
     <PackageReference Include="Microsoft.Orleans.Server" Version="10.0.0" />
   </ItemGroup>
 

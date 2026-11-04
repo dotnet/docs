@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Annotating Typed DataSets"
 title: "Annotating Typed DataSets"
-ms.date: "03/30/2017"
+ms.date: "10/23/2026"
 dev_langs:
   - "csharp"
   - "vb"
@@ -11,7 +11,7 @@ ms.assetid: f82aaa62-321e-4c8a-b51b-9d1114700170
 
 Annotations enable you to modify the names of the elements in your typed <xref:System.Data.DataSet> without modifying the underlying schema. Modifying the names of the elements in your underlying schema would cause the typed `DataSet` to refer to objects that do not exist in the data source, as well as lose a reference to the objects that do exist in the data source.
 
- Using annotations, you can customize the names of objects in your typed `DataSet` with more meaningful names, making code more readable and your typed `DataSet` easier for clients to use, while leaving underlying schema intact. For example, the following schema element for the `Customers` table of the `Northwind` database would result in a `DataRow` object name of `CustomersRow` and a <xref:System.Data.DataRowCollection> named **Customers**.
+ Using annotations, you can customize the names of objects in your typed `DataSet` with more meaningful names, making code more readable and your typed `DataSet` easier for clients to use, while leaving underlying schema intact. For example, the following schema element for the `Customers` table of the `Northwind` database would result in a `DataRow` object name of `CustomersRow` and a <xref:System.Data.DataRowCollection> named `Customers`.
 
 ```xml
 <xs:element name="Customers">
@@ -35,40 +35,40 @@ Annotations enable you to modify the names of the elements in your typed <xref:S
 </xs:element>
 ```
 
- Specifying a `typedName` value of `Customer` will result in a `DataRow` object name of **Customer**. Specifying a `typedPlural` value of `Customers` preserves the `DataRowCollection` name of **Customers**.
+ Specifying a `typedName` value of `Customer` will result in a `DataRow` object name of `Customer`. Specifying a `typedPlural` value of `Customers` preserves the `DataRowCollection` name of `Customers`.
 
  The following table shows the annotations available for use.
 
 |Annotation|Description|
 |----------------|-----------------|
-|**typedName**|Name of the object.|
-|**typedPlural**|Name of a collection of objects.|
-|**typedParent**|Name of the object when referred to in a parent relationship.|
-|**typedChildren**|Name of the method to return objects from a child relationship.|
-|**nullValue**|Value if the underlying value is **DBNull**. See the following table for `nullValue` annotations. The default is **_throw**.|
+|`typedName`|Name of the object.|
+|`typedPlural`|Name of a collection of objects.|
+|`typedParent`|Name of the object when referred to in a parent relationship.|
+|`typedChildren`|Name of the method to return objects from a child relationship.|
+|`nullValue`|Value if the underlying value is `DBNull`. See the following table for `nullValue` annotations. The default is `_throw`.|
 
  The following table shows the values that can be specified for the `nullValue` annotation.
 
-|nullValue Value|Description|
+|`nullValue` Value|Description|
 |---------------------|-----------------|
 |*Replacement Value*|Specify a value to be returned. The returned value must match the type of the element. For example, use `nullValue="0"` to return 0 for null integer fields.|
-|**_throw**|Throw an exception. This is the default.|
-|**_null**|Return a null reference or throw an exception if a primitive type is encountered.|
-|**_empty**|For strings, return **String.Empty**, otherwise return an object created from an empty constructor. If a primitive type is encountered, throw an exception.|
+|`_throw`|Throw an exception. This is the default.|
+|`_null`|Return a null reference or throw an exception if a primitive type is encountered.|
+|`_empty`|For strings, return `String.Empty`, otherwise return an object created from an empty constructor. If a primitive type is encountered, throw an exception.|
 
  The following table shows default values for objects in a typed `DataSet` and the available annotations.
 
 |Object/Method/Event|Default|Annotation|
 |---------------------------|-------------|----------------|
-|**DataTable**|TableNameDataTable|typedPlural|
-|**DataTable** Methods|NewTableNameRow<br /><br /> AddTableNameRow<br /><br /> DeleteTableNameRow|typedName|
-|**DataRowCollection**|TableName|typedPlural|
-|**DataRow**|TableNameRow|typedName|
-|**DataColumn**|DataTable.ColumnNameColumn<br /><br /> DataRow.ColumnName|typedName|
-|**Property**|PropertyName|typedName|
-|**Child** Accessor|GetChildTableNameRows|typedChildren|
-|**Parent** Accessor|TableNameRow|typedParent|
-|**DataSet** Events|TableNameRowChangeEvent<br /><br /> TableNameRowChangeEventHandler|typedName|
+|`DataTable`|`TableNameDataTable`|`typedPlural`|
+|`DataTable` Methods|`NewTableNameRow`<br /><br /> `AddTableNameRow`<br /><br /> `DeleteTableNameRow`|`typedName`|
+|`DataRowCollection`|`TableName`|`typedPlural`|
+|`DataRow`|`TableNameRow`|`typedName`|
+|`DataColumn`|`DataTable.ColumnNameColumn`<br /><br /> `DataRow.ColumnName`|`typedName`|
+|**Property**|`PropertyName`|`typedName`|
+|**Child** Accessor|`GetChildTableNameRows`|`typedChildren`|
+|**Parent** Accessor|`TableNameRow`|`typedParent`|
+|`DataSet` Events|`TableNameRowChangeEvent`<br /><br /> `TableNameRowChangeEventHandler`|`typedName`|
 
  To use typed `DataSet` annotations, you must include the following `xmlns` reference in your XML Schema definition language (XSD) schema. To create an xsd from database tables, see <xref:System.Data.DataSet.WriteXmlSchema*> or [Working with Datasets in Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).
 
@@ -130,15 +130,15 @@ codegen:typedParent="Customer" codegen:typedChildren="GetOrders">
 </xs:schema>
 ```
 
- The following code example uses a strongly typed `DataSet` created from the sample schema. It uses one <xref:System.Data.SqlClient.SqlDataAdapter> to populate the `Customers` table and another <xref:System.Data.SqlClient.SqlDataAdapter> to populate the `Orders` table. The strongly typed `DataSet` defines the **DataRelations**.
+ The following code example uses a strongly typed `DataSet` created from the sample schema. It uses one <xref:Microsoft.Data.SqlClient.SqlDataAdapter> to populate the `Customers` table and another <xref:Microsoft.Data.SqlClient.SqlDataAdapter> to populate the `Orders` table. The strongly typed `DataSet` defines the `DataRelations`. Install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package and import its namespace. The `connection` object must be a <xref:Microsoft.Data.SqlClient.SqlConnection>.
 
 ```vb
 ' Assumes a valid SqlConnection object named connection.
 Dim customerAdapter As SqlDataAdapter = New SqlDataAdapter( _
-    "SELECT CustomerID, CompanyName, Phone FROM Customers", &
+    "SELECT CustomerID, CompanyName, Phone FROM Customers", _
     connection)
 Dim orderAdapter As SqlDataAdapter = New SqlDataAdapter( _
-    "SELECT OrderID, CustomerID, EmployeeID, OrderAdapter FROM Orders", &
+    "SELECT OrderID, CustomerID, EmployeeID, OrderAdapter FROM Orders", _
     connection)
 
 ' Populate a strongly typed DataSet.
@@ -149,7 +149,7 @@ orderAdapter.Fill(customers, "Orders")
 connection.Close()
 
 ' Add a strongly typed event.
-AddHandler customers.Customers.CustomerChanged, &
+AddHandler customers.Customers.CustomerChanged, _
     New CustomerDataSet.CustomerChangeEventHandler( _
     AddressOf OnCustomerChanged)
 

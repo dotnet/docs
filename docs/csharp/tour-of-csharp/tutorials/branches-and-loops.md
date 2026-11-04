@@ -215,7 +215,7 @@ Continue to the next tutorial in this series:
 
 Or explore related topics in C# Fundamentals:
 
-- [Pattern matching](../../fundamentals/functional/pattern-matching.md) — A powerful alternative to complex `if`/`else` chains.
+- [Pattern matching](../../fundamentals/patterns/pattern-matching.md) — A powerful alternative to complex `if`/`else` chains.
 - [Methods and program structure](../../fundamentals/program-structure/index.md) — Learn how to organize the methods you created in this tutorial.
 - [What you can build with C#](../what-you-can-build.md) — See the kinds of apps you can create with what you're learning.
 - [Selection statements](../../language-reference/statements/selection-statements.md)

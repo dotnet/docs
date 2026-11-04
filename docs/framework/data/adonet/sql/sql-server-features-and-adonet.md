@@ -2,12 +2,14 @@
 description: "Learn more about: SQL Server Features and ADO.NET"
 title: "SQL Server Features and ADO.NET"
 titleSuffix: ""
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
 ms.assetid: 2839529b-a79b-4450-be5d-07a98dbc7a0f
 ---
 # SQL Server Features and ADO.NET
 
 The articles in this section discuss features in SQL Server that are targeted at developing database applications using ADO.NET.
+
+For standalone client applications, use the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package. Code that uses the common language runtime (CLR) inside SQL Server continues to use .NET Framework, `System.Data.SqlClient` context connections, and the server-side types in `Microsoft.SqlServer.Server`.
 
 For more information, see [Development (Database Engine)](/previous-versions/sql/sql-server-2008/bb500155(v=sql.100)).
 
@@ -26,7 +28,7 @@ For more information, see [Development (Database Engine)](/previous-versions/sql
  Describes database mirroring functionality.
 
  [SQL Server Common Language Runtime Integration](sql-server-common-language-runtime-integration.md)
- Describes how data can be accessed from within a common language runtime (CLR) database object in SQL Server.
+ Describes how data can be accessed from within a CLR database object in SQL Server.
 
  [Query Notifications in SQL Server](query-notifications-in-sql-server.md)
  Describes how .NET Framework applications can request notification from SQL Server when data has changed.

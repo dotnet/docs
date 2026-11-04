@@ -5,15 +5,15 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 318 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track seventy-four additional issue-level fixes separately because seventy-one implementation PRs are already open; several issues share PRs, several patches need correction or completion before merge, and six PRs remain drafts. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 321 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track eighty-four additional issue-level fixes separately because eighty-one implementation PRs are already open; several issues share PRs, several patches need correction or completion before merge, and eight PRs remain drafts. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 825 oldest issues in the original open-issue snapshot, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#55898](https://github.com/dotnet/docs/issues/55898), opened September 7, 2026.
-- **Results:** 392 defined fixes (318 assignment candidates and 74 with open implementation PRs) and 163 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 801-825 add 4 new assignment candidates and 7 new issue-level fixes with open implementation PRs, alongside 4 closure candidates. The 74 active entries are covered by 71 distinct PRs.
-- **Remaining:** 23 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 275 are complete and 23 remain. Continue with [dotnet/docs#55955](https://github.com/dotnet/docs/issues/55955), opened September 11, 2026, and finish the snapshot at position 848.
+- **Completed batches:** The 848 oldest issues in the original open-issue snapshot, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#56692](https://github.com/dotnet/docs/issues/56692), opened November 1, 2026. The original snapshot is complete.
+- **Results:** 405 defined fixes (321 assignment candidates and 84 with open implementation PRs) and 165 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 826-848 add 3 new assignment candidates and 10 new issue-level fixes with open implementation PRs, alongside 2 closure candidates. The 84 active entries are covered by 81 distinct PRs.
+- **Remaining:** 0 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 298 are complete and 0 remain. Issues created after the November 2 snapshot aren't included. Refresh states before acting on any recommendation.
 - **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and actual patches for active implementations. For the 545-file curation draft, the complete file manifest and relevant deletion, replacement, and redirect patches were inspected; this isn't a line-by-line review of the entire replacement book. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
@@ -3089,6 +3089,30 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Scope and acceptance:** Add a compact supported/unsupported syntax explanation and direct exclusions to `AddExclude`, not shell-style negation. Preserve the existing recursive examples and `StringComparison` guidance instead of rewriting already-correct coverage. Test nested paths, literal versus wildcard characters, case-sensitive overrides, and include/exclude behavior. Distinguish in-memory path matching from the filesystem's legal filename characters; the literal-question-mark probe doesn't imply Windows permits that filename.
 
+### dotnet/docs#56300: Document TAR extraction into missing directories
+
+**Issue:** [dotnet/docs#56300](https://github.com/dotnet/docs/issues/56300). **Opened:** October 1, 2026. **Size:** Small. **GHCP suitability:** Strong; the merged implementation and requested behavior are explicit. **Existing owner:** `BillWagner`.
+
+**Why it still applies:** The compatibility inventory doesn't cover this change. The actual [dotnet/runtime#134845](https://github.com/dotnet/runtime/pull/134845) patch removes destination-existence checks, updates all eight extraction overloads' XML documentation, and preserves lazy directory creation. Its milestone is .NET 12 Preview 1, not .NET 11.
+
+**Scope and acceptance:** Create one core-libraries compatibility article with the repository's [breaking-change structure](../.github/prompts/breaking-change.md), verified version, affected API cross-references, index entry, and TOC navigation. Explain that nonempty archives create missing destination/parent directories as required, while empty archives succeed without creating them. Preserve overwrite, path-containment, link, cancellation, and stream-ownership semantics; don't describe the relaxation as permission to overwrite arbitrary files. Show an explicit precondition for applications that require an existing destination. Verify file/stream and synchronous/asynchronous cases on an actual affected build. The runtime patch was inspected, but .NET 12 wasn't installed or executed during triage. Coordinate the shared .NET 12 index with the existing drafts below.
+
+### dotnet/docs#56340: Document PropagationData creation-tag and link retention
+
+**Issue:** [dotnet/docs#56340](https://github.com/dotnet/docs/issues/56340). **Opened:** October 7, 2026. **Size:** Small to medium. **GHCP suitability:** Strong for the source-defined compatibility note. **Existing owner:** `BillWagner`.
+
+**Why it still applies:** The existing [.NET 10 sampling change](../docs/core/compatibility/core-libraries/10.0/activity-sampling.md) concerns activity flags, not this retention change. The actual [dotnet/runtime#135277](https://github.com/dotnet/runtime/pull/135277) patch copies caller-supplied creation tags/links only for a combined `AllData` or `AllDataAndRecorded` result. Sampling callbacks still receive their creation inputs. The change targets .NET 12.
+
+**Scope and acceptance:** Add a compatibility article, index row, and TOC entry using the [required structure](../.github/prompts/breaking-change.md). Confirm the first published preview/package version rather than infer it from the merge date. Distinguish creation inputs, sampler-added `SamplingTags`, and values retained on the returned activity; cover combined listeners and both `CreateActivity`/`StartActivity`. Explain the extra data/allocation consequence of requesting all data without presenting one benchmark's savings as universal. Execute fixtures with an affected DiagnosticSource version and record sampler inputs, returned tags/links, and multi-listener results. Don't conflate package API availability with a requirement that every consumer target .NET 12. Triage inspected source; it didn't execute a .NET 12 build.
+
+### dotnet/docs#56628: Document end-of-day date/time parsing
+
+**Issue:** [dotnet/docs#56628](https://github.com/dotnet/docs/issues/56628). **Opened:** October 28, 2026. **Size:** Medium for the parser/API audit. **GHCP suitability:** Strong; both the behavior and its boundaries are reproducible. **Existing owner:** `BillWagner`.
+
+**Why it still applies:** The .NET 11 compatibility inventory lacks this change. [dotnet/runtime#124142](https://github.com/dotnet/runtime/pull/124142) updates date/time parsing, and [dotnet/runtime#124437](https://github.com/dotnet/runtime/pull/124437) extends XSD time parsing/validation. Owned .NET 10 versus .NET 11 RC 3 probes rejected then accepted `2007-04-05T24:00`/`24:00:00`, with the latter runtime producing April 6 midnight. Exact `TimeOnly` parsing of `240000` changed from failure to `00:00:00`; nonzero minutes/seconds and maximum-date overflow stayed invalid in the tested cases.
+
+**Scope and acceptance:** Add one compatibility article, index row, and TOC entry using the [required structure](../.github/prompts/breaking-change.md). Verify the first affected preview and audit `DateTime`, `DateTimeOffset`, `TimeOnly`, `Utf8Parser`, and the linked XML change with exact formats, offsets, zero/nonzero fractions, leap/year boundaries, and overflow. State that parsing acceptance changed, not that date/time constructors now accept hour 24 or formatting preserves the original text. For applications that distinguish end-of-day input, recommend explicit validation or preservation of that semantic information; don't equate `TimeOnly.MaxValue` with exact midnight on the next day. Publish actual results for any new snippets and obtain globalization/XML-owner review of the affected-API list.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -3646,6 +3670,66 @@ Preserve a destination for the authoritative incremental-generator cookbook: the
 **Issue:** [dotnet/docs#55744](https://github.com/dotnet/docs/issues/55744). **Opened:** August 26, 2026. **Status:** Covered by open, non-draft [dotnet/docs#56514](https://github.com/dotnet/docs/pull/56514), with owner `gewarren`'s approval for a combined article.
 
 **Evidence and required completion:** The actual patch adds one compatibility article, the .NET 11 index row, and TOC navigation for the five linked changes. Owned .NET 10 versus .NET 11 RC 3 probes confirmed rejection of the three shown IPv6 forms, `ArgumentException` from the shown invalid `UriBuilder.Host` assignments, and matching `pAth` results from relative construction/`TryCreate` in .NET 11. Earlier .NET 10 accepted the IPv6/host inputs and returned different relative strings. Verify the first affected preview rather than label behavior already present in RC 3 as first introduced at GA. Preserve distinct remedies for malformed hosts, IPv6 syntax, and relative normalization; don't imply valid IPv6 zone identifiers are universally rejected. Obtain networking-owner review and keep the source-to-section mapping for all five runtime changes.
+
+### dotnet/docs#56107: Complete the evergreen Runtime Async article
+
+**Issue:** [dotnet/docs#56107](https://github.com/dotnet/docs/issues/56107). **Opened:** September 16, 2026. **Status:** Covered by open, non-draft [dotnet/docs#56518](https://github.com/dotnet/docs/pull/56518). **Existing owner:** `meaghanlewis`.
+
+**Evidence and required completion:** The actual patch adds a C# article, TOC entry, and link from the [.NET 11 runtime summary](../docs/core/whats-new/dotnet-11/runtime.md), but lacks concrete eligibility/limitations and a sufficient diagnostics/profiler section. Complete those acceptance criteria and relevant inbound links rather than copy release prose into a new destination. A forced-rebuild .NET 11 RC 3 fixture verified `Features=runtime-async=on` produced `MethodImplAttributes.Async`, no state-machine attribute, and result `42`; retaining that feature while setting `UseRuntimeAsync=false` still produced runtime async. Explicit `runtime-async=off` restored a state machine and the same result. Verify and correct the claimed opt-out in both the new article and its release-source explanation for the supported SDK. Qualify universal state-machine/stack-frame claims, preserve preview and Native AOT/R2R boundaries, and distinguish managed execution from unperformed native/debugger/profiler tests. Use source-backed examples and the appropriate generated-article metadata.
+
+### dotnet/docs#56209: Clarify the F# walkthrough's working directory
+
+**Issue:** [dotnet/docs#56209](https://github.com/dotnet/docs/issues/56209). **Opened:** September 22, 2026. **Status:** Covered by open, non-draft [dotnet/docs#56245](https://github.com/dotnet/docs/pull/56245).
+
+**Evidence and required completion:** The actual patch adds a root-directory note before the first solution-add command and repeats the location for the second in the [F# walkthrough](../docs/fsharp/get-started/get-started-command-line.md). The current article already includes a second-stage root directive, but the first editing-to-command transition still benefits from the explicit location. Keep `cd ../..` conditional on the reader's actual directory; don't tell someone already at the root to execute it. Verify the complete path sequence, both project additions, the project reference, build, and JSON output from a fresh workspace. Preserve existing contributor ownership and distinguish current `.slnx` defaults from older `.sln` illustrations where the chosen SDK requires it; no complete F# walkthrough run occurred during this batch.
+
+### dotnet/docs#56289: Document recursive solution-add behavior and its default
+
+**Issue:** [dotnet/docs#56289](https://github.com/dotnet/docs/issues/56289). **Opened:** September 30, 2026. **Status:** Covered by open, non-draft [dotnet/docs#56546](https://github.com/dotnet/docs/pull/56546). **Existing owner:** `BartoszKlonowski`.
+
+**Evidence and required completion:** The actual patch adds `--include-references` to the [solution command reference](../docs/core/tools/dotnet-sln.md) and claims availability from SDK 9.0.300. An owned SDK 10.0.403 three-project chain added all three projects both with and without the flag; that SDK's help explicitly reports a default of `True`, as current command-definition source also does. Document the Boolean default and supported way to disable recursion rather than imply an opt-in switch. Verify the earliest supported SDK/feature band and `.sln`/`.slnx` behavior instead of publishing the draft's unverified introduction version. Include a transitive/cyclic-reference fixture and preserve the existing assignee's implementation.
+
+### dotnet/docs#56293: Review the resource-monitoring sample's planned LTS upgrade
+
+**Issue:** [dotnet/docs#56293](https://github.com/dotnet/docs/issues/56293). **Opened:** October 1, 2026. **Status:** Covered by open, non-draft [dotnet/docs#56393](https://github.com/dotnet/docs/pull/56393). **Existing owner:** `ShyneChikwapulo`.
+
+**Evidence and required completion:** The actual patch changes both Docker image tags to 10.0 and the [sample project](../docs/core/diagnostics/snippets/resource-monitoring-with-manual-metrics/resource-monitoring-with-manual-metrics.csproj) to `net10.0`. Don't repeat the bot's claim that .NET 9 is already unsupported before its listed November 10, 2026 end date. The unchanged Dockerfile still names a `ResourceMonitoring` project/subdirectory and assembly that don't match the checked-in sample layout. Coordinate the contributor's explicitly reported path problem as the maintainer decides, rather than silently broaden their version-only PR or claim a container run succeeded. Verify the selected build context, resulting assembly name, container startup, and metrics before describing the sample as runnable.
+
+### dotnet/docs#56298: Review the TLS-resumption compatibility draft
+
+**Issue:** [dotnet/docs#56298](https://github.com/dotnet/docs/issues/56298). **Opened:** October 1, 2026. **Status:** Covered by open **draft** [dotnet/docs#56386](https://github.com/dotnet/docs/pull/56386). **Existing owners:** `BillWagner`, `gewarren`, and `Copilot`.
+
+**Evidence and required completion:** The actual patch creates a .NET 12 compatibility article, index, and TOC branch. The linked runtime implementation targets .NET 12 Preview 1 despite the issue description's stray .NET 11 wording. Preserve the precise scope: resumed initial handshakes on Windows/Linux, cached `RemoteCertificate`, validation on the original full handshake, and unchanged renegotiation/post-handshake validation and Apple/Android behavior. Verify both opt-out mechanisms and `AllowTlsResume=false` with a controlled peer before claiming callback counts. Don't present skipped certificate callbacks as permission to skip per-connection authorization. Coordinate its new .NET 12 index/TOC with the other draft instead of overwriting either category. No TLS handshake fixture was run during triage.
+
+### dotnet/docs#56335: Distinguish managed thread-static storage from OS slot quotas
+
+**Issue:** [dotnet/docs#56335](https://github.com/dotnet/docs/issues/56335). **Opened:** October 6, 2026. **Status:** Covered by open, non-draft [dotnet/docs#56660](https://github.com/dotnet/docs/pull/56660).
+
+**Evidence and required completion:** The actual patch replaces the native-TLS analogy in the [thread-local storage article](../docs/standard/threading/thread-local-storage-thread-relative-static-fields-and-data-slots.md). Current [CoreCLR thread-static implementation](https://github.com/dotnet/runtime/blob/main/src/coreclr/vm/threadstatics.cpp) uses runtime-managed per-thread arrays/direct storage, not one Windows `TlsAlloc` allocation for every field. State that distinction without promising unlimited storage or a universal fixed quota across runtimes. Preserve the `ThreadStatic`/`ThreadLocal<T>` distinction, initialization behavior, and relevant historical application-domain qualifications. Correct both newly encoded `%60` API references back to literal backticks. A practical limit test must use the actual storage mechanism under discussion; thousands of `ThreadLocal<T>` objects alone don't verify every `ThreadStatic` implementation.
+
+### dotnet/docs#56350: Complete the legacy roll-forward removal draft
+
+**Issue:** [dotnet/docs#56350](https://github.com/dotnet/docs/issues/56350). **Opened:** October 9, 2026. **Status:** Covered by open **draft** [dotnet/docs#56389](https://github.com/dotnet/docs/pull/56389). **Existing owners:** `BillWagner` and `Copilot`.
+
+**Evidence and required completion:** The actual patch documents .NET 12 removal of the two runtime-config properties and the old command/environment forms, with `LatestPatch`, `Minor`, and `Major` replacements. Preserve the distinction between `applyPatches=false`'s old closest-compatible-patch behavior and `rollForward=Disable`'s stricter exact-version requirement; they aren't generally equivalent. Verify configuration, environment, command-line diagnostics, precedence, and unchanged defaults on an affected host rather than assume every removed form is silently ignored. Coordinate the draft's competing creation of `12.md`/TOC with the TLS draft and the new TAR/Activity notes. Triage didn't execute a .NET 12 host.
+
+### dotnet/docs#56487: Verify decimal theory-data migration guidance
+
+**Issue:** [dotnet/docs#56487](https://github.com/dotnet/docs/issues/56487). **Opened:** October 20, 2026. **Status:** Covered by open, non-draft [dotnet/docs#56516](https://github.com/dotnet/docs/pull/56516).
+
+**Evidence and required completion:** The actual patch adds test-framework guidance to the [conversion compatibility article](../docs/core/compatibility/core-libraries/11/decimal-biginteger-floating-point-conversions.md). Owned xUnit 2.9.3/NUnit 4.4.0 fixtures passed all five cases on .NET 10. On .NET 11 RC 3, both double-attribute cases failed equality with `0.1000000000000000055511151231`; xUnit decimal `MemberData`, NUnit decimal `TestCaseSource`, and NUnit string data still passed. Publish complete, versioned examples and results instead of assuming every framework/version binds values identically. Qualify the phrase "preserves the exact binary representation": the conversion rounds the binary value to a representable decimal, not an unlimited-precision representation. Keep genuine decimal values outside attribute arguments and avoid culture-dependent string parsing.
+
+### dotnet/docs#56626: Correct member-resolution guidance without false inheritance claims
+
+**Issue:** [dotnet/docs#56626](https://github.com/dotnet/docs/issues/56626). **Opened:** October 27, 2026. **Status:** Covered by open, non-draft [dotnet/docs#56643](https://github.com/dotnet/docs/pull/56643).
+
+**Evidence and required completion:** The actual patch rewrites the [mixin article](../docs/csharp/advanced-topics/interface-implementation/mixins-with-default-interface-methods.md), following the maintainer's overload-resolution direction, but overstates instance precedence and says classes inherit default interface members. An owned .NET 10 fixture selected an extension when the instance overload was inapplicable; a class-typed call selected an extension while the same object through its interface invoked the default or explicit implementation. Explain applicable accessible member lookup, declared receiver type, implicit/explicit interface implementations, and virtual interface dispatch with matching examples. Don't claim a matching name alone wins or that default interface members become class members. Verify the corrected explanation against both classic extensions and extension-block syntax where illustrated.
+
+### dotnet/docs#56633: Preserve disposal safety while correcting the SafeHandle note
+
+**Issue:** [dotnet/docs#56633](https://github.com/dotnet/docs/issues/56633). **Opened:** October 29, 2026. **Status:** Covered by open, non-draft [dotnet/docs#56648](https://github.com/dotnet/docs/pull/56648), but its proposed synchronization removal needs correction.
+
+**Evidence and required completion:** The actual patch replaces the atomic guard with a Boolean in both C# and VB SafeHandle samples, renames the other owned resource, and changes only the date in the [article](../docs/standard/garbage-collection/implementing-dispose.md). It leaves the overbroad thread-safety note unchanged. `SafeHandle` guarantees its own release operation, not thread-safe disposal of the wrapper's separate managed `Stream` or every derived resource. Prefer retaining the guard and narrowing the explanation unless the owner explicitly chooses a non-thread-safe wrapper example. Verify concurrent/repeated disposal and release counts in both languages; don't remove synchronization solely to make code match an incorrect blanket statement or claim the entire object is thread-safe because one handle is protected.
 
 ## Assignment order
 

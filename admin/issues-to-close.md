@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 825 oldest issues in the original open-issue snapshot, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#55898](https://github.com/dotnet/docs/issues/55898), opened September 7, 2026.
-- **Results:** 163 closure candidates and 392 [clearly defined fixes](issues-with-defined-fixes.md) (318 assignment candidates and 74 fixes covered by 71 open implementation PRs).
-- **Latest batch:** Issues 801-825, from [dotnet/docs#53522](https://github.com/dotnet/docs/issues/53522) through dotnet/docs#55898: 4 closure candidates, 4 new assignment candidates, and 7 new fixes with open implementation PRs.
-- **Remaining:** 23 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 275 are complete and 23 remain. Continue with [dotnet/docs#55955](https://github.com/dotnet/docs/issues/55955), opened September 11, 2026, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 848 oldest issues in the original open-issue snapshot, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#56692](https://github.com/dotnet/docs/issues/56692), opened November 1, 2026. The original snapshot is complete.
+- **Results:** 165 closure candidates and 405 [clearly defined fixes](issues-with-defined-fixes.md) (321 assignment candidates and 84 fixes covered by 81 open implementation PRs).
+- **Latest batch:** Issues 826-848, from [dotnet/docs#55955](https://github.com/dotnet/docs/issues/55955) through dotnet/docs#56692: 2 closure candidates, 3 new assignment candidates, and 10 new fixes with open implementation PRs.
+- **Remaining:** 0 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 298 are complete and 0 remain. Issues created after the November 2 snapshot aren't included. Refresh states before acting on any recommendation.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -1404,3 +1404,19 @@ The [union reference](../docs/csharp/language-reference/builtin-types/union.md) 
 The issue says only that a website/application has a runtime/server error. It doesn't identify an incorrect statement, a failing documentation sample, an error trace, or reproduction steps. The attached upgrade-assistance page metadata alone doesn't establish a documentation defect.
 
 **Suggested closure explanation:** Close as nonactionable documentation feedback, not as proof that the server or application was repaired. For an application problem, direct the reporter to [Microsoft Q&A](https://learn.microsoft.com/answers/); for a Learn-site failure, request the actual affected URL and site-feedback details through the appropriate support channel. Reopen if the reporter supplies a specific documentation defect.
+
+### dotnet/docs#56114: Redesign upgrade guidance for multiple technologies
+
+**Opened:** September 17, 2026. **Confidence:** High for the requested content/navigation redesign. **Reason:** The current documentation already separates shared workflows from technology-specific guidance.
+
+The [upgrade overview](../docs/core/porting/github-copilot-upgrade/overview.md) now introduces technology packs and explicitly supports .NET, JavaScript, and TypeScript. The [TOC](../docs/core/porting/github-copilot-upgrade/toc.yml) has separate .NET and JavaScript/TypeScript branches. Dedicated [JavaScript/TypeScript guidance](../docs/core/porting/github-copilot-upgrade/javascript-typescript-overview.md) links dependency upgrades, compiler upgrades, and application validation; the [capability reference](../docs/core/porting/github-copilot-upgrade/javascript-typescript-capabilities.md) and [.NET scenarios/skills reference](../docs/core/porting/github-copilot-upgrade/dotnet-scenarios-and-skills.md) describe their respective workflows.
+
+**Suggested closure explanation:** The requested multilanguage structure and technology-specific capability inventory are present. Retain owner `adegeo` for final confirmation against the associated work item; identify any newly missing capability separately instead of keeping the original redesign open indefinitely. This recommendation verifies documentation coverage, not execution of every upgrade scenario or every future plugin release.
+
+### dotnet/docs#56527: Route Android VNDK material outside the ML.NET article
+
+**Opened:** October 22, 2026. **Confidence:** High. **Reason:** The submitted content concerns another platform's documentation.
+
+The issue describes Android `ro.vndk.version`, `BOARD_VNDK_VERSION`, and vendor APEX libraries. The linked [ML.NET Model Builder article](../docs/machine-learning/automate-training-with-model-builder.md) instead explains Visual Studio model creation, AutoML scenarios, generated model artifacts, and predictions. The maintainer's translation confirms the Android-specific subject; it doesn't identify a missing Model Builder step.
+
+**Suggested closure explanation:** Close as feedback filed against the wrong documentation set and direct any concrete Android platform correction to the relevant [AOSP documentation](https://source.android.com/docs/core/architecture). Don't insert unrelated VNDK instructions into ML.NET guidance or claim the submitted Android versioning rules were validated.

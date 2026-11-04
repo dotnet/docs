@@ -41,7 +41,7 @@ There are several global HTTP environment variable settings:
 - `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT`
   - When set to `false` or `0`, disables HTTP/2 support, which is enabled by default.
 - `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP3SUPPORT`
-  - When set to `true` or `1`, enables HTTP/3 support, which is disabled by default.
+  - When set to `false` or `0`, disables HTTP/3 support, which is enabled by default.
 - `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2FLOWCONTROL_DISABLEDYNAMICWINDOWSIZING`
   - When set to `false` or `0`, overrides the default and disables the HTTP/2 dynamic window scaling algorithm.
 - `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_FLOWCONTROL_MAXSTREAMWINDOWSIZE`

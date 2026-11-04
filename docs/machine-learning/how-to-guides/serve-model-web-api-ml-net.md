@@ -77,7 +77,7 @@ In your *Program.cs* file:
     ```csharp
     public class ModelInput
     {
-        public string SentimentText;
+        public string SentimentText { get; set; }
     }
     ```
 
@@ -171,7 +171,7 @@ app.Run();
 
 public class ModelInput
 {
-    public string SentimentText;
+    public string SentimentText { get; set; }
 }
 
 public class ModelOutput
@@ -199,9 +199,9 @@ Once everything is set up, it's time to test the application.
     If successful, the output should look similar to the text below:
 
     ```powershell
-    sentiment probability score
-    --------- ----------- -----
-    False         0.5     0
+    sentiment probability      score
+    --------- -----------      -----
+        False 0.105855055 -2.1337972
     ```
 
 Congratulations! You've successfully served your model to make predictions over the internet using an ASP.NET Core Web API.

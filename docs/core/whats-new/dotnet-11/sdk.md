@@ -2,7 +2,7 @@
 title: What's new in the SDK and tooling for .NET 11
 description: Learn about the new .NET SDK features introduced in .NET 11.
 titleSuffix: ""
-ms.date: 10/13/2026
+ms.date: 11/03/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
@@ -411,7 +411,9 @@ dotnet nuget add source https://api.nuget.org/v3/index.json --name public --min-
 dotnet nuget update source public --min-publish-age-hours 48 --configfile nuget.config
 ```
 
-The [`dotnet package add`](../../tools/dotnet-package-add.md) and [`dotnet package update`](../../tools/dotnet-package-update.md) commands use the configured cooldown when they select a version. An update reports when the setting excludes a newer version. For projects that use floating package versions, restore fails with error NU1020 if the cooldown leaves no eligible version. The error makes the configuration conflict visible instead of letting a no-op restore hide it.
+The [`dotnet package add`](../../tools/dotnet-package-add.md) and [`dotnet package update`](../../tools/dotnet-package-update.md) commands apply the configured minimum publish age when they automatically select a version. An explicit version request bypasses automatic age filtering. An update reports when the setting excludes a newer version.
+
+Ordinary restore doesn't enforce the age for non-floating references or transitive dependencies. For a floating package reference, restore fails with [NU1020](/nuget/reference/errors-and-warnings/nu1020) when an applicable source has a nonzero minimum age and the package doesn't match a configured exception. Restore doesn't select an older version to satisfy the minimum age. For details, see [Minimum package publish age](/nuget/consume-packages/minimum-package-publish-age).
 
 ## Container and tooling updates
 

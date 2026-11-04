@@ -305,7 +305,9 @@ Starting with .NET 11, the runtime validates ZIP CRC-32 values automatically whe
 
 ## Encryption considerations (.NET 11+)
 
-.NET 11 adds password-based encryption for individual ZIP entries. Encryption protects the confidentiality of entry contents, not their integrity or authenticity. Successful decryption doesn't establish that the contents are safe or trustworthy; assess trust based on the archive's provenance.
+.NET 11 adds support for reading and writing encrypted ZIP archives. The following subsections explain how to choose an encryption method, read encrypted entries, and use encrypted archives with the convenience APIs.
+
+Encryption protects the confidentiality of individual entry contents, not their integrity or authenticity. Successful decryption doesn't establish that the contents are safe or trustworthy; assess trust based on the archive's provenance.
 
 - [Choose AES-256 for new archives](#choose-aes-256-for-new-archives)
 - [Read encrypted entries](#read-encrypted-entries)
@@ -366,7 +368,7 @@ foreach (ZipArchiveEntry entry in archive.Entries)
 
 For unencrypted entries, `Open` ignores the supplied password and opens the entry normally. If your application requires encryption, check `ZipArchiveEntry.IsEncrypted` before you open the entry.
 
-If you open an entry that uses an unsupported encryption method (`ZipEncryptionMethod.Unknown`), <xref:System.NotSupportedException> is thrown.
+Attempting to open an entry that uses an unsupported encryption method (`ZipEncryptionMethod.Unknown`) throws <xref:System.NotSupportedException>.
 
 ### Convenience methods with encryption
 

@@ -3,7 +3,7 @@ title: Get started with MSTest
 description: Learn how to create your first MSTest project and run tests.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 07/24/2024
+ms.date: 09/30/2026
 ---
 
 # Get started with MSTest
@@ -91,10 +91,12 @@ The MSTest team maintains sample projects in the [microsoft/testfx repository](h
 |--------|-------------|------|
 | **Simple1** | Basic MSTest runner setup | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/mstest-runner/Simple1) |
 | **DemoMSTestSdk** | MSTest SDK project setup | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/DemoMSTestSdk) |
-| **BlankUwpNet9App** | UWP testing with .NET 9 | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/BlankUwpNet9App) |
-| **UwpVSTestApp** | UWP testing with VSTest | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/UwpVSTestApp) |
+| **UwpMtpApp** | Modern .NET UWP testing with Microsoft.Testing.Platform | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/UwpMtpApp) |
+| **ClassicUwpMtpApp** | Classic `uap10.0` UWP testing with Microsoft.Testing.Platform | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/ClassicUwpMtpApp) |
+| **UwpVSTestApp** | Legacy UWP testing with VSTest | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/UwpVSTestApp) |
 | **WinUIMtpPackagedApp** | Packaged WinUI 3 testing with Microsoft.Testing.Platform | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/WinUIMtpPackagedApp) |
 | **WinUIMtpUnpackagedApp** | Unpackaged WinUI 3 testing with Microsoft.Testing.Platform | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/WinUIMtpUnpackagedApp) |
+| **WinUIMtpAppContainerApp** | AppContainer WinUI 3 testing with Microsoft.Testing.Platform | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/WinUIMtpAppContainerApp) |
 | **WinUIVSTestApp** | WinUI 3 testing with VSTest | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/WinUIVSTestApp) |
 | **NativeAotRunner** | Native AOT compilation | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/mstest-runner/NativeAotRunner) |
 | **RunInDocker** | Containerized test execution | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/mstest-runner/RunInDocker) |

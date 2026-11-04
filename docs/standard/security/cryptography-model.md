@@ -39,7 +39,9 @@ Starting in .NET 5, simpler APIs were introduced for hashing and HMAC. While sli
 
 The hashing and HMAC primitives expose a one-shot API through a static `HashData` method on the type, such as <xref:System.Security.Cryptography.SHA256.HashData*?displayProperty=nameWithType>. The static APIs offer no built-in extensibility mechanism. If you're implementing your own algorithms, it's recommended to also offer similar static APIs of the algorithm.
 
-The <xref:System.Security.Cryptography.RandomNumberGenerator> class also offers static methods for creating or filling buffers with cryptographic random data. These methods always use the system's cryptographically secure pseudorandom number generator (CSPRNG).
+The <xref:System.Security.Cryptography.RandomNumberGenerator> class also offers static methods for creating or filling buffers with cryptographic random data. These methods always use the platform's cryptographically secure pseudorandom number generator (CSPRNG).
+
+On browser WebAssembly, the static <xref:System.Security.Cryptography.RandomNumberGenerator> methods and the default implementation returned by <xref:System.Security.Cryptography.RandomNumberGenerator.Create?displayProperty=nameWithType> obtain random bytes through the browser's Web Crypto API `crypto.getRandomValues()` method. The security of the generated values depends on the browser implementing this API correctly.
 
 ## How algorithms are implemented in .NET
 

@@ -2,12 +2,15 @@
 title: "ADO.NET"
 description: Learn about ADO.NET, classes that expose data access services for .NET Framework programmers for creating distributed, data-sharing applications.
 titleSuffix: ""
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
+ai-usage: ai-assisted
 ms.assetid: 5b96ed06-9759-4966-a797-a1d5f6ee50ca
 ---
 # ADO.NET
 
 ADO.NET is a set of classes that expose data access services for .NET Framework programmers. ADO.NET provides a rich set of components for creating distributed, data-sharing applications. It is an integral part of the .NET Framework, providing access to relational, XML, and application data. ADO.NET supports a variety of development needs, including the creation of front-end database clients and middle-tier business objects used by applications, tools, languages, or Internet browsers.
+
+For new SQL Server applications, use the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package. For runnable C# and Visual Basic examples, see [ADO.NET code examples](ado-net-code-examples.md#sqlclient). For an existing application that uses `System.Data.SqlClient`, follow the [migration guide](/sql/connect/ado-net/migrate-system-data-sql-client-to-microsoft-data-sql-client).
 
 ## In This Section
 

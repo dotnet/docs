@@ -1,4 +1,6 @@
 // <Snippet1>
+// Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+// This code access security example requires the built-in .NET Framework SQL provider.
 using System;
 using System.Data;
 using System.Data.SqlClient;

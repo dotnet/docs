@@ -1,7 +1,7 @@
 ---
 description: "Learn more about large UDTs, which allow a developer to extend the server's scalar type system by storing CLR objects in a SQL Server database."
 title: "Large UDTs"
-ms.date: "03/30/2017"
+ms.date: "10/23/2026"
 dev_langs:
   - "csharp"
   - "vb"
@@ -12,7 +12,7 @@ ms.custom: sfi-ropc-nochange
 User-defined types (UDTs) allow a developer to extend the server's scalar type system by storing common language runtime (CLR) objects in a SQL Server database. UDTs can contain multiple elements and can have behaviors, unlike the traditional alias data types, which consist of a single SQL Server system data type.
 
 > [!NOTE]
-> You must install the .NET Framework 3.5 SP1 (or later) to take advantage of the enhanced SqlClient support for large UDTs.
+> For client access to large UDTs, install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package and import `Microsoft.Data.SqlClient`. SQL CLR types that define the server-side UDT remain in `Microsoft.SqlServer.Server`; don't replace those types with client-provider types.
 
  Previously, UDTs were restricted to a maximum size of 8 kilobytes. In SQL Server 2008, this restriction has been removed for UDTs that have a format of <xref:Microsoft.SqlServer.Server.Format.UserDefined>.
 
@@ -20,11 +20,11 @@ User-defined types (UDTs) allow a developer to extend the server's scalar type s
 
 ## Retrieving UDT Schemas Using GetSchema
 
- The <xref:System.Data.SqlClient.SqlConnection.GetSchema*> method of <xref:System.Data.SqlClient.SqlConnection> returns database schema information in a <xref:System.Data.DataTable>. For more information, see [SQL Server Schema Collections](../sql-server-schema-collections.md).
+The <xref:Microsoft.Data.SqlClient.SqlConnection.GetSchema*> method returns database schema information in the <xref:System.Data.DataTable> object. For more information, see [SQL Server Schema Collections](../sql-server-schema-collections.md).
 
 ### GetSchemaTable Column Values for UDTs
 
- The <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable*> method of a <xref:System.Data.SqlClient.SqlDataReader> returns a <xref:System.Data.DataTable> that describes column metadata. The following table describes the differences in the column metadata for large UDTs between SQL Server 2005 and SQL Server 2008.
+The <xref:Microsoft.Data.SqlClient.SqlDataReader.GetSchemaTable*> method returns column metadata in the <xref:System.Data.DataTable> object. The following table describes the differences in the column metadata for large UDTs between SQL Server 2005 and SQL Server 2008.
 
 |SqlDataReader column|SQL Server 2005|SQL Server 2008 and later|
 |--------------------------|---------------------|-------------------------------|
@@ -40,43 +40,38 @@ User-defined types (UDTs) allow a developer to extend the server's scalar type s
 
 ## SqlDataReader Considerations
 
- The <xref:System.Data.SqlClient.SqlDataReader> has been extended beginning in SQL Server 2008 to support retrieving large UDT values. How large UDT values are processed by a <xref:System.Data.SqlClient.SqlDataReader> depends on the version of SQL Server you are using, as well as on the `Type System Version` specified in the connection string. For more information, see <xref:System.Data.SqlClient.SqlConnection.ConnectionString>.
+The <xref:Microsoft.Data.SqlClient.SqlDataReader> class supports large UDT values in SQL Server 2008 and later versions. How the reader processes these values depends on the SQL Server version and the `Type System Version` in the connection string. For more information, see <xref:Microsoft.Data.SqlClient.SqlConnection.ConnectionString>.
 
- The following methods of <xref:System.Data.SqlClient.SqlDataReader> will return a <xref:System.Data.SqlTypes.SqlBinary> instead of a UDT when the `Type System Version` is set to SQL Server 2005:
+When `Type System Version` is SQL Server 2005, the following <xref:Microsoft.Data.SqlClient.SqlDataReader> methods use the binary representation of large UDTs:
 
-- <xref:System.Data.SqlClient.SqlDataReader.GetProviderSpecificFieldType*>
-- <xref:System.Data.SqlClient.SqlDataReader.GetProviderSpecificValue*>
-- <xref:System.Data.SqlClient.SqlDataReader.GetProviderSpecificValues*>
-- <xref:System.Data.SqlClient.SqlDataReader.GetSqlValue*>
-- <xref:System.Data.SqlClient.SqlDataReader.GetSqlValues*>
+- <xref:Microsoft.Data.SqlClient.SqlDataReader.GetProviderSpecificFieldType*> returns the <xref:System.Type> object for <xref:System.Data.SqlTypes.SqlBinary>.
+- <xref:Microsoft.Data.SqlClient.SqlDataReader.GetProviderSpecificValue*> and <xref:Microsoft.Data.SqlClient.SqlDataReader.GetSqlValue*> return <xref:System.Data.SqlTypes.SqlBinary> values.
+- <xref:Microsoft.Data.SqlClient.SqlDataReader.GetProviderSpecificValues*> and <xref:Microsoft.Data.SqlClient.SqlDataReader.GetSqlValues*> fill the supplied array with provider-specific column values and return the number of elements populated. Large UDT values in that array use <xref:System.Data.SqlTypes.SqlBinary>.
 
- The following methods will return an array of `Byte[]` instead of a UDT when the `Type System Version` is set to SQL Server 2005:
-
-- <xref:System.Data.SqlClient.SqlDataReader.GetValue*>
-- <xref:System.Data.SqlClient.SqlDataReader.GetValues*>
+For the same type-system setting, <xref:Microsoft.Data.SqlClient.SqlDataReader.GetValue*> returns the large UDT value as `Byte[]`. <xref:Microsoft.Data.SqlClient.SqlDataReader.GetValues*> fills the supplied array with column values and returns the number of elements populated. Large UDT values in that array use `Byte[]`.
 
  Note that no conversions are made for the current version of ADO.NET.
 
 ## Specifying SqlParameters
 
- The following <xref:System.Data.SqlClient.SqlParameter> properties have been extended to work with large UDTs.
+The following <xref:Microsoft.Data.SqlClient.SqlParameter> properties support large UDTs.
 
 |SqlParameter Property|Description|
 |---------------------------|-----------------|
-|<xref:System.Data.SqlClient.SqlParameter.Value*>|Gets or sets an object that represents the value of the parameter. The default is null. The property can be `SqlBinary`, `Byte[]`, or a managed object.|
-|<xref:System.Data.SqlClient.SqlParameter.SqlValue*>|Gets or sets an object that represents the value of the parameter. The default is null. The property can be `SqlBinary`, `Byte[]`, or a managed object.|
-|<xref:System.Data.SqlClient.SqlParameter.Size*>|Gets or sets the size of the parameter value to resolve. The default value is 0. The property can be an integer that represents the size of the parameter value. For large UDTs, it can be the actual size of the UDT, or -1 for unknown.|
+|<xref:Microsoft.Data.SqlClient.SqlParameter.Value*>|Gets or sets an object that represents the value of the parameter. The default is null. The property can be `SqlBinary`, `Byte[]`, or a managed object.|
+|<xref:Microsoft.Data.SqlClient.SqlParameter.SqlValue*>|Gets or sets an object that represents the value of the parameter. The default is null. The property can be `SqlBinary`, `Byte[]`, or a managed object.|
+|<xref:Microsoft.Data.SqlClient.SqlParameter.Size*>|Gets or sets the size of the parameter value to resolve. The default value is 0. The property can be an integer that represents the size of the parameter value. For large UDTs, it can be the actual size of the UDT, or -1 for unknown.|
 
 ## Retrieving Data Example
 
- The following code fragment demonstrates how to retrieve large UDT data. The `connectionString` variable assumes a valid connection to a SQL Server database and the `commandString` variable assumes a valid SELECT statement with the primary key column listed first.
+ The following code fragment demonstrates how to retrieve large UDT data. The `connectionString` variable assumes a valid connection to a SQL Server database and the `commandString` variable assumes a valid `SELECT` statement with the primary key column listed first.
 
 ```csharp
 using (SqlConnection connection = new SqlConnection(
-    connectionString, commandString))
+    connectionString))
 {
   connection.Open();
-  SqlCommand command = new SqlCommand(commandString);
+  SqlCommand command = new SqlCommand(commandString, connection);
   SqlDataReader reader = command.ExecuteReader();
   while (reader.Read())
   {
@@ -93,13 +88,13 @@ using (SqlConnection connection = new SqlConnection(
     Console.WriteLine(
      "ID={0} LargeUDT={1}", id, udt);
   }
-reader.close
+reader.Close();
 }
 ```
 
 ```vb
 Using connection As New SqlConnection( _
-    connectionString, commandString)
+    connectionString)
     connection.Open()
     Dim command As New SqlCommand(commandString, connection)
     Dim reader As SqlDataReader

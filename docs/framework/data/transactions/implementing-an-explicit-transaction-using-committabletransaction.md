@@ -1,7 +1,8 @@
 ---
 title: "Implementing an Explicit Transaction using CommittableTransaction"
 description: Implement an explicit transaction using the CommittableTransaction class in .NET. This class provided an explicit way for applications to use a transaction.
-ms.date: "03/30/2017"
+ms.date: "10/23/2026"
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -25,7 +26,10 @@ The <xref:System.Transactions.CommittableTransaction> class provides an explicit
 
 ## Creating a CommittableTransaction
 
- The following sample creates a new <xref:System.Transactions.CommittableTransaction> and commits it.
+ The following sample uses the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package. Import `Microsoft.Data.SqlClient` in C# or Visual Basic, and set the `SQL_CONNECTION_STRING` environment variable to a development database that contains Northwind's `Region` table. Use a trusted server certificate and keep encryption and certificate validation enabled. For more information, see [Configure SQL Server to use certificates](/sql/database-engine/configure-windows/configure-sql-server-encryption#step-1-configure-sql-server-to-use-certificates) and [Encryption and certificate validation in Microsoft.Data.SqlClient](/sql/connect/ado-net/encryption-and-certificate-validation).
+
+> [!CAUTION]
+> The example deletes and replaces rows with `RegionID` values 100 and 101 within the transaction. Use a disposable development database, not production data. Enter `C` to commit those changes or `R` to roll them back.
 
  [!code-csharp[Tx_CommittableTx#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/tx_committabletx/cs/committabletxwithsql.cs#1)]
  [!code-vb[Tx_CommittableTx#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/tx_committabletx/vb/committabletxwithsql.vb#1)]

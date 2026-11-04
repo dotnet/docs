@@ -1,16 +1,19 @@
 ---
 title: "Overview"
 description: Read an overview of ADO.NET in .NET Framework and read about resources for more detailed explanations and examples.
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
+ai-usage: ai-assisted
 ms.assetid: ee3bc1d8-11db-4be4-89eb-c708cf04117d
 ---
 # ADO.NET Overview
 
 ADO.NET provides consistent access to data sources such as SQL Server and XML, and to data sources exposed through OLE DB and ODBC. Data-sharing consumer applications can use ADO.NET to connect to these data sources and retrieve, handle, and update the data that they contain.  
+
+For new SQL Server applications, use the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package. For runnable C# and Visual Basic examples, see [ADO.NET code examples](ado-net-code-examples.md#sqlclient).
   
  ADO.NET separates data access from data manipulation into discrete components that can be used separately or in tandem. ADO.NET includes .NET Framework data providers for connecting to a database, executing commands, and retrieving results. Those results are either processed directly, placed in an ADO.NET <xref:System.Data.DataSet> object in order to be exposed to the user in an ad hoc manner, combined with data from multiple sources, or passed between tiers. The `DataSet` object can also be used independently of a .NET Framework data provider to manage data local to the application or sourced from XML.  
   
- The ADO.NET classes are found in System.Data.dll, and are integrated with the XML classes found in System.Xml.dll. For sample code that connects to a database, retrieves data from it, and then displays that data in a console window, see [ADO.NET Code Examples](ado-net-code-examples.md).  
+ The ADO.NET classes included in .NET Framework are found in System.Data.dll, and are integrated with the XML classes found in System.Xml.dll. The separately distributed SQL Server provider uses Microsoft.Data.SqlClient.dll. For sample code that connects to a database, retrieves data from it, and then displays that data in a console window, see [ADO.NET Code Examples](ado-net-code-examples.md).
   
  ADO.NET provides functionality to developers who write managed code similar to the functionality provided to native component object model (COM) developers by ActiveX Data Objects (ADO). We recommend that you use ADO.NET, not ADO, for accessing data in your .NET applications.  
   

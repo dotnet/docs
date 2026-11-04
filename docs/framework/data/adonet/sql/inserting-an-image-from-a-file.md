@@ -1,7 +1,7 @@
 ---
 description: "Learn more about inserting an image from a file. You can write a binary large object to a database as either binary or character data."
 title: "Inserting an Image from a File"
-ms.date: "03/30/2017"
+ms.date: "10/23/2026"
 dev_langs:
   - "csharp"
   - "vb"
@@ -11,11 +11,13 @@ ms.custom: sfi-ropc-nochange
 
 You can write a binary large object (BLOB) to a database as either binary or character data, depending on the type of field at your data source. BLOB is a generic term that refers to the `text`, `ntext`, and `image` data types, which typically contain documents and pictures.
 
- To write a BLOB value to your database, issue the appropriate INSERT or UPDATE statement and pass the BLOB value as an input parameter (see [Configuring Parameters and Parameter Data Types](../configuring-parameters-and-parameter-data-types.md)). If your BLOB is stored as text, such as a SQL Server `text` field, you can pass the BLOB as a string parameter. If the BLOB is stored in binary format, such as a SQL Server `image` field, you can pass an array of type `byte` as a binary parameter.
+ To write a BLOB value to your database, issue the appropriate `INSERT` or `UPDATE` statement and pass the BLOB value as an input parameter (see [Configuring Parameters and Parameter Data Types](../configuring-parameters-and-parameter-data-types.md)). If your BLOB is stored as text, such as a SQL Server `text` field, you can pass the BLOB as a string parameter. If the BLOB is stored in binary format, such as a SQL Server `image` field, you can pass an array of type `byte` as a binary parameter.
 
 ## Example
 
- The following code example adds employee information to the Employees table in the Northwind database. A photo of the employee is read from a file and added to the Photo field in the table, which is an image field.
+Install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package. For the following examples, import `Microsoft.Data.SqlClient`, `System.Data`, and `System.IO` in C# or Visual Basic.
+
+ The following code example adds employee information to the `Employees` table in the Northwind database. A photo of the employee is read from a file and added to the `Photo` field in the table, which is an `image` field.
 
 ```vb
 Public Shared Sub AddEmployee( _
@@ -86,7 +88,7 @@ public static void AddEmployee(
 
   using (SqlConnection connection = new SqlConnection(
     connectionString))
-
+  {
   SqlCommand command = new SqlCommand(
     "INSERT INTO Employees (LastName, FirstName, " +
     "Title, HireDate, ReportsTo, Photo) " +

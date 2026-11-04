@@ -143,6 +143,6 @@ These errors relate to tuple expression formation. Tuples require at least two e
 ## See also
 
 - [Value tuples](../builtin-types/value-tuples.md)
-- [Deconstruction](../../fundamentals/functional/deconstruct.md)
+- [Deconstruction](../../fundamentals/patterns/deconstruct.md)
 - [Pattern matching](../../fundamentals/patterns/pattern-matching.md)
 - [Void](../builtin-types/void.md)

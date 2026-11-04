@@ -156,30 +156,38 @@ items:
                 href: ../../core/tools/templates.md
           - name: dotnet nuget
             items:
-              - name: dotnet nuget delete
-                href: ../../core/tools/dotnet-nuget-delete.md
-              - name: dotnet nuget locals
-                href: ../../core/tools/dotnet-nuget-locals.md
-              - name: dotnet nuget push
-                href: ../../core/tools/dotnet-nuget-push.md
+              - name: dotnet nuget add client-cert
+                href: ../../core/tools/dotnet-nuget-add-client-cert.md
               - name: dotnet nuget add source
                 href: ../../core/tools/dotnet-nuget-add-source.md
+              - name: dotnet nuget delete
+                href: ../../core/tools/dotnet-nuget-delete.md
               - name: dotnet nuget disable source
                 href: ../../core/tools/dotnet-nuget-disable-source.md
               - name: dotnet nuget enable source
                 href: ../../core/tools/dotnet-nuget-enable-source.md
+              - name: dotnet nuget list client-cert
+                href: ../../core/tools/dotnet-nuget-list-client-cert.md
               - name: dotnet nuget list source
                 href: ../../core/tools/dotnet-nuget-list-source.md
+              - name: dotnet nuget locals
+                href: ../../core/tools/dotnet-nuget-locals.md
+              - name: dotnet nuget push
+                href: ../../core/tools/dotnet-nuget-push.md
+              - name: dotnet nuget remove client-cert
+                href: ../../core/tools/dotnet-nuget-remove-client-cert.md
               - name: dotnet nuget remove source
                 href: ../../core/tools/dotnet-nuget-remove-source.md
+              - name: dotnet nuget sign
+                href: ../../core/tools/dotnet-nuget-sign.md
+              - name: dotnet nuget trust
+                href: ../../core/tools/dotnet-nuget-trust.md
+              - name: dotnet nuget update client-cert
+                href: ../../core/tools/dotnet-nuget-update-client-cert.md
               - name: dotnet nuget update source
                 href: ../../core/tools/dotnet-nuget-update-source.md
               - name: dotnet nuget verify
                 href: ../../core/tools/dotnet-nuget-verify.md
-              - name: dotnet nuget trust
-                href: ../../core/tools/dotnet-nuget-trust.md
-              - name: dotnet nuget sign
-                href: ../../core/tools/dotnet-nuget-sign.md
               - name: dotnet nuget why
                 href: ../../core/tools/dotnet-nuget-why.md
           - name: dotnet nuget config
@@ -359,6 +367,98 @@ items:
     items:
       - name: Overview
         href: ../../core/additional-tools/index.md
+      - name: dotnetup
+        items:
+          - name: Overview
+            href: ../../core/tools/dotnetup/index.md
+          - name: When to use dotnetup
+            href: ../../core/tools/dotnetup/choose-dotnetup.md
+          - name: Get started
+            href: ../../core/tools/dotnetup/getting-started.md
+          - name: Concepts
+            items:
+              - name: How dotnetup works
+                href: ../../core/tools/dotnetup/concepts/how-dotnetup-works.md
+              - name: Channels and versions
+                href: ../../core/tools/dotnetup/concepts/channels.md
+              - name: Repository SDK requirements
+                href: ../../core/tools/dotnetup/concepts/repositories.md
+              - name: Environment configuration
+                href: ../../core/tools/dotnetup/concepts/environment.md
+              - name: Download verification
+                href: ../../core/tools/dotnetup/concepts/download-verification.md
+          - name: Release channels
+            items:
+              - name: Preview channel
+                href: ../../core/tools/dotnetup/channels/preview.md
+              - name: Daily channels
+                href: ../../core/tools/dotnetup/channels/daily.md
+          - name: Command reference
+            items:
+              - name: dotnetup
+                href: ../../core/tools/dotnetup/reference/dotnetup.md
+              - name: dotnetup install
+                href: ../../core/tools/dotnetup/reference/dotnetup-install.md
+              - name: dotnetup update
+                href: ../../core/tools/dotnetup/reference/dotnetup-update.md
+              - name: dotnetup self update
+                href: ../../core/tools/dotnetup/reference/dotnetup-self-update.md
+              - name: dotnetup uninstall
+                href: ../../core/tools/dotnetup/reference/dotnetup-uninstall.md
+              - name: dotnetup sdk
+                href: ../../core/tools/dotnetup/reference/dotnetup-sdk.md
+              - name: dotnetup sdk install
+                href: ../../core/tools/dotnetup/reference/dotnetup-sdk-install.md
+              - name: dotnetup sdk update
+                href: ../../core/tools/dotnetup/reference/dotnetup-sdk-update.md
+              - name: dotnetup sdk uninstall
+                href: ../../core/tools/dotnetup/reference/dotnetup-sdk-uninstall.md
+              - name: dotnetup runtime
+                href: ../../core/tools/dotnetup/reference/dotnetup-runtime.md
+              - name: dotnetup runtime install
+                href: ../../core/tools/dotnetup/reference/dotnetup-runtime-install.md
+              - name: dotnetup runtime update
+                href: ../../core/tools/dotnetup/reference/dotnetup-runtime-update.md
+              - name: dotnetup runtime uninstall
+                href: ../../core/tools/dotnetup/reference/dotnetup-runtime-uninstall.md
+              - name: dotnetup list
+                href: ../../core/tools/dotnetup/reference/dotnetup-list.md
+              - name: dotnetup init
+                href: ../../core/tools/dotnetup/reference/dotnetup-init.md
+              - name: dotnetup env
+                href: ../../core/tools/dotnetup/reference/dotnetup-env.md
+              - name: dotnetup env set
+                href: ../../core/tools/dotnetup/reference/dotnetup-env-set.md
+              - name: dotnetup env clear
+                href: ../../core/tools/dotnetup/reference/dotnetup-env-clear.md
+              - name: dotnetup env show
+                href: ../../core/tools/dotnetup/reference/dotnetup-env-show.md
+              - name: dotnetup env script
+                href: ../../core/tools/dotnetup/reference/dotnetup-env-script.md
+              - name: dotnetup dotnet
+                href: ../../core/tools/dotnetup/reference/dotnetup-dotnet.md
+          - name: Scenarios
+            items:
+              - name: Manage repository SDK requirements
+                href: ../../core/tools/dotnetup/usecases/install-with-global-json.md
+              - name: Install .NET components
+                href: ../../core/tools/dotnetup/usecases/install-components.md
+              - name: Update installations
+                href: ../../core/tools/dotnetup/usecases/update-installations.md
+              - name: Manage the environment
+                href: ../../core/tools/dotnetup/usecases/manage-environment.md
+              - name: Manage custom installation roots
+                href: ../../core/tools/dotnetup/usecases/manage-custom-installation-roots.md
+              - name: Use preview and daily builds
+                href: ../../core/tools/dotnetup/usecases/try-daily-builds.md
+              - name: Use dotnetup in automation
+                href: ../../core/tools/dotnetup/usecases/automation.md
+              - name: Update or remove dotnetup
+                href: ../../core/tools/dotnetup/usecases/manage-dotnetup.md
+          - name: Troubleshooting
+            href: ../../core/tools/dotnetup/troubleshooting.md
+          - name: Telemetry
+            href: ../../core/tools/dotnetup/telemetry.md
       - name: .NET Uninstall Tool
         items:
           - name: Overview
@@ -372,6 +472,33 @@ items:
                 href: ../../core/additional-tools/uninstall-tool-cli-dry-run.md
               - name: dotnet-core-uninstall remove
                 href: ../../core/additional-tools/uninstall-tool-cli-remove.md
+      - name: .NET Install Manager
+        items:
+          - name: Overview
+            href: ../../core/additional-tools/dnim-overview.md
+          - name: Command reference
+            expanded: true
+            items:
+              - name: dnim layout
+                href: ../../core/additional-tools/dnim-cli-layout.md
+              - name: dnim query products
+                href: ../../core/additional-tools/dnim-cli-query-products.md
+              - name: dnim query releases
+                href: ../../core/additional-tools/dnim-cli-query-releases.md
+              - name: dnim scan
+                href: ../../core/additional-tools/dnim-cli-scan.md
+              - name: dnim trace
+                href: ../../core/additional-tools/dnim-cli-trace.md
+              - name: dnim uninstall
+                href: ../../core/additional-tools/dnim-cli-uninstall.md
+              - name: dnim update
+                href: ../../core/additional-tools/dnim-cli-update.md
+          - name: .NET Installs
+            href: ../../core/additional-tools/dnim-net-installs.md
+          - name: Logging
+            href: ../../core/additional-tools/dnim-logs.md
+          - name: FAQ
+            href: ../../core/additional-tools/dnim-faq.yml
       - name: .NET install tool for extension authors
         href: ../../core/additional-tools/vscode-dotnet-runtime.md
       - name: Generate self-signed certificates
@@ -430,6 +557,8 @@ items:
             displayName: exception summarization,exception summary,exception summarizer,ExceptionSummary
           - name: Collection
             href: ../../core/diagnostics/metrics-collection.md
+          - name: Configuration
+            href: ../../core/diagnostics/metrics-configuration.md
           - name: Compile-time metric source generation
             href: ../../core/diagnostics/metrics-generator.md
           - name: Strongly typed source-generated metrics
@@ -467,6 +596,8 @@ items:
           - name: Overview
             href: ../../core/diagnostics/distributed-tracing.md
             displayName: distributed tracing
+          - name: Configuration
+            href: ../../core/diagnostics/distributed-tracing-configuration.md
           - name: Concepts
             href: ../../core/diagnostics/distributed-tracing-concepts.md
           - name: Instrumentation
@@ -626,6 +757,8 @@ items:
             items:
               - name: Overview
                 href: ../../core/unmanaged-api/debugging/index.md
+              - name: Initialize a custom debugger on mobile platforms
+                href: ../../core/unmanaged-api/debugging/initialize-debugger-mobile.md
               - name: Enumerations
                 items:
                   - name: COR_PUB_ENUMPROCESS enumeration
@@ -4113,6 +4246,8 @@ items:
             href: ../../fundamentals/syslib-diagnostics/syslib0064.md
           - name: SYSLIB0065
             href: ../../fundamentals/syslib-diagnostics/syslib0065.md
+          - name: SYSLIB0066
+            href: ../../fundamentals/syslib-diagnostics/syslib0066.md
       - name: Experimental features
         items:
           - name: Overview
@@ -4231,6 +4366,8 @@ items:
         href: ../../fundamentals/syslib-diagnostics/extobs0001.md
       - name: EXTOBS0002
         href: ../../fundamentals/syslib-diagnostics/extobs0002.md
+      - name: EXTOBS0003
+        href: ../../fundamentals/syslib-diagnostics/extobs0003.md
   - name: API compatibility
     items:
       - name: Overview

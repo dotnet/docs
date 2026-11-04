@@ -2,13 +2,17 @@
 description: "Learn more about: ADO.NET and LINQ to SQL"
 title: "ADO.NET and LINQ to SQL"
 titleSuffix: ""
-ms.date: "03/30/2017"
+ms.date: "10/20/2026"
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 49ac6da0-f2e1-46fa-963e-1b6dcb63fef7
 ---
 # ADO.NET and LINQ to SQL
+
+> [!IMPORTANT]
+> Do not use `System.Data.SqlClient` for new development. Use [Microsoft.Data.SqlClient](/sql/connect/ado-net/introduction-microsoft-data-sqlclient-namespace) for new SQL Server data-access code. These examples retain `System.Data.SqlClient` because .NET Framework's built-in LINQ to SQL provider requires it. Changing the connection type alone doesn't migrate LINQ to SQL.
 
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] is part of the ADO.NET family of technologies. It is based on services provided by the ADO.NET provider model. You can therefore mix [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] code with existing ADO.NET applications and migrate current ADO.NET solutions to [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]. The following illustration provides a high-level view of the relationship.
 
@@ -46,7 +50,7 @@ ms.assetid: 49ac6da0-f2e1-46fa-963e-1b6dcb63fef7
  [!code-csharp[DLinqAdoNet#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqAdoNet/cs/Program.cs#3)]
  [!code-vb[DLinqAdoNet#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqAdoNet/vb/Module1.vb#3)]
 
- As long as the column names in the tabular results match column properties of your entity class, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] creates your objects out of any SQL query.
+ To materialize the mapped `Customer` entities, return columns that match their mapped properties and include `CustomerID`, the primary key.
 
 ### Parameters
 

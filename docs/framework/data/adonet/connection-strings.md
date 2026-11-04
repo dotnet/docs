@@ -1,7 +1,7 @@
 ---
 title: "Connection Strings"
 description: Learn about connection strings in ADO.NET, which contain initialization information passed as a parameter from a data provider to a data source.
-ms.date: "10/10/2018"
+ms.date: "10/19/2026"
 ms.custom: sfi-ropc-nochange
 ---
 
@@ -49,7 +49,7 @@ Keyword=a=b=c
 
 Since each value is read till the next semicolon or the end of string, the value in the latter example is `a=b=c`, and the final semicolon is optional.
 
-All connection strings share the same basic syntax described previously. The set of recognized keywords depends on the provider, however, and has evolved over the years from earlier APIs such as *ODBC*. The *.NET Framework* data provider for *SQL Server* (`SqlClient`) supports many keywords from older APIs, but is generally more flexible and accepts synonyms for many of the common connection string keywords.
+All connection strings share the same basic syntax described previously. The set of recognized keywords depends on the provider, however, and has evolved over the years from earlier APIs such as *ODBC*. Microsoft.Data.SqlClient supports many keywords from older APIs, but is generally more flexible and accepts synonyms for many of the common connection string keywords.
 
 Typing mistakes can cause errors. For example, `Integrated Security=true` is valid, but `IntegratedSecurity=true` causes an error.
 

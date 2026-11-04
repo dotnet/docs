@@ -39,7 +39,7 @@ The form `var _` is a `var` pattern with a discard designation. It also matches 
 
 :::code language="csharp" source="snippets/discards/Program.cs" ID="TupleDiscards":::
 
-The same discard syntax works when an object's `Deconstruct` method produces several values. For those forms, see [Deconstructing tuples and other types](../functional/deconstruct.md).
+The same discard syntax works when an object's `Deconstruct` method produces several values. For those forms, see [Deconstructing tuples and other types](deconstruct.md).
 
 ## Calls to methods with `out` parameters
 
@@ -70,6 +70,6 @@ Choose discard parameters when a delegate signature requires inputs that the lam
 
 - [Pattern matching overview](pattern-matching.md)
 - [Declaration, constant, and `var` patterns](declaration-constant-var-patterns.md)
-- [Deconstructing tuples and other types](../functional/deconstruct.md)
+- [Deconstructing tuples and other types](deconstruct.md)
 - [Lambda expression parameters](../../language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression)
 - [Discard pattern reference](../../language-reference/operators/patterns.md#discard-pattern)

@@ -12,11 +12,11 @@ The previous article discussed the most common event patterns. .NET Core has a m
 
 This increases flexibility for you and is backward compatible. Let's start with the flexibility. The implementation of <xref:System.EventArgs?displayProperty=nameWithType> uses a method defined in <xref:System.Object?displayProperty=nameWithType>: <xref:System.Object.MemberwiseClone>, which creates a shallow copy of the object. That method must use reflection in order to implement its functionality for any class derived from `EventArgs`. That functionality is easier to create in a specific derived class. That effectively means that deriving from System.EventArgs is a constraint that limits your designs, but doesn't provide any extra benefit. In fact, you can change the definitions of `FileFoundArgs` and `SearchDirectoryArgs` so that they don't derive from `EventArgs`. The program works exactly the same.
 
-You could also change the `SearchDirectoryArgs` to a struct, if you make one more change:
+You could also change the `SearchDirectoryArgs` to a struct:
 
 :::code language="csharp" source="./snippets/events/FinalUpdates.cs" id="StructEventArgs":::
 
-The extra change is to call the parameterless constructor before entering the constructor that initializes all the fields. Without that addition, the rules of C# would report that the properties are being accessed before being assigned.
+In C# 11 and later, the compiler initializes any fields that a struct constructor doesn't assign, so the constructor doesn't need to call the parameterless constructor.
 
 You shouldn't change the `FileFoundArgs` from a class (reference type) to a struct (value type). The protocol for handling cancel requires that you pass event arguments by reference. If you made the same change, the file search class could never observe any changes made by any of the event subscribers. A new copy of the structure would be used for each subscriber, and that copy would be a different copy than the one seen by the file search object.
 

@@ -1,22 +1,22 @@
 ---
 description: "Learn more about using multiple commands and reading and updating data with Multiple Active Result Sets (MARS)."
 title: "Manipulating Data"
-ms.date: "03/30/2017"
+ms.date: "10/23/2026"
 dev_langs:
   - "csharp"
   - "vb"
 ---
 # Manipulate data
 
-Before the introduction of Multiple Active Result Sets (MARS), developers had to use either multiple connections or server-side cursors to solve certain scenarios. In addition, when multiple connections were used in a transactional situation, bound connections (with `sp_getbindtoken` and **sp_bindsession**) were required. The following scenarios show how to use a MARS-enabled connection instead of multiple connections.
+Before the introduction of Multiple Active Result Sets (MARS), developers had to use either multiple connections or server-side cursors to solve certain scenarios. In addition, when multiple connections were used in a transactional situation, bound connections (with `sp_getbindtoken` and `sp_bindsession`) were required. The following scenarios show how to use a MARS-enabled connection instead of multiple connections.
 
 ## Use Multiple Commands with MARS
 
- The following Console application demonstrates how to use two <xref:System.Data.SqlClient.SqlDataReader> objects with two <xref:System.Data.SqlClient.SqlCommand> objects and a single <xref:System.Data.SqlClient.SqlConnection> object with MARS enabled.
+ The following Console application demonstrates how to use two <xref:Microsoft.Data.SqlClient.SqlDataReader> objects with two <xref:Microsoft.Data.SqlClient.SqlCommand> objects and a single <xref:Microsoft.Data.SqlClient.SqlConnection> object with MARS enabled.
 
 ### Example
 
- The example opens a single connection to the `AdventureWorks` database. Using a <xref:System.Data.SqlClient.SqlCommand> object, a <xref:System.Data.SqlClient.SqlDataReader> is created. As the reader is used, a second <xref:System.Data.SqlClient.SqlDataReader> is opened, using data from the first <xref:System.Data.SqlClient.SqlDataReader> as input to the WHERE clause for the second reader.
+The example opens a single connection to the `AdventureWorks` database. The <xref:Microsoft.Data.SqlClient.SqlCommand> creates the first <xref:Microsoft.Data.SqlClient.SqlDataReader>. As the code reads its results, it opens a second reader and uses data from the first reader as input to the second query's `WHERE` clause.
 
 > [!NOTE]
 > The following example uses the sample `AdventureWorks` database included with SQL Server. The connection string provided in the sample code assumes that the database is installed and available on the local computer. Modify the connection string as necessary for your environment.
@@ -27,7 +27,7 @@ Option Explicit On
 
 Imports System
 Imports System.Data
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 Module Module1
   Sub Main()
     ' By default, MARS is disabled when connecting
@@ -41,7 +41,7 @@ Module Module1
     Dim productCmd As SqlCommand
     Dim productReader As SqlDataReader
 
-    Dim vendorSQL As String = & _
+    Dim vendorSQL As String = _
       "SELECT VendorId, Name FROM Purchasing.Vendor"
     Dim productSQL As String = _
         "SELECT Production.Product.Name FROM Production.Product " & _
@@ -92,7 +92,7 @@ End Module
 ```csharp
 using System;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 class Class1
 {
@@ -166,7 +166,7 @@ static void Main()
 
 ### Example
 
- The following Console application demonstrates how to use two <xref:System.Data.SqlClient.SqlDataReader> objects with three <xref:System.Data.SqlClient.SqlCommand> objects and a single <xref:System.Data.SqlClient.SqlConnection> object with MARS enabled. The first command object retrieves a list of vendors whose credit rating is 5. The second command object uses the vendor ID provided from a <xref:System.Data.SqlClient.SqlDataReader> to load the second <xref:System.Data.SqlClient.SqlDataReader> with all of the products for the particular vendor. Each product record is visited by the second <xref:System.Data.SqlClient.SqlDataReader>. A calculation is performed to determine what the new `OnOrderQty` should be. The third command object is then used to update the `ProductVendor` table with the new value. This entire process takes place within a single transaction, which is rolled back at the end.
+The following console application uses two <xref:Microsoft.Data.SqlClient.SqlDataReader> objects, three <xref:Microsoft.Data.SqlClient.SqlCommand> objects, and one <xref:Microsoft.Data.SqlClient.SqlConnection> object with MARS enabled. The first command retrieves vendors whose credit rating is 5. For each vendor ID from the first reader, the second command retrieves that vendor's products into the second reader. The code calculates a new `OnOrderQty` for each product and uses the third command to update `ProductVendor`. The entire process takes place within a single transaction, which the code rolls back at the end.
 
 > [!NOTE]
 > The following example uses the sample `AdventureWorks` database included with SQL Server. The connection string provided in the sample code assumes that the database is installed and available on the local computer. Modify the connection string as necessary for your environment.
@@ -177,7 +177,7 @@ Option Explicit On
 
 Imports System
 Imports System.Data
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 
 Module Module1
 
@@ -287,7 +287,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 class Program
 {

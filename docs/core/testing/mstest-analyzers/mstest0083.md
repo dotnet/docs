@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0083: Use '[ExecutableCondition]' instead of 'File.Exists' checks before 'Process.Start'"
 description: "Learn about code analysis rule MSTEST0083: Use '[ExecutableCondition]' instead of 'File.Exists' checks before 'Process.Start'"
-ms.date: 08/26/2026
+ms.date: 10/01/2026
 f1_keywords:
 - MSTEST0083
 - UseExecutableConditionAttributeInsteadOfProcessCheckAnalyzer
@@ -24,11 +24,8 @@ dev_langs:
 | **Fix is breaking or non-breaking** | Non-breaking                                       |
 | **Enabled by default**              | Yes                                                |
 | **Default severity**                | Info                                               |
-| **Introduced in version**           | 4.4.0 (preview)                                    |
+| **Introduced in version**           | 4.4.0                                              |
 | **Is there a code fix**             | Yes, for C# only                                   |
-
-> [!IMPORTANT]
-> This analyzer is planned for MSTest 4.4 and is available only in preview builds until MSTest 4.4.0 is released.
 
 ## Cause
 

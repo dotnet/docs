@@ -1,10 +1,14 @@
 ---
 description: "Learn more about: Troubleshooting"
 title: "Troubleshooting"
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
+ai-usage: ai-assisted
 ms.assetid: 8cd4401c-b12c-4116-a421-f3dcffa65670
 ---
 # Troubleshooting
+
+> [!IMPORTANT]
+> Do not use `System.Data.SqlClient` for new development. Use [Microsoft.Data.SqlClient](/sql/connect/ado-net/introduction-microsoft-data-sqlclient-namespace) for new SQL Server data-access code. The provider-specific behavior on this page comes from .NET Framework's built-in LINQ to SQL provider, which requires `System.Data.SqlClient`. Changing the connection type alone doesn't migrate LINQ to SQL.
 
 The following information exposes some issues you might encounter in your [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] applications, and provides suggestions to avoid or otherwise reduce the effect of these issues.
 

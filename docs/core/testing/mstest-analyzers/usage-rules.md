@@ -3,7 +3,7 @@ title: MSTest Usage rules (code analysis)
 description: Learn about MSTest code analysis usage rules.
 author: evangelink
 ms.author: amauryleve
-ms.date: 08/26/2026
+ms.date: 10/06/2026
 ai-usage: ai-assisted
 ---
 
@@ -79,6 +79,11 @@ Usage rules support proper usage of MSTest attributes, methods, and patterns. Th
 | [MSTEST0081](mstest0081.md) | `[TestFilterProvider]` should reference a valid test filter type. | Warning | No |
 | [MSTEST0082](mstest0082.md) | A test class inherits a lifecycle or test method from a different MSTest version. | Warning | No |
 | [MSTEST0083](mstest0083.md) | Use `[ExecutableCondition]` instead of `File.Exists` checks before `Process.Start`. | Info | Yes |
+| [MSTEST0084](mstest0084.md) | Platform compatibility attributes should be consistent with `[OSCondition]`. | Info | Yes |
+| [MSTEST0085](mstest0085.md) | `[TestClass]` should not be applied to abstract classes. | Info | No |
+| [MSTEST0086](mstest0086.md) | Remove redundant test method attribute. | Info | Yes |
+| [MSTEST0087](mstest0087.md) | Avoid duplicated `DataRow` display names. | Warning | No |
+| [MSTEST0088](mstest0088.md) | MSTest host test-class injection is not supported by the selected build mode. | Error | No |
 
 \* Escalated to Error in `Recommended` and `All` modes.
 
@@ -94,6 +99,9 @@ Ensure your test classes, methods, and fixtures follow MSTest requirements:
 - **[MSTEST0063](mstest0063.md)**: Test class constructor validation.
 - **[MSTEST0069](mstest0069.md)**: Apply [TestClass] directly so source-generated discovery finds the class.
 - **[MSTEST0082](mstest0082.md)**: Keep base and derived test classes on the same MSTest major version.
+- **[MSTEST0085](mstest0085.md)**: Remove `[TestClass]` from abstract base classes.
+- **[MSTEST0086](mstest0086.md)**: Remove method attributes whose behavior the test class already supplies.
+- **[MSTEST0088](mstest0088.md)**: Use host-owned test-class injection only with a supported build mode.
 
 ### Lifecycle methods
 
@@ -120,6 +128,7 @@ Ensure data attributes are used correctly:
 - **[MSTEST0042](mstest0042.md)**: Detect duplicate DataRows.
 - **[MSTEST0052](mstest0052.md)**: Use AutoDetect for DynamicDataSourceType.
 - **[MSTEST0062](mstest0062.md)**: Avoid out/ref parameters.
+- **[MSTEST0087](mstest0087.md)**: Give every explicit `DataRow` display name a unique value.
 
 ### Writing better assertions
 
@@ -187,6 +196,8 @@ Rules for tests that run in parallel:
 - **[MSTEST0081](mstest0081.md)**: Validate test filter provider registrations.
 - **[MSTEST0082](mstest0082.md)**: Detect inherited tests and lifecycle methods compiled against another MSTest major version.
 - **[MSTEST0083](mstest0083.md)**: Use `ExecutableCondition` instead of an imperative executable check.
+- **[MSTEST0084](mstest0084.md)**: Align platform compatibility attributes with `OSCondition`.
+- **[MSTEST0088](mstest0088.md)**: Don't combine host-owned test-class injection with AOT, browser WebAssembly, or MSTest source generation.
 
 ## Related documentation
 

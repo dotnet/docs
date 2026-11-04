@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Distributed Transactions"
 title: "Distributed Transactions"
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
 ms.custom: sfi-ropc-nochange
 ---
 # Distributed transactions
@@ -17,14 +17,14 @@ A transaction is a set of related tasks that either succeeds (commit) or fails (
 
  ADO.NET 2.0 introduced support for enlisting in a distributed transaction using the `EnlistTransaction` method, which enlists a connection in a <xref:System.Transactions.Transaction> instance. In previous versions of ADO.NET, explicit enlistment in distributed transactions was performed using the `EnlistDistributedTransaction` method of a connection to enlist a connection in a <xref:System.EnterpriseServices.ITransaction> instance, which is supported for backwards compatibility. For more information on Enterprise Services transactions, see [Interoperability with Enterprise Services and COM+ Transactions](../transactions/interoperability-with-enterprise-services-and-com-transactions.md).
 
- When using a <xref:System.Transactions> transaction with the .NET Framework Provider for SQL Server against a SQL Server database, a lightweight <xref:System.Transactions.Transaction> will automatically be used. The transaction can then be promoted to a full distributed transaction on an as-needed basis. For more information, see [System.Transactions Integration with SQL Server](system-transactions-integration-with-sql-server.md).
+ When using a <xref:System.Transactions> transaction with Microsoft.Data.SqlClient against a SQL Server database, a lightweight <xref:System.Transactions.Transaction> will automatically be used. The transaction can then be promoted to a full distributed transaction on an as-needed basis. For more information, see [System.Transactions Integration with SQL Server](system-transactions-integration-with-sql-server.md).
 
 > [!NOTE]
 > The maximum number of distributed transactions that an Oracle database can participate in at one time is set to 10 by default. After the 10th transaction when connected to an Oracle database, an exception is thrown. Oracle does not support `DDL` inside of a distributed transaction.
 
 ## Automatically Enlisting in a Distributed Transaction
 
- Automatic enlistment is the default (and preferred) way of integrating ADO.NET connections with `System.Transactions`. A connection object will automatically enlist in an existing distributed transaction if it determines that a transaction is active, which, in `System.Transaction` terms, means that `Transaction.Current` is not null. Automatic transaction enlistment occurs when the connection is opened. It will not happen after that even if a command is executed inside of a transaction scope. You can disable auto-enlistment in existing transactions by specifying `Enlist=false` as a connection string parameter for a <xref:System.Data.SqlClient.SqlConnection.ConnectionString?displayProperty=nameWithType>, or `OLE DB Services=-7` as a connection string parameter for an <xref:System.Data.OleDb.OleDbConnection.ConnectionString?displayProperty=nameWithType>. For more information on Oracle and ODBC connection string parameters, see <xref:System.Data.OracleClient.OracleConnection.ConnectionString?displayProperty=nameWithType> and <xref:System.Data.Odbc.OdbcConnection.ConnectionString?displayProperty=nameWithType>.
+ Automatic enlistment is the default (and preferred) way of integrating ADO.NET connections with `System.Transactions`. A connection object will automatically enlist in an existing distributed transaction if it determines that a transaction is active, which, in `System.Transaction` terms, means that `Transaction.Current` is not null. Automatic transaction enlistment occurs when the connection is opened. It will not happen after that even if a command is executed inside of a transaction scope. You can disable auto-enlistment in existing transactions by specifying `Enlist=false` as a connection string parameter for a <xref:Microsoft.Data.SqlClient.SqlConnection.ConnectionString?displayProperty=nameWithType>, or `OLE DB Services=-7` as a connection string parameter for an <xref:System.Data.OleDb.OleDbConnection.ConnectionString?displayProperty=nameWithType>. For more information on Oracle and ODBC connection string parameters, see <xref:System.Data.OracleClient.OracleConnection.ConnectionString?displayProperty=nameWithType> and <xref:System.Data.Odbc.OdbcConnection.ConnectionString?displayProperty=nameWithType>.
 
 ## Manually Enlisting in a Distributed Transaction
 
@@ -38,7 +38,7 @@ A transaction is a set of related tasks that either succeeds (commit) or fails (
 > Once a connection is explicitly enlisted on a transaction, it cannot be un-enlisted or enlisted in another transaction until the first transaction finishes.
 
 > [!CAUTION]
-> `EnlistTransaction` throws an exception if the connection has already begun a transaction using the connection's <xref:System.Data.Common.DbConnection.BeginTransaction*> method. However, if the transaction is a local transaction started at the data source (for example, executing the BEGIN TRANSACTION statement explicitly using a <xref:System.Data.SqlClient.SqlCommand>), `EnlistTransaction` will roll back the local transaction and enlist in the existing distributed transaction as requested. You will not receive notice that the local transaction was rolled back, and must manage any local transactions not started using <xref:System.Data.Common.DbConnection.BeginTransaction*>. If you are using the .NET Framework Data Provider for SQL Server (`SqlClient`) with SQL Server, an attempt to enlist will throw an exception. All other cases will go undetected.
+> `EnlistTransaction` throws an exception if the connection has already begun a transaction using the connection's <xref:System.Data.Common.DbConnection.BeginTransaction*> method. However, if the transaction is a local transaction started at the data source (for example, executing the BEGIN TRANSACTION statement explicitly using a <xref:Microsoft.Data.SqlClient.SqlCommand>), `EnlistTransaction` will roll back the local transaction and enlist in the existing distributed transaction as requested. You will not receive notice that the local transaction was rolled back, and must manage any local transactions not started using <xref:System.Data.Common.DbConnection.BeginTransaction*>. If you are using Microsoft.Data.SqlClient with SQL Server, an attempt to enlist will throw an exception. All other cases will go undetected.
 
 ## Promotable Transactions in SQL Server
 

@@ -1,7 +1,7 @@
 ---
-description: "Learn more about establishing a connection to SQL Server using the .NET Framework Data Provider for SQL Server."
+description: "Learn more about establishing a connection to SQL Server using Microsoft.Data.SqlClient."
 title: "Establishing the Connection"
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
 dev_langs:
   - "csharp"
   - "vb"
@@ -9,7 +9,7 @@ ms.custom: sfi-ropc-nochange
 ---
 # Establish a connection
 
-To connect to Microsoft SQL Server, use the <xref:System.Data.SqlClient.SqlConnection> object of the .NET Framework Data Provider for SQL Server. To connect to an OLE DB data source, use the <xref:System.Data.OleDb.OleDbConnection> object of the .NET Framework Data Provider for OLE DB. To connect to an ODBC data source, use the <xref:System.Data.Odbc.OdbcConnection> object of the .NET Framework Data Provider for ODBC. To connect to an Oracle data source, use the <xref:System.Data.OracleClient.OracleConnection> object of the .NET Framework Data Provider for Oracle. For securely storing and retrieving connection strings, see [Protecting Connection Information](protecting-connection-information.md).
+To connect to Microsoft SQL Server, install the [Microsoft.Data.SqlClient NuGet package](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and use <xref:Microsoft.Data.SqlClient.SqlConnection>. To connect to an OLE DB data source, use the <xref:System.Data.OleDb.OleDbConnection> object of the .NET Framework Data Provider for OLE DB. To connect to an ODBC data source, use the <xref:System.Data.Odbc.OdbcConnection> object of the .NET Framework Data Provider for ODBC. To connect to an Oracle data source, use the <xref:System.Data.OracleClient.OracleConnection> object of the .NET Framework Data Provider for Oracle. For securely storing and retrieving connection strings, see [Protecting Connection Information](protecting-connection-information.md).
 
 ## Closing Connections
 
@@ -25,7 +25,7 @@ To connect to Microsoft SQL Server, use the <xref:System.Data.SqlClient.SqlConne
 
 ## Connect to SQL Server
 
- The .NET Framework Data Provider for SQL Server supports a connection string format that is similar to the OLE DB (ADO) connection string format. For valid string format names and values, see the <xref:System.Data.SqlClient.SqlConnection.ConnectionString> property of the <xref:System.Data.SqlClient.SqlConnection> object. You can also use the <xref:System.Data.SqlClient.SqlConnectionStringBuilder> class to create syntactically valid connection strings at runtime. For more information, see [Connection String Builders](connection-string-builders.md).
+ Microsoft.Data.SqlClient supports a connection string format that is similar to the OLE DB (ADO) connection string format. For valid string format names and values, see the <xref:Microsoft.Data.SqlClient.SqlConnection.ConnectionString> property of the <xref:Microsoft.Data.SqlClient.SqlConnection> object. You can also use the <xref:Microsoft.Data.SqlClient.SqlConnectionStringBuilder> class to create syntactically valid connection strings at runtime. For more information, see [Connection String Builders](connection-string-builders.md).
 
  The following code example demonstrates how to create and open a connection to a SQL Server database.
 

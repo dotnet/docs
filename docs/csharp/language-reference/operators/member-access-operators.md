@@ -88,7 +88,7 @@ The following example uses the .NET <xref:System.Collections.Generic.Dictionary`
 
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="Indexers":::
 
-Indexers allow you to index instances of a user-defined type in a similar way as array indexing. Unlike array indices, which must be integer, the indexer parameters can be declared to be of any type.
+Indexers allow you to index instances of a user-defined type in a similar way as array indexing. Unlike array indices, which must be integer, you can declare the indexer parameters to be of any type.
 
 For more information about indexers, see [Indexers](../../programming-guide/indexers/index.md).
 
@@ -96,14 +96,14 @@ For more information about indexers, see [Indexers](../../programming-guide/inde
 
 For information about pointer element access, see the [Pointer element access operator []](pointer-related-operators.md#pointer-element-access-operator-) section of the [Pointer related operators](pointer-related-operators.md) article. For information about collection expressions, see the [collection expressions](./collection-expressions.md) article.
 
-You also use square brackets to specify [attributes](/dotnet/csharp/advanced-topics/reflection-and-attributes):
+You also use square brackets to specify [attributes](../../advanced-topics/reflection-and-attributes/index.md):
 
 ```csharp
 [System.Diagnostics.Conditional("DEBUG")]
 void TraceMethod() {}
 ```
 
-Additionally, use square brackets to designate [list patterns](patterns.md#list-patterns) for use in pattern matching or testing.
+Use square brackets to designate [list patterns](patterns.md#list-patterns) for use in pattern matching or testing.
 
 ```csharp
 arr is ([1, 2, ..])
@@ -207,6 +207,8 @@ You also use parentheses to adjust the order in which to evaluate operations in 
 
 You can use index and range operators with a type that is *countable*. A *countable* type has an `int` property named either `Count` or `Length` with an accessible `get` accessor. [Collection expressions](./collection-expressions.md) also rely on *countable* types.
 
+Starting with C# 15, [extension indexers and other extension members](../keywords/extension.md#index-and-range-access) can provide integer indexing, `Length` or `Count`, and `Slice` for implicit index and range access. Applicable instance indexers and implicit access using instance members take precedence over extension access. This support doesn't make extension `Length` or `Count` properties participate in collection-expression spread optimizations.
+
 > [!NOTE]
 > Single dimensional arrays are *countable*. Multidimensional arrays aren't. You can't use the `^` and `..` (range) operators in multidimensional arrays.
 
@@ -262,7 +264,7 @@ The `..` token is also used for the [spread element](./collection-expressions.md
 
 ## Operator overloadability
 
-You can't overload the `.`, `()`, `^`, and `..` operators. The `[]` operator is also a non-overloadable operator. Use [indexers](../../programming-guide/indexers/index.md) to support indexing with user-defined types.
+You can't overload the `.`, `()`, `^`, and `..` operators. You also can't overload the `[]` operator. Use [indexers](../../programming-guide/indexers/index.md) to support indexing with user-defined types.
 
 ## C# language specification
 

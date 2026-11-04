@@ -1,6 +1,6 @@
 ---
 title: Remove the .NET runtime and SDK
-description: This article describes how to uninstall .NET on Windows, macOS, and Linux. Uninstall .NET manually, through a package manager, or with the .NET Uninstall Tool.
+description: This article describes how to uninstall .NET on Windows, macOS, and Linux. Uninstall .NET manually, through a package manager, with the .NET Uninstall Tool, or the .NET Install Manager.
 author: adegeo
 ms.author: adegeo
 ms.date: 04/23/2026
@@ -148,6 +148,10 @@ sudo rm -rf /usr/local/share/dotnet/sdk/6.0.406
 ## .NET Uninstall Tool
 
 The .NET Uninstall Tool lets you remove .NET SDKs and runtimes from a system. A collection of options is available to specify which versions should be uninstalled. For more information, see [.NET uninstall tool overview](../additional-tools/uninstall-tool-overview.md).
+
+## .NET Install Manager
+
+On Windows, the .NET Install Manager (DNIM) can be used to remove .NET SDKs and runtimes. DNIM was designed for at-scale deployments in large environments to assist organizations in removing vulnerable copies of .NET to meet their own compliance policies. For more information, see [.NET Install Manager overview] (../additional-tools/dnim-overview.md).
 
 ## Remove the NuGet fallback directory
 

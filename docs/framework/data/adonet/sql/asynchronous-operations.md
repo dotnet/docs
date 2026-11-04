@@ -1,19 +1,22 @@
 ---
 description: "Learn more about: Asynchronous Operations"
 title: "Asynchronous Operations"
-ms.date: "03/30/2017"
+ms.date: "10/21/2026"
+ai-usage: ai-assisted
 ms.assetid: e7d32c3c-bf78-4bfc-a357-c9e82e4a4b3c
 ---
 # Asynchronous Operations
 
-Some database operations, such as command executions, can take significant time to complete. In such a case, single-threaded applications must block other operations and wait for the command to finish before they can continue their own operations. In contrast, being able to assign the long-running operation to a background thread allows the foreground thread to remain active throughout the operation. In a Windows application, for example, delegating the long-running operation to a background thread allows the user interface thread to remain responsive while the operation is executing.
+Database operations can take significant time to complete. To keep a user interface responsive or avoid blocking a request thread, use asynchronous database methods instead of waiting synchronously for a command to finish.
 
- The .NET Framework provides several standard asynchronous design patterns that developers can use to take advantage of background threads and free the user interface or high-priority threads to complete other operations. ADO.NET supports these same design patterns in its <xref:System.Data.SqlClient.SqlCommand> class. Specifically, the <xref:System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery*>, <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader*>, and <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader*> methods, paired with the <xref:System.Data.SqlClient.SqlCommand.EndExecuteNonQuery*>, <xref:System.Data.SqlClient.SqlCommand.EndExecuteReader*>, and <xref:System.Data.SqlClient.SqlCommand.EndExecuteXmlReader*> methods, provide the asynchronous support.
+Install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package for SQL client code. For new applications, use <xref:Microsoft.Data.SqlClient.SqlConnection.OpenAsync*> and the <xref:Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQueryAsync*>, <xref:Microsoft.Data.SqlClient.SqlCommand.ExecuteReaderAsync*>, and <xref:Microsoft.Data.SqlClient.SqlCommand.ExecuteXmlReaderAsync*> methods with `await`. These methods perform asynchronous input/output (I/O) without requiring you to create a background thread.
+
+Microsoft.Data.SqlClient also supports the callback, wait-handle, and polling patterns described in this section. The <xref:Microsoft.Data.SqlClient.SqlCommand.BeginExecuteNonQuery*>, <xref:Microsoft.Data.SqlClient.SqlCommand.BeginExecuteReader*>, and <xref:Microsoft.Data.SqlClient.SqlCommand.BeginExecuteXmlReader*> methods pair with <xref:Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQuery*>, <xref:Microsoft.Data.SqlClient.SqlCommand.EndExecuteReader*>, and <xref:Microsoft.Data.SqlClient.SqlCommand.EndExecuteXmlReader*>. Don't add `Asynchronous Processing=true` to the connection string; Microsoft.Data.SqlClient doesn't support that keyword.
 
 > [!NOTE]
-> Asynchronous programming is a core feature of the .NET Framework, and ADO.NET takes full advantage of the standard design patterns. For more information about the different asynchronous techniques available to developers, see [Calling Synchronous Methods Asynchronously](../../../../standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).
+> For new code, use the [Task-based asynchronous pattern](../../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md). The examples in this section show the supported `Begin`/`End` pattern for applications that need callbacks, wait handles, or polling.
 
- Although using asynchronous techniques with ADO.NET features does not add any special considerations, it is likely that more developers will use asynchronous features in ADO.NET than in other areas of the .NET Framework. It is important to be aware of the benefits and pitfalls of creating multithreaded applications. The examples that follow in this section point out several important issues that developers will need to take into account when building applications that incorporate multithreaded functionality.
+Keep each connection and command alive until its operation completes. Observe exceptions when you call the matching `End` method or await the task. In a desktop application, update controls only from the user interface thread.
 
 ## In This Section
 

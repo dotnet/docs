@@ -1,7 +1,7 @@
 ---
 title: "Enabling Multiple Active Result Sets"
 description: Learn how to enable/disable MARS in a connection string, which works with SQL Server so that you can run multiple batches on a single connection in ADO.NET.
-ms.date: "03/30/2017"
+ms.date: "10/23/2026"
 dev_langs:
   - "csharp"
   - "vb"
@@ -38,15 +38,15 @@ string connectionString = "..." +
 
 ### Statement Interleaving
 
- MARS operations execute synchronously on the server. Statement interleaving of SELECT and BULK INSERT statements is allowed. However, data manipulation language (DML) and data definition language (DDL) statements execute atomically. Any statements attempting to execute while an atomic batch is executing are blocked. Parallel execution at the server is not a MARS feature.
+ MARS operations execute synchronously on the server. Statement interleaving of `SELECT` and `BULK INSERT` statements is allowed. However, data manipulation language (DML) and data definition language (DDL) statements execute atomically. Any statements attempting to execute while an atomic batch is executing are blocked. Parallel execution at the server is not a MARS feature.
 
- If two batches are submitted under a MARS connection, one of them containing a SELECT statement, the other containing a DML statement, the DML can begin execution within execution of the SELECT statement. However, the DML statement must run to completion before the SELECT statement can make progress. If both statements are running under the same transaction, any changes made by a DML statement after the SELECT statement has started execution are not visible to the read operation.
+ If two batches are submitted under a MARS connection, one of them containing a `SELECT` statement, the other containing a DML statement, the DML can begin execution within execution of the `SELECT` statement. However, the DML statement must run to completion before the `SELECT` statement can make progress. If both statements are running under the same transaction, any changes made by a DML statement after the `SELECT` statement has started execution are not visible to the read operation.
 
- A WAITFOR statement inside a SELECT statement does not yield the transaction while it is waiting, that is, until the first row is produced. This implies that no other batches can execute within the same connection while a WAITFOR statement is waiting.
+ A `WAITFOR` statement inside a `SELECT` statement does not yield the transaction while it is waiting, that is, until the first row is produced. This implies that no other batches can execute within the same connection while a `WAITFOR` statement is waiting.
 
 ### MARS Session Cache
 
- When a connection is opened with MARS enabled, a logical session is created, which adds additional overhead. To minimize overhead and enhance performance, `SqlClient` caches the MARS session within a connection. The cache contains at most 10 MARS sessions. This value is not user adjustable. If the session limit is reached, a new session is created—an error is not generated. The cache and sessions contained in it are per-connection; they are not shared across connections. When a session is released, it is returned to the pool unless the pool's upper limit has been reached. If the cache pool is full, the session is closed. MARS sessions do not expire. They are only cleaned up when the connection object is disposed. The MARS session cache is not preloaded. It is loaded as the application requires more sessions.
+When a connection opens with MARS enabled, the provider creates a logical session, which adds overhead. To reduce that overhead, `SqlClient` caches up to 10 MARS sessions per connection. The limit isn't user adjustable. If the limit is reached, the provider creates a new session without an error. The cache and its sessions aren't shared across connections. After use, a session returns to the cache unless the cache is full, in which case the provider closes it. Cached sessions don't expire; the provider cleans them up when you dispose of the connection. The provider populates the cache as the application needs sessions.
 
 ### Thread Safety
 
@@ -62,13 +62,13 @@ string connectionString = "..." +
 
  The batch execution environment includes the following components:
 
-- Set options (for example, ANSI_NULLS, DATE_FORMAT, LANGUAGE, TEXTSIZE)
+- Set options (for example, `ANSI_NULLS`, `DATE_FORMAT`, `LANGUAGE`, `TEXTSIZE`)
 
 - Security context (user/application role)
 
 - Database context (current database)
 
-- Execution state variables (for example, @@ERROR, @@ROWCOUNT, @@FETCH_STATUS @@IDENTITY)
+- Execution state variables (for example, `@@ERROR`, `@@ROWCOUNT`, `@@FETCH_STATUS` `@@IDENTITY`)
 
 - Top-level temporary tables
 
@@ -86,7 +86,7 @@ string connectionString = "..." +
 
  Expected: (null)
 
- Received: System.Data.SqlClient.SqlException
+ Received: Microsoft.Data.SqlClient.SqlException
 
  There are three options for handling this scenario:
 

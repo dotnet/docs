@@ -5,7 +5,7 @@ Imports System.Linq
 Imports System.Linq.Expressions
 Imports System.Collections.Generic
 Imports System.Data
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 Imports System.Data.Common
 Imports System.Globalization
 ' </SnippetImportsUsing>

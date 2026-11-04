@@ -2,14 +2,14 @@
 title: What's new in .NET 11 runtime
 description: Learn about the new features introduced in the .NET 11 runtime.
 titleSuffix: ""
-ms.date: 09/08/2026
+ms.date: 10/13/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in the .NET 11 runtime
 
-This article describes new features in the .NET runtime for .NET 11. It was last updated for release candidate 1 (RC 1).
+This article describes new features in the .NET runtime for .NET 11. It was last updated for release candidate 2 (RC 2).
 
 ## Updated minimum hardware requirements
 
@@ -312,6 +312,32 @@ Vector128<int> powers = Vector128.CreateGeometricSequence(1, 2);
 ```
 
 These APIs are available on `Vector128<T>`, `Vector256<T>`, `Vector512<T>`, `Vector64<T>`, and `Vector<T>`. They're building blocks for image processing, audio digital signal processing (DSP), and other SIMD-intensive workloads that need fine-grained control over vector element layout.
+
+## File locking on iOS and tvOS
+
+On iOS and tvOS, including simulators, CoreCLR now disables advisory file locking by default. A <xref:System.IO.FileStream> that acquired an advisory lock could cause the operating system to terminate an app when the app entered the background while it held the lock. As a result, <xref:System.IO.FileShare> restrictions are no longer enforced by those locks on iOS and tvOS, including between handles in the same process. Mac Catalyst and other platforms keep their existing defaults.
+
+If your app relies on `FileShare` enforcement and you accept the risk of suspension-related termination, restore file locking by using either of the following settings:
+
+- Set the `DOTNET_SYSTEM_IO_DISABLEFILELOCKING` environment variable to `0`.
+- Set the `System.IO.DisableFileLocking` runtime configuration property to `false`. For example, in the *runtimeconfig.json* file:
+
+  ```json
+  {
+    "configProperties": {
+      "System.IO.DisableFileLocking": false
+    }
+  }
+  ```
+
+## Reliability fixes
+
+The runtime includes fixes for the following issues:
+
+- On Linux, the SDK no longer crashes on Red Hat Enterprise Linux (RHEL) 8 on Arm64, and the runtime correctly traverses cgroup v2 memory limits at the root of the hierarchy.
+- Generic virtual method dispatch no longer hangs after repeated <xref:System.Runtime.Loader.AssemblyLoadContext> unloads.
+- <xref:System.Collections.Concurrent.ConcurrentQueue`1.TryDequeue*> no longer spuriously reports an empty queue while a segment freezes during growth. <xref:System.Collections.Concurrent.ConcurrentQueue`1.TryPeek*> has the same reliability fix.
+- On Windows, garbage collection works correctly on machines with multiple CPU groups.
 
 ## Runtime diagnostics
 

@@ -77,6 +77,11 @@ The context works the same way for both roles. On the client side, the certifica
 
 There are certain scenarios in which the default certificate validation procedure isn't adequate and some custom validation logic is required. Parts of the validation logic can be customized by specifying <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateChainPolicy?displayProperty=nameWithType> or <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateChainPolicy?displayProperty=nameWithType>. Alternatively, completely custom logic can be provided via the <System.Net.Security.SslClientAuthenticationOptions.RemoteCertificateValidationCallback> property. For more information, see [Custom certificate trust](#custom-certificate-trust).
 
+> [!NOTE]
+> When you set `CertificateChainPolicy` to a non-`null` value on either authentication options class, its <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.RevocationMode> overrides `CertificateRevocationCheckMode`. Its <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.TrustMode> and <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.CustomTrustStore> also override the trust settings from any <xref:System.Net.Security.SslCertificateTrust> you pass to <xref:System.Net.Security.SslStreamCertificateContext.Create*?displayProperty=nameWithType> for <xref:System.Net.Security.SslClientAuthenticationOptions.ClientCertificateContext?displayProperty=nameWithType> or <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificateContext?displayProperty=nameWithType>.
+>
+> The override applies to remote certificate validation. On the server, the trust list from `SslCertificateTrust` is still sent during the TLS handshake when `sendTrustInHandshake` is `true`.
+
 ### Custom certificate trust
 
 When encountering a certificate that wasn't issued by any of the certificate authorities trusted by the machine (including self-signed certificates), the default certificate validation procedure will fail. One possible way to resolve this is to add the necessary issuer certificates to the machine's trusted store. That, however, might affect other applications on the system and is not always possible.

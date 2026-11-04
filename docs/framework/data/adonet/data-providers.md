@@ -1,7 +1,8 @@
 ---
 title: ".NET Framework Data Providers"
 description: Learn how a .NET Framework data provider is used to connect to a database, run commands, and retrieve results in ADO.NET.
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -10,6 +11,26 @@ ms.custom: sfi-ropc-nochange
 # .NET Framework data providers
 
 A .NET Framework data provider is used for connecting to a database, executing commands, and retrieving results. Those results are either processed directly, placed in a <xref:System.Data.DataSet> in order to be exposed to the user as needed, combined with data from multiple sources, or remoted between tiers. .NET Framework data providers are lightweight, creating a minimal layer between the data source and code, increasing performance without sacrificing functionality.
+
+For new SQL Server applications, use [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient). Install this provider as a NuGet package rather than use the `System.Data.SqlClient` provider built into .NET Framework. For an existing application, follow the [migration guide](/sql/connect/ado-net/migrate-system-data-sql-client-to-microsoft-data-sql-client).
+
+## Microsoft.Data.SqlClient
+
+The Microsoft.Data.SqlClient provider supports .NET and .NET Framework applications. For installation instructions and supported target frameworks, see [Download Microsoft.Data.SqlClient](/sql/connect/ado-net/download-microsoft-sqlclient-data-provider).
+
+After you install the package, import its namespace:
+
+```vb
+Imports Microsoft.Data.SqlClient
+```
+
+```csharp
+using Microsoft.Data.SqlClient;
+```
+
+For runnable C# and Visual Basic examples, see [ADO.NET code examples](ado-net-code-examples.md#sqlclient).
+
+## Providers included in .NET Framework
 
  The following table lists the data providers that are included in .NET Framework.
 
@@ -58,15 +79,7 @@ A .NET Framework data provider is used for connecting to a database, executing c
 
  The .NET Framework Data Provider for SQL Server supports both local and distributed transactions. For distributed transactions, the .NET Framework Data Provider for SQL Server, by default, automatically enlists in a transaction and obtains transaction details from Windows Component Services or <xref:System.Transactions>. For more information, see [Transactions and Concurrency](transactions-and-concurrency.md).
 
- The following code example shows how to include the `System.Data.SqlClient` namespace in your applications.
-
-```vb
-Imports System.Data.SqlClient
-```
-
-```csharp
-using System.Data.SqlClient;
-```
+ For new applications, use the separately distributed `Microsoft.Data.SqlClient` package described in [Microsoft.Data.SqlClient](#microsoftdatasqlclient), rather than the built-in provider.
 
 ## .NET Framework Data Provider for OLE DB
 
@@ -150,8 +163,8 @@ using System.Data.OracleClient;
 
 |Provider|Notes|
 |--------------|-----------|
-|.NET Framework Data Provider for SQL Server|Recommended for middle-tier applications that use Microsoft SQL Server.<br /><br /> Recommended for single-tier applications that use Microsoft Database Engine (MSDE) or SQL Server.<br /><br /> Recommended over use of the OLE DB provider for SQL Server (SQLOLEDB) with the .NET Framework Data Provider for OLE DB.|
-|.NET Framework Data Provider for OLE DB|For SQL Server, the .NET Framework Data Provider for SQL Server is recommended instead of this provider.<br /><br /> Recommended for single-tier applications that use Microsoft Access databases. Use of an Access database for a middle-tier application is not recommended.|
+|Microsoft.Data.SqlClient|Use for new SQL Server applications. Install the Microsoft.Data.SqlClient NuGet package.|
+|.NET Framework Data Provider for OLE DB|For SQL Server, use Microsoft.Data.SqlClient instead of this provider.<br /><br /> Recommended for single-tier applications that use Microsoft Access databases. Use of an Access database for a middle-tier application is not recommended.|
 |.NET Framework Data Provider for ODBC|Recommended for middle and single-tier applications that use ODBC data sources.|
 |.NET Framework Data Provider for Oracle|Recommended for middle and single-tier applications that use Oracle data sources.|
 

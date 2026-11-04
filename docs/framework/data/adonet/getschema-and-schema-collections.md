@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: GetSchema and Schema Collections"
 title: "GetSchema and Schema Collections"
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
 dev_langs:
   - "csharp"
   - "vb"
@@ -18,10 +18,10 @@ The `Connection` classes in each of the .NET Framework managed providers impleme
 
 ### Retrieving Schema Collections Example
 
- The following examples demonstrate how to use the <xref:System.Data.SqlClient.SqlConnection.GetSchema*> method of the .NET Framework Data Provider for the SQL Server <xref:System.Data.SqlClient.SqlConnection> class to retrieve schema information about all of the tables contained in the `AdventureWorks` sample database:
+ The following examples demonstrate how to use the <xref:Microsoft.Data.SqlClient.SqlConnection.GetSchema*> method of the <xref:Microsoft.Data.SqlClient.SqlConnection> class to retrieve schema information about all of the tables contained in the `AdventureWorks` sample database:
 
 ```vb
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 
 Module Module1
    Sub Main()
@@ -58,7 +58,7 @@ End Module
 ```csharp
 using System;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 class Program
 {

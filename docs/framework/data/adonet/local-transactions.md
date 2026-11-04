@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Local Transactions"
 title: "Local Transactions"
-ms.date: "03/30/2017"
+ms.date: "10/23/2026"
 dev_langs:
   - "csharp"
   - "vb"
@@ -15,10 +15,10 @@ Transactions in ADO.NET are used when you want to bind multiple tasks together s
 
  A transaction is considered to be a local transaction when it is a single-phase transaction and is handled by the database directly. A transaction is considered to be a distributed transaction when it is coordinated by a transaction monitor and uses fail-safe mechanisms (such as two-phase commit) for transaction resolution.
 
- Each of the .NET Framework data providers has its own `Transaction` object for performing local transactions. If you require a transaction to be performed in a SQL Server database, select a <xref:System.Data.SqlClient> transaction. For an Oracle transaction, use the <xref:System.Data.OracleClient> provider. In addition, there is a <xref:System.Data.Common.DbTransaction> class that is available for writing provider-independent code that requires transactions.
+ Each ADO.NET data provider has its own `Transaction` object for performing local transactions. If you require a transaction to be performed in a SQL Server database, select a <xref:Microsoft.Data.SqlClient> transaction. For an Oracle transaction, use the <xref:System.Data.OracleClient> provider. In addition, there is a <xref:System.Data.Common.DbTransaction> class that is available for writing provider-independent code that requires transactions.
 
 > [!NOTE]
-> Transactions are most efficient when they are performed on the server. If you are working with a SQL Server database that makes extensive use of explicit transactions, consider writing them as stored procedures using the Transact-SQL BEGIN TRANSACTION statement.
+> Transactions are most efficient when they are performed on the server. If you are working with a SQL Server database that makes extensive use of explicit transactions, consider writing them as stored procedures using the Transact-SQL `BEGIN TRANSACTION` statement.
 
 ## Performing a Transaction Using a Single Connection
 
@@ -27,19 +27,19 @@ Transactions in ADO.NET are used when you want to bind multiple tasks together s
 > [!NOTE]
 > The `EnlistDistributedTransaction` method should not be used for a local transaction.
 
- The scope of the transaction is limited to the connection. The following example performs an explicit transaction that consists of two separate commands in the `try` block. The commands execute INSERT statements against the Production.ScrapReason table in the AdventureWorks SQL Server sample database, which are committed if no exceptions are thrown. The code in the `catch` block rolls back the transaction if an exception is thrown. If the transaction is aborted or the connection is closed before the transaction has completed, it is automatically rolled back.
+ The scope of the transaction is limited to the connection. The following example performs an explicit transaction that consists of two separate commands in the `try` block. The commands execute `INSERT` statements against the `Production.ScrapReason` table in the AdventureWorks SQL Server sample database, which are committed if no exceptions are thrown. The code in the `catch` block rolls back the transaction if an exception is thrown. If the transaction is aborted or the connection is closed before the transaction has completed, it is automatically rolled back.
 
 ## Example
 
  Follow these steps to perform a transaction.
 
-1. Call the <xref:System.Data.SqlClient.SqlConnection.BeginTransaction*> method of the <xref:System.Data.SqlClient.SqlConnection> object to mark the start of the transaction. The <xref:System.Data.SqlClient.SqlConnection.BeginTransaction*> method returns a reference to the transaction. This reference is assigned to the <xref:System.Data.SqlClient.SqlCommand> objects that are enlisted in the transaction.
+1. Call the <xref:Microsoft.Data.SqlClient.SqlConnection.BeginTransaction*> method of the <xref:Microsoft.Data.SqlClient.SqlConnection> object to mark the start of the transaction. The <xref:Microsoft.Data.SqlClient.SqlConnection.BeginTransaction*> method returns a reference to the transaction. This reference is assigned to the <xref:Microsoft.Data.SqlClient.SqlCommand> objects that are enlisted in the transaction.
 
-2. Assign the `Transaction` object to the <xref:System.Data.SqlClient.SqlCommand.Transaction> property of the <xref:System.Data.SqlClient.SqlCommand> to be executed. If a command is executed on a connection with an active transaction, and the `Transaction` object has not been assigned to the `Transaction` property of the `Command` object, an exception is thrown.
+1. Assign the `Transaction` object to the <xref:Microsoft.Data.SqlClient.SqlCommand.Transaction> property of the <xref:Microsoft.Data.SqlClient.SqlCommand> to be executed. If a command is executed on a connection with an active transaction, and the `Transaction` object has not been assigned to the `Transaction` property of the `Command` object, an exception is thrown.
 
-3. Execute the required commands.
+1. Execute the required commands.
 
-4. Call the <xref:System.Data.SqlClient.SqlTransaction.Commit*> method of the <xref:System.Data.SqlClient.SqlTransaction> object to complete the transaction, or call the <xref:System.Data.SqlClient.SqlTransaction.Rollback*> method to end the transaction. If the connection is closed or disposed before either the <xref:System.Data.SqlClient.SqlTransaction.Commit*> or <xref:System.Data.SqlClient.SqlTransaction.Rollback*> methods have been executed, the transaction is rolled back.
+1. Call the <xref:Microsoft.Data.SqlClient.SqlTransaction.Commit*> method of the <xref:Microsoft.Data.SqlClient.SqlTransaction> object to complete the transaction, or call the <xref:Microsoft.Data.SqlClient.SqlTransaction.Rollback*> method to end the transaction. If the connection is closed or disposed before either the <xref:Microsoft.Data.SqlClient.SqlTransaction.Commit*> or <xref:Microsoft.Data.SqlClient.SqlTransaction.Rollback*> methods have been executed, the transaction is rolled back.
 
  The following code example demonstrates transactional logic using ADO.NET with Microsoft SQL Server.
 

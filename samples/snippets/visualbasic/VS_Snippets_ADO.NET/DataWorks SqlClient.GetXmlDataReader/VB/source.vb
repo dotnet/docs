@@ -1,7 +1,7 @@
 ﻿Option Explicit
 Option Strict
 
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 Imports System.Xml
 Imports System.Data.SqlTypes
 
@@ -9,7 +9,7 @@ Module Module1
 
     ' <Snippet1>
     ' Example assumes the following directives:
-    '    Imports System.Data.SqlClient
+    '    Imports Microsoft.Data.SqlClient
     '    Imports System.Xml
     '    Imports System.Data.SqlTypes
 
@@ -66,4 +66,3 @@ Module Module1
     End Sub
     ' </Snippet1>
 End Module
-

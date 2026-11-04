@@ -1,7 +1,7 @@
 ---
 title: How to create and run a long-running workflow
 description: This article shows you how to create a Windows Forms host application that supports starting and resuming multiple workflow instances and workflow persistence.
-ms.date: "03/30/2017"
+ms.date: "10/23/2026"
 dev_langs:
   - "csharp"
   - "vb"
@@ -12,6 +12,8 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
 
 > [!NOTE]
 > This tutorial step and the subsequent steps use all three workflow types from [How to: Create a Workflow](how-to-create-a-workflow.md).
+
+Before you continue, retarget the tutorial projects to .NET Framework 4.8.1. In **NumberGuessWorkflowHost**, install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package for the direct SQL queries. <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> still uses the provider built into .NET Framework internally.
 
 ## To create the persistence database
 
@@ -99,7 +101,8 @@ The steps in this section add properties and helper methods to the form class th
     ```vb
     Imports System.Activities
     Imports System.Activities.DurableInstancing
-    Imports System.Data.SqlClient
+    Imports System.Data
+    Imports Microsoft.Data.SqlClient
     Imports System.IO
     Imports System.Windows.Forms
     ```
@@ -107,7 +110,8 @@ The steps in this section add properties and helper methods to the form class th
     ```csharp
     using System.Activities;
     using System.Activities.DurableInstancing;
-    using System.Data.SqlClient;
+    using System.Data;
+    using Microsoft.Data.SqlClient;
     using System.IO;
     using System.Windows.Forms;
     ```
@@ -117,19 +121,21 @@ The steps in this section add properties and helper methods to the form class th
    [!INCLUDE [managed-identities](../../includes/managed-identities.md)]
 
     ```vb
-    Const connectionString = "Server=.\SQLEXPRESS;Initial Catalog=WF45GettingStartedTutorial;Integrated Security=SSPI"
+    Const connectionString = "Server=.\SQLEXPRESS;Initial Catalog=WF45GettingStartedTutorial;Integrated Security=SSPI;Encrypt=True;TrustServerCertificate=True"
     Dim store As SqlWorkflowInstanceStore
     Dim workflowStarting As Boolean
     ```
 
     ```csharp
-    const string connectionString = "Server=.\\SQLEXPRESS;Initial Catalog=WF45GettingStartedTutorial;Integrated Security=SSPI";
+    const string connectionString = "Server=.\\SQLEXPRESS;Initial Catalog=WF45GettingStartedTutorial;Integrated Security=SSPI;Encrypt=True;TrustServerCertificate=True";
     SqlWorkflowInstanceStore store;
     bool workflowStarting;
     ```
 
     > [!NOTE]
     > If your connection string is different, update `connectionString` to refer to your database.
+
+    The local development connection string trusts the server certificate. For production, configure a certificate that the client trusts and set `TrustServerCertificate=False`. For instructions, see [Configure SQL Server to use certificates](/sql/database-engine/configure-windows/configure-sql-server-encryption#step-1-configure-sql-server-to-use-certificates). For more information about the direct SQL queries' client settings, see [Encryption and certificate validation in Microsoft.Data.SqlClient](/sql/connect/ado-net/encryption-and-certificate-validation).
 
 4. Add a `WorkflowInstanceId` property to the `WorkflowFormHost` class.
 

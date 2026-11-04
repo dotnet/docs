@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0076: Avoid mutating process-wide culture in a parallelized test"
 description: "Learn about code analysis rule MSTEST0076: Avoid mutating process-wide culture in a parallelized test"
-ms.date: 08/06/2026
+ms.date: 10/01/2026
 f1_keywords:
 - MSTEST0076
 - CultureMutationUnderParallelizationAnalyzer
@@ -24,7 +24,7 @@ dev_langs:
 | **Fix is breaking or non-breaking** | Non-breaking                                       |
 | **Enabled by default**              | Yes                                                |
 | **Default severity**                | Info                                               |
-| **Introduced in version**           | 4.4.0 (preview)                                    |
+| **Introduced in version**           | 4.4.0                                              |
 | **Is there a code fix**             | No                                                 |
 
 > [!NOTE]

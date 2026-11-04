@@ -29,6 +29,7 @@ f1_keywords:
   - "CS7011"
   - "CS8097"
   - "CS8098"
+  - "CS8301"
   - "CS8938"
   - "CS8939"
   - "CS8996"
@@ -66,6 +67,7 @@ helpviewer_keywords:
   - "CS7011"
   - "CS8097"
   - "CS8098"
+  - "CS8301"
   - "CS8938"
   - "CS8939"
   - "CS8996"
@@ -75,7 +77,7 @@ helpviewer_keywords:
   - "CS9299"
   - "CS9314"
   - "CS9378"
-ms.date: 09/17/2026
+ms.date: 09/23/2026
 ai-usage: ai-assisted
 ---
 # Preprocessor errors and warnings
@@ -109,6 +111,7 @@ The compiler generates the following errors for incorrect use of preprocessor di
 - [**CS7011**](#file-contains-scriptcs-directives): *#r is only allowed in scripts*
 - [**CS8097**](#file-contains-scriptcs-directives): *#load is only allowed in scripts*
 - [**CS8098**](#file-contains-scriptcs-directives): *Cannot use #load after first token in file*
+- [**CS8301**](#invalid-preprocessor-symbol-names): *Invalid name for a preprocessing symbol; 'symbol name' is not a valid identifier*
 - [**CS8938**](#line-and-file-directive-errors): *The #line directive value is missing or out of range*
 - [**CS8939**](#line-and-file-directive-errors): *The #line directive end position must be greater than or equal to the start position*
 - [**CS8996**](#invalid-preprocessor-directive-syntax): *Raw string literals are not allowed in preprocessor directives*
@@ -125,6 +128,7 @@ The compiler generates the following errors for incorrect use of preprocessor di
 - **CS1025**: *Single-line comment or end-of-line expected*
 - **CS1027**: *#endif directive expected*
 - **CS1028**: *Unexpected preprocessor directive*
+- **CS1032**: *Cannot define/undefine preprocessor symbols after first token in file*
 - **CS1038**: *#endregion directive expected*
 - **CS1040**: *Preprocessor directives must appear as the first non-white-space character on a line*
 - **CS1517**: *Invalid preprocessor expression*
@@ -138,7 +142,7 @@ These errors indicate that you used invalid syntax for [preprocessor directives]
 - Including multiline comments on directive lines (CS1025, CS1696).
 - Using directives in unexpected locations (CS1028).
 - Missing required matching directives (CS1027, CS1038).
-- Not defining or undefining symbols as the first token in the file (CS1032).
+- Placing a `#define` or `#undef` directive after the first token in the file (CS1032).
 - Not placing the directive as the first token on a line (CS1040).
 - Using invalid expressions in conditional compilation (CS1517).
 - Using raw string literals in preprocessor directives (CS8996).
@@ -173,8 +177,16 @@ class Test { }
 **CS1032 example - `#define` and `#undef` preprocessor directives must appear before other tokens:**
 
 ```csharp
-/* Comment */ 
-#define X   // CS1032 - directive not first token in file
+class Test { }
+#define X   // CS1032 - directive appears after the first token
+```
+
+To fix this error, place all `#define` and `#undef` directives before the first token in the file:
+
+```csharp
+#define X
+#undef Y
+class Test { }
 ```
 
 **CS1038 example - #endregion directive expected:**
@@ -222,6 +234,14 @@ class Test { }
 ```
 
 To fix these errors, ensure your preprocessor directives follow the correct syntax rules described in the [preprocessor directives documentation](../preprocessor-directives.md).
+
+## Invalid preprocessor symbol names
+
+- **CS8301**: *Invalid name for a preprocessing symbol; 'symbol name' is not a valid identifier*
+
+When you create <xref:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions> programmatically, provide each conditional compilation symbol as one identifier-shaped name. The first character must be valid at the start of a C# identifier, and the remaining characters must be valid identifier characters. Roslyn also accepts keyword text as a symbol name, but don't add an `@` prefix. Don't include whitespace, punctuation such as `.` or `-`, an assignment such as `FEATURE=1`, or a complete conditional expression.
+
+A preprocessing symbol records only whether its name is defined. It doesn't store a value. Invalid names supplied through the **DefineConstants** project property or the `-define` compiler option produce **CS2029** instead; see [DefineConstants](../compiler-options/language.md#defineconstants).
 
 ## #error and #warning directive errors
 
@@ -438,11 +458,26 @@ A shebang (`#!`) selects the executable for a script or file-based app. Place it
 
 ## File contains script.cs directives
 
-The following errors indicate [script.cs](https://scriptcs.net) syntax in a compiled C# file:
+The following errors indicate incorrect use or placement of C# script directives:
 
 - **CS7009**: *Cannot use #r after first token in file*
 - **CS7010**: *Quoted file name expected*
 - **CS7011**: *#r is only allowed in scripts*
 - **CS8097**: *#load is only allowed in scripts*
+- **CS8098**: *Cannot use #load after first token in file*
 
-These directives aren't supported in compiled C#. You must remove them or use [script.cs](http://scriptcs.net/).
+In a C# script (`.csx`), a `#load` directive after a token produces **CS8098**:
+
+```csharp
+System.Console.WriteLine("This is the first token.");
+#load "helpers.csx" // CS8098
+```
+
+To fix **CS8098**, move every `#load` directive before every token in the script:
+
+```csharp
+#load "helpers.csx"
+System.Console.WriteLine("The directive precedes the first token.");
+```
+
+In a regular C# source file (`.cs`), `#load` isn't permitted. That related condition produces **CS8097**, not **CS8098**. Remove `#load` from regular source files.

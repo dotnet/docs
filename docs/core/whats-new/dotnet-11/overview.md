@@ -2,14 +2,14 @@
 title: What's new in .NET 11
 description: Learn about the new features introduced in .NET 11 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
 titleSuffix: ""
-ms.date: 09/08/2026
+ms.date: 10/13/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET 11
 
-This article describes new features in .NET 11. It was last updated for release candidate 1 (RC 1).
+This article describes new features in .NET 11. It was last updated for release candidate 2 (RC 2).
 
 .NET 11 is currently in release candidate. General availability is expected in November 2026. You can [download .NET 11 here](https://dotnet.microsoft.com/download/dotnet/11.0).
 
@@ -27,6 +27,7 @@ The .NET 11 runtime includes:
 - NativeAOT faster interface dispatch using a shared dispatch helper, reducing binary size at call sites and improving throughput for interface-heavy workloads.
 - SIMD lane construction and composition APIs (`CreateGeometricSequence`, `Zip`, `Unzip`, and the `Concat` family) across `Vector128<T>`, `Vector256<T>`, `Vector512<T>`, `Vector64<T>`, and `Vector<T>`.
 - Hardware FP16 instructions for `Half` arithmetic and conversions on x64 and Arm64.
+- Advisory file locking that's disabled by default on iOS and tvOS to avoid operating-system termination when an app enters the background, plus reliability fixes for Linux, assembly unloading, and Windows garbage collection.
 
 For more information, see [What's new in the .NET 11 runtime](runtime.md).
 
@@ -37,9 +38,9 @@ The .NET 11 libraries include new APIs for:
 - <xref:System.Diagnostics.Process> expansion with run-and-capture helpers, fire-and-forget launches, <xref:Microsoft.Win32.SafeHandles.SafeProcessHandle> lifecycle methods, tighter handle control, new <xref:System.Diagnostics.ProcessStartInfo.StartSuspended?displayProperty=nameWithType> for suspended starts, <xref:System.Diagnostics.Process.TryGetProcessById(System.Int32,System.Diagnostics.Process@)?displayProperty=nameWithType> for safe process lookup, and <xref:System.Diagnostics.Process.Signal(System.Runtime.InteropServices.PosixSignal)?displayProperty=nameWithType> with <xref:System.Diagnostics.ProcessExitStatus> for signaling processes and inspecting how they exited.
 - Compression, including improved Base64 APIs, new methods for ZIP archive entries, Zstandard compression in <xref:System.IO.Compression?displayProperty=fullName>, CRC32 validation when reading ZIP entries, and a `Reset()` method on the streamless Deflate, ZLib, and GZip encoders and decoders.
 - New numeric APIs, including IEEE 754 decimal floating-point types (<xref:System.Numerics.Decimal32>, <xref:System.Numerics.Decimal64>, and <xref:System.Numerics.Decimal128>), <xref:System.Numerics.INumberBase`1.TryParsePartial*?displayProperty=nameWithType> for delimiter-aware parsing, and generic <xref:System.Numerics.Complex`1>.
-- System.Text.Json improvements, including generic type info retrieval, <xref:System.Text.Json.JsonNamingPolicy.PascalCase?displayProperty=nameWithType>, per-member naming policy overrides, type-level ignore conditions, F# discriminated union support, <xref:System.Text.Json.Utf8JsonWriter.Reset*?displayProperty=nameWithType> with options, `SerializeAsyncEnumerable` overloads for `PipeWriter` targets and top-level values (NDJSON) output, serialization of C# union types with the new `JsonUnionTypeStructuralClassifier`, built-in converters for `BFloat16` and the new decimal floating-point types, and base64 schema metadata from `JsonSchemaExporter`.
+- System.Text.Json improvements, including C# and F# union support, JSON Lines (JSONL) output, expanded polymorphism and source generation, new naming and ignore controls, and built-in numeric converters and collection contracts.
 - Built-in OpenTelemetry metrics for <xref:Microsoft.Extensions.Caching.Memory.MemoryCache>.
-- Discriminated-union scaffolding (`UnionAttribute` and `IUnion`) in <xref:System.Runtime.CompilerServices>.
+- Union scaffolding (`UnionAttribute` and `IUnion`) in <xref:System.Runtime.CompilerServices>.
 - Tar archive format selection and GNU sparse format 1.0 support.
 - `Console` support for the `FORCE_COLOR` environment variable.
 - TLS handshake hardening, certificate-validation alerts on Linux, channel binding validation on Unix, and an experimental caller-driven TLS session API (`TlsBufferSession` and `TlsSocketSession`).
@@ -56,6 +57,11 @@ The .NET 11 libraries include new APIs for:
 - Asynchronous validation in `System.ComponentModel.DataAnnotations` via `AsyncValidationAttribute`, `IAsyncValidatableObject`, and new `Validator.ValidateObjectAsync` methods, along with asynchronous `Microsoft.Extensions.Options` validation through `IAsyncStartupValidator`.
 - Activity tracing configuration using rules in `Microsoft.Extensions.Diagnostics`, enabling declarative control of `Activity` tracing without wiring up `ActivityListener` instances manually.
 - Cross-lane vector operations including `CreateGeometricSequence`, `Zip`, `Unzip`, and the `Concat` family on `Vector128<T>`, `Vector256<T>`, `Vector512<T>`, `Vector64<T>`, and `Vector<T>`.
+- Incremental Concise Binary Object Representation (CBOR) reading with <xref:System.Formats.Cbor.CborReader>.
+- Experimental composite Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM) and Hybrid Public Key Encryption (HPKE) APIs, plus ML-KEM recipient support in <xref:System.Security.Cryptography.Pkcs.EnvelopedCms>.
+- `ValidationAttribute.FormatMessage` for formatting validation messages with attribute-specific arguments.
+- `SocketsHttpHandler.InitialHttp2MaxConcurrentStreams` to limit initial HTTP/2 concurrency before the server's `SETTINGS` frame arrives.
+- More accurate IEEE decimal transcendental functions on <xref:System.Numerics.Decimal32>, <xref:System.Numerics.Decimal64>, and <xref:System.Numerics.Decimal128>, and renamed `MemoryCache` metric attributes.
 
 For more information, see [What's new in the .NET 11 libraries](libraries.md).
 
@@ -81,6 +87,10 @@ The .NET 11 SDK includes:
 - TypeScript compilation outputs from Razor Class Libraries now integrate correctly with the Static Web Assets pipeline.
 - `dotnet format` limits `.editorconfig` discovery in folder mode to the ancestor directories of included files.
 - The `dotnet` CLI no longer suppresses the MSBuild build server when `DOTNET_CLI_USE_MSBUILD_SERVER` is unset, and the OTLP telemetry exporter activates on any standard `OTEL_EXPORTER_OTLP_*` environment variable.
+- Quoted values in file-based `#:property` directives and trailing `Name=Value` item metadata on `#:package`, `#:project`, and `#:ref` directives.
+- MSBuild property expansion in launch-profile `commandLineArgs` values when you use `dotnet run`.
+- Faster MSBuild wildcard matching during project evaluation.
+- A `--min-publish-age-hours` option on `dotnet nuget add source` and `dotnet nuget update source` to set the minimum package publication age.
 
 For more information, see [What's new in the SDK for .NET 11](sdk.md).
 

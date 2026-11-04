@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) code coverage
 description: Learn about collecting code coverage data with MTP.
 author: evangelink
 ms.author: amauryleve
-ms.date: 09/02/2026
+ms.date: 10/01/2026
 ai-usage: ai-assisted
 ---
 
@@ -44,11 +44,13 @@ For more information about the available options, see [settings](../additional-t
 ## Coverage summaries and thresholds
 
 > [!IMPORTANT]
-> The first-class coverage result model is available in MTP 2.4 preview.
+> The first-class coverage result model is available starting with MTP 2.4.
 
 Compatible collectors can publish covered and coverable measurements, threshold evaluations, and coverage report references as one correlated test coverage result. The terminal reporter and compatible report consumers render the measurements and derive percentages without parsing collector-specific files.
 
 Collectors choose whether to publish this model. Use the collector's documented options to configure collection and thresholds.
+
+If you author a collector, publish `TestCoverageMessage`, `TestCoverageThresholdMessage`, and `TestCoverageReportMessage` through the message bus. For contracts and runnable examples, see [Publish coverage results](./microsoft-testing-platform-architecture-extensions.md#publish-coverage-results). For correlated data in a report extension, use the [`ITestCoverageCapabilities`](./microsoft-testing-platform-architecture-services.md#the-itestcoveragecapabilities-service) and [`ITestCoverageResult`](./microsoft-testing-platform-architecture-services.md#the-itestcoverageresult-service) services.
 
 When a published threshold evaluation fails, an otherwise successful run exits with code `14`. Use `--ignore-exit-code 14` when a threshold failure shouldn't fail the process.
 

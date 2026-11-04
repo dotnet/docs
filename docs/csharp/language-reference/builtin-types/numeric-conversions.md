@@ -57,19 +57,19 @@ The following table shows the predefined explicit conversions between the built-
 
 | From                                       | To     |
 |--------------------------------------------|--------|
-| [sbyte](integral-numeric-types.md)         | `byte`, `ushort`, `uint`, `ulong`, or `nuint` |
-| [byte](integral-numeric-types.md)          | `sbyte` |
-| [short](integral-numeric-types.md)         | `sbyte`, `byte`, `ushort`, `uint`, `ulong`, or `nuint` |
-| [ushort](integral-numeric-types.md)        | `sbyte`, `byte`, or `short` |
-| [int](integral-numeric-types.md)           | `sbyte`, `byte`, `short`, `ushort`, `uint`, `ulong`, or `nuint` |
-| [uint](integral-numeric-types.md)          | `sbyte`, `byte`, `short`, `ushort`, `int`, or `nint` |
-| [long](integral-numeric-types.md)          | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `ulong`, `nint`, or `nuint` |
-| [ulong](integral-numeric-types.md)         | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `nint`, or `nuint` |
-| [float](floating-point-numeric-types.md)   | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `decimal`, `nint`, or `nuint` |
-| [double](floating-point-numeric-types.md)  | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `decimal`, `nint`, or `nuint` |
-| [decimal](floating-point-numeric-types.md) | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `nint`, or `nuint` |
-| [nint](integral-numeric-types.md)          | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `ulong`, or `nuint` |
-| [nuint](integral-numeric-types.md)         | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, or `nint` |
+| [`sbyte`](integral-numeric-types.md)         | `byte`, `ushort`, `uint`, `ulong`, or `nuint` |
+| [`byte`](integral-numeric-types.md)          | `sbyte` |
+| [`short`](integral-numeric-types.md)         | `sbyte`, `byte`, `ushort`, `uint`, `ulong`, or `nuint` |
+| [`ushort`](integral-numeric-types.md)        | `sbyte`, `byte`, or `short` |
+| [`int`](integral-numeric-types.md)           | `sbyte`, `byte`, `short`, `ushort`, `uint`, `ulong`, or `nuint` |
+| [`uint`](integral-numeric-types.md)          | `sbyte`, `byte`, `short`, `ushort`, `int`, or `nint` |
+| [`long`](integral-numeric-types.md)          | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `ulong`, `nint`, or `nuint` |
+| [`ulong`](integral-numeric-types.md)         | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `nint`, or `nuint` |
+| [`float`](floating-point-numeric-types.md)   | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `decimal`, `nint`, or `nuint` |
+| [`double`](floating-point-numeric-types.md)  | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `decimal`, `nint`, or `nuint` |
+| [`decimal`](floating-point-numeric-types.md) | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `nint`, or `nuint` |
+| [`nint`](integral-numeric-types.md)          | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `ulong`, or `nuint` |
+| [`nuint`](integral-numeric-types.md)         | `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, or `nint` |
 
 > [!NOTE]
 > An explicit numeric conversion might result in data loss or throw an exception, typically an <xref:System.OverflowException>.

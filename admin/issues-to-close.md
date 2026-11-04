@@ -11,10 +11,10 @@ Recommend closing the following issues because current documentation addresses t
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
 - **Order:** Issue creation time, oldest first, not most recent activity.
-- **Completed batches:** The 800 oldest issues in the original open-issue snapshot, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#53502](https://github.com/dotnet/docs/issues/53502), opened April 29, 2026.
-- **Results:** 159 closure candidates and 381 [clearly defined fixes](issues-with-defined-fixes.md) (314 assignment candidates and 67 fixes covered by 64 open implementation PRs).
-- **Latest batch:** Issues 776-800, from [dotnet/docs#50746](https://github.com/dotnet/docs/issues/50746) through dotnet/docs#53502: 3 closure candidates, 4 new assignment candidates, and 7 new fixes with open implementation PRs.
-- **Remaining:** 48 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 250 are complete and 48 remain. Continue with [dotnet/docs#53522](https://github.com/dotnet/docs/issues/53522), opened May 1, 2026, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
+- **Completed batches:** The 825 oldest issues in the original open-issue snapshot, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#55898](https://github.com/dotnet/docs/issues/55898), opened September 7, 2026.
+- **Results:** 163 closure candidates and 392 [clearly defined fixes](issues-with-defined-fixes.md) (318 assignment candidates and 74 fixes covered by 71 open implementation PRs).
+- **Latest batch:** Issues 801-825, from [dotnet/docs#53522](https://github.com/dotnet/docs/issues/53522) through dotnet/docs#55898: 4 closure candidates, 4 new assignment candidates, and 7 new fixes with open implementation PRs.
+- **Remaining:** 23 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 275 are complete and 23 remain. Continue with [dotnet/docs#55955](https://github.com/dotnet/docs/issues/55955), opened September 11, 2026, and finish the snapshot at position 848. Refresh issue states; don't skip later issues just because their numbers are lower.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.
@@ -1372,3 +1372,35 @@ The [unsafe-code reference](../docs/csharp/language-reference/unsafe-code.md) no
 The [current tutorial](../docs/standard/commandline/get-started-tutorial.md) starts with one root command and one option. Its next command stage explicitly removes the option from the root and attaches it to `read`. Only the later multi-command stage moves `read` beneath `quotes`, makes the shared file option recursive, displays the command hierarchy, and explains that root placement makes the option available to all subcommands. These aren't competing invocation pipelines.
 
 **Suggested closure explanation:** The current staged walkthrough and explicit scope explanation answer the original mental-model concern. Link to those stages and the syntax guide. A preference for a larger chapter reorganization isn't evidence that recursive option scope remains unexplained. Retain owner `gewarren`.
+
+### dotnet/docs#53522: Replace the obsolete OneOrMore union example
+
+**Opened:** May 1, 2026. **Confidence:** High for the reported example. **Reason:** The current reference no longer uses that example.
+
+The [union reference](../docs/csharp/language-reference/builtin-types/union.md) and its referenced snippets now use the refreshed union model rather than the reported `OneOrMore` example. [dotnet/docs#54198](https://github.com/dotnet/docs/pull/54198) merged on June 10, 2026. The actual current union snippet project built with the installed .NET 11 RC 3 SDK with zero warnings and errors.
+
+**Suggested closure explanation:** The defective example was superseded by the merged reference refresh. Link to the current examples instead of repairing retired syntax. The project build corroborates the current source, not every preview compiler or the entire union specification.
+
+### dotnet/docs#53990: Explain why the forecast displays known actual values
+
+**Opened:** May 21, 2026. **Confidence:** High. **Reason:** The tutorial and source distinguish training from held-out comparison.
+
+The [forecasting tutorial](../docs/machine-learning/tutorials/time-series-demand-forecasting.md) explains the first-year/second-year split and evaluates predictions against observations. Its [actual sample program](https://github.com/dotnet/machinelearning-samples/blob/main/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs) fits the model to `firstYearData`, evaluates `secondYearData`, and displays held-out actual rentals alongside the forecast. The display function calls `Predict()` before it reads actual values for the comparison output.
+
+**Suggested closure explanation:** Known held-out observations provide a comparison for a forecasting demonstration; their presence in the database doesn't make the displayed forecast a database lookup or mean the model trained on the second year. Link to the existing split, evaluation, and forecast explanations. No LocalDB training run or model-accuracy claim was made during triage.
+
+### dotnet/docs#54001: Document the updated union member-provider model
+
+**Opened:** May 22, 2026. **Confidence:** High for the requested reference coverage. **Reason:** The current guide describes and demonstrates the updated model.
+
+The [union reference](../docs/csharp/language-reference/builtin-types/union.md) now explains member providers and `TryGetValue`, with article-relative implementation and usage snippets. The merged [reference refresh](https://github.com/dotnet/docs/pull/54198) postdates this request, and the actual current snippet project built successfully with the installed .NET 11 RC 3 SDK.
+
+**Suggested closure explanation:** The requested feature update is present in the reference and its compiled examples. Preserve the preview qualifications and any separate fundamentals work; don't reopen an already-covered reference update or infer release stability from a successful preview build.
+
+### dotnet/docs#55458: Route the unspecified runtime/server-error report
+
+**Opened:** August 17, 2026. **Confidence:** Medium; maintainer confirmation is appropriate. **Reason:** The report supplies no actionable documentation correction.
+
+The issue says only that a website/application has a runtime/server error. It doesn't identify an incorrect statement, a failing documentation sample, an error trace, or reproduction steps. The attached upgrade-assistance page metadata alone doesn't establish a documentation defect.
+
+**Suggested closure explanation:** Close as nonactionable documentation feedback, not as proof that the server or application was repaired. For an application problem, direct the reporter to [Microsoft Q&A](https://learn.microsoft.com/answers/); for a Learn-site failure, request the actual affected URL and site-feedback details through the appropriate support channel. Reopen if the reporter supplies a specific documentation defect.

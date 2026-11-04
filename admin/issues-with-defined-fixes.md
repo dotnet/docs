@@ -5,15 +5,15 @@ ai-usage: ai-generated
 
 # Issues with clearly defined fixes
 
-Recommend the following 314 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track sixty-seven additional issue-level fixes separately because sixty-four implementation PRs are already open; several issues share PRs, several patches need correction or completion before merge, and six PRs remain drafts. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
+Recommend the following 318 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track seventy-four additional issue-level fixes separately because seventy-one implementation PRs are already open; several issues share PRs, several patches need correction or completion before merge, and six PRs remain drafts. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.
 
 ## Review coverage
 
 - **Repository and snapshot:** `dotnet/docs`, November 2, 2026; 848 open issues, excluding pull requests.
-- **Completed batches:** The 800 oldest issues in the original open-issue snapshot, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#53502](https://github.com/dotnet/docs/issues/53502), opened April 29, 2026.
-- **Results:** 381 defined fixes (314 assignment candidates and 67 with open implementation PRs) and 159 [closure candidates](issues-to-close.md#closure-candidates).
-- **Latest batch:** Issues 776-800 add 4 new assignment candidates and 7 new issue-level fixes with open implementation PRs, alongside 3 closure candidates. The 67 active entries are covered by 64 distinct PRs.
-- **Remaining:** 48 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 250 are complete and 48 remain. Continue with [dotnet/docs#53522](https://github.com/dotnet/docs/issues/53522), opened May 1, 2026, and finish the snapshot at position 848.
+- **Completed batches:** The 825 oldest issues in the original open-issue snapshot, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#55898](https://github.com/dotnet/docs/issues/55898), opened September 7, 2026.
+- **Results:** 392 defined fixes (318 assignment candidates and 74 with open implementation PRs) and 163 [closure candidates](issues-to-close.md#closure-candidates).
+- **Latest batch:** Issues 801-825 add 4 new assignment candidates and 7 new issue-level fixes with open implementation PRs, alongside 4 closure candidates. The 74 active entries are covered by 71 distinct PRs.
+- **Remaining:** 23 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 275 are complete and 23 remain. Continue with [dotnet/docs#55955](https://github.com/dotnet/docs/issues/55955), opened September 11, 2026, and finish the snapshot at position 848.
 - **Evidence baseline:** Issue bodies, complete comment threads, current target documentation, candidate cross-reference timelines, open-PR checks, and actual patches for active implementations. For the 545-file curation draft, the complete file manifest and relevant deletion, replacement, and redirect patches were inspected; this isn't a line-by-line review of the entire replacement book. Local source matched upstream `main` at `81cd030da804aa06cfbd8f23474cbbacba597c72`. Candidate issues were open when checked; existing ownership is noted where relevant.
 
 These are proposed assignment briefs, not claims that fixes have been implemented or that sample commands have been executed. Recheck issue state, ownership, and related pull requests before assignment. Existing `Needs Research` labels weren't changed; the evidence below explains the proposed narrower scope. An old request with unresolved technical behavior isn't assignment-ready merely because an agent could research it.
@@ -3057,6 +3057,38 @@ Preserve the explicit support-confirmation question from duplicate [dotnet/docs#
 
 **Scope and acceptance:** Reconcile those three gaps with the linked release sources and current implementation contracts. Preserve source distinctions: build-time SDK checks are opt-in and cache-backed; an absent cache isn't a clean vulnerability result. Qualify GC trimming by its required latency mode and the process API by platform/version. Keep the work on Preview 5 only, retain later correct content, and don't copy illustrative CVE numbers as real advisories or benchmark claims as universal results. Supply a section-by-section source/adaptation breakdown and expert-review notes in the eventual PR, execute any new samples, and record actual results. The existing JSONL, LINQ, and cryptography sections aren't evidence that these other gaps are complete.
 
+### dotnet/docs#54090: Put portable RIDs and the smaller graph first
+
+**Issue:** [dotnet/docs#54090](https://github.com/dotnet/docs/issues/54090). **Opened:** May 28, 2026. **Size:** Small. **GHCP suitability:** Strong for a focused restructuring.
+
+**Why it still applies:** The [RID catalog](../docs/core/rid-catalog.md) already links the portable graph and notes the .NET 8 change, but its opening version-specific examples and `runtime.json` graph explanation still obscure the modern default.
+
+**Scope and acceptance:** Present portable, non-version-specific RIDs first and identify `PortableRuntimeIdentifierGraph.json` as the modern graph. Move historical distribution/version-specific syntax and the older graph into qualified compatibility guidance. Preserve applicable casing, architecture, fallback, and package-author advice; don't claim version-specific RIDs were universally removed or erase the existing .NET 8 note. Verify graph names and examples against current runtime/SDK sources rather than replace all mentions mechanically.
+
+### dotnet/docs#54104: Prefer typed JSON source-generation overloads
+
+**Issue:** [dotnet/docs#54104](https://github.com/dotnet/docs/issues/54104). **Opened:** June 1, 2026. **Size:** Medium. **GHCP suitability:** Strong; the serialization owner specifies the replacement. **Existing owners:** `eiriktsarpalis` and `Copilot`; continue their assignment.
+
+**Why it still applies:** The [source-generation guide](../docs/standard/serialization/system-text-json/source-generation.md) still gives options and nongeneric context overloads equal prominence. An owned .NET 10 fixture reproduced IL2026 and IL3050 for an options overload even with a generated resolver and reflection defaults disabled. Its typed overload serialized the same payload and round-tripped `42` without those call-site warnings.
+
+**Scope and acceptance:** Audit the page and its referenced serialization/deserialization snippets, lead with `JsonTypeInfo<T>`, and retain the context declarations required to generate metadata. Explain the options-overload analyzer limitation in a footnote and demonstrate `(JsonTypeInfo<T>)options.GetTypeInfo(typeof(T))` with generated metadata configured. Don't copy the issue's illustrative cast literally, claim context APIs carry an `Obsolete` attribute, or suppress warnings instead of fixing examples. Preserve mode/options behavior, verify every replacement with trim/AOT analyzers, and publish/execute an appropriate Native AOT fixture before claiming native execution. Triage ran managed code and analyzers, not a native publish.
+
+### dotnet/docs#54749: Mention the optional curated static-analysis package
+
+**Issue:** [dotnet/docs#54749](https://github.com/dotnet/docs/issues/54749). **Opened:** July 13, 2026. **Size:** Small. **GHCP suitability:** Suitable for a source-backed package signpost.
+
+**Why it still applies:** The [analysis overview](../docs/fundamentals/code-analysis/overview.md) names SDK analyzers and third-party packages but omits `Microsoft.Extensions.StaticAnalysis`. Its [official README](https://github.com/dotnet/extensions/blob/main/src/Packages/Microsoft.Extensions.StaticAnalysis/README.md) defines a curated analyzer/settings package, `StaticAnalysisCodeType`, diagnostic sets, and tier variants.
+
+**Scope and acceptance:** Add a concise first-party package section or signpost that distinguishes the optional bundle from SDK-enabled analyzers. Link its maintained configuration guidance, explain that the package can change enabled diagnostics/settings, and preserve legitimate third-party options. Don't present an unapproved universal best practice or imply the package is identical to `Microsoft.CodeAnalysis.NetAnalyzers`. If the change includes installation/configuration snippets, pin an actual released version, verify `PrivateAssets`, the selected diagnostic set, and resulting build behavior. No package installation was performed during triage.
+
+### dotnet/docs#54756: State the file globber's unsupported pattern syntax
+
+**Issue:** [dotnet/docs#54756](https://github.com/dotnet/docs/issues/54756). **Opened:** July 13, 2026. **Size:** Small. **GHCP suitability:** Strong; the remaining syntax gap is reproducible.
+
+**Why it still applies:** The [glob guide](../docs/core/extensions/file-globbing.md) already covers `*`, `**`, recursive depth, and the default case-insensitive comparison. It doesn't explicitly distinguish its grammar from POSIX `?`, bracket classes, or negation. Current `PatternBuilder` source parses stars, not POSIX character classes; owned in-memory .NET 10/.NET 11 probes treated `?`, brackets, and a leading `!` as literals rather than the requested operators.
+
+**Scope and acceptance:** Add a compact supported/unsupported syntax explanation and direct exclusions to `AddExclude`, not shell-style negation. Preserve the existing recursive examples and `StringComparison` guidance instead of rewriting already-correct coverage. Test nested paths, literal versus wildcard characters, case-sensitive overrides, and include/exclude behavior. Distinguish in-memory path matching from the filesystem's legal filename characters; the literal-question-mark probe doesn't imply Windows permits that filename.
+
 ## Defined fixes already in progress
 
 These issues still need their existing PRs to land, with corrections where noted. They aren't closure-without-action candidates and shouldn't receive duplicate implementation assignments.
@@ -3572,6 +3604,48 @@ Preserve a destination for the authoritative incremental-generator cookbook: the
 **Issue:** [dotnet/docs#51292](https://github.com/dotnet/docs/issues/51292). **Opened:** January 23, 2026. **Status:** Covered by open, non-draft [dotnet/docs#56669](https://github.com/dotnet/docs/pull/56669).
 
 **Evidence and required completion:** The actual patch replaces obsolete package-cache `.editorconfig`/ruleset copying instructions with MSBuild profiles in the [preset guide](../docs/fundamentals/code-analysis/predefined-configurations.md). Installed SDK 10.0.403 instead contains generated `.globalconfig` profiles under its analyzer `build\config` directory, including security-specific profiles. Prefer the public `AnalysisMode`/category properties over manual SDK-file edits. Verify supported modes/category behavior and the difference between selecting a category and disabling every other category; `dotnet new editorconfig` isn't an export of the effective analyzer preset. Preserve applicable legacy guidance with version qualifications and don't claim an EditorConfig file alone executes analyzers.
+
+### dotnet/docs#53890: Explain when scoped options run their configuration pipeline
+
+**Issue:** [dotnet/docs#53890](https://github.com/dotnet/docs/issues/53890). **Opened:** May 20, 2026. **Status:** Covered by open, non-draft [dotnet/docs#56662](https://github.com/dotnet/docs/pull/56662).
+
+**Evidence and required completion:** The actual patch adds performance guidance to the [options article](../docs/core/extensions/options.md). An owned fixture verified configuration, post-configuration, and validation once for an accessed snapshot value in each of two scopes, cache reuse within a scope, and monitor reuse without invalidation. Qualify the prose as first access per options name, not eager work in every scope or every request regardless of use. Apply named configurations/validators only where their name rules match. Don't say monitor recomputation occurs *only* after a configuration-provider notification; explicit cache invalidation also matters. Capture a monitor value once where request consistency is required and avoid unsupported universal latency claims.
+
+### dotnet/docs#54014: Add closed-hierarchy guidance to the fundamentals pages
+
+**Issue:** [dotnet/docs#54014](https://github.com/dotnet/docs/issues/54014). **Opened:** May 26, 2026. **Status:** Covered by open, non-draft [dotnet/docs#56517](https://github.com/dotnet/docs/pull/56517).
+
+**Evidence and required completion:** The actual patch updates fundamentals classes, records, type selection, and type patterns. Existing reference/tutorial coverage doesn't by itself complete those fundamentals destinations. Preserve C# 15/.NET 11 preview qualifications and explain the [actual closed modifier rules](../docs/csharp/language-reference/keywords/closed.md): the restriction concerns direct derivation in the declaring assembly/module, and plain descendants aren't automatically sealed or closed. A new descendant can produce a warning when a consumer recompiles; warnings don't prevent every runtime failure in existing binaries. Verify exhaustive and intentionally incomplete switches, nullable inputs, and generic record examples as runnable article-relative snippets before merge.
+
+### dotnet/docs#54202: Clarify stable versus preview language-version examples
+
+**Issue:** [dotnet/docs#54202](https://github.com/dotnet/docs/issues/54202). **Opened:** June 8, 2026. **Status:** Covered by open, non-draft [dotnet/docs#56646](https://github.com/dotnet/docs/pull/56646).
+
+**Evidence and required completion:** The actual patch adds an explicit numeric example, explains `preview`, and changes the multi-project example in the [language-version guide](../docs/csharp/language-reference/configure-language-version.md). Preserve owner `BillWagner`'s direction that preview opt-ins are intentional when a page teaches preview features. Keep the existing recommendation to use the target framework's default and its supported compiler/runtime pairing; an arbitrary explicit version isn't automatically production-compatible with every target. Verify `Directory.Build.props` scope and don't remove legitimate preview prerequisites elsewhere.
+
+### dotnet/docs#54655: Explain labeled loop control in fundamentals
+
+**Issue:** [dotnet/docs#54655](https://github.com/dotnet/docs/issues/54655). **Opened:** July 6, 2026. **Status:** Covered by open, non-draft [dotnet/docs#56547](https://github.com/dotnet/docs/pull/56547).
+
+**Evidence and required completion:** The actual patch adds labeled `break`/`continue` to the [fundamentals iteration page](../docs/csharp/fundamentals/statements/iteration.md), rather than duplicating the existing reference alone. Preserve the request's release-timing requirement and .NET 11/C# 15 preview status. Move its longer example into the existing article-relative snippet project and capture distinct outer-break and outer-continue results. Test label restrictions and distinguish an enclosing loop from a labeled switch, which can't be a `continue` target. Don't claim a snippet was executed merely because the PR contains inline code.
+
+### dotnet/docs#55017: Explain SQLite pooling and idle file-handle release
+
+**Issue:** [dotnet/docs#55017](https://github.com/dotnet/docs/issues/55017). **Opened:** July 26, 2026. **Status:** Covered by open, non-draft [dotnet/docs#56548](https://github.com/dotnet/docs/pull/56548).
+
+**Evidence and required completion:** The actual patch adds a tip under pooling in the [connection-string reference](../docs/standard/data/sqlite/connection-strings.md). A Windows fixture using `Microsoft.Data.Sqlite` 10.0.0 on .NET 10/.NET 11 verified that disposal returned a handle to the pool, `ClearPool` then released it, and clearing a pool while a connection remained active didn't release that connection's handle. State the close/dispose-first precondition and distinguish one pool, all pools, and `Pooling=False`. Don't prescribe global clearing after every use or promise that it closes active connections. Copying an active database also requires SQLite-consistent backup/WAL handling, not just removal of an idle handle.
+
+### dotnet/docs#55626: Match each enum example's actual output
+
+**Issue:** [dotnet/docs#55626](https://github.com/dotnet/docs/issues/55626). **Opened:** August 21, 2026. **Status:** Covered by open, non-draft [dotnet/docs#55632](https://github.com/dotnet/docs/pull/55632), but its inserted output belongs to the other example.
+
+**Evidence and required completion:** The actual patch inserts output after the classic extension-method snippet in the [enum guide](../docs/csharp/programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md), but includes the extension-block text, `Raising the bar. Passing grade is now C!`. The actual classic source prints `Raising the bar!`. Executing both complete current source files on .NET 10/.NET 11 confirmed the distinction and the same pass/fail grade transitions. Put the correct output after each corresponding example, repair the extension-block source's stale output comment, and verify published snippet boundaries. Don't merge a hybrid output block as a complete fix.
+
+### dotnet/docs#55744: Document the five URI behavior changes together
+
+**Issue:** [dotnet/docs#55744](https://github.com/dotnet/docs/issues/55744). **Opened:** August 26, 2026. **Status:** Covered by open, non-draft [dotnet/docs#56514](https://github.com/dotnet/docs/pull/56514), with owner `gewarren`'s approval for a combined article.
+
+**Evidence and required completion:** The actual patch adds one compatibility article, the .NET 11 index row, and TOC navigation for the five linked changes. Owned .NET 10 versus .NET 11 RC 3 probes confirmed rejection of the three shown IPv6 forms, `ArgumentException` from the shown invalid `UriBuilder.Host` assignments, and matching `pAth` results from relative construction/`TryCreate` in .NET 11. Earlier .NET 10 accepted the IPv6/host inputs and returned different relative strings. Verify the first affected preview rather than label behavior already present in RC 3 as first introduced at GA. Preserve distinct remedies for malformed hosts, IPv6 syntax, and relative normalization; don't imply valid IPv6 zone identifiers are universally rejected. Obtain networking-owner review and keep the source-to-section mapping for all five runtime changes.
 
 ## Assignment order
 

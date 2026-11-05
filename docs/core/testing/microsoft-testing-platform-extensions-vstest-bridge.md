@@ -3,7 +3,8 @@ title: Microsoft.Testing.Platform (MTP) VSTest bridge extension
 description: Learn about the MTP VSTest bridge extension and how to use it.
 author: evangelink
 ms.author: amauryleve
-ms.date: 04/10/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 ---
 
 # VSTest Bridge extension
@@ -18,6 +19,10 @@ This extension is shipped as part of [Microsoft.Testing.Extensions.VSTestBridge]
 ## Compatibility with VSTest
 
 The main purpose of this extension is to offer an easy and smooth upgrade experience for VSTest users by allowing a dual mode where the new platform is enabled and in parallel a compatibility mode is offered to allow the usual workflows to continue working.
+
+The bridge adapts a VSTest-based test framework to MTP. It doesn't turn `VsTestConsoleWrapper` into a native MTP client or guarantee that every MTP framework can run through VSTest. An existing `Microsoft.TestPlatform.TranslationLayer` integration still requires `vstest.console` and a compatible VSTest adapter.
+
+For new tools that discover and run MTP tests, use the [MTP server-mode client](./microsoft-testing-platform-server-mode.md). For other integration options, see [Programmatic test discovery and execution](./unit-testing-mstest-running-tests.md#programmatic-test-discovery-and-execution).
 
 ## Runsettings support
 

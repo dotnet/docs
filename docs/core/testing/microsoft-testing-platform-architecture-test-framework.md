@@ -3,7 +3,7 @@ title: Build a test framework for Microsoft.Testing.Platform (MTP)
 description: Learn how to create a custom test framework for Microsoft.Testing.Platform (MTP), including registration, lifecycle, and test node reporting.
 author: MarcoRossignoli
 ms.author: mrossignoli
-ms.date: 10/26/2026
+ms.date: 11/05/2026
 ai-usage: ai-assisted
 ---
 
@@ -484,15 +484,6 @@ Optional properties, on the other hand, enhance the testing experience by provid
 ##### Generic information
 
 ```csharp
-public record KeyValuePairStringProperty(
-    string Key,
-    string Value)
-        : IProperty;
-```
-
-The `KeyValuePairStringProperty` stands for a general key/value pair data.
-
-```csharp
 public record struct LinePosition(
     int Line,
     int Column);
@@ -526,13 +517,17 @@ public sealed record TestMethodIdentifierProperty(
 
 `TestMethodIdentifierProperty` is a unique identifier for a test method.
 
+To publish portable key-value metadata, create a `TestMetadataProperty` from `Microsoft.Testing.Platform.Extensions.Messages` and add it to `TestNode.Properties`:
+
 ```csharp
-public sealed record TestMetadataProperty(
-    string Key,
-    string Value)
+var metadata = new TestMetadataProperty("Environment", "Staging");
 ```
 
-`TestMetadataProperty` is utilized to convey the characteristics or *traits* of a `TestNode`.
+```vb
+Dim metadata = New TestMetadataProperty("Environment", "Staging")
+```
+
+MTP exposes these properties as *traits* in [JSON discovery output](./microsoft-testing-platform-cli-options.md#discover-tests-as-json) and [server-mode updates](./microsoft-testing-platform-server-mode.md#consume-updates-and-metadata). Arbitrary `IProperty` implementations remain available to in-process consumers but don't automatically serialize to external clients. The platform's internal `SerializableKeyValuePairStringProperty` type isn't a public extension point.
 
 Starting with MTP 2.4, add `AssertionFailureProperty` to a failed test node to supply separate, preformatted expected and actual values. Report consumers can use these values to render a structured difference instead of parsing the failure message. At least one value must be non-`null`. Consumers prefer this property but can fall back to the legacy `assert.expected` and `assert.actual` entries in <xref:System.Exception.Data>.
 

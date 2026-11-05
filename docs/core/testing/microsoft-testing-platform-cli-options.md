@@ -132,6 +132,8 @@ This article gives a central entry point for MTP command-line options.
 
   Lists the available tests without executing them. Optionally takes an argument that controls the output format: `text` (default, human-readable) or `json`.
 
+  For structured metadata and an example, see [Discover tests as JSON](#discover-tests-as-json).
+
   > [!NOTE]
   > The `json` output format is available in MTP starting with version 2.3.0.
 
@@ -196,6 +198,39 @@ This article gives a central entry point for MTP command-line options.
 
   > [!NOTE]
   > This option is available in MTP starting with version 2.3.0. With `dotnet test`, pass the option after `--` to forward it to each test module. When you don't set a global minimum, the .NET 11 SDK determines the whole-run zero-tests verdict separately. For more information, see [Whole-run and per-module minimums](../tools/dotnet-test-mtp.md#whole-run-and-per-module-minimums).
+
+## Discover tests as JSON
+
+Starting with MTP 2.3.0, use `--list-tests json` to discover tests as a machine-readable JSON document instead of parsing the human-readable list:
+
+```dotnetcli
+dotnet Contoso.MyTests.dll --list-tests json --no-banner
+```
+
+Run the built test application rather than a command that also writes build output. Capture standard output separately from standard error, and check the process exit code before you consume the document. Keep application and extension startup messages off standard output in machine-readable modes.
+
+Don't combine discovery with execution-only options such as `--report-trx`. If `testconfig.json` enables those options, use `--config-file` with a separate discovery configuration that omits them.
+
+The document contains a `schemaVersion` and a `tests` array. Each test includes `uid` and `displayName`. Optional fields include `type`, `location`, `traits`, and `properties`, when the test framework supplies the corresponding metadata. For example, a test with an `Environment` trait can produce:
+
+```json
+{
+  "schemaVersion": 1,
+  "tests": [
+    {
+      "uid": "<test-uid>",
+      "displayName": "ConnectToService",
+      "traits": [
+        { "key": "Environment", "value": "Staging" }
+      ]
+    }
+  ]
+}
+```
+
+Both `traits` and `properties` use arrays of key-value entries, not JSON objects. Don't assume keys are unique. Traits represent public `TestMetadataProperty` values, including MSTest categories and custom `TestProperty` values. The `properties` array contains serializable string properties supplied by the platform or compatibility layer. It doesn't export every in-memory property, and its internal `SerializableKeyValuePairStringProperty` type isn't an API for external frameworks or extensions.
+
+Use the discovered UIDs with [`--filter-uid`](#platform-options) to run selected tests. For a typed .NET client with discovery, execution, cancellation, and live updates, use [MTP server mode](./microsoft-testing-platform-server-mode.md).
 
 ## Extension options by scenario
 

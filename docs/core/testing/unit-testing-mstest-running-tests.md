@@ -3,7 +3,7 @@ title: Run tests with MSTest
 description: Learn about how to run MSTest tests using VSTest or Microsoft.Testing.Platform (MTP).
 author: Evangelink
 ms.author: amauryleve
-ms.date: 10/01/2026
+ms.date: 11/05/2026
 ai-usage: ai-assisted
 ---
 
@@ -23,6 +23,23 @@ MSTest supports running tests with both VSTest and [Microsoft.Testing.Platform (
 The MSTest runner is open source and builds on the [MTP](./microsoft-testing-platform-intro.md) library. You can find `Microsoft.Testing.Platform` code in the [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository. The MSTest runner comes bundled with `MSTest in 3.2.0` or newer.
 
 With the .NET 10 SDK and later versions, select the dedicated MTP mode of `dotnet test` in `global.json`. Starting with .NET 11 Preview 6, you can override that selection for the current process with the `DOTNET_TEST_RUNNER` environment variable. For the supported inputs, SDK-version requirements, and MTP-specific options, see [`dotnet test` with MTP](../tools/dotnet-test-mtp.md).
+
+## Programmatic test discovery and execution
+
+For a custom test UI, integration-test service, or report generator, choose the interface that matches your test platform:
+
+| Requirement | Interface | Details |
+|---|---|---|
+| Discover and run MTP tests from .NET code, with metadata and live results. | [MTP server-mode client](./microsoft-testing-platform-server-mode.md#discover-and-run-tests-from-net) | Starting with MTP 2.4, `Microsoft.Testing.Platform.ServerMode.Client.Sources` provides typed discovery and execution methods. The package injects internal C# types; other .NET languages can call a C# wrapper. |
+| Discover MTP tests through a command-line process and consume structured metadata. | [`--list-tests json`](./microsoft-testing-platform-cli-options.md#discover-tests-as-json) | Available in MTP 2.3 or later. Read the JSON document, then run selected tests with `--filter-uid`. The text format isn't a machine-readable API. |
+| Keep an existing VSTest discovery and execution integration. | [`Microsoft.TestPlatform.TranslationLayer`](https://www.nuget.org/packages/Microsoft.TestPlatform.TranslationLayer) | Use `VsTestConsoleWrapper` with `vstest.console` and a compatible VSTest adapter. The wrapper speaks the VSTest protocol, not the native MTP protocol. |
+| Consume test metadata or produce custom reports inside the test process. | [MTP extensions](./microsoft-testing-platform-architecture-extensions.md) | Implement an `IDataConsumer` to consume the messages that a test framework publishes. This extension point isn't an external test-client API. |
+
+MTP supports discovery as well as execution. You don't need to parse terminal output or build a `Process.Start` wrapper to use its typed server-mode client. For a complete C# example and a Visual Basic caller, see [Discover and run tests from .NET](./microsoft-testing-platform-server-mode.md#discover-and-run-tests-from-net).
+
+Discovery can include MSTest categories and custom `TestProperty` metadata. The available fields depend on the framework and transport; neither API serializes every arbitrary in-memory property. See [Consume updates and metadata](./microsoft-testing-platform-server-mode.md#consume-updates-and-metadata).
+
+For an existing `VsTestConsoleWrapper` integration, keep a VSTest-compatible project configuration and adapter until you migrate the client. A framework's VSTest compatibility doesn't make the VSTest translation layer a client for every MTP test application. For the scope of the compatibility layer, see [VSTest Bridge](./microsoft-testing-platform-extensions-vstest-bridge.md#compatibility-with-vstest).
 
 ## Enable MTP in an MSTest project
 
@@ -157,6 +174,7 @@ Contoso.MyTests.exe --filter "FullyQualifiedName~UnitTest1|TestCategory=Category
 - [`dotnet test` with MTP](../tools/dotnet-test-mtp.md)
 - [`dotnet test` with VSTest](../tools/dotnet-test-vstest.md)
 - [MTP CLI options reference](microsoft-testing-platform-cli-options.md)
+- [MTP server mode](microsoft-testing-platform-server-mode.md)
 - [Test UWP and WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md)
 - [Test Windows desktop apps with MSTest UI Automation](unit-testing-mstest-ui-automation.md)
 - [Filter tests](selective-unit-tests.md)

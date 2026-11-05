@@ -11,6 +11,8 @@ ms.custom: devdivchpfy22
 
 There are numerous benefits of writing unit tests. They help with regression, provide documentation, and facilitate good design. But when unit tests are hard to read and brittle, they can wreak havoc on your code base. This article describes some best practices for designing unit tests to support your .NET Core and .NET Standard projects. You learn techniques to keep your tests resilient and easy to understand.
 
+The code examples use the [xUnit.net](https://xunit.net/) test framework, which provides the `[Fact]` and `[Theory]` attributes and the `Assert` class. For an introduction to xUnit.net, see [Unit testing C# in .NET using dotnet test and xUnit](unit-testing-csharp-with-xunit.md). The best practices also apply to other .NET test frameworks.
+
 By [John Reese](https://reese.dev) with special thanks to [Roy Osherove](https://osherove.com/)
 
 ## Benefits of unit testing

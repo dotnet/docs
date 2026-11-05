@@ -110,7 +110,7 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS1616**](#conflicting-or-missing-options): *Option 'option' overrides attribute 'attribute' given in a source file or added module*
 - [**CS1668**](#input-and-output-file-errors): *Invalid search path 'path' specified in 'option' -- 'reason'*
 - [**CS1719**](#input-and-output-file-errors): *Error opening Win32 resource file 'file' -- 'reason'*
-- [**CS1773**](#invalid-option-values): *Invalid version for /subsystemversion. The version must be 6.02 or greater for ARM or AppContainerExe, and 4.00 or greater otherwise*
+- [**CS1773**](#invalid-option-values): *Invalid version value for /subsystemversion. The version must be 6.02 or greater for ARM or AppContainerExe, and 4.00 or greater otherwise*
 - [**CS2007**](#correct-unrecognized-or-ignored-switches): *Unrecognized option: 'option'*
 - [**CS2008**](#input-and-output-file-errors): *No source files specified.*
 - [**CS2011**](#validate-configuration-and-response-files): *Error opening response file 'file'*
@@ -160,14 +160,14 @@ That's by design. The text closely matches the text of the compiler error or war
 These errors indicate that the compiler can't find, read, or write files needed for compilation. For the full list of file-related compiler options, see [C# compiler options - Inputs](../compiler-options/inputs.md) and [C# compiler options - Resources](../compiler-options/resources.md).
 
 - Verify the path you pass to [**References**](../compiler-options/inputs.md#references) or related options points to an existing assembly (**CS0006**). This error typically occurs when an assembly reference in the project file or command line specifies a path that doesn't exist. Check for typos, ensure the referenced project is built, and confirm the file isn't moved or deleted.
-- Check the output path to make sure it exists and is writable, and ensure no process currently has a lock on the file (**CS0016**). For example, make sure your executable isn't running when you attempt to build. If a previously built file is already at the location, verify that it isn't read-only.
+- Check the output path to make sure it exists and is writable, and ensure no process currently has a lock on the file (**CS0016**). For example, ensure your executable isn't running when you attempt to build. If a previously built file is already at the location, verify that it isn't read-only.
 - Verify that the path you supply to [**AdditionalLibPaths**](../compiler-options/advanced.md#additionallibpaths) or the LIB environment variable exists and is accessible (**CS1668**). The error message in single quotation marks contains the operating system error that explains why the path is invalid.
 - Correct the problem described in the error reason for the Win32 resource file (**CS1719**). The most common causes are "file not found" (verify the path) or "access denied" (check file permissions).
 - Pass at least one source-code file to the compiler (**CS2008**). This error occurs when you specify compiler options but don't provide any `.cs` files as input.
 
 ## Invalid option values
 
-- **CS1773**: *Invalid version for /subsystemversion. The version must be 6.02 or greater for ARM or AppContainerExe, and 4.00 or greater otherwise*
+- **CS1773**: *Invalid version value for /subsystemversion. The version must be 6.02 or greater for ARM or AppContainerExe, and 4.00 or greater otherwise*
 - **CS2019**: *Invalid target type for /target: must specify 'exe', 'winexe', 'library', or 'module'*
 - **CS2029**: *Invalid name for a preprocessing symbol; 'identifier' is not a valid identifier*
 - **CS2032**: *Character 'character' is not allowed on the command-line or in response files*
@@ -189,7 +189,7 @@ These errors indicate that a value you passed to a compiler option is malformed 
 - Ensure preprocessing symbols you pass to [**DefineConstants**](../compiler-options/language.md#defineconstants) are valid C# identifiers (**CS2029**). Identifiers must start with a letter or underscore and contain only letters, digits, or underscores. You can't suppress this warning by using the [**NoWarn**](../compiler-options/errors-warnings.md#nowarn) option.
 - Remove ASCII control characters (range 0–31) and the pipe (`|`) character from command-line arguments and [response files](../compiler-options/miscellaneous.md#responsefiles) (**CS2032**). The command-line processor and IDE typically filter these characters, so this error most commonly appears when you use response files that contain invalid characters. Newer versions of the compiler don't generate this error.
 - Supply a valid culture name recognized by the compiler (**CS2038**). Check the spelling against the list of supported culture names.
-- Provide a properly formatted GUID for options that require one, such as **/checksumalgorithm** (**CS2039**, **CS2040**). The GUID must follow the standard format (for example, `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`).
+- Supply a properly formatted GUID to the legacy `/sqmsessionguid` option, or remove that option (**CS2039**, **CS2040**). For example, `/sqmsessionguid:01234567-89ab-cdef-0123-456789abcdef` supplies a valid GUID. CS2039 indicates an invalid GUID value, and CS2040 indicates a missing value. The compiler retains this option's parsing for backward compatibility. These diagnostics don't describe the [**ChecksumAlgorithm**](../compiler-options/advanced.md#checksumalgorithm) option, which accepts `SHA1` or `SHA256`, not a GUID.
 - Remove invalid characters from the output file name (**CS2041**). Output names can't contain characters that are invalid in file paths on the target operating system.
 - Provide a valid debug information format value (**CS2042**). Accepted values depend on the compiler version and typically include `full`, `pdbonly`, `portable`, and `embedded`.
 - Replace the legacy `id#` syntax with `$id` (**CS2043**). The compiler no longer supports the older syntax.
@@ -233,7 +233,7 @@ These errors indicate that compiler options contradict each other, override sour
 
 - Include the custom Win32 manifest inside the Win32 resource file and remove the **/win32manifest** compiler option (**CS1564**). You can't specify both [**Win32Resource**](../compiler-options/resources.md#win32resource) and [**Win32Manifest**](../compiler-options/resources.md#win32manifest) simultaneously. If you use **/Win32res**, include the manifest in the resource file.
 - Remove the conflicting source attribute or the conflicting command-line option so they don't contradict each other (**CS1616**). This warning occurs when assembly attributes like <xref:System.Reflection.AssemblyKeyFileAttribute> or <xref:System.Reflection.AssemblyKeyNameAttribute> in source conflict with the [**KeyFile**](../compiler-options/security.md#keyfile) or [**KeyContainer**](../compiler-options/security.md#keycontainer) command-line option.
-- Add the **/debug** compiler option when using [**PdbFile**](../compiler-options/advanced.md#pdbfile), or remove the **/pdb** option (**CS2036**). Program database files are only generated for debug builds, so **/pdb** is meaningless without **/debug**. For more information, see [**DebugType** (C# Compiler Options)](../compiler-options/code-generation.md#debugtype).
+- Enable **/debug** when you want output at the [**PdbFile**](../compiler-options/advanced.md#pdbfile) path, or remove **/pdb** if you don't need a PDB (**CS2036**). The **/pdb** option selects the PDB path; it doesn't enable PDB generation. Current Roslyn accepts **/pdb** without **/debug**, but doesn't generate a PDB or report CS2036 for that combination. For more information, see [**DebugType** (C# Compiler Options)](../compiler-options/code-generation.md#debugtype).
 - Add the **/debug** option (or set `DebugType` in the project) to enable PDB generation when using **/sourcelink** or **/embed** (**CS2044**, **CS2045**). Source links and embedded source both require PDB output because the source information is stored in the PDB file.
 - Ensure the project or command line specifies a valid output directory (**CS8771**). Verify the `OutputPath` or `OutDir` property in your project file, or pass a valid `/out:` argument to the compiler.
 
@@ -244,8 +244,8 @@ These errors indicate that compiler options contradict each other, override sour
 
 These warnings involve mismatches between the CLSCompliant attribute on modules and assemblies. For more information on the CLS, see [Language independence and language-independent components](../../../standard/language-independence.md).
 
-- Build with the **module** element of the [**OutputType**](../compiler-options/output.md#outputtype) compiler option when specifying `[module:System.CLSCompliant(true)]` (**CS3012**). The CLSCompliant attribute on a module is only meaningful when the output target is a module rather than an assembly.
-- Add a matching `[module:CLSCompliant(true)]` or `[module:CLSCompliant(false)]` attribute to modules added via [**AddModule**](../compiler-options/inputs.md#addmodules) so they agree with the assembly's CLS state (**CS3013**). The default is `[module:CLSCompliant(false)]`, so modules that should be CLS compliant must explicitly opt in.
+- Put `[assembly:System.CLSCompliant(true)]` on the assembly to enable CLS compliance checking, rather than specifying only `[module:System.CLSCompliant(true)]` (**CS3012**). A module-level declaration alone doesn't enable checking for the assembly.
+- When building a CLS-compliant assembly, rebuild each unmarked module added via [**AddModule**](../compiler-options/inputs.md#addmodules) with `[assembly:System.CLSCompliant(true)]` in its source (**CS3013**). This declaration is preserved when the source is compiled as a netmodule. Marking only the consuming assembly doesn't mark the modules it includes.
 
 ## Public signing and reference assembly output
 
@@ -259,7 +259,7 @@ The `/refout` option produces a reference assembly in addition to the implementa
 
 ## Deterministic assembly versions
 
-- **CS8357**: *The specified version string 'version string' contains wildcards, which aren't compatible with determinism. Either remove wildcards from the version string, or disable determinism for this compilation.*
+- **CS8357**: *The specified version string 'version string' contains wildcards, which are not compatible with determinism. Either remove wildcards from the version string, or disable determinism for this compilation*
 
 Deterministic compilation requires the same inputs to produce the same output. A wildcard in <xref:System.Reflection.AssemblyVersionAttribute> derives part of the version from changing values, so it isn't compatible with [**Deterministic** compilation](../compiler-options/code-generation.md#deterministic). Replace the wildcard with fixed numeric components. Disable deterministic compilation only when a generated wildcard version is required.
 
@@ -282,11 +282,11 @@ These errors indicate failures in the compiler's own infrastructure rather than 
 - **CS7093**: *Cannot read config file 'file' -- 'reason'*
 - **CS8035**: *Error reading ruleset file path - reason*
 
-Correct the path to the [response file](../compiler-options/miscellaneous.md#responsefiles) passed as `@file.rsp`, and make sure the file exists and is readable by the process that runs the compiler (**CS2011**). A response file contains compiler arguments; supply its path after `@` rather than treating it as a source file. Quote a path containing spaces, for example `@"C:\build settings\options.rsp"`.
+Correct the path to the [response file](../compiler-options/miscellaneous.md#responsefiles) passed as `@file.rsp`, and ensure the file exists and is readable by the process that runs the compiler (**CS2011**). A response file contains compiler arguments; supply its path after `@` rather than treating it as a source file. Quote a path containing spaces, for example `@"C:\build settings\options.rsp"`.
 
 Use an absolute application-configuration path when a compiler integration requires `AppConfigPath` (**CS7089**). This diagnostic remains defined in the compiler, but current command-line parsing resolves relative `/appconfig` paths against the compiler's base directory rather than reporting CS7089. A relative command-line path alone isn't a reproduction of this diagnostic.
 
-Check the file and reason named in **CS7093**, and correct the [**ApplicationConfiguration**](../compiler-options/advanced.md#applicationconfiguration) input supplied through `/appconfig`. Make sure the file exists, is readable, and contains valid application-configuration XML. For example, `/appconfig:missing.config` produces CS7093 when that file doesn't exist; point the option to an existing, valid configuration file instead. A file that opens successfully can still produce this error if its XML can't be read.
+Check the file and reason named in **CS7093**, and correct the [**ApplicationConfiguration**](../compiler-options/advanced.md#applicationconfiguration) input supplied through `/appconfig`. Ensure the file exists, is readable, and contains valid application-configuration XML. For example, `/appconfig:missing.config` produces CS7093 when that file doesn't exist; point the option to an existing, valid configuration file instead. A file that opens successfully can still produce this error if its XML can't be read.
 
 Correct the [**CodeAnalysisRuleSet**](../compiler-options/errors-warnings.md#codeanalysisruleset) path supplied through `/ruleset`, and use the reason in **CS8035** to fix missing or invalid ruleset files. The file must contain valid ruleset XML, not an EditorConfig file renamed to `.ruleset`. If the reason identifies an invalid included ruleset, correct that file too. Relative `<Include Path="...">` values are resolved against the directory containing the including ruleset.
 
@@ -308,6 +308,6 @@ class Example
 
 To include source files recursively, use `/recurse:*.cs`, or remove `/recur` and pass the source file directly.
 
-Move [`/noconfig`](../compiler-options/miscellaneous.md#noconfig) out of the response file and onto the compiler command line (**CS2023**). The option controls whether the compiler uses its default response file, so it must be supplied on the command line rather than inside a response file. For example, remove `/noconfig` from `options.rsp` and invoke `csc /noconfig @options.rsp Example.cs` instead. This warning can't be suppressed with the [NoWarn](../compiler-options/errors-warnings.md#nowarn) option.
+Move [`/noconfig`](../compiler-options/miscellaneous.md#noconfig) out of the response file and onto the compiler command line (**CS2023**). The option controls whether the compiler uses its default response file, so you must supply it on the command line rather than inside a response file. For example, remove `/noconfig` from `options.rsp` and invoke `csc /noconfig @options.rsp Example.cs` instead. You can't suppress this warning by using the [NoWarn](../compiler-options/errors-warnings.md#nowarn) option.
 
 Remove a recognized but unimplemented switch, such as `/bugreport`, from the command line or response file (**CS8001**). Unlike CS2007, this warning means the compiler recognizes the switch but ignores it; the requested behavior doesn't occur. Removing it doesn't remove an active compiler feature. To report a compiler problem, collect a minimal reproduction and [file an issue in the Roslyn repository](https://github.com/dotnet/roslyn/issues/new/choose) instead.

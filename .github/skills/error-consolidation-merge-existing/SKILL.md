@@ -27,6 +27,12 @@ Collect these inputs from the user:
 
 For each source file in the approved list, complete all the following steps.
 
+### Obsolete-Diagnostic Retirement
+
+Check `ErrorCode.cs` before adding coverage. An uncommented entry remains eligible even without a known emitting reference. If an entry is commented out or absent, propose retirement and wait for approval.
+
+For an approved obsolete retirement, create the redirect with the required script, update inbound links, remove the source TOC entry, and delete the source file. Don't add the obsolete code to destination `f1_keywords`, `helpviewer_keywords`, master or thematic lists, or TOC `displayName`. Redirecting a retired URL doesn't imply current diagnostic coverage. Don't silently remove historical entries already owned by an existing consolidated article; report those separately for review. Skip the active-diagnostic merge steps below for that retired file.
+
 ### 1. Read and Extract
 
 Read the source and extract:
@@ -63,6 +69,8 @@ Append the source content as a new H2 section:
 
 Remove the source front matter, H1, and `See also` section. Demote existing source headings one level so source H2 headings become H3 headings, and so on.
 
+Preserve brief diagnostic-producing examples and their explicit corrections when they help resolve the error. Individual diagnostic headings are temporary merge scaffolding; the consolidation skill replaces them with approved thematic sections.
+
 ### 3. Create the Redirect
 
 Follow the `redirect-article` skill. Use its script; do not manually edit the redirection JSON:
@@ -93,6 +101,7 @@ After processing every approved source, present:
 
 - All source files merged.
 - The count of error codes added.
+- Any obsolete articles retired without adding destination discovery metadata.
 - All redirects created.
 - All TOC entries removed.
 

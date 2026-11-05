@@ -1,8 +1,3 @@
----
-title: Issues with clearly defined fixes
-ai-usage: ai-generated
----
-
 # Issues with clearly defined fixes
 
 Recommend the following 321 issues as GitHub Copilot (GHCP) assignment candidates because each has a specific remaining documentation gap, identified target files, and a bounded resolution. Track eighty-four additional issue-level fixes separately because eighty-one implementation PRs are already open; several issues share PRs, several patches need correction or completion before merge, and eight PRs remain drafts. No assignments or other GitHub changes have been made. Entries within each category follow issue creation time, not implementation priority.

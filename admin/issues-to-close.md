@@ -1,8 +1,3 @@
----
-title: Issue closure recommendations
-ai-usage: ai-generated
----
-
 # Issue closure recommendations
 
 Recommend closing the following issues because current documentation addresses the request, an authoritative answer resolves the documentation question, the affected sample has been superseded, another tracked issue covers the same work, or the proposal belongs to another documentation set. These are recommendations only: no issues have been closed, commented on, labeled, or assigned.

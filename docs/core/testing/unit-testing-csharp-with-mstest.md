@@ -3,7 +3,7 @@ title: Get started with C# and MSTest
 description: Learn unit test concepts in C# and .NET through an interactive experience building a sample solution step-by-step using dotnet test and MSTest.
 author: ncarandini
 ms.author: wiwagn
-ms.date: 10/22/2025
+ms.date: 11/05/2026
 ai-usage: ai-assisted
 ---
 # Get started with C# and MSTest
@@ -69,6 +69,8 @@ Make the *PrimeService.Tests* directory the current directory and create a new p
   <PackageReference Include="MSTest" Version="4.1.0" />
 </ItemGroup>
 ```
+
+[!INCLUDE [MSTest package versions](../../../includes/mstest-package-versions.md)]
 
 The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added the necessary MSTest packages and tools for code coverage reporting.
 

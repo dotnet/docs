@@ -12,6 +12,9 @@ ms.topic: reference
 
 With the [`dotnet test`](../tools/dotnet-test.md) command in .NET Core, you can use a filter expression to run selected tests. This article demonstrates how to filter tests. The examples use `dotnet test`. If you're using `vstest.console.exe`, replace `--filter` with `--testcasefilter:`.
 
+> [!NOTE]
+> The `--filter` syntax described in the following sections applies to MSTest, NUnit, and xUnit. TUnit uses a different syntax; select **TUnit** at the top of this article for details.
+
 ## Syntax
 
 ```dotnetcli
@@ -31,8 +34,8 @@ dotnet test --filter <Expression>
   | Test framework | Supported properties |
   | -------------- | -------------------- |
   | MSTest         | `FullyQualifiedName`<br>`Name`<br>`ClassName`<br>`Priority`<br>`TestCategory`<br>`Id` |
-  | xUnit          | `FullyQualifiedName`<br>`DisplayName`<br>`Traits` |
   | NUnit          | `FullyQualifiedName`<br>`Name`<br>`Priority`<br>`TestCategory`<br>`Category`<br>`Property` |
+  | xUnit          | `FullyQualifiedName`<br>`DisplayName`<br>`Traits` |
 
 * **Operators**
 
@@ -253,6 +256,83 @@ dotnet test --filter "(FullyQualifiedName~UnitTest1&TestCategory=CategoryA)|Prio
 ```
 
 For more information, see [TestCase filter](https://github.com/microsoft/vstest/blob/main/docs/filter.md).
+
+:::zone-end
+:::zone pivot="tunit"
+
+## TUnit examples
+
+TUnit doesn't support the `--filter` option described earlier in this article. Instead, it uses the MTP [`--treenode-filter`](microsoft-testing-platform-cli-options.md) option. A tree node filter is a path in the form `/<Assembly>/<Namespace>/<Class>/<Method>`, where:
+
+* `*` matches any value within a single path segment, and can be combined with other text, such as `*Method*`.
+* `**` matches any number of path segments.
+* `[<Property>=<Value>]` after a path segment matches tests that have that property. `[Category("CategoryA")]` is exposed as the property `Category`, and `[Property("Priority", "2")]` as the property `Priority`.
+* `|` (or) and `&` (and) combine alternatives within a single path segment or property filter. Enclose each alternative in parentheses, for example `/*/*/(UnitTest1)|(UnitTest2)/*` or `[(Category=CategoryA)|(Priority=2)]`.
+
+The `--treenode-filter` option is an MTP option, so `dotnet test` must run in its MTP mode. With the .NET 10 SDK or later, add the following configuration to the *global.json* file in your solution root:
+
+```json
+{
+    "test": {
+        "runner": "Microsoft.Testing.Platform"
+    }
+}
+```
+
+Without it, `dotnet test` runs in VSTest mode and fails with `MSB1001: Unknown switch` before any test runs. For more information, including how to run MTP projects with earlier SDKs, see [MTP mode of dotnet test](unit-testing-with-dotnet-test.md#mtp-mode-of-dotnet-test).
+
+The examples use the following test class:
+
+```csharp
+namespace TUnitNamespace;
+
+public class UnitTest1
+{
+    [Test, Property("Priority", "1"), Category("CategoryA")]
+    public void TestMethod1()
+    {
+    }
+
+    [Test, Property("Priority", "2")]
+    public void TestMethod2()
+    {
+    }
+}
+```
+
+| Expression | Result |
+|--|--|
+| `dotnet test --treenode-filter "/*/*/*/*Method*"` | Runs tests whose method name contains `Method`. |
+| `dotnet test --treenode-filter "/*/*/*/TestMethod1"` | Runs tests whose name is `TestMethod1`. |
+| `dotnet test --treenode-filter "/*/TUnitNamespace/UnitTest1/*"` | Runs all tests in class `TUnitNamespace.UnitTest1`. |
+| `dotnet test --treenode-filter "/**[Category=CategoryA]"` | Runs tests that are annotated with `[Category("CategoryA")]`. |
+| `dotnet test --treenode-filter "/**[Priority=2]"` | Runs tests that are annotated with `[Property("Priority", "2")]`. |
+
+Examples using the conditional operators `|` and `&`:
+
+To run tests that are in class `UnitTest1` **and** have a `Category` of `"CategoryA"`:
+
+```dotnetcli
+dotnet test --treenode-filter "/*/*/UnitTest1/*[Category=CategoryA]"
+```
+
+To run tests that have a `Category` of `"CategoryA"` **or** a `Priority` of `"2"`:
+
+```dotnetcli
+dotnet test --treenode-filter "/**[(Category=CategoryA)|(Priority=2)]"
+```
+
+To run tests that are in class `UnitTest1` **and** have either a `Category` of `"CategoryA"` **or** a `Priority` of `"2"`:
+
+```dotnetcli
+dotnet test --treenode-filter "/*/*/UnitTest1/*[(Category=CategoryA)|(Priority=2)]"
+```
+
+To run tests that have a `Category` of `"CategoryA"` **and** a `Priority` of `"1"`:
+
+```dotnetcli
+dotnet test --treenode-filter "/**[(Category=CategoryA)&(Priority=1)]"
+```
 
 :::zone-end
 

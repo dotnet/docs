@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSTest.Project", "MSTest.Pr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnit.Project", "NUnit.TestProject\NUnit.Project.csproj", "{954712AC-0658-46BE-950A-A77B3CAB60E1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TUnit.Project", "TUnit.TestProject\TUnit.Project.csproj", "{6B1C2E7A-3F4D-4E8B-9A1C-5D2E7F8A9B0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{954712AC-0658-46BE-950A-A77B3CAB60E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{954712AC-0658-46BE-950A-A77B3CAB60E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{954712AC-0658-46BE-950A-A77B3CAB60E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B1C2E7A-3F4D-4E8B-9A1C-5D2E7F8A9B0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B1C2E7A-3F4D-4E8B-9A1C-5D2E7F8A9B0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B1C2E7A-3F4D-4E8B-9A1C-5D2E7F8A9B0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B1C2E7A-3F4D-4E8B-9A1C-5D2E7F8A9B0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -173,7 +173,7 @@ To run your tests automatically when you push changes, add an Azure Pipelines co
 
 1. At the root of your repository, create an `azure-pipelines.yml` file with the following content. The example assumes that the `PrimeService` and `PrimeService.Tests` directories are at the repository root and both projects target .NET 10.
 
-   :::code language="yaml" source="./snippets/unit-testing-csharp-with-mstest/azure-pipelines.yml" id="Pipeline":::
+   :::code language="yaml" source="./snippets/unit-testing-csharp-with-mstest/azure-pipelines.yml":::
 
 1. Adjust the configuration to match your repository:
 
@@ -190,7 +190,7 @@ The [`UseDotNet@2` task](/azure/devops/pipelines/tasks/reference/use-dotnet-v2) 
 With `publishTestResults: true`, the task generates a TRX results file and publishes the results, even if a test fails. After the run, open the pipeline run's **Tests** tab to review passed and failed tests. A failed test also causes the test task and pipeline to fail.
 
 > [!NOTE]
-> This example uses the default VSTest configuration from `dotnet new mstest` with the .NET 10 SDK. If you enable Microsoft.Testing.Platform (MTP), see [Run MTP tests in continuous integration](microsoft-testing-platform-run-and-debug.md#tab/continuous-integration) for the required runner configuration.
+> This example uses the default VSTest configuration from `dotnet new mstest` with the .NET 10 SDK. If you enable Microsoft.Testing.Platform (MTP), see [Run MTP tests in continuous integration](microsoft-testing-platform-run-and-debug.md?tabs=continuous-integration) for the required runner configuration.
 
 ## See also
 

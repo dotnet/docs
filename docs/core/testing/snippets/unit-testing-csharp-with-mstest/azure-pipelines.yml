@@ -1,4 +1,3 @@
-# <Pipeline>
 trigger:
 - main
 
@@ -19,4 +18,3 @@ steps:
     projects: PrimeService.Tests/PrimeService.Tests.csproj
     arguments: --configuration Release
     publishTestResults: true
-# </Pipeline>

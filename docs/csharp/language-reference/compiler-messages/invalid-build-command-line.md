@@ -10,8 +10,11 @@ f1_keywords:
   - "CS1668"
   - "CS1719"
   - "CS1773"
+  - "CS2007"
   - "CS2008"
+  - "CS2011"
   - "CS2019"
+  - "CS2023"
   - "CS2029"
   - "CS2032"
   - "CS2036"
@@ -52,8 +55,11 @@ helpviewer_keywords:
   - "CS1668"
   - "CS1719"
   - "CS1773"
+  - "CS2007"
   - "CS2008"
+  - "CS2011"
   - "CS2019"
+  - "CS2023"
   - "CS2029"
   - "CS2032"
   - "CS2036"
@@ -103,8 +109,11 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS1668**](#input-and-output-file-errors): *Invalid search path 'path' specified in 'option' -- 'reason'*
 - [**CS1719**](#input-and-output-file-errors): *Error opening Win32 resource file 'file' -- 'reason'*
 - [**CS1773**](#invalid-option-values): *Invalid version for /subsystemversion. The version must be 6.02 or greater for ARM or AppContainerExe, and 4.00 or greater otherwise*
+- [**CS2007**](#anchor-tbd): *Unrecognized option: 'option'*
 - [**CS2008**](#input-and-output-file-errors): *No source files specified.*
+- [**CS2011**](#anchor-tbd): *Error opening response file 'file'*
 - [**CS2019**](#invalid-option-values): *Invalid target type for /target: must specify 'exe', 'winexe', 'library', or 'module'*
+- [**CS2023**](#anchor-tbd): *Ignoring /noconfig option because it was specified in a response file*
 - [**CS2029**](#invalid-option-values): *Invalid name for a preprocessing symbol; 'identifier' is not a valid identifier*
 - [**CS2032**](#invalid-option-values): *Character 'character' is not allowed on the command-line or in response files*
 - [**CS2036**](#conflicting-or-missing-options): *The /pdb option requires that the /debug option also be used*
@@ -257,3 +266,35 @@ These errors indicate failures in the compiler's own infrastructure rather than 
 - Verify that the runtime version specified in *csc.exe.config* is installed and not corrupted (**CS0007**). The setup process configures this file and you shouldn't change it. If you modified the file, check that the specified runtime version is present on the machine. If the correct version is present but might be corrupted, reinstall the common language runtime. Newer versions of the compiler no longer generate this error and it doesn't apply to the modern `dotnet build` toolchain.
 - Try a clean rebuild, verify all assembly references are valid and not corrupted, and check for conflicting reference versions (**CS7038**). This error wraps a lower-level failure during the assembly emit phase. The nested error message provides more specific details about what went wrong.
 - [File an issue in the Roslyn repository](https://github.com/dotnet/roslyn/issues/new/choose) with a minimal reproduction (**CS8751**). This error indicates a bug in the compiler itself. Your code exposed a code path the compiler team didn't anticipate.
+
+## CS2007
+
+**CS2007**: *Unrecognized option: 'option'*
+
+The compiler received an option it doesn't recognize. Remove the option, or use the documented spelling and argument from [C# compiler options](../compiler-options/index.md).
+
+For example, the following source produces CS2007 when you compile it with `/recur`:
+
+```csharp
+// Compile with: csc /recur Example.cs
+class Example
+{
+    public static void Main() { }
+}
+```
+
+To include source files recursively, use `/recurse:*.cs`, or remove `/recur` and pass the source file directly. An unrecognized option is different from a recognized but unimplemented option that the compiler ignores (**CS8001**).
+
+## CS2011
+
+**CS2011**: *Error opening response file 'file'*
+
+The compiler couldn't locate or open a specified response file. Correct the path and make sure the file exists and is readable by the process that runs the compiler. For more information about how to supply a response file, see [ResponseFiles](../compiler-options/miscellaneous.md#responsefiles).
+
+## CS2023
+
+**CS2023**: *Ignoring /noconfig option because it was specified in a response file*
+
+Move [`/noconfig`](../compiler-options/miscellaneous.md#noconfig) out of the response file and onto the compiler command line. The option controls whether the compiler uses its default response file, so it must be supplied on the command line rather than inside a response file.
+
+This warning can't be suppressed with the [NoWarn](../compiler-options/errors-warnings.md#nowarn) option.

@@ -1,7 +1,7 @@
 ---
 title: dotnet test command with Microsoft.Testing.Platform (MTP)
 description: The dotnet test command is used to execute unit tests in a given project using MTP.
-ms.date: 09/21/2026
+ms.date: 11/05/2026
 ai-usage: ai-assisted
 ---
 # dotnet test with Microsoft.Testing.Platform (MTP)
@@ -118,13 +118,13 @@ The MTP mode of `dotnet test` requires the .NET 10 SDK and MTP 1.7 or later. Opt
 
 - **`--results-directory <RESULTS_DIRECTORY>`**
 
-  Specifies the directory where test results are stored. If the directory doesn't exist, it's created. If a relative path is provided, it's converted to an absolute path based on the current directory.
+  Specifies the directory where test results are stored. If the directory doesn't exist, it's created. If a relative path is provided, it's converted to an absolute path based on the current directory. For defaults and layout overrides, see [Results and artifacts](#results-and-artifacts).
 
 - **`--results-directory-layout <flat|per-module>`**
 
-  Specifies how a multi-module run organizes files under the results directory. The default, `flat`, writes all results to the same directory. `per-module` writes each module's results to `<project>/<target-framework>_<runtime-or-architecture>`, which prevents reports with the same file name from overwriting one another.
+  Specifies how a multi-module run organizes files under the results directory. The default, `flat`, writes all results to the same directory. `per-module` writes each module's results to `<project>/<target-framework>_<runtime-or-architecture>`, which prevents reports with the same relative file name from overwriting one another. A shared absolute extension output path, such as an absolute `--coverage-output` path, bypasses this layout.
 
-  Available starting with .NET 11 RC 1.
+  Available starting with .NET 11 RC 1. The option is also available in .NET SDK 10.0.402 and later updates in the 10.0.4xx feature band.
 
 - **`--diagnostic-output-directory <DIAGNOSTIC_OUTPUT_DIRECTORY>`**
 
@@ -296,6 +296,10 @@ Live test-host output requires an MTP host that supports protocol 1.1 or later. 
 For multi-module runs, `dotnet test` evaluates the zero-test result across the complete run starting with .NET 11 Preview 7. A module with no tests doesn't fail the run if another module executes tests successfully, unless an explicit minimum-test policy requires more tests.
 
 ## Results and artifacts
+
+With .NET SDK 10.0.200 or later and MTP 2.3.1 or later, the default results directory is `TestResults` beneath the directory where you invoke `dotnet test`. The SDK supplies that directory through `DOTNET_CLI_TEST_COMMAND_WORKING_DIRECTORY`, which MTP uses as its working directory and the base for default results. Previously, each test application used its own output directory as the base.
+
+With the default `flat` layout, test applications from the same invocation share the results directory. To isolate their relative report paths, use `--results-directory-layout per-module`. For coverage-specific file names and collision risks, see [Coverage output files](../testing/microsoft-testing-platform-code-coverage.md#coverage-output-files).
 
 When the SDK artifacts output layout is enabled, .NET 11 RC 1 and later versions place MTP reports, coverage files, and diagnostics under `<ArtifactsPath>/test/<project>/<pivot>` by default. An explicit `--results-directory` or `--results-directory-layout` takes precedence.
 

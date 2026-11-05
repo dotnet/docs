@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) code coverage
 description: Learn about collecting code coverage data with MTP.
 author: evangelink
 ms.author: amauryleve
-ms.date: 10/01/2026
+ms.date: 11/05/2026
 ai-usage: ai-assisted
 ---
 
@@ -32,7 +32,7 @@ For more information about Microsoft code coverage, see its [GitHub page](https:
 | Option | Description |
 |---|---|
 | `--coverage`               | Collect the code coverage using dotnet-coverage tool.                         |
-| `--coverage-output`        | The name or path of the produced coverage file. By default, the file is `TestResults/<guid>.coverage`. |
+| `--coverage-output`        | The name or path of the produced coverage file. Relative paths resolve from the [test results directory](microsoft-testing-platform-cli-options.md). The default is `<guid>.coverage` in that directory. See [Coverage output files](#coverage-output-files). |
 | `--coverage-output-format` | Output file format. Supported values are: `coverage`, `xml`, and `cobertura`. Default is `coverage`. |
 | `--coverage-settings`      | [XML code coverage settings](../additional-tools/dotnet-coverage.md#settings). |
 
@@ -40,6 +40,31 @@ For more information about the available options, see [settings](../additional-t
 
 > [!NOTE]
 > The default value of `IncludeTestAssembly` in Microsoft.Testing.Extensions.CodeCoverage is `false`, while it used to be `true` in VSTest. This means that test projects are excluded by default. For more information, see [Code Coverage configuration](https://github.com/microsoft/codecoverage/blob/main/docs/configuration.md).
+
+### Coverage output files
+
+To preserve every application's coverage report in a multi-module `dotnet test` run, omit `--coverage-output`. The extension generates a GUID-based name for each report and selects the file extension from `--coverage-output-format`:
+
+```dotnetcli
+dotnet test -- --coverage --coverage-output-format cobertura
+```
+
+If you specify `--coverage-output`, `dotnet test` forwards the same value to every test application. A relative path resolves from that application's results directory; an absolute path is used as specified. The option doesn't request a merged solution-level report.
+
+> [!WARNING]
+> With the default `flat` layout, applications that use the same output path overwrite one another's coverage reports, even if the applications run serially. The test command can succeed without a warning about the lost coverage.
+
+To keep a fixed relative file name without collisions, use the SDK's [`--results-directory-layout per-module`](../tools/dotnet-test-mtp.md#options) option before `--`:
+
+```dotnetcli
+dotnet test --results-directory-layout per-module -- --coverage --coverage-output-format cobertura --coverage-output my-output-file.xml
+```
+
+Each application writes `my-output-file.xml` beneath its own project/framework/runtime directory. An absolute `--coverage-output` path bypasses those directories. To keep reports separate, use a relative file name or a different absolute path for each application.
+
+Compatible coverage extensions can merge the preserved reports through [artifact post-processing](../tools/dotnet-test-mtp.md#results-and-artifacts). This feature is separate from `--coverage-output` and can't restore data overwritten before the merge.
+
+Report file name placeholders, such as `{asm}`, `{tfm}`, and `{arch}`, apply to [test reports](microsoft-testing-platform-test-reports.md#report-file-names), not to `--coverage-output`.
 
 ## Coverage summaries and thresholds
 

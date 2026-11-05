@@ -156,30 +156,38 @@ items:
                 href: ../../core/tools/templates.md
           - name: dotnet nuget
             items:
-              - name: dotnet nuget delete
-                href: ../../core/tools/dotnet-nuget-delete.md
-              - name: dotnet nuget locals
-                href: ../../core/tools/dotnet-nuget-locals.md
-              - name: dotnet nuget push
-                href: ../../core/tools/dotnet-nuget-push.md
+              - name: dotnet nuget add client-cert
+                href: ../../core/tools/dotnet-nuget-add-client-cert.md
               - name: dotnet nuget add source
                 href: ../../core/tools/dotnet-nuget-add-source.md
+              - name: dotnet nuget delete
+                href: ../../core/tools/dotnet-nuget-delete.md
               - name: dotnet nuget disable source
                 href: ../../core/tools/dotnet-nuget-disable-source.md
               - name: dotnet nuget enable source
                 href: ../../core/tools/dotnet-nuget-enable-source.md
+              - name: dotnet nuget list client-cert
+                href: ../../core/tools/dotnet-nuget-list-client-cert.md
               - name: dotnet nuget list source
                 href: ../../core/tools/dotnet-nuget-list-source.md
+              - name: dotnet nuget locals
+                href: ../../core/tools/dotnet-nuget-locals.md
+              - name: dotnet nuget push
+                href: ../../core/tools/dotnet-nuget-push.md
+              - name: dotnet nuget remove client-cert
+                href: ../../core/tools/dotnet-nuget-remove-client-cert.md
               - name: dotnet nuget remove source
                 href: ../../core/tools/dotnet-nuget-remove-source.md
+              - name: dotnet nuget sign
+                href: ../../core/tools/dotnet-nuget-sign.md
+              - name: dotnet nuget trust
+                href: ../../core/tools/dotnet-nuget-trust.md
+              - name: dotnet nuget update client-cert
+                href: ../../core/tools/dotnet-nuget-update-client-cert.md
               - name: dotnet nuget update source
                 href: ../../core/tools/dotnet-nuget-update-source.md
               - name: dotnet nuget verify
                 href: ../../core/tools/dotnet-nuget-verify.md
-              - name: dotnet nuget trust
-                href: ../../core/tools/dotnet-nuget-trust.md
-              - name: dotnet nuget sign
-                href: ../../core/tools/dotnet-nuget-sign.md
               - name: dotnet nuget why
                 href: ../../core/tools/dotnet-nuget-why.md
           - name: dotnet nuget config

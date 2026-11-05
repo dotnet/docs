@@ -1,7 +1,7 @@
 ---
 title: Networking config settings
 description: Learn about runtime settings that configure networking for .NET apps.
-ms.date: 03/16/2026
+ms.date: 10/20/2026
 ai-usage: ai-assisted
 ---
 # Runtime configuration options for networking
@@ -38,6 +38,19 @@ ai-usage: ai-assisted
 | - | - | - |
 | **runtimeconfig.json** | `System.Net.Http.UsePortInSpn` | `true` - include port number in SPN, for example, `HTTP/host:port`<br/>`false` - don't include port in SPN, for example, `HTTP/host` |
 | **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_USEPORTINSPN` | `1` - include port number in SPN, for example, `HTTP/host:port`<br/>`0` - don't include port in SPN, for example, `HTTP/host` |
+
+[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
+
+## Managed NTLM authentication
+
+On non-Windows platforms, the system GSSAPI implementation might not provide NTLM, might require an additional native NTLM provider, or might have compatibility issues. Set this option to `true` when an application must authenticate to an existing NTLM service and the system provider can't complete the authentication. .NET then uses its built-in managed implementation of NTLM and SPNEGO for HTTP and SMTP authentication and <xref:System.Net.Security.NegotiateAuthentication>.
+
+> [!IMPORTANT]
+> NTLM is a legacy authentication protocol and uses cryptographic algorithms that don't meet current recommendations. Enable managed NTLM only when required for compatibility with existing systems. Negotiate prefers Kerberos when available but can fall back to NTLM. To prevent NTLM, request Kerberos explicitly when supported or use a modern authentication protocol.
+
+| | Setting name | Values |
+| - | - | - |
+| **runtimeconfig.json** | `System.Net.Security.UseManagedNtlm` | `false` - use the system GSSAPI implementation<br/>`true` - use the built-in managed NTLM and SPNEGO implementation |
 
 [!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
 

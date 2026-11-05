@@ -134,6 +134,8 @@ namespace Prime.UnitTests.Services
 
 The [TestClass attribute](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute) denotes a class that contains unit tests. The [TestMethod attribute](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) indicates a method is a test method.
 
+MSTest creates a new instance of the test class for each test, so the constructor creates a separate `PrimeService` for each test. The constructor contains only setup that every test in this class needs. If your tests need different setup, create objects in the test methods or call helper methods from those methods. For guidance, see [Use helper methods instead of Setup and Teardown](unit-testing-best-practices.md#use-helper-methods-instead-of-setup-and-teardown).
+
 Save this file and execute [`dotnet test`](../tools/dotnet-test.md) to build the tests and the class library and then run the tests. The MSTest test runner contains the program entry point to run your tests. `dotnet test` starts the test runner using the unit test project you created.
 
 Your test fails because you didn't create the implementation yet. Make this test pass by writing the simplest code in the `PrimeService` class that works:

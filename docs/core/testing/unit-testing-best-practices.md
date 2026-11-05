@@ -3,8 +3,9 @@ title: Best practices for writing unit tests
 description: Learn best practices for writing unit tests that drive code quality and resilience for .NET Core and .NET Standard projects.
 author: jpreese
 ms.author: wiwagn
-ms.date: 03/20/2025
+ms.date: 11/05/2026
 ms.custom: devdivchpfy22
+ai-usage: ai-assisted
 ---
 
 # Unit testing best practices for .NET
@@ -235,13 +236,15 @@ When you write your unit tests, avoid manual string concatenation, logical condi
 
 ### Use helper methods instead of Setup and Teardown
 
-If you require a similar object or state for your tests, use a helper method rather than `Setup` and `Teardown` attributes, if they exist. Helper methods are preferred over these attributes for several reasons:
+To keep test-specific setup visible, create the objects you need in each test method or call a helper method from the test. Prefer this approach over `Setup` and `Teardown` attributes when tests have different setup requirements:
 
-- Less confusion when reading the tests because all code is visible from within each test
-- Less chance of setting up too much or too little for the given test
-- Less chance of sharing state between tests, which creates unwanted dependencies between them
+- Each test shows the setup it requires.
+- Each test creates only the objects and state it needs.
+- Changes to common setup code don't affect tests that don't use it.
 
-In unit testing frameworks, the `Setup` attribute is called before each and every unit test within your test suite. Some programmers see this behavior as useful, but it often results in bloated and hard to read tests. Each test generally has different requirements for setup and execution. Unfortunately, the `Setup` attribute forces you to use the exact same requirements for each test.
+Per-test setup methods run before every test in their scope, even when a test doesn't need all of the setup. As tests acquire different requirements, a common setup method can create unnecessary objects or hide which state a particular test depends on.
+
+Common per-test setup can still be appropriate when every test in a class needs the same initialization. For example, MSTest creates a new test-class instance for each test, including each data row, so constructor initialization runs separately for each test. For synchronous initialization, prefer the constructor. Use [`TestInitialize`](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute) when you need asynchronous initialization or timeout support. For details, see [MSTest lifecycle](unit-testing-mstest-writing-tests-lifecycle.md#setup-phase).
 
 > [!NOTE]
 > The `SetUp` and `TearDown` attributes are removed in [xUnit](https://xunit.net/) version 2.x and later.

@@ -1,0 +1,22 @@
+# <Pipeline>
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: UseDotNet@2
+  displayName: Install .NET SDK
+  inputs:
+    packageType: sdk
+    version: 10.0.x
+
+- task: DotNetCoreCLI@2
+  displayName: Run MSTest tests
+  inputs:
+    command: test
+    projects: PrimeService.Tests/PrimeService.Tests.csproj
+    arguments: --configuration Release
+    publishTestResults: true
+# </Pipeline>

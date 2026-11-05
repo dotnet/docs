@@ -153,6 +153,7 @@ Contoso.MyTests.exe --filter "FullyQualifiedName~UnitTest1|TestCategory=Category
 
 ## See also
 
+- [Run MSTest tests in Azure Pipelines](unit-testing-csharp-with-mstest.md#run-tests-in-azure-pipelines)
 - [Testing with `dotnet test`](unit-testing-with-dotnet-test.md)
 - [`dotnet test` with MTP](../tools/dotnet-test-mtp.md)
 - [`dotnet test` with VSTest](../tools/dotnet-test-vstest.md)

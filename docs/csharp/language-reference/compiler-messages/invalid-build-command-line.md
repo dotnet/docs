@@ -27,6 +27,10 @@ f1_keywords:
   - "CS3012"
   - "CS3013"
   - "CS7038"
+  - "CS7093"
+  - "CS8001"
+  - "CS8035"
+  - "CS8101"
   - "CS8111"
   - "CS8113"
   - "CS8190"
@@ -65,6 +69,10 @@ helpviewer_keywords:
   - "CS3012"
   - "CS3013"
   - "CS7038"
+  - "CS7093"
+  - "CS8001"
+  - "CS8035"
+  - "CS8101"
   - "CS8111"
   - "CS8113"
   - "CS8190"
@@ -77,7 +85,7 @@ helpviewer_keywords:
   - "CS8771"
   - "CS8772"
   - "CS9400"
-ms.date: 10/20/2026
+ms.date: 11/05/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings for compiler options and build configuration
@@ -112,6 +120,10 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS3012**](#module-and-assembly-configuration): *You must specify the CLSCompliant attribute on the assembly, not the module, to enable CLS compliance checking*
 - [**CS3013**](#module-and-assembly-configuration): *Added modules must be marked with the CLSCompliant attribute to match the assembly*
 - [**CS7038**](#compiler-infrastructure-errors): *Failed to emit module 'module': error*
+- [**CS7093**](#anchor-tbd): *Cannot read config file 'file' -- 'reason'*
+- [**CS8001**](#anchor-tbd): *The command line switch 'switch' is not yet implemented and was ignored.*
+- [**CS8035**](#anchor-tbd): *Error reading ruleset file path - reason*
+- [**CS8101**](#anchor-tbd): *The pathmap option was incorrectly formatted.*
 - [**CS8111**](#instrumentation-and-pdb-options): *Invalid instrumentation kind: instrumentation kind*
 - [**CS8113**](#instrumentation-and-pdb-options): *Invalid hash algorithm name: 'hash algorithm name'*
 - [**CS8190**](#parse-and-documentation-api-options): *Provided source code kind is unsupported or invalid: 'source code kind'*

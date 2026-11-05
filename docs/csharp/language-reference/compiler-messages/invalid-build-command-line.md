@@ -111,11 +111,11 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS1668**](#input-and-output-file-errors): *Invalid search path 'path' specified in 'option' -- 'reason'*
 - [**CS1719**](#input-and-output-file-errors): *Error opening Win32 resource file 'file' -- 'reason'*
 - [**CS1773**](#invalid-option-values): *Invalid version for /subsystemversion. The version must be 6.02 or greater for ARM or AppContainerExe, and 4.00 or greater otherwise*
-- [**CS2007**](#anchor-tbd): *Unrecognized option: 'option'*
+- [**CS2007**](#correct-unrecognized-or-ignored-switches): *Unrecognized option: 'option'*
 - [**CS2008**](#input-and-output-file-errors): *No source files specified.*
-- [**CS2011**](#anchor-tbd): *Error opening response file 'file'*
+- [**CS2011**](#validate-configuration-and-response-files): *Error opening response file 'file'*
 - [**CS2019**](#invalid-option-values): *Invalid target type for /target: must specify 'exe', 'winexe', 'library', or 'module'*
-- [**CS2023**](#anchor-tbd): *Ignoring /noconfig option because it was specified in a response file*
+- [**CS2023**](#correct-unrecognized-or-ignored-switches): *Ignoring /noconfig option because it was specified in a response file*
 - [**CS2029**](#invalid-option-values): *Invalid name for a preprocessing symbol; 'identifier' is not a valid identifier*
 - [**CS2032**](#invalid-option-values): *Character 'character' is not allowed on the command-line or in response files*
 - [**CS2036**](#conflicting-or-missing-options): *The /pdb option requires that the /debug option also be used*
@@ -131,11 +131,11 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS3012**](#module-and-assembly-configuration): *You must specify the CLSCompliant attribute on the assembly, not the module, to enable CLS compliance checking*
 - [**CS3013**](#module-and-assembly-configuration): *Added modules must be marked with the CLSCompliant attribute to match the assembly*
 - [**CS7038**](#compiler-infrastructure-errors): *Failed to emit module 'module': error*
-- [**CS7089**](#anchor-tbd): *AppConfigPath must be absolute.*
-- [**CS7093**](#anchor-tbd): *Cannot read config file 'file' -- 'reason'*
-- [**CS8001**](#anchor-tbd): *The command line switch 'switch' is not yet implemented and was ignored.*
-- [**CS8035**](#anchor-tbd): *Error reading ruleset file path - reason*
-- [**CS8101**](#anchor-tbd): *The pathmap option was incorrectly formatted.*
+- [**CS7089**](#validate-configuration-and-response-files): *AppConfigPath must be absolute.*
+- [**CS7093**](#validate-configuration-and-response-files): *Cannot read config file 'file' -- 'reason'*
+- [**CS8001**](#correct-unrecognized-or-ignored-switches): *The command line switch 'switch' is not yet implemented and was ignored.*
+- [**CS8035**](#validate-configuration-and-response-files): *Error reading ruleset file path - reason*
+- [**CS8101**](#invalid-option-values): *The pathmap option was incorrectly formatted.*
 - [**CS8111**](#instrumentation-and-pdb-options): *Invalid instrumentation kind: instrumentation kind*
 - [**CS8113**](#instrumentation-and-pdb-options): *Invalid hash algorithm name: 'hash algorithm name'*
 - [**CS8190**](#parse-and-documentation-api-options): *Provided source code kind is unsupported or invalid: 'source code kind'*
@@ -178,6 +178,7 @@ These errors indicate that the compiler can't find, read, or write files needed 
 - **CS2042**: *Invalid debug information format: format*
 - **CS2043**: *'id#' syntax is no longer supported. Use '$id' instead.*
 - **CS2046**: *Command-line syntax error: 'value' is not a valid value for the 'option' option. The value must be of the form 'format'.*
+- **CS8101**: *The pathmap option was incorrectly formatted.*
 - **CS8772**: *stdin argument '-' is specified, but input has not been redirected from the standard input stream.*
 - **CS9400**: *Invalid 'option' value: 'value'. Accepted values are: value1, value2, ...*
 
@@ -193,6 +194,10 @@ These errors indicate that a value you passed to a compiler option is malformed 
 - Provide a valid debug information format value (**CS2042**). Accepted values depend on the compiler version and typically include `full`, `pdbonly`, `portable`, and `embedded`.
 - Replace the legacy `id#` syntax with `$id` (**CS2043**). The compiler no longer supports the older syntax.
 - Supply a value that matches the expected format for the specified option (**CS2046**). The error message indicates the expected form.
+- Format each [**PathMap**](../compiler-options/advanced.md#pathmap) entry as `source=destination`, with a nonempty value on both sides, and separate mappings with commas (**CS8101**). For example, `/pathmap:C:\work\src=/_/src,C:\work\generated=/_/generated` supplies two mappings. An entry such as `/pathmap:C:\work\src` is missing `=destination`. Double a literal comma or equals sign within a path as `,,` or `==`; quotation marks alone don't escape these mapping separators.
+
+  On the compiler command line, quote paths containing spaces so the shell passes the complete option as one argument, for example `/pathmap:"C:\work tree=/_/src"`. In a project file, use `<PathMap>C:\work tree=/_/src</PathMap>` without command-line quotation marks. XML escaping still applies to characters such as `&`, which you write as `&amp;` in element text.
+
 - Redirect standard input when using the `-` (stdin) argument (**CS8772**). The compiler expects piped input when you pass `-` as the source file argument. Use a pipeline (for example, `cat file.cs | csc -`) or remove the `-` argument and pass the source file directly.
 - Set the experimental Roslyn `CSharpCompilationOptions.MemorySafetyRulesVersion` option to a supported enum member (**CS9400**). `WithMemorySafetyRulesVersion` accepts `MemorySafetyRulesVersion.Version1` (`1`, legacy rules) or `MemorySafetyRulesVersion.Version2` (`2`, updated rules). Casting another integer, such as `0` or `3`, to this enum produces CS9400 with the accepted values `1, 2`. This diagnostic validates the Roslyn API option, not values passed to the `updated-memory-safety-rules` feature flag. A valid value can still require another language version: `Version2` with C# 15.0 produces [CS8630](feature-version-errors.md#feature-not-available-in-language-version), because the updated rules require `preview`.
 
@@ -270,13 +275,28 @@ These errors indicate failures in the compiler's own infrastructure rather than 
 - Try a clean rebuild, verify all assembly references are valid and not corrupted, and check for conflicting reference versions (**CS7038**). This error wraps a lower-level failure during the assembly emit phase. The nested error message provides more specific details about what went wrong.
 - [File an issue in the Roslyn repository](https://github.com/dotnet/roslyn/issues/new/choose) with a minimal reproduction (**CS8751**). This error indicates a bug in the compiler itself. Your code exposed a code path the compiler team didn't anticipate.
 
-## CS2007
+## Validate configuration and response files
 
-**CS2007**: *Unrecognized option: 'option'*
+- **CS2011**: *Error opening response file 'file'*
+- **CS7089**: *AppConfigPath must be absolute.*
+- **CS7093**: *Cannot read config file 'file' -- 'reason'*
+- **CS8035**: *Error reading ruleset file path - reason*
 
-The compiler received an option it doesn't recognize. Remove the option, or use the documented spelling and argument from [C# compiler options](../compiler-options/index.md).
+Correct the path to the [response file](../compiler-options/miscellaneous.md#responsefiles) passed as `@file.rsp`, and make sure the file exists and is readable by the process that runs the compiler (**CS2011**). A response file contains compiler arguments; supply its path after `@` rather than treating it as a source file. Quote a path containing spaces, for example `@"C:\build settings\options.rsp"`.
 
-For example, the following source produces CS2007 when you compile it with `/recur`:
+Use an absolute application-configuration path when a compiler integration requires `AppConfigPath` (**CS7089**). This diagnostic remains defined in the compiler, but current command-line parsing resolves relative `/appconfig` paths against the compiler's base directory rather than reporting CS7089. A relative command-line path alone isn't a reproduction of this diagnostic.
+
+Check the file and reason named in **CS7093**, and correct the [**ApplicationConfiguration**](../compiler-options/advanced.md#applicationconfiguration) input supplied through `/appconfig`. Make sure the file exists, is readable, and contains valid application-configuration XML. For example, `/appconfig:missing.config` produces CS7093 when that file doesn't exist; point the option to an existing, valid configuration file instead. A file that opens successfully can still produce this error if its XML can't be read.
+
+Correct the [**CodeAnalysisRuleSet**](../compiler-options/errors-warnings.md#codeanalysisruleset) path supplied through `/ruleset`, and use the reason in **CS8035** to fix missing or invalid ruleset files. The file must contain valid ruleset XML, not an EditorConfig file renamed to `.ruleset`. If the reason identifies an invalid included ruleset, correct that file too. Relative `<Include Path="...">` values are resolved against the directory containing the including ruleset.
+
+## Correct unrecognized or ignored switches
+
+- **CS2007**: *Unrecognized option: 'option'*
+- **CS2023**: *Ignoring /noconfig option because it was specified in a response file*
+- **CS8001**: *The command line switch 'switch' is not yet implemented and was ignored.*
+
+Remove an unrecognized option, or use the documented spelling and argument from [C# compiler options](../compiler-options/index.md) (**CS2007**). For example, the following source produces CS2007 when you compile it with `/recur`:
 
 ```csharp
 // Compile with: csc /recur Example.cs
@@ -286,18 +306,8 @@ class Example
 }
 ```
 
-To include source files recursively, use `/recurse:*.cs`, or remove `/recur` and pass the source file directly. An unrecognized option is different from a recognized but unimplemented option that the compiler ignores (**CS8001**).
+To include source files recursively, use `/recurse:*.cs`, or remove `/recur` and pass the source file directly.
 
-## CS2011
+Move [`/noconfig`](../compiler-options/miscellaneous.md#noconfig) out of the response file and onto the compiler command line (**CS2023**). The option controls whether the compiler uses its default response file, so it must be supplied on the command line rather than inside a response file. For example, remove `/noconfig` from `options.rsp` and invoke `csc /noconfig @options.rsp Example.cs` instead. This warning can't be suppressed with the [NoWarn](../compiler-options/errors-warnings.md#nowarn) option.
 
-**CS2011**: *Error opening response file 'file'*
-
-The compiler couldn't locate or open a specified response file. Correct the path and make sure the file exists and is readable by the process that runs the compiler. For more information about how to supply a response file, see [ResponseFiles](../compiler-options/miscellaneous.md#responsefiles).
-
-## CS2023
-
-**CS2023**: *Ignoring /noconfig option because it was specified in a response file*
-
-Move [`/noconfig`](../compiler-options/miscellaneous.md#noconfig) out of the response file and onto the compiler command line. The option controls whether the compiler uses its default response file, so it must be supplied on the command line rather than inside a response file.
-
-This warning can't be suppressed with the [NoWarn](../compiler-options/errors-warnings.md#nowarn) option.
+Remove a recognized but unimplemented switch, such as `/bugreport`, from the command line or response file (**CS8001**). Unlike CS2007, this warning means the compiler recognizes the switch but ignores it; the requested behavior doesn't occur. Removing it doesn't remove an active compiler feature. To report a compiler problem, collect a minimal reproduction and [file an issue in the Roslyn repository](https://github.com/dotnet/roslyn/issues/new/choose) instead.

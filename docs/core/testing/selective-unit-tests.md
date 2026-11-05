@@ -266,6 +266,18 @@ TUnit doesn't support the `--filter` option described earlier in this article. I
 * `[<Property>=<Value>]` after a path segment matches tests that have that property. `[Category("CategoryA")]` is exposed as the property `Category`, and `[Property("Priority", "2")]` as the property `Priority`.
 * `|` (or) and `&` (and) combine alternatives within a single path segment or property filter. Enclose each alternative in parentheses, for example `/*/*/(UnitTest1)|(UnitTest2)/*` or `[(Category=CategoryA)|(Priority=2)]`.
 
+The `--treenode-filter` option is an MTP option, so `dotnet test` must run in its MTP mode. With the .NET 10 SDK or later, add the following configuration to the *global.json* file in your solution root:
+
+```json
+{
+    "test": {
+        "runner": "Microsoft.Testing.Platform"
+    }
+}
+```
+
+Without it, `dotnet test` runs in VSTest mode and fails with `MSB1001: Unknown switch` before any test runs. For more information, including how to run MTP projects with earlier SDKs, see [MTP mode of dotnet test](unit-testing-with-dotnet-test.md#mtp-mode-of-dotnet-test).
+
 The examples use the following test class:
 
 ```csharp

@@ -42,7 +42,7 @@ Reference the latest supported version of the dependency across all target frame
 
 > [!NOTE]
 >
-> - The lifetime of the latest Standard Term Support (STS) release aligns with the latest Long Term Support (LTS) release, so choosing "latest" effectively means choosing the latest supported version regardless of STS or LTS designation. For current support dates, see the [.NET support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+> - An STS release and the preceding LTS release can share an end-of-support date. For example, .NET 9 (STS) and .NET 8 (LTS) are supported until November 2026, while .NET 10 (LTS) is supported until November 2028. For this strategy, choose the latest supported dependency version regardless of its STS or LTS designation. For current support dates, see the [.NET support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 > - Not all packages support targeting older frameworks in their latest version, for example, `Microsoft.AspNetCore.Authorization`. If you reference these packages, exclude them from this policy and follow option 2 instead.
 
 **Pros**

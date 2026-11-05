@@ -38,7 +38,13 @@ Make *PrimeService* the current directory and run the following command to creat
 dotnet new classlib
 ```
 
-Rename *Class1.cs* to *PrimeService.cs*. You create a failing implementation of the `PrimeService` class:
+Change the directory back to the *unit-testing-using-nunit* directory. Run the following command to add the class library project to the solution:
+
+```dotnetcli
+dotnet sln add PrimeService/PrimeService.csproj
+```
+
+Rename `Class1.cs` in the `PrimeService` directory to `PrimeService.cs`. You create a failing implementation of the `PrimeService` class:
 
 ```csharp
 using System;
@@ -53,12 +59,6 @@ namespace Prime.Services
         }
     }
 }
-```
-
-Change the directory back to the *unit-testing-using-nunit* directory. Run the following command to add the class library project to the solution:
-
-```dotnetcli
-dotnet sln add PrimeService/PrimeService.csproj
 ```
 
 ## Creating the test project

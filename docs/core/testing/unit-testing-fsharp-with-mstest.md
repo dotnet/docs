@@ -3,7 +3,8 @@ title: Get started with F# and MSTest
 description: Learn unit test concepts for F# in .NET through an interactive experience building a sample solution step-by-step using dotnet test and MSTest.
 author: billwagner
 ms.author: wiwagn
-ms.date: 08/30/2017
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 ---
 # Get started with F# and MSTest
 
@@ -53,6 +54,8 @@ Make the *MathService.Tests* directory the current directory and create a new pr
   <PackageReference Include="MSTest" Version="4.1.0" />
 </ItemGroup>
 ```
+
+[!INCLUDE [MSTest package versions](../../../includes/mstest-package-versions.md)]
 
 The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added MSTest. Now, add the `MathService` class library as another dependency to the project. Use the `dotnet reference add` command:
 

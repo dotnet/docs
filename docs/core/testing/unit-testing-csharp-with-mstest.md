@@ -3,7 +3,7 @@ title: Get started with C# and MSTest
 description: Learn unit test concepts in C# and .NET through an interactive experience building a sample solution step-by-step using dotnet test and MSTest.
 author: ncarandini
 ms.author: wiwagn
-ms.date: 10/22/2025
+ms.date: 11/05/2026
 ai-usage: ai-assisted
 ---
 # Get started with C# and MSTest
@@ -131,6 +131,8 @@ namespace Prime.UnitTests.Services
 ```
 
 The [TestClass attribute](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute) denotes a class that contains unit tests. The [TestMethod attribute](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) indicates a method is a test method.
+
+MSTest creates a new instance of the test class for each test, so the constructor creates a separate `PrimeService` for each test. The constructor contains only setup that every test in this class needs. If your tests need different setup, create objects in the test methods or call helper methods from those methods. For guidance, see [Use helper methods instead of Setup and Teardown](unit-testing-best-practices.md#use-helper-methods-instead-of-setup-and-teardown).
 
 Save this file and execute [`dotnet test`](../tools/dotnet-test.md) to build the tests and the class library and then run the tests. The MSTest test runner contains the program entry point to run your tests. `dotnet test` starts the test runner using the unit test project you created.
 

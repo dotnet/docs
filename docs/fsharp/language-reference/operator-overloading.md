@@ -1,7 +1,8 @@
 ---
 title: Operator Overloading
 description: Learn how to overload arithmetic operators in a class or record type and at the global level in F#.
-ms.date: 08/15/2020
+ms.date: 09/30/2026
+ai-usage: ai-assisted
 ---
 # Operator Overloading
 
@@ -163,6 +164,14 @@ The output of the above code is `12`.
 You can redefine the regular arithmetic operators in this manner because the scoping rules for F# dictate that newly defined operators take precedence over the built-in operators.
 
 The keyword `inline` is often used with global operators, which are often small functions that are best integrated into the calling code. Making operator functions inline also enables them to work with statically resolved type parameters to produce statically resolved generic code. For more information, see [Inline Functions](./functions/inline-functions.md) and [Statically Resolved Type Parameters](./generics/statically-resolved-type-parameters.md).
+
+## Operators supplied by extensions
+
+To combine existing types without wrappers, F# 11.2 can use optional extension operators as SRTP witnesses. These adapters add counts and append observation lists:
+
+:::code language="fsharp" source="snippets/extension-member-constraints/composition/Composition.fs" id="CombineAdapters":::
+
+In the .NET 11.0.100 SDK, enable preview at native tuple headers and extension-solving call sites. Built-in primitive solutions retain priority. See [Extension members for SRTP constraints](generics/extension-member-constraints.md#operator-extensions) for language settings, complete calls, scope, and limits.
 
 ## See also
 

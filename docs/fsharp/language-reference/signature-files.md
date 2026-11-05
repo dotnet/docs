@@ -1,7 +1,8 @@
 ---
 title: Signature files
 description: Learn how to use F# signature files to hold information about the public signatures of a set of F# program elements, such as types, namespaces, and modules.
-ms.date: 06/15/2018
+ms.date: 09/24/2026
+ai-usage: ai-assisted
 ---
 # Signatures
 
@@ -59,6 +60,31 @@ The following code example shows an example of a signature file that has namespa
 The following code shows the implementation file.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/fssignatures/snippet9001.fs)]
+
+## Compiler-semantic attributes
+
+To preserve an API's compile-time contract, repeat the attributes listed below on its `.fsi` declaration. F# 11 makes omissions an FS3888 error rather than a warning; it doesn't require every .NET attribute.
+
+For example, `NoDynamicInvocation` prevents a non-inline invocation path for the following inline function. `Api.fs` contains:
+
+:::code language="fsharp" source="snippets/signature-files/Api.fs" id="Implementation":::
+
+Its `Api.fsi` must also contain the attribute:
+
+:::code language="fsharp" source="snippets/signature-files/Api.fsi" id="Signature":::
+
+Both files begin with `module Api`; compile the signature first.
+
+The checked set depends on the declaration:
+
+| Declaration | Attributes checked for omission |
+|---|---|
+| Values and members | `NoDynamicInvocation`, `RequiresExplicitTypeArguments`, `Conditional`, `NoEagerConstraintApplication`, `GeneralizableValue`, `WarnOnWithoutNullArgument`, `CLIEvent`, `Extension`, `ParamArray`, and `Literal`. |
+| Types and modules, where applicable | `RequireQualifiedAccess`, `NoComparison`, `NoEquality`, `CustomEquality`, `CustomComparison`, `ReferenceEquality`, `AbstractClass`, `Sealed`, `CLIMutable`, `AllowNullLiteral`, `DefaultAugmentation`, `Obsolete`, `CompilerMessage`, `Experimental`, `Unverifiable`, `EditorBrowsable`, `AttributeUsage`, `IsByRefLike`, `IsReadOnly`, `Extension`, `Measure`, `Struct`, `Class`, and `Interface`. |
+
+The check skips types hidden by opaque signatures, but still checks modules. Runtime-only attributes such as `DllImport` and `SkipLocalsInit`, and the `StructuralEquality`/`StructuralComparison` attributes, aren't in the enforced set. For FS3888, add the missing contract attribute to the signature.
+
+Record signatures can use [type spreads](record-spreads.md#representation-and-api-compatibility) or explicit fields independently of the implementation syntax, provided the elaborated shape and order agree.
 
 ## See also
 

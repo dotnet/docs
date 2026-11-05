@@ -5,6 +5,10 @@ items:
   href: what-is-fsharp.md
 - name: F# language strategy
   href: strategy.md
+- name: FSharp.Core target frameworks
+  href: fsharp-core-targeting.md
+- name: F# tooling performance
+  href: tools/tooling-performance.md
 - name: Get started
   href: get-started/index.md
   items:
@@ -107,6 +111,9 @@ items:
       href: language-reference/generics/constraints.md
     - name: Statically Resolved Type Parameters
       href: language-reference/generics/statically-resolved-type-parameters.md
+      items:
+      - name: Extension members for SRTP constraints
+        href: language-reference/generics/extension-member-constraints.md
     - name: Flexible Types
       href: language-reference/flexible-types.md
     - name: Units of Measure
@@ -144,6 +151,8 @@ items:
       items:
       - name: Copy and update expressions
         href: language-reference/copy-and-update-record-expressions.md
+      - name: Record spread operators
+        href: language-reference/record-spreads.md
       - name: Anonymous records
         href: language-reference/anonymous-records.md
     - name: Discriminated unions
@@ -194,6 +203,8 @@ items:
       href: language-reference/async-expressions.md
     - name: Task expressions
       href: language-reference/task-expressions.md
+    - name: Async and task functions
+      href: language-reference/async-task-functions.md
     - name: Lazy expressions
       href: language-reference/lazy-expressions.md
   - name: Organizing code
@@ -292,6 +303,8 @@ items:
     href: tutorials/using-functions.md
 - name: What's new
   items:
+  - name: F# 11
+    href: whats-new/fsharp-11.md
   - name: F# 10
     href: whats-new/fsharp-10.md
   - name: F# 9

@@ -61,7 +61,7 @@ The `platformOptions` section of the *testconfig.json* file configures the core 
 
 | Entry | Default | Description |
 |-------|---------|-------------|
-| `resultDirectory` | `TestResults` | The directory where the test results are placed. Can be a relative path (resolved from the current working directory) or an absolute path. The `--results-directory` command-line option takes precedence. |
+| `resultDirectory` | `TestResults` | The directory where the test results are placed. Can be a relative path (resolved from [MTP's working directory](microsoft-testing-platform-cli-options.md)) or an absolute path. The `--results-directory` command-line option takes precedence. |
 | `exitProcessOnUnhandledException` | `false` | When set to `true`, the test host process exits immediately on unhandled exceptions instead of allowing graceful shutdown. The `TESTINGPLATFORM_EXIT_PROCESS_ON_UNHANDLED_EXCEPTION` environment variable (values `1` or `0`) takes precedence. |
 
 > [!NOTE]

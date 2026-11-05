@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) CLI options reference
 description: Find platform and extension command-line options for MTP in one place.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 10/26/2026
+ms.date: 11/05/2026
 ai-usage: ai-assisted
 ---
 
@@ -159,7 +159,11 @@ This article gives a central entry point for MTP command-line options.
 
 - **`--results-directory`**
 
-  The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the test application.
+  Specifies the directory where MTP places test results. If the directory doesn't exist, it's created. The default is `TestResults` beneath MTP's working directory. When you launch a test application directly, the working directory defaults to the directory that contains the test application.
+
+  With `dotnet test`, the default depends on the SDK and MTP versions. For the shared invocation-relative root, version requirements, and artifacts-layout overrides, see [Results and artifacts](../tools/dotnet-test-mtp.md#results-and-artifacts).
+
+  To isolate multiple test applications, pass the SDK's `--results-directory-layout per-module` option before `--`. This option belongs to the SDK, not MTP core, and isn't available when you launch a test application directly.
 
 - **`--server`**
 

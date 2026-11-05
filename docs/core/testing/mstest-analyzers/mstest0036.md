@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0036: Do not use shadowing inside test class."
 description: "Learn about code analysis rule MSTEST0036: Do not use shadowing inside test class."
-ms.date: 08/19/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0036
 - DoNotUseShadowingAnalyzer
@@ -26,19 +27,21 @@ ms.author: enjieid
 
 ## Cause
 
-Shadowing test members could cause testing issues (such as NRE).
+A method or property in a test class hides an inherited member instead of overriding it.
 
 ## Rule description
 
-Shadowing test members could cause testing issues (such as NRE).
+Member hiding creates separate members with the same name. Base-class code can use the base member while MSTest's member lookup finds the derived member, so the two parts of the fixture no longer share the same state or behavior.
+
+For example, a hidden `TestContext` property can receive the injected context while base-class code still reads an uninitialized property, causing a `NullReferenceException`. Hidden lifecycle or test methods can also change which inherited implementation runs. Unique helper names or intentional virtual overrides keep that contract explicit.
 
 ## How to fix violations
 
-Delete the shadowing member.
+Rename or remove an unintended hidden member. If you intend polymorphic behavior, override a virtual base member instead of hiding it.
 
 ## When to suppress warnings
 
-Don't suppress warnings from this rule as it could cause testing issues (such as NRE).
+Suppress the diagnostic only if member hiding is intentional and you've confirmed that test discovery, lifecycle callbacks, and `TestContext` assignment still use the intended members. The `new` keyword doesn't merge the two members or resolve their separate state.
 
 ## Suppress a warning
 

@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0002: Test classes should have valid layout"
 description: "Learn about code analysis rule MSTEST0002: Test classes should have valid layout"
-ms.date: 01/03/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0002
 - TestClassShouldBeValidAnalyzer
@@ -29,15 +30,20 @@ dev_langs:
 
 ## Cause
 
-A test class is not following one or multiple points of the required test class layout.
+A test class has invalid accessibility or is static while it declares test methods or class/per-test lifecycle methods.
 
 ## Rule description
 
-Test classes (classes marked with the `[TestClass]` attribute) should follow the given layout to be considered valid by MSTest:
+MSTest uses a test class as the fixture that owns test methods, per-test state, and lifecycle callbacks. This rule checks visibility and the use of static classes to support that execution model:
 
-- they should be `public` (or `internal` if the `[assembly: DiscoverInternals]` assembly attribute is set)
-- they should not be `static`
-- they should not be generic
+| Requirement | Reason |
+|-------------|--------|
+| The class is `public`, or `internal` with `[assembly: DiscoverInternals]`. | MSTest uses publicly accessible types as its default discovery contract. The assembly attribute explicitly opts into internal test classes without exposing them outside the assembly. |
+| A class that contains tests or class/per-test lifecycle methods isn't `static`. | MSTest creates a test-class instance for each test execution. That instance holds the test's fields and `TestContext`, rather than state shared by every test. A static class can't provide an instance. |
+
+Generic base classes aren't inherently invalid. MSTest needs a concrete type to create a test instance, so runnable classes must have fully specified type arguments. A generic abstract base class can supply inherited tests to concrete derived classes that specify those arguments.
+
+Static classes can contain assembly or global lifecycle methods, which don't require a test-class instance. For more information, see [MSTest lifecycle](../unit-testing-mstest-writing-tests-lifecycle.md).
 
 ## How to fix violations
 

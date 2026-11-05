@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0007: Use test attributes only on test methods"
 description: "Learn about code analysis rule MSTEST0007: Ensure test attributes are set only on methods marked with the `TestMethod` attribute"
-ms.date: 02/01/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0007
 - UseAttributeOnTestMethodAnalyzer
@@ -29,6 +30,8 @@ ms.author: copoiena
 A method that's not marked with <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> has one or more test attributes applied to it.
 
 ## Rule description
+
+Test attributes supply metadata or execution policy for a discovered test. They don't declare a test entry point themselves. Without `[TestMethod]` or a derived attribute, MSTest doesn't use a helper method's test metadata or conditions when it runs tests.
 
 The following test attributes should only be applied on methods marked with the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attribute:
 

@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0009: TestCleanup method should have valid layout"
 description: "Learn about code analysis rule MSTEST0009: TestCleanup method should have valid layout"
-ms.date: 02/19/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0009
 - TestCleanupShouldBeValidAnalyzer
@@ -30,16 +31,17 @@ A method marked with `[TestCleanup]` should have valid layout.
 
 ## Rule description
 
-Methods marked with `[TestCleanup]` should follow the following layout to be valid:
+MSTest calls `[TestCleanup]` on the test-class instance after the test method. The callback releases or restores that test's state:
 
-- it should be `public`
-- it should not be `abstract`
-- it should not be `async void`
-- it should not be `static`
-- it should not be a special method (finalizer, operator...).
-- it should not be generic
-- it should not take any parameter
-- return type should be `void`, `Task` or `ValueTask`
+| Requirement | Reason |
+|-------------|--------|
+| The method is `public`. | Public methods form MSTest's lifecycle discovery contract. `[DiscoverInternals]` permits an internal declaring class, not an internal lifecycle method. |
+| The method isn't `static`. | Cleanup needs access to the instance fields and `TestContext` of the test that just ran. |
+| The method is ordinary and isn't `abstract`. | MSTest needs a callable method body, not a special member with language-defined invocation rules. |
+| The method isn't generic. | Lifecycle callbacks don't receive test-data arguments from which MSTest could infer method type arguments. |
+| The method has no parameters. | MSTest invokes this callback without arguments. Use the instance's `TestContext` for per-test information. |
+| The return type is `void`, `Task`, or `ValueTask`. | An awaitable return value lets MSTest finish asynchronous cleanup before it proceeds with the remaining lifecycle steps. |
+| The method isn't `async void`. | Without an awaitable result, cleanup could outlive the test lifecycle, and later exceptions couldn't be reliably recorded as cleanup failures. |
 
 [!INCLUDE [test-class-rules](includes/test-class-rules.md)]
 

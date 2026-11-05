@@ -125,7 +125,7 @@ The name of your test should consist of three parts:
 - Scenario under which the method is being tested
 - Expected behavior when the scenario is invoked
 
-Naming standards are important because they help to express the test purpose and application. Tests are more than just making sure your code works. They also provide documentation. Just by looking at the suite of unit tests, you should be able to infer the behavior of your code and not have to look at the code itself. Moreover, when tests fail, you can see exactly which scenarios don't meet your expectations.
+To document the expected behavior of the code under test, use descriptive, consistent test names. Each name specifies how the code should behave in a particular scenario, while the test verifies that behavior. Clear names help you understand the expected behavior from the test suite without inspecting the code under test. When a test fails, its name helps you identify which scenario didn't meet your expectations.
 
 :::row:::
 :::column span="":::

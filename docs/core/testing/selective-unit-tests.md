@@ -2,7 +2,7 @@
 title: Run selected unit tests
 description: How to use a filter expression to run selected unit tests with the dotnet test command in .NET Core.
 author: smadala
-ms.date: 07/22/2026
+ms.date: 11/05/2026
 ai-usage: ai-assisted
 zone_pivot_groups: unit-testing-framework-set-one
 ms.topic: reference
@@ -200,6 +200,8 @@ Examples using the conditional operators `|` and `&`:
 
 ## NUnit examples
 
+For NUnit, `TestCategory` and `Category` are interchangeable filter property names. Both filter the categories that you assign with the `Category` attribute, so existing NUnit commands that use `--filter Category=MyCategory` don't need to change.
+
 ```csharp
 using NUnit.Framework;
 
@@ -227,6 +229,7 @@ namespace NUnitNamespace
 | `dotnet test --filter FullyQualifiedName~NUnitNamespace.UnitTest1` | Runs tests that are in class `NUnitNamespace.UnitTest1`. |
 | `dotnet test --filter FullyQualifiedName!=NUnitNamespace.UnitTest1.TestMethod1` | Runs all tests except `NUnitNamespace.UnitTest1.TestMethod1`. |
 | `dotnet test --filter TestCategory=CategoryA` | Runs tests that are annotated with `[Category("CategoryA")]`. |
+| `dotnet test --filter Category=CategoryA` | Runs the same tests as `TestCategory=CategoryA`. |
 | `dotnet test --filter Priority=2` | Runs tests that are annotated with `[Priority(2)]`. |
 
 Examples using the conditional operators `|` and `&`:

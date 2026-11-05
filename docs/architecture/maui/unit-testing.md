@@ -1,5 +1,5 @@
 ---
-title: Unit testing
+title: Unit tests for .NET MAUI
 description: Learn how to unit test .NET MAUI application logic, choose a test framework and platform, and identify scenarios that need device or UI tests.
 author: michaelstonis
 no-loc: [MAUI]

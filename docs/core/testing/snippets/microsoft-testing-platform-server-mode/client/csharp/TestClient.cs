@@ -60,7 +60,8 @@ public static class TestClient
             return 8;
         }
 
-        var outcomes = new Dictionary<string, string>(StringComparer.Ordinal);
+        var completedUids = new HashSet<string>(StringComparer.Ordinal);
+        bool hasUnsuccessfulResult = false;
         using IMtpServerClient runClient = await MtpServerClient.LaunchAsync(
             path, cancellationToken: cancellationToken);
         try
@@ -80,9 +81,13 @@ public static class TestClient
                     Console.WriteLine(JsonSerializer.Serialize(change.Node));
                     if (change.Uid is string uid
                         && testUids.Contains(uid)
-                        && change.ExecutionState is string state)
+                        && change.ExecutionState is string state
+                        && state is not ("discovered" or "in-progress")
+                        && (!change.Node.TryGetValue("retry.is-superseded", out object? superseded)
+                            || superseded is not true))
                     {
-                        outcomes[uid] = state;
+                        completedUids.Add(uid);
+                        hasUnsuccessfulResult |= state is not ("passed" or "skipped");
                     }
                 }
             };
@@ -95,8 +100,7 @@ public static class TestClient
 
             await runClient.ExitAsync(cancellationToken);
 
-            if (!testUids.All(uid => outcomes.TryGetValue(uid, out string? state)
-                && (state is "passed" or "skipped")))
+            if (hasUnsuccessfulResult || !testUids.All(completedUids.Contains))
             {
                 Console.Error.WriteLine("A selected test failed or didn't report a final result.");
                 return 2;

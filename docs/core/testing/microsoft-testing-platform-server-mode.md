@@ -65,7 +65,9 @@ Run either console project with the test application path as its argument:
 dotnet run --project <client-project> -- <test-application-path>
 ```
 
-The example returns `0` when every selected test reports a final `passed` or `skipped` state, `2` for unsuccessful or missing final outcomes, and `8` when discovery returns no tests. These decisions belong to the sample client. A completed `RunTestsAsync` task means the protocol request completed, not that the tests passed. `MtpRunResult.Artifacts` contains run artifacts, not a pass/fail verdict. Use test-node updates to determine test outcomes.
+The example returns `0` when every selected UID has a final outcome and every non-superseded final result reports `passed` or `skipped`, `2` for unsuccessful or missing final outcomes, and `8` when discovery returns no tests. These decisions belong to the sample client. A completed `RunTestsAsync` task means the protocol request completed, not that the tests passed. `MtpRunResult.Artifacts` contains run artifacts, not a pass/fail verdict. Use test-node updates to determine test outcomes.
+
+Multiple results can share a UID. The example ignores an earlier retry attempt only when `retry.is-superseded` is `true`; UID equality alone doesn't establish a retry. A later passed or skipped result can't erase an earlier non-superseded failure.
 
 ### Consume updates and metadata
 

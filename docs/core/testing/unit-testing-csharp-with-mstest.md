@@ -26,7 +26,15 @@ Open a shell window. Create a directory called *unit-testing-using-mstest* to ho
     /PrimeService
 ```
 
-Make *PrimeService* the current directory and run [`dotnet new classlib`](../tools/dotnet-new.md) to create the source project. Rename *Class1.cs* to *PrimeService.cs*. Replace the code in the file with the following code to create a failing implementation of the `PrimeService` class:
+Make *PrimeService* the current directory and run [`dotnet new classlib`](../tools/dotnet-new.md) to create the source project.
+
+Change the directory back to the *unit-testing-using-mstest* directory. Run [`dotnet sln add`](../tools/dotnet-sln.md) to add the class library project to the solution:
+
+```dotnetcli
+dotnet sln add PrimeService/PrimeService.csproj
+```
+
+Rename `Class1.cs` in the `PrimeService` directory to `PrimeService.cs`. Replace the code in the file with the following code to create a failing implementation of the `PrimeService` class:
 
 ```csharp
 using System;
@@ -41,12 +49,6 @@ namespace Prime.Services
         }
     }
 }
-```
-
-Change the directory back to the *unit-testing-using-mstest* directory. Run [`dotnet sln add`](../tools/dotnet-sln.md) to add the class library project to the solution:
-
-```dotnetcli
-dotnet sln add PrimeService/PrimeService.csproj
 ```
 
 ## Create the test project

@@ -43,7 +43,13 @@ The following instructions provide the steps to create the test solution. See [C
   ```
 
    The [`dotnet new classlib`](../tools/dotnet-new.md) command creates a new class library project  in the *PrimeService* folder. The new class library will contain the code to be tested.
-* Rename *Class1.cs* to *PrimeService.cs*.
+* In the *unit-testing-using-dotnet-test* directory, run the following command to add the class library project to the solution:
+
+  ```dotnetcli
+  dotnet sln add ./PrimeService/PrimeService.csproj
+  ```
+
+* Rename `Class1.cs` in the `PrimeService` directory to `PrimeService.cs`.
 * Replace the code in *PrimeService.cs* with the following code:
 
   ```csharp
@@ -62,12 +68,6 @@ The following instructions provide the steps to create the test solution. See [C
   ```
 
   Currently this code throws a <xref:System.NotImplementedException>, but you'll implement the method later in the tutorial.
-
-* In the *unit-testing-using-dotnet-test* directory, run the following command to add the class library project to the solution:
-
-  ```dotnetcli
-  dotnet sln add ./PrimeService/PrimeService.csproj
-  ```
 
 * Create the *PrimeService.Tests* project by running the following command:
 
@@ -106,8 +106,8 @@ The following commands create the test solution on a Windows machine. For macOS 
 dotnet new sln -o unit-testing-using-dotnet-test
 cd unit-testing-using-dotnet-test
 dotnet new classlib -o PrimeService
-ren .\PrimeService\Class1.cs PrimeService.cs
 dotnet sln add ./PrimeService/PrimeService.csproj
+ren .\PrimeService\Class1.cs PrimeService.cs
 dotnet new xunit -o PrimeService.Tests
 dotnet add ./PrimeService.Tests/PrimeService.Tests.csproj reference ./PrimeService/PrimeService.csproj
 dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj

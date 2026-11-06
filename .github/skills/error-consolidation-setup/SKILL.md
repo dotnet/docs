@@ -1,29 +1,33 @@
 ---
 name: error-consolidation-setup
-description: Creates a consolidated C# compiler diagnostic article skeleton, TOC entry, and optional seed-code metadata. Use to start a new error-consolidation workflow.
+description: Creates or extends a consolidated C# compiler diagnostic article, TOC entry, and optional seed-code metadata. Use to start an error-consolidation workflow.
 ---
 
 # Set Up an Error Consolidation Article
 
-Create a new consolidated compiler error and warning article. Do not merge existing articles or search for additional diagnostics in this skill.
+Create a new consolidated compiler error and warning article, or extend an existing destination. Do not merge existing articles or search for additional diagnostics in this skill. Use the user's prepared branch and leave changes uncommitted for review unless instructed otherwise.
 
 ## Required Inputs
 
 Collect these inputs from the user:
 
-- **Destination filename**: The new `.md` filename, such as `overloaded-operator-errors.md`.
+- **Destination filename**: The new or existing `.md` filename, such as `overloaded-operator-errors.md`.
 - **Theme description**: A short description, such as "overflow, underflow, and checked and unchecked operators."
 - **Seed error codes** (optional): New, undocumented error codes to include initially.
 
 ## Step 1: Ask for TOC Placement
 
-Ask the user:
+First check whether the destination and its TOC entry already exist. Reuse an existing entry when it fits the approved theme; don't ask for placement again or create a duplicate entry. Preserve the existing article, metadata, anchors, and diagnostic ownership while adding approved seed codes.
+
+For a new entry, ask the user:
 
 > Where in the TOC should this entry be placed? Provide the name or href of the existing entry it should appear after.
 
 Stop and wait for the answer before making any changes.
 
 ## Step 2: Create the Destination File
+
+If the destination exists, don't replace it with a skeleton. Continue with the approved additions.
 
 Create `docs/csharp/language-reference/compiler-messages/{destination-filename}` with this front matter:
 
@@ -55,7 +59,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 
 ## Step 3: Add the TOC Entry
 
-Add an entry to `docs/csharp/language-reference/toc.yml` immediately after the entry the user specified. Match neighboring indentation and style.
+For a new entry, add it to `docs/csharp/language-reference/toc.yml` immediately after the entry the user specified. Match neighboring indentation and style. For an existing entry, update only approved keywords and codes without duplicating it.
 
 ```yaml
   - name: {Short theme title}
@@ -73,8 +77,10 @@ For each code:
 
 1. Extract its numeric portion. For example, `CS0220` becomes `220`.
 2. Find the constant assigned that number in `../roslyn/src/Compilers/CSharp/Portable/Errors/ErrorCode.cs`.
-3. Find the `<data>` element in `../roslyn/src/Compilers/CSharp/Portable/CSharpResources.resx` whose `name` exactly matches the constant name, including its `ERR_` or `WRN_` prefix.
+3. Find the `<data>` element in `../roslyn/src/Compilers/CSharp/Portable/CSharpResources.resx` whose `name` exactly matches the constant name, including its prefix, such as `ERR_`, `WRN_`, or `FTL_`.
 4. Read the verbatim compiler message from the element's `<value>` child.
+
+An uncommented `ErrorCode.cs` entry is the authority for inclusion; a missing emitting reference isn't grounds to exclude it. Don't invent a current reproduction. Flag commented-out or absent entries for review instead of adding new discovery metadata for them. If a resource is missing, report that limitation rather than inventing message text.
 
 Then:
 

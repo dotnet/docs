@@ -23,6 +23,9 @@ Neither configuration file provides a setting to enable or disable this provider
 
 In MSTest 4.3.0 through 4.5.2, the automatic search can load otherwise-unused assemblies and lock DLLs on Windows with .NET Framework. For marker placement, local-method precedence, and the temporary both-method workaround for affected versions, see [Shared assembly fixtures with AssemblyFixtureProvider](unit-testing-mstest-writing-tests-lifecycle.md#shared-assembly-fixtures-with-assemblyfixtureprovider).
 
+> [!NOTE]
+> The [metadata-first discovery change (unreleased)](unit-testing-mstest-writing-tests-lifecycle.md#metadata-first-discovery-unreleased) doesn't add a configuration switch. Its runtime-resolution fallback can still load unmarked references. MSTest 4.5.2 doesn't include the change.
+
 ## Runsettings
 
 A *.runsettings* file can be used to configure how unit tests are being run. To learn more about the runsettings and the configurations related to the platform, you can check out [VSTest runsettings documentation](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file) or [MSTest runner runsettings documentation](microsoft-testing-platform-extensions-vstest-bridge.md#runsettings-support).

@@ -132,6 +132,30 @@ These extra loads can change <xref:System.AppDomain.GetAssemblies> results and l
 > [!IMPORTANT]
 > If your tests depend on an unused assembly remaining unloaded and don't use shared fixtures, a temporary workaround for these affected versions is to declare **both** a local `[AssemblyInitialize]` method and a local `[AssemblyCleanup]` method. With both local methods, MSTest skips this provider scan. Declaring only one local method doesn't stop the scan. The workaround bypasses shared-fixture behavior; it isn't required MSTest boilerplate and doesn't prevent other code from loading assemblies.
 
+#### Metadata-first discovery (unreleased)
+
+> [!IMPORTANT]
+> Metadata-first provider discovery is under development. MSTest 4.5.2 still uses the reflection-based search described above. No fixed release version has been assigned, and a 4.5 servicing backport hasn't been accepted.
+
+To avoid loads caused solely by the provider scan, the metadata-first implementation reads assembly references and provider markers from portable executable (PE) metadata.
+
+Metadata-only decisions require a matching assembly identity and a path backed by runtime binding data. On modern .NET, MSTest uses the default load context's runtime-provided trusted platform assemblies (TPA) map. On .NET Framework, metadata-only decisions are limited to unsigned, culture-neutral references in the application's base directory without binding or host overrides. For unloaded references that meet these requirements, MSTest can traverse unmarked assemblies without loading them into the test process.
+
+A nearby DLL or a path suggested by a component dependency resolver alone doesn't establish how the runtime binds the reference.
+
+Actual providers, fixture types registered by consumer markers, and their runtime dependencies can still load normally. MSTest preserves existing assembly binding and load-context identity; the same context doesn't prevent a first-time assembly load.
+
+To preserve existing runtime binding behavior, MSTest uses runtime resolution rather than a metadata-only decision in cases such as:
+
+- A trusted metadata path is unavailable, or a metadata read or resolution attempt fails.
+- The consumer uses a custom assembly load context.
+- An assembly with the requested simple name is already loaded, even if its full identity matches the reference.
+- On .NET Framework, the global assembly cache (GAC), strong-named binding, loaded assembly images, binding redirects, `codeBase` entries, or unknown binding or host policy can affect resolution.
+
+Fallback diagnostics include `using runtime resolution for AssemblyFixtureProvider discovery`. Missing metadata paths produce an informational trace; metadata-read or resolution failures produce warnings. The fallback can load unmarked libraries and lock their DLLs on Windows with .NET Framework. Metadata-first discovery therefore doesn't guarantee that all referenced assemblies stay unloaded or deletable.
+
+The existing marker-placement rules, local-method precedence, duplicate-provider diagnostics, and Native AOT restrictions still apply.
+
 Neither `.runsettings` nor `testconfig.json` provides a switch to enable or disable shared-provider discovery. For the available configuration options, see [Configure MSTest](unit-testing-mstest-configure.md#shared-assembly-fixture-discovery).
 
 ## Class-level lifecycle

@@ -1324,7 +1324,7 @@ The current [MSTEST0049 guide](../docs/core/testing/mstest-analyzers/mstest0049.
 
 **Opened:** October 23, 2025. **Confidence:** High for the reported missing method. **Reason:** The current method exists and the actual sample compiles.
 
-The [MCP quickstart](../docs/ai/quickstarts/build-mcp-client.md) includes `Microsoft.Extensions.AI.OpenAI`, and its [program](../docs/ai/quickstarts/snippets/mcp-client/program.cs) imports `Microsoft.Extensions.AI` and calls `AsIChatClient()`, not `AsIChat`. Current upstream source declares that extension for the OpenAI `ChatClient` returned by `GetChatClient`. The actual pinned [project](../docs/ai/quickstarts/snippets/mcp-client/MinimalMCPClient.csproj) built with zero warnings and errors under SDK 10.0.403.
+The [MCP quickstart](../docs/ai/quickstarts/build-mcp-client.md) includes `Microsoft.Extensions.AI.OpenAI`, and its program imports `Microsoft.Extensions.AI` and calls `AsIChatClient()`, not `AsIChat`. Current upstream source declares that extension for the OpenAI `ChatClient` returned by `GetChatClient`. The actual pinned [project](../docs/ai/quickstarts/snippets/mcp-client/MinimalMCPClient.csproj) built with zero warnings and errors under SDK 10.0.403.
 
 **Suggested closure explanation:** The adapter is available with the documented package and namespace; no method-renaming edit is needed. The build doesn't establish that the placeholder endpoint, transport command, credentials, or remote tool invocation work. No MCP server or paid model call was launched.
 

@@ -2,7 +2,8 @@
 title: Records in F#
 titleSuffix: ""
 description: Learn how F# records represent simple aggregates of named values, optionally with members.
-ms.date: 12/21/2021
+ms.date: 09/25/2026
+ai-usage: ai-assisted
 ---
 # Records (F#)
 
@@ -88,6 +89,21 @@ let defaultRecord2 = { Field1 = 1; Field2 = 25 }
 // and leave the rest with default values.
 let rr3 = { defaultRecord1 with Field2 = 42 }
 ```
+
+## Compose records with spreads
+
+To reuse fields across different models, F# 11 provides **type spreads** (`...SourceType`) and **expression spreads** (`...sourceValue`). They copy declarations or values without inheritance. See [Record spread operators](record-spreads.md) for examples; for a same-type update, use [copy-and-update](copy-and-update-record-expressions.md).
+
+## Record constructors
+
+To identify a record type directly at its construction site, use its all-fields constructor:
+
+> [!NOTE]
+> Record constructors are an [F# 11.2 feature](compiler-options.md#language-version-and-indentation). In the .NET 11.0.100 SDK, enable `<LangVersion>preview</LangVersion>`. Record spreads don't require this setting.
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="RecordConstructor":::
+
+Positional arguments follow field order; named arguments avoid that dependency. Representation accessibility still applies, and a same-named value takes precedence. Constructor patterns aren't supported.
 
 ## Creating Mutually Recursive Records
 

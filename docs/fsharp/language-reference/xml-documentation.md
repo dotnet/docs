@@ -1,7 +1,8 @@
 ---
 title: XML Documentation
 description: Learn about support in F# for generating documentation from comments.
-ms.date: 09/15/2020
+ms.date: 09/30/2026
+ai-usage: ai-assisted
 ---
 
 # Document your code with XML comments
@@ -75,6 +76,8 @@ If you are using XML tags, the following table describes the outer tags recogniz
 | `<returns>`**_text_**`</returns>`           | Specifies that *text* describes the return value of a function or method.|
 | `<exception cref="`**_type_**`">`**_description_**`</exception>` |Specifies the type of exception that can be generated and the circumstances under which it is thrown.|
 | `<seealso cref="`**_reference_**`"/>`      | Specifies a See Also link to the documentation for another type. The *reference* is the name as it appears in the XML documentation file. See Also links usually appear at the bottom of a documentation page.|
+| `<include file="path.xml" path="XPath"/>` | Starting with the F# 11 compiler, includes selected XML elements from an external file in generated documentation. |
+| `<inheritdoc/>` | Requests inherited documentation from compatible tooling. The tag remains in compiler-generated XML. |
 
 The following table describes the tags for use inside description sections:
 
@@ -112,6 +115,36 @@ type SomeType
     member _.Sum() = a + b
 ```
 
+## Reuse and inherit documentation
+
+To maintain shared remarks once, place them in `shared.xml` beside your source:
+
+:::code language="xml" source="snippets/xml-documentation/shared.xml":::
+
+Both members select those elements with the same XPath expression:
+
+:::code language="fsharp" source="snippets/xml-documentation/Tracking.fs" id="Include":::
+
+Enable `GenerateDocumentationFile` or pass `--doc:Tracking.xml`. Starting with F# 11, the emitted entries contain the selected remarks and local summaries, not just include tags.
+
+The [sample project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/xml-documentation/Tracking.fsproj) tracks the XML as a compilation input so edits trigger regeneration. No language-version opt-in is needed. Includes expand in generated XML, not live Quick Info.
+
+### Include resolution and errors
+
+Relative file names are resolved first against the source file's directory, then the compiler's working directory. Nested includes resolve relative to their containing XML file. Select **elements**, such as `/docs/tracking/*`, rather than text or attribute nodes.
+
+Missing files, malformed XML, invalid XPath, and cycles produce diagnostics. A valid XPath with no matches preserves the tag and adds a comment without a warning. DTD processing and external XML resolution are disabled; foreign-namespace `include` elements remain ordinary content. See the [`<include>` reference](../../csharp/language-reference/xmldoc/recommended-tags.md#include) for XPath syntax.
+
+### Inherited documentation in tooling
+
+To avoid copying a base member's description into each override, use `<inheritdoc/>`:
+
+:::code language="fsharp" source="snippets/xml-documentation/Tracking.fs" id="Inherit":::
+
+F# 11 tooling and FSharp.Compiler.Service expose the inherited description for `TrackingService.Status`. The compiler leaves `<inheritdoc/>` in emitted XML for downstream tools to interpret; updating Core alone doesn't update an editor's resolver.
+
+Use top-level `<inheritdoc/>`, not a tag nested inside `<summary>`. Explicit `cref`, constructors, and cross-language or cross-assembly cases depend on the documentation consumer. Use full XML documentation identifiers and check the target tool. See the [`<inheritdoc>` reference](../../csharp/language-reference/xmldoc/recommended-tags.md#inheritdoc).
+
 ## Limitations
 
 Some features of XML documentation in C# and other .NET languages are not supported in F#.
@@ -121,8 +154,7 @@ Some features of XML documentation in C# and other .NET languages are not suppor
   and these elements are not checked by the F# compiler. Some documentation tooling
   may allow the use of these cross-references by subsequent processing, but the full signatures should be used.
 
-- The tags `<include>`, `<inheritdoc>` are not supported by the F# compiler. No error is given if they are used, but
-  they are simply copied to the generated documentation file without otherwise affecting the documentation generated.
+- Before F# 11, the compiler copies `<include>` without expanding it. `<inheritdoc>` still requires a documentation consumer to resolve inherited content, as described in [Reuse and inherit documentation](#reuse-and-inherit-documentation).
 
 - Cross-references are not checked by the F# compiler, even when `-warnon:3390` is used.
 

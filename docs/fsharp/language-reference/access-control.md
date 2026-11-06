@@ -1,7 +1,8 @@
 ---
 title: Access Control
 description: Learn how to control access to programming elements, such as types, methods, and functions, in the F# programming language.
-ms.date: 05/16/2016
+ms.date: 09/24/2026
+ai-usage: ai-assisted
 ---
 # Access Control
 
@@ -45,6 +46,18 @@ The following code illustrates the use of access control specifiers. There are t
 The following code tests the accessibility of the types created in `Module1.fs`.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/access-control/snippet2.fs)]
+
+## Protected base fields in closures
+
+To use a base class's state in a callback, F# 11 permits protected base-field access from ordinary closures in a derived member. For example, a C# library defines:
+
+:::code language="csharp" source="snippets/interfaces/contracts/Contracts.cs" id="ProtectedBase":::
+
+The derived F# class can use the field inside a lambda:
+
+:::code language="fsharp" source="snippets/interfaces/Consumer.fs" id="ProtectedConsumer":::
+
+The same capability covers ordinary `async`, `seq`, and `lazy` closures. It doesn't permit direct protected-field access from an object expression. For an object expression, access the field through an allowed derived-class member or a local helper defined outside the object expression.
 
 ## See also
 

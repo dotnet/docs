@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0035: [DeploymentItem] can be specified only on test class or test method."
 description: "Learn about code analysis rule MSTEST0035: `[DeploymentItem]` can be specified only on test class or test method."
-ms.date: 08/02/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0035
 - UseDeploymentItemWithTestMethodOrTestClassTitle
@@ -30,7 +31,9 @@ This rule raises a diagnostic when `[DeploymentItem]` isn't set on test class or
 
 ## Rule description
 
-By using  `[DeploymentItem]` without putting it on test class or test method, it will be ignored.
+`[DeploymentItem]` describes files or directories that a test needs in its deployment location. MSTest reads deployment metadata from test classes and test methods so it can associate those assets with discovered tests.
+
+An attribute on a helper or lifecycle method doesn't supply deployment metadata for those tests. The expected files can then be unavailable when the test runs, causing an environment failure instead of exercising the intended behavior.
 
 ## How to fix violations
 

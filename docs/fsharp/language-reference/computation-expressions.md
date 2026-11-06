@@ -1,7 +1,8 @@
 ---
 title: Computation Expressions
 description: Learn how to create convenient syntax for writing computations in F# that can be sequenced and combined using control flow constructs and bindings.
-ms.date: 10/29/2021
+ms.date: 09/24/2026
+ai-usage: ai-assisted
 f1_keywords:
  - let!_FS
 ---
@@ -476,6 +477,41 @@ F# computation expressions that suspend execution can be compiled to highly effi
 F# computation expressions that are synchronous (that is, they don't suspend execution) can alternatively be compiled to efficient state machines by using [inline functions](functions/inline-functions.md) including the `InlineIfLambda` attribute. Examples are given in [F# RFC FS-1098](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1098-inline-if-lambda.md).
 
 List expressions, array expressions, and sequence expressions are given special treatment by the F# compiler to ensure generation of high-performance code.
+
+## Tail operations in custom builders
+
+For a custom builder, an explicit tail `return!` can use `ReturnFromFinal` and an explicit tail `yield!` can use `YieldFromFinal`, when the corresponding optional member exists. The ordinary `ReturnFrom` or `YieldFrom` remains the fallback.
+
+Starting with F# 11, a final `do!` binds the operation and completes with unit instead of selecting a final-forwarding member. Normally it calls `Bind` then `Return(())`, or `Zero()` without `Return`. A `Zero` marked with `DefaultValue` takes precedence over `Return`. Binding optimizations such as `BindReturn` can still apply.
+
+If your builder relied on the earlier behavior, supply binding and unit-completion methods. Use explicit `return!` or `yield!` only when you intend to forward the computation.
+
+The distinction is observable in this builder:
+
+:::code language="fsharp" source="snippets/computation-expressions/TailOperations.fs" id="Builder":::
+
+The output is:
+
+```console
+ReturnFromFinal
+Bind
+Return
+```
+
+A `let!` still requires a following body. For example, use `async { let! value = work in return value }`, not the incomplete `async { let! value = work }`.
+
+## Rethrow from a computation expression
+
+To log an error and preserve its original exception identity and stack, use `reraise ()` in a computation-expression `with` handler:
+
+> [!NOTE]
+> This is an [F# 11.2 feature](compiler-options.md#language-version-and-indentation). In the .NET 11.0.100 SDK, enable `<LangVersion>preview</LangVersion>`.
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Reraise":::
+
+After the logger completes, `reraise` propagates the caught exception with its original throw-site information. If logging fails, its failure can replace the original. The nearest enclosing handler selects the exception; `raise error` doesn't preserve the stack in the same way.
+
+Custom builders must infer the handler input as `exn`. The compiler uses `ExceptionDispatchInfo`, so dispatch frames can appear in the preserved stack.
 
 ## See also
 

@@ -118,7 +118,10 @@ You can also use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.
 
 ### Cancellation token
 
-The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> exposes a <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.CancellationToken> property that is signaled when the test times out or the test run is aborted. You should pass this token to async operations so that they can respond to cancellation cooperatively. This is especially important when using [Timeout](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute) attributes.
+Starting with MSTest 3.11, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> exposes a <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.CancellationToken> property that is signaled when the test times out or the test run is aborted. You should pass this token to async operations so that they can respond to cancellation cooperatively. This is especially important when using [Timeout](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute) attributes.
+
+> [!NOTE]
+> In earlier MSTest versions, use `TestContext.CancellationTokenSource.Token` instead of `TestContext.CancellationToken`. For constructor injection, use `_testContext.CancellationTokenSource.Token` instead of `_testContext.CancellationToken`.
 
 When <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> is accessed as a property:
 

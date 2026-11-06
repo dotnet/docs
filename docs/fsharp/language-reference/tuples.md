@@ -1,7 +1,8 @@
 ---
 title: Tuples
 description: Learn about the F# tuple, a grouping of unnamed but ordered values, possibly of different types.
-ms.date: 05/16/2016
+ms.date: 09/30/2026
+ai-usage: ai-assisted
 ---
 # Tuples
 
@@ -132,6 +133,14 @@ Tuples are compiled into objects of one of several generic types, all named `Sys
 ### Compiled Form of Struct Tuples
 
 Struct tuples (for example, `struct (x, y)`), are fundamentally different from reference tuples.  They are compiled into the <xref:System.ValueTuple> type, overloaded by arity, or the number of type parameters.  They are equivalent to [C# Tuples](../../csharp/language-reference/builtin-types/value-tuples.md) and [Visual Basic Tuples](../../visual-basic/programming-guide/language-features/data-types/tuples.md), and interoperate bidirectionally.
+
+## Tuple extensions for generic operations
+
+To carry an audit trail alongside a calculation, F# 11.2 supports tuple extension operators. With the [composition adapters](generics/extension-member-constraints.md#tuple-operators-and-context) in scope:
+
+:::code language="fsharp" source="snippets/extension-member-constraints/composition-consumer/Program.fs" id="ContextUse":::
+
+In the .NET 11.0.100 SDK, enable preview for these F# 11.2 features. Native reference and struct tuple-extension headers support two through seven elements. They extend CLR tuple types for static-member/operator use, not instance-dot calls. See [Tuple operators and context](generics/extension-member-constraints.md#tuple-operators-and-context) for language settings, declarations, and limits.
 
 ## See also
 

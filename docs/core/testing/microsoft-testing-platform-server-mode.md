@@ -3,13 +3,15 @@ title: Microsoft.Testing.Platform (MTP) server mode
 description: Learn how tools and IDEs drive MTP test applications through JSON-RPC server mode.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 10/26/2026
+ms.date: 11/05/2026
 ai-usage: ai-assisted
 ---
 
 # Server mode
 
-MTP server mode lets an editor, IDE, or other test tool launch a test application and drive discovery and execution through JSON-RPC. Use server mode when you build tooling around MTP. For normal command-line and CI runs, run the test application directly or use `dotnet test`.
+MTP server mode lets an editor, IDE, custom test UI, or other test tool launch a test application and drive discovery and execution through JSON-RPC. Use server mode when your tool needs test metadata, selected-test execution, progress updates, or result artifacts without parsing terminal output. For normal command-line and CI runs, run the test application directly or use `dotnet test`.
+
+For one-shot discovery without a persistent connection, use [`--list-tests json`](./microsoft-testing-platform-cli-options.md#discover-tests-as-json). For an existing VSTest client, see [Programmatic test discovery and execution](./unit-testing-mstest-running-tests.md#programmatic-test-discovery-and-execution).
 
 Start the public JSON-RPC server with `--server` or `--server jsonrpc`.
 
@@ -26,7 +28,58 @@ The source-only design provides:
 - Native AOT-compatible, reflection-free serialization.
 - Protocol types and serialization code from the same repository as the MTP server.
 
-The injected `MtpServerClient`, `IMtpServerClient`, and protocol types can initialize a connection, discover tests, run tests, request server exit, and report test-node updates. All injected types remain `internal` to the consuming assembly.
+The injected `MtpServerClient`, `IMtpServerClient`, and protocol types can initialize a connection, discover tests, run tests, request server exit, and report test-node updates. All injected types remain `internal` to the consuming assembly. The client handles process launch, transport, message framing, and serialization; you don't need to implement JSON-RPC yourself.
+
+The package compiles C# source. To use the client from Visual Basic or another .NET language, reference a C# class library that exposes your own public API around the injected types, as in the following example.
+
+## Discover and run tests from .NET
+
+This example uses the source-only client package version 2.5.2 and targets .NET 10. Build an MTP-enabled test application first, then pass the path to its built `.dll` or executable to the client.
+
+The shared C# helper discovers tests, prints each node's serializable metadata, and runs the discovered tests by UID. To run a subset, select the required UIDs from the discovery updates and pass only those UIDs to `RunTestsAsync`. Don't use display names as test identities.
+
+:::code language="csharp" source="./snippets/microsoft-testing-platform-server-mode/client/csharp/TestClient.cs" id="DiscoverAndRun":::
+
+The helper starts a separate test process for discovery and execution, so it doesn't require `MtpServerCapabilities.MultiRequestSupport`. To reuse a process, check that capability after `InitializeAsync` before you issue multiple requests. Also check `SupportsDiscovery` before you request discovery.
+
+> [!IMPORTANT]
+> The source-only client's launch helpers manage one JSON-RPC connection. In version 2.5.2, they don't accept and route the additional connections used by controller-backed extensions. For example, TRX reporting on Windows can start a controller whose passive connection arrives before the active test host. A connection with `MultiConnectionProvider` set to `true` only pushes updates and artifacts; don't send discovery or run requests to it. The example rejects that connection.
+>
+> For controller-backed reports, run the test application through the CLI or `dotnet test`, or use a tool client that handles the protocol's additional connections. A single-connection client can still receive artifacts that the active test host publishes.
+
+The C# and Visual Basic console projects both reference the C# helper project:
+
+### [C#](#tab/csharp)
+
+:::code language="csharp" source="./snippets/microsoft-testing-platform-server-mode/csharp/Program.cs" id="RunClient":::
+
+### [Visual Basic](#tab/visual-basic)
+
+:::code language="vb" source="./snippets/microsoft-testing-platform-server-mode/vb/Program.vb" id="RunClient":::
+
+---
+
+Run either console project with the test application path as its argument:
+
+```dotnetcli
+dotnet run --project <client-project> -- <test-application-path>
+```
+
+The example returns `0` when every selected UID has a final outcome and every non-superseded final result reports `passed` or `skipped`, `2` for unsuccessful or missing final outcomes, and `8` when discovery returns no tests. These decisions belong to the sample client. A completed `RunTestsAsync` task means the protocol request completed, not that the tests passed. `MtpRunResult.Artifacts` contains run artifacts, not a pass/fail verdict. Use test-node updates to determine test outcomes.
+
+Multiple results can share a UID. The example ignores an earlier retry attempt only when `retry.is-superseded` is `true`; UID equality alone doesn't establish a retry. A later passed or skipped result can't erase an earlier non-superseded failure.
+
+### Consume updates and metadata
+
+Subscribe to `TestNodesUpdated` before discovery or execution. Read `Changes` from each update, and identify nodes by `Uid`. The client provides convenience properties such as `DisplayName`, `ExecutionState`, `ErrorMessage`, and `DurationInMilliseconds`. Read the `Node` dictionary for other serialized fields, including `traits` and framework-specific properties.
+
+MSTest publishes test categories and custom `TestProperty` values as traits. Metadata availability depends on the test framework and what it publishes during discovery. Arbitrary attributes and in-memory `IProperty` implementations don't automatically cross the process boundary. To publish portable key-value metadata, use the public `TestMetadataProperty` type. The platform and compatibility layers can supply other serializable fields; their internal property types aren't extension APIs. For details, see [Test-node properties](./microsoft-testing-platform-architecture-test-framework.md#the-testnodeupdatemessage-data).
+
+Don't expect the JSON-RPC node dictionary to match the [`--list-tests json` document](./microsoft-testing-platform-cli-options.md#discover-tests-as-json). The transports use different field layouts. Also, don't assume every framework emits the VSTest-specific `vstest.*` fields.
+
+The client processes updates in order and invokes the corresponding handlers before the discovery or run task completes. You don't need a delay to wait for the final update. Handlers run synchronously on the client's read loop, so don't block them or synchronously wait for another client operation. Dispatch expensive work or UI updates to the appropriate thread.
+
+Pass a cancellation token to discovery or run methods to request cancellation through the protocol. If the test framework supports tree filters, use `DiscoverTestsWithFilterAsync` or `RunTestsWithFilterAsync` with an MTP tree-filter expression to select tests without first creating a UID collection. These methods don't accept VSTest `--filter` expressions.
 
 ## Meet client requirements
 
@@ -37,6 +90,10 @@ Remove any hand-written copy of the MTP client before you add the package to avo
 ## Choose a launch model
 
 To start the test application as an external process, use `MtpServerClient.LaunchAsync`. The client owns that child process and terminates it during teardown when needed.
+
+To configure an external test application for a particular environment, set `MtpServerClientOptions.EnvironmentVariables` before launch. The child process inherits the parent's environment, with the supplied values applied to the child. These options don't change the environment for an in-process host.
+
+Each client controls one test application. For multiple test applications, create a client for each application and aggregate their results in your tool.
 
 For an embedded host or UI-thread environment that can't use `Process.Start`, use `MtpServerClient.LaunchInProcessAsync`. The method runs the test application through an asynchronous callback in the current process. Don't block the launching thread because the callback and client share the process.
 
@@ -75,5 +132,7 @@ Use the versioned [server-mode 1.0 JSON schema](https://github.com/microsoft/tes
 ## See also
 
 - [Run and debug tests with MTP](microsoft-testing-platform-run-and-debug.md)
+- [Programmatic test discovery and execution](unit-testing-mstest-running-tests.md#programmatic-test-discovery-and-execution)
+- [Discover tests as JSON](microsoft-testing-platform-cli-options.md#discover-tests-as-json)
 - [Build a test framework for MTP](microsoft-testing-platform-architecture-test-framework.md)
 - [MTP JSON-RPC protocol](https://github.com/microsoft/testfx/blob/main/docs/mstest-runner-protocol/001-protocol-intro.md)

@@ -1,7 +1,8 @@
 ---
 title: Inline Functions
 description: Learn how to use F# inline functions that are integrated directly into the calling code.
-ms.date: 05/16/2016
+ms.date: 09/30/2026
+ai-usage: ai-assisted
 ---
 # Inline Functions
 
@@ -70,6 +71,28 @@ for i = 0 to arr.Length - 1 do
 This optimization is applied regardless of the size of the lambda expression involved. This feature can also be used to implement loop unrolling and similar transformations more reliably.
 
 An opt-in warning (`/warnon:3517` or property `<WarnOn>3517</WarnOn>`) can be turned on to indicate places in your code where `InlineIfLambda` arguments are not bound to lambda expressions at call sites. In normal situations, this warning should not be enabled. However, in certain kinds of high-performance programming, it can be useful to ensure all code is inlined and flattened.
+
+## Optimize curried callbacks
+
+To avoid repeated arity adaptation when a callback can't be inlined, F# 11 supports `OptimizeClosureIfNotInlined` alongside `InlineIfLambda`:
+
+:::code language="fsharp" source="../../whats-new/snippets/fsharp-11/Stable.fs" id="Closure":::
+
+The function must be inline, both attributes must be present, and the callback must be curried with two through five arguments. A known lambda can inline; an opaque callback can be adapted once. This requires FSharp.Core 11 and compiler support, but doesn't guarantee zero allocations.
+
+## Debug inline functions
+
+To step into inline helpers, compile without optimization and retain debugging information. F# 11 prefers normal calls in these builds:
+
+:::code language="fsharp" source="../snippets/inline-functions/DebugInline.fs" id="DebugInline":::
+
+In the [sample project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/inline-functions/DebugInline.fsproj), set a breakpoint on `let total`, step into `addFee`, and inspect its arguments.
+
+Optimized builds still inline by default. Some constructs, including resumable code and operations requiring static expansion, must inline even without optimization. Use [`--always-inline`](../compiler-options.md) to request the older behavior.
+
+## Inline extension constraints across libraries
+
+F# 11.2 can use public extension members to satisfy SRTP requirements. See [Extension members for SRTP constraints](../generics/extension-member-constraints.md#compile-libraries-and-consumers) for language settings, scope, and library requirements.
 
 ## See also
 

@@ -41,6 +41,9 @@ This rule triggers when:
 
 Use the provided code fixer to automatically pass the <xref:System.Threading.CancellationToken> from <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> to method calls that support cancellation. You can also manually update method calls to include `TestContext.CancellationToken` as a parameter.
 
+> [!NOTE]
+> The following examples use `TestContext.CancellationToken`, which is available in MSTest 3.11 and later. In MSTest 3.10, use `TestContext.CancellationTokenSource.Token` instead. For constructor injection, use `_testContext.CancellationTokenSource.Token` instead of `_testContext.CancellationToken`.
+
 ### Example: TestContext property
 
 The following code triggers MSTEST0049 because `Task.Delay` and `HttpClient.GetAsync` accept a <xref:System.Threading.CancellationToken> but none is passed:

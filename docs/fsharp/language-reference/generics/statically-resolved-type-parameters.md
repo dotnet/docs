@@ -1,7 +1,8 @@
 ---
 title: Statically Resolved Type Parameters
 description: Learn how to use an F# statically resolved type parameter, which is replaced with an actual type at compile time instead of at run time.
-ms.date: 05/16/2016
+ms.date: 09/29/2026
+ai-usage: ai-assisted
 ---
 # Statically Resolved Type Parameters
 
@@ -100,6 +101,14 @@ let inline replace_instance< ^a, ^b, ^c, ^d when (^a or ^c): (static member repl
 let inline replace (a: ^a) (f: ^b): ^a0 when (CFunctor or  ^b): (static member replace: ^a *  ^b ->  ^a0) =
     replace_instance<CFunctor, _, _, _> (a, f)
 ```
+
+## Extension member constraints
+
+F# 11.2 can select public, in-scope extension members as constraint solutions. In the .NET 11.0.100 SDK, enable `<LangVersion>preview</LangVersion>`. The following function can use `Map` extensions on existing list and option types:
+
+:::code language="fsharp" source="../snippets/extension-member-constraints/library/Library.fs" id="Map":::
+
+See [Extension members for SRTP constraints](extension-member-constraints.md) for the adapters, call sites, and library-scope requirements.
 
 ## See also
 

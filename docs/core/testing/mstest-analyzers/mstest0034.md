@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0034: Use `ClassCleanupBehavior.EndOfClass` with the `[ClassCleanup]`."
 description: "Learn about code analysis rule MSTEST0034: Use `ClassCleanupBehavior.EndOfClass` with the `[ClassCleanup]`."
-ms.date: 07/22/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0034
 - UseClassCleanupBehaviorEndOfClass
@@ -33,7 +34,9 @@ This rule raises a diagnostic when `ClassCleanupBehavior.EndOfClass` isn't set w
 
 ## Rule description
 
-Without using  `ClassCleanupBehavior.EndOfClass`, the `[ClassCleanup]` will by default be run at the end of the assembly and not at the end of the class.
+In MSTest 3, the default `[ClassCleanup]` timing is the end of the assembly rather than the end of the class. That delay can retain class-owned resources, such as files or connections, while unrelated classes continue to run.
+
+To release resources when their owning class's tests finish, use `ClassCleanupBehavior.EndOfClass`. If a resource intentionally belongs to the whole assembly, express that lifetime with `[AssemblyCleanup]` instead. MSTest 4 removes `ClassCleanupBehavior` and uses end-of-class cleanup.
 
 ## How to fix violations
 

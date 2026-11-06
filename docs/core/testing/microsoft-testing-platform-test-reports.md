@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) test reports
 description: Learn about the MTP extensions that create test report files (TRX, HTML, JUnit, CTRF, Azure DevOps, GitHub Actions).
 author: evangelink
 ms.author: amauryleve
-ms.date: 10/26/2026
+ms.date: 11/05/2026
 ai-usage: ai-assisted
 ---
 
@@ -17,6 +17,8 @@ Each report option requires the extension package named in its section. Add the 
 ## Report file names
 
 Every report extension writes its file to the test results directory, which you can set with the [`--results-directory`](microsoft-testing-platform-cli-options.md) option. To override the name, use the matching `--report-*-filename` option. Each report section lists the default name for that report.
+
+To isolate reports with the same relative file name in a multi-module `dotnet test` run, use the SDK's [`--results-directory-layout per-module`](../tools/dotnet-test-mtp.md#options) option before `--`.
 
 A file name can include a relative path that stays within the test results directory, and it can use the following replacement items (placeholders):
 
@@ -38,11 +40,13 @@ If a default or explicit TRX, HTML, or JUnit file name already exists for a test
 
 ## Report consolidation
 
-Starting with MTP 2.4.0, MTP automatically post-processes report artifacts after a `dotnet test` invocation runs multiple test modules or after retry support runs multiple attempts. The feature is experimental in MTP 2.4.0.
+Starting with MTP 2.4.0, MTP automatically post-processes report artifacts after retry support runs multiple attempts. For a `dotnet test` invocation that runs multiple test modules, automatic post-processing also requires .NET 11 RC 1 or later. The feature is experimental in MTP 2.4.0.
 
 The TRX, JUnit, CTRF, and HTML extensions group compatible artifacts by report kind and write a consolidated report under the test results directory's `merged` subdirectory. CTRF consolidation combines module results and collapses retry attempts into the final test result with retry history. HTML consolidation creates a merged summary and preserves the original per-process reports.
 
 For custom report extensions, the experimental `IArtifactPostProcessor` API exposes separate `TestModules` and `RetryAttempts` processing modes. For more information, see [The `IArtifactPostProcessor` extensions](microsoft-testing-platform-architecture-extensions.md#the-iartifactpostprocessor-extensions).
+
+To disable multi-module artifact post-processing, pass [`--no-artifact-post-processing`](../tools/dotnet-test-mtp.md#options) to `dotnet test`.
 
 ## Visual Studio test reports (TRX)
 

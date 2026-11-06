@@ -3,7 +3,7 @@ title: Get started with C# and MSTest
 description: Learn unit test concepts in C# and .NET through an interactive experience building a sample solution step-by-step using dotnet test and MSTest.
 author: ncarandini
 ms.author: wiwagn
-ms.date: 10/22/2025
+ms.date: 11/05/2026
 ai-usage: ai-assisted
 ---
 # Get started with C# and MSTest
@@ -26,7 +26,15 @@ Open a shell window. Create a directory called *unit-testing-using-mstest* to ho
     /PrimeService
 ```
 
-Make *PrimeService* the current directory and run [`dotnet new classlib`](../tools/dotnet-new.md) to create the source project. Rename *Class1.cs* to *PrimeService.cs*. Replace the code in the file with the following code to create a failing implementation of the `PrimeService` class:
+Make *PrimeService* the current directory and run [`dotnet new classlib`](../tools/dotnet-new.md) to create the source project.
+
+Change the directory back to the *unit-testing-using-mstest* directory. Run [`dotnet sln add`](../tools/dotnet-sln.md) to add the class library project to the solution:
+
+```dotnetcli
+dotnet sln add PrimeService/PrimeService.csproj
+```
+
+Rename `Class1.cs` in the `PrimeService` directory to `PrimeService.cs`. Replace the code in the file with the following code to create a failing implementation of the `PrimeService` class:
 
 ```csharp
 using System;
@@ -41,12 +49,6 @@ namespace Prime.Services
         }
     }
 }
-```
-
-Change the directory back to the *unit-testing-using-mstest* directory. Run [`dotnet sln add`](../tools/dotnet-sln.md) to add the class library project to the solution:
-
-```dotnetcli
-dotnet sln add PrimeService/PrimeService.csproj
 ```
 
 ## Create the test project
@@ -69,6 +71,8 @@ Make the *PrimeService.Tests* directory the current directory and create a new p
   <PackageReference Include="MSTest" Version="4.1.0" />
 </ItemGroup>
 ```
+
+[!INCLUDE [MSTest package versions](../../../includes/mstest-package-versions.md)]
 
 The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added the necessary MSTest packages and tools for code coverage reporting.
 
@@ -132,6 +136,8 @@ namespace Prime.UnitTests.Services
 
 The [TestClass attribute](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute) denotes a class that contains unit tests. The [TestMethod attribute](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) indicates a method is a test method.
 
+MSTest creates a new instance of the test class for each test, so the constructor creates a separate `PrimeService` for each test. The constructor contains only setup that every test in this class needs. If your tests need different setup, create objects in the test methods or call helper methods from those methods. For guidance, see [Use helper methods instead of Setup and Teardown](unit-testing-best-practices.md#use-helper-methods-instead-of-setup-and-teardown).
+
 Save this file and execute [`dotnet test`](../tools/dotnet-test.md) to build the tests and the class library and then run the tests. The MSTest test runner contains the program entry point to run your tests. `dotnet test` starts the test runner using the unit test project you created.
 
 Your test fails because you didn't create the implementation yet. Make this test pass by writing the simplest code in the `PrimeService` class that works:
@@ -166,6 +172,31 @@ if (candidate < 2)
 Continue to iterate by adding more tests, more theories, and more code in the main library. You have the [finished version of the tests](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-using-mstest/PrimeService.Tests/PrimeService_IsPrimeShould.cs) and the [complete implementation of the library](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-using-mstest/PrimeService/PrimeService.cs).
 
 You built a small library and a set of unit tests for that library. You structured the solution so that adding new packages and tests is part of the normal workflow. You concentrated most of your time and effort on solving the goals of the application.
+
+## Run tests in Azure Pipelines
+
+To run your tests automatically when you push changes, add an Azure Pipelines configuration to the repository that contains your completed solution. You need an Azure DevOps project and access to a Microsoft-hosted agent. For prerequisites, see [Create your first pipeline](/azure/devops/pipelines/create-first-pipeline).
+
+1. At the root of your repository, create an `azure-pipelines.yml` file with the following content. The example assumes that the `PrimeService` and `PrimeService.Tests` directories are at the repository root and both projects target .NET 10.
+
+   :::code language="yaml" source="./snippets/unit-testing-csharp-with-mstest/azure-pipelines.yml":::
+
+1. Adjust the configuration to match your repository:
+
+   - If your branch has a different name, replace `main` in `trigger` with that branch name.
+   - If your solution is in a subdirectory, update `projects` to the test project's path relative to the repository root.
+   - If your projects target a different .NET version, change `version` in the `UseDotNet@2` task to match. For example, use `8.0.x` for projects that target `net8.0`. If your repository contains a `global.json` file, ensure that the installed SDK satisfies its version requirements.
+
+1. Commit and push your solution and `azure-pipelines.yml` file to your Git repository.
+1. In your Azure DevOps project, select **Pipelines** > **New pipeline**, or **Create pipeline** if it's your first pipeline. Select your repository provider and repository.
+1. On the **Configure your pipeline** page, select **Existing Azure Pipelines YAML file**, select the branch and `/azure-pipelines.yml`, and then select **Continue**. Review the configuration and select **Run**.
+
+The [`UseDotNet@2` task](/azure/devops/pipelines/tasks/reference/use-dotnet-v2) installs the .NET SDK. The [`DotNetCoreCLI@2` task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) runs `dotnet test`, which restores dependencies, builds the test project and its referenced library, and runs the tests in the Release configuration.
+
+With `publishTestResults: true`, the task generates a TRX results file and publishes the results, even if a test fails. After the run, open the pipeline run's **Tests** tab to review passed and failed tests. A failed test also causes the test task and pipeline to fail.
+
+> [!NOTE]
+> This example uses the default VSTest configuration from `dotnet new mstest` with the .NET 10 SDK. If you enable Microsoft.Testing.Platform (MTP), see [Run MTP tests in continuous integration](microsoft-testing-platform-run-and-debug.md?tabs=continuous-integration) for the required runner configuration.
 
 ## See also
 

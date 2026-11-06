@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0026: Avoid conditional access in assertions"
 description: "Learn about code analysis rule MSTEST0026: Avoid conditional access in assertions"
-ms.date: 05/15/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0026
 - AssertionArgsShouldAvoidConditionalAccessRuleId
@@ -53,7 +54,9 @@ This rule raises a diagnostic when an argument containing a [null conditional op
 
 ## Rule description
 
-The purpose of assertions in unit tests is to verify that certain conditions are met. When a conditional access operator is used in an assertion, it introduces an additional condition that may or may not be met, depending on the state of the object being accessed. This can lead to inconsistent test results and make test less clear.
+Conditional access returns `null` when its receiver is null, without evaluating the member access. An assertion on that result can fail because the receiver is missing rather than because the member has the wrong value. It can also pass unexpectedly if both values compare equal as null.
+
+To make the test's preconditions and failures explicit, assert that an object is non-null before you assert its members. A separate null assertion tells you whether the object was missing or its contents were incorrect.
 
 ## How to fix violations
 
@@ -72,7 +75,7 @@ StringAssert.Contains(company.Address, "Brazil");
 
 ## When to suppress warnings
 
-We do not recommend suppressing warnings from this rule.
+Suppress the diagnostic if null propagation is itself the behavior you intend to verify. Otherwise, assert the expected non-null precondition explicitly.
 
 ## Suppress a warning
 

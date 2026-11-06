@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0041: Use 'ConditionBaseAttribute' on test classes"
 description: "Learn about code analysis rule MSTEST0041: Use 'ConditionBaseAttribute' on test classes"
-ms.date: 08/06/2026
+ms.date: 11/05/2026
 f1_keywords:
 - MSTEST0041
 - UseConditionBaseWithTestClassAnalyzer
@@ -32,6 +32,8 @@ The use of an attribute that inherits from <xref:Microsoft.VisualStudio.TestTool
 ## Rule description
 
 An attribute that derives from <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ConditionBaseAttribute> only has an effect when applied to a class that's marked with <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>.
+
+Conditions control whether MSTest runs a discovered test target; they don't declare a test class themselves. On an ordinary helper class, the condition can look like test policy without participating in test discovery or execution. This rule catches that mismatch between the apparent policy and the tests the runner actually recognizes.
 
 ## How to fix violations
 

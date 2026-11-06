@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0014: DataRow should be valid"
 description: "Learn about code analysis rule MSTEST0014: DataRow should be valid"
-ms.date: 03/11/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0014
 - DataRowShouldBeValidAnalyzer
@@ -30,11 +31,15 @@ An instance of `[DataRow]` is not following one or multiple points of the requir
 
 ## Rule description
 
-`[DataRow]` instances should have the following layout to be valid:
+MSTest turns each `[DataRow]` into arguments for a test-method invocation. The attribute doesn't declare a test by itself:
 
-- they should only be set on a test method
-- argument count should match method parameters count
-- argument type should match method argument type
+| Requirement | Reason |
+|-------------|--------|
+| Apply `[DataRow]` to a method marked with `[TestMethod]` or a derived attribute. | `[TestMethod]` identifies the test entry point. Without it, MSTest doesn't invoke the method as a test, regardless of the supplied data. |
+| Supply an argument count that matches the method's parameters, including any supported `params` handling. | MSTest binds the row's values to the parameter list. Missing or extra arguments can prevent the test method from being invoked. |
+| Supply values compatible with the parameter types. | The runner must pass each value to its corresponding parameter. An incompatible value causes an argument-binding failure instead of exercising the behavior the test intends to check. |
+
+For supported argument shapes and examples, see [Data-driven testing](../unit-testing-mstest-writing-tests-data-driven.md#datarowattribute).
 
 ## How to fix violations
 

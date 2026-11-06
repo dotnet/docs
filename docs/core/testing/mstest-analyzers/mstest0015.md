@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0015: Test method should not be ignored"
 description: "Learn about code analysis rule MSTEST0015: Test method should not be ignored"
-ms.date: 03/01/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0015
 - TestMethodShouldNotBeIgnored
@@ -26,11 +27,13 @@ ms.author: enjieid
 
 ## Cause
 
-A Test method should not be ignored.
+A test method is marked with `[Ignore]`.
 
 ## Rule description
 
-Test methods should not be ignored (marked with `[Ignore]`).
+An ignored test doesn't execute its assertions, so it stops detecting regressions in the behavior it covers. This rule helps you notice tests that were disabled temporarily and never restored, or excluded unintentionally.
+
+`[Ignore]` is a supported MSTest feature, not an invalid test signature. Starting with MSTest 3.8, this rule is opt-in so you can choose whether your project permits ignored tests.
 
 ## How to fix violations
 
@@ -38,7 +41,7 @@ Ensure that the test method isn't ignored.
 
 ## When to suppress warnings
 
-Do not suppress a warning from this rule. If you ignore this rule, test method will be ignored.
+Suppress a diagnostic only if the exclusion is intentional and your project permits it. Record the reason in the `[Ignore]` attribute; [MSTEST0066](mstest0066.md) can enforce that justification. Don't suppress an unintended exclusion, because the test still won't run.
 
 [!INCLUDE [disabled-in-all](includes/disabled-in-all.md)]
 

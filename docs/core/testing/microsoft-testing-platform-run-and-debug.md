@@ -3,7 +3,7 @@ title: Run and debug tests with Microsoft.Testing.Platform (MTP)
 description: Learn how to run and debug MTP test projects from CLI, Visual Studio, Visual Studio Code, and CI pipelines.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 09/12/2026
+ms.date: 11/05/2026
 ai-usage: ai-assisted
 ---
 
@@ -146,43 +146,58 @@ To run a test, navigate to **Test Explorer**, select the test (or tests) to run.
 
 ## [Continuous integration (CI)](#tab/continuous-integration)
 
-- To run a single test project in CI, add one step for each test executable that you wish to run, such as the following on Azure DevOps:
+To run multiple test projects in parallel, invoke `dotnet test` once for the solution instead of adding a pipeline step for every test executable. When you add an MTP test project to the solution, the same command includes it without a pipeline change.
 
-  ```yml
-  - task: CmdLine@2
-    displayName: "Run Contoso.MyTests"
-    inputs:
-      script: '.\Contoso.MyTests\bin\Debug\net10.0\Contoso.MyTests.exe'
-  ```
+### Run a solution in Azure Pipelines
 
-- Run the `dotnet test` command manually, similar to the typical local workflow:
+Use the .NET 10 SDK or later and MTP 1.7 or later. All test projects in the solution must support MTP; VSTest-only test projects aren't supported in this mode. For earlier SDK versions, see [Run MTP projects with VSTest mode](unit-testing-with-dotnet-test.md#run-mtp-projects-with-vstest-mode).
 
-  ```yml
-  - task: CmdLine@2
-    displayName: "Run tests"
-    inputs:
-      script: 'dotnet test' # add command-line options as needed
-  ```
+At the repository root, create a [`global.json`](../tools/global-json.md) file with the following content. If the file already exists, add the `test` section and ensure its SDK settings select .NET 10 or later.
 
-- Run using the `DotNetCoreCLI` Azure task with test command. This requires a [`global.json`](../tools/global-json.md) file in your repository root that specifies MTP as the test runner:
+```json
+{
+    "test": {
+        "runner": "Microsoft.Testing.Platform"
+    }
+}
+```
 
-  ```json
-  {
-      "test": {
-          "runner": "Microsoft.Testing.Platform"
-      }
-  }
-  ```
+For TRX reports, each test project must reference [`Microsoft.Testing.Extensions.TrxReport`](https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport), either directly or through a test SDK configuration or profile that includes it. For details, see [Visual Studio test reports (TRX)](microsoft-testing-platform-test-reports.md#visual-studio-test-reports-trx).
 
-  ```yml
-  - task: DotNetCoreCLI@2
-    displayName: "Run tests"
-    inputs:
-      command: test
-  ```
+Add the following `azure-pipelines.yml` file to your repository. The example assumes that `Contoso.sln` and `global.json` are at the repository root. Replace `Contoso.sln` with the repository-relative path of your solution.
 
-  > [!NOTE]
-  > Support for MTP in `DotNetCoreCLI` was added in [2.263.0](https://github.com/microsoft/azure-pipelines-tasks/pull/21315) version of the task.
+:::code language="yaml" source="./snippets/microsoft-testing-platform-run-and-debug/azure-pipelines.yml":::
+
+The [`DotNetCoreCLI@2` task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) invokes `dotnet test` once for the solution. The command restores dependencies, builds the solution, and runs its MTP test modules in parallel. By default, `dotnet test` runs up to <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> modules at once. The example uses `--max-parallel-test-modules 4` to limit concurrency to four modules. Adjust the limit to match your agent's CPU, memory, and other resources.
+
+> [!IMPORTANT]
+> Select a solution file in `projects`, not a project-file pattern such as `**/*.csproj`. The task invokes `dotnet test` separately for each matched file, one after another. A single solution invocation lets `dotnet test` coordinate parallel execution across its test projects.
+
+Module-level parallelism is separate from parallel execution of tests within a module. To configure parallel tests within an assembly, use your test framework's settings. For MSTest, see [ParallelizeAttribute](unit-testing-mstest-writing-tests-controlling-execution.md#parallelizeattribute).
+
+With `publishTestResults: true`, the task adds `--report-trx` and `--results-directory` and publishes the reports to the pipeline run's **Tests** tab, even if tests fail. A nonzero `dotnet test` exit code also fails the task and pipeline.
+
+> [!NOTE]
+> MTP support in `DotNetCoreCLI@2` requires task version 2.263.0 or later. Keep `global.json` in the task's working directory so both the task and the .NET SDK select MTP.
+
+### Run a solution with a script
+
+For task versions without MTP support, or to control the CLI command directly, use a script and publish the TRX reports in a separate step. The same .NET SDK, `global.json`, and TRX extension requirements apply.
+
+:::code language="yaml" source="./snippets/microsoft-testing-platform-run-and-debug/azure-pipelines-script.yml":::
+
+The `succeededOrFailed()` condition publishes results after a successful or failed test run. The script's nonzero exit code still fails the pipeline. To avoid report overwrites across modules, don't assign the same TRX file name to every module. For naming and isolation options, see [Report file names](microsoft-testing-platform-test-reports.md#report-file-names).
+
+### Run a single test executable
+
+For a single test project, build or publish the project before you invoke its executable directly:
+
+```yml
+- task: CmdLine@2
+  displayName: "Run Contoso.MyTests"
+  inputs:
+    script: '.\Contoso.MyTests\bin\Debug\net10.0\Contoso.MyTests.exe'
+```
 
 ---
 

@@ -505,7 +505,7 @@
 | Content Safety Extension Embedded Text | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.0)<br>NuGet [1.0.1-beta.4](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.1-beta.4) |  |  |
 | Cosmos DB AOT | NuGet [0.1.4-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Aot/0.1.4-preview.2) |  |  |
 | Cosmos DB Fault Injection | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.FaultInjection/1.0.0-beta.2) |  |  |
-| Cosmos DB QueryPlanInterop - Linux | NuGet [1.0.10](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.QueryPlanInterop.Linux/1.0.10) |  |  |
+| Cosmos DB QueryPlanInterop - Linux | NuGet [1.0.11](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.QueryPlanInterop.Linux/1.0.11) |  |  |
 | Cosmos DB QueryPlanInterop - macOS | NuGet [1.0.5](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.QueryPlanInterop.MacOS/1.0.5) |  |  |
 | Cosmos DB QueryPlanInterop - Windows | NuGet [1.0.5](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.QueryPlanInterop.Windows/1.0.5) |  |  |
 | DotNetty | NuGet [0.7.6](https://www.nuget.org/packages/DotNetty.Common/0.7.6) |  |  |

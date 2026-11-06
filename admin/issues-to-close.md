@@ -1,6 +1,8 @@
 # Issue closure recommendations
 
-Recommend closing the following issues because current documentation addresses the request, an authoritative answer resolves the documentation question, the affected sample has been superseded, another tracked issue covers the same work, or the proposal belongs to another documentation set. These are recommendations only: no issues have been closed, commented on, labeled, or assigned.
+The following issues were recommended for closure because current documentation addresses the request, an authoritative answer resolves the documentation question, the affected sample has been superseded, another tracked issue covers the same work, or the proposal belongs to another documentation set.
+
+**Closure status (November 6, 2026):** All 165 issues listed below are closed. The final pass closed 155 remaining open issues with explanatory comments; 10 were already closed, including the six closed in the initial review batches. The recommendations and supporting evidence below remain as the historical rationale for closure.
 
 ## Review coverage
 
@@ -9,7 +11,7 @@ Recommend closing the following issues because current documentation addresses t
 - **Completed batches:** The 848 oldest issues in the original open-issue snapshot, from [dotnet/docs#2608](https://github.com/dotnet/docs/issues/2608), opened July 12, 2017, through [dotnet/docs#56692](https://github.com/dotnet/docs/issues/56692), opened November 1, 2026. The original snapshot is complete.
 - **Results:** 165 closure candidates and 405 [clearly defined fixes](issues-with-defined-fixes.md) (321 assignment candidates and 84 fixes covered by 81 open implementation PRs).
 - **Latest batch:** Issues 826-848, from [dotnet/docs#55955](https://github.com/dotnet/docs/issues/55955) through dotnet/docs#56692: 2 closure candidates, 3 new assignment candidates, and 10 new fixes with open implementation PRs.
-- **Remaining:** 0 issues from this snapshot are unreviewed. Of the requested remaining 298 issues (positions 551-848), 298 are complete and 0 remain. Issues created after the November 2 snapshot aren't included. Refresh states before acting on any recommendation.
+- **Remaining:** 0 issues from this snapshot are unreviewed, and 0 listed closure candidates remain open as of November 6, 2026. Of the requested remaining 298 issues (positions 551-848), 298 are complete and 0 remain. Issues created after the November 2 snapshot aren't included.
 - **Evidence:** Issue bodies, complete comment threads, relevant current documentation, and candidate cross-reference timelines. Local source matched upstream `main` at commit `81cd030da804aa06cfbd8f23474cbbacba597c72` during this review. External sources were checked where noted.
 
 Age, inactivity, an out-of-support version, a `won't fix` label, or a stale-bot closure in another repository doesn't establish that an issue no longer applies. Partial coverage alone isn't sufficient either. Issues that don't fit either candidate category are omitted for a future task.

@@ -3,7 +3,7 @@ title: MSTest test lifecycle
 description: Learn about the creation and lifecycle of test classes and test methods in MSTest, including initialization and cleanup at assembly, class, and test levels.
 author: marcelwgn
 ms.author: marcelwagner
-ms.date: 10/01/2026
+ms.date: 11/06/2026
 ai-usage: ai-assisted
 ---
 
@@ -79,7 +79,7 @@ public class AssemblyLifecycleExample
 > [!NOTE]
 > The `AssemblyFixtureProviderAttribute` was introduced in MSTest 4.3.0.
 
-By default, `[AssemblyInitialize]` and `[AssemblyCleanup]` methods must be declared in the test assembly that uses them. The `AssemblyFixtureProviderAttribute` lets you declare those methods once in a shared library and have them discovered and run once per consuming test assembly. Apply the assembly-level attribute and point it at the type that hosts the `[AssemblyInitialize]`/`[AssemblyCleanup]` methods.
+By default, `[AssemblyInitialize]` and `[AssemblyCleanup]` methods must be declared in the test assembly that uses them. Use `AssemblyFixtureProviderAttribute` to expose those methods from a shared fixture type. MSTest runs the shared methods once per consuming test assembly, not once for the entire test run.
 
 ```csharp
 // In a shared library.
@@ -98,15 +98,41 @@ public static class SharedAssemblyFixtures
 }
 ```
 
+To expose `SharedAssemblyFixtures` to test assemblies that reference the shared library, add the following assembly-level attribute **in the shared library**:
+
 ```csharp
-// In each test assembly that should run the shared fixtures.
 [assembly: AssemblyFixtureProvider(typeof(SharedAssemblyFixtures))]
 ```
 
-The attribute allows multiple providers per assembly, so you can compose fixtures from several shared types.
+Consuming test assemblies don't need to repeat the attribute when the shared library is reachable through their compiled assembly references. MSTest searches the non-framework assembly reference graph automatically, including transitive references. The marker identifies a fixture type that an assembly supplies; it doesn't opt a consuming test assembly into provider discovery.
+
+Automatic discovery follows references emitted into compiled assembly metadata, not every `ProjectReference` or `PackageReference`. If a shared library contains only fixtures and the consumer doesn't otherwise reference its types, the compiler might omit that library from the assembly reference graph. A project or package reference alone doesn't guarantee discovery.
+
+To register a fixture-only library explicitly, or if you can't modify the shared library, put `[assembly: AssemblyFixtureProvider(typeof(SharedAssemblyFixtures))]` in the consuming test assembly. The marker supplies both an explicit compiled reference and fixture registration. You don't need to call a library API at runtime to force a load. The referenced fixture type can reside in a library that doesn't declare a provider marker.
 
 > [!WARNING]
 > Starting with MSTest 4.4, MSTest skips `AssemblyFixtureProviderAttribute` discovery when dynamic code isn't supported, including Native AOT runs. Use fixture methods declared directly in the test assembly for Native AOT. The [MSTEST0072](mstest-analyzers/mstest0072.md) analyzer reports configurations that it can detect at build time.
+
+#### Local methods and duplicate providers
+
+Local assembly lifecycle methods take precedence independently:
+
+- A local `[AssemblyInitialize]` method overrides shared initialization. Shared cleanup can still run.
+- A local `[AssemblyCleanup]` method overrides shared cleanup. Shared initialization can still run.
+- If the test assembly declares both local methods, MSTest skips the shared-provider search.
+
+The attribute allows multiple provider declarations, but each consuming test assembly can use at most one initialization method and one cleanup method. If multiple eligible shared methods fill the same slot and no local method takes precedence, MSTest reports an error.
+
+#### Assembly-load side effects in MSTest 4.3.0 through 4.5.2
+
+In MSTest 4.3.0 through 4.5.2, reflection-based provider discovery loads referenced non-framework assemblies into the test process as it walks the transitive reference graph, before it checks for provider markers. The search can load otherwise-unused, unmarked assemblies even when no shared fixture providers exist.
+
+These extra loads can change <xref:System.AppDomain.GetAssemblies> results and lock DLLs on Windows with .NET Framework.
+
+> [!IMPORTANT]
+> If your tests depend on an unused assembly remaining unloaded and don't use shared fixtures, a temporary workaround for these affected versions is to declare **both** a local `[AssemblyInitialize]` method and a local `[AssemblyCleanup]` method. With both local methods, MSTest skips this provider scan. Declaring only one local method doesn't stop the scan. The workaround bypasses shared-fixture behavior; it isn't required MSTest boilerplate and doesn't prevent other code from loading assemblies.
+
+Neither `.runsettings` nor `testconfig.json` provides a switch to enable or disable shared-provider discovery. For the available configuration options, see [Configure MSTest](unit-testing-mstest-configure.md#shared-assembly-fixture-discovery).
 
 ## Class-level lifecycle
 

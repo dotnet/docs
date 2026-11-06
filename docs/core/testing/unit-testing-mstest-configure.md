@@ -3,7 +3,7 @@ title: Configure MSTest
 description: Learn how to configure MSTest.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 10/01/2026
+ms.date: 11/06/2026
 ai-usage: ai-assisted
 ---
 
@@ -12,6 +12,16 @@ ai-usage: ai-assisted
 MSTest, Microsoft Testing Framework, is a test framework for .NET applications. It allows you to write and execute tests, and provide test suites with integration to Visual Studio and Visual Studio Code Test Explorers, the .NET CLI, and many CI pipelines.
 
 MSTest is a fully supported, open-source and a cross-platform test framework that works with all supported .NET targets (.NET Framework, .NET Core, .NET, UWP, WinUI, and so on) hosted on [GitHub](https://github.com/microsoft/testfx).
+
+## Shared assembly fixture discovery
+
+Shared assembly fixture providers don't require a `.runsettings` or `testconfig.json` entry. MSTest automatically searches referenced non-framework assemblies, including transitive references, for `AssemblyFixtureProviderAttribute`. The assembly-level marker identifies a fixture type that an assembly supplies; it isn't a consuming test project's discovery opt-in.
+
+The search follows assembly references emitted into compiled metadata, not every `ProjectReference` or `PackageReference`. A fixture-only library that the compiler omits from that graph needs an explicit consumer-side provider marker. You don't need to call a library API at runtime to force a load.
+
+Neither configuration file provides a setting to enable or disable this provider search. Assembly-resolution settings control where MSTest resolves dependencies, not whether it searches for fixture providers.
+
+In MSTest 4.3.0 through 4.5.2, the automatic search can load otherwise-unused assemblies and lock DLLs on Windows with .NET Framework. For marker placement, local-method precedence, and the temporary both-method workaround for affected versions, see [Shared assembly fixtures with AssemblyFixtureProvider](unit-testing-mstest-writing-tests-lifecycle.md#shared-assembly-fixtures-with-assemblyfixtureprovider).
 
 ## Runsettings
 

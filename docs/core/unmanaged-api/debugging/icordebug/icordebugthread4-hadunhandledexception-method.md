@@ -23,15 +23,12 @@ Indicates whether the thread has ever had an unhandled exception.
 ## Syntax
 
 ```cpp
-HRESULT GetBlockingObjects (
-    [out] ICorDebugBlockingObjectEnum **ppBlockingObjectEnum
-    );
+HRESULT HadUnhandledException();
 ```
 
 ## Parameters
 
- `ppBlockingObjectEnum`
- [out] A pointer to the address of an ordered enumeration of [CorDebugBlockingObject](cordebugblockingobject-structure.md) structures.
+None.
 
 ## Return Value
 

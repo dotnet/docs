@@ -34,7 +34,15 @@ If you must specify your C# version explicitly, you can do so in several ways:
 
 ## Edit the project file
 
-Set the language version in your project file. The project file is the `*.csproj` file in the root folder for your project. For example, if you want explicit access to preview features, add an element like the following example:
+Set the language version in your project file. The project file is the `*.csproj` file in the root folder for your project. For production projects, specify an explicit version number (such as `12.0` or `13.0`) if you need to override the default associated with your target framework:
+
+```xml
+<PropertyGroup>
+   <LangVersion>13.0</LangVersion>
+</PropertyGroup>
+```
+
+If you want explicit access to preview language features, set the value to `preview`:
 
 ```xml
 <PropertyGroup>
@@ -42,21 +50,24 @@ Set the language version in your project file. The project file is the `*.csproj
 </PropertyGroup>
 ```
 
-The value `preview` uses the latest available preview C# language version your compiler supports.
+The value `preview` instructs the compiler to use the latest available preview C# language version supported by the installed SDK.
+
+> [!NOTE]
+> Setting `LangVersion` to `preview` lets you evaluate upcoming language features and provide early feedback. However, preview features are not recommended for production environments because they might change before final release or require preview runtime components.
 
 ## Configure multiple projects
 
-To configure multiple C# projects, create a *Directory.Build.props* file, typically in your solution directory, that contains the `<LangVersion>` element. Add the following setting to the *Directory.Build.props* file:
+To configure multiple C# projects across a repository, create a *Directory.Build.props* file, typically in your solution directory, that contains the `<LangVersion>` element:
 
 ```xml
 <Project>
  <PropertyGroup>
-   <LangVersion>preview</LangVersion>
+   <LangVersion>12.0</LangVersion>
  </PropertyGroup>
 </Project>
 ```
 
-Builds in all subdirectories of the directory containing that file now use the preview C# version. For more information, see [Customize your build](/visualstudio/msbuild/customize-your-build).
+Builds in all subdirectories of the directory containing that file now use the specified C# version. For more information, see [Customize your build](/visualstudio/msbuild/customize-your-build).
 
 > [!NOTE]
 >

@@ -28,11 +28,11 @@ Module MillisecondDisplay
 
             Dim fullPattern As String = DateTimeFormatInfo.CurrentInfo.FullDateTimePattern
 
-            ' Create a format similar to .fff but based on the current culture.
-            Dim millisecondFormat as String = $"{NumberFormatInfo.CurrentInfo.NumberDecimalSeparator}fff"
-            
-            ' Append millisecond pattern to current culture's full date time pattern.
-            fullPattern = Regex.Replace(fullPattern, "(:ss|:s)", $"$1{millisecondFormat}")
+            ' Create a format similar to .fff but based on the current culture's decimal separator.
+            Dim millisecondFormat As String = $"'{NumberFormatInfo.CurrentInfo.NumberDecimalSeparator}'fff"
+
+            ' Append millisecond pattern to current culture's full date time pattern by matching seconds specifiers outside quoted literals.
+            fullPattern = Regex.Replace(fullPattern, "(?<!s)(s{1,2})(?!s)(?=(?:[^'""""\]|\.|'[^']*'|""""[^""""]*"""")*$)", $"$1{millisecondFormat}")
 
             ' Display Millisecond component with modified full date and time pattern.
             Console.WriteLine("Modified full date time pattern: {0}", _

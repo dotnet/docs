@@ -2,7 +2,7 @@
 title: "Migrate from Newtonsoft.Json to System.Text.Json - .NET"
 description: "Learn about the differences between Newtonsoft.Json and System.Text.Json and how to migrate to System.Text.Json."
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 10/03/2025
+ms.date: 11/01/2026
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
@@ -81,6 +81,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `JsonConvert.PopulateObject` method                   | ⚠️ [Not supported, workaround](#populate-existing-objects) |
 | Support for `System.Runtime.Serialization` attributes | ⚠️ [Not supported, workaround, sample](#systemruntimeserialization-attributes) |
 | `JsonObjectAttribute`                                 | ⚠️ [Not supported, workaround](#jsonobjectattribute) |
+| Deserialize byte array from JSON number array         | ⚠️ [Requires custom converter](#byte-arrays) |
 | Allow property names without quotes                   | ❌ [Not supported by design](#json-strings-property-names-and-string-values) |
 | Allow single quotes around string values              | ❌ [Not supported by design](#json-strings-property-names-and-string-values) |
 | Allow non-string JSON values for string properties    | ❌ [Not supported by design](#non-string-values-for-string-properties) |
@@ -450,6 +451,49 @@ System.Text.Json doesn't have built-in support for these attributes. However, st
 ### Octal numbers
 
 `Newtonsoft.Json` treats numbers with a leading zero as octal numbers. <xref:System.Text.Json?displayProperty=fullName> doesn't allow leading zeroes because the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification doesn't allow them.
+
+### Byte arrays
+
+Both `Newtonsoft.Json` and `System.Text.Json` serialize `byte[]` as a Base64-encoded JSON string by default.
+
+However, during deserialization, `Newtonsoft.Json` can deserialize both Base64 strings and JSON arrays of numbers (such as `[1, 2, 3]`) into a `byte[]`. In contrast, <xref:System.Text.Json?displayProperty=fullName> strictly expects a Base64 string for `byte[]`. If the JSON payload contains a JSON array of numbers, deserializing into a `byte[]` throws a <xref:System.Text.Json.JsonException>.
+
+To deserialize a JSON number array into a `byte[]` with `System.Text.Json`, use a custom converter:
+
+```csharp
+public class ByteArrayAsNumberArrayConverter : JsonConverter<byte[]>
+{
+    public override byte[] Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+    {
+        if (reader.TokenType == JsonTokenType.String)
+        {
+            return reader.GetBytesFromBase64();
+        }
+
+        if (reader.TokenType == JsonTokenType.StartArray)
+        {
+            var byteList = new List<byte>();
+            while (reader.Read() && reader.TokenType != JsonTokenType.EndArray)
+            {
+                byteList.Add(reader.GetByte());
+            }
+            return byteList.ToArray();
+        }
+
+        throw new JsonException("Expected string or start of array.");
+    }
+
+    public override void Write(Utf8JsonWriter writer, byte[] value, JsonSerializerOptions options)
+    {
+        writer.WriteStartArray();
+        foreach (byte b in value)
+        {
+            writer.WriteNumberValue(b);
+        }
+        writer.WriteEndArray();
+    }
+}
+```
 
 ### Handle missing members
 

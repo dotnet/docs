@@ -54,6 +54,28 @@ the .NET event pattern.
 The result of all that work was the delegate and event support in C# and
 .NET.
 
+## Core terminology: methods, lambdas, and delegates
+
+When working with late binding in C#, distinguishing between types, targets, and syntactic forms avoids confusion:
+
+- **Delegate type** &mdash; A reference type that specifies a method signature (parameter types and return type). You define custom delegate types using the `delegate` keyword (such as `delegate int Comparison(Star x, Star y);`), or use built-in generic delegate types such as <xref:System.Func%602> and <xref:System.Action%601>.
+- **Delegate instance** &mdash; An object created from a delegate type that holds a callable reference to one or more methods (along with their target object instances for instance methods).
+- **Named method** &mdash; A standard declared method with an explicit identifier and body defined in a class, struct, or interface (for example, `static bool IsBright(Star s) => s.Magnitude < 2.0;`).
+- **Method group** &mdash; The set of all methods bearing the same name in a type. When you pass a method name without parentheses (for example, `Sort(CompareStars)`), the compiler performs *method group conversion* by selecting the overload matching the target delegate signature.
+- **Anonymous method (anonymous delegate)** &mdash; An inline method defined without a name using the `delegate` keyword and parameter list (such as `delegate(int x) { return x * 2; }`). Introduced in C# 2.0, anonymous methods are valid for backward compatibility.
+- **Lambda expression** &mdash; A modern, compact syntax using the arrow operator `=>` (such as `x => x * 2`). Introduced in C# 3.0, lambda expressions supersede anonymous methods for nearly all scenarios because they provide clearer syntax and compiler type inference.
+
+## Multicast delegate semantics and nuances
+
+All delegate types in .NET inherit from <xref:System.MulticastDelegate?displayProperty=nameWithType>, which in turn derives from <xref:System.Delegate?displayProperty=nameWithType>. A delegate can hold a single callback target or chain multiple callbacks together into an *invocation list*.
+
+When using multicast delegates, keep the following nuances in mind:
+
+- **Combining and removing targets**: You combine callbacks using the addition operator (`+=`) or <xref:System.Delegate.Combine*?displayProperty=nameWithType>, and remove callbacks using the subtraction operator (`-=`) or <xref:System.Delegate.Remove*?displayProperty=nameWithType>.
+- **Sequential invocation**: Callbacks in the invocation list are called synchronously in the exact order they were registered.
+- **Return values**: If the delegate returns a value (such as `Func<int>`), invoking the multicast delegate returns the result of the **last** callback executed in the list. Results returned by earlier callbacks are discarded. For this reason, multicast delegates are most commonly used with `void` returns (such as `Action` delegates and event handlers).
+- **Exception handling**: If any callback in the invocation list throws an unhandled exception, execution halts immediately and subsequent callbacks in the list are not invoked. To safely invoke all callbacks even if individual handlers fail, iterate the callbacks manually by calling <xref:System.Delegate.GetInvocationList*?displayProperty=nameWithType> within a `try/catch` loop.
+
 The remaining articles in this series will cover language
 features, library support, and common idioms used
 when you work with delegates and events.

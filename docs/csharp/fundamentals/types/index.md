@@ -39,7 +39,7 @@ C# provides [built-in types](built-in-types.md) for common data: integers, float
 
 Beyond built-in types, you can create your own types by using several constructs:
 
-- [**Classes**](classes.md) — Reference types for modeling behavior and complex objects. Support inheritance and polymorphism.
+- [**Classes**](classes.md) — Reference types for modeling behavior and complex objects. Support inheritance, polymorphism, and [closed hierarchies](classes.md#closed-hierarchies).
 - [**Structs**](structs.md) — Value types for small, lightweight data. Each variable holds its own copy.
 - [**Records**](records.md) — Classes or structs with compiler-generated equality, `ToString`, and nondestructive mutation through `with` expressions.
 - [**Interfaces**](interfaces.md) — Contracts that define members any class or struct can implement.
@@ -70,7 +70,7 @@ When you define a new type, the kind you choose shapes how your code behaves. Us
 - **Tuple** — Temporary grouping of values that doesn't need a named type or behavior.
 - **`struct`** or **`record struct`** — Small data (roughly 64 bytes or less), value semantics, or immutability. Record structs add value-based equality and `with` expressions.
 - **`record class`** — Primarily data, with value-based equality, `ToString`, and nondestructive mutation. Supports inheritance.
-- **`class`** — Complex behavior, polymorphism, or mutable state. Most custom types are classes.
+- **`class`** — Complex behavior, polymorphism, or mutable state. Most custom types are classes. Use `closed class` or `closed record class` when defining a closed set of subtypes for exhaustive pattern matching.
 - **`interface`** — A contract that unrelated types can implement. Defines capabilities rather than identity.
 - **`enum`** — A fixed set of named constants, such as status codes or options.
 

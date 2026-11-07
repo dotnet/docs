@@ -119,17 +119,16 @@ type SingleCase = Case of string
 
 [<Struct>]
 type Multicase =
-    | Case1 of string
-    | Case2 of int
-    | Case3 of double
+    | Case1 of case1: string
+    | Case2 of case2: int
+    | Case3 of case3: double
 ```
 
 Because these are value types and not reference types, there are extra considerations compared with reference discriminated unions:
 
 1. They are copied as value types and have value type semantics.
 2. You cannot use a recursive type definition with a multicase struct discriminated union.
-
-Before F# 9, there was a requirement for each case to specify a unique case name (within the union). Starting with F# 9, the limitation is lifted.
+3. If cases have different types, their fields must have unique names. (Unnamed fields are assigned the default name `Item`, which causes compiler error FS3585 when their types differ.) Starting with F# 9, fields with the same name and type can share memory across cases.
 
 ## Using Discriminated Unions Instead of Object Hierarchies
 

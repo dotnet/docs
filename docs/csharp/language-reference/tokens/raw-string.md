@@ -68,7 +68,14 @@ If you need to start or end a raw string literal with quote characters, use the 
 
 :::code language="csharp" source="./snippets/raw-string-literal.cs" id="InitialQuotes":::
 
-Raw string literals can also be combined with [interpolated strings](./interpolated.md#interpolated-raw-string-literals) to embed the `{` and `}` characters in the output string. You use multiple `$` characters in an interpolated raw string literal to embed `{` and `}` characters in the output string without escaping them.
+Raw string literals can also be combined with [interpolated strings](./interpolated.md#interpolated-raw-string-literals) to embed `{` and `}` characters in the output string without escaping them. The number of consecutive `$` characters at the start of the literal specifies how many consecutive braces start and end an interpolation expression. Any sequence of fewer braces is treated as literal characters.
+
+For example, when you prepend two `$` characters (`$$"""`), a single `{` or `}` remains a literal character, and double braces (`{{` and `}}`) delineate an interpolation expression:
+
+:::code language="csharp" source="./snippets/raw-string-literal.cs" id="InterpolatedRawString":::
+
+> [!TIP]
+> To serialize structured data objects to JSON in .NET applications, use the <xref:System.Text.Json> library instead of manual string interpolation. For more information, see [JSON serialization and deserialization in .NET](../../../standard/serialization/system-text-json/overview.md).
 
 The raw string literal's content must not contain a set of contiguous `"` characters whose length is equal to or greater than the raw string literal delimiter length. For example, the strings `"""" """ """"` and `""""""" """""" """"" """" """ """""""` are well-formed. However, the strings `""" """ """` and `""" """" """` aren't well-formed.
 

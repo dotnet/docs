@@ -7,6 +7,9 @@ helpviewer_keywords:
 ---
 # Nullable value types (C# reference)
 
+> [!NOTE]
+> This article covers **nullable value types**, which are instances of the <xref:System.Nullable%601> struct (such as `int?` or `bool?`). For reference types (such as `string?` or `object?`), see [Nullable reference types](nullable-reference-types.md). Unlike nullable value types, nullable reference types don't create a new runtime structure; they are compile-time annotations enforced by compiler static analysis.
+
 A *nullable value type* `T?` represents all values of its underlying [value type](value-types.md) `T` and an additional [null](../keywords/null.md) value. For example, you can assign any of the following three values to a `bool?` variable: `true`, `false`, or `null`. An underlying value type `T` can't be a nullable value type itself.
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]

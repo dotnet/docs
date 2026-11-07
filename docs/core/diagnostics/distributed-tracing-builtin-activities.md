@@ -64,13 +64,13 @@ This activity is a child of an *HTTP client request* activity. It represents the
 
 ### HTTP connection setup (experimental)
 
-This activity describes the establishment of an HTTP connection. Typically, this includes the the time it takes to resolve the DNS, establish the socket connection, and perform the TLS handshake.
+This activity describes the establishment of an HTTP connection. Typically, this includes the time it takes to resolve the DNS, establish the socket connection, and perform the TLS handshake.
 
 | Availability | <xref:System.Diagnostics.ActivitySource> name | <xref:System.Diagnostics.Activity.OperationName> | <xref:System.Diagnostics.Activity.DisplayName> |
 |---|---|---|---|
 | .NET 9+ | `Experimental.System.Net.Http.Connections` | `Experimental.System.Net.Http.Connections.ConnectionSetup` | `HTTP connection_setup {address}:{port}`  |
 
-There is no parent-child relationship between the *HTTP client request* and the *HTTP connection setup* activities; the latter will always be a root activity, living in a separate trace. However, if the connection attempt represented by *HTTP connection setup* results in a succesful HTTP connection, and that connection is picked up by a request to serve it, the instrumentation adds an <xref:System.Diagnostics.ActivityLink> to the *HTTP client request* activity pointing to the *HTTP connection setup* activity. That is, each request is linked to the connection that served the request.
+There is no parent-child relationship between the *HTTP client request* and the *HTTP connection setup* activities; the latter will always be a root activity, living in a separate trace. However, if the connection attempt represented by *HTTP connection setup* results in a successful HTTP connection, and that connection is picked up by a request to serve it, the instrumentation adds an <xref:System.Diagnostics.ActivityLink> to the *HTTP client request* activity pointing to the *HTTP connection setup* activity. That is, each request is linked to the connection that served the request.
 
 > [!NOTE]
 > If *HTTP connection setup* fails, it won't be linked to any *HTTP client request*.

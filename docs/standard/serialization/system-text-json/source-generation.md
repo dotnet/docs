@@ -25,11 +25,7 @@ To use source generation with all defaults (both modes, default options):
 
 1. Create a partial class that derives from <xref:System.Text.Json.Serialization.JsonSerializerContext>.
 1. Specify the type to serialize or deserialize by applying <xref:System.Text.Json.Serialization.JsonSerializableAttribute> to the context class.
-1. Call a <xref:System.Text.Json.JsonSerializer> method that either:
-
-   - Takes a <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo`1> instance, or
-   - Takes a <xref:System.Text.Json.Serialization.JsonSerializerContext> instance, or
-   - Takes a <xref:System.Text.Json.JsonSerializerOptions> instance and you've set its <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver?displayProperty=nameWithType> property to the `Default` property of the context type.
+1. Call a <xref:System.Text.Json.JsonSerializer> method that takes a <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo`1> instance.
 
 By default, both source generation modes (*metadata-based* and *serialization optimization*) are used if you don't specify one. For information about how to specify the mode to use, see [Specify source generation mode](#specify-source-generation-mode) later in this article.
 
@@ -65,13 +61,9 @@ Using <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo`1>:
 
 :::code language="csharp" source="snippets/source-generation/csharp/BothModesNoOptions.cs" id="SerializeWithTypeInfo":::
 
-Using <xref:System.Text.Json.Serialization.JsonSerializerContext>:
+Using a `JsonSerializerOptions` instance by first resolving `JsonTypeInfo<T>`:
 
-:::code language="csharp" source="snippets/source-generation/csharp/BothModesNoOptions.cs" id="SerializeWithContext":::
-
-Using <xref:System.Text.Json.JsonSerializerOptions>:
-
-:::code language="csharp" source="snippets/source-generation/csharp/BothModesNoOptions.cs" id="SerializeWithOptions":::
+:::code language="csharp" source="snippets/source-generation/csharp/BothModesNoOptions.cs" id="SerializeWithTypeInfoFromOptions":::
 
 #### Deserialization examples
 
@@ -79,13 +71,9 @@ Using <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo`1>:
 
 :::code language="csharp" source="snippets/source-generation/csharp/BothModesNoOptions.cs" id="DeserializeWithTypeInfo":::
 
-Using <xref:System.Text.Json.Serialization.JsonSerializerContext>:
+Using a `JsonSerializerOptions` instance by first resolving `JsonTypeInfo<T>`:
 
-:::code language="csharp" source="snippets/source-generation/csharp/BothModesNoOptions.cs" id="DeserializeWithContext":::
-
-Using <xref:System.Text.Json.JsonSerializerOptions>:
-
-:::code language="csharp" source="snippets/source-generation/csharp/BothModesNoOptions.cs" id="DeserializeWithOptions":::
+:::code language="csharp" source="snippets/source-generation/csharp/BothModesNoOptions.cs" id="DeserializeWithTypeInfoFromOptions":::
 
 ### Complete program example
 
@@ -208,13 +196,21 @@ When using `JsonSourceGenerationOptionsAttribute` to specify serialization optio
 
   :::code language="csharp" source="snippets/source-generation/csharp/SerializeOnlyWithOptions.cs" id="SerializeWithTypeInfo":::
 
-- A `JsonSerializer.Serialize` method that takes a context. Pass it the `Default` static property of your context class.
-
-  :::code language="csharp" source="snippets/source-generation/csharp/SerializeOnlyWithOptions.cs" id="SerializeWithContext":::
-
 If you call a method that lets you pass in your own instance of `Utf8JsonWriter`, the writer's <xref:System.Text.Json.JsonWriterOptions.Indented> setting is honored instead of the `JsonSourceGenerationOptionsAttribute.WriteIndented` option.
 
 If you create and use a context instance by calling the constructor that takes a `JsonSerializerOptions` instance, the supplied instance will be used instead of the options specified by `JsonSourceGenerationOptionsAttribute`.
+
+> [!NOTE]
+> Overloads that only take <xref:System.Text.Json.JsonSerializerOptions> are generally unsuitable for Native AOT source-generation scenarios. For backward compatibility, these overloads can still fall back to reflection defaults, which is what trim analysis warns about. Prefer overloads that take `JsonTypeInfo<T>` directly.
+>
+> If you need to flow contracts through an existing `JsonSerializerOptions` instance, resolve `JsonTypeInfo<T>` first and then call a `JsonTypeInfo<T>` overload:
+>
+> ```csharp
+> JsonTypeInfo<MyType> typeInfo =
+>     (JsonTypeInfo<MyType>)options.GetTypeInfo(typeof(MyType));
+> string json = JsonSerializer.Serialize(value, typeInfo);
+> MyType? model = JsonSerializer.Deserialize(json, typeInfo);
+> ```
 
 The following code shows the preceding examples in a complete program:
 
@@ -252,7 +248,7 @@ Annotate the enumeration type with the <xref:System.Text.Json.Serialization.Json
 
 :::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithConverterEnum":::
 
-Create a <xref:System.Text.Json.Serialization.JsonSerializerContext> class and annotate it with the <xref:System.Text.Json.Serialization.JsonSerializableAttribute> attribute:
+Create a source-generation context class and annotate it with the <xref:System.Text.Json.Serialization.JsonSerializableAttribute> attribute:
 
 :::code language="csharp" source="snippets/how-to/csharp/RoundtripEnumSourceGeneration.cs" id="Context1":::
 
@@ -272,7 +268,7 @@ The resulting JSON looks like the following example:
 
 ### Blanket policy
 
-Instead of using the <xref:System.Text.Json.Serialization.JsonStringEnumConverter`1> type, you can apply a blanket policy to serialize enums as strings by using the <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute>. Create a <xref:System.Text.Json.Serialization.JsonSerializerContext> class and annotate it with the <xref:System.Text.Json.Serialization.JsonSerializableAttribute> *and <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute>* attributes:
+Instead of using the <xref:System.Text.Json.Serialization.JsonStringEnumConverter`1> type, you can apply a blanket policy to serialize enums as strings by using the <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute>. Create a source-generation context class and annotate it with the <xref:System.Text.Json.Serialization.JsonSerializableAttribute> *and <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute>* attributes:
 
 :::code language="csharp" source="snippets/how-to/csharp/RoundtripEnumSourceGeneration.cs" id="Context2":::
 

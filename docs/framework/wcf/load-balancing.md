@@ -44,8 +44,11 @@ One way to increase the capacity of Windows Communication Foundation (WCF) appli
   <bindings>
     <customBinding>
 
-    <!-- Configure a CustomBinding that disables keepAliveEnabled-->
-      <binding name="HttpBinding" keepAliveEnabled="False"/>
+      <!-- Configure a CustomBinding that disables keepAliveEnabled-->
+      <binding name="HttpBinding">
+        <textMessageEncoding />
+        <httpTransport keepAliveEnabled="false" />
+      </binding>
 
     </customBinding>
   </bindings>
@@ -66,7 +69,10 @@ One way to increase the capacity of Windows Communication Foundation (WCF) appli
       <customBinding>
 
       <!-- Configure a CustomBinding that disables keepAliveEnabled-->
-        <binding keepAliveEnabled="False"/>
+        <binding>
+          <textMessageEncoding />
+          <httpTransport keepAliveEnabled="false" />
+        </binding>
 
       </customBinding>
     </bindings>

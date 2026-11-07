@@ -4,6 +4,14 @@ items:
   - name: Breaking changes by version
     expanded: true
     items:
+      - name: .NET 12
+        items:
+          - name: Overview
+            href: 12.md
+          - name: Networking
+            items:
+              - name: SslStream skips certificate validation on resumed TLS sessions
+                href: networking/12/sslstream-certificate-validation-tls-resumption.md
       - name: .NET 11
         items:
           - name: Overview

@@ -1,7 +1,7 @@
 ---
 title: Configuration
 description: Learn how to use the Configuration API to configure .NET applications. Explore various inbuilt configuration providers.
-ms.date: 08/27/2026
+ms.date: 11/01/2026
 ms.topic: overview
 ai-usage: ai-assisted
 ---
@@ -46,7 +46,18 @@ While this example uses an in-memory configuration, there are many configuration
 
 ## Alternative hosting approach
 
-Commonly, your apps will do more than just read configuration. They'll likely use dependency injection, logging, and other services. The [.NET Generic Host](generic-host.md) approach is recommended for apps that use these services. Instead, consider [adding a package reference](../tools/dotnet-package-add.md) to [📦 Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting). Modify the *Program.cs* file to match the following code:
+Commonly, your apps will do more than just read configuration. They'll likely use dependency injection, logging, and other services. The [.NET Generic Host](generic-host.md) approach is recommended for apps that use these services.
+
+Add a package reference to [📦 Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) (version 7.0 or later):
+
+```dotnetcli
+dotnet add package Microsoft.Extensions.Hosting
+```
+
+> [!NOTE]
+> The <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder(System.String[])?displayProperty=nameWithType> method requires the `Microsoft.Extensions.Hosting` package version 7.0 or later (introduced in .NET 7). If your project targets .NET 6 or earlier, use <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[])?displayProperty=nameWithType> instead. For more information, see [.NET Generic Host](generic-host.md).
+
+Modify the *Program.cs* file to match the following code:
 
 :::code source="snippets/configuration/console/Program.cs" highlight="3":::
 

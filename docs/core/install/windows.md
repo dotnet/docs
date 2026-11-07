@@ -126,6 +126,35 @@ On an Arm-based Windows PC, all Arm64 versions of .NET are installed to the norm
 
 Environment variables that add .NET to system path, such as the `PATH` variable, might need to be changed if you have both the x64 and Arm64 versions of the .NET SDK installed. Additionally, some tools rely on the `DOTNET_ROOT` environment variable, which would also need to be updated to point to the appropriate .NET SDK installation folder.
 
+## Network and firewall requirements
+
+Some installation methods require outbound internet access. If you're installing .NET on a machine behind a corporate firewall or proxy, ensure the following domains are accessible before you begin.
+
+| Domain | Port | Used by |
+|--------|------|---------|
+| `winget.azureedge.net` | 443 | WinGet |
+| `cdn.winget.microsoft.com` | 443 | WinGet |
+| `dotnetcli.blob.core.windows.net` | 443 | PowerShell install script |
+| `builds.dotnet.microsoft.com` | 443 | PowerShell install script, checksum validation |
+| `dotnet.microsoft.com` | 443 | .NET Installer download page |
+| `aka.ms` | 443 | Short links used in documentation |
+
+> [!NOTE]
+> After installation, `nuget.org` (port 443) must be accessible for package restore to work. If NuGet access is restricted in your environment, configure a local or organizational NuGet feed. For more information, see [Hosting your own NuGet feeds](https://learn.microsoft.com/nuget/hosting-packages/overview).
+
+### Configure a proxy for the PowerShell install script
+
+If your environment uses an HTTPS proxy, configure it before running the `dotnet-install.ps1` script:
+
+```powershell
+$env:HTTPS_PROXY = "http://proxy.contoso.com:8080"
+dotnet-install.ps1
+```
+
+### Install without internet access
+
+If the target machine has no internet access, use the [Manual install](#manual-install) method: download the binary ZIP on a connected machine, transfer it to the target machine, and extract it there.
+
 ## Install with Visual Studio
 
 Visual Studio installs its own copy of .NET separate from other copies of .NET. Different versions of Visual Studio support different versions of .NET. The latest version of Visual Studio always supports the latest version of .NET.
@@ -455,6 +484,99 @@ To set the variables system-wide for all users, replace `"User"` with `"Machine"
 
 Close and reopen your terminal for the changes to take effect.
 
+## Verify your installation
+
+After installing .NET, open a **new** terminal window and confirm the installation succeeded.
+
+To check the active SDK version:
+
+```cmd
+dotnet --version
+```
+
+The output displays the version number of the .NET SDK, for example:
+
+```output
+10.0.100
+```
+
+To see all installed SDKs and runtimes:
+
+```cmd
+dotnet --info
+```
+
+The output lists every installed SDK, runtime, and the host information. Use this command when diagnosing version conflicts or when opening a support request.
+
+> [!TIP]
+> If the `dotnet` command isn't recognized, close and reopen your terminal. Changes to the `PATH` environment variable require a new terminal session to take effect. If the command is still not found after reopening, see [No .NET SDK was found](#no-net-sdk-was-found).
+
+## Pin the SDK version
+
+When multiple .NET SDKs are installed, the .NET CLI uses the highest installed version by default. To ensure all developers on your team — and your CI/CD pipeline — use the same SDK version, create a _global.json_ file in the root of your repository.
+
+### Create a global.json file
+
+```json
+{
+  "sdk": {
+    "version": "9.0.306"
+  }
+}
+```
+
+When you run `dotnet` commands from a directory that contains a _global.json_ file (or any of its parent directories), the specified SDK version is used instead of the highest installed version.
+
+> [!IMPORTANT]
+> The SDK version specified in _global.json_ must be installed on the machine. To see which SDKs are available, run `dotnet --list-sdks`.
+
+### Control version roll-forward behavior
+
+Use the `rollForward` property to control what happens when the exact version isn't available:
+
+```json
+{
+  "sdk": {
+    "version": "9.0.306",
+    "rollForward": "latestPatch"
+  }
+}
+```
+
+| Value | Behavior |
+|-------|----------|
+| `patch` | Uses the specified version or the latest patch within the same minor version. |
+| `latestPatch` | Uses the latest patch within the specified minor version. |
+| `minor` | Uses the specified version, or the next higher minor version if not found. |
+| `disable` | No roll-forward. The exact version must be installed. |
+
+For the full list of values, see [global.json overview](../tools/global-json.md).
+
+## Telemetry and privacy
+
+The .NET SDK collects telemetry data by default. The data helps the .NET team understand how the SDK is used and improve the product. Telemetry is collected on first use of the CLI and on each subsequent invocation.
+
+To opt out of telemetry, set the `DOTNET_CLI_TELEMETRY_OPTOUT` environment variable to `1`.
+
+To opt out for the current session only:
+
+```powershell
+$env:DOTNET_CLI_TELEMETRY_OPTOUT = "1"
+```
+
+To opt out permanently for your user account:
+
+```powershell
+[Environment]::SetEnvironmentVariable("DOTNET_CLI_TELEMETRY_OPTOUT", "1", "User")
+```
+
+To opt out system-wide for all users, run the command above in an administrator PowerShell session and replace `"User"` with `"Machine"`.
+
+For full details on what data is collected and how it's used, see [.NET CLI telemetry](../tools/telemetry.md).
+
+> [!NOTE]
+> Visual Studio has a separate telemetry setting that is configured independently of the .NET CLI setting. For more information, see [Visual Studio Customer Experience Improvement Program](/visualstudio/ide/visual-studio-experience-improvement-program).
+
 ## Validation
 
 [!INCLUDE [verify-download-intro](includes/verify-download-intro.md)]
@@ -561,6 +683,58 @@ Ensure that Smart App Control, a Windows feature, is off. Smart App Control isn'
 ### `hostfxr.dll` / `api-ms-win-crt-runtime-l1-1-0.dll` / `api-ms-win-cor-timezone-l1-1-0.dll` is missing
 
 Install the Microsoft Visual C++ 2015-2019 Redistributable ([64-bit][vcc64] or [32-bit][vcc32]).
+
+## Remove .NET
+
+To uninstall a specific version of .NET, use one of the following methods.
+
+### Use the .NET Uninstall Tool
+
+The [.NET Uninstall Tool](https://learn.microsoft.com/dotnet/core/additional-tools/uninstall-tool) is the recommended way to remove .NET SDKs and runtimes. The tool lists all installed versions and removes them safely.
+
+01. Download and install the .NET Uninstall Tool from <https://aka.ms/dotnet-core-uninstall-tool>.
+01. List installed versions:
+
+    ```cmd
+    dotnet-core-uninstall list
+    ```
+
+01. Use `--dry-run` to preview what would be removed without making changes, then run without it to confirm:
+
+    ```cmd
+    dotnet-core-uninstall remove --sdk 9.0.306 --dry-run
+    dotnet-core-uninstall remove --sdk 9.0.306
+    ```
+
+### Use WinGet
+
+To uninstall a version installed with WinGet:
+
+```cmd
+winget uninstall Microsoft.DotNet.SDK.9
+```
+
+### Use the .NET Installer
+
+To uninstall using the original installer executable:
+
+```cmd
+dotnet-sdk-9.0.306-win-x64.exe /uninstall /quiet /norestart
+```
+
+Alternatively, go to **Settings** > **Apps** in Windows, search for **.NET**, and select **Uninstall**.
+
+### Verify removal
+
+After uninstalling, confirm the version has been removed:
+
+```cmd
+dotnet --list-sdks
+dotnet --list-runtimes
+```
+
+> [!NOTE]
+> Visual Studio installs and manages its own copy of .NET. Removing a .NET version that Visual Studio depends on can cause Visual Studio to stop working. If Visual Studio is installed, check its requirements before removing any SDK or runtime.
 
 ## Related content
 

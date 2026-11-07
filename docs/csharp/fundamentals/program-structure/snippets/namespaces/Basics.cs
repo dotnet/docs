@@ -1,16 +1,11 @@
 // <NamespaceBasics>
 using System;
-using System.Globalization;
 
 namespace MyApp.Services;
 
 class Greeter
 {
-    public string Greet(string name)
-    {
-        var culture = CultureInfo.CurrentCulture;
-        return $"Hello, {name}! Culture: {culture.Name}";
-    }
+    public void Greet(string name) => Console.WriteLine($"Hello, {name}!");
 }
 // </NamespaceBasics>
 
@@ -38,6 +33,17 @@ class Program
         ShowShortName();
 
         var greeter = new Greeter();
-        Console.WriteLine(greeter.Greet("World"));
+        greeter.Greet("World");
+        Console.WriteLine(new MyApp.Models.Customer { Name = "Alice" });
+        QualifiedProductNames.ShowQualifiedNames();
+        ProductNames.ShowAliases();
+        Console.WriteLine(Imports.CreateMessage());
+        Console.WriteLine(GlobalMessage.CreateMessage());
+        Console.WriteLine(new CustomerService().GetTopCustomers().Count);
+        Console.WriteLine(MyApp.Geometry.Shape.Distance((0, 0), (3, 4)));
+        Console.WriteLine(MyApp.Utilities.CircleCalculator.CalculateArea(1) == Math.PI);
+
+        List<string> names = ["Alice", "Bob"];
+        Console.WriteLine(names.Count);
     }
 }

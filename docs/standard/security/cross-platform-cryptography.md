@@ -1,7 +1,7 @@
 ---
 title: "Cross-platform cryptography"
 description: Learn about cryptographic capabilities on platforms supported by .NET.
-ms.date: 08/03/2026
+ms.date: 11/08/2026
 ms.subservice: standard-library
 ms.topic: reference
 helpviewer_keywords:
@@ -518,6 +518,35 @@ On macOS, custom store creation with the X509Store API is supported only for `Cu
 macOS doesn't support Offline CRL utilization, so `X509RevocationMode.Offline` is treated as `X509RevocationMode.Online`.
 
 macOS doesn't support a user-initiated timeout on CRL (Certificate Revocation List) / OCSP (Online Certificate Status Protocol) / AIA (Authority Information Access) downloading, so `X509ChainPolicy.UrlRetrievalTimeout` is ignored.
+
+### TLS certificate names for IP address targets
+
+When you use an IP address as <xref:System.Net.Security.SslClientAuthenticationOptions.TargetHost> or the `targetHost` argument to a client authentication method on <xref:System.Net.Security.SslStream>, the certificate name check depends on the platform. Starting in .NET 12, Linux follows the Windows rules described in this section. The change doesn't modify Windows or other platforms.
+
+On Windows and on Linux starting in .NET 12, the name check uses these rules:
+
+* An `iPAddress` entry in the Subject Alternative Name (SAN) extension matches the target by address bytes. A matching IP SAN succeeds even if the certificate also contains an unrelated DNS SAN or subject Common Name (CN).
+* If no IP SAN matches, a `dNSName` entry in the SAN extension can match the target IP as text, without wildcard expansion. The comparison is case-insensitive, but doesn't normalize different spellings of the same IP address. For example, DNS SAN `2001:0db8:0:0:0:0:0:1` doesn't match target `2001:db8::1`, even though both represent the same IPv6 address.
+* If no DNS SAN entries exist, the check can fall back to the subject CN and compare the target IP as text, without wildcard expansion. A SAN extension that contains only nonmatching IP addresses doesn't prevent this legacy CN fallback.
+* If DNS SAN entries exist but none match, and no IP SAN matches, the name check fails even if the CN matches.
+
+For a target of `192.0.2.1`, the following examples show the name-check results. `DNS:` denotes a `dNSName` SAN entry, and `IP:` denotes an `iPAddress` SAN entry.
+
+| Subject CN | SAN entries | Windows and Linux starting in .NET 12 |
+|------------|-------------|--------------------------------------|
+| `192.0.2.1` | None | Match |
+| `192.0.2.1` | `IP:192.0.2.2` | Match |
+| `192.0.2.1` | `DNS:example.test` | Mismatch |
+| `other.test` | `DNS:192.0.2.1` | Match |
+| `192.0.2.1` | `DNS:*.0.2.1` | Mismatch |
+| `other.test` | `DNS:example.test`, `IP:192.0.2.1` | Match |
+
+These results describe only the certificate name check. A name mismatch produces <xref:System.Net.Security.SslPolicyErrors.RemoteCertificateNameMismatch>. A name match doesn't establish certificate trust or guarantee a successful TLS handshake; certificate-chain validation still applies.
+
+> [!IMPORTANT]
+> For certificates that identify IP address endpoints, use an `iPAddress` SAN for each required address. Don't rely on CN fallback or IP text in a DNS SAN for portable certificate validation. The Windows-compatible fallback rules aren't the strict IP-ID rules in [RFC 9525](https://www.rfc-editor.org/rfc/rfc9525.html#section-6.4), which require an `iPAddress` SAN match and don't permit CN fallback.
+
+For the previous Linux behavior and migration guidance, see [Linux TLS certificate name checks for IP addresses follow Windows rules](../../core/compatibility/networking/12/sslstream-ip-certificate-name-matching.md).
 
 ### Post-quantum cryptography certificates and PKCS12/PFX
 

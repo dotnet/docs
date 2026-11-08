@@ -103,7 +103,7 @@ To enable composite ReadyToRun explicitly, set `PublishReadyToRunComposite` to `
 ```
 
 > [!NOTE]
-> `PublishReadyToRunComposite` is ignored if the deployment is not [self-contained](index.md#publish-as-self-contained). 
+> `PublishReadyToRunComposite` is ignored if the deployment is not [self-contained](index.md#publish-as-self-contained).
 
 ## Cross platform/architecture restrictions
 

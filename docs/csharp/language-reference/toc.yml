@@ -475,10 +475,11 @@ items:
     href: ./compiler-messages/invalid-build-command-line.md
     displayName: >
       command line, msbuild, dotnet build, csc, Roslyn API, parse options, emit options,
-      CS0006, CS0007, CS0016, CS1564, CS1616, CS1668, CS1719, CS1773, CS2008, CS2019,
-      CS2029, CS2032, CS2036, CS2038, CS2039, CS2040, CS2041, CS2042, CS2043, CS2044,
-      CS2045, CS2046, CS3012, CS3013, CS7038, CS8111, CS8113, CS8190, CS8191, CS8202,
-      CS8308, CS8309, CS8357, CS8751, CS8771, CS8772, CS9400
+      CS0006, CS0007, CS0016, CS1564, CS1616, CS1668, CS1719, CS1773, CS2007, CS2008,
+      CS2011, CS2019, CS2023, CS2029, CS2032, CS2036, CS2038, CS2039, CS2040, CS2041,
+      CS2042, CS2043, CS2044, CS2045, CS2046, CS3012, CS3013, CS7038, CS7089, CS7093,
+      CS8001, CS8035, CS8101, CS8111, CS8113, CS8190, CS8191, CS8202, CS8308, CS8309,
+      CS8357, CS8751, CS8771, CS8772, CS9400
   - name: Preprocessor errors
     href: ./compiler-messages/preprocessor-errors.md
     displayName: >
@@ -1544,16 +1545,10 @@ items:
       href: ../misc/cs1959.md
     - name: CS2001
       href: ../misc/cs2001.md
-    - name: CS2003
-      href: ../misc/cs2003.md
     - name: CS2005
       href: ../misc/cs2005.md
     - name: CS2006
       href: ../misc/cs2006.md
-    - name: CS2007
-      href: ../misc/cs2007.md
-    - name: CS2011
-      href: ../misc/cs2011.md
     - name: CS2012
       href: ../misc/cs2012.md
     - name: CS2013
@@ -1730,8 +1725,6 @@ items:
       href: ../misc/cs2002.md
     - name: CS2014
       href: ../misc/cs2014.md
-    - name: CS2023
-      href: ../misc/cs2023.md
     - name: CS3000
       href: ../misc/cs3000.md
     - name: CS3001

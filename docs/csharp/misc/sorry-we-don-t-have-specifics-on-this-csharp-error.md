@@ -78,8 +78,6 @@ f1_keywords:
   - "CS7070"
   - "CS7086"
   - "CS7087"
-  - "CS7089"
-  - "CS7093"
   - "CS7094"
   - "CS7095"
   - "CS7096"
@@ -88,7 +86,6 @@ f1_keywords:
   - "CS7100"
   - "CS7101" # build only diagnostic
   - "CS7103"
-  - "CS8001"
   - "CS8004" # build only diagnostic
   - "CS8005" # build only diagnostic
   - "CS8006" # build only diagnostic
@@ -107,7 +104,6 @@ f1_keywords:
   - "CS8027"
   - "CS8028"
   - "CS8029"
-  - "CS8035" # build only diagnostic
   - "CS8036"
   - "CS8055"
   - "CS8057"
@@ -116,7 +112,6 @@ f1_keywords:
   - "CS8095"
   - "CS8096"
   - "CS8099"
-  - "CS8101"
   - "CS8103"
   - "CS8104"
 helpviewer_keywords:

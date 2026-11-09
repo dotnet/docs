@@ -5,7 +5,6 @@ ms.date: 09/11/2026
 ai-usage: ai-assisted
 f1_keywords:
   - "CS0190"
-  - "CS0257"
   - "CS0595"
   - "CS0847"
   - "CS1066"

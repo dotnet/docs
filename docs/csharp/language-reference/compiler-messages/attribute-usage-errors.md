@@ -231,14 +231,14 @@ You see the following errors when you use attribute arguments or parameters inco
 
 To correct these errors, follow these rules:
 
-- Attribute constructor parameters must use valid attribute parameter types (**CS0181**). The C# language specification restricts attribute parameter types to primitive types (`bool`, `byte`, `char`, `double`, `float`, `int`, `long`, `short`, and `string`), `object`, `System.Type`, enum types, and single-dimensional arrays of these types. Function pointers and other types that can't be represented in metadata aren't valid attribute parameter types.
-- Attribute arguments must be compile-time constant values, so you can't use type parameters as attribute arguments (**CS0416**). The compiler must resolve attribute arguments at compile time, and type parameters aren't known until the generic type is constructed.
+- Attribute constructor parameters must use valid attribute parameter types (**CS0181**). The C# language specification restricts attribute parameter types to primitive types (`bool`, `byte`, `char`, `double`, `float`, `int`, `long`, `sbyte`, `short`, `string`, `uint`, `ulong`, and `ushort`), `object`, `System.Type`, enum types, and single-dimensional arrays of these types. Function pointers aren't valid attribute parameter types.
+- Don't use a type parameter in an attribute's `typeof` argument (**CS0416**). Replace it with a type that doesn't depend on a type parameter, such as `typeof(string)` or `typeof(List<>)`.
 - You can't apply type arguments to a non-generic attribute (**CS0447**). If an attribute class isn't generic, its usage can't include type arguments in angle brackets.
 - All values passed to an attribute constructor must be correctly formatted and within the valid range for each parameter (**CS0647**). For example, a <xref:System.Runtime.InteropServices.GuidAttribute> requires a valid GUID format string.
-- You must provide all required attribute parameters when you apply the attribute (**CS7046**, **CS7047**). Check the attribute's constructor signature to determine which parameters are mandatory, and supply valid arguments for each parameter.
+- Supply the required named arguments for the selected `MarshalAs` representation (**CS7046**, **CS7047**). For `ByValTStr`, specify `SizeConst`; for `CustomMarshaler`, specify `MarshalType` or `MarshalTypeRef`. These requirements aren't expressed by the attribute's constructor signature.
 - When you define a custom attribute with optional constructor parameters, specify default values for those parameters (**CS7067**). Use the syntax `parameterType parameterName = defaultValue` in the attribute constructor so callers can omit those arguments.
 - Generic attribute type arguments must be concrete types, not type parameters (**CS8968**). The compiler must fully determine generic attribute type arguments at compile time, so open type parameters aren't permitted.
-- Types used as attribute arguments must be representable in metadata (**CS8970**). Some constructed types, such as those involving `dynamic` or certain tuple element names, can't be encoded in metadata and aren't permitted as attribute type arguments.
+- Generic attribute type arguments can't require additional attributes to represent their types in metadata (**CS8970**). Replace `dynamic` with `object`, remove nullable reference annotations or tuple element names, or use `IntPtr` or `UIntPtr` instead of `nint` or `nuint`.
 
 For more information, see [Attributes](../../advanced-topics/reflection-and-attributes/index.md), [Generics](../../fundamentals/types/generics.md), and the [C# language specification section on attributes](~/_csharpstandard/standard/attributes.md).
 
@@ -283,9 +283,9 @@ To correct these errors, follow these rules. For more information, see [Attribut
 - Each attribute's <xref:System.AttributeUsageAttribute> specifies which declaration types it targets. You must apply the attribute only to those types (**CS0592**). For example, you can't apply an attribute defined with `AttributeTargets.Interface` to a class.
 - When you use an attribute target specifier such as `method:` or `property:`, the specifier must be valid for the declaration where it appears (**CS0657**). Check the error message to see which target specifiers are allowed for the specific declaration.
 - The attribute target specifier you used isn't a recognized specifier (**CS0658**). Valid specifiers include `assembly:`, `module:`, `type:`, `method:`, `property:`, `field:`, `event:`, `param:`, and `return:`.
-- Some attributes, such as <xref:System.ObsoleteAttribute> and <xref:System.CLSCompliantAttribute>, aren't valid on property or event accessors (**CS1667**). Move the attribute from the accessor to the property or event declaration itself.
+- Some attributes, such as <xref:System.Diagnostics.ConditionalAttribute> and <xref:System.CLSCompliantAttribute>, aren't valid on property or event accessors (**CS1667**). Remove `Conditional` from the accessor, or move `CLSCompliant` to the property or event declaration itself.
 - Attributes can only appear on program elements that support them (**CS7014**). If you're applying assembly-level or module-level attributes, use the `assembly:` or `module:` target specifiers and place them at the top of the file.
-- Attributes on event `add` and `remove` accessors aren't allowed (**CS8423**). Apply the attribute to the event declaration, or use a valid target such as `method:` or `param:` on a declaration that supports that target.
+- Attributes such as <xref:System.ObsoleteAttribute> aren't valid on event `add` and `remove` accessors (**CS8423**). Move the attribute to the event declaration. Other attributes can be valid on event accessors.
 
 ## Predefined attributes
 
@@ -313,10 +313,10 @@ To correct these errors, follow these rules. For more information, see [Indexers
 - The `FieldOffset` attribute isn't allowed on `static` or `const` fields because explicit layout applies only to instance fields (**CS0637**). Remove the `FieldOffset` attribute from the static or const field.
 - You can't apply <xref:System.Reflection.DefaultMemberAttribute> to a type that already contains an indexer because the compiler automatically defines the default member for types with indexers (**CS0646**). Remove the `DefaultMember` attribute.
 - All <xref:System.Runtime.CompilerServices.IndexerNameAttribute> attributes within a type must specify the same name (**CS0668**). Change the names to match, because the runtime uses a single name for all indexers on a type.
-- You must specify a non-generic, non-nested, non-pointer, non-array type as an argument for <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> (**CS0735**). Only top-level named types are valid forwarding targets.
+- Specify a top-level named type from another assembly as the argument for <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> (**CS0735**). Don't pass `null`, an array type, or a pointer type. Generic type definitions such as `typeof(List<>)` are valid forwarding targets.
 - An assembly can have only one <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> for each external type (**CS0739**). Locate and remove the duplicate `TypeForwardedTo` declaration.
 - You can't use the <xref:System.Runtime.CompilerServices.RequiredAttributeAttribute> on types defined in C# (**CS1608**). This attribute is reserved for other languages that need to force compilers to require a particular feature.
-- Some attributes are reserved for the compiler and can't be applied manually in source code (**CS9331**). Replace the attribute with the equivalent C# language syntax that causes the compiler to generate it.
+- Remove a manually applied `MetadataUpdateDeletedAttribute` (**CS9331**). This attribute is reserved for compiler-generated metadata and has no equivalent source-level attribute application.
 - Don't apply both <xref:System.Runtime.InteropServices.StructLayoutAttribute> and `ExtendedLayoutAttribute` to the same type (**CS9351**). These two layout attributes represent mutually exclusive layout strategies under the [updated memory safety model](../unsafe-code.md#the-updated-memory-safety-model-preview): explicit layout requires a `FieldOffset` on every instance field, while extended layout lets the runtime choose field offsets while still requiring each field to be marked `safe` or `unsafe`. Remove one of the two attributes from the type declaration.
 
 ## Compiler-reserved attributes and types
@@ -347,12 +347,12 @@ To correct these errors, follow these rules. For more information, see <xref:Sys
 - The compiler binds calls to the base method declaration, not the override, so you can't apply the `Conditional` attribute to [override](../keywords/override.md) methods (**CS0243**). Remove the `Conditional` attribute from the override method, or remove the `override` keyword.
 - The `Conditional` attribute isn't valid on constructors, [finalizers](../../programming-guide/classes-and-structs/finalizers.md), operators, lambda expressions, or explicit interface implementations (**CS0577**). These member types can't be conditionally omitted because they have required roles in the type's lifecycle or contract.
 - Conditional methods must return `void` because the compiler might omit the call entirely, and no return value would be available to the caller (**CS0578**). Change the method's return type to `void`, or remove the `Conditional` attribute.
-- Interface members can't be conditional because all interface members must be implemented (**CS0582**). Remove the `Conditional` attribute from the interface member declaration.
-- Methods that implement interface members can't be conditional because the interface contract requires them to be present in all builds (**CS0629**). Remove the `Conditional` attribute from the implementing method.
+- Interface members can't be conditional, even when they have a default implementation (**CS0582**). Remove the `Conditional` attribute from the interface member declaration.
+- Methods that implement interface members can't be conditional (**CS0629**). Remove the `Conditional` attribute from the implementing method; calls through an interface aren't conditionally omitted.
 - Conditional methods can't have `out` parameters because the `out` variable value would be undefined when the compiler omits the method call (**CS0685**). Remove the `out` parameters from the method, or remove the `Conditional` attribute.
-- You can't create a delegate that references a conditional method because the method might not exist in builds where the condition symbol isn't defined (**CS1618**). Remove the `Conditional` attribute from the method, or don't use it as a delegate target.
+- You can't create a delegate that references a conditional method (**CS1618**). The compiler conditionally omits direct calls, not the method declaration; a delegate invocation wouldn't preserve that behavior. Remove the `Conditional` attribute from the method, or don't use it as a delegate target.
 - The `Conditional` attribute is only valid on methods and attribute classes (**CS1689**). It isn't valid on other declaration types such as non-attribute classes, structs, or interfaces.
-- A local function must be declared `static` to use the `Conditional` attribute (**CS8783**). Non-static local functions capture state from the enclosing method, and the compiler can't safely omit a call that might involve captured variables. Add the `static` modifier to the local function, or remove the `[Conditional]` attribute.
+- A local function must be declared `static` to use the `Conditional` attribute, even if it doesn't capture state from the enclosing method (**CS8783**). Add the `static` modifier to the local function, or remove the `[Conditional]` attribute.
 
 ## Caller-information attribute precedence
 
@@ -489,7 +489,7 @@ class Implementation : IImported { }
 
 Add `ComImport` to the interface's attribute list: `[CoClass(typeof(Implementation)), ComImport, Guid("00000000-0000-0000-0000-000000000001")]`.
 
-Move `DllImport` declarations into a nongeneric type, outside generic methods, and remove any type parameters from the imported method (**CS7042**). A type nested in a generic type is also a generic context. Call the nongeneric import from your generic code instead.
+Move `DllImport` declarations into a nongeneric type, place them outside generic methods, and remove any type parameters from the imported method (**CS7042**). A type nested in a generic type is also a generic context. Call the nongeneric import from your generic code instead.
 
 The following example produces **CS7042**:
 

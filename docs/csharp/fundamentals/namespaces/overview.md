@@ -1,25 +1,33 @@
 ---
 title: "Organize types with namespaces"
 description: Organize C# types with block-scoped, file-scoped, and nested namespaces. Resolve name conflicts with qualification and aliases, and choose using directives.
-ms.date: 11/05/2026
+ms.date: 11/09/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 
-#customer intent: As a C# developer, I want to organize types and resolve their names so that I can use my own code and libraries without name conflicts.
+#customer intent: As a C# developer, I want to group related types and refer to them clearly so that my code stays organized as my program grows.
 ---
 # Organize types with namespaces
 
-When your application and a library both define a `Product` type, a namespace distinguishes the two names. A *namespace* is a named group of related types. For example, `Shop.Catalog.Product` and `Shop.Shipping.Product` name different types even though both use the short name `Product`.
+As a program grows, its types often serve different parts of the application. A *namespace* is a named group of related types. Namespaces help you organize types by functionality and show how your code fits together.
+
+For example, place catalog types in `Shop.Catalog` and shipping types in `Shop.Shipping`. Each namespace can contain a `Product` type without a name conflict.
 
 This article builds on [Namespaces and using directives](../program-structure/namespaces.md). You'll learn how to declare namespaces, refer to types unambiguously, and choose imports for a file or project.
 
+## The global namespace
+
+Small programs can start without a namespace declaration. Types declared outside a named namespace belong to the *global namespace*, the unnamed namespace that contains all named namespaces. The compiler-generated `Program` class for [top-level statements](../program-structure/top-level-statements.md) also belongs to the global namespace.
+
+As your program grows, use named namespaces to group the types you add by their roles.
+
 ## Declare namespaces
 
-Use a *file-scoped namespace declaration* when all types in a file belong to the same namespace:
+Most source files contain types from a single namespace, and many contain only one type. For this common layout, use a *file-scoped namespace declaration*:
 
 :::code language="csharp" source="../program-structure/snippets/namespaces/FileScopedExample.cs" id="FileScopedNamespace":::
 
-The semicolon after `MyApp.Models` makes the declaration apply to all types that follow in the file. The fully qualified name of `Customer` is `MyApp.Models.Customer`.
+The semicolon after `MyApp.Models` makes the declaration apply to all types that follow in the file. The *fully qualified name* of `Customer` is `MyApp.Models.Customer`: its namespace name followed by its type name.
 
 A *block-scoped namespace declaration* encloses the same types in braces:
 
@@ -39,23 +47,17 @@ Namespace names use dots to express a hierarchy. A *nested namespace* is a names
 
 The hierarchy groups names; it doesn't establish inheritance between the types. A namespace declaration doesn't grant access to another type's private members.
 
-### The global namespace
-
-Types declared outside a named namespace belong to the *global namespace*, the unnamed namespace that contains all named namespaces. Use named namespaces for your application's types so their names communicate where they belong.
-
-If another name hides the first part of a namespace name, the `global::` prefix starts name lookup at the global namespace. For example, `global::System.Console` explicitly selects `Console` in the top-level `System` namespace. For the detailed rules, see [Namespace alias qualifier](../../language-reference/operators/namespace-alias-qualifier.md).
-
 ## Refer to types
 
-To select a type without an import, use its *fully qualified name*, which includes its namespace and type name. The following code uses both `Product` types from the preceding example:
+To select a type, use its fully qualified name, which includes its namespace and type name. The following code uses both `Product` types from the preceding example:
 
 :::code language="csharp" source="../program-structure/snippets/namespaces/ProductNames.cs" id="QualifiedNames":::
 
-Qualification makes the choice explicit at each use. For types you use repeatedly, imports or aliases can keep the code shorter.
+Qualification makes the choice explicit at each use. Repeating the full name can become cumbersome, so use a `using` directive to refer to a type by its simple name.
 
 ### Using directives
 
-A *using directive* imports the types in a namespace so you can use their short names:
+A *using directive* imports the types in a namespace so you can use their *simple names*, without the namespace prefix:
 
 :::code language="csharp" source="../program-structure/snippets/namespaces/Imports.cs" id="UsingDirective":::
 
@@ -63,11 +65,9 @@ The directive lets you write `StringBuilder` instead of `System.Text.StringBuild
 
 An import covers the types in the named namespace, not its nested namespaces. For example, `using System;` lets you write `Console`, but to write `List<int>` you need an import for `System.Collections.Generic` or the fully qualified name `System.Collections.Generic.List<int>`.
 
-Place file-level `using` directives before namespace and type declarations. You can also place directives inside a namespace, before its declarations, to limit the import to that namespace body. With a file-scoped namespace, a directive before the `namespace` line is outside the namespace; a directive after it is inside. Placement also affects how names in the directive are resolved. For detailed scope and name-lookup rules, see the [`using` directive reference](../../language-reference/keywords/using-directive.md).
-
 ### Type and namespace aliases
 
-If you import both `Shop.Catalog` and `Shop.Shipping`, the short name `Product` is ambiguous. To identify each type without repeating its full name, define a *using alias*, an alternative name for a type or namespace:
+If you import both `Shop.Catalog` and `Shop.Shipping`, the simple name `Product` is ambiguous. To identify each type without repeating its full name, define a *using alias*, an alternative name for a type or namespace:
 
 :::code language="csharp" source="../program-structure/snippets/namespaces/ProductNames.cs" id="Aliases":::
 
@@ -81,27 +81,20 @@ You can alias tuple types as well as named types:
 
 :::code language="csharp" source="../program-structure/snippets/namespaces/TupleAlias.cs" id="AnyTypeAlias":::
 
+If another name hides the first part of a namespace name, the `global::` prefix starts name lookup at the global namespace. For example, `global::System.Console` explicitly selects `Console` in the top-level `System` namespace. For the detailed rules, see [Namespace alias qualifier](../../language-reference/operators/namespace-alias-qualifier.md).
+
 For the less common case where two assemblies define the same fully qualified type name, see [`extern alias`](../../language-reference/keywords/extern-alias.md).
 
 ## Choose imports for a project
 
-A regular `using` directive affects its file or the namespace body that contains it. For imports shared across source files, use explicit global directives or the .NET SDK's implicit usings.
+Choose imports according to how widely you need a namespace or type throughout your project.
 
-### Global using directives
-
-A *global using directive* applies an import to every source file in the same compilation, typically one project. Instead of repeating `using System.Text;` in each file, put this directive in a file such as `GlobalUsings.cs`:
-
-:::code language="csharp" source="../program-structure/snippets/namespaces/GlobalUsings.cs" id="GlobalUsings":::
-
-Another file in the project can then use `StringBuilder` without its own import:
-
-:::code language="csharp" source="../program-structure/snippets/namespaces/GlobalMessage.cs" id="GlobalUsingConsumer":::
-
-Place global directives before any regular `using` directives, namespaces, or types in their file. A global import doesn't apply to other projects that reference your project.
+> [!NOTE]
+> Imports control the names you write, not which libraries your project can use. To use types from another library, first add the appropriate [project or assembly reference](../../../core/tools/dotnet-reference-add.md) or [package reference](../../../core/tools/dotnet-package-add.md). A fully qualified name doesn't replace that reference.
 
 ### Implicit usings
 
-*Implicit usings* are global using directives generated by the .NET SDK according to your project type. They're a project setting, not a C# rule that imports namespaces automatically. In an SDK-style project, enable them with:
+*Implicit usings* provide a default set of imports based on your project type. The .NET SDK generates these imports as global using directives, so they apply throughout your project. New console projects enable them with this setting:
 
 ```xml
 <ImplicitUsings>enable</ImplicitUsings>
@@ -111,29 +104,35 @@ For example, console project templates enable imports that include `System`, `Sy
 
 To manage every import explicitly, set `ImplicitUsings` to `disable` and add regular or global directives for the namespaces you need. Disabling implicit usings doesn't disable global directives you wrote yourself.
 
-The examples in this article belong to a console project with implicit usings enabled. Its explicit `global using System.Text;` adds an import beyond the console SDK's default set. For the default lists and project configuration options, see [Implicit using directives](../../../core/project-sdk/overview.md#implicit-using-directives).
+The examples in this article belong to a console project with implicit usings enabled. For the default lists and project configuration options, see [Implicit using directives](../../../core/project-sdk/overview.md#implicit-using-directives).
+
+### Global using directives
+
+Add *global using directives* for other namespaces used throughout your project, such as shared company libraries. A global using directive applies an import to every source file in the same compilation, typically one project.
+
+For example, `System.Text` isn't in the console SDK's default imports. Instead of repeating `using System.Text;` in each file, put this directive in a file such as `GlobalUsings.cs`:
+
+:::code language="csharp" source="../program-structure/snippets/namespaces/GlobalUsings.cs" id="GlobalUsings":::
+
+Another file in the project can then use `StringBuilder` without its own import:
+
+:::code language="csharp" source="../program-structure/snippets/namespaces/GlobalMessage.cs" id="GlobalUsingConsumer":::
+
+Place global directives before any regular `using` directives, namespaces, or types in their file. A global import doesn't apply to other projects that reference your project.
+
+### Regular using directives
+
+Add regular `using` directives for namespaces that only a particular file or algorithm needs. A regular directive affects its file or the namespace body that contains it.
+
+Place file-level `using` directives before namespace and type declarations. You can also place directives inside a namespace, before its declarations, to limit the import to that namespace body. With a file-scoped namespace, a directive before the `namespace` line is outside the namespace; a directive after it is inside. Placement also affects how names in the directive are resolved. For detailed scope and name-lookup rules, see the [`using` directive reference](../../language-reference/keywords/using-directive.md).
 
 ### Static using directives
 
-A *using static directive* imports accessible static members and nested types from a type rather than types from a namespace:
+Use a *using static directive* for a special-purpose utility type whose static members are clear without the type name. It imports accessible static members and nested types from a type rather than types from a namespace:
 
 :::code language="csharp" source="../program-structure/snippets/namespaces/StaticUsing.cs" id="StaticUsing":::
 
-Here, `PI` and `Pow` name members of `System.Math`. Use this form when those short names make the calculation easier to read. Keep the type prefix when it helps readers recognize which type supplies a member. For detailed rules, see [`using static`](../../language-reference/keywords/using-directive.md#the-static-modifier).
-
-## Imports aren't references
-
-To use a library's types, your project needs a reference to the code that defines them. An *assembly* is a compiled unit of .NET code, usually a `.dll` or `.exe`. A *package* distributes libraries and other assets, often through NuGet.
-
-A namespace and an assembly aren't the same boundary. One assembly can contain types in many namespaces, and types in one namespace can come from multiple assemblies.
-
-| Mechanism | Purpose |
-|---|---|
-| `using`, aliases, and `global using` | Control how source code refers to available types and members. |
-| SDK implicit usings | Generate global directives for common namespaces. |
-| Project, package, and assembly references | Make another project's or library's types available to the compiler. |
-
-For example, `using System.Text;` works because the project's framework references already provide `StringBuilder`. To use a type from an additional library, first add the appropriate [project or assembly reference](../../../core/tools/dotnet-reference-add.md) or [package reference](../../../core/tools/dotnet-package-add.md) to your project. Then use a directive, an alias, or the fully qualified name. Adding an import doesn't download a package, and writing a fully qualified name doesn't remove the need for a reference.
+Here, `PI` and `Pow` name members of `System.Math`. Keep the type prefix when it helps readers recognize which type supplies a member. For detailed rules, see [`using static`](../../language-reference/keywords/using-directive.md#the-static-modifier).
 
 ## Related content
 

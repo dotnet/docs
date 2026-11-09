@@ -1,6 +1,6 @@
 ---
 title: "Namespaces and using directives"
-description: Learn how C# namespaces organize types and how using directives let you refer to those types by shorter names.
+description: Learn how C# namespaces organize types and how using directives let you refer to those types by their simple names.
 ms.date: 11/05/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
@@ -13,11 +13,11 @@ A C# file often starts with `using` directives followed by a `namespace` declara
 
 :::code language="csharp" source="snippets/namespaces/Basics.cs" id="NamespaceBasics":::
 
-The example declares `Greeter` in the `MyApp.Services` namespace. Its complete name is `MyApp.Services.Greeter`. The `using System;` directive lets the code refer to types such as `Console` by their short names.
+The example declares `Greeter` in the `MyApp.Services` namespace. Its complete name is `MyApp.Services.Greeter`. The `using System;` directive lets the code refer to types such as `Console` by their simple names.
 
 ## Namespace declarations
 
-A *namespace* is a named group of related types, such as classes, structs, and interfaces. Namespaces help you organize code and distinguish types with the same short name. For example, your application can declare its own `Timer` without conflicting with a library's `Timer` when the types belong to different namespaces.
+A *namespace* is a named group of related types, such as classes, structs, and interfaces. Namespaces help you organize code and distinguish types with the same simple name. For example, your application can declare its own `Timer` without conflicting with a library's `Timer` when the types belong to different namespaces.
 
 Use the `namespace` keyword to place your types in a namespace. The example uses a *file-scoped namespace declaration*: the semicolon after `MyApp.Services` makes the declaration apply to all types that follow in the file. Another form uses braces to enclose the types in a namespace.
 

@@ -2,20 +2,26 @@
 title: Resolve errors and warnings that involve attribute declaration and attribute use in your code.
 description: These compiler errors and warnings indicate errors in attribute declarations, or attribute use in your code.
 f1_keywords:
+  - "CS0036"
   - "CS0181"
   - "CS0243"
   - "CS0404"
   - "CS0415"
   - "CS0416"
+  - "CS0423"
+  - "CS0424"
   - "CS0447"
   - "CS0577"
   - "CS0578"
   - "CS0579"
   - "CS0582"
   - "CS0592"
+  - "CS0596"
+  - "CS0601"
   - "CS0609"
   - "CS0616"
   - "CS0625"
+  - "CS0626"
   - "CS0629"
   - "CS0636"
   - "CS0637"
@@ -25,7 +31,10 @@ f1_keywords:
   - "CS0653"
   - "CS0657"
   - "CS0658"
+  - "CS0662"
   - "CS0668"
+  - "CS0669"
+  - "CS0684"
   - "CS0685"
   - "CS0735"
   - "CS0739"
@@ -48,6 +57,7 @@ f1_keywords:
   - "CS8028"
   - "CS8335"
   - "CS8336"
+  - "CS8355"
   - "CS8423"
   - "CS8783"
   - "CS8959"
@@ -60,20 +70,26 @@ f1_keywords:
   - "CS9331"
   - "CS9351"
 helpviewer_keywords:
+  - "CS0036"
   - "CS0181"
   - "CS0243"
   - "CS0404"
   - "CS0415"
   - "CS0416"
+  - "CS0423"
+  - "CS0424"
   - "CS0447"
   - "CS0577"
   - "CS0578"
   - "CS0579"
   - "CS0582"
   - "CS0592"
+  - "CS0596"
+  - "CS0601"
   - "CS0609"
   - "CS0616"
   - "CS0625"
+  - "CS0626"
   - "CS0629"
   - "CS0636"
   - "CS0637"
@@ -83,7 +99,10 @@ helpviewer_keywords:
   - "CS0653"
   - "CS0657"
   - "CS0658"
+  - "CS0662"
   - "CS0668"
+  - "CS0669"
+  - "CS0684"
   - "CS0685"
   - "CS0735"
   - "CS0739"
@@ -106,6 +125,7 @@ helpviewer_keywords:
   - "CS8028"
   - "CS8335"
   - "CS8336"
+  - "CS8355"
   - "CS8423"
   - "CS8783"
   - "CS8959"
@@ -127,20 +147,26 @@ This article covers the following compiler errors:
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
+- [**CS0036**](#anchor-tbd): *An out parameter cannot have the In attribute*
 - [**CS0181**](#attribute-arguments-and-parameters): *Attribute constructor parameter 'parameter' has type 'type', which is not a valid attribute parameter type*
 - [**CS0243**](#conditional-attribute-usage): *The Conditional attribute is not valid on 'method' because it is an override method*
 - [**CS0404**](#attribute-class-requirements): *Attribute is not valid on this declaration type.*
 - [**CS0415**](#predefined-attributes): *The 'attribute' attribute is valid only on an indexer that is not an explicit interface member declaration*
 - [**CS0416**](#attribute-arguments-and-parameters): *'type parameter': an attribute argument cannot use type parameters*
+- [**CS0423**](#anchor-tbd): *Since 'class' has the ComImport attribute, 'method' must be extern or abstract*
+- [**CS0424**](#anchor-tbd): *'type': a class with the ComImport attribute cannot specify a base class*
 - [**CS0447**](#attribute-arguments-and-parameters): *Attribute cannot be used with type arguments.*
 - [**CS0577**](#conditional-attribute-usage): *The Conditional attribute is not valid on 'method' because it is a constructor, destructor, operator, lambda expression, or explicit interface implementation*
 - [**CS0578**](#conditional-attribute-usage): *The Conditional attribute is not valid on 'function' because its return type is not void*
 - [**CS0579**](#attribute-class-requirements): *Duplicate 'attribute' attribute*
 - [**CS0582**](#conditional-attribute-usage): *The Conditional attribute is not valid on interface members*
 - [**CS0592**](#attribute-location-context): *Attribute 'attribute' is not valid on this declaration type. It is only valid on 'declaration' declarations.*
+- [**CS0596**](#anchor-tbd): *The Guid attribute must be specified with the ComImport attribute*
+- [**CS0601**](#anchor-tbd): *The DllImport attribute must be specified on a method marked 'extern' that is either 'static' or an extension member*
 - [**CS0609**](#predefined-attributes): *Cannot set the attribute on an indexer marked override.*
 - [**CS0616**](#attribute-class-requirements): *'Type' is not an attribute class*
 - [**CS0625**](#predefined-attributes): *'field': instance field in types marked with StructLayout(LayoutKind.Explicit) must have a FieldOffset attribute*
+- [**CS0626**](#anchor-tbd): *Method, operator, or accessor 'method' is marked external and has no attributes on it. Consider adding a DllImport attribute to specify the external implementation.*
 - [**CS0629**](#conditional-attribute-usage): *Conditional member 'member' cannot implement interface member 'base class member' in type 'Type Name'*
 - [**CS0636**](#predefined-attributes): *The FieldOffset attribute can only be placed on members of types marked with the StructLayout(LayoutKind.Explicit)*
 - [**CS0637**](#predefined-attributes): *The FieldOffset attribute is not allowed on static or const fields*
@@ -150,7 +176,10 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS0653**](#attribute-class-requirements): *Cannot apply attribute class 'class' because it is abstract*
 - [**CS0657**](#attribute-location-context): *'Location' is not a valid attribute location for this declaration. Valid attribute locations for this declaration are 'valid locations'. All attributes in this block will be ignored.*
 - [**CS0658**](#attribute-location-context): *'Location' is not a recognized attribute location. Valid attribute locations for this declaration are 'valid locations'. All attributes in this block will be ignored.*
+- [**CS0662**](#anchor-tbd): *Cannot specify the Out attribute on a ref parameter without also specifying the In attribute.*
 - [**CS0668**](#predefined-attributes): *Two indexers have different names; the IndexerName attribute must be used with the same name on every indexer within a type*
+- [**CS0669**](#anchor-tbd): *A class with the ComImport attribute cannot have a user-defined constructor*
+- [**CS0684**](#anchor-tbd): *'interface' interface marked with 'CoClassAttribute' not marked with 'ComImportAttribute'*
 - [**CS0685**](#conditional-attribute-usage): *Conditional member 'member' cannot have an out parameter*
 - [**CS0735**](#predefined-attributes): *Invalid type specified as an argument for TypeForwardedTo attribute*
 - [**CS0739**](#predefined-attributes): *'type' duplicate TypeForwardedToAttribute*
@@ -173,6 +202,7 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS8028**](#anchor-tbd): *'type': a class with the ComImport attribute cannot specify field initializers.*
 - [**CS8335**](#compiler-reserved-attributes-and-types): *Do not use 'attribute name'. This is reserved for compiler usage.*
 - [**CS8336**](#compiler-reserved-attributes-and-types): *The type name 'type' is reserved to be used by the compiler.*
+- [**CS8355**](#anchor-tbd): *An in parameter cannot have the Out attribute.*
 - [**CS8423**](#attribute-location-context): *Attribute 'attribute' is not valid on event accessors. It is only valid on 'declaration' declarations.*
 - [**CS8783**](#conditional-attribute-usage): *Local function 'method' must be 'static' in order to use the Conditional attribute*
 - [**CS8959**](#callerargumentexpression-attribute-usage): *CallerArgumentExpressionAttribute cannot be applied because there are no standard conversions from type 'type1' to type 'type2'*
@@ -349,3 +379,184 @@ To correct these errors, follow these rules. For more information, see [Caller i
 - The parameter decorated with `CallerArgumentExpression` must have type `string` or a type with a standard conversion from `string`, because the attribute injects a `string` representation of the caller's argument expression (**CS8959**). Change the parameter type to `string` or a compatible type.
 - The `CallerArgumentExpression` attribute has no effect on a parameter that also has <xref:System.Runtime.CompilerServices.CallerLineNumberAttribute>, <xref:System.Runtime.CompilerServices.CallerFilePathAttribute>, or <xref:System.Runtime.CompilerServices.CallerMemberNameAttribute> (**CS8960**, **CS8961**, **CS8962**). Those caller info attributes take precedence, so remove the `CallerArgumentExpression` attribute from the parameter.
 - The string argument passed to the `CallerArgumentExpression` constructor must match the name of another parameter in the same method signature (**CS8963**). If the parameter name is misspelled or refers to a nonexistent parameter, the attribute has no effect.
+
+## CS0036
+
+*An out parameter cannot have the In attribute*
+
+Remove <xref:System.Runtime.InteropServices.InAttribute> from an [out](../keywords/method-parameters.md#out-parameter-modifier) parameter.
+
+The following example produces **CS0036**:
+
+```csharp
+using System.Runtime.InteropServices;
+class Example
+{
+    static void GetValue([In] out char value) => value = 'b';
+}
+```
+
+To correct the declaration, change `[In] out char value` to `out char value`.
+
+## CS0423
+
+*Since 'class' has the ComImport attribute, 'method' must be extern or abstract*
+
+Because a <xref:System.Runtime.InteropServices.ComImportAttribute> class imports its implementation from COM, remove managed method bodies from the class. Declare the imported method `extern`, or use an `abstract` method in an abstract imported class.
+
+The following example produces **CS0423**:
+
+```csharp
+using System.Runtime.InteropServices;
+[ComImport, Guid("7ab770c7-0e23-4d7a-8aa2-19bfad479829")]
+class ImageProperties
+{
+    public void Refresh() { }
+}
+```
+
+Replace the method with `public extern void Refresh();`.
+
+## CS0424
+
+*'type': a class with the ComImport attribute cannot specify a base class*
+
+Remove the base class from a class marked with <xref:System.Runtime.InteropServices.ComImportAttribute>. The imported COM implementation can't gain additional implementation from a managed base class.
+
+The following example produces **CS0424**:
+
+```csharp
+using System.Runtime.InteropServices;
+class BaseClass { }
+[ComImport, Guid("7ab770c7-0e23-4d7a-8aa2-19bfad479829")]
+class ImageProperties : BaseClass { }
+```
+
+Change the imported declaration to `class ImageProperties { }`.
+
+## CS0596
+
+*The Guid attribute must be specified with the ComImport attribute*
+
+Add <xref:System.Runtime.InteropServices.GuidAttribute> when you apply <xref:System.Runtime.InteropServices.ComImportAttribute>.
+
+The following example produces **CS0596**:
+
+```csharp
+using System.Runtime.InteropServices;
+[ComImport]
+class ImageProperties { }
+```
+
+Replace the attribute list with `[ComImport, Guid("00000000-0000-0000-0000-000000000001")]`. Use the GUID of the COM type that you intend to import.
+
+## CS0601
+
+*The DllImport attribute must be specified on a method marked 'extern' that is either 'static' or an extension member*
+
+Apply <xref:System.Runtime.InteropServices.DllImportAttribute> only to an `extern` method that is `static` or an extension member. For an ordinary method declared directly in a class, add any missing `static` or `extern` modifier.
+
+The following example produces **CS0601** because the method isn't `static`:
+
+```csharp
+using System.Runtime.InteropServices;
+class NativeMethods
+{
+    [DllImport("kernel32.dll")]
+    extern int GetCurrentDirectory(int size, System.Text.StringBuilder buffer);
+}
+```
+
+Add `static` to the method declaration: `static extern int GetCurrentDirectory(int size, System.Text.StringBuilder buffer);`.
+
+## CS0626
+
+*Method, operator, or accessor 'method' is marked external and has no attributes on it. Consider adding a DllImport attribute to specify the external implementation.*
+
+Specify the external implementation with an appropriate attribute. For a platform-invoke declaration, add <xref:System.Runtime.InteropServices.DllImportAttribute>. Other external implementation mechanisms can require different attributes.
+
+The following example produces **CS0626**:
+
+```csharp
+using System.Runtime.InteropServices;
+class NativeMethods
+{
+    public static extern void M();
+}
+```
+
+For a method implemented by a native library, add `[DllImport("mydll.dll")]` to `M`, replacing `mydll.dll` with the library name.
+
+## CS0662
+
+*Cannot specify the Out attribute on a ref parameter without also specifying the In attribute.*
+
+For a `ref` parameter, either apply both <xref:System.Runtime.InteropServices.InAttribute> and <xref:System.Runtime.InteropServices.OutAttribute>, or apply neither attribute.
+
+The following example produces **CS0662**:
+
+```csharp
+using System.Runtime.InteropServices;
+interface IExample
+{
+    void Update([Out] ref int value);
+}
+```
+
+Change the parameter to `[In, Out] ref int value` or `ref int value`.
+
+## CS0669
+
+*A class with the ComImport attribute cannot have a user-defined constructor*
+
+Remove user-defined instance constructors from a class marked with <xref:System.Runtime.InteropServices.ComImportAttribute>. The COM interop layer supplies the instance constructor.
+
+The following example produces **CS0669**:
+
+```csharp
+using System.Runtime.InteropServices;
+[ComImport, Guid("00000000-0000-0000-0000-000000000001")]
+class ImportedClass
+{
+    public ImportedClass() { }
+}
+```
+
+Delete `public ImportedClass() { }` to correct the class declaration.
+
+## CS0684
+
+*'interface' interface marked with 'CoClassAttribute' not marked with 'ComImportAttribute'*
+
+Add <xref:System.Runtime.InteropServices.ComImportAttribute> to an interface that specifies <xref:System.Runtime.InteropServices.CoClassAttribute>.
+
+The following example produces **CS0684**:
+
+```csharp
+using System.Runtime.InteropServices;
+[CoClass(typeof(Implementation)), Guid("00000000-0000-0000-0000-000000000001")]
+interface IImported { }
+class Implementation : IImported { }
+```
+
+Add `ComImport` to the interface's attribute list: `[CoClass(typeof(Implementation)), ComImport, Guid("00000000-0000-0000-0000-000000000001")]`.
+
+## CS8355
+
+*An in parameter cannot have the Out attribute.*
+
+To keep a parameter read-only, remove <xref:System.Runtime.InteropServices.OutAttribute> from the `in` parameter. The attribute's outbound marshaling direction conflicts with the parameter's `in` modifier.
+
+The following example produces **CS8355**:
+
+```csharp
+using System.Runtime.InteropServices;
+class Example
+{
+    public static void Read([Out] in int value) { }
+}
+```
+
+Change the parameter to `in int value`.
+
+For more information, see [Type marshalling](../../../standard/native-interop/type-marshalling.md), [Default marshalling behavior](../../../standard/native-interop/default-marshalling-behavior.md), and [Reference parameters](../keywords/method-parameters.md#reference-parameters).

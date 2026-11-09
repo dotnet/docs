@@ -43,8 +43,8 @@ Complete the following steps to create a .NET console app. The app acts as a hos
    dotnet add package Azure.AI.OpenAI --prerelease
    dotnet add package Azure.Identity
    dotnet add package Microsoft.Extensions.AI
-   dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
-   dotnet add package ModelContextProtocol --prerelease
+   dotnet add package Microsoft.Extensions.AI.OpenAI
+   dotnet add package ModelContextProtocol
    ```
 
 1. Open the project folder in your editor of choice, such as Visual Studio Code:

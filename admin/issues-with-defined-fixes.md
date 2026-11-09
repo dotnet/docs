@@ -3230,7 +3230,7 @@ These issues still need their existing PRs to land, with corrections where noted
 
 **Issue:** [dotnet/docs#32996](https://github.com/dotnet/docs/issues/32996). **Opened:** December 13, 2022. **Status:** Covered by open, non-draft [dotnet/docs#56661](https://github.com/dotnet/docs/pull/56661).
 
-**Why the solution is defined:** The actual patch adds the missing public-key diagnostic and project-signing guidance to [CS0281](../docs/csharp/misc/cs0281.md). However, its example still combines a fixed public-key literal with newly generated keys and relies on assembly version/culture changes while claiming to demonstrate a key mismatch. The reporter's granting assembly is unsigned, which the patch's strong-named-grantor-only explanation doesn't cover.
+**Why the solution is defined:** The actual patch adds the missing public-key diagnostic and project-signing guidance to CS0281. However, its example still combines a fixed public-key literal with newly generated keys and relies on assembly version/culture changes while claiming to demonstrate a key mismatch. The reporter's granting assembly is unsigned, which the patch's strong-named-grantor-only explanation doesn't cover.
 
 **Maintainer next action:** Correct and execute the existing PR's reproductions rather than assign a duplicate. Demonstrate matching assembly names with missing/wrong consumer keys, derive the attribute's full public key from the actual fixture, and verify the corresponding correction. Preserve the original name-mismatch case separately, distinguish public keys from tokens, and explain applicable signing/toolchain boundaries. Don't change signing policy or remove signing as a universal fix, and don't close before the verified correction merges.
 

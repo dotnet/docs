@@ -93,7 +93,7 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 - (6) **shared/Microsoft.AspNetCore.{App,All}/\<aspnetcore version>** contains the ASP.NET Core libraries. The libraries under `Microsoft.AspNetCore.App` are developed and supported as part of the .NET project. The libraries under `Microsoft.AspNetCore.All` are a superset that also contains third-party libraries.
 
-- (7) **shared/Microsoft.Desktop.App/\<desktop app version>** contains the Windows desktop libraries. This isn't included on non-Windows platforms.
+- (7) **shared/Microsoft.WindowsDesktop.App/\<desktop app version>** contains the Windows desktop libraries. This isn't included on non-Windows platforms.
 
 - (8) **LICENSE.txt,ThirdPartyNotices.txt** are the .NET license and licenses of third-party libraries used in .NET, respectively.
 

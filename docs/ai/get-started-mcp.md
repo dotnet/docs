@@ -61,7 +61,7 @@ The official [MCP C# SDK](https://github.com/modelcontextprotocol/csharp-sdk) is
 To get started, add the MCP C# SDK to your project:
 
 ```dotnetcli
-dotnet add package ModelContextProtocol --prerelease
+dotnet add package ModelContextProtocol
 ```
 
 Instead of building unique connectors for each integration point, you can often leverage or reference prebuilt integrations from various providers such as GitHub and Docker:

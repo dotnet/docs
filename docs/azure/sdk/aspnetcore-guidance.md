@@ -108,7 +108,7 @@ Complete the steps in the following sections to update your app to use JSON file
     - The top-level key names, `KeyVault`, `ServiceBus`, and `Storage`, are arbitrary names used to reference the config sections from your code.  You will pass these names to `AddClient` extension methods to configure a given client. All other key names map to specific client options, and JSON serialization is performed in a case-insensitive manner.
     - The `KeyVault:VaultUri`, `ServiceBus:Namespace`, and `Storage:ServiceUri` key values map to the arguments of the <xref:Azure.Security.KeyVault.Secrets.SecretClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Security.KeyVault.Secrets.SecretClientOptions)?displayProperty=name>, <xref:Azure.Messaging.ServiceBus.ServiceBusClient.%23ctor(System.String)?displayProperty=name>, and <xref:Azure.Storage.Blobs.BlobServiceClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)?displayProperty=name> constructor overloads, respectively.
 
-1. Update the the `Program.cs` file to retrieve the JSON file configurations using `IConfiguration` and pass them into your service registrations:
+1. Update the `Program.cs` file to retrieve the JSON file configurations using `IConfiguration` and pass them into your service registrations:
 
     :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="14-25" highlight="4-5,7-8,11-12":::
 

@@ -31,7 +31,6 @@ f1_keywords:
   - "CS1769"
   - "CS1770"
   - "CS1774"
-  - "CS1996"
   - "CS1997"
   - "CS3028"
   # C# 5 diagnostics

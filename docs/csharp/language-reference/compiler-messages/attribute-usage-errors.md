@@ -35,12 +35,17 @@ f1_keywords:
   - "CS1667"
   - "CS1689"
   - "CS7014"
+  - "CS7042"
+  - "CS7045"
   - "CS7046"
   - "CS7047"
+  - "CS7054"
+  - "CS7055"
   - "CS7067"
   - "CS7080"
   - "CS7081"
   - "CS7082"
+  - "CS8028"
   - "CS8335"
   - "CS8336"
   - "CS8423"
@@ -88,12 +93,17 @@ helpviewer_keywords:
   - "CS1667"
   - "CS1689"
   - "CS7014"
+  - "CS7042"
+  - "CS7045"
   - "CS7046"
   - "CS7047"
+  - "CS7054"
+  - "CS7055"
   - "CS7067"
   - "CS7080"
   - "CS7081"
   - "CS7082"
+  - "CS8028"
   - "CS8335"
   - "CS8336"
   - "CS8423"
@@ -107,7 +117,7 @@ helpviewer_keywords:
   - "CS8970"
   - "CS9331"
   - "CS9351"
-ms.date: 10/27/2026
+ms.date: 11/09/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings related to attribute declarations or attribute use in your code
@@ -150,12 +160,17 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS1667**](#attribute-location-context): *Attribute 'attribute' is not valid on property or event accessors. It is only valid on 'declaration' declarations.*
 - [**CS1689**](#conditional-attribute-usage): *Attribute 'attribute' is only valid on methods or attribute classes*
 - [**CS7014**](#attribute-location-context): *Attributes are not valid in this context.*
+- [**CS7042**](#anchor-tbd): *The DllImport attribute cannot be applied to a method that is generic or contained in a generic method or type.*
+- [**CS7045**](#anchor-tbd): *Parameter not valid for the specified unmanaged type.*
 - [**CS7046**](#attribute-arguments-and-parameters): *Attribute parameter 'parameter' must be specified.*
 - [**CS7047**](#attribute-arguments-and-parameters): *Attribute parameter 'parameter1' or 'parameter2' must be specified.*
+- [**CS7054**](#anchor-tbd): *Unmanaged type 'type' not valid for fields.*
+- [**CS7055**](#anchor-tbd): *Unmanaged type 'type' is only valid for fields.*
 - [**CS7067**](#attribute-arguments-and-parameters): *Attribute constructor parameter 'parameter' is optional, but no default parameter value was specified.*
 - [**CS7080**](#caller-information-attribute-precedence): *The CallerMemberNameAttribute applied to parameter 'parameter name' will have no effect. It is overridden by the CallerFilePathAttribute.*
 - [**CS7081**](#caller-information-attribute-precedence): *The CallerMemberNameAttribute applied to parameter 'parameter name' will have no effect. It is overridden by the CallerLineNumberAttribute.*
 - [**CS7082**](#caller-information-attribute-precedence): *The CallerFilePathAttribute applied to parameter 'parameter name' will have no effect. It is overridden by the CallerLineNumberAttribute.*
+- [**CS8028**](#anchor-tbd): *'type': a class with the ComImport attribute cannot specify field initializers.*
 - [**CS8335**](#compiler-reserved-attributes-and-types): *Do not use 'attribute name'. This is reserved for compiler usage.*
 - [**CS8336**](#compiler-reserved-attributes-and-types): *The type name 'type' is reserved to be used by the compiler.*
 - [**CS8423**](#attribute-location-context): *Attribute 'attribute' is not valid on event accessors. It is only valid on 'declaration' declarations.*

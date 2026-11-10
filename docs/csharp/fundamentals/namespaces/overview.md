@@ -9,15 +9,15 @@ ai-usage: ai-assisted
 ---
 # Organize types with namespaces
 
-As a program grows, its types often serve different parts of the application. A *namespace* is a named group of related types. Namespaces help you organize types by functionality and show how your code fits together.
+As your program grows, you create more types. You need a way to organize all the different types you created. A *namespace* is a named group of related types. Namespaces help you organize types by functionality and show how your code fits together.
 
-For example, place catalog types in `Shop.Catalog` and shipping types in `Shop.Shipping`. Each namespace can contain a `Product` type without a name conflict.
+For example, place catalog types in `Shop.Catalog` and shipping types in `Shop.Shipping`.
 
 This article builds on [Namespaces and using directives](../program-structure/namespaces.md). You'll learn how to declare namespaces, refer to types unambiguously, and choose imports for a file or project.
 
 ## The global namespace
 
-Small programs can start without a namespace declaration. Types declared outside a named namespace belong to the *global namespace*, the unnamed namespace that contains all named namespaces. The compiler-generated `Program` class for [top-level statements](../program-structure/top-level-statements.md) also belongs to the global namespace.
+Small programs often start without a namespace declaration. The types belong to the *global namespace*. The *global namespace* is the unnamed namespace that contains all declared types and namespaces. When you create file-based apps and other apps with [top-level statements](../program-structure/top-level-statements.md), those types belong to the global namespace.
 
 As your program grows, use named namespaces to group the types you add by their roles.
 
@@ -35,11 +35,13 @@ A *block-scoped namespace declaration* encloses the same types in braces:
 
 These two declarations define the same type. Choose one form for the file. File-scoped syntax reduces indentation; block-scoped syntax also lets you declare multiple namespaces in one file. A file-scoped namespace can't share its file with another namespace declaration or with top-level statements.
 
-To group related types, use the same namespace name in multiple files. Namespace names commonly mirror folders, but the compiler uses your declarations, not your folder names, to assign types to namespaces. Use valid [identifier names](../coding-style/identifier-names.md) for each part of a namespace name.
+The same namespace declaration can appear multiple times in your program. All types in matching declarations belong to the same namespace.
+
+Namespace names commonly mirror folders, but the compiler uses your declarations, not your folder names, to assign types to namespaces. You must use valid [identifier names](../coding-style/identifier-names.md) for each part of a namespace name.
 
 ### Nested namespaces
 
-Namespace names use dots to express a hierarchy. A *nested namespace* is a namespace declared within another namespace. You can express that relationship with a dotted name or nested blocks:
+Components of a namespace name are separated by a period (`.`) and express a hierarchy. A *nested namespace* is a namespace declared within another namespace. You can declare a multicomponent namespace by nesting namespace declarations or by using all components in one declaration. For the same components, both forms are equivalent:
 
 :::code language="csharp" source="../program-structure/snippets/namespaces/Products.cs" id="NestedNamespaces":::
 
@@ -133,6 +135,8 @@ Use a *using static directive* for a special-purpose utility type whose static m
 :::code language="csharp" source="../program-structure/snippets/namespaces/StaticUsing.cs" id="StaticUsing":::
 
 Here, `PI` and `Pow` name members of `System.Math`. Keep the type prefix when it helps readers recognize which type supplies a member. For detailed rules, see [`using static`](../../language-reference/keywords/using-directive.md#the-static-modifier).
+
+Small programs don't need named namespace declarations. As programs grow, think about how to organize names into namespaces. Prefer file-scoped namespace declarations in your code.
 
 ## Related content
 

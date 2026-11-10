@@ -136,7 +136,7 @@ Use a *using static directive* for a special-purpose utility type whose static m
 
 Here, `PI` and `Pow` name members of `System.Math`. Keep the type prefix when it helps readers recognize which type supplies a member. For detailed rules, see [`using static`](../../language-reference/keywords/using-directive.md#the-static-modifier).
 
-Small programs don't need named namespace declarations. As programs grow, think about how to organize names into namespaces. Prefer file-scoped namespace declarations in your code.
+Small programs don't need named namespace declarations. As programs grow, think about how to organize names into namespaces. Prefer file-scoped namespace declarations in your code. Choose imports according to where you need them: global directives for namespaces used throughout your project, and regular directives for those needed in individual files.
 
 ## Related content
 

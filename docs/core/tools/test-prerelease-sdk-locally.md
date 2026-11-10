@@ -1,9 +1,9 @@
 ---
 title: Test prerelease .NET SDKs locally with global.json paths
-description: Learn how to install and test prerelease .NET SDKs in a project-local directory using the global.json paths feature, without affecting your system-wide installation.
+description: Learn how to install and test prerelease .NET 11 SDKs in a project-local directory using the global.json paths feature, without affecting your system-wide installation.
 author: jfversluis
 ms.author: joverslu
-ms.date: 11/10/2026
+ms.date: 04/08/2026
 ms.topic: how-to
 ai-usage: ai-assisted
 ---
@@ -15,7 +15,7 @@ Starting with .NET 10, the `global.json` file supports an `sdk.paths` property t
 Whether you want to try out a new language feature, evaluate a preview release for your team, or validate your open-source library against an upcoming SDK version in CI, `sdk.paths` gives you a safe, reversible way to do it. If anything goes wrong, you delete one folder and you're back to exactly where you started.
 
 > [!NOTE]
-> The `sdk.paths` feature works with any SDK version, prerelease or stable, current or future. Replace the `<major.minor>` and `<sdk-version>` placeholders in the examples with a channel and SDK version that are available for your project.
+> This article uses .NET 11 (the current prerelease at the time of writing) as an example throughout. The `sdk.paths` feature works with any SDK version, prerelease or stable, current or future. Replace `11.0` and `preview` in the install commands with whichever version and quality you need.
 
 ## Prerequisites
 
@@ -70,30 +70,28 @@ Use the official [dotnet-install scripts](dotnet-install-script.md) to download 
 ### [macOS / Linux](#tab/bash)
 
 ```bash
-SDK_CHANNEL="<major.minor>"
 curl -sSL https://dot.net/v1/dotnet-install.sh -o dotnet-install.sh
 chmod +x dotnet-install.sh
-./dotnet-install.sh --channel "$SDK_CHANNEL" --quality preview --install-dir .dotnet
+./dotnet-install.sh --channel 11.0 --quality preview --install-dir .dotnet
 ```
 
 ### [Windows (PowerShell)](#tab/powershell)
 
 ```powershell
 Invoke-WebRequest 'https://dot.net/v1/dotnet-install.ps1' -OutFile 'dotnet-install.ps1'
-$SdkChannel = '<major.minor>'
-.\dotnet-install.ps1 -Channel $SdkChannel -Quality preview -InstallDir .dotnet
+.\dotnet-install.ps1 -Channel 11.0 -Quality preview -InstallDir .dotnet
 ```
 
 > [!NOTE]
 > If script execution is blocked by your system's execution policy, run the install script with:
-> `powershell -ExecutionPolicy Bypass -File .\dotnet-install.ps1 -Channel '<major.minor>' -Quality preview -InstallDir .dotnet`
+> `powershell -ExecutionPolicy Bypass -File .\dotnet-install.ps1 -Channel 11.0 -Quality preview -InstallDir .dotnet`
 
 ---
 
 The `--install-dir` (or `-InstallDir`) parameter places the SDK in a `.dotnet` folder inside your current directory. No files are written anywhere else on your machine.
 
 > [!TIP]
-> The `--quality` parameter accepts three values: `daily` (latest nightly build), `preview` (latest official preview), and `GA` (latest stable release). To install an exact SDK version, replace `<sdk-version>` with a version published for your selected channel.
+> The `--quality` parameter accepts three values: `daily` (latest nightly build), `preview` (latest official preview), and `GA` (latest stable release). You can also use `--version` to install an exact SDK version, such as `--version 11.0.100-preview.2.26159.112`.
 
 ## Step 2: Add .dotnet/ to .gitignore
 
@@ -141,7 +139,7 @@ For more control, you can pin a minimum version and configure roll-forward behav
 ```json
 {
   "sdk": {
-    "version": "<sdk-version>",
+    "version": "11.0.100-preview.2.26159.112",
     "allowPrerelease": true,
     "rollForward": "latestFeature",
     "paths": [".dotnet", "$host$"],
@@ -174,7 +172,7 @@ Now that you understand what each step does, here's a single command that perfor
 
 ```bash
 curl -sSL https://dot.net/v1/dotnet-install.sh -o /tmp/dotnet-install.sh \
-  && bash /tmp/dotnet-install.sh --channel "<major.minor>" --quality preview --install-dir .dotnet \
+  && bash /tmp/dotnet-install.sh --channel 11.0 --quality preview --install-dir .dotnet \
   && rm /tmp/dotnet-install.sh \
   && echo '.dotnet/' >> .gitignore \
   && cat > global.json << 'EOF'
@@ -191,7 +189,7 @@ echo "Installed: $(.dotnet/dotnet --version)"
 
 ```powershell
 Invoke-WebRequest 'https://dot.net/v1/dotnet-install.ps1' -OutFile "$env:TEMP\dotnet-install.ps1"
-& "$env:TEMP\dotnet-install.ps1" -Channel '<major.minor>' -Quality preview -InstallDir .dotnet
+& "$env:TEMP\dotnet-install.ps1" -Channel 11.0 -Quality preview -InstallDir .dotnet
 Remove-Item "$env:TEMP\dotnet-install.ps1"
 Add-Content -Path .gitignore -Value '.dotnet/'
 @'
@@ -219,7 +217,7 @@ When multiple people work on the same repository, a convenience script prevents 
 set -e
 
 # -------- Configuration --------
-CHANNEL="<major.minor>"
+CHANNEL="11.0"
 QUALITY="preview"
 # Uncomment the workloads your project needs:
 # WORKLOADS="maui wasm-tools"
@@ -274,7 +272,7 @@ echo "Run 'dotnet --version' to verify."
 $ErrorActionPreference = 'Stop'
 
 # -------- Configuration --------
-$Channel  = '<major.minor>'
+$Channel  = '11.0'
 $Quality  = 'preview'
 # Uncomment the workloads your project needs:
 # $Workloads = @('maui', 'wasm-tools')
@@ -345,7 +343,7 @@ dotnet --version
 The output should show the prerelease version you installed, for example:
 
 ```output
-<sdk-version>
+11.0.100-preview.2.26159.112
 ```
 
 For more detailed information about which SDK was resolved and where it was loaded from, run:
@@ -443,7 +441,7 @@ The same approach works in continuous integration pipelines. However, CI runners
 
 ### GitHub Actions example
 
-The following workflow installs a .NET 10 host using `actions/setup-dotnet`, then installs a prerelease SDK locally. Replace `<major.minor>` with a channel that has an available prerelease. The `setup-dotnet` step ensures the runner has a .NET 10+ host on `PATH` that can read the `paths` property in `global.json`.
+The following workflow installs a .NET 10 host using `actions/setup-dotnet`, then installs the .NET 11 preview SDK locally. The `setup-dotnet` step ensures the runner has a .NET 10+ host on `PATH` that can read the `paths` property in `global.json`.
 
 ```yaml
 name: Build with preview SDK
@@ -464,6 +462,7 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '10.0.x'
+          dotnet-quality: 'preview'
 
       - name: Cache local SDK
         uses: actions/cache@v4
@@ -471,16 +470,14 @@ jobs:
           path: .dotnet
           key: dotnet-local-${{ matrix.os }}-${{ hashFiles('global.json') }}
 
-      - name: Install preview SDK locally
+      - name: Install .NET 11 preview SDK locally
         # Use bash shell explicitly — Windows runners default to PowerShell,
         # which doesn't support the curl/chmod/shell-script syntax below.
         shell: bash
-        env:
-          SDK_CHANNEL: '<major.minor>'
         run: |
           curl -sSL https://dot.net/v1/dotnet-install.sh -o dotnet-install.sh
           chmod +x dotnet-install.sh
-          ./dotnet-install.sh --channel "$SDK_CHANNEL" --quality preview --install-dir .dotnet
+          ./dotnet-install.sh --channel 11.0 --quality preview --install-dir .dotnet
 
       - name: Build
         run: dotnet build
@@ -502,11 +499,11 @@ Because the `global.json` in your repository already has the `paths` configurati
 If you can't install .NET 10+ system-wide on the runner (for example, in a locked-down CI environment), invoke the local SDK's own host directly instead of relying on the system `dotnet`:
 
 ```yaml
-- name: Install preview SDK locally
+- name: Install .NET 11 preview SDK locally
   run: |
     curl -sSL https://dot.net/v1/dotnet-install.sh -o dotnet-install.sh
     chmod +x dotnet-install.sh
-    ./dotnet-install.sh --channel '<major.minor>' --quality preview --install-dir .dotnet
+    ./dotnet-install.sh --channel 11.0 --quality preview --install-dir .dotnet
 
 - name: Build using local host
   run: ./.dotnet/dotnet build

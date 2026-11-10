@@ -5,7 +5,7 @@ ms.date: 10/03/2024
 ---
 # BinaryReader.ReadString() returns "\uFFFD" on malformed sequences
 
-A a minor breaking change was introduced that only affects malformed encoded payloads.
+A minor breaking change was introduced that only affects malformed encoded payloads.
 
 Prior to .NET 9, a malformed encoded string `[0x01, 0xC2]` that was parsed with <xref:System.IO.BinaryReader.ReadString?displayProperty=nameWithType> returned an empty string.
 

@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: VSTest removes dependency on Newtonsoft.Json"
 description: "Learn about the breaking change in .NET 11 where the VSTest platform and Microsoft.NET.Test.SDK no longer depend on Newtonsoft.Json."
-ms.date: 05/04/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ The VSTest platform and `Microsoft.NET.Test.SDK` NuGet package no longer depend 
 
 ## Version introduced
 
-.NET 11 Preview 4
+.NET 11
 
 ## Previous behavior
 

@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: NU1703 warning for packages that use deprecated MonoAndroid framework assets"
 description: "Learn about the breaking change in .NET 11 where NuGet restore emits NU1703 when a package uses deprecated MonoAndroid framework assets."
-ms.date: 06/01/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -13,7 +13,7 @@ framework folder.
 
 ## Version introduced
 
-.NET 11 Preview 5
+.NET 11
 
 ## Previous behavior
 

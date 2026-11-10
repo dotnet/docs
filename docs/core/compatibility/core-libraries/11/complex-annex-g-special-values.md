@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: System.Numerics.Complex special-value results now follow C23 Annex G"
 description: "Learn about the breaking change in .NET 11 where System.Numerics.Complex arithmetic and math functions return C23 Annex G-conformant special values for signed zeros, infinities, and NaNs."
-ms.date: 08/04/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 ## Version introduced
 
-.NET 11 Preview 7
+.NET 11
 
 ## Previous behavior
 

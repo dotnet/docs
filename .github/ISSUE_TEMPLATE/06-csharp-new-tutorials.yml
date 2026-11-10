@@ -11,16 +11,10 @@ body:
   - type: dropdown
     id: version
     attributes:
-      label: .NET 11 Preview
-      description: Which .NET 11 Preview contains this feature?
+      label: .NET 11 GA
+      description: Which .NET 11 release contains this feature?
       options:
-        - ".NET 11 Preview 1"
-        - ".NET 11 Preview 2"
-        - ".NET 11 Preview 3"
-        - ".NET 11 Preview 4"
-        - ".NET 11 Preview 5"
-        - ".NET 11 Preview 6"
-        - ".NET 11 Preview 7"
+        - ".NET 11 GA"
         - "other - specify below"
   - type: input
     id: Speclet

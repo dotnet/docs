@@ -2,7 +2,7 @@
 title: dotnetup channels and versions
 description: Learn how dotnetup resolves stable, preview, daily, numeric, and exact .NET version specifications.
 ms.topic: concept-article
-ms.date: 08/07/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -33,7 +33,7 @@ selected component.
 | Major and minor | `10.0` | Latest SDK release for that major and minor version |
 | Feature band | `10.0.1xx` | Latest SDK in that feature band |
 | Exact SDK version | `10.0.103` | Only that SDK version |
-| Exact prerelease SDK version | `11.0.100-preview.7.26381.103` (out of date; RC available) | Only that prerelease SDK version |
+| Exact prerelease SDK version | `<sdk-version>` | Only that prerelease SDK version |
 
 An exact version is pinned. `dotnetup update` does not replace it.
 

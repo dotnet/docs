@@ -26,7 +26,7 @@ dnim-win-[x86|x64|arm64] layout -?|-h|--help
 
 ## Description
 
-The command creates or updates a cache used for offline deployments inside network restricted environments. The command requires internet access to download the necessary files and will verify the signatures of any installers that are downloaded. Adminitrators should place the files on a machine that is accessible from client devices inside the network.
+The command creates or updates a cache used for offline deployments inside network restricted environments. The command requires internet access to download the necessary files and will verify the signatures of any installers that are downloaded. Administrators should place the files on a machine that is accessible from client devices inside the network.
 
 ## Options
 

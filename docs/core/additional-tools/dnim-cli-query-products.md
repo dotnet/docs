@@ -1,6 +1,6 @@
 ---
 title: dnim query products command
-description: The query releases command provides information about specific .NET products.
+description: The query products command provides information about specific .NET products.
 author: joeloff
 ms.date: 08/11/2026
 ai-usage: ai-assisted

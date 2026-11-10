@@ -42,6 +42,14 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 
 [!INCLUDE [linux-apt-install-100](includes/linux-install-100-apt.md)]
 
+# [.NET 9](#tab/dotnet9)
+
+.NET 9 isn't supported on Ubuntu 26.10.
+
+# [.NET 8](#tab/dotnet8)
+
+.NET 8 isn't supported on Ubuntu 26.10.
+
 ---
 
 ## Dependencies

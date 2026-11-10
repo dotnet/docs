@@ -24,7 +24,7 @@ You can find all the collection types in the [.NET API reference](/dotnet/api/?t
 
 <xref:System.Span`1?displayProperty=nameWithType> is a [`ref struct`](./ref-struct.md) type that provides a snapshot over a sequence of elements without copying those elements. The compiler enforces safety rules to ensure the `Span` can't be accessed after the sequence it references is no longer in scope. It's used in many .NET APIs to improve performance. <xref:System.Memory`1> provides similar behavior when you can't use a `ref struct` type.
 
-Beginning with C# 12, all of the collection types can be initialized by using a [Collection expression](../operators/collection-expressions.md).
+Collection types can be initialized by using a [collection expression](../operators/collection-expressions.md).
 
 ## Indexable collections
 

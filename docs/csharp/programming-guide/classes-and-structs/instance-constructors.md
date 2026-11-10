@@ -32,7 +32,7 @@ A *structure* type always provides a parameterless constructor. The parameterles
 
 ## Primary constructors
 
-Beginning in C# 12, you can declare a *primary constructor* in classes and structs. You place any parameters in parentheses following the type name:
+You can declare a *primary constructor* in classes and structs. You place any parameters in parentheses following the type name:
 
 :::code language="csharp" source="./snippets/instance-constructors/widgets/Program.cs" id="BasePrimaryConstructor":::
 

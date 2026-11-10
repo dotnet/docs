@@ -8,7 +8,7 @@ ms.date: 10/09/2024
 
 Starting with .NET 8, a configuration binding source generator was introduced that intercepts specific call sites and generates their functionality. This feature provides a [Native ahead-of-time (AOT)](../deploying/native-aot/index.md) and [trim-friendly](../deploying/trimming/trim-self-contained.md) way to use the [configuration binder](configuration.md#binding), without the use of the reflection-based implementation. Reflection requires dynamic code generation, which isn't supported in AOT scenarios.
 
-This feature is possible with the advent of [C# interceptors](../../csharp/whats-new/csharp-12.md#interceptors) that were introduced in C# 12. Interceptors allow the compiler to generate source code that intercepts specific calls and substitutes them with generated code.
+This feature uses [C# interceptors](../../csharp/whats-new/csharp-version-history.md#interceptors). Interceptors allow the compiler to replace specific calls with calls to generated code.
 
 ## Enable the configuration source generator
 

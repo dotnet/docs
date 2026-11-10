@@ -101,7 +101,7 @@ A `using` alias creates a shorthand name for a type or namespace. Aliases are us
 
 :::code language="csharp" source="snippets/namespaces/Aliases.cs" id="TypeAlias":::
 
-Starting with C# 12, you can alias any type, including tuples and pointer types:
+You can alias any type, including tuples and pointer types:
 
 :::code language="csharp" source="snippets/namespaces/TupleAlias.cs" id="AnyTypeAlias":::
 

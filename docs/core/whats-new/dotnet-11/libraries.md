@@ -2,14 +2,14 @@
 title: What's new in .NET libraries for .NET 11
 description: Learn about the updates to the .NET libraries for .NET 11.
 titleSuffix: ""
-ms.date: 10/13/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET libraries for .NET 11
 
-This article describes new features in the .NET libraries for .NET 11. It was last updated for release candidate 2 (RC 2).
+This article describes new features in the .NET libraries for .NET 11. It was last updated for the general availability (GA) release.
 
 ## Diagnostics and process execution
 
@@ -236,6 +236,8 @@ Four <xref:System.Text.Json.JsonSerializer.SerializeAsyncEnumerable*?displayProp
 
 With the default `topLevelValues: false`, the output remains one JSON array. Set `topLevelValues: true` to write canonical JSON Lines (JSONL). The serializer writes each value compactly and follows it with a line feed (LF), `\n`, including the final value. JSONL output uses LF regardless of <xref:System.Text.Json.JsonSerializerOptions.NewLine?displayProperty=nameWithType> and ignores <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> so that each value occupies one line.
 
+The serializer streams each JSONL entry instead of buffering the entire entry, and it supports entries that contain nested asynchronous enumerables.
+
 :::code language="csharp" source="./snippets/csharp/Libraries.cs" id="JsonSerializeAsyncEnumerablePipe":::
 
 #### Polymorphic hierarchy support
@@ -414,6 +416,13 @@ The streamless `DeflateEncoder`, `DeflateDecoder`, `ZLibEncoder`, `ZLibDecoder`,
 
 The Zstandard compression APIs, for example, <xref:System.IO.Compression.ZstandardStream> and <xref:System.IO.Compression.ZstandardEncoder>, are now part of the <xref:System.IO.Compression> namespace, alongside `DeflateStream`, `GZipStream`, and `BrotliStream`. The API surface is otherwise unchanged.
 
+<xref:System.IO.Compression.ZstandardDictionary> provides dictionary training and construction. <xref:System.IO.Compression.ZstandardDictionary.Train*> returns raw dictionary data as a `byte[]`; pass that data to <xref:System.IO.Compression.ZstandardDictionary.Create*> with the desired compression quality:
+
+```csharp
+byte[] data = ZstandardDictionary.Train(samples, sampleLengths, maxDictionarySize: 4096);
+using ZstandardDictionary dictionary = ZstandardDictionary.Create(data, quality: 19);
+```
+
 ### Tar archive format selection
 
 New overloads on <xref:System.Formats.Tar.TarFile.CreateFromDirectory*> and <xref:System.Formats.Tar.TarFile.CreateFromDirectoryAsync*> accept a <xref:System.Formats.Tar.TarEntryFormat> parameter, giving you direct control over the archive format. Previously, `CreateFromDirectory` always produced Pax archives. The new overloads support all four tar formats—Pax, Ustar, GNU, and V7—for compatibility with specific tools and environments.
@@ -577,6 +586,7 @@ On iOS and tvOS, <xref:System.IO.FileStream> no longer acquires advisory file lo
 - [BitArray.PopCount](#bitarraypopcount)
 - [EqualityComparer\<T>.Create](#equalitycomparertcreate)
 - [ConcurrentQueue reliability fix](#concurrentqueue-reliability-fix)
+- [System.Numerics.Tensors package compatibility](#systemnumericstensors-package-compatibility)
 
 #### BitArray span constructors
 
@@ -600,6 +610,10 @@ To create an equality comparer from a key selector function, use the new <xref:S
 
 <xref:System.Collections.Concurrent.ConcurrentQueue`1.TryDequeue*?displayProperty=nameWithType> and <xref:System.Collections.Concurrent.ConcurrentQueue`1.TryPeek*?displayProperty=nameWithType> no longer spuriously report an empty queue while the queue freezes a segment during growth.
 
+#### System.Numerics.Tensors package compatibility
+
+Updating the `System.Numerics.Tensors` package changes shape alignment and rejects unsupported overlapping storage layouts, including on target frameworks older than .NET 11. Review code that depends on a particular shape or on overlapping copies. Use separate destination storage or snapshot the source when overlap isn't supported. For details, see [Tensor shape alignment](../../compatibility/core-libraries/11/tensor-shape-alignment.md) and [Tensor storage-layout validation](../../compatibility/core-libraries/11/tensor-storage-layout-validation.md).
+
 ## Extensions and developer platform
 
 - [Discriminated-union scaffolding](#discriminated-union-scaffolding)
@@ -611,9 +625,6 @@ To create an equality comparer from a key selector function, use the new <xref:S
 - [StringSyntax attribute enhancements](#stringsyntax-attribute-enhancements)
 
 ### Discriminated-union scaffolding
-
-> [!NOTE]
-> This is a preview feature in .NET 11.
 
 .NET 11 introduces <xref:System.Runtime.CompilerServices.UnionAttribute?displayProperty=nameWithType> and <xref:System.Runtime.CompilerServices.IUnion?displayProperty=nameWithType> in <xref:System.Runtime.CompilerServices?displayProperty=fullName>. These types are the runtime side of the C# discriminated-union design. They aren't directly user-facing yet—the C# compiler and source generators are the expected producers—but they ship in the framework so libraries can author against the surface now.
 
@@ -885,11 +896,22 @@ Both sets of APIs provide array-returning and span-based overloads:
 ### Experimental composite ML-KEM and HPKE APIs
 
 > [!WARNING]
-> `CompositeMLKem` and `Hpke` are experimental in .NET 11 and might change. Direct use requires you to opt in to the `SYSLIB5006` diagnostic for `CompositeMLKem` and the `SYSLIB5009` diagnostic for `Hpke`.
+> <xref:System.Security.Cryptography.CompositeMLKem> and <xref:System.Security.Cryptography.Hpke> are experimental in .NET 11 and might change. Direct use requires you to opt in to the `SYSLIB5006` diagnostic for `CompositeMLKem` and the `SYSLIB5009` diagnostic for `Hpke`.
 
-`CompositeMLKem` combines post-quantum and classical key encapsulation so that both contribute to the shared secret. It's available on platforms that already support Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM). Call `CompositeMLKem.IsAlgorithmSupported` to determine whether the platform supports a particular combination of algorithms.
+<xref:System.Security.Cryptography.CompositeMLKem> combines post-quantum and classical key encapsulation so that both contribute to the shared secret. It's available on platforms that already support Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM). Call <xref:System.Security.Cryptography.CompositeMLKem.IsAlgorithmSupported*> to determine whether the platform supports a particular combination of algorithms.
 
-`Hpke` provides Hybrid Public Key Encryption (HPKE). The current implementation supports classical Diffie-Hellman key encapsulation mechanism (DHKEM) suites. ML-KEM and hybrid ML-KEM suites aren't supported yet. Check `Hpke.IsSupported` for the suite you select.
+<xref:System.Security.Cryptography.Hpke> provides a managed implementation of Hybrid Public Key Encryption (HPKE). Build an <xref:System.Security.Cryptography.HpkeSuite> from <xref:System.Security.Cryptography.HpkeKem>, <xref:System.Security.Cryptography.HpkeKdf>, and <xref:System.Security.Cryptography.HpkeAead> values. Check <xref:System.Security.Cryptography.Hpke.IsSupported*> for the suite you select. The following example uses <xref:System.Security.Cryptography.Hpke.GenerateKey*> to create the recipient's key pair, then encrypts and decrypts data with <xref:System.Security.Cryptography.Hpke.Seal*> and <xref:System.Security.Cryptography.Hpke.Open*>:
+
+```csharp
+var suite = new HpkeSuite(HpkeKem.DHKEM_P256_HKDF_SHA256, HpkeKdf.HKDF_SHA256, HpkeAead.AES_128_GCM);
+using var recipient = Hpke.GenerateKey(suite);
+using var sender = Hpke.ImportEncapsulationKey(suite, recipient.ExportEncapsulationKey());
+sender.Seal("Hello"u8, out byte[] encapsulatedSecret, out byte[] ciphertext);
+byte[] plaintext = recipient.Open(encapsulatedSecret, ciphertext);
+Console.WriteLine(Encoding.UTF8.GetString(plaintext));
+```
+
+Algorithm-suite availability varies by platform. The example uses a classical Diffie-Hellman key encapsulation mechanism (DHKEM) suite.
 
 ### Encrypt CMS messages with ML-KEM
 

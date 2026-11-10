@@ -2,14 +2,14 @@
 title: What's new in the SDK and tooling for .NET 11
 description: Learn about the new .NET SDK features introduced in .NET 11.
 titleSuffix: ""
-ms.date: 11/03/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in the SDK and tooling for .NET 11
 
-This article describes new features and enhancements in the .NET SDK for .NET 11. It was last updated for release candidate 2 (RC 2). You can [download .NET 11 here](https://dotnet.microsoft.com/download/dotnet/11.0).
+This article describes new features and enhancements in the .NET SDK for .NET 11. It was last updated for the general availability (GA) release. You can [download .NET 11 here](https://dotnet.microsoft.com/download/dotnet/11.0).
 
 ## SDK footprint
 
@@ -185,6 +185,7 @@ dotnet watch --device <device-id>
 
 The following long-standing `dotnet watch` issues are fixed:
 
+- Automatic browser refresh works for static server-side rendered (SSR) pages in Blazor Web apps that use WebAssembly or Auto interactivity.
 - The framework selection prompt no longer appears stuck due to two readers both calling `Console.ReadKey()`.
 - <kbd>Ctrl+C</kbd> and <kbd>Ctrl+R</kbd> no longer surface a spurious `WebSocketException` or `ObjectDisposedException` when the WebSocket transport tears down.
 - Hot Reload no longer deadlocks on iOS when `UIKitSynchronizationContext` is installed before the startup hook runs.
@@ -237,6 +238,7 @@ In one monorepo benchmark, formatting one included file improved from 1.09 secon
 - Workload operations and `global.json` now detect versions written in the internal NuGet package format and report the corrected user-facing format instead of a package-not-found error.
 - The `Configuration` environment variable now supplies the default value for the shared `--configuration`/`-c` CLI options across commands. An explicit command-line option still takes precedence, and empty or whitespace-only environment values are ignored.
 - File-based property directives no longer permit `:` in the property name. Replace syntax such as `#:property Foo:Bar=value` with a valid MSBuild property name.
+- Concurrent `dotnet tool install`, `dotnet tool update`, and `dotnet tool uninstall` operations no longer race with one another.
 
 ## Web assets and telemetry
 
@@ -281,6 +283,19 @@ The MSBuild server is now enabled by default. This keeps a warm MSBuild worker b
 ### Partial Ready-to-Run for upstack tooling
 
 A new MSBuild property lets upstack tooling (for example, `dotnet/macios` and `dotnet/maui`) declare a list of assemblies to be partially R2R-compiled and excluded from the composite image. The motivating scenario is precompiling generated XAML code in Debug builds to speed up F5 without paying the full crossgen cost for the rest of the app. App developers don't set this property directly—it's a hook the mobile workloads use in their targets.
+
+## Native AOT optimized publishing
+
+Optimized Native AOT publishing is opt-in. The `UseOptimizedPublish` property defaults to `false` for Native AOT projects, preserving the full build target chain and its build hooks. To enable optimized publishing explicitly, set both properties:
+
+```xml
+<PropertyGroup>
+  <PublishAot>true</PublishAot>
+  <UseOptimizedPublish>true</UseOptimizedPublish>
+</PropertyGroup>
+```
+
+For details about the build hooks affected by optimized publishing and how to migrate custom targets, see [Full build skipped for Native AOT publish](../../compatibility/sdk/11/aot-publish-skips-full-build.md).
 
 ## Test improvements
 

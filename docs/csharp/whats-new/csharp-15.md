@@ -207,9 +207,12 @@ class Header
 
     static unsafe int ReadSignature()
     {
-        int rawValue = 0x1234;
-        int* pointer = &rawValue;
-        return *pointer;
+        unsafe
+        {
+            int rawValue = 0x1234;
+            int* pointer = &rawValue;
+            return *pointer;
+        }
     }
 }
 ```

@@ -27,17 +27,13 @@ On Linux, the SDK doesn't create the base directory, and it doesn't fall back to
 
 If the test run produces no attachments, `dotnet test` prints the following warning:
 
-```output
-VSTEST_ARTIFACTS_DIRECTORY environment variable was not found, falling back to a user-private temporary directory. This is most likely caused by an outdated Microsoft.NET.Test.Sdk package reference in the test project.
-```
+> VSTEST_ARTIFACTS_DIRECTORY environment variable was not found, falling back to a user-private temporary directory. This is most likely caused by an outdated Microsoft.NET.Test.Sdk package reference in the test project.
 
 The advice about the `Microsoft.NET.Test.Sdk` package can be misleading. A missing `/run/user/<uid>` directory causes this warning even when the SDK and the package are up to date.
 
 If the test run produces attachments, for example a coverage report from `--collect:"XPlat Code Coverage"`, `dotnet test` prints the following warning instead:
 
-```output
-The test session artifacts were not saved: The user-private temporary directory '/run/user/0' does not exist.
-```
+> The test session artifacts were not saved: The user-private temporary directory '/run/user/0' does not exist.
 
 The path contains the current user ID. Other directory verification failures use the same `The test session artifacts were not saved:` prefix, followed by the reason.
 
@@ -47,9 +43,7 @@ In both cases, the tests continue to run, and a passing run can exit with code `
 
 On Windows, if the SDK can't resolve the Local AppData directory, the test run stops. This failure can occur with or without a data collector. The SDK prints the following error:
 
-```output
-Could not determine a private base directory for the test run: the current user's local application data folder does not exist or could not be resolved. Set the VSTEST_ARTIFACTS_BASE_DIRECTORY environment variable to the directory the artifacts directory should be created under.
-```
+> Could not determine a private base directory for the test run: the current user's local application data folder does not exist or could not be resolved. Set the VSTEST_ARTIFACTS_BASE_DIRECTORY environment variable to the directory the artifacts directory should be created under.
 
 ## Type of breaking change
 

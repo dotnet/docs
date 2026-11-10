@@ -112,7 +112,7 @@ The `Aspire.Azure.AI.OpenAI` package provides extension methods to register Azur
    ```dotnetcli
    dotnet add package Aspire.Azure.AI.OpenAI --prerelease
    dotnet add package Azure.AI.OpenAI
-   dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
+   dotnet add package Microsoft.Extensions.AI.OpenAI
    ```
 
 1. Configure the Azure OpenAI client and image generator in your `Program.cs` file:

@@ -27,8 +27,8 @@ release.
 | Major | `11-daily` | One major version |
 | Major and minor | `11.0-daily` | One major and minor version |
 | SDK feature band | `11.0.1xx-daily` | One SDK feature band |
-| SDK preview phase | `<major>.<minor>.1xx-preview.<phase>-daily` | One SDK feature band and preview phase |
-| Runtime preview phase | `<major>.<minor>.preview.<phase>-daily` | One runtime major/minor and preview phase |
+| SDK preview phase | `11.0.1xx-preview.5-daily` | One SDK feature band and preview phase |
+| Runtime preview phase | `11.0-preview.5-daily` | One runtime major/minor and preview phase |
 
 The compact phase form `preview5` is also accepted where
 `preview.5` is accepted.
@@ -45,7 +45,7 @@ dotnetup sdk install 11.0.1xx-daily
 Track a specific preview phase:
 
 ```dotnetcli
-dotnetup sdk install <major>.<minor>.1xx-preview.<phase>-daily
+dotnetup sdk install 11.0.1xx-preview.5-daily
 ```
 
 ## Install daily runtimes

@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: PackagePart.GetStream() returns a non-seekable stream for compressed parts in ReadWrite packages"
 description: "Learn about the breaking change in .NET 11 where PackagePart.GetStream() returns a forward-only stream instead of a seekable MemoryStream for compressed parts of a ReadWrite package."
-ms.date: 08/04/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 # PackagePart.GetStream() returns a non-seekable stream for compressed parts in ReadWrite packages
@@ -10,7 +10,7 @@ When you open a <xref:System.IO.Packaging.Package> with <System.IO.FileAccess.Re
 
 ## Version introduced
 
-.NET 11 Preview 7
+.NET 11
 
 ## Previous behavior
 

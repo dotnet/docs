@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: NativeAOT CLI command handling enabled by default"
 description: "Learn about the breaking change in .NET 11 where the NativeAOT-compiled command-handling fast path for the dotnet CLI is enabled by default on all platforms."
-ms.date: 08/04/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ Starting in .NET 11, the .NET SDK CLI enables its NativeAOT-compiled command-han
 
 ## Version introduced
 
-.NET 11 Preview 7
+.NET 11
 
 ## Previous behavior
 

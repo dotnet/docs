@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: SafeFileHandle.IsAsync and FileStream.IsAsync accurately reflect non-blocking state on Unix"
 description: "Learn about the breaking change in .NET 11 where SafeFileHandle.IsAsync and FileStream.IsAsync on Unix now accurately reflect whether the underlying file descriptor is in non-blocking mode."
-ms.date: 04/07/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ On Unix, <xref:Microsoft.Win32.SafeHandles.SafeFileHandle.IsAsync?displayPropert
 
 ## Version introduced
 
-.NET 11 Preview 3
+.NET 11
 
 ## Previous behavior
 

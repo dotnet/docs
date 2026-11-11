@@ -2,7 +2,7 @@
 title: Try .NET daily builds with dotnetup
 description: Install, run, update, and remove daily .NET builds.
 ms.topic: how-to
-ms.date: 09/30/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -27,7 +27,7 @@ Limit the request to a release, feature band, or development phase:
 dotnetup sdk install 11-daily
 dotnetup sdk install 11.0-daily
 dotnetup sdk install 11.0.1xx-daily
-dotnetup sdk install 11.0.1xx-preview.5-daily
+dotnetup sdk install <major>.<minor>.1xx-preview.<phase>-daily
 ```
 
 ## Isolate a daily SDK

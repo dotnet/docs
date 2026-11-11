@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: NamedPipeServerStream with PipeOptions.CurrentUserOnly tightens Unix socket file permissions"
 description: "Learn about the breaking change in .NET 11 where NamedPipeServerStream with PipeOptions.CurrentUserOnly sets the Unix socket file mode to 0600."
-ms.date: 05/04/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ To better align on-disk permissions with the documented intent of <xref:System.I
 
 ## Version introduced
 
-.NET 11 Preview 4
+.NET 11
 
 ## Previous behavior
 

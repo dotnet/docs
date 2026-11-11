@@ -3,7 +3,7 @@
 - .NET 8 is an LTS (long-term support) release that's still supported
 - .NET 9 is the latest STS (short-term support) version
 - .NET 10 is the latest LTS version
-- .NET 11 is in preview
+- .NET 11 reached general availability in November 2026
 
 ## `ai-usage` frontmatter
 

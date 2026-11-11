@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: ZipArchive.CreateAsync eagerly loads ZIP archive entries"
 description: "Learn about the breaking change in .NET 11 where ZipArchive.CreateAsync eagerly loads all ZIP archive entries to avoid synchronous reads on the stream."
-ms.date: 02/03/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 # ZipArchive.CreateAsync eagerly loads ZIP archive entries
@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 
 ## Version introduced
 
-.NET 11 Preview 1
+.NET 11
 
 ## Previous behavior
 

@@ -1,7 +1,7 @@
 ---
 title: Task expressions
 description: Learn about support in the F# programming language for writing task expressions, which author .NET tasks directly.
-ms.date: 09/24/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 # Task expressions
@@ -225,9 +225,9 @@ The example's verified component combination is:
 | Component | Version or requirement |
 |---|---|
 | Compiler | The F# 11 compiler supplied by FSharp.Compiler.Service `43.13.101-rc2.26473.112`. |
-| FSharp.Core | Package `11.0.101-rc2.26473.112`, using `lib/net10.0/FSharp.Core.dll`. This build supplies `StateMachineHelpers.__runtimeAsyncReturn`; the `netstandard2.0` and `netstandard2.1` builds don't. |
+| FSharp.Core | Package `11.0.101`, using `lib/net10.0/FSharp.Core.dll`. This build supplies `StateMachineHelpers.__runtimeAsyncReturn`; the `netstandard2.0` and `netstandard2.1` builds don't. |
 | Project target | `net11.0`. |
-| Runtime and reference assemblies | .NET `11.0.0-rc.1.26425.128`. |
+| Runtime and reference assemblies | .NET `11.0.0`. |
 
 These tested components aren't a single SDK distribution. .NET 10.0.12 exposes the reference APIs, but the pause/resume check fails on its runtime with `TypeLoadException`. Use the verified runtime/reference combination above; neither preview mode nor API presence supplies runtime support.
 

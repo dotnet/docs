@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: DeflateStream and GZipStream write headers and footers for empty payload"
 description: "Learn about the breaking change in .NET 11 where DeflateStream and GZipStream always write headers and footers to the output, even for empty payloads."
-ms.date: 01/09/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 ## Version introduced
 
-.NET 11 Preview 1
+.NET 11
 
 ## Previous behavior
 

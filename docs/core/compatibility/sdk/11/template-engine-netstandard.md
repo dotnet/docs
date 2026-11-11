@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Template engine packages no longer support netstandard2.0"
 description: "Learn about the breaking change in .NET 11 where the .NET SDK template engine NuGet packages dropped the netstandard2.0 target framework."
-ms.date: 06/10/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ The .NET SDK template engine NuGet packages no longer target `netstandard2.0`. P
 
 ## Version introduced
 
-.NET 11 Preview 4
+.NET 11
 
 ## Previous behavior
 

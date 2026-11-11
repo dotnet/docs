@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Generated WMI wrappers implement IDisposable"
 description: "Learn about the breaking change in .NET 11 where generated strongly typed WMI collection and enumerator wrappers implement IDisposable."
-ms.date: 10/27/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ Starting in .NET 11, strongly typed WMI collection wrappers and their enumerator
 
 ## Version introduced
 
-.NET 11 RC 2
+.NET 11
 
 ## Previous behavior
 

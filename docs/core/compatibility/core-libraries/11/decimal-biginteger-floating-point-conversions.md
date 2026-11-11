@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Decimal and BigInteger floating-point conversions are correctly rounded"
 description: "Learn about the breaking change in .NET 11 where conversions between Decimal and binary floating-point types, and conversions from BigInteger to binary floating-point types, produce correctly rounded results."
-ms.date: 08/26/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ Conversions between <xref:System.Decimal> and binary floating-point types, and c
 
 ## Version introduced
 
-.NET 11 Preview 7
+.NET 11
 
 ## Previous behavior
 
@@ -97,7 +97,7 @@ For the `BigInteger` example, the converted `double` value is now:
 
 Conversions from `BigInteger` to `float`, `Half`, or `BFloat16` are also correctly rounded.
 
-If a conversion is evaluated as a compile-time constant, a compiler hosted by the .NET 11 Preview 7 SDK or a later SDK can embed the new result in the output assembly when the project is rebuilt, regardless of the project's target framework.
+If a conversion is evaluated as a compile-time constant, a compiler hosted by the .NET 11 SDK or a later SDK can embed the new result in the output assembly when the project is rebuilt, regardless of the project's target framework.
 
 ## Type of breaking change
 

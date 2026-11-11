@@ -73,7 +73,7 @@ Two support tracks exist for releases:
 
   Example:
 
-  * .NET 9 is an STS release that was released in November 2024. It's supported for two years, until November 2026.
+  * .NET 11 is an STS release that was released in November 2026. It's supported for two years, until November 2028.
 
 * *Long Term Support* (LTS) releases
 
@@ -81,7 +81,7 @@ Two support tracks exist for releases:
 
   Example:
 
-  * .NET 8 is an LTS release that was released in November 2023. It's supported for three years, until November 2026.
+  * .NET 10 is an LTS release that was released in November 2025. It's supported for three years, until November 2028.
 
 Releases alternate between LTS and STS.
 
@@ -91,7 +91,7 @@ Servicing updates ship monthly and include both security and non-security (relia
 
 If you're building a service and expect to continue updating it regularly, use the latest release, whether LTS or STS, to stay up to date with the latest features .NET offers.
 
-If you're building a client application for distribution to consumers, stability might be more important than access to the latest features. Your application might need support for a certain period before the consumer can upgrade to the next version of the application. In that case, an LTS release like the .NET 8 runtime could be the right option.
+If you're building a client application for distribution to consumers, stability might be more important than access to the latest features. Your application might need support for a certain period before the consumer can upgrade to the next version of the application. In that case, an LTS release like the .NET 10 runtime could be the right option.
 
 > [!NOTE]
 > Upgrade to the latest SDK version, even if it's an STS release, as it can target all available runtimes.
@@ -126,7 +126,7 @@ You have a choice between Microsoft-assisted support and Community support.
 
 For assisted support, [contact a Microsoft Support Professional](https://support.microsoft.com/supportforbusiness/productselection/?sapid=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).
 
-Use a supported servicing level (the latest available servicing update) to be eligible for support. If a system runs .NET 8 and the 8.0.11 servicing update has been released, then install 8.0.11 as a first step.
+Use a supported servicing level (the latest available servicing update) to be eligible for support. If a system runs .NET 10 and the 10.0.15 servicing update has been released, then install 10.0.15 as a first step.
 
 ### Community support
 

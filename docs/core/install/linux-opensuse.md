@@ -3,7 +3,7 @@ title: Install .NET on openSUSE Leap
 description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on openSUSE Leap.
 author: adegeo
 ms.author: adegeo
-ms.date: 04/23/2026
+ms.date: 11/11/2026
 ms.custom: linux-related-content
 ---
 
@@ -19,7 +19,7 @@ The following table is a list of currently supported .NET releases on openSUSE L
 
 | openSUSE Leap    | .NET     |
 |------------------|----------|
-| 16               | 10, 9, 8 |
+| 16               | 11, 10   |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

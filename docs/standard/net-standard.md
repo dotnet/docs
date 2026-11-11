@@ -99,10 +99,10 @@ If you only need to consume .NET Standard 2.0 libraries in your projects, you ca
 
 ### When to target `netx.0` vs. `netstandard`
 
-For existing code that targets .NET Standard 2.0 or later, there's no need to change the TFM to `net8.0` or a later TFM. .NET 8, .NET 9, .NET 10, and .NET 11 implement .NET Standard 2.1 and earlier. The only reason to retarget from .NET Standard to .NET 8+ would be to gain access to more runtime features, language features, or APIs. For example, to use C# 9, you need to target .NET 5 or a later version. You can multitarget .NET and .NET Standard to get access to newer features and still have your library available to other .NET implementations.
+For existing code that targets .NET Standard 2.0 or later, there's no need to change the TFM just to use a newer .NET release. .NET 10 and .NET 11 implement .NET Standard 2.1 and earlier. The only reason to retarget from .NET Standard to .NET 11 or later would be to gain access to more runtime features, language features, or APIs. For example, to use C# 9, you need to target .NET 5 or a later version. You can multitarget .NET and .NET Standard to get access to newer features and still have your library available to other .NET implementations.
 
 > [!NOTE]
-> If your project targets .NET Standard 1.x, we recommend you retarget it to .NET Standard 2.0 or .NET 8+. For more information, see [Warning emitted for .NET Standard 1.x targets](../core/compatibility/sdk/9.0/netstandard-warning.md).
+> If your project targets .NET Standard 1.x, we recommend you retarget it to .NET Standard 2.0 or .NET 11+. For more information, see [Warning emitted for .NET Standard 1.x targets](../core/compatibility/sdk/9.0/netstandard-warning.md).
 
 Here are some guidelines for new code for .NET 5+:
 

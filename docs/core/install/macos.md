@@ -32,6 +32,7 @@ The following table lists the supported .NET releases, and which macOS they're s
 
 | macOS Version          | .NET           |
 |------------------------|----------------|
+| macOS 27               | 11.0, 10.0      |
 | macOS 26 "Tahoe"       | 11.0, 10.0      |
 | macOS 15 "Sequoia"     | 11.0, 10.0      |
 | macOS 14 "Sonoma"      | 10.0            |

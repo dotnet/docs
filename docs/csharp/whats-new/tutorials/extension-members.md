@@ -30,7 +30,7 @@ In this tutorial, you:
 - The [.NET 11 SDK](https://dotnet.microsoft.com/download/dotnet/11.0).
 - An editor such as Visual Studio 2026 or Visual Studio Code with the C# Dev Kit.
 
-This sample targets `net11.0`, which selects C# 15 by default. Extension indexers don't require `<LangVersion>preview</LangVersion>`.
+This sample targets `net11.0`, which selects C# 15 by default.
 
 ## Create the sample application
 

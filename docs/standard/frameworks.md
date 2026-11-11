@@ -159,7 +159,7 @@ Target frameworks are specified in a project file. When a single target framewor
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
   </PropertyGroup>
 
 </Project>

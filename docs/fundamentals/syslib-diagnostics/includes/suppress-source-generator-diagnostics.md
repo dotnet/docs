@@ -20,7 +20,7 @@ To suppress the warnings in a project file (replace the diagnostic IDs as necess
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-   <TargetFramework>net10.0</TargetFramework>
+   <TargetFramework>net11.0</TargetFramework>
    <!-- NoWarn below suppresses SYSLIB1002 project-wide -->
    <NoWarn>$(NoWarn);SYSLIB1002</NoWarn>
    <!-- To suppress multiple warnings, you can use multiple NoWarn elements -->

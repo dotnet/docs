@@ -983,22 +983,6 @@ These join the existing `MediaTypeNames.Application`, `MediaTypeNames.Image`, `M
 
 The high-cardinality HTTP `open_connections` and `active_requests` metrics are now observable instruments instead of regular counters. If you use <xref:System.Diagnostics.Metrics.MeterListener> directly to read these metrics, call <xref:System.Diagnostics.Metrics.MeterListener.RecordObservableInstruments?displayProperty=nameWithType> to receive measurements from them.
 
-## Unsafe API accessibility
-
-.NET 11 removes the `[RequiresUnsafe]` attribute from a large set of APIs that take pointer parameters. Previously, calling these methods from code that used `unsafe` blocks still required a project-level `<AllowUnsafeBlocks>true</AllowUnsafeBlocks>` setting because the attribute enforced that requirement independently. Now, only the standard `unsafe` block or method modifier is required.
-
-Affected APIs include:
-
-- <xref:System.Buffer.MemoryCopy*?displayProperty=nameWithType>
-- <xref:System.ReadOnlySpan`1.%23ctor(System.Void*,System.Int32)?displayProperty=nameWithType> and <xref:System.Span`1.%23ctor(System.Void*,System.Int32)?displayProperty=nameWithType>
-- <xref:System.Runtime.CompilerServices.Unsafe?displayProperty=fullName> pointer methods such as `AsRef`, `Read`, `Write`, and `Copy`
-- <xref:System.Runtime.InteropServices.NativeMemory?displayProperty=fullName> methods
-- <xref:System.Text.Encoding?displayProperty=fullName> pointer overloads (all encoding classes)
-- <xref:System.Numerics.Vector?displayProperty=fullName> pointer-based `Load` and `Store` methods
-- Interop marshalling types in <xref:System.Runtime.InteropServices.Marshalling?displayProperty=fullName>
-
-This change reduces friction for advanced scenarios such as interop authoring, memory-mapped files, and low-level buffer manipulation, where unsafe context is already required by the calling code.
-
 ## See also
 
 - [What's new in the .NET 11 runtime](runtime.md)

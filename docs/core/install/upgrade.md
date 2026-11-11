@@ -23,6 +23,8 @@ The .NET website offers [installers and archives](https://dotnet.microsoft.com/d
 
 Some operating systems have a package manager that you can also use to install a new .NET version, which you might prefer.
 
+For user-level installations, [dotnetup](../tools/dotnetup/index.md) can track and update .NET SDKs and runtimes.
+
 - [macOS](https://formulae.brew.sh/cask/dotnet-sdk)
 - [Linux](linux.md)
 - [Windows](https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/DotNet/SDK)

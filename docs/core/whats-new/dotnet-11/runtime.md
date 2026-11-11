@@ -9,7 +9,7 @@ ms.update-cycle: 3650-days
 
 # What's new in the .NET 11 runtime
 
-This article describes new features in the .NET runtime for .NET 11.
+This article describes new features in the .NET runtime for .NET 11. It was last updated for the general availability (GA) release.
 
 ## Updated minimum hardware requirements
 
@@ -61,7 +61,7 @@ For more information, see [Minimum hardware requirements updated](../../compatib
 
 .NET 11 introduces runtime-native async (Runtime Async V2), a significant step toward replacing compiler-generated async state machines with runtime-managed suspension and resumption. Instead of the compiler emitting state-machine classes, the runtime itself tracks async execution, producing cleaner stack traces, better debuggability, and lower overhead.
 
-Runtime Async is a preview feature. To opt in, add the following property to your project file:
+To enable Runtime Async in a project that targets `net11.0`, add the following property to your project file:
 
 ```xml
 <PropertyGroup>
@@ -335,6 +335,9 @@ If your app relies on `FileShare` enforcement and you accept the risk of suspens
 The runtime includes fixes for the following issues:
 
 - On Linux, the SDK no longer crashes on Red Hat Enterprise Linux (RHEL) 8 on Arm64, and the runtime correctly traverses cgroup v2 memory limits at the root of the hierarchy.
+- Array marshalling to native code now produces correct values and avoids unexpected exceptions.
+- Sharing Unix named mutexes with older .NET processes no longer causes spurious abandoned-mutex errors.
+- On macOS, terminating a process tree no longer hangs.
 - Generic virtual method dispatch no longer hangs after repeated <xref:System.Runtime.Loader.AssemblyLoadContext> unloads.
 - <xref:System.Collections.Concurrent.ConcurrentQueue`1.TryDequeue*> no longer spuriously reports an empty queue while a segment freezes during growth. <xref:System.Collections.Concurrent.ConcurrentQueue`1.TryPeek*> has the same reliability fix.
 - On Windows, garbage collection works correctly on machines with multiple CPU groups.

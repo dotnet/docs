@@ -9,7 +9,7 @@ ms.update-cycle: 3650-days
 
 # What's new in .NET 11
 
-This article describes new features in .NET 11.
+This article describes new features in .NET 11. It was last updated for the general availability (GA) release.
 
 .NET 11 is generally available. You can [download .NET 11 here](https://dotnet.microsoft.com/download/dotnet/11.0).
 
@@ -24,6 +24,7 @@ The .NET 11 runtime includes:
 - JIT improvements for bounds check elimination, redundant checked context removal, devirtualization, switch expression folding, constant-folding `SequenceEqual`, and redundant branch elimination. There are also new Arm SVE2 intrinsics, improved hardware-intrinsic cost modeling, and a faster `Math.BigMul` on x64 that emits a single `MUL` instruction.
 - CoreCLR on WebAssembly now runs the libraries test suite end to end, and the runtime adds AVX-VNNI-512 hardware intrinsics for vectorized multiply-add workloads.
 - In-process crash report logging that captures the managed stack trace and runtime state before the process exits, available on mobile platforms as well as Linux and macOS.
+- Reliability fixes address native array marshalling, abandoned-mutex reporting for Unix named mutexes shared with older .NET processes, and process-tree termination hangs on macOS.
 - NativeAOT faster interface dispatch using a shared dispatch helper, reducing binary size at call sites and improving throughput for interface-heavy workloads.
 - SIMD lane construction and composition APIs (`CreateGeometricSequence`, `Zip`, `Unzip`, and the `Concat` family) across `Vector128<T>`, `Vector256<T>`, `Vector512<T>`, `Vector64<T>`, and `Vector<T>`.
 - Hardware FP16 instructions for `Half` arithmetic and conversions on x64 and Arm64.
@@ -36,8 +37,9 @@ For more information, see [What's new in the .NET 11 runtime](runtime.md).
 The .NET 11 libraries include new APIs for:
 
 - <xref:System.Diagnostics.Process> expansion with run-and-capture helpers, fire-and-forget launches, <xref:Microsoft.Win32.SafeHandles.SafeProcessHandle> lifecycle methods, tighter handle control, new <xref:System.Diagnostics.ProcessStartInfo.StartSuspended?displayProperty=nameWithType> for suspended starts, <xref:System.Diagnostics.Process.TryGetProcessById(System.Int32,System.Diagnostics.Process@)?displayProperty=nameWithType> for safe process lookup, and <xref:System.Diagnostics.Process.Signal(System.Runtime.InteropServices.PosixSignal)?displayProperty=nameWithType> with <xref:System.Diagnostics.ProcessExitStatus> for signaling processes and inspecting how they exited.
-- Compression, including improved Base64 APIs, new methods for ZIP archive entries, Zstandard compression in <xref:System.IO.Compression?displayProperty=fullName>, CRC32 validation when reading ZIP entries, and a `Reset()` method on the streamless Deflate, ZLib, and GZip encoders and decoders.
+- Compression, including improved Base64 APIs, new methods for ZIP archive entries, Zstandard compression in <xref:System.IO.Compression?displayProperty=fullName>, CRC32 validation when reading ZIP entries, and a `Reset()` method on the streamless Deflate, ZLib, and GZip encoders and decoders. Zstandard dictionary training returns raw bytes that you pass to <xref:System.IO.Compression.ZstandardDictionary.Create*>.
 - New numeric APIs, including IEEE 754 decimal floating-point types (<xref:System.Numerics.Decimal32>, <xref:System.Numerics.Decimal64>, and <xref:System.Numerics.Decimal128>), <xref:System.Numerics.INumberBase`1.TryParsePartial*?displayProperty=nameWithType> for delimiter-aware parsing, and generic <xref:System.Numerics.Complex`1>.
+- The `System.Numerics.Tensors` package updates shape alignment and rejects unsupported overlapping storage layouts.
 - System.Text.Json improvements, including C# and F# union support, JSON Lines (JSONL) output, expanded polymorphism and source generation, new naming and ignore controls, and built-in numeric converters and collection contracts.
 - Built-in OpenTelemetry metrics for <xref:Microsoft.Extensions.Caching.Memory.MemoryCache>.
 - Union scaffolding (`UnionAttribute` and `IUnion`) in <xref:System.Runtime.CompilerServices>.
@@ -59,6 +61,7 @@ The .NET 11 libraries include new APIs for:
 - Cross-lane vector operations including `CreateGeometricSequence`, `Zip`, `Unzip`, and the `Concat` family on `Vector128<T>`, `Vector256<T>`, `Vector512<T>`, `Vector64<T>`, and `Vector<T>`.
 - Incremental Concise Binary Object Representation (CBOR) reading with <xref:System.Formats.Cbor.CborReader>.
 - Experimental composite Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM) and Hybrid Public Key Encryption (HPKE) APIs, plus ML-KEM recipient support in <xref:System.Security.Cryptography.Pkcs.EnvelopedCms>.
+- Hybrid Public Key Encryption support includes managed implementations for supported suites, and asynchronous JSON Lines serialization streams entries without buffering each full entry.
 - `ValidationAttribute.FormatMessage` for formatting validation messages with attribute-specific arguments.
 - `SocketsHttpHandler.InitialHttp2MaxConcurrentStreams` to limit initial HTTP/2 concurrency before the server's `SETTINGS` frame arrives.
 - More accurate IEEE decimal transcendental functions on <xref:System.Numerics.Decimal32>, <xref:System.Numerics.Decimal64>, and <xref:System.Numerics.Decimal128>, and renamed `MemoryCache` metric attributes.
@@ -84,9 +87,11 @@ The .NET 11 SDK includes:
 - Built-in test templates support xUnit v3 (defaulting to Microsoft.Testing.Platform) and NUnit with an opt-in `--test-runner` option.
 - Multi-architecture container image builds with Podman using the SDK's container publishing support.
 - Container publishing now prefers platform-native local runtimes (`wslc` on Windows and `container` on macOS) before Docker and Podman, produces reproducible image digests through `SOURCE_DATE_EPOCH`, and skips redundant layer uploads when the target manifest already exists.
+- Native AOT publishing keeps optimized publishing opt-in, and `dotnet watch` restores automatic browser refresh for static server-side rendered Blazor pages that use WebAssembly or Auto interactivity.
 - TypeScript compilation outputs from Razor Class Libraries now integrate correctly with the Static Web Assets pipeline.
 - `dotnet format` limits `.editorconfig` discovery in folder mode to the ancestor directories of included files.
 - The `dotnet` CLI no longer suppresses the MSBuild build server when `DOTNET_CLI_USE_MSBUILD_SERVER` is unset, and the OTLP telemetry exporter activates on any standard `OTEL_EXPORTER_OTLP_*` environment variable.
+- Concurrent .NET tool installation, update, and removal operations no longer race with one another.
 - Quoted values in file-based `#:property` directives and trailing `Name=Value` item metadata on `#:package`, `#:project`, and `#:ref` directives.
 - MSBuild property expansion in launch-profile `commandLineArgs` values when you use `dotnet run`.
 - Faster MSBuild wildcard matching during project evaluation.

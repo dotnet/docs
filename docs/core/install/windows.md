@@ -68,6 +68,10 @@ If you're unsure which method you should choose after reviewing the lists in the
 
   Use **WinGet** to install .NET when you want to manage .NET through the command line. This method can install the SDK and Runtime. Installs are performed system-wide.
 
+- [dotnetup](../tools/dotnetup/index.md)
+
+  Use dotnetup to manage user-level .NET SDK and runtime installations across Windows, macOS, and Linux.
+
 - [PowerShell](#install-with-powershell)
 
   A PowerShell script that can automate the install of the SDK or Runtime. You can choose which version of .NET to install.

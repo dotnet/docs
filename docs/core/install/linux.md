@@ -53,6 +53,8 @@ You can install .NET manually in the following ways:
 
 You might need to install [.NET dependencies](https://github.com/dotnet/core/blob/main/release-notes/8.0/linux-packages.md) if you install .NET manually.
 
+For user-level installations, [dotnetup](../tools/dotnetup/index.md) can track and update .NET SDKs and runtimes.
+
 ## Additional sources
 
 .NET is also available from other sources. The packages and containers use a name similar to one of the following names:

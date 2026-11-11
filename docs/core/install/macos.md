@@ -72,6 +72,10 @@ If you're unsure which method you should choose after reviewing the lists in the
 
   Use the standalone installer to install .NET. This method is the typical way to install .NET on your developer or user machine.
 
+- [dotnetup](../tools/dotnetup/index.md)
+
+  Use dotnetup to manage user-level .NET SDK and runtime installations across macOS, Windows, and Linux.
+
 - [Install .NET with a script](#install-net-with-a-script)
 
   A bash script that can automate the install of the SDK or Runtime. You can choose which version of .NET to install.

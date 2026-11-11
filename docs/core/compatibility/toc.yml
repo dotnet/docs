@@ -158,6 +158,8 @@ items:
                 href: sdk/11/native-local-container-runtimes.md
               - name: Template engine packages no longer support netstandard2.0
                 href: sdk/11/template-engine-netstandard.md
+              - name: Template package installation verifies NuGet signatures
+                href: sdk/11/template-package-signature-verification.md
               - name: VSTest removes dependency on Newtonsoft.Json
                 href: sdk/11/vstest-removes-newtonsoft-json.md
       - name: .NET 10
@@ -324,6 +326,8 @@ items:
                 href: sdk/10.0/prune-packagereference-privateassets.md
               - name: "'ToolCommandName' not set for non-tool packages"
                 href: sdk/10.0/toolcommandname-not-set.md
+              - name: Template package installation verifies NuGet signatures
+                href: sdk/11/template-package-signature-verification.md
           - name: Serialization
             items:
               - name: System.Text.Json checks for property name conflicts
@@ -462,6 +466,8 @@ items:
                 href: sdk/9.0/default-rid.md
               - name: Terminal logger is default
                 href: sdk/9.0/terminal-logger.md
+              - name: Template package installation verifies NuGet signatures
+                href: sdk/11/template-package-signature-verification.md
               - name: Version requirements
                 href: sdk/9.0/version-requirements.md
               - name: Warning emitted for .NET Standard 1.x targets
@@ -678,6 +684,8 @@ items:
                 href: sdk/10.0/dotnet-nuget-sign-sha1-deprecated.md
               - name: Source Link included in the .NET SDK
                 href: sdk/8.0/source-link.md
+              - name: Template package installation verifies NuGet signatures
+                href: sdk/11/template-package-signature-verification.md
               - name: Trimming can't be used with .NET Standard or .NET Framework
                 href: sdk/8.0/trimming-unsupported-targetframework.md
               - name: Unlisted packages not installed by default

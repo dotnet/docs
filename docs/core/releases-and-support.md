@@ -1,7 +1,7 @@
 ---
 title: .NET releases, patches, and support
 description: Learn about releases, patches, and support for .NET.
-ms.date: 05/15/2026
+ms.date: 11/11/2026
 ms.custom: updateeachrelease
 ms.topic: overview
 ai-usage: ai-assisted
@@ -17,9 +17,8 @@ Microsoft ships major releases, minor releases, and servicing updates (patches) 
 
 The following versions of .NET are currently supported:
 
+- .NET 11 ([Standard Term Support](#release-tracks)) - supported until November 2028.
 - .NET 10 ([Long Term Support](#release-tracks)) - supported until November 2028.
-- .NET 9 ([Standard Term Support](#release-tracks)) - supported until November 2026.
-- .NET 8 ([Long Term Support](#release-tracks)) - supported until November 2026.
 
 For the complete list of supported versions and their end-of-support dates, see the [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 

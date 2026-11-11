@@ -19,7 +19,7 @@ For information about what's new in the .NET SDK, code analysis, and diagnostics
 
 ## C# 12
 
-C# 12 shipped with the .NET 8 SDK. For more information, see [What's new in C# 12](../../../csharp/whats-new/csharp-12.md).
+C# 12 shipped with the .NET 8 SDK. For more information, see [C# 12 in the C# version history](../../../csharp/whats-new/csharp-version-history.md#c-version-12).
 
 ## Aspire
 

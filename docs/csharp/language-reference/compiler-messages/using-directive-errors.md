@@ -275,7 +275,7 @@ See the [using alias](../keywords/using-directive.md#the-using-alias) language r
 - In script or submission code, rename the using alias or the conflicting submission member so their names are unique (**CS7016**). The diagnostic identifies the member kind, such as `field` or `type`.
 - Remove the `static` modifier when declaring an alias, because aliases and static imports are mutually exclusive - use either `using static` to import members or `using Alias =` to create an alias, but not both together (**CS8085**).
 
-Starting with C# 12, the following restrictions apply to using aliases:
+The following restrictions apply to using aliases:
 
 - Don't use `ref`, `in`, or `out` modifiers in a using alias, because these parameter modifiers aren't valid in type alias contexts (**CS9130**).
 - Use the `unsafe` modifier only with aliases that reference pointer types or with `using static` directives, because `unsafe` without an alias or static import isn't permitted (**CS9131**).

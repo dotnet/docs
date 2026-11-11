@@ -42,7 +42,7 @@ A field can be declared [`required`](../../language-reference/keywords/required.
 
 The `required` modifier can't be combined with the `readonly` modifier on the same field. However, [property](./properties.md) can be `required` and `init` only.
 
-Beginning with C# 12, [Primary constructor](./instance-constructors.md#primary-constructors) parameters are an alternative to declaring fields. When your type has dependencies that must be provided at initialization, you can create a primary constructor that provides those dependencies. These parameters may be captured and used in place of declared fields in your types. In the case of [`record`](../../language-reference/builtin-types/record.md) types, primary constructor parameters are surfaced as public properties.
+[Primary constructor](./instance-constructors.md#primary-constructors) parameters are an alternative to declaring fields. When your type has dependencies that must be provided at initialization, you can create a primary constructor that provides those dependencies. These parameters may be captured and used in place of declared fields in your types. In the case of [`record`](../../language-reference/builtin-types/record.md) types, primary constructor parameters are surfaced as public properties.
 
 ## C# language specification
 

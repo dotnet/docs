@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Floating-point conversions to small integral types are saturating"
 description: "Learn about the breaking change in .NET 11 where unchecked floating-point conversions to small integral types saturate at the destination type's bounds."
-ms.date: 09/10/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/runtime/pull/128604
 ---
@@ -18,7 +18,7 @@ For more information, see [dotnet/runtime#128604](https://github.com/dotnet/runt
 
 ## Version introduced
 
-.NET 11 Preview 7
+.NET 11
 
 ## Previous behavior
 

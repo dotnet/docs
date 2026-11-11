@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) test reports
 description: Learn about the MTP extensions that create test report files (TRX, HTML, JUnit, CTRF, Azure DevOps, GitHub Actions).
 author: evangelink
 ms.author: amauryleve
-ms.date: 11/05/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -40,7 +40,7 @@ If a default or explicit TRX, HTML, or JUnit file name already exists for a test
 
 ## Report consolidation
 
-Starting with MTP 2.4.0, MTP automatically post-processes report artifacts after retry support runs multiple attempts. For a `dotnet test` invocation that runs multiple test modules, automatic post-processing also requires .NET 11 RC 1 or later. The feature is experimental in MTP 2.4.0.
+Starting with MTP 2.4.0, MTP automatically post-processes report artifacts after retry support runs multiple attempts. For a `dotnet test` invocation that runs multiple test modules, automatic post-processing also requires .NET 11 or later. The feature is experimental in MTP 2.4.0.
 
 The TRX, JUnit, CTRF, and HTML extensions group compatible artifacts by report kind and write a consolidated report under the test results directory's `merged` subdirectory. CTRF consolidation combines module results and collapses retry attempts into the final test result with retry history. HTML consolidation creates a merged summary and preserves the original per-process reports.
 

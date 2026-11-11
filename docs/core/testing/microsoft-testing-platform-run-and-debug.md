@@ -3,7 +3,7 @@ title: Run and debug tests with Microsoft.Testing.Platform (MTP)
 description: Learn how to run and debug MTP test projects from CLI, Visual Studio, Visual Studio Code, and CI pipelines.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 11/05/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -73,7 +73,7 @@ For more information on `dotnet exec`, see [dotnet exec](../tools/dotnet.md#opti
 
 ### Use `dotnet test`
 
-Starting with the .NET 10 SDK, [`dotnet test`](../tools/dotnet-test-mtp.md) has a dedicated MTP mode. Select MTP through `global.json`, or use the `DOTNET_TEST_RUNNER` environment variable with .NET 11 Preview 6 or later. The dedicated mode supports projects, solutions, built test modules, and additional input types in newer SDK versions.
+Starting with the .NET 10 SDK, [`dotnet test`](../tools/dotnet-test-mtp.md) has a dedicated MTP mode. Select MTP through `global.json`, or use the `DOTNET_TEST_RUNNER` environment variable with .NET 11 or later. The dedicated mode supports projects, solutions, built test modules, and additional input types in newer SDK versions.
 
 ```dotnetcli
 dotnet test --test-modules Contoso.MyTests.dll

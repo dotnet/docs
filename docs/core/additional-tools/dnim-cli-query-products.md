@@ -2,7 +2,7 @@
 title: dnim query products command
 description: The query releases command provides information about specific .NET products.
 author: joeloff
-ms.date: 08/11/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -59,7 +59,7 @@ The example below lists all products whose support phase is not `eol`. The secur
 
 | Version | Support | Release type | Latest release | Latest release date | Latest SDK | Latest runtime | End of support | Security update |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 11.0 | GoLive | STS | 11.0.0-rc.1 | 9/8/2026 | 11.0.100-rc.1.26425.128 | 11.0.0-rc.1.26425.128 | n/a | True |
+| 11.0 | Active | STS | 11.0.0 | 11/10/2026 | 11.0.100 | 11.0.0 | n/a | True |
 | 10.0 | Active | LTS | 10.0.12 | 9/8/2026 | 10.0.401 | 10.0.12 | 11/14/2028 | True |
 | 9.0 | Maintenance | STS | 9.0.20 | 9/8/2026 | 9.0.318 | 9.0.20 | 11/10/2026 | True |
 | 8.0 | Maintenance | LTS | 8.0.31 | 9/8/2026 | 8.0.425 | 8.0.31 | 11/10/2026 | True |

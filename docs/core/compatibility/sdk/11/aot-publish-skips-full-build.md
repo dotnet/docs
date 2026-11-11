@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Full build skipped for Native AOT publish"
 description: "Learn about the breaking change in .NET 11 where the .NET SDK only compiles intermediate assemblies for Native AOT publish and skips the full Build target."
-ms.date: 10/27/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ Starting in .NET 11, the .NET SDK no longer executes the full `Build` target whe
 
 ## Version introduced
 
-.NET 11 RC 2
+.NET 11
 
 ## Previous behavior
 

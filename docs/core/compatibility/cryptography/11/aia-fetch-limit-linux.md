@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Linux AIA certificate fetching limited to two fetches per chain build"
 description: "Learn about the breaking change in .NET 11 where certificate chain building on OpenSSL-based platforms performs at most two Authority Information Access (AIA) fetches."
-ms.date: 08/04/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ On Linux and other OpenSSL-based platforms, certificate chain building via Autho
 
 ## Version introduced
 
-.NET 11 Preview 7
+.NET 11
 
 ## Previous behavior
 

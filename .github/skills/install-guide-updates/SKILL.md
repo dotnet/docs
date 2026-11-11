@@ -12,7 +12,7 @@ Update an existing Linux installation article so that its supported operating sy
 ## Scope
 
 - Document .NET 8, .NET 9, and .NET 10.
-- Don't document .NET 11 or another preview release in the installation guide.
+- Don't document a release that isn't listed in the authoritative sources or any preview release in the installation guide.
 - Preserve the article's existing structure, Markdown style, and distribution-specific package-manager syntax.
 - Limit edits to support information, end-of-life notes, prerequisites, and directly related text unless another change is required for consistency.
 
@@ -58,7 +58,7 @@ Source URLs:
    - Remove distribution versions that aren't supported for that .NET release.
    - Preserve architecture or support qualifiers from the source when the article represents them.
 3. Update related end-of-life or end-of-support notes only when an authoritative source confirms the date. Don't invent or estimate dates.
-4. Remove preview-version rows and notes, including .NET 11.
+4. Remove preview-version rows and notes.
 
 ### 4. Update native dependencies
 
@@ -83,7 +83,7 @@ Source URLs:
 1. Compare every documented support row with the matching `supported-os.json` entry.
 2. Compare every .NET 9 and .NET 10 dependency list with the matching `os-packages.json` entry. The package sets must match exactly.
 3. Verify that every .NET 8 dependency path includes the correct zlib package.
-4. Search the changed article for `libgdiplus`, `.NET 11`, and preview installation-guide content; remove any instances that violate this workflow.
+4. Search the changed article for `libgdiplus` and preview installation-guide content; remove any instances that violate this workflow.
 5. Check that Markdown tables, links, includes, selectors, and code blocks remain syntactically valid. Run the narrowest available repository validation for the changed files.
 6. Review the final diff for unrelated changes.
 

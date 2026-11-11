@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: dnx scripts bypass global.json SDK selection"
 description: "Learn about the breaking change in .NET 11 where the dnx and dnx.cmd scripts no longer respect global.json for SDK selection."
-ms.date: 07/05/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ The `dnx` and `dnx.cmd` scripts no longer use the .NET muxer to select the SDK v
 
 ## Version introduced
 
-.NET 10 SDK 10.0.302, 10.0.400, and .NET 11 Preview 6
+.NET 10 SDK 10.0.302, 10.0.400, and .NET 11
 
 ## Previous behavior
 
@@ -21,7 +21,7 @@ Previously, the `dnx` scripts invoked `dotnet dnx`, which relied on the .NET mux
 Unrecognized command or argument 'execute'
 ```
 
-Starting with .NET 10 SDK 10.0.302 (and later) and .NET 11 Preview 6, the `dnx` and `dnx.cmd` scripts use `dotnet --list-sdks` to identify the newest installed SDK. They then invoke `dotnet exec <sdk-path>/dotnet.dll dnx` directly, bypassing the .NET muxer and any `global.json` SDK pinning.
+Starting with .NET 10 SDK 10.0.302 (and later) and .NET 11, the `dnx` and `dnx.cmd` scripts use `dotnet --list-sdks` to identify the newest installed SDK. They then invoke `dotnet exec <sdk-path>/dotnet.dll dnx` directly, bypassing the .NET muxer and any `global.json` SDK pinning.
 
 ## Type of breaking change
 

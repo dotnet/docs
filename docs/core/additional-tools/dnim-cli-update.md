@@ -2,7 +2,7 @@
 title: dnim update command
 description: The update command updates existing .NET installations.
 author: joeloff
-ms.date: 09/16/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -119,11 +119,11 @@ The command will first remove any applicable installs before applying updates. T
 
 ## Results
 
-The results are similar to that of the uninstall command, but additional columns showing the update action and target version are included.
+The results are similar to that of the uninstall command, but additional columns showing the update action and target version are included. Version values depend on the installed and latest available releases.
 
 | Display Name | Release | Type | Support | Uninstall Action | Update Action | Update Version |
 | --- | --- | --- | --- | --- | --- | --- |
-| Microsoft Windows Desktop Runtime 11.0.0 (x64) | 11.0.0-preview.7.26381.103 | Bundle | GoLive | Uninstall | Update | 11.0.0-rc.1.26425.128 |
+| Microsoft Windows Desktop Runtime 11.0.0 (x64) | `<installed-version>` | Bundle | GoLive | Uninstall | Update | `<latest-version>` |
 
 ## Examples
 

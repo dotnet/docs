@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: HttpClient high-cardinality metrics use observable counters"
 description: "Learn about the breaking change in .NET 11 where the http.client.open_connections and http.client.active_requests metrics become observable counters."
-ms.date: 09/16/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/runtime/issues/133895
 ---
@@ -12,7 +12,7 @@ Starting in .NET 11, the `http.client.open_connections` and `http.client.active_
 
 ## Version introduced
 
-.NET 11 RC 1
+.NET 11
 
 ## Previous behavior
 

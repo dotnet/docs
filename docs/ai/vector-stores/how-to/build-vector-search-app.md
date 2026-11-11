@@ -84,7 +84,7 @@ Complete the following steps to create a .NET console app that can:
     :::zone target="docs" pivot="openai"
 
     ```bash
-    dotnet package add Microsoft.Extensions.AI.OpenAI --prerelease
+    dotnet package add Microsoft.Extensions.AI.OpenAI
     dotnet package add CommunityToolkit.VectorData.InMemory
     dotnet package add Microsoft.Extensions.Configuration
     dotnet package add Microsoft.Extensions.Configuration.UserSecrets

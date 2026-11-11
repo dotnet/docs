@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: IHost.RunAsync and IHost.StopAsync throw when a BackgroundService fails"
 description: "Learn about the breaking change in .NET 11 where IHost.RunAsync, IHost.StopAsync, and related methods throw an exception when a BackgroundService fails."
-ms.date: 04/03/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ When a <xref:Microsoft.Extensions.Hosting.BackgroundService> fails with an excep
 
 ## Version introduced
 
-.NET 11 Preview 3
+.NET 11
 
 ## Previous behavior
 

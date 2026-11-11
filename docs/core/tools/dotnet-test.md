@@ -1,7 +1,7 @@
 ---
 title: dotnet test command
 description: The dotnet test command is used to execute unit tests in a given project.
-ms.date: 09/12/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 # dotnet test
@@ -37,7 +37,7 @@ With the .NET 10 SDK and later versions, select Microsoft.Testing.Platform (MTP)
 > [!IMPORTANT]
 > The `dotnet test` experience for MTP is only supported in `Microsoft.Testing.Platform` version 1.7 and later.
 
-Starting with .NET 11 Preview 6, set the `DOTNET_TEST_RUNNER` environment variable to select the runner without changing `global.json`. The environment variable accepts `VSTest` or `Microsoft.Testing.Platform`, without regard to case, and overrides the `global.json` value:
+Starting with .NET 11, set the `DOTNET_TEST_RUNNER` environment variable to select the runner without changing `global.json`. The environment variable accepts `VSTest` or `Microsoft.Testing.Platform`, without regard to case, and overrides the `global.json` value:
 
 ```powershell
 $env:DOTNET_TEST_RUNNER = "Microsoft.Testing.Platform"

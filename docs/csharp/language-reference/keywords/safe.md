@@ -1,7 +1,7 @@
 ---
 description: "safe modifier - C# Reference"
 title: "safe modifier"
-ms.date: 10/20/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 f1_keywords:
   - "safe_CSharpKeyword"
@@ -26,7 +26,7 @@ Certain declarations require an explicit choice of `safe` or `unsafe` when the u
 
 Unlike `unsafe`, `safe` doesn't establish a lexical context. It doesn't make unsafe operations in a member body safe or cancel an enclosing unsafe context. You can't combine the `safe` and `unsafe` modifiers on the same declaration; doing so produces CS9388.
 
-In newer compilers, `safe` declarations also require [`AllowUnsafeBlocks`](../compiler-options/language.md#allowunsafeblocks), even though callers don't need an unsafe context. Set `<AllowUnsafeBlocks>true</AllowUnsafeBlocks>` in your project file to resolve **CS9401**. This modifier check is independent of the updated-rules enforcement opt-in. Roslyn documents it as introduced in Visual Studio 2026 version 18.13, after .NET 11.0.100; the .NET 11 RC2 compiler doesn't enforce this requirement for `safe`. For the compiler boundary and the distinction from **CS0227** on unsafe blocks, see [Unsafe context requirements](../compiler-messages/unsafe-code-errors.md#unsafe-context-requirements).
+In newer compilers, `safe` declarations also require [`AllowUnsafeBlocks`](../compiler-options/language.md#allowunsafeblocks), even though callers don't need an unsafe context. Set `<AllowUnsafeBlocks>true</AllowUnsafeBlocks>` in your project file to resolve **CS9401**. This modifier check is independent of the updated-rules enforcement opt-in. Roslyn documents it as introduced in Visual Studio 2026 version 18.13, after .NET 11.0.100; the .NET 11.0.100 compiler doesn't enforce this requirement for `safe`. For the compiler boundary and the distinction from **CS0227** on unsafe blocks, see [Unsafe context requirements](../compiler-messages/unsafe-code-errors.md#unsafe-context-requirements).
 
 ## Extern members
 

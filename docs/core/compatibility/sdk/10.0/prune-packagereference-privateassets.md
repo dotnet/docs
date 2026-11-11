@@ -21,7 +21,7 @@ For example, consider a multi-targeting project with the following configuration
 
 ```xml
 <PropertyGroup>
-  <TargetFramework>net10.0;net472</TargetFramework>
+  <TargetFramework>net11.0;net472</TargetFramework>
 </PropertyGroup>
 
 <ItemGroup>

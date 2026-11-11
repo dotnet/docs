@@ -18,7 +18,7 @@ To create an MSTest project, set the `Sdk` attribute to `MSTest.Sdk` along with 
 <Project Sdk="MSTest.Sdk/4.1.0">
 
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
   </PropertyGroup>
 
 </Project>
@@ -33,7 +33,7 @@ To simplify version management across multiple test projects, we recommend speci
 <Project Sdk="MSTest.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
   </PropertyGroup>
 
 </Project>

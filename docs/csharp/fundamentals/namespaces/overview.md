@@ -96,7 +96,7 @@ Choose imports according to how widely you need a namespace or type throughout y
 
 ### Implicit usings
 
-*Implicit usings* provide a default set of imports based on your project type. The .NET SDK generates these imports as global using directives, so they apply throughout your project. New console projects enable them with this setting:
+*Implicit usings* provide a default set of imports based on your project type. The .NET SDK generates these imports as global `using` directives, so they apply throughout your project. New console projects enable them with this setting:
 
 ```xml
 <ImplicitUsings>enable</ImplicitUsings>
@@ -106,11 +106,11 @@ For example, console project templates enable imports that include `System`, `Sy
 
 To manage every import explicitly, set `ImplicitUsings` to `disable` and add regular or global directives for the namespaces you need. Disabling implicit usings doesn't disable global directives you wrote yourself.
 
-The examples in this article belong to a console project with implicit usings enabled. For the default lists and project configuration options, see [Implicit using directives](../../../core/project-sdk/overview.md#implicit-using-directives).
+The examples in this article belong to a console project with implicit usings enabled. For the default lists and project configuration options, see [Implicit `using` directives](../../../core/project-sdk/overview.md#implicit-using-directives).
 
 ### Global using directives
 
-Add *global using directives* for other namespaces used throughout your project, such as shared company libraries. A global using directive applies an import to every source file in the same compilation, typically one project.
+Add *global `using` directives* for other namespaces used throughout your project, such as shared company libraries. A global `using` directive applies an import to every source file in the same compilation, typically one project.
 
 For example, `System.Text` isn't in the console SDK's default imports. Instead of repeating `using System.Text;` in each file, put this directive in a file such as `GlobalUsings.cs`:
 
@@ -130,7 +130,7 @@ Place file-level `using` directives before namespace and type declarations. You 
 
 ### Static using directives
 
-Use a *using static directive* for a special-purpose utility type whose static members are clear without the type name. It imports accessible static members and nested types from a type rather than types from a namespace:
+Use a *`using static` directive* for a special-purpose utility type whose static members are clear without the type name. It imports accessible static members and nested types from a type rather than types from a namespace:
 
 :::code language="csharp" source="../program-structure/snippets/namespaces/StaticUsing.cs" id="StaticUsing":::
 

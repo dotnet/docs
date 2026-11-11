@@ -145,7 +145,7 @@ Consider the following command-line: `dnim-win-x64 uninstall --pv 6.0`. The comm
 
 ## Policy Results
 
-Every installation is assigned an action based on the evaluated policies. The table belows contains
+Every installation is assigned an action based on the evaluated policies. The table below contains
 a description for the various policy actions returned by the `uninstall` command. Policy actions with a
 `None` prefix indicate the installation won't be removed.
 
@@ -153,7 +153,7 @@ a description for the various policy actions returned by the `uninstall` command
 | --- | --- | --- |
 | NoneNotOutOfSupport | Support Phase | The product is still considered to be in support based on the published release information. |
 | NoneLatestReleasedVersion | Retention | The installation is the latest known released version and will be retained. |
-| NoneNotOutOfSupportInVisualStudio | Visual Studio EOL | The product is out of support, but not all instances of Visual Studio considers it out-of-support. This indicates that product information in one or more Visual Studio catalog is outdated or incorrect. |
+| NoneNotOutOfSupportInVisualStudio | Visual Studio EOL | The product is out of support, but not all instances of Visual Studio consider it out of support. This indicates that product information in one or more Visual Studio catalogs is outdated or incorrect. |
 | NoneProductVersionExcluded | Product Version | The product will be retained because its version excluded it from being removed. |
 | NoneProductVersionNotFound | Product Version | The installation belongs to an unknown .NET product version. This can happen when the .NET releases JSON data has not been updated or an old copy of data is being used. |
 | NoneSupportPhaseExcluded | Support Phase | The installation will be retained because its support phase is excluded. |
@@ -163,8 +163,8 @@ a description for the various policy actions returned by the `uninstall` command
 | NoneReleaseVersionExcluded | Release Version | The installation will be retained because it does not match the specified release version. |
 | NoneDependentsExist | Dependency Provider | The installation will be retained because another product still depends on it. For example, the same MSI was installed by both a standalone bundle and one or more Visual Studio instances. |
 | NoneUnsigned | Signing | The installation package on disk is not signed. |
-| Uninstall | N/A | The installation was successfully evaluated agaisnt all active policies and will be removed. |
-| UninstallParentDependency | N/A  | The installation will be removed because a parent dependency will be removed, e.g., an MSI will be removed becasue the .NET bundle to which it belongs will be removed. |
+| Uninstall | N/A | The installation was successfully evaluated against all active policies and will be removed. |
+| UninstallParentDependency | N/A  | The installation will be removed because a parent dependency will be removed. For example, an MSI will be removed because the .NET bundle to which it belongs will be removed. |
 | UninstallOrphanedByVs | N/A | The installation will be removed because it was orphaned by Visual Studio. |
 | NoneEolVersion | N/A | The product associated with an installation is EOL and won't be updated. |
 | NoneDiscontinuedSdk | N/A | The .NET product is still supported, but the latest updates no longer include the specific feature band. |

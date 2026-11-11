@@ -18,7 +18,7 @@ DNIM always generates output to the console. The default verbosity is `normal`. 
 
 DNIM always generates a diagnostic log in the current user's `%TEMP%` directory. The default filename starts with the `dnim` prefix followed by the file creation date and time, for example, `dnim_20260811_203922.log` indicates the log was generated on August 11, 2026 at 8:39:22 pm.
 
-The contents of the log varies based on the command and device state. The start of the log includes information like the version of DNIM and the command that was executed.
+The contents of the log vary based on the command and device state. The start of the log includes information like the version of DNIM and the command that was executed.
 
 Each line consists of a timestamp, message type and event ID followed by a detailed message.
 

@@ -2,16 +2,16 @@
 title: What's new in .NET 11
 description: Learn about the new features introduced in .NET 11 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
 titleSuffix: ""
-ms.date: 10/13/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET 11
 
-This article describes new features in .NET 11. It was last updated for release candidate 2 (RC 2).
+This article describes new features in .NET 11.
 
-.NET 11 is currently in release candidate. General availability is expected in November 2026. You can [download .NET 11 here](https://dotnet.microsoft.com/download/dotnet/11.0).
+.NET 11 is generally available. You can [download .NET 11 here](https://dotnet.microsoft.com/download/dotnet/11.0).
 
 ## .NET runtime
 

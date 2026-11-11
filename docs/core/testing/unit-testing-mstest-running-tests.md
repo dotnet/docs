@@ -3,7 +3,7 @@ title: Run tests with MSTest
 description: Learn about how to run MSTest tests using VSTest or Microsoft.Testing.Platform (MTP).
 author: Evangelink
 ms.author: amauryleve
-ms.date: 11/05/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -22,7 +22,7 @@ MSTest supports running tests with both VSTest and [Microsoft.Testing.Platform (
 
 The MSTest runner is open source and builds on the [MTP](./microsoft-testing-platform-intro.md) library. You can find `Microsoft.Testing.Platform` code in the [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository. The MSTest runner comes bundled with `MSTest in 3.2.0` or newer.
 
-With the .NET 10 SDK and later versions, select the dedicated MTP mode of `dotnet test` in `global.json`. Starting with .NET 11 Preview 6, you can override that selection for the current process with the `DOTNET_TEST_RUNNER` environment variable. For the supported inputs, SDK-version requirements, and MTP-specific options, see [`dotnet test` with MTP](../tools/dotnet-test-mtp.md).
+With the .NET 10 SDK and later versions, select the dedicated MTP mode of `dotnet test` in `global.json`. Starting with .NET 11, you can override that selection for the current process with the `DOTNET_TEST_RUNNER` environment variable. For the supported inputs, SDK-version requirements, and MTP-specific options, see [`dotnet test` with MTP](../tools/dotnet-test-mtp.md).
 
 ## Programmatic test discovery and execution
 

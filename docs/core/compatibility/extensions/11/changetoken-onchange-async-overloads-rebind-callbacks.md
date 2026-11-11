@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: ChangeToken.OnChange async overloads rebind existing Task-returning callbacks"
 description: "Learn about the breaking change in .NET 11 where new ChangeToken.OnChange async overloads can change overload binding for existing async callbacks."
-ms.date: 08/03/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ Starting in .NET 11, <xref:Microsoft.Extensions.Primitives.ChangeToken.OnChange*
 
 ## Version introduced
 
-.NET 11 Preview 7
+.NET 11
 
 ## Previous behavior
 

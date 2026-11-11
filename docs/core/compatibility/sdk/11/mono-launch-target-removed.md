@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: mono launch target not set for .NET Framework apps"
 description: "Learn about the breaking change in .NET 11 where the .NET SDK no longer automatically sets mono as the launch target for .NET Framework applications on Linux."
-ms.date: 02/03/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ The .NET SDK no longer automatically sets `mono` as the launch target for .NET F
 
 ## Version introduced
 
-.NET 11 Preview 1
+.NET 11
 
 ## Previous behavior
 

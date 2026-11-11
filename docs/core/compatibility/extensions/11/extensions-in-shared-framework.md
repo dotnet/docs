@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Some Microsoft.Extensions packages included in shared framework"
 description: "Learn about the breaking change in .NET 11 where nine Microsoft.Extensions.* libraries are now part of the base shared framework."
-ms.date: 05/05/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ To reduce application size, simplify package dependencies, and streamline servic
 
 ## Version introduced
 
-.NET 11 Preview 4
+.NET 11
 
 ## Previous behavior
 

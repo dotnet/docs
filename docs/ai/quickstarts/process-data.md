@@ -34,7 +34,7 @@ Complete the following steps to create a .NET console app.
 
     ```bash
     dotnet add package Azure.AI.OpenAI
-    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
+    dotnet add package Microsoft.Extensions.AI.OpenAI
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     dotnet add package Microsoft.Extensions.DataIngestion --prerelease

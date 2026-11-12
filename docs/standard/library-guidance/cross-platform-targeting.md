@@ -34,7 +34,7 @@ If your project targets .NET or .NET Standard and compiles successfully, it does
 
 ✔️ DO start with including a `net11.0` target for new libraries.
 
-> For new libraries, targeting .NET 11 provides access to the latest APIs and performance improvements, and enables features like AOT and trimming. Modern .NET versions are cross-platform and provide excellent compatibility across Windows, Linux, and macOS.
+> For new libraries, targeting .NET 10 or .NET 11 provides access to the latest APIs and performance improvements, and enables features like AOT and trimming. Modern .NET versions are cross-platform and provide excellent compatibility across Windows, Linux, and macOS.
 
 ✔️ CONSIDER including a `netstandard2.0` target if you need broad compatibility or .NET Framework support.
 

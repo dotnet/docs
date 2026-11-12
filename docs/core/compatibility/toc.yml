@@ -4,6 +4,14 @@ items:
   - name: Breaking changes by version
     expanded: true
     items:
+      - name: .NET 12
+        items:
+          - name: Overview
+            href: 12.md
+          - name: SDK and MSBuild
+            items:
+              - name: Full build skipped for Native AOT publish
+                href: sdk/12/aot-publish-skips-full-build.md
       - name: .NET 11
         items:
           - name: Overview
@@ -144,8 +152,6 @@ items:
             items:
               - name: dnx scripts bypass global.json SDK selection
                 href: sdk/11/dnx-scripts-bypass-global-json.md
-              - name: Full build skipped for Native AOT publish
-                href: sdk/11/aot-publish-skips-full-build.md
               - name: mono launch target not set for .NET Framework apps
                 href: sdk/11/mono-launch-target-removed.md
               - name: NativeAOT CLI command handling enabled by default

@@ -1,21 +1,27 @@
 ---
 title: "Breaking change: Full build skipped for Native AOT publish"
-description: "Learn about the breaking change in .NET 11 where the .NET SDK only compiles intermediate assemblies for Native AOT publish and skips the full Build target."
-ms.date: 11/10/2026
+description: "Learn about the breaking change in .NET 12 where the .NET SDK only compiles intermediate assemblies for Native AOT publish and skips the full Build target."
+ms.date: 11/11/2026
 ai-usage: ai-assisted
 ---
 
 # Full build skipped for Native AOT publish
 
-Starting in .NET 11, the .NET SDK no longer executes the full `Build` target when publishing with Native AOT (`PublishAot=true`). Instead, the SDK executes only the minimum targets needed to compile the intermediate assembly and produce the AOT-compiled output.
+Starting in .NET 12, the .NET SDK no longer executes the full `Build` target when publishing with Native AOT (`PublishAot=true`). Instead, the SDK executes only the minimum targets needed to compile the intermediate assembly and produce the AOT-compiled output.
 
 ## Version introduced
 
-.NET 11
+.NET 12 Preview 1
+
+The behavior has the following history:
+
+- **.NET SDK 11.0.100-rc.2**: Optimized publish was enabled by default for Native AOT projects.
+- **.NET SDK 11.0.100 (.NET 11 GA)**: Optimized publish became opt-in. To enable it, set `UseOptimizedPublish` to `true`.
+- **.NET 12 Preview 1**: Optimized publish is enabled by default again.
 
 ## Previous behavior
 
-When publishing with `PublishAot=true`, the full MSBuild `Build` target executed as part of the publish pipeline, producing a complete self-contained managed deployment (apphost, DLLs, `deps.json`, `runtimeconfig.json`, and runtime pack files) in the output (`bin\`) directory. These artifacts were unused by the AOT pipeline, which reads from `@(IntermediateAssembly)` in `obj\`, not from `bin\`.
+When publishing with `PublishAot=true` in .NET 11 and earlier versions (unless you opted in with `UseOptimizedPublish=true`), the full MSBuild `Build` target executed as part of the publish pipeline, producing a complete self-contained managed deployment (apphost, DLLs, `deps.json`, `runtimeconfig.json`, and runtime pack files) in the output (`bin\`) directory. These artifacts were unused by the AOT pipeline, which reads from `@(IntermediateAssembly)` in `obj\`, not from `bin\`.
 
 ## New behavior
 

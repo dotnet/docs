@@ -4,7 +4,7 @@ description: Learn about which versions of .NET SDK and .NET Runtime are support
 author: adegeo
 ms.author: adegeo
 ms.topic: install-set-up-deploy
-ms.date: 04/23/2026
+ms.date: 11/11/2026
 ms.custom: updateeachrelease, linux-related-content
 
 #customer intent: As a user or developer, I want to know which versions of .NET are supported on macOS. I also need to know how to install .NET on macOS.
@@ -21,7 +21,7 @@ ms.custom: updateeachrelease, linux-related-content
 
 This article teaches you about which versions of .NET are supported on macOS, how to install .NET, and what the difference is between the SDK and runtime.
 
-The latest version of .NET is 10.
+The latest version of .NET is 11.
 
 > [!div class="button"]
 > [Download .NET](https://dotnet.microsoft.com/download/dotnet)
@@ -32,9 +32,10 @@ The following table lists the supported .NET releases, and which macOS they're s
 
 | macOS Version          | .NET           |
 |------------------------|----------------|
-| macOS 26 "Tahoe"       | 10.0, 9.0, 8.0 |
-| macOS 15 "Sequoia"     | 10.0, 9.0, 8.0 |
-| macOS 14 "Sonoma"      | 10.0, 9.0, 8.0 |
+| macOS 27               | 11.0, 10.0      |
+| macOS 26 "Tahoe"       | 11.0, 10.0      |
+| macOS 15 "Sequoia"     | 11.0, 10.0      |
+| macOS 14 "Sonoma"      | 10.0            |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -89,7 +90,7 @@ If you're unsure which method you should choose after reviewing the lists in the
 Installer packages are available for macOS, an easy way of installing .NET.
 
 01. Open a browser and navigate to <https://dotnet.microsoft.com/download/dotnet>.
-01. Select the link to the .NET version you want to install, such as **.NET 10.0**.
+01. Select the link to the .NET version you want to install, such as **.NET 11.0**.
 
     :::image type="content" source="media/macos/download-page.png" alt-text="The .NET download website. Versions 6.0 through 9.0 are listed. A red box highlights those download links.":::
 
@@ -174,7 +175,7 @@ chdir ~/Applications/.dotnet/
 
 The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and unelevated installs of the runtime. You can download the script from <https://dot.net/v1/dotnet-install.sh>.
 
-The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET 8. You can choose a specific release by specifying the `channel` switch. Include the `runtime` switch to install a runtime. Otherwise, the script installs the SDK.
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET 10. You can choose a specific release by specifying the `channel` switch. Include the `runtime` switch to install a runtime. Otherwise, the script installs the SDK.
 
 > [!TIP]
 > These commands are provided a script snippet at the end of this procedure.

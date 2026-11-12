@@ -13,7 +13,7 @@ As your program grows, you create more types. You need a way to organize all the
 
 For example, place catalog types in `Shop.Catalog` and shipping types in `Shop.Shipping`.
 
-This article builds on [Namespaces and using directives](../program-structure/namespaces.md). You'll learn how to declare namespaces, refer to types unambiguously, and choose imports for a file or project.
+This article builds on [Namespaces and `using` directives](../program-structure/namespaces.md). You'll learn how to declare namespaces, refer to types unambiguously, and choose imports for a file or project.
 
 ## The global namespace
 
@@ -65,7 +65,7 @@ A *using directive* imports the types in a namespace so you can use their *simpl
 
 The directive lets you write `StringBuilder` instead of `System.Text.StringBuilder`. It applies to name lookup in the source code; it doesn't copy the types or change their namespace.
 
-A *using directive* imports the types directly in the named namespace, not its nested namespaces. For example, `using System;` lets you write `Console` because its fully qualified name is `System.Console`. However, you can't use `List<int>` by its simple name because its fully qualified name is `System.Collections.Generic.List<int>`. You need to add a using directive for `System.Collections.Generic`.
+A *`using` directive* imports the types directly in the named namespace, not its nested namespaces. For example, `using System;` lets you write `Console` because its fully qualified name is `System.Console`. However, you can't use `List<int>` by its simple name because its fully qualified name is `System.Collections.Generic.List<int>`. You need to add a `using` directive for `System.Collections.Generic`.
 
 ### Type and namespace aliases
 
@@ -110,7 +110,7 @@ The examples in this article belong to a console project with implicit usings en
 
 ### Global using directives
 
-Add [*global `using` directives*](../../../core/tutorials/top-level-templates.md#global-using-directives) for other namespaces used throughout your project, such as shared company libraries. A global `using` directive applies an import to every source file in the same compilation, typically one project.
+Add [*global using directives*](../../../core/tutorials/top-level-templates.md#global-using-directives) for other namespaces used throughout your project, such as shared company libraries. A global `using` directive applies an import to every source file in the same compilation, typically one project.
 
 For example, `System.Text` isn't in the console SDK's default imports. Instead of repeating `using System.Text;` in each file, put this directive in a file such as `GlobalUsings.cs`:
 

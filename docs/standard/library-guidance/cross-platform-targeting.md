@@ -32,7 +32,7 @@ If your project targets .NET or .NET Standard and compiles successfully, it does
 > [!TIP]
 > The .NET team offers a [Platform compatibility analyzer](../analyzers/platform-compat-analyzer.md) to help you discover possible issues.
 
-✔️ DO start with including a `net11.0` target for new libraries.
+✔️ DO start with including a `net11.0` (STS) or `net10.0` (LTS) target for new libraries.
 
 > For new libraries, targeting .NET 10 or .NET 11 provides access to the latest APIs and performance improvements, and enables features like AOT and trimming. Modern .NET versions are cross-platform and provide excellent compatibility across Windows, Linux, and macOS.
 

@@ -26,18 +26,18 @@ Console.WriteLine(a);
 Giraffe g = new Giraffe();
 
 // Implicit conversion to base type is safe.
-Animal a = g;
+Animal anAnimal = g;
 
 // Explicit conversion is required to cast back
 // to derived type. Note: This will compile but will
 // throw an exception at run time if the right-side
 // object is not in fact a Giraffe.
-Giraffe g2 = (Giraffe)a;
+Giraffe g2 = (Giraffe)anAnimal;
 // </ExplicitDerivedCast>
 
 // <UnsafeCast>
-Animal a = new Mammal();
-Reptile r = (Reptile)a; // InvalidCastException at run time
+Animal anotherAnimal = new Mammal();
+Reptile r = (Reptile)anotherAnimal; // InvalidCastException at run time
 //</UnsafeCast>
 
 
@@ -46,9 +46,14 @@ public class B {}
 public class C : B {}
 
 
-class Animal { }
+public class Animal { }
 
 class Reptile : Animal { }
 class Mammal : Animal { }
 
 public class Giraffe : Animal {}
+
+public class Base { }
+
+public class Derived : Base { }
+

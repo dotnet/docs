@@ -52,6 +52,13 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 | 7.0.2xx     | 17.5<sup>3</sup>              | Feb '23   | May '23   |
 | 7.0.3xx     | 17.6                          | May '23   | May '24   |
 | 7.0.4xx     | 17.7                          | Aug '23   | May '24   |
+| 8.0.1xx     | 17.8                          | Nov '23   | Nov '26   |
+| 8.0.2xx     | 17.9                          | Feb '24   | May '24   |
+| 8.0.3xx     | 17.10                         | May '24   | Jan '26   |
+| 8.0.4xx     | 17.11                         | Aug '24   | Nov '26   |
+| 9.0.1xx     | 17.12                         | Nov '24   | Nov '26   |
+| 9.0.2xx     | 17.13                         | Feb '25   | May '25   |
+| 9.0.3xx     | 17.14                         | May '25   | Nov '26   |
 
 </details>
 <!-- markdownlint-enable MD033 -->
@@ -60,17 +67,11 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 
 | SDK version | MSBuild/Visual Studio version | Ship date | Lifecycle           |
 |-------------|-------------------------------|-----------|---------------------|
-| 8.0.1xx     | 17.8                          | Nov '23   | Nov '26<sup>1</sup> |
-| 8.0.2xx     | 17.9                          | Feb '24   | May '24             |
-| 8.0.3xx     | 17.10                         | May '24   | Jan '26             |
-| 8.0.4xx     | 17.11                         | Aug '24   | Nov '26<sup>2</sup> |
-| 9.0.1xx     | 17.12                         | Nov '24   | Nov '26<sup>1</sup> |
-| 9.0.2xx     | 17.13                         | Feb '25   | May '25             |
-| 9.0.3xx     | 17.14                         | May '25   | Nov '26             |
 | 10.0.1xx    | 18.0                          | Nov '25   | Nov '28<sup>1</sup> |
 | 10.0.2xx    | 18.4                          | Mar '26   | May '26             |
 | 10.0.3xx    | 18.6                          | May '26   | Aug '26             |
 | 10.0.4xx    | 18.9                          | Aug '26   | Nov '28<sup>2</sup> |
+| 11.0.1xx    | 18.12                         | Nov '26   | Nov '28<sup>1</sup> |
 
 > [!NOTE]
 > <sup>1</sup> .1xx .NET SDK feature bands are supported throughout the lifecycle of major .NET versions. During the extended support period, only Linux receives support, and that support is limited to security fixes and minimal high-priority non-security fixes. To learn more about the reasoning for this extended support, see [Source-build support](https://github.com/dotnet/source-build#support).
@@ -93,26 +94,17 @@ The following policy dictates which versions of MSBuild and Visual Studio a give
 
 | SDK | Visual Studio version<br/>the SDK ships with | Minimum Visual Studio version | Max TargetFramework in<br/>minimum Visual Studio version | Max TargetFramework in `dotnet` |
 |---------|-------|------------------|--------|--------|
-| 8.0.100 | 17.8  | 17.7             | Net7.0 | Net8.0 |
-| 8.0.200 | 17.9  | 17.8             | Net8.0 | Net8.0 |
-| 8.0.300 | 17.10 | 17.8             | Net8.0 | Net8.0 |
-| 8.0.400 | 17.11 | 17.8             | Net8.0 | Net8.0 |
-| 9.0.100 | 17.12 | 17.11            | Net8.0 | Net9.0 |
-| 9.0.200 | 17.13 | 17.12            | Net9.0 | Net9.0 |
-| 9.0.300 | 17.14 | 17.12            | Net9.0 | Net9.0 |
 | 10.0.100 | 18.0 | 17.14            | Net9.0 | Net10.0 |
-| 10.0.200 | 18.4 | 18.0            | Net10.0 | Net10.0 |
-| 10.0.300 | 18.6 | 18.0            | Net10.0 | Net10.0 |
-| 10.0.400 | 18.9 | 18.0            | Net10.0 | Net10.0 |
+| 10.0.200 | 18.4 | 18.0             | Net10.0 | Net10.0 |
+| 10.0.300 | 18.6 | 18.0             | Net10.0 | Net10.0 |
+| 10.0.400 | 18.9 | 18.0             | Net10.0 | Net10.0 |
+| 11.0.100 | 18.12 | 18.11           | Net10.0 | Net11.0 |
 
 > [!NOTE]
-> The table depicts how these versioning rules are applied, starting with .NET SDK 7.0.100 and .NET SDK 6.0.300. It also depicts how the policy would have applied to previously shipped versions of the .NET SDK, had it been in place then. However, the requirements for previous versions of the SDK don't change&mdash;that is, the minimum required version of Visual Studio for .NET SDK 6.0.100 or 6.0.200 remains 16.10.
->
-> Targeting `net8.0` is officially supported in Visual Studio 17.8+ only.
->
-> Targeting `net9.0` is officially supported in Visual Studio 17.12+ only.
 >
 > Targeting `net10.0` is officially supported in Visual Studio 18.0+ only.
+> 
+> Targeting `net11.0` is officially supported in Visual Studio 18.12+ only.
 
 To ensure consistent tooling, you should use `dotnet build` rather than `msbuild` to build your application when possible.
 
@@ -124,10 +116,11 @@ While most developers use the .NET SDK bundled with their Visual Studio version,
 
 - **Primary supported configuration**: Use the SDK version bundled with your Visual Studio installation
   - Visual Studio 17.14 and .NET 9.0.3xx
-  - Visual Studio 18.0 and .NET 10.0.1xx
-- **Backward compatibility**: Using the latest feature band of the previous SDK version (for example, 8.0.4xx in Visual Studio 17.14) is supported with best-effort compatibility. The .NET team determines when to backport fixes based on risk and customer impact.
+  - Visual Studio 18.11-LTSC and .NET 10.0.4xx
+  - Visual Studio 18.12 and .NET 11.0.1xx
+- **Backward compatibility**: Using the latest feature band of the previous SDK version (for example, 10.0.4xx in Visual Studio 18.11) is supported with best-effort compatibility. The .NET team determines when to backport fixes based on risk and customer impact.
   While SDKs that are older than the latest of the prior band might work, the .NET team does not test them or make an effort to ensure any compatibility.
-- **Forward compatibility**: Using a newer SDK (for example, .NET 10 SDK in Visual Studio 17.14) is allowed without blocking, but targeting newer runtimes in older Visual Studio versions isn't supported and produces a build warning.
+- **Forward compatibility**: Using a newer SDK (for example, .NET 11 SDK in Visual Studio 18.11) is allowed without blocking, but targeting newer runtimes in older Visual Studio versions isn't supported and produces a build warning.
 
 ### Guidance
 
@@ -149,13 +142,14 @@ Major versions of the .NET SDK are typically released within a few days of a Vis
 
 | SDK preview version | Visual Studio version |
 |---------------------|-----------------------|
-| 10.0.100 RC 1       | 18.0.0 Insiders (11010.61)|
-| 10.0.100 RC 2       | 18.0.0 Insiders (11111.16)|
-| 11.0.100 Preview 1  | 18.4.0 Insiders           |
-| 11.0.100 Preview 2  | 18.5.0 Insiders           |
-| 11.0.100 Preview 3  | 18.6.0 Insiders           |
-| 11.0.100 Preview 4  | 18.7.0 Insiders           |
-| 11.0.100 Preview 5  | 18.8.0 Insiders           |
+| 11.0.100 Preview 1  | 18.5.0 Insiders           |
+| 11.0.100 Preview 2  | 18.6.0 Insiders           |
+| 11.0.100 Preview 3  | 18.7.0 Insiders           |
+| 11.0.100 Preview 4  | 18.8.0 Insiders           |
+| 11.0.100 Preview 6  | 18.9.0 Insiders           |
+| 11.0.100 Preview 7  | 18.10.0 Insiders           |
+| 11.0.100 RC 1       | 18.11.0 Insiders           |
+| 11.0.100 RC 2       | 18.12.0 Insiders           |
 
 ## Reference
 

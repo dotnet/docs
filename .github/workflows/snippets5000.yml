@@ -24,7 +24,7 @@ permissions:
 
 jobs:
   snippets-build:
-    runs-on: windows-2022
+    runs-on: windows-11-arm
 
     steps:
     # Checkout the repository for the PR

@@ -40,7 +40,7 @@ HRESULT GetDemultiplexedStub (
 [in] A flag that indicates whether the event is local (`true`); otherwise, `false`.
 
 `ppObject`  
-[out] A object forwarder sink to assist a client in receiving asynchronous calls from Windows Management.
+[out] An object forwarder sink to assist a client in receiving asynchronous calls from Windows Management.
 
 ## Return value
 

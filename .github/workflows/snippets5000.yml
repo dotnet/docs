@@ -12,6 +12,9 @@ on:
         description: 'The reason for running the workflow'
         required: true
         default: 'Manual run'
+     pull:
+        description: "The pull request number to manually test"
+        required: true
 
 env:
   DOTNET_VERSION: '11.0.*'
@@ -54,14 +57,14 @@ jobs:
       run: |
         git clone --depth 1 https://github.com/dotnet/docs-tools
 
-    # Run snippets 5000
+    # Run snippets 5000 for the pull request, either from the triggering event or the manual input.
     - name: Run snippets 5000 for PR
       env:
         GitHubKey: ${{ secrets.GITHUB_TOKEN }}
         ExtensionsCodeTriggers: .cs;.vb;.fs;.xaml;.razor;.cshtml;.vbhtml;.sln;.csproj;.fsproj;.vbproj;.proj
         ExtensionsProjects: .sln;.csproj;.fsproj;.vbproj;.proj
       run: |
-        dotnet run --project docs-tools/snippets5000/Snippets5000/Snippets5000.csproj -- --sourcepath "${{ github.workspace }}" --pullrequest ${{ github.event.number }} --owner ${{ github.repository_owner }} --repo ${{ github.event.repository.name }}
+        dotnet run --project docs-tools/snippets5000/Snippets5000/Snippets5000.csproj -- --sourcepath "${{ github.workspace }}" --pullrequest ${{ github.event.number || inputs.pull }} --owner ${{ github.repository_owner }} --repo ${{ github.event.repository.name }}
 
     - name: Upload snippets diagnostics
       if: ${{ always() }}

@@ -12,7 +12,7 @@ on:
         description: 'The reason for running the workflow'
         required: true
         default: 'Manual run'
-     pull:
+      pull:
         description: "The pull request number to manually test"
         required: true
 

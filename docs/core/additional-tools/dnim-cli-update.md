@@ -53,7 +53,7 @@ dnim-win-[x86|x64|arm64] update -?|-h|--help
 The `update` command detects, classifies, removes and updates .NET installations on Windows. MSIs and bundles are detected by default. Bin deployed (xcopy/zip) installs under `Program Files` can be detected using the `--include-bin-deployed-installs` option.
 
 > [!CAUTION]
-> DNIM always attempts to remove all copies of .NET on a device before updating, even if the latest release is instaleld. Use the `--what-if` option to review planned actions and consider using the `--keep-latest-product-version` and `keep-latest-support-phase` options to retain specific installations.
+> DNIM always attempts to remove all copies of .NET on a device before updating, even if the latest release is installed. Use the `--what-if` option to review planned actions and consider using the `--keep-latest-product-version` and `--keep-latest-support-phase` options to retain specific installations.
 
 The command can target specific products based on their product version, support phase, type and release version. Only standalone bundles can be updated. Installations of .NET that came from Visual Studio will require you to update Visual Studio. DNIM will not update Visual Studio.
 
@@ -133,10 +133,10 @@ The results are similar to that of the uninstall command, but additional columns
   dnim-win-[x86|x64|arm64] update
   ```
 
-- Updated all the .NET 8.0 installations, including discontinued SDKs.
+- Update all the .NET 8.0 installations, including discontinued SDKs.
 
   ```console
-  dnim-win-[x86|x64|arm64] update --update-discontinued-sdk --pv 8.0
+  dnim-win-[x86|x64|arm64] update --update-discontinued-sdks --pv 8.0
   ```
 
   Assume 8.0.31 is the latest .NET 8 release. It includes updates for both the 8.0.1xx and 8.0.4xx SDKs. The 8.0.2xx and 8.0.3xx SDKs are no longer produced and considered discontinued. If a device has the 8.0.202 SDK installed, DNIM can install the 8.0.425 SDK and remove the 8.0.202 SDK.

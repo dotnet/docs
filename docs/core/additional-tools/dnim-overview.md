@@ -28,7 +28,7 @@ DNIM is currently built using .NET 8 and compatible with all versions of Windows
 ## Support
 
 > [!IMPORTANT]
-> Because DNIM is a single file application, new builds are regularly published to ensure the .NET runtime remains up to date. Any changes, including security fixes are documented in the release notes. Enterprise customers should contact their [customer support representative](https://engagecenter.microsoft.com/#view/Microsoft_AzureCXP_EngageHub/EngageHubMenu.MenuView/~/helpSupport) to address concerns or report issues.
+> Because DNIM is a single file application, new builds are regularly published to ensure the .NET runtime remains up to date. Any changes, including security fixes, are documented in the release notes. Enterprise customers should contact their [customer support representative](https://engagecenter.microsoft.com/#view/Microsoft_AzureCXP_EngageHub/EngageHubMenu.MenuView/~/helpSupport) to address concerns or report issues.
 
 ## See also
 

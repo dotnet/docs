@@ -98,7 +98,7 @@ Lambda discard parameters can be useful when you use a lambda expression to [pro
 > [!NOTE]
 > For backwards compatibility, if only a single input parameter is named `_`, the compiler treats `_` as the name of that parameter  within that lambda expression.
 
-Starting with C# 12, you can provide *default values* for explicitly typed parameter lists. The syntax and the restrictions on default parameter values are the same as for methods and local functions. The following example declares a lambda expression with a default parameter, then calls it once by using the default and once with two explicit parameters:
+You can provide *default values* for explicitly typed parameter lists. The syntax and the restrictions on default parameter values are the same as for methods and local functions. The following example declares a lambda expression with a default parameter, then calls it once by using the default and once with two explicit parameters:
 
 :::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetDefaultParameters":::
 

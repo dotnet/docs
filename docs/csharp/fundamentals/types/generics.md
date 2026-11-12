@@ -42,7 +42,7 @@ In the call `Print(42)`, the compiler infers `T` as `int` from the argument. You
 
 ## Collection expressions
 
-Collection expressions (C# 12) provide a concise syntax for creating collections. Use square brackets instead of constructor calls or initializer syntax:
+Collection expressions provide a concise syntax for creating collections. Use square brackets instead of constructor calls or initializer syntax:
 
 :::code language="csharp" source="snippets/generics/Program.cs" ID="CollectionExpressions":::
 

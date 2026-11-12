@@ -8,6 +8,10 @@ items:
         items:
           - name: Overview
             href: 11.md
+          - name: Containers
+            items:
+              - name: dotnet test needs a writable VSTest artifacts base directory in containers
+                href: containers/11/vstest-artifacts-base-directory.md
           - name: Core .NET libraries
             items:
               - name: Assembly.GetCallingAssembly behavior change when stack-trace support disabled
@@ -158,6 +162,8 @@ items:
                 href: sdk/11/native-local-container-runtimes.md
               - name: Template engine packages no longer support netstandard2.0
                 href: sdk/11/template-engine-netstandard.md
+              - name: Template package installation verifies NuGet signatures
+                href: sdk/11/template-package-signature-verification.md
               - name: VSTest removes dependency on Newtonsoft.Json
                 href: sdk/11/vstest-removes-newtonsoft-json.md
       - name: .NET 10
@@ -170,6 +176,8 @@ items:
             items:
               - name: Default .NET images use Ubuntu
                 href: containers/10.0/default-images-use-ubuntu.md
+              - name: dotnet test needs a writable VSTest artifacts base directory in containers
+                href: containers/11/vstest-artifacts-base-directory.md
           - name: Core .NET libraries
             items:
               - name: API obsoletions with non-default diagnostic IDs
@@ -324,6 +332,8 @@ items:
                 href: sdk/10.0/prune-packagereference-privateassets.md
               - name: "'ToolCommandName' not set for non-tool packages"
                 href: sdk/10.0/toolcommandname-not-set.md
+              - name: Template package installation verifies NuGet signatures
+                href: sdk/11/template-package-signature-verification.md
           - name: Serialization
             items:
               - name: System.Text.Json checks for property name conflicts
@@ -360,6 +370,8 @@ items:
             items:
               - name: Container images no longer install zlib
                 href: containers/9.0/no-zlib.md
+              - name: dotnet test needs a writable VSTest artifacts base directory in containers
+                href: containers/11/vstest-artifacts-base-directory.md
               - name: .NET Monitor images simplified to version-only tags
                 href: containers/9.0/monitor-images.md
           - name: Core .NET libraries
@@ -462,6 +474,8 @@ items:
                 href: sdk/9.0/default-rid.md
               - name: Terminal logger is default
                 href: sdk/9.0/terminal-logger.md
+              - name: Template package installation verifies NuGet signatures
+                href: sdk/11/template-package-signature-verification.md
               - name: Version requirements
                 href: sdk/9.0/version-requirements.md
               - name: Warning emitted for .NET Standard 1.x targets
@@ -514,6 +528,8 @@ items:
                 href: containers/8.0/debian-version.md
               - name: Default ASP.NET Core port changed to 8080
                 href: containers/8.0/aspnet-port.md
+              - name: dotnet test needs a writable VSTest artifacts base directory in containers
+                href: containers/11/vstest-artifacts-base-directory.md
               - name: Kerberos package removed from Alpine and Debian images
                 href: containers/8.0/krb5-libs-package.md
               - name: libintl package removed from Alpine images
@@ -678,6 +694,8 @@ items:
                 href: sdk/10.0/dotnet-nuget-sign-sha1-deprecated.md
               - name: Source Link included in the .NET SDK
                 href: sdk/8.0/source-link.md
+              - name: Template package installation verifies NuGet signatures
+                href: sdk/11/template-package-signature-verification.md
               - name: Trimming can't be used with .NET Standard or .NET Framework
                 href: sdk/8.0/trimming-unsupported-targetframework.md
               - name: Unlisted packages not installed by default

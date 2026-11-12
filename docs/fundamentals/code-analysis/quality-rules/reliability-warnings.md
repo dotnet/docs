@@ -1,7 +1,7 @@
 ---
 title: Reliability rules (code analysis)
 description: "Learn about code analysis reliability rules."
-ms.date: 10/27/2025
+ms.date: 11/12/2026
 f1_keywords:
 - vs.codeanalysis.reliabilityrules
 helpviewer_keywords:
@@ -36,3 +36,5 @@ Reliability rules support library and application reliability, such as correct m
 | [CA2024: Do not use StreamReader.EndOfStream in async methods](ca2024.md) | The property <xref:System.IO.StreamReader.EndOfStream?displayProperty=nameWithType> can cause unintended synchronous blocking when no data is buffered. Instead, use <xref:System.IO.StreamReader.ReadLineAsync?displayProperty=nameWithType> directly, which returns `null` when reaching the end of the stream. |
 | [CA2025: Do not pass `IDisposable` instances into unawaited tasks](ca2025.md) | Unawaited tasks that use `IDisposable` instances might use those instances long after they have been disposed. Ensure tasks using those instances are completed before the instances are disposed. |
 | [CA2026: Prefer JsonElement.Parse over JsonDocument.Parse().RootElement](ca2026.md) | It's more efficient to call <xref:System.Text.Json.JsonElement.Parse*?displayProperty=nameWithType> directly than to call `JsonDocument.Parse().RootElement`. |
+| [CA2027: Cancel Task.Delay after Task.WhenAny completes](ca2027.md) | A noncancelable <xref:System.Threading.Tasks.Task.Delay*> continues to run after another task completes in a <xref:System.Threading.Tasks.Task.WhenAny*> call. |
+| [CA2028: Avoid redundant 'Regex.IsMatch' call before 'Regex.Match'](ca2028.md) | Calling both methods with the same input and pattern evaluates the regular expression twice. Call `Regex.Match` once and check `Match.Success`. |

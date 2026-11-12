@@ -1,7 +1,7 @@
 ---
 title: Performance rules (code analysis)
 description: "Learn about code analysis performance rules."
-ms.date: 10/27/2025
+ms.date: 11/12/2026
 f1_keywords:
 - vs.codeanalysis.performancerules
 helpviewer_keywords:
@@ -83,5 +83,6 @@ Performance rules support high-performance libraries and applications.
 | [CA1873: Avoid potentially expensive logging](ca1873.md) | When logging methods are called, their arguments are evaluated regardless of whether the logging level is enabled. This can result in expensive operations being executed even when the log message won't be written. For better performance, guard expensive logging calls with a check to <xref:Microsoft.Extensions.Logging.ILogger.IsEnabled*> or use the `LoggerMessage` pattern. |
 | [CA1874: Use 'Regex.IsMatch'](ca1874.md) | <xref:System.Text.RegularExpressions.Regex.IsMatch*?displayProperty=nameWithType> is simpler and faster than `Regex.Match(...).Success`. |
 | [CA1875: Use 'Regex.Count'](ca1875.md) | <xref:System.Text.RegularExpressions.Regex.Count*?displayProperty=nameWithType> is simpler and faster than `Regex.Matches(...).Count`. |
+| [CA1876: Do not use 'AsParallel' in 'foreach'](ca1876.md) | Calling `AsParallel()` directly in a `foreach` loop doesn't make the loop parallel. Use `Parallel.ForEach` to process each item in parallel. |
 | [CA1877: Use 'Path.Combine' or 'Path.Join' overloads](ca1877.md) | Multiple consecutive <xref:System.IO.Path.Combine*?displayProperty=nameWithType> or <xref:System.IO.Path.Join*?displayProperty=nameWithType> operations can be collapsed into a single call using overloads that accept multiple path segments. |
 | [CA1878: Prefer ReadOnlySpan properties over readonly array fields](ca1878.md) | A private static readonly constant-array field can be replaced with a `ReadOnlySpan<T>` property so the C# compiler can avoid a managed array allocation. |

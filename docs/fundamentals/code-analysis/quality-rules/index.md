@@ -1,7 +1,7 @@
 ---
 title: Code quality rules overview
 description: Learn about all of the available code quality rules for code analysis.
-ms.date: 01/31/2024
+ms.date: 11/12/2026
 ---
 # Code quality rules
 
@@ -95,6 +95,7 @@ The following table lists code quality analysis rules.
 > | [CA1514: Avoid redundant length argument](ca1514.md) | A redundant length argument is used when slicing to the end of a string or buffer. A calculated length can be error-prone and is also unnecessary. |
 > | [CA1515: Consider making public types internal](ca1515.md) | Unlike a class library, an application's API isn't typically referenced publicly, so types can be marked internal. |
 > | [CA1516: Use cross-platform intrinsics](ca1516.md) | This rule detects usage of platform-specific intrinsics that can be replaced with an equivalent cross-platform intrinsic instead. |
+> | [CA1517: Use `ReadOnlySpan<T>` or `ReadOnlyMemory<T>` instead of `Span<T>` or `Memory<T>`](ca1517.md) | A method parameter uses `Span<T>` or `Memory<T>` even though the method doesn't modify the data. Use its read-only counterpart to clarify intent. |
 > | [CA1700: Do not name enum values 'Reserved'](ca1700.md) | This rule assumes that an enumeration member that has a name that contains "reserved" is not currently used but is a placeholder to be renamed or removed in a future version. Renaming or removing a member is a breaking change. |
 > | [CA1707: Identifiers should not contain underscores](ca1707.md) | By convention, identifier names do not contain the underscore (_) character. This rule checks namespaces, types, members, and parameters. |
 > | [CA1708: Identifiers should differ by more than case](ca1708.md) | Identifiers for namespaces, types, members, and parameters cannot differ only by case because languages that target the common language runtime are not required to be case-sensitive. |
@@ -176,6 +177,7 @@ The following table lists code quality analysis rules.
 > | [CA1873: Avoid potentially expensive logging](ca1873.md) | In many situations, logging is disabled or set to a log level that results in an unnecessary evaluation for logging arguments. |
 > | [CA1874: Use `Regex.IsMatch`](ca1874.md) | `Regex.IsMatch` is simpler and faster than `Regex.Match(...).Success`. |
 > | [CA1875: Use `Regex.Count`](ca1875.md) | `Regex.Count` is simpler and faster than `Regex.Matches(...).Count`. |
+> | [CA1876: Do not use 'AsParallel' in 'foreach'](ca1876.md) | Calling `AsParallel()` directly in a `foreach` loop doesn't make the loop parallel. Use `Parallel.ForEach` to process each item in parallel. |
 > | [CA1877: Use 'Path.Combine' or 'Path.Join' overloads](ca1877.md) | When multiple `Path.Combine` or `Path.Join` operations are nested, they can be collapsed into a single operation for better performance and readability. |
 > | [CA1878: Prefer ReadOnlySpan properties over readonly array fields](ca1878.md) | A private static readonly constant-array field can be replaced with a `ReadOnlySpan<T>` property so the C# compiler can avoid a managed array allocation. |
 > | [CA2000: Dispose objects before losing scope](ca2000.md) | Because an exceptional event might occur that will prevent the finalizer of an object from running, the object should be explicitly disposed before all references to it are out of scope. |
@@ -199,6 +201,8 @@ The following table lists code quality analysis rules.
 > | [CA2024: Do not use StreamReader.EndOfStream in async methods](ca2024.md) | The property <xref:System.IO.StreamReader.EndOfStream?displayProperty=nameWithType> can cause unintended synchronous blocking when no data is buffered. Instead, use <xref:System.IO.StreamReader.ReadLineAsync?displayProperty=nameWithType> directly, which returns `null` when reaching the end of the stream. |
 > | [CA2025: Do not pass `IDisposable` instances into unawaited tasks](ca2025.md) | Unawaited tasks that use `IDisposable` instances might use those instances long after they have been disposed. Ensure tasks using those instances are completed before the instances are disposed. |
 > | [CA2026: Prefer JsonElement.Parse over JsonDocument.Parse().RootElement](ca2026.md) | It's more efficient to call `JsonElement.Parse` directly than to call `JsonDocument.Parse().RootElement`. |
+> | [CA2027: Cancel Task.Delay after Task.WhenAny completes](ca2027.md) | A noncancelable `Task.Delay` continues to run after another task completes in a `Task.WhenAny` call. |
+> | [CA2028: Avoid redundant 'Regex.IsMatch' call before 'Regex.Match'](ca2028.md) | Calling both methods with the same input and pattern evaluates the regular expression twice. Call `Regex.Match` once and check `Match.Success`. |
 > | [CA2100: Review SQL queries for security vulnerabilities](ca2100.md) | A method sets the System.Data.IDbCommand.CommandText property by using a string that is built from a string argument to the method. This rule assumes that the string argument contains user input. A SQL command string that is built from user input is vulnerable to SQL injection attacks. |
 > | [CA2101: Specify marshalling for P/Invoke string arguments](ca2101.md) | A platform invoke member allows partially trusted callers, has a string parameter, and does not explicitly marshal the string. This can cause a potential security vulnerability. |
 > | [CA2109: Review visible event handlers](ca2109.md) | A public or protected event-handling method was detected. Event-handling methods should not be exposed unless absolutely necessary. |

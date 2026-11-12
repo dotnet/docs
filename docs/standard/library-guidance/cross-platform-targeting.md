@@ -1,7 +1,7 @@
 ---
 title: Cross-platform targeting for .NET libraries
 description: Best practice recommendations for creating cross-platform .NET libraries.
-ms.date: 04/13/2026
+ms.date: 11/11/2026
 ---
 
 # Cross-platform targeting
@@ -19,7 +19,7 @@ These goals don't always require the same approach. If your target applications 
 
 .NET and .NET Standard targets are the best way to add cross-platform support to a .NET library.
 
-* .NET versions 5 through 10 are implementations of .NET. Each version is a single product with a uniform set of capabilities and APIs that can be used for Windows desktop apps and cross-platform console apps, cloud services, and websites.
+* .NET 5 and later versions are implementations of .NET. Each version is a single product with a uniform set of capabilities and APIs that can be used for Windows desktop apps and cross-platform console apps, cloud services, and websites.
 * [.NET Standard](../net-standard.md) is a specification of .NET APIs that are available on all .NET implementations. Targeting .NET Standard lets you produce libraries that are constrained to use APIs that are in a given version of .NET Standard, which means it's usable by all platforms that implement that version of .NET Standard.
 
 For more information about how .NET compares to .NET Standard, see [.NET 5 and .NET Standard](../net-standard.md#net-5-and-net-standard).
@@ -32,9 +32,9 @@ If your project targets .NET or .NET Standard and compiles successfully, it does
 > [!TIP]
 > The .NET team offers a [Platform compatibility analyzer](../analyzers/platform-compat-analyzer.md) to help you discover possible issues.
 
-✔️ DO start with including a `net8.0` target or later for new libraries.
+✔️ DO start with including a `net11.0` (STS) or `net10.0` (LTS) target for new libraries.
 
-> For new libraries, targeting modern .NET (such as .NET 8 or later) provides access to the latest APIs and performance improvements, and enables features like AOT and trimming. Modern .NET versions are cross-platform and provide excellent compatibility across Windows, Linux, and macOS.
+> For new libraries, targeting .NET 10 or .NET 11 provides access to the latest APIs and performance improvements, and enables features like AOT and trimming. Modern .NET versions are cross-platform and provide excellent compatibility across Windows, Linux, and macOS.
 
 ✔️ CONSIDER including a `netstandard2.0` target if you need broad compatibility or .NET Framework support.
 
@@ -62,7 +62,7 @@ Sometimes you need to access framework-specific APIs from your libraries. The be
 
 To shield your consumers from having to build for individual frameworks, you should strive to have a .NET Standard output plus one or more framework-specific outputs. With multi-targeting, all assemblies are packaged inside a single NuGet package. Consumers can then reference the same package and NuGet picks the appropriate implementation. Your .NET Standard library serves as the fallback library that is used everywhere, except for the cases where your NuGet package offers a framework-specific implementation. Multi-targeting allows you to use conditional compilation in your code and call framework-specific APIs.
 
-For example, a NuGet package that multi-targets `netstandard2.0` and `net8.0` contains separate assemblies for each target. NuGet selects the best-matching assembly for each consumer: .NET 8 applications use the `net8.0` assembly, while .NET Framework and older .NET applications fall back to the `netstandard2.0` assembly.
+For example, a NuGet package that multi-targets `netstandard2.0` and `net11.0` contains separate assemblies for each target. NuGet selects the best-matching assembly for each consumer: .NET 11 applications use the `net11.0` assembly, while .NET Framework and older .NET applications fall back to the `netstandard2.0` assembly.
 
 ✔️ CONSIDER targeting .NET implementations in addition to .NET Standard.
 
@@ -78,7 +78,7 @@ public static class GpsLocation
     {
 #if NET462
         return CallDotNetFrameworkApi();
-#elif NET8_0_WINDOWS
+#elif NET11_0_WINDOWS
         return CallWindowsApi();
 #else
         throw new PlatformNotSupportedException();
@@ -91,7 +91,7 @@ public static class GpsLocation
     {
         get
         {
-#if NET462 || NET8_0_WINDOWS
+#if NET462 || NET11_0_WINDOWS
             return true;
 #else
             return false;
@@ -122,8 +122,8 @@ public static class GpsLocation
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <!-- This project will output net8.0 and netstandard2.0 assemblies -->
-    <TargetFrameworks>net8.0;netstandard2.0</TargetFrameworks>
+    <!-- This project will output net11.0 and netstandard2.0 assemblies -->
+    <TargetFrameworks>net11.0;netstandard2.0</TargetFrameworks>
   </PropertyGroup>
 </Project>
 ```

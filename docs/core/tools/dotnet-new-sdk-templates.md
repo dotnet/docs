@@ -3,7 +3,7 @@ title: .NET default templates for 'dotnet new'
 description: Learn about 'dotnet new' templates that ship with the .NET SDK.
 ms.custom: updateeachrelease
 no-loc: [Blazor, WebAssembly]
-ms.date: 11/07/2025
+ms.date: 11/11/2026
 ---
 # Default templates for `dotnet new`
 
@@ -98,6 +98,8 @@ Creates a *Directory.Build.targets* file for customizing MSBuild targets and tas
 
   | SDK version | Default value |
   |-------------|---------------|
+  | 11.0        | `net11.0`     |
+  | 10.0        | `net10.0`     |
   | 9.0         | `net9.0`      |
   | 8.0         | `net8.0`      |
   | 7.0         | `net7.0`      |
@@ -126,7 +128,7 @@ Creates a *Directory.Build.targets* file for customizing MSBuild targets and tas
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. Values: `net9.0`, `net8.0`, or `net7.0` to create a .NET Class Library, or `netstandard2.1` or `netstandard2.0` to create a .NET Standard Class Library. The default value for .NET SDK 9.0.x is `net9.0`.
+  Specifies the [framework](../../standard/frameworks.md) to target. Values: `net11.0`, `net10.0`, or `net9.0` to create a .NET Class Library, or `netstandard2.1` or `netstandard2.0` to create a .NET Standard Class Library. The default value for .NET SDK 11.0.x is `net11.0`.
 
   To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
@@ -146,7 +148,7 @@ Creates a *Directory.Build.targets* file for customizing MSBuild targets and tas
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. For the .NET 9 SDK, the default value is `net9.0`.
+  Specifies the [framework](../../standard/frameworks.md) to target. For the .NET 11 SDK, the default value is `net11.0`.
 
 - **`--langVersion <VERSION_NUMBER>`**
 
@@ -178,7 +180,7 @@ Creates a *Directory.Build.targets* file for customizing MSBuild targets and tas
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. The default value for .NET 9 SDK is `net9.0`.
+  Specifies the [framework](../../standard/frameworks.md) to target. The default value for .NET 11 SDK is `net11.0`.
 
   To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
@@ -206,6 +208,7 @@ Creates a *Directory.Build.targets* file for customizing MSBuild targets and tas
 
   | SDK version | Default value |
   |-------------|---------------|
+  | 11.0        | `net11.0`     |
   | 10.0        | `net10.0`     |
   | 9.0         | `net9.0`      |
   | 8.0         | `net8.0`      |
@@ -290,6 +293,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   | SDK version | Default value |
   |-------------|---------------|
+  | 11.0        | `net11.0`     |
   | 10.0        | `net10.0`     |
   | 9.0         | `net9.0`      |
   | 8.0         | `net8.0`      |
@@ -316,6 +320,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   | SDK version | Default value |
   |-------------|---------------|
+  | 11.0        | `net11.0`     |
   | 10.0        | `net10.0`     |
   | 9.0         | `net9.0`      |
   | 8.0         | `net8.0`      |
@@ -420,6 +425,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   | SDK version | Default value |
   |-------------|---------------|
+  | 11.0        | `net11.0`     |
   | 10.0        | `net10.0`     |
   | 9.0         | `net9.0`      |
   | 8.0         | `net8.0`      |
@@ -521,6 +527,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   | SDK version | Default value |
   |-------------|---------------|
+  | 11.0        | `net11.0`     |
   | 10.0        | `net10.0`     |
   | 9.0         | `net9.0`      |
   | 8.0         | `net8.0`      |
@@ -581,6 +588,7 @@ Creates a web API project with AOT publish enabled. For more information, see [N
 
   | SDK version | Default value |
   |-------------|---------------|
+  | 11.0        | `net11.0`     |
   | 10.0        | `net10.0`     |
   | 9.0         | `net9.0`      |
   | 8.0         | `net8.0`      |
@@ -666,6 +674,7 @@ Creates a web API project with AOT publish enabled. For more information, see [N
 
   | SDK version | Default value |
   |-------------|---------------|
+  | 11.0        | `net11.0`     |
   | 10.0        | `net10.0`     |
   | 9.0         | `net9.0`      |
   | 8.0         | `net8.0`      |
@@ -893,6 +902,7 @@ The following table shows templates that have been discontinued and no longer co
 
   | SDK version | Default value |
   |-------------|---------------|
+  | 11.0        | `net11.0`     |
   | 10.0        | `net10.0`     |
   | 9.0         | `net9.0`      |
   | 8.0         | `net8.0`      |

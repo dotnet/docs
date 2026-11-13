@@ -2,7 +2,7 @@
 
 | .NET implementation         | Version support                         |
 |-----------------------------|-----------------------------------------|
-| .NET and .NET Core          | 3.0, 3.1, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 |
+| .NET and .NET Core          | 3.0, 3.1, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0 |
 | .NET Framework <sup>1</sup> | N/A<sup>2</sup>                         |
 | Mono                        | 6.4                                     |
 | Xamarin.iOS                 | 12.16                                   |

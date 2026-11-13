@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 11/11/2026
+ms.date: 11/12/2026
 ms.topic: reference
 ms.custom: updateeachrelease
 ai-usage: ai-assisted
@@ -1010,11 +1010,11 @@ The following MSBuild properties are documented in this section:
 
 ### AnalysisLevel
 
-The `AnalysisLevel` property lets you specify a set of code analyzers to run according to a .NET release. Each .NET release has a set of code analysis rules. Of that set, the rules that are enabled by default for that release analyze your code. For example, if you upgrade from .NET 8 to .NET 9 but don't want the default set of code analysis rules to change, set `AnalysisLevel` to `8`.
+The `AnalysisLevel` property lets you specify a set of code analyzers to run according to a .NET release. Each .NET release has a set of code analysis rules. Of that set, the rules that are enabled by default for that release analyze your code. For example, if you upgrade from .NET 10 to .NET 11 but don't want the default set of code analysis rules to change, set `AnalysisLevel` to `10`.
 
 ```xml
 <PropertyGroup>
-  <AnalysisLevel>8</AnalysisLevel>
+  <AnalysisLevel>10</AnalysisLevel>
 </PropertyGroup>
 ```
 
@@ -1028,7 +1028,7 @@ Optionally, you can specify a compound value for this property that also specifi
 
 Default value:
 
-- If your project targets .NET 5 or later, or if you've added the [AnalysisMode](#analysismode) property, the default value is `latest`.
+- If your project targets .NET 5 or later, the default value matches the target framework version, except when the target framework is the latest released .NET version supported by the SDK. In that case, the default value is `latest`.
 - Otherwise, this property is omitted unless you explicitly add it to the project file.
 
 The following table shows the values you can specify.
@@ -1112,7 +1112,7 @@ The following table shows the available option values. They're listed in increas
 > [!NOTE]
 >
 > - If you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) (in addition to code-quality rules).
-> - If you use a compound value for [AnalysisLevel](#analysislevel), for example, `<AnalysisLevel>9-recommended</AnalysisLevel>`, you can omit this property entirely. However, if you specify both properties, `AnalysisLevel` takes precedence over `AnalysisMode`.
+> - If you use a compound value for [AnalysisLevel](#analysislevel), for example, `<AnalysisLevel>11-recommended</AnalysisLevel>`, you can omit this property entirely. However, if you specify both properties, `AnalysisLevel` takes precedence over `AnalysisMode`.
 
 ### AnalysisMode\<Category>
 

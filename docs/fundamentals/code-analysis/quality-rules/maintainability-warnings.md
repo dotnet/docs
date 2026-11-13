@@ -1,7 +1,7 @@
 ---
 title: Maintainability rules (code analysis)
 description: "Learn about code analysis maintainability rules."
-ms.date: 11/04/2016
+ms.date: 11/12/2026
 f1_keywords:
 - vs.codeanalysis.maintainabilityrules
 helpviewer_keywords:
@@ -33,6 +33,7 @@ Maintainability rules support library and application maintenance.
 | [CA1514: Avoid redundant length argument](ca1514.md) | A redundant length argument is used when slicing to the end of a string or buffer. A calculated length can be error-prone and is also unnecessary. |
 | [CA1515: Consider making public types internal](ca1515.md) | Unlike a class library, an application's API isn't typically referenced publicly, so types can be marked internal. |
 | [CA1516: Use cross-platform intrinsics](ca1516.md) | This rule detects usage of platform-specific intrinsics that can be replaced with an equivalent cross-platform intrinsic instead. |
+| [CA1517: Use `ReadOnlySpan<T>` or `ReadOnlyMemory<T>` instead of `Span<T>` or `Memory<T>`](ca1517.md) | A method parameter uses `Span<T>` or `Memory<T>` even though the method doesn't modify the data. Use its read-only counterpart to clarify intent. |
 
 ## See also
 

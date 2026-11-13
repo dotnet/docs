@@ -1,7 +1,7 @@
 ---
 title: Target frameworks in SDK-style projects - .NET
 description: Learn about target frameworks for .NET apps and libraries.
-ms.date: 11/11/2026
+ms.date: 11/12/2026
 ms.service: dotnet
 ms.custom: updateeachrelease
 ms.subservice: standard-library
@@ -89,10 +89,11 @@ The following table shows the compatibility of the .NET 8+ TFMs.
 | `net10.0-windows`     | (Subsequent version of `net9.0-windows`)                        |
 | `net11.0`             | (Subsequent version of `net10.0`)                               |
 | `net11.0-android`     | (Subsequent version of `net10.0-android`)                       |
-| `net11.0-browser`     | Everything inherited from `net11.0`                             |
+| `net11.0-browser`     | Everything inherited from `net11.0`                            |
 | `net11.0-ios`         | (Subsequent version of `net10.0-ios`)                           |
 | `net11.0-maccatalyst` | (Subsequent version of `net10.0-maccatalyst`)                   |
 | `net11.0-macos`       | (Subsequent version of `net10.0-macos`)                         |
+| `net11.0-tizen`       | (Subsequent version of `net10.0-tizen`)                         |
 | `net11.0-tvos`        | (Subsequent version of `net10.0-tvos`)                          |
 | `net11.0-windows`     | (Subsequent version of `net10.0-windows`)                       |
 
@@ -112,7 +113,7 @@ You can also specify an optional OS version at the end of an OS-specific TFM, fo
 
 The .NET SDK is designed to be able to support newly released APIs for an individual platform without a new version of the base TFM. This enables you to access platform-specific functionality without waiting for a major release of .NET. You can gain access to these newly released APIs by incrementing the platform version in the TFM. For example, if the Android platform added API level 34 APIs in a .NET 8.0.x SDK update, you could access them by using the TFM `net8.0-android34.0`.
 
-When an OS-specific TFM doesn't specify the platform version explicitly, it has an implied value that can be inferred from the base TFM and platform name. For example, the default platform version for Android in .NET 9 is `35.0`, which means that `net9.0-android` is shorthand for the canonical `net9.0-android35.0` TFM. The shorthand form is intended for use in project files only, and is expanded to the canonical form by the .NET SDK's MSBuild targets before being passed to other tools, such as NuGet.
+When an OS-specific TFM doesn't specify the platform version explicitly, it has an implied value that can be inferred from the base TFM and platform name. For example, the default platform version for Android in .NET 11 is `37.0`, which means that `net11.0-android` is shorthand for the canonical `net11.0-android37.0` TFM. The shorthand form is intended for use in project files only, and is expanded to the canonical form by the .NET SDK's MSBuild targets before being passed to other tools, such as NuGet.
 
 The following table shows the *default* target platform version (TPV) for Android and iOS for each .NET release. **If you want to use the latest bindings, use the default (that is, don't specify an OS version).**
 
@@ -121,7 +122,7 @@ The following table shows the *default* target platform version (TPV) for Androi
 | .NET 8       |    34.0 | 17.2 |
 | .NET 9       |    35.0 | 18.0 |
 | .NET 10      |    36.0 | 18.7 |
-| .NET 11      |    37.0 | 27.0 |
+| .NET 11      |    37.0 | 27.2 |
 
 Starting in .NET 9, when service releases introduce support for a later TPV (which will always have the same *major* version number as when the .NET version was initially released), the earliest supported TPV for that .NET version will remain supported. For example, for .NET 9, the earliest supported iOS version, 18.0, will remain supported, even when a service release adds support for the latest iOS 18.x version. **If you need to use the earliest bindings for a .NET release, use a specific OS version number in your TFM.**
 
@@ -220,16 +221,16 @@ public class MyClass
 
 ### TargetFramework values are aliases
 
-The `TargetFramework` property value (for example, `net10.0`) is a friendly name—an alias—that the .NET SDK translates into canonical moniker properties. Specifically, the SDK sets the following properties from the `TargetFramework` value:
+The `TargetFramework` property value (for example, `net11.0`) is a friendly name—an alias—that the .NET SDK translates into canonical moniker properties. Specifically, the SDK sets the following properties from the `TargetFramework` value:
 
-- `TargetFrameworkMoniker` (for example, `.NETCoreApp,Version=v10.0`)
+- `TargetFrameworkMoniker` (for example, `.NETCoreApp,Version=v11.0`)
 - `TargetFrameworkIdentifier` (for example, `.NETCoreApp`)
-- `TargetFrameworkVersion` (for example, `v10.0`)
+- `TargetFrameworkVersion` (for example, `v11.0`)
 - `TargetPlatformMoniker`, `TargetPlatformIdentifier`, and `TargetPlatformVersion` (when targeting a specific platform)
 
-NuGet and the .NET SDK use these moniker properties—not the `TargetFramework` string—for package compatibility checks and build logic. This translation already happens for OS-specific TFMs. For example, `net10.0-windows` translates to `TargetFrameworkMoniker` = `.NETCoreApp,Version=v10.0` and `TargetPlatformMoniker` = `Windows,Version=7.0`.
+NuGet and the .NET SDK use these moniker properties—not the `TargetFramework` string—for package compatibility checks and build logic. This translation already happens for OS-specific TFMs. For example, `net11.0-windows` translates to `TargetFrameworkMoniker` = `.NETCoreApp,Version=v11.0` and `TargetPlatformMoniker` = `Windows,Version=7.0`.
 
-Because the alias is just a name, the `TargetFramework` value can be any alphanumeric string, as long as the corresponding moniker properties are set correctly. The following project file uses a custom alias named `banana` and explicitly sets the moniker properties so that the project builds and restores for .NET 10.0:
+Because the alias is just a name, the `TargetFramework` value can be any alphanumeric string, as long as the corresponding moniker properties are set correctly. The following project file uses a custom alias named `banana` and explicitly sets the moniker properties so that the project builds and restores for .NET 11.0:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -239,8 +240,8 @@ Because the alias is just a name, the `TargetFramework` value can be any alphanu
 
   <PropertyGroup Condition=" '$(TargetFramework)' == 'banana' ">
     <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
-    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
-    <TargetFrameworkMoniker>.NETCoreApp,Version=v10.0</TargetFrameworkMoniker>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+    <TargetFrameworkMoniker>.NETCoreApp,Version=v11.0</TargetFrameworkMoniker>
   </PropertyGroup>
 </Project>
 ```

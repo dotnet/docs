@@ -6,7 +6,7 @@ using System.Text.Json;
 // Create the client
 ChatClient client = new(
     model: "gpt-4o-mini",
-    credential: Environment.GetEnvironmentVariable("OPENAI_API_KEY")!);
+    credential: new ApiKeyCredential(Environment.GetEnvironmentVariable("OPENAI_API_KEY")!));
 
 // Create the request content
 BinaryData input = BinaryData.FromBytes("""

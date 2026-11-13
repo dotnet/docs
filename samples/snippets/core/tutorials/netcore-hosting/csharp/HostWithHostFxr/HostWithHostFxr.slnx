@@ -1,0 +1,17 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/build/">
+    <Project Path="src/NativeHost/NativeHost.csproj" />
+  </Folder>
+  <Project Path="src/DotNetLib/DotNetLib.csproj" />
+  <Project Path="src/NativeHost/NativeHost.vs.vcxproj">
+    <Platform Solution="*|Any CPU" Project="Win32" />
+    <Build Solution="*|Any CPU" Project="false" />
+    <Build Solution="Debug|x64" Project="false" />
+    <Build Solution="Debug|x86" Project="false" />
+  </Project>
+</Solution>

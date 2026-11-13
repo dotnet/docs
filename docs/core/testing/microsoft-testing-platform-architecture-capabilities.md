@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) capabilities overview
 description: Learn about MTP capabilities concept.
 author: MarcoRossignoli
 ms.author: mrossignoli
-ms.date: 10/26/2026
+ms.date: 11/13/2026
 ai-usage: ai-assisted
 ---
 
@@ -146,27 +146,54 @@ Return the capability from the `capabilitiesFactory` that you pass to `RegisterT
 :::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-capabilities/trx/csharp/Program.cs" id="RegisterTrxCapability":::
 :::code language="vb" source="./snippets/microsoft-testing-platform-architecture-capabilities/trx/vb/Program.vb" id="RegisterTrxCapability":::
 
-The abstraction package provides typed properties for `TestNode.Properties`:
+#### Required test-node data
+
+To report a test result, publish a `TestNodeUpdateMessage` with the following data:
+
+- Set the required `TestNode.Uid` and `TestNode.DisplayName` members.
+- Include exactly one final [state property](./microsoft-testing-platform-architecture-test-framework.md#execution-information): `PassedTestNodeStateProperty`, `FailedTestNodeStateProperty`, `ErrorTestNodeStateProperty`, `TimeoutTestNodeStateProperty`, or `SkippedTestNodeStateProperty`.
+- To create a test definition for a UID, include either `TrxFullyQualifiedTypeNameProperty` or `TestMethodIdentifierProperty` in `TestNode.Properties`.
+
+The reporter ignores updates with no state, `DiscoveredTestNodeStateProperty`, or `InProgressTestNodeStateProperty`. Include identity and report metadata on the final update itself. The reporter doesn't carry metadata forward from discovery or in-progress updates.
+
+For `TestMethod/@className`, the reporter prefers `TrxFullyQualifiedTypeNameProperty`. Otherwise, it combines the namespace and type name from `TestMethodIdentifierProperty`. For `TestMethod/@name`, it uses the method identifier's method name, or `DisplayName` when no method identifier is present. The reporter doesn't look up matching source files, classes, or methods. For tests without a .NET method, supply a stable class label with `TrxFullyQualifiedTypeNameProperty`.
+
+> [!IMPORTANT]
+> In the current reporter, a new test definition without either identity property causes an `InvalidOperationException` during report generation. Neither `DisplayName` nor `TestFileLocationProperty` replaces the required class identity.
+
+#### Optional report properties
+
+All properties in the following table are optional. The `Trx*` properties come from the TRX abstraction package; the other properties come from MTP.
 
 | Property | Purpose |
 |---|---|
-| `TrxFullyQualifiedTypeNameProperty` | Supplies the fully qualified test class name. |
-| `TrxCategoriesProperty` | Supplies the test's categories. |
-| `TrxExceptionProperty` | Supplies the failure message and stack trace. |
-| `TrxMessagesProperty` | Carries `StandardOutputTrxMessage`, `StandardErrorTrxMessage`, and `DebugOrTraceTrxMessage` entries. |
-| `TrxTestDefinitionName` | Overrides the test definition name in the report. |
-| `TrxWorkItemsProperty` | Supplies work-item identifiers. |
+| `TimingProperty` | Supplies per-test start time, end time, and duration through `GlobalTiming`. |
+| `TrxCategoriesProperty` | Adds categories to the shared test definition. |
+| `TrxExceptionProperty` | Supplies the result's error message and stack trace. Failed, error, and timeout states still produce failed outcomes without this property, but error details are absent. |
+| `TrxMessagesProperty` | Carries `StandardOutputTrxMessage`, `StandardErrorTrxMessage`, and `DebugOrTraceTrxMessage` entries, which map to the result's `StdOut`, `StdErr`, and `DebugTrace` elements. |
+| `TrxTestDefinitionName` | Sets `TestDefinitions/UnitTest/@name`. Defaults to `DisplayName` when omitted. |
+| `TrxWorkItemsProperty` | Adds work-item identifiers to the shared test definition. |
+| `TestMetadataProperty` | Maps `Owner`, `Priority`, and `Description` to the corresponding test-definition fields. Priority must parse as an integer other than `int.MaxValue`. Other keys become `Properties/Property` entries with `Key` and `Value` child elements. |
+| `FileArtifactProperty` | Copies per-test attachment files into the results layout and references them from `UnitTestResult/ResultFiles`. The files aren't embedded in the TRX XML. |
 
-For example, enrich a result after your framework has determined the test outcome:
+Without `TimingProperty`, the result's duration is `00:00:00`, and its `startTime` and `endTime` use the current UTC time when the result XML is generated. The reporter doesn't reconstruct execution timing.
+
+Add messages through a `TrxMessagesProperty` container. Message objects such as `StandardOutputTrxMessage` don't implement `IProperty` and can't be added directly to `TestNode.Properties`.
+
+Except for `TestMetadataProperty` and `FileArtifactProperty`, supply at most one instance of each property described here on a node. Use the corresponding container's collection for multiple messages, categories, or work-item identifiers. The reporter rejects duplicate singleton properties.
+
+When a UID repeats, the reporter retains the first test definition. If any occurrence supplies `TrxTestDefinitionName`, every occurrence's effective definition name, whether explicit or the `DisplayName` fallback, must agree. Otherwise, report generation throws an `InvalidOperationException`. If all occurrences omit the property, different display names are tolerated.
+
+For example, supply required class identity and optional enrichment after your framework determines the test outcome:
 
 :::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-capabilities/trx/csharp/Program.cs" id="EnrichTrxResult":::
 :::code language="vb" source="./snippets/microsoft-testing-platform-architecture-capabilities/trx/vb/Program.vb" id="EnrichTrxResult":::
 
-These properties supplement the [required test-node state](./microsoft-testing-platform-architecture-test-framework.md#execution-information); they don't replace it. TRX-specific messages also don't replace the platform's [`StandardOutputProperty` and `StandardErrorProperty`](./microsoft-testing-platform-architecture-test-framework.md#captured-test-output).
+TRX doesn't consume the platform's [`StandardOutputProperty` and `StandardErrorProperty`](./microsoft-testing-platform-architecture-test-framework.md#captured-test-output). To include captured text in both terminal output and TRX, supply the platform output properties and the TRX message container.
 
 The complete sample contains one passing test and one intentionally failing test. With `--report-trx`, it writes both results and the enriched metadata to a TRX file, then returns exit code `2`. To run only the passing test, add `--filter-uid trx.pass`.
 
-If the capability is absent or `IsSupported` is `false`, the TRX reporter warns that the framework doesn't support TRX enrichment. The reporter can still create a report from the available data, but framework-specific details might be missing. Don't advertise support unless your framework supplies the corresponding metadata.
+If the capability is absent or `IsSupported` is `false`, the TRX reporter warns that the framework doesn't support TRX enrichment. The reporter can still create a report if the final test nodes contain the required identity data. The warning doesn't waive those requirements. Don't advertise support unless your framework supplies the corresponding metadata.
 
 ### `IGracefulStopTestExecutionCapability`
 

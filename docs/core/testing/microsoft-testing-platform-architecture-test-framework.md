@@ -84,7 +84,7 @@ return await testApplication.RunAsync();
 > [!NOTE]
 > Returning empty [ITestFrameworkCapabilities](./microsoft-testing-platform-architecture-capabilities.md) shouldn't prevent the execution of the test session. All test frameworks should be capable of discovering and running tests. The impact should be limited to extensions that may opt-out if the test framework lacks a certain feature.
 
-For reports that need framework-specific metadata, register [`ITrxReportCapability`](./microsoft-testing-platform-architecture-capabilities.md#itrxreportcapability) and add the corresponding TRX properties to your test results.
+For TRX reports, register [`ITrxReportCapability`](./microsoft-testing-platform-architecture-capabilities.md#itrxreportcapability) and supply the [required test identity on final node updates](./microsoft-testing-platform-architecture-capabilities.md#required-test-node-data). Additional report metadata is optional.
 
 ### Create a testing framework
 

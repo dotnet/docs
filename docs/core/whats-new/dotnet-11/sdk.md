@@ -295,7 +295,7 @@ Optimized Native AOT publishing is opt-in. The `UseOptimizedPublish` property de
 </PropertyGroup>
 ```
 
-For details about the build hooks affected by optimized publishing and how to migrate custom targets, see [Full build skipped for Native AOT publish](../../compatibility/sdk/11/aot-publish-skips-full-build.md).
+For details about the build hooks affected by optimized publishing and how to migrate custom targets, see [Full build skipped for Native AOT publish](../../compatibility/sdk/12/aot-publish-skips-full-build.md). Starting in .NET 12 Preview 1, optimized publishing is enabled by default.
 
 ## Test improvements
 

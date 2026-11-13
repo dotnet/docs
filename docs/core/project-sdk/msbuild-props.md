@@ -130,7 +130,7 @@ The `TargetFramework` property specifies the target framework version for the ap
 
 ```xml
 <PropertyGroup>
-  <TargetFramework>net8.0</TargetFramework>
+  <TargetFramework>net11.0</TargetFramework>
 </PropertyGroup>
 ```
 

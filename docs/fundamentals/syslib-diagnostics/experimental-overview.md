@@ -41,7 +41,7 @@ To suppress the warnings in a project file:
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-   <TargetFramework>net9.0</TargetFramework>
+   <TargetFramework>net11.0</TargetFramework>
    <!-- NoWarn below suppresses SYSLIB5001 project-wide -->
    <NoWarn>$(NoWarn);SYSLIB5001</NoWarn>
    <!-- To suppress multiple warnings, you can use multiple NoWarn elements -->

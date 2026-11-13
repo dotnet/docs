@@ -95,7 +95,7 @@ Here is an example SDK-style project file with MSBuild properties for configurin
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup>

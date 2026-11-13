@@ -40,11 +40,10 @@ IHost host = Host.CreateDefaultBuilder(args)
 
             // Register a custom client factory
             #pragma warning disable OPENAI001 // Type is for evaluation purposes and is subject to change in future updates.
-            clientBuilder.AddClient<ResponsesClient, OpenAIClientOptions>(
+            clientBuilder.AddClient<ResponsesClient, ResponsesClientOptions>(
                 (options, credential, _) => new ResponsesClient(
-                    "<deployment_name>",
                     new BearerTokenPolicy(credential, "https://ai.azure.com/.default"),
-                    new OpenAIClientOptions { Endpoint = new Uri($"{endpoint}/openai/v1/") }
+                    new ResponsesClientOptions { Endpoint = new Uri($"{endpoint}/openai/v1/") }
                 ));
             #pragma warning restore OPENAI001
         });

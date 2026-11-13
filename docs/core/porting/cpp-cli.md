@@ -25,7 +25,7 @@ There are some important limitations with C++/CLI projects and .NET compared to 
 To port a C++/CLI project to .NET, make the following changes to the _.vcxproj_ file. These migration steps differ from the steps needed for other project types because C++/CLI projects don't use SDK-style project files.
 
 01. Replace `<CLRSupport>true</CLRSupport>` properties with `<CLRSupport>NetCore</CLRSupport>`. This property is often in configuration-specific property groups, so you might need to replace it in multiple places.
-01. Replace `<TargetFrameworkVersion>` properties with `<TargetFramework>net8.0</TargetFramework>`. Be sure to change the tag and value.
+01. Replace `<TargetFrameworkVersion>` properties with `<TargetFramework>net11.0</TargetFramework>`. Be sure to change the tag and value.
 01. Remove any .NET Framework references to `System`, `System.Data`, `System.Windows.Forms`, and `System.Xml`, like `<Reference Include="System" />`. .NET SDK assemblies are automatically referenced when using `<CLRSupport>NetCore</CLRSupport>`.
 01. Update API usage in _.cpp_ files, as necessary, to remove APIs unavailable to .NET. Because C++/CLI projects tend to be fairly thin interop layers, there are often not many changes needed. You can use the [.NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md) to identify unsupported .NET APIs used by C++/CLI binaries.
 01. If your project was an executable, perform the following steps:

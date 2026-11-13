@@ -80,7 +80,7 @@ The [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/package
         <PackageProjectUrl>https://your-url</PackageProjectUrl>
 
         <PackageType>Template</PackageType>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net11.0</TargetFramework>
         <IncludeContentInPack>true</IncludeContentInPack>
         <IncludeBuildOutput>false</IncludeBuildOutput>
         <ContentTargetFolders>content</ContentTargetFolders>

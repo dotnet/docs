@@ -33,7 +33,7 @@ Here's an example of a `.csproj` file with trimming disabled:
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
     <RuntimeIdentifier>linux-arm</RuntimeIdentifier>
     <PublishTrimmed>false</PublishTrimmed>
   </PropertyGroup>

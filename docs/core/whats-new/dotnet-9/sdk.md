@@ -66,7 +66,7 @@ Consider the following project file that emits a warning when the project is bui
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
   </PropertyGroup>
 
   <Target Name="Error" BeforeTargets="Build">

@@ -26,7 +26,7 @@ With MSTest.Sdk, set `EnableWindowsUIAutomation` to `true`:
 ```xml
 <Project Sdk="MSTest.Sdk/4.5.0">
   <PropertyGroup>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net11.0-windows</TargetFramework>
     <EnableWindowsUIAutomation>true</EnableWindowsUIAutomation>
   </PropertyGroup>
 </Project>

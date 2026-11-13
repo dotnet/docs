@@ -1,9 +1,10 @@
 ﻿using OpenAI.Chat;
+using System.ClientModel;
 
 // Create the client
 ChatClient client = new(
     model: "gpt-4o-mini",
-    credential: Environment.GetEnvironmentVariable("OPENAI_API_KEY")!);
+    credential: new ApiKeyCredential(Environment.GetEnvironmentVariable("OPENAI_API_KEY")!));
 
 // Call the convenience method
 ChatCompletion completion = client.CompleteChat("What is Microsoft Azure?");

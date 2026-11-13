@@ -83,7 +83,7 @@ You can update your project to MSTest v3 in one of two ways:
     ```xml
     <Project Sdk="MSTest.Sdk/3.11.1">
       <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net11.0</TargetFramework>
       </PropertyGroup>
     </Project>
     ```

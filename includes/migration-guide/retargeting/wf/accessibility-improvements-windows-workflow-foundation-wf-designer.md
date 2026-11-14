@@ -22,7 +22,7 @@ The Windows Workflow Foundation (WF) workflow designer is improving how it works
 - The contents of the <xref:System.ServiceModel.Activities.Receive> activity.
 - The Target Type for the <xref:System.Activities.Statements.InvokeMethod> activity.
 - The Exception combobox and the Finally section in the <xref:System.Activities.Statements.TryCatch> activity.
-- The Message Type combobox, the splitter in the Add Correlation Initializers window, the Content Definition window, and the CorrelatesOn Defintion window in the messaging activities (<xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.SendReply>, and <xref:System.ServiceModel.Activities.ReceiveReply>).
+- The Message Type combobox, the splitter in the Add Correlation Initializers window, the Content Definition window, and the CorrelatesOn Definition window in the messaging activities (<xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.SendReply>, and <xref:System.ServiceModel.Activities.ReceiveReply>).
 - State machine transitions and transitions destinations.
 - Annotations and connectors on <xref:System.Activities.Statements.FlowDecision> activities.
 - The context (right-click) menus for activities.

@@ -556,8 +556,6 @@ public class AutoMLMonitor : IMonitor
         _pipeline = pipeline;
     }
 
-    public IEnumerable<TrialResult> GetCompletedTrials() => _completedTrials;
-
     public void ReportBestTrial(TrialResult result)
     {
         return;

@@ -1,7 +1,7 @@
 ---
 title: "Pipe Operations in .NET"
 description: "Learn about pipe operations in .NET. Pipes provide a means for interprocess communication. There are two kinds of pipes: anonymous pipes and named pipes."
-ms.date: "03/30/2017"
+ms.date: "11/14/2026"
 helpviewer_keywords: 
   - "pipes [.NET]"
   - "pipe operations [.NET]"
@@ -23,7 +23,7 @@ Pipes provide a means for interprocess communication. There are two types of pip
   
 - Named pipes.  
   
-     Named pipes provide interprocess communication between a pipe server and one or more pipe clients. Named pipes can be one-way or duplex. They support message-based communication and allow multiple clients to connect simultaneously to the server process using the same pipe name. Named pipes also support impersonation, which enables connecting processes to use their own permissions on remote servers.  
+     Named pipes provide interprocess communication between a pipe server and one or more pipe clients. Named pipes can be one-way or duplex. They support message-based communication and allow multiple clients to connect simultaneously to the server process using the same pipe name. Named pipes also support client impersonation, but the permissions used depend on the platform. For important limitations on Linux and macOS, see the caution in the [named pipe example](how-to-use-named-pipes-for-network-interprocess-communication.md).
   
      In .NET, you implement named pipes by using the <xref:System.IO.Pipes.NamedPipeServerStream> and <xref:System.IO.Pipes.NamedPipeClientStream> classes.  
   

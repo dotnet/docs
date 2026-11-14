@@ -217,7 +217,7 @@ After the project reference has been added, configure the _Package.wxs_ file. Op
                                 DisplayName="$(Name)"
                                 Description="A joke service that periodically logs nerdy humor."
                                 Start="auto"
-                                Account="LocalService"
+                                Account="NT AUTHORITY\LocalService"
                                 ErrorControl="normal" />
 
                 <!-- Tell WiX to start the Service -->
@@ -239,11 +239,11 @@ After the project reference has been added, configure the _Package.wxs_ file. Op
 </Wix>
 ```
 
-The `ServiceInstall` element's `Account` attribute specifies the account under which the service runs. The `LocalService` account is a built-in account with reduced privileges that's appropriate for most services. Common values include:
+The `ServiceInstall` element's `Account` attribute specifies the account under which the service runs. Windows Installer requires built-in service accounts to be specified using their fully qualified account names:
 
-- `LocalService`: A built-in account with reduced privileges and no network credentials.
-- `NetworkService`: Similar to LocalService but has network credentials.
-- `LocalSystem`: The highest privilege level (use with caution).
+- `NT AUTHORITY\LocalService`: A built-in account with reduced privileges and no network credentials. This account is recommended for most isolated background services.
+- `NT AUTHORITY\NetworkService`: A built-in account with reduced privileges that can authenticate to network resources using the computer's identity.
+- `LocalSystem`: The highest privilege level running with complete administrative access on the local machine (use with caution).
 
 When you build the project, the output is an MSI file that can be used to install and uninstall the service.
 

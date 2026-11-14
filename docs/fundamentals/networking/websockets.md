@@ -145,7 +145,7 @@ var options = new WebSocketCreationOptions()
 var ws = WebSocket.CreateFromStream(stream, options);
 ```
 
-If the Unsolicited PONG strategy is used, PONG frames are used as a unidirectional heartbeat. They sent regularly with `KeepAliveInterval` intervals, regardless whether the remote endpoint is communicating or not.
+If the Unsolicited PONG strategy is used, PONG frames are used as a unidirectional heartbeat. They are sent regularly with `KeepAliveInterval` intervals, regardless whether the remote endpoint is communicating or not.
 
 In case the PING/PONG strategy is active, a PING frame is sent after `KeepAliveInterval` time passed since the _last communication_ from the remote endpoint. Each PING frame contains an integer token to pair with the expected PONG response. If no PONG response arrived after `KeepAliveTimeout` elapsed, the remote endpoint is deemed unresponsive, and the WebSocket connection is automatically aborted.
 

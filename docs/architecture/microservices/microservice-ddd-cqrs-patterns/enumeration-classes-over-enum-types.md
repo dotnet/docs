@@ -1,6 +1,6 @@
 ---
 title: Using Enumeration classes instead of enum types
-description: .NET Microservices Architecture for Containerized .NET Applications | Lear how you can use enumeration classes, instead of enums, as a way to solve some limitations of the latter.
+description: .NET Microservices Architecture for Containerized .NET Applications | Learn how you can use enumeration classes, instead of enums, as a way to solve some limitations of the latter.
 ms.date: 11/25/2020
 ---
 # Use enumeration classes instead of enum types

@@ -2,7 +2,7 @@
 title: "Vector databases for .NET AI apps"
 description: "Learn how vector databases extend LLM capabilities by storing and processing embeddings in .NET, and how to use Microsoft.Extensions.VectorData to build semantic search features."
 ms.topic: concept-article
-ms.date: 02/28/2026
+ms.date: 11/01/2026
 ai-usage: ai-assisted
 ---
 
@@ -92,12 +92,33 @@ class Movie
 
 ## Vector store providers
 
-The `Microsoft.Extensions.VectorData.Abstractions` package defines the abstractions, and separate provider packages provide implementations for specific vector databases. Choose the provider that matches your vector database, for example, [CommunityToolkit.VectorData.AzureAISearch](https://www.nuget.org/packages/CommunityToolkit.VectorData.AzureAISearch).
+The `Microsoft.Extensions.VectorData.Abstractions` package defines the core abstractions, and provider packages provide concrete implementations for specific vector databases and search services. Choose the provider that matches your vector database.
 
 All providers implement the same <xref:Microsoft.Extensions.VectorData.VectorStore> and <xref:Microsoft.Extensions.VectorData.VectorStoreCollection`2> abstract classes, so you can switch between them without changing your application logic.
 
+The following table lists common vector store providers available for .NET:
+
+| Store or engine | Type | NuGet package | Description |
+|---|---|---|---|
+| In-Memory | Prototyping | [`CommunityToolkit.VectorData.InMemory`](https://www.nuget.org/packages/CommunityToolkit.VectorData.InMemory) | Fast, in-process store with no external dependencies; ideal for prototyping and local experimentation. |
+| [Qdrant](https://qdrant.tech/) | Open source | [`CommunityToolkit.VectorData.Qdrant`](https://www.nuget.org/packages/CommunityToolkit.VectorData.Qdrant) | Open-source, production-ready vector search engine with extended filtering support. |
+| [Redis](https://redis.io/) | Open source | [`CommunityToolkit.VectorData.Redis`](https://www.nuget.org/packages/CommunityToolkit.VectorData.Redis) | In-memory key-value data store with vector indexing and search capabilities. |
+| [Chroma](https://www.trychroma.com/) | Open source | [`CommunityToolkit.VectorData.Chroma`](https://www.nuget.org/packages/CommunityToolkit.VectorData.Chroma) | Open-source embedding database built for AI applications and local development. |
+| [Milvus](https://milvus.io/) | Open source | [`Microsoft.SemanticKernel.Connectors.Milvus`](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Milvus) | Cloud-native, open-source vector database built for massive-scale similarity search. |
+| [PostgreSQL](https://www.postgresql.org/) ([pgvector](https://github.com/pgvector/pgvector-dotnet)) | Open source / Relational | [`Pgvector`](https://www.nuget.org/packages/Pgvector) / [`Pgvector.EntityFrameworkCore`](https://www.nuget.org/packages/Pgvector.EntityFrameworkCore) | Vector similarity search extension for PostgreSQL; supports native SQL and EF Core LINQ queries. |
+| [SQL Server / Azure SQL](/sql/sql-server/ai/vectors) | Relational | [`CommunityToolkit.VectorData.SqlServer`](https://www.nuget.org/packages/CommunityToolkit.VectorData.SqlServer) | Native vector search support integrated into SQL Server and Azure SQL Database. |
+| [Azure AI Search](/azure/search/vector-search-overview) | Cloud search service | [`CommunityToolkit.VectorData.AzureAISearch`](https://www.nuget.org/packages/CommunityToolkit.VectorData.AzureAISearch) | Managed cloud information retrieval platform with hybrid search, semantic ranking, and vector indexing. |
+| [Azure Cosmos DB](/azure/cosmos-db/vector-database) | Cloud document / NoSQL | [`CommunityToolkit.VectorData.AzureCosmosDB`](https://www.nuget.org/packages/CommunityToolkit.VectorData.AzureCosmosDB) | Distributed multi-model database with integrated vector indexing for NoSQL and MongoDB vCore APIs. |
+| [MongoDB](https://www.mongodb.com/) | Document | [`Microsoft.SemanticKernel.Connectors.MongoDB`](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.MongoDB) | Document database with vector search indexing for hybrid and similarity queries. |
+| [Elasticsearch](https://www.elastic.co/) | Search / Analytics | [`Elastic.SemanticKernel.Connectors.Elasticsearch`](https://www.nuget.org/packages/Elastic.SemanticKernel.Connectors.Elasticsearch) | Distributed search and analytics engine with approximate nearest neighbor (ANN) vector search. |
+
+> [!NOTE]
+> Provider packages with `SemanticKernel` in their package name implement the standard `Microsoft.Extensions.VectorData` abstractions. You can use them directly in any .NET application without requiring the Semantic Kernel orchestration framework.
+>
+> For a comprehensive list of community and ecosystem connectors, see [Out-of-the-box Vector Store providers](/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/).
+
 > [!TIP]
-> Use the in-memory provider ([CommunityToolkit.VectorData.InMemory](https://www.nuget.org/packages/CommunityToolkit.VectorData.InMemory)) during initial development/prototyping - it doesn't require any external service or configuration, and you can swap it out for a production provider later. Avoid using the InMemory provider for testing, as there can be important differences between this provider and your production database. Consider using [testcontainers](https://dotnet.testcontainers.org/) to run tests against your production database system.
+> Use the in-memory provider ([CommunityToolkit.VectorData.InMemory](https://www.nuget.org/packages/CommunityToolkit.VectorData.InMemory)) during initial development and prototyping because it does not require external service configuration. Avoid using the in-memory provider for integration testing, as behavior can differ from production databases. Consider using [Testcontainers](https://dotnet.testcontainers.org/) to test against your target database engine.
 
 ## Related content
 

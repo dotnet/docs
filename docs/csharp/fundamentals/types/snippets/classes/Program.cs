@@ -36,6 +36,20 @@ Console.WriteLine($"{options.Host}:{options.Port} (SSL: {options.UseSsl})");
 // </UsingObjectInitializer>
 
 // <Inheritance>
+class Employee
+{
+    public string Name { get; set; }
+    public Employee(string name) => Name = name;
+}
+
+class Manager : Employee
+{
+    public string Department { get; set; }
+
+    public Manager(string name, string department) : base(name) =>
+        Department = department;
+}
+
 var manager = new Manager("Satya", "Engineering");
 Console.WriteLine($"{manager.Name} manages {manager.Department}");
 // Satya manages Engineering
@@ -76,17 +90,3 @@ class ConnectionOptions
     public bool UseSsl { get; init; }
 }
 // </ObjectInitializer>
-
-class Employee
-{
-    public string Name { get; set; }
-    public Employee(string name) => Name = name;
-}
-
-class Manager : Employee
-{
-    public string Department { get; set; }
-
-    public Manager(string name, string department) : base(name) =>
-        Department = department;
-}

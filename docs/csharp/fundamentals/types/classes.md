@@ -101,6 +101,32 @@ Classes support *inheritance*. You can define a new class that reuses, extends, 
 
 A class can inherit from one base class and implement multiple interfaces. Derived classes inherit all members of the base class except constructors. For more information, see [Inheritance](../object-oriented/inheritance.md) and [Interfaces](interfaces.md).
 
+## Closed hierarchies
+
+Starting in C# 15 (.NET 11), you can mark an inheritance base class with the [`closed`](../../language-reference/keywords/closed.md) modifier to declare a *closed hierarchy*. A `closed` class restricts direct derivation to the assembly in which the class is declared:
+
+```csharp
+public closed class PaymentMethod;
+public class CreditCard(string Number) : PaymentMethod;
+public class BankTransfer(string Iban) : PaymentMethod;
+public class Cash : PaymentMethod;
+```
+
+Because the complete set of direct descendants is fixed at compile time, the compiler verifies that pattern-matching `switch` expressions exhaustively cover all direct subtypes without needing a default or discard arm:
+
+```csharp
+decimal GetProcessingFee(PaymentMethod method) => method switch
+{
+    CreditCard => 1.50m,
+    BankTransfer => 0.50m,
+    Cash => 0.00m
+};
+```
+
+A `closed` class is implicitly abstract and cannot be directly instantiated. Unlike [union types](../../language-reference/builtin-types/union.md), which define a fixed union across distinct value or reference types, closed hierarchies use standard object-oriented inheritance and reference polymorphism. Subtypes can share base implementations, declare virtual members, and encapsulate their own fields and behavior.
+
+For more information, see the [closed modifier](../../language-reference/keywords/closed.md) reference.
+
 ## See also
 
 - [Type system overview](index.md)

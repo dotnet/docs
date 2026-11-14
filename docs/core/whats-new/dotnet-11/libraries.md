@@ -735,10 +735,9 @@ Pass an <xref:System.Diagnostics.Metrics.IMeterFactory?displayProperty=nameWithT
 
 ### Options builder validation improvements
 
-<xref:Microsoft.Extensions.Options.OptionsBuilder`1> gains a new generic <xref:Microsoft.Extensions.Options.OptionsBuilder`1.Validate*?displayProperty=nameWithType> overload that accepts a type parameter instead of a factory delegate. The type must implement <xref:Microsoft.Extensions.Options.IValidateOptions`1> and be registered in the dependency-injection container. This aligns options validation with the standard DI pattern:
+<xref:Microsoft.Extensions.Options.OptionsBuilder`1> gains a new generic <xref:Microsoft.Extensions.Options.OptionsBuilder`1.Validate*?displayProperty=nameWithType> overload that accepts a type parameter implementing <xref:Microsoft.Extensions.Options.IValidateOptions`1> instead of a factory delegate. Dependencies required by TValidateOptions are resolved from the service provider. This aligns options validation with the standard DI pattern:
 
 ```csharp
-services.AddSingleton<IValidateOptions<MyOptions>, MyOptionsValidator>();
 services.AddOptions<MyOptions>()
     .Bind(configuration.GetSection("MyOptions"))
     .Validate<MyOptionsValidator>();

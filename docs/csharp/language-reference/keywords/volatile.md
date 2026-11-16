@@ -61,7 +61,7 @@ Without the `volatile` modifier, the runtime is allowed to optimize the loop by 
 > [!NOTE]
 > The behavior without the `volatile` modifier is non-deterministic. Depending on runtime conditions, hardware architecture, and compiler or runtime optimizations, different runs or environments might produce varying outcomes.
 >
-> In modern .NET applications, prefer using <xref:System.Threading.CancellationTokenSource> and <xref:System.Threading.CancellationToken> for thread cancellation rather than manual volatile boolean flags.
+> Prefer using <xref:System.Threading.CancellationTokenSource> and <xref:System.Threading.CancellationToken> for thread cancellation rather than manual volatile boolean flags.
 
 ## C# language specification
 

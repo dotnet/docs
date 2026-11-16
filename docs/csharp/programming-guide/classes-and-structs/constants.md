@@ -2,12 +2,16 @@
 title: "Constants"
 description: Constants in C# are compile-time literal values, which do not change once the program is compiled. Only C# built-in types can be constants.
 ms.date: 07/20/2015
+ai-usage: ai-assisted
 helpviewer_keywords:
   - "C# language, constants"
   - "constants [C#]"
 ms.assetid: 1fb39621-1738-49b1-a1b3-8587f109123f
 ---
 # Constants (C# Programming Guide)
+
+> [!TIP]
+> For declarations and the distinction between `const` and `readonly`, start with [Fields and constants](../../fundamentals/classes/fields-constants.md). This guide also covers constant-substitution and assembly-versioning details.
 
 Constants are immutable values which are known at compile time and do not change for the life of the program. Constants are declared with the [const](../../language-reference/keywords/const.md) modifier. Only the C# [built-in types](../../language-reference/builtin-types/built-in-types.md) may be declared as `const`. Reference type constants other than <xref:System.String> can only be initialized with a [null](../../language-reference/keywords/null.md) value. User-defined types, including classes, structs, and arrays, cannot be `const`. Use the [readonly](../../language-reference/keywords/readonly.md) modifier to create a class, struct, or array that is initialized one time at run time (for example in a constructor) and thereafter cannot be changed.  
   

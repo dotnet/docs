@@ -37,7 +37,7 @@ The following list includes all the various kinds of members that can be declare
 - Operators
 - Nested Types
 
-For more information, see [Members](../../programming-guide/classes-and-structs/members.md).
+For more information, see [Class members and instances](../classes/index.md).
 
 ## Accessibility
 

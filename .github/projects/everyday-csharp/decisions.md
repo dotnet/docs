@@ -174,6 +174,31 @@ the overlap and keeps Program structure focused on §7. Because the program-stru
 already published, the slim requires a redirect (if any URL changes) and a repo-wide inbound-link fix
 per the build-clean rule.
 
+**As shipped, reconciled 2026-11-16:** Team delivery in
+[#56771](https://github.com/dotnet/docs/pull/56771), merged 2026-11-12 at
+`678c15c744ffe9f18ad6d721a9553635f755db41`, completes planned PR 24 and closes #56747.
+Article #100's H1/TOC title is **Organize types with namespaces**, at the planned overview path.
+Article #4 remains **Namespaces and using directives**, a complete short introduction at its
+unchanged URL, not a stub or a redirected page. The live TOC places the new Namespaces group
+after Build software and before Object-oriented programming. The two keyword references link
+to depth; five already-existing legacy redirects now target depth directly.
+
+The final teaching arc is growth → organization → file-scoped declarations, with the global
+namespace early and no named declaration required for small programs. Explain repeated matching
+declarations across files and equivalent dotted/nested components; define simple names before
+imports/ambiguity. Choose implicit, global, regular, and static imports by scope. Global imports
+are project-wide (the same compilation); ordinary imports are file/namespace-body scoped.
+Imports and qualification don't add library references; keep that distinction in a short note
+and link detailed binding rules. The conclusion reinforces the import choice, not just syntax.
+
+The existing program-structure snippet project owns both articles, with selectable equivalent
+file/block-scoped `Customer` examples; no new snippet home was required. The PR deletes no files,
+and does not deliver or retire retained Programming Guide, class/OOP, or reflection material.
+Later construct owners and BS12's shared-source holds remain in force. See
+[Phase G](plan/phase-g-namespaces-oop.md) for precise file dispositions, review evidence, and
+the unavailable review-gist caveat. This annotation records actual delivery, not adjacent scope
+or a requirement to retrofit other articles.
+
 ### Decision 13: Two-part Fundamentals IA hypothesis
 
 **Status:** Historical working hypothesis, adopted as the governing plan on
@@ -301,6 +326,11 @@ Decision 17 now supplies the foundation-first execution sequence; phase letters 
 PR IDs remain unchanged.
 Keep all scope exclusions, snippet/readability rules, and Decisions 14-15 intact.
 
+**Checkpoint as shipped (2026-11-16):** Phase G completed in #56771; its final namespace paths,
+source ownership, and navigation are recorded in Decision 12b. Resolve subsequent OOP splits
+within H-R as already assigned, rather than reopening namespace design or treating retained
+class/design material as shipped.
+
 **Shipped preservation:** Build software's current placement, four direct guides, and URLs stay
 as shipped in #56333. In particular, its lambda, local-function, and iterator guides don't need
 new language-foundations homes. Phase F and #55930 remain complete through #56528.
@@ -319,6 +349,9 @@ J Arrays/indexes/ranges → K Interfaces → L Enums → M Delegates/events → 
 O Attributes → P Documentation comments before substantial new Phase R applied drafting/delivery.
 This supersedes the earlier blanket flexibility to choose any later phase. It doesn't reorder
 the shipped Build software section or require duplicate syntax homes for its practical guides.
+
+**Progress reconciled 2026-11-16:** G shipped in #56771 on 2026-11-12. H Classes is next in this
+existing sequence; H-P and R remain planned, not started or delivered by namespace consolidation.
 
 **Execution detail:** The [phase index](plan/README.md#execution-sequence) preserves historical
 PR identifiers and distinguishes internal task dependencies from review order. Supporting Q

@@ -43,7 +43,7 @@ advanced routes and conditional article splits stay explicit implementation ques
 
 | Target Article | Source Location | Action |
 |---|---|---|
-| Namespaces and using | *No single source* | New, informed by programming guide |
+| Namespaces and using directives / Organize types with namespaces | Existing `fundamentals/program-structure/namespaces.md` and its `snippets/namespaces/` project | ✅ Shipped two-level consolidation in #56771 (2026-11-12): retain the short introduction and snippet home; canonical depth at `fundamentals/namespaces/overview.md`. No Programming Guide source deletion in this PR. |
 | Nullable value types | `language-reference/builtin-types/nullable-value-types.md` | Adapt for Fundamentals voice |
 | Nullable reference types | `tutorials/nullable-reference-types.md` + `nullable-references.md` | Consolidate |
 | Resolve nullable warnings | Existing nullable warnings articles | Pull |
@@ -97,6 +97,28 @@ and are present on this rebased planning branch, superseding the former accepted
 - The final review changed the H1/TOC label to **Build software**, without changing the folder
   or restoring a Functional techniques subgroup. The separate combined-techniques tutorial
   shipped in #56528; remaining OOP/methods migrations stay future work.
+
+## Namespace source reconciliation
+
+**Reconciled 2026-11-16:** [#56771](https://github.com/dotnet/docs/pull/56771), merged 2026-11-12
+at `678c15c744ffe9f18ad6d721a9553635f755db41`, closes #56747. The original source was PR 1's
+namespace article, not a new harvest from Programming Guide. Its deeper declarations, imports,
+and alias teaching now belong to **Organize types with namespaces**; **Namespaces and using
+directives** retains the early orientation URL and a complete short explanation.
+
+The existing program-structure namespace project supplies both articles. Four new example files
+and selectable file/block-scoped definitions extend it; no project was moved or duplicated.
+The final PR adds/modifies 16 files and deletes none. Five existing redirects from the former
+`fundamentals/types/namespaces.md`, `namespaces-and-assemblies.md`, and Programming Guide
+namespace URLs were retargeted to depth; those sources were already retired before this merge.
+Both keyword-reference depth links were updated, while the introductory TOC entry remains.
+See [Phase G](plan/phase-g-namespaces-oop.md) for exact files, regions, and redirect sources.
+
+**Ownership checkpoint:** All retained class/member/OOP sources still belong to their H-P
+construct owners and the named R/BS12 applied/advanced owners. Reflection and attribute material
+remain for Phase O, not namespace delivery. None of the 82 Programming Guide ledger dispositions
+was completed by #56771, and none of its shared-source retirement holds is released. Preserve
+source sections and examples for those later tasks; the G checkpoint doesn't start R early.
 
 ## Sections That Will Shrink
 

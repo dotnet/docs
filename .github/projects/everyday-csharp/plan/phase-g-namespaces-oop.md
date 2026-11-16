@@ -4,44 +4,103 @@
 
 > **Approved plan (2026-10-29, Decision 16):** Phase G owns Namespaces alone. The old mixed OOP
 > inventory is assigned to standard-aligned construct phases and Building software.
-> Complete namespace consolidation, then revisit concrete OOP redistribution at this checkpoint.
-> Detailed article splits, final paths, and redirect targets are resolved in the assigned work;
-> PR #56333's shipped Building software placement isn't reopened. Approval doesn't start this PR.
+> Namespace consolidation is complete; subsequent OOP redistribution stays with its assigned phases.
+> PR #56333's shipped Building software placement isn't reopened. No later phase is started here.
 
 ### PR 24 — Namespaces (CONSOLIDATE, Decision 12b)
 
-> ~5 files
+**✅ Shipped:** [dotnet/docs#56771](https://github.com/dotnet/docs/pull/56771), opened 2026-11-05,
+merged 2026-11-12 at [`678c15c744ffe9f18ad6d721a9553635f755db41`](https://github.com/dotnet/docs/commit/678c15c744ffe9f18ad6d721a9553635f755db41),
+closes [#56747](https://github.com/dotnet/docs/issues/56747). Reconciled **2026-11-16** against
+the final merged diff, final files, and public review threads, not an intermediate draft.
+The rebased planning checkout matches the merged namespace articles, snippets, TOC, and redirects.
 
-**Outcome and entry:** After the completed expressions/statements/patterns work, readers can
-organize types and resolve a naming collision before declaring larger types in H. This is the
-first remaining delivery in the [execution sequence](README.md#execution-sequence).
+> **As shipped:** 16 changed files, including 10 snippet/project files; no files deleted or moved.
+> This replaces the earlier ~5-file estimate, not the scope of later phases.
 
-| Review unit | Source and intended work | Evidence at completion |
+**Outcome:** After expressions/statements/patterns, readers can organize types and resolve a
+naming collision before deeper class work. G is a completed checkpoint in the
+[execution sequence](README.md#execution-sequence); H is the next planned foundation phase.
+
+| Delivered unit | Final owner and scope | Evidence at completion |
 |---|---|---|
-| Canonical depth | Reuse the shipped `docs/csharp/fundamentals/program-structure/namespaces.md`, not a fresh parallel explanation; verify declaration/import rules against `docs/csharp/language-reference/keywords/namespace.md` and `using-directive.md`. Move full teaching depth into the planned overview. | File-scoped and block-scoped equivalents build; two same-named types demonstrate qualification and an alias; `using` doesn't imply an assembly/package reference. |
-| Early orientation and route repair | Keep a complete short program-structure introduction and its URL; route deeper inbound links to the overview, keeping introductory links early. | One depth owner, working TOC entries at both learning checkpoints, valid snippet regions/outbound links; no redirect from the retained orientation URL. |
+| Canonical depth | [Organize types with namespaces](../../../../docs/csharp/fundamentals/namespaces/overview.md), H1 and TOC title, at `fundamentals/namespaces/overview.md`. | Growth → organization → file-scoped declarations; global namespace early; repeated matching declarations, nested/dotted names, qualification, simple names, aliases, and project/file import choices. |
+| Early orientation | [Namespaces and using directives](../../../../docs/csharp/fundamentals/program-structure/namespaces.md) remains a complete short introduction at its existing URL. | Simplified `Greeter` example, declarations/imports recognized in context, implicit-usings orientation, and onward link to depth; no redirect from this retained URL. |
+| Navigation and reference | `docs/csharp/toc.yml` adds Namespaces → Organize types with namespaces after Build software and before Object-oriented programming. | Program-structure entry remains at lines 40-41; new depth entry is at lines 163-166 in the merge. Both `language-reference/keywords/namespace.md` and `using-directive.md` now link to depth. |
 
-Use a small multi-file snippet project where namespace organization requires it; a standalone
-single-file app needn't carry artificial scaffolding. Show project implicit usings versus an
-explicit `global using`, not SDK defaults as a language rule. Exclude assembly loading,
-`extern alias` binding detail, and reference-resolution catalogs; link reference. No new namespace
-tutorial is needed. The namespace/OOP checkpoint resolves source ownership, not a second
-architecture approval or permission to start R early.
+### Shipped teaching scope
 
-1. New `fundamentals/namespaces/overview.md` — **canonical §14 Namespaces article**: motivation for using namespaces to organize programs and libraries; declaring namespaces; file-scoped namespaces (C# 10); importing with `using`; `global using` directives; namespace aliases; nested namespaces
-2. **Slim the already-shipped `fundamentals/program-structure/namespaces.md`** to a brief intro + cross-reference to the canonical article (avoid duplicate coverage). Retain its working introduction URL; update inbound links that need the full treatment.
-3. Snippet files + toc.yml + inbound-link fixes; redirects only for URLs actually retired or moved
+- Small programs needn't declare a named namespace. Introduce the global namespace before named
+  declarations, then motivate organization as programs grow; prefer file-scoped declarations for
+  the common one-namespace-per-file layout.
+- Matching namespace declarations can repeat across a program, including the same file-scoped
+  namespace in different files. A file-scoped declaration still can't share its file with another
+  namespace declaration or top-level statements. Folder names don't assign namespaces.
+- Explain dotted components through both dotted declarations and nested blocks. The hierarchy
+  groups names, not inheritance or private-member access.
+- Start type lookup with qualification; define simple names before imports and ambiguity.
+  Show type and namespace aliases, including tuple aliases; aliases don't create new types.
+  Imports cover directly contained types, not nested namespaces.
+- Choose SDK implicit imports, explicit global imports, regular imports, then static imports.
+  SDK-generated defaults depend on project type; global imports apply to the same compilation,
+  typically a project, not referencing projects. Regular imports apply to a file or namespace body.
+- Keep project/assembly/package references in a short note: neither an import nor a fully
+  qualified name adds a reference. `global::` gets a brief explanation and reference link;
+  `extern alias` only a pointer. No assembly-loading tutorial or binding-rule catalog shipped.
 
-> *Consolidation rationale (2b):* §14 Namespaces gets one canonical home under `fundamentals/namespaces/`.
-> The Program-structure "Namespaces and using directives" article (shipped in PR 1) is reduced to a short
-> orientation pointer so beginners meet the concept early without the section duplicating the full §14
-> treatment. Because the program-structure article already shipped, verify the build stays clean:
-> retain the introduction URL and audit inbound cross-links for the appropriate depth.
+### Snippets and source disposition
 
-> *Coherence check:* after this PR §14 has exactly one canonical article (`namespaces/overview.md`);
-> the shipped `program-structure/namespaces.md` is a slim intro + cross-reference (not a stub — it
-> still reads as a complete short article and routes onward); any needed redirects and inbound-link fixes
-> land in this same PR, so nothing is duplicated, orphaned, or broken after merge.
+The depth article **reuses**, rather than relocates, the existing
+`docs/csharp/fundamentals/program-structure/snippets/namespaces/namespaces.csproj`
+(`net10.0`, nullable and implicit usings enabled). No separate namespace-depth project was created.
+The project now selects equivalent `Customer` definitions with `NamespaceStyle=FileScoped`
+(default, excludes `BlockScoped.cs`) or `NamespaceStyle=BlockScoped`
+(excludes `FileScopedExample.cs`).
+
+- Added `Products.cs` (`NestedNamespaces`), `ProductNames.cs` (`QualifiedNames`, `Aliases`),
+  `Imports.cs` (`UsingDirective`), and `GlobalMessage.cs` (`GlobalUsingConsumer`).
+- Revised `Basics.cs`, `BlockScoped.cs`, `FileScopedExample.cs`, `GlobalUsings.cs` (only
+  `System.Text`), `TupleAlias.cs` (`System.Math`), and the project selection above.
+  Existing `Aliases.cs` and `StaticUsing.cs` remain in use; the driver exercises the examples.
+- The harvested source is PR 1's namespace introduction. Its declaration/import depth is
+  consolidated into the new article; its early teaching role and snippet home remain.
+  **No Programming Guide article or class/OOP/reflection source was deleted, moved, or
+  completed by #56771.** Preserve class/member sources for H, applied extracts for R and BS12's
+  [shared-source holds](programming-guide-inventory.md#shared-source-retirement-holds), and
+  reflection/attribute work for [O](phase-o-attributes.md). The namespace checkpoint doesn't
+  authorize wholesale OOP redistribution or start applied drafting before P.
+
+### Redirects as shipped
+
+Five **existing** entries in `.openpublishing.redirection.csharp.json` were retargeted to
+`/dotnet/csharp/fundamentals/namespaces/overview`:
+`docs/csharp/fundamentals/types/namespaces.md`, `docs/csharp/namespaces-and-assemblies.md`,
+and `docs/csharp/programming-guide/namespaces/{index,using-namespaces,how-to-use-the-my-namespace}.md`.
+Those legacy sources were already retired before this PR; retargeting isn't a new deletion.
+The retained `program-structure/namespaces.md` is not redirected.
+
+### Review lessons and evidence limits
+
+The final article implements the supplied November 9 review summary's motivation-first opening,
+early global namespace, simple-name terminology, import ordering, and short reference note.
+The supplied November 10 Cray/Harrison checkpoint reported no substantive reader stalls and
+supported growth → organization → file-scoped declarations; the conclusion explicitly contrasts
+project-wide global imports with per-file regular imports. These are presentation lessons,
+not new requirements to rewrite adjacent articles.
+
+Public review independently confirms clarification of
+[direct versus nested namespace imports](https://github.com/dotnet/docs/pull/56771#discussion_r4553616819),
+[SDK-generated implicit imports](https://github.com/dotnet/docs/pull/56771#discussion_r4530295535),
+and [same-compilation global scope](https://github.com/dotnet/docs/pull/56771#discussion_r4530302349).
+The customer-intent metadata was expanded after a reviewer questioned project-import scope;
+the content remained. Final review also [standardized code formatting for `using`](https://github.com/dotnet/docs/pull/56771#discussion_r4553690815),
+except when defining a multi-word term. Genevieve Warren approved on November 10 and 12.
+
+The [linked November 9 gist](https://gist.github.com/BillWagner/4090a4881790e92cda694bb8486df553)
+returned 404 through both GitHub API and web retrieval on 2026-11-16 (and `gh gist view` returned
+not found). Its review history couldn't be independently re-read; the supplied summary above
+is distinguished from the verified final files and public PR reviews. No unresolved design
+choice or navigation/redirect repair is inferred from that access limitation.
 
 ## Legacy PR routing
 

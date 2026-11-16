@@ -24,6 +24,11 @@ These features are "Everyday C#" and receive full treatment in Fundamentals with
 > sequences G-P before new applied growth in R; feature rows indicate ownership, not permission
 > to bypass that order. Shipped Phase E/F coverage is not reopened.
 
+**Namespace status, reconciled 2026-11-16:** [#56771](https://github.com/dotnet/docs/pull/56771)
+shipped 2026-11-12. Program structure retains recognition-level guidance; canonical declaration,
+alias, and import depth is now **Organize types with namespaces**
+(`fundamentals/namespaces/overview.md`). G is complete; H-P and R remain future work.
+
 | Feature | Version | Planned or shipped location (see status) |
 |---|---|---|
 | `field` keyword (field-backed properties) | C# 14 | Classes > Properties (PR 26); API choices in BS03 |
@@ -37,8 +42,8 @@ These features are "Everyday C#" and receive full treatment in Fundamentals with
 | Required members | C# 11 | Classes > Properties/fields (PR 25-27); initialization choices in BS02 |
 | Auto-default structs | C# 11 | Structs (PR 39); retained Type system introduction URL |
 | Record structs | C# 10 | Structs (PR 39): differences from record classes in retained `types/records.md` |
-| Global using directives | C# 10 | Program structure > Namespaces |
-| File-scoped namespaces | C# 10 | Program structure > Namespaces |
+| Global using directives | C# 10 | Namespaces > Organize types with namespaces; project-wide versus regular file/namespace-body imports and SDK implicit usings, shipped in #56771 |
+| File-scoped namespaces | C# 10 | Namespaces > Organize types with namespaces; preferred common layout, equivalent block form and repeated declarations across files, shipped in #56771; short Program structure introduction retained |
 | Parameterless struct constructors | C# 10 | Structs (PR 39) |
 | Records and `with` expressions | C# 9 | Classes > Records (PR 25); record-class/record-struct comparison in PR 39 |
 | Init-only setters | C# 9 | Classes > Properties (PR 26) |
@@ -187,7 +192,7 @@ These features appear in Fundamentals but with limited coverage, linking to deep
 | Method group conversions (delegates) | C# 2 | Basic named-method vs. lambda comparison shipped in #56333; advanced conversion/overload rules remain reference material |
 | Partial methods | C# 3 | Subset for tooling context |
 | Partial types | C# 2 | Subset — mainly for source generators and templates |
-| Type and namespace aliases | C# 2 | Subset of common scenarios |
+| Type and namespace aliases | C# 2 | Common type/namespace and tuple-alias scenarios in Namespaces > Organize types with namespaces, shipped in #56771; `global::` brief explanation, `extern alias` pointer only |
 
 ### Exclude from Fundamentals
 

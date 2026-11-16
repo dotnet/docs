@@ -17,8 +17,13 @@ The following outline shows article coverage in the approved Fundamentals plan, 
 > namespace checkpoint. This approval doesn't move articles or start phase work. The October target
 > #55930 is delivered. Unrelated rows retain their previous status; this isn't a full-project audit.
 
+> **Namespace reconciliation (2026-11-16):** Phase G / PR 24 shipped in
+> [#56771](https://github.com/dotnet/docs/pull/56771), merged 2026-11-12 at `678c15c744ff`.
+> Rows #4 and #100, their titles/paths, and the target skeleton below now reflect the merge.
+> The existing introduction URL and shared snippet project remain; no class/OOP source was retired.
+
 **Execution, not a live TOC move:** [Decision 17](decisions.md#decision-17-foundations-first-execution-and-source-harvesting)
-orders remaining delivery as G Namespaces → H Classes → I Structs → J Arrays/indexes/ranges →
+records G Namespaces as shipped; remaining delivery is H Classes → I Structs → J Arrays/indexes/ranges →
 K Interfaces → L Enums → M Delegates/events → N Exceptions → O Attributes → P Documentation
 comments, then R's applied harvesting batches. Expressions/statements/patterns are completed
 prerequisites. Q stays dependency-based supporting work. The shipped Build software node stays
@@ -31,7 +36,7 @@ where it is; its early placement does not imply the new applied backlog should r
 | 1 | Overview | 🟡 Revise | Add file-scoped namespaces, global usings as default style. Distinguish the uses of file-based apps, top-level statements / project-based apps, and `Main`-style project-based apps. |
 | 2 | Main method and entry points | ✅ Exists | Include async Main (C# 7.1). Include file-based apps |
 | 3 | Top-level statements | ✅ Exists | Mention file-local types (C# 11) as helpers |
-| 4 | Namespaces and using directives | 📝 New | *Slimmed to a brief intro + cross-reference* per [Decision 12b](decisions.md#decision-12-expressions-and-operators-section): the canonical §14 treatment lives in the standalone [Namespaces (§14)](#namespaces-14) section (article #100). This article keeps a short intro to file-scoped namespaces and using directives in the context of program structure and links to #100. Needs a redirect + repo-wide inbound-link fix (shipped article). |
+| 4 | Namespaces and using directives | ✅ Shipped | `fundamentals/program-structure/namespaces.md`; PR 1 introduction slimmed in [#56771](https://github.com/dotnet/docs/pull/56771), retaining a complete short article and its URL, with an onward link to #100. No redirect from this page. [Decision 12b](decisions.md#decision-12b-consolidate-namespaces-14-to-one-canonical-article). |
 | 5 | Preprocessor directives | 📝 New | `#if`, `#region`, `#nullable`, `#pragma warning` only |
 | 67 | Tutorial: Build file-based apps | ✅ Exists | |
 | 68 | Tutorial: Display command-line arguments | ✅ Exists | Consider a top-level statements pivot, and a file-based apps pivot. File-based apps pivot should be the default. |
@@ -191,7 +196,7 @@ BS12 tracks preservation/retirement and doesn't create a reader-facing article.
 
 | # | Article | Status | Notes |
 |---|---|---|---|
-| 100 | Namespaces | 📝 New | **Canonical §14 article** (Decision 12b). Motivation for using namespaces to organize programs and libraries; declaring namespaces; file-scoped namespaces (C# 10); importing with `using`; namespace aliases; `extern alias` mention; nested namespaces. The Program-structure "Namespaces and using directives" article (#4) is slimmed to a brief intro + link here. |
+| 100 | Organize types with namespaces | ✅ Shipped | `fundamentals/namespaces/overview.md`, [#56771](https://github.com/dotnet/docs/pull/56771), merged 2026-11-12. **Canonical §14 depth**: global namespace, growing-program organization, file/block-scoped and repeated declarations, dotted/nested components, qualification/simple names, aliases, and implicit/global/regular/static imports. References distinguished in a short note; `extern alias` remains a reference pointer. Complements #4; shares its existing snippet project. |
 
 ### Classes (§15)
 
@@ -303,6 +308,7 @@ the same retained records article instead of independent guides.
 |---|---|---|
 | Approved architecture and task coverage | Decision 16, 2026-10-29 | Language foundations plus applied guidance; detailed splits/paths remain phase work, with concrete OOP redistribution after the Phase G checkpoint; no implementation started by approval |
 | Phase F complete | PRs 19-23, all merged | Pattern section, deconstruction, two pattern tutorials, four Build software guides, and the badge-label tutorial; see the [merge evidence](plan/phase-f-patterns-functional.md) |
+| Phase G complete | PR 24 / #56771, merged 2026-11-12 | Two-level namespace path, shared snippets, depth links and five retargeted legacy redirects; [reconciled 2026-11-16](plan/phase-g-namespaces-oop.md) |
 | Former October completion target | #55930 / PR 23 | Delivered in #56528 on 2026-10-29; no next phase scheduled by this reconciliation |
 | Standard-aligned expansion | Phases H-P | Classes through Documentation comments; reuse current introductions and deeper reference |
 | Applied guidance and retirement | BS01-BS12 | Future backlog; BS12 isn't an article and BS11 may merge into existing coverage |
@@ -594,10 +600,11 @@ review justifies separate articles. Never publish those nodes before real conten
   # ─── §14 Namespaces ───
   - name: Namespaces
     items:
-    - name: Organizing code with namespaces
-      # CANONICAL §14 article (Decision 12b): motivation for namespaces, declaring,
-      # file-scoped (C# 10), using directives, aliases, extern alias, nested namespaces.
-      # The program-structure namespaces article is slimmed to a brief intro + link here.
+    - name: Organize types with namespaces
+      # SHIPPED #56771 (Decision 12b): growth/organization, global namespace,
+      # declarations, qualification/aliases, and project/file import choices.
+      # Shared program-structure snippets; extern alias is only a reference pointer.
+      # The program-structure introduction retains its URL and links here.
       href: fundamentals/namespaces/overview.md
 
   # Approved construct taxonomy: resolve article splits after Phase G before OOP moves.

@@ -10,6 +10,11 @@
 ### Expanded roadmap review contract
 
 - Phase F is complete as of 2026-10-29: [all five merged PRs](phase-f-patterns-functional.md) are accounted for. The former October target [#55930](https://github.com/dotnet/docs/issues/55930) shipped in #56528 after prerequisite #56333 merged. Expressions/statements are also completed prerequisites; the intended PR 18 inbound links are present, so no tail-work is invented.
+- Phase G / PR 24 is complete in [#56771](https://github.com/dotnet/docs/pull/56771), merged
+  2026-11-12 at `678c15c744ffe9f18ad6d721a9553635f755db41`, reconciled 2026-11-16.
+  [Phase G evidence](phase-g-namespaces-oop.md) records final articles, shared snippet selection,
+  live navigation, five retargeted redirects, retained sources, and the inaccessible gist.
+  H is next in the existing sequence; no later delivery or source retirement is implied.
 - Phases H-P explicitly account for Classes (§15), Structs (§16), Arrays (§17), extended indexing and slicing (§18), Interfaces (§19), Enums (§20), Delegates (§21), Exceptions (§22), Attributes (§23), and Documentation comments (Annex D). Unsafe code and all other appendixes are excluded.
 - We adopted the language-foundations/applied-guidance architecture and expanded task coverage on 2026-10-29 in [Decision 16](../decisions.md#decision-16-adopt-language-foundations-and-applied-guidance-as-the-governing-plan). Resolve detailed article splits, final paths, and redirect targets during assigned work; plan approval doesn't start implementation. Phase G remains namespace consolidation and the checkpoint before concrete OOP redistribution. PR #56333's shipped Building software placement isn't reopened.
 - Validate all relative planning-file links/anchors, new numeric task-ID uniqueness, legacy task routing, and the Programming Guide source ledger. Its 82-article count is the 2026-10-16 snapshot, not a current-file count after #56333 retired its two Programming Guide sources. Preserve those shipped rows as provenance; recheck remaining sources before future migrations.
@@ -29,7 +34,12 @@
 - *Incremental TOC updates* — each PR makes its section live immediately
 - *Polymorphism → reconcile with canonical Inheritance* (PR 29 / Phase H); verify which legacy sources still exist before scheduling their retirement.
 - *Pattern matching split into 3 PRs* (PRs 19–21) per project map decision: overview + basics | structural patterns | deconstruct + tutorial. **Relocated to `fundamentals/patterns/`** (Decision 12, Option A) so §11 stands as its own section before Expressions/Statements.
-- *Namespaces (§14) gets its own PR (PR 24)* at the start of Phase G. **Consolidated (Decision 12b):** `fundamentals/namespaces/overview.md` is the canonical §14 article; the shipped Program-structure "Namespaces" article (PR 1) is slimmed to intro + cross-reference, retaining its URL. Repair inbound links by depth; redirects apply only to URLs actually retired.
+- *Namespaces (§14), PR 24 — ✅ Shipped #56771, reconciled 2026-11-16 (Decision 12b):*
+  `fundamentals/namespaces/overview.md` is **Organize types with namespaces**; PR 1's
+  **Namespaces and using directives** remains a complete short introduction at its unchanged URL.
+  Both share the program-structure snippet project. Two keyword references and five existing
+  legacy redirects now target depth; no source files were deleted. Later class/OOP/reflection
+  work and BS12 holds remain pending, not namespace delivery.
 - *Using .NET analyzers retains PR 37*, now in Phase Q; PR 36 is documentation comments in Phase P, with its former coding-style/console scope routed to PR 45 and Building software.
 - *Execution order now follows Decision 17:* remaining foundations G-P precede new applied growth R. Within each phase follow the task review order and actual dependencies; phase letters/PR IDs remain stable. This supersedes the former blanket cross-phase parallelism, not historical Phase F delivery.
 - *Two-criteria fit test applied per section* — universality and beginner accessibility (Goal 11). Sections that fail universality are relocated (text moved, not deleted) to Language Reference, Deep dives, or Advanced; sections that fail only accessibility are rewritten in place.

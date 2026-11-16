@@ -4,6 +4,14 @@ items:
   - name: Breaking changes by version
     expanded: true
     items:
+      - name: .NET 12
+        items:
+          - name: Overview
+            href: 12.md
+          - name: Deployment
+            items:
+              - name: rollForwardOnNoCandidateFx and applyPatches no longer supported
+                href: deployment/12/legacy-runtime-roll-forward-options-removed.md
       - name: .NET 11
         items:
           - name: Overview

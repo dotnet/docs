@@ -17,8 +17,8 @@ IChatClient client =
 // Configure it to start and connect to your MCP server.
 var transport = new StdioClientTransport(new()
 {
-    Command = "dotnet run",
-    Arguments = ["--project", "<path-to-your-mcp-server-project>"],
+    Command = "dotnet",
+    Arguments = ["run", "--project", "<path-to-your-mcp-server-project>"],
     Name = "Minimal MCP Server",
 });
 McpClient mcpClient = await McpClient.CreateAsync(transport);

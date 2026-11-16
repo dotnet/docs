@@ -12,7 +12,10 @@ The next implementation scope follows the [execution sequence](#execution-sequen
 remaining language foundations G-P in standard order, then expand Building software in Phase R.
 Supporting work Q has its own dependency-based placement, not a competing priority.
 Preserve the shipped section's purpose and placement; don't restore the retired Functional techniques
-subgroup. Phase G remains namespace consolidation and the checkpoint before concrete OOP redistribution.
+subgroup. **Phase G is complete:** [#56771](https://github.com/dotnet/docs/pull/56771) merged
+2026-11-12; [reconciliation on 2026-11-16](phase-g-namespaces-oop.md) records the two-level
+namespace path, shared snippets, and preserved later sources. H Classes is next in the existing
+sequence; the namespace checkpoint doesn't itself start OOP redistribution.
 The approved roadmap isn't a new delivery commitment, a phase start, or authorization to create
 issues or move content. Preserve the three shipped practical guides without requiring new
 language-foundations homes.
@@ -38,11 +41,17 @@ The Fundamentals audience is a developer who knows another language and is learn
 - Give a combined-techniques tutorial one small, runnable outcome. Add each technique only when it serves that outcome, explain the incremental change, and summarize how the choices work together. Concept examples stay focused; tutorials can combine concepts without becoming a feature checklist or a duplicate overview.
 - Make execution timing observable when it affects the lesson. Have readers predict and then inspect debugger steps or diagnostic output at query definition and enumeration; show repeated enumeration and eager caching when relevant. Prefer optional instrumentation in the same source over near-duplicate files. Name and explain conditional-compilation symbols, avoiding collisions with SDK-defined symbols; `TRACE` isn't a required choice.
 - Never place consecutive code snippets. They are hard to read and harder for readers to follow. Either intersperse explanatory text between snippets or combine related snippets into a single example.
+- When demonstrating organization across files, reuse a small multi-file project rather than
+  forcing file-based apps or duplicating a snippet home. Select equivalent alternative definitions
+  for separate builds instead of compiling duplicate types together (#56771's namespace styles).
 
 *Terminology (P2) — treat every C# term as new until the article defines it:*
 
 - Define concepts when they are first introduced. Don't assume readers know what a "type" or "namespace" is before those concepts are covered in the planned TOC. Remember that this is "fundamentals" content. Any term likely to be unfamiliar to a new C# developer should be defined inline at first use — one short sentence — with a link to the deeper reference. This applies to terms the author considers obvious (for example, *dereference*, *type parameter* vs. *type argument*, *primary constructor*), not just terms the author considers new.
 - *Use the official term for every concept, and define it.* Match the term used in the language spec, the API reference, or the Microsoft style guide; never coin a synonym for an established term (for example, don't call an annotation a "hint," and don't say null state "moves" when it *changes* on a line). If a familiar term from another language helps orient readers, name it once as a bridge to the C# term (for example, "a map — called a dictionary in C#"), then use the C# term consistently. Introduce the term, define it in one sentence at first use, then state the rule that uses it. Don't rename the same operation a "rule" midway through an explanation. Prefer accessible, precise terms such as *inline* and *block statement body*; contrast LINQ *method syntax* with *query syntax*, and explain *eager execution* before specialized terms such as materialization.
+- Define the terms that make a contrast readable before relying on them: #56771 defines simple
+  names versus qualified names before explaining imports and ambiguity. Format the `using`
+  keyword as code except when defining a multi-word term, following its final review.
 - When a symbol's meaning depends on context (`T?` differs between value types, constrained reference types, and unconstrained generics), spell out which form you mean before listing rules. Lead a constraints discussion with a one-line model of what is being constrained.
 - Definitions are less important for concepts that aren't related to the C# language. The goal for Fundamentals is to teach readers how C# works. While we teach through examples, the libraries and packages used in the examples are less important than the language features being demonstrated. For example, when teaching about collections, it's more important to explain what a collection is and how to use them in C# than to provide an in-depth explanation of `List<T>` vs. `Dictionary<K,V>`.
 - Link every concept discussed to more information: prefer a live Fundamentals article, then a deep dive or Language Reference article for greater depth. Choose one useful target at the relevant explanation rather than repeat a link list. It's assumed readers are familiar with "Get started", so links there should be minimal and scoped to recommendations for beginners to start there instead.
@@ -56,6 +65,9 @@ The Fundamentals audience is a developer who knows another language and is learn
 - Immediately follow such statements with a one- or two-sentence pointer that shows existing-project readers where to verify the setting in their own `.csproj` and how to enable it if it's missing.
 - Reserve full migration guidance for the migration articles. When the existing-project path is more than a setting check (for example, planning a phased rollout), link out rather than inlining the strategy.
 - When a feature is recommended as the fix for a diagnostic, run the code and confirm the diagnostic actually clears in the scenario being recommended. Reviewer skepticism ("does that actually work here?") usually means the verification wasn't done.
+- Distinguish language scope, SDK-generated defaults, and project references. #56771 chooses
+  imports from implicit → global → regular → static, makes project-wide versus per-file scope
+  explicit, and keeps the reference prerequisite in a short note rather than a setup detour.
 - Explain why each meaningful implementation choice fits the example and what a valid alternative would change: for example, local helper versus private member, inline lambda versus named method, or iterator versus completed collection. Base the choice on actual scope, dependencies, readability, and timing, not a universal language preference. Compare equivalent behavior fairly; don't claim one condition is inherently clearer as a pattern than as a Boolean expression. When recommending a modern feature over an older alternative, state why and better than what; if the justification requires an out-of-scope detour, demonstrate the form and cut the claim. Never describe older features as obsolete or deprecated (Goal 9).
 
 *Scope discipline (P4) — every section must earn its place in Fundamentals:*
@@ -71,6 +83,10 @@ The Fundamentals audience is a developer who knows another language and is learn
 
 - *Open with what the article covers and its key takeaway.* Lead with positive, choice-oriented guidance; reserve negative guidance for essential constraints. Don't open with what the article *doesn't* cover or with "X and Y are different," and don't link back to the section overview from the introduction. When the default behavior is usually what readers want, say so, and frame the advanced features as options for when the default doesn't fit.
 - *Give section overviews a durable purpose.* Introduce the section beyond its current article inventory. When comparing valid approaches, name the alternatives, explain their context with a small example, and describe what developers and coding agents infer from each choice. Introduce the thought process before the comparisons and summarize it afterward; avoid unexplained rules such as "Start with what the caller needs." See [Decision 15](../decisions.md#decision-15-durable-overviews-and-contextual-comparisons).
+- Motivate structure through a reader's growing program, not syntax alone. #56771 introduces the
+  global namespace early, then organization and the preferred file-scoped form; its conclusion
+  restates when to choose global versus regular imports. Keep customer intent aligned with
+  what the article teaches. These are transferable lessons, not a mandate to rewrite other articles.
 - Each article follows concept → example → concept → example structure. The concept discussion should include motivating scenarios for the feature or concept being covered. When framing a newer feature, state what the syntax is for, show the newer or less familiar variant first, then show the equivalent baseline case — don't skip the baseline form readers need to understand it.
 - One topic per paragraph. A new case (for example, "the same pitfall also applies to arrays of structs") starts a new paragraph.
 - Promote a bold paragraph-lead to `###` when it anchors more than one paragraph of content. Inline bold disappears in the TOC and is harder to scan.
@@ -116,7 +132,7 @@ and helper placement in that example aren't universal requirements.
 | [D — Strings](phase-d-strings.md) | Raw strings, interpolation, search/split, compare | PR 10–12 |
 | [E — Expressions & statements (§12–§13)](phase-e-expressions-statements.md) | Statements, collections, LINQ, **equality**, operators | PR 13–18 |
 | [F — Pattern matching (§11) + Building software](phase-f-patterns-functional.md) | ✅ Complete: patterns, four Build software guides, and badge-label tutorial; all five PRs merged | PR 19–23 |
-| [G — Namespaces (§14)](phase-g-namespaces-oop.md) | One canonical namespace article; earlier OOP work is explicitly redistributed below | PR 24 |
+| [G — Namespaces (§14)](phase-g-namespaces-oop.md) | ✅ Complete: Organize types with namespaces plus retained short introduction; #56771 merged 2026-11-12 | PR 24 |
 | [H — Classes (§15)](phase-h-classes.md) | Shared class/member baseline, record classes, accessibility, fields, properties, constructors, methods, inheritance, partial types, extensions | PR 25–29, 31, 46 |
 | [I — Structs (§16)](phase-i-structs.md) | Differences from classes: value semantics, initialization, readonly members; record class versus record struct | PR 39 |
 | [J — Arrays, indexes, and ranges (§17–§18)](phase-j-arrays-indexes-ranges.md) | Arrays; indexers; index-from-end and slicing; ranges tutorial | PR 30, 40 |
@@ -141,7 +157,7 @@ Historical PR IDs remain stable and aren't sorted numerically.
 | Step | Delivery order and exit checkpoint |
 |---|---|
 | Completed prerequisite | Phase E expressions/statements/collections/equality and Phase F patterns/practical guides/tutorial are shipped. PR 17 is merged; PR 18's two intended inbound links are present in `types/built-in-types.md` and `null-safety/null-operators.md` (verified 2026-10-29). No foundation tail-work is invented from the old deferred labels. |
-| G: Namespaces | PR 24: consolidate namespace depth, retain the program-structure orientation URL. |
+| G: Namespaces — ✅ Shipped | PR 24 / #56771, merged 2026-11-12: canonical depth, retained orientation URL and shared snippet project; later class/OOP sources preserved. Reconciled 2026-11-16. |
 | H: Classes | PR 25 → 26 → 27 → 28 → 29 → 31 → 46. Establish shared member rules and record classes; keep each article independently reviewable. |
 | I: Structs | PR 39: class/struct differences and the shared records comparison, after H. |
 | J: Arrays/indexes/ranges | PR 40 → PR 30 concept work → its tutorial if split. Properties already exist from H; defer interface-specific cross-links to K. |
@@ -161,6 +177,10 @@ not permission to publish the applied comparison early. No applied task is a pre
 foundation owner. [Q](phase-q-supporting-work.md#placement-and-genuine-dependencies) remains
 supporting work: async prerequisites apply only to examples that actually use async; style,
 analyzers, and console reconciliation don't block G-P or R. PR 23 is already complete.
+
+The [Phase G evidence](phase-g-namespaces-oop.md#review-lessons-and-evidence-limits) grounds the
+namespace presentation lessons above in final files and public reviews, and distinguishes the
+supplied review-checkpoint summary from the linked gist that returned 404 during reconciliation.
 
 **Class-first teaching model:** following the standard's strategy, Classes establishes the shared rules; Structs and Interfaces explain their differences rather than repeat those rules. Classes includes record classes. Structs explicitly compares `record class` and `record struct`, coordinating one canonical records article with Classes. Existing class coverage supplies the baseline until the later revisions land.
 

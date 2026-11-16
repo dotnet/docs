@@ -79,9 +79,9 @@ material. The Programming Guide is a source to retire incrementally, not a new c
 
 The construct/design organization and expanded task coverage are **the approved active plan**.
 Exact per-article split boundaries, final paths, and redirect targets are resolved during assigned
-phase work; conditional outputs still require their gap reviews. Phase G remains namespace
-consolidation and the checkpoint before concrete OOP redistribution. The
-[execution sequence](plan/README.md#execution-sequence) is G Namespaces → H Classes → I Structs →
+phase work; conditional outputs still require their gap reviews. Phase G's namespace checkpoint
+shipped in #56771; concrete OOP redistribution remains assigned future phase work. The
+[execution sequence](plan/README.md#execution-sequence), after completed G Namespaces, is H Classes → I Structs →
 J Arrays/indexes/ranges → K Interfaces → L Enums → M Delegates/events → N Exceptions →
 O Attributes → P Documentation comments, then R's five applied harvesting batches.
 Expressions/statements and patterns are completed prerequisites, not a new writing wave.
@@ -91,7 +91,24 @@ Plan approval doesn't supersede #56333's
 shipped placement, turn open work into shipped content, start a phase, or authorize content moves,
 new issues, commits, or pushes.
 
-## Current reconciliation: Phase F complete
+## Current reconciliation: Phases F and G complete
+
+**Namespace reconciliation, 2026-11-16:** [#56771](https://github.com/dotnet/docs/pull/56771),
+merged 2026-11-12 at `678c15c744ffe9f18ad6d721a9553635f755db41`, closes #56747 and completes
+Phase G / PR 24. **Organize types with namespaces** ships at
+`fundamentals/namespaces/overview.md`, complementing the retained short
+`fundamentals/program-structure/namespaces.md`. The live Namespaces node sits after Build software
+and before Object-oriented programming. Both articles use the existing program-structure
+namespace snippet project; five legacy redirects and two reference links now target depth.
+
+The final teaching arc motivates organization as programs grow, introduces the global namespace
+early, prefers file-scoped declarations, defines simple names/qualification, and chooses imports
+by project/file scope. References are a short note, not a second tutorial.
+[Decision 12b](decisions.md#decision-12b-consolidate-namespaces-14-to-one-canonical-article) and
+[Phase G](plan/phase-g-namespaces-oop.md) record as-shipped scope, exact sources, and review lessons
+(including the unavailable gist caveat). No retained Programming Guide, class/OOP, or reflection
+source was retired; H-P and R remain planned. H Classes is next in the existing sequence, not
+started by this reconciliation.
 
 As of 2026-10-29, all five [Phase F PRs](plan/phase-f-patterns-functional.md) are merged and
 present on this rebased planning branch: #55966 (overview, basic patterns, discards), #56113
@@ -103,5 +120,5 @@ status. See [TOC and articles](toc-and-articles.md#building-software) for shippe
 The [canonical authoring conventions](plan/README.md) now capture lessons
 from the merged pattern articles and tutorial: explain contextual choices, define and link
 concepts consistently, and let readers observe execution in a small incremental sample.
-The approved roadmap above remains future work, separately adopted in Decision 16;
-Phase F completion neither implements that roadmap nor audits unrelated phase delivery status.
+The approved roadmap after G remains future work, separately adopted in Decision 16;
+this F/G reconciliation doesn't audit unrelated phase delivery status.

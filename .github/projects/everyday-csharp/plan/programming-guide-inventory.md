@@ -12,6 +12,14 @@ Paths in the **Source** column are relative to `docs/csharp/programming-guide/`.
 without an applied article, but must preserve its source sections/examples on the holds below.
 BS12 begins that tracking during foundations; it doesn't postpone all retirement until R5.
 
+**Namespace checkpoint, reconciled 2026-11-16:** Phase G shipped in
+[#56771](https://github.com/dotnet/docs/pull/56771) on 2026-11-12. Its final diff deletes no files
+and touches no retained Programming Guide source. It consolidates PR 1's namespace teaching and
+retargets already-existing namespace redirects; that isn't another retirement from this snapshot.
+Other class/OOP, applied, and specialized source dispositions remain as assigned; no shared-source
+hold below is released. The two PR 22 consolidations remain shipped, not pending again.
+See [source ownership](../content-sources.md#namespace-source-reconciliation).
+
 ### Destination and action key
 
 - **Extract:** harvest useful decision guidance for [BS01-BS11](phase-r-building-software.md); the remaining mechanics have the phase owner named in the row.

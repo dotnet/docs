@@ -54,7 +54,7 @@ The following example demonstrates how an auxiliary or worker thread can be crea
 
 :::code language="csharp" source="./snippets/volatile.cs" id="Volatile":::
 
-When you declare `_shouldStop` as `volatile`, the compiler and runtime ensure that read and write operations on `_shouldStop` are not cached in processor registers across loop iterations and that memory order constraints are respected.
+When you declare `_shouldStop` as `volatile`, the compiler and runtime ensure that its value is read on each loop iteration, rather than reusing a previously read value, and that the required memory ordering constraints are respected.
 
 Without the `volatile` modifier, the runtime is allowed to optimize the loop by hoisting the read of `_shouldStop` outside the `while` loop. If hoisted, the loop never re-checks the field value in memory, causing the worker thread to loop indefinitely even after the main thread sets `_shouldStop` to `true`.
 

@@ -17,7 +17,7 @@ Previously, if you added a *.user* file for extra local configurations in cross-
 
 ## New behavior
 
-When using the the plural `<TargetFrameworks>` property to define targeted frameworks, the build imports the *.user* file on all internal builds *and* on the outer build.
+When using the plural `<TargetFrameworks>` property to define targeted frameworks, the build imports the *.user* file on all internal builds *and* on the outer build.
 
 ## Type of breaking change
 

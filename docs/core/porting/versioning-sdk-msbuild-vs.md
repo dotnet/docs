@@ -3,7 +3,7 @@ title: .NET SDK, MSBuild, and Visual Studio versioning
 description: Learn about the versioning relationship between the .NET SDK and MSBuild/Visual Studio.
 author: StephenBonikowsky
 ms.custom: updateeachrelease
-ms.date: 06/08/2026
+ms.date: 11/11/2026
 ---
 # .NET SDK, MSBuild, and Visual Studio versioning
 
@@ -103,7 +103,7 @@ The following policy dictates which versions of MSBuild and Visual Studio a give
 > [!NOTE]
 >
 > Targeting `net10.0` is officially supported in Visual Studio 18.0+ only.
-> 
+>
 > Targeting `net11.0` is officially supported in Visual Studio 18.12+ only.
 
 To ensure consistent tooling, you should use `dotnet build` rather than `msbuild` to build your application when possible.
@@ -128,7 +128,7 @@ Use the SDK that came with your Visual Studio instance (or latest available in C
 
 ## Down-level targeting support
 
-The .NET SDK maintains targeting support for out-of-support .NET versions. The 10.0.100 SDK can build apps targeting `net9.0` all the way down to `netcoreapp1.0`.
+The .NET SDK maintains targeting support for out-of-support .NET versions. The 11.0.100 SDK can build apps targeting `net10.0` all the way down to `netcoreapp1.0`.
 
 ### Guiding principles
 

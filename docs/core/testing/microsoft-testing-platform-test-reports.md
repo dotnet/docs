@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) test reports
 description: Learn about the MTP extensions that create test report files (TRX, HTML, JUnit, CTRF, Azure DevOps, GitHub Actions).
 author: evangelink
 ms.author: amauryleve
-ms.date: 11/10/2026
+ms.date: 11/13/2026
 ai-usage: ai-assisted
 ---
 
@@ -53,6 +53,8 @@ To disable multi-module artifact post-processing, pass [`--no-artifact-post-proc
 The Visual Studio test result file (or TRX) is the default format for publishing test results. This extension requires the [Microsoft.Testing.Extensions.TrxReport](https://nuget.org/packages/Microsoft.Testing.Extensions.TrxReport) NuGet package.
 
 If you author a test framework, implement [`ITrxReportCapability`](./microsoft-testing-platform-architecture-capabilities.md#itrxreportcapability) to supply test-class, category, failure, and output metadata. The report package alone doesn't add framework-specific data to your test nodes.
+
+To create a test definition, supply either `TrxFullyQualifiedTypeNameProperty` or `TestMethodIdentifierProperty` on the final test-node update. [Timing and enrichment properties](./microsoft-testing-platform-architecture-capabilities.md#optional-report-properties) are optional. For the required state and identity rules, see [Required test-node data](./microsoft-testing-platform-architecture-capabilities.md#required-test-node-data).
 
 ### Manual registration
 

@@ -2,7 +2,7 @@
 title: "Migrate from Newtonsoft.Json to System.Text.Json - .NET"
 description: "Learn about the differences between Newtonsoft.Json and System.Text.Json and how to migrate to System.Text.Json."
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 10/03/2025
+ms.date: 11/12/2026
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
@@ -581,7 +581,7 @@ If you need to continue to use `Newtonsoft.Json` for certain target frameworks, 
 
 ### Customize JSON format
 
-::: zone pivot="dotnet-10-0,dotnet-9-0"
+::: zone pivot="dotnet-11-0,dotnet-10-0,dotnet-9-0"
 
 `JsonTextWriter` includes the following settings, for which <xref:System.Text.Json.Utf8JsonWriter> has no equivalent:
 

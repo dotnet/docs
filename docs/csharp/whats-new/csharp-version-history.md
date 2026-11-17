@@ -2,7 +2,7 @@
 title: The history of C#
 description: Learn how the C# language has changed over its many releases. Learn when different features were introduced in the language.
 author: erikdietrich
-ms.date: 11/10/2026
+ms.date: 11/11/2026
 ms.custom: "updateeachrelease"
 ai-usage: ai-assisted
 ---
@@ -13,6 +13,20 @@ This article provides a history of each major release of the C# language. The C#
 
 > [!IMPORTANT]
 > The C# language relies on types and methods in what the C# specification defines as a *standard library* for some of the features. The .NET platform delivers those types and methods in a number of packages. One example is exception processing. Every `throw` statement or expression is checked to ensure the object being thrown is derived from <xref:System.Exception>. Similarly, every `catch` is checked to ensure that the type being caught is derived from <xref:System.Exception>. Each version may add new requirements. To use the latest language features in older environments, you may need to install specific libraries. These dependencies are documented in the page for each specific version. You can learn more about the [relationships between language and library](relationships-between-language-and-library.md) for background on this dependency.
+
+## C# version 15
+
+*Released November 2026*
+
+C# 15 includes the following new features:
+
+- [Collection expression arguments](./csharp-15.md#collection-expression-arguments)
+- [Union types](./csharp-15.md#union-types)
+- [Closed hierarchies](./csharp-15.md#closed-hierarchies)
+- [Extension indexers](./csharp-15.md#extension-indexers)
+- [Labeled `break` and `continue`](./csharp-15.md#labeled-break-and-continue)
+- [Non-virtual static interface members on older runtimes](./csharp-15.md#non-virtual-static-interface-members-on-older-runtimes)
+- [Memory safety (preview feature)](./csharp-15.md#memory-safety)
 
 ## C# version 14
 

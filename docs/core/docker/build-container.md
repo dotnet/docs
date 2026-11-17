@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with Docker tutorial
 description: In this tutorial, you learn how to containerize a .NET application with Docker.
-ms.date: 11/06/2025
+ms.date: 11/12/2026
 ms.topic: tutorial
 ms.custom: "mvc"
 zone_pivot_groups: dotnet-version
@@ -32,6 +32,13 @@ You explore the Docker container build and deploy tasks for a .NET application. 
 ## Prerequisites
 
 Install the following prerequisites:
+
+:::zone pivot="dotnet-11-0"
+
+- [.NET 11+ SDK](https://dotnet.microsoft.com/download/dotnet/11.0).\
+If you have .NET installed, use the `dotnet --info` command to determine which SDK you're using.
+
+:::zone-end
 
 :::zone pivot="dotnet-10-0"
 
@@ -471,6 +478,15 @@ During this tutorial, you created containers and images. If you want, delete the
     ```
 
 Next, delete any images that you no longer want on your machine. Delete the image created by your _Dockerfile_ and then delete the .NET image the _Dockerfile_ was based on. You can use the **IMAGE ID** or the **REPOSITORY:TAG** formatted string.
+
+:::zone pivot="dotnet-11-0"
+
+```console
+docker rmi counter-image:latest
+docker rmi mcr.microsoft.com/dotnet/aspnet:11.0
+```
+
+:::zone-end
 
 :::zone pivot="dotnet-10-0"
 

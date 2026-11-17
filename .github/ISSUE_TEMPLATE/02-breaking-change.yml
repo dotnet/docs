@@ -19,17 +19,18 @@ body:
       label: Version
       description: What version of .NET introduced the breaking change?
       options:
-        - .NET 8
-        - .NET 9
         - .NET 10
-        - .NET 11 Preview 7
-        - .NET 11 RC 1
-        - .NET 11 RC 2
-        - .NET 11 GA
+        - .NET 11
         - .NET 12 Preview 1
         - .NET 12 Preview 2
         - .NET 12 Preview 3
         - .NET 12 Preview 4
+        - .NET 12 Preview 5
+        - .NET 12 Preview 6
+        - .NET 12 Preview 7
+        - .NET 12 RC 1
+        - .NET 12 RC 2
+        - .NET 12 GA
         - Other (please put exact version in description textbox)
     validations:
       required: true

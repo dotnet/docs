@@ -15,7 +15,7 @@ sections:
     questions:
       - question: What is the difference between DNIM and the .NET Uninstall tool?
         answer: |
-          - The uninstall is targeted to developers to assist with cleaning up old SDKs and runtimes.
+          - The uninstall tool is targeted to developers to assist with cleaning up old SDKs and runtimes.
           - The uninstall tool supports other operating systems like macOS. DNIM is specifically designed for Windows.
           - The uninstall tool doesn't support MSI detection or detailed analysis of Visual Studio.
           - The uninstall tool doesn't support updating installations.
@@ -33,7 +33,7 @@ sections:
 
       - question: Does DNIM report the ASP.NET Core Module?
         answer: |
-          No. The ANCM MSI is not currently reported.
+          Yes, starting with 1.0.0-preview.2, DNIM will detect and classify the ANCM MSI.
 
       - question: Why is the SDK placeholder MSI being reported?
         answer: |

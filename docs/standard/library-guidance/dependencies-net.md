@@ -1,7 +1,7 @@
 ---
 title: Guidance for .NET library dependency versions
 description: Learn about the strategies and recommendations for choosing dependency versions when you build a library that targets multiple .NET versions.
-ms.date: 11/04/2026
+ms.date: 11/11/2026
 ai-usage: ai-assisted
 ---
 # Guidance for .NET library dependency versions
@@ -38,11 +38,11 @@ Compare the following three strategies to choose a dependency policy for your li
 
 ### Option 1: Latest supported versions
 
-Reference the latest supported version of the dependency across all target frameworks. For example, if .NET 10.0 is the latest current release, a project would reference 10.0 packages on `netstandard2.0`, `net8.0`, `net9.0`, and `net10.0`.
+Reference the latest supported version of the dependency across all target frameworks. For example, a project might reference 11.0 packages on `netstandard2.0`, `net10.0`, and `net11.0`.
 
 > [!NOTE]
 >
-> - An STS release and the preceding LTS release can share an end-of-support date. For example, .NET 9 (STS) and .NET 8 (LTS) are supported until November 2026, while .NET 10 (LTS) is supported until November 2028. For this strategy, choose the latest supported dependency version regardless of its STS or LTS designation. For current support dates, see the [.NET support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+> - An STS release and the preceding LTS release can share an end-of-support date. For example, .NET 11 (STS) and .NET 10 (LTS) are supported until November 2028. For this strategy, choose the latest supported dependency version regardless of its STS or LTS designation. For current support dates, see the [.NET support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 > - Not all packages support targeting older frameworks in their latest version, for example, `Microsoft.AspNetCore.Authorization`. If you reference these packages, exclude them from this policy and follow option 2 instead.
 
 **Pros**
@@ -62,7 +62,7 @@ Reference the latest supported version of the dependency across all target frame
 
 ### Option 2: TFM-specific versions
 
-Reference different dependency versions per target framework moniker (TFM). Don't reference packages when the framework provides the API. For example, reference 8.0 packages on `net8.0` and 9.0 packages on `net9.0`.
+Reference different dependency versions per target framework moniker (TFM). Don't reference packages when the framework provides the API. For example, reference 10.0 packages on `net10.0` and 11.0 packages on `net11.0`.
 
 **Pros**
 

@@ -1,8 +1,9 @@
 ---
 title: Containerize an app with dotnet publish
 description: In this tutorial, you learn how to containerize a .NET application with dotnet publish command without the use of a Dockerfile.
-ms.date: 05/27/2026
+ms.date: 11/17/2026
 ms.topic: tutorial
+ai-usage: ai-assisted
 ---
 
 # Containerize a .NET app with dotnet publish
@@ -16,7 +17,7 @@ Containers have many features and benefits, such as being an immutable infrastru
 
 Install the following prerequisites:
 
-- [.NET 8+ SDK](https://dotnet.microsoft.com/download/dotnet)\
+- [.NET 10 SDK or later](https://dotnet.microsoft.com/download/dotnet)\
 If you have .NET installed, use the `dotnet --info` command to determine which SDK you're using.
 
 If you plan on running the container locally, you need an Open Container Initiative (OCI)-compatible container runtime, such as:
@@ -83,11 +84,13 @@ The worker template loops indefinitely. Use the cancel command <kbd>Ctrl+C</kbd>
 
 ## Set the container image name
 
-There are various configuration options available when publishing an app as a container. By default, the container image name is the `AssemblyName` of the project. If that name is invalid as a container image name, you can override it by specifying a `ContainerRepository` as shown in the following project file:
+There are various configuration options available when publishing an app as a container. By default, the container image name is the `AssemblyName` of the project. To set a different name, specify a `ContainerRepository` property. For this tutorial, open the _DotNet.ContainerImage.csproj_ file and add the highlighted `ContainerRepository` property, as shown in the following project file:
 
 :::code language="xml" source="snippets/Worker/DotNet.ContainerImage.csproj" highlight="8":::
 
-For further reference, see [`ContainerRepository`](publish-configuration.md#containerrepository).
+The preceding project file targets .NET 11. If you use the .NET 10 SDK, your project targets `net10.0` instead, and its package version differs.
+
+The SDK tags the image as `latest` by default. For further reference, see [`ContainerRepository`](publish-configuration.md#containerrepository) and [`ContainerImageTag`](publish-configuration.md#containerimagetag).
 
 ## Publish .NET app
 
@@ -103,92 +106,127 @@ The preceding .NET CLI command publishes the app as a container:
 - Specifying an x64 architecture (`--arch x64`).
 
 > [!IMPORTANT]
-> To publish the container locally, you must have an active OCI-compliant daemon running. If it isn't running when you attempt to publish the app as a container, you experience an error similar to the following:
+> To publish the container locally, you must have a supported container runtime running. If it isn't running when you attempt to publish the app as a container, you experience an error similar to the following:
 >
 > ```console
-> ..\build\Microsoft.NET.Build.Containers.targets(66,9): error MSB4018:
->    The "CreateNewImage" task failed unexpectedly. [..\Worker\DotNet.ContainerImage.csproj]
+> ..\build\Microsoft.NET.Build.Containers.targets(255,5): error CONTAINER1012: The local registry is not available, but pushing to a local registry was requested.
 > ```
 
 The `dotnet publish` command produces output similar to the example output:
 
-```dotnetcli
+```output
 Restore complete (0.2s)
-  DotNet.ContainerImage succeeded (2.6s) → bin\Release\net9.0\linux-x64\publish\
+  DotNet.ContainerImage net11.0 linux-x64 succeeded (2.6s) → bin\Release\net11.0\linux-x64\publish\
+
+Build succeeded in 3.1s
 ```
 
-This command compiles your worker app to the _publish_ folder and pushes the container image to your local Docker daemon by default. If you're using Podman, the tooling also supports pushing there with no additional configuration.
+This command compiles your worker app to the _publish_ folder and pushes the container image to a local container runtime, such as Docker or Podman. The SDK detects which runtime to use with no additional configuration. To choose a specific runtime, set the [`LocalRegistry`](publish-configuration.md#localregistry) property.
+
+## Run the container image
+
+To verify that the image works, run it as a container with the `docker run` command:
+
+```console
+docker run -it --rm dotnet-worker-image
+```
+
+The `-it` option connects your terminal to the container, and the `--rm` option removes the container when it stops. The worker logs a message every second, similar to the following example output:
+
+```output
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /app
+info: DotNet.ContainerImage.Worker[0]
+      Worker running at: 11/17/2026 18:00:04 +00:00
+info: DotNet.ContainerImage.Worker[0]
+      Worker running at: 11/17/2026 18:00:05 +00:00
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+```
+
+To stop the app and the container, press <kbd>Ctrl+C</kbd>. If you use Podman, run the same command with `podman` in place of `docker`.
 
 ## Publish .NET app to a tarball
 
-A tarball (or tar file) is a file that contains other files. It usually ends with a _*.tar.gz_ compound file extension to help indicate that it's a compressed archive. These file types are used to distribute software or to create backups. In this case, the tarball created is used to distribute a container image.
+A tarball (or tar file) is a single file that contains other files. Tarballs are commonly used to distribute software or to create backups. In this case, the tarball distributes a container image. The SDK writes the image as an uncompressed tar archive, so this tutorial uses the _.tar_ file extension.
 
 To publish a .NET app as a container to a tarball, use the following command:
 
 ```dotnetcli
-dotnet publish --os linux --arch x64 \
-    /t:PublishContainer \
-    -p ContainerArchiveOutputPath=./images/container-image.tar.gz
+dotnet publish --os linux --arch x64 /t:PublishContainer -p ContainerArchiveOutputPath=./images/container-image.tar
 ```
 
 The preceding command publishes the app as a container to a tarball:
 
 - Targeting Linux as the OS (`--os linux`).
 - Specifying an x64 architecture (`--arch x64`).
-- Setting the `ContainerArchiveOutputPath` property to `./images/container-image.tar.gz`.
+- Setting the `ContainerArchiveOutputPath` property to `./images/container-image.tar`.
 
-The command doesn't require a running OCI-compliant daemon. For more information, see [`ContainerArchiveOutputPath`](publish-configuration.md#containerarchiveoutputpath).
+The command doesn't require a running container runtime. If you set `ContainerArchiveOutputPath` to a folder instead of a file, the SDK names the file `$(ContainerRepository).tar.gz`. Despite the _.tar.gz_ extension, that file is also an uncompressed tar archive. For more information, see [`ContainerArchiveOutputPath`](publish-configuration.md#containerarchiveoutputpath).
 
 ### Load the tarball
 
-A common use case for exporting to a tarball is for security-focused organizations. They create containers, export them as tarballs, and then run security-scanning tools over the tarballs. This approach simplifies compliance as it avoids the complexities of scanning a live system.
+A common use case for exporting to a tarball is for security-focused organizations. They create container images, export them as tarballs, and then run security-scanning tools over the tarballs. This approach simplifies compliance as it avoids the complexities of scanning a live system.
 
-The tarball contains the entire container, which can then be loaded using the appropriate tool:
+The tarball contains the entire container image, which you can load into a container runtime with the appropriate tool:
 
-- [Docker](https://docs.docker.com/reference/cli/docker/image/load/): `docker load -i ./images/container-image.tar.gz`
-- [Podman](https://docs.podman.io/en/latest/markdown/podman-load.1.html): `podman load -i ./images/container-image.tar.gz`
+- [Docker](https://docs.docker.com/reference/cli/docker/image/load/): `docker load -i ./images/container-image.tar`
+- [Podman](https://docs.podman.io/en/latest/markdown/podman-load.1.html): `podman load -i ./images/container-image.tar`
 
 ## Publish .NET app to container registry
 
-Container registries are services that store and manage container images. They're used to store and distribute container images across multiple environments. You can publish a .NET app as a container to a container registry by using the following command:
+Container registries are services that store and manage container images. They're used to store and distribute container images across multiple environments. Most registries require you to authenticate before you can publish an image. The .NET SDK reuses the credentials that the `docker login` command stores, or reads credentials from environment variables. For more information, see [Authenticate to container registries](overview.md#authenticate-to-container-registries).
 
-```dotnetcli
-dotnet publish --os linux --arch x64 \
-    /t:PublishContainer \
-    -p ContainerRegistry=ghcr.io
+For example, to publish to the GitHub Container Registry (`ghcr.io`), first sign in with your GitHub username and a personal access token (classic) that has the `write:packages` scope. When prompted for a password, enter the token. For more information, see [Authenticating with a personal access token (classic)](https://docs.github.com/packages/working-with-a-github-packages-registry/working-with-the-container-registry#authenticating-with-a-personal-access-token-classic).
+
+```console
+docker login ghcr.io -u USERNAME
 ```
 
-The preceding code publishes the app as a container to a container registry:
+Then publish the app as a container to the registry with the following command:
+
+```dotnetcli
+dotnet publish --os linux --arch x64 /t:PublishContainer -p ContainerRegistry=ghcr.io -p ContainerRepository=NAMESPACE/dotnet-worker-image
+```
+
+In the preceding commands, replace `USERNAME` with your GitHub username. Replace `NAMESPACE` with the lowercase name of the personal account or organization that owns the image. The `dotnet publish` command publishes the app as a container to a container registry:
 
 - Targeting Linux as the OS (`--os linux`).
 - Specifying an x64 architecture (`--arch x64`).
 - Setting the `ContainerRegistry` property to `ghcr.io`.
+- Setting the `ContainerRepository` property to `NAMESPACE/dotnet-worker-image`, which overrides the value in the project file.
 
 For more information, see [ContainerRegistry](publish-configuration.md#containerregistry).
 
 ## Clean up resources
 
-In this article, you published a .NET worker as a container image. If you want, delete this resource. Use the `docker images` command to see a list of installed images.
+In this tutorial, you published a .NET worker as a container image. If you want, delete the image from your local container runtime. Use the `docker images` command to list the image:
 
 ```console
-docker images
+docker images dotnet-worker-image
 ```
 
-Consider the following example output:
+The output looks similar to the following example. The columns vary by Docker version.
 
-```console
-REPOSITORY             TAG       IMAGE ID       CREATED          SIZE
-dotnet-worker-image    1.0.0     25aeb97a2e21   12 seconds ago   191MB
+```output
+IMAGE                        ID             DISK USAGE   CONTENT SIZE   EXTRA
+dotnet-worker-image:latest   c8105e2e5419        351MB         99.6MB
 ```
 
 > [!TIP]
 > Image files can be large. Typically, you would remove temporary containers you created while testing and developing your app. You usually keep the base images with the runtime installed if you plan on building other images based on that runtime.
 
-To delete the image, copy the image ID and run the `docker image rm` command:
+To delete the image, run the `docker image rm` command:
 
 ```console
-docker image rm 25aeb97a2e21
+docker image rm dotnet-worker-image:latest
 ```
+
+If you published the tarball, also delete the _images_ folder from the _Worker_ folder. If you use Podman, run the equivalent `podman` commands.
 
 ## Next steps
 

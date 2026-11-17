@@ -3,7 +3,7 @@ title: Install .NET on Ubuntu
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu. .NET is usually installed through APT.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/11/2026
+ms.date: 11/17/2026
 ms.custom: updateeachrelease, linux-related-content
 zone_pivot_groups: ubuntu-install-set-one
 ---

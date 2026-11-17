@@ -80,7 +80,7 @@ If you're going to install the Microsoft repository to use other Microsoft packa
 
 ### I'm using a version of Ubuntu prior to 22.04
 
-Use the instructions in the version-specific section of [Install .NET SDK or .NET Runtime on Ubuntu](linux-ubuntu-install.md?pivots=os-linux-ubuntu-other).
+Ubuntu versions prior to 22.04 don't provide .NET in an Ubuntu feed. Install .NET by manually extracting the binaries or by using the install script. For more information, see [Install .NET on Linux without using a package manager](linux-scripted-manual.md). You can also install .NET with Snap. For more information, see [Install .NET SDK with Snap](linux-snap-sdk.md) and [Install .NET Runtime with Snap](linux-snap-runtime.md).
 
 Review the [Supported distributions](#supported-distributions) section for more information about what versions of .NET are supported for your version of Ubuntu. If you're installing a version that isn't supported, see [Register the Microsoft package repository](#register-the-microsoft-package-repository).
 

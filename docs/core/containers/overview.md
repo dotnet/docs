@@ -12,14 +12,14 @@ While it's possible to [containerize .NET apps with a _Dockerfile_](../docker/bu
 
 ## Publishing project considerations
 
-Container support is built into the .NET SDK, so you don't need to add any packages to your project. The [📦 Microsoft.NET.Build.Containers](https://www.nuget.org/packages/Microsoft.NET.Build.Containers) NuGet package was only required for .NET SDK versions earlier than 8.0.200.
+Container support is built into the .NET SDK, so you don't need to add any packages to your project. The [📦 Microsoft.NET.Build.Containers](https://www.nuget.org/packages/Microsoft.NET.Build.Containers) NuGet package was required only for .NET SDK versions earlier than 8.0.200.
 
 To publish a .NET app as a container, the following build properties must be `true`:
 
-- `IsPublishable`: Implicitly `true` for executable project types, such as `console`, `webapp`, and `worker`.
-- `EnableSdkContainerSupport`: Implicitly `true` for every project that isn't a class library, including console apps. In .NET SDK 9 and earlier versions, console apps must set this property explicitly.
+- `IsPublishable`: The SDK sets this property to `true` by default for executable project types, such as `console`, `webapp`, and `worker`.
+- `EnableSdkContainerSupport`: The SDK sets this property to `true` by default for every project that isn't a class library, including console apps. In the .NET 9 SDK and earlier versions, you must set this property explicitly for console apps.
 
-For console, web, and worker projects, you don't need to set either property. If your project or an imported file, such as _Directory.Build.props_, sets either property to `false`, you can enable SDK container support explicitly in your project file:
+For console, web, and worker projects, you don't need to set either property. If your project or an imported file, such as _Directory.Build.props_, sets either property to `false`, enable SDK container support explicitly in your project file:
 
 ```xml
 <PropertyGroup>
@@ -50,13 +50,13 @@ To publish an app as a container, invoke the `PublishContainer` target directly.
 dotnet publish /t:PublishContainer
 ```
 
-Projects that use the `Microsoft.NET.Sdk.Web` or `Microsoft.NET.Sdk.Worker` SDK also have a `DefaultContainer` publish profile. When you specify this profile, it sets a property that causes the SDK to run the `PublishContainer` target after the publish process:
+Projects that use `Microsoft.NET.Sdk.Web` or `Microsoft.NET.Sdk.Worker` also have a `DefaultContainer` publish profile. When you specify this profile, it sets a property that causes the SDK to run the `PublishContainer` target after the publish process:
 
 ```dotnetcli
 dotnet publish -p PublishProfile=DefaultContainer
 ```
 
-The `DefaultContainer` profile isn't available to console apps and other projects that use the `Microsoft.NET.Sdk` SDK. If you specify the profile for one of these projects, the SDK reports warning `NETSDK1198` and doesn't create a container image.
+The `DefaultContainer` profile isn't available to console apps and other projects that use `Microsoft.NET.Sdk`. If you specify the profile for one of these projects, the SDK reports warning `NETSDK1198` and doesn't create a container image.
 
 Publish profiles are an MSBuild feature that can set properties in more complex ways than setting them directly. However, not all project types support profiles or have the same set of profiles available, and support for profiles differs between tools, such as Visual Studio and the .NET CLI. Because the `PublishContainer` target works the same way for all supported project types and tools, use the target instead of the profile.
 
@@ -64,7 +64,7 @@ Publish profiles are an MSBuild feature that can set properties in more complex 
 
 Interacting with private container registries requires authenticating with those registries.
 
-Docker has an established pattern with this via the [`docker login`](https://docs.docker.com/engine/reference/commandline/login/) command, which is a way of interacting with a Docker config file that contains rules for authenticating with specific registries. The .NET SDK container tooling supports this file, and the authentication types it encodes, for registry authentication. As a result, the tooling works with any registry that you can `docker pull` from and `docker push` to. This file is normally stored at _~/.docker/config.json_, but you can also specify its location through the `DOCKER_CONFIG` variable, which points to a directory containing a _config.json_ file.
+Docker handles registry authentication through the [`docker login`](https://docs.docker.com/engine/reference/commandline/login/) command, which updates a Docker configuration file with rules for authenticating with specific registries. The .NET SDK container tooling supports this file and the authentication types it encodes, so the tooling works with any registry that you can `docker pull` from and `docker push` to. Docker normally stores this file at _~/.docker/config.json_, or you can set the `DOCKER_CONFIG` environment variable to a directory that contains a _config.json_ file.
 
 ## Kinds of authentication
 
@@ -88,26 +88,26 @@ The `credsStore` section is a single string property whose value is the name of 
 
 ## Authentication via environment variables
 
-In some scenarios, the standard Docker authentication mechanism described earlier doesn't work, for example, when you use the .NET SDK container tooling inside a container. For these scenarios, the tooling can also read registry credentials from environment variables. When the applicable environment variables are set, the tooling uses them instead of the Docker config file. The following environment variables are supported:
+In some scenarios, such as when you run the .NET SDK container tooling inside a container, the standard Docker authentication mechanism doesn't work. For these scenarios, the tooling can read registry credentials from environment variables instead. When you set the applicable environment variables, the tooling uses them instead of the Docker configuration file. The tooling supports the following environment variables:
 
-- `DOTNET_CONTAINER_REGISTRY_UNAME` and `DOTNET_CONTAINER_REGISTRY_PWORD`: The username and the password or token for the registry. If you use a token, set the username to the value that your registry requires for that kind of token.
-- `DOTNET_CONTAINER_PUSH_REGISTRY_UNAME` and `DOTNET_CONTAINER_PUSH_REGISTRY_PWORD`: The username and the password or token for the _destination_ registry, where you push your final image.
-- `DOTNET_CONTAINER_PULL_REGISTRY_UNAME` and `DOTNET_CONTAINER_PULL_REGISTRY_PWORD`: The username and the password or token for the _source_ registry, where your base image is located.
+- `DOTNET_CONTAINER_REGISTRY_UNAME` and `DOTNET_CONTAINER_REGISTRY_PWORD`: Specify the username and the password or token for the registry. If you use a token, set the username to the value that your registry requires for that token type.
+- `DOTNET_CONTAINER_PUSH_REGISTRY_UNAME` and `DOTNET_CONTAINER_PUSH_REGISTRY_PWORD`: Specify the username and the password or token for the _destination_ registry where you push your final image.
+- `DOTNET_CONTAINER_PULL_REGISTRY_UNAME` and `DOTNET_CONTAINER_PULL_REGISTRY_PWORD`: Specify the username and the password or token for the _source_ registry that hosts your base image.
 
 Set both variables in each pair. The tooling ignores a pair if either value is empty. For each registry operation, the tooling checks the following pairs in order and uses the first one that's set:
 
 | Operation | Environment variables, in order of precedence |
 |--|--|
-| Push the final image to the destination registry. | `DOTNET_CONTAINER_PUSH_REGISTRY_*`, then `DOTNET_CONTAINER_REGISTRY_*` |
-| Pull the base image from the destination registry. | `DOTNET_CONTAINER_PULL_REGISTRY_*`, then `DOTNET_CONTAINER_REGISTRY_*` |
-| Pull the base image from a different registry. | `DOTNET_CONTAINER_PULL_REGISTRY_*` |
+| Push the final image to the destination registry | `DOTNET_CONTAINER_PUSH_REGISTRY_*`, then `DOTNET_CONTAINER_REGISTRY_*` |
+| Pull the base image from the destination registry | `DOTNET_CONTAINER_PULL_REGISTRY_*`, then `DOTNET_CONTAINER_REGISTRY_*` |
+| Pull the base image from a different registry | `DOTNET_CONTAINER_PULL_REGISTRY_*` |
 
-If none of the applicable variables are set, the tooling uses the Docker config file. The `DOTNET_CONTAINER_REGISTRY_*` variables apply to the source registry only when it's the same as the destination registry. If your base image is in a different registry that requires credentials, set the `DOTNET_CONTAINER_PULL_REGISTRY_*` variables.
+If none of the applicable variables are set, the tooling uses the Docker configuration file. The `DOTNET_CONTAINER_REGISTRY_*` variables apply to the source registry only when it's the same as the destination registry. If your base image is in a different registry that requires credentials, set the `DOTNET_CONTAINER_PULL_REGISTRY_*` variables.
 
 > [!NOTE]
 > As of .NET SDK 8.0.400, the environment variables for container operations have been updated. The `SDK_CONTAINER_*` variables are now prefixed with `DOTNET_CONTAINER_*`.
 
-Environment variables can leak credentials, so use them only in scenarios where the Docker config file isn't available.
+Environment variables can leak credentials, so use them only in scenarios where the Docker configuration file isn't available.
 
 ## Using insecure registries
 
@@ -147,9 +147,9 @@ insecure = true
 
 ### Environment variables
 
-Starting in 9.0.100, the .NET SDK recognizes insecure registries passed through the `DOTNET_CONTAINER_INSECURE_REGISTRIES` environment variable. This variable takes a semicolon-separated list of registry names to treat as insecure in the same manner as the Docker and Podman examples above. The SDK always treats `localhost` registries as insecure, so you don't need to add them to the list.
+Starting in .NET SDK 9.0.100, the SDK recognizes insecure registries passed through the `DOTNET_CONTAINER_INSECURE_REGISTRIES` environment variable. This variable takes a semicolon-separated list of registry names to treat as insecure in the same manner as the preceding Docker and Podman examples. The SDK always treats `localhost` registries as insecure, so you don't need to add them to the list.
 
-The following examples pull a base image from one insecure registry and push the final image to another. Quote the value so that your shell doesn't interpret the semicolon as a command separator. The .NET version in the base image tag must match your app's target framework, for example, `10.0` for an app that targets `net10.0` or `11.0` for an app that targets `net11.0`.
+The following examples pull a base image from one insecure registry and push the final image to another. To prevent your shell from interpreting the semicolon as a command separator, enclose the value in quotes. The .NET version in the base image tag must match your app's target framework (for example, `10.0` for an app that targets `net10.0` or `11.0` for an app that targets `net11.0`).
 
 #### [Windows](#tab/windows)
 
@@ -185,10 +185,10 @@ The following information about how the base image inference process occurred is
 | Data point | Explanation | Sample value |
 |--|--|--|
 | `InferencePerformed` | If users are manually specifying base images vs making use of inference. | `true` |
-| `TargetFramework` | The `TargetFramework` chosen when doing base image inference. | `net10.0` |
+| `TargetFramework` | The `TargetFramework` used for base image inference. | `net10.0` |
 | `BaseImage` | The value of the base image chosen, but only if that base image is one of the Microsoft-produced images. If a user specifies any image other than the Microsoft-produced images on mcr.microsoft.com, this value is null. | `mcr.microsoft.com/dotnet/aspnet` |
-| `BaseImageTag` | The value of the tag chosen, but only if that tag is for one of the Microsoft-produced images. If a user specifies any image other than the Microsoft-produced images on mcr.microsoft.com, this value is null. | `10.0` |
-| `ContainerFamily` | The value of the `ContainerFamily` property if a user used the `ContainerFamily` feature to pick a 'flavor' of one of our base images. This is only set if the user picked or inferred one of the Microsoft-produced .NET images from mcr.microsoft.com | `noble-chiseled` |
+| `BaseImageTag` | The tag of the selected base image, recorded only when the image is a Microsoft-produced image on `mcr.microsoft.com`; otherwise, `null`. | `10.0` |
+| `ContainerFamily` | The value of the `ContainerFamily` property when used to select a variant of a Microsoft-produced .NET base image from `mcr.microsoft.com`. | `noble-chiseled` |
 | `ProjectType` | The kind of project that's being containerized. | `AspNetCore` or `Console` |
 | `PublishMode` | How the application was packaged. | `Aot`, `Trimmed`, `SelfContained`, or `FrameworkDependent` |
 | `IsInvariant` | If the image chosen requires invariant globalization or the user opted into it manually. | `true` |
@@ -200,9 +200,9 @@ The following information about how the container creation and publishing proces
 
 | Data point | Explanation | Sample value |
 |--|--|--|
-| `RemotePullType` | If the base image came from a remote registry, what kind of registry was it? | Azure, AWS, Google, GitHub, DockerHub, MCR, or Other |
-| `LocalPullType` | Reserved for a base image that comes from a local source, like a container daemon or a tarball. The SDK doesn't currently support local base images, so this value isn't set. | Not set |
-| `RemotePushType` | If the image was pushed to a remote registry, what kind of registry was it? | Azure, AWS, Google, GitHub, DockerHub, MCR, or Other |
+| `RemotePullType` | The kind of remote registry that the base image came from. | Azure, AWS, Google, GitHub, DockerHub, MCR, or Other |
+| `LocalPullType` | Reserved for a base image from a local source, such as a container daemon or a tarball. Because the SDK doesn't currently support local base images, it doesn't set this value. | Not set |
+| `RemotePushType` | The kind of remote registry that the image was pushed to. | Azure, AWS, Google, GitHub, DockerHub, MCR, or Other |
 | `LocalPushType` | If the image was pushed to a local destination, what was it? | Docker, Podman, Tarball |
 
 In addition, if various kinds of errors occur during the process that data is collected about what kind of error it was:

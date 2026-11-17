@@ -84,13 +84,13 @@ The worker template loops indefinitely. Use the cancel command <kbd>Ctrl+C</kbd>
 
 ## Set the container image name
 
-There are various configuration options available when publishing an app as a container. By default, the container image name is the `AssemblyName` of the project. To set a different name, specify a `ContainerRepository` property. For this tutorial, open the _DotNet.ContainerImage.csproj_ file and add the highlighted `ContainerRepository` property, as shown in the following project file:
+When you publish an app as a container, the container image name defaults to the `AssemblyName` of the project. To set a different name, add the `ContainerRepository` property to your project file. For this tutorial, open _DotNet.ContainerImage.csproj_ and add the highlighted `ContainerRepository` property:
 
 :::code language="xml" source="snippets/Worker/DotNet.ContainerImage.csproj" highlight="8":::
 
 The preceding project file targets .NET 11. If you use the .NET 10 SDK, your project targets `net10.0` instead, and its package version differs.
 
-The SDK tags the image as `latest` by default. For further reference, see [`ContainerRepository`](publish-configuration.md#containerrepository) and [`ContainerImageTag`](publish-configuration.md#containerimagetag).
+The SDK tags the image as `latest` by default. For more information, see [`ContainerRepository`](publish-configuration.md#containerrepository) and [`ContainerImageTag`](publish-configuration.md#containerimagetag).
 
 ## Publish .NET app
 
@@ -106,7 +106,7 @@ The preceding .NET CLI command publishes the app as a container:
 - Specifying an x64 architecture (`--arch x64`).
 
 > [!IMPORTANT]
-> To publish the container locally, you must have a supported container runtime running. If it isn't running when you attempt to publish the app as a container, you experience an error similar to the following:
+> To publish the container image locally, start a supported container runtime first. If no runtime is running when you publish the app, the command fails with an error similar to the following:
 >
 > ```console
 > ..\build\Microsoft.NET.Build.Containers.targets(255,5): error CONTAINER1012: The local registry is not available, but pushing to a local registry was requested.
@@ -121,7 +121,7 @@ Restore complete (0.2s)
 Build succeeded in 3.1s
 ```
 
-This command compiles your worker app to the _publish_ folder and pushes the container image to a local container runtime, such as Docker or Podman. The SDK detects which runtime to use with no additional configuration. To choose a specific runtime, set the [`LocalRegistry`](publish-configuration.md#localregistry) property.
+The `dotnet publish` command compiles your worker app to the _publish_ folder and pushes the container image to a local container runtime, such as Docker or Podman. The SDK automatically detects which runtime to use. To choose a specific runtime, set the [`LocalRegistry`](publish-configuration.md#localregistry) property.
 
 ## Run the container image
 
@@ -131,7 +131,7 @@ To verify that the image works, run it as a container with the `docker run` comm
 docker run -it --rm dotnet-worker-image
 ```
 
-The `-it` option connects your terminal to the container, and the `--rm` option removes the container when it stops. The worker logs a message every second, similar to the following example output:
+The `-it` flags connect your terminal to the container, and the `--rm` option removes the container when it stops. The worker logs a message every second, similar to the following example output:
 
 ```output
 info: Microsoft.Hosting.Lifetime[0]
@@ -152,7 +152,7 @@ To stop the app and the container, press <kbd>Ctrl+C</kbd>. If you use Podman, r
 
 ## Publish .NET app to a tarball
 
-A tarball (or tar file) is a single file that contains other files. Tarballs are commonly used to distribute software or to create backups. In this case, the tarball distributes a container image. The SDK writes the image as an uncompressed tar archive, so this tutorial uses the _.tar_ file extension.
+You can use a tarball (a tar archive file) to distribute software or create backups. Here, the tarball packages a container image. Because the .NET SDK writes an uncompressed tar archive, this tutorial uses the _.tar_ file extension.
 
 To publish a .NET app as a container to a tarball, use the following command:
 
@@ -166,22 +166,22 @@ The preceding command publishes the app as a container to a tarball:
 - Specifying an x64 architecture (`--arch x64`).
 - Setting the `ContainerArchiveOutputPath` property to `./images/container-image.tar`.
 
-The command doesn't require a running container runtime. If you set `ContainerArchiveOutputPath` to a folder instead of a file, the SDK names the file `$(ContainerRepository).tar.gz`. Despite the _.tar.gz_ extension, that file is also an uncompressed tar archive. For more information, see [`ContainerArchiveOutputPath`](publish-configuration.md#containerarchiveoutputpath).
+Publishing to a tarball doesn't require a running container runtime. If you set `ContainerArchiveOutputPath` to a folder path instead of a file path, the SDK names the output file `$(ContainerRepository).tar.gz`. Despite the _.tar.gz_ extension, that file is still an uncompressed tar archive. For more information, see [`ContainerArchiveOutputPath`](publish-configuration.md#containerarchiveoutputpath).
 
 ### Load the tarball
 
-A common use case for exporting to a tarball is for security-focused organizations. They create container images, export them as tarballs, and then run security-scanning tools over the tarballs. This approach simplifies compliance as it avoids the complexities of scanning a live system.
+Security-focused organizations often export container images as tarballs so they can run security-scanning tools on the archive files. This approach simplifies compliance because it avoids scanning a live system.
 
-The tarball contains the entire container image, which you can load into a container runtime with the appropriate tool:
+The tarball contains the entire container image, which you can load into a container runtime with your container tool:
 
 - [Docker](https://docs.docker.com/reference/cli/docker/image/load/): `docker load -i ./images/container-image.tar`
 - [Podman](https://docs.podman.io/en/latest/markdown/podman-load.1.html): `podman load -i ./images/container-image.tar`
 
 ## Publish .NET app to container registry
 
-Container registries are services that store and manage container images. They're used to store and distribute container images across multiple environments. Most registries require you to authenticate before you can publish an image. The .NET SDK reuses the credentials that the `docker login` command stores, or reads credentials from environment variables. For more information, see [Authenticate to container registries](overview.md#authenticate-to-container-registries).
+Container registries store and distribute container images across environments. Most registries require authentication before you publish an image. The .NET SDK reuses credentials stored by `docker login` or reads credentials from environment variables. For more information, see [Authenticate to container registries](overview.md#authenticate-to-container-registries).
 
-For example, to publish to the GitHub Container Registry (`ghcr.io`), first sign in with your GitHub username and a personal access token (classic) that has the `write:packages` scope. When prompted for a password, enter the token. For more information, see [Authenticating with a personal access token (classic)](https://docs.github.com/packages/working-with-a-github-packages-registry/working-with-the-container-registry#authenticating-with-a-personal-access-token-classic).
+For example, to publish to GitHub Container Registry (`ghcr.io`), first sign in with your GitHub username and a personal access token (classic) that has the `write:packages` scope. When prompted for a password, enter the token. For more information, see [Authenticating with a personal access token (classic)](https://docs.github.com/packages/working-with-a-github-packages-registry/working-with-the-container-registry#authenticating-with-a-personal-access-token-classic).
 
 ```console
 docker login ghcr.io -u USERNAME
@@ -204,7 +204,7 @@ For more information, see [ContainerRegistry](publish-configuration.md#container
 
 ## Clean up resources
 
-In this tutorial, you published a .NET worker as a container image. If you want, delete the image from your local container runtime. Use the `docker images` command to list the image:
+In this tutorial, you published a .NET worker as a container image. If you no longer need the image, delete it from your local container runtime. First, run `docker images` to view the image:
 
 ```console
 docker images dotnet-worker-image

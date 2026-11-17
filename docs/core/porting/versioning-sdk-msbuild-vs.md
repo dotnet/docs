@@ -142,11 +142,12 @@ Major versions of the .NET SDK are typically released within a few days of a Vis
 
 | SDK preview version | Visual Studio version |
 |---------------------|-----------------------|
-| 11.0.100 Preview 1  | 18.5.0 Insiders           |
-| 11.0.100 Preview 2  | 18.6.0 Insiders           |
-| 11.0.100 Preview 3  | 18.7.0 Insiders           |
-| 11.0.100 Preview 4  | 18.8.0 Insiders           |
-| 11.0.100 Preview 6  | 18.9.0 Insiders           |
+| 11.0.100 Preview 1  | 18.4.0 Insiders            |
+| 11.0.100 Preview 2  | 18.5.0 Insiders            |
+| 11.0.100 Preview 3  | 18.6.0 Insiders            |
+| 11.0.100 Preview 4  | 18.7.0 Insiders            |
+| 11.0.100 Preview 4  | 18.8.0 Insiders            |
+| 11.0.100 Preview 6  | 18.9.0 Insiders            |
 | 11.0.100 Preview 7  | 18.10.0 Insiders           |
 | 11.0.100 RC 1       | 18.11.0 Insiders           |
 | 11.0.100 RC 2       | 18.12.0 Insiders           |

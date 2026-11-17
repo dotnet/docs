@@ -130,6 +130,8 @@ If you have calls to `TestContext.Properties.Contains`, update them to `TestCont
 This enum only had a single member, `Infinite`, whose value was `int.MaxValue`.
 If you had usages of `[Timeout(TestTimeout.Infinite)]`, update them to `[Timeout(int.MaxValue)]`.
 
+<a name="testcontextmanagedtype-is-now-removed"></a>
+
 ### Deprecated TestContext properties are removed
 
 The following `TestContext` properties are removed. Update your code to use the replacement properties:

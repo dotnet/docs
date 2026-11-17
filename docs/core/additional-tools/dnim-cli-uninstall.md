@@ -29,7 +29,6 @@ dnim-win-[x86|x64|arm64] uninstall [-a|--accept-license]
     [--no-wua]
     [-o|--output-file <OUTPUT_FILE>]
     [--offline <LAYOUT_DIRECTORY>]
-    [--offline-revocation-checks]
     [--output-format <text|csv|html|json>]
     [--pv|--product-version <PRODUCT_VERSION>]
     [--remove-EOL-versions-from-VS]
@@ -86,8 +85,6 @@ Various options can be used to target specific installations. For example, an ad
 - [!INCLUDE [output-file](includes/dnim-cli-output-file.md)]
 
 - [!INCLUDE [offline](includes/dnim-cli-offline.md)]
-
-- [!INCLUDE [offline-revocation-checks](includes/dnim-cli-offline-revocation-checks.md)]
 
 - [!INCLUDE [output-format](includes/dnim-cli-output-format.md)]
 

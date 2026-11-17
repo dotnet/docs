@@ -70,7 +70,7 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 | 10.0.1xx    | 18.0                          | Nov '25   | Nov '28<sup>1</sup> |
 | 10.0.2xx    | 18.4                          | Mar '26   | May '26             |
 | 10.0.3xx    | 18.6                          | May '26   | Aug '26             |
-| 10.0.4xx    | 18.9                          | Aug '26   | Nov '28<sup>2</sup> |
+| 10.0.4xx    | 18.9 / 18.11-LTSC             | Aug '26   | Nov '28<sup>2</sup> |
 | 11.0.1xx    | 18.12                         | Nov '26   | Nov '28<sup>1</sup> |
 
 > [!NOTE]

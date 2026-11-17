@@ -58,13 +58,19 @@ Each .NET Runtime is published as an individual snap package. The following tabl
 
 ## 2. Enable the dotnet command
 
-Because Snap doesn't create an unversioned `dotnet` command, create a symbolic link to make `dotnet` available system-wide. Create this link only if you want to map the `dotnet` command to this specific Snap installation. If you already have .NET installed through another method and you create this link, it overwrites that mapping.
-
-If `/usr/local/bin/dotnet` already exists, remove it before you create the link.
+Because Snap doesn't create an unversioned `dotnet` command, create a symbolic link to make `dotnet` available system-wide. Create this link only if you want to map the `dotnet` command to this specific Snap installation. If `/usr/local/bin/dotnet` already exists, remove it before creating the link; otherwise, `ln -s` fails.
 
 ```bash
 sudo ln -s /snap/dotnet-runtime-100/current/usr/bin/dotnet /usr/local/bin/dotnet
 ```
+
+Some runtime snaps expose a `dotnet` app for backwards compatibility. For example, with `dotnet-runtime-80`, you can instead enable the unversioned command with:
+
+```bash
+sudo snap alias dotnet-runtime-80.dotnet dotnet
+```
+
+Content-only snaps such as `dotnet-runtime-90`, `dotnet-runtime-100`, and `dotnet-runtime-110` don't expose a `dotnet` app. For those packages, use the preceding symbolic-link instructions.
 
 ## 3. Export the install location
 
@@ -93,13 +99,19 @@ Edit the appropriate source file for your shell and add `export DOTNET_ROOT=/sna
 
 ### The dotnet terminal command doesn't work
 
-The .NET Runtime snap packages don't create a `dotnet` command. To make the `dotnet` command available, create a symbolic link to the `dotnet` executable in the snap package:
+Content-only .NET Runtime snaps, including `dotnet-runtime-90`, `dotnet-runtime-100`, and `dotnet-runtime-110`, don't create an unversioned `dotnet` command. To make the `dotnet` command available, create a symbolic link to the `dotnet` executable in the snap package:
 
 ```bash
 sudo ln -s /snap/dotnet-runtime-100/current/usr/bin/dotnet /usr/local/bin/dotnet
 ```
 
 Substitute `dotnet-runtime-100` with the name of your runtime package. If `/usr/local/bin/dotnet` already exists, remove it before you create the link.
+
+For a runtime snap that exposes a `dotnet` app, such as `dotnet-runtime-80`, you can use `snap alias` instead:
+
+```bash
+sudo snap alias dotnet-runtime-80.dotnet dotnet
+```
 
 ### Can't install Snap on WSL2
 

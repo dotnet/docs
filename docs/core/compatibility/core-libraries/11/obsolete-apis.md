@@ -19,7 +19,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 
 | Diagnostic ID                                                           | Description | Severity |
 |-------------------------------------------------------------------------|-------------|----------|
-| [SYSLIB0063](../../../../fundamentals/syslib-diagnostics/syslib0063.md) | <xref:System.IO.Pipes.NamedPipeClientStream.%23ctor(System.IO.Pipes.PipeDirection,System.Boolean,System.Boolean,Microsoft.Win32.SafeHandles.SafePipeHandle)?displayProperty=nameWithType> is obsolete. Use the constructor that omits the `isConnected` argument instead. | Warning |
+| [SYSLIB0063](../../../../fundamentals/syslib-diagnostics/syslib0063.md) | <xref:System.IO.Pipes.NamedPipeClientStream.%23ctor(System.IO.Pipes.PipeDirection,System.Boolean,System.Boolean,Microsoft.Win32.SafeHandles.SafePipeHandle)> is obsolete. Use the constructor that omits the `isConnected` argument instead. | Warning |
 | [SYSLIB0064](../../../../fundamentals/syslib-diagnostics/syslib0064.md) | <xref:System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[],System.Boolean)?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[],System.Boolean)?displayProperty=nameWithType> are obsolete. Use the overloads that accept an <xref:System.Security.Cryptography.RSAEncryptionPadding> instead. | Warning |
 | [SYSLIB0066](../../../../fundamentals/syslib-diagnostics/syslib0066.md) | <xref:Microsoft.Extensions.Options.IStartupValidator> is obsolete. Implement and register a custom <xref:Microsoft.Extensions.Options.IAsyncStartupValidator> instead; don't register the same implementation under both startup-validator interfaces. | Warning |
 
@@ -41,7 +41,7 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 
 ### SYSLIB0063
 
-- <xref:System.IO.Pipes.NamedPipeClientStream.%23ctor(System.IO.Pipes.PipeDirection,System.Boolean,System.Boolean,Microsoft.Win32.SafeHandles.SafePipeHandle)?displayProperty=fullName>
+- <xref:System.IO.Pipes.NamedPipeClientStream.%23ctor(System.IO.Pipes.PipeDirection,System.Boolean,System.Boolean,Microsoft.Win32.SafeHandles.SafePipeHandle)>
 
 ### SYSLIB0064
 

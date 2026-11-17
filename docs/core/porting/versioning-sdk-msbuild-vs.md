@@ -118,7 +118,7 @@ While most developers use the .NET SDK bundled with their Visual Studio version,
   - Visual Studio 17.14 and .NET 9.0.3xx
   - Visual Studio 18.11-LTSC and .NET 10.0.4xx
   - Visual Studio 18.12 and .NET 11.0.1xx
-- **Backward compatibility**: Using the latest feature band of the previous SDK version (for example, 10.0.4xx in Visual Studio 18.11) is supported with best-effort compatibility. The .NET team determines when to backport fixes based on risk and customer impact.
+- **Backward compatibility**: Using the latest feature band of the previous SDK version (for example, 10.0.4xx in Visual Studio 18.12) is supported with best-effort compatibility. The .NET team determines when to backport fixes based on risk and customer impact.
   While SDKs that are older than the latest of the prior band might work, the .NET team does not test them or make an effort to ensure any compatibility.
 - **Forward compatibility**: Using a newer SDK (for example, .NET 11 SDK in Visual Studio 18.11) is allowed without blocking, but targeting newer runtimes in older Visual Studio versions isn't supported and produces a build warning.
 

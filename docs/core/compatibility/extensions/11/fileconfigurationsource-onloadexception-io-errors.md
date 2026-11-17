@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: FileConfigurationSource.OnLoadException callback is called for IO errors"
 description: "Learn about the breaking change in .NET 11 where FileConfigurationSource.OnLoadException is called for IO errors in addition to parsing errors."
-ms.date: 08/05/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 ## Version introduced
 
-.NET 11 Preview 7
+.NET 11
 
 ## Previous behavior
 

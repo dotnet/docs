@@ -2,7 +2,7 @@
 title: "NETSDK1238: The current .NET SDK has known vulnerabilities"
 description: Learn how to resolve build warning NETSDK1238, which reports known CVEs against the .NET SDK that built your project.
 ms.topic: error-reference
-ms.date: 05/15/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 f1_keywords:
 - NETSDK1238
@@ -16,7 +16,7 @@ This warning indicates that the .NET SDK used to build your project has one or m
 To resolve the warning, install a patched .NET SDK from <https://dotnet.microsoft.com/download> and update your `global.json` (if present) to select the new version.
 
 > [!NOTE]
-> This check is available in .NET 11 Preview 5 and later versions.
+> This check is available in .NET 11 and later versions.
 
 ## How the check works
 

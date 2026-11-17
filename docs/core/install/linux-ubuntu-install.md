@@ -3,7 +3,7 @@ title: Install .NET on Ubuntu
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu. .NET is usually installed through APT.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2026
+ms.date: 11/11/2026
 ms.custom: updateeachrelease, linux-related-content
 zone_pivot_groups: ubuntu-install-set-one
 ---
@@ -85,7 +85,7 @@ The following versions of .NET are supported or available for Ubuntu 26.04:
 
 | Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| 11.0, 10.0, 9.0, 8.0    | 10.0                                 | 11.0, 9.0, 8.0                                                                                      |None                                                                                         |
+| 11.0, 10.0              | 10.0                                 | 11.0, 9.0, 8.0                                                                                      |None                                                                                         |
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
@@ -146,7 +146,7 @@ The following versions of .NET are supported or available for Ubuntu 24.04:
 
 | Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| 11.0, 10.0, 9.0, 8.0    | 10.0, 8.0                            | 11.0, 9.0, 7.0, 6.0                                                                                 |None                                                                                         |
+| 11.0, 10.0              | 10.0, 8.0                            | 11.0, 9.0, 7.0, 6.0                                                                                 |None                                                                                         |
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
@@ -204,7 +204,7 @@ The following versions of .NET are supported or available for Ubuntu 22.04:
 
 | Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| 11.0, 10.0, 9.0, 8.0    | 8.0, 7.0, 6.0                        | 11.0, 10.0, 9.0                                                                                          | 8.0, 7.0, 6.0, 3.1                |
+| 11.0, 10.0              | 8.0, 7.0, 6.0                        | 11.0, 10.0, 9.0                                                                                          | 8.0, 7.0, 6.0, 3.1                |
 
 [!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
 

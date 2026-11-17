@@ -192,7 +192,7 @@ To correct these problems, follow this guidance:
 
 - **CS9137**: *The 'interceptors' feature is not enabled in this namespace. Add `<Features>InterceptorsPreview</Features>` to your project.*
 
-To use interceptors, add the `<Features>InterceptorsPreview</Features>` element to your project file within a `<PropertyGroup>` section (**CS9137**). Interceptors are an experimental feature and aren't enabled by default. This explicit opt-in is required because the interceptors feature is subject to breaking changes or removal in future releases. The compiler needs confirmation that you understand the risks before allowing its use. For more information about interceptors and their capabilities, see [Interceptors](../../whats-new/csharp-12.md#interceptors) in the C# 12 features documentation.
+To use interceptors, add the `<Features>InterceptorsPreview</Features>` element to your project file within a `<PropertyGroup>` section (**CS9137**). Interceptors are an experimental feature and aren't enabled by default. This explicit opt-in is required because the interceptors feature is subject to breaking changes or removal in future releases. The compiler needs confirmation that you understand the risks before allowing its use. For more information about interceptors and their capabilities, see [Interceptors](../../whats-new/csharp-version-history.md#interceptors) in the C# version history.
 
 ## Signature mismatch
 

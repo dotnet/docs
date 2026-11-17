@@ -20,7 +20,7 @@ On Windows, .NET components like the runtime and SDK consist of multiple MSIs. I
 - Independent software vendors (ISVs) may redistribute .NET bundles as part of their software.
 - OEMs sometimes include preinstalled copies of .NET bundles in the factory images of new devices.
 - Some Azure marketplace images of Windows include preinstalled copies of the bundles.
-- Third party package managers like Chocolatey also distribute the .NET bundles.
+- Third-party package managers like Chocolatey also distribute the .NET bundles.
 - Enterprises sometimes repackage the bundles using proprietary packages for internal distribution.
 - Some .NET application hosts might also direct users to download and install missing runtime bundles.
 
@@ -74,19 +74,19 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Dependencies\Dotnet_CLI_SharedHost
 
 ## Bin deployed installations
 
-Bin deployed installations refer to copies of .NET that aren't associated with an MSI. This can be achieved by running the install scripts as an administrator and setting the installation directory to `Program Files\dotnet'. Bin deployed installations can complicate remediation. Scanners will report vulnerabilities, but administrators won't find MSIs to uninstall. DNIM is able to detect bin deployed installs.
+Bin deployed installations refer to copies of .NET that aren't associated with an MSI. This can be achieved by running the install scripts as an administrator and setting the installation directory to `Program Files\dotnet`. Bin deployed installations can complicate remediation. Scanners will report vulnerabilities, but administrators won't find MSIs to uninstall. DNIM is able to detect bin deployed installs.
 
 ## Detection
 
-DNIM relies on a number of heuristics to identify bundles and MSIs associated with .NET. Accurately detecting installations is critical to successfully remediate a non-complaint devices.
+DNIM relies on a number of heuristics to identify bundles and MSIs associated with .NET. Accurate detection of installations is critical to remediate non-compliant devices.
 
 ### Bundles
 
-Bundles are identified using their display names and file information stored in the registry. Additional checks are performed on  executables to ensure they are valid installers. This informatio is also compared against the JSON data .NET publishes for each release.
+Bundles are identified using their display names and file information stored in the registry. Additional checks are performed on executables to ensure they are valid installers. This information is also compared against the JSON data .NET publishes for each release.
 
 ### MSI Detection
 
-DNIM performs an exhaustive search against the installer component data stored in the registery under `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Components` to identify .NET MSIs.
+DNIM performs an exhaustive search against the installer component data stored in the registry under `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Components` to identify .NET MSIs.
 
 Each subkey represents a different component ID. The values under each key represent product codes. Both the component ID and product codes are stored as packed GUIDs. The example below is of the component associated with `dotnet.exe`.
 
@@ -111,7 +111,7 @@ Because DNIM performs an exhaustive search of installer components, any files un
 
 Incorrect classification of installations can result in removing or retaining the wrong installation, potentially breaking applications or leaving devices in a non-compliant state.
 
-Once a product (for example, NET 10) is identified, additional information like its release (for example, 10.0.4) and support phase (for example, active) can be determined. This allows administrators to create flexible deployments.
+Once a product (for example, .NET 10) is identified, additional information like its release (for example, 10.0.4) and support phase (for example, active) can be determined. This allows administrators to create flexible deployments.
 
 Installations are further classified according to their .NET component (ASP.NET Core, SDK, etc.), architecture, and type of installation (bundle, MSI, or bin deployed).
 
@@ -119,13 +119,13 @@ There are some special cases worth mentioning.
 
 ### .NET Standard 2.1
 
-Ensuring consistent behavior requires installations to define their product, release, and support phase. The targeting pack for .NET Standard 2.1 presents an interesting challenge. It doesn't contain executable code and only provides reference assemblies for the APIs defined by the standard. The targeting pack first shipped as part of the .NET Core 3.0.100 SDK, but was included in every subsequent SDKs until .NET 10. While DNIM will classify the release and product under .NET Core 3.0, the support phase is always reported as active since it may be included in SDKs that are in active support.
+Ensuring consistent behavior requires installations to define their product, release, and support phase. The targeting pack for .NET Standard 2.1 presents an interesting challenge. It doesn't contain executable code and only provides reference assemblies for the APIs defined by the standard. The targeting pack first shipped as part of the .NET Core 3.0.100 SDK, but was included in every subsequent SDK until .NET 10. While DNIM will classify the release and product under .NET Core 3.0, the support phase is always reported as active since it may be included in SDKs that are in active support.
 
 > [!NOTE]
 > The .NET Standard 2.1 targeting pack was removed from the SDK installation in .NET 10. SDKs automatically download missing targeting packs using NuGet packages when building applications.
 
 ### .NET SDK feature bands
 
-In .NET Core 1.0 and 1.1, SDKs used a versioning scheme similar to the runime. The last SDK in .NET Core 1.1 was versioned as 1.1.14 and included the 1.1.13 runtime.
+In .NET Core 1.0 and 1.1, SDKs used a versioning scheme similar to the runtime. The last SDK in .NET Core 1.1 was versioned as 1.1.14 and included the 1.1.13 runtime.
 
 SDK features bands were introduced in the 2.1.100 SDK to differentiate between supported features in Visual Studio. The SDK shipped as part of the .NET Core 2.0.5 release. The last 2.0 SDK was versioned as 2.1.202 and included in the 2.0.9 release. The first SDK to ship in .NET Core 2.1 was versioned as 2.1.300. In later releases, SDK feature bands always start at 100, e.g., 2.2.100, 3.0.100, etc.

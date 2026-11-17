@@ -1,17 +1,17 @@
 ---
 title: "Breaking change: Named mutexes default to user scope on Unix"
 description: "Learn about the breaking change in .NET 8, .NET 9, .NET 10, and .NET 11 where named mutexes on Unix default to user scope."
-ms.date: 10/14/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
 # Named mutexes default to user scope on Unix
 
-Named mutexes on Unix now default to user scope instead of global scope. This change affects .NET 8.0.32, .NET 9.0.21, .NET 10.0.13, and .NET 11 RC 2.
+Named mutexes on Unix now default to user scope instead of global scope. This change affects .NET 8.0.32, .NET 9.0.21, .NET 10.0.13, and .NET 11.
 
 ## Version introduced
 
-.NET 11 RC 2, .NET 10.0.13, .NET 9.0.21, and .NET 8.0.32
+.NET 11, .NET 10.0.13, .NET 9.0.21, and .NET 8.0.32
 
 ## Previous behavior
 

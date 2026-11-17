@@ -1,7 +1,7 @@
 ---
 title: File-based apps
 description: Learn how to create, build, and run C# applications from a single file without a project file.
-ms.date: 09/10/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 # File-based apps
@@ -26,7 +26,7 @@ File-based apps use directives prefixed with `#:` to configure the build and run
 ### `#:include`
 
 > [!NOTE]
-> This directive is available in .NET 11 Preview 3 and .NET SDK 10.0.300 and later.
+> This directive is available in .NET 11 and .NET SDK 10.0.300 and later.
 
 Includes another file in the file-based app.
 

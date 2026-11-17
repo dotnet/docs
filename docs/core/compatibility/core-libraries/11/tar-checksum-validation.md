@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: TAR-reading APIs verify header checksums when reading"
 description: "Learn about the breaking change in .NET 11 where TarReader validates checksums and throws InvalidDataException for invalid entries."
-ms.date: 01/09/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ The <xref:System.Formats.Tar.TarReader> class now validates the checksum of TAR 
 
 ## Version introduced
 
-.NET 11 Preview 1
+.NET 11
 
 ## Previous behavior
 

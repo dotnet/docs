@@ -1,12 +1,11 @@
 // <BlockScopedNamespace>
 namespace MyApp.Models
 {
-    class Product
+    class Customer
     {
-        public required string Name { get; init; }
-        public decimal Price { get; init; }
+        public string Name { get; set; } = "";
 
-        public override string ToString() => $"{Name}: {Price:C}";
+        public override string ToString() => Name;
     }
 }
 // </BlockScopedNamespace>

@@ -57,7 +57,7 @@ Field initializers assign a reasonable default to a field or property. This dist
 
 :::code language="csharp" source="snippets/classes/Containers.cs" ID="ContainerConstructor":::
 
-**[Primary constructors](../../whats-new/tutorials/primary-constructors.md)** (C# 12+) add parameters directly to the class declaration. Those parameters are available throughout the class body:
+**[Primary constructors](../../whats-new/tutorials/primary-constructors.md)** add parameters directly to the class declaration. Those parameters are available throughout the class body:
 
 :::code language="csharp" source="snippets/classes/Containers.cs" ID="ContainerPrimaryConstructor":::
 

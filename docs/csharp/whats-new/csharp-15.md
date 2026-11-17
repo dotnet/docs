@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 15
 description: "Discover what's new in C# 15, including union types, closed hierarchies, extension indexers, collection expression arguments, and static interface compatibility."
-ms.date: 10/19/2026
+ms.date: 11/10/2026
 ms.topic: whats-new
 ms.update-cycle: 365-days
 ai-usage: ai-assisted
@@ -18,7 +18,7 @@ C# 15 includes the following new features. Try these features by using the [.NET
 - [Non-virtual static interface members on older runtimes](#non-virtual-static-interface-members-on-older-runtimes)
 - [Memory safety (preview feature)](#memory-safety)
 
-C# 15 is the default language version for projects that target `net11.0` in the .NET 11 SDK. Except for memory safety, these features don't require `<LangVersion>preview</LangVersion>`. The .NET 11 SDK is still prerelease. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
+C# 15 is the default language version for projects that target `net11.0` in the .NET 11 SDK. Except for memory safety, these features don't require `<LangVersion>preview</LangVersion>`. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
 You can also try the [memory safety preview feature](#memory-safety). Enable the preview language version for the syntax and pointer relaxations, and the `updated-memory-safety-rules` feature flag for the updated safety rules.
 

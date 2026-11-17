@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Environment.TickCount made consistent with Windows timeout behavior"
 description: "Learn about the breaking change in .NET 11 where Environment.TickCount and Environment.TickCount64 on Windows now exclude sleep and hibernation time, consistent with OS wait APIs."
-ms.date: 01/07/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/50755
 ---
@@ -12,7 +12,7 @@ On Windows, <xref:System.Environment.TickCount?displayProperty=nameWithType> and
 
 ## Version introduced
 
-.NET 11 Preview 1
+.NET 11
 
 ## Previous behavior
 

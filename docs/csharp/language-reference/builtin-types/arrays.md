@@ -55,21 +55,11 @@ An array has the following properties:
 - Array elements can be of any type, including an array type.
 - Array types are [reference types](../keywords/reference-types.md) derived from the abstract base type <xref:System.Array>. All arrays implement <xref:System.Collections.IList> and <xref:System.Collections.IEnumerable>. You can use the [foreach](../statements/iteration-statements.md#the-foreach-statement) statement to iterate through an array. Single-dimensional arrays also implement <xref:System.Collections.Generic.IList`1> and <xref:System.Collections.Generic.IEnumerable`1>.
 
-You can initialize the elements of an array to known values when you create the array. Beginning with C# 12, you can use a [Collection expression](../operators/collection-expressions.md) to initialize all of the collection types. Elements that you don't initialize are set to the [default value](default-values.md). The default value is the 0-bit pattern. All reference types (including [non-nullable](../../fundamentals/null-safety/nullable-reference-types.md#known-pitfalls) types) have the value `null`. All value types have the 0-bit patterns. That means the <xref:System.Nullable`1.HasValue?displayProperty=nameWithType> property is `false` and the <xref:System.Nullable`1.Value?displayProperty=nameWithType> property is undefined. In the .NET implementation, the `Value` property throws an exception.
+You can initialize the elements of an array to known values when you create the array. You can use a [collection expression](../operators/collection-expressions.md) to initialize arrays and other collection types. Elements that you don't initialize are set to the [default value](default-values.md). The default value is the 0-bit pattern. All reference types (including [non-nullable](../../fundamentals/null-safety/nullable-reference-types.md#known-pitfalls) types) have the value `null`. All value types have the 0-bit patterns. That means the <xref:System.Nullable`1.HasValue?displayProperty=nameWithType> property is `false` and the <xref:System.Nullable`1.Value?displayProperty=nameWithType> property is undefined. In the .NET implementation, the `Value` property throws an exception.
 
 The following example creates single-dimensional, multidimensional, and jagged arrays:
 
 :::code language="csharp" source="./snippets/shared/Arrays.cs" id="DeclareArrays":::
-
-> [!IMPORTANT]
-> Many of the examples in this article use [collection expressions](../operators/collection-expressions.md) (which use square brackets) to initialize the arrays. Collection expressions were first introduced in C# 12, which shipped with .NET 8. If you can't upgrade to C# 12 yet, use `{` and `}` to initialize the arrays instead.
->
-> ```csharp
-> // Collection expressions:
-> int[] array = [1, 2, 3, 4, 5, 6];
-> // Alternative syntax:
-> int[] array2 = {1, 2, 3, 4, 5, 6};
-> ```
 
 ## Single-dimensional arrays
 

@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Environment.GetCommandLineArgs()[0] preserves the apphost invocation name"
 description: "Learn about the breaking change in .NET 11 where Environment.GetCommandLineArgs()[0] preserves the apphost invocation name."
-ms.date: 10/13/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ When you launch an app through its apphost, <xref:System.Environment.GetCommandL
 
 ## Version introduced
 
-.NET 11 Preview 7
+.NET 11
 
 ## Previous behavior
 

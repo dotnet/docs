@@ -81,12 +81,12 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
+          - text: "What's new in C# 15"
+            url: ../whats-new/csharp-15.md
           - text: "What's new in C# 14"
             url: ../whats-new/csharp-14.md        
           - text: "What's new in C# 13"
             url: ../whats-new/csharp-13.md
-          - text: "What's new in C# 12"
-            url: ../whats-new/csharp-12.md
       - linkListType: tutorial
         links:
           - text: Explore record types
@@ -95,6 +95,8 @@ landingContent:
             url: ../whats-new/tutorials/top-level-statements.md
       - linkListType: reference
         links:
+          - text: C# version history
+            url: ../whats-new/csharp-version-history.md
           - text: Breaking changes in the C# compiler
             url: ../whats-new/breaking-changes.md
           - text: Version compatibility

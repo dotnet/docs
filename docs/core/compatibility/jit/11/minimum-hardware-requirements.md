@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Minimum hardware requirements updated"
 description: "Learn about the breaking change in .NET 11 where x86/x64 minimum hardware requirements and x86/x64 and Arm64 ReadyToRun targets have been updated."
-ms.date: 08/15/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/48045
 ---
@@ -38,7 +38,7 @@ The `ReadyToRun` target has been updated to `x86-64-v3` for Windows and Linux, w
 
 ## Version introduced
 
-.NET 11 Preview 1
+.NET 11
 
 ## Previous behavior
 

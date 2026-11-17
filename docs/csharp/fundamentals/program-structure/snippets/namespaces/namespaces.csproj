@@ -5,6 +5,14 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <NamespaceStyle Condition="'$(NamespaceStyle)' == ''">FileScoped</NamespaceStyle>
   </PropertyGroup>
+
+  <ItemGroup Condition="'$(NamespaceStyle)' == 'FileScoped'">
+    <Compile Remove="BlockScoped.cs" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(NamespaceStyle)' == 'BlockScoped'">
+    <Compile Remove="FileScopedExample.cs" />
+  </ItemGroup>
 
 </Project>

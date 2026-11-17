@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Empty strings in chained configuration override earlier providers"
 description: "Learn about the breaking change in .NET 11 where an empty string in a chained configuration overrides earlier providers."
-ms.date: 10/27/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -13,7 +13,7 @@ This change continues the distinction between empty and `null` configuration val
 
 ## Version introduced
 
-.NET 11 RC 1
+.NET 11
 
 ## Previous behavior
 

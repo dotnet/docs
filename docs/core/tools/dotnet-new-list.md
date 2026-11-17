@@ -97,7 +97,7 @@ Starting with .NET SDK 7.0.100, the `list` command might not show all the templa
 
 - **`--project <PROJECT_PATH>`**
 
-  The project that the template is added to. For the list command, it might be needed to specify the project the template is being added to to correctly evaluate constraints for the template. Available since .NET SDK 7.0.100.
+  The project that the template is added to. For the list command, it might be needed to specify the project the template is being added to correctly evaluate constraints for the template. Available since .NET SDK 7.0.100.
 
 - **`--tag <TAG>`**
 

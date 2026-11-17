@@ -3,7 +3,7 @@ title: .NET and Ubuntu overview
 description: Learn about the ways you can install .NET on Ubuntu, either from the built-in package feed, the .NET backports repository, or the Microsoft repository.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2026
+ms.date: 11/11/2026
 ms.custom: updateeachrelease, linux-related-content
 ---
 
@@ -22,9 +22,9 @@ The following table is a list of currently supported .NET releases and the versi
 | Ubuntu                                                             | Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](#register-the-ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](#register-the-microsoft-package-repository) |
 |--------------------------------------------------------------------|-------------------------|--------------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | [26.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2610)       | 11.0, 10.0              | 11.0, 10.0                           | None                                                                                                   | None                                                                         |
-| [26.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2604) | 11.0, 10.0, 9.0, 8.0    | 10.0                                 | 11.0, 9.0, 8.0                                                                                         | None                                                                         |
-| [24.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2404) | 11.0, 10.0, 9.0, 8.0    | 10.0, 8.0                            | 11.0, 9.0, 7.0, 6.0                                                                                    | None                                                                         |
-| [22.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204) | 11.0, 10.0, 9.0, 8.0    | 8.0, 7.0, 6.0                        | 11.0, 10.0, 9.0                                                                                        | 8.0, 7.0, 6.0, 3.1                                                           |
+| [26.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2604) | 11.0, 10.0              | 10.0                                 | 11.0, 9.0, 8.0                                                                                         | None                                                                         |
+| [24.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2404) | 11.0, 10.0              | 10.0, 8.0                            | 11.0, 9.0, 7.0, 6.0                                                                                    | None                                                                         |
+| [22.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204) | 11.0, 10.0              | 8.0, 7.0, 6.0                        | 11.0, 10.0, 9.0                                                                                        | 8.0, 7.0, 6.0, 3.1                                                           |
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) reaches the end of its support period, .NET is no longer supported with that particular Ubuntu version.
 

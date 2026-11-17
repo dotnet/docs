@@ -1,7 +1,7 @@
 ---
 title: "Breaking change - Dependency injection scope disposal aggregates exceptions"
 description: "Learn about the breaking change in .NET 11 where dependency injection disposal continues after failures and aggregates multiple exceptions."
-ms.date: 10/21/2026
+ms.date: 11/10/2026
 ai-usage: ai-generated
 ms.custom: https://github.com/dotnet/docs/issues/55654
 ---
@@ -12,7 +12,7 @@ In .NET 11, the built-in dependency injection container attempts to dispose ever
 
 ## Version introduced
 
-.NET 11 Preview 2
+.NET 11
 
 ## Previous behavior
 

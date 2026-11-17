@@ -1,7 +1,7 @@
 ---
 title: .NET environment variables
 description: Learn about the environment variables that you can use to configure the .NET SDK, .NET CLI, and .NET runtime.
-ms.date: 05/15/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -334,7 +334,7 @@ Set this variable to control the fast path explicitly:
 - To disable it and route every invocation to the managed CLI, set the variable to `false`, `0`, `no`, or `off`.
 
 > [!NOTE]
-> Starting in .NET 11 Preview 7, this fast path is enabled by default (`true`) on all platforms. To disable it, set the variable to `false`, `0`, `no`, or `off`.
+> Starting in .NET 11, this fast path is enabled by default (`true`) on all platforms. To disable it, set the variable to `false`, `0`, `no`, or `off`.
 
 ### `DOTNET_GENERATE_ASPNET_CERTIFICATE`
 

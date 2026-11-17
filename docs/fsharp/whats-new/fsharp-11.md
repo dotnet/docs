@@ -2,7 +2,7 @@
 title: What's new in F# 11
 description: Explore F# 11 language features, expanded FSharp.Core APIs, better .NET integration, and compiler performance and memory improvements.
 ms.topic: whats-new
-ms.date: 10/16/2026
+ms.date: 11/10/2026
 ai-usage: ai-generated
 ---
 
@@ -166,7 +166,7 @@ Builder authors can let the runtime suspend and resume marked methods instead of
 :::code language="fsharp" source="../language-reference/snippets/task-expressions/RuntimeAsync.fs" id="RuntimeUse":::
 
 > [!NOTE]
-> This experimental builder uses an F# 11.2 feature where its inline implementation is defined or expanded; in the .NET 11.0.100 SDK, enable preview. It also requires Core 11's `net10.0` build and references and a runtime with runtime-async support. The verified runtime/reference combination here is .NET 11 RC1. Targeting .NET 10 alone isn't sufficient. See [Runtime async experiments](../language-reference/task-expressions.md#runtime-async-experiments).
+> This experimental builder uses an F# 11.2 feature where its inline implementation is defined or expanded; in the .NET 11.0.100 SDK, enable preview. It also requires Core 11's `net10.0` build and references and a runtime with runtime-async support. The verified runtime/reference combination here is .NET 11. Targeting .NET 10 alone isn't sufficient. See [Runtime async experiments](../language-reference/task-expressions.md#runtime-async-experiments).
 
 FSharp.Core doesn't ship this sample as a general-purpose builder. Ordinary `task` and `async` code doesn't automatically switch to it, and callers of an already-compiled ordinary task-returning API don't inherently need preview.
 

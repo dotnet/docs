@@ -2,7 +2,7 @@
 title: "Breaking change: .NET 11 obsoletions in cryptography"
 titleSuffix: ""
 description: Learn about the cryptography APIs that have been marked as obsolete in .NET 11.
-ms.date: 07/06/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 # Cryptography obsoletions (.NET 11)
@@ -27,7 +27,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 
 ## Version introduced
 
-.NET 11 Preview 6
+.NET 11
 
 ## Type of breaking change
 

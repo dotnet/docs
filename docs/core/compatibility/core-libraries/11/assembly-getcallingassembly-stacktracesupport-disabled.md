@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Assembly.GetCallingAssembly behavior changes when stack trace support is disabled"
 description: "Learn about the breaking change in .NET 11 where Assembly.GetCallingAssembly can throw NotSupportedException when stack trace support is disabled."
-ms.date: 08/03/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 ## Version introduced
 
-.NET 11 Preview 7
+.NET 11
 
 ## Previous behavior
 

@@ -473,6 +473,14 @@
       "redirect_document_id": true
     },
     {
+      "source_path_from_root": "/docs/core/compatibility/core-libraries/5.0/os-platform-attributes-renamed.md",
+      "redirect_url": "/dotnet/core/compatibility/breaking-changes"
+    },
+    {
+      "source_path_from_root": "/docs/core/compatibility/core-libraries/5.0/reference-assembly-parameter-names-rc1.md",
+      "redirect_url": "/dotnet/core/compatibility/breaking-changes"
+    },
+    {
       "source_path_from_root": "/docs/core/compatibility/core-libraries/6.0/nullable-ref-type-annotations-added.md",
       "redirect_url": "/dotnet/core/compatibility/core-libraries/6.0/nullable-ref-type-annotation-changes"
     },
@@ -517,6 +525,10 @@
     {
       "source_path_from_root": "/docs/core/compatibility/deployment/9.0/assembly-load-directory.md",
       "redirect_url": "/dotnet/core/compatibility/9.0"
+    },
+    {
+      "source_path_from_root": "/docs/core/compatibility/extensions/11/async-options-validation-sync-access.md",
+      "redirect_url": "/dotnet/core/compatibility/11"
     },
     {
       "source_path_from_root": "/docs/core/compatibility/extensions/6.0/bind-single-elements-to-array.md",
@@ -595,6 +607,10 @@
     {
       "source_path_from_root": "/docs/core/compatibility/sdk/10.0/version-requirements.md",
       "redirect_url": "/dotnet/core/compatibility/10"
+    },
+    {
+      "source_path_from_root": "/docs/core/compatibility/sdk/11/aot-publish-skips-full-build.md",
+      "redirect_url": "/dotnet/core/compatibility/sdk/12/aot-publish-skips-full-build"
     },
     {
       "source_path_from_root": "/docs/core/compatibility/serialization.md",

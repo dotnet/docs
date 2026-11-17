@@ -3,7 +3,7 @@ title: Check installed .NET versions on Windows, Linux, and macOS
 description: Learn how to list which versions of .NET are installed on your computer. This includes the .NET runtime and SDK.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/07/2025
+ms.date: 11/11/2026
 ms.custom: updateeachrelease, linux-related-content
 zone_pivot_groups: operating-systems-set-one
 ---
@@ -33,6 +33,7 @@ You get output similar to the following.
 8.0.100 [C:\program files\dotnet\sdk]
 9.0.306 [C:\program files\dotnet\sdk]
 10.0.100 [C:\program files\dotnet\sdk]
+11.0.100 [C:\program files\dotnet\sdk]
 ```
 
 ::: zone-end
@@ -44,6 +45,7 @@ You get output similar to the following.
 8.0.100 [/home/user/dotnet/sdk]
 9.0.306 [/home/user/dotnet/sdk]
 10.0.100 [/home/user/dotnet/sdk]
+11.0.100 [/home/user/dotnet/sdk]
 ```
 
 ::: zone-end
@@ -55,6 +57,7 @@ You get output similar to the following.
 8.0.100 [/usr/local/share/dotnet/sdk]
 9.0.306 [/usr/local/share/dotnet/sdk]
 10.0.100 [/usr/local/share/dotnet/sdk]
+11.0.100 [/usr/local/share/dotnet/sdk]
 ```
 
 ::: zone-end
@@ -76,14 +79,17 @@ Microsoft.AspNetCore.App 7.0.5 [C:\Program Files\dotnet\shared\Microsoft.AspNetC
 Microsoft.AspNetCore.App 8.0.0 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
 Microsoft.AspNetCore.App 9.0.10 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
 Microsoft.AspNetCore.App 10.0.0 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 11.0.0 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
 Microsoft.NETCore.App 7.0.5 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
 Microsoft.NETCore.App 8.0.0 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
 Microsoft.NETCore.App 9.0.10 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
 Microsoft.NETCore.App 10.0.0 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+Microsoft.NETCore.App 11.0.0 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
 Microsoft.WindowsDesktop.App 7.0.5 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
 Microsoft.WindowsDesktop.App 8.0.0 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
 Microsoft.WindowsDesktop.App 9.0.10 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
 Microsoft.WindowsDesktop.App 10.0.0 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+Microsoft.WindowsDesktop.App 11.0.0 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
 ```
 
 ::: zone-end
@@ -107,6 +113,7 @@ Microsoft.NETCore.App 7.0.0 [/usr/lib/dotnet/shared/Microsoft.NETCore.App]
 Microsoft.NETCore.App 8.0.0 [/usr/lib/dotnet/shared/Microsoft.NETCore.App]
 Microsoft.NETCore.App 9.0.0 [/usr/lib/dotnet/shared/Microsoft.NETCore.App]
 Microsoft.NETCore.App 10.0.0 [/usr/lib/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 11.0.0 [/usr/lib/dotnet/shared/Microsoft.NETCore.App]
 ```
 
 ::: zone-end
@@ -130,6 +137,7 @@ Microsoft.NETCore.App 7.0.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.Ap
 Microsoft.NETCore.App 8.0.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
 Microsoft.NETCore.App 9.0.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
 Microsoft.NETCore.App 10.0.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 11.0.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
 ```
 
 ::: zone-end

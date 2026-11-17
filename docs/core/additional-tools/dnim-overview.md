@@ -23,7 +23,7 @@ The latest release can be found on the [Microsoft Download Center](https://aka.m
 
 ## System Requirements
 
-DNIM is currently built using .NET 8 and compatible with all versions of Windows supported by .NET 8.
+DNIM is currently built using .NET 10 and compatible with all versions of Windows supported by .NET 10.
 
 ## Support
 

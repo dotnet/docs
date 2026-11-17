@@ -3,7 +3,7 @@ title: MSTest migration from v3 to v4
 description: Learn about migrating to MSTest v4.
 author: Youssef1313
 ms.author: ygerges
-ms.date: 07/22/2025
+ms.date: 12/11/2025
 ---
 
 # Migrate from MSTest v3 to v4
@@ -98,6 +98,20 @@ public static void ClassCleanup(TestContext testContext)
 ### TestContext.Properties is now IDictionary<string, object>
 
 Previously, `TestContext.Properties` was an `IDictionary`. To provide better typing, it's now `IDictionary<string, object>`.
+
+#### Accessing non-existing property
+
+Accessing a non-existing property in the dictionary will now throw `KeyNotFoundException` rather than returning null.
+
+```csharp
+// in MSTest 3.x
+var value = TestContext.Properties["NonExistent"]; // Returns null
+
+// in MSTest 4.x
+var value = TestContext.Properties["NonExistent"]; // Throws KeyNotFoundException
+```
+
+To check for existence of a property, use `TryGetValue` or `ContainsKey` methods.
 
 If you have calls to `TestContext.Properties.Contains`, update them to `TestContext.Properties.ContainsKey`.
 

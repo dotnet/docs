@@ -58,6 +58,8 @@ namespace cs_debuggingsupport
         void method3()
         {
             // <Snippet3>
+            // Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+            // LINQ to SQL's built-in provider requires System.Data.SqlClient.
             // using System.Data.Common;
             Northwnd db = new Northwnd(@"c:\northwnd.mdf");
 

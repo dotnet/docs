@@ -2,7 +2,8 @@
 title: Interfaces in F#
 titleSuffix: ""
 description: Learn how F# Interfaces specify sets of related members that other classes implement.
-ms.date: 08/15/2020
+ms.date: 09/24/2026
+ai-usage: ai-assisted
 ---
 # Interfaces (F#)
 
@@ -144,6 +145,20 @@ printfn $"DIM from C# but via Object Expression: %d{md'.Z}"
 You can override a default implementation with `override`, like overriding any virtual member.
 
 Any members in an interface that do not have a default implementation must still be explicitly implemented.
+
+### Inherited default implementations
+
+Starting with F# 11, an implementation of a derived interface can rely on that interface's default implementation of a base slot, without a redundant explicit declaration of the covered base interface.
+
+For example, this C# library supplies a default health-check result:
+
+:::code language="csharp" source="snippets/interfaces/contracts/Contracts.cs" id="DefaultInterface":::
+
+The F# implementation only names the derived interface:
+
+:::code language="fsharp" source="snippets/interfaces/Consumer.fs" id="DefaultConsumer":::
+
+`status` is `"Ready"`. Members without a covering default implementation still require an implementation. This feature requires a runtime that supports default interface implementations; it doesn't introduce F# syntax for declaring those default bodies.
 
 ## Implementing the same interface at different generic instantiations
 

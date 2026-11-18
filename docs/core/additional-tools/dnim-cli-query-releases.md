@@ -1,5 +1,5 @@
 ---
-title: dnim query prreleases command
+title: dnim query releases command
 description: The query releases command provides information about specific .NET releases.
 author: joeloff
 ms.date: 08/11/2026
@@ -87,7 +87,7 @@ SDK 3.1.426
 - Display the latest releases available for all products that are not end-of-life.
 
   ```console
-  dnim-win-[x86|x64|arm64] query release --esp eol --latest
+  dnim-win-[x86|x64|arm64] query releases --esp eol --latest
   ```
 
 ## See also

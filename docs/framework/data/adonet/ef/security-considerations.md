@@ -1,9 +1,13 @@
 ---
 description: "Learn more about security considerations that are specific to developing, deploying, and running Entity Framework applications."
 title: "Security Considerations (Entity Framework)"
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
+ai-usage: ai-assisted
 ---
 # Security Considerations (Entity Framework)
+
+> [!IMPORTANT]
+> Do not use `System.Data.SqlClient` for new development. Use [Microsoft.Data.SqlClient](/sql/connect/ado-net/introduction-microsoft-data-sqlclient-namespace) for new SQL Server data-access code. This page describes the built-in Entity Framework implementation in .NET Framework, including its `System.Data.SqlClient` permission types. To change that provider, you must migrate the Entity Framework integration, not just replace a namespace.
 
 This article describes security considerations that are specific to developing, deploying, and running Entity Framework applications. You should also follow recommendations for creating secure .NET Framework applications. For more information, see [Security Overview](../security-overview.md).
 

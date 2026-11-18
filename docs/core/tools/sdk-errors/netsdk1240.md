@@ -2,7 +2,7 @@
 title: "NETSDK1240: The current .NET SDK feature band is discontinued"
 description: Learn how to resolve build warning NETSDK1240, which reports that the feature band of the .NET SDK that built your project has no newer release.
 ms.topic: error-reference
-ms.date: 05/15/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 f1_keywords:
 - NETSDK1240
@@ -16,7 +16,7 @@ This warning indicates that the feature band of the .NET SDK used to build your 
 A .NET SDK version has the form `<major>.<minor>.<feature-band><patch>` (for example, `8.0.404`, where `4xx` is the feature band). When the recommended servicing path moves to a different feature band, the older band stops receiving updates. To resolve the warning, install the recommended .NET SDK version from <https://dotnet.microsoft.com/download> and update your `global.json` (if present) to select it.
 
 > [!NOTE]
-> This check is available in .NET 11 Preview 5 and later versions.
+> This check is available in .NET 11 and later versions.
 
 ## How the check works
 

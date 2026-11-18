@@ -41,7 +41,7 @@ Having the expected value and the actual value in the wrong order will not alter
 
 ## How to fix violations
 
-Ensure that that `actual` and `expected`/`notExpected` arguments are passed in the correct order.
+Ensure that `actual` and `expected`/`notExpected` arguments are passed in the correct order.
 
 ## When to suppress warnings
 

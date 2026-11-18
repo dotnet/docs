@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0031: `System.ComponentModel.DescriptionAttribute` has no effect on test methods."
 description: "Learn about code analysis rule MSTEST0031: `System.ComponentModel.DescriptionAttribute` has no effect in the context of tests, so likely user wanted to use `Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute` instead."
-ms.date: 07/03/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0031
 - DoNotUseSystemDescriptionAttribute
@@ -30,7 +31,9 @@ ms.author: enjieid
 
 ## Rule description
 
-'System.ComponentModel.DescriptionAttribute' has no effect in the context of tests, so likely user wanted to use 'Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute' instead.
+`System.ComponentModel.DescriptionAttribute` and `Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute` share the same short name but serve different consumers. MSTest reads its own attribute for test metadata; the component-model attribute doesn't supply a test description.
+
+The wrong namespace can therefore produce code that compiles but loses the intended description in test metadata. Use the MSTest attribute when the description is meant for the test runner.
 
 ## How to fix violations
 

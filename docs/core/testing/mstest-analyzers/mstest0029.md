@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0029: Public method should be test method"
 description: "Learn about code analysis rule MSTEST0029: Public method should be test method"
-ms.date: 04/06/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0029
 - PublicMethodShouldBeTestMethod
@@ -32,13 +33,15 @@ A `public` method should be a test method.
 
 A `public` method of a class marked with `[TestClass]` should be a test method (marked with `[TestMethod]`). The rule ignores methods that are marked with `[TestInitialize]`, or `[TestCleanup]` attributes.
 
+Public visibility alone doesn't make a method a test. This opt-in convention helps you catch a missing `[TestMethod]` attribute and distinguish test entry points from helper methods. A helper can still be valid public code, but MSTest won't discover it as an independent test.
+
 ## How to fix violations
 
-Ensure that the public method is a test method (marked with `[TestMethod]`).
+Add `[TestMethod]` if the method is intended to be a test. If it's a helper, give it the least visibility its callers require instead of turning it into a test.
 
 ## When to suppress warnings
 
-Do not suppress a warning from this rule. If you ignore this rule, the public method won't be considered as a test method.
+Suppress the diagnostic if the method is intentionally a public helper or must satisfy a public contract. Don't suppress a missing attribute on an intended test, because that test won't execute.
 
 ## Suppress a warning
 

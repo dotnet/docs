@@ -26,6 +26,9 @@ The `dotnet new list` command lists available templates to use with `dotnet new`
 
 Starting with .NET SDK 7.0.100, the `list` command might not show all the templates installed on the machine. It takes the result of template constraints into account, and the templates that can't be used won't be shown. To force show all the templates, use the `--ignore-constraints` option.
 
+> [!WARNING]
+> To limit the list of templates to those that are relevant, .NET walks up the current tree to find a .NET project to scope the list of templates. Ensure you only run `dotnet new` commands from trusted directories.
+
 > [!NOTE]
 > [!INCLUDE [new syntax](includes/dotnet-new-7-0-syntax.md)]
 >
@@ -94,7 +97,7 @@ Starting with .NET SDK 7.0.100, the `list` command might not show all the templa
 
 - **`--project <PROJECT_PATH>`**
 
-  The project that the template is added to. For the list command, it might be needed to specify the project the template is being added to to correctly evaluate constraints for the template. Available since .NET SDK 7.0.100.
+  The project that the template is added to. For the list command, it might be needed to specify the project the template is being added to correctly evaluate constraints for the template. Available since .NET SDK 7.0.100.
 
 - **`--tag <TAG>`**
 

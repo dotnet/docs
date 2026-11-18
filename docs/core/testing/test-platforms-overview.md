@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform vs VSTest - .NET test platform comparison
 description: Compare Microsoft.Testing.Platform (MTP) and VSTest to choose the right .NET test platform for your projects, CI pipelines, and IDE integration.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 09/30/2026
+ms.date: 11/05/2026
 ai-usage: ai-assisted
 ---
 
@@ -50,6 +50,7 @@ The complete Windows application matrix across classic UWP, modern UWP, packaged
 | IDE integration | Mature integration across Visual Studio and other tools that depend on VSTest protocol and adapters. | Supported in Visual Studio and Visual Studio Code scenarios, with ongoing integration work in parts of the ecosystem. |
 | CI and external tools | Broad support across long-established Microsoft and non-Microsoft tools and tasks. In Azure DevOps, you can use either the VSTest task (`VSTest@3`, `vstest.console`) or the .NET task (`DotNetCoreCLI@2`, `dotnet test`). | Works in CI and modern .NET workflows, but some third-party integrations might still lag behind VSTest. In Azure DevOps, use the .NET task (`DotNetCoreCLI@2`, `dotnet test`). |
 | `dotnet test` behavior | Default VSTest mode. VSTest arguments and behavior apply. | Native MTP mode is available in .NET 10 SDK and later. |
+| Programmatic discovery and execution | `Microsoft.TestPlatform.TranslationLayer` provides `VsTestConsoleWrapper` for VSTest discovery and execution. | A [source-only .NET client](./microsoft-testing-platform-server-mode.md#discover-and-run-tests-from-net) drives JSON-RPC discovery and execution starting with MTP 2.4. For one-shot structured discovery, use [`--list-tests json`](./microsoft-testing-platform-cli-options.md#discover-tests-as-json) starting with MTP 2.3. |
 
 For complete details about `dotnet test` modes and arguments, see [Testing with `dotnet test`](./unit-testing-with-dotnet-test.md).
 

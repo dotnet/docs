@@ -3,7 +3,7 @@
 Imports System.Collections.Generic
 Imports System.Data
 Imports System.Data.Common
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 Imports System.Linq
 Imports System.Globalization
 Imports System.Text

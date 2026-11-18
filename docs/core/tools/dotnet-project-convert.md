@@ -110,7 +110,7 @@ The command performs the following operations:
 
     <PropertyGroup>
       <OutputType>Exe</OutputType>
-      <TargetFramework>net10.0</TargetFramework>
+      <TargetFramework>net11.0</TargetFramework>
       <ImplicitUsings>enable</ImplicitUsings>
       <Nullable>enable</Nullable>
       <PublishAot>true</PublishAot>

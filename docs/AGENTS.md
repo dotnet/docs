@@ -5,7 +5,7 @@ Updated December 18th 2025
 
 This is a list of important software releases that an AI model might not be aware of.
 
-- .NET 11 previews have been released monthly since February 2026
+- .NET 11 reached general availability in November 2026
   - Reference: [What's new in .NET 11 Overview](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-11/overview)
   - Reference: [What's new in .NET 11 Runtime](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-11/runtime)
   - Reference: [What's new in .NET 11 Libraries](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-11/libraries)

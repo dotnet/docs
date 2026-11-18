@@ -1,12 +1,14 @@
 ---
 description: "Learn more about polling an asynchronous operation to determine whether the operation has completed or not."
 title: "Polling in Console Applications"
-ms.date: "03/30/2017"
+ms.date: "10/23/2026"
 dev_langs:
   - "csharp"
   - "vb"
 ---
 # Polling in console applications
+
+Install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package to use this example. The `BeginExecuteNonQuery` and `EndExecuteNonQuery` methods remain supported. They don't require an asynchronous connection-string option. Don't add `Asynchronous Processing=true`; Microsoft.Data.SqlClient doesn't support that keyword. For new code, prefer <xref:Microsoft.Data.SqlClient.SqlCommand.ExecuteNonQueryAsync*> with `await` instead of a polling loop.
 
 Asynchronous operations in ADO.NET allow you to initiate time-consuming database operations on one thread while performing other tasks on another thread. In most scenarios, however, you will eventually reach a point where your application should not continue until the database operation is complete. For such cases, it is useful to poll the asynchronous operation to determine whether the operation has completed or not.
 
@@ -14,11 +16,13 @@ Asynchronous operations in ADO.NET allow you to initiate time-consuming database
 
 ## Example
 
- The following console application updates data within the **AdventureWorks** sample database, doing its work asynchronously. In order to emulate a long-running process, this example inserts a WAITFOR statement in the command text. Normally, you would not try to make your commands run slower, but doing so in this case makes it easier to demonstrate asynchronous behavior.
+ The following console application updates data within the `AdventureWorks` sample database, doing its work asynchronously. In order to emulate a long-running process, this example inserts a `WAITFOR` statement in the command text. Normally, you would not try to make your commands run slower, but doing so in this case makes it easier to demonstrate asynchronous behavior.
+
+Replace the ellipsis returned by `GetConnectionString` with your connection string. For a remote server with Windows integrated authentication, use `Server=<server>;Database=<database>;Integrated Security=true;Encrypt=true`. Replace `<server>` and `<database>` with your server and database names, and configure a server certificate that the client trusts. For other authentication options, see [Connection string syntax](/sql/connect/ado-net/connection-string-syntax).
 
 ```vb
 Imports System
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 
 Module Module1
 
@@ -82,11 +86,7 @@ Module Module1
         ' To avoid storing the connection string in your code,
         ' you can retrieve it from a configuration file.
 
-        ' If you have not included "Asynchronous Processing=true"
-        ' in the connection string, the command will not be able
-        ' to execute asynchronously.
-        Return "..." & _
-          "Asynchronous Processing=true"
+        Return "..."
     End Function
 End Module
 ```
@@ -94,7 +94,7 @@ End Module
 ```csharp
 using System;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 class Class1
 {
@@ -175,10 +175,7 @@ class Class1
         // To avoid storing the connection string in your code,
         // you can retrieve it from a configuration file.
 
-        // If you have not included "Asynchronous Processing=true"
-        // in the connection string, the command will not be able
-        // to execute asynchronously.
-        return "..." + "Asynchronous Processing=true";
+        return "...";
     }
 }
 ```

@@ -5,7 +5,7 @@ author: billwagner
 ms.author: wiwagn
 ms.service: dotnet-csharp
 ms.topic: tutorial
-ms.date: 07/03/2026
+ms.date: 10/19/2026
 ai-usage: ai-assisted
 #customer intent: As a C# developer, I model a fixed set of related types so the compiler enforces that I handle every subtype.
 ---
@@ -26,13 +26,12 @@ In this tutorial, you:
 
 ## Prerequisites
 
-This tutorial uses preview language features. You need an SDK that supports closed hierarchies and a language version set to `preview`. To get started, you'll need:
+This tutorial uses C# 15 closed hierarchies. To get started, you need:
 
-- The .NET 11 SDK preview 5 SDK or a later version. Download it from the [.NET download site](https://dotnet.microsoft.com/download/dotnet).
+- The [.NET 11 SDK](https://dotnet.microsoft.com/download/dotnet/11.0).
 - An editor such as Visual Studio or Visual Studio Code with the C# Dev Kit.
 
-> [!IMPORTANT]
-> Closed hierarchies are a preview feature. The syntax and behavior can change before the feature ships. Set `<LangVersion>preview</LangVersion>` in your project to enable it.
+Projects that target `net11.0` use C# 15 by default. You don't need to set `LangVersion` to `preview`.
 
 ## Create the sample solution
 
@@ -42,19 +41,19 @@ You build a class library, `SmartHome.Core`, that holds the closed hierarchy, a 
 
    ```dotnetcli
    dotnet new sln -n TelemetryMonitor
-   dotnet new classlib --langversion preview -n SmartHome.Core
-   dotnet new classlib --langversion preview -n SmartHome.Extensions
-   dotnet new console --langversion preview -n SmartHome.App
+   dotnet new classlib -f net11.0 -n SmartHome.Core
+   dotnet new classlib -f net11.0 -n SmartHome.Extensions
+   dotnet new console -f net11.0 -n SmartHome.App
    dotnet sln add SmartHome.Core SmartHome.Extensions SmartHome.App
    dotnet add SmartHome.Extensions reference SmartHome.Core
    dotnet add SmartHome.App reference SmartHome.Core SmartHome.Extensions
    ```
 
-1. The previous commands included the `--langversion preview` to enable C# 15 preview features. In each project file, verify that the language version is set to `preview`:
+1. In each project file, verify that the target framework is .NET 11. The SDK selects C# 15 for this target:
 
    ```xml
    <PropertyGroup>
-     <LangVersion>preview</LangVersion>
+     <TargetFramework>net11.0</TargetFramework>
    </PropertyGroup>
    ```
 
@@ -70,9 +69,7 @@ Start with the sensor model. The monitor supports a fixed set of sensor kinds, s
 
    :::code language="csharp" source="snippets/shared/telemetry-monitor/SmartHome.Core/Sensors.cs" id="SensorExhaustive":::
 
-1. Build the project. .NET 11 preview 5 has the language support for closed hierarchies, but a necessary type won't be added until a later preview. If you get build errors, you need to add a polyfill for the `Closed` attribute. Add the following code to the `SmartHome.Core` project in a file named `ClosedPolyfill.cs`:
-
-   :::code language="csharp" source="snippets/shared/telemetry-monitor/SmartHome.Core/ClosedPolyfill.cs":::
+1. Build the project to check the declarations and the exhaustive switch.
 
 The `closed` modifier restricts the direct subtypes of `Sensor` to the declaring assembly, and a `closed` type is implicitly abstract, so you can't instantiate it directly. Because the compiler knows the complete set of subtypes, the switch needs no default arm. If you add a new sensor type later, the compiler reports that this switch no longer covers every case. That feedback is the central benefit of a closed hierarchy. The compiler points you to every match that needs to change. The `Temperature` and `Humidity` cases are sealed because their shape is final, while `Contact` stays open as an extension point that the next section covers. For more information, see the [`closed` modifier](../../language-reference/keywords/closed.md) and [Closed hierarchy patterns](../../language-reference/operators/patterns.md#closed-hierarchy-patterns).
 

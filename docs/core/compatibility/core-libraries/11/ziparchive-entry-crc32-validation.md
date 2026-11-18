@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: CRC32 validation added when reading ZIP archive entries"
 description: "Learn about the breaking change in .NET 11 where reading ZIP archive entries now validates CRC32 checksums and throws InvalidDataException for corrupted data."
-ms.date: 04/03/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ Starting in .NET 11, the <xref:System.IO.Compression> library validates CRC32 ch
 
 ## Version introduced
 
-.NET 11 Preview 3
+.NET 11
 
 ## Previous behavior
 

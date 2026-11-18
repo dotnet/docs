@@ -1,7 +1,7 @@
 ---
 title: "SqlClient Support for High Availability, Disaster Recovery"
 description: Learn about SqlClient application support for high availability and disaster recovery in SQL Server.
-ms.date: "03/30/2017"
+ms.date: "10/23/2026"
 ms.custom: sfi-ropc-nochange
 ---
 # SqlClient Support for high availability and disaster recovery
@@ -15,18 +15,18 @@ This article discusses SqlClient support for high availability and disaster reco
 > [!NOTE]
 > Increasing connection timeout and implementing connection retry logic will increase the probability that an application will connect to an availability group. Also, because a connection can fail because of a failover, you should implement connection retry logic, retrying a failed connection until it reconnects.
 
- The following connection properties were added to SqlClient in .NET Framework 4.5:
+ The original .NET Framework provider introduced the following connection properties in .NET Framework 4.5. Microsoft.Data.SqlClient also supports these properties:
 
 - `ApplicationIntent`
 - `MultiSubnetFailover`
 
  You can programmatically modify these connection string keywords with:
 
-- <xref:System.Data.SqlClient.SqlConnectionStringBuilder.ApplicationIntent*>
-- <xref:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover*>
+- <xref:Microsoft.Data.SqlClient.SqlConnectionStringBuilder.ApplicationIntent*>
+- <xref:Microsoft.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover*>
 
 > [!NOTE]
-> Setting `MultiSubnetFailover` to `true` isn't required with .NET Framework versions 4.6.1 and later. It is required in .NET Core and .NET 5+.
+> For Microsoft.Data.SqlClient, set `MultiSubnetFailover=True` when you connect to an availability group listener or failover cluster instance. Don't rely on the transparent network IP resolution behavior of the .NET Framework provider.
 
 ## Connecting With MultiSubnetFailover
 
@@ -34,7 +34,7 @@ This article discusses SqlClient support for high availability and disaster reco
 
  The `MultiSubnetFailover` connection property indicates that the application is using either an AG or FCI and that SqlClient will try to connect to the database on the primary SQL Server instance by trying to connect to all the IP addresses. When `MultiSubnetFailover=True` is specified for a connection, the client retries TCP connection attempts faster than the operating system’s default TCP retransmit intervals. This enables faster reconnection after failover of either an AG or FCI, and is applicable to both single- and multi-subnet AGs and FCIs.
 
- For more information about connection string keywords in SqlClient, see <xref:System.Data.SqlClient.SqlConnection.ConnectionString>.
+ For more information about connection string keywords in SqlClient, see <xref:Microsoft.Data.SqlClient.SqlConnection.ConnectionString>.
 
  Specifying `MultiSubnetFailover=True` when connecting to something other than an AG or FCI may result in a negative performance impact, and is not supported.
 
@@ -50,7 +50,7 @@ This article discusses SqlClient support for high availability and disaster reco
 
 - Increase the value of `Connect Timeout` to accommodate for failover time and reduce application connection retry attempts.
 
-- Distributed transactions are not supported.
+- For distributed transactions, check the server configuration and platform requirements separately. For more information, see [Distributed transactions](../distributed-transactions.md).
 
  If read-only routing is not in effect, connecting to a secondary replica location will fail in the following situations:
 
@@ -58,13 +58,13 @@ This article discusses SqlClient support for high availability and disaster reco
 
 - If an application uses `ApplicationIntent=ReadWrite` (discussed below) and the secondary replica location is configured for read-only access.
 
- <xref:System.Data.SqlClient.SqlDependency> is not supported on read-only secondary replicas.
+ <xref:Microsoft.Data.SqlClient.SqlDependency> is not supported on read-only secondary replicas.
 
  A connection will fail if a primary replica is configured to reject read-only workloads and the connection string contains `ApplicationIntent=ReadOnly`.
 
 ## Upgrading to Use Multi-Subnet Clusters from Database Mirroring
 
- A connection error (<xref:System.ArgumentException>) will occur if the `MultiSubnetFailover` and `Failover Partner` connection keywords are present in the connection string, or if `MultiSubnetFailover=True` and a protocol other than TCP is used. An error (<xref:System.Data.SqlClient.SqlException>) will also occur if `MultiSubnetFailover` is used and the SQL Server returns a failover partner response indicating it is part of a database mirroring pair.
+The provider throws <xref:System.ArgumentException> if the connection string specifies both `MultiSubnetFailover=True` and a nonempty `Failover Partner`. The provider also rejects `MultiSubnetFailover=True` with a protocol other than TCP. If `MultiSubnetFailover=True` and the server returns a failover partner response indicating a database mirroring pair, the provider throws <xref:Microsoft.Data.SqlClient.SqlException>.
 
  If you upgrade a SqlClient application that currently uses database mirroring to a multi-subnet scenario, you should remove the `Failover Partner` connection property and replace it with `MultiSubnetFailover` set to `True` and replace the server name in the connection string with an availability group listener. If a connection string uses `Failover Partner` and `MultiSubnetFailover=True`, the driver will generate an error. However, if a connection string uses `Failover Partner` and `MultiSubnetFailover=False` (or `ApplicationIntent=ReadWrite`), the application will use database mirroring.
 
@@ -72,7 +72,7 @@ This article discusses SqlClient support for high availability and disaster reco
 
 ## Specifying Application Intent
 
- When `ApplicationIntent=ReadOnly`, the client requests a read workload when connecting to an AlwaysOn enabled database. The server will enforce the intent at connection time and during a USE database statement but only to an Always On enabled database.
+ When `ApplicationIntent=ReadOnly`, the client requests a read workload when connecting to an AlwaysOn enabled database. The server will enforce the intent at connection time and during a `USE` database statement but only to an Always On enabled database.
 
  The `ApplicationIntent` keyword does not work with legacy, read-only databases.
 

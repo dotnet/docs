@@ -1,13 +1,17 @@
 ---
 description: "Learn more about: Known Issues and Considerations in LINQ to Entities"
 title: "Known Issues and Considerations in LINQ to Entities"
-ms.date: "03/30/2017"
+ms.date: "10/20/2026"
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: acd71129-5ff0-4b4e-b266-c72cc0c53601
 ---
 # Known Issues and Considerations in LINQ to Entities
+
+> [!IMPORTANT]
+> Do not use `System.Data.SqlClient` for new development. Use [Microsoft.Data.SqlClient](/sql/connect/ado-net/introduction-microsoft-data-sqlclient-namespace) for new SQL Server data-access code. These examples retain `System.Data.SqlClient` through the built-in Entity Framework SQL provider in `System.Data.Entity`. To change that provider, you must migrate the Entity Framework integration, not just replace a namespace.
 
 This section provides information about known issues with LINQ to Entities queries.
 
@@ -44,7 +48,11 @@ This section provides information about known issues with LINQ to Entities queri
 
 ## Unsigned Integers Not Supported
 
- Specifying an unsigned integer type in a LINQ to Entities query is not supported because the Entity Framework does not support unsigned integers. If you specify an unsigned integer, an <xref:System.ArgumentException> exception will be thrown during the query expression translation, as shown in the following example. This example queries for an order with ID 48000.
+ The built-in Entity Framework provider doesn't support unsigned integer constants in a query expression. The outcome of a comparison that uses an unsigned variable depends on the conversions in its expression tree.
+
+ In the following C# example, the comparison converts both operands to `Int64`. The query returns the order with ID 48000 instead of throwing an exception. This result doesn't imply general support for `UInt32` query values.
+
+ The Visual Basic example contains checked conversions in its expression tree. The provider throws <xref:System.NotSupportedException> for the `UInt32` value during query translation, before it sends the query to SQL Server.
 
  [!code-csharp[DP L2E Conceptual Examples#UIntAsQueryParam](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS/Program.cs#uintasqueryparam)]
  [!code-vb[DP L2E Conceptual Examples#UIntAsQueryParam](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#uintasqueryparam)]

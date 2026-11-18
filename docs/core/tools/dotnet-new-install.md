@@ -2,7 +2,7 @@
 title: dotnet new install
 ai-usage: ai-assisted
 description: The dotnet new install command installs a template package.
-ms.date: 09/15/2026
+ms.date: 10/30/2026
 ---
 # dotnet new install
 
@@ -46,6 +46,24 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 > [!WARNING]
 > Templates can run MSBuild code and other arbitrary code when triggered. Don't install or run untrusted .NET templates.
 
+### Package signature verification
+
+When signature verification is enabled, `dotnet new install` verifies signed template packages downloaded from NuGet sources before installation. Verification applies to configured and additional NuGet sources, but not to packages installed directly from a local `.nupkg` file or folder.
+
+Verification depends on the operating system:
+
+| Operating system | Default behavior | Configuration |
+|---|---|---|
+| Windows | Enabled | Can't be disabled with `DOTNET_NUGET_SIGNATURE_VERIFICATION`. |
+| Linux | Enabled | Set `DOTNET_NUGET_SIGNATURE_VERIFICATION=false` to disable verification. |
+| macOS | Disabled | Set `DOTNET_NUGET_SIGNATURE_VERIFICATION=true` to enable verification. See [NuGet signed-package verification](nuget-signed-package-verification.md#macos) for platform limitations. |
+
+When verification is enabled, unsigned packages are accepted unless the applicable NuGet configuration sets `signatureValidationMode` to `require`, or the source declares that all its packages are repository-signed. For information about configuring the client policy, see [signatureValidationMode](/nuget/reference/nuget-config-file#signaturevalidationmode).
+
+If signature verification fails, the package isn't installed. The `--force` option doesn't bypass signature verification. Run the command with `--diagnostics` to see verification details. For certificate-store requirements and troubleshooting, see [NuGet signed-package verification](nuget-signed-package-verification.md). You can also verify a downloaded package explicitly with [`dotnet nuget verify`](dotnet-nuget-verify.md).
+
+Successful verification doesn't guarantee that a template is safe to run. For more information about this behavior change and affected SDK feature bands, see [Template package installation verifies NuGet signatures](../compatibility/sdk/11/template-package-signature-verification.md).
+
 ## Arguments
 
 - **`<PATH|NUGET_ID>`**
@@ -70,6 +88,8 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 - **`--force`**
 
   Allows installing template packages from the specified sources even if they would override a template package from another source. Available since .NET SDK 7.0.100.
+
+  This option doesn't bypass [package signature verification](#package-signature-verification).
 
 - [!INCLUDE [help](includes/cli-help.md)]
 

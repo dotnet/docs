@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: HKDF on Windows uses CNG implementation"
 description: "Learn about the breaking change in .NET 11 where HKDF on Windows uses the Windows Cryptography API: Next Generation (CNG) implementation, which restricts some input sizes."
-ms.date: 09/10/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ Starting in .NET 11, <xref:System.Security.Cryptography.HKDF> on Windows uses Wi
 
 ## Version introduced
 
-.NET 11 Preview 1
+.NET 11
 
 ## Previous behavior
 

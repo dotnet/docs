@@ -3,6 +3,7 @@ GenericUnionScenario.Run();
 ValueTypeCasesScenario.Run();
 BodyMembersScenario.Run();
 NullHandlingScenario.Run();
+UnionPatternMatchingScenario.Run();
 ManualUnionScenario.Run();
 NonBoxingAccessScenario.Run();
 ClassUnionScenario.Run();

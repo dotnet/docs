@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0011: ClassCleanup method should have valid layout"
 description: "Learn about code analysis rule MSTEST0011: ClassCleanup method should have valid layout"
-ms.date: 02/19/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0011
 - ClassCleanupShouldBeValidAnalyzer
@@ -30,22 +31,19 @@ A method marked with `[ClassCleanup]` should have valid layout.
 
 ## Rule description
 
-Methods marked with `[ClassCleanup]` should follow the following layout to be valid:
+MSTest calls `[ClassCleanup]` to release resources shared by a test class, rather than resources owned by one test-class instance:
 
-- it can't be declared on a generic class without the `InheritanceBehavior` mode is set
-- it should be `public`
-- it should be `static`
-- it should not be `async void`
-- it should not be a special method (finalizer, operator...).
-- it should not be generic
-- it should not take any parameter, or starting with MSTest 3.8, it can have a single `TestContext` parameter
-- return type should be `void`, `Task` or `ValueTask`
-- `InheritanceBehavior.BeforeEachDerivedClass` attribute parameter should be specified if the class is `abstract`.
-- `InheritanceBehavior.BeforeEachDerivedClass` attribute parameter should not be specified if the class is `sealed`.
+| Requirement | Reason |
+|-------------|--------|
+| The method is `public`. | Public methods form MSTest's lifecycle discovery contract. `[DiscoverInternals]` permits an internal declaring class, not an internal lifecycle method. |
+| The method is `static`. | Class cleanup belongs to the class's shared lifecycle and must not depend on a particular test instance. |
+| The method is ordinary and isn't `abstract` or generic. | MSTest needs a method body it can invoke without special invocation rules or method type arguments. |
+| The method has no parameters, or one `TestContext` parameter in MSTest 3.8 and later. | MSTest can invoke cleanup without arguments or supply the class-cleanup context. It doesn't supply arbitrary arguments or a test's data row. |
+| The return type is `void`, `Task`, or `ValueTask`, and the method isn't `async void`. | MSTest must wait for asynchronous cleanup and observe its failures instead of leaving resource release to an unobserved operation. |
+| An abstract or generic declaring class specifies `InheritanceBehavior.BeforeEachDerivedClass`. | The inheritance setting associates a base class's cleanup with the concrete derived classes that use its resources. |
+| A sealed declaring class doesn't specify `InheritanceBehavior.BeforeEachDerivedClass`. | A sealed class can't have derived classes, so that inheritance setting has no lifecycle to apply to. |
 
 [!INCLUDE [test-class-rules](includes/test-class-rules.md)]
-
-- the class should not be generic
 
 ## How to fix violations
 

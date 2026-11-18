@@ -2,7 +2,7 @@
 title: Use the dotnetup preview channel
 description: Install and update supported .NET preview releases with dotnetup.
 ms.topic: how-to
-ms.date: 08/07/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -44,12 +44,10 @@ dotnetup runtime install windowsdesktop@preview
 ## Pin one prerelease version
 
 Use the full version from the published release metadata when you need one
-specific prerelease. This .NET 11 Preview 7 version from `releases.json` is
-out of date because the channel has advanced to a release candidate. It appears
-only to show the command syntax:
+specific prerelease. Replace `<sdk-version>` with that full version:
 
 ```dotnetcli
-dotnetup sdk install 11.0.100-preview.7.26381.103
+dotnetup sdk install <sdk-version>
 ```
 
 An exact prerelease version is pinned, so update commands do not advance it.

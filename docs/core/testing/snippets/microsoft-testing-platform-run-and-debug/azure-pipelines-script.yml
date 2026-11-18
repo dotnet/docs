@@ -1,0 +1,33 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: UseDotNet@2
+  displayName: Install .NET SDK
+  inputs:
+    packageType: sdk
+    version: 10.0.x
+
+- task: CmdLine@2
+  displayName: Run solution tests
+  inputs:
+    script: >-
+      dotnet test --solution Contoso.sln
+      --configuration Release
+      --max-parallel-test-modules 4
+      --results-directory "$(Agent.TempDirectory)"
+      --report-trx
+    workingDirectory: $(Build.SourcesDirectory)
+
+- task: PublishTestResults@2
+  displayName: Publish test results
+  condition: succeededOrFailed()
+  inputs:
+    testResultsFormat: VSTest
+    testResultsFiles: '**/*.trx'
+    searchFolder: $(Agent.TempDirectory)
+    failTaskOnFailedTests: true
+    failTaskOnMissingResultsFile: true

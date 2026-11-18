@@ -1,13 +1,17 @@
 ---
 title: "How to: Connect to a Database"
 description: Learn how to use DataContext to connect to a database in LINQ to SQL. Refer to these examples to use DataContext to connect to a database and to get rows.
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: c33d74b3-530d-421b-a121-96786dd263a5
 ---
 # How to: Connect to a Database
+
+> [!IMPORTANT]
+> Do not use `System.Data.SqlClient` for new development. Use [Microsoft.Data.SqlClient](/sql/connect/ado-net/introduction-microsoft-data-sqlclient-namespace) for new SQL Server data-access code. These examples retain `System.Data.SqlClient` because .NET Framework's built-in LINQ to SQL provider requires it. Changing the connection type alone doesn't migrate LINQ to SQL.
 
 The <xref:System.Data.Linq.DataContext> is the main conduit by which you connect to a database, retrieve objects from it, and submit changes back to it. You use the <xref:System.Data.Linq.DataContext> just as you would use an ADO.NET <xref:System.Data.SqlClient.SqlConnection>. In fact, the <xref:System.Data.Linq.DataContext> is initialized with a connection or connection string that you supply. For more information, see [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer).
 

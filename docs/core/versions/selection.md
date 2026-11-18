@@ -68,7 +68,7 @@ To surface related warnings at build time for the resolved SDK, set the `CheckSd
 You build your project against APIs defined in a **target framework moniker** (TFM). You specify the [target framework](../../standard/frameworks.md) in the project file. Set the `TargetFramework` element in your project file as shown in the following example:
 
 ``` xml
-<TargetFramework>net8.0</TargetFramework>
+<TargetFramework>net11.0</TargetFramework>
 ```
 
 You can build your project against multiple TFMs. Setting multiple target frameworks is more common for libraries but can be done with applications as well. You specify a `TargetFrameworks` property (plural of `TargetFramework`). The target frameworks are semicolon-delimited as shown in the following example:

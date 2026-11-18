@@ -2,7 +2,7 @@
 Option Strict On
 
 Imports System.Data
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 
 Module Module1
 
@@ -63,13 +63,13 @@ Module Module1
                 command2.Transaction = transaction2
                 command2.CommandText = _
                     "SELECT ID, valueCol FROM TestSnapshot"
-                Dim reader2 As SqlDataReader = _
-                    command2.ExecuteReader()
-                While reader2.Read()
-                    Console.WriteLine("Expected 1,1 Actual " _
-                      & reader2.GetValue(0).ToString() + "," _
-                      & reader2.GetValue(1).ToString())
-                End While
+                Using reader2 As SqlDataReader = command2.ExecuteReader()
+                    While reader2.Read()
+                        Console.WriteLine("Expected 1,1 Actual " _
+                          & reader2.GetValue(0).ToString() + "," _
+                          & reader2.GetValue(1).ToString())
+                    End While
+                End Using
                 transaction2.Commit()
             End Using
 
@@ -93,10 +93,11 @@ Module Module1
                 command3.CommandTimeout = 4
 
                 Try
-                    Dim reader3 As SqlDataReader = command3.ExecuteReader()
-                    While reader3.Read()
-                        Console.WriteLine("You should never hit this.")
-                    End While
+                    Using reader3 As SqlDataReader = command3.ExecuteReader()
+                        While reader3.Read()
+                            Console.WriteLine("You should never hit this.")
+                        End While
+                    End Using
                     transaction3.Commit()
                 Catch ex As Exception
                     Console.WriteLine("Expected timeout expired exception: " _
@@ -121,13 +122,13 @@ Module Module1
                 command4.Transaction = transaction4
                 command4.CommandText = _
                     "SELECT ID, valueCol FROM TestSnapshot"
-                Dim reader4 As SqlDataReader = _
-                    command4.ExecuteReader()
-                While reader4.Read()
-                    Console.WriteLine("Expected 1,22 Actual " _
-                      & reader4.GetValue(0).ToString() _
-                      & "," + reader4.GetValue(1).ToString())
-                End While
+                Using reader4 As SqlDataReader = command4.ExecuteReader()
+                    While reader4.Read()
+                        Console.WriteLine("Expected 1,22 Actual " _
+                          & reader4.GetValue(0).ToString() _
+                          & "," + reader4.GetValue(1).ToString())
+                    End While
+                End Using
                 transaction4.Commit()
 
                 ' Rollback transaction1

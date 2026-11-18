@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Nullable.GetUnderlyingType throws for custom Type subclasses"
 description: "Learn about the breaking change in .NET 11 where Nullable.GetUnderlyingType throws NotSupportedException for custom Type subclasses that don't override Type.GetNullableUnderlyingType."
-ms.date: 04/29/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 ## Version introduced
 
-.NET 11 Preview 4
+.NET 11
 
 ## Previous behavior
 

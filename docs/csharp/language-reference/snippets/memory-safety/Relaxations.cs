@@ -1,4 +1,4 @@
-// This file demonstrates the C# 15 memory safety relaxations and the `unsafe`
+﻿// This file demonstrates the C# 15 memory safety relaxations and the `unsafe`
 // expression. Creating pointers, the fixed statement, stackalloc-to-pointer,
 // and sizeof no longer require an unsafe context. Only operations that access
 // the pointed-to memory still require one.
@@ -70,7 +70,10 @@ public class Relaxations
     {
         int rawValue = 0x1234;
         int* pointer = &rawValue;
-        return *pointer;
+        unsafe
+        { 
+            return *pointer;
+        }
     }
     // </UnsafeExpression>
 
@@ -86,7 +89,10 @@ public class Relaxations
     {
         int rawValue = 0x1234;
         int* pointer = &rawValue;
-        return Task.FromResult(*pointer);
+        unsafe
+        {
+            return Task.FromResult(*pointer);
+        }
     }
     // </AwaitUnsafeExpression>
 }

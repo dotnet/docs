@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Math.Round and MathF.Round return correctly rounded results"
 description: "Learn about the breaking change in .NET 11 where Math.Round and MathF.Round with a digits argument return the correctly rounded result and accept any non-negative digit count."
-ms.date: 08/04/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 ## Version introduced
 
-.NET 11 Preview 7
+.NET 11
 
 ## Previous behavior
 

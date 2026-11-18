@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0008: TestInitialize method should have valid layout"
 description: "Learn about code analysis rule MSTEST0008: TestInitialize method should have valid layout"
-ms.date: 02/19/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0008
 - TestInitializeShouldBeValidAnalyzer
@@ -30,16 +31,17 @@ A method marked with `[TestInitialize]` should have valid layout.
 
 ## Rule description
 
-Methods marked with `[TestInitialize]` should follow the following layout to be valid:
+MSTest calls `[TestInitialize]` on the test-class instance before it invokes the test method. The callback prepares that test's state:
 
-- it should be `public`
-- it should not be `abstract`
-- it should not be `async void`
-- it should not be `static`
-- it should not be a special method (finalizer, operator...).
-- it should not be generic
-- it should not take any parameter
-- return type should be `void`, `Task` or `ValueTask`
+| Requirement | Reason |
+|-------------|--------|
+| The method is `public`. | Public methods form MSTest's lifecycle discovery contract. `[DiscoverInternals]` permits an internal declaring class, not an internal lifecycle method. |
+| The method isn't `static`. | Initialization needs access to the same instance fields and `TestContext` as the test method. |
+| The method is ordinary and isn't `abstract`. | MSTest needs a callable method body, not a special member with language-defined invocation rules. |
+| The method isn't generic. | Lifecycle callbacks don't receive test-data arguments from which MSTest could infer method type arguments. |
+| The method has no parameters. | MSTest invokes this callback without arguments. Use the instance's `TestContext` for per-test information. |
+| The return type is `void`, `Task`, or `ValueTask`. | An awaitable return value lets MSTest complete asynchronous setup before the test starts. |
+| The method isn't `async void`. | Without an awaitable result, setup could continue after the test starts, and later exceptions couldn't be reliably recorded as initialization failures. |
 
 [!INCLUDE [test-class-rules](includes/test-class-rules.md)]
 

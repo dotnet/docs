@@ -3,7 +3,13 @@ using System.CommandLine;
 using System.CommandLine.Completions;
 using System.CommandLine.Parsing;
 
-new DateCommand().Parse(args).Invoke();
+var rootCommand = new RootCommand("Sample app with tab-completion")
+{
+    new DateCommand()
+};
+
+await rootCommand.Parse(args).InvokeAsync();
+
 
 class DateCommand : Command
 {

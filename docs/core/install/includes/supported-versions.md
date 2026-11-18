@@ -1,7 +1,7 @@
 ---
 author: adegeo
 ms.author: adegeo
-ms.date: 11/07/2025
+ms.date: 11/11/2026
 ms.topic: include
 ---
 
@@ -9,8 +9,7 @@ Microsoft publishes .NET under two different support policies, Long Term Support
 
 The versions of .NET that are currently supported by Microsoft are:
 
+- 11.0 (STS)&mdash;Support ends **November 14, 2028**.
 - 10.0 (LTS)&mdash;Support ends **November 14, 2028**.
-- 9.0 (STS)&mdash;Support ends **November 10, 2026**.
-- 8.0 (LTS)&mdash;Support ends **November 10, 2026**.
 
 Other entities that build and release .NET might introduce different support policies. Be sure to check with them to understand how .NET is supported.

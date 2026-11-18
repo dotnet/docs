@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: TarWriter uses HardLink entries for hard-linked files"
 description: "Learn about the breaking change in .NET 11 where TarWriter writes HardLink entries for files that share the same inode instead of duplicating the file content."
-ms.date: 04/03/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 ## Version introduced
 
-.NET 11 Preview 3
+.NET 11
 
 ## Previous behavior
 

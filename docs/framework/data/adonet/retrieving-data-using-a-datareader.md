@@ -1,7 +1,7 @@
 ---
 title: "Retrieving Data Using a DataReader"
 description: Learn how to retrieve data using a DataReader in ADO.NET with this sample code. DataReader provides an unbuffered stream of data.
-ms.date: "10/29/2018"
+ms.date: "10/23/2026"
 dev_langs:
   - "csharp"
   - "vb"
@@ -9,9 +9,9 @@ ms.assetid: 97afc121-fb8b-465b-bab3-6d844420badb
 ---
 # Retrieve data using a DataReader
 
-To retrieve data using a **DataReader**, create an instance of the `Command` object, and then create a `DataReader` by calling **Command.ExecuteReader** to retrieve rows from a data source. The `DataReader` provides an unbuffered stream of data that allows procedural logic to efficiently process results from a data source sequentially. The `DataReader` is a good choice when you're retrieving large amounts of data because the data is not cached in memory.
+To retrieve data using a `DataReader`, create an instance of the `Command` object, and then create a `DataReader` by calling `Command.ExecuteReader` to retrieve rows from a data source. The `DataReader` provides an unbuffered stream of data that allows procedural logic to efficiently process results from a data source sequentially. The `DataReader` is a good choice when you're retrieving large amounts of data because the data is not cached in memory.
 
-The following example illustrates using a **DataReader**, where `reader` represents a valid DataReader and `command` represents a valid Command object.
+The following example illustrates using a `DataReader`, where `reader` represents a valid `DataReader` and `command` represents a valid `Command` object.
 
 ```csharp
 reader = command.ExecuteReader();
@@ -21,7 +21,7 @@ reader = command.ExecuteReader();
 reader = command.ExecuteReader()
 ```
 
-Use the **DataReader.Read** method to obtain a row from the query results. You can access each column of the returned row by passing the name or ordinal number of the column to the **DataReader**. However, for best performance, the `DataReader` provides a series of methods that allow you to access column values in their native data types (**GetDateTime**, **GetDouble**, **GetGuid**, **GetInt32**, and so on). For a list of typed accessor methods for data provider-specific **DataReaders**, see <xref:System.Data.OleDb.OleDbDataReader> and <xref:System.Data.SqlClient.SqlDataReader>. Using the typed accessor methods when you know the underlying data type reduces the amount of type conversion required when retrieving the column value.
+Use the `DataReader.Read` method to obtain a row from the query results. You can access each column of the returned row by passing the name or ordinal number of the column to the `DataReader`. However, for best performance, the `DataReader` provides a series of methods that allow you to access column values in their native data types (`GetDateTime`, `GetDouble`, `GetGuid`, `GetInt32`, and so on). For a list of typed accessor methods for data provider-specific `DataReaders`, see <xref:System.Data.OleDb.OleDbDataReader> and <xref:Microsoft.Data.SqlClient.SqlDataReader>. Using the typed accessor methods when you know the underlying data type reduces the amount of type conversion required when retrieving the column value.
 
  The following example iterates through a `DataReader` object and returns two columns from each row.
 
@@ -34,28 +34,28 @@ Use the **DataReader.Read** method to obtain a row from the query results. You c
 
  If your `Command` contains output parameters or return values, those values are not available until the `DataReader` is closed.
 
- While a `DataReader` is open, the `Connection` is in use exclusively by that **DataReader**. You cannot execute any commands for the **Connection**, including creating another **DataReader**, until the original `DataReader` is closed.
+ While a `DataReader` is open, the `Connection` is in use exclusively by that `DataReader`. You cannot execute any commands for the `Connection`, including creating another `DataReader`, until the original `DataReader` is closed.
 
 > [!NOTE]
-> Do not call `Close` or `Dispose` on a **Connection**, a **DataReader**, or any other managed object in the `Finalize` method of your class. In a finalizer, only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](../../../standard/garbage-collection/index.md).
+> Do not call `Close` or `Dispose` on a `Connection`, a `DataReader`, or any other managed object in the `Finalize` method of your class. In a finalizer, only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](../../../standard/garbage-collection/index.md).
 
 ## Retrieving multiple result sets using NextResult
 
- If the `DataReader` returns multiple result sets, call the `NextResult` method to iterate through the result sets sequentially. The following example shows the <xref:System.Data.SqlClient.SqlDataReader> processing the results of two SELECT statements using the <xref:System.Data.SqlClient.SqlCommand.ExecuteReader*> method.
+ If the `DataReader` returns multiple result sets, call the `NextResult` method to iterate through the result sets sequentially. The following example shows the <xref:Microsoft.Data.SqlClient.SqlDataReader> processing the results of two `SELECT` statements using the <xref:Microsoft.Data.SqlClient.SqlCommand.ExecuteReader*> method.
 
  [!code-csharp[DataWorks SqlClient.NextResult#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClient.NextResult/CS/source.cs#1)]
  [!code-vb[DataWorks SqlClient.NextResult#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlClient.NextResult/VB/source.vb#1)]
 
 ## Getting schema information from the DataReader
 
- While a `DataReader` is open, you can retrieve schema information about the current result set using the `GetSchemaTable` method. `GetSchemaTable` returns a <xref:System.Data.DataTable> object populated with rows and columns that contain the schema information for the current result set. The `DataTable` contains one row for each column of the result set. Each column of the schema table maps to a property of the columns returned in the rows of the result set, where the `ColumnName` is the name of the property and the value of the column is the value of the property. The following example writes out the schema information for **DataReader**.
+ While a `DataReader` is open, you can retrieve schema information about the current result set using the `GetSchemaTable` method. `GetSchemaTable` returns a <xref:System.Data.DataTable> object populated with rows and columns that contain the schema information for the current result set. The `DataTable` contains one row for each column of the result set. Each column of the schema table maps to a property of the columns returned in the rows of the result set, where the `ColumnName` is the name of the property and the value of the column is the value of the property. The following example writes out the schema information for `DataReader`.
 
  [!code-csharp[DataWorks SqlClient.GetSchemaTable#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClient.GetSchemaTable/CS/source.cs#1)]
  [!code-vb[DataWorks SqlClient.GetSchemaTable#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlClient.GetSchemaTable/VB/source.vb#1)]
 
 ## Working with OLE DB chapters
 
- Hierarchical rowsets, or chapters (OLE DB type **DBTYPE_HCHAPTER**, ADO type **adChapter**), can be retrieved using the <xref:System.Data.OleDb.OleDbDataReader>. When a query that includes a chapter is returned as a **DataReader**, the chapter is returned as a column in that `DataReader` and is exposed as a `DataReader` object.
+ Hierarchical rowsets, or chapters (OLE DB type `DBTYPE_HCHAPTER`, ADO type `adChapter`), can be retrieved using the <xref:System.Data.OleDb.OleDbDataReader>. When a query that includes a chapter is returned as a `DataReader`, the chapter is returned as a column in that `DataReader` and is exposed as a `DataReader` object.
 
  The ADO.NET `DataSet` can also be used to represent hierarchical rowsets by using parent-child relationships between tables. For more information, see [DataSets, DataTables, and DataViews](./dataset-datatable-dataview/index.md).
 
@@ -256,7 +256,7 @@ adapter.Fill(ds);
 ```
 
 > [!NOTE]
-> To avoid an **OverflowException**, we recommend that you also handle any conversion from the Oracle NUMBER type to a valid .NET Framework type before storing the value in a <xref:System.Data.DataRow>. You can use the <xref:System.Data.Common.DataAdapter.FillError> event to determine if an `OverflowException` has occurred. For more information on the <xref:System.Data.Common.DataAdapter.FillError> event, see [Handling DataAdapter Events](handling-dataadapter-events.md).
+> To avoid an `OverflowException`, we recommend that you also handle any conversion from the Oracle `NUMBER` type to a valid .NET Framework type before storing the value in a <xref:System.Data.DataRow>. You can use the <xref:System.Data.Common.DataAdapter.FillError> event to determine if an `OverflowException` has occurred. For more information on the <xref:System.Data.Common.DataAdapter.FillError> event, see [Handling DataAdapter Events](handling-dataadapter-events.md).
 
 ## See also
 

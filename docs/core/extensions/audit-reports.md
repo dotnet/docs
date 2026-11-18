@@ -58,7 +58,7 @@ Configure report generation by setting MSBuild properties in your project file:
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
     
     <!-- Enable audit report generation -->
     <GenerateComplianceReport>true</GenerateComplianceReport>
@@ -256,7 +256,7 @@ Here's a complete example showing how to set up privacy auditing:
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
     
     <!-- Enable compliance reporting -->
     <GenerateComplianceReport>true</GenerateComplianceReport>

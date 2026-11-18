@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Japanese Calendar minimum supported date corrected"
 description: "Learn about the breaking change in .NET 11 where the Japanese Calendar minimum supported date was corrected from 1868-09-08 to 1868-10-23."
-ms.date: 01/07/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ The start date of the Japanese Meiji era has been updated from `1868-09-08` to `
 
 ## Version introduced
 
-.NET 11 Preview 1
+.NET 11
 
 ## Previous behavior
 

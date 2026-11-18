@@ -50,6 +50,8 @@ To animate the progress bar, the ANSI progress renderer takes control of the ter
 
 This behavior is distinct from *captured* per-test standard output and standard error. Output that a test writes while it runs is captured by the framework and shown according to `--show-stdout` and `--show-stderr`, so the progress bar doesn't overwrite it.
 
+If you author a test framework, attach captured text through [`StandardOutputProperty` and `StandardErrorProperty`](./microsoft-testing-platform-architecture-test-framework.md#captured-test-output). The platform doesn't automatically capture direct console writes from custom frameworks.
+
 If your code must write directly to the console and you need that output to remain visible, disable progress (`--progress off` in MTP 2.3.0+, or `--no-progress` in earlier versions). Alternatively, disable ANSI (`--ansi off` in MTP 2.3.0+, or `--no-ansi` in earlier versions) to use the non-ANSI progress output, which appends new lines instead of redrawing in place and doesn't overwrite prior direct output.
 
 ## Options

@@ -52,6 +52,8 @@ Module Module1
 
     Sub method3()
         ' <Snippet3>
+        ' Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+        ' LINQ to SQL's built-in provider requires System.Data.SqlClient.
         ' Imports System.Data.Common
 
         Dim db As New Northwnd("c:\northwnd.mdf")

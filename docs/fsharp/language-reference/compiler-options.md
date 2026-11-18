@@ -1,7 +1,8 @@
 ---
 title: Compiler Options
 description: Use F# compiler command-line options to control the compilation of your F# apps and libraries.
-ms.date: 11/04/2021
+ms.date: 09/30/2026
+ai-usage: ai-assisted
 ---
 # Compiler options
 
@@ -16,6 +17,7 @@ The following table shows compiler options listed alphabetically. Some of the F#
 |Compiler Option|Description|
 |---------------|-----------|
 |`--allsigs`|Generates a new (or regenerates an existing) signature file for each source file in the compilation. For more information about signature files, see [Signatures](signature-files.md).|
+|`--always-inline`|Always expand inline functions, including without optimization. By default, non-optimized F# 11 builds prefer callable methods where possible for [inline debugging](functions/inline-functions.md#debug-inline-functions).|
 |`-a filename.fs`|Generates a library from the specified file. This option is a short form of `--target:library filename.fs`.|
 |`--baseaddress:address`|Specifies the preferred base address at which to load a DLL.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;baseaddress &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/advanced.md#baseaddress).|
 |<code>--checknulls[+&#124;-]</code>|Enables [nullable reference types](./values/null-values.md#null-values-starting-with-f-9), added in F# 9.|
@@ -50,6 +52,7 @@ The following table shows compiler options listed alphabetically. Some of the F#
 |`--preferreduilang:lang`| Specifies the preferred output language culture name (for example,  `es-ES`, `ja-JP`). |
 |`--quotations-debug`|Specifies that extra debugging information should be emitted for expressions that are derived from F# quotation literals and reflected definitions. The debug information is added to the custom attributes of an F# expression tree node. See [Code Quotations](code-quotations.md) and [Expr.CustomAttributes](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-quotations-fsharpexpr.html#CustomAttributes).|
 |`--reference:assembly-filename`<br /><br />`-r:assembly-filename`|Makes code from an F# or .NET Framework assembly available to the code being compiled.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;reference &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/inputs.md#references).|
+|`--reflectionfree`|Avoids reflection-dependent generated structural formatting. F# 11 can generate meaningful record and union `ToString` output. See [reflection-free type formatting](interpolated-strings.md#record-and-union-output-without-reflection).|
 |`--resource:resource-filename`|Embeds a managed resource file into the generated assembly.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;resource &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/resources.md#embeddedresource).|
 |`--sig:signature-filename`|Generates a signature file based on the generated assembly. For more information about signature files, see [Signatures](signature-files.md).|
 |`--simpleresolution`|Specifies that assembly references should be resolved using directory-based Mono rules rather than MSBuild resolution. The default is to use MSBuild resolution except when running under Mono.|
@@ -95,6 +98,34 @@ The F# compiler supports several opt-in warnings:
 You can enable these warnings by using  `/warnon:NNNN` or `<WarnOn>NNNN</WarnOn>` where `NNNN` is the relevant warning number.
 (You may also use the syntax `<WarnOn>FSNNNN</WarnOn>`, for example, `<WarnOn>FS3388</WarnOn>`.)
 Note that if the `WarnOn` property is specified multiple times, only the last occurrence is used. To specify multiple warnings, provide the `WarnOn` property once with a comma-separated string as its contents: `<WarnOn>3388,3559</WarnOn>`.
+
+## Language version and indentation
+
+Language support depends on the SDK feature band. In the .NET 11.0.100 SDK, F# 11.2 features require `--langversion:preview` or `<LangVersion>preview</LangVersion>`.
+
+The [upstream release plan](https://github.com/dotnet/fsharp/blob/8512f9acbd9f757b75440b1ca6afe33fec321208/docs/release-notes/.Language/11.2.md) lists F# 11.2 as the planned default for .NET SDK 11.0.200. A compiler that implements F# 11.2 also accepts `--langversion:11.2`. Supported numbered modes start at F# 8; the default, `latest`, and `latestmajor` depend on the installed compiler.
+
+Non-strict indentation mode is removed, including in earlier numbered modes. Language version doesn't change library or runtime API availability.
+
+## Parallel compilation
+
+To reduce build time, the F# 11 compiler enables parallel compilation by default, including graph-based checking, optimization, and IL generation. Keep deterministic builds enabled; parallelism doesn't require nondeterministic output.
+
+For troubleshooting or a project-specific performance comparison, disable parallel compilation:
+
+```xml
+<PropertyGroup>
+  <ParallelCompilation>false</ParallelCompilation>
+</PropertyGroup>
+```
+
+Use `--parallelcompilation-` to disable it or `--parallelcompilation+` to enable it. Available parallelism depends on source dependencies, cores, and optimization settings; file-order rules remain unchanged. See [Tooling performance](../tools/tooling-performance.md) for comparisons.
+
+## Diagnostic lists
+
+The compiler ignores unrecognized diagnostic identifiers in a `--warnaserror` list, while recognized F# warning codes still apply. This helps shared build settings that contain diagnostic IDs from other compilers.
+
+For optional record-spread overlap notices, see the [spread warning table](record-spreads.md#warnings-about-shadowed-fields). For missing signature attributes that are errors in F# 11, see [compiler-semantic attributes](signature-files.md#compiler-semantic-attributes).
 
 ## Related articles
 

@@ -1,4 +1,4 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Numerics;
 using System.Runtime.Intrinsics;
 
@@ -65,10 +65,13 @@ public static class AdvancedVectorization
     private static T SumVectorSmall<T>(ReadOnlySpan<T> buffer)
         where T : unmanaged, INumberBase<T>
     {
-        // sizeof(T) is a JIT constant, so only the matching branch survives for a given T.
-        if (sizeof(T) == 4)
+        unsafe
         {
-            return SumVectorSmall4(buffer);
+            // sizeof(T) is a JIT constant, so only the matching branch survives for a given T.
+            if (sizeof(T) == 4)
+            {
+                return SumVectorSmall4(buffer);
+            }
         }
 
         // The 1-, 2-, and 8-byte tables share the shape below, sized for their element width.
@@ -83,7 +86,10 @@ public static class AdvancedVectorization
     private static T SumVectorSmall4<T>(ReadOnlySpan<T> buffer)
         where T : unmanaged, INumberBase<T>
     {
-        Debug.Assert(sizeof(T) == 4);
+        unsafe
+        {
+            Debug.Assert(sizeof(T) == 4);
+        }
         Debug.Assert(buffer.Length < Vector512<T>.Count);
 
         T result = T.Zero;
@@ -171,7 +177,10 @@ public static class AdvancedVectorization
     private static Vector256<T> CreateRemainderMask256<T>(int keepLast)
         where T : unmanaged, INumberBase<T>
     {
-        Debug.Assert(sizeof(T) == 4);
+        unsafe
+        {
+            Debug.Assert(sizeof(T) == 4);
+        }
 
         Vector256<int> firstKept = Vector256.Create(Vector256<int>.Count - keepLast);
         return Vector256.GreaterThanOrEqual(Vector256<int>.Indices, firstKept).As<int, T>();
@@ -180,7 +189,10 @@ public static class AdvancedVectorization
     private static Vector128<T> CreateRemainderMask128<T>(int keepLast)
         where T : unmanaged, INumberBase<T>
     {
-        Debug.Assert(sizeof(T) == 4);
+        unsafe
+        {
+            Debug.Assert(sizeof(T) == 4);
+        }
 
         Vector128<int> firstKept = Vector128.Create(Vector128<int>.Count - keepLast);
         return Vector128.GreaterThanOrEqual(Vector128<int>.Indices, firstKept).As<int, T>();

@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0004: Public types should be test classes"
 description: "Learn about code analysis rule MSTEST0004: Public types should be test classes"
-ms.date: 01/03/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0004
 - PublicTypeShouldBeTestClassAnalyzer
@@ -33,7 +34,9 @@ A public type is not a test class (class marked with the `[TestClass]` attribute
 
 ## Rule description
 
-It's considered a good practice to keep all helper and base classes `internal` and have only test classes marked `public` in a test project.
+To distinguish runnable tests from support code, reserve publicly visible concrete classes for test classes and keep helper classes `internal` when possible. This opt-in design rule helps you notice a missing `[TestClass]` attribute or an unintentionally public helper.
+
+Public helper classes aren't invalid MSTest code. The rule enforces a project convention, not a discovery requirement, and doesn't report abstract or static classes.
 
 ## How to fix violations
 
@@ -41,7 +44,7 @@ Change the accessibility of the type to not be `public`.
 
 ## When to suppress warnings
 
-You can suppress instances of this diagnostic if the type should remain `public` for compatibility reason.
+Suppress the diagnostic when a helper must remain public for another assembly or an existing contract. A deliberately public helper doesn't become a test class unless it has `[TestClass]` or a derived attribute.
 
 ## Suppress a warning
 

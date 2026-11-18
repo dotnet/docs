@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0012: AssemblyInitialize method should have valid layout"
 description: "Learn about code analysis rule MSTEST0012: AssemblyInitialize method should have valid layout"
-ms.date: 02/19/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0012
 - AssemblyInitializeShouldBeValidAnalyzer
@@ -30,23 +31,18 @@ A method marked with `[AssemblyInitialize]` should have valid layout.
 
 ## Rule description
 
-Methods marked with `[AssemblyInitialize]` should follow the following layout to be valid:
+MSTest calls `[AssemblyInitialize]` to prepare resources for the test assembly before its tests run:
 
-- it should be `public`
-- it should be `static`
-- it should not be `async void`
-- it should not be a special method (finalizer, operator...).
-- it should not be generic
-- it should not be abstract
-- it should take one parameter of type `TestContext`
-- return type should be `void`, `Task` or `ValueTask`
+| Requirement | Reason |
+|-------------|--------|
+| The method is `public static`. | MSTest discovers a public lifecycle entry point and invokes it without a test-class instance. Assembly setup belongs to the whole assembly, not one test. |
+| The method is ordinary and isn't `abstract` or generic. | MSTest needs a method body it can invoke without special invocation rules or method type arguments. |
+| The method takes exactly one `TestContext` parameter. | MSTest passes the assembly-initialization context directly to the static callback. That context describes assembly setup, not an individual test execution. |
+| The return type is `void`, `Task`, or `ValueTask`, and the method isn't `async void`. | MSTest must wait for setup and observe its failures before it runs tests that depend on the assembly's resources. |
+| The declaring type is a non-generic class marked with `[TestClass]` or a derived attribute. | MSTest locates assembly callbacks through test-class containers. A non-generic container identifies the callback without requiring class type arguments. The container can be static. |
+| The declaring class is `public`, or `internal` with `[assembly: DiscoverInternals]`. | The container must be accessible under MSTest's discovery contract. Internal discovery doesn't change the requirement that the callback itself is public. |
 
-The type declaring these methods should also respect the following rules:
-
-- The type should be a class.
-- The class should be public or internal (if the test project is using the [DiscoverInternals] attribute).
-- The class should be marked with [TestClass] (or a derived attribute)
-- the class should not be generic
+To access per-test information instead of assembly-initialization information, use the test instance's `TestContext`. See [MSTEST0024](mstest0024.md).
 
 ## How to fix violations
 

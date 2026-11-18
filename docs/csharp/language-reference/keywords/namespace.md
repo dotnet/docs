@@ -102,4 +102,4 @@ For more information on file-scoped namespace declarations, see [Namespace decla
 - [using](using-directive.md)
 - [using static](using-directive.md)
 - [Namespace alias qualifier `::`](../operators/namespace-alias-qualifier.md)
-- [Namespaces](../../fundamentals/program-structure/namespaces.md)
+- [Organize types with namespaces](../../fundamentals/namespaces/overview.md)

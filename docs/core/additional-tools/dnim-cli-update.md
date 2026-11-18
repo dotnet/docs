@@ -2,7 +2,7 @@
 title: dnim update command
 description: The update command updates existing .NET installations.
 author: joeloff
-ms.date: 09/16/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -30,7 +30,6 @@ dnim-win-[x86|x64|arm64] update [-a|--accept-license]
     [--no-wua]
     [-o|--output-file <OUTPUT_FILE>]
     [--offline <LAYOUT_DIRECTORY>]
-    [--offline-revocation-checks]
     [--output-format <text|csv|html|json>]
     [--pv|--product-version <PRODUCT_VERSION>]
     [--remove-EOL-versions-from-VS]
@@ -53,7 +52,7 @@ dnim-win-[x86|x64|arm64] update -?|-h|--help
 The `update` command detects, classifies, removes and updates .NET installations on Windows. MSIs and bundles are detected by default. Bin deployed (xcopy/zip) installs under `Program Files` can be detected using the `--include-bin-deployed-installs` option.
 
 > [!CAUTION]
-> DNIM always attempts to remove all copies of .NET on a device before updating, even if the latest release is instaleld. Use the `--what-if` option to review planned actions and consider using the `--keep-latest-product-version` and `keep-latest-support-phase` options to retain specific installations.
+> Use the `--what-if` option to review planned actions. If neither `--keep-latest-product-version` nor `--keep-latest-support-phase` is provided, the `update` command will retain the latest versions of products in active support.
 
 The command can target specific products based on their product version, support phase, type and release version. Only standalone bundles can be updated. Installations of .NET that came from Visual Studio will require you to update Visual Studio. DNIM will not update Visual Studio.
 
@@ -91,8 +90,6 @@ The command will first remove any applicable installs before applying updates. T
 
 - [!INCLUDE [offline](includes/dnim-cli-offline.md)]
 
-- [!INCLUDE [offline-revocation-checks](includes/dnim-cli-offline-revocation-checks.md)]
-
 - [!INCLUDE [output-format](includes/dnim-cli-output-format.md)]
 
 - [!INCLUDE [product-version](includes/dnim-cli-product-version.md)]
@@ -119,11 +116,11 @@ The command will first remove any applicable installs before applying updates. T
 
 ## Results
 
-The results are similar to that of the uninstall command, but additional columns showing the update action and target version are included.
+The results are similar to that of the uninstall command, but additional columns showing the update action and target version are included. Version values depend on the installed and latest available releases.
 
 | Display Name | Release | Type | Support | Uninstall Action | Update Action | Update Version |
 | --- | --- | --- | --- | --- | --- | --- |
-| Microsoft Windows Desktop Runtime 11.0.0 (x64) | 11.0.0-preview.7.26381.103 | Bundle | GoLive | Uninstall | Update | 11.0.0-rc.1.26425.128 |
+| Microsoft Windows Desktop Runtime 11.0.0 (x64) | `<installed-version>` | Bundle | GoLive | Uninstall | Update | `<latest-version>` |
 
 ## Examples
 
@@ -133,10 +130,10 @@ The results are similar to that of the uninstall command, but additional columns
   dnim-win-[x86|x64|arm64] update
   ```
 
-- Updated all the .NET 8.0 installations, including discontinued SDKs.
+- Update all the .NET 8.0 installations, including discontinued SDKs.
 
   ```console
-  dnim-win-[x86|x64|arm64] update --update-discontinued-sdk --pv 8.0
+  dnim-win-[x86|x64|arm64] update --update-discontinued-sdks --pv 8.0
   ```
 
   Assume 8.0.31 is the latest .NET 8 release. It includes updates for both the 8.0.1xx and 8.0.4xx SDKs. The 8.0.2xx and 8.0.3xx SDKs are no longer produced and considered discontinued. If a device has the 8.0.202 SDK installed, DNIM can install the 8.0.425 SDK and remove the 8.0.202 SDK.

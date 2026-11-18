@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: SDK local container runtime selection prefers platform-native tools"
 description: "Learn about the breaking change in .NET 11 where SDK local container runtime selection prefers platform-native tools on Windows and macOS."
-ms.date: 08/04/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ Starting in .NET 11, when you publish an SDK container to a local container runt
 
 ## Version introduced
 
-.NET 11 Preview 7
+.NET 11
 
 ## Previous behavior
 

@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0050: Global test fixture should be valid"
 description: "Learn about code analysis rule MSTEST0050: Global test fixture should be valid"
-ms.date: 08/06/2026
+ms.date: 11/05/2026
 f1_keywords:
 - MSTEST0050
 - GlobalTestFixtureShouldBeValidAnalyzer
@@ -31,9 +31,17 @@ A global test fixture method (marked with `GlobalTestInitializeAttribute` or `Gl
 
 ## Rule description
 
-Global test fixture methods must follow specific requirements to ensure proper test execution. This rule validates that methods marked with `GlobalTestInitializeAttribute` or `GlobalTestCleanupAttribute` adhere to the correct method signature and configuration rules.
+`GlobalTestInitialize` and `GlobalTestCleanup` run before and after each test across the assembly. They let you apply shared per-test setup or cleanup without adding a callback to every test class:
 
-The method must be `public`, `static`, non-generic, have a single parameter of type `TestContext`, and return `void` or `Task`. In addition, the containing type must be `public`, `static`, non-generic, and be marked with `TestClassAttribute`.
+| Requirement | Reason |
+|-------------|--------|
+| The method is `public static`. | MSTest invokes a global callback without an instance of its declaring class. The callback can run for tests in other classes, so it can't depend on the declaring class's per-test fields. |
+| The method is ordinary and isn't `abstract` or generic. | MSTest needs a callable method body without special invocation rules or method type arguments. |
+| The method takes exactly one `TestContext` parameter. | The parameter identifies the current test execution, including when the test belongs to another class. |
+| The return type is `void`, `Task`, or `ValueTask`, and the method isn't `async void`. | MSTest must wait for setup or cleanup and observe failures before it proceeds with the current test's lifecycle. |
+| The declaring type is a public, non-generic class marked with `[TestClass]` or a derived attribute. | MSTest discovers global callbacks through a known test-class container. The class can be static, but doesn't have to be, because the callback itself doesn't require an instance. |
+
+For the callback order, see [Global test-level lifecycle](../unit-testing-mstest-writing-tests-lifecycle.md#global-test-level-lifecycle).
 
 ## How to fix violations
 

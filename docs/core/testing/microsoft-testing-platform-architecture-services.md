@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform services overview
 description: Learn about the available Microsoft.Testing.Platform (MTP) services.
 author: MarcoRossignoli
 ms.author: mrossignoli
-ms.date: 10/01/2026
+ms.date: 10/26/2026
 ai-usage: ai-assisted
 ---
 
@@ -62,6 +62,8 @@ ITestApplicationBuilder RegisterTestFramework(
 ```
 
 In the preceding code, both the `capabilitiesFactory` and the `adapterFactory` supply the `IServiceProvider` as a parameter.
+
+Starting with MTP 2.5, use `GetRequiredPlatformService<TService>()` or `GetPlatformService<TService>()` when your project also imports `Microsoft.Extensions.DependencyInjection`. These names avoid ambiguity with the dependency-injection package's `GetRequiredService` and `GetService` extension methods. The required-service method throws when the platform service is absent; the optional-service method returns `null`.
 
 ## The `IConfiguration` service
 
@@ -354,6 +356,58 @@ The opposite end of the bus is referred to as a [consumer](./microsoft-testing-p
 
 > [!IMPORTANT]
 > Always use *await* the call to `PublishAsync`. If you don't, the `IData` might not be processed correctly by the testing platform and extensions, which could lead to subtle bugs. It's only after you've returned from the *await* that you can be assured that the `IData` has been queued for processing on the message bus. Regardless of the extension point you're working on, ensure that you've awaited all `PublishAsync` calls before exiting the extension. For example, if you're implementing the [`testing framework`](./microsoft-testing-platform-architecture-test-framework.md#create-a-testing-framework), you should not call `Complete` on the [requests](./microsoft-testing-platform-architecture-test-framework.md#handling-requests) until you've awaited all `PublishAsync` calls for that specific request.
+
+## The `ITestCoverageCapabilities` service
+
+Starting with MTP 2.4, retrieve `ITestCoverageCapabilities` from `IServiceProvider` to discover coverage-message support. The service exposes:
+
+- `SupportsTestCoverageMessages`, which indicates support for the platform's coverage-message contract.
+- `EnabledProducerUids`, a snapshot of enabled producer UIDs that declare at least one of `TestCoverageMessage`, `TestCoverageThresholdMessage`, or `TestCoverageReportMessage`.
+
+Read the producer list from a session lifecycle callback after extension construction, not from a registration factory or constructor. An enabled producer declares support; the list doesn't guarantee that the producer has already published measurements. An empty list doesn't mean the platform lacks coverage-message support.
+
+In MTP 2.5 or later, retrieve the service with `serviceProvider.GetRequiredPlatformService<ITestCoverageCapabilities>()`. In MTP 2.4, use `GetRequiredService<ITestCoverageCapabilities>()` from `Microsoft.Testing.Platform.Services`.
+
+For a runnable producer and consumer example, see [Publish coverage results](./microsoft-testing-platform-architecture-extensions.md#publish-coverage-results).
+
+## The `ITestCoverageResult` service
+
+Starting with MTP 2.4, `ITestCoverageResult` provides the platform's correlated coverage data. Retrieve the service from `IServiceProvider` and use the following members:
+
+| Member | Purpose |
+|---|---|
+| `GetOverall(sessionUid)` | Returns the session's reported overall summary, or `null` if none exists. |
+| `Scopes` | Returns `CoverageScopeSummary` entries with their session, scope, and metrics. |
+| `Thresholds` | Returns the reported threshold evaluations, including passed and failed evaluations. |
+| `Reports` | Returns coverage report references and their formats and producer IDs. |
+| `HasThresholdFailure` | Indicates whether any reported threshold failed. |
+
+A measurement's correlation key includes the session, producer, scope, metric, and custom metric name when applicable. A later measurement with the same key replaces the previous value; MTP doesn't sum duplicate messages. Different producers remain separate even when they report the same metric and scope.
+
+`CoverageScopeSummary.Metrics` preserves each metric's `ProducerId`. The convenience indexer, such as `summary[CoverageMetric.Line]`, returns the first matching producer's result. To select a particular collector, inspect `Metrics` and match `ProducerId`. Use `GetCustom(name)` for custom metrics instead of the indexer.
+
+An absent summary means no matching measurement was reported. A result with `HasCoverableData` set to `false` means the collector reported zero coverable units. Don't replace either case with a successful 100-percent result.
+
+Because the message bus processes data asynchronously, don't read the service immediately after `PublishAsync` and assume that the new message is present. For an end-of-run result, read after the session has finished, as the [coverage example](./microsoft-testing-platform-architecture-extensions.md#consume-coverage-results) does in `ITestHostApplicationLifetime.AfterRunAsync`.
+
+## The `IClientInfo` service
+
+To identify the client that drives a test application, call `serviceProvider.GetClientInfo()` while a test request or session is active. In server mode, the initialize handshake establishes this information. The experimental `IClientInfo` service exposes `Id`, `Version`, and `Capabilities`. Starting with MTP 2.4, `Capabilities` provides an `IClientCapabilities` value with the client's declared statefulness.
+
+A stateful client retains an addressable set of test nodes for the session and keeps each node's last-known state until an update replaces it. A stateless client consumes updates without retaining that state. The distinction doesn't describe connection lifetime or whether the server accepts multiple requests.
+
+Use `clientInfo.Capabilities.IsStateful` for a conservative Boolean result: an undeclared capability returns `false`. To distinguish an explicit `false` from an undeclared capability, use `ClientCapabilitiesExtensions.GetIsStateful()` in MTP 2.4.1 or later:
+
+| Result | Meaning |
+|---|---|
+| `true` | The client explicitly declares retained test-node state. |
+| `false` | The client explicitly declares stateless behavior. |
+| `null` | The platform-provided service has no declaration from the client. |
+
+For a custom `IClientCapabilities` implementation, `GetIsStateful()` returns its `IsStateful` value. To declare the capability from an editor or tool, see [Declare client statefulness](./microsoft-testing-platform-server-mode.md#declare-client-statefulness).
+
+> [!IMPORTANT]
+> `IClientInfo`, `IClientCapabilities`, `GetClientInfo`, and `ClientCapabilitiesExtensions` are experimental and use the `TPEXP` diagnostic ID. Their presence in a stable MTP package doesn't make the APIs stable.
 
 ## The `IOutputDevice` service
 

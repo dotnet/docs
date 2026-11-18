@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) test reports
 description: Learn about the MTP extensions that create test report files (TRX, HTML, JUnit, CTRF, Azure DevOps, GitHub Actions).
 author: evangelink
 ms.author: amauryleve
-ms.date: 10/01/2026
+ms.date: 11/13/2026
 ai-usage: ai-assisted
 ---
 
@@ -17,6 +17,8 @@ Each report option requires the extension package named in its section. Add the 
 ## Report file names
 
 Every report extension writes its file to the test results directory, which you can set with the [`--results-directory`](microsoft-testing-platform-cli-options.md) option. To override the name, use the matching `--report-*-filename` option. Each report section lists the default name for that report.
+
+To isolate reports with the same relative file name in a multi-module `dotnet test` run, use the SDK's [`--results-directory-layout per-module`](../tools/dotnet-test-mtp.md#options) option before `--`.
 
 A file name can include a relative path that stays within the test results directory, and it can use the following replacement items (placeholders):
 
@@ -38,15 +40,21 @@ If a default or explicit TRX, HTML, or JUnit file name already exists for a test
 
 ## Report consolidation
 
-Starting with MTP 2.4.0, MTP automatically post-processes report artifacts after a `dotnet test` invocation runs multiple test modules or after retry support runs multiple attempts. The feature is experimental in MTP 2.4.0.
+Starting with MTP 2.4.0, MTP automatically post-processes report artifacts after retry support runs multiple attempts. For a `dotnet test` invocation that runs multiple test modules, automatic post-processing also requires .NET 11 or later. The feature is experimental in MTP 2.4.0.
 
 The TRX, JUnit, CTRF, and HTML extensions group compatible artifacts by report kind and write a consolidated report under the test results directory's `merged` subdirectory. CTRF consolidation combines module results and collapses retry attempts into the final test result with retry history. HTML consolidation creates a merged summary and preserves the original per-process reports.
 
 For custom report extensions, the experimental `IArtifactPostProcessor` API exposes separate `TestModules` and `RetryAttempts` processing modes. For more information, see [The `IArtifactPostProcessor` extensions](microsoft-testing-platform-architecture-extensions.md#the-iartifactpostprocessor-extensions).
 
+To disable multi-module artifact post-processing, pass [`--no-artifact-post-processing`](../tools/dotnet-test-mtp.md#options) to `dotnet test`.
+
 ## Visual Studio test reports (TRX)
 
 The Visual Studio test result file (or TRX) is the default format for publishing test results. This extension requires the [Microsoft.Testing.Extensions.TrxReport](https://nuget.org/packages/Microsoft.Testing.Extensions.TrxReport) NuGet package.
+
+If you author a test framework, implement [`ITrxReportCapability`](./microsoft-testing-platform-architecture-capabilities.md#itrxreportcapability) to supply test-class, category, failure, and output metadata. The report package alone doesn't add framework-specific data to your test nodes.
+
+To create a test definition, supply either `TrxFullyQualifiedTypeNameProperty` or `TestMethodIdentifierProperty` on the final test-node update. [Timing and enrichment properties](./microsoft-testing-platform-architecture-capabilities.md#optional-report-properties) are optional. For the required state and identity rules, see [Required test-node data](./microsoft-testing-platform-architecture-capabilities.md#required-test-node-data).
 
 ### Manual registration
 
@@ -76,6 +84,35 @@ builder.AddTrxReportProvider();
 | `--report-trx-filename` | The name of the generated TRX report. Starting with MTP 2.3.0, the default is the deterministic `{asm}_{tfm}_{arch}.trx` form; before MTP 2.3.0, the default was `<UserName>_<MachineName>_<yyyy-MM-dd_HH_mm_ss.fffffff>.trx`. To customize the name, see [Report file names](#report-file-names). |
 
 The report is saved inside the default _TestResults_ folder that can be specified through the `--results-directory` command line argument.
+
+### Merge TRX files manually
+
+The TRX extension also registers non-test commands. The following commands are available in version 2.5.1; run your test application's `--info` option to discover the commands in your installed version.
+
+To combine existing reports without another test run, pass `merge-trx` as the first positional argument to the test application:
+
+```dotnetcli
+dotnet exec Tests.dll merge-trx --input first.trx second.trx --output-trx combined.trx
+```
+
+`--input` requires at least two existing `.trx` files. `--output-trx` specifies the output path, which must end in `.trx`. Use absolute paths or paths relative to the current directory. A successful merge returns exit code `0`.
+
+This command is separate from [automatic report consolidation](#report-consolidation). It doesn't execute tests or require `--report-trx`. Don't combine the tool command with test-run options such as `--list-tests`.
+
+### Compare TRX results
+
+To compare test names and outcomes from two existing reports, use `ms-trxcompare`:
+
+```dotnetcli
+dotnet exec Tests.dll ms-trxcompare --baseline-trx baseline.trx --trx-to-compare current.trx
+```
+
+Both file options are required and must identify existing `.trx` files. The command returns `0` when the test names and outcomes match. Missing tests, duplicate test-name matches, or different outcomes cause comparison failure and exit code `1`. The comparison isn't a byte-for-byte comparison of report files and doesn't establish that durations, attachments, or other metadata match.
+
+To inspect registered command names and their option providers, run `dotnet exec Tests.dll --info`. Invoke these commands through the test application, not through `dotnet tool`.
+
+> [!NOTE]
+> The public `ITool` authoring API and artifact post-processing APIs remain experimental and use the `TPEXP` diagnostic ID. The commands don't require you to implement or reference the internal TRX tool classes.
 
 ## HTML reports
 

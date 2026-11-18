@@ -18,6 +18,7 @@ f1_keywords:
  - "CS1760"
  - "CS7008"
  - "CS7041"
+ - "CS7061"
  - "CS7068"
  - "CS7069"
  - "CS7071"
@@ -54,6 +55,7 @@ helpviewer_keywords:
  - "CS1760"
  - "CS7008"
  - "CS7041"
+ - "CS7061"
  - "CS7068"
  - "CS7069"
  - "CS7071"
@@ -96,6 +98,7 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS1760**](#duplicate-references): *Multiple assemblies refer to the same metadata but only one is a linked reference (specified using /link option); consider removing one of the references.*
 - [**CS7008**](#invalid-assembly-reference): *The assembly name is reserved and cannot be used as a reference in an interactive session.*
 - [**CS7041**](#anchor-tbd): *Each linked resource and module must have a unique filename. Filename 'filename' is specified more than once in this assembly*
+- [**CS7061**](#anchor-tbd): *Duplicate 'attribute name' attribute in 'netmodule name'*
 - [**CS7068**](#invalid-assembly-reference): *Reference to type claims it is defined in this assembly, but it is not defined in source or any added modules.*
 - [**CS7069**](#invalid-assembly-reference): *Reference to type claims it is defined in another assembly, but it could not be found.*
 - [**CS7071**](#invalid-assembly-reference): *Assembly reference is invalid and cannot be resolved.*

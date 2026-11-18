@@ -48,6 +48,7 @@ Console.WriteLine(notebook.Read()); // => Try a new route.
 Console.WriteLine(new Reminder().GetText()); // => Take a break
 Console.WriteLine(new LocalCounter().GetCount()); // => 0
 _ = new Session().GetStartTime();
+_ = RunInfo.StartedAt;
 
 // <CounterDeclaration>
 public class VisitCounter
@@ -117,3 +118,10 @@ public class Session
     public DateTime GetStartTime() => startedAt;
 }
 // </ReadonlyField>
+
+// <RuntimeConstant>
+public static class RunInfo
+{
+    public static readonly DateTime StartedAt = DateTime.UtcNow;
+}
+// </RuntimeConstant>

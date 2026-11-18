@@ -19,6 +19,8 @@ For example, `VisitCounter` defines the state and operations for a counter:
 
 :::code language="csharp" source="../classes/snippets/index/Program.cs" id="CounterDeclaration":::
 
+`GetCount` and `GetTotal` are *expression-bodied methods*: each `=> expression;` is shorthand for `{ return expression; }`.
+
 The declarations inside a class are its *members*. Here, fields store counts and methods provide operations. `private` limits access to the class, and `public` lets other code use a member. For the next level of detail, see [Class members and instances](../classes/index.md).
 
 ## Create objects

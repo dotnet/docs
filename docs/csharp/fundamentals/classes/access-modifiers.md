@@ -8,47 +8,51 @@ ai-usage: ai-generated
 
 # Class accessibility
 
+> [!TIP]
+> This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first.
+>
+> **Coming from another language?** If you've used [Java access modifiers](https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html), you'll recognize `public` and `private`. Use the C# defaults and containing-type rules below to decide where your declarations are accessible.
+
 Use this article after [Class members and instances](index.md) to control which code can use a class and its members.
 
 *Accessibility* determines which code can name and use a type or member. An *access modifier* is a keyword, such as `public` or `private`, that specifies that access. The [access modifiers reference](../../language-reference/keywords/access-modifiers.md) describes all supported combinations.
 
-## Public operations and private state
+## Separate a public interface from implementation
 
-The counter exposes operations and keeps its fields private:
+Use `public` for the members you want callers to use and `private` for implementation details used inside the class. These public members form the class's *public interface*, the operations and values it exposes to callers. Here, "interface" describes the class's exposed members, rather than a separate C# `interface` type. For example, you can expose the counter's operations and keep its fields private:
 
 :::code language="csharp" source="snippets/index/Program.cs" id="CounterDeclaration":::
 
-The `public` methods let other code add a visit or read a count. Only code inside `VisitCounter` can directly read or assign the `private` fields:
+Through the `public` methods, you can add a visit or read a count. Direct access to the `private` fields stays inside `VisitCounter`:
 
 :::code language="csharp" source="snippets/index/Program.cs" id="PublicAccess":::
 
-If you add `counter.count = 10;` outside `VisitCounter`, the compiler reports CS0122 because `count` is inaccessible. `public` doesn't mean "instance member," and `private` doesn't mean "static member." The example contains both public instance methods and a public static method.
+Choose accessibility and instance or static membership independently. `public` and `private` control where you can use a member; instance and static membership determine whether it belongs to an object or the type. For example, you can call the counter's public instance methods through an object and its public static method through the type.
 
-Private state lets the class control changes. Here, `AddVisit` updates the instance count and the total together. Code outside the class can't change one of those fields directly.
+Accessibility lets you limit the scope of where change can happen. Keep fields and helper methods private when they're implementation details, so you can change them within the class while preserving its public interface. Callers then depend on the operations you expose, rather than on how you implement them. In the counter, `AddVisit` keeps the instance count and total in sync.
 
 ## Defaults and containing types
 
-An *assembly* is a compiled unit of .NET code, usually a `.dll` or `.exe` file. A project normally produces an assembly. See [Assemblies in .NET](../../../standard/assembly/index.md).
+Start with a class declared directly in a namespace. A namespace groups names and imposes no access restriction of its own, so the class's declared accessibility determines where you can use it:
 
-For classes, recognize these everyday defaults:
+- Use `internal` to limit access to the same *assembly*, a compiled unit of .NET code, usually a `.dll` or `.exe` file. A project normally produces one assembly. See [Assemblies in .NET](../../../standard/assembly/index.md).
+- Use `public` to make the class available to code in other assemblies that reference its assembly.
 
-- A class declared directly in a namespace defaults to `internal`. Code in the same assembly can use it.
-- A class member, including a nested type, defaults to `private`.
-- A `public` class declared directly in a namespace is available to other assemblies that reference its assembly.
-
-For example:
+If you omit an access modifier on a namespace-level class, its accessibility defaults to `internal`. If you omit the modifier on a class member, including a nested type, that member defaults to `private`. For example:
 
 :::code language="csharp" source="snippets/index/Program.cs" id="DefaultAccess":::
 
-`LocalCounter` is internal, and `count` is private. Although `GetCount` is public, code in another assembly can't name `LocalCounter` to call it. A member's declared accessibility doesn't make its containing type more accessible. The same restriction applies to a public nested type inside an internal class.
+`LocalCounter` is internal, and `count` is private. Although `GetCount` is public, code in another assembly can't name `LocalCounter` to call it.
 
-The `record` modifier doesn't change these defaults for explicitly declared class members. A [positional record class](../types/records.md#declare-a-record) normally generates public properties for its parameters.
+To access a member or nested type, your code must satisfy both its accessibility and its containing type's accessibility. Apply the same rule at every level of nesting: each containing type must also allow access. For example, a public nested type inside an internal class is available only where that containing class is accessible. See [Accessibility domain](../../language-reference/keywords/accessibility-domain.md) for the full model.
+
+Use the same defaults for explicitly declared members of record classes. A [positional record class](../types/records.md#declare-a-record) normally generates public properties for its parameters.
 
 ## Recognize other access modifiers
 
-Use `internal` for access within the assembly, whether the member is static or belongs to an instance. For a type used only within one source file, see the [`file` modifier](../../language-reference/keywords/file.md).
+You'll encounter other accessibility modifiers as you learn more about classes. The Get started [roadmap for Java developers](../../tour-of-csharp/tips-for-java-developers.md) introduces the familiar `public` and `private` keywords. Use the [access modifiers reference](../../language-reference/keywords/access-modifiers.md) for the complete set of choices.
 
-When you read [inheritance](../object-oriented/inheritance.md), you'll also encounter `protected` for access within a class and its derived classes. `protected internal` allows access from the same assembly **or** a derived class. `private protected` restricts access to the containing class and derived classes in the same assembly. The [accessibility levels reference](../../language-reference/keywords/accessibility-levels.md) supplies the complete rules and restrictions.
+As you work with [inheritance](../object-oriented/inheritance.md), you'll use `protected` for access within a class and its derived classes. For combinations such as `protected internal` and `private protected`, consult the [accessibility levels reference](../../language-reference/keywords/accessibility-levels.md). For a type used only within one source file, see the [`file` modifier](../../language-reference/keywords/file.md).
 
 Accessible members must also use sufficiently accessible types. For example, a public method on a public class can't return a private nested type. Otherwise, callers could reach a method whose result type they can't name. For signature constraints and specialized cases, see [Accessibility restrictions](../../language-reference/keywords/restrictions-on-using-accessibility-levels.md).
 

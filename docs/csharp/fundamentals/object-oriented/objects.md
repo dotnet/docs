@@ -11,7 +11,7 @@ helpviewer_keywords:
 
 # Objects - create instances of types
 
-After [C# classes](../types/classes.md), use this article to follow object references and distinguish identity from equality. For class declarations and instance creation, start with that introduction.
+Use `new` to create distinct instances of a class, and assignment to copy a reference to an existing object. In this article, you'll follow those references, distinguish object identity from value equality, and learn when an object's memory can be reclaimed. For class declaration basics, see [C# classes](../types/classes.md).
 
 ## Follow references to an object
 

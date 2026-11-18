@@ -40,7 +40,7 @@ For `Route`, the compiler normally generates:
 - A `ToString` method that includes the type name and public data members.
 - Copy support that `with` expressions use to create another instance.
 
-An *init-only property* permits assignment during object initialization but not through an ordinary assignment afterward. See [`init`](../../language-reference/keywords/init.md) for its rules. For example, `outward.End = "West";` after construction doesn't compile. An init-only property that holds a reference doesn't make the referenced object immutable.
+An *init-only property* permits assignment during object initialization but not through an ordinary assignment afterward. See [`init`](../../language-reference/keywords/init.md) for its rules. An init-only property that holds a reference doesn't make the referenced object immutable.
 
 For accessor mechanics and custom declarations, see [Properties](../../programming-guide/classes-and-structs/properties.md). For initialization mechanics, see [Constructors](../../programming-guide/classes-and-structs/constructors.md). Positional record parameters normally generate properties; ordinary class [primary constructors](../../whats-new/tutorials/primary-constructors.md) don't automatically generate public properties.
 
@@ -48,7 +48,7 @@ You can also declare properties in a record body, including read-write propertie
 
 :::code language="csharp" source="snippets/records/FirstRecord.cs" id="RecordWithBody":::
 
-`Price` can change after initialization because it has a `set` accessor. `record` doesn't change that accessor's behavior.
+The [`required`](../../language-reference/keywords/required.md) modifier means you must supply `Name` when you initialize a `Product`. `Name` is init-only, while `Price` can change after initialization because it has a `set` accessor. `record` doesn't change that accessor's behavior.
 
 ## Value equality
 
@@ -57,6 +57,8 @@ You can also declare properties in a record body, including read-write propertie
 :::code language="csharp" source="snippets/records/RecordClasses.cs" id="RecordClassEquality":::
 
 `outward` and `sameRoute` refer to distinct objects. Their generated `==` operator compares the stored values, so the two routes are equal. An ordinary class without customized equality compares references by default.
+
+The constructor initializes `Start` and `End`. After construction, `outward.End = "West";` doesn't compile because `End` is init-only.
 
 Generated record equality compares the instance fields, including fields that store auto-implemented properties, and requires matching run-time types. Each member's type determines how its value compares. It isn't a recursive comparison of every object reachable from the record.
 

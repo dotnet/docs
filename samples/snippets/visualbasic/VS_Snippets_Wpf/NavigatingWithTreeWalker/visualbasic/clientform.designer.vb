@@ -74,11 +74,11 @@
 
 		End Sub
 
-		#End Region
+#End Region
 
-		Private label11 As Label
-		Private WithEvents btnStartAutomation As Button
-		Public tbStructure As TextBox
-	End Class
+        Private WithEvents label11 As Label
+        Private WithEvents btnStartAutomation As Button
+        Public WithEvents tbStructure As TextBox
+    End Class
 End Namespace
 

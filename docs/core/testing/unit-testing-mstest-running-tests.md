@@ -51,7 +51,7 @@ Use [MSTest SDK](./unit-testing-mstest-sdk.md) to greatly simplify your project 
 <Project Sdk="MSTest.Sdk/4.1.0">
 
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -84,7 +84,7 @@ Consider the following example project file:
 
     <OutputType>Exe</OutputType>
 
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>

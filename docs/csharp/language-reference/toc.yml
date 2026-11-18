@@ -516,10 +516,10 @@ items:
   - name: Assembly references
     href: ./compiler-messages/assembly-references.md
     displayName: >
-      CS0012, CS0234, CS0246, CS0400, CS1068, CS1069, CS1070, CS1683, CS1704, CS1714,
-      CS1760, CS7008, CS7041, CS7068, CS7069, CS7071, CS7079, CS7086, CS7087, CS7098,
-      CS8004, CS8005, CS8006, CS8007, CS8008, CS8014, CS8015, CS8090, CS8203, CS8206,
-      CS8356, CS9286
+      CS0012, CS0234, CS0246, CS0400, CS0731, CS1068, CS1069, CS1070, CS1509, CS1542,
+      CS1683, CS1704, CS1714, CS1760, CS7008, CS7041, CS7068, CS7069, CS7071, CS7079,
+      CS7086, CS7087, CS7098, CS8004, CS8005, CS8006, CS8007, CS8008, CS8014, CS8015,
+      CS8090, CS8203, CS8206, CS8356, CS9286
   - name: Assembly signing
     href: ./compiler-messages/assembly-signing-errors.md
     displayName: >
@@ -1091,8 +1091,6 @@ items:
       href: ./compiler-messages/cs0445.md
     - name: CS0462
       href: ../misc/cs0462.md
-    - name: CS0468
-      href: ../misc/cs0468.md
     - name: CS0471
       href: ../misc/cs0471.md
     - name: CS0500
@@ -1233,8 +1231,6 @@ items:
       href: ../misc/cs0729.md
     - name: CS0730
       href: ../misc/cs0730.md
-    - name: CS0731
-      href: ./compiler-messages/cs0731.md
     - name: CS0733
       href: ../misc/cs0733.md
     - name: CS0734
@@ -1335,8 +1331,6 @@ items:
       href: ../misc/cs1507.md
     - name: CS1508
       href: ../misc/cs1508.md
-    - name: CS1509
-      href: ../misc/cs1509.md
     - name: CS1511
       href: ../misc/cs1511.md
     - name: CS1512
@@ -1369,8 +1363,6 @@ items:
       href: ./compiler-messages/cs1540.md
     - name: CS1541
       href: ../misc/cs1541.md
-    - name: CS1542
-      href: ../misc/cs1542.md
     - name: CS1545
       href: ../misc/cs1545.md
     - name: CS1548

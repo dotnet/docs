@@ -6,9 +6,12 @@ f1_keywords:
  - "CS0234"
  - "CS0246"
  - "CS0400"
+ - "CS0731"
  - "CS1068"
  - "CS1069"
  - "CS1070"
+ - "CS1509"
+ - "CS1542"
  - "CS1683"
  - "CS1704"
  - "CS1714"
@@ -39,9 +42,12 @@ helpviewer_keywords:
  - "CS0234"
  - "CS0246"
  - "CS0400"
+ - "CS0731"
  - "CS1068"
  - "CS1069"
  - "CS1070"
+ - "CS1509"
+ - "CS1542"
  - "CS1683"
  - "CS1704"
  - "CS1714"
@@ -79,9 +85,12 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS0234**](#missing-references): *The type or namespace name does not exist in the namespace (are you missing an assembly reference?)*
 - [**CS0246**](#missing-references): *The type or namespace name could not be found (are you missing a using directive or an assembly reference?)*
 - [**CS0400**](#missing-references): *The type or namespace name could not be found in the global namespace (are you missing an assembly reference?)*
+- [**CS0731**](#anchor-tbd): *The type forwarder for type 'type name' in assembly 'assembly name' causes a cycle*
 - [**CS1068**](#type-forwarding): *The type name could not be found in the global namespace. This type has been forwarded to another assembly. Consider adding a reference to that assembly.*
 - [**CS1069**](#type-forwarding): *The type name could not be found in the namespace. This type has been forwarded to another assembly. Consider adding a reference to that assembly.*
 - [**CS1070**](#type-forwarding): *The type name could not be found. This type has been forwarded to another assembly. Consider adding a reference to that assembly.*
+- [**CS1509**](#anchor-tbd): *The referenced file 'filename' is not an assembly*
+- [**CS1542**](#anchor-tbd): *'filename' cannot be added to this assembly because it already is an assembly*
 - [**CS1704**](#duplicate-references): *An assembly with the same simple name has already been imported. Try removing one of the references or sign them to enable side-by-side.*
 - [**CS1714**](#missing-references): *The base class or interface of this type could not be resolved or is invalid.*
 - [**CS1760**](#duplicate-references): *Multiple assemblies refer to the same metadata but only one is a linked reference (specified using /link option); consider removing one of the references.*
@@ -201,3 +210,136 @@ The following warning also indicates an invalid reference assembly:
 - **CS1683**: *Reference to type 'Type Name' claims it is defined in this assembly, but it is not defined in source or any added modules*
 
 Check that you spelled the assembly name correctly. The referenced assembly file might be invalid.
+
+## CS0731
+
+- **CS0731**: *The type forwarder for type 'type name' in assembly 'assembly name' causes a cycle*
+
+This error indicates a cycle in imported type-forwarding metadata. Correct or rebuild the referenced assemblies so the forwarding chain ends at an assembly that defines the type. Don't forward the type back to an earlier assembly in the chain. Source aliases don't repair this metadata.
+
+### Example
+
+This fixture requires the .NET Framework IL assembler (`ilasm.exe`) and a C# compiler with .NET Framework references. It uses `mscorlib` metadata and isn't a universal modern SDK project workflow.
+
+The example consists of `Circular.il`, `Circular2.il`, and `CS0731.cs`. The two assemblies forward the same type to each other. First assemble the IL files as libraries, then compile the C# client with references to both libraries:
+
+```console
+ilasm /dll /output:Circular.dll Circular.il
+ilasm /dll /output:Circular2.dll Circular2.il
+csc /reference:Circular.dll /reference:Circular2.dll CS0731.cs
+```
+
+Save the following IL as `Circular.il`:
+
+```il
+// Circular.il
+// compile with: /DLL /out=Circular.dll
+.assembly extern circular2
+{
+  .ver 0:0:0:0
+}
+.assembly extern circular3
+{
+  .ver 0:0:0:0
+}
+.assembly extern mscorlib
+{
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )   // .z\V.4..
+  .ver 2:0:0:0
+}
+.assembly Circular
+{
+  .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilationRelaxationsAttribute::.ctor(int32) = ( 01 00 08 00 00 00 00 00 )
+  .hash algorithm 0x00008004
+  .ver 0:0:0:0
+}
+.class extern forwarder Circular.Referenced.TypeForwarder
+{
+  .assembly extern circular2
+}
+.module Circular.dll
+// MVID: {880C2329-C915-42A0-83E9-9D10C3E6DBD0}
+.imagebase 0x00400000
+.file alignment 0x00000200
+.stackreserve 0x00100000
+.subsystem 0x0003       // WINDOWS_CUI
+.corflags 0x00000001    //  ILONLY
+// Image base: 0x04E40000
+// ======== CLASS MEMBERS DECLARATION =========
+.class public abstract auto ansi sealed beforefieldinit User
+       extends [mscorlib]System.Object
+{
+  .method public hidebysig static class [circular2]Circular.Referenced.TypeForwarder
+          F() cil managed
+  {
+    .maxstack  1
+    newobj     instance void [circular2]Circular.Referenced.TypeForwarder::.ctor()
+    ret
+  }
+}
+```
+
+Save the following IL as `Circular2.il`:
+
+```il
+// Circular2.il
+// compile with: /DLL /out=Circular2.dll
+.assembly extern mscorlib
+{
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )   // .z\V.4..
+  .ver 2:0:0:0
+}
+.assembly extern Circular
+{
+  .ver 0:0:0:0
+}
+.assembly circular2
+{
+  .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilationRelaxationsAttribute::.ctor(int32) = ( 01 00 08 00 00 00 00 00 )
+  .hash algorithm 0x00008004
+  .ver 0:0:0:0
+}
+.class extern forwarder Circular.Referenced.TypeForwarder
+{
+  .assembly extern Circular
+}
+.module circular2.dll
+// MVID: {8B3BE5C8-DBE1-49C4-BC72-DF35F0387C21}
+.imagebase 0x00400000
+.file alignment 0x00000200
+.stackreserve 0x00100000
+.subsystem 0x0003       //   WINDOWS_CUI
+.corflags 0x00000001    //  ILONLY
+// Image base: 0x04E40000
+```
+
+Save the following C# code as `CS0731.cs`:
+
+```csharp
+// CS0731.cs
+// compile with: /reference:circular.dll /reference:circular2.dll
+// CS0731 expected
+class A {
+   public static void Main() {
+      User.F();
+   }
+}
+```
+
+To correct this example, replace the forwarder in `Circular2.il` with a public definition of `Circular.Referenced.TypeForwarder` that has a public parameterless constructor. Rebuild the libraries and client. `Circular.dll` then forwards the type to its definition in `Circular2.dll`, rather than back into a cycle.
+
+## CS1509
+
+- **CS1509**: *The referenced file 'filename' is not an assembly*
+
+A file built with the `module` value of [**OutputType**](../compiler-options/output.md#outputtype) is a netmodule without an assembly manifest. To add that module to the output assembly, supply it through [**AddModules**](../compiler-options/inputs.md#addmodules), not [**References**](../compiler-options/inputs.md#references).
+
+For a direct compiler invocation, change `/reference:Input.netmodule` to `/addmodule:Input.netmodule`. Use a toolchain and target that support netmodules; this correction doesn't convert the module into a separately referenceable assembly.
+
+## CS1542
+
+- **CS1542**: *'filename' cannot be added to this assembly because it already is an assembly*
+
+Supply an assembly through [**References**](../compiler-options/inputs.md#references), not [**AddModules**](../compiler-options/inputs.md#addmodules). For a direct compiler invocation, change `/addmodule:Input.dll` to `/reference:Input.dll`.
+
+If you intend to link a module instead, rebuild the input with the `module` value of [**OutputType**](../compiler-options/output.md#outputtype) and supply the resulting netmodule through **AddModules**. Choose the input kind by whether the file contains an assembly manifest, not by its extension.

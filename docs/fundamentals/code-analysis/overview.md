@@ -140,7 +140,7 @@ You can change the severity of these rules to disable them or elevate them to er
 
 You can also omit [`<AnalysisMode>`](../../core/project-sdk/msbuild-props.md#analysismode) in favor of a compound value for the `<AnalysisLevel>` property. For example, the following value enables the recommended set of rules for the latest release: `<AnalysisLevel>latest-Recommended</AnalysisLevel>`. For more information, see [`AnalysisLevel`](../../core/project-sdk/msbuild-props.md#analysislevel).
 
-To find the default severity for each available rule and whether or not the rule is enabled in `Default` analysis mode, see the [full list of rules](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
+To find the default severity for each available rule and whether or not the rule is enabled in `Default` analysis mode, see the [full list of rules](https://github.com/dotnet/sdk/blob/main/src/Microsoft.CodeAnalysis.NetAnalyzers/src/Microsoft.CodeAnalysis.NetAnalyzers/AnalyzerReleases.Shipped.md).
 
 ### Treat warnings as errors
 

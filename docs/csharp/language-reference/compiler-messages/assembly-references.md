@@ -14,10 +14,21 @@ f1_keywords:
  - "CS1714"
  - "CS1760"
  - "CS7008"
+ - "CS7041"
  - "CS7068"
  - "CS7069"
  - "CS7071"
  - "CS7079"
+ - "CS7086"
+ - "CS7087"
+ - "CS7098"
+ - "CS8004"
+ - "CS8005"
+ - "CS8006"
+ - "CS8007"
+ - "CS8008"
+ - "CS8014"
+ - "CS8015"
  - "CS8090"
  - "CS8203"
  - "CS8206"
@@ -36,16 +47,27 @@ helpviewer_keywords:
  - "CS1714"
  - "CS1760"
  - "CS7008"
+ - "CS7041"
  - "CS7068"
  - "CS7069"
  - "CS7071"
  - "CS7079"
+ - "CS7086"
+ - "CS7087"
+ - "CS7098"
+ - "CS8004"
+ - "CS8005"
+ - "CS8006"
+ - "CS8007"
+ - "CS8008"
+ - "CS8014"
+ - "CS8015"
  - "CS8090"
  - "CS8203"
  - "CS8206"
  - "CS8356"
  - "CS9286"
-ms.date: 09/23/2026
+ms.date: 11/18/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings related to assembly references
@@ -64,10 +86,21 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS1714**](#missing-references): *The base class or interface of this type could not be resolved or is invalid.*
 - [**CS1760**](#duplicate-references): *Multiple assemblies refer to the same metadata but only one is a linked reference (specified using /link option); consider removing one of the references.*
 - [**CS7008**](#invalid-assembly-reference): *The assembly name is reserved and cannot be used as a reference in an interactive session.*
+- [**CS7041**](#anchor-tbd): *Each linked resource and module must have a unique filename. Filename 'filename' is specified more than once in this assembly*
 - [**CS7068**](#invalid-assembly-reference): *Reference to type claims it is defined in this assembly, but it is not defined in source or any added modules.*
 - [**CS7069**](#invalid-assembly-reference): *Reference to type claims it is defined in another assembly, but it could not be found.*
 - [**CS7071**](#invalid-assembly-reference): *Assembly reference is invalid and cannot be resolved.*
 - [**CS7079**](#invalid-assembly-reference): *The type is defined in a module that has not been added. You must add the module.*
+- [**CS7086**](#anchor-tbd): *Module name 'module name' stored in 'module filename' must match its filename.*
+- [**CS7087**](#anchor-tbd): *Invalid module name: reason*
+- [**CS7098**](#anchor-tbd): *Linked netmodule metadata must provide a full PE image: 'reference display name'.*
+- [**CS8004**](#anchor-tbd): *Type 'type name' exported from module 'module name' conflicts with type declared in primary module of this assembly.*
+- [**CS8005**](#anchor-tbd): *Type 'first type name' exported from module 'first module name' conflicts with type 'second type name' exported from module 'second module name'.*
+- [**CS8006**](#anchor-tbd): *Forwarded type 'type name' conflicts with type declared in primary module of this assembly.*
+- [**CS8007**](#anchor-tbd): *Type 'first type name' forwarded to assembly 'first assembly name' conflicts with type 'second type name' forwarded to assembly 'second assembly name'.*
+- [**CS8008**](#anchor-tbd): *Type 'forwarded type name' forwarded to assembly 'assembly name' conflicts with type 'exported type name' exported from module 'module name'.*
+- [**CS8014**](#anchor-tbd): *Reference to 'module name' netmodule missing.*
+- [**CS8015**](#anchor-tbd): *Module 'module name' is already defined in this assembly. Each module must have a unique filename.*
 - [**CS8090**](#invalid-assembly-reference): *There is an error in a referenced assembly.*
 - [**CS8203**](#invalid-assembly-reference): *Invalid assembly name.*
 - [**CS8206**](#type-forwarding): *Module 'module name' in assembly 'assembly name' is forwarding the type 'type name' to multiple assemblies: 'first assembly name' and 'second assembly name'.*

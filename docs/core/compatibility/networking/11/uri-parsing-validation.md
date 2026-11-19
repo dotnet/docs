@@ -51,6 +51,6 @@ Most applications will not need changes. However, if your application:
 
 ## Affected APIs
 
-- <xref:System.Uri.%23ctor*?displayProperty=fullName>
+- <xref:System.Uri.%23ctor*>
 - <xref:System.Uri.TryCreate*?displayProperty=fullName>
 - <xref:System.UriBuilder.Host?displayProperty=fullName>

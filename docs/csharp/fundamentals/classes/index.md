@@ -13,7 +13,7 @@ ai-usage: ai-generated
 >
 > **Coming from another language?** C# instance and static members serve similar purposes to [Java instance and class members](https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html): they let you work with individual objects or with the type as a whole.
 
-After the [class introduction](../types/classes.md), use this article to define a class's state and behavior through its members.
+After the [overview of class types](../types/classes.md), use this section to learn more details about classes and their members.
 
 For example, you can give each visit counter its own count and track a total across all counters:
 

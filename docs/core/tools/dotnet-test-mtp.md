@@ -1,7 +1,7 @@
 ---
 title: dotnet test command with Microsoft.Testing.Platform (MTP)
 description: The dotnet test command is used to execute unit tests in a given project using MTP.
-ms.date: 11/10/2026
+ms.date: 11/19/2026
 ai-usage: ai-assisted
 ---
 # dotnet test with Microsoft.Testing.Platform (MTP)
@@ -72,6 +72,8 @@ With MTP, `dotnet test` operates faster than with VSTest. The test-related argum
 ### Version requirements
 
 The MTP mode of `dotnet test` requires the .NET 10 SDK and MTP 1.7 or later. Options added after .NET 10 have individual SDK version requirements in the following sections. Some options also require a newer MTP package because the SDK coordinates the complete run while each test application implements the corresponding capability.
+
+The SDK also supplies the terminal reporter used by `dotnet test`. Its supported output options and values depend on the SDK version, not only on the MTP package referenced by the test project. The [MTP terminal output](../testing/microsoft-testing-platform-terminal-output.md) article describes the package's reporter, which you use when you run a test application directly.
 
 ## Implicit restore
 
@@ -222,13 +224,17 @@ The MTP mode of `dotnet test` requires the .NET 10 SDK and MTP 1.7 or later. Opt
 
 - **`--output <VERBOSITY_LEVEL>`**
 
-  Specifies the output verbosity for test results. Valid values are `Minimal`, `Normal`, and `Detailed`. The default is `Normal`. `Minimal` requires MTP 2.4 preview.
+  Specifies the output verbosity for test results. Valid values are `Minimal`, `Normal`, and `Detailed`. The default is `Normal`.
+
+  The .NET 10 SDK supports `Normal` and `Detailed`. `Minimal` is available starting with .NET 11. Updating the test project's MTP package doesn't enable `Minimal` in the .NET 10 SDK.
 
 - **`--show-test-results <OUTCOME>`**
 
-  Selects result blocks by outcome. In MTP 2.4 preview, use `passed`, `failed`, `skipped`, `all`, or `none`. The `failed` value also includes errors, timeouts, and cancellations.
+  Selects result blocks by outcome. Use `passed`, `failed`, `skipped`, `all`, or `none`. The `failed` value also includes errors, timeouts, and cancellations.
 
   Combine `passed`, `failed`, and `skipped` with commas, spaces, or repeated `--show-test-results` options. Don't combine `all` or `none` with another value. This explicit option overrides the `--output` preset regardless of option order.
+
+  Available starting with .NET 11 and requires MTP 2.4 or later.
 
 - **`--list-tests [text|json]`**
 

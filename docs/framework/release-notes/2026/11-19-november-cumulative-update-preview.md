@@ -33,10 +33,8 @@ The following table outlines the updates in this release.
 | Product version | Cumulative update preview |
 | --- | --- |
 | **Windows 11, version 26H2** | |
-| .NET Framework 3.5, 4.8.1 | [5137006](https://support.microsoft.com/kb/5137006) |
+| .NET Framework 4.8.1 | [5137006](https://support.microsoft.com/kb/5137006) |
 | **Windows 11, version 26H1** | |
-| .NET Framework 3.5, 4.8.1 | [5137005](https://support.microsoft.com/kb/5137005) |
+| .NET Framework 4.8.1 | [5137005](https://support.microsoft.com/kb/5137005) |
 | **Windows 11, version 25H2** | |
-| .NET Framework 3.5, 4.8.1 | [5137003](https://support.microsoft.com/kb/5137003) |
-
-The operating system row lists a KB that's used for update offering purposes. When the operating system KB is offered, the applicability logic determines the specific .NET Framework update(s) installed. Updates for individual .NET Framework versions are installed based on the version of .NET Framework that is already present on the device. Because of this, the operating system KB is not expected to be listed as installed updates on the device. The expected updates installed are the .NET Framework-specific version updates listed in the previous table.
+| .NET Framework 4.8.1 | [5137003](https://support.microsoft.com/kb/5137003) |

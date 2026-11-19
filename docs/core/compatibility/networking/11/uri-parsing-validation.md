@@ -40,7 +40,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-These changes enforce stricter adherence to RFC URI standards, improve security posture by preventing URI component injection in <xref:System.UriBuilder>, and eliminate subtle differences between <xref:System.Uri> constructors and <xref:System.Uri.TryCreate*?displayProperty=nameWithType>.
+These changes enforce stricter adherence to RFC URI standards, improve best-effort validation in <xref:System.UriBuilder> to catch inputs that would affect other URI components, and eliminate subtle differences between <xref:System.Uri> constructors and <xref:System.Uri.TryCreate*?displayProperty=nameWithType>.
 
 ## Recommended action
 

@@ -269,7 +269,7 @@ Choose one reference to the same metadata, with consistent interop-embedding set
 
 Give each linked resource and added module a unique filename, or remove the redundant input (**CS7041**). Different resource names don't resolve duplicate linked-resource filenames, and a linked resource can also collide with a module filename. For duplicate stored module names, remove a repeated module or rebuild distinct modules with unique names and matching filenames (**CS8015**); moving copies to different directories doesn't change their stored names.
 
-Resolve conflicting assembly attributes carried by an added netmodule (**CS7061**). Remove an unintended duplicate from source or rebuild the contributing module with the intended attribute value. For an attribute that doesn't permit multiple applications, different constructor/argument values can conflict; identical applications are deduplicated. Attributes whose usage permits multiple applications can have distinct values, and known assembly attributes have special handling, so don't assume every repeated attribute is an error. See [Global attributes](../attributes/global.md) and [Attribute specification](~/_csharpstandard/standard/attributes.md#233-attribute-specification).
+Resolve conflicting assembly attributes carried by an added netmodule (**CS7061**). Remove an unintended duplicate from source or rebuild the contributing module with the intended attribute value. For an attribute that doesn't permit multiple applications, different constructor or argument values can conflict; identical applications are deduplicated. Attributes whose usage permits multiple applications can have distinct values, and known assembly attributes have special handling, so don't assume every repeated attribute is an error. See [Global attributes](../attributes/global.md) and [Attribute specification](~/_csharpstandard/standard/attributes.md#233-attribute-specification).
 
 Correct conflicting type definitions before emitting the assembly:
 
@@ -297,7 +297,7 @@ Use one coherent framework and reference-assembly set, removing or replacing an 
 - **CS8090**: *There is an error in a referenced assembly 'assembly name'.*
 - **CS8203**: *Invalid assembly name: reason*
 
-Validate both the assembly references and the linked-module inputs. Match input kinds to how they're supplied:
+Validate both the assembly references and the linked-module inputs. Match input kinds to how you supply them:
 
 <a id="cs1509"></a>
 <a id="cs1542"></a>
@@ -317,7 +317,7 @@ For Roslyn API inputs, supply the **full PE image** of each linked netmodule, no
 
 For an already assembled multi-module assembly, supply its constituent modules through `AssemblyMetadata`, with the actual manifest module first; don't substitute an unrelated same-named module for a missing constituent (**CS7079**). Wrapping a netmodule in `AssemblyMetadata` doesn't create an assembly manifest. Keep metadata objects and any lazily read streams alive while the compilation uses them, and dispose them afterward.
 
-Correct unresolved type ownership in the input metadata: include the intended type in source or an added module when it claims to belong to the current assembly (**CS7068**), or replace/rebuild the referenced assembly that should define it (**CS7069**). **CS1683** is the historical warning for the first case; current Roslyn reports CS7068 instead. That warning has no current Roslyn message resource; its quoted wording is retained for older compiler output.
+Correct unresolved type ownership in the input metadata: include the intended type in source or an added module when it claims to belong to the current assembly (**CS7068**), or replace or rebuild the referenced assembly that should define it (**CS7069**). **CS1683** is the historical warning for the first case; current Roslyn reports CS7068 instead. That warning has no current Roslyn message resource; its quoted wording is retained for older compiler output.
 
 Choose a nonreserved assembly name for an interactive-session reference (**CS7008**). Correct malformed assembly identities (**CS7071**) or the output assembly name described by the diagnostic (**CS8203**). When you create a Roslyn compilation, supply a valid assembly name rather than a path. Check spelling and the actual referenced files rather than changing only source-level aliases.
 

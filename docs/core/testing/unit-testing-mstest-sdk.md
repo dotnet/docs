@@ -90,7 +90,7 @@ Here's a full example, using the `None` profile:
 <Project Sdk="MSTest.Sdk/4.1.0">
 
     <PropertyGroup>
-        <TargetFramework>net10.0</TargetFramework>
+        <TargetFramework>net11.0</TargetFramework>
         <TestingExtensionsProfile>None</TestingExtensionsProfile>
     </PropertyGroup>
 
@@ -124,7 +124,7 @@ For example, to enable the crash dump extension (NuGet package [Microsoft.Testin
 <Project Sdk="MSTest.Sdk/4.1.0">
 
 <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
     <EnableMicrosoftTestingExtensionsCrashDump>true</EnableMicrosoftTestingExtensionsCrashDump>
 </PropertyGroup>
 
@@ -154,7 +154,7 @@ You can also disable an extension that's coming from the selected profile. For e
 <Project Sdk="MSTest.Sdk/4.1.0">
 
     <PropertyGroup>
-        <TargetFramework>net10.0</TargetFramework>
+        <TargetFramework>net11.0</TargetFramework>
         <EnableMicrosoftTestingExtensionsCodeCoverage>false</EnableMicrosoftTestingExtensionsCodeCoverage>
     </PropertyGroup>
 
@@ -180,7 +180,7 @@ By setting the property `EnableAspireTesting` to `true`, you can bring all depen
 <Project Sdk="MSTest.Sdk/4.1.0">
 
     <PropertyGroup>
-        <TargetFramework>net10.0</TargetFramework>
+        <TargetFramework>net11.0</TargetFramework>
         <EnableAspireTesting>true</EnableAspireTesting>
     </PropertyGroup>
 
@@ -200,7 +200,7 @@ By setting the property `EnablePlaywright` to `true` you can bring in all the de
 <Project Sdk="MSTest.Sdk/4.1.0">
 
     <PropertyGroup>
-        <TargetFramework>net10.0</TargetFramework>
+        <TargetFramework>net11.0</TargetFramework>
         <EnablePlaywright>true</EnablePlaywright>
     </PropertyGroup>
 

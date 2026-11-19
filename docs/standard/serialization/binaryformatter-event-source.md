@@ -1,10 +1,11 @@
 ---
 title: BinaryFormatter event source
 description: Learn how to use the BinaryFormatter event source to log when serialization or deserialization is occurring.
-ms.date: 12/03/2020
+ms.date: 11/17/2026
 ms.author: levib
 author: GrabYourPitchforks
 ms.topic: reference
+ai-usage: ai-assisted
 ---
 # BinaryFormatter event source
 
@@ -72,6 +73,11 @@ If no keyword filters are provided during `EventListener` registration, all even
 For more information, see <xref:System.Diagnostics.Tracing.EventKeywords?displayProperty=nameWithType>.
 
 ## Sample code
+
+On .NET 9 and later, the in-box `BinaryFormatter.Serialize` and `BinaryFormatter.Deserialize` implementations always throw <xref:System.PlatformNotSupportedException>. To demonstrate the events on .NET 11, the sample project references the `System.Runtime.Serialization.Formatters` compatibility package and sets `EnableUnsafeBinaryFormatterSerialization` to `true`. Suppression of `SYSLIB0011` alone doesn't restore the implementation. For details, see [BinaryFormatter compatibility package](binaryformatter-migration-guide/compatibility-package.md).
+
+> [!CAUTION]
+> The compatibility package is unsupported and unsafe. Use this sample only with the data it creates, and never deserialize untrusted data. The package restores the vulnerabilities and risks of `BinaryFormatter`; it doesn't make serialization or deserialization safe. For production apps, [migrate away from BinaryFormatter](binaryformatter-migration-guide/index.md#migration-topics).
 
 The following code:
 

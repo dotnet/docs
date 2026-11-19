@@ -49,8 +49,18 @@ items:
       - name: JavaScript and TypeScript capabilities
         href: javascript-typescript-capabilities.md
 
-  - name: Upgrade C++ projects
+  - name: GitHub Copilot modernization for C++
     expanded: true
     items:
       - name: Overview
         href: /cpp/porting/github-copilot-modernization-cpp/overview
+      - name: Install
+        href: /cpp/porting/github-copilot-modernization-cpp/install
+      - name: Scenarios and skills reference
+        href: /cpp/porting/github-copilot-modernization-cpp/scenarios-and-skills
+      - name: Walkthrough - Hilo
+        href: /cpp/porting/github-copilot-modernization-cpp/walkthrough-hilo
+      - name: Troubleshooting
+        href: /cpp/porting/github-copilot-modernization-cpp/troubleshooting
+      - name: FAQ
+        href: /cpp/porting/github-copilot-modernization-cpp/faq

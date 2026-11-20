@@ -13,13 +13,13 @@ ai-usage: ai-generated
 >
 > **Coming from another language?** C# instance and static members serve similar purposes to [Java instance and class members](https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html): they let you work with individual objects or with the type as a whole.
 
-After the [overview of class types](../types/classes.md), use this section to learn more details about classes and their members.
+Build on the [overview of class types](../types/classes.md) to learn how class members store state, provide operations, and control access.
 
 The following example shows several of the members that you can add to a class:
 
 :::code language="csharp" source="snippets/index/Program.cs" id="CounterDeclaration":::
 
-You define a type's behavior by declaring its *members*, the declarations inside a type that describe its data, operations, and nested types. In `VisitCounter`, the fields `count` and `total` store data. Methods such as `AddVisit`, `GetCount`, and `GetTotal` provide operations on that data. Classes support many other kinds of members, including properties, constructors, and events, which you'll explore as you need them. The [class reference](../../language-reference/keywords/class.md) describes the complete declaration syntax.
+You define a type's behavior by declaring its *members*, the declarations inside a type that describe its data, operations, and nested types. In `VisitCounter`, the fields `count` and `total` store data. Methods such as `AddVisit`, `GetCount`, and `GetTotal` provide operations on that data. In `public int GetCount() => count;`, the shorthand `=> count` means the method returns the value of `count`. Classes support many other kinds of members, including properties, constructors, and events, which you'll explore as you need them. The [class reference](../../language-reference/keywords/class.md) describes the complete declaration syntax.
 
 An *instance* is an individual object created from a class. Its *instance state* is the data stored in that object, such as a counter's `count`. *Instance members* belong to an individual object: `count`, `AddVisit`, and `GetCount` work with one counter. *Static members* belong to the type: `total` and `GetTotal` track visits across all counters.
 

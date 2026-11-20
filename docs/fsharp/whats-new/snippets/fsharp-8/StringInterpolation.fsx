@@ -1,6 +1,6 @@
+// <Before>
 let classAttr = "item-panel"
 
-// <Before>
 let cssOld = $""".{classAttr}:hover {{background-color: #eee;}}"""
 // </Before>
 printfn "CSS Old: %s" cssOld

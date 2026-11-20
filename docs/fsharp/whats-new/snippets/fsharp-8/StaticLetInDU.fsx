@@ -1,6 +1,6 @@
+// <StaticLet>
 open FSharp.Reflection
 
-// <StaticLet>
 type AbcDU = A | B | C
     with   
         static let namesAndValues = 

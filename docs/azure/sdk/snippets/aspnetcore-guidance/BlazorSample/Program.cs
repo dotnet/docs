@@ -10,6 +10,8 @@ builder.Services.AddRazorComponents();
 
 builder.Services.AddAzureClients(clientBuilder =>
 {
+    clientBuilder.UseCredential(new DefaultAzureCredential());
+
     // Register a client for each Azure service using inline configuration
     clientBuilder.AddSecretClient(new Uri("<key_vault_url>"));
     clientBuilder.AddBlobServiceClient(new Uri("<storage_url>"));

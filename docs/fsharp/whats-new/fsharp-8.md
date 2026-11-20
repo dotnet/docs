@@ -141,28 +141,17 @@ The feature also works for enum values:
 
 F# 8 simplifies defining multiple intersected generic constraints using flexible types with the `&` character.
 
+Both examples use the following interface:
+
+:::code language="fsharp" source="snippets/fsharp-8/TypeConstraintIntersection.fsx" id="Setup":::
+
 **Before F# 8:**
 
-```fsharp
-let beforeThis(arg1 : 't 
-    when 't:>IDisposable 
-    and 't:>IEx 
-    and 't:>seq<int>) =
-    arg1.h(arg1)
-    arg1.Dispose()
-    for x in arg1 do
-        printfn "%i" x
-```
+:::code language="fsharp" source="snippets/fsharp-8/TypeConstraintIntersection.fsx" id="Before":::
 
 **With F# 8:**
 
-```fsharp
-let withNewFeature (arg1: 't & #IEx & #IDisposable & #seq<int>) =
-    arg1.h(arg1)
-    arg1.Dispose()
-    for x in arg1 do
-        printfn "%i" x
-```
+:::code language="fsharp" source="snippets/fsharp-8/TypeConstraintIntersection.fsx" id="After":::
 
 ### Extended fixed bindings
 

@@ -71,7 +71,7 @@ A user-defined type can [overload](operator-overloading.md) the `-` operator. Wh
 
 ## C# language specification
 
-For more information, see the [Unary minus operator](~/_csharpstandard/standard/expressions.md#1293-unary-minus-operator) and [Subtraction operator](~/_csharpstandard/standard/expressions.md#12136-subtraction-operator) sections of the [C# language specification](~/_csharpstandard/standard/README.md). For more information on overloading the compound assignment operators in C# 14 and later, see the [user defined compound assignment](~/_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md) feature specification.
+For more information, see the [Unary minus operator](~/_csharpstandard/standard/expressions.md#1293-unary-minus-operator) and [Subtraction operator](~/_csharpstandard/standard/expressions.md#12136-subtraction-operator) sections of the [C# language specification](~/_csharpstandard/standard/README.md). For more information on overloading the compound assignment operators in C# 14 and later, see the [Compound assignment operators](~/_csharpstandard/standard/classes.md#15106-compound-assignment-operators) section of the specification.
 
 ## See also
 

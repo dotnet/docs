@@ -4,7 +4,7 @@ description: Learn about how .NET is available on Linux. .NET can be installed t
 author: adegeo
 ms.author: adegeo
 ms.custom: updateeachrelease, linux-related-content
-ms.date: 04/23/2026
+ms.date: 11/17/2026
 ---
 
 # Install .NET on Linux
@@ -51,7 +51,7 @@ You can install .NET manually in the following ways:
 - [Manual install](linux-scripted-manual.md#manual-install)
 - [Scripted install](linux-scripted-manual.md#scripted-install)
 
-You might need to install [.NET dependencies](https://github.com/dotnet/core/blob/main/release-notes/8.0/linux-packages.md) if you install .NET manually.
+You might need to install [.NET dependencies](https://github.com/dotnet/core/blob/main/release-notes/10.0/dotnet-dependencies.md) if you install .NET manually.
 
 For user-level installations, [dotnetup](../tools/dotnetup/index.md) can track and update .NET SDKs and runtimes.
 

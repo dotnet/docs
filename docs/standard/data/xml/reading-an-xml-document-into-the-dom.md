@@ -13,6 +13,9 @@ XML information is read into memory from different formats. It can be read from 
 
  The <xref:System.Xml.XmlDocument.Load*> method brings the document into memory and has overloaded methods available to take data from each of the different formats. There is also a <xref:System.Xml.XmlDocument.LoadXml*> method that reads XML from a string.
 
+> [!IMPORTANT]
+> When the XML is from an untrusted source, set <xref:System.Xml.XmlDocument.XmlResolver?displayProperty=nameWithType> to `null` before calling <xref:System.Xml.XmlDocument.Load*> or <xref:System.Xml.XmlDocument.LoadXml*> so that external document type definitions (DTDs), entities, and schemas are not resolved. For more information, see [CA3075: Insecure DTD processing](../../../fundamentals/code-analysis/quality-rules/ca3075.md).
+
  Different <xref:System.Xml.XmlDocument.Load*> methods affect which nodes are created when the XML Document Object Model (DOM) is loaded. The following table lists the differences between some of the <xref:System.Xml.XmlDocument.Load*> methods and topics that address them.
 
 |Subject|Topic|

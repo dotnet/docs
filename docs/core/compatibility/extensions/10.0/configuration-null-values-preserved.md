@@ -100,7 +100,7 @@ Array2:
 
 ### Non-nullable value types
 
-The binder now also binds `null` to non-nullable value-type properties (for example, `int`, `bool`, or an enum) by setting them to the type's default value (`default(T)`).
+The reflection-based binder now also binds `null` to non-nullable value-type properties (for example, `int`, `bool`, or an enum) by setting them to the type's default value (`default(T)`).
 
 Previously, with the JSON configuration provider, binding a `null` to such a property threw an `InvalidOperationException` similar to the following, because the provider had converted the `null` into an empty string and an empty string can't be converted to the target value type:
 
@@ -110,7 +110,9 @@ Failed to convert configuration value at 'SomeSection:DayOfWeekProperty' to type
 
 Starting in .NET 10, the same binding succeeds and the property is set to its default value. For example, a `null` bound to a `DayOfWeek` property results in `DayOfWeek.Sunday` (`0`), and a `null` bound to an `int` property results in `0`. No exception is thrown.
 
-Providers that store a real `null` value, such as the in-memory provider, already bound `null` to non-nullable value-type properties by setting the default value, even before .NET 10, and the configuration source generator also matches this behavior. The change makes the JSON provider and the reflection-based binder consistent with that behavior.
+Before .NET 10, the reflection-based binder left the property unchanged when a provider such as the in-memory provider supplied a `null` value.
+
+In .NET 10, the configuration binding source generator leaves the property unchanged when the configuration value is `null` or an empty string.
 
 ## Type of breaking change
 
@@ -126,7 +128,7 @@ If you prefer the previous behavior, you can adjust your configuration according
 
 - When using the JSON configuration provider, replace `null` values with empty strings (`""`) to restore the original behavior, where empty strings are bound instead of `null`.
 - For other providers that support `null` values, remove the `null` entries from the configuration to replicate the earlier behavior, where missing values are ignored and existing property values remain unchanged.
-- If you previously relied on an exception when a `null` value was bound to a non-nullable value-type property, note that the binder now sets the property to its default value instead. To distinguish a missing or `null` value from a real value, make the property nullable (for example, `int?` or `DayOfWeek?`) and check for `null` after binding, or validate the configuration explicitly.
+- If you relied on the reflection-based binder to throw when it bound a `null` value to a non-nullable value-type property, note that it now sets the property to its default value. To distinguish a missing or `null` value from a real value, make the property nullable (for example, `int?` or `DayOfWeek?`) and check for `null` after binding, or validate the configuration explicitly.
 
 ## Affected APIs
 

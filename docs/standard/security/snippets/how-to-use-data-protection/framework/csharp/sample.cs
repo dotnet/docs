@@ -101,11 +101,9 @@ public class MemoryProtectionSample
         // Create a byte array to hold the random value.
         byte[] entropy = new byte[16];
 
+        // Create a new instance of the RNGCryptoServiceProvider.
         // Fill the array with a random value.
-        using (var rng = new RNGCryptoServiceProvider())
-        {
-            rng.GetBytes(entropy);
-        }
+        new RNGCryptoServiceProvider().GetBytes(entropy);
 
         // Return the array.
         return entropy;
@@ -158,19 +156,7 @@ public class MemoryProtectionSample
         // Read the encrypted data from a stream.
         if (S.CanRead)
         {
-            int offset = 0;
-
-            while (offset < Length)
-            {
-                int bytesRead = S.Read(inBuffer, offset, Length - offset);
-
-                if (bytesRead == 0)
-                {
-                    throw new EndOfStreamException("Could not read the expected number of bytes from the stream.");
-                }
-
-                offset += bytesRead;
-            }
+            S.Read(inBuffer, 0, Length);
 
             outBuffer = ProtectedData.Unprotect(inBuffer, Entropy, Scope);
         }

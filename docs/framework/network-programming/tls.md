@@ -3,6 +3,7 @@ title: Transport Layer Security (TLS) best practices with .NET Framework
 titleSuffix: ""
 description: Describes best practices using Transport Layer Security (TLS) with .NET Framework
 ms.date: 06/04/2026
+ai-usage: ai-assisted
 helpviewer_keywords:
   - "sending data, Internet security"
   - "protocols, Internet security"
@@ -158,12 +159,12 @@ The following sections show how to configure your application to use "currently 
 
 WCF uses the same networking stack as the rest of .NET Framework.
 
-If you're targeting 4.7.1, WCF is configured to allow the OS to choose the best security protocol by default unless explicitly configured in one of the following locations:
+If your app targets .NET Framework 4.7.1 or later, WCF lets the OS choose the security protocol by default unless you explicitly configure a protocol in one of the following locations:
 
 - In your application configuration file.
 - In your app's source code.
 
-By default, .NET Framework 4.7 and later versions are configured to use TLS 1.2 and allow connections using TLS 1.1 or TLS 1.0. Don't rely on those older protocols. Configure WCF to allow the OS to choose the best security protocol by configuring your binding to use <xref:System.Security.Authentication.SslProtocols.None?displayProperty=nameWithType>. This can be set on <xref:System.ServiceModel.TcpTransportSecurity.SslProtocols>. `SslProtocols.None` can be accessed from <xref:System.ServiceModel.NetTcpSecurity.Transport>. `NetTcpSecurity.Transport` can be accessed from <xref:System.ServiceModel.NetTcpBinding.Security>.
+To let the OS choose the security protocol, configure your WCF binding to use <xref:System.Security.Authentication.SslProtocols.None?displayProperty=nameWithType>. This can be set on <xref:System.ServiceModel.TcpTransportSecurity.SslProtocols>. `SslProtocols.None` can be accessed from <xref:System.ServiceModel.NetTcpSecurity.Transport>. `NetTcpSecurity.Transport` can be accessed from <xref:System.ServiceModel.NetTcpBinding.Security>.
 
 If you're using a custom binding:
 

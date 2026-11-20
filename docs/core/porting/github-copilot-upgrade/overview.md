@@ -3,7 +3,7 @@ title: GitHub Copilot upgrade overview
 description: "Learn how GitHub Copilot upgrade assesses, plans, executes, and validates upgrades for supported project technologies."
 titleSuffix: ""
 ms.topic: overview
-ms.date: 09/21/2026
+ms.date: 11/19/2026
 ai-usage: ai-assisted
 
 #customer intent: As a developer, I want to understand GitHub Copilot upgrade so that I can determine whether it supports my project and upgrade goal.
@@ -29,6 +29,7 @@ Choose the technology pack that matches your project:
 |---|---|
 | [.NET](dotnet-overview.md) | Upgrade .NET and .NET Framework projects, modernize project files, replace libraries, and migrate application architectures. |
 | [JavaScript and TypeScript](javascript-typescript-overview.md) | Upgrade npm dependencies and the TypeScript compiler, repair compatibility problems, and validate application behavior. |
+| [C++](/cpp/porting/github-copilot-modernization-cpp/overview) | Upgrade build tools for CMake and MSBuild |
 
 Each technology pack can provide its own scenarios, focused capabilities, prerequisites, and validation process. Additional technology packs can extend the agent without changing the shared workflow concepts.
 
@@ -54,7 +55,7 @@ For technology-specific details, see [.NET scenarios and skills](dotnet-scenario
 
 ## Provide feedback
 
-Microsoft values your feedback and uses it to improve the agent. Leave feedback using either of these options:
+Microsoft values your feedback and uses it to improve the agent. Leave feedback by using either of these options:
 
 - In Visual Studio, use the [Suggest a feature](/visualstudio/ide/suggest-a-feature) and [Report a problem](/visualstudio/ide/report-a-problem) options.
 

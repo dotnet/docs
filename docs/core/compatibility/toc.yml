@@ -12,6 +12,8 @@ items:
             items:
               - name: Full build skipped for Native AOT publish
                 href: sdk/12/aot-publish-skips-full-build.md
+              - name: Native Linux ARM32 and Windows x86 SDK distributions are no longer produced
+                href: sdk/12/no-32-bit-sdk-distributions.md
       - name: .NET 11
         items:
           - name: Overview

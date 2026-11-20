@@ -9,7 +9,7 @@ ms.assetid: 33f97d13-3022-43da-8b18-cdb5c88df9c2
 ---
 # Mitigation: TLS Protocols
 
-Starting with .NET Framework 4.6, the <xref:System.Net.ServicePointManager?displayProperty=nameWithType> and <xref:System.Net.Security.SslStream?displayProperty=nameWithType> classes are allowed to use one of the following three protocols: Tls1.0, Tls1.1, or Tls 1.2. The SSL3.0 protocol and RC4 cipher are not supported.  
+Starting with .NET Framework 4.6, the <xref:System.Net.ServicePointManager?displayProperty=nameWithType> and <xref:System.Net.Security.SslStream?displayProperty=nameWithType> classes no longer support the SSL 3.0 protocol or the RC4 cipher.
   
 ## Impact  
 
@@ -17,11 +17,11 @@ Starting with .NET Framework 4.6, the <xref:System.Net.ServicePointManager?displ
   
 - Any app that uses SSL to talk to an HTTPS server or a socket server using any of the following types: <xref:System.Net.Http.HttpClient>, <xref:System.Net.HttpWebRequest>, <xref:System.Net.FtpWebRequest>, <xref:System.Net.Mail.SmtpClient>, and <xref:System.Net.Security.SslStream>.  
   
-- Any server-side app that cannot be upgraded to support Tls1.0, Tls1.1, or Tls 1.2..  
+- Any server-side app that cannot be upgraded to support modern TLS configurations.
   
 ## Mitigation  
 
- The recommended mitigation is to upgrade the sever-side app to Tls1.0, Tls1.1, or Tls 1.2. If this is not feasible, or if client apps are broken, the <xref:System.AppContext> class can be used to opt out of this feature in either of two ways:  
+ The recommended mitigation is to upgrade the server-side app to support modern TLS configurations. If that isn't feasible, or if client apps are broken, the <xref:System.AppContext> class can be used to opt out of this feature in either of two ways as a temporary compatibility workaround:
   
 - Programmatically, by using a code snippet like the following:  
   
@@ -36,7 +36,7 @@ Starting with .NET Framework 4.6, the <xref:System.Net.ServicePointManager?displ
     <AppContextSwitchOverrides value="Switch.System.Net.DontEnableSchUseStrongCrypto=true"/>  
     ```  
   
- Note, however, that opting out of the default behavior is not recommended, since it makes the application less secure.  
+ Note, however, that opting out of the default behavior is not recommended, since it makes the application less secure.
   
 ## See also
 

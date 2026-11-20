@@ -47,9 +47,10 @@ Module Program
         Dim sharedParameters As RSAParameters
         Dim signedHash As Byte()
 
-        ' Generate signature
+        ' Generate signature with Pkcs1 padding.
+        ' When creating RSA signatures, choose a padding mode that is appropriate to your needs.
         Using rsa As RSA = RSA.Create()
-            sharedParameters = rsa.ExportParameters(True)
+            sharedParameters = rsa.ExportParameters(False)
             Dim rsaFormatter As New RSAPKCS1SignatureFormatter(rsa)
             rsaFormatter.SetHashAlgorithm(NameOf(SHA256))
 
@@ -67,13 +68,14 @@ using System.Text;
 
 using SHA256 alg = SHA256.Create();
 
-byte[] data = Encoding.ASCII.GetBytes("Hello, from the .NET Docs!");
+byte[] data = Encoding.UTF8.GetBytes("Hello, from the .NET Docs!");
 byte[] hash = alg.ComputeHash(data);
 
 RSAParameters sharedParameters;
 byte[] signedHash;
 
-// Generate signature
+// Generate signature with Pkcs1 padding.
+// When creating RSA signatures, choose a padding mode that is appropriate to your needs.
 using (RSA rsa = RSA.Create())
 {
     sharedParameters = rsa.ExportParameters(false);

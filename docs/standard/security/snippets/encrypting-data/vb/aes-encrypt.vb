@@ -11,8 +11,8 @@ Module Module1
                 ' Create a new instance of the default Aes implementation class  
                 ' and configure encryption key.
                 Using aes As Aes = Aes.Create()
-                    'Encryption key used to encrypt the stream.
-                    'The same value must be used to encrypt and decrypt the stream.
+                    ' This key is for illustration purposes only.
+                    ' In production, use a securely stored or managed key.
                     Dim key As Byte() = {
                         &H1, &H2, &H3, &H4, &H5, &H6, &H7, &H8,
                         &H9, &H10, &H11, &H12, &H13, &H14, &H15, &H16
@@ -41,11 +41,8 @@ Module Module1
                 End Using
             End Using
 
-            'Inform the user that the message was written  
-            'to the stream.  
-            Console.WriteLine("The text was encrypted.")
+            Console.WriteLine("The file was encrypted.")
         Catch
-            'Inform the user that an exception was raised.  
             Console.WriteLine("The encryption failed.")
             Throw
         End Try

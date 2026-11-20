@@ -15,6 +15,8 @@ Console.WriteLine(second.GetCount()); // => 2
 Console.WriteLine(VisitCounter.GetTotal()); // => 3
 // </IndependentInstances>
 
+Console.WriteLine(VisitCounter.GetTotalExcluding(first)); // => 2
+
 // <ReferenceAssignment>
 var alias = first;
 alias.AddVisit();
@@ -48,7 +50,7 @@ Console.WriteLine(notebook.Read()); // => Try a new route.
 Console.WriteLine(new Reminder().GetText()); // => Take a break
 Console.WriteLine(new LocalCounter().GetCount()); // => 0
 _ = new Session().GetStartTime();
-_ = RunInfo.StartedAt;
+Console.WriteLine(ReminderSettings.Interval.TotalMinutes); // => 15
 
 // <CounterDeclaration>
 public class VisitCounter
@@ -65,6 +67,11 @@ public class VisitCounter
     public int GetCount() => count;
 
     public static int GetTotal() => total;
+
+    // <StaticMemberWithInstance>
+    public static int GetTotalExcluding(VisitCounter counter) =>
+        total - counter.count;
+    // </StaticMemberWithInstance>
 }
 // </CounterDeclaration>
 
@@ -120,8 +127,8 @@ public class Session
 // </ReadonlyField>
 
 // <RuntimeConstant>
-public static class RunInfo
+public static class ReminderSettings
 {
-    public static readonly DateTime StartedAt = DateTime.UtcNow;
+    public static readonly TimeSpan Interval = TimeSpan.FromMinutes(15);
 }
 // </RuntimeConstant>

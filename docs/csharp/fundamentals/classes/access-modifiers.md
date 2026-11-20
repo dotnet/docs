@@ -17,7 +17,14 @@ Use this article after [Class members and instances](index.md) to control which 
 
 *Accessibility* determines which code can name and use a type or member. An *access modifier* is a keyword, such as `public` or `private`, that specifies that access. The [access modifiers reference](../../language-reference/keywords/access-modifiers.md) describes all supported combinations.
 
-## Separate a public interface from implementation
+Start with these common access modifiers:
+
+- [`private`](../../language-reference/keywords/private.md) limits access to the containing type.
+- [`public`](../../language-reference/keywords/public.md) allows access from any code, provided the containing type is also accessible.
+- [`internal`](../../language-reference/keywords/internal.md) limits access to the same *assembly*, a compiled unit of .NET code, usually a `.dll` or `.exe` file. A C# project normally produces one assembly. See [Assemblies in .NET](../../../standard/assembly/index.md).
+- [`protected`](../../language-reference/keywords/protected.md) limits access to the containing class and its *derived classes*, the classes that inherit from it, even in another assembly.
+
+## Separate public capabilities from implementation
 
 Use `public` for the members you want callers to use and `private` for implementation details used inside the class. These public members form the class's *public interface*, the operations and values it exposes to callers. Here, "interface" describes the class's exposed members, rather than a separate C# `interface` type. For example, you can expose the counter's operations and keep its fields private:
 
@@ -27,16 +34,16 @@ Through the `public` methods, you can add a visit or read a count. Direct access
 
 :::code language="csharp" source="snippets/index/Program.cs" id="PublicAccess":::
 
-Choose accessibility and instance or static membership independently. `public` and `private` control where you can use a member; instance and static membership determine whether it belongs to an object or the type. For example, you can call the counter's public instance methods through an object and its public static method through the type.
-
 Accessibility lets you limit the scope of where change can happen. Keep fields and helper methods private when they're implementation details, so you can change them within the class while preserving its public interface. Callers then depend on the operations you expose, rather than on how you implement them. In the counter, `AddVisit` keeps the instance count and total in sync.
 
-## Defaults and containing types
+## Default accessibility
 
-Start with a class declared directly in a namespace. A namespace groups names and imposes no access restriction of its own, so the class's declared accessibility determines where you can use it:
+For clearer code, always declare accessibility explicitly. Readers can then see your intent without having to memorize the defaults.
 
-- Use `internal` to limit access to the same *assembly*, a compiled unit of .NET code, usually a `.dll` or `.exe` file. A project normally produces one assembly. See [Assemblies in .NET](../../../standard/assembly/index.md).
-- Use `public` to make the class available to code in other assemblies that reference its assembly.
+The default accessibility for a type depends on where it's declared. Start with a class declared directly in a namespace. A namespace groups names and imposes no access restriction of its own, so the class's declared accessibility determines where you can use it:
+
+- Use `internal` to limit access to the same assembly.
+- Use `public` to make the class available to any code that references its assembly.
 
 If you omit an access modifier on a namespace-level class, its accessibility defaults to `internal`. If you omit the modifier on a class member, including a nested type, that member defaults to `private`. For example:
 

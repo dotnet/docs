@@ -15,21 +15,21 @@ ai-usage: ai-generated
 
 After the [overview of class types](../types/classes.md), use this section to learn more details about classes and their members.
 
-For example, you can give each visit counter its own count and track a total across all counters:
+The following example shows several of the members that you can add to a class:
 
 :::code language="csharp" source="snippets/index/Program.cs" id="CounterDeclaration":::
 
-You define a type's behavior by declaring its *members*, the declarations inside a type that describe its data, operations, and nested types. In `VisitCounter`, the fields `count` and `total` store data. The methods `AddVisit`, `GetCount`, and `GetTotal` provide operations on that data. Classes support many other kinds of members, including properties, constructors, and events, which you'll explore as you need them. The [class reference](../../language-reference/keywords/class.md) describes the complete declaration syntax.
+You define a type's behavior by declaring its *members*, the declarations inside a type that describe its data, operations, and nested types. In `VisitCounter`, the fields `count` and `total` store data. Methods such as `AddVisit`, `GetCount`, and `GetTotal` provide operations on that data. Classes support many other kinds of members, including properties, constructors, and events, which you'll explore as you need them. The [class reference](../../language-reference/keywords/class.md) describes the complete declaration syntax.
 
-Use instance state and members to define the behavior of an individual object: `count`, `AddVisit`, and `GetCount` work with one counter. Use `static` state and members for behavior that belongs to the type: `total` and `GetTotal` track visits across all counters.
+An *instance* is an individual object created from a class. Its *instance state* is the data stored in that object, such as a counter's `count`. *Instance members* belong to an individual object: `count`, `AddVisit`, and `GetCount` work with one counter. *Static members* belong to the type: `total` and `GetTotal` track visits across all counters.
 
-With `private` fields, you keep direct access to the data inside `VisitCounter`. Other code uses its `public` methods. [Accessibility](access-modifiers.md) controls which code can use a member, independently of whether that member belongs to an instance or the type.
+With `private` fields, you keep direct access to the data inside `VisitCounter`. Other code uses its `public` methods. [Accessibility](access-modifiers.md) controls which code can access a member.
 
 ## Instance state and shared state
 
-An *instance member* belongs to an individual object. Use instance members when you need to store or work with each object's own state. Each `VisitCounter` object has its own `count` field. A *static member* belongs to the type. Use static members to store shared state or provide operations that don't need a particular object. The static field `total` stores one count shared by all `VisitCounter` instances. See the [`static` reference](../../language-reference/keywords/static.md) for the full rules.
+Use instance members when each object has its own state. Each `VisitCounter` object has its own `count` field. Use static members to store shared state or provide operations that aren't associated with a single instance of the type. The static field `total` stores one value shared by all `VisitCounter` instances. See the [`static` reference](../../language-reference/keywords/static.md) for more details.
 
-Create two counters and add visits:
+The following code demonstrates multiple instances of the `VisitCounter` and the relationship between instance counts and the total value:
 
 :::code language="csharp" source="snippets/index/Program.cs" id="IndependentInstances":::
 
@@ -37,7 +37,11 @@ At the end of this example, `first` has had one visit and `second` has had two v
 
 Access instance members through an object reference such as `first`. Access static members through the type name, as in `VisitCounter.GetTotal()`. You can use static members even before you create any objects, as the initial call that returns `0` demonstrates.
 
-In an instance method, you can use both instance and static members directly. A static method has no current instance, so you supply an object reference to access instance members. In this example, `GetTotal` needs only the static field.
+In an instance method, you can use both instance and static members directly. For example, `AddVisit` updates the current counter's `count` and the shared `total`. A static method has no current instance, so it can't access an instance member without an object reference. `GetTotal` needs only the static field. To calculate the total without one counter's visits, the static method `GetTotalExcluding` uses the supplied `counter` reference:
+
+:::code language="csharp" source="snippets/index/Program.cs" id="StaticMemberWithInstance":::
+
+After the three visits in the example, `VisitCounter.GetTotalExcluding(first)` returns `2`: the shared total of `3` minus `first`'s count of `1`.
 
 As you learned in [Assignment shares a reference](../types/classes.md#assignment-shares-a-reference), assignment copies a reference to an existing object. If you give `first` another name, `alias`, you still have two counters, not three:
 
@@ -59,7 +63,7 @@ A *nested type* is a type declared inside another type. Use nesting when a type 
 
 :::code language="csharp" source="snippets/index/Program.cs" id="NestedType":::
 
-When you create a `Notebook`, the field initializer `new Entry()` creates a separate `Entry` object. Nesting alone doesn't create either object or give an `Entry` a reference to a `Notebook` instance. Pass an object reference explicitly if the nested type needs one.
+Declaring `Entry` inside `Notebook` defines a type; it doesn't create an object of that type. When you create a `Notebook` object, its field initializer `new Entry()` creates an `Entry` object for that notebook. The nested declaration doesn't give the `Entry` object a reference to its `Notebook` object. Pass an object reference explicitly if the nested type needs one.
 
 Nesting places the type's name within its containing type. To choose which code can use a nested type, continue with [Class accessibility](access-modifiers.md). For more declaration examples, see [Nested types](../../programming-guide/classes-and-structs/nested-types.md).
 

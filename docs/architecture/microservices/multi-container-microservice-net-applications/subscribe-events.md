@@ -315,8 +315,8 @@ If the "redelivered" flag is set, the receiver must take that into account, beca
 
 ### Additional resources
 
-- **Forked eShopOnContainers using NServiceBus (Particular Software)** \
-    <https://go.particular.net/eShopOnContainers>
+- **NServiceBus Outbox pattern to ensure message consistency in distributed systems** \
+    <https://docs.particular.net/nservicebus/outbox/>
 
 - **Event Driven Messaging** \
     <https://patterns.arcitura.com/soa-patterns/design_patterns/event_driven_messaging>

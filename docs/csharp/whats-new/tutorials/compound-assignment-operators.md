@@ -12,7 +12,7 @@ ms.custom: peer-review-program
 ---
 # Tutorial: Create compound assignment operators
 
-C#14 adds [*user-defined compound assignment operators*](~/_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md) that enable mutating a data structure in place, rather than creating a new instance. In previous versions of C#, the expression:
+C#14 adds [*user-defined compound assignment operators*](~/_csharpstandard/standard/classes.md#15106-compound-assignment-operators) that enable mutating a data structure in place, rather than creating a new instance. In previous versions of C#, the expression:
 
 ```csharp
 a += b;

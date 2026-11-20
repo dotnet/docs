@@ -1,7 +1,7 @@
 items:
 - name: C# specifications
   href: index.yml
-- name: C# 13 early draft specification
+- name: C# 14 early alpha draft specification
   items:
   - name: Overview
     href: overview.md
@@ -75,48 +75,16 @@ items:
   - name: Overview
     href: feature-spec-overview.md
     displayName: feature specifications
-  - name: Lexical structure
-    items:
-    - name: "Ignored directives"
-      href: ../../../_csharplang/proposals/csharp-14.0/ignored-directives.md
-  - name: "Basic concepts"
-    items:
-      - name: "Async main updates"
-        href: ../../../_csharplang/proposals/csharp-14.0/async-main-update.md
-  - name: Types
-    items:
-    - name: Named and optional parameters in expression trees
-      href: ../../../_csharplang/proposals/csharp-14.0/optional-and-named-parameters-in-expression-trees.md
-  - name: Conversions
-    items:
-    - name: First class span types
-      href: ../../../_csharplang/proposals/csharp-14.0/first-class-span-types.md
   - name: Expressions
     items:
     - name: Collection expression arguments
       href: ../../../_csharplang/proposals/csharp-15.0/collection-expression-arguments.md
-    - name: Simple lambda parameters with modifiers
-      href: ../../../_csharplang/proposals/csharp-14.0/simple-lambda-parameters-with-modifiers.md
-    - name: Unbound generic types in nameof
-      href: ../../../_csharplang/proposals/csharp-14.0/unbound-generic-types-in-nameof.md
-    - name: Null conditional assignment
-      href: ../../../_csharplang/proposals/csharp-14.0/null-conditional-assignment.md
-    - name: User defined compound assignment operators
-      href: ../../../_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md
   - name: Statements
     items:
     - name: Labeled `break` and `continue`
       href: ../../../_csharplang/proposals/csharp-15.0/labeled-break-continue.md
   - name: Classes
     items: 
-    - name: Partial events and constructors
-      href: ../../../_csharplang/proposals/csharp-14.0/partial-events-and-constructors.md
-    - name: Field backed properties
-      href: ../../../_csharplang/proposals/csharp-14.0/field-keyword.md
-    - name: Extension members
-      href: ../../../_csharplang/proposals/csharp-14.0/extensions.md
-    - name: Extension operators
-      href: ../../../_csharplang/proposals/csharp-14.0/extension-operators.md
     - name: Extension indexers
       href: ../../../_csharplang/proposals/csharp-15.0/extension-indexers.md
     - name: Closed hierarchies

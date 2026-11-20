@@ -177,7 +177,7 @@ The `field` feature is released as a preview feature. We want to learn from your
 
 > [!IMPORTANT]
 >
-> You should be careful using the `field` keyword feature in a class that has a field named `field`. The new `field` keyword shadows a field named `field` in the scope of a property accessor. You can either change the name of the `field` variable, or use the `@` token to reference the `field` identifier as `@field`. You can learn more by reading the feature specification for [the `field` keyword](~/_csharplang/proposals/csharp-14.0/field-keyword.md).
+> You should be careful using the `field` keyword feature in a class that has a field named `field`. The new `field` keyword shadows a field named `field` in the scope of a property accessor. You can either change the name of the `field` variable, or use the `@` token to reference the `field` identifier as `@field`. You can learn more in the [Field-backed property](~/_csharpstandard/standard/classes.md#1575-field-backed-property) section of the C# language specification.
 
 If you try this feature and have feedback, add it to the [feature issue](https://github.com/dotnet/csharplang/issues/140) in the `csharplang` repository.
 

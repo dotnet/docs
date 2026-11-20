@@ -201,7 +201,7 @@ For more information, see the following sections of the [C# language specificati
 - [Logical operators](~/_csharpstandard/standard/expressions.md#1216-logical-operators)
 - [Compound assignment](~/_csharpstandard/standard/expressions.md#12245-compound-assignment)
 - [Numeric promotions](~/_csharpstandard/standard/expressions.md#1247-numeric-promotions)
-- [User defined compound assignment](~/_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md)
+- [Compound assignment operators](~/_csharpstandard/standard/classes.md#15106-compound-assignment-operators)
 
 ## See also
 

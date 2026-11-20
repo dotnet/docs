@@ -83,7 +83,7 @@ If a user-defined type overloads a binary operator `op`, the `op=` operator, if 
 
 ## C# language specification
 
-For more information, see the [Assignment operators](~/_csharpstandard/standard/expressions.md#1224-assignment-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md) and the [User defined compound assignment](~/_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md) feature specification.
+For more information, see the [Assignment operators](~/_csharpstandard/standard/expressions.md#1224-assignment-operators) and [Compound assignment operators](~/_csharpstandard/standard/classes.md#15106-compound-assignment-operators) sections of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

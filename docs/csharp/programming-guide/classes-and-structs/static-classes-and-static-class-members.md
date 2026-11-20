@@ -2,6 +2,7 @@
 title: "Static Classes and Static Class Members"
 description: Static classes can't be instantiated in C#. You access the members of a static class by using the class name itself.
 ms.date: 10/13/2025
+ai-usage: ai-assisted
 helpviewer_keywords:
   - "C# language, static members"
   - "static members [C#]"
@@ -11,6 +12,9 @@ helpviewer_keywords:
 ms.assetid: 235614b5-1371-4dbd-9abd-b406a8b0298b
 ---
 # Static Classes and Static Class Members (C# Programming Guide)
+
+> [!TIP]
+> For instance state, shared static state, and static classes, start with [Class members and instances](../../fundamentals/classes/index.md). This guide also covers specialized static storage and initialization details.
 
 A [static](../../language-reference/keywords/static.md) class is basically the same as a non-static class, but there's one difference: a static class can't be instantiated. In other words, you can't use the [new](../../language-reference/operators/new-operator.md) operator to create a variable of the class type. Because there's no instance variable, you access the members of a static class by using the class name itself. For example, if you have a static class that is named `UtilityClass` that has a public static method named `MethodA`, you call the method as shown in the following example:
 

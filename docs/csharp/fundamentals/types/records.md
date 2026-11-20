@@ -1,112 +1,123 @@
 ---
 title: "C# record types"
-description: Learn how the record modifier enhances classes and structs with compiler-generated value equality, ToString, with expressions, and positional syntax.
-ms.date: 03/25/2026
+description: Use record classes for data-focused reference types with positional declarations, generated value equality, and shallow copies through with expressions.
+ms.date: 11/16/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
+
 # C# record types
 
 > [!TIP]
-> **New to developing software?** Start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first. You'll encounter records when you need concise data types with built-in equality.
->
-> **Experienced in another language?** C# records are similar to data classes in Kotlin or case classes in Scala. They're types optimized for storing data, with compiler-generated equality, `ToString`, and copy semantics. Skim the [`record class` vs `record struct`](#record-class-vs-record-struct) and [`with` expressions](#nondestructive-mutation-with-with-expressions) sections for C#-specific patterns.
+> **New to developing software?** Start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first, then read [C# classes](classes.md).
 
-The [`record`](../../language-reference/builtin-types/record.md) keyword is a modifier you apply to either a `class` or a `struct`. It tells the compiler to generate value equality, a formatted `ToString`, and nondestructive mutation through [`with` expressions](../../language-reference/operators/with-expression.md). The underlying type, a class or a struct, still determines whether instances use reference or value semantics. The `record` modifier adds data-friendly behavior on top of those semantics. Use records when a type's primary role is storing data and two instances with the same values should be considered equal.
+Use a *record class* for a data-focused reference type when you want the compiler to provide value equality, formatted output, and copy support. The [`record` reference](../../language-reference/builtin-types/record.md) describes the full feature.
+
+Record classes follow the class rules for instances, accessibility, and static members. Assignment copies a reference, not the object. Their generated equality and `with` expressions add behavior without changing that reference-type foundation.
 
 ## When to use records
 
-Use a record when all of the following conditions are true:
+Choose a record class when the type's main purpose is to store data and its members' values should determine equality. For example, two routes with the same start and end can represent equal data even when they're different objects. Prefer an ordinary class when object identity is the equality behavior you need.
 
-- The type's primary role is storing data.
-- Two instances with the same values should be equal.
-- You want immutability (especially for `record class` types).
-- You want a readable `ToString` without writing one manually.
+Records support init-only properties, but they don't require immutable state. Choose the properties that suit your type; don't assume that `record` makes every reachable object immutable.
 
-When choosing between `record class` and `record struct`:
-
-- Use `record class` when you need inheritance, or when the type is large enough that copying on every assignment would be expensive.
-- Use `record struct` for small, self-contained values where copy semantics and stack allocation are beneficial.
-
-Avoid records for entity types in [Entity Framework Core](/ef/core/), which depends on reference equality to track entities. For a broader comparison of type options, see [Choose which kind of type](index.md#choose-which-kind-of-type).
+Avoid records for entity types in [Entity Framework Core](/ef/core/), which depends on reference equality to track entities.
 
 ## Declare a record
 
-You can apply `record` to either a class or a struct. The simplest form uses *positional parameters* that define both the constructor and the properties in a single line:
+Writing `record` alone is shorthand for `record class`:
 
-:::code language="csharp" source="snippets/records/FirstRecord.cs" ID="DeclareRecord":::
+:::code language="csharp" source="snippets/records/RecordClasses.cs" id="PositionalRecordClass":::
 
-The same positional syntax works for `record struct` types:
+The equivalent declaration starts with `public record class Route`. A *positional record* lists parameters in its declaration, and the compiler uses those parameters to generate a constructor, properties, and deconstruction support.
 
-:::code language="csharp" source="snippets/records/RecordStruct.cs" ID="RecordStructDecl":::
+For `Route`, the compiler normally generates:
 
-Writing `record` alone is shorthand for [`record class`](../../language-reference/builtin-types/record.md) which is a reference type. Writing [`record struct`](../../language-reference/builtin-types/record.md) creates a value type. The compiler generates properties from the positional parameters in both cases, but the defaults differ:
+- A public constructor that accepts `Start` and `End`.
+- Public `Start` and `End` properties with `get` and `init` accessors.
+- A `Deconstruct` method that exposes those values in parameter order.
+- Equality methods, a hash-code method, and `==` and `!=` operators.
+- A `ToString` method that includes the type name and public data members.
+- Copy support that `with` expressions use to create another instance.
 
-- **`record class`**: Properties are `init`-only (immutable after construction).
-- **`record struct`**: Properties are read-write by default. Add `readonly` (`readonly record struct`) to make them `init`-only.
+An *init-only property* permits assignment during object initialization but not through an ordinary assignment afterward. See [`init`](../../language-reference/keywords/init.md) for its rules. An init-only property that holds a reference doesn't make the referenced object immutable.
 
-You can also write records with standard property syntax when you need more control. For example, to make a property read/write instead of `init`-only:
+For accessor mechanics and custom declarations, see [Properties](../../programming-guide/classes-and-structs/properties.md). For initialization mechanics, see [Constructors](../../programming-guide/classes-and-structs/constructors.md). Positional record parameters normally generate properties; ordinary class [primary constructors](../../whats-new/tutorials/primary-constructors.md) don't automatically generate public properties.
 
-:::code language="csharp" source="snippets/records/FirstRecord.cs" ID="RecordWithBody":::
+You can also declare properties in a record body, including read-write properties:
 
-## `record class` vs. `record struct`
+:::code language="csharp" source="snippets/records/FirstRecord.cs" id="RecordWithBody":::
 
-Because the `record` modifier preserves the underlying type's semantics, a `record class` and a `record struct` behave differently when you assign or compare references. Assigning a `record class` copies the reference. Both variables point to the same object. Assigning a `record struct` copies the data, so changes to one variable don't affect the other:
-
-:::code language="csharp" source="snippets/records/RecordStruct.cs" ID="RecordClassVsStruct":::
-
-Record structs also provide compiler-generated value equality:
-
-:::code language="csharp" source="snippets/records/RecordStruct.cs" ID="UsingRecordStruct":::
-
-Choose `record class` when you need inheritance or when instances are large enough that copying would be expensive. Choose `record struct` for small, self-contained data where value-type copy semantics are appropriate. For more on value type semantics, see [Structs](structs.md).
+The [`required`](../../language-reference/keywords/required.md) modifier means you must supply `Name` when you initialize a `Product`. `Name` is init-only, while `Price` can change after initialization because it has a `set` accessor. `record` doesn't change that accessor's behavior.
 
 ## Value equality
 
-The `record` modifier gives both classes and structs compiler-generated, property-by-property equality. Here's how equality works across all four type kinds:
+*Value equality* means that two instances compare equal according to their data rather than their identity. Record classes generate this behavior:
 
-- **Plain class**: Uses *reference equality* by default. The `==` operator checks whether two variables point to the same object, not whether the data matches.
-- **Plain struct**: Supports value equality through <xref:System.ValueType.Equals*?displayProperty=nameWithType>, but the default implementation uses reflection, which is slower and doesn't generate `==`/`!=` operators.
-- **`record class`**: The compiler generates `Equals` and `GetHashCode` methods, and `==`/`!=` operators, that compare every property value. Two distinct objects with the same data are equal.
-- **`record struct`**: Same compiler-generated equality as a `record class`, but without using reflection, which makes it faster than plain struct equality.
+:::code language="csharp" source="snippets/records/RecordClasses.cs" id="RecordClassEquality":::
 
-The following example demonstrates record class equality:
+`outward` and `sameRoute` refer to distinct objects. Their generated `==` operator compares the stored values, so the two routes are equal. An ordinary class without customized equality compares references by default.
 
-:::code language="csharp" source="snippets/records/EqualityTest.cs" ID="EqualityTest":::
+The constructor initializes `Start` and `End`. After construction, `outward.End = "West";` doesn't compile because `End` is init-only.
 
-The two `Person` instances are different objects, but they're equal because all their property values match. Array properties compare by reference, not by contents. Mutating the shared array is visible through both records because the array itself isn't copied.
+Generated record equality compares the instance fields, including fields that store auto-implemented properties, and requires matching run-time types. Each member's type determines how its value compares. It isn't a recursive comparison of every object reachable from the record.
+
+Use [Equality comparisons](../expressions/equality.md#use-records-for-value-equality) for the full equality lesson and guidance on records with collection members.
 
 ## Nondestructive mutation with `with` expressions
 
-Records are often immutable, so you can't change a property after creation. A `with` expression creates a copy with one or more properties changed, leaving the original record unchanged. This approach works for both `record class` and `record struct` types:
+*Nondestructive mutation* creates a modified copy instead of changing the original object's members. A [`with` expression](../../language-reference/operators/with-expression.md) creates a record-class copy and applies the specified member initializers:
 
-:::code language="csharp" source="snippets/records/ImmutableRecord.cs" ID="WithExpression":::
+:::code language="csharp" source="snippets/records/RecordClasses.cs" id="RecordClassWith":::
 
-The same syntax works for `record struct` types:
+The expression creates a different `Route` object, even though its properties are init-only. The initializer sets `End` on that new object; `outward.End` stays `"South"`.
 
-:::code language="csharp" source="snippets/records/RecordStruct.cs" ID="RecordStructWith":::
+### Assignment and shallow copies
 
-A `with` expression copies the existing instance, then applies the specified property changes.
+For reference-valued members, distinguish a new record object from a new copy of everything it references. Consider a record with an array:
+
+:::code language="csharp" source="snippets/records/RecordClasses.cs" id="ReferenceMemberRecord":::
+
+Assignment shares the record object. A `with` expression creates a different record object but performs a *shallow copy*: it copies member values, including references, without copying the referenced objects.
+
+:::code language="csharp" source="snippets/records/RecordClasses.cs" id="ShallowRecordClassCopy":::
+
+`alias` refers to `original` itself. `copy` is a distinct record object, but all three variables reach the same array. The init-only `Samples` property prevents ordinary replacement of the array reference after initialization; it doesn't prevent changes to array elements.
+
+The records remain equal after the element changes because they hold the same array reference. By default, arrays compare references rather than their elements. A separately allocated array with the same contents doesn't make another record equal:
+
+:::code language="csharp" source="snippets/records/RecordClasses.cs" id="RecordClassArrayEquality":::
+
+For collection equality choices, see [Records with reference-type members](../expressions/equality.md#records-with-reference-type-members).
 
 ## Positional records and deconstruction
 
-Positional records generate a `Deconstruct` method that you use to extract property values into individual variables:
+*Deconstruction* extracts values into separate variables. A positional record's generated `Deconstruct` method supports this syntax:
 
-:::code language="csharp" source="snippets/records/FirstRecord.cs" ID="Deconstruct":::
+:::code language="csharp" source="snippets/records/RecordClasses.cs" id="RecordClassDeconstruction":::
 
-Deconstruction works with both `record class` and `record struct` types. You can use it in assignments, `foreach` loops, and pattern matching.
+See [Deconstruct tuples and other types](../patterns/deconstruct.md) for the complete lesson.
+
+## `record class` vs. `record struct`
+
+The `record` modifier also applies to structs. Use `record struct` to declare a value type:
+
+:::code language="csharp" source="snippets/records/RecordStruct.cs" id="RecordStructDecl":::
+
+A positional `record struct` normally generates read-write properties; a `readonly record struct` normally generates init-only properties. Unlike record-class assignment, record-struct assignment copies the value:
+
+:::code language="csharp" source="snippets/records/RecordStruct.cs" id="RecordClassVsStruct":::
+
+Record structs also support generated value equality and `with` expressions. See [Structs](structs.md) for value-type semantics.
 
 ## Record inheritance
 
-A `record class` can inherit from another `record class`. A record can't inherit from a regular class, and a class can't inherit from a record:
+A record class can inherit from another record class, but not from an ordinary class other than <xref:System.Object>. An ordinary class can't inherit from a record class. The generated equality includes the run-time type.
 
-:::code language="csharp" source="snippets/records/FirstRecord.cs" ID="RecordInheritance":::
+For the declaration rules and examples, see [Inheritance in records](../../language-reference/builtin-types/record.md#inheritance). For the underlying class mechanics, see [Inheritance](../object-oriented/inheritance.md).
 
-Value equality checks include the run-time type, so a `Person` and a `Student` with the same `FirstName` and `LastName` aren't considered equal. Record structs don't support inheritance because structs can't inherit from other types.
+## Next steps
 
-## See also
-
-- [Type system overview](index.md)
-- [Classes](classes.md)
-- [Structs](structs.md)
-- [Records (C# reference)](../../language-reference/builtin-types/record.md)
+- [Use record types](../tutorials/records.md) applies records to temperature calculations.
+- [Class members and instances](../classes/index.md) explains the class foundation.
+- [Records (C# reference)](../../language-reference/builtin-types/record.md) supplies the detailed rules.

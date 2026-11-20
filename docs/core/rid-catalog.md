@@ -86,7 +86,8 @@ To be able to use RIDs, you have to know which RIDs exist. For the latest and co
 
 RIDs that are considered 'portable'&mdash;that is, aren't tied to a specific version or OS distribution&mdash;are the recommended choice. This means that portable RIDs should be used for both [building a platform-specific application](./deploying/index.md#native-dependencies) and [creating a NuGet package with RID-specific assets](/nuget/create-packages/supporting-multiple-target-frameworks#architecture-specific-folders).
 
-Starting with .NET 8, the default behavior of the .NET SDK and runtime is to only consider non-version-specific and non-distro-specific RIDs. When restoring and building, the SDK [uses a smaller portable RID graph](./compatibility/sdk/8.0/rid-graph.md). The <xref:System.Runtime.InteropServices.RuntimeInformation.RuntimeIdentifier?displayProperty=nameWithType> [returns the platform for which the runtime was built](./compatibility/core-libraries/8.0/runtimeidentifier.md). At runtime, .NET finds [RID-specific assets using a known set of portable RIDs](./compatibility/deployment/8.0/rid-asset-list.md). When building an application with RID-specific assets that may be ignored at runtime, the SDK will emit a warning: [NETSDK1206](./tools/sdk-errors/netsdk1206.md).
+> [!IMPORTANT]
+> Starting with .NET 8, the default behavior of the .NET SDK and runtime is to only consider non-version-specific and non-distro-specific RIDs. When restoring and building, the SDK [uses a smaller portable RID graph](./compatibility/sdk/8.0/rid-graph.md). The <xref:System.Runtime.InteropServices.RuntimeInformation.RuntimeIdentifier?displayProperty=nameWithType> [returns the platform for which the runtime was built](./compatibility/core-libraries/8.0/runtimeidentifier.md). At runtime, .NET finds [RID-specific assets using a known set of portable RIDs](./compatibility/deployment/8.0/rid-asset-list.md). When building an application with RID-specific assets that may be ignored at runtime, the SDK will emit a warning: [NETSDK1206](./tools/sdk-errors/netsdk1206.md).
 
 ### Loading assets for a specific OS version or distribution
 
@@ -124,7 +125,8 @@ For more information, see [.NET dependencies and requirements](./install/linux.m
 
 macOS RIDs use the older "OSX" branding.
 
-- `osx-x64` (Minimum OS version is macOS 10.12 Sierra)
+- `osx` (For universal binaries supporting both x64 and arm64)
+- `osx-x64`
 - `osx-arm64`
 
 For more information, see [.NET dependencies and requirements](./install/macos.md).

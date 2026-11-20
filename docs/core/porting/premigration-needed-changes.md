@@ -2,7 +2,6 @@
 title: Prerequisites to port from .NET Framework
 description: Before porting your code from .NET Framework to .NET, you must use the correct developer environment and update your project files as required.
 author: StephenBonikowsky
-ms.author: stebon
 ms.date: 06/10/2021
 ---
 # Prerequisites to porting code
@@ -13,7 +12,7 @@ Make the needed changes to build and run a .NET application before beginning the
 
 ## Upgrade to required tooling
 
-Upgrade to a version of MSBuild/Visual Studio that supports the version of .NET you will be targeting. See [Versioning relationship between the .NET SDK, MSBuild and VS](versioning-sdk-msbuild-vs.md) for more info.
+Upgrade to a version of MSBuild/Visual Studio that supports the version of .NET you want to target. For more information, see [Versioning relationship between the .NET SDK, MSBuild and VS](versioning-sdk-msbuild-vs.md).
 
 ## Update .NET Framework target version
 

@@ -497,6 +497,9 @@ Just like with post-processing, there are a few steps in the scoring steps. To h
     - [`ExtractPixels`](xref:Microsoft.ML.ImageEstimatorsCatalog.ExtractPixels%2A) changes the pixel representation of the image from a Bitmap to a numerical vector.
     - [`ApplyOnnxModel`](xref:Microsoft.ML.OnnxCatalog.ApplyOnnxModel%2A) loads the ONNX model and uses it to score on the data provided.
 
+    > [!IMPORTANT]
+    > Only apply models from trusted sources. Applying models from untrusted sources is a security risk.
+
     Define your pipeline in the `LoadModel` method below the `data` variable.
 
     [!code-csharp [ScoringPipeline](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L55-L58)]

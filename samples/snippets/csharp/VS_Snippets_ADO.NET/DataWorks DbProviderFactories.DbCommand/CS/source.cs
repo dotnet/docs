@@ -1,7 +1,7 @@
 using System;
 using System.Configuration;
 using System.Data.Common;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 static class Program
 {
@@ -52,7 +52,7 @@ static class Program
     // </Snippet1>
 
     // Given a provider, create the factory and connect to the data source.
-    // The provider invariant name is in the format System.Data.ProviderName.
+    // For SQL Server, use the Microsoft.Data.SqlClient provider invariant name.
     static DbConnection? CreateFactoryConnection(string providerName)
     {
         // Retrieve the connection string from the configuration file
@@ -62,6 +62,13 @@ static class Program
         // Create the factory if there's a valid connection string.
         if (connectionString != null)
         {
+#if !NETFRAMEWORK
+            if (providerName == "Microsoft.Data.SqlClient")
+            {
+                DbProviderFactories.RegisterFactory(providerName, SqlClientFactory.Instance);
+            }
+#endif
+
             DbProviderFactory factory =
                 DbProviderFactories.GetFactory(providerName);
 

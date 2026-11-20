@@ -93,7 +93,7 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 - (6) **shared/Microsoft.AspNetCore.{App,All}/\<aspnetcore version>** contains the ASP.NET Core libraries. The libraries under `Microsoft.AspNetCore.App` are developed and supported as part of the .NET project. The libraries under `Microsoft.AspNetCore.All` are a superset that also contains third-party libraries.
 
-- (7) **shared/Microsoft.Desktop.App/\<desktop app version>** contains the Windows desktop libraries. This isn't included on non-Windows platforms.
+- (7) **shared/Microsoft.WindowsDesktop.App/\<desktop app version>** contains the Windows desktop libraries. This isn't included on non-Windows platforms.
 
 - (8) **LICENSE.txt,ThirdPartyNotices.txt** are the .NET license and licenses of third-party libraries used in .NET, respectively.
 
@@ -107,7 +107,7 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 - (15) **NETStandard.Library.Ref** describes the netstandard `x.y` API. These files are used when compiling for that target.
 
-- (16) **/etc/dotnet/install_location** is a file that contains the full path for `{dotnet_root}`. The path may end with a newline. It's not necessary to add this file when the root is `/usr/share/dotnet`.
+- (16) **/etc/dotnet/install_location** is a file that contains the full path for `{dotnet_root}`. On some systems, architecture-specific files are also present, such as **/etc/dotnet/install_location_arm64**. The path might end with a newline. It's not necessary to add these files when the root is `/usr/share/dotnet`.
 
 - (17) **templates** contains the templates used by the SDK. For example, `dotnet new` finds project templates here.
 

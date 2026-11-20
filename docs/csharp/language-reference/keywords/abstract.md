@@ -1,7 +1,7 @@
 ---
 description: "abstract - C# Reference"
 title: "abstract keyword"
-ms.date: 01/21/2026
+ms.date: 06/06/2026
 f1_keywords: 
   - "abstract"
   - "abstract_CSharpKeyword"
@@ -102,4 +102,5 @@ The `Shape` class is declared `abstract`, which means you can't instantiate it d
 
 - [virtual](./virtual.md)
 - [override](./override.md)
+- [closed](./closed.md)
 - [C# Keywords](./index.md)

@@ -71,8 +71,10 @@ The calendar currently in use by a particular <xref:System.Globalization.Culture
 
 The following example changes the calendar used by the Arabic (Saudi Arabia) culture. It first instantiates a <xref:System.DateTime> value and displays it using the current culture - which, in this case, is English (United States) - and the current culture's calendar (which, in this case, is the Gregorian calendar). Next, it changes the current culture to Arabic (Saudi Arabia) and displays the date using its default Um Al-Qura calendar. It then calls the `CalendarExists` method to determine whether the Hijri calendar is supported by the Arabic (Saudi Arabia) culture. Because the calendar is supported, it changes the current calendar to Hijri and again displays the date. Note that in each case, the date is displayed using the current culture's current calendar.
 
-[!code-csharp[Conceptual.Calendars#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/changecalendar2.cs#2)]
-[!code-vb[Conceptual.Calendars#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/changecalendar2.vb#2)]
+:::code language="csharp" source="./snippets/working-with-calendars/csharp/Program.cs" id="ChangeCalendar":::
+:::code language="vb" source="./snippets/working-with-calendars/vb/Program.vb" id="ChangeCalendar":::
+
+Before the example writes to the console, it changes the console's output encoding to UTF-8 so that Arabic letters display correctly.
 
 ## Dates and calendars
 

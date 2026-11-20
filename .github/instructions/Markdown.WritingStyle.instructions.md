@@ -22,6 +22,7 @@ NEVER use:
 - Jargon or overly complex technical language
 - Weak phrases like "you can" or "there is/are/were" unless they add value
 - "this" as a standalone pronoun — replace it with the specific noun it refers to (adjectival use before a noun, such as "this method", is fine)
+- Gerund phrases that obscure who performs an action (write "When you work with..." NOT "When working with..."; write "Before you deploy..." NOT "Before deploying...")
 
 ALWAYS:
 - Write like you speak using everyday words
@@ -36,6 +37,7 @@ ALWAYS:
 - Never place consecutive headings without content between them
 - Lead with the most important information first
 - Front-load keywords for scanning
+- Lead with the reason or purpose at the beginning of sentences, not the end (write "For better performance, cache the instance" NOT "Cache the instance for better performance"; write "To improve security, use HTTPS" NOT "Use HTTPS to improve security")
 
 ### Lists and Punctuation
 - **CRITICAL: Use Oxford comma in ALL lists (item1, item2, and item3) - NO EXCEPTIONS**

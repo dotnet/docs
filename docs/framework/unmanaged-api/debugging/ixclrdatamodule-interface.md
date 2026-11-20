@@ -26,6 +26,7 @@ Provides methods for querying information about a loaded module.
 
 | Method                                                                                                                                | Description                                                         |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [GetName](ixclrdatamodule-getname-method.md) | Gets the module's base name. |
 | [StartEnumTypeDefinitions](ixclrdatamodule-startenumtypedefinitions-method.md)     | Provides a handle to enumerate the type definitions associated with the module. |
 | [EnumTypeDefinition](ixclrdatamodule-enumtypedefinition-method.md)                 | Enumerates the type definitions associated with the module. |
 | [EndEnumTypeDefinitions](ixclrdatamodule-endenumtypedefinitions-method.md)         | Releases the resources used by internal iterators used during type definition enumeration. |

@@ -19,7 +19,7 @@ helpviewer_keywords:
 ---
 # Jump statements - `break`, `continue`, `return`, and `goto`
 
-The jump statements unconditionally transfer control. The [`break` statement](#the-break-statement) terminates the closest enclosing [iteration statement](iteration-statements.md) or [`switch` statement](selection-statements.md#the-switch-statement). The [`continue` statement](#the-continue-statement) starts a new iteration of the closest enclosing [iteration statement](iteration-statements.md). The [`return` statement](#the-return-statement) terminates execution of the function in which it appears and returns control to the caller. The [`goto` statement](#the-goto-statement) transfers control to a statement that is marked by a label.
+The jump statements unconditionally transfer control. The [`break` statement](#the-break-statement) terminates the closest enclosing [iteration statement](iteration-statements.md) or [`switch` statement](selection-statements.md#the-switch-statement), or an enclosing labeled iteration or `switch` statement. The [`continue` statement](#the-continue-statement) starts a new iteration of the closest enclosing [iteration statement](iteration-statements.md), or an enclosing labeled iteration statement. The [`return` statement](#the-return-statement) terminates execution of the function in which it appears and returns control to the caller. The [`goto` statement](#the-goto-statement) transfers control to a statement that is marked by a label.
 
 For information about the `throw` statement that throws an exception and unconditionally transfers control as well, see [The `throw` statement](exception-handling-statements.md#the-throw-statement) section of the [Exception-handling statements](exception-handling-statements.md) article.
 
@@ -35,6 +35,10 @@ In nested loops, the `break` statement terminates only the innermost loop that c
 
 :::code language="csharp" source="snippets/jump-statements/BreakStatement.cs" id="NestedLoop":::
 
+Starting in C# 15, a `break` statement can optionally specify a label that identifies an enclosing loop or `switch` statement to exit. Place the label directly on the target construct, as in `outer: for (...)`, then use `break outer;` from within a nested construct to transfer control to the statement that follows the labeled construct, as the following example shows:
+
+:::code language="csharp" source="snippets/jump-statements/BreakStatement.cs" id="LabeledBreak":::
+
 When you use the `switch` statement inside a loop, a `break` statement at the end of a switch section transfers control only out of the `switch` statement. The loop that contains the `switch` statement is unaffected, as the following example shows:
 
 :::code language="csharp" source="snippets/jump-statements/BreakStatement.cs" id="SwitchInsideLoop":::
@@ -44,6 +48,14 @@ When you use the `switch` statement inside a loop, a `break` statement at the en
 The `continue` statement starts a new iteration of the closest enclosing [iteration statement](iteration-statements.md) (that is, `for`, `foreach`, `while`, or `do` loop), as the following example shows:
 
 :::code language="csharp" source="snippets/jump-statements/ContinueStatement.cs" id="BasicExample":::
+
+Starting in C# 15, a `continue` statement can optionally specify a label that identifies an enclosing iteration statement to continue. The target must be a loop; `continue` doesn't target a `switch` statement. Place the label directly on the target loop, as in `outer: for (...)`, then use `continue outer;` from within a nested construct to start the next iteration of that loop, as the following example shows:
+
+:::code language="csharp" source="snippets/jump-statements/ContinueStatement.cs" id="LabeledContinue":::
+
+For both labeled `break` and labeled `continue`, only the statement immediately nested in a labeled statement has that label. For example, in `a: b: while (...)`, the `while` statement is labeled `b`, not `a`.
+
+Labeled jump statements often replace a Boolean flag that propagates a break or continue outward through nested loops, or a `goto` that jumps past the loops. The [IDE0410](../../../fundamentals/code-analysis/style-rules/ide0410.md) style rule detects those patterns and offers a labeled `break` or `continue` as a clearer replacement.
 
 ## The `return` statement
 
@@ -149,3 +161,4 @@ For more information, see the following sections of the [C# language specificati
 ## See also
 
 - [`yield` statement](yield.md)
+- [IDE0410: Use labeled jump statement](../../../fundamentals/code-analysis/style-rules/ide0410.md)

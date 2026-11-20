@@ -107,7 +107,7 @@ To use an `out` parameter, both the method definition and the calling method mus
 
 You don't need to initialize variables passed as `out` arguments before the method call. However, the called method must assign a value before it returns.
 
-[Deconstruct methods](../../fundamentals/functional/deconstruct.md) declare their parameters with the `out` modifier to return multiple values. Other methods can return [value tuples](../builtin-types/value-tuples.md) for multiple return values.
+[Deconstruct methods](../../fundamentals/patterns/deconstruct.md) declare their parameters with the `out` modifier to return multiple values. Other methods can return [value tuples](../builtin-types/value-tuples.md) for multiple return values.
 
 You can declare a variable in a separate statement before you pass it as an `out` argument. You can also declare the `out` variable in the argument list of the method call, rather than in a separate variable declaration. `out` variable declarations produce more compact, readable code, and also prevent you from inadvertently assigning a value to the variable before the method call. The following example defines the `number` variable in the call to the [Int32.TryParse](xref:System.Int32.TryParse(System.String,System.Int32@)) method.
 

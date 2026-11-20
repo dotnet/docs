@@ -87,7 +87,10 @@ The following table lists the `SYSLIB0XXX` obsoletions in .NET 5+.
 | [SYSLIB0060](syslib0060.md) | Warning | Constructors on <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> are obsolete. Use <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType> instead. |
 | [SYSLIB0061](syslib0061.md) | Warning | The `Queryable` <xref:System.Linq.Queryable.MaxBy``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IComparer{``0})?displayProperty=nameWithType> and <xref:System.Linq.Queryable.MinBy``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IComparer{``0})?displayProperty=nameWithType> taking an `IComparer<TSource>` are obsolete. Use the new ones that take an `IComparer<TKey>`. |
 | [SYSLIB0062](syslib0062.md) | Warning | <xref:System.Xml.Xsl.XsltSettings.EnableScript?displayProperty=nameWithType> is obsolete. |
+| [SYSLIB0063](syslib0063.md) | Warning | The <xref:System.IO.Pipes.NamedPipeClientStream> constructor that has an `isConnected` parameter is obsolete because the argument has no effect. Use the constructor that accepts `direction`, `isAsync`, and `safePipeHandle`. |
 | [SYSLIB0064](syslib0064.md) | Warning | <xref:System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[],System.Boolean)?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[],System.Boolean)?displayProperty=nameWithType> are obsolete. Use the overloads that accept an <xref:System.Security.Cryptography.RSAEncryptionPadding> instead. |
+| [SYSLIB0065](syslib0065.md) | Warning | The `set` accessor of <xref:System.Security.Cryptography.AsnEncodedData.RawData?displayProperty=nameWithType> is obsolete. Use the constructor of the appropriate type to decode data, or use <xref:System.Security.Cryptography.AsnEncodedData.CopyFrom(System.Security.Cryptography.AsnEncodedData)?displayProperty=nameWithType> for mutable scenarios. |
+| [SYSLIB0066](syslib0066.md) | Warning | <xref:Microsoft.Extensions.Options.IStartupValidator> is obsolete. Implement <xref:Microsoft.Extensions.Options.IAsyncStartupValidator> for new custom startup validators. |
 
 ## EXTOBS obsoletions
 
@@ -97,6 +100,7 @@ The following table lists the `EXTOBS0XXX` obsoletions from the `Microsoft.Exten
 |---------------|------------------|-------------|
 | [EXTOBS0001](extobs0001.md) | Warning | <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor> is obsolete and will be removed in a future version. Consider using [Resource Monitoring observable instruments](../../core/diagnostics/built-in-metrics-diagnostics.md#microsoftextensionsdiagnosticsresourcemonitoring). |
 | [EXTOBS0002](extobs0002.md) | Warning | The `AddServiceLogEnricher` extension methods have been marked as obsolete starting in package version 10.1.0. The methods enrich application logs, not service logs, so they have been replaced with correctly named `AddApplicationLogEnricher` methods. |
+| [EXTOBS0003](extobs0003.md) | Warning | <xref:Microsoft.Extensions.Caching.Hybrid.HybridCacheOptions.DisableCompression?displayProperty=nameWithType> is obsolete because the default `HybridCache` implementation doesn't provide built-in compression and the property has no effect. |
 
 ## Suppress warnings
 

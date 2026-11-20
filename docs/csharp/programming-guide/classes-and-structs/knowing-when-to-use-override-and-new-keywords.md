@@ -279,7 +279,7 @@ public static void TestCars1()
     // used in the definition of ShowDetails in the ConvertibleCar  
     // class.
   
-    Car car2 = new ConvertibleCar();  
+    ConvertibleCar car2 = new ConvertibleCar();  
     car2.DescribeCar();  
     System.Console.WriteLine("----------");  
   

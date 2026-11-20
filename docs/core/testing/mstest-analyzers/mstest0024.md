@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0024: Do not store TestContext in a static member"
 description: "Learn about code analysis rule MSTEST0024: Do not store TestContext in a static member"
-ms.date: 03/19/2024
+ms.date: 11/05/2026
 f1_keywords:
 - MSTEST0024
 - DoNotStoreStaticTestContextAnalyzer
@@ -10,6 +10,7 @@ helpviewer_keywords:
 - MSTEST0024
 author: Evangelink
 ms.author: amauryleve
+ai-usage: ai-assisted
 ---
 # MSTEST0024: Do not store TestContext in a static member
 
@@ -28,9 +29,13 @@ ms.author: amauryleve
 
 This rule raises a diagnostic when an assignment to a `static` member of a `TestContext` parameter is done.
 
+Starting with MSTest 4.4, the rule also detects coalescing assignments, such as `s_testContext ??= testContext`, and deconstruction assignments that store `TestContext` in a static member.
+
 ## Rule description
 
-The `TestContext` parameter passed to each initialize method (`[AssemblyInitialize]` or `[ClassInitialize]`) is specific to the current context and is not updated on each test execution. Storing, for reuse, this `TextContext` object will most of the time lead to issues.
+The `TestContext` passed to `[AssemblyInitialize]` or `[ClassInitialize]` describes that fixture's lifecycle, not the currently executing test. MSTest doesn't update a cached fixture context to turn it into the context for each later test.
+
+For example, `TestName` and data-row properties belong to per-test execution and aren't available in class or assembly fixtures. A saved fixture context can't supply those values for the current test. Static caching also encourages concurrent tests to share a context that isn't theirs. To access per-test information, use the test instance's `TestContext`; share specific fixture data instead of the context object.
 
 ## How to fix violations
 

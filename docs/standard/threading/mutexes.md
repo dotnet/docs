@@ -34,7 +34,9 @@ In the case of a system-wide mutex, an abandoned mutex might indicate that an ap
 
 ## Local and system mutexes
 
-Mutexes are of two types: local mutexes and named system mutexes. If you create a <xref:System.Threading.Mutex> object using a constructor that accepts a name, it is associated with an operating-system object of that name. Named system mutexes are visible throughout the operating system and can be used to synchronize the activities of processes. You can create multiple <xref:System.Threading.Mutex> objects that represent the same named system mutex, and you can use the <xref:System.Threading.Mutex.OpenExisting*> method to open an existing named system mutex.
+Mutexes are of two types: local mutexes and named system mutexes. If you create a <xref:System.Threading.Mutex> object using a constructor that accepts a name, it is associated with an operating-system object of that name. Named mutex scope depends on the platform: on Windows, named mutexes are visible throughout the operating system; on Unix, they default to the current user. Named mutexes can synchronize processes that share their scope. You can create multiple <xref:System.Threading.Mutex> objects that represent the same named mutex, and you can use the <xref:System.Threading.Mutex.OpenExisting*> method to open an existing named mutex.
+
+To learn about the Unix default scope change and how to opt into global scope, see [Named mutexes default to user scope on Unix](../../core/compatibility/core-libraries/11/named-mutexes-unix-default-scope.md).
 
 A local mutex exists only within your process. It can be used by any thread in your process that has a reference to the local <xref:System.Threading.Mutex> object. Each <xref:System.Threading.Mutex> object is a separate local mutex.
 

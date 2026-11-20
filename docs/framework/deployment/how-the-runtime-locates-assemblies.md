@@ -146,7 +146,7 @@ Third, the runtime examines the machine configuration file. This file, called Ma
 
 If the requested assembly has also been requested in previous calls, the common language runtime uses the assembly that is already loaded. This can have ramifications when naming assemblies that make up an application. For more information about naming assemblies, see [Assembly Names](../../standard/assembly/names.md).
 
-If a previous request for the assembly failed, subsequent requests for the assembly are failed immediately without attempting to load the assembly. Starting with .NET Framework version 2.0, assembly binding failures are cached, and the cached information is used to determine whether to attempt to load the assembly.
+If a previous request for the assembly failed, subsequent requests for the assembly are failed immediately without attempting to load the assembly. Assembly binding failures are cached, and the cached information is used to determine whether to attempt to load the assembly.
 
 > [!NOTE]
 > To revert to the behavior of the .NET Framework versions 1.0 and 1.1, which did not cache binding failures, include the [`<disableCachingBindingFailures>` Element](../configure-apps/file-schema/runtime/disablecachingbindingfailures-element.md) in your configuration file.

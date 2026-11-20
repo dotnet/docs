@@ -24,7 +24,7 @@ The package replaces the in-box implementation of BinaryFormatter with a functio
 
 ```xml
 <PropertyGroup>
-  <TargetFramework>net9.0</TargetFramework>
+  <TargetFramework>net11.0</TargetFramework>
   <EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
 </PropertyGroup>
 

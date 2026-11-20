@@ -20,7 +20,7 @@ public class Example
       byte[] bytes = cp1252r.GetBytes(str1);
       string str2 = cp1252r.GetString(bytes);
       Console.WriteLine($"Round-trip: {str1.Equals(str2)}");
-      if (! str1.Equals(str2)) {
+      if (!str1.Equals(str2)) {
          Console.WriteLine(str2);
          foreach (var ch in str2)
             Console.Write("{0} ", Convert.ToUInt16(ch).ToString("X4"));

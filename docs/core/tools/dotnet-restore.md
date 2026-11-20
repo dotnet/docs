@@ -1,7 +1,8 @@
 ---
 title: dotnet restore command
 description: Learn how to restore dependencies and project-specific tools with the dotnet restore command.
-ms.date: 09/29/2025
+ms.date: 11/06/2026
+ai-usage: ai-assisted
 ---
 # dotnet restore
 
@@ -15,8 +16,8 @@ ms.date: 09/29/2025
 
 ```dotnetcli
 dotnet restore [<PROJECT>|<SOLUTION>|<FILE>]
-  [-a|--arch <ARCHITECTURE>] [--configfile <FILE>] [--disable-build-servers]
-  [--disable-parallel] [-f|--force] [--force-evaluate]
+  [-a|--arch <ARCHITECTURE>] [--artifacts-path <ARTIFACTS_DIR>] [--configfile <FILE>]
+  [--disable-build-servers] [--disable-parallel] [-f|--force] [--force-evaluate]
   [--ignore-failed-sources] [--interactive] [--lock-file-path <LOCK_FILE_PATH>]
   [--locked-mode] [--no-dependencies] [--no-http-cache]
   [--os <OS>] [--packages <PACKAGES_DIRECTORY>]
@@ -61,6 +62,12 @@ For information about how to use authenticated feeds, see [Consuming packages fr
 
 For dependencies, you can specify where the restored packages are placed during the restore operation using the `--packages` argument. If not specified, the default NuGet package cache is used, which is found in the `.nuget/packages` directory in the user's home directory on all operating systems. For example, */home/user1* on Linux or *C:\Users\user1* on Windows.
 
+#### NuGet inter-process locks on Linux
+
+Starting in .NET SDK 11.0.200, the default NuGet inter-process lock directory on Linux changes from `/tmp/NuGetScratch{username}/locks` to `~/.nuget/locks`. If SDK versions older than 11.0.200 and SDK versions 11.0.200 or later restore concurrently with different lock directories, they don't coordinate access to the global packages folder and other NuGet files. Failures or undefined behavior can result.
+
+To ensure concurrent restores coordinate access, use .NET SDK 11.0.200 or later everywhere, even for projects that target earlier .NET versions. Alternatively, set the same `NUGET_SCRATCH` value for all concurrent NuGet processes. In every version, this variable overrides the default location and specifies the parent directory without a trailing `locks` component. For more information, see [NuGet locks directory moved on Linux](../compatibility/sdk/11/nuget-locks-directory-linux.md).
+
 ### Project-specific tooling
 
 For project-specific tooling, `dotnet restore` first restores the package in which the tool is packed, and then proceeds to restore the tool's dependencies as specified in its project file.
@@ -92,6 +99,8 @@ There are three specific settings that `dotnet restore` ignores:
 ## Options
 
 - [!INCLUDE [arch](includes/cli-arch.md)]
+
+- [!INCLUDE [artifacts-path](includes/cli-artifacts-path.md)]
 
 - [!INCLUDE [configfile](includes/cli-configfile.md)]
 

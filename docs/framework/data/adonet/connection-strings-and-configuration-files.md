@@ -2,6 +2,7 @@
 title: "Connection Strings and Configuration Files"
 description: Learn how to store connection strings for ADO.NET applications in an application configuration file.
 ms.date: "03/30/2017"
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -63,14 +64,14 @@ Embedding connection strings in your application's code can lead to security vul
 
 ## Retrieve Connection Strings at Run Time
 
-.NET Framework 2.0 introduced new classes in the <xref:System.Configuration> namespace to simplify retrieving connection strings from configuration files at runtime. You can programmatically retrieve a connection string by name or by provider name.
+Use classes in the <xref:System.Configuration> namespace to retrieve connection strings from configuration files at runtime, by name or provider name.
 
 > [!NOTE]
 > The **machine.config** file also contains a `connectionStrings` section, which contains connection strings used by Visual Studio. When retrieving connection strings by provider name from the **app.config** file in a Windows application, the connection strings in **machine.config** get loaded first, and then the entries from **app.config**. Adding `clear` immediately after the `connectionStrings` element removes all inherited references from the data structure in memory, so that only the connection strings defined in the local **app.config** file are considered.
 
 ### Work with the Configuration Classes
 
- Starting with .NET Framework 2.0, <xref:System.Configuration.ConfigurationManager> is used when working with configuration files on the local computer, replacing the deprecated <xref:System.Configuration.ConfigurationSettings> class. <xref:System.Web.Configuration.WebConfigurationManager> is used to work with ASP.NET configuration files. It is designed to work with configuration files on a Web server, and allows programmatic access to configuration file sections such as **system.web**.
+Use <xref:System.Configuration.ConfigurationManager> to work with configuration files on the local computer. It replaces the deprecated <xref:System.Configuration.ConfigurationSettings> class. Use <xref:System.Web.Configuration.WebConfigurationManager> to work with ASP.NET configuration files. It works with configuration files on a web server and provides programmatic access to configuration file sections such as **system.web**.
 
 > [!NOTE]
 > Accessing configuration files at runtime requires granting permissions to the caller; the required permissions depend on the type of application, configuration file, and location. For more information, see <xref:System.Web.Configuration.WebConfigurationManager> for ASP.NET applications, and <xref:System.Configuration.ConfigurationManager> for Windows applications.

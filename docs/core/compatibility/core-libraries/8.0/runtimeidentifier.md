@@ -29,7 +29,7 @@ This change is in line with a .NET 8 change to [RID-specific asset resolution](.
 
 ## Recommended action
 
-<xref:System.Runtime.InteropServices.RuntimeInformation.RuntimeIdentifier?displayProperty=nameWithType> is an opaque value and not intended to be parsed into its component parts. For the OS version of the actual machine an application is running on, use <xref:System.Environment.OSVersion?displayProperty=nameWithType>. For a description, use <xref:System.Runtime.InteropServices.RuntimeInformation.OSDescription?displayProperty=nameWithType>. For a specific ID (distro) and corresponding version on Linux, you can read the [os-release](https://www.freedesktop.org/software/systemd/man/os-release.html) file.
+<xref:System.Runtime.InteropServices.RuntimeInformation.RuntimeIdentifier?displayProperty=nameWithType> is an opaque value and not intended to be parsed into its component parts. For the OS version of the actual machine an application is running on, use <xref:System.Environment.OSVersion?displayProperty=nameWithType>. For a description, use <xref:System.Runtime.InteropServices.RuntimeInformation.OSDescription?displayProperty=nameWithType>. For a specific ID (distro) and corresponding version on Linux, you can read the [os-release](https://www.freedesktop.org/software/systemd/man/latest/os-release.html) file.
 
 ## Affected APIs
 

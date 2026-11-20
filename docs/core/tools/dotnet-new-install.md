@@ -1,7 +1,8 @@
 ---
 title: dotnet new install
+ai-usage: ai-assisted
 description: The dotnet new install command installs a template package.
-ms.date: 11/12/2025
+ms.date: 10/30/2026
 ---
 # dotnet new install
 
@@ -14,7 +15,7 @@ ms.date: 11/12/2025
 ## Synopsis
 
 ```dotnetcli
-dotnet new install <PATH|NUGET_ID>  [--interactive] [--add-source|--nuget-source <SOURCE>] [--force]
+dotnet new install <PATH|NUGET_ID>  [--interactive] [--add-source|--nuget-source <SOURCE>] [--force] [--prerelease]
     [-d|--diagnostics] [--verbosity <LEVEL>] [-h|--help]
 ```
 
@@ -22,7 +23,7 @@ dotnet new install <PATH|NUGET_ID>  [--interactive] [--add-source|--nuget-source
 
 The `dotnet new install` command installs a template package from the `PATH` or `NUGET_ID` provided. If you want to install a specific version or prerelease version of a template package, specify the version in the format `<package-name>@<package-version>`. (The colon separator `::` was deprecated in favor of the `@` character in .NET 9.0.200 SDK.) By default, `dotnet new` passes \* for the version, which represents the latest stable package version. For more information, see the [Examples](#examples) section.
 
-If a version of the template package was already installed when you run this command, the template package will be updated to the specified version. If no version is specified, the package is updated to the latest stable version.
+If a version of the template package was already installed when you run this command, the template package will be updated to the specified version. If no version is specified, the package is updated to the latest stable version unless you specify the `--prerelease` option.
 Starting with .NET SDK 6.0.100, if the argument specifies the version, and that version of the NuGet package is already installed, it won't be reinstalled.
 If the argument is a `PATH` and it's already installed, it won't be reinstalled.
 
@@ -45,6 +46,24 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 > [!WARNING]
 > Templates can run MSBuild code and other arbitrary code when triggered. Don't install or run untrusted .NET templates.
 
+### Package signature verification
+
+When signature verification is enabled, `dotnet new install` verifies signed template packages downloaded from NuGet sources before installation. Verification applies to configured and additional NuGet sources, but not to packages installed directly from a local `.nupkg` file or folder.
+
+Verification depends on the operating system:
+
+| Operating system | Default behavior | Configuration |
+|---|---|---|
+| Windows | Enabled | Can't be disabled with `DOTNET_NUGET_SIGNATURE_VERIFICATION`. |
+| Linux | Enabled | Set `DOTNET_NUGET_SIGNATURE_VERIFICATION=false` to disable verification. |
+| macOS | Disabled | Set `DOTNET_NUGET_SIGNATURE_VERIFICATION=true` to enable verification. See [NuGet signed-package verification](nuget-signed-package-verification.md#macos) for platform limitations. |
+
+When verification is enabled, unsigned packages are accepted unless the applicable NuGet configuration sets `signatureValidationMode` to `require`, or the source declares that all its packages are repository-signed. For information about configuring the client policy, see [signatureValidationMode](/nuget/reference/nuget-config-file#signaturevalidationmode).
+
+If signature verification fails, the package isn't installed. The `--force` option doesn't bypass signature verification. Run the command with `--diagnostics` to see verification details. For certificate-store requirements and troubleshooting, see [NuGet signed-package verification](nuget-signed-package-verification.md). You can also verify a downloaded package explicitly with [`dotnet nuget verify`](dotnet-nuget-verify.md).
+
+Successful verification doesn't guarantee that a template is safe to run. For more information about this behavior change and affected SDK feature bands, see [Template package installation verifies NuGet signatures](../compatibility/sdk/11/template-package-signature-verification.md).
+
 ## Arguments
 
 - **`<PATH|NUGET_ID>`**
@@ -56,8 +75,8 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 
 - **`--add-source|--nuget-source <SOURCE>`**
 
-  By default, `dotnet new install` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet source the package can be installed from. If `--nuget-source` is specified, the source will be added to the list of sources to be checked.
-  To check the configured sources for the current directory use [`dotnet nuget list source`](dotnet-nuget-list-source.md). For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior).
+  By default, `dotnet new install` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet sources for the operation. Specify `--nuget-source` to use a source in addition to the configured sources.
+  To check the configured sources for the current directory, use [`dotnet nuget list source`](dotnet-nuget-list-source.md). For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior).
 
   > [!NOTE]
   > Following NuGet's [Https Everywhere](https://devblogs.microsoft.com/nuget/https-everywhere/) initiative, `dotnet new` is phasing out `http` feeds. If an `http` feed is passed, it isn't queried for packages and a warning is displayed. The `--force` option can be used to override this behavior if necessary.
@@ -70,9 +89,15 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 
   Allows installing template packages from the specified sources even if they would override a template package from another source. Available since .NET SDK 7.0.100.
 
+  This option doesn't bypass [package signature verification](#package-signature-verification).
+
 - [!INCLUDE [help](includes/cli-help.md)]
 
 - [!INCLUDE [interactive](includes/cli-interactive.md)]
+
+- **`--prerelease`**
+
+  Selects the latest available version, including prerelease versions, when you don't specify a template package version. If you specify a package version, such as `Contoso.Templates@2.0.0-preview.3`, the command selects that exact version. Available since .NET SDK 11.
 
 - [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
@@ -100,4 +125,4 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 
 - [`dotnet new` command](dotnet-new.md)
 - [`dotnet new search` command](dotnet-new-search.md)
-- [Custom templates for `dotnet new`](custom-templates.md)
+- [.NET templates for authors](templates.md)

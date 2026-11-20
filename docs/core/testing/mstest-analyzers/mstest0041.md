@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0041: Use 'ConditionBaseAttribute' on test classes"
 description: "Learn about code analysis rule MSTEST0041: Use 'ConditionBaseAttribute' on test classes"
-ms.date: 02/13/2025
+ms.date: 11/05/2026
 f1_keywords:
 - MSTEST0041
 - UseConditionBaseWithTestClassAnalyzer
@@ -10,6 +10,7 @@ helpviewer_keywords:
 - MSTEST0041
 author: Youssef1313
 ms.author: ygerges
+ai-usage: ai-assisted
 ---
 # MSTEST0041: Use 'ConditionBaseAttribute' on test classes
 
@@ -22,7 +23,7 @@ ms.author: ygerges
 | **Enabled by default**              | Yes                                                                    |
 | **Default severity**                | Warning                                                                |
 | **Introduced in version**           | 3.8.0                                                                  |
-| **Is there a code fix**             | No                                                                     |
+| **Is there a code fix**             | Yes, starting with MSTest 4.4                                          |
 
 ## Cause
 
@@ -32,9 +33,13 @@ The use of an attribute that inherits from <xref:Microsoft.VisualStudio.TestTool
 
 An attribute that derives from <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ConditionBaseAttribute> only has an effect when applied to a class that's marked with <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>.
 
+Conditions control whether MSTest runs a discovered test target; they don't declare a test class themselves. On an ordinary helper class, the condition can look like test policy without participating in test discovery or execution. This rule catches that mismatch between the apparent policy and the tests the runner actually recognizes.
+
 ## How to fix violations
 
 Depending on the intent, either add the missing <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> or remove the attribute that derives from <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ConditionBaseAttribute>.
+
+Starting with MSTest 4.4, the code fix adds `[TestClass]` to the affected type.
 
 ## When to suppress warnings
 

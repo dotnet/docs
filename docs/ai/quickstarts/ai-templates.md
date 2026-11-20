@@ -11,12 +11,6 @@ ai-usage: ai-assisted
 
 In this quickstart, you learn how to create a .NET AI app to chat with custom data using the .NET AI app template. The template is designed to streamline the getting started experience for building AI apps with .NET by handling common setup tasks and configurations for you.
 
-:::zone target="docs" pivot="github-models"
-
-[!INCLUDE [ai-templates-github-models](includes/ai-templates-github-models.md)]
-
-:::zone-end
-
 :::zone target="docs" pivot="azure-openai"
 
 [!INCLUDE [ai-templates-azure-openai](includes/ai-templates-azure-openai.md)]

@@ -2,7 +2,7 @@
 title: "Integrate Your Data into AI Apps with Retrieval-Augmented Generation"
 description: "Learn how retrieval-augmented generation lets you use your data with LLMs to generate better completions in .NET."
 ms.topic: concept-article
-ms.date: 12/10/2025
+ms.date: 09/14/2026
 ---
 
 # Retrieval-augmented generation (RAG) provides LLM knowledge

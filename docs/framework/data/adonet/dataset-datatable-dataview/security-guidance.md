@@ -13,7 +13,7 @@ This article applies to:
 * .NET Core and later
 * .NET 5 and later
 
-The [DataSet](/dotnet/api/system.data.dataset) and [DataTable](/dotnet/api/system.data.datatable) types are legacy .NET components that allow representing data sets as managed objects. These components were introduced in .NET Framework 1.0 as part of the original [ADO.NET infrastructure](./index.md). Their goal was to provide a managed view over a relational data set, abstracting away whether the underlying source of the data was XML, SQL, or another technology.
+The [DataSet](/dotnet/api/system.data.dataset) and [DataTable](/dotnet/api/system.data.datatable) types are legacy .NET components that allow representing data sets as managed objects. Their goal was to provide a managed view over a relational data set, abstracting away whether the underlying source of the data was XML, SQL, or another technology.
 
 For more information on ADO.NET, including more modern data view paradigms, see [the ADO.NET documentation](../index.md).
 

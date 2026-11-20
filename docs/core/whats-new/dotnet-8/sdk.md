@@ -8,7 +8,7 @@ ms.update-cycle: 3650-days
 ---
 # What's new in the SDK and tooling for .NET 8
 
-This article describes new features in the .NET SDK and tooling for .NET 8.
+This article describes new features in the .NET SDK and tooling for .NET 8. You can [download .NET 8 here](https://dotnet.microsoft.com/download/dotnet/8.0).
 
 ## SDK
 

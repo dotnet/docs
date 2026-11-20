@@ -21,26 +21,27 @@ class Program
             using Process process = Process.Start(psi)!;
             Thread.Sleep(5_000);
 
-            GenerateConsoleCtrlEvent(CTRL_C_EVENT, (uint)process.Id);
+            GenerateConsoleCtrlEvent(CTRL_BREAK_EVENT, (uint)process.Id);
             process.WaitForExit();
 
             Console.WriteLine("Child process terminated gracefully, continue with the parent process logic if needed.");
         }
         else
         {
-            // If you need to send a CTRL+C, the child process needs to re-enable CTRL+C handling, if you own the code, you can call SetConsoleCtrlHandler(NULL, FALSE).
+            // CREATE_NEW_PROCESS_GROUP disables CTRL+C handling in the new process group.
+            // CTRL+BREAK is not affected, so you don't need to re-enable it with SetConsoleCtrlHandler.
+            // If you use CTRL+C instead, re-enable handling by calling SetConsoleCtrlHandler(NULL, FALSE).
             // see https://learn.microsoft.com/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw#remarks
-            SetConsoleCtrlHandler((IntPtr)null, false);
 
             Console.WriteLine("Greetings from the child process!  I need to be gracefully terminated, send me a signal!");
 
             bool stop = false;
 
-            var registration = PosixSignalRegistration.Create(PosixSignal.SIGINT, ctx =>
+            var registration = PosixSignalRegistration.Create(PosixSignal.SIGQUIT, ctx =>
             {
                 stop = true;
                 ctx.Cancel = true;
-                Console.WriteLine("Received CTRL+C, stopping...");
+                Console.WriteLine("Received CTRL+BREAK, stopping...");
             });
 
             StreamWriter sw = File.AppendText("log.txt");

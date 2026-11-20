@@ -2,7 +2,7 @@
 Option Strict On
 
 Imports System.Data
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 Imports System.Data.SqlTypes
 Imports System.Drawing
 Imports System.Drawing.Imaging

@@ -1,7 +1,7 @@
 ---
 title: "Pointer related operators - access memory and dereference memory locations"
 description: "Learn about C# operators that you can use when working with pointers. You use these operators to access memory, index memory locations and dereference the storage at a memory location"
-ms.date: 01/20/2026
+ms.date: 06/16/2026
 author: pkulikov
 f1_keywords: 
   - "->_CSharpKeyword"
@@ -38,7 +38,8 @@ Use the following operators to work with pointers:
 For information about pointer types, see [Pointer types](../unsafe-code.md#pointer-types).
 
 > [!NOTE]
-> Any operation with pointers requires an [unsafe](../keywords/unsafe.md) context. You must compile the code that contains unsafe blocks with the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option.
+> Most operations with pointers require an [unsafe](../keywords/unsafe.md) context, and you must compile unsafe code with the [**AllowUnsafeBlocks**](../compiler-options/language.md#allowunsafeblocks) compiler option.
+> The [memory safety](../unsafe-code.md#the-updated-memory-safety-model-preview) preview feature available in C# 15 lets you use the address-of `&` operator outside an `unsafe` context. Even when enabled, the pointer indirection, member access, and element access operators that read or write the pointed-to memory still require an `unsafe` context.
 
 ## <a name="address-of-operator-"></a> Address-of operator &amp;
 
@@ -166,7 +167,7 @@ Use parentheses, `()`, to change the order of evaluation imposed by operator pre
 
 For the complete list of C# operators ordered by precedence level, see the [Operator precedence](index.md#operator-precedence) section of the [C# operators](index.md) article.
 
-## Operator overloadability
+## Operator overloading
 
 You can't overload the pointer-related operators `&`, `*`, `->`, and `[]` in a user-defined type.
 

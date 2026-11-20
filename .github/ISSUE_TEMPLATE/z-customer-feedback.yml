@@ -14,7 +14,7 @@ body:
       label: Type of issue
       options:
         - Typo
-        - Code doesn't work
+        - Code does not work
         - Missing information
         - Outdated article
         - Thank you
@@ -22,7 +22,6 @@ body:
     validations:
       required: true
   - type: textarea
-    id: feedback
     validations:
       required: true
     attributes:

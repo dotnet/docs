@@ -1,7 +1,7 @@
 ---
 title: Performance rules (code analysis)
 description: "Learn about code analysis performance rules."
-ms.date: 10/27/2025
+ms.date: 11/12/2026
 f1_keywords:
 - vs.codeanalysis.performancerules
 helpviewer_keywords:
@@ -73,7 +73,7 @@ Performance rules support high-performance libraries and applications.
 | [CA1861: Avoid constant arrays as arguments](ca1861.md) | Constant arrays passed as arguments are not reused which implies a performance overhead. Consider extracting them to 'static readonly' fields to improve performance. |
 | [CA1862: Use the 'StringComparison' method overloads to perform case-insensitive string comparisons](ca1862.md) | When code calls <xref:System.String.ToLower> or <xref:System.String.ToUpper> to perform a case-insensitive string comparison, an unnecessary allocation is performed. |
 | [CA1863: Use 'CompositeFormat'](ca1863.md) | To reduce the formatting cost, cache and use a <xref:System.Text.CompositeFormat> instance as the argument to `String.Format` or `StringBuilder.AppendFormat`. |
-| [CA1864: Prefer the 'IDictionary.TryAdd(TKey, TValue)' method](ca1864.md) | Both <xref:System.Collections.Generic.Dictionary`2.ContainsKey(`0)?displayProperty=nameWithType> and <xref:System.Collections.Generic.Dictionary`2.Add*?displayProperty=nameWithType> perform a lookup, which is redundant. It's is more efficient to call <xref:System.Collections.Generic.Dictionary`2.TryAdd*?displayProperty=nameWithType>, which returns a `bool` indicating if the value was added or not. `TryAdd` doesn't overwrite the key's value if the key is already present. |
+| [CA1864: Prefer the 'Dictionary.TryAdd(TKey, TValue)' method](ca1864.md) | Both <xref:System.Collections.Generic.Dictionary`2.ContainsKey(`0)?displayProperty=nameWithType> and <xref:System.Collections.Generic.Dictionary`2.Add*?displayProperty=nameWithType> perform a lookup, which is redundant. It's more efficient to call <xref:System.Collections.Generic.Dictionary`2.TryAdd*?displayProperty=nameWithType>, which returns a `bool` indicating if the value was added or not. `TryAdd` doesn't overwrite the key's value if the key is already present. |
 | [CA1865-CA1867: Use char overload](ca1865-ca1867.md) | The char overload is a better performing overload for a string with a single char. |
 | [CA1868: Unnecessary call to 'Contains' for sets](ca1868.md) | Both <xref:System.Collections.Generic.ISet`1.Add(`0)?displayProperty=nameWithType> and <xref:System.Collections.Generic.ICollection`1.Remove(`0)?displayProperty=nameWithType> perform a lookup, which makes it redundant to call <xref:System.Collections.Generic.ICollection`1.Contains(`0)?displayProperty=nameWithType> beforehand. It's more efficient to call <xref:System.Collections.Generic.ISet`1.Add(`0)> or <xref:System.Collections.Generic.ICollection`1.Remove(`0)> directly, which returns a Boolean value indicating whether the item was added or removed. |
 | [CA1869: Cache and reuse 'JsonSerializerOptions' instances](ca1869.md) | Using a local instance of <xref:System.Text.Json.JsonSerializerOptions> for serialization or deserialization can substantially degrade the performance of your application if your code executes multiple times, since System.Text.Json internally caches serialization-related metadata into the provided instance. |
@@ -83,4 +83,6 @@ Performance rules support high-performance libraries and applications.
 | [CA1873: Avoid potentially expensive logging](ca1873.md) | When logging methods are called, their arguments are evaluated regardless of whether the logging level is enabled. This can result in expensive operations being executed even when the log message won't be written. For better performance, guard expensive logging calls with a check to <xref:Microsoft.Extensions.Logging.ILogger.IsEnabled*> or use the `LoggerMessage` pattern. |
 | [CA1874: Use 'Regex.IsMatch'](ca1874.md) | <xref:System.Text.RegularExpressions.Regex.IsMatch*?displayProperty=nameWithType> is simpler and faster than `Regex.Match(...).Success`. |
 | [CA1875: Use 'Regex.Count'](ca1875.md) | <xref:System.Text.RegularExpressions.Regex.Count*?displayProperty=nameWithType> is simpler and faster than `Regex.Matches(...).Count`. |
+| [CA1876: Do not use 'AsParallel' in 'foreach'](ca1876.md) | Calling `AsParallel()` directly in a `foreach` loop doesn't make the loop parallel. Use `Parallel.ForEach` to process each item in parallel. |
 | [CA1877: Use 'Path.Combine' or 'Path.Join' overloads](ca1877.md) | Multiple consecutive <xref:System.IO.Path.Combine*?displayProperty=nameWithType> or <xref:System.IO.Path.Join*?displayProperty=nameWithType> operations can be collapsed into a single call using overloads that accept multiple path segments. |
+| [CA1878: Prefer ReadOnlySpan properties over readonly array fields](ca1878.md) | A private static readonly constant-array field can be replaced with a `ReadOnlySpan<T>` property so the C# compiler can avoid a managed array allocation. |

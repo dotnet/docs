@@ -13,7 +13,13 @@ The following step-by-step tutorials run on Windows, Linux, or macOS, except as 
 * Create a web app
   * [with server-side web UI](/aspnet/core/tutorials/razor-pages/razor-pages-start)
   * [with client-side web UI](https://dotnet.microsoft.com/learn/aspnet/blazor-tutorial/intro)
-* [Create a web API](/aspnet/core/tutorials/first-web-api)
+* Create a web API
+  * [with controllers](/aspnet/core/tutorials/first-web-api)
+  * [with Minimal APIs](/aspnet/core/tutorials/min-web-api)
+* [Add data access with Entity Framework Core](/aspnet/core/data/ef-rp/intro)
+* Add authentication and authorization
+  * [with ASP.NET Core Identity](/aspnet/core/security/authentication/identity)
+  * [with JWT Bearer tokens](/aspnet/core/security/authentication/jwt-authn)
 * [Create a remote procedure call web app](/aspnet/core/tutorials/grpc/grpc-start)
 * [Create a real-time web app](/aspnet/core/tutorials/signalr)
 * [Create a serverless function in the cloud](/azure/azure-functions/functions-create-first-function-vs-code?pivots=programming-language-csharp)
@@ -22,12 +28,18 @@ The following step-by-step tutorials run on Windows, Linux, or macOS, except as 
   * [WPF](/visualstudio/get-started/csharp/tutorial-wpf)
   * [Windows Forms](/visualstudio/ide/create-csharp-winform-visual-studio)
   * [Universal Windows Platform (UWP)](/visualstudio/get-started/csharp/tutorial-uwp)
+  * [WinUI 3 (Windows App SDK)](/windows/apps/get-started/start-here)
 * [Create a game using Unity](https://dotnet.microsoft.com/learn/games/unity-tutorial/intro)
 * [Create a Windows service](/aspnet/core/host-and-deploy/windows-service)
 
 ## Tutorials for creating class libraries
 
 * [Create a class library](../core/tutorials/create-class-library.md)
+
+## Tutorials for testing .NET apps
+
+* [Unit test a .NET class library using xUnit](/dotnet/core/testing/unit-testing-with-dotnet-test)
+* [Integration test an ASP.NET Core app](/aspnet/core/test/integration-tests)
 
 ## Resources for learning .NET languages
 

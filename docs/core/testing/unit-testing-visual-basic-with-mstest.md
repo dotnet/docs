@@ -3,7 +3,8 @@ title: Get started with Visual Basic and MSTest
 description: Learn unit test concepts in .NET through an interactive experience building a sample Visual Basic solution step-by-step using MSTest.
 author: billwagner
 ms.author: wiwagn
-ms.date: 09/01/2017
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 ---
 # Get started with Visual Basic and MSTest
 
@@ -58,6 +59,8 @@ Make the *PrimeService.Tests* directory the current directory and create a new p
   <PackageReference Include="MSTest" Version="4.1.0" />
 </ItemGroup>
 ```
+
+[!INCLUDE [MSTest package versions](../../../includes/mstest-package-versions.md)]
 
 The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added MSTest. Now, add the `PrimeService` class library as another dependency to the project. Use the [`dotnet reference add`](../tools/dotnet-reference-add.md) command:
 

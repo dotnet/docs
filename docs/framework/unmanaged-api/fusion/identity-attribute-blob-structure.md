@@ -177,7 +177,7 @@ int _cdecl wmain(int argc, LPCWSTR argv[])
             goto Exit;  
         }  
   
-        if (! cbUsed) {  
+        if (!cbUsed) {  
             break;  
         }  
   

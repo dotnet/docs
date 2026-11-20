@@ -89,7 +89,7 @@ The compiler typically infers the types for parameters to lambda expressions, wh
 
 Input parameter types must be all explicit or all implicit. Otherwise, a [CS0748](../compiler-messages/lambda-expression-errors.md#lambda-expression-parameters-and-returns) compiler error occurs. Before C# 14, you must include the explicit type on a parameter if it has any modifiers, such as `ref` or `out`. In C# 14, that restriction is removed. However, you must still declare the type if you use the `params` modifier.
 
-Use [discards](../../fundamentals/functional/discards.md) to specify two or more input parameters of a lambda expression that aren't used in the expression:
+Use [discards](../../fundamentals/patterns/discards.md) to specify two or more input parameters of a lambda expression that aren't used in the expression:
 
 :::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetDiscards":::
 
@@ -98,7 +98,7 @@ Lambda discard parameters can be useful when you use a lambda expression to [pro
 > [!NOTE]
 > For backwards compatibility, if only a single input parameter is named `_`, the compiler treats `_` as the name of that parameter  within that lambda expression.
 
-Starting with C# 12, you can provide *default values* for explicitly typed parameter lists. The syntax and the restrictions on default parameter values are the same as for methods and local functions. The following example declares a lambda expression with a default parameter, then calls it once by using the default and once with two explicit parameters:
+You can provide *default values* for explicitly typed parameter lists. The syntax and the restrictions on default parameter values are the same as for methods and local functions. The following example declares a lambda expression with a default parameter, then calls it once by using the default and once with two explicit parameters:
 
 :::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetDefaultParameters":::
 
@@ -114,7 +114,7 @@ Lambda expressions with default parameters or `params` collections as parameters
 
 Or, you can use implicitly typed variables with `var` declarations to define the delegate type. The compiler synthesizes the correct delegate type.
 
-For more information about default parameters on lambda expressions, see the feature spec for [default parameters on lambda expressions](~/_csharplang/proposals/csharp-12.0/lambda-method-group-defaults.md).
+For more information about default parameters on lambda expressions, see the [default parameters on lambda expressions](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-12.0/lambda-method-group-defaults.md) feature specification.
 
 ## Async lambdas
 
@@ -329,18 +329,12 @@ A static lambda can't capture local variables or instance state from enclosing s
 
 For more information, see the [Anonymous function expressions](~/_csharpstandard/standard/expressions.md#1222-anonymous-function-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
-For more information about these features, see the following feature proposal notes:
-
-- [Lambda discard parameters](~/_csharpstandard/standard/expressions.md#12222-anonymous-function-signatures)
-- [Static anonymous functions](~/_csharpstandard/standard/expressions.md#1222-anonymous-function-expressions)
-- [Lambda improvements](~/_csharplang/proposals/csharp-10.0/lambda-improvements.md)
-
 ## See also
 
 - [Use local function instead of lambda (style rule IDE0039)](../../../fundamentals/code-analysis/style-rules/ide0039.md)
 - [C# operators and expressions](index.md)
 - [LINQ (Language-Integrated Query)](../../linq/index.md)
 - [Expression trees](../../advanced-topics/expression-trees/index.md)
-- [Local functions vs. lambda expressions](../../programming-guide/classes-and-structs/local-functions.md#local-functions-vs-lambda-expressions)
+- [Choose a local function or lambda expression](../../fundamentals/building-software/local-functions.md#choose-a-local-function-or-lambda-expression)
 - [LINQ sample queries](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Visual%20Studio%20Product%20Team/Official%20Visual%20Studio%202008%20C%23%20Samples/%5BC%23%5D-Official%20Visual%20Studio%202008%20C%23%20Samples/LINQ%20-%20Sample%20Queries/C%23)
 - [XQuery sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Visual%20Studio%20Product%20Team/Official%20Visual%20Studio%202008%20C%23%20Samples/%5BC%23%5D-Official%20Visual%20Studio%202008%20C%23%20Samples/XQuery/C%23)

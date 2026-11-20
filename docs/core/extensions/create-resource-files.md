@@ -1,7 +1,7 @@
 ---
 title: Create resource files
 description: Make resource files for .NET apps. Build text files with string resources, XML or binary files programmatically, or XML files with string, image, or object data.
-ms.date: 10/20/2025
+ms.date: 08/06/2026
 dev_langs:
   - "csharp"
   - "vb"
@@ -73,7 +73,7 @@ HelpMenuName=Help
 EmptyString=
 ```
 
- Starting with .NET Framework 4.5 and in all versions of .NET Core, text files support conditional compilation with the `#ifdef`*symbol*... `#endif` and `#if !`*symbol*... `#endif` constructs. You can then use the `/define` switch with [Resource File Generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md) to define symbols. Each resource requires its own `#ifdef`*symbol*... `#endif` or `#if !`*symbol*... `#endif` construct. If you use an `#ifdef` statement and *symbol* is defined, the associated resource is included in the .resources file; otherwise, it is not included. If you use an `#if !` statement and *symbol* is not defined, the associated resource is included in the .resources file; otherwise, it is not included.
+ Text files support conditional compilation with the `#ifdef`*symbol*... `#endif` and `#if !`*symbol*... `#endif` constructs. You can then use the `/define` switch with [Resource File Generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md) to define symbols. Each resource requires its own `#ifdef`*symbol*... `#endif` or `#if !`*symbol*... `#endif` construct. If you use an `#ifdef` statement and *symbol* is defined, the associated resource is included in the .resources file; otherwise, it is not included. If you use an `#if !` statement and *symbol* is not defined, the associated resource is included in the .resources file; otherwise, it is not included.
 
  Comments are optional in text files and are preceded either by a semicolon (;) or by a pound sign (#) at the beginning of a line. Lines that contain comments can be placed anywhere in the file. Comments are not included in a compiled .resources file that is created by using [Resource File Generator (_resgen.exe_)](../../framework/tools/resgen-exe-resource-file-generator.md).
 

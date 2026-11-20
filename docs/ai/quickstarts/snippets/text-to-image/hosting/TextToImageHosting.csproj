@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <NoWarn>$(NoWarn);MEAI001</NoWarn>
@@ -11,7 +11,7 @@
   <ItemGroup>
     <PackageReference Include="Aspire.Azure.AI.OpenAI" Version="13.0.0-preview.1.25560.3" />
     <PackageReference Include="Azure.AI.OpenAI" Version="2.5.0-beta.1" />
-    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="10.4.1" />
+    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="10.11.0" />
   </ItemGroup>
 
 </Project>

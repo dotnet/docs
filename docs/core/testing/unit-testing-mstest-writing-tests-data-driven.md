@@ -1,10 +1,10 @@
 ---
 title: Data-driven testing in MSTest
-description: Learn how to use data-driven testing in MSTest with DataRow, DynamicData, and TestDataRow to run the same test with multiple inputs.
+description: Learn how to use DataRow, DynamicData, CombinatorialData, and TestDataRow to run MSTest tests with multiple inputs.
 author: Evangelink
 ms.author: amauryleve
 ai-usage: ai-assisted
-ms.date: 03/09/2026
+ms.date: 10/01/2026
 ---
 
 # Data-driven testing in MSTest
@@ -18,6 +18,7 @@ MSTest provides several attributes for data-driven testing:
 | Attribute | Use case | Best for |
 |-----------|----------|----------|
 | [`DataRow`](#datarowattribute) | Inline test data | Simple, static test cases |
+| [`CombinatorialData`](#combinatorialdataattribute) | A Cartesian product of parameter values | Exhaustive combinations of independent inputs |
 | [`DynamicData`](#dynamicdataattribute) | Data from methods, properties, or fields | Complex or computed test data |
 | [`DataSource`](#datasourceattribute) | External data files or databases | Legacy scenarios with external data sources |
 
@@ -26,12 +27,12 @@ MSTest also provides the following types to extend data-driven scenarios:
 - [`TestDataRow<T>`](#testdatarow): A return type for `ITestDataSource` implementations (including `DynamicData`) that adds metadata support such as display names, categories, and ignore messages to individual test cases.
 - [`ITestDataSource`](#itestdatasource): An interface you can implement on a custom attribute to create fully custom data source attributes.
 
-> [!TIP]
-> For combinatorial testing (testing all combinations of multiple parameter sets), use the open-source [Combinatorial.MSTest](https://www.nuget.org/packages/Combinatorial.MSTest) NuGet package. This community-maintained package is [available on GitHub](https://github.com/Youssef1313/Combinatorial.MSTest) but isn't maintained by Microsoft.
+> [!NOTE]
+> Built-in combinatorial testing is available starting with MSTest 4.4. For earlier MSTest versions, use the community-maintained [Combinatorial.MSTest](https://www.nuget.org/packages/Combinatorial.MSTest) package.
 
 ## `DataRowAttribute`
 
-The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute> allows you to run the same test method with multiple different inputs. Apply one or multiple `DataRow` attributes to a test method, and combine it with the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>.
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute> lets you run the same test method with multiple different inputs. Apply one or more `DataRow` attributes to a test method that's decorated with the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>.
 
 The number and types of arguments must exactly match the test method signature.
 
@@ -98,6 +99,9 @@ public class DataRowExamples
 }
 ```
 
+> [!NOTE]
+> Starting with MSTest v3.10, use `DateOnly` and `TimeOnly` as `DataRow` arguments and in `DynamicData` parameterized tests.
+
 ### Using params for variable arguments
 
 Use the `params` keyword to accept a variable number of arguments:
@@ -114,6 +118,20 @@ public class ParamsExample
     {
         Assert.IsTrue(values.Length > 0);
     }
+}
+```
+
+### Generic test methods
+
+Starting with MSTest v3.8, a `TestMethod` can have type parameters. The framework infers type arguments from `DataRow` or `DynamicData` values:
+
+```csharp
+[TestMethod]
+[DataRow(42)]
+[DataRow("alpha")]
+public void Value_RoundTrips<T>(T value)
+{
+    Assert.AreEqual(value, value);
 }
 ```
 
@@ -158,6 +176,31 @@ public class IgnoreDataRowExample
 }
 ```
 
+## `CombinatorialDataAttribute`
+
+Starting with MSTest 4.4, the `CombinatorialData` attribute generates the Cartesian product of the values for each test method parameter. Use the types in the `Microsoft.VisualStudio.TestTools.UnitTesting.Combinatorial` namespace.
+
+Provide values for each parameter with one of the following options:
+
+| Value source | Behavior |
+|--------------|----------|
+| Inferred values | Uses `true` and `false` for `bool`; `0` and `1` for `int`; all defined values for an enum; and `null` plus the inferred values for a nullable version of one of these supported types. |
+| `CombinatorialValues` | Uses the explicit values that you pass to the attribute. |
+| `CombinatorialRange` | Generates `int` or `uint` values from a starting value and count, or from inclusive endpoints and a step. |
+| `CombinatorialRandomData` | Generates unique `int` values. Set `Count`, `Minimum`, `Maximum`, and optionally `Seed` to control the values. |
+
+The following test combines two inferred `bool` values, two explicit values, three range values, and two seeded random values. MSTest generates 24 test cases from these independent parameter sets.
+
+:::code language="csharp" source="./snippets/unit-testing-mstest-writing-tests-data-driven/csharp/CombinatorialTests.cs" id="CombinatorialExample":::
+:::code language="vb" source="./snippets/unit-testing-mstest-writing-tests-data-driven/vb/CombinatorialTests.vb" id="CombinatorialExample":::
+
+Apply no more than one combinatorial value provider to each parameter. For a parameter type whose values MSTest can't infer, apply `CombinatorialValues`, `CombinatorialRange`, `CombinatorialRandomData`, or a custom attribute that implements `ICombinatorialValuesProvider`.
+
+`CombinatorialData` creates an exhaustive Cartesian product. It doesn't support pairwise generation, permutations, exclusions between parameter values, member-backed values, or class data. Use `DynamicData` or a custom `ITestDataSource` when values depend on each other or when you need to filter the generated test cases.
+
+> [!NOTE]
+> Starting with MSTest 4.5 preview, automatically generated data-driven display names escape control characters and unpaired surrogate characters. Valid surrogate pairs remain unchanged, and literal escape-sequence text stays distinct from the control character that it represents.
+
 ## `DynamicDataAttribute`
 
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataAttribute> lets you provide test data from methods, properties, or fields. Use this attribute when test data is complex, computed dynamically, or too verbose for inline `DataRow` attributes.
@@ -178,7 +221,10 @@ The data source can return any `IEnumerable<T>` where `T` is one of the types li
 
 ### Data sources
 
-The data source can be a method, property, or field. All three are interchangeable—choose based on your preference:
+The data source can be a method or property and, starting with MSTest v3.11, a field. These sources are interchangeable, so choose based on your preference:
+
+> [!NOTE]
+> Starting with MSTest v3.8, `DynamicData` auto-detects the data source type. You don't need to specify `DynamicDataSourceType` explicitly.
 
 ```csharp
 [TestClass]
@@ -231,6 +277,9 @@ public class DynamicDataExample
 > [!NOTE]
 > Data source methods, properties, and fields must be `public static` and return an `IEnumerable<T>` of a supported type.
 
+> [!NOTE]
+> Starting with MSTest v3.11, the data source can be a field. Earlier versions support methods and properties.
+
 > [!TIP]
 > Related analyzer: [MSTEST0018](mstest-analyzers/mstest0018.md) validates that the data source exists, is accessible, and has the correct signature.
 
@@ -258,6 +307,19 @@ public class DynamicDataExternalExample
         Assert.IsTrue(value1 > 0);
     }
 }
+```
+
+### Parameterized `DynamicData` source methods
+
+Starting with MSTest v3.10, pass values to a `DynamicData` source method with the `Arguments` property:
+
+```csharp
+[TestMethod]
+[DynamicData(nameof(GetValues), Arguments = new object[] { true })]
+public void Value_IsPositive(int value, bool expected) => Assert.AreEqual(expected, value > 0);
+
+public static IEnumerable<(int Value, bool Expected)> GetValues(bool includeZero) =>
+    includeZero ? [(1, true), (0, false)] : [(1, true)];
 ```
 
 ### Custom display names
@@ -322,9 +384,12 @@ public class IgnoreDynamicDataExample
 > [!TIP]
 > To ignore individual test cases, use `TestDataRow<T>` with its `IgnoreMessage` property. See the [TestDataRow\<T>](#testdatarow) section.
 
-## TestDataRow
+## `TestDataRow`
 
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow`1> class provides enhanced control over test data in data-driven tests. Use <xref:System.Collections.Generic.IEnumerable`1> of <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow`1> as your data source return type to specify:
+
+> [!NOTE]
+> MSTest introduced `TestDataRow<T>` in version 3.8.
 
 - **Custom display names**: Set a unique display name per test case using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow`1.DisplayName> property.
 - **Test categories**: Attach metadata to individual test cases using the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataRow`1.TestCategories> property.
@@ -492,21 +557,46 @@ public class CrossPlatformTests
 
 Data-driven test attributes support the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestDataSourceUnfoldingStrategy> property, which controls how test cases appear in Test Explorer and TRX results. This property also determines whether you can run individual test cases independently.
 
+### Discovery and execution phases
+
+MSTest processes data-driven tests in two distinct phases:
+
+- **Discovery phase**: MSTest evaluates all data source attributes (`DataRow`, `DynamicData`, `ITestDataSource`) to determine the list of test cases. This evaluation happens *before* any of the regular MSTest lifecycle hooks run—`AssemblyInitialize`, `ClassInitialize`, and other setup methods haven't executed yet.
+- **Execution phase**: MSTest runs the normal lifecycle (assembly initialization, class initialization, test initialization, test method, cleanup) and executes each test case with its data.
+
+Because data sources are evaluated during discovery, your data-generation code can't rely on any state set up by `AssemblyInitialize` or `ClassInitialize`. If your data source depends on setup logic (for example, reading from a database connection initialized in `ClassInitialize`), the data source evaluation fails during discovery.
+
 ### Available strategies
 
 | Strategy | Behavior |
 |----------|----------|
-| `Auto` (default) | MSTest determines unfolding best strategy |
-| `Unfold` | All test cases are expanded and shown individually |
-| `Fold` | All test cases are collapsed into a single test node |
+| `Auto` (default) | MSTest determines the best unfolding strategy. |
+| `Unfold` | All test cases are expanded and shown individually. |
+| `Fold` | All test cases are collapsed into a single test node. |
+
+### Folded vs. unfolded tests
+
+The unfolding strategy affects how test results are reported in Test Explorer and TRX output:
+
+- **Unfolded tests**: Each data row appears as a separate, independent test entry in Test Explorer and TRX. You can run, debug, or filter individual test cases. Each entry has its own pass/fail status.
+- **Folded tests**: All data rows appear as a single test node in Test Explorer. One entry appears in TRX, with multiple results associated with that single test case. You can't run or filter individual data rows independently.
+
+### Exception during discovery causes folding
+
+When MSTest evaluates a data source during discovery and the evaluation throws an exception, the test falls back to a folded state regardless of the configured unfolding strategy. Because the framework can't enumerate the individual test cases, it registers the test method as a single (folded) entry.
+
+At execution time, MSTest evaluates the data source again as part of the normal lifecycle. If the exception was caused by missing setup state (for example, a dependency that `ClassInitialize` provides), the data source might succeed during execution because the lifecycle hooks have now run.
+
+> [!NOTE]
+> When debugging a test that throws during discovery, you might see an exception (for example, a `NullReferenceException`) before the test starts. This exception comes from the discovery-phase evaluation. Press **Continue** in the debugger—the test then executes normally because the execution phase runs the full MSTest lifecycle, including initialization methods. For more details, see [microsoft/testfx#7774](https://github.com/microsoft/testfx/issues/7774).
 
 ### When to change the strategy
 
-For most scenarios, the default `Auto` behavior provides the best balance. Consider changing this setting only when you have specific requirements:
+For most scenarios, the default `Auto` behavior provides the best balance. Consider changing the unfolding strategy when you have specific requirements:
 
-- Non-deterministic data sources
-- Known limitations or bugs in MSTest
-- Performance concerns with many test cases
+- Use `Fold` if your data sources depend on runtime state or setup logic that isn't available during discovery.
+- Use `Fold` for non-deterministic data sources that return different values on each evaluation.
+- Use `Fold` to reduce overhead when performance is a concern with large numbers of test cases.
 
 ### Example usage
 
@@ -536,15 +626,10 @@ public class UnfoldingExample
 
 ## Best practices
 
-1. **Choose the right attribute**: Use `DataRow` for simple, inline data. Use `DynamicData` for complex or computed data.
-
-1. **Name your test cases**: Use `DisplayName` to make test failures easier to identify.
-
-1. **Keep data sources close**: Define data sources in the same class when possible for better maintainability.
-
-1. **Use meaningful data**: Choose test data that exercises edge cases and boundary conditions.
-
-1. **Consider combinatorial testing**: For testing parameter combinations, use the [Combinatorial.MSTest](https://www.nuget.org/packages/Combinatorial.MSTest) package.
+- **Choose the right attribute**: Use `DataRow` for simple, inline data, `CombinatorialData` for exhaustive combinations of independent inputs, and `DynamicData` for complex or computed data.
+- **Name your test cases**: Use `DisplayName` to make test failures easier to identify.
+- **Keep data sources close**: Define data sources in the same class when possible for better maintainability.
+- **Use meaningful data**: Choose test data that exercises edge cases and boundary conditions.
 
 ## See also
 

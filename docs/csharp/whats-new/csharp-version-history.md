@@ -2,8 +2,9 @@
 title: The history of C#
 description: Learn how the C# language has changed over its many releases. Learn when different features were introduced in the language.
 author: erikdietrich
-ms.date: 11/18/2025
+ms.date: 11/11/2026
 ms.custom: "updateeachrelease"
+ai-usage: ai-assisted
 ---
 
 # The history of C\#
@@ -12,6 +13,20 @@ This article provides a history of each major release of the C# language. The C#
 
 > [!IMPORTANT]
 > The C# language relies on types and methods in what the C# specification defines as a *standard library* for some of the features. The .NET platform delivers those types and methods in a number of packages. One example is exception processing. Every `throw` statement or expression is checked to ensure the object being thrown is derived from <xref:System.Exception>. Similarly, every `catch` is checked to ensure that the type being caught is derived from <xref:System.Exception>. Each version may add new requirements. To use the latest language features in older environments, you may need to install specific libraries. These dependencies are documented in the page for each specific version. You can learn more about the [relationships between language and library](relationships-between-language-and-library.md) for background on this dependency.
+
+## C# version 15
+
+*Released November 2026*
+
+C# 15 includes the following new features:
+
+- [Collection expression arguments](./csharp-15.md#collection-expression-arguments)
+- [Union types](./csharp-15.md#union-types)
+- [Closed hierarchies](./csharp-15.md#closed-hierarchies)
+- [Extension indexers](./csharp-15.md#extension-indexers)
+- [Labeled `break` and `continue`](./csharp-15.md#labeled-break-and-continue)
+- [Non-virtual static interface members on older runtimes](./csharp-15.md#non-virtual-static-interface-members-on-older-runtimes)
+- [Memory safety (preview feature)](./csharp-15.md#memory-safety)
 
 ## C# version 14
 
@@ -51,17 +66,26 @@ C# 13 includes the following new features:
 
 The following features were added in C# 12:
 
-- [Primary constructors](./csharp-12.md#primary-constructors) - You can create primary constructors in any `class` or `struct` type.
-- [Collection expressions](./csharp-12.md#collection-expressions) - A new syntax to specify collection expressions, including the spread element, (`..e`), to expand any collection.
-- [Inline arrays](./csharp-12.md#inline-arrays) - Inline arrays enable you to create an array of fixed size in a `struct` type.
-- [Optional parameters in lambda expressions](./csharp-12.md#default-lambda-parameters) - You can define default values for parameters on lambda expressions.
-- [`ref readonly` parameters](./csharp-12.md#ref-readonly-parameters) - `ref readonly` parameters enables more clarity for APIs that might be using `ref` parameters or `in` parameters.
-- [Alias any type](./csharp-12.md#alias-any-type) - You can use the `using` alias directive to alias any type, not just named types.
-- [Experimental attribute](./csharp-12.md#experimental-attribute) - Indicate an experimental feature.
+- [Primary constructors](../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) - Declare constructor parameters on any `class` or `struct` type. Only record types synthesize public properties for those parameters. See the [primary constructors tutorial](./tutorials/primary-constructors.md) for examples.
+- [Collection expressions](../language-reference/operators/collection-expressions.md) - Create collections with square brackets and use the spread element, `..e`, to include elements from other collections. See also [§12.8.25 Collection expressions](~/_csharpstandard/standard/expressions.md#12825-collection-expressions).
+- [Inline arrays](../language-reference/builtin-types/struct.md#inline-arrays) - Declare an array of fixed size in a `struct` type.
+- [Optional parameters in lambda expressions](../language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) - Define default values for lambda parameters with the same syntax and rules as methods and local functions.
+- [`ref readonly` parameters](../language-reference/keywords/method-parameters.md#ref-readonly-modifier) - Express that an API expects a variable passed by readonly reference. See the [`ref readonly` parameters feature specification](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-12.0/ref-readonly-parameters.md) for migration and compatibility details.
+- [Alias any type](../language-reference/keywords/using-directive.md#the-using-alias) - Create aliases for tuple, array, and pointer types, not just named types. See [§14.6.2 Using alias directives](~/_csharpstandard/standard/namespaces.md#1462-using-alias-directives) and the [alias any type refactoring walkthrough](https://devblogs.microsoft.com/dotnet/refactor-your-code-using-alias-any-type/).
+- [Experimental attribute](../language-reference/attributes/general.md#experimental-attributes) - Mark types, methods, or assemblies with <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=nameWithType> so the compiler warns callers about experimental APIs. See the [feature specification](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-12.0/experimental-attribute.md) for details.
 
-And, [Interceptors](./csharp-12.md#interceptors) - was released as a *Preview feature*.
+C# 12 shipped with the [.NET 8 SDK](../../core/whats-new/dotnet-8/overview.md). For supported target frameworks and language version configuration, see [C# language versioning](../language-reference/language-versioning.md).
 
-Overall, C# 12 provides new features that make you more productive writing C# code. Syntax you already knew is available in more places. Other syntax enables consistency for related concepts.
+### Interceptors
+
+Interceptors debuted as an experimental preview feature with C# 12. An *interceptor* is a method that substitutes for a call to another method at compile time. The interceptor identifies the source locations of the calls it intercepts. Source generators can use interceptors to replace calls in existing source code, rather than only add code to a compilation.
+
+> [!WARNING]
+> The C# 12 interceptors preview was subject to breaking changes or removal and wasn't recommended for production or released applications.
+>
+> The preview required the user project to specify `<InterceptorsPreviewNamespaces>`, a list of namespaces allowed to contain interceptors. For example: `<InterceptorsPreviewNamespaces>$(InterceptorsPreviewNamespaces);Microsoft.AspNetCore.Http.Generated;MyLibrary.Generated</InterceptorsPreviewNamespaces>`.
+
+For compiler requirements and updates to the feature, see the [interceptors feature specification](https://github.com/dotnet/roslyn/blob/main/docs/features/interceptors.md).
 
 ## C# version 11
 
@@ -83,7 +107,7 @@ The following features were added in C# 11:
 - The `nint` and `uint` keywords alias <xref:System.IntPtr?displayProperty=nameWithType> and <xref:System.UIntPtr?displayProperty=nameWithType><xref:System.UIntPtr?displayProperty=nameWithType>, respectively.
 - [`ref` fields and `scoped ref`](../language-reference/builtin-types/ref-struct.md#ref-fields)
 - Improved method group conversion to delegate.
-- [Warning wave 7](../language-reference/compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters)
+- [Warning wave 7](../language-reference/compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters-such-names-may-become-reserved-for-the-language)
 
 C# 11 introduces *generic math* and several features that support that goal. You can write numeric algorithms once for all number types. There's more features to make working with `struct` types easier, like required members and auto-default structs. Working with strings gets easier with Raw string literals, newline in string interpolations, and UTF-8 string literals. Features like file local types enable source generators to be simpler. Finally, list patterns add more support for pattern matching.
 
@@ -98,7 +122,7 @@ C# 10 adds the following features and enhancements to the C# language:
 - [Interpolated string handlers](../language-reference/tokens/interpolated.md#compilation-of-interpolated-strings)
 - [`global using` directives](../language-reference/keywords/using-directive.md)
 - [File-scoped namespace declaration](../language-reference/keywords/namespace.md)
-- [Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
+- [Extended property patterns](~/_csharpstandard/standard/patterns.md#1126-property-pattern)
 - Lambda expressions can have a [natural type](../language-reference/operators/lambda-expressions.md#natural-type-of-a-lambda-expression), where the compiler can infer a delegate type from the lambda expression or method group.
 - Lambda expressions can declare a [return type](../language-reference/operators/lambda-expressions.md#explicit-return-type) when the compiler can't infer it.
 - [Attributes](../language-reference/operators/lambda-expressions.md#attributes) can be applied to lambda expressions.
@@ -132,7 +156,7 @@ C# 9 was released with .NET 5. It's the default language version for any assembl
   - [Native sized integers](~/_csharpstandard/standard/types.md#836-integral-types)
   - [Function pointers](~/_csharpstandard/standard/unsafe-code.md#2433-function-pointers)
   - [Suppress emitting localsinit flag](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-9.0/skip-localsinit.md)
-  - [Module initializers](~/_csharpstandard/standard/attributes.md#2359-the-moduleinitializer-attribute)
+  - [Module initializers](~/_csharpstandard/standard/attributes.md#23511-the-moduleinitializer-attribute)
   - [New features for partial methods](~/_csharpstandard/standard/classes.md#1569-partial-methods)
 - [Fit and finish features](#fit-and-finish-features)
   - [Target-typed `new` expressions](~/_csharpstandard/standard/expressions.md#128172-object-creation-expressions)
@@ -149,7 +173,7 @@ C# 9 continues three of the themes from previous releases: removing ceremony, se
 
 The introduction of [`records`](../language-reference/builtin-types/record.md) provides a concise syntax for reference types that follow value semantics for equality. You use these types to define data containers that typically define minimal behavior. [Init-only setters](../language-reference/keywords/init.md) provide the capability for nondestructive mutation (`with` expressions) in records. C# 9 also adds [covariant return types](~/_csharpstandard/standard/classes.md#1565-override-methods) so that derived records can override virtual methods and return a type derived from the base method's return type.
 
-The [pattern matching](../fundamentals/functional/pattern-matching.md) capabilities expanded in several ways. Numeric types now support *range patterns*. Patterns can be combined using `and`, `or`, and `not` patterns. Parentheses can be added to clarify more complex patterns:
+The [pattern matching](../fundamentals/patterns/pattern-matching.md) capabilities expanded in several ways. Numeric types now support *range patterns*. Patterns can be combined using `and`, `or`, and `not` patterns. Parentheses can be added to clarify more complex patterns:
 
 C# 9 includes new pattern matching improvements:
 
@@ -211,7 +235,8 @@ C# 8.0 is the first major C# release that specifically targets .NET Core. Some f
   - Tuple patterns
   - Positional patterns
 - [Using declarations](../language-reference/statements/using.md)
-- [Static local functions](../programming-guide/classes-and-structs/local-functions.md)
+- [Static local functions](../fundamentals/building-software/local-functions.md)
+- Lambda expressions, anonymous methods, and local functions can declare parameters that shadow local variables and parameters from an enclosing scope.
 - [Disposable ref structs](../language-reference/builtin-types/ref-struct.md)
 - [Nullable reference types](../language-reference/builtin-types/nullable-reference-types.md)
 - [Asynchronous streams](../language-reference/statements/iteration-statements.md#await-foreach)
@@ -302,15 +327,15 @@ C# version 7.0 was released with Visual Studio 2017. This version has some evolu
 
 - Out variables
 - [Tuples and deconstruction](../language-reference/builtin-types/value-tuples.md)
-- [Pattern matching](../fundamentals/functional/pattern-matching.md)
-- [Local functions](../programming-guide/classes-and-structs/local-functions.md)
-- [Expanded expression bodied members](../programming-guide/statements-expressions-operators/expression-bodied-members.md)
+- [Pattern matching](../fundamentals/patterns/pattern-matching.md)
+- [Local functions](../fundamentals/building-software/local-functions.md)
+- [Expanded expression bodied members](../language-reference/operators/lambda-operator.md#expression-body-definition)
 - [Ref locals](../language-reference/statements/declarations.md#reference-variables)
 - [Ref returns](../language-reference/statements/jump-statements.md#ref-returns)
 
 Other features included:
 
-- [Discards](../fundamentals/functional/discards.md)
+- [Discards](../fundamentals/patterns/discards.md)
 - [Binary Literals and Digit Separators](../language-reference/builtin-types/integral-numeric-types.md#integer-literals)
 - [Throw expressions](../language-reference/statements/exception-handling-statements.md#the-throw-expression)
 
@@ -362,7 +387,7 @@ C# version 4.0, released with Visual Studio 2010, introduced some interesting ne
 - [Dynamic binding](../language-reference/builtin-types/reference-types.md)
 - [Named/optional arguments](../programming-guide/classes-and-structs/named-and-optional-arguments.md)
 - [Generic covariant and contravariant](../../standard/generics/covariance-and-contravariance.md)
-- [Embedded interop types](../../framework/interop/type-equivalence-and-embedded-interop-types.md)
+- [Embedded interop types](../../standard/native-interop/type-equivalence-and-embedded-interop-types.md)
 
 Embedded interop types eased the deployment pain of creating COM interop assemblies for your application. Generic covariance and contravariance give you more power to use generics, but they're a bit academic and probably most appreciated by framework and library authors. Named and optional parameters let you eliminate many method overloads and provide convenience. But none of those features are exactly paradigm altering.
 
@@ -402,7 +427,7 @@ Let's take a look at some major features of C# 2.0, released in 2005, along with
 - [Partial types](../programming-guide/classes-and-structs/partial-classes-and-methods.md#partial-classes)
 - [Anonymous methods](../language-reference/operators/delegate-operator.md)
 - [Nullable value types](../language-reference/builtin-types/nullable-value-types.md)
-- [Iterators](../programming-guide/concepts/iterators.md)
+- [Iterators](../fundamentals/building-software/iterators.md)
 - [Covariance and contravariance](../programming-guide/concepts/covariance-contravariance/index.md)
 
 Other C# 2.0 features added capabilities to existing features:
@@ -441,7 +466,7 @@ The major features of C# 1.0 included:
 - [Properties](../programming-guide/classes-and-structs/properties.md)
 - [Delegates](../delegates-overview.md)
 - [Operators and expressions](../language-reference/operators/index.md)
-- [Statements](../programming-guide/statements-expressions-operators/statements.md)
+- [Statements](../fundamentals/statements/index.md)
 - [Attributes](/dotnet/csharp/advanced-topics/reflection-and-attributes)
 
 _Article_ [_originally published on the NDepend blog_](https://blog.ndepend.com/c-versions-look-language-history/)_, courtesy of Erik Dietrich and Patrick Smacchia._

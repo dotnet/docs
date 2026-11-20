@@ -34,10 +34,12 @@ groups:
   pivots:
     - id: mstest
       title: MSTest
-    - id: xunit
-      title: xUnit
     - id: nunit
       title: NUnit
+    - id: tunit
+      title: TUnit
+    - id: xunit
+      title: xUnit
 - id: ide-set-one
   title: IDE
   prompt: Choose an IDE
@@ -56,8 +58,32 @@ groups:
       title: Visual Studio Code
     - id: copilot-cli
       title: GitHub Copilot CLI
+    - id: github-copilot-app
+      title: GitHub Copilot app
+- id: copilot-upgrade-install
+  title: Development environment
+  prompt: Choose your development environment
+  pivots:
+    - id: visualstudio
+      title: Visual Studio
+    - id: vscode
+      title: Visual Studio Code
+    - id: copilot-cli
+      title: GitHub Copilot CLI
+    - id: github-copilot-app
+      title: GitHub Copilot app
     - id: github-com
       title: GitHub.com
+- id: copilot-modernization-migrate
+  title: Development environment
+  prompt: Choose your development environment
+  pivots:
+    - id: visualstudio
+      title: Visual Studio
+    - id: vscode
+      title: Visual Studio Code
+    - id: copilot-cli
+      title: GitHub Copilot CLI
 - id: development-environment-one
   title: Development environment
   prompt: Choose a development environment
@@ -73,7 +99,7 @@ groups:
   prompt: Choose a .NET version
   pivots:
     - id: dotnet-11-0
-      title: .NET 11 Preview
+      title: .NET 11
     - id: dotnet-10-0
       title: .NET 10
     - id: dotnet-9-0
@@ -84,6 +110,8 @@ groups:
   title: .NET version
   prompt: Choose a .NET version
   pivots:
+    - id: dotnet-11-0
+      title: .NET 11
     - id: dotnet-10-0
       title: .NET 10
     - id: dotnet-9-0
@@ -144,6 +172,8 @@ groups:
   pivots:
   # order: lts versions (newest to oldest), interim versions (newest to oldest), other
   # see: https://github.com/dotnet/docs/issues/47461
+    - id: os-linux-ubuntu-2604
+      title: "26.04"
     - id: os-linux-ubuntu-2404
       title: "24.04"
     - id: os-linux-ubuntu-2204
@@ -164,8 +194,6 @@ groups:
   title: MEAI targets
   prompt: Choose a host service for your AI models
   pivots:
-    - id: github-models
-      title: GitHub Models
     - id: azure-openai
       title: Azure OpenAI
     - id: openai

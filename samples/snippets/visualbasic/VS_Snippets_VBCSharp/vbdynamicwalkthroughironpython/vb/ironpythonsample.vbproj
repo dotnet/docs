@@ -3,11 +3,11 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <RootNamespace>DynamicIronPythonSample</RootNamespace>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="IronPython" Version="3.4.1" />
+    <PackageReference Include="IronPython" Version="3.4.2" />
   </ItemGroup>
 
 </Project>

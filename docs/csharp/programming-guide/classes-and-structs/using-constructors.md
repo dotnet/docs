@@ -13,7 +13,7 @@ In the following example, a class named `Taxi` is defined by using a simple cons
 
 :::code source="./snippets/using-constructors/Program.cs" id="snippet1":::
 
-A constructor that takes no parameters is called a *parameterless constructor*. The runtime invokes the parameterless constructor when an object is instantiated using the `new` operator and no arguments are provided to `new`. C# 12 introduced *primary constructors*. A primary constructor specifies parameters that must be provided to initialize a new object. For more information, see [Instance Constructors](./instance-constructors.md).
+A constructor that takes no parameters is called a *parameterless constructor*. The runtime invokes the parameterless constructor when an object is instantiated using the `new` operator and no arguments are provided to `new`. A *primary constructor* specifies parameters that must be provided to initialize a new object. For more information, see [Instance Constructors](./instance-constructors.md).
 
 Unless the class is [static](../../language-reference/keywords/static.md), classes without constructors are given a public parameterless constructor by the C# compiler in order to enable class instantiation. For more information, see [Static Classes and Static Class Members](./static-classes-and-static-class-members.md).
 
@@ -23,7 +23,7 @@ You can prevent a class from being instantiated by making the constructor privat
 
 For more information, see [Private Constructors](./private-constructors.md).
 
-Constructors for [struct](../../language-reference/builtin-types/struct.md) types resemble class constructors. When a struct type is instantiated with `new`, the runtime invokes a constructor. When a `struct` is set to its `default` value, the runtime initializes all memory in the struct to 0. If you declare any field initializers in a `struct` type, you must supply a parameterless constructor. For more information, see the [Struct initialization and default values](../../language-reference/builtin-types/struct.md#struct-initialization-and-default-values) section of the [Structure types](../../language-reference/builtin-types/struct.md) article.
+Constructors for [struct](../../language-reference/builtin-types/struct.md) types resemble class constructors. When a struct type is instantiated with `new`, the runtime invokes a constructor. When a `struct` is set to its `default` value, the runtime initializes all memory in the struct to 0. Beginning with C# 11, field initializers in a `struct` type run in any declared constructor, and the compiler initializes any fields that the constructor doesn't assign, so you don't need to declare a parameterless constructor. For more information, see the [Struct initialization and default values](../../language-reference/builtin-types/struct.md#struct-initialization-and-default-values) section of the [Structure types](../../language-reference/builtin-types/struct.md) article.
 
 The following code uses the parameterless constructor for <xref:System.Int32>, so that you're assured that the integer is initialized:
 

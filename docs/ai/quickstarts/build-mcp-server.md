@@ -77,7 +77,7 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
     - **Framework**: Select the target .NET framework.
     - **MCP Server Transport Type**: Choose between creating a **local** (stdio) or a **remote** (http) MCP server.
     - **Enable native AOT (Ahead-Of-Time) publish**: Enable your MCP server to be self-contained and compiled to native code. For more information, see the [Native AOT deployment guide](../../core/deploying/native-aot/index.md).
-    - **Enable self-contained publish**: Enable your MCP server to be published as a self-contained executable. For more information, see the [Self-contained deployment section of the .NET application publishing guide](../../core/deploying/index.md#self-contained-deployment).
+    - **Enable self-contained publish**: Enable your MCP server to be published as a self-contained executable. For more information, see the [Self-contained deployment section of the .NET application publishing guide](../../core/deploying/index.md#publish-as-self-contained).
 
     Choose your preferred options or keep the default ones, and then select **Create**.
 
@@ -124,7 +124,7 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
     - **Framework**: Select the target .NET framework.
     - **MCP Server Transport Type**: Choose between creating a **local** (stdio) or a **remote** (http) MCP server.
     - **Enable native AOT (Ahead-Of-Time) publish**: Enable your MCP server to be self-contained and compiled to native code. For more information, see the [Native AOT deployment guide](../../core/deploying/native-aot/index.md).
-    - **Enable self-contained publish**: Enable your MCP server to be published as a self-contained executable. For more information, see the [Self-contained deployment section of the .NET application publishing guide](../../core/deploying/index.md#self-contained-deployment).
+    - **Enable self-contained publish**: Enable your MCP server to be published as a self-contained executable. For more information, see the [Self-contained deployment section of the .NET application publishing guide](../../core/deploying/index.md#publish-as-self-contained).
 
     ![MCP Server Template Options](../media/build-mcp-server/vscode-mcp-server-template-options.png)
 
@@ -151,7 +151,7 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
     - **Framework**: Select the target .NET framework.
     - **MCP Server Transport Type**: Choose between creating a **local** (stdio) or a **remote** (http) MCP server.
     - **Enable native AOT (Ahead-Of-Time) publish**: Enable your MCP server to be self-contained and compiled to native code. For more information, see the [Native AOT deployment guide](../../core/deploying/native-aot/index.md).
-    - **Enable self-contained publish**: Enable your MCP server to be published as a self-contained executable. For more information, see the [Self-contained deployment section of the .NET application publishing guide](../../core/deploying/index.md#self-contained-deployment).
+    - **Enable self-contained publish**: Enable your MCP server to be published as a self-contained executable. For more information, see the [Self-contained deployment section of the .NET application publishing guide](../../core/deploying/index.md#publish-as-self-contained).
 
     ![Template options for an MCP Server in .NET CLI](../media/build-mcp-server/cli-mcp-server-template-options.png)
 

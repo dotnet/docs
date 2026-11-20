@@ -23,7 +23,7 @@ class MultiplyMatrices
                 {
                     temp += matA[i, k] * matB[k, j];
                 }
-                result[i, j] += temp;
+                result[i, j] = temp;
             }
         }
     }

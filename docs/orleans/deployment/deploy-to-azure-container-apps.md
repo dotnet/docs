@@ -23,15 +23,14 @@ In this tutorial, you learn how to:
 > - Automate deployment using GitHub Actions and Azure Bicep
 > - Configure HTTP ingress
 
-## Deploy with .NET Aspire (Recommended)
+## Deploy with Aspire (Recommended)
 
-If your Orleans application uses [.NET Aspire](../host/aspire-integration.md), you can deploy to Azure Container Apps with a simplified workflow using the Aspire CLI (`aspire`). The Aspire CLI automatically provisions all required infrastructure and handles the deployment.
+If your Orleans application uses [Aspire](../host/aspire-integration.md), you can deploy to Azure Container Apps with a simplified workflow using the Aspire CLI (`aspire`). The Aspire CLI automatically provisions all required infrastructure and handles the deployment.
 
 ### Aspire deployment prerequisites
 
 - [Aspire CLI](https://aspire.dev/get-started/install-cli/) installed
 - [Azure CLI](/cli/azure/install-azure-cli) installed
-- [.NET Aspire workload](/dotnet/aspire/fundamentals/setup-tooling)
 - An Azure subscription with permissions to create resources
 - Docker Desktop or Podman running (for building container images)
 
@@ -127,13 +126,13 @@ When you deploy an Orleans Aspire application to Azure Container Apps, `aspire d
 > [!TIP]
 > To update your app after code changes, simply run `aspire deploy` again. The CLI handles incremental updates efficiently.
 
-For comprehensive guidance on deploying .NET Aspire applications to Azure, see [Deploy Aspire to Azure Container Apps using the Aspire CLI](https://aspire.dev/deployment/azure/aca-deployment-aspire-cli/).
+For comprehensive guidance on deploying Aspire applications to Azure, see [Deploy Aspire to Azure Container Apps using the Aspire CLI](https://aspire.dev/deployment/azure/aca-deployment-aspire-cli/).
 
 ---
 
 ## Traditional deployment (without Aspire)
 
-The following sections describe how to deploy Orleans to Azure Container Apps using GitHub Actions and Azure Bicep, without .NET Aspire.
+The following sections describe how to deploy Orleans to Azure Container Apps using GitHub Actions and Azure Bicep, without Aspire.
 
 ## Prerequisites
 

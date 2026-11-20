@@ -126,12 +126,118 @@ items:
     - name: ISOSDacInterface interface
       href: isosdacinterface-interface.md
       items:
+        - name: GetAppDomainData
+          href: isosdacinterface-getappdomaindata-method.md
+        - name: GetAppDomainList
+          href: isosdacinterface-getappdomainlist-method.md
+        - name: GetAppDomainStoreData
+          href: isosdacinterface-getappdomainstoredata-method.md
+        - name: GetAssemblyData
+          href: isosdacinterface-getassemblydata-method.md
+        - name: GetCCWData
+          href: isosdacinterface-getccwdata-method.md
+        - name: GetCCWInterfaces
+          href: isosdacinterface-getccwinterfaces-method.md
+        - name: GetCodeHeaderData
+          href: isosdacinterface-getcodeheaderdata-method.md
+        - name: GetCodeHeapList
+          href: isosdacinterface-getcodeheaplist-method.md
+        - name: GetDomainLocalModuleData
+          href: isosdacinterface-getdomainlocalmoduledata-method.md
+        - name: GetDomainLocalModuleDataFromAppDomain
+          href: isosdacinterface-getdomainlocalmoduledatafromappdomain-method.md
+        - name: GetDomainLocalModuleDataFromModule
+          href: isosdacinterface-getdomainlocalmoduledatafrommodule-method.md
+        - name: GetFieldDescData
+          href: isosdacinterface-getfielddescdata-method.md
+        - name: GetGCHeapData
+          href: isosdacinterface-getgcheapdata-method.md
+        - name: GetGCHeapDetails
+          href: isosdacinterface-getgcheapdetails-method.md
+        - name: GetGCHeapList
+          href: isosdacinterface-getgcheaplist-method.md
+        - name: GetGCHeapStaticData
+          href: isosdacinterface-getgcheapstaticdata-method.md
+        - name: GetHandleEnum
+          href: isosdacinterface-gethandleenum-method.md
+        - name: GetHandleEnumForTypes
+          href: isosdacinterface-gethandleenumfortypes-method.md
+        - name: GetHeapAnalyzeData
+          href: isosdacinterface-getheapanalyzedata-method.md
+        - name: GetHeapAnalyzeStaticData
+          href: isosdacinterface-getheapanalyzestaticdata-method.md
+        - name: GetHeapSegmentData
+          href: isosdacinterface-getheapsegmentdata-method.md
+        - name: GetILForModule
+          href: isosdacinterface-getilformodule-method.md
+        - name: GetJitManagerList
+          href: isosdacinterface-getjitmanagerlist-method.md
         - name: GetMethodDescData
           href: isosdacinterface-getmethoddescdata-method.md
+        - name: GetMethodDescFromToken
+          href: isosdacinterface-getmethoddescfromtoken-method.md
+        - name: GetMethodDescName
+          href: isosdacinterface-getmethoddescname-method.md
+        - name: GetMethodDescPtrFromFrame
+          href: isosdacinterface-getmethoddescptrfromframe-method.md
         - name: GetMethodDescPtrFromIP
           href: isosdacinterface-getmethoddescptrfromip-method.md
+        - name: GetMethodTableData
+          href: isosdacinterface-getmethodtabledata-method.md
+        - name: GetMethodTableFieldData
+          href: isosdacinterface-getmethodtablefielddata-method.md
+        - name: GetMethodTableForEEClass
+          href: isosdacinterface-getmethodtableforeeclass-method.md
+        - name: GetMethodTableSlot
+          href: isosdacinterface-getmethodtableslot-method.md
+        - name: GetModule
+          href: isosdacinterface-getmodule-method.md
         - name: GetModuleData
           href: isosdacinterface-getmoduledata-method.md
+        - name: GetObjectData
+          href: isosdacinterface-getobjectdata-method.md
+        - name: GetOOMData
+          href: isosdacinterface-getoomdata-method.md
+        - name: GetOOMStaticData
+          href: isosdacinterface-getoomstaticdata-method.md
+        - name: GetRCWData
+          href: isosdacinterface-getrcwdata-method.md
+        - name: GetRCWInterfaces
+          href: isosdacinterface-getrcwinterfaces-method.md
+        - name: GetRegisterName
+          href: isosdacinterface-getregistername-method.md
+        - name: GetStackReferences
+          href: isosdacinterface-getstackreferences-method.md
+        - name: GetStressLogAddress
+          href: isosdacinterface-getstresslogaddress-method.md
+        - name: GetSyncBlockCleanupData
+          href: isosdacinterface-getsyncblockcleanupdata-method.md
+        - name: GetSyncBlockData
+          href: isosdacinterface-getsyncblockdata-method.md
+        - name: GetThreadData
+          href: isosdacinterface-getthreaddata-method.md
+        - name: GetThreadFromThinlockID
+          href: isosdacinterface-getthreadfromthinlockid-method.md
+        - name: GetThreadLocalModuleData
+          href: isosdacinterface-getthreadlocalmoduledata-method.md
+        - name: GetThreadpoolData
+          href: isosdacinterface-getthreadpooldata-method.md
+        - name: GetThreadStoreData
+          href: isosdacinterface-getthreadstoredata-method.md
+        - name: GetTLSIndex
+          href: isosdacinterface-gettlsindex-method.md
+        - name: GetUsefulGlobals
+          href: isosdacinterface-getusefulglobals-method.md
+        - name: GetWorkRequestData
+          href: isosdacinterface-getworkrequestdata-method.md
+        - name: TraverseLoaderHeap
+          href: isosdacinterface-traverseloaderheap-method.md
+        - name: TraverseModuleMap
+          href: isosdacinterface-traversemodulemap-method.md
+        - name: TraverseRCWCleanupList
+          href: isosdacinterface-traversercwcleanuplist-method.md
+        - name: TraverseVirtCallStubHeap
+          href: isosdacinterface-traversevirtcallstubheap-method.md
     - name: IXCLRDataAppDomain interface
       href: ixclrdataappdomain-interface.md
     - name: IXCLRDataExceptionNotification interface
@@ -270,6 +376,8 @@ items:
           href: ixclrdatamodule-getfilename-method.md
         - name: GetMethodDefinitionByToken
           href: ixclrdatamodule-getmethoddefinitionbytoken-method.md
+        - name: GetName
+          href: ixclrdatamodule-getname-method.md
         - name: GetVersionId
           href: ixclrdatamodule-getversionid-method.md
         - name: Request
@@ -303,6 +411,8 @@ items:
           href: ixclrdataprocess-enummethodinstancebyaddress-method.md
         - name: EnumModule
           href: ixclrdataprocess-enummodule-method.md
+        - name: Flush
+          href: ixclrdataprocess-flush-method.md
         - name: FollowStub
           href: ixclrdataprocess-followstub-method.md
         - name: FollowStub2
@@ -336,6 +446,8 @@ items:
     - name: IXCLRDataStackWalk interface
       href: ixclrdatastackwalk-interface.md
       items:
+        - name: GetContext method
+          href: ixclrdatastackwalk-getcontext-method.md
         - name: GetFrame method
           href: ixclrdatastackwalk-getframe-method.md
         - name: GetFrameType method
@@ -480,6 +592,12 @@ items:
       href: clr-debugging-process-flags-enumeration.md
     - name: CorDebugJITCompilerFlagsDeprecated enumeration
       href: cordebugjitcompilerflagsdeprecated-enumeration.md
+    - name: DacpObjectType enumeration
+      href: dacpobjecttype-enumeration.md
+    - name: ModuleMapType enumeration
+      href: modulemaptype-enumeration.md
+    - name: VCSHeapType enumeration
+      href: vcsheaptype-enumeration.md
 - name: Debugging structures
   href: debugging-structures.md
   items:
@@ -493,17 +611,73 @@ items:
       href: clrdata-il-address-map-structure.md
     - name: CLR_DEBUGGING_VERSION structure
       href: clr-debugging-version-structure.md
+    - name: DacpAppDomainData structure
+      href: dacpappdomaindata-structure.md
+    - name: DacpAppDomainStoreData structure
+      href: dacpappdomainstoredata-structure.md
+    - name: DacpAssemblyData structure
+      href: dacpassemblydata-structure.md
+    - name: DacpCCWData structure
+      href: dacpccwdata-structure.md
+    - name: DacpCodeHeaderData structure
+      href: dacpcodeheaderdata-structure.md
+    - name: DacpCOMInterfacePointerData structure
+      href: dacpcominterfacepointerdata-structure.md
+    - name: DacpDomainLocalModuleData structure
+      href: dacpdomainlocalmoduledata-structure.md
+    - name: DacpFieldDescData structure
+      href: dacpfielddescdata-structure.md
+    - name: DacpGcHeapAnalyzeData structure
+      href: dacpgcheapanalyzedata-structure.md
+    - name: DacpGcHeapData structure
+      href: dacpgcheapdata-structure.md
+    - name: DacpGcHeapDetails structure
+      href: dacpgcheapdetails-structure.md
+    - name: DacpGenerationData structure
+      href: dacpgenerationdata-structure.md
     - name: DacpGetModuleAddress structure
       href: dacpgetmoduleaddress-structure.md
       items:
         - name: "DacpGetModuleAddress::Request method"
           href: dacpgetmoduleaddress-request-method.md
+    - name: DacpHeapSegmentData structure
+      href: dacpheapsegmentdata-structure.md
+    - name: DacpJitCodeHeapInfo structure
+      href: dacpjitcodeheapinfo-structure.md
+    - name: DacpJitManagerInfo structure
+      href: dacpjitmanagerinfo-structure.md
     - name: DacpMethodDescData structure
       href: dacpmethoddescdata-structure.md
+    - name: DacpMethodTableData structure
+      href: dacpmethodtabledata-structure.md
+    - name: DacpMethodTableFieldData structure
+      href: dacpmethodtablefielddata-structure.md
     - name: DacpModuleData structure
       href: dacpmoduledata-structure.md
+    - name: DacpObjectData structure
+      href: dacpobjectdata-structure.md
+    - name: DacpOomData structure
+      href: dacpoomdata-structure.md
+    - name: DacpRCWData structure
+      href: dacprcwdata-structure.md
     - name: DacpReJitData structure
       href: dacprejitdata-structure.md
+    - name: DacpSyncBlockCleanupData structure
+      href: dacpsyncblockcleanupdata-structure.md
+    - name: DacpSyncBlockData structure
+      href: dacpsyncblockdata-structure.md
+    - name: DacpThreadData structure
+      href: dacpthreaddata-structure.md
+    - name: DacpThreadLocalModuleData structure
+      href: dacpthreadlocalmoduledata-structure.md
+    - name: DacpThreadpoolData structure
+      href: dacpthreadpooldata-structure.md
+    - name: DacpThreadStoreData structure
+      href: dacpthreadstoredata-structure.md
+    - name: DacpUsefulGlobalsData structure
+      href: dacpusefulglobalsdata-structure.md
+    - name: DacpWorkRequestData structure
+      href: dacpworkrequestdata-structure.md
     - name: GcEvtArgs structure
       href: gcevtargs-structure.md
     - name: StackTrace_SimpleContext structure

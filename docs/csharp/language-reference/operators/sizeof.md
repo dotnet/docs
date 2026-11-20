@@ -1,7 +1,7 @@
 ---
 title: "sizeof operator - determine the storage needs for a type"
 description: "Learn about the C# `sizeof` operator that returns the memory amount occupied by a variable of a given type."
-ms.date: 02/06/2026
+ms.date: 06/29/2026
 f1_keywords:
   - "sizeof_CSharpKeyword"
   - "sizeof"
@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # sizeof operator - determine the memory needs for a given type
 
-The `sizeof` operator returns the number of bytes occupied by a variable of a given type. In safe code, the argument to the `sizeof` operator must be the name of a built-in [unmanaged type](../builtin-types/unmanaged-types.md) whose size is not platform-dependent.
+The `sizeof` operator returns the number of bytes occupied by a variable of a given type. In safe code, the argument to the `sizeof` operator must be the name of a built-in [unmanaged type](../builtin-types/unmanaged-types.md) whose size isn't platform-dependent, or an [enumeration type](../builtin-types/enum.md).
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
@@ -34,10 +34,16 @@ The expressions presented in the following table are evaluated at compile time t
 
 The size of the types in the preceding table is a compile-time constant.
 
+For an enum type, the result of the `sizeof` operator is the size of the enum's underlying integral type. The result is computed at compile time.
+
 In [unsafe](../keywords/unsafe.md) code, you can use `sizeof` on any non-`void` type, including types constructed from type parameters.
+
+> [!NOTE]
+> The [memory safety](../unsafe-code.md#the-updated-memory-safety-model-preview) preview feature available in C# 15 lets you use `sizeof` on any unmanaged type outside an `unsafe` context.
 
 - The size of a reference or pointer type is the size of a reference or pointer, not the size of the object it might refer to.
 - The size of a value type, unmanaged or not, is the size of such a value.
+- The size of an enumeration type is the size of its underlying integral type. This size is a compile-time constant. If the underlying type of an enum defined in a referenced assembly later changes, code that applied `sizeof` to that enum must be recompiled to observe the new size.
 - The size of a `ref struct` type is the size of the value. The size of every `ref` field is the size of a reference or pointer, not the size of the value it refers to.
 
 The following example demonstrates the usage of the `sizeof` operator:
@@ -52,7 +58,7 @@ The `sizeof` operator returns the number of bytes allocated by the common langua
 
 ## C# language specification
 
-For more information, see [The sizeof operator](~/_csharpstandard/standard/unsafe-code.md#2469-the-sizeof-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [`sizeof` operator](~/_csharpstandard/standard/unsafe-code.md#2469-the-sizeof-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

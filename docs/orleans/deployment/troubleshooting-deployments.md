@@ -64,7 +64,7 @@ For container-based deployments (Docker, Kubernetes, Azure Container Apps):
 - **Pod scheduling issues**: Check resource requests and limits are appropriate for your workload.
 - **Clustering provider connectivity**: Ensure all silos can connect to the configured clustering provider (Redis, Azure Storage, SQL Server, etc.).
 - **Silo endpoint configuration**: Ensure <xref:Orleans.Configuration.EndpointOptions.SiloPort> and <xref:Orleans.Configuration.EndpointOptions.GatewayPort> are correctly exposed and mapped.
-- **Liveness and readiness probes**: Configure appropriate health check endpoints.
+- **Startup, liveness, and readiness probes**: Configure appropriate health check endpoints. Align the startup probe duration with <xref:Orleans.Configuration.ClusterMembershipOptions.MaxJoinAttemptTime> to ensure [Orleans membership protocol](../implementation/cluster-management.md) has enough time to start up during disaster recovery.
 
 For detailed Kubernetes troubleshooting, see [Deploy Orleans to Kubernetes](kubernetes.md).
 

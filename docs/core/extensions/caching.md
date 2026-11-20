@@ -1,7 +1,7 @@
 ---
 title: Caching in .NET
 description: Discover effective ways to implement in-memory and distributed caching in .NET. Boost app performance and scalability with .NET caching.
-ms.date: 10/22/2025
+ms.date: 07/28/2026
 ai-usage: ai-assisted
 ---
 
@@ -253,7 +253,7 @@ The <xref:Microsoft.Extensions.Caching.Hybrid.HybridCache> library combines the 
 `HybridCache` offers several advantages over using `IMemoryCache` and `IDistributedCache` separately:
 
 - **Two-level caching**: Automatically manages both in-memory (L1) and distributed (L2) cache layers. Data is retrieved from in-memory cache first for speed, then from distributed cache if needed, and finally from the source.
-- **Stampede protection**: Prevents multiple concurrent requests from executing the same expensive operation. Only one request fetches the data while others wait for the result.
+- **Stampede protection**: Prevents multiple concurrent requests that use the same `HybridCache` instance from executing the same expensive operation. Only one request fetches the data while others wait for the result. This coordination doesn't extend to other `HybridCache` instances, even if they use the same distributed cache.
 - **Configurable serialization**: Supports multiple serialization formats including JSON (default), protobuf, and XML.
 - **Tag-based invalidation**: Groups related cache entries with tags for efficient batch invalidation.
 - **Simplified API**: The `GetOrCreateAsync` method handles cache misses, serialization, and storage automatically.
@@ -365,6 +365,8 @@ Consider any of the available implementations of the `IDistributedCache` from th
 
 - [`Microsoft.Extensions.Caching.SqlServer`](https://www.nuget.org/packages/Microsoft.Extensions.Caching.SqlServer)
 - [`Microsoft.Extensions.Caching.StackExchangeRedis`](https://www.nuget.org/packages/Microsoft.Extensions.Caching.StackExchangeRedis)
+- [`Microsoft.Extensions.Caching.Cosmos`](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Cosmos)
+- [`Microsoft.Extensions.Caching.Postgres`](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Postgres)
 - [`NCache.Microsoft.Extensions.Caching.OpenSource`](https://www.nuget.org/packages/NCache.Microsoft.Extensions.Caching.OpenSource)
 
 ### Distributed caching API

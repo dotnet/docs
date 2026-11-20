@@ -83,6 +83,13 @@ public class MySet<T> : IEnumerable<T>
 }
 // </MySetDeclaration>
 
+// <RequiredConstructor>
+public class NamedValues(string name) : List<int>
+{
+    public string Name { get; } = name;
+}
+// </RequiredConstructor>
+
 public class CollectionExpressionExamples
 {
     internal static void Examples()
@@ -134,6 +141,7 @@ public class CollectionExpressionExamples
         Console.WriteLine("\nTesting collection expressions with arguments:");
         var examples = new CollectionExpressionExamples();
         examples.CollectionArgumentsExamples();
+        examples.RequiredConstructorExample();
 
         // Additional test code for collection expressions with arguments
         string[] testValues = ["apple", "banana", "cherry"];
@@ -188,6 +196,15 @@ public class CollectionExpressionExamples
     }
     // </WithArgumentsExamples>
 
+    public void RequiredConstructorExample()
+    {
+        // <RequiredConstructorUsage>
+        NamedValues readings = [with("temperature"), 18, 21, 24];
+        Console.WriteLine($"{readings.Name}: {string.Join(", ", readings)}");
+        // output: temperature: 18, 21, 24
+        // </RequiredConstructorUsage>
+    }
+
     // <WithBuilderArgumentsExample>
     public void CollectionBuilderArgumentsExample()
     {
@@ -198,4 +215,3 @@ public class CollectionExpressionExamples
     }
     // </WithBuilderArgumentsExample>
 }
-

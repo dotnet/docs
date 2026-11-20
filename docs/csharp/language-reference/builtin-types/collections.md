@@ -24,7 +24,7 @@ You can find all the collection types in the [.NET API reference](/dotnet/api/?t
 
 <xref:System.Span`1?displayProperty=nameWithType> is a [`ref struct`](./ref-struct.md) type that provides a snapshot over a sequence of elements without copying those elements. The compiler enforces safety rules to ensure the `Span` can't be accessed after the sequence it references is no longer in scope. It's used in many .NET APIs to improve performance. <xref:System.Memory`1> provides similar behavior when you can't use a `ref struct` type.
 
-Beginning with C# 12, all of the collection types can be initialized by using a [Collection expression](../operators/collection-expressions.md).
+Collection types can be initialized by using a [collection expression](../operators/collection-expressions.md).
 
 ## Indexable collections
 
@@ -66,7 +66,7 @@ An *iterator* is used to perform a custom iteration over a collection. An iterat
 
 You call an iterator by using a [foreach](../statements/iteration-statements.md#the-foreach-statement) statement. Each iteration of the `foreach` loop calls the iterator. When a `yield return` statement is reached in the iterator, an expression is returned, and the current location in code is retained. Execution restarts from that location the next time that the iterator is called.
 
-For more information, see [Iterators (C#)](../../programming-guide/concepts/iterators.md).
+For more information, see [Iterators (C#)](../../fundamentals/building-software/iterators.md).
 
 The following example uses an iterator method. The iterator method has a `yield return` statement that is inside a `for` loop. In the `ListEvenNumbers` method, each iteration of the `foreach` statement body creates a call to the iterator method, which proceeds to the next `yield return` statement.
 

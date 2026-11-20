@@ -52,7 +52,12 @@ Caching enables you to store data in memory for rapid access. When the data is a
 
 ### Output Caching
 
- To manually cache application data, you can use the <xref:System.Runtime.Caching.MemoryCache> class in ASP.NET. ASP.NET also supports output caching, which stores the generated output of pages, controls, and HTTP responses in memory. You can configure output caching declaratively in an ASP.NET Web page or by using settings in the Web.config file. For more information, see [outputCache Element for caching (ASP.NET Settings Schema)](/previous-versions/dotnet/netframework-4.0/ms228124(v=vs.100)).
+ To manually cache application data, you can use the <xref:System.Runtime.Caching.MemoryCache> class in ASP.NET. ASP.NET also supports output caching, which stores the generated output of pages, controls, and HTTP responses in memory. When a later request matches a cached response, ASP.NET serves the stored output instead of regenerating it. You can configure output caching declaratively in an ASP.NET Web page or by using settings in the Web.config file. For more information, see [outputCache Element for caching (ASP.NET Settings Schema)](/previous-versions/dotnet/netframework-4.0/ms228124(v=vs.100)).
+
+ A single resource often has more than one representation. For example, a product page varies by product identifier, an agenda view varies by date, and localized content varies by language or culture. `VaryBy` settings—such as `VaryByParam`, `VaryByHeader`, `VaryByCustom`, and `VaryByContentEncoding`—let output caching select and cache these alternate representations based on request characteristics. Output caching then serves the representation that matches each request.
+
+> [!IMPORTANT]
+> Output caching is a performance optimization feature. `VaryBy` settings are intended to cache alternate representations of a resource based on request characteristics. Don't rely on cache variation to provide isolation between classes of content, including personalized, tenant-specific, authorization-dependent, or otherwise sensitive responses. Enforce any required isolation independently of cache configuration.
 
  ASP.NET lets you extend output caching by creating custom output-cache providers. By using custom providers, you can store cached content using other storage devices such as disks, cloud storage, and distributed cache engines. To create a custom output cache provider, you create a class that derives from the <xref:System.Web.Caching.OutputCacheProvider> class and configure the application to use the custom output cache provider.
 

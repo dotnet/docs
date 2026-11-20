@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0019: Prefer TestInitialize methods over constructors"
 description: "Learn about code analysis rule MSTEST0019: Prefer TestInitialize methods over constructors"
-ms.date: 03/19/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0019
 - PreferTestInitializeOverConstructorAnalyzer
@@ -30,11 +31,13 @@ This rule raises a diagnostic when there is a parameterless explicit constructor
 
 ## Rule description
 
-Use this rule to enforce using `[TestInitialize]` for both synchronous and asynchronous test initialization. Asynchronous (async/await) test initialization requires the use of `[TestInitialize]` methods, because the resulting `Task` needs to be awaited.
+To use one setup convention for synchronous and asynchronous tests, prefer `[TestInitialize]`. A constructor can't return an awaitable operation to MSTest, while the runner can await a `Task` or `ValueTask` returned by a test-initialization method before it starts the test.
+
+Constructors are still supported for synchronous setup. This rule expresses an opt-in convention, not a runtime requirement. [MSTEST0020](mstest0020.md) offers the alternative convention for constructor-based setup; don't enable both competing conventions.
 
 ## How to fix violations
 
-Replace the constructor call with a `[TestInitialize]` method.
+Move the setup from the parameterless constructor into a `[TestInitialize]` method.
 
 ## When to suppress warnings
 

@@ -13,7 +13,7 @@ public sealed class ScopedBackgroundService(
 
         while (!stoppingToken.IsCancellationRequested)
         {
-            using IServiceScope scope = serviceScopeFactory.CreateScope();
+            await using AsyncServiceScope scope = serviceScopeFactory.CreateAsyncScope();
 
             IScopedProcessingService scopedProcessingService =
                 scope.ServiceProvider.GetRequiredService<IScopedProcessingService>();

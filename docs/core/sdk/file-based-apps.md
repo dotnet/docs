@@ -1,7 +1,7 @@
 ---
 title: File-based apps
 description: Learn how to create, build, and run C# applications from a single file without a project file.
-ms.date: 12/05/2025
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 # File-based apps
@@ -21,7 +21,44 @@ In this article, learn how to create, configure, and work with file-based apps e
 
 ## Supported directives
 
-File-based apps use directives prefixed with `#:` to configure the build and run the application. Supported directives include: `#:package`, `#:project`, `#:property`, and `#:sdk`. Place these directives at the top of the C# file.
+File-based apps use directives prefixed with `#:` to configure the build and run the application. Supported directives are: `#:include`, `#:package`, `#:project`, `#:property`, and `#:sdk`. Place these directives at the top of the C# file.
+
+### `#:include`
+
+> [!NOTE]
+> This directive is available in .NET 11 and .NET SDK 10.0.300 and later.
+
+Includes another file in the file-based app.
+
+The SDK maps included files to item types based on file extension:
+
+- `*.cs` to `Compile`
+- `*.resx` to `EmbeddedResource`
+- `*.json` to `None`
+- `*.razor` to `Content`
+- `*.dll` to `Reference`
+
+The compiler includes `.cs` files as part of app compilation. These files can add types, methods, namespaces, and other declarations, but they cannot add top-level statements.
+
+```csharp
+#:include helpers.cs
+#:include models/customer.cs
+#:include shared/**/*.cs
+#:include $(MSBuildProjectName).*.cs
+```
+
+The `#:include` directive supports literal paths, glob patterns, and MSBuild properties. When you use glob patterns, file-based app build caching is currently disabled. For more information about available properties, see [MSBuild reserved and well-known properties](/visualstudio/msbuild/msbuild-reserved-and-well-known-properties).
+
+> [!NOTE]
+> Referencing a compiled DLL with `#:include` is available in .NET 11 and later.
+
+You can also use `#:include` to reference a compiled DLL directly, without a feature flag:
+
+```csharp
+#:include ./libs/MyLibrary.dll
+```
+
+`#:sdk`, `#:property`, and `#:package` directives can appear as duplicates across included files as long as their values match. This support enables self-contained library files that declare their own dependencies without conflicting when multiple entry points include them.
 
 ### `#:package`
 
@@ -43,6 +80,19 @@ References another project file or directory that contains a project file.
 ```csharp
 #:project ../SharedLibrary/SharedLibrary.csproj
 ```
+
+Instead of manually editing `#:project` directives, you can use the `dotnet reference` command to manage project references in a file-based app. Use the `--file` option to specify the file-based app:
+
+> [!NOTE]
+> `dotnet reference` support for file-based apps is available in .NET 11 and later.
+
+```dotnetcli
+dotnet reference add --file app.cs ../SharedLibrary/SharedLibrary.csproj
+dotnet reference list --file app.cs
+dotnet reference remove --file app.cs ../SharedLibrary/SharedLibrary.csproj
+```
+
+The `dotnet reference add` command adds a `#:project` directive to the top of the file, and the `remove` command removes it.
 
 ### `#:property`
 
@@ -228,6 +278,21 @@ If you need to disable native AOT, use the following setting:
 
 For more information about native AOT, see [Native AOT deployment](../deploying/native-aot/index.md).
 
+### Reuse Native AOT build outputs
+
+> [!NOTE]
+> This behavior is available in .NET 11 and later.
+
+The native AOT command-line path can reuse existing build outputs when it runs an unchanged file-based app. Supported cached launches include `dotnet run --file app.cs`, `dotnet run app.cs`, and `dotnet app.cs`. If the cached output doesn't match the current command arguments, the CLI falls back to the managed path.
+
+`dotnet format` also accepts a file-based app:
+
+```dotnetcli
+dotnet format app.cs
+```
+
+When a repository enables the SDK artifacts layout, file-based app outputs are placed under that repository's artifacts directory instead of the default per-user cache.
+
 ## User secrets
 
 File-based apps generate a stable user secrets ID based on a hash of the full file path. This ID lets you store sensitive configuration separately from your source code.
@@ -251,6 +316,8 @@ For more information, see [Safe storage of app secrets in development](/aspnet/c
 ## Launch profiles
 
 File-based apps support launch profiles for configuring how the application runs during development. Instead of placing launch profiles in `Properties/launchSettings.json`, file-based apps can use a flat launch settings file named `[ApplicationName].run.json` in the same directory as the source file.
+
+For the general profile format and properties that `dotnet run` supports, see [Launch profiles](../tools/dotnet-run.md#launch-profiles).
 
 ### Flat launch settings file
 
@@ -318,7 +385,7 @@ Enable direct execution of file-based apps on Unix-like systems by using a sheba
 Add a shebang at the top of your file:
 
 ```csharp
-#!/usr/bin/env dotnet
+#!/usr/bin/env -S dotnet --
 #:package Spectre.Console
 
 using Spectre.Console;
@@ -340,6 +407,11 @@ Run directly:
 
 > [!NOTE]
 > Use `LF` line endings instead of `CRLF` when you add a shebang. Don't include a BOM in the file.
+
+To prevent `dotnet` from consuming arguments that match its own parameters (such as `--help`), the shebang uses `--` as a separator. The `--` separator tells `dotnet` to forward all subsequent command-line arguments directly to your app. The `-S` flag lets `env` split the remaining text into separate arguments so you can include `--` in the shebang.
+
+> [!NOTE]
+> If `-S` isn't supported on your system, use `#!/usr/bin/env dotnet` instead. With this shebang, `dotnet` might consume arguments that match its own CLI parameters.
 
 ## Implicit build files
 
@@ -390,9 +462,9 @@ Caching improves build performance but can cause confusion when:
 
 - Clear cache artifacts for file-based apps by using the following command:
 
-```dotnetcli
-dotnet clean file-based-apps
-```
+  ```dotnetcli
+  dotnet clean file-based-apps
+  ```
 
 - Force a clean build to bypass cache:
 

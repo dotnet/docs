@@ -64,11 +64,13 @@ In .NET 10 and later versions, the command also outputs the package's content ha
   `Hashing algorithm used for signature`        | ❌       | ❌          | ✔️         | ✔️         | ✔️
   `Author/Repository Certificate -> SHA1 hash`| ❌       | ❌          | ✔️         | ✔️         | ✔️
   `Author/Repository Certificate -> Issued By`| ❌       | ❌          | ✔️         | ✔️         | ✔️
+  `Author/Repository Certificate -> Certificate revocation URLs`¹| ❌       | ❌          | ✔️         | ✔️         | ✔️
   `Timestamp Certificate -> Issued By`| ❌       | ❌          | ✔️         | ✔️         | ✔️
   `Timestamp Certificate -> SHA-256 hash`| ❌       | ❌          | ✔️         | ✔️         | ✔️
   `Timestamp Certificate -> Validity period`| ❌       | ❌          | ✔️         | ✔️         | ✔️
   `Timestamp Certificate -> SHA1 hash`| ❌       | ❌          | ✔️         | ✔️         | ✔️
   `Timestamp Certificate -> Subject name`| ❌       | ❌          | ✔️         | ✔️         | ✔️
+  `Timestamp Certificate -> Certificate revocation URLs`¹| ❌       | ❌          | ✔️         | ✔️         | ✔️
   `Author/Repository Certificate -> Subject name`| ❌       | ✔️          | ✔️         | ✔️         | ✔️
   `Author/Repository Certificate -> SHA-256 hash`| ❌       | ✔️          | ✔️         | ✔️         | ✔️
   `Author/Repository Certificate -> Validity period`| ❌       | ✔️          | ✔️         | ✔️         | ✔️
@@ -77,6 +79,8 @@ In .NET 10 and later versions, the command also outputs the package's content ha
   `Type of signature (author or repository)`| ❌       | ✔️          | ✔️         | ✔️         | ✔️
 
   ❌ indicates details that are **not** displayed. ✔️ indicates details that are displayed.
+
+  ¹ CRL distribution point and OCSP responder URLs require .NET SDK 10.0.400.
 
 - [!INCLUDE [configfile](includes/cli-configfile.md)]
 

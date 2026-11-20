@@ -1,6 +1,6 @@
 ---
-title: "Structure types"
-description: Learn about the struct type in C#
+title: Structure types
+description: "Structure types (struct) give C# lightweight, data-centric value types. See how value semantics, copying, and boxing work, and when to choose a class instead."
 ms.date: 01/14/2026
 f1_keywords:
   - "struct_CSharpKeyword"
@@ -88,7 +88,7 @@ You can define record structure types. Record types provide built-in functionali
 
 ## Inline arrays
 
-Starting with C# 12, you can declare *inline arrays* as a `struct` type:
+You can declare *inline arrays* as a `struct` type:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="DeclareInlineArray":::
 
@@ -114,7 +114,7 @@ But it can be any reference type, or any value type:
 
 You can use inline arrays with almost any C# data structure.
 
-Inline arrays are an advanced language feature. They're intended for high-performance scenarios where an inline, contiguous block of elements is faster than other alternative data structures. You can learn more about inline arrays from the [feature spec](~/_csharplang/proposals/csharp-12.0/inline-arrays.md).
+Inline arrays are an advanced language feature. They're intended for high-performance scenarios where an inline, contiguous block of elements is faster than other alternative data structures. You can learn more about inline arrays from [§16.6 Inline arrays](~/_csharpstandard/standard/structs.md#166-inline-arrays) in the C# standard.
 
 ## Struct initialization and default values
 
@@ -140,9 +140,9 @@ If you don't initialize all fields in a struct, the compiler adds code to the co
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializer":::
 
-Every `struct` has a `public` parameterless constructor. If you write a parameterless constructor, it must be public. If a struct declares any field initializers, it must explicitly declare a constructor. That constructor need not be parameterless. If a struct declares a field initializer but no constructors, the compiler reports an error. Any explicitly declared constructor (with parameters, or parameterless) executes all field initializers for that struct. All fields without a field initializer or an assignment in a constructor are set to the [default value](default-values.md). For more information, see the [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md) feature proposal note.
+Every `struct` has a `public` parameterless constructor. If you write a parameterless constructor, it must be public. If a struct declares any field initializers, it must explicitly declare a constructor. That constructor need not be parameterless. If a struct declares a field initializer but no constructors, the compiler reports an error. Any explicitly declared constructor (with parameters, or parameterless) executes all field initializers for that struct. All fields without a field initializer or an assignment in a constructor are set to the [default value](default-values.md). For more information, see the [C# language specification—Constructors](~/_csharpstandard/standard/structs.md#1689-constructors).
 
-Beginning with C# 12, `struct` types can define a [primary constructor](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) as part of its declaration. Primary constructors provide a concise syntax for constructor parameters that can be used throughout the `struct` body, in any member declaration for that struct.
+A `struct` type can define a [primary constructor](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) as part of its declaration. Primary constructors provide a concise syntax for constructor parameters that can be used throughout the `struct` body, in any member declaration for that struct.
 
 If all instance fields of a structure type are accessible, you can also instantiate it without the `new` operator. In that case, you must initialize all instance fields before the first use of the instance. The following example shows how to do that:
 
@@ -172,16 +172,15 @@ For any structure type (except [`ref struct`](ref-struct.md) types), [boxing and
 
 ## C# language specification
 
-For more information, see the [Structs](~/_csharpstandard/standard/structs.md) section of the [C# language specification](~/_csharpstandard/standard/README.md).
-
-For more information about `struct` features, see the following feature proposal notes:
+For more information, see the [Structs](~/_csharpstandard/standard/structs.md) section of the [C# language specification](~/_csharpstandard/standard/README.md), specifically the following clauses:
 
 - [Readonly structs](~/_csharpstandard/standard/structs.md#1622-struct-modifiers)
 - [Readonly instance members](~/_csharpstandard/standard/structs.md#163-struct-members)
-- [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md)
-- [Allow `with` expression on structs](~/_csharplang/proposals/csharp-10.0/record-structs.md#allow-with-expression-on-structs)
-- [Record structs](~/_csharplang/proposals/csharp-10.0/record-structs.md)
-- [Auto default structs](~/_csharplang/proposals/csharp-11.0/auto-default-structs.md)
+- [Parameterless struct constructors](~/_csharpstandard/standard/structs.md#1689-constructors)
+- [Allow `with` expression on structs](~/_csharpstandard/standard/expressions.md#1210-with-expressions)
+- [Record structs](~/_csharpstandard/standard/structs.md#165-record-structs)
+
+You can also read about [Auto default structs](~/_csharpstandard/standard/structs.md#16881-field-initializers) in the C# language specification.
 
 ## See also
 

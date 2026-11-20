@@ -51,6 +51,9 @@ class HousingPrediction
 
 Whether making a single or batch prediction, the prediction pipeline needs to be loaded into the application. This pipeline contains both the data preprocessing transformations and the trained model. The following code snippet loads the prediction pipeline from a file named `model.zip`.
 
+> [!IMPORTANT]
+> Only load models from trusted sources. Loading models from untrusted sources is a security risk.
+
 ```csharp
 //Create MLContext
 MLContext mlContext = new MLContext();

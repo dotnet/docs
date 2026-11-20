@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Api.fsi" />
+    <Compile Include="Api.fs" />
+  </ItemGroup>
+</Project>

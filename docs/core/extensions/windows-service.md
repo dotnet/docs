@@ -53,7 +53,7 @@ After successfully adding the packages, your project file should now contain the
 
 ## Update project file
 
-This worker project makes use of C#'s [nullable reference types](../../csharp/nullable-references.md). To enable them for the entire project, update the project file accordingly:
+This worker project makes use of C#'s [nullable reference types](../../csharp/fundamentals/null-safety/nullable-reference-types.md). To enable them for the entire project, update the project file accordingly:
 
 :::code language="xml" source="snippets/workers/windows-service/App.WindowsService.csproj" range="1-7,12-20" highlight="5":::
 

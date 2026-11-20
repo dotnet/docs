@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0016: Test class should have test method"
 description: "Learn about code analysis rule MSTEST0016: Test class should have test method"
-ms.date: 03/12/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0016
 - TestClassShouldHaveTestMethod
@@ -26,19 +27,21 @@ ms.author: enjieid
 
 ## Cause
 
-A test class should have a test method.
+A test class doesn't declare or inherit a test method and doesn't match the rule's fixture-only exemption.
 
 ## Rule description
 
-A test class should have at least one test method or be `static` and have methods that are attributed with `[AssemblyInitialize]` or `[AssemblyCleanup]`.
+A class marked with `[TestClass]` normally represents executable tests. If it has no test methods, it provides no test coverage and might indicate a missing `[TestMethod]` attribute or an incomplete refactor.
+
+The rule exempts static classes that contain `[AssemblyInitialize]`, `[AssemblyCleanup]`, `[GlobalTestInitialize]`, or `[GlobalTestCleanup]` methods. Those containers provide lifecycle callbacks rather than tests of their own.
 
 ## How to fix violations
 
-Ensure that the test class has a test method or is `static` and has methods attributed with `[AssemblyInitialize]` or `[AssemblyCleanup]`.
+Add the missing `[TestMethod]` attribute to a real test or add the intended tests. If the class only contains assembly or global lifecycle callbacks, declare it static to match the fixture-only exemption.
 
 ## When to suppress warnings
 
-Do not suppress a warning from this rule. If you ignore this rule, test class will be ignored.
+Suppress the diagnostic if the class intentionally contains only shared base behavior or lifecycle callbacks and doesn't match the static-container exemption. Otherwise, check for missing test attributes. Don't add an empty test solely to silence the diagnostic.
 
 ## Suppress a warning
 

@@ -9,7 +9,7 @@ class Shape
     {
         var dx = a.X - b.X;
         var dy = a.Y - b.Y;
-        return Math.Sqrt(dx * dx + dy * dy);
+        return System.Math.Sqrt(dx * dx + dy * dy);
     }
 }
 // </AnyTypeAlias>

@@ -94,10 +94,12 @@ The `EventLog` provider sends log output to the Windows Event Log. Unlike the ot
 To log events lower than <xref:Microsoft.Extensions.Logging.LogLevel.Warning?displayProperty=nameWithType>, explicitly set the log level. The following example sets the Event Log default log level to <xref:Microsoft.Extensions.Logging.LogLevel.Information?displayProperty=nameWithType>:
 
 ```json
-"Logging": {
-  "EventLog": {
-    "LogLevel": {
-      "Default": "Information"
+{
+  "Logging": {
+    "EventLog": {
+      "LogLevel": {
+        "Default": "Information"
+      }
     }
   }
 }

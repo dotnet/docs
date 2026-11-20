@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 03/27/2026
+ms.date: 11/12/2026
 ms.topic: reference
 ms.custom: updateeachrelease
 ai-usage: ai-assisted
@@ -130,7 +130,7 @@ The `TargetFramework` property specifies the target framework version for the ap
 
 ```xml
 <PropertyGroup>
-  <TargetFramework>net8.0</TargetFramework>
+  <TargetFramework>net11.0</TargetFramework>
 </PropertyGroup>
 ```
 
@@ -144,7 +144,7 @@ For more information, see [Target frameworks in SDK-style projects](../../standa
 Use the `TargetFrameworks` property when you want your app to target multiple platforms. For a list of valid target framework monikers, see [Target frameworks in SDK-style projects](../../standard/frameworks.md#supported-target-frameworks).
 
 > [!NOTE]
-> If `TargetFrameworks` (plural) is specified, `TargetFramework` (singular) is ignored.
+> If `TargetFramework` (singular) is specified, `TargetFrameworks` (plural) is ignored, and the project builds as a single-target project.
 
 ```xml
 <PropertyGroup>
@@ -405,6 +405,7 @@ The following MSBuild properties are documented in this section:
 - [PublishReferencesDocumentationFiles](#publishreferencesdocumentationfiles)
 - [PublishReferencesSymbols](#publishreferencessymbols)
 - [PublishRelease](#publishrelease)
+- [PublishRuntimeIdentifier](#publishruntimeidentifier)
 - [PublishSelfContained](#publishselfcontained)
 - [RollForward](#rollforward)
 - [RuntimeFrameworkVersion](#runtimeframeworkversion)
@@ -581,9 +582,19 @@ The `PublishRelease` property informs `dotnet publish` to use the `Release` conf
 > - Starting in the .NET 8 SDK, `PublishRelease` defaults to `true` for projects that target .NET 8 or later. For more information, see ['dotnet publish' uses Release configuration](../compatibility/sdk/8.0/dotnet-publish-config.md).
 > - This property does not affect the behavior of `dotnet build /t:Publish`, and it changes the configuration only when publishing via the .NET CLI.
 
+### PublishRuntimeIdentifier
+
+Specify a single [runtime identifier (RID)](../rid-catalog.md) for publish operations only. This property was introduced in .NET 7. It doesn't affect build operations. During publish, `PublishRuntimeIdentifier` sets `RuntimeIdentifier`. If you pass `RuntimeIdentifier` as a global property, that value takes precedence.
+
+```xml
+<PropertyGroup>
+  <PublishRuntimeIdentifier>linux-x64</PublishRuntimeIdentifier>
+</PropertyGroup>
+```
+
 ### PublishSelfContained
 
-The `PublishSelfContained` property informs `dotnet publish` to publish an app as a [self-contained app](../deploying/index.md#self-contained-deployment). This property is useful when you can't use the `--self-contained` argument for the [dotnet publish](../tools/dotnet-publish.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `PublishSelfContained` MSBuild property to a project or *Directory.Build.Props* file.
+The `PublishSelfContained` property informs `dotnet publish` to publish an app as a [self-contained app](../deploying/index.md#publish-as-self-contained). This property is useful when you can't use the `--self-contained` argument for the [dotnet publish](../tools/dotnet-publish.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `PublishSelfContained` MSBuild property to a project or *Directory.Build.Props* file.
 
 This property was introduced in .NET 7. It's similar to the [SelfContained](#selfcontained) property, except that it's specific to the `publish` verb. It's recommended to use `PublishSelfContained` instead of `SelfContained`.
 
@@ -663,7 +674,7 @@ The `SatelliteResourceLanguages` property lets you specify which languages you w
 
 ### SelfContained
 
-The `SelfContained` property informs `dotnet build` and `dotnet publish` to build or publish an app as a [self-contained app](../deploying/index.md#self-contained-deployment). This property is useful when you can't use the `--self-contained` argument with the [dotnet](../tools/dotnet.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `SelfContained` MSBuild property to a project or *Directory.Build.Props* file.
+The `SelfContained` property informs `dotnet build` and `dotnet publish` to build or publish an app as a [self-contained app](../deploying/index.md#publish-as-self-contained). This property is useful when you can't use the `--self-contained` argument with the [dotnet](../tools/dotnet.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `SelfContained` MSBuild property to a project or *Directory.Build.Props* file.
 
 This property is similar to the [PublishSelfContained](#publishselfcontained) property. It's recommended to use `PublishSelfContained` instead of `SelfContained` when possible.
 
@@ -999,11 +1010,11 @@ The following MSBuild properties are documented in this section:
 
 ### AnalysisLevel
 
-The `AnalysisLevel` property lets you specify a set of code analyzers to run according to a .NET release. Each .NET release has a set of code analysis rules. Of that set, the rules that are enabled by default for that release analyze your code. For example, if you upgrade from .NET 8 to .NET 9 but don't want the default set of code analysis rules to change, set `AnalysisLevel` to `8`.
+The `AnalysisLevel` property lets you specify a set of code analyzers to run according to a .NET release. Each .NET release has a set of code analysis rules. Of that set, the rules that are enabled by default for that release analyze your code. For example, if you upgrade from .NET 10 to .NET 11 but don't want the default set of code analysis rules to change, set `AnalysisLevel` to `10`.
 
 ```xml
 <PropertyGroup>
-  <AnalysisLevel>8</AnalysisLevel>
+  <AnalysisLevel>10</AnalysisLevel>
 </PropertyGroup>
 ```
 
@@ -1017,7 +1028,7 @@ Optionally, you can specify a compound value for this property that also specifi
 
 Default value:
 
-- If your project targets .NET 5 or later, or if you've added the [AnalysisMode](#analysismode) property, the default value is `latest`.
+- If your project targets .NET 5 or later, the default value matches the target framework version, except when the target framework is the latest released .NET version supported by the SDK. In that case, the default value is `latest`.
 - Otherwise, this property is omitted unless you explicitly add it to the project file.
 
 The following table shows the values you can specify.
@@ -1028,6 +1039,10 @@ The following table shows the values you can specify.
 | `latest-<mode>` | The latest code analyzers that have been released are used. The `<mode>` value determines which rules are enabled. |
 | `preview` | The latest code analyzers are used, even if they are in preview. |
 | `preview-<mode>` | The latest code analyzers are used, even if they are in preview. The `<mode>` value determines which rules are enabled. |
+| `11.0` | The set of rules that was available for the .NET 11 release is used, even if newer rules are available. |
+| `11.0-<mode>` | The set of rules that was available for the .NET 11 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
+| `11` | The set of rules that was available for the .NET 11 release is used, even if newer rules are available. |
+| `11-<mode>` | The set of rules that was available for the .NET 11 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 | `10.0` | The set of rules that was available for the .NET 10 release is used, even if newer rules are available. |
 | `10.0-<mode>` | The set of rules that was available for the .NET 10 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 | `10` | The set of rules that was available for the .NET 10 release is used, even if newer rules are available. |
@@ -1097,7 +1112,7 @@ The following table shows the available option values. They're listed in increas
 > [!NOTE]
 >
 > - If you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) (in addition to code-quality rules).
-> - If you use a compound value for [AnalysisLevel](#analysislevel), for example, `<AnalysisLevel>9-recommended</AnalysisLevel>`, you can omit this property entirely. However, if you specify both properties, `AnalysisLevel` takes precedence over `AnalysisMode`.
+> - If you use a compound value for [AnalysisLevel](#analysislevel), for example, `<AnalysisLevel>11-recommended</AnalysisLevel>`, you can omit this property entirely. However, if you specify both properties, `AnalysisLevel` takes precedence over `AnalysisMode`.
 
 ### AnalysisMode\<Category>
 
@@ -1152,7 +1167,7 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 ### EnforceCodeStyleInBuild
 
 [.NET code style analysis](../../fundamentals/code-analysis/overview.md#code-style-analysis) is disabled, by default, on build for all .NET projects. You can enable code style analysis for .NET projects by setting the `EnforceCodeStyleInBuild` property to `true`.
-(But for performance reasons, a handful of code-style rules that apply only in the Visual Studio IDE won't be run.)
+(But for performance reasons, a [handful of code-style rules](https://github.com/dotnet/roslyn/blob/7c69ea6a9a16bd8ded79ce0d7c0256d59736d486/src/Analyzers/Core/Analyzers/EnforceOnBuildValues.cs#L140) that apply only in the Visual Studio IDE won't be run.)
 
 ```xml
 <PropertyGroup>
@@ -1514,6 +1529,10 @@ The following table summarizes the diagnostics and behaviors affected by `SDKAna
 | 10.0.100         | 'Restore' package pruning       | [PrunePackageReference](/nuget/consume-packages/package-references-in-project-files#prunepackagereference) is enabled by default for projects that target .NET 8+ or .NET Standard 2.0+. |
 | 10.0.100         | 'Restore' resolver with lock files | Uses improved, [.NET 9 dependency graph resolver](/nuget/consume-packages/package-references-in-project-files#nuget-dependency-resolver) instead of legacy dependency graph resolver (.NET 8 SDK and earlier). |
 | 10.0.100         | 'Restore' behavior for PackageReference without a version | Emits [NU1015](/nuget/reference/errors-and-warnings/nu1015) error instead of [NU1603](/nuget/reference/errors-and-warnings/nu1603) warning. |
+| 10.0.300         | 'Restore' multi-targeting with duplicate target frameworks | Enables [multi-targeting with duplicate target frameworks](/nuget/consume-packages/package-references-in-project-files#multi-targeting-with-duplicate-frameworks) using `TargetFramework` alias. |
+| 10.0.300         | `TargetFramework` character validation | Emits [NU1019](/nuget/reference/errors-and-warnings/nu1019) error for path separator characters (`/` or `\`) in a `TargetFramework` property, and [NU1019](/nuget/reference/errors-and-warnings/nu1019) warning for non-ASCII characters. |
+| 11.0.100         | MonoAndroid framework deprecation warning | Emits [NU1703](/nuget/reference/errors-and-warnings/nu1703) warning when a package uses the deprecated `MonoAndroid` framework instead of a modern .NET target framework moniker. |
+| 11.0.100         | `TargetFramework` non-ASCII character validation | Changes [NU1019](/nuget/reference/errors-and-warnings/nu1019) from a warning to an error when a `TargetFramework` property contains non-ASCII characters. |
 
 > [!NOTE]
 > The behavior enabled by the `SdkAnalysisLevel` value ages out (expires) after three major releases. For example, version 11.0.100 only respects values down to 8.0.100. In version 12.0.100, features that could, in previous versions, be disabled by setting an `SdkAnalysisLevel` value of 8.0.100 would no longer be disabled.
@@ -1539,11 +1558,23 @@ The following MSBuild properties are documented in this section:
 
 ### IsTestingPlatformApplication
 
-When your project references the [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) package, setting `IsTestingPlatformApplication` to `true` (which is also the default value if not specified) does the following:
+The `IsTestingPlatformApplication` property identifies a project as an MTP test application. When .NET 10 or a later SDK runs `dotnet test` in MTP mode against a solution or project, it evaluates this property to classify each project. Test framework and platform NuGet packages normally set the property through restored MSBuild imports.
+
+When your project imports the [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) package, the package defaults `IsTestingPlatformApplication` to `true` if you haven't set it. A `true` value does the following:
 
 - Generates the entry point to the test project.
 - Generates the configuration file.
 - Detects the extensions.
+
+When `dotnet test` classifies evaluated projects in MTP mode, the property values produce the following results:
+
+| `IsTestingPlatformApplication` | [`IsTestProject`](#istestproject) | Classification |
+| --- | --- | --- |
+| `true` | Any value | MTP test application |
+| `false` or empty | `true` | VSTest test project |
+| `false` or empty | `false` or empty | Not a test project |
+
+If you skip restore and the restored package imports aren't available, `IsTestingPlatformApplication` can remain empty and project discovery can fail. For more information, see [`No test projects were found`](../testing/microsoft-testing-platform-troubleshooting.md#dotnet-test-reports-no-test-projects-were-found).
 
 Setting the property to `false` disables the transitive dependency to the package. A *transitive dependency* is when a project that references another project that references a given package behaves as if *it* references the package. You'd typically set this property to `false` in a non-test project that references a test project. For more information, see [error CS8892](../testing/microsoft-testing-platform-troubleshooting.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
 
@@ -1551,7 +1582,7 @@ If your test project references MSTest, NUnit, or xUnit, this property is set to
 
 ### Enable\[NugetPackageNameWithoutDots\]
 
-Use a property with the pattern `Enable[NugetPackageNameWithoutDots]` to enable or disable Microsoft.Testing.Platform extensions.
+Use a property with the pattern `Enable[NugetPackageNameWithoutDots]` to enable or disable Microsoft.Testing.Platform (MTP) extensions.
 
 For example, to enable the crash dump extension (NuGet package [Microsoft.Testing.Extensions.CrashDump](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CrashDump)), set the `EnableMicrosoftTestingExtensionsCrashDump` to `true`.
 
@@ -1571,7 +1602,7 @@ For more information, see [Playwright](../testing/unit-testing-mstest-sdk.md#tes
 
 ### EnableMSTestRunner
 
-The `EnableMSTestRunner` property enables or disables the use of [Microsoft.Testing.Platform (MTP)](../testing/unit-testing-mstest-running-tests.md), a lightweight and portable alternative to VSTest. This property is available in MSTest 3.2 and later versions.
+The `EnableMSTestRunner` property enables or disables the use of [MTP](../testing/unit-testing-mstest-running-tests.md), a lightweight and portable alternative to VSTest. This property is available in MSTest 3.2 and later versions.
 
 > [!NOTE]
 > If your project specifies the [MSTest SDK](../testing/unit-testing-mstest-sdk.md), you don't need to set this property. It's set automatically.
@@ -1582,11 +1613,11 @@ The `EnableNUnitRunner` property enables or disables the use of the [NUnit runne
 
 ## UseMicrosoftTestingPlatformRunner
 
-The `UseMicrosoftTestingPlatformRunner` property enables or disables the use of Microsoft.Testing.Platform runner in [xUnit.v3](https://xunit.net) test projects.
+The `UseMicrosoftTestingPlatformRunner` property enables or disables the use of MTP runner in [xUnit.v3](https://xunit.net) test projects.
 
 ### GenerateTestingPlatformEntryPoint
 
-Setting the `GenerateTestingPlatformEntryPoint` property to `false` disables the automatic generation of the program entry point in test projects that use [Microsoft.Testing.Platform](../testing/microsoft-testing-platform-intro.md). You might want to set this property to `false` when you manually define an entry point, or when you reference a test project from an executable that also has an entry point.
+Setting the `GenerateTestingPlatformEntryPoint` property to `false` disables the automatic generation of the program entry point in test projects that use [MTP](../testing/microsoft-testing-platform-intro.md). You might want to set this property to `false` when you manually define an entry point, or when you reference a test project from an executable that also has an entry point.
 
 For more information, see [error CS8892](../testing/microsoft-testing-platform-troubleshooting.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
 
@@ -1598,13 +1629,13 @@ The `GenerateTestingPlatformConfigurationFile` property is only available when [
 
 ### TestingPlatformCaptureOutput
 
-The `TestingPlatformCaptureOutput` property controls whether all console output that a test executable writes is captured and hidden from the user when you use `dotnet test` to run `Microsoft.Testing.Platform` tests. By default, the console output is hidden. This output includes the banner, version information, and formatted test information. Set this property to `false` to show this information together with MSBuild output.
+The `TestingPlatformCaptureOutput` property controls whether all console output that a test executable writes is captured and hidden from the user when you use `dotnet test` to run MTP tests. By default, the console output is hidden. This output includes the banner, version information, and formatted test information. Set this property to `false` to show this information together with MSBuild output.
 
 For more information, see [Show complete platform output](../testing/unit-testing-with-dotnet-test.md#show-complete-platform-output).
 
 ### TestingPlatformCommandLineArguments
 
-The `TestingPlatformCaptureOutput` property lets you specify command-line arguments to the test app when you use `dotnet test` to run `Microsoft.Testing.Platform` tests. The following project file snippet shows an example.
+The `TestingPlatformCommandLineArguments` property lets you specify command-line arguments to the test app when you use `dotnet test` to run MTP tests. The following project file snippet shows an example.
 
 ```xml
 <PropertyGroup>
@@ -1613,12 +1644,14 @@ The `TestingPlatformCaptureOutput` property lets you specify command-line argume
 </PropertyGroup>
 ```
 
+You can also use conditions to pass different arguments to projects that use different test frameworks or extensions. For more information, see [Solutions with mixed test frameworks or extensions](../testing/unit-testing-with-dotnet-test.md#solutions-with-mixed-test-frameworks-or-extensions).
+
 ### TestingPlatformDotnetTestSupport
 
-The `TestingPlatformDotnetTestSupport` property enables testing Microsoft.Testing.Platform apps when using the VSTest mode of `dotnet test`.
+The `TestingPlatformDotnetTestSupport` property enables testing MTP apps when using the VSTest mode of `dotnet test`.
 
 > [!NOTE]
-> Don't call `dotnet test` on a solution that has both VSTest and Microsoft.Testing.Platform projects, as that scenario is not supported.
+> Don't call `dotnet test` on a solution that has both VSTest and MTP projects, as that scenario is not supported.
 
 For more information, see [Testing with 'dotnet test'](../testing/unit-testing-with-dotnet-test.md).
 
@@ -1636,7 +1669,7 @@ When you use the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md), th
 | `None`         | No extensions are enabled.                                                                    |
 | `AllMicrosoft` | Enable all extensions shipped by Microsoft (including extensions with a restrictive license). |
 
-For more information, see [Microsoft.Testing.Platform profile](../testing/unit-testing-mstest-sdk.md#microsofttestingplatform-profile).
+For more information, see [MTP profile](../testing/unit-testing-mstest-sdk.md#microsofttestingplatform-profile).
 
 ## VSTest&ndash;related properties
 
@@ -1654,7 +1687,7 @@ The `IsTestProject` property is set to `true` by the [Microsoft.NET.Test.Sdk NuG
 
 ### UseVSTest
 
-Set the `UseVSTest` property to `true` to switch from Microsoft.Testing.Platform to the [VSTest](/visualstudio/test/vstest-console-options) runner when using the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md).
+Set the `UseVSTest` property to `true` to switch from MTP to the [VSTest](/visualstudio/test/vstest-console-options) runner when using the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md).
 
 ## MSTest&ndash;related properties
 

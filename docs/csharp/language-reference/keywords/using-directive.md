@@ -168,7 +168,7 @@ The following example shows how to define a `using` directive and a `using` alia
 
 :::code language="csharp" source="./snippets/csrefKeywordsNamespace2.cs" id="Snippet9":::
 
-Beginning with C# 12, you can create aliases for types that were previously restricted, including [tuple types](../builtin-types/value-tuples.md#tuple-field-names), pointer types, and other unsafe types. For more information on the updated rules, see the [feature spec](~/_csharplang/proposals/csharp-12.0/using-alias-types.md).
+You can create aliases for [tuple types](../builtin-types/value-tuples.md#tuple-field-names), pointer types, and other unsafe types. For more information on the rules, see [§14.6.2 Using alias directives](~/_csharpstandard/standard/namespaces.md#1462-using-alias-directives) in the C# standard.
 
 ## Qualified alias member
 
@@ -180,14 +180,14 @@ The `global::` ensures that the namespace lookup for the namespace following the
 
 ## C# language specification
 
-For more information, see [Using directives](~/_csharpstandard/standard/namespaces.md#145-using-directives) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Using directives](~/_csharpstandard/standard/namespaces.md#146-using-directives) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
 
-For more information on the *global using* modifier, see the [global usings feature specification](~/_csharplang/proposals/csharp-10.0/GlobalUsingDirective.md).
+For more information on the *global using* modifier, see [Global using directives](~/_csharpstandard/standard/namespaces.md#1452-global-using-alias-directives).
 
 ## See also
 
 - [C# keywords](index.md)
-- [Namespaces](../../fundamentals/program-structure/namespaces.md)
+- [Organize types with namespaces](../../fundamentals/namespaces/overview.md)
 - [Style rule IDE0005 - Remove unnecessary 'using' directives](../../../fundamentals/code-analysis/style-rules/ide0005.md)
 - [Style rule IDE0065 - 'using' directive placement](../../../fundamentals/code-analysis/style-rules/ide0065.md)
 - [`using` statement](../statements/using.md)

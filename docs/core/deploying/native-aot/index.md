@@ -2,17 +2,17 @@
 title: Native AOT deployment overview
 description: Learn what Native AOT deployments are and why you should consider using it as part of the publishing your app with .NET 7 and later.
 author: lakshanf
-ms.date: 10/22/2025
+ms.date: 11/03/2026
 ai-usage: ai-assisted
 ---
 
 # Native AOT deployment
 
-Publishing your app as *Native AOT* produces an app that's [self-contained](../index.md#self-contained-deployment) and that has been ahead-of-time (AOT) compiled to native code. Native AOT apps have faster startup time and smaller memory footprints. These apps can run on machines that don't have the .NET runtime installed.
+Publishing your app as *Native AOT* produces an app that's [self-contained](../index.md#publish-as-self-contained) and that has been ahead-of-time (AOT) compiled to native code. Native AOT apps have faster startup time and smaller memory footprints. These apps can run on machines that don't have the .NET runtime installed.
 
 The benefit of Native AOT is most significant for workloads with a high number of deployed instances, such as cloud infrastructure and hyper-scale services. .NET 8 adds [ASP.NET Core support for native AOT](/aspnet/core/fundamentals/native-aot).
 
-The Native AOT deployment model uses an ahead-of-time compiler to compile IL to native code at the time of publish. Native AOT apps don't use a just-in-time (JIT) compiler when the application runs. Native AOT apps can run in restricted environments where a JIT isn't allowed. Native AOT applications target a specific runtime environment, such as Linux x64 or Windows x64, just like publishing a [self-contained app](../index.md#self-contained-deployment).
+The Native AOT deployment model uses an ahead-of-time compiler to compile IL to native code at the time of publish. Native AOT apps don't use a just-in-time (JIT) compiler when the application runs. Native AOT apps can run in restricted environments where a JIT isn't allowed. Native AOT applications target a specific runtime environment, such as Linux x64 or Windows x64, just like publishing a [self-contained app](../index.md#publish-as-self-contained).
 
 ## Prerequisites
 
@@ -22,39 +22,51 @@ The Native AOT deployment model uses an ahead-of-time compiler to compile IL to 
 
 # [Alpine](#tab/linux-alpine)
 
-- The compiler toolchain and developer packages for libraries that the .NET runtime depends on.
+- The compiler toolchain.
 - Alpine (3.15+)
 
   ```sh
-  sudo apk add clang build-base zlib-dev
+  sudo apk add clang build-base
   ```
+
+> [!NOTE]
+> To run a Native AOT app, the target machine needs the same [dependencies](../../install/linux-alpine.md#dependencies) as a self-contained .NET app, except for `libgcc` and `libstdc++`. The `icu-libs` and `icu-data-full` packages aren't needed if the app runs in [globalization-invariant mode](../../runtime-config/globalization.md#invariant-mode).
 
 # [Fedora](#tab/linux-fedora)
 
-- The compiler toolchain and developer packages for libraries that the .NET runtime depends on.
+- The compiler toolchain.
 - Fedora (39+)
 
   ```sh
-  sudo dnf install clang zlib-devel zlib-ng-devel zlib-ng-compat-devel
+  sudo dnf install clang
   ```
+
+> [!NOTE]
+> To run a Native AOT app, the target machine needs the same [dependencies](../../install/linux-fedora.md#dependencies) as a self-contained .NET app, except for `libgcc` and `libstdc++`. The `libicu` package isn't needed if the app runs in [globalization-invariant mode](../../runtime-config/globalization.md#invariant-mode).
 
 # [RHEL](#tab/linux-rhel)
 
-- The compiler toolchain and developer packages for libraries that the .NET runtime depends on.
+- The compiler toolchain.
 - RHEL (8+)
 
   ```sh
-  sudo dnf install clang zlib-devel zlib-ng-devel zlib-ng-compat-devel
+  sudo dnf install clang
   ```
+
+> [!NOTE]
+> To run a Native AOT app, the target machine needs the same [dependencies](../../install/linux-rhel.md#dependencies) as a self-contained .NET app, except for `libgcc` and `libstdc++`. The `libicu` package isn't needed if the app runs in [globalization-invariant mode](../../runtime-config/globalization.md#invariant-mode).
 
 # [Ubuntu](#tab/linux-ubuntu)
 
-- The compiler toolchain and developer packages for libraries that the .NET runtime depends on.
+- The compiler toolchain.
 - Ubuntu (18.04+)
 
   ```sh
-  sudo apt-get install clang zlib1g-dev
+  sudo apt-get install clang
   ```
+
+> [!NOTE]
+> To run a Native AOT app, the target machine needs the same [dependencies](../../install/linux-ubuntu-decision.md#dependencies) as a self-contained .NET app, except for `libgcc-s1` and `libstdc++6`. The `libicu` package (for example, `libicu78` on Ubuntu 26.04) isn't needed if the app runs in [globalization-invariant mode](../../runtime-config/globalization.md#invariant-mode).
 
 # [macOS](#tab/macOS)
 
@@ -173,7 +185,7 @@ Native AOT apps have the following limitations:
 - Windows: No built-in COM.
 - Requires trimming, which has [limitations](../trimming/incompatibilities.md).
 - Implies compilation into a single file, which has known [incompatibilities](../single-file/overview.md#api-incompatibility).
-- Apps include required runtime libraries (just like [self-contained apps](../index.md#self-contained-deployment), increasing their size as compared to framework-dependent apps).
+- Apps include required runtime libraries (just like [self-contained apps](../index.md#publish-as-self-contained), increasing their size as compared to framework-dependent apps).
 - <xref:System.Linq.Expressions> always use their interpreted form, which is slower than runtime generated compiled code.
 - Generic parameters substituted with struct type arguments have specialized code generated for each instantiation. In the dynamic runtime, many instantiations are generated on-demand. In Native AOT, all instantiations are pre-generated. This can have significant impact to the disk size of the application. Generic virtual methods and generic instance methods will also have an instantiation for every implementing or overriding type.
 - Not all the runtime libraries are fully annotated to be Native AOT compatible. That is, some warnings in the runtime libraries aren't actionable by end developers.

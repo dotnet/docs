@@ -6,7 +6,7 @@ Imports System.Linq
 Imports System.Text
 Imports System.Windows.Forms
 Imports System.Data.Common
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 Imports System.Globalization
 
 Public Class Form1
@@ -73,4 +73,3 @@ Public Class Form1
     ' </SnippetLDVSample1GetData>
 
 End Class
-

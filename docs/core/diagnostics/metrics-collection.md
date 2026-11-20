@@ -2,12 +2,12 @@
 title: Collect metrics - .NET
 description: Tutorial to collect metrics in .NET applications
 ms.topic: tutorial
-ms.date: 10/27/2021
+ms.date: 10/20/2026
 ---
 
 # Collect metrics
 
-**This article applies to: ✔️** .NET 6.0 and later **✔️** .NET Framework 4.6.1 and later
+**This article applies to: ✔️** .NET 8 and later **✔️** .NET Framework 4.6.1 and later
 
 Instrumented code can record numeric measurements, but the measurements usually need to be aggregated, transmitted, and stored to create useful metrics for monitoring. The process of aggregating, transmitting, and storing data is called collection. This tutorial shows several examples of collecting metrics:
 
@@ -19,7 +19,7 @@ For more information on custom metric instrumentation and options, see [Compare 
 
 ## Prerequisites
 
-- [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet) or a later
+- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet) or later.
 
 ## Create an example app
 
@@ -287,3 +287,5 @@ To guarantee that a certain region of code in the callback isn't currently execu
 
 - Synchronization adds performance overhead in every measurement callback.
 - `MeterListener` is designed as a highly performance conscious API.
+
+For custom listeners that use dependency injection and configuration, see [Configure metrics](metrics-configuration.md).

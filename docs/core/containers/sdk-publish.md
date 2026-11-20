@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with dotnet publish
 description: In this tutorial, you learn how to containerize a .NET application with dotnet publish command without the use of a Dockerfile.
-ms.date: 01/07/2025
+ms.date: 05/27/2026
 ms.topic: tutorial
 ---
 
@@ -16,7 +16,7 @@ Containers have many features and benefits, such as being an immutable infrastru
 
 Install the following prerequisites:
 
-- [.NET 8+ SDK](https://dotnet.microsoft.com/download/dotnet/8.0)\
+- [.NET 8+ SDK](https://dotnet.microsoft.com/download/dotnet)\
 If you have .NET installed, use the `dotnet --info` command to determine which SDK you're using.
 
 If you plan on running the container locally, you need an Open Container Initiative (OCI)-compatible container runtime, such as:

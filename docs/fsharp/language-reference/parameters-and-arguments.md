@@ -1,7 +1,8 @@
 ---
 title: Parameters and Arguments
 description: Learn about F# language support for defining parameters and passing arguments to functions, methods, and properties.
-ms.date: 08/15/2020
+ms.date: 09/30/2026
+ai-usage: ai-assisted
 ---
 # Parameters and arguments
 
@@ -119,6 +120,52 @@ w.Height // = 10
 ```
 
 Note that those members could perform any arbitrary work, the syntax is effectively a short hand to call property setters before returning the final value.
+
+### Require named arguments
+
+To protect calls from generated parameter-order changes, use `System.Diagnostics.CodeAnalysis.RequireNamedArgumentsAttribute`:
+
+> [!NOTE]
+> This is an [F# 11.2 feature](compiler-options.md#language-version-and-indentation). In the .NET 11.0.100 SDK, enable `<LangVersion>preview</LangVersion>`. The attribute must exist in the referenced metadata or source; the compiler doesn't synthesize it.
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Named":::
+
+`Query.Execute(3m, 4m)` is rejected. Reordering the declarations preserves the named call's meaning; renaming a parameter breaks it.
+
+The rule covers methods and constructors, not properties, indexers, delegate invocation, or module functions. Optional arguments can stay omitted; pass parameter arrays by name rather than as expanded positional arguments.
+
+If your references lack the attribute, define it before the consuming code. The sample uses `Compatibility.fs`; omit this definition if your references provide it:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Compatibility.fs" id="NamedAttribute":::
+
+## Overload selection
+
+To distinguish a value from an already-wrapped value, the most-concrete tiebreaker compares otherwise equally ranked generic overloads. For example, it prefers a `Task<'T>` constructor parameter to a bare `'T` parameter:
+
+> [!NOTE]
+> The most-concrete tiebreaker and `OverloadResolutionPriorityAttribute` support are [F# 11.2 features](compiler-options.md#language-version-and-indentation). In the .NET 11.0.100 SDK, enable `<LangVersion>preview</LangVersion>`.
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Concrete":::
+
+The inferred type is `ValueTask<int>`: the constructor wraps the task, rather than treating it as a result value of type `Task<int>`.
+
+This last-resort rule doesn't order unrelated types or SRTP candidates. To inspect the selection, enable [informational diagnostics](compiler-options.md#opt-in-warnings) FS3575 (preferred overload) and FS3576 (bypassed generic overload).
+
+To keep an old binary entry point while preferring a richer API for new source compilations, a library author can set a higher `System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute` value. Here the replacement records the caller's source line through the existing `CallerLineNumber` facility:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/preview/Preview.fs" id="Priority":::
+
+Priority 1 selects the line-aware overload; without the attribute, the one-parameter overload wins. Unannotated members have priority 0. The attribute is available in .NET 9 and later references.
+
+Priority filters applicable candidates within a declaring type before normal overload rules; equal priorities use those rules. It doesn't rank extension modules or change property/indexer selection. With this feature enabled, overrides can't carry the attribute. Only the consuming compiler needs the feature enabled to apply the priority.
+
+### Select by return type
+
+To construct a plain value in the container a caller needs, FSharp.Core 11's `AllowOverloadOnReturnType` attribute lets the expected result type participate in overload selection. This attribute doesn't require preview:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="ReturnOverloads":::
+
+Annotate the result to select a list or option. Without the attribute or a known result type, the call is ambiguous. Adding return-only overloads can therefore break inferred calls. This differs from [structural construction](generics/extension-member-constraints.md#return-directed-construction), which selects a member on the output type.
 
 ## Optional parameters
 

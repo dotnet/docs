@@ -127,7 +127,7 @@ Use the <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute> attrib
 It's also possible to use <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute> on properties that don't have a vector type, for example, a property of type `string`. When a property is decorated in this way, you need to provide an <xref:Microsoft.Extensions.AI.IEmbeddingGenerator> instance to the vector store. When upserting the record, the text that's in the `string` property is automatically converted and stored as a vector in the database. (It's not possible to retrieve a vector using this mechanism.)
 
 ```csharp
-[VectorStoreVector(Dimensions: 4, DistanceFunction = DistanceFunction.CosineSimilarity, IndexKind = IndexKind.Hnsw)]
+[VectorStoreVector(dimensions: 4, DistanceFunction = DistanceFunction.CosineSimilarity, IndexKind = IndexKind.Hnsw)]
 public string DescriptionEmbedding { get; set; }
 ```
 
@@ -138,7 +138,7 @@ The following table shows the parameters for `VectorStoreVectorAttribute`.
 
 | Parameter                                                                          | Required | Description |
 |------------------------------------------------------------------------------------|:--------:|-------------|
-| <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.Dimensions>       | Yes      | The number of dimensions that the vector has. This is required when creating a vector index for a collection. |
+| `dimensions`                                                                       | Yes      | The number of dimensions that the vector has. This is required when creating a vector index for a collection. Pass as a constructor argument: `[VectorStoreVector(dimensions: 1536)]`. |
 | <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.IndexKind>        | No       | The type of index to index the vector with. Default varies by vector store type. |
 | <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.DistanceFunction> | No       | The type of function to use when doing vector comparison during vector search over this vector. Default varies by vector store type. |
 | <xref:Microsoft.Extensions.VectorData.VectorStoreVectorAttribute.StorageName>      | No       | Can be used to supply an alternative name for the property in the database. This parameter is not supported by all providers, for example, where alternatives like `JsonPropertyNameAttribute` is supported. |
@@ -174,7 +174,7 @@ Vector databases are all about storing *embeddings* - or numerical representatio
 You can define your vector property as `float[]` or `ReadOnlyMemory<float>`, representing the embedding directly, and generate embeddings yourself before each operation:
 
 ```csharp
-[VectorStoreVector(Dimensions: 1536)]
+[VectorStoreVector(dimensions: 1536)]
 public ReadOnlyMemory<float>? DescriptionEmbedding { get; set; }
 ```
 
@@ -196,7 +196,7 @@ The recommended approach is to configure an <xref:Microsoft.Extensions.AI.IEmbed
 First, define the vector property as `string`:
 
 ```csharp
-[VectorStoreVector(Dimensions: 1536)]
+[VectorStoreVector(dimensions: 1536)]
 public string DescriptionEmbedding { get; set; }
 ```
 

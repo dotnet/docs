@@ -2,11 +2,12 @@
 title: "Breaking change: .NET 11 obsoletions with custom IDs"
 titleSuffix: ""
 description: Learn about the APIs that have been marked as obsolete in .NET 11 with a custom diagnostic ID.
-ms.date: 04/03/2026
+ms.date: 11/12/2026
+ai-usage: ai-assisted
 ---
 # API obsoletions with non-default diagnostic IDs (.NET 11)
 
-Some APIs have been marked as obsolete, starting in .NET 11.
+Some APIs are marked as obsolete, starting in .NET 11.
 
 This breaking change is specific to APIs that have been marked as obsolete *with a custom diagnostic ID*. Suppressing the default obsoletion diagnostic ID, which is [CS0618](../../../../csharp/language-reference/compiler-messages/cs0618.md) for the C# compiler, does not suppress the warnings that the compiler generates when these APIs are used.
 
@@ -18,7 +19,9 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 
 | Diagnostic ID                                                           | Description | Severity |
 |-------------------------------------------------------------------------|-------------|----------|
+| [SYSLIB0063](../../../../fundamentals/syslib-diagnostics/syslib0063.md) | <xref:System.IO.Pipes.NamedPipeClientStream.%23ctor(System.IO.Pipes.PipeDirection,System.Boolean,System.Boolean,Microsoft.Win32.SafeHandles.SafePipeHandle)> is obsolete. Use the constructor that omits the `isConnected` argument instead. | Warning |
 | [SYSLIB0064](../../../../fundamentals/syslib-diagnostics/syslib0064.md) | <xref:System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[],System.Boolean)?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[],System.Boolean)?displayProperty=nameWithType> are obsolete. Use the overloads that accept an <xref:System.Security.Cryptography.RSAEncryptionPadding> instead. | Warning |
+| [SYSLIB0066](../../../../fundamentals/syslib-diagnostics/syslib0066.md) | <xref:Microsoft.Extensions.Options.IStartupValidator> is obsolete. Implement and register a custom <xref:Microsoft.Extensions.Options.IAsyncStartupValidator> instead; don't register the same implementation under both startup-validator interfaces. | Warning |
 
 ## Version introduced
 
@@ -36,13 +39,22 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 
 ## Affected APIs
 
+### SYSLIB0063
+
+- <xref:System.IO.Pipes.NamedPipeClientStream.%23ctor(System.IO.Pipes.PipeDirection,System.Boolean,System.Boolean,Microsoft.Win32.SafeHandles.SafePipeHandle)>
+
 ### SYSLIB0064
 
 - <xref:System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[],System.Boolean)?displayProperty=fullName>
 - <xref:System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[],System.Boolean)?displayProperty=fullName>
 
+### SYSLIB0066
+
+- <xref:Microsoft.Extensions.Options.IStartupValidator>
+
 ## See also
 
+- [Cryptography obsoletions (.NET 11)](../../cryptography/11/obsolete-apis.md)
 - [API obsoletions with non-default diagnostic IDs (.NET 10)](../10.0/obsolete-apis.md)
 - [API obsoletions with non-default diagnostic IDs (.NET 9)](../9.0/obsolete-apis-with-custom-diagnostics.md)
 - [API obsoletions with non-default diagnostic IDs (.NET 8)](../8.0/obsolete-apis-with-custom-diagnostics.md)

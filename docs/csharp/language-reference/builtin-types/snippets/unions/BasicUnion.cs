@@ -1,6 +1,6 @@
 // <CaseTypes>
 public record class Cat(string Name);
-public record class Dog(string Name);
+public record class Dog(string Name, string Breed);
 public record class Bird(string Name);
 // </CaseTypes>
 
@@ -19,8 +19,8 @@ public static class BasicUnionScenario
     // <BasicConversion>
     static void BasicConversion()
     {
-        Pet pet = new Dog("Rex");
-        Console.WriteLine(pet.Value); // output: Dog { Name = Rex }
+        Pet pet = new Dog("Rex", "Labrador");
+        Console.WriteLine(pet.Value); // output: Dog { Name = Rex, Breed = Labrador }
 
         Pet pet2 = new Cat("Whiskers");
         Console.WriteLine(pet2.Value); // output: Cat { Name = Whiskers }
@@ -30,7 +30,7 @@ public static class BasicUnionScenario
     // <PatternMatching>
     static void PatternMatching()
     {
-        Pet pet = new Dog("Rex");
+        Pet pet = new Dog("Rex", "Labrador");
 
         var name = pet switch
         {

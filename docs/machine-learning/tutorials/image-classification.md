@@ -253,6 +253,9 @@ An ML.NET model pipeline is a chain of estimators. No execution happens during p
 
 1. Add the estimator to load the TensorFlow model, and score it:
 
+    > [!IMPORTANT]
+    > Only load models from trusted sources. Loading models from untrusted sources is a security risk.
+
     [!code-csharp[ScoreTensorFlowModel](./snippets/image-classification/csharp/Program.cs#ScoreTensorFlowModel)]
 
     This stage in the pipeline loads the TensorFlow model into memory, then processes the vector of pixel values through the TensorFlow model network. Applying inputs to a deep learning model, and generating an output using the model, is referred to as **Scoring**. When using the model in its entirety, scoring makes an inference, or prediction.

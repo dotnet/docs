@@ -1,15 +1,15 @@
 ---
-title: Build a test framework for Microsoft.Testing.Platform
-description: Learn how to create a custom test framework for Microsoft.Testing.Platform, including registration, lifecycle, and test node reporting.
+title: Build a test framework for Microsoft.Testing.Platform (MTP)
+description: Learn how to create a custom test framework for Microsoft.Testing.Platform (MTP), including registration, lifecycle, and test node reporting.
 author: MarcoRossignoli
 ms.author: mrossignoli
-ms.date: 02/24/2026
+ms.date: 11/05/2026
 ai-usage: ai-assisted
 ---
 
 # Build a test framework
 
-This article explains how to create a custom test framework for Microsoft.Testing.Platform. The test framework is the only mandatory extension. It discovers and runs tests, and reports results back to the platform.
+This article explains how to create a custom test framework for Microsoft.Testing.Platform (MTP). The test framework is the only mandatory extension. It discovers and runs tests, and reports results back to the platform.
 
 For the full extension point summary and in-process/out-of-process concepts, see [Create custom extensions](./microsoft-testing-platform-architecture.md).
 
@@ -21,7 +21,7 @@ The test framework is the primary extension that provides the testing platform w
 
 ### Register a testing framework
 
-This section explains how to register the test framework with the testing platform. You register only one testing framework per test application builder using the `TestApplication.RegisterTestFramework` API as shown in [Microsoft.Testing.Platform architecture](./microsoft-testing-platform-architecture.md) documentation.
+This section explains how to register the test framework with the testing platform. You register only one testing framework per test application builder using the `TestApplication.RegisterTestFramework` API as shown in [MTP architecture](./microsoft-testing-platform-architecture.md) documentation.
 
 The registration API is defined as follows:
 
@@ -83,6 +83,8 @@ return await testApplication.RunAsync();
 
 > [!NOTE]
 > Returning empty [ITestFrameworkCapabilities](./microsoft-testing-platform-architecture-capabilities.md) shouldn't prevent the execution of the test session. All test frameworks should be capable of discovering and running tests. The impact should be limited to extensions that may opt-out if the test framework lacks a certain feature.
+
+For TRX reports, register [`ITrxReportCapability`](./microsoft-testing-platform-architecture-capabilities.md#itrxreportcapability) and supply the [required test identity on final node updates](./microsoft-testing-platform-architecture-capabilities.md#required-test-node-data). Additional report metadata is optional.
 
 ### Create a testing framework
 
@@ -168,6 +170,8 @@ The message bus serves as the central hub for the platform, facilitating asynchr
 For a comprehensive list of information that can be published to the testing platform, refer to the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) section.
 
 `CancellationToken`: This token is utilized to interrupt the processing of a particular request.
+
+To stop scheduling new tests without canceling result publication or cleanup, implement [`IGracefulStopTestExecutionCapability`](./microsoft-testing-platform-architecture-capabilities.md#igracefulstoptestexecutioncapability). This separate capability supports features such as `--maximum-failed-tests`.
 
 `Complete()`: As depicted in the previous sequence, the `Complete` method notifies the platform that the request has been successfully processed and all relevant information has been transmitted to the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service).
 
@@ -310,6 +314,47 @@ await context.MessageBus.PublishAsync(
         failedTestNode));
 ```
 
+#### Honor request filters
+
+To run only the tests that a user or tool selects, apply `TestExecutionRequest.Filter` to both discovery and execution. MTP passes the filter to your framework; the platform doesn't filter the tests that your framework publishes or executes.
+
+The stable filter contracts in `Microsoft.Testing.Platform.Requests` include:
+
+| Filter | Framework behavior |
+|---|---|
+| `NopFilter` | Apply no additional constraint. |
+| `TestNodeUidListFilter` | Select only tests whose stable `TestNodeUid` appears in `TestNodeUids`. An empty array selects no tests. |
+
+Compare UIDs as opaque, case-sensitive identifiers. Don't substitute a display name or a newly generated identifier. The platform uses UID filters for `--filter-uid`, targeted tool requests, and the [retry extension](./microsoft-testing-platform-retry.md).
+
+The following helper handles these two filter types and rejects unsupported filters instead of silently executing the full suite:
+
+:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-test-framework/csharp/Program.cs" id="MatchFilter":::
+:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-test-framework/vb/Program.vb" id="MatchFilter":::
+
+Use the helper before you publish a discovered node or execute a selected test. The following sample framework uses the same selection logic for both requests:
+
+:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-test-framework/csharp/Program.cs" id="HandleFilters":::
+:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-test-framework/vb/Program.vb" id="HandleFilters":::
+
+When no tests match, complete the request without executing or publishing unselected tests. MTP applies its zero-tests or minimum-expected-tests policy.
+
+> [!IMPORTANT]
+> `TreeNodeFilter` and `CompositeTestExecutionFilter` are experimental and use the `TPEXP` diagnostic ID. A framework that supports tree filters must evaluate the filter against its test tree and properties. A framework that uses [filter providers](./microsoft-testing-platform-architecture-extensions.md#the-itestexecutionfilterprovider-extensions) must also evaluate every child of a composite filter. The helper in this example supports only `NopFilter` and `TestNodeUidListFilter`.
+
+#### Canonical test execution
+
+Starting with MTP 2.5 preview, call `ExecuteRequestContext.StartTestExecutionAsync` with an in-progress `TestNodeUpdateMessage` to start an experimental canonical `TestExecution`. The start method publishes the in-progress update and returns an object that keeps execution lifecycle, message ordering, and telemetry correlation together.
+
+Use `Run` or `RunAsync` to invoke framework and test code in the canonical execution context. When OpenTelemetry is active, child activities created by the test remain under the same test execution activity.
+
+Call `CompleteAsync` with the ordered result messages and the producer-observed execution end time. Every result must use the session, test UID, and parent UID from the start message. The last message is the final result. An empty collection publishes an execution-completed update without inventing an outcome.
+
+Dispose an incomplete `TestExecution` to abandon it without publishing a result. After completion or disposal, the object rejects additional execution or completion calls.
+
+> [!IMPORTANT]
+> `StartTestExecutionAsync` and `TestExecution` use the `TPEXP` diagnostic ID and might change or be removed in a future release.
+
 ### The `TestNodeUpdateMessage` data
 
 As mentioned in the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) section, before utilizing the message bus, you must specify the type of data you intend to supply. The testing platform has defined a well-known type, `TestNodeUpdateMessage`, to represent the concept of a *test update information*.
@@ -390,7 +435,12 @@ internal sealed class TestingFramework
 }
 ```
 
-If your test adapter requires the publication of *files* during execution, you can find the recognized properties in this source file: <https://github.com/microsoft/testfx/blob/main/src/Platform/Microsoft.Testing.Platform/Messages/FileArtifacts.cs>. As you can see, you can provide file assets in a general manner or associate them with a specific `TestNode`. Remember, if you intend to push a `SessionFileArtifact`, you must declare it to the platform in advance, as shown below:
+If your test adapter produces *files* during execution, the platform recognizes two distinct mechanisms, and the right one depends on whether the file belongs to a specific test or to the run as a whole. For details, see [Message bus file artifacts](./microsoft-testing-platform-architecture-extensions.md#message-bus-file-artifacts).
+
+- Run-level or session-level files are standalone bus messages: publish a `FileArtifact` (unscoped) or a `SessionFileArtifact` (scoped to the run through its `SessionUid`).
+- Test-specific attachments aren't standalone messages. Add them as `FileArtifactProperty` entries on `TestNode.Properties` inside a `TestNodeUpdateMessage`, so the terminal, `dotnet test`, and IDEs associate each file with its test.
+
+If you intend to publish a `SessionFileArtifact`, you must declare that runtime type to the platform in advance through `DataTypesProduced`, as shown below. Note that `FileArtifactProperty` isn't listed separately, because it travels inside a `TestNodeUpdateMessage` rather than as its own message type:
 
 ```csharp
 internal sealed class TestingFramework
@@ -412,11 +462,13 @@ internal sealed class TestingFramework
 
 As detailed in the [requests section](#handling-requests), the testing platform identifies specific properties added to the `TestNodeUpdateMessage` to determine the status of a `TestNode` (for example, successful, failed, skipped, etc.). This allows the runtime to accurately display a list of failed tests with their corresponding information in the console, and to set the appropriate exit code for the test process.
 
-In this segment, we'll elucidate the various well-known `IProperty` options and their respective implications.
+As detailed in the [requests section](#handling-requests), the testing platform identifies specific properties added to the `TestNodeUpdateMessage` to determine the status of a `TestNode` (for example, successful, failed, and skipped). This allows the runtime to accurately display a list of failed tests with their corresponding information in the console, and to set the appropriate exit code for the test process.
 
-For a comprehensive list of well-known properties, see [TestNodeProperties.cs](https://github.com/microsoft/testfx/blob/main/src/Platform/Microsoft.Testing.Platform/Messages/TestNodeProperties.cs). If you notice that a property description is missing, please file an issue.
+This section describes the various well-known `IProperty` options and their respective implications.
 
-These properties can be divided in the following categories:
+For a comprehensive list of well-known properties, see [TestNodeStateProperties.cs](https://github.com/microsoft/testfx/blob/main/src/Platform/Microsoft.Testing.Platform/Messages/TestNodeStateProperties.cs) (and other `Property` types in the same directory). If you notice that a property description is missing, please file an issue.
+
+These properties can be divided into the following categories:
 
 1. [*Generic information*](#generic-information): Properties that can be included in any kind of request.
 1. [*Discovery information*](#discovery-information): Properties that are supplied during a `DiscoverTestExecutionRequest` discovery request.
@@ -430,15 +482,6 @@ Optional properties, on the other hand, enhance the testing experience by provid
 > Extensions are tasked with alerting and managing exceptions when they require specific information to operate correctly. If an extension lacks the necessary information, it should not cause the test execution to fail, but rather, it should simply opt-out.
 
 ##### Generic information
-
-```csharp
-public record KeyValuePairStringProperty(
-    string Key,
-    string Value)
-        : IProperty;
-```
-
-The `KeyValuePairStringProperty` stands for a general key/value pair data.
 
 ```csharp
 public record struct LinePosition(
@@ -474,13 +517,34 @@ public sealed record TestMethodIdentifierProperty(
 
 `TestMethodIdentifierProperty` is a unique identifier for a test method.
 
+To publish portable key-value metadata, create a `TestMetadataProperty` from `Microsoft.Testing.Platform.Extensions.Messages` and add it to `TestNode.Properties`:
+
 ```csharp
-public sealed record TestMetadataProperty(
-    string Key,
-    string Value)
+var metadata = new TestMetadataProperty("Environment", "Staging");
 ```
 
-`TestMetadataProperty` is utilized to convey the characteristics or *traits* of a `TestNode`.
+```vb
+Dim metadata = New TestMetadataProperty("Environment", "Staging")
+```
+
+MTP exposes these properties as *traits* in [JSON discovery output](./microsoft-testing-platform-cli-options.md#discover-tests-as-json) and [server-mode updates](./microsoft-testing-platform-server-mode.md#consume-updates-and-metadata). Arbitrary `IProperty` implementations remain available to in-process consumers but don't automatically serialize to external clients. The platform's internal `SerializableKeyValuePairStringProperty` type isn't a public extension point.
+
+Starting with MTP 2.4, add `AssertionFailureProperty` to a failed test node to supply separate, preformatted expected and actual values. Report consumers can use these values to render a structured difference instead of parsing the failure message. At least one value must be non-`null`. Consumers prefer this property but can fall back to the legacy `assert.expected` and `assert.actual` entries in <xref:System.Exception.Data>.
+
+Starting with MTP 2.4, add `RetryAttemptProperty` to every update in an in-process retry sequence. `AttemptNumber` is one-based, and `IsSuperseded` marks an attempt that a later attempt replaces. TRX, JUnit, and the process exit code ignore superseded attempts, while the terminal, HTML, and CTRF consumers can preserve the full history. This property doesn't represent the out-of-process `--retry-failed-tests` attempts.
+
+##### Captured test output
+
+To associate captured text with a test, add `StandardOutputProperty` and `StandardErrorProperty` from `Microsoft.Testing.Platform.Extensions.Messages` to that test's `TestNode.Properties`. Publish the node through a `TestNodeUpdateMessage` with the same stable UID and session as the test result.
+
+Your framework owns output capture and attribution, including isolation between parallel tests. MTP consumes the properties; it doesn't automatically capture arbitrary calls to <xref:System.Console.WriteLine*>. The following example uses sample text in place of output captured by a real framework:
+
+:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-test-framework/csharp/Program.cs" id="CapturedOutput":::
+:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-test-framework/vb/Program.vb" id="CapturedOutput":::
+
+The terminal reporter uses these properties with [`--show-stdout` and `--show-stderr`](./microsoft-testing-platform-terminal-output.md#options). A standard-error property doesn't make a test fail; the test's state property determines its outcome.
+
+Keep per-test output separate from diagnostic logs and extension-level output through `IOutputDevice`. To include text in a TRX report, also supply the [TRX-specific message properties](./microsoft-testing-platform-architecture-capabilities.md#itrxreportcapability). Don't assume every report consumer maps the same properties.
 
 ##### Discovery information
 

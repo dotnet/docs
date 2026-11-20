@@ -1,7 +1,7 @@
 ﻿Option Explicit On
 Option Strict On
 
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 
 Module Module1
 

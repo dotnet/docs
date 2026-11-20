@@ -1,7 +1,8 @@
 ---
 title: "await operator - asynchronously wait for a task to complete"
 description: "The C# `await` operator asynchronously suspends evaluation of the enclosing `async` method."
-ms.date: 01/20/2026
+ms.date: 09/11/2026
+ai-usage: ai-assisted
 f1_keywords:
   - "await_CSharpKeyword"
 helpviewer_keywords:
@@ -25,7 +26,7 @@ The preceding example uses the [async `Main` method](../../fundamentals/program-
 > [!NOTE]
 > For an introduction to asynchronous programming, see [Asynchronous programming with async and await](../../asynchronous-programming/index.md). Asynchronous programming with `async` and `await` follows the [task-based asynchronous pattern](../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md).
 
-You can use the `await` operator only in a method, [lambda expression](lambda-expressions.md), or [anonymous method](delegate-operator.md) that is modified by the [async](../keywords/async.md) keyword. Within an async method, you can't use the `await` operator in the body of a synchronous local function, inside the block of a [lock statement](../statements/lock.md), and in an [unsafe](../keywords/unsafe.md) context.
+You can use the `await` operator only in a method, [lambda expression](lambda-expressions.md), or [anonymous method](delegate-operator.md) that is modified by the [async](../keywords/async.md) keyword. Within an async method, you can't use the `await` operator in the body of a synchronous local function or inside the block of a [lock statement](../statements/lock.md). In earlier language versions, you also couldn't use `await` in an [unsafe](../keywords/unsafe.md) context. Under the C# 15 preview memory safety changes, `await` is allowed in an unsafe context. The remaining restriction is that you can't use `await` in the body or initializer of a [`fixed` statement](../statements/fixed.md); for that rule and related diagnostics, see [Resolve errors and warnings in unsafe code constructs](../compiler-messages/unsafe-code-errors.md).
 
 The operand of the `await` operator is usually of one of the following .NET types: <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task`1>, <xref:System.Threading.Tasks.ValueTask>, or <xref:System.Threading.Tasks.ValueTask`1>. However, any awaitable expression can be the operand of the `await` operator. For more information, see the [Awaitable expressions](~/_csharpstandard/standard/expressions.md#12992-awaitable-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 

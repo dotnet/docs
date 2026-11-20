@@ -77,7 +77,7 @@ In your *Program.cs* file:
     ```csharp
     public class ModelInput
     {
-        public string SentimentText;
+        public string SentimentText { get; set; }
     }
     ```
 
@@ -104,6 +104,9 @@ To make a single prediction, you have to create a [`PredictionEngine`](xref:Micr
 The following link provides more information if you want to learn more about [dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection).
 
 Add the following code to your *Program.cs* file:
+
+> [!IMPORTANT]
+> Only add models from trusted sources. Adding models from untrusted sources is a security risk.
 
 ```csharp
 builder.Services.AddPredictionEnginePool<ModelInput, ModelOutput>()
@@ -168,7 +171,7 @@ app.Run();
 
 public class ModelInput
 {
-    public string SentimentText;
+    public string SentimentText { get; set; }
 }
 
 public class ModelOutput
@@ -196,9 +199,9 @@ Once everything is set up, it's time to test the application.
     If successful, the output should look similar to the text below:
 
     ```powershell
-    sentiment probability score
-    --------- ----------- -----
-    False         0.5     0
+    sentiment probability      score
+    --------- -----------      -----
+        False 0.105855055 -2.1337972
     ```
 
 Congratulations! You've successfully served your model to make predictions over the internet using an ASP.NET Core Web API.

@@ -1,7 +1,7 @@
 ---
 description: "Advanced C# Compiler Options. These options are used in advanced scenarios."
 title: "Compiler Options - advanced scenarios"
-ms.date: 08/22/2025
+ms.date: 07/16/2026
 f1_keywords:
   - "cs.build.options"
 helpviewer_keywords:
@@ -245,20 +245,9 @@ Specifies the minimum version of the subsystem on which the executable file runs
 <SubsystemVersion>major.minor</SubsystemVersion>
 ```
 
-The `major.minor` specify the minimum required version of the subsystem, as expressed in a dot notation for major and minor versions. For example, you can specify that an application can't run on an operating system that's older than Windows 7. Set the value of this option to 6.01, as the table later in this article describes. You specify the values for `major` and `minor` as integers. Leading zeroes in the `minor` version don't change the version, but trailing zeroes do. For example, 6.1 and 6.01 refer to the same version, but 6.10 refers to a different version. We recommend expressing the minor version as two digits to avoid confusion.
+The `major.minor` value specifies the minimum required version of the subsystem, expressed as a dot-separated major and minor version. For example, to prevent your application from running on operating systems older than Windows 7, set this option to `6.01`. Specify the values for `major` and `minor` as integers. Leading zeroes in the `minor` version don't change the version, but trailing zeroes do. For example, 6.1 and 6.01 refer to the same version, but 6.10 refers to a different version. Express the minor version as two digits to avoid confusion.
 
-The following table lists common subsystem versions of Windows.
-
-|Windows version|Subsystem version|
-|---------------------|-----------------------|
-|Windows Server 2003|5.02|
-|Windows Vista|6.00|
-|Windows 7|6.01|
-|Windows Server 2008|6.01|
-|Windows 8|6.02|
-|Windows 8.1|6.03|
-|Windows 10|6.04|
-|Windows 11|6.04|
+For more information about Windows subsystem versions, see [Operating System Version](/windows/win32/sysinfo/operating-system-version).
 
 The default value of the **SubsystemVersion** compiler option depends on the conditions in the following list:
 

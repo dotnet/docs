@@ -1,7 +1,8 @@
 ---
 description: "Learn more about how to deserialize instance data properties. You do this when you want to manually inspect the state of a persisted workflow instance."
 title: "How to: Deserialize Instance Data Properties"
-ms.date: "03/30/2017"
+ms.date: "10/23/2026"
+ai-usage: ai-assisted
 ---
 # How to: Deserialize instance data properties
 
@@ -18,6 +19,10 @@ Primitive data properties refer to properties whose .NET types are considered to
 
 This example provides code that enables a user to deserialize primitive data properties. Given a byte array read from either the ReadWritePrimitiveDataProperties or WriteOnlyPrimitiveDataProperties column, this code will convert the binary large object (BLOB) into a <xref:System.Collections.Generic.Dictionary`2> of type `<XName, object>` where each key-value pair represents a property name and its corresponding value.
 
+For the SQL queries, install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package. The reader runs on modern .NET or .NET Framework 4.6.2 and later. It reads an existing workflow persistence database; it doesn't host Windows Workflow Foundation or change the provider used by <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>.
+
+Set the `SQL_CONNECTION_STRING` environment variable to a connection string for the persistence database. Microsoft.Data.SqlClient encrypts connections and validates the server certificate by default. For more information, see [Encryption and certificate validation in Microsoft.Data.SqlClient](/sql/connect/ado-net/encryption-and-certificate-validation). For Microsoft Entra ID authentication with Microsoft.Data.SqlClient 7 and later versions, also install [Microsoft.Data.SqlClient.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Data.SqlClient.Extensions.Azure).
+
 [!INCLUDE [managed-identities](../../includes/managed-identities.md)]
 
 ```csharp
@@ -30,13 +35,15 @@ using System.IO.Compression;
 using System.Xml.Linq;
 using System.Xml;
 using System.Globalization;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 namespace PropertyReader
 {
     class Program
     {
-        const string ConnectionString = @"Data Source=localhost;Initial Catalog=Persistence;Integrated Security=True;Asynchronous Processing=True";
+        static readonly string ConnectionString =
+            Environment.GetEnvironmentVariable("SQL_CONNECTION_STRING")
+            ?? throw new InvalidOperationException("Set SQL_CONNECTION_STRING to the persistence database connection string.");
         static void Main(string[] args)
         {
             string queryString = "SELECT TOP 10 * FROM [System.Activities.DurableInstancing].[Instances]";

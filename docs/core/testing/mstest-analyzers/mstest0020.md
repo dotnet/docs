@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0020: Prefer constructors over TestInitialize methods"
 description: "Learn about code analysis rule MSTEST0020: Prefer constructors over TestInitialize methods"
-ms.date: 03/19/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0020
 - PreferConstructorOverTestInitializeAnalyzer
@@ -30,7 +31,9 @@ This rule raises a diagnostic when there is a void `[TestInitialize]` method.
 
 ## Rule description
 
-It is usually better to rely on constructors for non-async initialization as you can then rely on `readonly` and get better compiler feedback when developing your tests. This is especially true when dealing with nullable enabled contexts.
+For synchronous setup, a constructor lets you assign `readonly` fields and lets the compiler check that non-nullable members are initialized before construction completes. The compiler doesn't know that MSTest will call a later `[TestInitialize]` method, so setup there doesn't provide the same constructor-initialization guarantees.
+
+`[TestInitialize]` is still supported and is appropriate for asynchronous setup. This rule expresses an opt-in convention, not a runtime requirement. [MSTEST0019](mstest0019.md) offers the alternative convention for test-initialization methods; don't enable both competing conventions.
 
 ## How to fix violations
 

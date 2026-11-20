@@ -288,7 +288,7 @@ If called together or any of them more than once, `AddAsKeyed()` and `RemoveAsKe
 
 1. If called for the same name, the last setting wins: the lifetime from the last `AddAsKeyed()` is used to create the Keyed registration (unless `RemoveAsKeyed()` was called last, in which case the name is excluded).
 2. If used only within `ConfigureHttpClientDefaults`, the last setting wins.
-3. If both `ConfigureHttpClientDefaults` and specific client name were used, all defaults are considered to "happen" before all per-name settings. Thus, defaults can be disregarded, and the last of the per-name settings wins.
+3. If both `ConfigureHttpClientDefaults` and specific client name were used, all defaults are considered to happen before all per-name settings. Thus, defaults can be disregarded, and the last of the per-name settings wins.
 
 ## See also
 

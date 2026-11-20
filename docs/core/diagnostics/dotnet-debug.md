@@ -15,24 +15,11 @@ ai-usage: ai-assisted
 
 ## Install
 
-There are two ways to download and install `dotnet-debug`:
+To install the latest release version of the `dotnet-debug` [NuGet package](https://www.nuget.org/packages/dotnet-debug), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
 
-- **dotnet global tool:**
-
-  To install the latest release version of the `dotnet-debug` [NuGet package](https://www.nuget.org/packages/dotnet-debug), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
-
-  ```dotnetcli
-  dotnet tool install --global dotnet-debug
-  ```
-
-- **Direct download:**
-
-  Download the tool executable that matches your platform:
-
-  | OS      | Platform                                                                                                                                                                                                                                                                 |
-  | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-  | Windows | [x86](https://aka.ms/dotnet-debug/win-x86) \| [x64](https://aka.ms/dotnet-debug/win-x64) \| [Arm](https://aka.ms/dotnet-debug/win-arm) \| [Arm-x64](https://aka.ms/dotnet-debug/win-arm64)                                                                               |
-  | Linux   | [x64](https://aka.ms/dotnet-debug/linux-x64) \| [Arm](https://aka.ms/dotnet-debug/linux-arm) \| [Arm64](https://aka.ms/dotnet-debug/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-debug/linux-musl-x64) \| [musl-Arm64](https://aka.ms/dotnet-debug/linux-musl-arm64) |
+```dotnetcli
+dotnet tool install --global dotnet-debug
+```
 
 ## Synopsis
 

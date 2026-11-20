@@ -1,7 +1,7 @@
 ---
 title: Use scoped services within a BackgroundService
 description: Learn how to use scoped services within a BackgroundService in .NET.
-ms.date: 05/27/2025
+ms.date: 05/27/2026
 ms.topic: tutorial
 ---
 
@@ -29,7 +29,7 @@ In this tutorial, you learn how to:
 
 ## Create scoped services
 
-To use [scoped services](dependency-injection/service-lifetimes.md#scoped) within a `BackgroundService`, create a scope with the <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory.CreateScope?displayProperty=nameWithType> API. No scope is created for a hosted service by default. The scoped background service contains the background task's logic.
+To use [scoped services](dependency-injection/service-lifetimes.md#scoped) within a `BackgroundService`, create an async scope with the <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.CreateAsyncScope*> API. No scope is created for a hosted service by default. The scoped background service contains the background task's logic.
 
 :::code source="snippets/workers/scoped-service/IScopedProcessingService.cs":::
 
@@ -47,7 +47,7 @@ Replace the existing `Worker` class with the following C# code, and rename the f
 
 :::code source="snippets/workers/scoped-service/ScopedBackgroundService.cs" highlight="14-24":::
 
-In the preceding code, while the `stoppingToken` isn't canceled, the `IServiceScopeFactory` is used to create a scope. From the `IServiceScope`, the `IScopedProcessingService` is resolved. The `DoWorkAsync` method is awaited, and the `stoppingToken` is passed to the method. Finally, the execution is delayed for 10 seconds and the loop continues. Each time the `DoWorkAsync` method is called, a new instance of the `DefaultScopedProcessingService` is created and the instance identifier is logged.
+In the preceding code, while the `stoppingToken` isn't canceled, the `IServiceScopeFactory` is used to create an async scope. From the `AsyncServiceScope`, the `IScopedProcessingService` is resolved. The `DoWorkAsync` method is awaited, and the `stoppingToken` is passed to the method. Finally, the execution is delayed for 10 seconds and the loop continues. Each time the `DoWorkAsync` method is called, a new instance of the `DefaultScopedProcessingService` is created and the instance identifier is logged.
 
 Replace the template *Program.cs* file contents with the following C# code:
 

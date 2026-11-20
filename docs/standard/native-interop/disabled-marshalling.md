@@ -40,7 +40,7 @@ When marshalling is disabled, the rules for default marshalling change to much s
 | `char`     | `System.Char`    | `char16_t` (`CharSet` on the P/Invoke has no effect) |
 | `nint`     | `System.IntPtr`  | `intptr_t`         |
 | `nuint`    | `System.UIntPtr` | `uintptr_t`        |
-|            | `System.Boolean` | `bool`             |
+| `bool`     | `System.Boolean` | `bool`             |
 |            | User-defined [C# `unmanaged`](../../csharp/language-reference/builtin-types/unmanaged-types.md) type with no fields with `LayoutKind.Auto` | Treated as a blittable type. All [customized struct marshalling](customize-struct-marshalling.md) is ignored. |
 |            | All other types  | unsupported        |
 

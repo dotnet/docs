@@ -16,7 +16,7 @@ Module MultiplyMatrices
                 For k As Integer = 0 To matACols - 1
                     temp += matA(i, k) * matB(k, j)
                 Next
-                result(i, j) += temp
+                result(i, j) = temp
             Next
         Next
     End Sub
@@ -36,7 +36,7 @@ Module MultiplyMatrices
                                           For k As Integer = 0 To matACols - 1
                                               temp += matA(i, k) * matB(k, j)
                                           Next
-                                          result(i, j) += temp
+                                          result(i, j) = temp
                                       Next
                                   End Sub)
     End Sub

@@ -1,7 +1,8 @@
 ---
-title: "Code examples"
-description: "These examples show .NET Framework programmers how to retrieve data from a database by using ADO.NET data providers and ADO.NET Entity Framework."
-ms.date: "03/30/2017"
+title: "Code Examples"
+description: "Retrieve data with ADO.NET data providers, including Microsoft.Data.SqlClient for SQL Server, and explore .NET Framework Entity Framework examples."
+ms.date: "10/19/2026"
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -13,7 +14,7 @@ The code listings on this page demonstrate how to retrieve data from a database 
 
 - ADO.NET data providers:
 
-  - [SqlClient](#sqlclient) (`System.Data.SqlClient`)
+  - [SqlClient](#sqlclient) (`Microsoft.Data.SqlClient`)
 
   - [OleDb](#oledb) (`System.Data.OleDb`)
 
@@ -37,12 +38,26 @@ The following code listings demonstrate how to retrieve data from a database usi
 
 ### SqlClient
 
-The code in this example assumes that you can connect to the `Northwind` sample database on Microsoft SQL Server. The code creates a <xref:System.Data.SqlClient.SqlCommand> to select rows from the Products table, adding a <xref:System.Data.SqlClient.SqlParameter> to restrict the results to rows with a UnitPrice greater than the specified parameter value, in this case 5. The <xref:System.Data.SqlClient.SqlConnection> is opened inside a `using` block, which ensures that resources are closed and disposed when the code exits. The code executes the command by using a <xref:System.Data.SqlClient.SqlDataReader>, and displays the results in the console window. If you're using `System.Data.SqlClient`, you should consider upgrading to `Microsoft.Data.SqlClient` as it's where future investments and new feature developments are being made. For more information, see [Introducing the new Microsoft.Data.SqlClient](https://devblogs.microsoft.com/dotnet/introducing-the-new-microsoftdatasqlclient).
+To access SQL Server with ADO.NET, use the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package. The following C# and Visual Basic projects target .NET 10 and .NET Framework 4.8.1 and reference this package. Use the .NET 10 SDK to build the projects.
+
+The examples query the `dbo.Products` table in the `Northwind` sample database. The <xref:Microsoft.Data.SqlClient.SqlCommand> selects products with `UnitPrice` greater than 5. The <xref:Microsoft.Data.SqlClient.SqlParameter> specifies the price as <xref:System.Data.SqlDbType.Money>. The <xref:Microsoft.Data.SqlClient.SqlDataReader> reads the product ID, unit price, and product name in descending order of unit price. The `using` blocks (`Using` in Visual Basic) dispose of the reader, command, and <xref:Microsoft.Data.SqlClient.SqlConnection>.
+
+Before you run either project, set the `SQL_CONNECTION_STRING` environment variable in the process that launches the example. For example, on Windows with integrated authentication, use the following PowerShell command. Replace `<server>` with your server name and configure the server with a certificate that the client trusts.
+
+```powershell
+$env:SQL_CONNECTION_STRING = 'Server=<server>;Database=Northwind;Integrated Security=true;Encrypt=true;TrustServerCertificate=false'
+```
+
+For other authentication options, see [Connection string syntax](/sql/connect/ado-net/connection-string-syntax).
 
 [!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
- [!code-csharp[DataWorks SampleApp.SqlClient#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SampleApp.SqlClient/CS/source.cs#1)]
- [!code-vb[DataWorks SampleApp.SqlClient#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SampleApp.SqlClient/VB/source.vb#1)]
+To use the driver's Microsoft Entra ID authentication modes, including managed identity, also install the `Microsoft.Data.SqlClient.Extensions.Azure` NuGet package. For setup instructions, see [Microsoft Entra ID authentication](/sql/connect/ado-net/sql/azure-active-directory-authentication).
+
+:::code language="csharp" source="./snippets/ado-net-code-examples/csharp/Program.cs" id="SqlClient":::
+:::code language="vb" source="./snippets/ado-net-code-examples/vb/Program.vb" id="SqlClient":::
+
+From either snippet project directory, run `dotnet run --framework net10.0`. On Windows with .NET Framework 4.8.1 installed, use `dotnet run --framework net481`.
 
 ### OleDb
 

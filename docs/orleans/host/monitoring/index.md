@@ -171,7 +171,6 @@ The following table shows a collection of directory meters used to monitor the O
 | `orleans-directory-lookups-local-directory-successes` | <xref:System.Diagnostics.Metrics.Counter`1> | A count of local directory successful lookups. |
 | `orleans-directory-lookups-cache-issued` | <xref:System.Diagnostics.Metrics.Counter`1> | A count cached lookups issued. |
 | `orleans-directory-lookups-cache-successes` | <xref:System.Diagnostics.Metrics.Counter`1> | A count of cached successful lookups. |
-| `orleans-directory-validations-cache-sent` | <xref:System.Diagnostics.Metrics.Counter`1> | A count of directory cache validations sent.  |
 | `orleans-directory-validations-cache-received` | <xref:System.Diagnostics.Metrics.Counter`1> | A count of directory cache validations received. |
 | `orleans-directory-partition-size` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | An observable gauge representing the directory partition size. |
 | `orleans-directory-cache-size` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | An observable gauge representing the directory cache size. |
@@ -373,8 +372,22 @@ builder.Services.AddOpenTelemetry()
             ResourceBuilder.CreateDefault()
                 .AddService(serviceName: "GPSTracker", serviceVersion: "1.0"));
 
-        tracing.AddSource("Microsoft.Orleans.Runtime");
-        tracing.AddSource("Microsoft.Orleans.Application");
+        // Good baseline for general Orleans observability
+        tracing.AddSource(Orleans.Diagnostics.ActivitySources.ApplicationGrainActivitySourceName);
+        tracing.AddSource(Orleans.Diagnostics.ActivitySources.LifecycleActivitySourceName);
+
+        /*
+        // Other source also available
+        // Persistence spans
+        tracing.AddSource(Orleans.Diagnostics.ActivitySources.StorageActivitySourceName);
+        // Internal Runtime spans
+        tracing.AddSource(Orleans.Diagnostics.ActivitySources.RuntimeActivitySourceName);
+        */
+
+        /*
+        // Optionally add all Microsoft.Orleans.* Sources at once
+        tracing.AddSource(Orleans.Diagnostics.ActivitySources.AllActivitySourceName);
+        */
 
         tracing.AddOtlpExporter(otlp =>
         {

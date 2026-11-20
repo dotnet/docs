@@ -202,8 +202,71 @@ public static class GenericExtensions
 }
 // </GenericExtension>
 
+// <ExtensionIndexer>
+/// <summary>
+/// Contains an extension indexer for numeric sequences.
+/// </summary>
+public static class SequenceIndexer
+{
+    /// <summary>
+    /// Defines an indexer for integer sequences.
+    /// </summary>
+    /// <param name="sequence">The sequence used as a receiver.</param>
+    extension(IEnumerable<int> sequence)
+    {
+        /// <summary>
+        /// Gets the element at the specified position in the sequence.
+        /// </summary>
+        /// <param name="index">The zero-based position of the element to retrieve.</param>
+        /// <value>The element at the specified position.</value>
+        public int this[int index] => sequence.ElementAt(index);
+    }
+}
+// </ExtensionIndexer>
+
+// <IndexableReadings>
+/// <summary>Stores sensor readings.</summary>
+public sealed class Readings(int[] values)
+{
+    /// <summary>Gets the stored readings.</summary>
+    public int[] Values { get; } = values;
+}
+
+/// <summary>Provides indexing for sensor readings.</summary>
+public static class ReadingExtensions
+{
+    /// <summary>Defines indexing members for readings.</summary>
+    /// <param name="readings">The readings to access.</param>
+    extension(Readings readings)
+    {
+        /// <summary>Gets the number of readings.</summary>
+        public int Count => readings.Values.Length;
+
+        /// <summary>Gets a reading by position.</summary>
+        /// <param name="index">The zero-based position.</param>
+        public int this[int index] => readings.Values[index];
+
+        /// <summary>Gets a range of readings.</summary>
+        /// <param name="start">The first position.</param>
+        /// <param name="length">The number of readings.</param>
+        public Readings Slice(int start, int length)
+            => new(readings.Values.AsSpan(start, length).ToArray());
+    }
+}
+// </IndexableReadings>
+
 public static class ExtensionExamples
 {
+    public static void IndexAndRangeExample()
+    {
+        // <UseIndexableReadings>
+        Readings readings = new([10, 20, 30, 40]);
+        Console.WriteLine(readings[^1]);                    // output: 40
+        Console.WriteLine(readings[1..3][0]);               // output: 20
+        Console.WriteLine(readings is [10, .., 40]);        // output: True
+        // </UseIndexableReadings>
+    }
+
     public static void BasicExample()
     {
         // <UseExtensionMethod>
@@ -219,5 +282,9 @@ public static class ExtensionExamples
         var newSequence = IEnumerable<int>.Generate(5, 10, 2);
         var identity = IEnumerable<int>.Identity;
         // </UseStaticExtensions>
+
+        // <UseExtensionIndexer>
+        int third = numbers[2];
+        // </UseExtensionIndexer>
     }
 }

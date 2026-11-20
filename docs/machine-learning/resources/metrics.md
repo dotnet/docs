@@ -20,10 +20,7 @@ For example, for the classification task, the model is evaluated by measuring ho
 | **AUCPR** | aucPR or *Area under the curve of a Precision-Recall curve*: Useful measure of success of prediction when the classes are imbalanced (highly skewed datasets). | **The closer to 1.00, the better**. High scores close to 1.00 show that the classifier is returning accurate results (high precision), and returning a majority of all positive results (high recall). |
 | **F1-score** | [F1 score](https://en.wikipedia.org/wiki/F1_score) also known as *balanced F-score or F-measure*. It's the harmonic mean of the precision and recall. F1 Score is helpful when you want to seek a balance between Precision and Recall. | **The closer to 1.00, the better**. An F1 score reaches its best value at 1.00 and worst score at 0.00. It tells you how precise your classifier is. |
 
-For further details on binary classification metrics read the following articles:
-
-- [Binary Classification Metrics class](xref:Microsoft.ML.Data.BinaryClassificationMetrics)
-- [The Relationship Between Precision-Recall and ROC Curves](http://pages.cs.wisc.edu/~jdavis/davisgoadrichcamera2.pdf)
+For further details on binary classification metrics, see [Binary Classification Metrics class](xref:Microsoft.ML.Data.BinaryClassificationMetrics).
 
 ## Evaluation metrics for Multi-class Classification and text classification
 

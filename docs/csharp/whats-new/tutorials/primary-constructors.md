@@ -7,7 +7,7 @@ ms.topic: how-to
 ---
 # Declare primary constructors for classes and structs
 
-C# 12 introduces [primary constructors](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors), which provide a concise syntax to declare constructors whose parameters are available anywhere in the body of the type.
+[Primary constructors](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) provide a concise syntax to declare constructors whose parameters are available anywhere in the body of the type.
 
 This article describes how to declare a primary constructor on your type and recognize where to store primary constructor parameters. You can call primary constructors from other constructors and use primary constructor parameters in members of the type.
 
@@ -111,4 +111,4 @@ The highlighted line in this example shows that the `ToString` method uses the *
 ## Related content
 
 - [Parameterless constructors (C# programming guide)](../../programming-guide/classes-and-structs/instance-constructors.md#parameterless-constructors)
-- [Primary constructors (Feature specification proposal)](~/_csharplang/proposals/csharp-12.0/primary-constructors.md)
+- [Primary constructors (§15.11.6)](~/_csharpstandard/standard/classes.md#15116-primary-constructors)

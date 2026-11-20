@@ -1,7 +1,7 @@
 ---
 title: Develop .NET apps with AI features
 description: Learn how you can build .NET applications that include AI features.
-ms.date: 12/10/2025
+ms.date: 04/15/2026
 ms.topic: overview
 ---
 
@@ -24,11 +24,10 @@ Millions of developers use .NET to create applications that run on the web, on m
 .NET libraries support a wide range of AI service providers, enabling you to build applications with the AI platform that best fits your needs. The following table lists the major AI providers that integrate with `Microsoft.Extensions.AI`:
 
 | Provider | Description |
-|----------|------------------------|---------------------------|-----------------|-------------|
+|----------|------------------|
 | OpenAI | Direct integration with OpenAI's models including GPT-4, GPT-3.5, and DALL-E |
 | Azure OpenAI | Enterprise-grade OpenAI models hosted on Azure with enhanced security and compliance |
 | Azure AI Foundry | Microsoft's managed platform for building and deploying AI agents at scale |
-| GitHub Models | Access to models available through GitHub's AI model marketplace |
 | Ollama | Run open-source models locally, for example, Llama, Mistral, and Phi-3 |
 | Google Gemini | Google's multimodal AI models |
 | Amazon Bedrock | AWS's managed service for foundation models |
@@ -58,7 +57,7 @@ We recommend the following sequence of tutorials and articles for an introductio
 | Generate images             | [Generate images from text](./quickstarts/text-to-image.md) |
 | Train your own model        | [ML.NET tutorial](https://dotnet.microsoft.com/learn/ml-dotnet/get-started-tutorial/intro) |
 
-Browse the table of contents to learn more about the core concepts, starting with [How generative AI and LLMs work](./conceptual/how-genai-and-llms-work.md).
+Browse the table of contents to learn more about the core concepts, starting with [How generative AI and LLMs work](./conceptual/how-genai-and-llms-work.md). If you're not sure which .NET AI tool or SDK to use for your scenario, see [Decide which tool to use](./dotnet-ai-ecosystem.md#decide-which-tool-to-use).
 
 ## Next steps
 

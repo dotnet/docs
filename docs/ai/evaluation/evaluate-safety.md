@@ -13,7 +13,7 @@ In this tutorial, you create an MSTest app to evaluate the *content safety* of a
 ## Prerequisites
 
 - .NET 8.0 SDK or higher - [Install the .NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0).
-- An Azure subscription - [Create one for free](https://azure.microsoft.com/free).
+- An Azure subscription - [Create one for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 ## Configure the AI service
 

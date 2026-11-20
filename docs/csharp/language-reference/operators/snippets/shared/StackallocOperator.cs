@@ -38,7 +38,7 @@ public static class StackallocOperator
     {
         // <SnippetAsExpression>
         int length = 1000;
-        Span<byte> buffer = length <= 1024 ? stackalloc byte[length] : new byte[length];
+        Span<byte> buffer = length >= 0 && length <= 1024 ? stackalloc byte[length] : new byte[length];
         // </SnippetAsExpression>
     }
 
@@ -72,7 +72,7 @@ public static class StackallocOperator
     {
         // <SnippetLimitStackalloc>
         const int MaxStackLimit = 1024;
-        Span<byte> buffer = inputLength <= MaxStackLimit ? stackalloc byte[MaxStackLimit] : new byte[inputLength];
+        Span<byte> buffer = inputLength >= 0 && inputLength <= MaxStackLimit ? stackalloc byte[inputLength] : new byte[inputLength];
         // </SnippetLimitStackalloc>
     }
 }

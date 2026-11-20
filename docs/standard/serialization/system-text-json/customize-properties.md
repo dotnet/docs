@@ -1,7 +1,7 @@
 ---
 title: How to customize property names and values with System.Text.Json
 description: "Learn how to customize property names and values when serializing with System.Text.Json in .NET."
-ms.date: 05/06/2025
+ms.date: 08/18/2026
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "serialization"
   - "objects, serializing"
 ms.topic: how-to
-ms.custom: copilot-scenario-highlight
+ai-usage: ai-assisted
 ---
 
 # How to customize property names and values with System.Text.Json
@@ -20,16 +20,14 @@ ms.custom: copilot-scenario-highlight
 By default, property names and dictionary keys are unchanged in the JSON output, including case. Enum values are represented as numbers. And properties are serialized in the order they're defined. However, you can customize these behaviors by:
 
 - Specifying specific serialized property and enum member names.
-- Using a built-in [naming policy](xref:System.Text.Json.JsonNamingPolicy), such as camelCase, snake_case, or kebab-case, for property names and dictionary keys.
+- Using a built-in [naming policy](xref:System.Text.Json.JsonNamingPolicy), such as camelCase, PascalCase, snake_case, or kebab-case, for property names and dictionary keys.
+- Applying a naming policy to a type or member.
 - Using a custom naming policy for property names and dictionary keys.
 - Serializing enum values as strings, with or without a naming policy.
 - Configuring the order of serialized properties.
 
 > [!NOTE]
 > The [web default](configure-options.md#web-defaults-for-jsonserializeroptions) naming policy is camel case.
-
-> [!TIP]
-> You can use AI assistance to [create an object with custom serialization properties](#use-ai-to-customize-how-property-names-are-serialized).
 
 For other scenarios that require special handling of JSON property names and values, you can [implement custom converters](converters-how-to.md).
 
@@ -64,12 +62,15 @@ The following table shows the built-in naming policies and how they affect prope
 | Naming policy                                             | Description | Original property name | Converted property name |
 |-----------------------------------------------------------|-|-----------------------|-------------------------|
 | <xref:System.Text.Json.JsonNamingPolicy.CamelCase>        | First word starts with a lower case character.<br/>Successive words start with an uppercase character. | `TempCelsius`          | `tempCelsius`           |
+| <xref:System.Text.Json.JsonNamingPolicy.PascalCase>\*\*   | First word starts with an uppercase character.<br/>Successive words start with an uppercase character. | `tempCelsius`          | `TempCelsius`           |
 | <xref:System.Text.Json.JsonNamingPolicy.KebabCaseLower>\* | Words are separated by hyphens.<br/>All characters are lowercase. | `TempCelsius`          | `temp-celsius`          |
 | <xref:System.Text.Json.JsonNamingPolicy.KebabCaseUpper>\* | Words are separated by hyphens.<br/>All characters are uppercase. | `TempCelsius`          | `TEMP-CELSIUS`          |
 | <xref:System.Text.Json.JsonNamingPolicy.SnakeCaseLower>\* | Words are separated by underscores.<br/>All characters are lowercase. | `TempCelsius`          | `temp_celsius`          |
 | <xref:System.Text.Json.JsonNamingPolicy.SnakeCaseUpper>\* | Words are separated by underscores.<br/>All characters are uppercase. |`TempCelsius`          | `TEMP_CELSIUS`          |
 
 \* Available in .NET 8 and later versions.
+
+\*\* Available in .NET 11 and later versions.
 
 The following example shows how to use camel case for all JSON property names by setting <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType> to <xref:System.Text.Json.JsonNamingPolicy.CamelCase?displayProperty=nameWithType>:
 
@@ -97,6 +98,43 @@ The naming policy:
 
 > [!NOTE]
 > None of the built-in naming policies support letters that are surrogate pairs. For more information, see [dotnet/runtime issue 90352](https://github.com/dotnet/runtime/issues/90352).
+
+## Apply a naming policy to a type or member
+
+Starting in .NET 11, apply <xref:System.Text.Json.Serialization.JsonNamingPolicyAttribute> to a class, struct, interface, property, or field. Pass a <xref:System.Text.Json.Serialization.JsonKnownNamingPolicy> value to select a built-in policy. A type-level attribute sets the naming policy for the type's properties and fields. A member-level attribute sets the policy for one property or field.
+
+The following example sets a type-level policy and overrides it for one property:
+
+```csharp
+[JsonNamingPolicy(JsonKnownNamingPolicy.CamelCase)]
+public class WeatherForecast
+{
+    public int TemperatureCelsius { get; set; }
+    [JsonNamingPolicy(JsonKnownNamingPolicy.SnakeCaseLower)] public string? SummaryText { get; set; }
+}
+```
+
+```vb
+<JsonNamingPolicy(JsonKnownNamingPolicy.CamelCase)>
+Public Class WeatherForecast
+    Public Property TemperatureCelsius As Integer
+    <JsonNamingPolicy(JsonKnownNamingPolicy.SnakeCaseLower)> Public Property SummaryText As String
+End Class
+```
+
+For `TemperatureCelsius = 25` and `SummaryText = "Hot"`, the resulting JSON is `{"temperatureCelsius":25,"summary_text":"Hot"}`.
+
+The serializer selects a JSON property name in this order, from highest to lowest precedence:
+
+- A <xref:System.Text.Json.Serialization.JsonPropertyNameAttribute> on the property or field.
+- A member-level <xref:System.Text.Json.Serialization.JsonNamingPolicyAttribute>.
+- A type-level <xref:System.Text.Json.Serialization.JsonNamingPolicyAttribute>.
+- <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType>.
+- The original member name.
+
+The protected constructor lets a derived attribute supply a custom <xref:System.Text.Json.JsonNamingPolicy>. Reflection-based serialization evaluates the custom policy at run time.
+
+Source generation can't execute a custom policy at compile time. For affected members, it uses the original CLR name and doesn't apply the global <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType>.
 
 ## Use a custom JSON property naming policy
 
@@ -243,43 +281,7 @@ By default, properties are serialized in the order in which they're defined in t
 
 :::code language="csharp" source="snippets/how-to-6-0/csharp/PropertyOrder.cs":::
 
-## Use AI to customize how property names are serialized
-
-You can use AI tools, such as GitHub Copilot, to apply patterns of changes to how your code serializes.
-
-Suppose your class declaration has properties that follow `PascalCasing`, and the JSON standard for your project is `snake_casing`. You can use AI to add the necessary [[JsonPropertyName]](xref:System.Text.Json.Serialization.JsonPropertyNameAttribute) attributes to every property in your class. You can use Copilot to make these changes with a chat prompt like this:
-
-```copilot-prompt
-Update #ClassName:
-when the property name contains more than one word,
-change the serialized property name to use underscores between words.
-Use built-in serialization attributes.
-```
-
-Here's a more complete version of the example that includes a simple class.
-
-```copilot-prompt
-Take this C# class:
-public class WeatherForecast
-{
-    public DateTime Date { get; set; }
-    public int TemperatureC { get; set; }
-    public int TemperatureF { get; set; }
-    public string? Summary { get; set; }
-    public int WindSpeed { get; set; }
-}
-When the property name contains more than one word,
-change the serialized property name to use underscores between words.
-Use built-in serialization attributes.
-```
-
-Review Copilot's suggestions before applying them.
-
-For more information about GitHub Copilot, see GitHub's [FAQs](https://github.com/features/copilot#faq).
-
 ## See also
 
 - [System.Text.Json overview](overview.md)
 - [How to serialize and deserialize JSON](how-to.md)
-- [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
-- [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)

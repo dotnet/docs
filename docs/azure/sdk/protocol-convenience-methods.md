@@ -3,7 +3,8 @@ title: Understand Azure SDK client library method types
 description: Learn about the key differences between protocol and convenience methods in the Azure SDK client libraries for .NET.
 ms.topic: concept-article
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-arm-template
-ms.date: 04/25/2025
+ms.date: 08/04/2026
+ai-usage: ai-assisted
 ---
 
 # Azure SDK for .NET protocol and convenience methods overview
@@ -135,11 +136,11 @@ When a service call fails, the service client throws an exception that exposes t
 
 # [System.ClientModel exceptions](#tab/system-clientmodel)
 
-:::code source="snippets/protocol-convenience-methods/AzureCore/ExceptionHandling/Program.cs" highlight="21-24":::
+:::code source="snippets/protocol-convenience-methods/SCM/ExceptionHandling/Program.cs" highlight="17-20":::
 
 # [Azure.Core exceptions](#tab/azure-core)
 
-:::code source="snippets/protocol-convenience-methods/SCM/ExceptionHandling/Program.cs" highlight="17-20":::
+:::code source="snippets/protocol-convenience-methods/AzureCore/ExceptionHandling/Program.cs" highlight="21-24":::
 
 ---
 

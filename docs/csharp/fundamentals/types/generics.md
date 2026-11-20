@@ -18,7 +18,7 @@ You encounter generics constantly in everyday C#. Collections, async return type
 
 :::code language="csharp" source="snippets/generics/Program.cs" ID="EverydayGenerics":::
 
-In each case, the type argument in angle brackets (`<int>`, `<string>`, `<Product>`) tells the generic type what kind of data it holds or operates on. The compiler enforces type safety. You can't accidentally add a `string` to a `List<int>`.
+In each case, the type argument in angle brackets (`<int>`, `<string>`, `<decimal>`) tells the generic type what kind of data it holds or operates on. The compiler enforces type safety. You can't accidentally add a `string` to a `List<int>`.
 
 ## Consuming generic types
 
@@ -42,7 +42,7 @@ In the call `Print(42)`, the compiler infers `T` as `int` from the argument. You
 
 ## Collection expressions
 
-Collection expressions (C# 12) provide a concise syntax for creating collections. Use square brackets instead of constructor calls or initializer syntax:
+Collection expressions provide a concise syntax for creating collections. Use square brackets instead of constructor calls or initializer syntax:
 
 :::code language="csharp" source="snippets/generics/Program.cs" ID="CollectionExpressions":::
 

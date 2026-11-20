@@ -52,13 +52,19 @@ You can coordinate the interaction of threads that acquire a lock on the same ob
 For more information, see the <xref:System.Threading.Monitor> API reference.
 
 > [!NOTE]
-> Use the [lock](../../csharp/language-reference/statements/lock.md) statement in C# and the [SyncLock](../../visual-basic/language-reference/statements/synclock-statement.md) statement in Visual Basic to synchronize access to a shared resource instead of using the <xref:System.Threading.Monitor> class directly. Those statements are implemented by using the <xref:System.Threading.Monitor.Enter*> and <xref:System.Threading.Monitor.Exit*> methods and a `try…finally` block to ensure that the acquired lock is always released.
+> To synchronize access to a shared resource, use the [lock](../../csharp/language-reference/statements/lock.md) statement in C# and the [SyncLock](../../visual-basic/language-reference/statements/synclock-statement.md) statement in Visual Basic instead of using the <xref:System.Threading.Monitor> class directly.
+>
+> In .NET 9 and C# 13 or later, use a dedicated <xref:System.Threading.Lock?displayProperty=nameWithType> instance for best performance. In that case, `lock` uses <xref:System.Threading.Lock.EnterScope?displayProperty=nameWithType>.
+>
+> This approach is better than locking a general `object` because it uses a lock type designed for synchronization and reduces accidental reuse of unrelated objects.
+>
+> Visual Basic doesn't support `System.Threading.Lock` in `SyncLock`, so use a dedicated private reference type for `SyncLock`. For C# versions before 13, .NET versions before 9, and Visual Basic, these statements use <xref:System.Threading.Monitor.Enter*> and <xref:System.Threading.Monitor.Exit*> with a `try…finally` block to ensure that the acquired lock is always released.
 
 ### Mutex class
 
 The <xref:System.Threading.Mutex?displayProperty=nameWithType> class, like <xref:System.Threading.Monitor>, grants exclusive access to a shared resource. Use one of the [Mutex.WaitOne](<xref:System.Threading.WaitHandle.WaitOne*?displayProperty=nameWithType>) method overloads to request the ownership of a mutex. Like <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex> has thread affinity and the thread that acquired a mutex must release it by calling the <xref:System.Threading.Mutex.ReleaseMutex*?displayProperty=nameWithType> method.
 
-Unlike <xref:System.Threading.Monitor>, the <xref:System.Threading.Mutex> class can be used for inter-process synchronization. To do that, use a named mutex, which is visible throughout the operating system. To create a named mutex instance, use a [Mutex constructor](<xref:System.Threading.Mutex.%23ctor*>) that specifies a name. You can also call the <xref:System.Threading.Mutex.OpenExisting*?displayProperty=nameWithType> method to open an existing named system mutex.
+Unlike <xref:System.Threading.Monitor>, the <xref:System.Threading.Mutex> class can be used for inter-process synchronization. To do that, use a named mutex. On Windows, named mutexes are visible throughout the operating system; on Unix, they default to the current user. To create a named mutex instance, use a [Mutex constructor](<xref:System.Threading.Mutex.%23ctor*>) that specifies a name. You can also call the <xref:System.Threading.Mutex.OpenExisting*?displayProperty=nameWithType> method to open an existing named mutex. For the Unix default scope change, see [Named mutexes default to user scope on Unix](../../core/compatibility/core-libraries/11/named-mutexes-unix-default-scope.md).
 
 For more information, see the [Mutexes](mutexes.md) article and the <xref:System.Threading.Mutex> API reference.
 

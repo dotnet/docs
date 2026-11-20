@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Data Type Mappings in ADO.NET"
 title: "Data Type Mappings"
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
 ms.assetid: d4afab94-ada6-4c77-a73c-41f17bae6b5a
 ---
 # Data Type Mappings in ADO.NET
@@ -18,7 +18,7 @@ The .NET Framework is based on the common type system, which defines how types a
 ## In This Section  
 
  [SQL Server Data Type Mappings](sql-server-data-type-mappings.md)  
- Lists inferred data type mappings and data accessor methods for <xref:System.Data.SqlClient>.  
+ Lists inferred data type mappings and data accessor methods for <xref:Microsoft.Data.SqlClient>.
   
  [OLE DB Data Type Mappings](ole-db-data-type-mappings.md)  
  Lists inferred data type mappings and data accessor methods for <xref:System.Data.OleDb>.  

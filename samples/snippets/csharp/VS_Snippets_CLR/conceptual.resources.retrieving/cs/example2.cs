@@ -13,7 +13,7 @@ public class Example
       string title = rm.GetString("TableName");
       PersonTable tableInfo = (PersonTable) rm.GetObject("Employees");
 
-      if (! String.IsNullOrEmpty(title)) {
+      if (!String.IsNullOrEmpty(title)) {
          fmtString = "{0," + ((Console.WindowWidth + title.Length) / 2).ToString() + "}";
          Console.WriteLine(fmtString, title);
          Console.WriteLine();

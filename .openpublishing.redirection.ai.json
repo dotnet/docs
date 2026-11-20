@@ -14,6 +14,10 @@
       "redirect_document_id": true
     },
     {
+      "source_path_from_root": "/docs/ai/conceptual/ai-tools.md",
+      "redirect_url": "/dotnet/ai/conceptual/calling-tools"
+    },
+    {
       "source_path_from_root": "/docs/ai/conceptual/evaluation-libraries.md",
       "redirect_url": "/dotnet/ai/evaluation/libraries",
       "redirect_document_id": true
@@ -32,6 +36,10 @@
       "source_path_from_root": "/docs/ai/get-started/dotnet-ai-overview.md",
       "redirect_url": "/dotnet/ai/overview",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/ai/get-started-app-chat-scaling-with-azure-container-apps.md",
+      "redirect_url": "/azure/developer/python/azure-ai-for-python-developers"
     },
     {
       "source_path_from_root": "/docs/ai/how-to/app-service-db-auth.md",
@@ -90,6 +98,10 @@
       "source_path_from_root": "/docs/ai/quickstarts/quickstart-openai-summarize-text.md",
       "redirect_url": "/dotnet/ai/quickstarts/prompt-model",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/docs/ai/resources/get-started.md",
+      "redirect_url": "/dotnet/ai/overview"
     },
     {
       "source_path_from_root": "/docs/ai/semantic-kernel-dotnet-overview.md",

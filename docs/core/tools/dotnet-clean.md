@@ -60,7 +60,7 @@ The `dotnet clean` command cleans the output of the previous build. It's impleme
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  Cleans the output folder of the specified runtime. This is used when a [self-contained deployment](../deploying/index.md#self-contained-deployment) was created.
+  Cleans the output folder of the specified runtime. This is used when a [self-contained deployment](../deploying/index.md#publish-as-self-contained) was created.
 
 - [!INCLUDE [tl](includes/cli-tl.md)]
 

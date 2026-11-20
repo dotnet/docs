@@ -138,9 +138,6 @@ Identifying and working with aggregates requires research and experience. For mo
 - **Vaughn Vernon. Effective Aggregate Design - Part III: Gaining Insight Through Discovery** (from <https://dddcommunity.org/>) \
   <https://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_3.pdf>
 
-- **Sergey Grybniak. DDD Tactical Design Patterns** \
-  <https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-Patterns-Part>
-
 - **Chris Richardson. Developing Transactional Microservices Using Aggregates** \
   <https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-1-richardson>
 

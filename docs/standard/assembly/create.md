@@ -37,7 +37,7 @@ You have several options when grouping code modules and resources into assemblie
 
      Group modules containing types whose visibility should be restricted to the same assembly.
 
-There are special considerations when making common language runtime assemblies available to unmanaged COM applications. For more information about working with unmanaged code, see [Expose .NET Framework components to COM](../../framework/interop/exposing-dotnet-components-to-com.md).
+There are special considerations when making common language runtime assemblies available to unmanaged COM applications. For more information about working with unmanaged code, see [Expose .NET Framework components to COM](../../standard/native-interop/exposing-dotnet-components-to-com.md).
 
 ## See also
 

@@ -1,21 +1,22 @@
 ---
-title: Microsoft.Testing.Platform overview
-description: Learn about Microsoft.Testing.Platform, a lightweight way to run tests without depending on the .NET SDK.
+title: Microsoft.Testing.Platform overview - .NET test runner
+description: Learn about Microsoft.Testing.Platform (MTP), a lightweight and portable .NET test runner and VSTest alternative for running unit tests in CI pipelines, CLI, and IDEs.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 03/17/2024
+ms.date: 10/01/2026
+ai-usage: ai-assisted
 ---
 
-# Microsoft.Testing.Platform overview
+# Microsoft.Testing.Platform (MTP) overview
 
-Microsoft.Testing.Platform is a lightweight and portable alternative to [VSTest](https://github.com/microsoft/vstest) for running tests in all contexts, including continuous integration (CI) pipelines, CLI, Visual Studio Test Explorer, and VS Code Test Explorer. The Microsoft.Testing.Platform is embedded directly in your test projects, and there's no other app dependencies, such as `vstest.console` or `dotnet test` needed to run your tests.
+Microsoft.Testing.Platform (MTP) is a lightweight and portable alternative to [VSTest](https://github.com/microsoft/vstest) for running tests in all contexts, including continuous integration (CI) pipelines, CLI, Visual Studio Test Explorer, and VS Code Test Explorer. MTP is embedded directly in your test projects, and there's no other app dependencies, such as `vstest.console` or `dotnet test` needed to run your tests.
 
 > [!TIP]
-> If you need help choosing between VSTest and Microsoft.Testing.Platform, start with [Test platforms overview](./test-platforms-overview.md).
+> If you need help choosing between VSTest and MTP, start with [Test platforms overview](./test-platforms-overview.md).
 
-Use this article when you already decided to use Microsoft.Testing.Platform and you want to understand its model, capabilities, and operational behavior.
+Use this article when you already decided to use MTP and you want to understand its model, capabilities, and operational behavior.
 
-`Microsoft.Testing.Platform` is open source. You can find `Microsoft.Testing.Platform` code in [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository.
+MTP is open source. You can find the `Microsoft.Testing.Platform` code in the [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository.
 
 ## Start here
 
@@ -23,13 +24,15 @@ Use the following path, based on what you need next:
 
 - Run and debug tests from CLI, IDE, or CI: [Run and debug tests](./microsoft-testing-platform-run-and-debug.md)
 - Understand platform behavior in CLI: [Testing with `dotnet test`](./unit-testing-with-dotnet-test.md)
-- Find platform and extension CLI switches in one place: [Microsoft.Testing.Platform CLI options reference](./microsoft-testing-platform-cli-options.md)
-- Configure framework runners: [Run tests with MSTest](./unit-testing-mstest-running-tests.md) or [Microsoft.Testing.Platform support in NUnit (NUnit runner)](./unit-testing-nunit-runner-intro.md)
-- Migrate an existing VSTest setup: [Migrate from VSTest to Microsoft.Testing.Platform](./migrating-vstest-microsoft-testing-platform.md)
-- Add diagnostics, coverage, and reporting: [Microsoft.Testing.Platform features](./microsoft-testing-platform-features.md)
-- Build your own extension: [Microsoft.Testing.Platform architecture](./microsoft-testing-platform-architecture.md), [Extension points](./microsoft-testing-platform-architecture-extensions.md), and [Services](./microsoft-testing-platform-architecture-services.md)
+- Find platform and extension CLI switches in one place: [MTP CLI options reference](./microsoft-testing-platform-cli-options.md)
+- Configure framework runners: [Run tests with MSTest](./unit-testing-mstest-running-tests.md) or [MTP support in NUnit (NUnit runner)](./unit-testing-nunit-runner-intro.md)
+- Host MTP in a UWP or WinUI 3 app: [Test UWP and WinUI 3 apps with MSTest and MTP](./unit-testing-mstest-winui.md)
+- Migrate an existing VSTest setup: [Migrate from VSTest to MTP](./migrating-vstest-microsoft-testing-platform.md)
+- Add diagnostics, coverage, and reporting: [MTP features](./microsoft-testing-platform-features.md)
+- Build your own extension: [MTP architecture](./microsoft-testing-platform-architecture.md), [Extension points](./microsoft-testing-platform-architecture-extensions.md), and [Services](./microsoft-testing-platform-architecture-services.md)
+- Build editor or IDE integration: [MTP server mode](./microsoft-testing-platform-server-mode.md)
 
-## Microsoft.Testing.Platform pillars
+## MTP pillars
 
 This new testing platform is built on the .NET Developer Experience Testing team's experience and aims to address the challenges encountered since the release of .NET Core in 2016. While there's a high level of compatibility between the .NET Framework and the .NET Core/.NET, some key features like the plugin-system and the new possible form factors of .NET compilations have made it complex to evolve or fully support the new runtime feature with the current [VSTest platform](https://github.com/microsoft/vstest) architecture.
 
@@ -55,14 +58,16 @@ The main driving factors for the evolution of the new testing platform are detai
 
 ## Supported test frameworks
 
-* MSTest. In MSTest, the support of `Microsoft.Testing.Platform` is done via [MSTest runner](unit-testing-mstest-running-tests.md).
-* NUnit. In NUnit, the support of `Microsoft.Testing.Platform` is done via [NUnit runner](unit-testing-nunit-runner-intro.md).
+* MSTest. In MSTest, the support of MTP is done via [MSTest runner](unit-testing-mstest-running-tests.md).
+* NUnit. In NUnit, the support of MTP is done via [NUnit runner](unit-testing-nunit-runner-intro.md).
+* TUnit. TUnit is built entirely on top of MTP and doesn't support VSTest. For more information, see [TUnit documentation](https://tunit.dev/) and [Unit testing C# with TUnit](unit-testing-csharp-with-tunit.md).
 * xUnit.net. For more information, see [Microsoft Testing Platform (xUnit.net v3)](https://xunit.net/docs/getting-started/v3/microsoft-testing-platform) and [Microsoft Testing Platform (xUnit.net v2)](https://xunit.net/docs/getting-started/v2/microsoft-testing-platform) from the xUnit.net documentation.
-* TUnit: entirely constructed on top of the `Microsoft.Testing.Platform`, for more information, see [TUnit documentation](https://tunit.dev/).
 
 ## Supported target frameworks
 
-Microsoft.Testing.Platform supports .NET (.NET 8 and later), .NET Framework (versions 4.6.2 and later), and targets NETStandard 2.0 for maximum compatibility with other runtimes.
+MTP supports .NET (.NET 8 and later), .NET Framework (versions 4.6.2 and later), and targets NETStandard 2.0 for maximum compatibility with other runtimes.
+
+Starting with MTP 2.5 and MSTest 4.5, MTP also supports classic UWP, modern .NET UWP, and WinUI 3 AppContainer test hosts through the MSTest.Sdk app-model sidecar. Packaged full-trust and unpackaged WinUI 3 test hosts are also supported. For details, see [Test UWP and WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md).
 
 ## Run and debug tests
 
@@ -70,11 +75,11 @@ For detailed guidance on running and debugging MTP test projects from CLI, Visua
 
 ## Options
 
-For the full list of platform and extension command-line options, see [Microsoft.Testing.Platform CLI options reference](./microsoft-testing-platform-cli-options.md).
+For the full list of platform and extension command-line options, see [MTP CLI options reference](./microsoft-testing-platform-cli-options.md).
 
 ## MSBuild integration
 
-The NuGet package [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) provides various integrations for `Microsoft.Testing.Platform` with MSBuild:
+The NuGet package [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) provides various integrations for MTP with MSBuild:
 
 - Support for `dotnet test`. For more information, see [Testing with dotnet test](./unit-testing-with-dotnet-test.md).
 - Support for `ProjectCapability` required by `Visual Studio` and `Visual Studio Code` Test Explorers.
@@ -84,12 +89,14 @@ The NuGet package [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/pac
 
 When this package is active (the default for MSTest, NUnit, and xUnit runners), installing an extension NuGet package is all that's needed — extensions are auto-registered with no code changes. If you disable the auto-generated entry point by setting `<GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>`, you must register extensions manually in your `Main` method. Each extension page documents its manual registration call.
 
+Starting with MTP 2.4, Microsoft-provided extension packages constrain their `Microsoft.Testing.Platform` dependency to the current major version. For example, a 2.4 extension requires `Microsoft.Testing.Platform` in the range `[2.4.0, 3.0.0)`. This range prevents NuGet from silently combining an extension with an unsupported future platform major. Keep the platform and extension packages on the same release line.
+
 > [!NOTE]
 > This integration works in a transitive way (a project that references another project referencing this package will behave as if it references the package) and can be disabled through the `IsTestingPlatformApplication` MSBuild property.
 
 ## See also
 
 - [Test platforms overview](test-platforms-overview.md)
-- [Microsoft.Testing.Platform features](microsoft-testing-platform-features.md)
-- [Microsoft.Testing.Platform telemetry](microsoft-testing-platform-telemetry.md)
-- [Microsoft.Testing.Platform troubleshooting](microsoft-testing-platform-troubleshooting.md)
+- [MTP features](microsoft-testing-platform-features.md)
+- [MTP telemetry](microsoft-testing-platform-telemetry.md)
+- [MTP troubleshooting](microsoft-testing-platform-troubleshooting.md)

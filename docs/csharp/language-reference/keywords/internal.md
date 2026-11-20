@@ -88,7 +88,7 @@ public class TestAccess
 
 ## C# Language Specification
 
-For more information, see [Declared accessibility](~/_csharpstandard/standard/basic-concepts.md#752-declared-accessibility) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Declared accessibility](~/_csharpstandard/standard/basic-concepts.md#742-declared-accessibility) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 

@@ -1,4 +1,6 @@
 ﻿' <Snippet1>
+' Do not use System.Data.SqlClient for new development; use Microsoft.Data.SqlClient.
+' This code access security example requires the built-in .NET Framework SQL provider.
 Imports System.Data.SqlClient
 Imports System.Security
 Imports System.Security.Permissions

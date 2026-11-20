@@ -104,9 +104,9 @@ dotnet-counters monitor --counters System.Net.Http,System.Net.NameResolution -n 
 
 For more information on Aspire, see:
 
-- [Aspire Overview](/dotnet/aspire/get-started/aspire-overview)
-- [Telemetry in Aspire](/dotnet/aspire/fundamentals/telemetry)
-- [Aspire Dashboard](/dotnet/aspire/fundamentals/dashboard/explore)
+- [Aspire Overview](https://aspire.dev/get-started/what-is-aspire/)
+- [Telemetry in Aspire](https://aspire.dev/fundamentals/telemetry/)
+- [Aspire Dashboard](https://aspire.dev/dashboard/explore/)
 
 ### Reuse Service Defaults project without Aspire orchestration
 

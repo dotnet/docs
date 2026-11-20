@@ -10,9 +10,9 @@ Use the `ref` modifier when declaring a [structure type](struct.md). You allocat
 - You can't use a `ref struct` as the element type of an array.
 - You can't declare a `ref struct` as the type of a field in a class or a non-`ref struct`.
 - You can't box a `ref struct` to <xref:System.ValueType?displayProperty=nameWithType> or <xref:System.Object?displayProperty=nameWithType>.
-- You can't capture a `ref struct` variable in a [lambda expression](../operators/lambda-expressions.md) or a [local function](../../programming-guide/classes-and-structs/local-functions.md).
+- You can't capture a `ref struct` variable in a [lambda expression](../operators/lambda-expressions.md) or a [local function](../../fundamentals/building-software/local-functions.md).
 - Before C# 13, you can't use `ref struct` variables in an `async` method. Beginning with C# 13, a `ref struct` variable can't be used in the same block as the [`await`](../operators/await.md) expression in an [`async`](../keywords/async.md) method. However, you can use `ref struct` variables in synchronous methods, for example, in methods that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task`1>.
-- Before C# 13, you can't use a `ref struct` variable in [iterators](../../iterators.md). Beginning with C# 13, `ref struct` types and `ref` locals can be used in iterators, provided they aren't in code segments with the `yield return` statement.
+- Before C# 13, you can't use a `ref struct` variable in [iterators](../../fundamentals/building-software/iterators.md). Beginning with C# 13, `ref struct` types and `ref` locals can be used in iterators, provided they aren't in code segments with the `yield return` statement.
 - Before C# 13, a `ref struct` can't implement interfaces. Beginning with C# 13, a `ref` struct can implement interfaces, but must adhere to the [ref safety](~/_csharpstandard/standard/structs.md#1623-ref-modifier) rules. For example, a `ref struct` type can't be converted to the interface type because that requires a boxing conversion.
 - Before C# 13, a `ref struct` can't be a type argument. Beginning with C# 13, a `ref struct` can be the type argument when the type parameter specifies the `allows ref struct` in its `where` clause.
 
@@ -85,9 +85,9 @@ The compiler enforces these restrictions. If you write `ref struct` types that i
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
 - [Structs: Ref modifier](~/_csharpstandard/standard/structs.md#1623-ref-modifier)
-- [Safe context constraint for ref struct types](~/_csharpstandard/standard/structs.md#16415-safe-context-constraint)
+- [Safe context constraint for ref struct types](~/_csharpstandard/standard/structs.md#16815-safe-context-constraint)
 
-For more information about `ref` fields, see the [Low-level struct improvements](~/_csharplang/proposals/csharp-11.0/low-level-struct-improvements.md) proposal note.
+For more information about `ref` fields, see [Ref fields](~/_csharpstandard/standard/structs.md#16882-ref-fields) in the C# language specification.
 
 ## See also
 

@@ -1,7 +1,8 @@
 ---
 title: "Implementing an Implicit Transaction using Transaction Scope"
 description: Implement an implicit transaction using the TransactionScope class in .NET. This class provides a way to mark a block of code as participating in a transaction.
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -15,7 +16,9 @@ The <xref:System.Transactions.TransactionScope> class provides a simple way to m
 
 ## Creating a transaction scope
 
- The following sample shows a simple usage of the <xref:System.Transactions.TransactionScope> class.
+ The following sample uses <xref:System.Transactions.TransactionScope> with the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package. Import `Microsoft.Data.SqlClient` in C# or Visual Basic.
+
+ The two simultaneous SQL connections can promote the transaction to a distributed transaction. This example requires Windows and a configured Microsoft Distributed Transaction Coordinator (MSDTC) service, including network access between the participating machines. On modern .NET, the example explicitly enables <xref:System.Transactions.TransactionManager.ImplicitDistributedTransactions>. A single-connection transaction doesn't require this promotion. For more information, see [Distributed transactions](../adonet/distributed-transactions.md).
 
  [!code-csharp[TransactionScope#1](../../../../samples/snippets/csharp/VS_Snippets_Remoting/TransactionScope/cs/ScopeWithSQL.cs#1)]
  [!code-vb[TransactionScope#1](../../../../samples/snippets/visualbasic/VS_Snippets_Remoting/TransactionScope/vb/ScopeWithSQL.vb#1)]

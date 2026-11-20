@@ -1,34 +1,34 @@
 ---
 description: "Learn more about streaming support between SQL Server and an application, which supports unstructured data on the server."
 title: "SqlClient Streaming Support"
-ms.date: "03/30/2017"
+ms.date: "10/20/2026"
 ---
 
 # SqlClient streaming support
 
-Streaming support between SQL Server and an application (new in .NET Framework 4.5) supports unstructured data on the server (documents, images, and media files). A SQL Server database can store binary large objects (BLOBs), but retrieving BLOBS can use a lot of memory.
+Microsoft.Data.SqlClient supports streams between SQL Server and an application for unstructured data on the server (documents, images, and media files). A SQL Server database can store binary large objects (BLOBs), but retrieving BLOBS can use a lot of memory. For the examples in this article, install the [Microsoft.Data.SqlClient NuGet package](https://www.nuget.org/packages/Microsoft.Data.SqlClient).
 
 Streaming support to and from SQL Server simplifies writing applications that stream data, without having to fully load the data into memory, resulting in fewer memory overflow exceptions.
 
 Streaming support will also enable middle-tier applications to scale better, especially in scenarios where business objects connect to SQL Azure in order to send, retrieve, and manipulate large BLOBs.
 
-> [!WARNING]
-> Asynchronous calls are not supported if an application also uses the `Context Connection` connection string keyword.
+> [!NOTE]
+> Microsoft.Data.SqlClient doesn't support `Context Connection=true`. When you construct <xref:Microsoft.Data.SqlClient.SqlConnection> or assign its `ConnectionString` property with that setting, the driver throws <xref:System.InvalidOperationException> with the message `Connecting to the context connection using Microsoft.Data.SqlClient is not supported.` The exception occurs before you call `Open` or `OpenAsync`; the setting isn't ignored.
 >
 > The members added to support streaming are used to retrieve data from queries and to pass parameters to queries and stored procedures. The streaming feature addresses basic OLTP and data migration scenarios and is applicable to on-premises and off-premises data migrations environments.
 
 ## Streaming Support from SQL Server
 
-Streaming support from SQL Server introduces new functionality in the <xref:System.Data.Common.DbDataReader> and in the <xref:System.Data.SqlClient.SqlDataReader> classes in order to get <xref:System.IO.Stream>, <xref:System.Xml.XmlReader>, and <xref:System.IO.TextReader> objects and react to them. These classes are used to retrieve data from queries. As a result, Streaming support from SQL Server addresses OLTP scenarios and applies to on-premises and off-premises environments.
+Streaming support from SQL Server uses the <xref:System.Data.Common.DbDataReader> and <xref:Microsoft.Data.SqlClient.SqlDataReader> classes to get <xref:System.IO.Stream>, <xref:System.Xml.XmlReader>, and <xref:System.IO.TextReader> objects and react to them. These classes are used to retrieve data from queries. As a result, Streaming support from SQL Server addresses OLTP scenarios and applies to on-premises and off-premises environments.
 
-The following members were added to <xref:System.Data.SqlClient.SqlDataReader> to enable streaming support from SQL Server:
+The following members of <xref:Microsoft.Data.SqlClient.SqlDataReader> support streams from SQL Server:
 
-- <xref:System.Data.SqlClient.SqlDataReader.IsDBNullAsync*>
-- <xref:System.Data.SqlClient.SqlDataReader.GetFieldValue*?displayProperty=nameWithType>
-- <xref:System.Data.SqlClient.SqlDataReader.GetFieldValueAsync*>
-- <xref:System.Data.SqlClient.SqlDataReader.GetStream*>
-- <xref:System.Data.SqlClient.SqlDataReader.GetTextReader*>
-- <xref:System.Data.SqlClient.SqlDataReader.GetXmlReader*>
+- <xref:Microsoft.Data.SqlClient.SqlDataReader.IsDBNullAsync*>
+- <xref:Microsoft.Data.SqlClient.SqlDataReader.GetFieldValue*?displayProperty=nameWithType>
+- <xref:Microsoft.Data.SqlClient.SqlDataReader.GetFieldValueAsync*>
+- <xref:Microsoft.Data.SqlClient.SqlDataReader.GetStream*>
+- <xref:Microsoft.Data.SqlClient.SqlDataReader.GetTextReader*>
+- <xref:Microsoft.Data.SqlClient.SqlDataReader.GetXmlReader*>
 
 The following members were added to <xref:System.Data.Common.DbDataReader> to enable streaming support from SQL Server:
 
@@ -38,27 +38,27 @@ The following members were added to <xref:System.Data.Common.DbDataReader> to en
 
 ## Streaming Support to SQL Server
 
-Streaming support to SQL Server introduces new functionality in the <xref:System.Data.SqlClient.SqlParameter> class so it can accept and react to <xref:System.Xml.XmlReader>, <xref:System.IO.Stream>, and <xref:System.IO.TextReader> objects. <xref:System.Data.SqlClient.SqlParameter> is used to pass parameters to queries and stored procedures.
+Streaming support to SQL Server uses the <xref:Microsoft.Data.SqlClient.SqlParameter> class to accept and react to <xref:System.Xml.XmlReader>, <xref:System.IO.Stream>, and <xref:System.IO.TextReader> objects. <xref:Microsoft.Data.SqlClient.SqlParameter> is used to pass parameters to queries and stored procedures.
 
-Disposing a <xref:System.Data.SqlClient.SqlCommand> object or calling <xref:System.Data.SqlClient.SqlCommand.Cancel*> must cancel any streaming operation. If an application sends <xref:System.Threading.CancellationToken>, cancellation is not guaranteed.
+To request cancellation of a streaming operation, call <xref:Microsoft.Data.SqlClient.SqlCommand.Cancel*> or pass <xref:System.Threading.CancellationToken> to the asynchronous execute method. Cancellation isn't guaranteed. Disposing the command doesn't request cancellation.
 
-The following <xref:System.Data.SqlClient.SqlParameter.SqlDbType*> types will accept a <xref:System.Data.SqlClient.SqlParameter.Value*> of <xref:System.IO.Stream>:
+The following <xref:Microsoft.Data.SqlClient.SqlParameter.SqlDbType*> types will accept a <xref:Microsoft.Data.SqlClient.SqlParameter.Value*> of <xref:System.IO.Stream>:
 
 - **Binary**
 - **VarBinary**
 
-The following <xref:System.Data.SqlClient.SqlParameter.SqlDbType*> types will accept a <xref:System.Data.SqlClient.SqlParameter.Value*> of <xref:System.IO.TextReader>:
+The following <xref:Microsoft.Data.SqlClient.SqlParameter.SqlDbType*> types will accept a <xref:Microsoft.Data.SqlClient.SqlParameter.Value*> of <xref:System.IO.TextReader>:
 
 - **Char**
 - **NChar**
 - **NVarChar**
 - **Xml**
 
-The **Xml**<xref:System.Data.SqlClient.SqlParameter.SqlDbType*> type will accept a <xref:System.Data.SqlClient.SqlParameter.Value*> of <xref:System.Xml.XmlReader>.
+The **Xml**<xref:Microsoft.Data.SqlClient.SqlParameter.SqlDbType*> type will accept a <xref:Microsoft.Data.SqlClient.SqlParameter.Value*> of <xref:System.Xml.XmlReader>.
 
-<xref:System.Data.SqlClient.SqlParameter.SqlValue*> can accept values of type <xref:System.Xml.XmlReader>, <xref:System.IO.TextReader>, and <xref:System.IO.Stream>.
+<xref:Microsoft.Data.SqlClient.SqlParameter.SqlValue*> can accept values of type <xref:System.Xml.XmlReader>, <xref:System.IO.TextReader>, and <xref:System.IO.Stream>.
 
-The <xref:System.Xml.XmlReader>, <xref:System.IO.TextReader>, and <xref:System.IO.Stream> object will be transferred up to the value defined by the <xref:System.Data.SqlClient.SqlParameter.Size*>.
+The <xref:System.Xml.XmlReader>, <xref:System.IO.TextReader>, and <xref:System.IO.Stream> object will be transferred up to the value defined by the <xref:Microsoft.Data.SqlClient.SqlParameter.Size*>.
 
 ## Sample: Streaming from SQL Server
 
@@ -84,15 +84,15 @@ GO
 The sample shows how to do the following:
 
 - Avoid blocking a user-interface thread by providing an asynchronous way to retrieve large files.
-- Transfer a large text file from SQL Server in .NET Framework 4.5.
-- Transfer a large XML file from SQL Server in .NET Framework 4.5.
+- Transfer a large text file from SQL Server with Microsoft.Data.SqlClient.
+- Transfer a large XML file from SQL Server with Microsoft.Data.SqlClient.
 - Retrieve data from SQL Server.
 - Transfer large files (BLOBs) from one SQL Server database to another without running out of memory.
 
 ```csharp
 using System;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.IO;
 using System.Threading.Tasks;
 using System.Xml;
@@ -110,7 +110,7 @@ namespace StreamingFromServer {
          Console.WriteLine("Done");
       }
 
-      // Retrieve a large BLOB from SQL Server in .NET Framework 4.5 using the asynchronous capability.
+      // Retrieve a large BLOB from SQL Server asynchronously.
       private static async Task CopyBinaryValueToFile() {
          string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "binarydata.bin");
 
@@ -138,7 +138,7 @@ namespace StreamingFromServer {
          }
       }
 
-      // Transfer a large Text File from SQL Server in .NET Framework 4.5.
+      // Transfer a large text file from SQL Server.
       private static async Task PrintTextValues() {
          using (SqlConnection connection = new SqlConnection(connectionString)) {
             await connection.OpenAsync();
@@ -173,7 +173,7 @@ namespace StreamingFromServer {
          }
       }
 
-      // Transfer a large Xml Document from SQL Server in .NET Framework 4.5.
+      // Transfer a large XML document from SQL Server.
       private static async Task PrintXmlValues() {
          using (SqlConnection connection = new SqlConnection(connectionString)) {
             await connection.OpenAsync();
@@ -216,7 +216,7 @@ namespace StreamingFromServer {
          }
       }
 
-      // Transfer a large Xml Document from SQL Server in .NET Framework 4.5.
+      // Transfer a large XML document from SQL Server.
       // This goes via NVarChar and TextReader to enable asynchronous reading.
       private static async Task PrintXmlValuesViaNVarChar() {
          XmlReaderSettings xmlSettings = new XmlReaderSettings() {
@@ -302,8 +302,8 @@ GO
 
 The sample shows how to do the following:
 
-- Transfer a large BLOB to SQL Server in .NET Framework 4.5.
-- Transfer a large text file to SQL Server in .NET Framework 4.5.
+- Transfer a large BLOB to SQL Server with Microsoft.Data.SqlClient.
+- Transfer a large text file to SQL Server with Microsoft.Data.SqlClient.
 - Use the new asynchronous feature to transfer a large BLOB.
 - Use the new asynchronous feature and the await keyword to transfer a large BLOB.
 - Cancel the transfer of a large BLOB.
@@ -312,7 +312,7 @@ The sample shows how to do the following:
 ```csharp
 using System;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
@@ -367,7 +367,7 @@ namespace StreamingToServer {
          }
       }
 
-      // Transfer a large BLOB to SQL Server in .NET Framework 4.5.
+      // Transfer a large BLOB to SQL Server.
       private static async Task StreamBLOBToServer() {
          using (SqlConnection conn = new SqlConnection(connectionString)) {
             await conn.OpenAsync();
@@ -385,7 +385,7 @@ namespace StreamingToServer {
          }
       }
 
-      // Transfer a large Text File to SQL Server in .NET Framework 4.5.
+      // Transfer a large text file to SQL Server.
       private static async Task StreamTextToServer() {
          using (SqlConnection conn = new SqlConnection(connectionString)) {
             await conn.OpenAsync();
@@ -435,7 +435,7 @@ This sample demonstrates how to asynchronously stream a large BLOB from one SQL 
 ```csharp
 using System;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;

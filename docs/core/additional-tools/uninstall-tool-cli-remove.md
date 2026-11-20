@@ -2,7 +2,7 @@
 title: dotnet-core-uninstall remove command
 description: The dotnet-core-uninstall remove command uninstalls the target .NET SDK or Runtime. Learn about this command's syntax.
 author: adegeo
-ms.date: 08/04/2024
+ms.date: 05/27/2026
 zone_pivot_groups: operating-systems-set-three
 ---
 
@@ -16,16 +16,17 @@ zone_pivot_groups: operating-systems-set-three
 
 ## Synopsis
 
+```dotnetcli
+
+```
+
 ::: zone pivot="os-windows"
 
 ```dotnetcli
-dotnet-core-uninstall remove <TARGET> [--x64|--x86] <VERSION>...
-    [-v|--verbosity <LEVEL>] [--force] [-y|--yes]
+dotnet-core-uninstall remove <TARGET> <FILTER> [-v|--verbosity <LEVEL>]
+    [--force] [-y|--yes]
 
-dotnet-core-uninstall remove <TARGET> [--x64|--x86] <FILTER>
-    [-v|--verbosity <LEVEL>] [--force] [-y|--yes]
-
-dotnet-core-uninstall remove -h|--help|-?
+dotnet-core-uninstall remove -h|--help
 ```
 
 ::: zone-end
@@ -33,13 +34,10 @@ dotnet-core-uninstall remove -h|--help|-?
 ::: zone pivot="os-macos"
 
 ```dotnetcli
-dotnet-core-uninstall remove <TARGET> <VERSION>...
-    [-v|--verbosity <LEVEL>] [--force] [-y|--yes]
+dotnet-core-uninstall remove <TARGET> <FILTER> [-v|--verbosity <LEVEL>]
+    [--force] [-y|--yes] [--preserve-vs-for-mac-sdks]
 
-dotnet-core-uninstall remove <TARGET> <FILTER>
-    [-v|--verbosity <LEVEL>] [--force] [-y|--yes]
-
-dotnet-core-uninstall remove -h|--help|-?
+dotnet-core-uninstall remove -h|--help
 ```
 
 ::: zone-end
@@ -69,39 +67,49 @@ The `dotnet-core-uninstall remove` command removes .NET SDKs and runtimes from t
 
 ::: zone pivot="os-windows"
 
+- **`--arm64`**
+
+  Can be used with `--sdk`, `--runtime`, `--aspnet-runtime`, and `--windows-desktop-runtime` to remove arm64.
+
 - **`--aspnet-runtime`**
 
-  Discovers all the ASP.NET Core runtimes that can be uninstalled with this tool.
+  Removes ASP.NET Core runtimes only.
 
 - **`--hosting-bundle`**
 
-  Lists all the .NET hosting bundles that can be uninstalled with this tool.
-
-::: zone-end
+  Removes .NET runtime and hosting bundles only.
 
 - **`--runtime`**
 
-  Lists all the .NET runtimes that can be uninstalled with this tool.
+  Removes .NET runtimes only.
 
 - **`--sdk`**
 
-  Lists all the .NET SDKs that can be uninstalled with this tool.
+  Removes .NET SDKs only.
 
-::: zone pivot="os-windows"
+- **`--windows-desktop-runtime`**
+
+  Removes Windows Desktop runtimes only.
 
 - **`--x64`**
 
-  Lists all the x64 .NET SDKs and runtimes that can be uninstalled with this tool.
-
-  > [!NOTE]
-  > If `--x64` or `--x86` isn't specified, then both x64 and x86 will be removed.
+  Can be used with `--sdk`, `--runtime`, `--aspnet-runtime`, and `--windows-desktop-runtime` to remove x64.
 
 - **`--x86`**
 
-  Lists all the x86 .NET SDKs and runtimes that can be uninstalled with this tool.
+  Can be used with `--sdk`, `--runtime`, `--aspnet-runtime`, and `--windows-desktop-runtime` to remove x86.
 
-  > [!NOTE]
-  > If `--x64` or `--x86` isn't specified, then both x64 and x86 will be removed.
+::: zone-end
+
+::: zone pivot="os-macos"
+
+- **`--runtime`**
+
+  Removes .NET runtimes only.
+
+- **`--sdk`**
+
+  Removes .NET SDKs only.
 
 ::: zone-end
 
@@ -151,6 +159,23 @@ These options are exclusive.
 
   Forces removal of versions that might be used by Visual Studio.
 
+::: zone-end
+
+::: zone pivot="os-macos"
+
+- **`--force`**
+
+  Forces removal of versions that might be used by Visual Studio for Mac or SDKs.
+
+- **`--preserve-vs-for-mac-sdks`**
+
+  Prevents removal of SDKs and runtimes that have a high probability of being used by Visual Studio for Mac.
+
+  > [!NOTE]
+  > Visual Studio for Mac is out of support.
+
+::: zone-end
+
 - **`-v, --verbosity <LEVEL>`**
 
   Sets the verbosity level. The default value is `normal`. Allowed values are:
@@ -161,7 +186,7 @@ These options are exclusive.
   - `d[etailed]`
   - `diag[nostic]`.
 
-- **`-?|-h|--help`**
+- **`-h|--help`**
 
   Shows help and usage information
 

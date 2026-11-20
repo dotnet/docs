@@ -29,6 +29,7 @@ f1_keywords:
   - "CS7011"
   - "CS8097"
   - "CS8098"
+  - "CS8301"
   - "CS8938"
   - "CS8939"
   - "CS8996"
@@ -37,6 +38,7 @@ f1_keywords:
   - "CS9298"
   - "CS9299"
   - "CS9314"
+  - "CS9378"
 helpviewer_keywords:
   - "CS1024"
   - "CS1025"
@@ -65,6 +67,7 @@ helpviewer_keywords:
   - "CS7011"
   - "CS8097"
   - "CS8098"
+  - "CS8301"
   - "CS8938"
   - "CS8939"
   - "CS8996"
@@ -73,7 +76,8 @@ helpviewer_keywords:
   - "CS9298"
   - "CS9299"
   - "CS9314"
-ms.date: 10/07/2025
+  - "CS9378"
+ms.date: 09/23/2026
 ai-usage: ai-assisted
 ---
 # Preprocessor errors and warnings
@@ -107,6 +111,7 @@ The compiler generates the following errors for incorrect use of preprocessor di
 - [**CS7011**](#file-contains-scriptcs-directives): *#r is only allowed in scripts*
 - [**CS8097**](#file-contains-scriptcs-directives): *#load is only allowed in scripts*
 - [**CS8098**](#file-contains-scriptcs-directives): *Cannot use #load after first token in file*
+- [**CS8301**](#invalid-preprocessor-symbol-names): *Invalid name for a preprocessing symbol; 'symbol name' is not a valid identifier*
 - [**CS8938**](#line-and-file-directive-errors): *The #line directive value is missing or out of range*
 - [**CS8939**](#line-and-file-directive-errors): *The #line directive end position must be greater than or equal to the start position*
 - [**CS8996**](#invalid-preprocessor-directive-syntax): *Raw string literals are not allowed in preprocessor directives*
@@ -115,6 +120,7 @@ The compiler generates the following errors for incorrect use of preprocessor di
 - [**CS9298**](#incorrect-use-of-file-based-apps-directives): *`#:` directives can be only used in file-based apps (`-features:FileBasedProgram`)*
 - [**CS9299**](#incorrect-use-of-file-based-apps-directives): *`#:` directives cannot be after `#if` directive*
 - [**CS9314**](#incorrect-use-of-file-based-apps-directives): *`#!` directives can be only used in scripts or file-based apps*
+- [**CS9378**](#incorrect-use-of-file-based-apps-directives): *'#!' must be the first characters on the first line of the file*
 
 ## Invalid preprocessor directive syntax
 
@@ -122,6 +128,7 @@ The compiler generates the following errors for incorrect use of preprocessor di
 - **CS1025**: *Single-line comment or end-of-line expected*
 - **CS1027**: *#endif directive expected*
 - **CS1028**: *Unexpected preprocessor directive*
+- **CS1032**: *Cannot define/undefine preprocessor symbols after first token in file*
 - **CS1038**: *#endregion directive expected*
 - **CS1040**: *Preprocessor directives must appear as the first non-white-space character on a line*
 - **CS1517**: *Invalid preprocessor expression*
@@ -135,7 +142,7 @@ These errors indicate that you used invalid syntax for [preprocessor directives]
 - Including multiline comments on directive lines (CS1025, CS1696).
 - Using directives in unexpected locations (CS1028).
 - Missing required matching directives (CS1027, CS1038).
-- Not defining or undefining symbols as the first token in the file (CS1032)
+- Placing a `#define` or `#undef` directive after the first token in the file (CS1032).
 - Not placing the directive as the first token on a line (CS1040).
 - Using invalid expressions in conditional compilation (CS1517).
 - Using raw string literals in preprocessor directives (CS8996).
@@ -170,8 +177,16 @@ class Test { }
 **CS1032 example - `#define` and `#undef` preprocessor directives must appear before other tokens:**
 
 ```csharp
-/* Comment */ 
-#define X   // CS1032 - directive not first token in file
+class Test { }
+#define X   // CS1032 - directive appears after the first token
+```
+
+To fix this error, place all `#define` and `#undef` directives before the first token in the file:
+
+```csharp
+#define X
+#undef Y
+class Test { }
 ```
 
 **CS1038 example - #endregion directive expected:**
@@ -219,6 +234,14 @@ class Test { }
 ```
 
 To fix these errors, ensure your preprocessor directives follow the correct syntax rules described in the [preprocessor directives documentation](../preprocessor-directives.md).
+
+## Invalid preprocessor symbol names
+
+- **CS8301**: *Invalid name for a preprocessing symbol; 'symbol name' is not a valid identifier*
+
+When you create <xref:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions> programmatically, provide each conditional compilation symbol as one identifier-shaped name. The first character must be valid at the start of a C# identifier, and the remaining characters must be valid identifier characters. Roslyn also accepts keyword text as a symbol name, but don't add an `@` prefix. Don't include whitespace, punctuation such as `.` or `-`, an assignment such as `FEATURE=1`, or a complete conditional expression.
+
+A preprocessing symbol records only whether its name is defined. It doesn't store a value. Invalid names supplied through the **DefineConstants** project property or the `-define` compiler option produce **CS2029** instead; see [DefineConstants](../compiler-options/language.md#defineconstants).
 
 ## #error and #warning directive errors
 
@@ -351,15 +374,15 @@ These directives are useful for conditional compilation scenarios where you want
 
 ## `#line` and file directive errors
 
-- **CS1560**: *Invalid filename specified for preprocessor directive. Filename is too long or not a valid filename*
-- **CS1576**: *The line number specified for #line directive is missing or invalid*
-- **CS1578**: *Filename, single-line comment or end-of-line expected*
-- **CS1694**: *Invalid filename specified for preprocessor directive. Filename is too long or not a valid filename*
-- **CS1695**: *Invalid #pragma checksum syntax; should be #pragma checksum "filename" "{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}" "XXXX..."*
-- **CS1709**: *Filename specified for preprocessor directive is empty*
-- **CS8938**: *The #line directive value is missing or out of range*
-- **CS8939**: *The #line directive end position must be greater than or equal to the start position*
-- **CS9028**: *The #line span directive requires space before the first parenthesis, before the character offset, and before the file name*
+- **CS1560**: *Invalid filename specified for preprocessor directive. Filename is too long or not a valid filename.*
+- **CS1576**: *The line number specified for #line directive is missing or invalid.*
+- **CS1578**: *Filename, single-line comment, or end-of-line expected.*
+- **CS1694**: *Invalid filename specified for preprocessor directive. Filename is too long or not a valid filename.*
+- **CS1695**: *Invalid #pragma checksum syntax; should be #pragma checksum "filename" "{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}" "XXXX...".*
+- **CS1709**: *Filename specified for preprocessor directive is empty.*
+- **CS8938**: *The #line directive value is missing or out of range.*
+- **CS8939**: *The #line directive end position must be greater than or equal to the start position.*
+- **CS9028**: *The #line span directive requires space before the first parenthesis, before the character offset, and before the file name.*
 
 These errors indicate incorrect usage of the [`#line` directive](../preprocessor-directives.md#error-and-warning-information) or file-related preprocessor directives. Common causes include:
 
@@ -382,7 +405,7 @@ These errors indicate incorrect usage of the [`#line` directive](../preprocessor
 #line abc "file.cs"    // CS1576 - invalid line number format
 ```
 
-**CS1578 example - Filename, comment or end-of-line expected:**
+**CS1578 example - Filename, comment, or end-of-line expected:**
 
 ```csharp
 #line 101 abc.cs   // CS1578 - filename not quoted
@@ -427,16 +450,34 @@ To fix these errors, ensure your `#line` directives and file-related preprocesso
 - **CS9298**: *`#:` directives can be only used in file-based apps (`-features:FileBasedProgram`)*
 - **CS9299**: *`#:` directives cannot be after `#if` directive*
 - **CS9314**: *`#!` directives can be only used in scripts or file-based apps*
+- **CS9378**: *'#!' must be the first characters on the first line of the file*
 
-These errors indicate that you used the `#:` directives for a file-based app incorrectly. You can learn more about the syntax for these directives in the article on [preprocessor directives](../preprocessor-directives.md#file-based-apps) in the section on file-based apps. Or, you can explore file based apps by following the [tutorial](../../fundamentals/tutorials/file-based-programs.md) on file-based apps.
+These errors indicate that you used the `#:` or `#!` directives incorrectly. To learn more about the syntax for these directives, see the article on [preprocessor directives](../preprocessor-directives.md#file-based-apps) in the section on file-based apps. Or, you can explore file-based apps by following the [tutorial](../../fundamentals/tutorials/file-based-programs.md) on file-based apps.
+
+A shebang (`#!`) selects the executable for a script or file-based app. Place it at the first character of the first line, before any whitespace, comments, or blank lines (**CS9378**); see the [file-based app directive guidance](../preprocessor-directives.md#file-based-apps).
 
 ## File contains script.cs directives
 
-The following errors indicate [script.cs](https://scriptcs.net) syntax in a compiled C# file:
+The following errors indicate incorrect use or placement of C# script directives:
 
 - **CS7009**: *Cannot use #r after first token in file*
 - **CS7010**: *Quoted file name expected*
 - **CS7011**: *#r is only allowed in scripts*
 - **CS8097**: *#load is only allowed in scripts*
+- **CS8098**: *Cannot use #load after first token in file*
 
-These directives aren't supported in compiled C#. You must remove them, or use [script.cs](http://scriptcs.net/).
+In a C# script (`.csx`), a `#load` directive after a token produces **CS8098**:
+
+```csharp
+System.Console.WriteLine("This is the first token.");
+#load "helpers.csx" // CS8098
+```
+
+To fix **CS8098**, move every `#load` directive before every token in the script:
+
+```csharp
+#load "helpers.csx"
+System.Console.WriteLine("The directive precedes the first token.");
+```
+
+In a regular C# source file (`.cs`), `#load` isn't permitted. That related condition produces **CS8097**, not **CS8098**. Remove `#load` from regular source files.

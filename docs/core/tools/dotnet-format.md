@@ -1,7 +1,8 @@
 ---
 title: dotnet format command
 description: The dotnet format command formats code to match EditorConfig settings for the current directory.
-ms.date: 09/29/2025
+ms.date: 09/15/2026
+ai-usage: ai-assisted
 ---
 # dotnet format
 
@@ -17,7 +18,7 @@ ms.date: 09/29/2025
 dotnet format [<PROJECT | SOLUTION>]
   [--binarylog <BINARY-LOG-PATH>] [--diagnostics <DIAGNOSTICS>]
   [--exclude <EXCLUDE>] [--exclude-diagnostics <EXCLUDE-DIAGNOSTICS>]
-  [--include <INCLUDE>] [--include-generated]
+  [--framework <FRAMEWORK>] [--include <INCLUDE>] [--include-generated]
   [--no-restore] [--report <REPORT-PATH>] [--severity <LEVEL>]
   [-v|--verbosity <LEVEL>] [--verify-no-changes] [--version]
 
@@ -56,6 +57,10 @@ None of the options below are required for the `dotnet format` command to succee
 - **`--exclude-diagnostics <EXCLUDE-DIAGNOSTICS>`**
 
   A space-separated list of diagnostic IDs to exclude when fixing code style or third-party issues. Default value is none. For a list of built-in analyzer rule IDs that you can specify, see the [list of IDs for code-analysis style rules](../../fundamentals/code-analysis/style-rules/index.md).
+
+- **`--framework <FRAMEWORK>`**
+
+  Specifies the target framework moniker (TFM), such as `net11.0`, to format in a multi-targeted project. If you don't specify this option, `dotnet format` formats all target frameworks. Available starting with .NET 11.
 
 - **`--include <INCLUDE>`**
 

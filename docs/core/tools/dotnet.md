@@ -1,7 +1,7 @@
 ---
 title: dotnet command
 description: Learn about the dotnet command (the generic driver for the .NET CLI) and its usage.
-ms.date: 10/28/2025
+ms.date: 11/19/2026
 ---
 # dotnet command
 
@@ -100,7 +100,7 @@ The following options are for `dotnet` with a command. For example, `dotnet buil
 
 - **`-v|--verbosity <LEVEL>`**
 
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Not supported in every command. See specific command page to determine if this option is available.
+  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Not supported in every command. See specific command page to determine if this option is available. For example, `dotnet build -v q` is equivalent to `dotnet build --verbosity quiet`.
 
 - **`-?|-h|--help`**
 
@@ -202,14 +202,18 @@ The following options are available only when `dotnet` runs an application by us
 
 | Command                                       | Function                                         |
 |-----------------------------------------------|--------------------------------------------------|
-| [dotnet nuget delete](dotnet-nuget-delete.md) | Deletes or unlists a package from the server.    |
-| [dotnet nuget push](dotnet-nuget-push.md)     | Pushes a package to the server and publishes it. |
-| [dotnet nuget locals](dotnet-nuget-locals.md) | Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder. |
+| [dotnet nuget add client-cert](dotnet-nuget-add-client-cert.md) | Adds a client certificate configuration for a NuGet source. |
 | [dotnet nuget add source](dotnet-nuget-add-source.md) | Adds a NuGet source. |
+| [dotnet nuget delete](dotnet-nuget-delete.md) | Deletes or unlists a package from the server.    |
 | [dotnet nuget disable source](dotnet-nuget-disable-source.md) | Disables a NuGet source. |
 | [dotnet nuget enable source](dotnet-nuget-enable-source.md) | Enables a NuGet source. |
+| [dotnet nuget list client-cert](dotnet-nuget-list-client-cert.md) | Lists configured NuGet client certificates. |
 | [dotnet nuget list source](dotnet-nuget-list-source.md) | Lists all configured NuGet sources. |
+| [dotnet nuget locals](dotnet-nuget-locals.md) | Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder. |
+| [dotnet nuget push](dotnet-nuget-push.md)     | Pushes a package to the server and publishes it. |
+| [dotnet nuget remove client-cert](dotnet-nuget-remove-client-cert.md) | Removes a client certificate configuration for a NuGet source. |
 | [dotnet nuget remove source](dotnet-nuget-remove-source.md) | Removes a NuGet source. |
+| [dotnet nuget update client-cert](dotnet-nuget-update-client-cert.md) | Updates a client certificate configuration for a NuGet source. |
 | [dotnet nuget update source](dotnet-nuget-update-source.md) | Updates a NuGet source. |
 
 ### Workload commands
@@ -264,6 +268,18 @@ Build a project and its dependencies in a given directory:
 
 ```dotnetcli
 dotnet build
+```
+
+Build a project with detailed output, using the short form of the `--verbosity` option:
+
+```dotnetcli
+dotnet build -v d
+```
+
+Publish an application with minimal output:
+
+```dotnetcli
+dotnet publish -v m
 ```
 
 Run an application:

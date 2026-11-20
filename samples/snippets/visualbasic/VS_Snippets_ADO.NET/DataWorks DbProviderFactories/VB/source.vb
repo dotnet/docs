@@ -1,6 +1,5 @@
 ﻿Imports System.Data
-Imports System.Data.SqlClient
-Imports System.Data.OleDb
+Imports Microsoft.Data.SqlClient
 Imports System.Configuration
 Imports System.Data.Common
 
@@ -13,6 +12,10 @@ Class Program
     ' <Snippet1>
     ' This example assumes a reference to System.Data.Common.
     Private Shared Function GetProviderFactoryClasses() As DataTable
+
+#If Not NETFRAMEWORK Then
+        DbProviderFactories.RegisterFactory("Microsoft.Data.SqlClient", SqlClientFactory.Instance)
+#End If
 
         ' Retrieve the installed providers and factories.
         Dim table As DataTable = DbProviderFactories.GetFactoryClasses()
@@ -30,4 +33,3 @@ Class Program
     End Function
     ' </Snippet1>
 End Class
-

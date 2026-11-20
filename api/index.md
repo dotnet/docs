@@ -3,15 +3,15 @@ description: Explore Microsoft's comprehensive .NET API browser. Your ultimate r
 layout: ApiBrowserPage
 hide_bc: true
 title: .NET API browser
-quickFilterColumn1: net-10.0,netframework-4.8.1,netstandard-2.1
-quickFilterColumn2: aspnetcore-10.0,dotnet-aspire-9.0,net-maui-10.0
-quickFilterColumn3: efcore-9.0,azure-dotnet,ml-dotnet
+quickFilterColumn1: net-11.0,netframework-4.8.1,netstandard-2.1
+quickFilterColumn2: aspnetcore-11.0,net-maui-11.0
+quickFilterColumn3: efcore-11.0,azure-dotnet,ml-dotnet
 ms.topic: landing-page
 ms.custom: "updateeachrelease"
-ms.date: 11/07/2025
+ms.date: 11/11/2026
 ---
 # .NET API browser
 
 Welcome to the .NET API browser – your one-stop shop for all .NET-based APIs from Microsoft. Start searching for any managed APIs by typing in the box below.
 
-If you have any feedback, create a new issue in the [dotnet/dotnet-api-docs](https://github.com/dotnet/dotnet-api-docs/issues) repo.
+If you have any feedback, create an issue in the [dotnet/dotnet-api-docs](https://github.com/dotnet/dotnet-api-docs/issues) repo.

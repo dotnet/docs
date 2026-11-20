@@ -1,7 +1,7 @@
 ---
 description: "sealed modifier - C# Reference"
 title: "sealed modifier"
-ms.date: 01/22/2026
+ms.date: 06/05/2026
 f1_keywords: 
   - "sealed"
   - "sealed_CSharpKeyword"
@@ -70,3 +70,4 @@ To determine whether to seal a class, method, or property, generally consider th
 - [Modifiers](index.md)
 - [override](override.md)
 - [virtual](virtual.md)
+- [closed](closed.md)

@@ -3,7 +3,7 @@ title: Get started with MSTest
 description: Learn how to create your first MSTest project and run tests.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 07/24/2024
+ms.date: 09/30/2026
 ---
 
 # Get started with MSTest
@@ -18,7 +18,7 @@ To create an MSTest project, set the `Sdk` attribute to `MSTest.Sdk` along with 
 <Project Sdk="MSTest.Sdk/4.1.0">
 
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
   </PropertyGroup>
 
 </Project>
@@ -33,7 +33,7 @@ To simplify version management across multiple test projects, we recommend speci
 <Project Sdk="MSTest.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
   </PropertyGroup>
 
 </Project>
@@ -52,7 +52,7 @@ For more information, see [Use MSBuild project SDKs](/visualstudio/msbuild/how-t
 When you `build` the project, all needed components are restored and installed using the standard NuGet workflow. You can use the same tooling (for example, `dotnet test` or Visual Studio) as any other test project.
 
 > [!TIP]
-> By default, MSTest.Sdk uses the [MSTest runner with Microsoft.Testing.Platform](./unit-testing-mstest-running-tests.md). For advanced configuration options such as extension profiles, switching to VSTest, or integrating with Aspire and Playwright, see [MSTest SDK configuration](./unit-testing-mstest-sdk.md).
+> By default, MSTest.Sdk uses the [MSTest runner with MTP](./unit-testing-mstest-running-tests.md). For advanced configuration options such as extension profiles, switching to VSTest, or integrating with Aspire and Playwright, see [MSTest SDK configuration](./unit-testing-mstest-sdk.md).
 
 ## Alternative: Use the MSTest NuGet package
 
@@ -60,7 +60,7 @@ If you prefer not to use MSTest.Sdk, you can use the [MSTest](https://www.nuget.
 
 - `MSTest.TestFramework`, `MSTest.TestAdapter`, and `MSTest.Analyzers` for core MSTest functionality.
 - `Microsoft.NET.Test.Sdk` for VSTest integration and test host support.
-- `Microsoft.Testing.Extensions.CodeCoverage` and `Microsoft.Testing.Extensions.TrxReport` for [Microsoft.Testing.Platform (MTP)](../testing/unit-testing-mstest-running-tests.md) extensions.
+- `Microsoft.Testing.Extensions.CodeCoverage` and `Microsoft.Testing.Extensions.TrxReport` for [MTP](../testing/unit-testing-mstest-running-tests.md) extensions.
 
 ## NuGet packages overview
 
@@ -91,7 +91,12 @@ The MSTest team maintains sample projects in the [microsoft/testfx repository](h
 |--------|-------------|------|
 | **Simple1** | Basic MSTest runner setup | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/mstest-runner/Simple1) |
 | **DemoMSTestSdk** | MSTest SDK project setup | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/DemoMSTestSdk) |
-| **BlankUwpNet9App** | UWP testing with .NET 9 | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/BlankUwpNet9App) |
-| **BlankWinUINet9App** | WinUI 3 testing with .NET 9 | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/BlankWinUINet9App) |
+| **UwpMtpApp** | Modern .NET UWP testing with Microsoft.Testing.Platform | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/UwpMtpApp) |
+| **ClassicUwpMtpApp** | Classic `uap10.0` UWP testing with Microsoft.Testing.Platform | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/ClassicUwpMtpApp) |
+| **UwpVSTestApp** | Legacy UWP testing with VSTest | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/UwpVSTestApp) |
+| **WinUIMtpPackagedApp** | Packaged WinUI 3 testing with Microsoft.Testing.Platform | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/WinUIMtpPackagedApp) |
+| **WinUIMtpUnpackagedApp** | Unpackaged WinUI 3 testing with Microsoft.Testing.Platform | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/WinUIMtpUnpackagedApp) |
+| **WinUIMtpAppContainerApp** | AppContainer WinUI 3 testing with Microsoft.Testing.Platform | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/WinUIMtpAppContainerApp) |
+| **WinUIVSTestApp** | WinUI 3 testing with VSTest | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/WinUIVSTestApp) |
 | **NativeAotRunner** | Native AOT compilation | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/mstest-runner/NativeAotRunner) |
 | **RunInDocker** | Containerized test execution | [View on GitHub](https://github.com/microsoft/testfx/tree/main/samples/public/mstest-runner/RunInDocker) |

@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: Floating-Point Numbers"
 title: "Floating-Point Numbers"
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
 ms.assetid: 73c218c6-1c44-4402-a167-4f6262629a91
 ---
 # Floating-Point Numbers
 
-This topic describes some of the issues that developers frequently encounter when they work with floating-point numbers in ADO.NET. These issues are caused by the way that computers store floating-point numbers, and are not specific to a particular provider such as <xref:System.Data.SqlClient> or <xref:System.Data.OracleClient>.  
+This topic describes some of the issues that developers frequently encounter when they work with floating-point numbers in ADO.NET. These issues are caused by the way that computers store floating-point numbers, and are not specific to a particular provider such as <xref:Microsoft.Data.SqlClient> or <xref:System.Data.OracleClient>.
   
  Floating-point numbers generally do not have an exact binary representation. Instead, the computer stores an approximation of the number. At different times, different numbers of binary digits may be used to represent the number. When a floating point number is converted from one representation to another representation, the least significant digits of that number may vary slightly. Conversion typically occurs when the number is cast from one type to another type. The variation occurs whether the conversion occurs within a database, between types that represent database values, or between types. Because of these changes, numbers that would logically be equal may have changes in their least-significant digits that cause them to have different values. The number of digits of precision in the number may be larger or smaller than expected. When formatted as a string, the number may not show the expected value.  
   

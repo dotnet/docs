@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: SqlTypes and the DataSet"
 title: "SqlTypes and the DataSet"
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -14,6 +14,8 @@ ADO.NET 2.0 introduced enhanced type support for the `DataSet` through the  <xre
  Using <xref:System.Data.SqlTypes> directly in a <xref:System.Data.DataSet> confers several benefits when working with SQL Server data types. <xref:System.Data.SqlTypes> supports the same semantics as SQL Server native data types. Specifying one of the <xref:System.Data.SqlTypes> in the definition of a <xref:System.Data.DataColumn> eliminates the loss of precision that can occur when converting decimal or numeric data types to one of the common language runtime (CLR) data types.  
   
 ## Example  
+
+Install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package for the connection, command, and adapter types in this example. The SQL value types remain in `System.Data.SqlTypes`, and `DataTable` and `DataColumn` remain in `System.Data`.
 
  The following example creates a <xref:System.Data.DataTable> object, explicitly defining the <xref:System.Data.DataColumn> data types by using <xref:System.Data.SqlTypes> instead of CLR types. The code fills the <xref:System.Data.DataTable> with data from the Sales.SalesOrderDetail table in the AdventureWorks database in SQL Server. The output displayed in the console window shows the data type of each column, and the values retrieved from SQL Server.  
   

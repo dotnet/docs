@@ -33,7 +33,7 @@ class TimeZoneSerialization
          ResXResourceReader resReader = new ResXResourceReader(readStream);
          foreach (DictionaryEntry item in resReader)
          {
-            if (! (((string) item.Key) == "CentralStandardTime" ||
+            if (!(((string) item.Key) == "CentralStandardTime" ||
                    ((string) item.Key) == "PalmerStandardTime" ))
                resources.Add((string)item.Key, (string) item.Value);
          }
@@ -118,7 +118,7 @@ class TimeZoneSerialization
       {
          // Time zone not in system; retrieve from resource
          timeZoneString = resMgr.GetString("CentralStandardTime");
-         if (! String.IsNullOrEmpty(timeZoneString))
+         if (!String.IsNullOrEmpty(timeZoneString))
          {
             cst = TimeZoneInfo.FromSerializedString(timeZoneString);
          }

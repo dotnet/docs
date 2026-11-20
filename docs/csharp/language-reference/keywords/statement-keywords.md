@@ -8,7 +8,7 @@ helpviewer_keywords:
 ---
 # Statement keywords (C# Reference)
 
-Statements are program instructions. Except as described in the topics referenced in the following list, the program executes statements in sequence. The following list shows the C# statement keywords. For more information about statements that don't use a keyword, see [Statements](../../programming-guide/statements-expressions-operators/statements.md).
+Statements are program instructions. Except as described in the topics referenced in the following list, the program executes statements in sequence. The following list shows the C# statement keywords. For more information about statements that don't use a keyword, see [Statements](../../fundamentals/statements/index.md).
 
 - [Selection statements](../statements/selection-statements.md)
   - `if`
@@ -40,5 +40,5 @@ Statements are program instructions. Except as described in the topics reference
 
 ## See also
 
-- [Statements](../../programming-guide/statements-expressions-operators/statements.md)
+- [Statements](../../fundamentals/statements/index.md)
 - [C# Keywords](index.md)

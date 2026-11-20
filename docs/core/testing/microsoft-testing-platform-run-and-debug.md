@@ -1,15 +1,15 @@
 ---
-title: Run and debug tests with Microsoft.Testing.Platform
-description: Learn how to run and debug Microsoft.Testing.Platform test projects from CLI, Visual Studio, Visual Studio Code, and CI pipelines.
+title: Run and debug tests with Microsoft.Testing.Platform (MTP)
+description: Learn how to run and debug MTP test projects from CLI, Visual Studio, Visual Studio Code, and CI pipelines.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 02/24/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
 # Run and debug tests
 
-`Microsoft.Testing.Platform` test projects are built as executables that can be run (or debugged) directly. There's no extra test running console or command. The app exits with a nonzero exit code if there's an error, which is typical for most executables. For more information on the known exit codes, see [Microsoft.Testing.Platform exit codes](microsoft-testing-platform-troubleshooting.md#exit-codes).
+MTP test projects are built as executables that can be run (or debugged) directly. There's no extra test running console or command. The app exits with a nonzero exit code if there's an error, which is typical for most executables. For more information on the known exit codes, see [MTP exit codes](microsoft-testing-platform-troubleshooting.md#exit-codes).
 
 > [!TIP]
 > You can ignore a specific [exit code](./microsoft-testing-platform-troubleshooting.md#ignore-specific-exit-codes) using the `--ignore-exit-code` command line option.
@@ -21,7 +21,12 @@ ai-usage: ai-assisted
 > ```
 
 > [!IMPORTANT]
-> By default, `Microsoft.Testing.Platform` collects telemetry. For more information and options on opting out, see [Microsoft.Testing.Platform telemetry](microsoft-testing-platform-telemetry.md).
+> By default, MTP collects telemetry. For more information and options on opting out, see [MTP telemetry](microsoft-testing-platform-telemetry.md).
+
+> [!NOTE]
+> Available in MTP starting with version 2.3.0.
+>
+> For a graceful stop, press <kbd>Ctrl</kbd>+<kbd>C</kbd> once to request cancellation. Running tests can finish teardown. To terminate immediately, press <kbd>Ctrl</kbd>+<kbd>C</kbd> again.
 
 ## [.NET CLI](#tab/dotnetcli)
 
@@ -68,19 +73,21 @@ For more information on `dotnet exec`, see [dotnet exec](../tools/dotnet.md#opti
 
 ### Use `dotnet test`
 
-`Microsoft.Testing.Platform` offers a compatibility layer with `vstest.console.exe` and [`dotnet test`](../tools/dotnet-test.md) ensuring you can run your tests as before while enabling new execution scenario.
+Starting with the .NET 10 SDK, [`dotnet test`](../tools/dotnet-test-mtp.md) has a dedicated MTP mode. Select MTP through `global.json`, or use the `DOTNET_TEST_RUNNER` environment variable with .NET 11 or later. The dedicated mode supports projects, solutions, built test modules, and additional input types in newer SDK versions.
 
 ```dotnetcli
-dotnet test Contoso.MyTests.dll
+dotnet test --test-modules Contoso.MyTests.dll
 ```
+
+For runner selection and migration from the VSTest-compatible mode, see [Testing with `dotnet test`](./unit-testing-with-dotnet-test.md).
 
 ## [Visual Studio](#tab/visual-studio)
 
-The `Microsoft.Testing.Platform` tests can be run (and debugged) in Visual Studio, they integrate with Test Explorer, and can also be run directly as startup project.
+The MTP tests can be run (and debugged) in Visual Studio, they integrate with Test Explorer, and can also be run directly as startup project.
 
 ### Run the app with Visual Studio
 
-`Microsoft.Testing.Platform` test project are built as executables, and can be run directly. This runs all the tests in the given executable, unless a filter is provided.
+MTP test project are built as executables, and can be run directly. This runs all the tests in the given executable, unless a filter is provided.
 
 1. Navigate the test project you want to run in Solution Explorer, right select it and select **Set as Startup Project**.
 1. Select **Debug** > **Start without Debugging** (or use <kbd>Ctrl</kbd>+<kbd>F5</kbd>) to run the selected test project.
@@ -89,7 +96,7 @@ Console window pops up with the execution and summary of your test run.
 
 ### Debug the app directly in Visual Studio
 
-`Microsoft.Testing.Platform` test project can be debugged directly. To debug all the tests in the given executable, unless a filter is provided:
+MTP test project can be debugged directly. To debug all the tests in the given executable, unless a filter is provided:
 
 1. Navigate the test project you want to run in Solution Explorer, right select it and select **Set as Startup Project**.
 1. Set breakpoint into the test that you'd like to debug.
@@ -110,7 +117,7 @@ The C# extension along with [C# Dev Kit](https://marketplace.visualstudio.com/it
 
 ### Run the app with Visual Studio Code
 
-`Microsoft.Testing.Platform` test project are built as executables, and can be run directly. This runs all the tests in the given executable, unless a filter is provided.
+MTP test project are built as executables, and can be run directly. This runs all the tests in the given executable, unless a filter is provided.
 
 1. Navigate to a test file that you want to run tests for.
 1. Use <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the selected test project. If you have multiple projects a popup will ask you to select the one to run.
@@ -119,7 +126,7 @@ Console window pops up with the execution and summary of your test run.
 
 ### Debug the app directly in Visual Studio Code
 
-`Microsoft.Testing.Platform` test project are built as executables, and can be run directly. This runs all the tests in the given executable, unless a filter is provided.
+MTP test project are built as executables, and can be run directly. This runs all the tests in the given executable, unless a filter is provided.
 
 1. Navigate to a test file that you want to run tests for.
 1. Use <kbd>F5</kbd> to debug the selected test project. If you have multiple projects a popup will ask you to select the one to run.
@@ -139,48 +146,65 @@ To run a test, navigate to **Test Explorer**, select the test (or tests) to run.
 
 ## [Continuous integration (CI)](#tab/continuous-integration)
 
-- To run a single test project in CI, add one step for each test executable that you wish to run, such as the following on Azure DevOps:
+To run multiple test projects in parallel, invoke `dotnet test` once for the solution instead of adding a pipeline step for every test executable. When you add an MTP test project to the solution, the same command includes it without a pipeline change.
 
-  ```yml
-  - task: CmdLine@2
-    displayName: "Run Contoso.MyTests"
-    inputs:
-      script: '.\Contoso.MyTests\bin\Debug\net10.0\Contoso.MyTests.exe'
-  ```
+### Run a solution in Azure Pipelines
 
-- Run the `dotnet test` command manually, similar to the typical local workflow:
+Use the .NET 10 SDK or later and MTP 1.7 or later. All test projects in the solution must support MTP; VSTest-only test projects aren't supported in this mode. For earlier SDK versions, see [Run MTP projects with VSTest mode](unit-testing-with-dotnet-test.md#run-mtp-projects-with-vstest-mode).
 
-  ```yml
-  - task: CmdLine@2
-    displayName: "Run tests"
-    inputs:
-      script: 'dotnet test' # add command-line options as needed
-  ```
+At the repository root, create a [`global.json`](../tools/global-json.md) file with the following content. If the file already exists, add the `test` section and ensure its SDK settings select .NET 10 or later.
 
-- Run using the `DotNetCoreCLI` Azure task with test command. This requires a [`global.json`](../tools/global-json.md) file in your repository root that specifies Microsoft.Testing.Platform as the test runner:
+```json
+{
+    "test": {
+        "runner": "Microsoft.Testing.Platform"
+    }
+}
+```
 
-  ```json
-  {
-      "test": {
-          "runner": "Microsoft.Testing.Platform"
-      }
-  }
-  ```
+For TRX reports, each test project must reference [`Microsoft.Testing.Extensions.TrxReport`](https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport), either directly or through a test SDK configuration or profile that includes it. For details, see [Visual Studio test reports (TRX)](microsoft-testing-platform-test-reports.md#visual-studio-test-reports-trx).
 
-  ```yml
-  - task: DotNetCoreCLI@2
-    displayName: "Run tests"
-    inputs:
-      command: test
-  ```
+Add the following `azure-pipelines.yml` file to your repository. The example assumes that `Contoso.sln` and `global.json` are at the repository root. Replace `Contoso.sln` with the repository-relative path of your solution.
 
-  > [!NOTE]
-  > Support for Microsoft.Testing.Platform in `DotNetCoreCLI` was added in [2.263.0](https://github.com/microsoft/azure-pipelines-tasks/pull/21315) version of the task.
+:::code language="yaml" source="./snippets/microsoft-testing-platform-run-and-debug/azure-pipelines.yml":::
+
+The [`DotNetCoreCLI@2` task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) invokes `dotnet test` once for the solution. The command restores dependencies, builds the solution, and runs its MTP test modules in parallel. By default, `dotnet test` runs up to <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> modules at once. The example uses `--max-parallel-test-modules 4` to limit concurrency to four modules. Adjust the limit to match your agent's CPU, memory, and other resources.
+
+> [!IMPORTANT]
+> Select a solution file in `projects`, not a project-file pattern such as `**/*.csproj`. The task invokes `dotnet test` separately for each matched file, one after another. A single solution invocation lets `dotnet test` coordinate parallel execution across its test projects.
+
+Module-level parallelism is separate from parallel execution of tests within a module. To configure parallel tests within an assembly, use your test framework's settings. For MSTest, see [ParallelizeAttribute](unit-testing-mstest-writing-tests-controlling-execution.md#parallelizeattribute).
+
+With `publishTestResults: true`, the task adds `--report-trx` and `--results-directory` and publishes the reports to the pipeline run's **Tests** tab, even if tests fail. A nonzero `dotnet test` exit code also fails the task and pipeline.
+
+> [!NOTE]
+> MTP support in `DotNetCoreCLI@2` requires task version 2.263.0 or later. Keep `global.json` in the task's working directory so both the task and the .NET SDK select MTP.
+
+### Run a solution with a script
+
+For task versions without MTP support, or to control the CLI command directly, use a script and publish the TRX reports in a separate step. The same .NET SDK, `global.json`, and TRX extension requirements apply.
+
+:::code language="yaml" source="./snippets/microsoft-testing-platform-run-and-debug/azure-pipelines-script.yml":::
+
+The `succeededOrFailed()` condition publishes results after a successful or failed test run. The script's nonzero exit code still fails the pipeline. To avoid report overwrites across modules, don't assign the same TRX file name to every module. For naming and isolation options, see [Report file names](microsoft-testing-platform-test-reports.md#report-file-names).
+
+### Run a single test executable
+
+For a single test project, build or publish the project before you invoke its executable directly:
+
+```yml
+- task: CmdLine@2
+  displayName: "Run Contoso.MyTests"
+  inputs:
+    script: '.\Contoso.MyTests\bin\Debug\net10.0\Contoso.MyTests.exe'
+```
 
 ---
 
 ## See also
 
-- [Microsoft.Testing.Platform overview](./microsoft-testing-platform-intro.md)
-- [Microsoft.Testing.Platform CLI options reference](./microsoft-testing-platform-cli-options.md)
+- [MTP overview](./microsoft-testing-platform-intro.md)
+- [MTP CLI options reference](./microsoft-testing-platform-cli-options.md)
 - [Testing with `dotnet test`](./unit-testing-with-dotnet-test.md)
+- [`dotnet test` with MTP](../tools/dotnet-test-mtp.md)
+- [Run tests with MSTest](./unit-testing-mstest-running-tests.md)

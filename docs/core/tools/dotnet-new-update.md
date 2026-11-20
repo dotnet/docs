@@ -1,5 +1,6 @@
 ---
 title: dotnet new update
+ai-usage: ai-assisted
 description: The dotnet new update command updates installed template packages.
 ms.date: 10/28/2025
 ---
@@ -14,10 +15,10 @@ ms.date: 10/28/2025
 ## Synopsis
 
 ```dotnetcli
-dotnet new update [--interactive] [--add-source|--nuget-source <SOURCE>] 
+dotnet new update [--interactive] [--add-source|--nuget-source <SOURCE>]
     [-d|--diagnostics] [--verbosity <LEVEL>] [-h|--help]
 
-dotnet new update --check-only|--dry-run [--interactive] [--add-source|--nuget-source <SOURCE>] 
+dotnet new update --check-only|--dry-run [--interactive] [--add-source|--nuget-source <SOURCE>]
     [-d|--diagnostics] [--verbosity <LEVEL>] [-h|--help]
 ```
 
@@ -49,10 +50,10 @@ The `dotnet new update` command with `--check-only` option checks for available 
 
 - [!INCLUDE [interactive](includes/cli-interactive.md)]
 
-- **`--add-source|nuget-source <SOURCE>`**
-  
-  By default, `dotnet new install` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet source the package can be installed from. If `--nuget-source` is specified, the source will be added to the list of sources to be checked.  
-  To check the configured sources for the current directory use [`dotnet nuget list source`](dotnet-nuget-list-source.md). For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior). Available since .NET SDK 7.0.100.
+- **`--add-source|--nuget-source <SOURCE>`**
+
+  By default, `dotnet new update` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet sources for the operation. Specify `--nuget-source` to use a source in addition to the configured sources.
+  To check the configured sources for the current directory, use [`dotnet nuget list source`](dotnet-nuget-list-source.md). For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior). Available since .NET SDK 7.0.100.
 
 - **`--check-only|--dry-run`**
 
@@ -85,4 +86,4 @@ The `dotnet new update` command with `--check-only` option checks for available 
 - [dotnet new command](dotnet-new.md)
 - [dotnet new search command](dotnet-new-search.md)
 - [dotnet new install command](dotnet-new-install.md)
-- [Custom templates for dotnet new](custom-templates.md)
+- [.NET templates for authors](templates.md)

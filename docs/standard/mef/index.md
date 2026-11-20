@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # Managed Extensibility Framework (MEF)
 
-This article provides an overview of the Managed Extensibility Framework that was introduced in .NET Framework 4.
+This article provides an overview of the Managed Extensibility Framework.
 
 ## What is MEF?
 
@@ -48,7 +48,7 @@ An extensible application written by using MEF declares an import that can be fi
 
 ## Where MEF is available
 
-MEF is available in .NET Framework 4 and later versions, and in .NET 5 and later versions. You can use MEF in your client applications, whether they use Windows Forms, WPF, or any other technology, or in server applications that use ASP.NET.
+You can use MEF in your client applications, whether they use Windows Forms, WPF, or any other technology, or in server applications that use ASP.NET.
 
 ## MEF and MAF
 

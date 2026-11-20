@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Retrieving Database Schema Information"
 title: "Retrieving Database Schema Information"
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
 ms.assetid: 79038d52-f122-4fd4-9bfb-aaa22d6a114b
 ---
 # Retrieving Database Schema Information
@@ -10,7 +10,7 @@ Obtaining schema information from a database is accomplished with the process of
 
  Each of the .NET Framework managed providers implement the `GetSchema` method in the `Connection` class, and the schema information that is returned from the `GetSchema` method comes in the form of a <xref:System.Data.DataTable>. The `GetSchema` method is an overloaded method that provides optional parameters for specifying the schema collection to return, and restricting the amount of information returned.
 
- The .NET Framework Data Providers for OLE DB, ODBC, Oracle, and SqlClient provide a `GetSchemaTable` method that returns a DataTable describing the column metadata of the **DataReader**.
+ The .NET Framework Data Providers for OLE DB, ODBC, and Oracle, and Microsoft.Data.SqlClient provide a `GetSchemaTable` method that returns a DataTable describing the column metadata of the **DataReader**.
 
  The .NET Framework Data Provider for OLE DB also exposes schema information by using the <xref:System.Data.OleDb.OleDbConnection.GetOleDbSchemaTable*> method of the <xref:System.Data.OleDb.OleDbConnection> object. As arguments, `GetOleDbSchemaTable` takes an <xref:System.Data.OleDb.OleDbSchemaGuid> that identifies the schema information to return, and an array of restrictions on those returned columns. `GetOleDbSchemaTable` returns a <xref:System.Data.DataTable> populated with the requested schema information.
 
@@ -26,7 +26,7 @@ Obtaining schema information from a database is accomplished with the process of
  Describes all of the common schema collections supported by all of the .NET Framework managed providers.
 
  [SQL Server Schema Collections](sql-server-schema-collections.md)
- Describes the schema collection supported by the .NET Framework provider for SQL Server.
+ Describes the schema collections supported by Microsoft.Data.SqlClient.
 
  [Oracle Schema Collections](oracle-schema-collections.md)
  Describes the schema collection supported by the .NET Framework provider for Oracle.
@@ -51,8 +51,8 @@ Obtaining schema information from a database is accomplished with the process of
  <xref:System.Data.OracleClient.OracleConnection.GetSchema*>
  Describes the `GetSchema` method of the <xref:System.Data.OracleClient.OracleConnection> class.
 
- <xref:System.Data.SqlClient.SqlConnection.GetSchema*>
- Describes the `GetSchema` method of the <xref:System.Data.SqlClient.SqlConnection> class.
+ <xref:Microsoft.Data.SqlClient.SqlConnection.GetSchema*>
+ Describes the `GetSchema` method of the <xref:Microsoft.Data.SqlClient.SqlConnection> class.
 
  <xref:System.Data.Common.DbDataReader.GetSchemaTable*>
  Describes the `GetSchemaTable` method of the <xref:System.Data.Common.DbDataReader> class.
@@ -66,8 +66,8 @@ Obtaining schema information from a database is accomplished with the process of
  <xref:System.Data.OracleClient.OracleDataReader.GetSchemaTable*>
  Describes the `GetSchemaTable` method of the <xref:System.Data.OracleClient.OracleDataReader> class.
 
- <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable*>
- Describes the `GetSchemaTable` method of the <xref:System.Data.SqlClient.SqlDataReader> class.
+ <xref:Microsoft.Data.SqlClient.SqlDataReader.GetSchemaTable*>
+ Describes the `GetSchemaTable` method of the <xref:Microsoft.Data.SqlClient.SqlDataReader> class.
 
 ## See also
 

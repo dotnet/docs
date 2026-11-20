@@ -46,7 +46,7 @@ For more information, see [Debian container images upgraded to Debian 12](../../
 
 Chiseled images do not support globalization, by default. [`extra`](https://github.com/dotnet/dotnet-docker/issues/5021) images are provided, which include `icu` and `tzdata` packages.
 
-For more information on globalization and containers, see [Globalization Test App](https://github.com/dotnet/dotnet-docker/blob/main/samples/globalapp/README.md).
+For more information on globalization and containers, see [Globalization Test App](https://github.com/dotnet/dotnet-docker/blob/main/samples/ConsoleAppWithGlobalization/README.md).
 
 ### Build multi-platform container images
 

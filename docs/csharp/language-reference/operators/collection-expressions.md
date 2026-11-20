@@ -1,7 +1,8 @@
 ---
 title: "Collection expressions (Collection literals)"
 description: Collection expressions convert to many collection types. You can write literal values, expressions, or other collections to create a new collection.
-ms.date: 02/04/2026
+ms.date: 10/19/2026
+ai-usage: ai-assisted
 helpviewer_keywords:
   - "Collection expressions"
 ---
@@ -56,22 +57,22 @@ You can convert a *collection expression* to different collection types, includi
 >
 > This behavior is distinct from LINQ, where a sequence might not be instantiated until it is enumerated. You can't use collection expressions to generate an infinite sequence that won't be enumerated.
 
-The compiler uses static analysis to determine the most performant way to create the collection declared with a collection expression. For example, the empty collection expression, `[]`, can be realized as <xref:System.Array.Empty``1?displayProperty=nameWithType> if the target won't be modified after initialization. When the target is a <xref:System.Span`1?displayProperty=nameWithType> or <xref:System.ReadOnlySpan`1?displayProperty=nameWithType>, the storage might be stack allocated. The [collection expressions feature specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md) specifies the rules the compiler must follow.
+The compiler uses static analysis to determine the most performant way to create the collection declared with a collection expression. For example, the empty collection expression, `[]`, can be realized as <xref:System.Array.Empty``1?displayProperty=nameWithType> if the target won't be modified after initialization. When the target is a <xref:System.Span`1?displayProperty=nameWithType> or <xref:System.ReadOnlySpan`1?displayProperty=nameWithType>, the storage might be stack allocated. The [§12.8.25 Collection expressions](~/_csharpstandard/standard/expressions.md#12825-collection-expressions) clause of the C# standard specifies the rules the compiler must follow.
 
 Many APIs are overloaded with multiple collection types as parameters. Because a collection expression can be converted to many different expression types, these APIs might require casts on the collection expression to specify the correct conversion. The following conversion rules resolve some of the ambiguities:
 
-- A better element conversion is preferred over a better collection type conversion. In other words, the type of elements in the collection expression has more importance than the type of the collection. These rules are described in the feature spec for [better conversion from collection expression](~/_csharplang/proposals/csharp-13.0/collection-expressions-better-conversion.md).
+- A better element conversion is preferred over a better collection type conversion. In other words, the type of elements in the collection expression has more importance than the type of the collection. These rules are described in the [better conversion from expression](~/_csharpstandard/standard/expressions.md#12645-better-conversion-from-expression) clause of the C# language specification.
 - Conversion to <xref:System.Span`1>, <xref:System.ReadOnlySpan`1>, or another [`ref struct`](../builtin-types/ref-struct.md) type is better than a conversion to a non-ref struct type.
 - Conversion to a noninterface type is better than a conversion to an interface type.
 
-When you convert a collection expression to a `Span` or `ReadOnlySpan`, the span object's *safe context* comes from the *safe context* of all elements included in the span. For detailed rules, see the [Collection expression specification](~/_csharplang/proposals/csharp-12.0/collection-expressions.md#ref-safety).
+When you convert a collection expression to a `Span` or `ReadOnlySpan`, the span object's *safe context* comes from the *safe context* of all elements included in the span. For detailed rules, see [§9.7.2 Ref safe contexts](~/_csharpstandard/standard/variables.md#972-ref-safe-contexts) in the C# standard.
 
 ## Collection builder
 
 Collection expressions work with any collection type that is *well-behaved*. A well-behaved collection has the following characteristics:
 
-- The value of `Count` or `Length` on a [countable](./member-access-operators.md#index-from-end-operator-) collection produces the same value as the number of elements when enumerated.
-- The types in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are side-effect free. The compiler can optimize scenarios where these types might be used as intermediary values, but it doesn't expose them otherwise.
+- The value of `Count` or `Length` on a [countable](./member-access-operators.md#index-from-end-operator-) collection produces the same value as the number of elements when you enumerate the collection.
+- The types in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are side-effect free. The compiler optimizes scenarios where these types might be used as intermediary values, but it doesn't expose them otherwise.
 - A call to an applicable `.AddRange(x)` member on a collection results in the same final value as iterating over `x` and adding all of its enumerated values individually to the collection by using `.Add`.
 
 All the collection types in the .NET runtime are well-behaved.
@@ -103,33 +104,43 @@ The first parameter provides the name of the *Builder* class. The second attribu
 
 ## Collection expression arguments
 
-Starting in C# 15, you can pass arguments to the underlying collection's constructor or factory method by using a `with(...)` element as the first element in a collection expression. This feature enables you to specify capacity, comparers, or other constructor parameters directly within the collection expression syntax. For more information, see the [collection expression arguments feature specification](~/_csharplang/proposals/collection-expression-arguments.md).
+Starting in C# 15, you can pass arguments to the underlying collection's constructor or factory method by using a `with(...)` element as the first element in a collection expression. This feature enables you to specify capacity, comparers, or other constructor parameters directly within the collection expression syntax. For more information, see the [collection expression arguments feature specification](~/_csharplang/proposals/csharp-15.0/collection-expression-arguments.md).
 
-The `with(...)` element must be the first element in the collection expression. The arguments declared in the `with(...)` element are passed to the appropriate constructor or create method based on the target type. You can use any valid expression for the arguments in the `with` element.
+The `with(...)` element must be the first element in the collection expression. The arguments declared in the `with(...)` element go to the appropriate constructor or create method based on the target type. You can use any valid expression for the arguments in the `with` element.
+
+Argument expressions and element expressions are evaluated once, in left-to-right order, with the `with(...)` arguments evaluated before the collection elements. For a spread such as `.. GetItems()`, evaluation calls `GetItems()` to obtain the collection to spread. Enumeration is the separate step that reads items from that collection and adds them to the result. The compiler evaluates `GetItems()` at its left-to-right position, but can delay enumeration until after it evaluates later element expressions. Don't rely on side effects from enumeration occurring before those later expressions.
 
 ### Constructor arguments
 
-When the target type is a class or struct that implements <xref:System.Collections.IEnumerable?displayProperty=nameWithType>, the arguments in `with(...)` are evaluated and the results are passed to the constructor. The compiler uses overload resolution to select the best matching constructor:
+When the target type is a class or struct that implements <xref:System.Collections.IEnumerable?displayProperty=nameWithType>, the arguments in `with(...)` are evaluated and the results go to the constructor. The compiler uses overload resolution to select the best matching constructor:
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="WithArgumentsExamples":::
 
 In the preceding example:
 
-- The `List<string>` constructor with a `capacity` parameter is called with `values.Length * 2`.
-- The `HashSet<string>` constructor with an <xref:System.Collections.Generic.IEqualityComparer`1?displayProperty=nameWithType> parameter is called with `StringComparer.OrdinalIgnoreCase`.
+- The `List<string>` constructor with a `capacity` parameter gets called with `values.Length * 2`.
+- The `HashSet<string>` constructor with an <xref:System.Collections.Generic.IEqualityComparer`1?displayProperty=nameWithType> parameter gets called with `StringComparer.OrdinalIgnoreCase`.
 - For interface target types like <xref:System.Collections.Generic.IList`1?displayProperty=nameWithType>, the compiler creates a `List<T>` with the specified capacity.
+
+For a target type constructed this way, `with(...)` is required if the type has no accessible parameterless constructor. Use it to supply the arguments to an accessible constructor. For example, `NamedValues` requires a name and inherits the collection behavior of `List<int>`:
+
+:::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="RequiredConstructor":::
+
+This collection expression supplies the required name and then adds the elements:
+
+:::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="RequiredConstructorUsage":::
 
 ### Collection builder arguments
 
-For types with a <xref:System.Runtime.CompilerServices.CollectionBuilderAttribute?displayProperty=nameWithType>, the arguments declared in the `with(...)` element are evaluated and the results are passed to the create method *before* the `ReadOnlySpan<T>` parameter. This feature allows create methods to accept configuration parameters:
+For types with a <xref:System.Runtime.CompilerServices.CollectionBuilderAttribute?displayProperty=nameWithType>, the `with(...)` element evaluates the declared arguments and sends the results to the create method *before* the `ReadOnlySpan<T>` parameter. This feature allows create methods to accept configuration parameters:
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="BuilderClassWithComparer":::
 
-You can then use the `with(...)` element to pass the comparer:
+Use the `with(...)` element to pass the comparer:
 
 :::code language="csharp" source="./snippets/shared/CollectionExpressionExamples.cs" id="WithBuilderArgumentsExample":::
 
-The create method is selected using overload resolution based on the arguments provided. The `ReadOnlySpan<T>` containing the collection elements is always the last parameter.
+Overload resolution selects the create method based on the arguments you provide. The `ReadOnlySpan<T>` containing the collection elements is always the last parameter.
 
 ### Interface target types
 
@@ -149,3 +160,37 @@ The `with(...)` element has the following restrictions:
 - It must be the first element in the collection expression.
 - Arguments can't have `dynamic` type.
 - It's not supported for arrays or span types (`Span<T>`, `ReadOnlySpan<T>`).
+- The arguments in `with(...)` don't affect whether a conversion exists from the collection expression to a candidate target type. Overload resolution and type inference for an enclosing call ignore those arguments. Only the presence of a `with(...)` element, not its arguments, affects whether that conversion exists. Once the target type is determined, the arguments do participate in overload resolution for its constructor or collection builder method.
+
+For example, a comparer argument doesn't tell the compiler to choose a `HashSet<string>` overload over a `List<string>` overload:
+
+```csharp
+class Examples
+{
+    static void Print(List<string> values) { }
+    static void Print(HashSet<string> values) { }
+
+    static void Example()
+    {
+        Print([with(StringComparer.OrdinalIgnoreCase), "one", "ONE"]);
+    }
+}
+```
+
+The call produces **CS0121**: "The call is ambiguous between the following methods or properties." Although only `HashSet<string>` has a constructor that accepts this comparer, the compiler ignores the `with(...)` arguments when it chooses the `Print` overload. Assign the collection expression to a `HashSet<string>` variable first to select that overload.
+
+Similarly, `with(...)` arguments don't supply element types for generic type inference:
+
+```csharp
+class Examples
+{
+    static void Use<T>(List<T> values) { }
+
+    static void Example()
+    {
+        Use([with(10)]);
+    }
+}
+```
+
+This call produces **CS0411**: "The type arguments can't be inferred from the usage. Try specifying the type arguments explicitly." The capacity argument doesn't determine `T`, and the collection has no elements from which to infer it. Specify the type argument, such as `Use<int>([with(10)])`.

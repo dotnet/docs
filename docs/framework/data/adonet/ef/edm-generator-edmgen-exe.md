@@ -1,11 +1,15 @@
 ---
 title: "EDM Generator (EdmGen.exe)"
 description: "Learn more about the EDM Generator tool (EdmGen.exe), which is a command-line tool used for working with Entity Framework model and mapping files."
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
+ai-usage: ai-assisted
 ms.custom: sfi-ropc-nochange
 ---
 
 # EDM Generator (EdmGen.exe)
+
+> [!IMPORTANT]
+> Do not use `System.Data.SqlClient` for new development. Use [Microsoft.Data.SqlClient](/sql/connect/ado-net/introduction-microsoft-data-sqlclient-namespace) for new SQL Server data-access code. The `EdmGen.exe` tool documented here belongs to the built-in Entity Framework implementation in .NET Framework and defaults to its `System.Data.SqlClient` provider. Changing that integration requires more than replacing the provider name.
 
 EdmGen.exe is a command-line tool used for working with Entity Framework model and mapping files. You can use the EdmGen.exe tool to do the following:
 

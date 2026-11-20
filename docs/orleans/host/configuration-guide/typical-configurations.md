@@ -1,7 +1,7 @@
 ---
-title: Typical configurations
+title: Typical Configurations
 description: Learn about typical configurations in .NET Orleans.
-ms.date: 01/21/2026
+ms.date: 10/19/2026
 ms.topic: reference
 zone_pivot_groups: orleans-version
 ms.custom: sfi-ropc-nochange
@@ -13,9 +13,9 @@ Below are examples of typical configurations you can use for development and pro
 
 :::zone target="docs" pivot="orleans-8-0,orleans-9-0,orleans-10-0"
 
-## Recommended: .NET Aspire configuration
+## Recommended: Aspire configuration
 
-[.NET Aspire](../aspire-integration.md) is the recommended approach for configuring Orleans applications. Aspire provides declarative resource management, automatic service discovery, built-in observability, and simplified deployment—eliminating most manual configuration.
+[Aspire](../aspire-integration.md) is the recommended approach for configuring Orleans applications. Aspire provides declarative resource management, automatic service discovery, built-in observability, and simplified deployment—eliminating most manual configuration.
 
 ### Production configuration with Redis
 
@@ -121,7 +121,7 @@ builder.Build().Run();
 > [!IMPORTANT]
 > You must call the appropriate `AddKeyed*` method (such as `AddKeyedRedisClient`, `AddKeyedAzureTableServiceClient`, or `AddKeyedAzureBlobServiceClient`) to register the backing resource in the dependency injection container. Orleans providers look up resources by their keyed service name—if you skip this step, Orleans won't be able to resolve the resource and will throw a dependency resolution error at runtime.
 
-For comprehensive documentation on Orleans and .NET Aspire integration, see [Orleans and .NET Aspire integration](../aspire-integration.md).
+For comprehensive documentation on Orleans and Aspire integration, see [Orleans and Aspire integration](../aspire-integration.md).
 
 :::zone-end
 
@@ -133,7 +133,7 @@ For more information, see [Local development configuration](local-development-co
 
 ## Traditional configurations (without Aspire)
 
-The following sections describe traditional Orleans configurations that don't use .NET Aspire. These are useful when Aspire isn't available or when you need fine-grained control over Orleans configuration.
+The following sections describe traditional Orleans configurations that don't use Aspire. These are useful when Aspire isn't available or when you need fine-grained control over Orleans configuration.
 
 :::zone-end
 
@@ -330,7 +330,7 @@ var client = new ClientBuilder()
 For a reliable production deployment using SQL Server, supply a SQL Server connection string.
 
 > [!NOTE]
-> Starting with Orleans 10.0, ADO.NET providers require the `Microsoft.Data.SqlClient` package instead of `System.Data.SqlClient`. Use the invariant `Microsoft.Data.SqlClient` in Orleans 10.0 and later.
+> For SQL Server, install the `Microsoft.Data.SqlClient` NuGet package and use the `Microsoft.Data.SqlClient` invariant in Orleans 7.0 and later versions.
 
 ### Orleans 10.0+
 
@@ -348,7 +348,7 @@ builder.UseOrleans(siloBuilder =>
     .UseAdoNetClustering(options =>
     {
         options.ConnectionString = connectionString;
-        options.Invariant = "Microsoft.Data.SqlClient"; // Orleans 10.0+
+        options.Invariant = "Microsoft.Data.SqlClient";
     })
     .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000);
 });
@@ -374,7 +374,7 @@ builder.UseOrleans(siloBuilder =>
     .UseAdoNetClustering(options =>
     {
         options.ConnectionString = connectionString;
-        options.Invariant = "System.Data.SqlClient";
+        options.Invariant = "Microsoft.Data.SqlClient";
     })
     .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000);
 });
@@ -400,8 +400,6 @@ builder.UseOrleansClient(clientBuilder =>
     .UseAdoNetClustering(options =>
     {
         options.ConnectionString = connectionString;
-        // Use "Microsoft.Data.SqlClient" for Orleans 10.0+
-        // Use "System.Data.SqlClient" for Orleans 7.0-9.x
         options.Invariant = "Microsoft.Data.SqlClient";
     });
 });
@@ -470,6 +468,8 @@ await host.StartAsync();
 
 For a reliable production deployment using SQL Server, supply a SQL Server connection string.
 
+Install the `Microsoft.Data.SqlClient` NuGet package and use the `Microsoft.Data.SqlClient` invariant.
+
 Silo configuration:
 
 ```csharp
@@ -483,7 +483,7 @@ var silo = new SiloHostBuilder()
     .UseAdoNetClustering(options =>
     {
       options.ConnectionString = connectionString;
-      options.Invariant = "System.Data.SqlClient";
+      options.Invariant = "Microsoft.Data.SqlClient";
     })
     .ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
     .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Information).AddConsole())
@@ -504,7 +504,7 @@ var client = new ClientBuilder()
     .UseAdoNetClustering(options =>
     {
       options.ConnectionString = connectionString;
-      options.Invariant = "System.Data.SqlClient";
+      options.Invariant = "Microsoft.Data.SqlClient";
     })
     .Build();
 ```

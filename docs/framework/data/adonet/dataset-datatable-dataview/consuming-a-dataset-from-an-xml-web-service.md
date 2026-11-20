@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Consume a DataSet from an XML web service"
 title: Consume a DataSet from an XML Web Service
-ms.date: 07/14/2020
+ms.date: 10/23/2026
 dev_langs:
   - "csharp"
   - "vb"
@@ -19,23 +19,25 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
 
 ## Create an XML web service
 
+For SQL Server access, install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package in the .NET Framework web service project. Configure SQL Server with a certificate that the web server trusts. The examples use Windows integrated authentication.
+
 1. Create the XML Web service.
 
      In the example, an XML Web service is created that returns data, in this case a list of customers from the `Northwind` database, and receives a `DataSet` with updates to the data, which the XML Web service resolves back to the original data source.
 
-     The XML Web service exposes two methods: **GetCustomers**, to return the list of customers, and **UpdateCustomers**, to resolve updates back to the data source. The XML Web service is stored in a file on the Web server called DataSetSample.asmx. The following code outlines the contents of DataSetSample.asmx.
+     The XML Web service exposes two methods: `GetCustomers`, to return the list of customers, and `UpdateCustomers`, to resolve updates back to the data source. The XML Web service is stored in a file on the Web server called `DataSetSample.asmx`. The following code outlines the contents of `DataSetSample.asmx`.
 
     ```vb
     <% @ WebService Language = "vb" Class = "Sample" %>
     Imports System
     Imports System.Data
-    Imports System.Data.SqlClient
+    Imports Microsoft.Data.SqlClient
     Imports System.Web.Services
 
     <WebService(Namespace:="http://microsoft.com/webservices/")> _
     Public Class Sample
 
-    Public connection As SqlConnection = New SqlConnection("Data Source=(local);Integrated Security=SSPI;Initial Catalog=Northwind")
+    Public connection As SqlConnection = New SqlConnection("Data Source=(local);Integrated Security=SSPI;Initial Catalog=Northwind;Encrypt=true;TrustServerCertificate=false")
 
       <WebMethod( Description := "Returns Northwind Customers", EnableSession := False )> _
       Public Function GetCustomers() As DataSet
@@ -59,16 +61,16 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
         adapter.InsertCommand.Parameters.Add( _
           "@CustomerID", SqlDbType.NChar, 5, "CustomerID")
         adapter.InsertCommand.Parameters.Add( _
-          "@CompanyName", SqlDbType.NChar, 15, "CompanyName")
+          "@CompanyName", SqlDbType.NVarChar, 40, "CompanyName")
 
         adapter.UpdateCommand = New SqlCommand( _
           "UPDATE Customers Set CustomerID = @CustomerID, " & _
           "CompanyName = @CompanyName WHERE CustomerID = " & _
-          @OldCustomerID", connection)
+          "@OldCustomerID", connection)
         adapter.UpdateCommand.Parameters.Add( _
           "@CustomerID", SqlDbType.NChar, 5, "CustomerID")
         adapter.UpdateCommand.Parameters.Add( _
-          "@CompanyName", SqlDbType.NChar, 15, "CompanyName")
+          "@CompanyName", SqlDbType.NVarChar, 40, "CompanyName")
 
         Dim parameter As SqlParameter = _
           adapter.UpdateCommand.Parameters.Add( _
@@ -93,13 +95,13 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
     <% @ WebService Language = "C#" Class = "Sample" %>
     using System;
     using System.Data;
-    using System.Data.SqlClient;
+    using Microsoft.Data.SqlClient;
     using System.Web.Services;
 
     [WebService(Namespace="http://microsoft.com/webservices/")]
     public class Sample
     {
-      public SqlConnection connection = new SqlConnection("Data Source=(local);Integrated Security=SSPI;Initial Catalog=Northwind");
+      public SqlConnection connection = new SqlConnection("Data Source=(local);Integrated Security=SSPI;Initial Catalog=Northwind;Encrypt=true;TrustServerCertificate=false");
 
       [WebMethod( Description = "Returns Northwind Customers", EnableSession = false )]
       public DataSet GetCustomers()
@@ -126,7 +128,7 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
         adapter.InsertCommand.Parameters.Add(
           "@CustomerID", SqlDbType.NChar, 5, "CustomerID");
         adapter.InsertCommand.Parameters.Add(
-          "@CompanyName", SqlDbType.NChar, 15, "CompanyName");
+          "@CompanyName", SqlDbType.NVarChar, 40, "CompanyName");
 
         adapter.UpdateCommand = new SqlCommand(
           "UPDATE Customers Set CustomerID = @CustomerID, " +
@@ -135,7 +137,7 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
         adapter.UpdateCommand.Parameters.Add(
           "@CustomerID", SqlDbType.NChar, 5, "CustomerID");
         adapter.UpdateCommand.Parameters.Add(
-          "@CompanyName", SqlDbType.NChar, 15, "CompanyName");
+          "@CompanyName", SqlDbType.NVarChar, 40, "CompanyName");
         SqlParameter parameter = adapter.UpdateCommand.Parameters.Add(
           "@OldCustomerID", SqlDbType.NChar, 5, "CustomerID");
         parameter.SourceVersion = DataRowVersion.Original;
@@ -160,25 +162,25 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
 
      Clients of the XML Web service require a SOAP proxy in order to consume the exposed methods. You can have Visual Studio generate this proxy for you. By setting a Web reference to an existing Web service from within Visual Studio, all the behavior described in this step occurs transparently. If you want to create the proxy class yourself, continue with this discussion. In most circumstances, however, using Visual Studio to create the proxy class for the client application is sufficient.
 
-     A proxy can be created using the Web Services Description Language Tool. For example, if the XML Web service is exposed at the URL `http://myserver/data/DataSetSample.asmx`, issue a command such as the following to create a Visual Basic .NET proxy with a namespace of **WebData.DSSample** and store it in the file sample.vb.
+     A proxy can be created using the Web Services Description Language Tool. For example, if the XML Web service is exposed at the URL `http://myserver/data/DataSetSample.asmx`, issue a command such as the following to create a Visual Basic .NET proxy with a namespace of `DsSample` and store it in the file `sample.vb`.
 
     ```console
-    wsdl /l:VB -out:sample.vb http://myserver/data/DataSetSample.asmx /n:WebData.DSSample
+    wsdl /l:VB -out:sample.vb http://myserver/data/DataSetSample.asmx /n:DsSample
     ```
 
-     To create a C# proxy in the file sample.cs, issue the following command.
+     To create a C# proxy in the file `sample.cs`, issue the following command.
 
     ```console
-    wsdl -l:CS -out:sample.cs http://myserver/data/DataSetSample.asmx -n:WebData.DSSample
+    wsdl -l:CS -out:sample.cs http://myserver/data/DataSetSample.asmx -n:DsSample
     ```
 
-     The proxy can then be compiled as a library and imported into the XML Web service client. To compile the Visual Basic .NET proxy code stored in sample.vb as sample.dll, issue the following command.
+     The proxy can then be compiled as a library and imported into the XML Web service client. To compile the Visual Basic .NET proxy code stored in `sample.vb` as `sample.dll`, issue the following command.
 
     ```console
     vbc -t:library -out:sample.dll sample.vb -r:System.dll -r:System.Web.Services.dll -r:System.Data.dll -r:System.Xml.dll
     ```
 
-     To compile the C# proxy code stored in sample.cs as sample.dll, issue the following command.
+     To compile the C# proxy code stored in `sample.cs` as `sample.dll`, issue the following command.
 
     ```console
     csc -t:library -out:sample.dll sample.cs -r:System.dll -r:System.Web.Services.dll -r:System.Data.dll -r:System.Xml.dll
@@ -186,11 +188,11 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
 
 3. Create an XML Web service client.
 
-     If you want to have Visual Studio generate the Web service proxy class for you, simply create the client project, and, in the Solution Explorer window, right-click the project, and then select `Add` > **Service Reference**. In the **Add Service Reference** dialog box, select **Advanced**, and then select **Add Web Reference**. Select the Web service from the list of available Web services (this may require supplying the address of the Web service endpoint if the Web service isn't available within the current solution or on the current computer). If you create the XML Web service proxy yourself (as described in the previous step), you can import it into your client code and consume the XML Web service methods.
+     If you want to have Visual Studio generate the Web service proxy class for you, simply create the client project, and, in the Solution Explorer window, right-click the project, and then select **Add** > **Service Reference**. In the **Add Service Reference** dialog box, select **Advanced**, and then select **Add Web Reference**. Select the Web service from the list of available Web services (this may require supplying the address of the Web service endpoint if the Web service isn't available within the current solution or on the current computer). If you create the XML Web service proxy yourself (as described in the previous step), you can import it into your client code and consume the XML Web service methods.
 
-     The following sample code imports the proxy library, calls `GetCustomers` to get a list of customers, adds a new customer, and then returns a `DataSet` with the updates to **UpdateCustomers**.
+     The following sample code imports the proxy library, calls `GetCustomers` to get a list of customers, adds a new customer, and then returns a `DataSet` with the updates to `UpdateCustomers`.
 
-     The example passes the `DataSet` returned by **DataSet.GetChanges** to `UpdateCustomers` because only modified rows need to be passed to **UpdateCustomers**. `UpdateCustomers` returns the resolved **DataSet**, which you can then `Merge` into the existing `DataSet` to incorporate the resolved changes and any row error information from the update. The following code assumes that you have used Visual Studio to create the Web reference, and that you have renamed the Web reference to DsSample in the **Add Web Reference** dialog box.
+     The example passes the `DataSet` returned by `DataSet.GetChanges` to `UpdateCustomers` because only modified rows need to be passed to `UpdateCustomers`. `UpdateCustomers` returns the resolved `DataSet`, which you can then `Merge` into the existing `DataSet` to incorporate the resolved changes and any row error information from the update. The following code uses the `DsSample` namespace from the manual proxy commands. If you use Visual Studio to create the Web reference, rename the Web reference to `DsSample` in the **Add Web Reference** dialog box.
 
     ```vb
     Imports System
@@ -204,7 +206,7 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
         Dim customersTable As DataTable = _
           customersDataSet.Tables("Customers")
 
-        Dim rowAs DataRow = customersTable.NewRow()
+        Dim row As DataRow = customersTable.NewRow()
         row("CustomerID") = "ABCDE"
         row("CompanyName") = "New Company Name"
         customersTable.Rows.Add(row)
@@ -226,7 +228,7 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
     {
       public static void Main()
       {
-        Sample proxySample = new DsSample.Sample();  // Proxy object.
+        DsSample.Sample proxySample = new DsSample.Sample();  // Proxy object.
         DataSet customersDataSet = proxySample.GetCustomers();
         DataTable customersTable = customersDataSet.Tables["Customers"];
 
@@ -246,13 +248,13 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
     }
     ```
 
-     If you decide to create the proxy class yourself, you must take the following extra steps. To compile the sample, supply the proxy library that was created (sample.dll) and the related .NET libraries. To compile the Visual Basic .NET version of the sample, stored in the file client.vb, issue the following command.
+     If you decide to create the proxy class yourself, you must take the following extra steps. To compile the sample, supply the proxy library that was created (`sample.dll`) and the related .NET libraries. To compile the Visual Basic .NET version of the sample, stored in the file `client.vb`, issue the following command.
 
     ```console
     vbc client.vb -r:sample.dll -r:System.dll -r:System.Data.dll -r:System.Xml.dll -r:System.Web.Services.dll
     ```
 
-     To compile the C# version of the sample, stored in the file client.cs, issue the following command.
+     To compile the C# version of the sample, stored in the file `client.cs`, issue the following command.
 
     ```console
     csc client.cs -r:sample.dll -r:System.dll -r:System.Data.dll -r:System.Xml.dll -r:System.Web.Services.dll

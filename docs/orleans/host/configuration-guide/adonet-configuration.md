@@ -1,7 +1,7 @@
 ---
-title: ADO.NET database configuration
+title: ADO.NET Database Configuration
 description: Learn about ADO.NET database configurations in .NET Orleans.
-ms.date: 05/23/2025
+ms.date: 10/19/2026
 ms.topic: how-to
 ---
 
@@ -9,11 +9,17 @@ ms.topic: how-to
 
 The following sections contain links to SQL scripts for configuring your database and the corresponding ADO.NET invariant used to configure ADO.NET providers in Orleans. Customize these scripts as needed for your deployment. Before executing scripts for Clustering, Persistence, or Reminders, you need to create the main tables using the Main scripts.
 
+If you're upgrading an existing ADO.NET schema, or if your setup fails with an error such as "System.ArgumentException: Not all required queries found", also apply the appropriate migration scripts for the providers you use. These scripts bring the schema and stored queries up to date:
+
+- [Clustering migrations](https://github.com/dotnet/orleans/tree/main/src/AdoNet/Orleans.Clustering.AdoNet/Migrations)
+- [Persistence migrations](https://github.com/dotnet/orleans/tree/main/src/AdoNet/Orleans.Persistence.AdoNet/Migrations)
+- [Reminders migrations](https://github.com/dotnet/orleans/tree/main/src/AdoNet/Orleans.Reminders.AdoNet/Migrations)
+
 ## Main scripts
 
 | Database | Script | NuGet package| ADO.NET invariant |
 |--|--|--|--|
-| SQL Server | [SQLServer-Main.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Shared/SQLServer-Main.sql) | [System.Data.SqlClient](https://www.nuget.org/packages/System.Data.SqlClient/) | `System.Data.SqlClient` |
+| SQL Server | [SQLServer-Main.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Shared/SQLServer-Main.sql) | [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient/) | `Microsoft.Data.SqlClient` |
 | MySQL / MariaDB | [MySQL-Main.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Shared/MySQL-Main.sql) | [MySql.Data](https://www.nuget.org/packages/MySql.Data/) | `MySql.Data.MySqlClient` |
 | PostgreSQL | [PostgreSQL-Main.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Shared/PostgreSQL-Main.sql) | [Npgsql](https://www.nuget.org/packages/Npgsql/) | `Npgsql` |
 | Oracle | [Oracle-Main.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Shared/Oracle-Main.sql) | [ODP.net](https://www.nuget.org/packages/Oracle.ManagedDataAccess/) | `Oracle.DataAccess.Client` |
@@ -22,7 +28,7 @@ The following sections contain links to SQL scripts for configuring your databas
 
 | Database | Script | NuGet package| ADO.NET invariant |
 |--|--|--|--|
-| SQL Server | [SQLServer-Clustering.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Clustering.AdoNet/SQLServer-Clustering.sql) | [System.Data.SqlClient](https://www.nuget.org/packages/System.Data.SqlClient/) | `System.Data.SqlClient` |
+| SQL Server | [SQLServer-Clustering.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Clustering.AdoNet/SQLServer-Clustering.sql) | [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient/) | `Microsoft.Data.SqlClient` |
 | MySQL / MariaDB | [MySQL-Clustering.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Clustering.AdoNet/MySQL-Clustering.sql) | [MySql.Data](https://www.nuget.org/packages/MySql.Data/) | `MySql.Data.MySqlClient` |
 | PostgreSQL | [PostgreSQL-Clustering.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Clustering.AdoNet/PostgreSQL-Clustering.sql) | [Npgsql](https://www.nuget.org/packages/Npgsql/) | `Npgsql` |
 | Oracle | [Oracle-Clustering.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Clustering.AdoNet/Oracle-Clustering.sql) | [ODP.net](https://www.nuget.org/packages/Oracle.ManagedDataAccess/) | `Oracle.DataAccess.Client` |
@@ -31,7 +37,7 @@ The following sections contain links to SQL scripts for configuring your databas
 
 | Database | Script | NuGet package| ADO.NET invariant |
 |--|--|--|--|
-| SQL Server* | [SQLServer-Persistence.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/SQLServer-Persistence.sql) | [System.Data.SqlClient](https://www.nuget.org/packages/System.Data.SqlClient/) | `System.Data.SqlClient` |
+| SQL Server* | [SQLServer-Persistence.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/SQLServer-Persistence.sql) | [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient/) | `Microsoft.Data.SqlClient` |
 | MySQL / MariaDB | [MySQL-Persistence.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/MySQL-Persistence.sql) | [MySql.Data](https://www.nuget.org/packages/MySql.Data/) | `MySql.Data.MySqlClient` |
 | PostgreSQL | [PostgreSQL-Persistence.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/PostgreSQL-Persistence.sql) | [Npgsql](https://www.nuget.org/packages/Npgsql/) | `Npgsql` |
 | Oracle | [Oracle-Persistence.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/Oracle-Persistence.sql) | [ODP.net](https://www.nuget.org/packages/Oracle.ManagedDataAccess/) | `Oracle.DataAccess.Client` |
@@ -42,7 +48,7 @@ The following sections contain links to SQL scripts for configuring your databas
 
 | Database | Script | NuGet package| ADO.NET invariant |
 |--|--|--|--|
-| SQL Server | [SQLServer-Reminders.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Reminders.AdoNet/SQLServer-Reminders.sql) | [System.Data.SqlClient](https://www.nuget.org/packages/System.Data.SqlClient/) | `System.Data.SqlClient` |
+| SQL Server | [SQLServer-Reminders.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Reminders.AdoNet/SQLServer-Reminders.sql) | [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient/) | `Microsoft.Data.SqlClient` |
 | MySQL / MariaDB | [MySQL-Reminders.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Reminders.AdoNet/MySQL-Reminders.sql) | [MySql.Data](https://www.nuget.org/packages/MySql.Data/) | `MySql.Data.MySqlClient` |
 | PostgreSQL | [PostgreSQL-Reminders.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Reminders.AdoNet/PostgreSQL-Reminders.sql) | [Npgsql](https://www.nuget.org/packages/Npgsql/) | `Npgsql` |
 | Oracle | [Oracle-Reminders.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Reminders.AdoNet/Oracle-Reminders.sql) | [ODP.net](https://www.nuget.org/packages/Oracle.ManagedDataAccess/) | `Oracle.DataAccess.Client` |

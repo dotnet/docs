@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: NativeAOT uses lib prefix for native library outputs on Unix"
 description: "Learn about the breaking change in .NET 11 where NativeAOT applies the lib prefix by default to non-executable native library outputs on Unix."
-ms.date: 04/03/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ Starting in .NET 11, NativeAOT applies the `lib` prefix (for example, `libmylib.
 
 ## Version introduced
 
-.NET 11 Preview 3
+.NET 11
 
 ## Previous behavior
 

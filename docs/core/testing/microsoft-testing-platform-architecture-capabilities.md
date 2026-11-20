@@ -1,14 +1,15 @@
 ---
-title: Microsoft.Testing.Platform capabilities overview
-description: Learn about Microsoft.Testing.Platform capabilities concept.
+title: Microsoft.Testing.Platform (MTP) capabilities overview
+description: Learn about MTP capabilities concept.
 author: MarcoRossignoli
 ms.author: mrossignoli
-ms.date: 07/11/2024
+ms.date: 11/13/2026
+ai-usage: ai-assisted
 ---
 
-# Microsoft.Testing.Platform capabilities
+# Microsoft.Testing.Platform (MTP) capabilities
 
-In the context of Microsoft.Testing.Platform, a *capability* refers to the *potential to perform a specific action or provide specific information*. It's a means for the testing framework and extensions to *declare* their *ability* to *operate* in a certain manner or provide specific information to the *requesters*.
+In the context of MTP, a *capability* refers to the *potential to perform a specific action or provide specific information*. It's a means for the testing framework and extensions to *declare* their *ability* to *operate* in a certain manner or provide specific information to the *requesters*.
 
 The *requesters* can be any component involved in a test session, such as the platform, an extension, or the testing framework itself.
 
@@ -19,7 +20,7 @@ The primary objective of the capability system is to facilitate effective commun
 Let's consider a hypothetical example to demonstrate the necessity of a capability system.
 
 > [!NOTE]
-> This example is purely for illustrative purposes and isn't currently implemented within Microsoft.Testing.Platform or any testing framework.
+> This example is purely for illustrative purposes and isn't currently implemented within MTP or any testing framework.
 
 Imagine a situation where you have an extension that requires the testing framework to execute no more than one test at a time. Furthermore, after each test, the extension needs to know the CPU usage for that specific test.
 
@@ -28,7 +29,7 @@ To accommodate the preceding scenario, you need to inquire from the testing fram
 1. It has the capability to execute only one test at a time.
 2. It can provide information regarding the amount of CPU consumed by each test.
 
-How can the extension determine if the testing framework has the ability to operate in this mode and provide CPU usage information for a test session? In Microsoft.Testing.Platform, this capability is represented by an implementation the `Microsoft.Testing.Platform.Capabilities.ICapability` interface:
+How can the extension determine if the testing framework has the ability to operate in this mode and provide CPU usage information for a test session? In MTP, this capability is represented by an implementation the `Microsoft.Testing.Platform.Capabilities.ICapability` interface:
 
 ```csharp
 // Base capabilities contracts
@@ -76,7 +77,7 @@ If the testing framework implements this interface, at runtime, the following ca
 The hypothetical code fragment inside the extension could be something like:
 
 ```csharp
-IServiceProvider provider = null; // TODO: Get IServiceProvider.
+IServiceProvider serviceProvider = null; // TODO: Get IServiceProvider.
 var capabilities = serviceProvider.GetRequiredService<ITestFrameworkCapabilities>();
 
 // Utilize the `GetCapability` API to search for the specific capability to query.
@@ -104,14 +105,14 @@ The preceding example illustrates how the capability infrastructure enables a po
 
 It's evident that not all details can be communicated through an interface. Considering the previous example, what should the extension expect if the `CanProvidePerTestCpuConsumption` is supported? What kind of custom information is expected to be transmitted via the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) by the testing framework? The solution is **documentation of the capability**. It's the responsibility of the capability *owner* to design, ship, and document it as clearly as possible to assist implementors who want to effectively *collaborate* with the extension that requires the specific capability.
 
-For instance, the TRX report extension enables the testing framework to implement the necessary capability to accurately generate a TRX report. The extension to register is included in the <https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport> NuGet package, but the capability to implement is found in the *contract only*<https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport.Abstractions> NuGet package.
+For instance, the TRX report extension enables the testing framework to implement the necessary capability to accurately generate a TRX report. The extension to register is included in the <https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport> NuGet package, but the capability to implement is found in the [contract-only package](https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport.Abstractions).
 
 In conclusion, let's summarize the primary aspects of the capability system:
 
 * It's essential for facilitating clear and stable communication between components.
 * All capabilities should inherit from `ICapability` or an interface that inherits from it, and are exposed through a collection with the `ICapabilities` interface.
 * It aids in the evolution of features without causing breaking changes. If a certain capability isn't supported, appropriate action can be taken.
-* The responsibility of designing, shipping, and documenting the usage of a capability lies with the *capability owner*. Microsoft.Testing.Platform can also *own* a capability in the same way as any other extension.
+* The responsibility of designing, shipping, and documenting the usage of a capability lies with the *capability owner*. MTP can also *own* a capability in the same way as any other extension.
 
 ## Framework capabilities
 
@@ -119,8 +120,112 @@ The platform exposes a specialized interface named `ITestFrameworkCapability` th
 
 ### `IBannerMessageOwnerCapability`
 
-An optional [test framework capability](#framework-capabilities) that allows the test framework to provide the banner message to the platform. If the message is `null` or if the capability is n't present, the platform will use its default banner message.
+An optional [test framework capability](#framework-capabilities) allows the test framework to provide the banner message to the platform. If the message is `null` or the capability isn't present, the platform uses its default banner message.
 
 This capability implementation allows you to abstract away the various conditions that the test framework may need to consider when deciding whether or not the banner message should be displayed.
 
 The platform exposes the [`IPlatformInformation` service](./microsoft-testing-platform-architecture-services.md#the-iplatforminformation-service) to provide some information about the platform that could be useful when building your custom banner message.
+
+### `ITrxReportCapability`
+
+To supply framework-specific metadata to the [TRX report extension](./microsoft-testing-platform-test-reports.md#visual-studio-test-reports-trx), implement `Microsoft.Testing.Extensions.TrxReport.Abstractions.ITrxReportCapability`. Reference the [Microsoft.Testing.Extensions.TrxReport.Abstractions](https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport.Abstractions) package from your framework. The test application also needs the [Microsoft.Testing.Extensions.TrxReport](https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport) package to create reports.
+
+The capability separates support from activation:
+
+- Return `true` from `IsSupported` when your framework can supply TRX metadata.
+- In `Enable()`, record that the TRX reporter requested the metadata. The reporter calls this method at the start of a test session when TRX reports are enabled.
+- After activation, add the TRX properties to the test nodes that your framework publishes.
+
+The following capability stores the activation state. The example projects target .NET 10 and reference MTP 2.5.1:
+
+:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-capabilities/trx/csharp/Program.cs" id="TrxCapability":::
+:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-capabilities/trx/vb/Program.vb" id="TrxCapability":::
+
+Return the capability from the `capabilitiesFactory` that you pass to `RegisterTestFramework`. Give the framework the same capability instance so it can observe `Enable()`. For a manually composed test application, register the TRX provider after your framework and other extensions:
+
+:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-capabilities/trx/csharp/Program.cs" id="RegisterTrxCapability":::
+:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-capabilities/trx/vb/Program.vb" id="RegisterTrxCapability":::
+
+#### Required test-node data
+
+To report a test result, publish a `TestNodeUpdateMessage` with the following data:
+
+- Set the required `TestNode.Uid` and `TestNode.DisplayName` members.
+- Include exactly one final [state property](./microsoft-testing-platform-architecture-test-framework.md#execution-information): `PassedTestNodeStateProperty`, `FailedTestNodeStateProperty`, `ErrorTestNodeStateProperty`, `TimeoutTestNodeStateProperty`, or `SkippedTestNodeStateProperty`.
+- To create a test definition for a UID, include either `TrxFullyQualifiedTypeNameProperty` or `TestMethodIdentifierProperty` in `TestNode.Properties`.
+
+The reporter ignores updates with no state, `DiscoveredTestNodeStateProperty`, or `InProgressTestNodeStateProperty`. Include identity and report metadata on the final update itself. The reporter doesn't carry metadata forward from discovery or in-progress updates.
+
+For `TestMethod/@className`, the reporter prefers `TrxFullyQualifiedTypeNameProperty`. Otherwise, it combines the namespace and type name from `TestMethodIdentifierProperty`. For `TestMethod/@name`, it uses the method identifier's method name, or `DisplayName` when no method identifier is present. The reporter doesn't look up matching source files, classes, or methods. For tests without a .NET method, supply a stable class label with `TrxFullyQualifiedTypeNameProperty`.
+
+> [!IMPORTANT]
+> In the current reporter, a new test definition without either identity property causes an `InvalidOperationException` during report generation. Neither `DisplayName` nor `TestFileLocationProperty` replaces the required class identity.
+
+#### Optional report properties
+
+All properties in the following table are optional. The `Trx*` properties come from the TRX abstraction package; the other properties come from MTP.
+
+| Property | Purpose |
+|---|---|
+| `TimingProperty` | Supplies per-test start time, end time, and duration through `GlobalTiming`. |
+| `TrxCategoriesProperty` | Adds categories to the shared test definition. |
+| `TrxExceptionProperty` | Supplies the result's error message and stack trace. Failed, error, and timeout states still produce failed outcomes without this property, but error details are absent. |
+| `TrxMessagesProperty` | Carries `StandardOutputTrxMessage`, `StandardErrorTrxMessage`, and `DebugOrTraceTrxMessage` entries, which map to the result's `StdOut`, `StdErr`, and `DebugTrace` elements. |
+| `TrxTestDefinitionName` | Sets `TestDefinitions/UnitTest/@name`. Defaults to `DisplayName` when omitted. |
+| `TrxWorkItemsProperty` | Adds work-item identifiers to the shared test definition. |
+| `TestMetadataProperty` | Maps `Owner`, `Priority`, and `Description` to the corresponding test-definition fields. Priority must parse as an integer other than `int.MaxValue`. Other keys become `Properties/Property` entries with `Key` and `Value` child elements. |
+| `FileArtifactProperty` | Copies per-test attachment files into the results layout and references them from `UnitTestResult/ResultFiles`. The files aren't embedded in the TRX XML. |
+
+Without `TimingProperty`, the result's duration is `00:00:00`, and its `startTime` and `endTime` use the current UTC time when the result XML is generated. The reporter doesn't reconstruct execution timing.
+
+Add messages through a `TrxMessagesProperty` container. Message objects such as `StandardOutputTrxMessage` don't implement `IProperty` and can't be added directly to `TestNode.Properties`.
+
+Except for `TestMetadataProperty` and `FileArtifactProperty`, supply at most one instance of each property described here on a node. Use the corresponding container's collection for multiple messages, categories, or work-item identifiers. The reporter rejects duplicate singleton properties.
+
+When a UID repeats, the reporter retains the first test definition. If any occurrence supplies `TrxTestDefinitionName`, every occurrence's effective definition name, whether explicit or the `DisplayName` fallback, must agree. Otherwise, report generation throws an `InvalidOperationException`. If all occurrences omit the property, different display names are tolerated.
+
+For example, supply required class identity and optional enrichment after your framework determines the test outcome:
+
+:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-capabilities/trx/csharp/Program.cs" id="EnrichTrxResult":::
+:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-capabilities/trx/vb/Program.vb" id="EnrichTrxResult":::
+
+TRX doesn't consume the platform's [`StandardOutputProperty` and `StandardErrorProperty`](./microsoft-testing-platform-architecture-test-framework.md#captured-test-output). To include captured text in both terminal output and TRX, supply the platform output properties and the TRX message container.
+
+The complete sample contains one passing test and one intentionally failing test. With `--report-trx`, it writes both results and the enriched metadata to a TRX file, then returns exit code `2`. To run only the passing test, add `--filter-uid trx.pass`.
+
+If the capability is absent or `IsSupported` is `false`, the TRX reporter warns that the framework doesn't support TRX enrichment. The reporter can still create a report if the final test nodes contain the required identity data. The warning doesn't waive those requirements. Don't advertise support unless your framework supplies the corresponding metadata.
+
+### `IGracefulStopTestExecutionCapability`
+
+To support [`--maximum-failed-tests`](./microsoft-testing-platform-cli-options.md#platform-options) in a custom test framework, implement `Microsoft.Testing.Platform.Capabilities.TestFramework.IGracefulStopTestExecutionCapability`. The capability is part of the [Microsoft.Testing.Platform](https://www.nuget.org/packages/Microsoft.Testing.Platform) package and is available starting with MTP 1.5. Test authors who use a framework that already supports the option don't need to implement the capability.
+
+The interface defines `Task StopTestExecutionAsync(CancellationToken cancellationToken)`. When the failure count reaches the requested maximum, MTP calls this method. Your implementation must tell the framework to stop scheduling new tests while it allows tests that have already started to finish, run cleanup, and publish their results.
+
+> [!IMPORTANT]
+> The capability and the `AddMaximumFailedTestsService` helper are experimental APIs that produce compiler diagnostic `TPEXP`. Their contracts can change or be removed. The example projects suppress `TPEXP` explicitly.
+
+Follow these requirements when you implement the capability:
+
+- Share stop state between the capability and the framework's test scheduler. Merely returning a completed task doesn't stop tests.
+- Make stop requests thread-safe and idempotent. More than one platform component can request a stop.
+- Return after you signal the stop. Don't wait for the entire run or the message bus to finish: MTP can call the method while it processes a test result, so that wait can deadlock.
+- Keep graceful-stop state separate from request cancellation. Don't terminate the process or cancel result publication to implement a graceful stop. Honor the method's cancellation token if your stop operation requires asynchronous work.
+- After active tests finish, complete the normal request lifecycle, including result publication, cleanup, and the call to [`ExecuteRequestContext.Complete()`](./microsoft-testing-platform-architecture-test-framework.md#the-executerequestasync-method).
+
+The following implementation uses a thread-safe flag. In your framework, check `IsStopRequested` before you schedule each test and stop taking new work when the flag is `true`.
+
+:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-capabilities/csharp/GracefulStop.cs" id="GracefulStop":::
+:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-capabilities/vb/GracefulStop.vb" id="GracefulStop":::
+
+Expose the capability through `ITestFrameworkCapabilities.Capabilities`. The registration example uses MTP's `TestFrameworkCapabilities` collection.
+
+During [test framework registration](./microsoft-testing-platform-architecture-test-framework.md#register-a-testing-framework), pass the registered capability instance to your framework. The following helper accepts your framework factory and an `IExtension` that owns the command-line option. It also calls `AddMaximumFailedTestsService` from the `Microsoft.Testing.Platform.Helpers` namespace to register the `--maximum-failed-tests` option provider. Without that provider, MTP doesn't recognize the option.
+
+:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-capabilities/csharp/GracefulStop.cs" id="Registration":::
+:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-capabilities/vb/GracefulStop.vb" id="Registration":::
+
+The capability factory creates fresh stop state, and the framework factory retrieves that same instance. Don't create a second, disconnected capability in your framework. For frameworks that support multiple run requests, keep stop state scoped to the corresponding execution. Don't clear an accepted stop request when execution starts.
+
+MTP rejects `--maximum-failed-tests` during command-line validation if the option provider is registered but the framework doesn't expose this capability. When the failure threshold triggers a stop, MTP returns [exit code `13`](./microsoft-testing-platform-troubleshooting.md#exit-codes). The final failure count can exceed the threshold because result processing is asynchronous and tests might already be in progress.
+
+For the interface contract, see the [`IGracefulStopTestExecutionCapability` source](https://github.com/microsoft/testfx/blob/v4.5.1/src/Platform/Microsoft.Testing.Platform/Capabilities/TestFramework/IGracefulStopTestExecutionCapability.cs).

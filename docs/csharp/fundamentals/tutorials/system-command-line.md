@@ -115,7 +115,7 @@ A <xref:System.CommandLine.Command?displayProperty=nameWithType> represents an a
 
 Each subcommand needs an *action*. An action is a [delegate](../../programming-guide/delegates/index.md) that runs when the user invokes that command. A delegate is a type that represents a reference to a method. Here, you pass a [lambda expression](../../language-reference/operators/lambda-expressions.md) (an inline anonymous function defined with `=>`) as the delegate. Call `SetAction` to assign each action. The delegate receives a <xref:System.CommandLine.ParseResult> that provides access to parsed values through `GetValue`.
 
-1. Set the action for the `add` command. This action introduces [string interpolation](../../language-reference/tokens/interpolated.md) (`$"..."` strings that embed expressions in braces), the [conditional operator](../../language-reference/operators/conditional-operator.md) (`?:`), and a [type test pattern](../functional/pattern-matching.md) (`due is DateOnly dueDate`) that checks whether a nullable value has a value and assigns it to a new variable in one step:
+1. Set the action for the `add` command. This action introduces [string interpolation](../../language-reference/tokens/interpolated.md) (`$"..."` strings that embed expressions in braces), the [conditional operator](../../language-reference/operators/conditional-operator.md) (`?:`), and a [type test pattern](../patterns/pattern-matching.md) (`due is DateOnly dueDate`) that checks whether a nullable value has a value and assigns it to a new variable in one step:
 
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="AddAction":::
 
@@ -128,7 +128,7 @@ Each subcommand needs an *action*. An action is a [delegate](../../programming-g
 1. Set the action for the `complete` command. This action uses LINQ's <xref:System.Linq.Enumerable.FirstOrDefault*?displayProperty=nameWithType> to find:
 
    - A matching task.
-   - An [`is null` pattern](../functional/pattern-matching.md) to check whether the task exists.
+   - An [`is null` pattern](../patterns/pattern-matching.md) to check whether the task exists.
    - A [`with` expression](../../language-reference/operators/with-expression.md) to create a new record instance by copying the existing values first, and then applying the properties you set in the `with` initializer (here, `IsComplete = true`). Records are immutable by default, so this copy-and-update pattern is how you produce a modified value.
 
    Because the action can fail (for example, the task ID doesn't exist), the action returns an integer error code that becomes the app's exit code:
@@ -147,9 +147,9 @@ Each subcommand needs an *action*. An action is a [delegate](../../programming-g
 
 ## Add supporting types and data helpers
 
-The app needs a few supporting pieces: [local functions](../../programming-guide/classes-and-structs/local-functions.md), an [`enum`](../../language-reference/builtin-types/enum.md), a [`record`](../../language-reference/builtin-types/record.md), and a serialization context. The following sections introduce each concept, explain why you'd choose it, and show the code. The app uses [System.Text.Json](../../../standard/serialization/system-text-json/overview.md) to store tasks as JSON (JavaScript Object Notation). File-based apps require type declarations to appear after all top-level statements and local functions.
+The app needs a few supporting pieces: [local functions](../building-software/local-functions.md), an [`enum`](../../language-reference/builtin-types/enum.md), a [`record`](../../language-reference/builtin-types/record.md), and a serialization context. The following sections introduce each concept, explain why you'd choose it, and show the code. The app uses [System.Text.Json](../../../standard/serialization/system-text-json/overview.md) to store tasks as JSON (JavaScript Object Notation). File-based apps require type declarations to appear after all top-level statements and local functions.
 
-1. Add the local functions that load and save tasks. A [local function](../../programming-guide/classes-and-structs/local-functions.md) is a method declared inside another function, including inside other local functions. Local functions keep helper logic close to the code that calls it, which improves readability because a reader doesn't have to jump to a separate class or file to understand the flow. Here, `LoadTasks` and `SaveTasks` encapsulate the file I/O that multiple command actions share, so the app writes the load/save logic once and reuses it:
+1. Add the local functions that load and save tasks. A [local function](../building-software/local-functions.md) is a method declared inside another function, including inside other local functions. Local functions keep helper logic close to the code that calls it, which improves readability because a reader doesn't have to jump to a separate class or file to understand the flow. Here, `LoadTasks` and `SaveTasks` encapsulate the file I/O that multiple command actions share, so the app writes the load/save logic once and reuses it:
 
    :::code language="csharp" source="./snippets/system-commandline/TaskCli.cs" id="DataHelpers":::
 

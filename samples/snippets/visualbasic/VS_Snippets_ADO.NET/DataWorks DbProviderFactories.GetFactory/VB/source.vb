@@ -1,5 +1,5 @@
 ﻿Imports System.Data
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 Imports System.Configuration
 Imports System.Data.Common
 
@@ -22,6 +22,9 @@ Class Program
         ' Create the DbProviderFactory and DbConnection.
         If Not connectionString Is Nothing Then
             Try
+#If Not NETFRAMEWORK Then
+                DbProviderFactories.RegisterFactory("Microsoft.Data.SqlClient", SqlClientFactory.Instance)
+#End If
                 Dim factory As DbProviderFactory = _
                    DbProviderFactories.GetFactory(providerName)
 
@@ -42,4 +45,3 @@ Class Program
     End Function
     ' </Snippet1>
 End Class
-

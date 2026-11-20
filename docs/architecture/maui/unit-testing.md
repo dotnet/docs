@@ -1,9 +1,10 @@
 ---
-title: Unit Testing
-description:  Learn how to provide application testing and improve code quality in .NET MAUI.
+title: Unit tests for .NET MAUI
+description: Learn how to unit test .NET MAUI application logic, choose a test framework and platform, and identify scenarios that need device or UI tests.
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 05/30/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 ---
 
 # Unit testing
@@ -29,198 +30,98 @@ Unit tests typically use the arrange-act-assert pattern:
 
 This pattern ensures that unit tests are readable, self-describing, and consistent.
 
+## Choose a test framework and platform
+
+A test framework defines the attributes, assertions, and test lifecycle you use to write tests. A test platform discovers and runs those tests and integrates with your IDE, command line, and continuous integration (CI) pipeline. [VSTest and Microsoft.Testing.Platform (MTP)](../../core/testing/test-platforms-overview.md) are test platforms, not replacements for frameworks such as MSTest.
+
+The following frameworks support tests for platform-independent .NET MAUI application logic:
+
+| Framework | Framework documentation | MTP configuration |
+|-----------|-------------------------|-------------------|
+| MSTest | [MSTest overview](../../core/testing/unit-testing-mstest-intro.md) and [Get started with MSTest](../../core/testing/unit-testing-mstest-getting-started.md). | [Run tests with MSTest](../../core/testing/unit-testing-mstest-running-tests.md) and [MSTest SDK](../../core/testing/unit-testing-mstest-sdk.md). |
+| NUnit | [Get started with C# and NUnit](../../core/testing/unit-testing-csharp-with-nunit.md). | [NUnit runner](../../core/testing/unit-testing-nunit-runner-intro.md). |
+| xUnit.net | [Get started with C# and xUnit.net](../../core/testing/unit-testing-csharp-with-xunit.md). | [xUnit.net v3](https://xunit.net/docs/getting-started/v3/microsoft-testing-platform) has built-in MTP support. [xUnit.net v2](https://xunit.net/docs/getting-started/v2/microsoft-testing-platform) requires a third-party integration that isn't supported by xUnit.net or Microsoft. |
+| TUnit | [TUnit documentation](https://tunit.dev/). | TUnit is built on MTP and doesn't support VSTest. |
+
+[MTP](../../core/testing/microsoft-testing-platform-intro.md) runs tests as executable applications. For CLI, IDE, and CI setup, see [Run and debug MTP tests](../../core/testing/microsoft-testing-platform-run-and-debug.md). With the .NET 10 SDK or later, you can select the MTP mode of `dotnet test` in `global.json`. This mode requires MTP 1.7 or later, and all selected test projects must support MTP. Don't mix VSTest-based and MTP-based projects in the same test run. The platforms also use different command-line options. For details, see [Testing with `dotnet test`](../../core/testing/unit-testing-with-dotnet-test.md).
+
+## Understand .NET MAUI test boundaries
+
+To run unit tests on your development machine, isolate business logic, validation, and view models from platform-specific dependencies. One approach is to put that code in a .NET class library that both the app and test project reference. Alternatively, configure your .NET MAUI app or class library to expose a matching non-platform-specific target, such as `net10.0`. For an app project, that target must produce a library rather than an executable. Keep native startup code and platform-specific implementations out of that target. For project configuration, see [.NET MAUI unit testing](/dotnet/maui/deployment/unit-testing).
+
+A non-platform-specific test project doesn't create a native .NET MAUI application context. Replace dependencies on navigation, UI dispatch, and device services with test doubles when you test application logic. These tests don't verify native rendering, device permissions, or the real implementations of the services you replace.
+
+To test code that requires platform APIs or native control handlers, use a compatible platform test host or device runner. MTP can be hosted in a platform application, but selecting MTP for a desktop test project doesn't turn it into a device test app. For device runners and platform test options, including their version requirements, see [.NET MAUI unit testing](/dotnet/maui/deployment/unit-testing). To automate interactions with the deployed app, see [UI testing with Appium](/dotnet/maui/deployment/ui-testing). Run those tests on the platforms you support.
+
 ## Dependency injection and unit testing
 
-One of the motivations for adopting a loosely-coupled architecture is that it facilitates unit testing. One of the types registered with the dependency injection service is the `IAppEnvironmentService` interface. The following code example shows an outline of this class:
+To isolate the code under test, use constructor injection to supply test doubles for its dependencies. Test doubles, such as fakes and mocks, implement the same interfaces as the real services but provide controlled behavior for a test. For architectural guidance, see [Dependency injection](dependency-injection.md).
 
-```csharp
-public class OrderDetailViewModel : ViewModelBase
-{
-    private IAppEnvironmentService _appEnvironmentService;
+For example, the eShop app's [OrderDetailViewModel](https://github.com/dotnet/eShop/blob/main/src/ClientApp/ViewModels/OrderDetailViewModel.cs) receives `IAppEnvironmentService`, `INavigationService`, and `ISettingsService` dependencies through its constructor. Supply test implementations for the dependencies the test exercises rather than call real web services or device APIs.
 
-    public OrderDetailViewModel(
-        IAppEnvironmentService appEnvironmentService,
-        IDialogService dialogService, INavigationService navigationService, ISettingsService settingsService)
-        : base(dialogService, navigationService, settingsService)
-    {
-        _appEnvironmentService = appEnvironmentService;
-    }
-}
-```
-
-The `OrderDetailViewModel` class has a dependency on the `IAppEnvironmentService` type, which the dependency injection container resolves when it instantiates an `OrderDetailViewModel` object. However, rather than create an `IAppEnvironmentService` object which utilizes real servers, devices and configurations to unit test the `OrderDetailViewModel` class, instead, replace the `IAppEnvironmentService` object with a mock object for the purpose of the tests. A mock object is one that has the same signature of an object or an interface, but is created in a specific manner to help with unit testing. It is often used with dependency injection to provide specific implementations of interfaces for testing different data and workflow scenarios.
-
-This approach allows the `IAppEnvironmentService` object to be passed into the `OrderDetailViewModel` class at runtime, and in the interests of testability, it allows a mock class to be passed into the `OrderDetailViewModel` class at test time. The main advantage of this approach is that it enables unit tests to be executed without requiring unwieldy resources such as runtime platform features, web services, or databases.
+The [eShop catalog view model tests](https://github.com/dotnet/eShop/blob/main/tests/ClientApp.UnitTests/ViewModels/CatalogViewModelTests.cs) show a complete setup: they construct an `AppEnvironmentService` with mock services, select those services, and pass it to the view model together with a mock navigation service. Use the maintained sample tests for complete constructor and initialization code. Replacing service dependencies isolates application logic; it doesn't remove native requirements from other code the test calls.
 
 ## Testing MVVM applications
 
-Testing models and view models from MVVM applications is identical to testing any other class, and uses the same tools and techniques; this includes features such as unit testing and mocking. However, some patterns that are typical to model and view model classes can benefit from specific unit testing techniques.
+When models and view models don't require a native application context, test them with the same frameworks and techniques you use for other .NET classes. Some patterns that are typical to model and view model classes benefit from specific unit testing techniques.
 
 > [!TIP]
-> Test one thing with each unit test. As the complexity of a test expands, it makes verification of that test more difficult. By limiting a unit test to a single concern, we can ensure that our tests are more repeatable, isolated, and have a smaller execution time. See
-[Unit testing best practices with .NET](../../core/testing/unit-testing-best-practices.md) for more best practices.
+> Test one behavior with each unit test. To keep tests repeatable, isolated, and easy to diagnose, limit each test to a single concern. For more guidance, see [Unit testing best practices with .NET](../../core/testing/unit-testing-best-practices.md).
 
 Don't be tempted to make a unit test exercise more than one aspect of the unit's behavior. Doing so leads to tests that are difficult to read and update. It can also lead to confusion when interpreting a failure.
 
-The eShop multi-platform app uses [MSTest](../../core/testing/unit-testing-csharp-with-mstest.md) to perform unit testing, which supports two different types of unit tests:
+The eShop multi-platform app uses MSTest. In MSTest, apply `TestClass` to the test class and `TestMethod` to each test method. For attributes, signatures, and lifecycle guidance, see [Write tests with MSTest](../../core/testing/unit-testing-mstest-writing-tests.md).
 
-| Testing Type    | Attribute    | Description                                                  |
-|-----------------|--------------|--------------------------------------------------------------|
-| TestMethod      | `TestMethod` | Defines the actual test method to run.                       |
-| DataSource      | `DataSource` | Tests that are only true for a particular set of data.       |
-
-The unit tests included with the eShop multi-platform app are TestMethod, so each unit test method is decorated with the `TestMethod` attribute. In addition to MSTest there are several other testing frameworks available including [NUnit](../../core/testing/unit-testing-csharp-with-nunit.md) and [xUnit](../../core/testing/unit-testing-csharp-with-xunit.md).
+To run the same test with different inputs, combine `TestMethod` with `DataRow` for inline data or `DynamicData` for data supplied by a member. These attributes supply test cases; they aren't separate test frameworks or alternatives to `TestMethod`. The legacy `DataSource` attribute is available only for .NET Framework, not modern .NET or .NET MAUI projects. For supported options, see [Data-driven testing in MSTest](../../core/testing/unit-testing-mstest-writing-tests-data-driven.md).
 
 ## Testing asynchronous functionality
 
-When implementing the MVVM pattern, view models usually invoke operations on services, often asynchronously. Tests for code that invokes these operations typically use mocks as replacements for the actual services. The following code example demonstrates testing asynchronous functionality by passing a mock service into a view model:
+View models often invoke asynchronous service operations. To test the result rather than an intermediate state, await the operation before you assert. Write asynchronous MSTest methods that return `Task`, or `ValueTask` with MSTest 3.3 or later. Don't use `async void` test methods. For supported signatures, see [Write tests with MSTest](../../core/testing/unit-testing-mstest-writing-tests.md#testmethodattribute).
 
-```csharp
-[TestMethod]
-public async Task OrderPropertyIsNotNullAfterViewModelInitializationTest()
-{
-    // Arrange
-    var orderService = new OrderMockService();
-    var orderViewModel = new OrderDetailViewModel(orderService);
+For example, `ProductsPropertyIsNotNullAfterViewModelInitializationTest` in the [eShop catalog view model tests](https://github.com/dotnet/eShop/blob/main/tests/ClientApp.UnitTests/ViewModels/CatalogViewModelTests.cs) creates a view model with mock services, awaits `InitializeAsync`, and asserts that `Products` isn't null. The test checks initialization with controlled data, not the behavior of the real catalog web service. For the app's initialization and navigation flow, see [Navigation](navigation.md).
 
-    // Act
-    var order = await orderService.GetOrderAsync(1, GlobalSetting.Instance.AuthToken);
-    await orderViewModel.InitializeAsync(order);
-
-    // Assert
-    Assert.IsNotNull(orderViewModel.Order);
-}
-```
-
-This unit test checks that the `Order` property of the `OrderDetailViewModel` instance will have a value after the `InitializeAsync` method has been invoked. The `InitializeAsync` method is invoked when the view model's corresponding view is navigated to. For more information about navigation, see [Navigation](navigation.md).
-
-When the `OrderDetailViewModel` instance is created, it expects an `IOrderService` instance to be specified as an argument. However, the `OrderService` retrieves data from a web service. Therefore, an `OrderMockService` instance, a mock version of the `OrderService` class, is specified as the argument to the `OrderDetailViewModel` constructor. Then, mock data is retrieved rather than communicating with a web service when the view model's `InitializeAsync` method is invoked, which uses `IOrderService` operations.
+For asynchronous commands, await the command's asynchronous execution API before you check the result. Calling `ICommand.Execute` alone doesn't guarantee that asynchronous work has completed. For the MVVM Toolkit command APIs, see [AsyncRelayCommand](/dotnet/communitytoolkit/mvvm/asyncrelaycommand).
 
 ## Testing INotifyPropertyChanged implementations
 
-Implementing the `INotifyPropertyChanged` interface allows views to react to changes that originate from view models and models. These changes are not limited to data shown in controls -- they are also used to control the view, such as view model states that cause animations to be started or controls to be disabled.
+The `INotifyPropertyChanged` interface lets views react to changes in models and view models. To test a notification, attach an event handler to `PropertyChanged`, change the property, and assert that the handler receives the expected `PropertyName`. Don't treat an unrelated property notification as success.
 
-Properties that can be updated directly by the unit test can be tested by attaching an event handler to the `PropertyChanged` event and checking whether the event is raised after setting a new value for the property. The following code example shows such a test:
+The `SettingForenamePropertyShouldRaisePropertyChanged` test in the [eShop validation view model tests](https://github.com/dotnet/eShop/blob/main/tests/ClientApp.UnitTests/ViewModels/MockViewModelTests.cs) demonstrates this pattern. It subscribes to the `Forename` object's `PropertyChanged` event, sets `Forename.Value`, and checks for a notification for `Value`.
 
-```csharp
-[TestMethod]
-public async Task SettingOrderPropertyShouldRaisePropertyChanged()
-{
-    var invoked = false;
-    var orderService = new OrderMockService();
-    var orderViewModel = new OrderDetailViewModel(orderService);
-
-    orderViewModel.PropertyChanged += (sender, e) =>
-    {
-        if (e.PropertyName.Equals("Order"))
-            invoked = true;
-    };
-    var order = await orderService.GetOrderAsync(1, GlobalSetting.Instance.AuthToken);
-    await orderViewModel.InitializeAsync(order);
-
-    Assert.IsTrue(invoked);
-}
-```
-
-This unit test invokes the `InitializeAsync` method of the `OrderViewModel` class, which causes its `Order` property to be updated. The unit test will pass, provided that the `PropertyChanged` event is raised for the `Order` property.
+This test verifies the notification contract. It doesn't verify that a XAML binding or native control updates correctly; cover those behaviors with UI tests.
 
 ## Testing message-based communication
 
-View models that use the `MessagingCenter` class to communicate between loosely coupled classes can be unit tested by subscribing to the message being sent by the code under test, as demonstrated in the following code example:
+For message-based communication, use the MVVM Toolkit's `IMessenger`, such as `WeakReferenceMessenger`. For the messaging contract and API examples, see [Communicate between loosely coupled components](communicating-between-components.md) and [MVVM Toolkit Messenger](/dotnet/communitytoolkit/mvvm/messenger).
 
-```csharp
-[TestMethod]
-public void AddCatalogItemCommandSendsAddProductMessageTest()
-{
-    var messageReceived = false;
-    var catalogService = new CatalogMockService();
-    var catalogViewModel = new CatalogViewModel(catalogService);
+To test a publisher, register a recipient for the expected message type, execute the operation, and assert that the recipient receives the expected payload. To test a recipient, send a known message and assert the resulting view model state. Await asynchronous commands before you assert.
 
-    MessagingCenter.Subscribe<CatalogViewModel, CatalogItem>(
-        this, MessageKeys.AddProduct, (sender, arg) =>
-    {
-        messageReceived = true;
-    });
-    catalogViewModel.AddCatalogItemCommand.Execute(null);
+To isolate message tests, create a messenger instance per test and inject the same instance into the code under test. If the code uses `WeakReferenceMessenger.Default`, unregister test recipients during cleanup and prevent concurrent tests from interfering with shared messenger state. Weak references don't guarantee that a recipient is collected before the next test. For cleanup and isolation options, see [MSTest test lifecycle](../../core/testing/unit-testing-mstest-writing-tests-lifecycle.md) and [Control test execution](../../core/testing/unit-testing-mstest-writing-tests-controlling-execution.md).
 
-    Assert.IsTrue(messageReceived);
-}
-```
-
-This unit test checks that the `CatalogViewModel` publishes the `AddProduct` message in response to its `AddCatalogItemCommand` being executed. Because the `MessagingCenter` class supports multicast message subscriptions, the unit test can subscribe to the `AddProduct` message and execute a callback delegate in response to receiving it. This callback delegate, specified as a lambda expression, sets a boolean field that's used by the `Assert` statement to verify the behavior of the test.
+> [!NOTE]
+> `MessagingCenter` is deprecated in .NET 10. For new code, use the MVVM Toolkit Messenger instead.
 
 ## Testing exception handling
 
-Unit tests can also be written that check that specific exceptions are thrown for invalid actions or inputs, as demonstrated in the following code example:
+To verify that invalid actions or inputs throw an exception, use the framework's exception assertions. In MSTest 3.8 or later, `Assert.Throws<T>` accepts the specified exception type or a derived type, while `Assert.ThrowsExactly<T>` requires the exact type. For asynchronous code, await `Assert.ThrowsAsync<T>` or `Assert.ThrowsExactlyAsync<T>` rather than pass asynchronous work to a synchronous assertion. For examples and version-specific APIs, see [MSTest assertions](../../core/testing/unit-testing-mstest-writing-tests-assertions.md).
 
-```csharp
-[TestMethod]
-public void InvalidEventNameShouldThrowArgumentExceptionText()
-{
-    var behavior = new MockEventToCommandBehavior
-    {
-        EventName = "OnItemTapped"
-    };
-    var listView = new ListView();
-
-    Assert.Throws<ArgumentException>(() => listView.Behaviors.Add(behavior));
-}
-```
-
-This unit test will throw an exception because the `ListView` control does not have an event named `OnItemTapped`. The `Assert.Throws<T>` method is a generic method where `T` is the type of the expected exception. The argument passed to the `Assert.Throws<T>` method is a lambda expression that will throw the exception. Therefore, the unit test will pass provided that the lambda expression throws an `ArgumentException`.
+An exception assertion passes when it observes the expected exception; the exception isn't an unhandled test failure. If the operation under test constructs native views or uses platform handlers, it still needs the appropriate application context. An exception assertion doesn't provide that context.
 
 > [!TIP]
 > Avoid writing unit tests that examine exception message strings. Exception message strings might change over time, and so unit tests that rely on their presence are regarded as brittle.
 
 ## Testing validation
 
-There are two aspects to testing the validation implementation: testing that any validation rules are correctly implemented and testing that the `ValidatableObject<T>` class performs as expected.
+Test both the validation rules and the state exposed by `ValidatableObject<T>`. For each rule, cover valid, invalid, and boundary inputs. For the validation model used by the app, see [Validation](validation.md).
 
-Validation logic is usually simple to test, because it is typically a self-contained process where the output depends on the input. There should be tests on the results of invoking the `Validate` method on each property that has at least one associated validation rule, as demonstrated in the following code example:
+The [eShop validation view model tests](https://github.com/dotnet/eShop/blob/main/tests/ClientApp.UnitTests/ViewModels/MockViewModelTests.cs) supply a mock navigation service to `MockViewModel` and exercise its `Validate` method. `CheckValidationPassesWhenBothPropertiesHaveDataTest` checks that validation succeeds when both names have data. `CheckValidationFailsWhenOnlyForenameHasDataTest` checks that a missing surname causes validation to fail.
 
-```csharp
-[TestMethod]
-public void CheckValidationPassesWhenBothPropertiesHaveDataTest()
-{
-    var mockViewModel = new MockViewModel();
-    mockViewModel.Forename.Value = "John";
-    mockViewModel.Surname.Value = "Smith";
-
-    var isValid = mockViewModel.Validate();
-
-    Assert.IsTrue(isValid);
-}
-```
-
-This unit test checks that validation succeeds when the two `ValidatableObject<T>` properties in the `MockViewModel` instance both have data.
-
-As well as checking that validation succeeds, validation unit tests should also check the values of the `Value`, `IsValid`, and `Errors` property of each `ValidatableObject<T>` instance, to verify that the class performs as expected. The following code example demonstrates a unit test that does this:
-
-```csharp
-[TestMethod]
-public void CheckValidationFailsWhenOnlyForenameHasDataTest()
-{
-    var mockViewModel = new MockViewModel();
-    mockViewModel.Forename.Value = "John";
-
-    bool isValid = mockViewModel.Validate();
-
-    Assert.IsFalse(isValid);
-    Assert.IsNotNull(mockViewModel.Forename.Value);
-    Assert.IsNull(mockViewModel.Surname.Value);
-    Assert.IsTrue(mockViewModel.Forename.IsValid);
-    Assert.IsFalse(mockViewModel.Surname.IsValid);
-    Assert.AreEqual(mockViewModel.Forename.Errors.Count(), 0);
-    Assert.AreNotEqual(mockViewModel.Surname.Errors.Count(), 0);
-}
-```
-
-This unit test checks that validation fails when the `Surname` property of the `MockViewModel` doesn't have any data, and the `Value`, `IsValid`, and `Errors` property of each `ValidatableObject<T>` instance are correctly set.
+Check the `Value`, `IsValid`, and `Errors` properties as well as the overall result. For example, when only the forename has data, the forename should remain valid with no errors, while the surname should be invalid with errors. These assertions verify the validation model, not whether the UI displays the errors correctly.
 
 ## Summary
 
 A unit test takes a small unit of the app, typically a method, isolates it from the remainder of the code, and verifies that it behaves as expected. Its goal is to check that each unit of functionality performs as expected, so errors don't propagate throughout the app.
 
-The behavior of an object under test can be isolated by replacing dependent objects with mock objects that simulate the behavior of the dependent objects. This enables unit tests to be executed without requiring unwieldy resources such as runtime platform features, web services, or databases
+To isolate application logic, replace service dependencies with test doubles. Choose a test framework and a compatible test platform, and use their supported attributes and assertions.
 
-Testing models and view models from MVVM applications is identical to testing any other classes, and the same tools and techniques can be used.
+Test platform-independent models and view models with ordinary .NET unit tests. Use device, platform, integration, and UI tests for behavior that depends on a real service or native application context.

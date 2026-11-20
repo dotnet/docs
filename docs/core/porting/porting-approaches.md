@@ -2,7 +2,6 @@
 title: Porting approaches
 description: Create a porting plan that best reflects your project and context.
 author: StephenBonikowsky
-ms.author: stebon
 ms.date: 09/15/2025
 ---
 # Create a porting plan
@@ -98,5 +97,5 @@ If you start with the base of your library and move outward from the base and te
 
 ## Next steps
 
-- [What is GitHub Copilot modernization](github-copilot-app-modernization/overview.md)
+- [What is GitHub Copilot modernization](github-copilot-upgrade/overview.md)
 - [Organize your project to support both .NET Framework and .NET Core](project-structure.md)

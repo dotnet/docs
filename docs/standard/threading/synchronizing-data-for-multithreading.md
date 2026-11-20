@@ -46,7 +46,11 @@ When multiple threads can make calls to the properties and methods of a single o
  Both Visual Basic and C# support the marking of blocks of code with a particular language keyword, the `lock` statement in C# or the `SyncLock` statement in Visual Basic. When the code is executed by a thread, an attempt is made to acquire the lock. If the lock has already been acquired by another thread, the thread blocks until the lock becomes available. When the thread exits the synchronized block of code, the lock is released, no matter how the thread exits the block.
 
 > [!NOTE]
-> Beginning in C# 13, the `lock` statement recognizes if the locked object is an instance of <xref:System.Threading.Lock?displayProperty=nameWithType> and uses the `EnterScope` method to create a synchronized region. The `lock`, when the target isn't a `Lock` instance, and `SyncLock` statements are implemented using <xref:System.Threading.Monitor.Enter*?displayProperty=nameWithType> and <xref:System.Threading.Monitor.Exit*?displayProperty=nameWithType>, so other methods of <xref:System.Threading.Monitor> can be used in conjunction with them within the synchronized region.
+> In .NET 9 and C# 13 or later, if the `lock` target is a dedicated <xref:System.Threading.Lock?displayProperty=nameWithType> instance, the `lock` statement uses <xref:System.Threading.Lock.EnterScope?displayProperty=nameWithType> to create a synchronized region.
+>
+> Visual Basic doesn't support `System.Threading.Lock` in `SyncLock`, so continue to use `SyncLock` with a dedicated private reference type.
+>
+> If the `lock` target isn't a `Lock` instance, and for all `SyncLock` usage, the compiler uses <xref:System.Threading.Monitor.Enter*?displayProperty=nameWithType> and <xref:System.Threading.Monitor.Exit*?displayProperty=nameWithType>. Because of that implementation, you can still use other <xref:System.Threading.Monitor> methods in the synchronized region.
 
  You can also decorate a method with a <xref:System.Runtime.CompilerServices.MethodImplAttribute> with a value of <xref:System.Runtime.CompilerServices.MethodImplOptions.Synchronized?displayProperty=nameWithType>, which has the same effect as using <xref:System.Threading.Monitor> or one of the compiler keywords to lock the entire body of the method.
 

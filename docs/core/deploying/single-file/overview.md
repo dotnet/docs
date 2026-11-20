@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 
 # Single-file deployment
 
-Bundling all application-dependent files into a single binary provides an application developer with the attractive option to deploy and distribute the application as a single file. Single-file deployment is available for both the [framework-dependent deployment model](../index.md#framework-dependent-deployment) and [self-contained applications](../index.md#self-contained-deployment).
+Bundling all application-dependent files into a single binary provides an application developer with the attractive option to deploy and distribute the application as a single file. Single-file deployment is available for both the [framework-dependent deployment model](../index.md#publish-as-framework-dependent) and [self-contained applications](../index.md#publish-as-self-contained).
 
 The size of the single file in a self-contained application is large since it includes the runtime and the framework libraries. In .NET 6, you can [publish trimmed](../trimming/trim-self-contained.md) to reduce the total size of trim-compatible applications. The single file deployment option can be combined with [ReadyToRun](../ready-to-run.md) and [Trim](../trimming/trim-self-contained.md) publish options.
 
@@ -160,7 +160,7 @@ Only managed DLLs are bundled with the app into a single executable. When the ap
 
 To embed those files for extraction and get one output file, set the property `IncludeNativeLibrariesForSelfExtract` to `true`.
 
-Specifying `IncludeAllContentForSelfExtract` extracts all files, including the managed assemblies, before running the executable. This may be helpful for rare application compatibility problems.
+Specifying `IncludeAllContentForSelfExtract` extracts all files, including the managed assemblies, before running the executable. This may be helpful for rare application compatibility problems. This mode is not recommended: it's a .NET Core 3.1 compatibility mode and might be removed in a future release.
 
 > [!IMPORTANT]
 > If extraction is used, the files are extracted to disk before the app starts:
@@ -205,7 +205,7 @@ We have some recommendations for fixing common scenarios:
 
 - To access files next to the executable, use <xref:System.AppContext.BaseDirectory?displayProperty=nameWithType>.
 
-- To find the file name of the executable, use the first element of <xref:System.Environment.GetCommandLineArgs?displayProperty=nameWithType>, or starting with .NET 6, use the file name from <xref:System.Environment.ProcessPath>.
+- To find the executable path, use <xref:System.Environment.ProcessPath?displayProperty=nameWithType>. Starting in .NET 11, <xref:System.Environment.GetCommandLineArgs?displayProperty=nameWithType> preserves the invocation name, which might differ from the executable path.
 
 - To avoid shipping loose files entirely, consider using [embedded resources](../../extensions/create-resource-files.md).
 

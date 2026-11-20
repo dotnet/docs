@@ -11,10 +11,10 @@ Public Class Form1
     End Sub
 
     ' <snippet2>
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Private WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     ' </snippet2>
-    Friend WithEvents loadButton As System.Windows.Forms.Button
-    Friend WithEvents cancelLoadButton As System.Windows.Forms.Button
+    Private WithEvents loadButton As System.Windows.Forms.Button
+    Private WithEvents cancelLoadButton As System.Windows.Forms.Button
 
     ' <snippet3>
     Private Sub loadButton_Click( _

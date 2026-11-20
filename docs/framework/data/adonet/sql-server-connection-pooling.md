@@ -1,7 +1,7 @@
 ---
 title: "SQL Server Connection Pooling"
 description: Learn how ADO.NET minimizes the cost of opening connections by using SQL Server connection pooling, which reduces overhead for new connections.
-ms.date: "03/30/2017"
+ms.date: "10/19/2026"
 dev_langs:
   - "csharp"
   - "vb"
@@ -17,7 +17,7 @@ Connecting to a database server typically consists of several time-consuming ste
 
  Connection pooling reduces the number of times that new connections must be opened. The *pooler* maintains ownership of the physical connection. It manages connections by keeping alive a set of active connections for each given connection configuration. Whenever a user calls `Open` on a connection, the pooler looks for an available connection in the pool. If a pooled connection is available, it returns it to the caller instead of opening a new connection. When the application calls `Close` on the connection, the pooler returns it to the pooled set of active connections instead of closing it. Once the connection is returned to the pool, it is ready to be reused on the next `Open` call.
 
- Only connections with the same configuration can be pooled. ADO.NET keeps several pools at the same time, one for each configuration. Connections are separated into pools by connection string, and by Windows identity when integrated security is used. Connections are also pooled based on whether they are enlisted in a transaction. When using <xref:System.Data.SqlClient.SqlConnection.ChangePassword*>, the <xref:System.Data.SqlClient.SqlCredential> instance affects the connection pool. Different instances of <xref:System.Data.SqlClient.SqlCredential> will use different connection pools, even if the user ID and password are the same.
+ Only connections with the same configuration can be pooled. Microsoft.Data.SqlClient keeps several pools at the same time, one for each configuration. Connections are separated into pools by connection string, and by Windows identity when integrated security is used. Connections are also pooled based on whether they are enlisted in a transaction. When using <xref:Microsoft.Data.SqlClient.SqlConnection.ChangePassword*>, the <xref:Microsoft.Data.SqlClient.SqlCredential> instance affects the connection pool. Different instances of <xref:Microsoft.Data.SqlClient.SqlCredential> will use different connection pools, even if the user ID and password are the same.
 
  Pooling connections can significantly enhance the performance and scalability of your application. By default, connection pooling is enabled in ADO.NET. Unless you explicitly disable it, the pooler optimizes the connections as they are opened and closed in your application. You can also supply several connection string modifiers to control connection pooling behavior. For more information, see "Controlling Connection Pooling with Connection String Keywords" later in this topic.
 
@@ -28,7 +28,7 @@ Connecting to a database server typically consists of several time-consuming ste
 
  When a connection is first opened, a connection pool is created based on an exact matching algorithm that associates the pool with the connection string in the connection. Each connection pool is associated with a distinct connection string. When a new connection is opened, if the connection string is not an exact match to an existing pool, a new pool is created. Connections are pooled per process, per application domain, per connection string and when integrated security is used, per Windows identity. Connection strings must also be an exact match; keywords supplied in a different order for the same connection will be pooled separately.
 
- In the following C# example, three new <xref:System.Data.SqlClient.SqlConnection> objects are created, but only two connection pools are required to manage them. Note that the first and second connection strings differ by the value assigned for `Initial Catalog`.
+ In the following C# example, three new <xref:Microsoft.Data.SqlClient.SqlConnection> objects are created, but only two connection pools are required to manage them. Note that the first and second connection strings differ by the value assigned for `Initial Catalog`.
 
 ```csharp
 using (SqlConnection connection = new SqlConnection(
@@ -64,7 +64,7 @@ using (SqlConnection connection = new SqlConnection(
 
  A connection pool is created for each unique connection string. When a pool is created, multiple connection objects are created and added to the pool so that the minimum pool size requirement is satisfied. Connections are added to the pool as needed, up to the maximum pool size specified (100 is the default). Connections are released back into the pool when they are closed or disposed.
 
- When a <xref:System.Data.SqlClient.SqlConnection> object is requested, it is obtained from the pool if a usable connection is available. To be usable, a connection must be unused, have a matching transaction context or be unassociated with any transaction context, and have a valid link to the server.
+ When a <xref:Microsoft.Data.SqlClient.SqlConnection> object is requested, it is obtained from the pool if a usable connection is available. To be usable, a connection must be unused, have a matching transaction context or be unassociated with any transaction context, and have a valid link to the server.
 
  The connection pooler satisfies requests for connections by reallocating connections as they are released back into the pool. If the maximum pool size has been reached and no usable connection is available, the request is queued. The pooler then tries to reclaim any connections until the time-out is reached (the default is 15 seconds). If the pooler cannot satisfy the request before the connection times out, an exception is thrown.
 
@@ -84,7 +84,7 @@ For more info about the events associated with opening and closing connections, 
 
 ## Clear the pool
 
- ADO.NET 2.0 introduced two new methods to clear the pool: <xref:System.Data.SqlClient.SqlConnection.ClearAllPools*> and <xref:System.Data.SqlClient.SqlConnection.ClearPool*>. `ClearAllPools` clears the connection pools for a given provider, and `ClearPool` clears the connection pool that is associated with a specific connection. If there are connections being used at the time of the call, they are marked appropriately. When they are closed, they are discarded instead of being returned to the pool.
+ Microsoft.Data.SqlClient provides two methods to clear the pool: <xref:Microsoft.Data.SqlClient.SqlConnection.ClearAllPools*> and <xref:Microsoft.Data.SqlClient.SqlConnection.ClearPool*>. `ClearAllPools` clears the connection pools for a given provider, and `ClearPool` clears the connection pool that is associated with a specific connection. If there are connections being used at the time of the call, they are marked appropriately. When they are closed, they are discarded instead of being returned to the pool.
 
 ## Transaction support
 
@@ -94,7 +94,7 @@ For more info about the events associated with opening and closing connections, 
 
 ## Control connection pooling with connection string keywords
 
- The `ConnectionString` property of the <xref:System.Data.SqlClient.SqlConnection> object supports connection string key/value pairs that can be used to adjust the behavior of the connection pooling logic. For more information, see <xref:System.Data.SqlClient.SqlConnection.ConnectionString>.
+ The `ConnectionString` property of the <xref:Microsoft.Data.SqlClient.SqlConnection> object supports connection string key/value pairs that can be used to adjust the behavior of the connection pooling logic. For more information, see <xref:Microsoft.Data.SqlClient.SqlConnection.ConnectionString>.
 
 ## Pool fragmentation
 

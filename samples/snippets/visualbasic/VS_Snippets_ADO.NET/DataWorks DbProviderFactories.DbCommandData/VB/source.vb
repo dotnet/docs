@@ -1,14 +1,12 @@
 ﻿Imports System.Data
-Imports System.Data.SqlClient
-Imports System.Data.OleDb
+Imports Microsoft.Data.SqlClient
 Imports System.Configuration
 Imports System.Data.Common
 
 Class Program
 
     Shared Sub Main()
-        Dim c As DbConnection = CreateDbConnection("System.Data.OleDb")
-        'Dim c As DbConnection = CreateDbConnection("System.Data.SqlClient")
+        Dim c As DbConnection = CreateDbConnection("Microsoft.Data.SqlClient")
         DbCommandSelect(c)
         Console.ReadLine()
     End Sub
@@ -50,7 +48,7 @@ Class Program
     ' </Snippet1>
 
     ' Given a provider, create the factory and connect to the data source.
-    ' The provider invariant name is in the format System.Data.ProviderName.
+    ' Use Microsoft.Data.SqlClient as the SQL Server provider invariant name.
     Private Shared Function CreateDbConnection( _
         ByVal providerName As String) As DbConnection
 
@@ -61,6 +59,9 @@ Class Program
 
         ' Create the factory if there's a valid connection string.
         If Not connectionString Is Nothing Then
+#If Not NETFRAMEWORK Then
+            DbProviderFactories.RegisterFactory("Microsoft.Data.SqlClient", SqlClientFactory.Instance)
+#End If
             Dim factory As DbProviderFactory = _
                DbProviderFactories.GetFactory(providerName)
 

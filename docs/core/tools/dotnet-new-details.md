@@ -1,5 +1,6 @@
 ---
 title: dotnet new details
+ai-usage: ai-assisted
 description: The dotnet new details command displays template package metadata.
 ms.date: 06/07/2023
 ---
@@ -33,8 +34,8 @@ If the package is installed locally or is found on the official NuGet website, i
 
 - **`--add-source|--nuget-source <SOURCE>`**
 
-  By default, `dotnet new details` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet source the package can be installed from. If `--nuget-source` is specified, the source is added to the list of sources to be checked.
-  To check the configured sources for the current directory use [`dotnet nuget list source`](dotnet-nuget-list-source.md). For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior).
+  By default, `dotnet new details` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet sources for the operation. Specify `--nuget-source` to use a source in addition to the configured sources.
+  To check the configured sources for the current directory, use [`dotnet nuget list source`](dotnet-nuget-list-source.md). For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior).
 
 - [!INCLUDE [interactive](includes/cli-interactive.md)]
 
@@ -64,4 +65,4 @@ If the package is installed locally or is found on the official NuGet website, i
 - [dotnet new uninstall command](dotnet-new-uninstall.md)
 - [dotnet new list command](dotnet-new-list.md)
 - [dotnet new search command](dotnet-new-search.md)
-- [Custom templates for dotnet new](custom-templates.md)
+- [.NET templates for authors](templates.md)

@@ -67,7 +67,7 @@ At compile time, the compiler replaces non-default field names with the correspo
 > [!TIP]
 > Enable .NET code style rule [IDE0037](../../../fundamentals/code-analysis/style-rules/ide0037.md) to set a preference on inferred or explicit tuple field names.
 
-Beginning with C# 12, you can specify an alias for a tuple type with a [`using` directive](../keywords/using-directive.md#the-using-alias). The following example adds a `global using` alias for a tuple type with two integer values for an allowed `Min` and `Max` value:
+You can specify an alias for a tuple type with a [`using` directive](../keywords/using-directive.md#the-using-alias). The following example adds a `global using` alias for a tuple type with two integer values for an allowed `Min` and `Max` value:
 
 :::code language="csharp" source="snippets/shared/ValueTuples.cs" id="AliasTupleType":::
 
@@ -122,11 +122,11 @@ Use the assignment operator `=` to *deconstruct* a tuple instance into separate 
 
 The destination of a deconstruct expression can include both existing variables and variables declared in the deconstruction declaration.
 
-You can also combine deconstruction with [pattern matching](../../fundamentals/functional/pattern-matching.md) to inspect the characteristics of fields in a tuple. The following example loops through several integers and prints those that are divisible by 3. It deconstructs the tuple result of <xref:System.Int32.DivRem*?displayProperty=nameWithType> and matches against a `Remainder` of 0:
+You can also combine deconstruction with [pattern matching](../../fundamentals/patterns/pattern-matching.md) to inspect the characteristics of fields in a tuple. The following example loops through several integers and prints those that are divisible by 3. It deconstructs the tuple result of <xref:System.Int32.DivRem*?displayProperty=nameWithType> and matches against a `Remainder` of 0:
 
 :::code language="csharp" source="snippets/shared/ValueTuples.cs" id="DeconstructToPattern":::
 
-For more information about deconstruction of tuples and other types, see [Deconstructing tuples and other types](../../fundamentals/functional/deconstruct.md).
+For more information about deconstruction of tuples and other types, see [Deconstructing tuples and other types](../../fundamentals/patterns/deconstruct.md).
 
 ## Tuple equality
 

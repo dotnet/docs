@@ -1,5 +1,5 @@
 ---
-title: "Working with Assessment: Comprehensive guide to application assessment"
+title: "Assessment: Comprehensive guide to application assessment"
 description: Learn how to effectively work with application assessments in GitHub Copilot modernization, including configuration, interpretation, and report management.
 author: KarlErickson
 ms.author: karler
@@ -132,4 +132,4 @@ You can select the `Export` button in the assessment dashboard to export the rep
 ## Next Steps
 
 - [Predefined Tasks](predefined-tasks.md)
-- [Frequently Asked Questions](../../../core/porting/github-copilot-app-modernization/faq.yml)
+- [Frequently Asked Questions](./faq.yml)

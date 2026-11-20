@@ -39,6 +39,10 @@ Specify runtime configuration options in the **configProperties** section of the
 }
 ```
 
+Starting in .NET 11, to support development-time overrides, the value in *[appname].runtimeconfig.dev.json* takes precedence when you define the same key in `configProperties` in both *[appname].runtimeconfig.dev.json* and *[appname].runtimeconfig.json*.
+
+For more information, see [configProperties in .runtimeconfig.dev.json override .runtimeconfig.json](../compatibility/deployment/11/runtimeconfigdev-configproperties-precedence.md).
+
 ### Example [appname].runtimeconfig.json file
 
 If you're placing the options in the *output* JSON file, nest them under the `runtimeOptions` property.
@@ -91,7 +95,7 @@ Here is an example SDK-style project file with MSBuild properties for configurin
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup>

@@ -1,7 +1,7 @@
 ---
 title: dotnet command
 description: Learn about the dotnet command (the generic driver for the .NET CLI) and its usage.
-ms.date: 10/28/2025
+ms.date: 11/19/2026
 ---
 # dotnet command
 
@@ -100,7 +100,7 @@ The following options are for `dotnet` with a command. For example, `dotnet buil
 
 - **`-v|--verbosity <LEVEL>`**
 
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Not supported in every command. See specific command page to determine if this option is available.
+  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Not supported in every command. See specific command page to determine if this option is available. For example, `dotnet build -v q` is equivalent to `dotnet build --verbosity quiet`.
 
 - **`-?|-h|--help`**
 
@@ -268,6 +268,18 @@ Build a project and its dependencies in a given directory:
 
 ```dotnetcli
 dotnet build
+```
+
+Build a project with detailed output, using the short form of the `--verbosity` option:
+
+```dotnetcli
+dotnet build -v d
+```
+
+Publish an application with minimal output:
+
+```dotnetcli
+dotnet publish -v m
 ```
 
 Run an application:

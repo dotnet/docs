@@ -80,8 +80,8 @@ If your code must write directly to the console and you need that output to rema
 | `--show-test-results <OUTCOME>` | 2.4.0 | Selects result blocks by outcome. Use `passed`, `failed`, `skipped`, `all`, or `none`. `failed` also includes errors, timeouts, and cancellations. With `dotnet test`, also requires the .NET 11 SDK or later. |
 | `--show-stdout` | 2.2.1 | Determines when to show captured standard output of a test. Valid values are `All`, `Failed`, and `None`. Default is `All`. |
 | `--show-stderr` | 2.2.1 | Determines when to show captured error output of a test. Valid values are `All`, `Failed`, and `None`. Default is `All`. |
-| `--show-flaky-tests` | 2.4.0 | Controls the `flaky:` summary and the **Flaky tests** list for tests that pass after a retry. Use `on` or `off`; the default is `on`. Applies to MSTest `[Retry]` and the [retry extension](microsoft-testing-platform-retry.md). |
-| `--show-slowest-tests` | 2.4.0 | Shows the requested number of slowest tests in the summary. For a multi-module run, MTP reports the slowest tests for each module. |
+| `--show-flaky-tests` | 2.4.0 | Controls the `flaky:` summary and the **Flaky tests** list for tests that pass after a retry. Use `on` or `off`; the default is `on`. Applies to MSTest `[Retry]` and the [retry extension](microsoft-testing-platform-retry.md). With `dotnet test`, also requires the .NET 11 SDK or later. |
+| `--show-slowest-tests` | 2.4.0 | Shows the requested number of slowest tests in the summary. For a multi-module run, MTP reports the slowest tests for each module. With `dotnet test`, also requires the .NET 11 SDK or later. |
 
 Combine `passed`, `failed`, and `skipped` with commas, spaces, or repeated `--show-test-results` options. Don't combine `all` or `none` with another value. An explicit `--show-test-results` value overrides the `--output` preset regardless of option order. The filter changes result blocks only; progress and summary counts remain unchanged.
 

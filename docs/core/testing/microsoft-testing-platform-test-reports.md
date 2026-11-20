@@ -40,7 +40,7 @@ If a default or explicit TRX, HTML, or JUnit file name already exists for a test
 
 ## Report consolidation
 
-Starting with MTP 2.4.0, MTP automatically post-processes report artifacts after retry support runs multiple attempts. For a `dotnet test` invocation that runs multiple test modules, automatic post-processing also requires .NET 11 or later. The feature is experimental in MTP 2.4.0.
+Starting with MTP 2.4.0, MTP automatically post-processes report artifacts after retry support runs multiple attempts. For a `dotnet test` invocation that runs multiple test modules, automatic post-processing also requires the .NET 11 SDK or later. The feature is experimental in MTP 2.4.0.
 
 The TRX, JUnit, CTRF, and HTML extensions group compatible artifacts by report kind and write a consolidated report under the test results directory's `merged` subdirectory. CTRF consolidation combines module results and collapses retry attempts into the final test result with retry history. HTML consolidation creates a merged summary and preserves the original per-process reports.
 
@@ -240,7 +240,7 @@ The extension automatically detects that it runs in a continuous integration (CI
 >
 > Live publishing with `--publish-azdo-test-results` requires `TF_BUILD=true`, `SYSTEM_COLLECTIONURI`, `SYSTEM_TEAMPROJECT`, `SYSTEM_ACCESSTOKEN`, and `BUILD_BUILDID`. If any value is missing or invalid, MTP warns and doesn't publish the test run.
 
-Starting with MTP 2.4.0, Azure DevOps Markdown summaries aggregate results across every test module in a `dotnet test` invocation. When you also enable code coverage, the summary includes covered and total counts, percentages, threshold results, and an indicator when coverage data is partial.
+Starting with MTP 2.4.0, Azure DevOps Markdown summaries aggregate results across every test module in a `dotnet test` invocation. Cross-module aggregation also requires the .NET 11 SDK or later. When you also enable code coverage, the summary includes covered and total counts, percentages, threshold results, and an indicator when coverage data is partial.
 
 Starting with MTP 2.5 preview, the summary also presents pass rates, flaky-test history, duration comparisons, test dependency edges, focused failure diagnostics, and a compact deterministic layout for multi-module runs.
 
@@ -290,6 +290,6 @@ builder.AddGitHubActionsProvider();
 | `--report-gh-slow-test-notices` | 2.3.0 | Enables or disables slow-test notices. Valid values are `on` (default) and `off`. Requires `--report-gh`. |
 | `--report-gh-slow-test-threshold` | 2.3.0 | The duration a test can run before a slow-test notice is emitted. Accepts a bare number of seconds or a value with a unit suffix such as `90s`, `2m`, or `1.5h`. The default is `60s`. Requires `--report-gh`. |
 
-Starting with MTP 2.4.0, GitHub Actions Markdown summaries aggregate results across every test module in a `dotnet test` invocation. When you also enable code coverage, select `coverage` or `all` to include covered and total counts, percentages, threshold results, and an indicator when coverage data is partial.
+Starting with MTP 2.4.0, GitHub Actions Markdown summaries aggregate results across every test module in a `dotnet test` invocation. Cross-module aggregation also requires the .NET 11 SDK or later. When you also enable code coverage, select `coverage` or `all` to include covered and total counts, percentages, threshold results, and an indicator when coverage data is partial.
 
 Failure details stay within bounded message, stack, failure-count, and whole-summary budgets. When content exceeds a limit, the report truncates or condenses it and states that reduction in the summary.

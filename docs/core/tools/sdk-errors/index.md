@@ -383,3 +383,4 @@ This list is a complete list of the errors that you might get from the .NET SDK 
 |[NETSDK1239](netsdk1239.md)|The current .NET SDK ({0}) is end of life as of {1}. It will receive no further security updates: <https://dotnet.microsoft.com/download>|
 |[NETSDK1240](netsdk1240.md)|The current .NET SDK ({0}) has no newer release in its feature band. Update to version {1}: <https://dotnet.microsoft.com/download>|
 |[NETSDK1242](netsdk1242.md)|Building {0} projects with the Mono runtime is not supported in .NET 11.0 and later. Use the CoreCLR runtime or target .NET 10.0.|
+|[NETSDK1247](netsdk1247.md)|The file '{0}' required for publishing was not found. Publish without '--no-build', or ensure the project has been built with the appropriate Configuration, TargetFramework, RuntimeIdentifier, and SelfContained properties.|

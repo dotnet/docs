@@ -107,6 +107,9 @@ A value indicating whether the connection will be pooled.
 | True  | The connection will be pooled. This is the default. |
 | False | The connection won't be pooled.                     |
 
+> [!TIP]
+> When pooling is enabled (`Pooling=True`), closing or disposing a <xref:Microsoft.Data.Sqlite.SqliteConnection> returns the connection to the internal pool instead of releasing the underlying file handle. If your application needs to immediately release file locks on the database file (for example, to delete, copy, or move the database file), call <xref:Microsoft.Data.Sqlite.SqliteConnection.ClearPool*?displayProperty=nameWithType> or <xref:Microsoft.Data.Sqlite.SqliteConnection.ClearAllPools*?displayProperty=nameWithType>. Alternatively, specify `Pooling=False` in the connection string to disable pooling.
+
 ### Vfs
 
 A value indicating which [virtual file system (VFS)](https://www.sqlite.org/vfs.html) implementation to use. When empty or not specified, the default VFS for the platform is used.

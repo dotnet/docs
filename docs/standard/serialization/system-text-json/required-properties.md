@@ -16,11 +16,10 @@ There are three ways to mark a property or field as required for JSON deserializ
 
 To specify that all non-optional constructor parameters are required for JSON deserialization, set the <xref:System.Text.Json.JsonSerializerOptions.RespectRequiredConstructorParameters?displayProperty=nameWithType> option (or, for source generation, <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute.RespectRequiredConstructorParameters> property) to `true`. For more information, see the [Non-optional constructor parameters](#non-optional-constructor-parameters) section.
 
-From the serializer's perspective, the C# `required` modifier and [`[JsonRequired]`](xref:System.Text.Json.Serialization.JsonRequiredAttribute) attribute are equivalent, and both map to the same piece of metadata, which is <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsRequired?displayProperty=nameWithType>. In most cases, you'd simply use the built-in C# keyword. However, in the following cases, you should use <xref:System.Text.Json.Serialization.JsonRequiredAttribute> instead:
+From the serializer's perspective, the C# `required` modifier and [`[JsonRequired]`](xref:System.Text.Json.Serialization.JsonRequiredAttribute) attribute are equivalent, and both map to the same piece of metadata, which is <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsRequired?displayProperty=nameWithType>. In most cases, use the built-in C# keyword. However, consider using <xref:System.Text.Json.Serialization.JsonRequiredAttribute> instead in these scenarios:
 
-- If you're using a programming language other than C# or a down-level version of C#.
-- If you only want the requirement to apply to JSON deserialization.
-- If you're using `System.Text.Json` serialization in [source generation](source-generation-modes.md#metadata-based-mode) mode. In this case, your code won't compile if you use the `required` modifier, as source generation occurs at compile time.
+- You use a programming language other than C# or an earlier version of C# that doesn't support the `required` modifier.
+- You want the requirement to apply only to JSON deserialization, without requiring the property to be initialized during object construction in C# code.
 
 The following code snippet shows an example of a property modified with the `required` keyword. This property must be present in the JSON payload for deserialization to succeed.
 

@@ -115,7 +115,27 @@ Here's an example of using `GetCustomAttributes` on a `MemberInfo` instance for 
 
 That prints to console: `Attribute on MyClass: ObsoleteAttribute`. Try adding other attributes to `MyClass`.
 
-It's important to note that these `Attribute` objects are instantiated lazily. That is, they aren't be instantiated until you use `GetCustomAttribute` or `GetCustomAttributes`. They're also instantiated each time. Calling `GetCustomAttributes` twice in a row returns two different instances of `ObsoleteAttribute`.
+### Read and act on custom attribute data
+
+To extract data from your own custom attributes, use the generic <xref:System.Reflection.CustomAttributeExtensions.GetCustomAttribute%60%601(System.Reflection.MemberInfo)> method. This method returns an instance of the specific attribute type, enabling you to read its constructor parameters and properties directly.
+
+Consider the following example of a custom validation attribute applied to a class property:
+
+:::code language="csharp" source="./snippets/tutorial/Program.cs" id="PracticalAttributeUsage":::
+
+To inspect the attribute and act on its metadata at runtime, use reflection to get the <xref:System.Reflection.PropertyInfo> and read the attribute:
+
+:::code language="csharp" source="./snippets/tutorial/Program.cs" id="ReadCustomAttributeValues":::
+
+The output from this code is:
+
+```output
+Property 'Level' must be between 1 and 100.
+```
+
+By reading custom attributes at runtime, frameworks and libraries implement declarative behaviors like object-relational mapping, validation rules, dependency injection bindings, and automated routing.
+
+It's important to note that these `Attribute` objects are instantiated lazily. That is, they aren't instantiated until you use `GetCustomAttribute` or `GetCustomAttributes`. They're also instantiated each time. Calling `GetCustomAttributes` twice in a row returns two different instances of `ObsoleteAttribute`.
 
 ## Common attributes in the runtime
 

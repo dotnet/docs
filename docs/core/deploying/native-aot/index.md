@@ -100,6 +100,21 @@ The app is available in the publish directory and contains all the code needed t
 
 Check out the [Native AOT samples](https://github.com/dotnet/samples/tree/main/core/nativeaot) available in the dotnet/samples repository on GitHub. The samples include [Linux](https://github.com/dotnet/samples/blob/main/core/nativeaot/HelloWorld/Dockerfile) and [Windows](https://github.com/dotnet/samples/blob/main/core/nativeaot/HelloWorld/Dockerfile.windowsservercore-x64) Dockerfiles that demonstrate how to automate installation of prerequisites and publish .NET projects with Native AOT using containers.
 
+## Publish Native AOT using Visual Studio
+
+You can publish a Native AOT application directly from Visual Studio:
+
+1. Ensure the required prerequisites are installed, including the **Desktop development with C++** workload in the Visual Studio Installer.
+1. Add `<PublishAot>true</PublishAot>` to your project file (`.csproj`).
+1. In Solution Explorer, right-click the project and select **Publish...**.
+1. In the **Publish** dialog, choose **Folder** as the target, specify a folder location, and select **Finish**.
+1. In the Publish Profile summary page, select the **Edit** icon (pencil) next to **Settings**:
+   - **Configuration**: Select **Release**.
+   - **Deployment mode**: Select **Self-contained**. Native AOT requires self-contained deployment because it compiles all code and runtime components into a single native image.
+   - **Target runtime**: Select a specific runtime identifier for your target platform (for example, **win-x64** or **win-arm64**). Native AOT compilation does not support portable (`any`) runtimes.
+1. Select **Save** to update the publish profile (`.pubxml`).
+1. Select **Publish**. Visual Studio compiles the project into a native binary and outputs the executable to the target publish folder.
+
 ## AOT-compatibility analyzers
 
 The `IsAotCompatible` property is used to indicate whether a library is compatible with Native AOT. Consider when a library sets the `IsAotCompatible` property to `true`, for example:

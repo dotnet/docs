@@ -171,7 +171,7 @@ public static class ExtensionMemberUsage
             First is a passing grade.
             Second is not a passing grade.
 
-            Raising the bar!
+            Raising the bar. Passing grade is now C!
 
             First is not a passing grade.
             Second is not a passing grade.

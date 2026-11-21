@@ -23,9 +23,16 @@ You need to set up your machine to run .NET, including the C# compiler. The C# c
 
 One way you can implement behavior that appears as part of an interface is to define [extension members](../../programming-guide/classes-and-structs/extension-methods.md) that provide the default behavior. Interfaces declare a minimum set of members while providing a greater surface area for any class that implements that interface. For example, the extension members in <xref:System.Linq.Enumerable> provide the implementation for any sequence to be the source of a LINQ query.
 
-Extension members are resolved at compile time, using the declared type of the variable. Classes that implement the interface can provide a better implementation for any extension member. Variable declarations must match the implementing type to enable the compiler to choose that implementation. When the compile-time type matches the interface, method calls resolve to the extension member. Another concern with extension members is that those members are accessible wherever the class containing the extension member is accessible. Classes can't declare if they should or shouldn't provide features declared in extension members.
+The compiler selects matching members based on overload resolution rules and the compile-time type of the variable:
 
-You can declare the default implementations as interface methods. Then, every class automatically uses the default implementation. Any class that can provide a better implementation can override the interface method definition with a better algorithm. In one sense, this technique sounds similar to how you could use [extension members](../../programming-guide/classes-and-structs/extension-methods.md).
+1. Instance members declared directly on the class or struct (including inherited base class members) take precedence over extension methods.
+1. When a variable is typed as the class, calling a method invokes the class's implementation rather than an extension method with the same signature.
+1. When a variable is typed as the interface, the compiler can resolve only members declared on that interface or extension methods defined for that interface. If a class provides a specialized implementation of an extension method without declaring it on the interface, the compiler can't see the class's method through the interface reference and resolves to the extension method instead.
+1. Interface members with default implementations participate directly in virtual method dispatch. When you access an object through its interface reference, method calls invoke the class's overriding implementation if one exists, or fall back to the interface's default implementation.
+
+In addition, extension methods are accessible wherever their containing namespace is imported, meaning classes can't opt out of extension members. By contrast, default interface methods let class authors control whether to implement the interface and choose whether to override default behaviors.
+
+When you declare default implementations as interface members, implementing classes automatically inherit those behaviors while retaining the ability to override them with specialized algorithms.
 
 In this article, you learn how default interface implementations enable new scenarios.
 

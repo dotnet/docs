@@ -152,6 +152,33 @@ The span-based implementation doesn't allocate. Values outside the range of `dec
 
 Update tests and serialized expected values that encoded the previous, incorrectly rounded result. This includes code that depended on `BigInteger` conversion truncation toward zero. If an application requires a specific legacy `float`, `double`, `Half`, or `BFloat16` bit pattern for a protocol or file format, encode that bit pattern explicitly rather than reproduce it through a numeric conversion.
 
+### Impact on unit tests (xUnit / NUnit)
+
+A common scenario where this breaking change manifests is in parameter-driven unit tests. C# does not allow `decimal` literals as attribute arguments, so test attributes such as xUnit's `[InlineData]` and NUnit's `[TestCase]` require non-integer numeric literals to be passed as `double` or `float`. When the test framework binds the attribute value to a `decimal` parameter, it executes a `double` to `decimal` conversion.
+
+In .NET 10 and earlier, that conversion rounded to 15 decimal digits, quietly producing `0.1m` for `0.1`. In .NET 11, the conversion preserves the exact binary representation:
+
+```csharp
+// Compiles: 0.1 is a double attribute argument
+[Theory]
+[InlineData(0.1)]
+public void CalculateTax(decimal rate)
+{
+    // Under .NET 10 and earlier: rate equals 0.1m
+    // Under .NET 11: rate is 0.1000000000000000055511151231m -> assert fails!
+    Assert.Equal(0.1m, rate);
+}
+```
+
+Even if your production code uses `decimal` end-to-end, your test suite may fail due to the attribute parameter conversion. To supply exact `decimal` values to parameterized tests:
+
+- **xUnit**:
+  - Supply genuine decimal literals via `[MemberData]` or `[ClassData]` using `TheoryData<decimal>` (for example, `Add(0.1m)`).
+  - Pass string arguments (for example, `[InlineData("0.1")]`) and parse them inside the test method with `decimal.Parse(rate, CultureInfo.InvariantCulture)`.
+- **NUnit**:
+  - Pass string literals in `[TestCase("0.1")]` with a `decimal` parameter type; NUnit automatically converts string arguments using culture-invariant parsing.
+  - Supply genuine decimal values using `[TestCaseSource]`.
+
 There's no compatibility switch to restore the previous conversion algorithms.
 
 ## Affected APIs

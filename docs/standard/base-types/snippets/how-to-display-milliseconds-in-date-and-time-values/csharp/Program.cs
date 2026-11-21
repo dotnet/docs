@@ -19,11 +19,12 @@ try
 
     string fullPattern = DateTimeFormatInfo.CurrentInfo.FullDateTimePattern;
     
-    // Create a format similar to .fff but based on the current culture.
-    string millisecondFormat = $"{NumberFormatInfo.CurrentInfo.NumberDecimalSeparator}fff";
+    // Create a format similar to .fff but based on the current culture's decimal separator.
+    string millisecondFormat = $"'{NumberFormatInfo.CurrentInfo.NumberDecimalSeparator}'fff";
 
-    // Append millisecond pattern to current culture's full date time pattern.
-    fullPattern = Regex.Replace(fullPattern, "(:ss|:s)", $"$1{millisecondFormat}");
+    // Append millisecond pattern to current culture's full date time pattern by matching seconds specifiers outside quoted literals.
+    string secondsPattern = """(?<!s)(s{1,2})(?!s)(?=(?:[^'"\\]|\\.|'[^']*'|"[^"]*")*$)""";
+    fullPattern = Regex.Replace(fullPattern, secondsPattern, $"$1{millisecondFormat}");
 
     // Display Millisecond component with modified full date and time pattern.
     Console.WriteLine($"Modified full date time pattern: {dateValue.ToString(fullPattern)}");

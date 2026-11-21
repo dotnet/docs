@@ -1,7 +1,7 @@
 ---
-description: "Advanced C# Compiler Options. These options are used in advanced scenarios."
+description: "Advanced C# Compiler Options. Learn options for application entry point selection (StartupObject / -main), PDB files, path mapping, and assembly configuration."
 title: "Compiler Options - advanced scenarios"
-ms.date: 07/16/2026
+ms.date: 11/01/2026
 f1_keywords:
   - "cs.build.options"
 helpviewer_keywords:
@@ -52,17 +52,25 @@ You add any of these options in a `<PropertyGroup>` element in your `*.csproj` f
     <StartupObject>...</StartupObject>
     ...
 </PropertyGroup>
-``````
+```
 
 ## StartupObject
 
-This option specifies the class that contains the entry point to the program when your project includes more than one type with a `Main` method. When there's exactly one acceptable `Main` method in the project, this option is ignored.
+The **StartupObject** option specifies the type (class, struct, or record) that contains the entry point (`Main` method) to the program when your project includes more than one type with a `Main` method. When there's exactly one acceptable `Main` method in the project, this option is ignored.
 
 ```xml
 <StartupObject>MyNamespace.Program</StartupObject>
 ```
 
 Where `Program` is the type that contains the `Main` method. When this option is required (multiple `Main` methods exist), the provided class name must be fully qualified; it must include the full namespace containing the class, followed by the class name. For example, when the `Main` method is located inside the `Program` class in the `MyApplication.Core` namespace, the compiler option has to be `-main:MyApplication.Core.Program`. If the class is in the global namespace, the fully qualified name is the same as the simple class name (for example, `Program` instead of `MyNamespace.Program`).
+
+### Configure StartupObject in Visual Studio
+
+You can also set this property in Visual Studio:
+
+1. In **Solution Explorer**, right-click the project node and select **Properties**.
+1. Navigate to **Application** > **General**.
+1. In the **Startup object** drop-down list, select the class containing the entry point.
 
 > [!NOTE]
 > This option can't be used for a project that includes [top-level statements](../../fundamentals/program-structure/top-level-statements.md), even if that project contains one or more `Main` methods.

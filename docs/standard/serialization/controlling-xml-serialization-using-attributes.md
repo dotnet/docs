@@ -1,7 +1,7 @@
 ---
 title: "Controlling XML Serialization Using Attributes"
 description: Attributes can be used to control the XML serialization of an object or to create an alternate XML stream from the same set of classes.
-ms.date: "08/05/2022"
+ms.date: 11/01/2026
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
@@ -313,6 +313,78 @@ In contrast, if you were to serialize an instance of the class, only `NewGroupNa
 ## Preventing Serialization with the XmlIgnoreAttribute
 
 You might come across a situation where a public property or field doesn't need to be serialized. For example, a field or property could be used to contain metadata. In such cases, apply the <xref:System.Xml.Serialization.XmlIgnoreAttribute> to the field or property and the <xref:System.Xml.Serialization.XmlSerializer> will skip over it.
+
+## Conditionally serializing members
+
+Instead of unconditionally ignoring a property with <xref:System.Xml.Serialization.XmlIgnoreAttribute>, you can conditionally control whether a property or field is serialized by using either of the following conventions:
+
+- A `ShouldSerialize{PropertyName}()` method
+- A companion `{PropertyName}Specified` property or field
+
+### The ShouldSerialize pattern
+
+To conditionally serialize a property based on runtime state (such as whether an array or collection is non-empty, or whether a value meets specific criteria), define a `public` parameterless method on the class that returns a `bool` and begins with the prefix `ShouldSerialize`, followed by the exact property name:
+
+```csharp
+public class InventoryItem
+{
+    public string Name { get; set; } = string.Empty;
+
+    public string[] Tags { get; set; } = Array.Empty<string>();
+
+    // The method must be public, return bool, take no parameters,
+    // and match the pattern ShouldSerialize<PropertyName>().
+    public bool ShouldSerializeTags()
+    {
+        return Tags is not null && Tags.Length > 0;
+    }
+}
+```
+
+```vb
+Public Class InventoryItem
+    Public Property Name As String = String.Empty
+
+    Public Property Tags As String() = Array.Empty(Of String)()
+
+    Public Function ShouldSerializeTags() As Boolean
+        Return Tags IsNot Nothing AndAlso Tags.Length > 0
+    End Function
+End Class
+```
+
+When <xref:System.Xml.Serialization.XmlSerializer> serializes an instance of `InventoryItem`, it invokes `ShouldSerializeTags()`. If the method returns `false`, the `Tags` element is omitted from the serialized XML.
+
+> [!IMPORTANT]
+> The `ShouldSerialize{PropertyName}` method must be declared with `public` visibility. If the method is private or protected, `XmlSerializer` ignores it.
+
+### The Specified pattern
+
+For value types (such as `int`, <xref:System.DateTime>, or enum fields) where the property cannot be `null`, you can define a companion `public` boolean property or field named `{PropertyName}Specified`:
+
+```csharp
+public class Order
+{
+    public int OrderId { get; set; }
+
+    public DateTime DeliveryDate { get; set; }
+
+    // When DeliveryDateSpecified is false, DeliveryDate is not serialized.
+    public bool DeliveryDateSpecified { get; set; }
+}
+```
+
+```vb
+Public Class Order
+    Public Property OrderId As Integer
+
+    Public Property DeliveryDate As DateTime
+
+    Public Property DeliveryDateSpecified As Boolean
+End Class
+```
+
+When `DeliveryDateSpecified` is `false`, the `DeliveryDate` element is omitted from the serialized output. When deserializing XML that lacks the `DeliveryDate` element, `XmlSerializer` automatically sets `DeliveryDateSpecified` to `false`. The [XML Schema Definition Tool (Xsd.exe)](xml-schema-definition-tool-xsd-exe.md) generates `{PropertyName}Specified` members automatically for optional schema elements (`minOccurs="0"`).
 
 ## See also
 

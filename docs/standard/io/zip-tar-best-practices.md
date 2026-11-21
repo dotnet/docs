@@ -307,6 +307,8 @@ Starting with .NET 11, the runtime validates ZIP CRC-32 values automatically whe
 
 .NET 11 adds support for reading and writing encrypted ZIP archives. The following subsections explain how to choose an encryption method, read encrypted entries, and use encrypted archives with the convenience APIs.
 
+Encryption protects the confidentiality of individual entry contents, not their integrity or authenticity. Successful decryption doesn't establish that the contents are safe or trustworthy; assess trust based on the archive's provenance.
+
 - [Choose AES-256 for new archives](#choose-aes-256-for-new-archives)
 - [Read encrypted entries](#read-encrypted-entries)
 - [Convenience methods with encryption](#convenience-methods-with-encryption)
@@ -327,7 +329,9 @@ The `ZipEncryptionMethod` enum specifies the encryption method:
 
 ### Choose AES-256 for new archives
 
-When creating encrypted entries, always prefer `Aes256`. `ZipCrypto` is a legacy method with known cryptographic weaknesses and shouldn't be relied upon for security—use it only when interoperating with tools that don't support WinZip AES.
+To create encrypted entries, prefer `Aes256`. `ZipCrypto` is a legacy method with known cryptographic weaknesses and shouldn't be relied upon for security. Use it only for interoperability with tools that don't support WinZip AES. For maximum interoperability with ZipCrypto, use ASCII-only passwords.
+
+Choose strong passwords. <xref:System.IO.Compression.ZipArchive> uses passwords verbatim, without transformations or strength checks. It rejects empty passwords when you create encrypted entries.
 
 ```csharp
 string password = "your-password-here";
@@ -360,9 +364,9 @@ foreach (ZipArchiveEntry entry in archive.Entries)
 ```
 
 > [!IMPORTANT]
-> <xref:System.IO.Compression.ZipArchive> doesn't guarantee the integrity of an archive or its entries. If your application requires integrity guarantees, establish them through a separate trusted channel before extraction.
->
-> The runtime doesn't guarantee that the hash-based message authentication code (HMAC) embedded in a WinZip AES entry will be validated. For example, validation might not run if you don't read the data stream to the end or if the input is malformed. Read the stream to the end to allow validation to run, but don't treat that step as an integrity guarantee. The runtime can return all entry data to your application before validation completes.
+> ZIP archives lack robust authenticity guarantees, regardless of whether they're password-protected. This limitation is inherent to the ZIP format, so <xref:System.IO.Compression.ZipArchive> doesn't guarantee the integrity of an archive or its contents. Applications that require integrity guarantees must establish them through a separate trusted channel before extraction.
+
+For unencrypted entries, `Open` ignores the supplied password and opens the entry normally. If your application requires encryption, check `ZipArchiveEntry.IsEncrypted` before you open the entry.
 
 Attempting to open an entry that uses an unsupported encryption method (`ZipEncryptionMethod.Unknown`) throws <xref:System.NotSupportedException>.
 
@@ -400,6 +404,7 @@ Before deploying code that handles archives from untrusted sources, verify you'v
 - **Memory limits:** Avoid <xref:System.IO.Compression.ZipArchiveMode.Update?displayProperty=nameWithType> for large untrusted archives. Avoid <xref:System.IO.Compression.ZipArchiveMode.Read?displayProperty=nameWithType> mode with unseekable streams from untrusted sources.
 - **Thread safety:** Don't share <xref:System.IO.Compression.ZipArchive>, <xref:System.Formats.Tar.TarReader?displayProperty=fullName>, or <xref:System.Formats.Tar.TarWriter?displayProperty=fullName> instances across threads.
 - **Untrusted metadata:** Treat entry names, link names, comments, ZIP extra fields, and TAR PAX extended attributes as untrusted input. Validate them and set limits before display or processing.
+- **Archive integrity:** If required, establish integrity through a separate trusted channel before extraction. Neither ZIP password protection nor CRC-32 checks establish trust.
 - **Overwrite behavior:** Default to `overwrite: false`.
 - **Resource disposal:** Always dispose <xref:System.IO.Compression.ZipArchive?displayProperty=fullName>, <xref:System.Formats.Tar.TarReader>, <xref:System.Formats.Tar.TarWriter>, and their streams.
 

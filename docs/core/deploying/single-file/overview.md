@@ -2,7 +2,7 @@
 title: Create a single file for application deployment
 description: Learn what single file application is and why you should consider using this application deployment model.
 author: lakshanf
-ms.date: 03/25/2026
+ms.date: 11/01/2026
 ms.custom: kr2b-contr-experiment
 ai-usage: ai-assisted
 ---
@@ -231,7 +231,19 @@ It's possible that tooling will need to copy files in the process of signing. Th
 
 Single-file apps can be created with compression enabled on the embedded assemblies. Set the `EnableCompressionInSingleFile` property to `true`. The single file that's produced has all of the embedded assemblies compressed, which can significantly reduce the size of the executable.
 
-Compression comes with a performance cost. On application start, the assemblies must be decompressed into memory, which takes some time. We recommend that you measure both the size change and startup cost of enabling compression before using it. The impact can vary significantly between different applications.
+```xml
+<PropertyGroup>
+  <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+</PropertyGroup>
+```
+
+Compression comes with startup time and memory overhead:
+
+- **Startup delay**: On application start, assemblies must be decompressed into memory, which adds startup latency.
+- **Increased memory footprint**: Uncompressed single-file apps can memory-map assemblies directly from the bundle file. When compression is enabled, the runtime must decompress the assembly payloads—including any precompiled [ReadyToRun](../ready-to-run.md) (R2R) code—into process memory as committed private working set. For applications with large dependencies or R2R images, this decompression can add hundreds of megabytes to the application's memory usage.
+
+> [!NOTE]
+> If your application runs in memory-constrained environments (such as containers with tight memory limits) or prioritizes fast startup time, measure both the binary size reduction and the runtime memory footprint before enabling single-file compression in production.
 
 ### Inspect a single-file app
 

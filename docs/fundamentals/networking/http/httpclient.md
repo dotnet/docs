@@ -369,7 +369,7 @@ The `DefaultProxy` property initialization on Windows and Unix-based platforms u
 
 On systems where environment variables are case-sensitive, the variable names can be all lowercase or all uppercase. The lowercase names are checked first.
 
-The proxy server can be a hostname or IP address, optionally followed by a colon and port number, or it can be an `http` URL, optionally including a username and password for proxy authentication. The URL must start with `http`, not `https`, and can't include any text after the hostname, IP, or port.
+The proxy server can be a hostname or IP address, optionally followed by a colon and port number, or it can be a URL, optionally including a username and password for proxy authentication. Supported URL schemes include `http`, `https` (starting in .NET 8), `socks4`, `socks4a`, `socks5`, and `socks5h`. If no scheme is specified, `http` is assumed. The URL shouldn't include a path, query, or fragment after the hostname, IP, or port.
 
 ### Configure the proxy per client
 

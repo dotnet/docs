@@ -3,8 +3,8 @@ title: Get started with .NET AI and MCP
 description: Learn about .NET AI and MCP key concepts and development resources to get started building MCP clients and servers
 ms.date: 11/20/2025
 ms.topic: overview
-author: alexwolfmsft
-ms.author: alexwolf
+author: billwagner
+ms.author: wiwagn
 ---
 
 # Get started with .NET AI and the Model Context Protocol

@@ -1,7 +1,7 @@
 ---
 title: "Lambda expressions - Lambda expressions and anonymous functions"
 description: C# lambda expressions that are used to create anonymous functions and expression bodied members.
-ms.date: 01/20/2026
+ms.date: 11/01/2026
 helpviewer_keywords:
   - "lambda expressions [C#]"
   - "outer variables [C#]"
@@ -319,11 +319,26 @@ The following rules apply to variable scope in lambda expressions:
 - A [return](../statements/jump-statements.md#the-return-statement) statement in a lambda expression doesn't cause the enclosing method to return.
 - A lambda expression can't contain a [goto](../statements/jump-statements.md#the-goto-statement), [break](../statements/jump-statements.md#the-break-statement), or [continue](../statements/jump-statements.md#the-continue-statement) statement if the target of that jump statement is outside the lambda expression block. It's also an error to have a jump statement outside the lambda expression block if the target is inside the block.
 
-To prevent unintentional capture of local variables or instance state by the lambda, apply the `static` modifier to a lambda expression:
+### Static anonymous functions
+
+Starting in C# 9, you can apply the `static` modifier to a lambda expression or [anonymous method](delegate-operator.md) to prevent the unintentional capture of local variables or instance state (`this`):
 
 :::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetStatic":::
 
-A static lambda can't capture local variables or instance state from enclosing scopes, but it can reference static members and constant definitions.
+You can also apply the `static` modifier to anonymous methods defined with the `delegate` operator:
+
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetStaticAnonymousMethod":::
+
+A static anonymous function:
+
+- Cannot capture local variables, parameters, or `this` from enclosing scopes. If a static lambda attempts to reference an outer variable, the compiler reports error [CS8828](../../misc/sorry-we-don-t-have-specifics-on-this-csharp-error.md) (*A static anonymous function cannot contain a reference to '`variable`'*) or [CS8829](../../misc/sorry-we-don-t-have-specifics-on-this-csharp-error.md) (*A static anonymous function cannot contain a reference to 'this' or 'base'*).
+- Can reference `static` members from the enclosing class, constant definitions (`const`), and `nameof` expressions.
+
+The following example demonstrates a static lambda that accesses constants and static members without creating a closure allocation:
+
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetStaticWithConstantsAndMembers":::
+
+Using static anonymous functions helps eliminate unintended heap allocations in performance-critical code paths, because the runtime avoids allocating a closure object.
 
 ## C# language specification
 

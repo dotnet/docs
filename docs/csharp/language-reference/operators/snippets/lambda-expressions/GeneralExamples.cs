@@ -40,6 +40,15 @@ namespace lambda_expressions
             // <SnippetStatic>
             Func<double, double> square = static x => x * x;
             // </SnippetStatic>
+
+            // <SnippetStaticAnonymousMethod>
+            Func<int, int, int> multiply = static delegate (int a, int b) { return a * b; };
+            // </SnippetStaticAnonymousMethod>
+
+            // <SnippetStaticWithConstantsAndMembers>
+            const int Multiplier = 10;
+            Func<int, int> calculate = static x => x * Multiplier + Math.Abs(x);
+            // </SnippetStaticWithConstantsAndMembers>
         }
 
         public static void DefaultParmExamples()

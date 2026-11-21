@@ -1,7 +1,7 @@
 ---
-description: "C# Compiler Options for security. These options control signing assemblies or address space layout."
-title: "Compiler Options - security options"
-ms.date: 03/12/2021
+description: "C# Compiler Options for assembly signing and security. Learn about options that control strong-name signing and address space layout."
+title: "Compiler Options - assembly signing and security options"
+ms.date: 11/01/2026
 f1_keywords:
   - "cs.build.options"
 helpviewer_keywords:
@@ -11,69 +11,87 @@ helpviewer_keywords:
   - "KeyContainer compiler option [C#]"
   - "HighEntropyVA compiler option [C#]"
 ---
-# C# compiler options for security
+# C# compiler options for assembly signing and security
 
-The following options control compiler security options. The new MSBuild syntax is shown in **Bold**. The older *csc.exe* syntax is shown in `code style`.
+The following options control assembly signing and security features. The new MSBuild syntax is shown in **Bold**. The older *csc.exe* syntax is shown in `code style`.
 
 - **PublicSign** / `-publicsign`: Publicly sign the assembly.
 - **DelaySign** / `-delaysign`: Delay-sign the assembly using only the public portion of the strong name key.
-- **KeyFile** / `-keyfile` : Specify a strong name key file.
+- **KeyFile** / `-keyfile`: Specify a strong name key file.
 - **KeyContainer** / `-keycontainer`: Specify a strong name key container.
-- **HighEntropyVA** / `-highentropyva`: Enable high-entropy Address Space Layout Randomization (ASLR)
+- **HighEntropyVA** / `-highentropyva`: Enable high-entropy Address Space Layout Randomization (ASLR).
+
+> [!WARNING]
+> Do not rely on strong naming for security. Strong naming provides a unique identity for an assembly so that other assemblies can reference it unambiguously. In modern .NET (.NET Core and .NET 5+), strong-name signatures are not validated at run time. For more information, see [Create and use strong-named assemblies](../../../standard/assembly/create-use-strong-named.md).
 
 > [!NOTE]
 > Refer to [Compiler options](index.md#how-to-set-options) for more information on configuring these options for your project.
 
 ## PublicSign
 
-This option causes the compiler to apply a public key but doesn't actually sign the assembly. The **PublicSign** option also sets a bit in the assembly that tells the runtime that the file is signed.
+The **PublicSign** option causes the compiler to apply a public key to the assembly manifest without signing the assembly with a private key. This option also sets the signed flag in the assembly header.
 
 ```xml
 <PublicSign>true</PublicSign>
 ```
 
-The **PublicSign** option requires the use of the [**KeyFile**](#keyfile) or [**KeyContainer**](#keycontainer) option. The **KeyFile** and **KeyContainer** options specify the public key. The **PublicSign** and **DelaySign** options are mutually exclusive. Sometimes called "fake sign" or "OSS sign", public signing includes the public key in an output assembly and sets the "signed" flag. Public signing doesn't actually sign the assembly with a private key. Developers use public sign for open-source projects.  People build assemblies that are compatible with the released "fully signed" assemblies when they don't have access to the private key used to sign the assemblies. Since few consumers actually need to check if the assembly is fully signed, these publicly built assemblies are useable in almost every scenario where the fully signed one would be used.
+The **PublicSign** option requires the [**KeyFile**](#keyfile) or [**KeyContainer**](#keycontainer) option to specify the public key. The **PublicSign** and **DelaySign** options are mutually exclusive.
+
+Sometimes called *fake sign* or *OSS sign*, public signing includes the public key in an output assembly and marks the assembly as signed, but does not sign it with a private key. Open-source projects often use public signing so contributors can build assemblies compatible with release assemblies without needing access to private signing keys. Because modern .NET runtimes do not enforce strong-name signatures at run time, publicly signed assemblies work in almost every development and test scenario where a fully signed assembly is expected.
 
 ## DelaySign
 
-This option causes the compiler to reserve space in the output file so that a digital signature can be added later.
+The **DelaySign** option causes the compiler to reserve space in the output file so that a digital signature can be added later.
 
 ```xml
 <DelaySign>true</DelaySign>
 ```
 
-Use **DelaySign-** if you want a fully signed assembly. Use **DelaySign** if you only want to place the public key in the assembly. The **DelaySign** option has no effect unless used with [**KeyFile**](#keyfile) or [**KeyContainer**](#keycontainer). The **DelaySign** and [**PublicSign**](#publicsign) options are mutually exclusive. When you request a fully signed assembly, the compiler hashes the file that contains the manifest (assembly metadata) and signs that hash with the private key. That operation creates a digital signature that is stored in the file that contains the manifest. When an assembly is delay signed, the compiler doesn't compute and store the signature. Instead, the compiler but reserves space in the file so the signature can be added later.
+Use **DelaySign-** or omit the option for a fully signed assembly. Use **DelaySign** when you only want to place the public key in the assembly and defer signing. The **DelaySign** option has no effect unless used with [**KeyFile**](#keyfile) or [**KeyContainer**](#keycontainer). The **DelaySign** and [**PublicSign**](#publicsign) options are mutually exclusive.
 
-Using **DelaySign** allows a tester to put the assembly in the global cache. After testing, you can fully sign the assembly by placing the private key in the assembly using the [Assembly Linker](../../../framework/tools/al-exe-assembly-linker.md) utility. For more information, see [Creating and Using Strong-Named Assemblies](../../../standard/assembly/create-use-strong-named.md) and [Delay Signing an Assembly](../../../standard/assembly/delay-sign.md).
+When you request a fully signed assembly, the compiler hashes the file that contains the manifest (assembly metadata) and signs that hash with the private key, storing the resulting digital signature in the manifest file. When an assembly is delay signed, the compiler does not compute and store the signature, but reserves space in the file so the signature can be applied later (for example, by using the [Assembly Linker](../../../framework/tools/al-exe-assembly-linker.md) utility or a post-build signing tool). For more information, see [Create and use strong-named assemblies](../../../standard/assembly/create-use-strong-named.md) and [Delay-sign an assembly](../../../standard/assembly/delay-sign.md).
 
 ## KeyFile
 
-Specifies the filename containing the cryptographic key.
+Specifies the file name containing the strong-name key pair or public key.
 
 ```xml
 <KeyFile>filename</KeyFile>
 ```
 
-`file` is the name of the file containing the strong name key. When this option is used, the compiler inserts the public key from the specified file into the assembly manifest and then signs the final assembly with the private key. To generate a key file, type `sn -k file` at the command line. If you compile with [**-target:module**](output.md#outputtype), the name of the key file is held in the module and incorporated into the assembly created when you compile an assembly with [**AddModules**](inputs.md#addmodules). You can also pass your encryption information to the compiler with [**KeyContainer**](#keycontainer). Use [**DelaySign**](#delaysign) if you want a partially signed assembly. In case both **KeyFile** and **KeyContainer** are specified in the same compilation, the compiler will first try the key container. If that succeeds, then the assembly is signed with the information in the key container. If the compiler doesn't find the key container, it will try the file specified with [**KeyFile**](#keyfile). If that succeeds, the assembly is signed with the information in the key file and the key information will be installed in the key container. On the next compilation, the key container will be valid. A key file might contain only the public key. For more information, see [Creating and Using Strong-Named Assemblies](../../../standard/assembly/create-use-strong-named.md) and [Delay Signing an Assembly](../../../standard/assembly/delay-sign.md).
+`filename` is the name of the file containing the strong-name key. When this option is used, the compiler inserts the public key from the specified file into the assembly manifest and then signs the final assembly with the private key. To generate a key file, run `sn -k <filename>` from the Developer Command Prompt.
+
+If you compile with [**OutputType**](output.md#outputtype) set to `module`, the name of the key file is held in the module and incorporated into the assembly when you combine modules with [**AddModules**](inputs.md#addmodules).
+
+You can also specify your key pair using [**KeyContainer**](#keycontainer). If both **KeyFile** and **KeyContainer** are specified in the same compilation, the compiler attempts to use the key container first. If the key container is found, the assembly is signed with that container. If the compiler does not find the key container, it uses the file specified with [**KeyFile**](#keyfile) and installs the key information into the key container for subsequent compilations.
+
+A key file can contain only the public key when used with [**DelaySign**](#delaysign) or [**PublicSign**](#publicsign). For more information, see [Create and use strong-named assemblies](../../../standard/assembly/create-use-strong-named.md) and [Delay-sign an assembly](../../../standard/assembly/delay-sign.md).
 
 ## KeyContainer
 
-Specifies the name of the cryptographic key container.
+Specifies the name of the strong-name cryptographic key container.
 
 ```xml
 <KeyContainer>container</KeyContainer>
 ```
 
-`container` is the name of the strong name key container. When the **KeyContainer** option is used, the compiler creates a sharable component. The compiler inserts a public key from the specified container into the assembly manifest and signs the final assembly with the private key. To generate a key file, type `sn -k file` at the command line. `sn -i` installs the key pair into a container. This option isn't supported when the compiler runs on CoreCLR. To sign an assembly when building on CoreCLR, use the [**KeyFile**](#keyfile) option. If you compile with [**OutputType**](output.md#outputtype), the name of the key file is held in the module and incorporated into the assembly when you compile this module into an assembly with [**AddModules**](inputs.md#addmodules). You can also specify this option as a custom attribute (<xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=nameWithType>) in the source code for any common intermediate language (CIL) module. You can also pass your encryption information to the compiler with [**KeyFile**](#keyfile). Use [**DelaySign**](#delaysign) to add the public key  to the assembly manifest but signing the assembly until it has been tested. For more information, see [Creating and Using Strong-Named Assemblies](../../../standard/assembly/create-use-strong-named.md) and [Delay Signing an Assembly](../../../standard/assembly/delay-sign.md).
+`container` is the name of the strong-name key container. When the **KeyContainer** option is used, the compiler creates a shareable component by inserting the public key from the specified container into the assembly manifest and signing the final assembly with the private key.
+
+To generate a key pair and install it into a container, run `sn -k <filename>` followed by `sn -i <filename> <container>`.
+
+> [!NOTE]
+> The **KeyContainer** option is not supported when the compiler runs on .NET Core or .NET 5+. To sign an assembly when building on modern .NET SDKs, use the [**KeyFile**](#keyfile) option.
+
+You can also specify a key container using the <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=nameWithType> custom attribute in source code. Use [**DelaySign**](#delaysign) to place the public key in the assembly manifest and defer signing until after testing. For more information, see [Create and use strong-named assemblies](../../../standard/assembly/create-use-strong-named.md) and [Delay-sign an assembly](../../../standard/assembly/delay-sign.md).
 
 ## HighEntropyVA
 
-The **HighEntropyVA** compiler option tells the Windows kernel whether a particular executable supports high entropy Address Space Layout Randomization (ASLR).
+The **HighEntropyVA** compiler option tells the 64-bit Windows kernel whether an executable supports high-entropy Address Space Layout Randomization (ASLR).
 
 ```xml
 <HighEntropyVA>true</HighEntropyVA>
 ```
 
-This option specifies that a 64-bit executable or an executable that is marked by the [**PlatformTarget**](output.md#platformtarget) compiler option supports a high entropy virtual address space. The option is enabled by default for all .NET Standard and .NET Core versions, and .NET Framework versions starting with .NET Framework 4.5.
+This option specifies that a 64-bit executable or an executable that is marked by the [**PlatformTarget**](output.md#platformtarget) compiler option supports a high-entropy virtual address space. The option is enabled by default for all .NET Standard, .NET Core, and .NET 5+ applications, and for .NET Framework versions starting with .NET Framework 4.5.
 
-The **HighEntropyVA** option enables compatible versions of the Windows kernel to use higher degrees of entropy when randomizing the address space layout of a process as part of ASLR. Using higher degrees of entropy means a larger number of addresses can be allocated to memory regions such as stacks and heaps. As a result, it's more difficult to guess the location of a particular memory region. The **HighEntropyVA** compiler option requires the target executable and any modules that it depends on can handle pointer values larger than 4 gigabytes (GB) when they're running as a 64-bit process.
+The **HighEntropyVA** option is a security feature that enables compatible versions of the Windows kernel to randomize the address space layout of a process using higher degrees of entropy. Higher degrees of entropy make it significantly more difficult for an attacker to predict memory addresses for stacks, heaps, and loaded modules. The **HighEntropyVA** compiler option requires the target executable and any modules that it depends on to handle pointer values larger than 4 gigabytes (GB) when running as a 64-bit process.

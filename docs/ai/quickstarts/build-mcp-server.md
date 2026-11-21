@@ -3,8 +3,8 @@ title: Quickstart - Create a minimal MCP server and publish to NuGet
 description: Learn to create and connect to a minimal MCP server using C# and publish it to NuGet.
 ms.date: 03/04/2026
 ms.topic: quickstart
-author: alexwolfmsft
-ms.author: alexwolf
+author: billwagner
+ms.author: wiwagn
 zone_pivot_groups: development-environment-one
 ai-usage: ai-assisted
 ---

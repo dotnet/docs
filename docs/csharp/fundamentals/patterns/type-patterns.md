@@ -1,7 +1,7 @@
 ---
 title: "Type patterns"
 description: Learn when to use a C# type pattern for a yes-or-no run-time type test without declaring a variable.
-ms.date: 09/15/2026
+ms.date: 10/27/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -43,6 +43,34 @@ In a support system, `SupportRequest` is the base class for specialized request 
 Each arm answers a type question and returns the queue that handles that request. If an arm needs to read request members, use a declaration pattern to capture the matching value in a variable.
 
 Switch arms are considered from top to bottom. Put a specialized class before its base class. Otherwise, the base-class arm can match every instance of the specialized class, which makes the later arm unreachable.
+
+## Exhaustive matching with closed hierarchies
+
+Starting in C# 15 (.NET 11), when the base class is declared with the [`closed`](../../language-reference/keywords/closed.md) modifier, the compiler knows every possible direct subtype within the declaring assembly. If a `switch` expression covers every direct derived type, the pattern match is *exhaustive* and does not require a fallback discard arm (`_`):
+
+```csharp
+public closed class Shape;
+
+public class Circle(double radius) : Shape
+{
+    public double Radius { get; } = radius;
+}
+
+public class Rectangle(double width, double height) : Shape
+{
+    public double Width { get; } = width;
+    public double Height { get; } = height;
+}
+
+double CalculateArea(Shape shape) => shape switch
+{
+    Circle c => Math.PI * c.Radius * c.Radius,
+    Rectangle r => r.Width * r.Height
+    // Exhaustive: every direct subtype of Shape is handled
+};
+```
+
+If a new subtype is added to the closed hierarchy in the future, the compiler issues a warning wherever an existing `switch` expression is missing the new case, preventing unhandled runtime cases.
 
 ## Optional: use a type parameter as the tested type
 

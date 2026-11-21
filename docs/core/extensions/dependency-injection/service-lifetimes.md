@@ -46,3 +46,18 @@ Every subsequent request of the service implementation from the dependency injec
 Register singleton services with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton*>. Singleton services must be thread safe and are often used in stateless services.
 
 In apps that process requests, singleton services are disposed when the <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider> is disposed on application shutdown. Because memory isn't released until the app shuts down, consider memory use with a singleton service.
+
+## Thread safety considerations
+
+When working with service lifetimes in multithreaded applications:
+
+- **Resolving services**: Resolving services from the built-in dependency injection container (<xref:System.IServiceProvider>) or an active scope (<xref:Microsoft.Extensions.DependencyInjection.IServiceScope>) is thread-safe. Multiple threads can safely and concurrently call methods such as <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService%2A> or <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService%2A>.
+- **Singleton services**: Because the container returns the same instance across all requests and threads, singleton service implementations must be thread-safe.
+- **Transient and scoped services**: The DI container guarantees thread-safe construction and resolution of instances. However, the resolved service instance itself is not inherently thread-safe. Avoid sharing a single transient or scoped instance across concurrent threads unless the service is explicitly designed for concurrent access.
+
+For more information, see [Thread safety in dependency injection](guidelines.md#thread-safety).
+
+## See also
+
+- [Dependency injection guidelines](guidelines.md)
+- [Dependency injection in .NET](overview.md)

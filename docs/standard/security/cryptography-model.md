@@ -85,7 +85,6 @@ Here is a partial list of algorithms by application:
 - Generating a key from a password:
   - <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType>
 
-
 ## See also
 
 - [Cryptographic Services](cryptographic-services.md)

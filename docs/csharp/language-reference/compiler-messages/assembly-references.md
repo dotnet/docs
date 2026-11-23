@@ -31,6 +31,9 @@ f1_keywords:
  - "CS8006"
  - "CS8007"
  - "CS8008"
+ - "CS8010"
+ - "CS8011"
+ - "CS8012"
  - "CS8014"
  - "CS8015"
  - "CS8090"
@@ -68,6 +71,9 @@ helpviewer_keywords:
  - "CS8006"
  - "CS8007"
  - "CS8008"
+ - "CS8010"
+ - "CS8011"
+ - "CS8012"
  - "CS8014"
  - "CS8015"
  - "CS8090"
@@ -75,7 +81,7 @@ helpviewer_keywords:
  - "CS8206"
  - "CS8356"
  - "CS9286"
-ms.date: 11/18/2026
+ms.date: 11/23/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings related to assembly references
@@ -111,6 +117,9 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS8006**](#type-forwarding): *Forwarded type 'type name' conflicts with type declared in primary module of this assembly.*
 - [**CS8007**](#type-forwarding): *Type 'first type name' forwarded to assembly 'first assembly name' conflicts with type 'second type name' forwarded to assembly 'second assembly name'.*
 - [**CS8008**](#type-forwarding): *Type 'forwarded type name' forwarded to assembly 'assembly name' conflicts with type 'exported type name' exported from module 'module name'.*
+- [**CS8010**](#anchor-tbd): *Agnostic assembly cannot have a processor specific module 'module name'.*
+- [**CS8011**](#anchor-tbd): *Assembly and module 'module name' cannot target different processors.*
+- [**CS8012**](#anchor-tbd): *Referenced assembly 'assembly name' targets a different processor.*
 - [**CS8014**](#invalid-assembly-reference): *Reference to 'module name' netmodule missing.*
 - [**CS8015**](#duplicate-references): *Module 'module name' is already defined in this assembly. Each module must have a unique filename.*
 - [**CS8090**](#invalid-assembly-reference): *There is an error in a referenced assembly 'assembly name'.*

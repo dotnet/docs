@@ -76,9 +76,6 @@ f1_keywords:
   - "CS7101" # build only diagnostic
   - "CS7103"
   - "CS8009"
-  - "CS8010" # build only diagnostic
-  - "CS8011" # build only diagnostic
-  - "CS8012"
   - "CS8013" # build only diagnostic
   - "CS8016"
   - "CS8017"

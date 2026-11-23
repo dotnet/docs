@@ -51,7 +51,7 @@ You can install .NET manually in the following ways:
 - [Manual install](linux-scripted-manual.md#manual-install)
 - [Scripted install](linux-scripted-manual.md#scripted-install)
 
-You might need to install [.NET dependencies](https://github.com/dotnet/core/blob/main/release-notes/10.0/dotnet-dependencies.md) if you install .NET manually.
+You might need to install [.NET 10 dependencies](https://github.com/dotnet/core/blob/main/release-notes/10.0/dotnet-dependencies.md) if you install .NET 10 manually. For other versions, check the [distribution-specific dependency lists](linux-scripted-manual.md#dependencies).
 
 For user-level installations, [dotnetup](../tools/dotnetup/index.md) can track and update .NET SDKs and runtimes.
 

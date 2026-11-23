@@ -13,17 +13,17 @@ ai-usage: ai-generated
 >
 > **Coming from another language?** C# instance and static members serve similar purposes to [Java instance and class members](https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html): they let you work with individual objects or with the type as a whole.
 
-Build on the [overview of class types](../types/classes.md) to learn how class members store state, provide operations, and control access.
+This section builds on the [overview of class types](../types/classes.md) to learn how class members store state, provide operations, and control access.
 
-The following example shows several of the members that you can add to a class:
+The following example shows examples of different kinds of members that you can add to a class:
 
 :::code language="csharp" source="snippets/index/Program.cs" id="CounterDeclaration":::
 
-You define a type's behavior by declaring its *members*, the declarations inside a type that describe its data, operations, and nested types. In `VisitCounter`, the fields `count` and `total` store data. Methods such as `AddVisit`, `GetCount`, and `GetTotal` provide operations on that data. In `public int GetCount() => count;`, the shorthand `=> count` means the method returns the value of `count`. Classes support many other kinds of members, including properties, constructors, and events, which you'll explore as you need them. The [class reference](../../language-reference/keywords/class.md) describes the complete declaration syntax.
+You define a type's behavior by declaring its *members*, the declarations inside a type that describe its data, operations, and nested types. In `VisitCounter`, the *fields* `count` and `total` store data. *Methods* such as `AddVisit`, `GetCount`, and `GetTotal` provide operations on that data. In `public int GetCount() => count;`, the shorthand `=> count` means the method returns the value of `count`. Both *fields* and *methods* are kinds of *members* you can define in a class. Classes support many other kinds of members, including properties, constructors, and events. The [class reference](../../language-reference/keywords/class.md) describes the complete declaration syntax.
 
-An *instance* is an individual object created from a class. Its *instance state* is the data stored in that object, such as a counter's `count`. *Instance members* belong to an individual object: `count`, `AddVisit`, and `GetCount` work with one counter. *Static members* belong to the type: `total` and `GetTotal` track visits across all counters.
+An *instance* is an individual object of that class type. Its *instance state* is the data stored in that object, such as a counter's `count`. *Instance members* belong to an individual object: `count`, `AddVisit`, and `GetCount` work with one counter. *Static members* belong to the type: `total` and `GetTotal` track visits across all instances of counters.
 
-With `private` fields, you keep direct access to the data inside `VisitCounter`. Other code uses its `public` methods. [Accessibility](access-modifiers.md) controls which code can access a member.
+The `private` and `public` keywords are [access modifiers](./access-modifiers.md). *Access modifiers* control which code can access a member.
 
 ## Instance state and shared state
 
@@ -37,7 +37,7 @@ At the end of this example, `first` has had one visit and `second` has had two v
 
 Access instance members through an object reference such as `first`. Access static members through the type name, as in `VisitCounter.GetTotal()`. You can use static members even before you create any objects, as the initial call that returns `0` demonstrates.
 
-In an instance method, you can use both instance and static members directly. For example, `AddVisit` updates the current counter's `count` and the shared `total`. A static method has no current instance, so it can't access an instance member without an object reference. `GetTotal` needs only the static field. To calculate the total without one counter's visits, the static method `GetTotalExcluding` uses the supplied `counter` reference:
+In an instance method, you can use both instance and static members directly. For example, `AddVisit` updates the current counter's `count` and the shared `total`. A static method has no current instance, so it can't access an instance member without an object reference. `GetTotal` can be `static` because it needs only a static field. In contrast, the static method `GetTotalExcluding` uses the supplied `counter` reference To calculate the total without one counter's visits:
 
 :::code language="csharp" source="snippets/index/Program.cs" id="StaticMemberWithInstance":::
 
@@ -63,9 +63,9 @@ A *nested type* is a type declared inside another type. Use nesting when a type 
 
 :::code language="csharp" source="snippets/index/Program.cs" id="NestedType":::
 
-Declaring `Entry` inside `Notebook` defines a type; it doesn't create an object of that type. When you create a `Notebook` object, its field initializer `new Entry()` creates an `Entry` object for that notebook. The nested declaration doesn't give the `Entry` object a reference to its `Notebook` object. Pass an object reference explicitly if the nested type needs one.
+The declaration of `Entry` inside `Notebook` defines the type; it doesn't create any object of that type. To create the `Entry` object, the `Notebook` field initializer creates an `Entry` object for that notebook and assigns it to the `entry` field.
 
-Nesting places the type's name within its containing type. To choose which code can use a nested type, continue with [Class accessibility](access-modifiers.md). For more declaration examples, see [Nested types](../../programming-guide/classes-and-structs/nested-types.md).
+Nesting places the type's name within its containing type. For more declaration examples, see [Nested types](../../programming-guide/classes-and-structs/nested-types.md).
 
 ## Continue with other members
 

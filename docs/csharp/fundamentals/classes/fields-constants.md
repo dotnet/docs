@@ -11,19 +11,15 @@ ai-usage: ai-generated
 > [!TIP]
 > This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first.
 >
-> **Coming from another language?** If you've used [Java fields and `static final` declarations](https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html), you'll recognize per-object state and named fixed values. In C#, choose `const` for a compile-time constant or `readonly` for a field you assign during initialization.
-
-Use this article after [Class members and instances](index.md) to declare stored state and named fixed values.
-
-## Store state in fields
+> **Coming from another language?** If you used [Java fields and `static final` declarations](https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html), you recognize per-object state and named fixed values. In C#, choose `const` for a compile-time constant or `readonly` for a field you assign during initialization.
 
 A *field* is a variable declared in a type. A field stores state associated with an instance of the type or the type itself. See the [class reference](../../language-reference/keywords/class.md) for member declaration syntax. Use instance fields for each object's state and static fields for state shared by the type. For example, the counter uses one of each:
 
 :::code language="csharp" source="snippets/index/Program.cs" id="CounterDeclaration":::
 
-`count` exists separately in each `VisitCounter` object. The `static` field `total` is shared by all instances of this class.
+A separate copy of `count` exists in each `VisitCounter` object. The `static` field `total` is shared by all instances of this class.
 
-Prefer private fields for state that your class manages. Expose operations through methods or values through [properties](../../programming-guide/classes-and-structs/properties.md). In the counter, `AddVisit` keeps the two counts in sync.
+Use private fields for state that your class manages. Expose operations through methods or values through [properties](../../programming-guide/classes-and-structs/properties.md). In the counter, `AddVisit` keeps the two counts in sync.
 
 ## Initialize fields and limit reassignment with `readonly`
 
@@ -35,7 +31,7 @@ Each new `Reminder` starts with its own `"Take a break"` text. If you omit an ex
 
 When you need caller-supplied values or need to coordinate initialization across fields, use a *constructor*. A constructor is a member that initializes a new object. See [Constructors](../../programming-guide/classes-and-structs/constructors.md) for examples.
 
-To preserve a field's value after initialization, declare a *readonly field* using the `readonly` keyword. You can assign an instance readonly field at its declaration or in an instance constructor of its containing type. Its value needn't be known at compile time. See the [`readonly` reference](../../language-reference/keywords/readonly.md) for the precise rules.
+To preserve a field's value after runtime initialization, declare a *readonly field* using the `readonly` keyword. You can assign an instance readonly field at its declaration or in an instance constructor of its containing type. Its value needn't be known at compile time. See the [`readonly` reference](../../language-reference/keywords/readonly.md) for the precise rules.
 
 For example, you can preserve the time when each session object was created:
 
@@ -53,11 +49,11 @@ A *constant* is a named value that the compiler can determine at compile time. D
 
 :::code language="csharp" source="snippets/index/Program.cs" id="Constants":::
 
-Use the type name to access a constant declared in another type:
+Use the type name and constant name to access a constant declared in another type. The compiler substitutes the constant value where your code uses it:
 
 :::code language="csharp" source="snippets/index/Program.cs" id="UseConstants":::
 
-A member constant such as `SecondsPerMinute` is implicitly static: it belongs to the type. Adding `static` would be redundant, and C# doesn't allow you to combine `static` with `const`. The compiler substitutes the constant value where your code uses it.
+A member constant such as `SecondsPerMinute` is implicitly static: it belongs to the type. Adding `static` would be redundant, and C# doesn't allow you to combine `static` with `const`.
 
 You can declare constants of numeric types, `bool`, `char`, `string`, and [`enum` types](../types/enums.md). A reference-type constant other than a string can only hold `null`; you can't create a constant array or object with `new`. For related named integral values, see [Enumerations](../types/enums.md). C# [`#define`](../../language-reference/preprocessor-directives.md#defining-symbols) defines conditional-compilation symbols, not constant values.
 
@@ -78,4 +74,4 @@ You can assign a `static readonly` field in its declaration, as shown, or in a *
 
 - [Properties](../../programming-guide/classes-and-structs/properties.md) explains how to expose values with accessors.
 - [Constructors](../../programming-guide/classes-and-structs/constructors.md) explains object initialization.
-- The [fields guide](../../programming-guide/classes-and-structs/fields.md) retains additional field forms. Specialized fields such as [`volatile`](../../language-reference/keywords/volatile.md), [fixed-size buffers](../../language-reference/unsafe-code.md#fixed-size-buffers), and [`ref` fields](../../language-reference/builtin-types/ref-struct.md#ref-fields) have separate reference coverage.
+- The [fields guide](../../programming-guide/classes-and-structs/fields.md) covers other field forms. Specialized fields such as [`volatile`](../../language-reference/keywords/volatile.md), [fixed-size buffers](../../language-reference/unsafe-code.md#fixed-size-buffers), and [`ref` fields](../../language-reference/builtin-types/ref-struct.md#ref-fields) have separate reference articles.

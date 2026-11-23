@@ -11,13 +11,11 @@ ai-usage: ai-generated
 > [!TIP]
 > This article is part of the **Fundamentals** section for developers who already know at least one programming language and are learning C#. If you're new to programming, start with the [Get started](../../tour-of-csharp/tutorials/index.md) tutorials first.
 >
-> **Coming from another language?** If you've used [Java access modifiers](https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html), you'll recognize `public` and `private`. Use the C# defaults and containing-type rules below to decide where your declarations are accessible.
+> **Coming from another language?** If you used [Java access modifiers](https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html), you recognize `public` and `private`.
 
-Use this article after [Class members and instances](index.md) to control which code can use a class and its members.
+*Accessibility* determines which code can use a type or member. An *access modifier* is a keyword, such as `public` or `private`, that specifies that access. The [access modifiers reference](../../language-reference/keywords/access-modifiers.md) describes all supported combinations.
 
-*Accessibility* determines which code can name and use a type or member. An *access modifier* is a keyword, such as `public` or `private`, that specifies that access. The [access modifiers reference](../../language-reference/keywords/access-modifiers.md) describes all supported combinations.
-
-Start with these common access modifiers:
+These are the most common access modifiers:
 
 - [`private`](../../language-reference/keywords/private.md) limits access to the containing type.
 - [`public`](../../language-reference/keywords/public.md) allows access from any code, provided the containing type is also accessible.
@@ -38,24 +36,19 @@ Accessibility lets you limit the scope of where change can happen. Keep fields a
 
 ## Default accessibility
 
-For clearer code, always declare accessibility explicitly. Readers can then see your intent without having to memorize the defaults.
+Access modifiers are optional. Every type or member has a default accessibility. Don't rely on the default accessibility in your code. Declare accessibility explicitly. Developers who read your code see your intent without having to memorize the defaults.
 
-The default accessibility for a type depends on where it's declared. Start with a class declared directly in a namespace. A namespace groups names and imposes no access restriction of its own, so the class's declared accessibility determines where you can use it:
-
-- Use `internal` to limit access to the same assembly.
-- Use `public` to make the class available to any code that references its assembly.
-
-If you omit an access modifier on a namespace-level class, its accessibility defaults to `internal`. If you omit the modifier on a class member, including a nested type, that member defaults to `private`. For example:
+The default accessibility for a type depends on where it's declared. Start with a class declared directly in a namespace. A namespace groups names and imposes no access restriction of its own, so the class's declared accessibility determines where you can use it. The default accessibility for a class declared in a namespace is `internal`. The default accessibility on a member of class, including  a nested type, is`private`. For example:
 
 :::code language="csharp" source="snippets/index/Program.cs" id="DefaultAccess":::
 
 `LocalCounter` is internal, and `count` is private. Although `GetCount` is public, code in another assembly can't name `LocalCounter` to call it.
 
-To access a member or nested type, your code must satisfy both its accessibility and its containing type's accessibility. Apply the same rule at every level of nesting: each containing type must also allow access. For example, a public nested type inside an internal class is available only where that containing class is accessible. See [Accessibility domain](../../language-reference/keywords/accessibility-domain.md) for the full model.
+To access a member or nested type, your code must satisfy both its accessibility and its containing type's accessibility. You can apply the same rule recursively at every level of nesting: each containing type must also allow access. For example, a public nested type inside an internal class is available only where that containing class is accessible. See [Accessibility domain](../../language-reference/keywords/accessibility-domain.md) for the full model.
 
-Use the same defaults for explicitly declared members of record classes. A [positional record class](../types/records.md#declare-a-record) normally generates public properties for its parameters.
+A [positional record class](../types/records.md#declare-a-record) normally generates public properties for its parameters.
 
-## Recognize other access modifiers
+## Other access modifiers
 
 You'll encounter other accessibility modifiers as you learn more about classes. The Get started [roadmap for Java developers](../../tour-of-csharp/tips-for-java-developers.md) introduces the familiar `public` and `private` keywords. Use the [access modifiers reference](../../language-reference/keywords/access-modifiers.md) for the complete set of choices.
 

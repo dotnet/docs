@@ -24,7 +24,7 @@ You create classes, records, and structs to implement your program. These techni
 
 - [Declare automatically implemented properties](../programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md).
 - [Declare and use read/write properties](../programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties.md).
-- [Define constants](../fundamentals/classes/fields-constants.md#replace-magic-values-with-named-constants).
+- [Define constants](../fundamentals/classes/fields-constants.md#use-named-constants-for-common-values).
 - [Override the `ToString` method to provide string output](../programming-guide/classes-and-structs/how-to-override-the-tostring-method.md).
 - [Define abstract properties](../programming-guide/classes-and-structs/how-to-define-abstract-properties.md).
 - [Use the xml documentation features to document your code](../language-reference/xmldoc/index.md).

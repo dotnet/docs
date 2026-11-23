@@ -35,7 +35,6 @@ namespace CryptoWalkThru
 
         private void Close_Click(object sender, EventArgs e) => Application.Exit();
 
-
         #endregion
 
         #region Snippet2 - buttonCreateAsmKeys
@@ -237,7 +236,7 @@ namespace CryptoWalkThru
                 //<Snippet10>
                 // Use RSACryptoServiceProvider
                 // to decrypt the AES key.
-                byte[] KeyDecrypted = _rsa.Decrypt(KeyEncrypted, false);
+                byte[] KeyDecrypted = _rsa.Decrypt(KeyEncrypted, RSAEncryptionPadding.Pkcs1);
 
                 // Decrypt the key.
                 ICryptoTransform transform = aes.CreateDecryptor(KeyDecrypted, IV);

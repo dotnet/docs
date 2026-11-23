@@ -111,7 +111,7 @@ let inline average<'T
     'T.DivideByInt(sum, xs.Length)
 ```
 
-F# 7 adds the ability to declare constraints in groups:
+You can group constraints in a type abbreviation and, starting with F# 7, use that abbreviation as a self-constraint:
 
 ```fsharp
 type AverageOps<'T when 'T: (static member (+): 'T * 'T -> 'T)

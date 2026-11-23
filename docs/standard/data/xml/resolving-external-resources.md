@@ -9,7 +9,7 @@ ms.assetid: ad3fa320-4b8f-4e5c-b549-01157591007a
 The **XmlResolver** property of the **XmlDocument** is used by the **XmlDocument** class to locate resources that are not inline in the XML data, such as external document type definitions (DTDs), entities, and schemas. These items can be located on a network or on a local drive, and are identifiable by a Uniform Resource Identifier (URI). This allows the **XmlDocument** to resolve **EntityReference** nodes that are present in the document and validate the document according to the external DTD or schema.  
   
 > [!IMPORTANT]
-> When the input XML comes from an untrusted source, do not allow the **XmlDocument** to open external resources. Set the **XmlResolver** property to `null`, or supply an <xref:System.Xml.XmlSecureResolver> that restricts which resources can be accessed. For more information, see [CA3075: Insecure DTD processing](../../../fundamentals/code-analysis/quality-rules/ca3075.md).  
+> When the input XML comes from an untrusted source, do not allow the **XmlDocument** to open external resources. Set the **XmlResolver** property to `null`. In .NET 7 and later, you can instead use <xref:System.Xml.XmlResolver.ThrowingResolver?displayProperty=nameWithType> to reject resolution attempts. For more information, see [CA3075: Insecure DTD processing](../../../fundamentals/code-analysis/quality-rules/ca3075.md).  
   
 ## Fully-Trusted XmlDocument  
 

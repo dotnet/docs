@@ -2,7 +2,7 @@
 title: Create a single file for application deployment
 description: Learn what single file application is and why you should consider using this application deployment model.
 author: lakshanf
-ms.date: 03/25/2026
+ms.date: 11/23/2026
 ms.custom: kr2b-contr-experiment
 ai-usage: ai-assisted
 ---
@@ -25,7 +25,7 @@ Here's a sample project file that specifies single file publishing:
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
     <PublishSingleFile>true</PublishSingleFile>
     <SelfContained>true</SelfContained>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
@@ -38,7 +38,7 @@ These properties have the following functions:
 
 - `PublishSingleFile`. Enables single file publishing. Also enables single file warnings during `dotnet build`.
 - `SelfContained`. Determines whether the app is self-contained or framework-dependent.
-- `RuntimeIdentifier`. Specifies the [OS and CPU type](../../rid-catalog.md) you're targeting. Also sets `<SelfContained>true</SelfContained>` by default.
+- `RuntimeIdentifier`. Specifies the [OS and CPU type](../../rid-catalog.md) you're targeting. For apps targeting .NET 7 or earlier, it also implies `SelfContained` unless you explicitly set that property.
 
 Single file apps are always OS and architecture specific. You need to publish for each configuration, such as Linux x64, Linux Arm64, Windows x64, and so forth.
 
@@ -64,17 +64,19 @@ Publish a single file application using the [dotnet publish](../../tools/dotnet-
 
    The following example publishes the app for Windows as a self-contained single file application.
 
-   `dotnet publish -r win-x64`
+   `dotnet publish -r win-x64 --self-contained`
 
    The following example publishes the app for Linux as a framework dependent single file application.
 
-   `dotnet publish -r linux-x64 --self-contained false`
+   `dotnet publish -r linux-x64 -p:SelfContained=false`
 
 `<PublishSingleFile>` should be set in the project file to enable file analysis during build, but it's also possible to pass these options as `dotnet publish` arguments:
 
 ```dotnetcli
-dotnet publish -r linux-x64 -p:PublishSingleFile=true --self-contained false
+dotnet publish -r linux-x64 -p:PublishSingleFile=true -p:SelfContained=false
 ```
+
+For apps targeting .NET 8 or later, `PublishSingleFile` implies a self-contained publish unless you specify otherwise. To publish a framework-dependent app, set `SelfContained` to `false` as shown, or use `--no-self-contained`. A compatible .NET runtime must be installed on the target machine.
 
 For more information, see [.NET application publishing overview](../../deploying/index.md).
 

@@ -61,7 +61,7 @@ RUN dotnet restore -a $TARGETARCH
 
 # Copy everything else and build app.
 COPY aspnetapp/. .
-RUN dotnet publish -a $TARGETARCH --self-contained false --no-restore -o /app
+RUN dotnet publish -a $TARGETARCH --no-self-contained --no-restore -o /app
 ```
 
 For more information, see the [Improving multi-platform container support](https://devblogs.microsoft.com/dotnet/improving-multiplatform-container-support/) blog post.

@@ -59,15 +59,7 @@ let sin<'T when ISinOperator<'T>>(x: 'T) = 'T.Sin(x)
 
 This feature can also be used with BCL built-in types, such as `INumber<'T>`:
 
-```fsharp
-open System.Numerics
-
-let sum<'T, 'TResult when INumber<'T> and INumber<'TResult>>(values: 'T seq) =
-    let mutable result = 'TResult.Zero
-    for value in values do
-        result <- result + 'TResult.CreateChecked(value)
-    result
-```
+:::code language="fsharp" source="./snippets/fsharp-7/Program.fs" id="GenericSum":::
 
 These examples show how static abstract members in interfaces work. You're most likely to use this feature if you're a library author or you write specialized arithmetic functions.
 
@@ -83,33 +75,13 @@ As a quick refresher on what SRTPs are and how they're used, let's declare a fun
 
 Previously, you had to write:
 
-```fsharp
-let inline average< ^T
-                   when ^T: (static member (+): ^T * ^T -> ^T)
-                   and  ^T: (static member DivideByInt : ^T * int -> ^T)
-                   and  ^T: (static member Zero : ^T)>
-                   (xs: ^T array) =
-    let mutable sum : ^T = (^T : (static member Zero: ^T) ())
-    for x in xs do
-        sum <- (^T : (static member op_Addition: ^T * ^T -> ^T) (sum, x))
-    (^T : (static member DivideByInt: ^T * int -> ^T) (sum, xs.Length))
-```
+:::code language="fsharp" source="./snippets/fsharp-7/Program.fs" id="PreviousSrtpAverage":::
 
 You no longer need to use a dedicated type parameter character (`^`). A single tick character (`'`) can be used instead. The compiler decides whether it's static or generic based on the context—whether the function is `inline` and if it has constraints.
 
 F# 7 also adds a new simpler syntax for calling constraints, which is more readable and easier to write:
 
-```fsharp
-let inline average<'T
-                when 'T: (static member (+): 'T * 'T -> 'T)
-                and  'T: (static member DivideByInt : 'T * int -> 'T)
-                and  'T: (static member Zero : 'T)>
-                (xs: 'T array) =
-    let mutable sum = 'T.Zero
-    for x in xs do
-        sum <- sum + x
-    'T.DivideByInt(sum, xs.Length)
-```
+:::code language="fsharp" source="./snippets/fsharp-7/Program.fs" id="SimplifiedSrtpAverage":::
 
 You can group constraints in a type abbreviation and, starting with F# 7, use that abbreviation as a self-constraint:
 
@@ -174,15 +146,7 @@ In F# 7, the rules for `init-only` properties are tightened so that they can onl
 
 Given the following C# data type:
 
-```csharp
-public sealed class Person
-{
-    public int Id { get; init; }
-    public string Name { get; set; }
-    public string Surname { get; set; }
-    public Person Set() => this;
-}
-```
+:::code language="csharp" source="./snippets/fsharp-7/csharp/Person.cs" id="InitOnlyPerson":::
 
 Previously, in F# 6, the following code would compile and mutate the property `Id` of the `Person`:
 

@@ -1,7 +1,7 @@
 ---
 title: "C# record types"
 description: Learn how the record modifier enhances classes and structs with compiler-generated value equality, ToString, with expressions, and positional syntax.
-ms.date: 03/25/2026
+ms.date: 11/01/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -70,11 +70,24 @@ The `record` modifier gives both classes and structs compiler-generated, propert
 - **`record class`**: The compiler generates `Equals` and `GetHashCode` methods, and `==`/`!=` operators, that compare every property value. Two distinct objects with the same data are equal.
 - **`record struct`**: Same compiler-generated equality as a `record class`, but without using reflection, which makes it faster than plain struct equality.
 
-The following example demonstrates record class equality:
+The following example demonstrates record value equality with properties that exhibit value equality:
 
 :::code language="csharp" source="snippets/records/EqualityTest.cs" ID="EqualityTest":::
 
-The two `Person` instances are different objects, but they're equal because all their property values match. Array properties compare by reference, not by contents. Mutating the shared array is visible through both records because the array itself isn't copied.
+### Reference equality on collection properties
+
+The compiler generates equality checks using <xref:System.Collections.Generic.EqualityComparer%601.Default?displayProperty=nameWithType> for each property. For primitive types, structs, strings, and other record types, this performs value comparisons. However, for array and collection properties, `EqualityComparer<T>.Default` performs **reference equality**, comparing whether both records reference the exact same collection instance rather than comparing elements:
+
+:::code language="csharp" source="snippets/records/EqualityTest.cs" ID="CollectionEquality":::
+
+If your record requires element-by-element equality for collections, implement a custom `Equals` and `GetHashCode`, or use a collection type that implements value equality.
+
+## Records vs. classes with primary constructors
+
+In C# 12 and later, non-record classes and structs can also declare primary constructors. Consider the following differences when choosing between them:
+
+- Use a **`record`** when the type represents a data model or transfer object where you want compiler-generated value equality (`==`), `with` expressions for nondestructive mutation, and generated public `init` properties.
+- Use a **plain `class` with a primary constructor** for services, controllers, or domain entities where you want concise constructor parameter syntax for dependency injection, but need reference equality and do not want automatic property generation or value equality semantics.
 
 ## Nondestructive mutation with `with` expressions
 

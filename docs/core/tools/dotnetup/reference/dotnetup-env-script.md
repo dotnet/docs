@@ -50,7 +50,7 @@ Activate only a repository-local .NET installation in PowerShell:
 
 ```powershell
 dotnetup env script --shell pwsh --dotnet --dotnet-install-path .\.dotnet |
-  Invoke-Expression
+  Out-String | Invoke-Expression
 ```
 
 Generate script text without evaluating it:

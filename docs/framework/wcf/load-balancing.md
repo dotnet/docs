@@ -46,7 +46,7 @@ One way to increase the capacity of Windows Communication Foundation (WCF) appli
 
       <!-- Configure a CustomBinding that disables keepAliveEnabled-->
       <binding name="HttpBinding">
-        <textMessageEncoding />
+        <textMessageEncoding messageVersion="Soap11" />
         <httpTransport keepAliveEnabled="false" />
       </binding>
 
@@ -70,7 +70,7 @@ One way to increase the capacity of Windows Communication Foundation (WCF) appli
 
       <!-- Configure a CustomBinding that disables keepAliveEnabled-->
         <binding>
-          <textMessageEncoding />
+          <textMessageEncoding messageVersion="Soap11" />
           <httpTransport keepAliveEnabled="false" />
         </binding>
 

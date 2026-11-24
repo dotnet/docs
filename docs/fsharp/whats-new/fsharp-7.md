@@ -65,7 +65,7 @@ These examples show how static abstract members in interfaces work. You're most 
 
 ## Making working with SRTPs easier
 
-[Statically Resolved Type Parameters (SRTPs)](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/generics/statically-resolved-type-parameters) are type parameters that are replaced with an actual type at compile time instead of at run time. F# 7 simplifies the syntax used for defining SRTPs.
+[Statically Resolved Type Parameters (SRTPs)](../language-reference/generics/statically-resolved-type-parameters.md) are type parameters that are replaced with an actual type at compile time instead of at run time. F# 7 simplifies the syntax used for defining SRTPs.
 
 As a quick refresher on what SRTPs are and how they're used, let's declare a function named `average` that takes an array of type `T` where type `T` has at least the following members:
 
@@ -114,7 +114,7 @@ These changes make working with SRTPs easier and more readable.
 
 ## Required properties checking
 
-C# 11 introduced a new [required modifier for properties](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/required). F# 7 supports consuming classes with required properties and enforcing the constraint.
+C# 11 introduced a new [required modifier for properties](../../csharp/language-reference/keywords/required.md). F# 7 supports consuming classes with required properties and enforcing the constraint.
 
 Consider the following data type, defined in a C# library:
 
@@ -167,7 +167,7 @@ In F# 7, this is a compile-time error:
 
 ## Reference assemblies support
 
-Starting with F# 7, the compiler can generate and properly consume [reference assemblies](https://learn.microsoft.com/en-us/dotnet/standard/assembly/reference-assemblies).
+Starting with F# 7, the compiler can generate and properly consume [reference assemblies](../../standard/assembly/reference-assemblies.md).
 
 You can generate reference assemblies by:
 

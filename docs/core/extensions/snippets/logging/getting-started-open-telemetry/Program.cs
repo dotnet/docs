@@ -8,5 +8,5 @@ using ILoggerFactory factory = LoggerFactory.Create(builder =>
         logging.AddOtlpExporter();
     });
 });
-ILogger logger = factory.CreateLogger("Program");
+ILogger logger = factory.CreateLogger<Program>();
 logger.LogInformation("Hello World! Logging is {Description}.", "fun");

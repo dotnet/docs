@@ -205,10 +205,8 @@ namespace CryptoWalkThru
             // file (inFs) and save the decrypted file (outFs).
             using (var inFs = new FileStream(file.FullName, FileMode.Open))
             {
-                inFs.Seek(0, SeekOrigin.Begin);
-                inFs.Read(LenK, 0, 3);
-                inFs.Seek(4, SeekOrigin.Begin);
-                inFs.Read(LenIV, 0, 3);
+                inFs.ReadExactly(LenK, 0, LenK.Length);
+                inFs.ReadExactly(LenIV, 0, LenIV.Length);
 
                 // Convert the lengths to integer values.
                 int lenK = BitConverter.ToInt32(LenK, 0);
@@ -230,15 +228,15 @@ namespace CryptoWalkThru
                 // starting from index 8
                 // after the length values.
                 inFs.Seek(8, SeekOrigin.Begin);
-                inFs.Read(KeyEncrypted, 0, lenK);
+                inFs.ReadExactly(KeyEncrypted, 0, lenK);
                 inFs.Seek(8 + lenK, SeekOrigin.Begin);
-                inFs.Read(IV, 0, lenIV);
+                inFs.ReadExactly(IV, 0, lenIV);
 
                 Directory.CreateDirectory(DecrFolder);
                 //<Snippet10>
                 // Use RSACryptoServiceProvider
                 // to decrypt the AES key.
-                byte[] KeyDecrypted = _rsa.Decrypt(KeyEncrypted, false);
+                byte[] KeyDecrypted = _rsa.Decrypt(KeyEncrypted, RSAEncryptionPadding.Pkcs1);
 
                 // Decrypt the key.
                 ICryptoTransform transform = aes.CreateDecryptor(KeyDecrypted, IV);

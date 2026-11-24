@@ -22,6 +22,9 @@ Represents a custom binding element that supports channel security using an SSL 
                    sslProtocols="Ssl3|Tls|Tls11|Tls12" />
 ```
 
+> [!IMPORTANT]
+> The syntax shows the full historical enum surface for the `sslProtocols` attribute. For new configurations, don't enable `Ssl3`, `Tls`, or `Tls11`. Prefer OS defaults, or limit the configuration to modern TLS versions supported by your target platform. For more information, see [Transport Layer Security (TLS) best practices with the .NET Framework](../../../network-programming/tls.md).
+
 ## Attributes and Elements
 
  The following sections describe attributes, child elements, and parent elements.
@@ -31,7 +34,7 @@ Represents a custom binding element that supports channel security using an SSL 
 |Attribute|Description|
 |---------------|-----------------|
 |requireClientCertificate|A Boolean value that specifies if a client certificate is required for this binding. The default is `false`.|
-|sslProtocols|A SslProtocols enum flag value that specifies which SslProtocols are supported. The default is Ssl3&#124;Tls&#124;Tls11&#124;Tls12.|
+|sslProtocols|A SslProtocols enum flag value that specifies which SslProtocols are supported. The default is Ssl3&#124;Tls&#124;Tls11&#124;Tls12. This historical default exists for compatibility and isn't recommended for new configurations.|
 
 ### Child Elements
 

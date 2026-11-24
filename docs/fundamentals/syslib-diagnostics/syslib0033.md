@@ -11,7 +11,9 @@ The <xref:System.Security.Cryptography.Rfc2898DeriveBytes.CryptDeriveKey(System.
 
 ## Workaround
 
-Use <xref:System.Security.Cryptography.PasswordDeriveBytes.CryptDeriveKey(System.String,System.String,System.Int32,System.Byte[])?displayProperty=nameWithType> instead.
+If you need compatibility with an existing CryptoAPI-based format or protocol, use <xref:System.Security.Cryptography.PasswordDeriveBytes.CryptDeriveKey(System.String,System.String,System.Int32,System.Byte[])?displayProperty=nameWithType>.
+
+For new development, use a newer, standardized Key Derivation Function (KDF).
 
 ## Suppress a warning
 

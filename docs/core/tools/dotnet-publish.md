@@ -1,7 +1,7 @@
 ---
 title: dotnet publish command
 description: The dotnet publish command publishes a .NET project or solution to a directory.
-ms.date: 09/24/2025
+ms.date: 11/23/2026
 ---
 # dotnet publish
 
@@ -232,18 +232,16 @@ For more information, see the following resources:
 - Create a [self-contained executable](../deploying/index.md#publish-as-self-contained) for the project in the current directory, for a specific runtime:
 
   ```dotnetcli
-  dotnet publish --runtime osx-x64
+  dotnet publish --runtime osx-x64 --self-contained
   ```
-
-  The RID must be in the project file.
 
 - Create a [framework-dependent executable](../deploying/index.md#publish-as-framework-dependent) for the project in the current directory, for a specific platform:
 
   ```dotnetcli
-  dotnet publish --runtime osx-x64 --self-contained false
+  dotnet publish --runtime osx-x64 --no-self-contained
   ```
 
-  The RID must be in the project file. This example applies to .NET Core 3.0 SDK and later versions.
+  This example applies to .NET Core 3.0 SDK and later versions.
 
 - Publish the project in the current directory, for a specific runtime and target framework:
 

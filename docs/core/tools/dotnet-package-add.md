@@ -183,7 +183,7 @@ Scenario 4: `<PackageReference>` does not exist in the project file, `<PackageVe
 - Add a package using a specific NuGet source:
 
   ```dotnetcli
-  dotnet package add Microsoft.AspNetCore.StaticFiles -s https://api.nuget.org/v3/index.json
+  dotnet package add Microsoft.AspNetCore.StaticFiles -s https://dynamicssmb2.pkgs.visualstudio.com/DynamicsBCPublicFeeds/_packaging/MSApps/nuget/v3/index.json
   ```
 
 ## See also

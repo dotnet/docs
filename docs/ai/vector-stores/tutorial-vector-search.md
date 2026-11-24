@@ -3,8 +3,6 @@ title: Tutorial - Integrate OpenAI with the RAG pattern and vector search using 
 description: Create a simple recipe app using the RAG pattern and vector search using Azure DocumentDB.
 ms.date: 02/28/2026
 ms.topic: tutorial
-author: billwagner
-ms.author: wiwagn
 ---
 
 # Implement Azure OpenAI with RAG using vector search in a .NET app

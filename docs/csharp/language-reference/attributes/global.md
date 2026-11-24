@@ -61,11 +61,8 @@ Use assembly manifest attributes to provide information in the assembly manifest
 
 ## Compilation and assembly access attributes
 
-Use compilation and access attributes to control compiler accessibility checks, strong-name signing, and delay signing. The following table lists common assembly-level attributes interpreted during compilation:
+Use compilation and access attributes to control compiler accessibility checks. The following table lists common assembly-level attributes interpreted during compilation:
 
 | Attribute | Purpose |
 |---|---|
 | <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> | Specifies that types and members ordinarily visible only within the current assembly are visible to a specified friend assembly. For more information, see [Friend assemblies](../../../standard/assembly/friend.md). |
-| <xref:System.Reflection.AssemblyDelaySignAttribute> | Specifies that the assembly is delay-signed when emitted. For more information, see [Delay-sign an assembly](../../../standard/assembly/delay-sign.md). |
-| <xref:System.Reflection.AssemblyKeyFileAttribute> | Specifies the name of the file containing the key pair used to generate a strong name. For more information, see [Strong-named assemblies](../../../standard/assembly/strong-named.md). |
-| <xref:System.Reflection.AssemblyKeyNameAttribute> | Specifies the name of a key container within the CSP used to generate a strong name. |

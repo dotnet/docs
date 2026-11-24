@@ -10,10 +10,16 @@ on:
         description: "The reason for running the bulk import workflow"
         required: true
         default: "Initial import into Quest (Azure DevOps)"
+        type: string
       duration:
         description: "The duration of the query, in days, to search for issues. Defaults to 5 days."
         required: false
-        default: "5"
+        default: 5
+        type: number
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name == 'workflow_dispatch'}}
+  cancel-in-progress: true
 
 permissions:
   contents: read

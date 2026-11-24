@@ -10,10 +10,12 @@ on:
                 description: "The reason for running the workflow"
                 required: true
                 default: "Manual run"
+                type: string
             support:
                 description: "The support level to target (STS, LTS, or Preview)."
                 required: true
                 default: "STS"
+                type: string
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 permissions:
@@ -22,6 +24,7 @@ permissions:
 jobs:
     # This workflow contains a single job called "build"
     version-sweep:
+        if: ${{ github.event_name == 'workflow_dispatch' || !github.event.repository.fork }}
         # The type of runner that the job will run on
         runs-on: ubuntu-latest
         permissions:

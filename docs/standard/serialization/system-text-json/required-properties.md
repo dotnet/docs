@@ -18,7 +18,7 @@ To specify that all non-optional constructor parameters are required for JSON de
 
 From the serializer's perspective, the C# `required` modifier and [`[JsonRequired]`](xref:System.Text.Json.Serialization.JsonRequiredAttribute) attribute are equivalent, and both map to the same piece of metadata, which is <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsRequired?displayProperty=nameWithType>. In most cases, use the built-in C# keyword. However, consider using <xref:System.Text.Json.Serialization.JsonRequiredAttribute> instead in these scenarios:
 
-- You use a programming language other than C# or an earlier version of C# that doesn't support the `required` modifier.
+- You use a programming language other than C# or need compatibility with .NET Framework 4.x, where the `required` modifier isn't available.
 - You want the requirement to apply only to JSON deserialization, without requiring the property to be initialized during object construction in C# code.
 
 The following code snippet shows an example of a property modified with the `required` keyword. This property must be present in the JSON payload for deserialization to succeed.

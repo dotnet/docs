@@ -46,7 +46,7 @@ The `int`, `uint`, `long`, and `ulong` types define all these operators. The oth
 
 ## Increment operator ++
 
-The unary increment operator `++` increments its operand by 1. The operand must be a variable, a [property](../../programming-guide/classes-and-structs/properties.md) access, or an [indexer](../../programming-guide/indexers/index.md) access.
+The unary increment operator `++` increments its operand by 1. The operand must be a variable, a [property](../../fundamentals/classes/properties.md) access, or an [indexer](../../programming-guide/indexers/index.md) access.
 
 The increment operator is supported in two forms: the postfix increment operator, `x++`, and the prefix increment operator, `++x`.
 
@@ -64,7 +64,7 @@ The result of `++x` is the value of `x` *after* the operation, as the following 
 
 ## Decrement operator --
 
-The unary decrement operator `--` decrements its operand by 1. The operand must be a variable, a [property](../../programming-guide/classes-and-structs/properties.md) access, or an [indexer](../../programming-guide/indexers/index.md) access.
+The unary decrement operator `--` decrements its operand by 1. The operand must be a variable, a [property](../../fundamentals/classes/properties.md) access, or an [indexer](../../programming-guide/indexers/index.md) access.
 
 The decrement operator is available in two forms: the postfix decrement operator, `x--`, and the prefix decrement operator, `--x`.
 

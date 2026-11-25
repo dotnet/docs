@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net11.0</TargetFramework>
+    <LangVersion>14.0</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="expected-errors\**\*.cs" />
+    <Compile Remove="Program.cs" Condition="'$(Example)' == 'MissingRequired'" />
+    <Compile Include="expected-errors\MissingRequired.cs" Condition="'$(Example)' == 'MissingRequired'" />
+  </ItemGroup>
+</Project>

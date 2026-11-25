@@ -23,7 +23,7 @@ There are several tips and tricks that are common C# developer practices:
 You create classes, records, and structs to implement your program. These techniques are commonly used when writing classes, records, or structs.
 
 - [Declare automatically implemented properties](../programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md).
-- [Declare and use read/write properties](../programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties.md).
+- [Declare and use read/write properties](../fundamentals/classes/properties.md#declare-an-auto-implemented-property).
 - [Define constants](../fundamentals/classes/fields-constants.md#use-named-constants-for-common-values).
 - [Override the `ToString` method to provide string output](../programming-guide/classes-and-structs/how-to-override-the-tostring-method.md).
 - [Define abstract properties](../programming-guide/classes-and-structs/how-to-define-abstract-properties.md).

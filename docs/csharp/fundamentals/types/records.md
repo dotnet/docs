@@ -42,7 +42,7 @@ For `Route`, the compiler normally generates:
 
 An *init-only property* permits assignment during object initialization but not through an ordinary assignment afterward. See [`init`](../../language-reference/keywords/init.md) for its rules. An init-only property that holds a reference doesn't make the referenced object immutable.
 
-For accessor mechanics and custom declarations, see [Properties](../../programming-guide/classes-and-structs/properties.md). For initialization mechanics, see [Constructors](../../programming-guide/classes-and-structs/constructors.md). Positional record parameters normally generate properties; ordinary class [primary constructors](../../whats-new/tutorials/primary-constructors.md) don't automatically generate public properties.
+For accessor mechanics and custom declarations, see [Properties](../classes/properties.md). For initialization mechanics, see [Constructors](../../programming-guide/classes-and-structs/constructors.md). Positional record parameters normally generate properties; ordinary class [primary constructors](../../whats-new/tutorials/primary-constructors.md) don't automatically generate public properties.
 
 You can also declare properties in a record body, including read-write properties:
 

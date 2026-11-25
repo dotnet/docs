@@ -9,7 +9,7 @@ helpviewer_keywords:
 ---
 # Assignment operators (C# reference)
 
-The assignment operator `=` assigns the *value* of its right-hand operand to a variable, a [property](../../programming-guide/classes-and-structs/properties.md), or an [indexer](../../programming-guide/indexers/index.md) element given by its left-hand operand. The result of an assignment expression is the value assigned to the left-hand operand. The type of the right-hand operand must be the same as the type of the left-hand operand or implicitly convertible to it.
+The assignment operator `=` assigns the *value* of its right-hand operand to a variable, a [property](../../fundamentals/classes/properties.md), or an [indexer](../../programming-guide/indexers/index.md) element given by its left-hand operand. The result of an assignment expression is the value assigned to the left-hand operand. The type of the right-hand operand must be the same as the type of the left-hand operand or implicitly convertible to it.
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 

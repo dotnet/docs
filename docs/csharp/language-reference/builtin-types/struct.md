@@ -66,7 +66,7 @@ Typically, you apply the `readonly` modifier to the following kinds of instance 
   If you need to apply the `readonly` modifier to both accessors of a property or indexer, apply it in the declaration of the property or indexer.
 
   > [!NOTE]
-  > The compiler declares a `get` accessor of an [automatically implemented property](../../programming-guide/classes-and-structs/auto-implemented-properties.md) as `readonly`, regardless of the presence of the `readonly` modifier in a property declaration.
+  > The compiler declares a `get` accessor of an [automatically implemented property](../../fundamentals/classes/properties.md#declare-an-auto-implemented-property) as `readonly`, regardless of the presence of the `readonly` modifier in a property declaration.
 
   You can apply the `readonly` modifier to a property or indexer with an `init` accessor:
 

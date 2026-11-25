@@ -19,7 +19,7 @@ A *field* is a variable declared in a type. A field stores state associated with
 
 A separate copy of `count` exists in each `VisitCounter` object. The `static` field `total` is shared by all instances of this class.
 
-Use private fields for state that your class manages. Expose operations through methods or values through [properties](../../programming-guide/classes-and-structs/properties.md). In the counter, `AddVisit` keeps the two counts in sync.
+Use private fields for state that your class manages. Expose operations through methods or values through [properties](properties.md). In the counter, `AddVisit` keeps the two counts in sync.
 
 ## Initialize fields and limit reassignment with `readonly`
 
@@ -72,6 +72,6 @@ You can assign a `static readonly` field in its declaration, as shown, or in a *
 
 ## Further reading
 
-- [Properties](../../programming-guide/classes-and-structs/properties.md) explains how to expose values with accessors.
+- [Properties](properties.md) explains how to expose values with accessors.
 - [Constructors](../../programming-guide/classes-and-structs/constructors.md) explains object initialization.
 - The [fields guide](../../programming-guide/classes-and-structs/fields.md) covers other field forms. Specialized fields such as [`volatile`](../../language-reference/keywords/volatile.md), [fixed-size buffers](../../language-reference/unsafe-code.md#fixed-size-buffers), and [`ref` fields](../../language-reference/builtin-types/ref-struct.md#ref-fields) have separate reference articles.

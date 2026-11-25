@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # The set keyword (C# Reference)
 
-The `set` keyword defines an *accessor* method in a property or indexer that assigns a value to the property or the indexer element. For more information and examples, see [Properties](../../programming-guide/classes-and-structs/properties.md), [Automatically implemented properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md), and [Indexers](../../programming-guide/indexers/index.md).
+The `set` keyword defines an *accessor* method in a property or indexer that assigns a value to the property or the indexer element. For more information and examples, see [Properties](../../fundamentals/classes/properties.md), [Automatically implemented properties](../../fundamentals/classes/properties.md#declare-an-auto-implemented-property), and [Indexers](../../programming-guide/indexers/index.md).
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
@@ -39,4 +39,4 @@ The following example defines both a `get` and a `set` accessor for a property n
 
 ## See also
 
-- [Properties](../../programming-guide/classes-and-structs/properties.md)
+- [Properties](../../fundamentals/classes/properties.md)

@@ -104,7 +104,7 @@ Next, define the event. This time, you use a different syntax. In addition to us
 
 :::code language="csharp" source="./snippets/events/Program.cs" id="DeclareSearchEvent":::
 
-In many ways, the code you write here mirrors the code the compiler generates for the field event definitions you saw earlier. You create the event using syntax similar to  [properties](programming-guide/classes-and-structs/properties.md). Notice that the handlers have different names: `add` and `remove`. These accessors are called to subscribe to the event, or unsubscribe from the event. Notice that you also must declare a private backing field to store the event variable. This variable is initialized to null.
+In many ways, the code you write here mirrors the code the compiler generates for the field event definitions you saw earlier. You create the event using syntax similar to  [properties](fundamentals/classes/properties.md). Notice that the handlers have different names: `add` and `remove`. These accessors are called to subscribe to the event, or unsubscribe from the event. Notice that you also must declare a private backing field to store the event variable. This variable is initialized to null.
 
 Next, let's add the overload of the `Search` method that traverses subdirectories and raises both events. The easiest way is to use a default argument to specify that you want to search all directories:
 

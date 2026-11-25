@@ -58,5 +58,5 @@ Implements the indexer on the `ICitizen` interface.
 ## See also
 
 - [Indexers](./index.md)
-- [Properties](../classes-and-structs/properties.md)
+- [Properties](../../fundamentals/classes/properties.md)
 - [Interfaces](../../fundamentals/types/interfaces.md)

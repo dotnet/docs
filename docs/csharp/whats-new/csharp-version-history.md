@@ -100,7 +100,7 @@ The following features were added in C# 11:
 - [Newlines in string interpolation expressions](../language-reference/tokens/interpolated.md).
 - [List patterns](../language-reference/operators/patterns.md#list-patterns).
 - [File-local types](../language-reference/keywords/file.md).
-- [Required members](../programming-guide/classes-and-structs/properties.md#required-properties).
+- [Required members](../fundamentals/classes/properties.md#require-an-initial-assignment).
 - [Auto-default structs](../language-reference/builtin-types/struct.md#struct-initialization-and-default-values).
 - Pattern match `Span<char>` on a constant `string`.
 - Extended `nameof` scope.
@@ -349,7 +349,7 @@ Version 6.0, released with Visual Studio 2015, released many smaller features th
 
 - [Static imports](../language-reference/keywords/using-directive.md)
 - [Exception filters](../language-reference/keywords/when.md)
-- [Auto-property initializers](../programming-guide/classes-and-structs/properties.md)
+- [Auto-property initializers](../fundamentals/classes/properties.md)
 - [Expression bodied members](../language-reference/operators/lambda-operator.md#expression-body-definition)
 - [Null propagator](../language-reference/operators/member-access-operators.md#null-conditional-operators--and-)
 - [String interpolation](../language-reference/tokens/interpolated.md)
@@ -401,7 +401,7 @@ Dynamic binding gives you the potential for errors but also great power within t
 
 C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full boat of language features would actually come with .NET Framework version 3.5. This version marked a major change in the growth of C#. It established C# as a truly formidable programming language. Let's take a look at some major features in this version:
 
-- [Auto-implemented properties](../programming-guide/classes-and-structs/auto-implemented-properties.md)
+- [Auto-implemented properties](../fundamentals/classes/properties.md#declare-an-auto-implemented-property)
 - [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)
 - [Query expressions](../linq/get-started/query-expression-basics.md)
 - [Lambda expressions](../language-reference/operators/lambda-expressions.md)
@@ -463,7 +463,7 @@ The major features of C# 1.0 included:
 - [Structs](../language-reference/builtin-types/struct.md)
 - [Interfaces](../fundamentals/types/interfaces.md)
 - [Events](../events-overview.md)
-- [Properties](../programming-guide/classes-and-structs/properties.md)
+- [Properties](../fundamentals/classes/properties.md)
 - [Delegates](../delegates-overview.md)
 - [Operators and expressions](../language-reference/operators/index.md)
 - [Statements](../fundamentals/statements/index.md)

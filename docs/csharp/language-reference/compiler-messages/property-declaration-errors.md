@@ -189,7 +189,7 @@ The following sections explain the cause and fixes for these errors and warnings
 - **CS0276**: *'property': accessibility modifiers on accessors may only be used if the property or indexer has both a get and a set accessor*
 - **CS0442**: *'property': abstract properties cannot have private accessors*
 
-These errors enforce the rules for access modifiers on property and indexer accessors. For the full rules, see [Restricting Accessor Accessibility](../../programming-guide/classes-and-structs/restricting-accessor-accessibility.md) and [Accessors](~/_csharpstandard/standard/classes.md#1573-accessors) in the C# specification. To correct these errors, apply one of the following changes based on the specific diagnostic:
+These errors enforce the rules for access modifiers on property and indexer accessors. For the full rules, see [Restricting Accessor Accessibility](../../fundamentals/classes/properties.md#restrict-accessor-access) and [Accessors](~/_csharpstandard/standard/classes.md#1573-accessors) in the C# specification. To correct these errors, apply one of the following changes based on the specific diagnostic:
 
 - Use an access modifier that's more restrictive than the property's declared accessibility (**CS0273**). For example, an `internal` property can have a `private` set accessor, but not a `public` one. The accessor's accessibility must be a proper subset of the property's accessibility.
 - Apply an access modifier to only one of the two accessors (**CS0274**). The property declaration itself establishes the default accessibility for both accessors, and only one accessor can differ from that default. Place the access modifier on whichever accessor needs restricted access.
@@ -197,7 +197,7 @@ These errors enforce the rules for access modifiers on property and indexer acce
 - Add both a `get` and a `set` accessor to the property before applying an access modifier to either one (**CS0276**). Access modifiers on accessors distinguish one accessor's visibility from the other, which requires both accessors to be present. If the property has only one accessor, remove the access modifier from it.
 - Change the access modifier on abstract property accessors from `private` to a less restrictive modifier (**CS0442**). Abstract members must be accessible to derived classes so those classes can provide implementations. Use `protected`, `internal`, or `protected internal` instead of `private`.
 
-For more information, see [Restricting Accessor Accessibility](../../programming-guide/classes-and-structs/restricting-accessor-accessibility.md) and [Properties](../../programming-guide/classes-and-structs/properties.md).
+For more information, see [Restricting Accessor Accessibility](../../fundamentals/classes/properties.md#restrict-accessor-access) and [Properties](../../fundamentals/classes/properties.md).
 
 ## Property declaration syntax
 
@@ -209,7 +209,7 @@ For more information, see [Restricting Accessor Accessibility](../../programming
 - **CS1014**: *A get or set accessor expected*
 - **CS1043**: *{ or ; expected*
 
-These errors enforce the structural requirements of property and indexer declarations. For the full rules, see [Properties](../../programming-guide/classes-and-structs/properties.md) and the [Properties](~/_csharpstandard/standard/classes.md#157-properties) section of the C# specification. To correct these errors, apply one of the following changes based on the specific diagnostic:
+These errors enforce the structural requirements of property and indexer declarations. For the full rules, see [Properties](../../fundamentals/classes/properties.md) and the [Properties](~/_csharpstandard/standard/classes.md#157-properties) section of the C# specification. To correct these errors, apply one of the following changes based on the specific diagnostic:
 
 - Change the property type from `void` to a valid type (**CS0547**). Properties and indexers represent expressions, and [`void`](../builtin-types/void.md) isn't a valid expression type. Choose the appropriate type for the data the property represents.
 - Add at least one accessor (`get`, `set`, or `init`) to the property declaration (**CS0548**). A property without any accessors has no way to read or write its value. Include a `get` accessor, a `set` or `init` accessor, or both.
@@ -219,7 +219,7 @@ These errors enforce the structural requirements of property and indexer declara
 - Ensure the property body contains only valid accessor keywords—`get`, `set`, or `init` (**CS1014**). Property bodies can't contain arbitrary statements or member declarations. Move fields and methods outside the property to the class or struct body.
 - Use proper property accessor syntax with braces or expression bodies (**CS1043**). Accessor bodies must use curly braces `{ }`, expression-bodied accessors must use `=>` syntax, and auto-implemented properties must end with a semicolon after the accessor token.
 
-For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md), [Auto-Implemented Properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md), and [Using Properties](../../programming-guide/classes-and-structs/using-properties.md).
+For more information, see [Properties](../../fundamentals/classes/properties.md), [Auto-Implemented Properties](../../fundamentals/classes/properties.md#declare-an-auto-implemented-property), and [Using Properties](../../programming-guide/classes-and-structs/using-properties.md).
 
 ## Property overrides
 
@@ -236,7 +236,7 @@ These errors enforce the rules for overriding properties in derived classes. For
 - Match the type of the overriding property to the type of the overridden member (**CS1715**). Read-only (`get`-only) properties support covariant return types beginning with C# 9, so the override can return a more derived type. However, properties that have a `set` or `init` accessor require an exact type match because the setter accepts values of the declared type. If you need a different type on a property with a setter, change the property type in the derived class to match the base class declaration, or remove the setter and use a covariant return type instead.
 - Include all accessors from the base property when overriding with an auto-implemented property (**CS8080**). Auto-implemented properties generate both storage and accessor implementations, so they must override all accessors present in the base class. If the base property has both `get` and `set`, the auto-implemented override must also have both. To override only specific accessors, implement the property with explicit accessor bodies and an explicit backing field instead of using auto-implementation. If the base class property has a `private` accessor, you can't override the property with an auto-implemented property. Use explicit accessor bodies instead.
 
-For more information, see [Inheritance](../../fundamentals/object-oriented/inheritance.md), [Properties](../../programming-guide/classes-and-structs/properties.md), and [Using Properties](../../programming-guide/classes-and-structs/using-properties.md).
+For more information, see [Inheritance](../../fundamentals/object-oriented/inheritance.md), [Properties](../../fundamentals/classes/properties.md), and [Using Properties](../../programming-guide/classes-and-structs/using-properties.md).
 
 ## Field-backed properties
 
@@ -253,7 +253,7 @@ To correct field-backed property errors, apply one of the following changes base
 - Add the `[field: MaybeNull, AllowNull]` attributes to the property declaration to indicate that the backing field should be treated as nullable (**CS9264**). This correction aligns the nullability expectations between the property type and the compiler-synthesized backing field, resolving the mismatch where the property is declared as non-nullable but the `field` keyword usage suggests it could be null. Alternatively, change the property type to nullable, add the `required` modifier to ensure initialization, or initialize the property in the constructor.
 - Consistently use either the `field` keyword in both accessors or use an explicit backing field in both accessors (**CS9266**). This correction prevents potential bugs where one accessor modifies the compiler-synthesized backing field while the other accessor modifies a different storage location, leading to inconsistent property behavior.
 
-For more information, see [field keyword](../../programming-guide/classes-and-structs/properties.md#field-backed-properties) and [Partial properties](../../programming-guide/classes-and-structs/partial-classes-and-methods.md#partial-members).
+For more information, see [field keyword](../../fundamentals/classes/properties.md#add-logic-with-a-field-backed-property) and [Partial properties](../../programming-guide/classes-and-structs/partial-classes-and-methods.md#partial-members).
 
 ## Readonly properties
 
@@ -276,7 +276,7 @@ To correct readonly property errors, apply one of the following changes based on
 - Place the `readonly` modifier either on the property declaration or on individual accessors, but not both (**CS8660**, **CS8661**). This correction prevents redundant modifier declarations that could create confusion about which modifier takes precedence. If you want to mark specific accessors as `readonly`, remove the modifier from the property declaration and place it only on the accessors. Alternatively, if all accessors should be `readonly`, mark the property itself rather than individual accessors.
 - Ensure both `get` and `set` accessors are present when marking individual accessors as `readonly` (**CS8664**). This correction is necessary because the `readonly` modifier on individual accessors distinguishes between accessors that modify state and those that don't, which only makes sense when both accessor types exist. If the property has only a `get` accessor, mark the entire property as `readonly` instead of the individual accessor.
 
-For more information, see [readonly instance members](../builtin-types/struct.md#readonly-instance-members), [init keyword](../keywords/init.md), and [Properties](../../programming-guide/classes-and-structs/properties.md).
+For more information, see [readonly instance members](../builtin-types/struct.md#readonly-instance-members), [init keyword](../keywords/init.md), and [Properties](../../fundamentals/classes/properties.md).
 
 ## Init-only properties
 
@@ -308,7 +308,7 @@ To correct property initializer errors, apply one of the following changes based
 - Add a `get` accessor to the auto-implemented property to enable reading the initialized value (**CS8051**). This correction is required because initializers set a value that must be retrievable, and a write-only property violates this fundamental expectation of property initialization. If you truly need a write-only property, implement the accessors explicitly with a backing field and assign the field directly in a constructor rather than using a property initializer.
 - Remove the initializer from interface property declarations (**CS8053**). This correction is necessary because interfaces define contracts for implementing types rather than providing concrete implementations with initial values. If you need to provide default values, implement the property in a class that implements the interface, or use default interface methods (available in C# 8.0 and later) to supply a default implementation.
 
-For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md), [Auto-Implemented Properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md), and [field keyword](../../programming-guide/classes-and-structs/properties.md#field-backed-properties).
+For more information, see [Properties](../../fundamentals/classes/properties.md), [Auto-Implemented Properties](../../fundamentals/classes/properties.md#declare-an-auto-implemented-property), and [field keyword](../../fundamentals/classes/properties.md#add-logic-with-a-field-backed-property).
 
 ## Required members
 
@@ -349,4 +349,4 @@ To correct ref-returning property errors, apply one of the following changes bas
 - Implement the property explicitly with a backing field and use the `ref` keyword in the `get` accessor's return expression (**CS8145**). This correction is necessary because auto-implemented properties generate a private backing field that the compiler manages internally. Returning a reference to a private field would expose internal storage that callers shouldn't access directly. To create a ref-returning property, declare an explicit field and return it with `=> ref backingField` syntax. Alternatively, if you don't need to return a reference to allow direct modification of the storage, remove the `ref` modifier from the property declaration.
 - Remove the `set` accessor from ref-returning properties (**CS8147**). This correction is required because a ref-returning property already provides both read and write access through the returned reference itself. Callers can directly modify the value through the reference without needing a separate setter method. Including a `set` accessor would create two different mechanisms for modifying the same storage, which is redundant and could lead to confusion about which modification path should be used.
 
-For more information, see [ref returns and ref locals](../statements/jump-statements.md#ref-returns) and [Properties](../../programming-guide/classes-and-structs/properties.md).
+For more information, see [ref returns and ref locals](../statements/jump-statements.md#ref-returns) and [Properties](../../fundamentals/classes/properties.md).

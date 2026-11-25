@@ -139,6 +139,6 @@ The compiler creates backing fields for each automatically implemented property.
 
 ## See also
 
-- [Properties](./properties.md)
+- [Properties](../../fundamentals/classes/properties.md)
 - [struct](../../language-reference/builtin-types/struct.md)
 - [Object and Collection Initializers](./object-and-collection-initializers.md)

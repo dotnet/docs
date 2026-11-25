@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # Indexers
 
-You define *indexers* when instances of a class or struct can be indexed like an array or other collection. The indexed value can be set or retrieved without explicitly specifying a type or instance member. Indexers resemble [properties](../classes-and-structs/properties.md) except that their accessors take parameters.
+You define *indexers* when instances of a class or struct can be indexed like an array or other collection. The indexed value can be set or retrieved without explicitly specifying a type or instance member. Indexers resemble [properties](../../fundamentals/classes/properties.md) except that their accessors take parameters.
 
 The following example defines a generic class with [`get`](../../language-reference/keywords/get.md) and [`set`](../../language-reference/keywords/set.md) accessor methods to assign and retrieve values.
 
@@ -75,7 +75,7 @@ The Mandelbrot Set defines values at every (x,y) coordinate for real number valu
 
 ## Summing Up
 
-You create indexers anytime you have a property-like element in your class where that property represents not a single value, but rather a set of values. One or more arguments identify each individual item. Those arguments can uniquely identify which item in the set should be referenced. Indexers extend the concept of [properties](../classes-and-structs/properties.md), where a member is treated like a data item from outside the class, but like a method on the inside. Indexers allow arguments to find a single item in a property that represents a set of items.
+You create indexers anytime you have a property-like element in your class where that property represents not a single value, but rather a set of values. One or more arguments identify each individual item. Those arguments can uniquely identify which item in the set should be referenced. Indexers extend the concept of [properties](../../fundamentals/classes/properties.md), where a member is treated like a data item from outside the class, but like a method on the inside. Indexers allow arguments to find a single item in a property that represents a set of items.
 
 You can access the [sample folder for indexers](https://github.com/dotnet/samples/tree/main/csharp/indexers). For download instructions, see [Samples and Tutorials](../../../samples-and-tutorials/index.md#view-and-download-samples).
 

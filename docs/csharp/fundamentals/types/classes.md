@@ -52,7 +52,7 @@ Continue with [C# record types](records.md) for positional declarations, generat
 - [Class members and instances](../classes/index.md) explains instance and static members and introduces nested types.
 - [Class accessibility](../classes/access-modifiers.md) explains `public`, `private`, and the default access rules.
 - [Fields and constants](../classes/fields-constants.md) explains stored state and named fixed values.
-- [Properties](../../programming-guide/classes-and-structs/properties.md) explains value accessors.
+- [Properties](../classes/properties.md) explains value accessors.
 - [Constructors](../../programming-guide/classes-and-structs/constructors.md) explains how to initialize objects, including [primary constructors](../../whats-new/tutorials/primary-constructors.md).
 - [Object and collection initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) explains caller-supplied initial values and links to collection syntax.
 - [Inheritance](../object-oriented/inheritance.md) explains base and derived classes.

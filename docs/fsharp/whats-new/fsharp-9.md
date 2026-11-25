@@ -2,6 +2,7 @@
 title: What's new in F# 9 - F# Guide
 description: Find information on the new features available in F# 9.
 ms.date: 11/12/2024
+ms.update-cycle: 3650-days
 ms.topic: whats-new
 ---
 

@@ -2,6 +2,7 @@
 title: What's new in F# 8 - F# Guide
 description: Find information on the new features available in F# 8.
 ms.date: 11/17/2023
+ms.update-cycle: 3650-days
 ms.topic: whats-new
 ai-usage: ai-assisted
 ---

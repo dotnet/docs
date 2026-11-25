@@ -1,7 +1,7 @@
 ---
 title: "C# classes"
 description: Learn how to define and use classes in C#, including reference type semantics, constructors, static classes, object initializers, collection initializers, and inheritance basics.
-ms.date: 03/25/2026
+ms.date: 11/01/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -22,6 +22,20 @@ Use a class when:
 - You need inheritance to create a base class with derived specializations, or to create a derived type that extends an existing class.
 - Instances represent a shared identity, not objects that happen to hold equal values. Two references to the same object should stay in sync.
 - The type is large or long-lived and benefits from [heap allocation](../../../standard/garbage-collection/fundamentals.md#the-managed-heap) and reference semantics.
+
+### Choose between type constructs
+
+C# provides several constructs for grouping data and behavior. The following table summarizes when to choose each construct:
+
+| Construct | Type category | Equality | Primary use cases |
+|---|---|---|---|
+| `class` | Reference type | Reference equality by default | Complex business logic, mutable state, inheritance hierarchies, and long-lived domain entities. |
+| `static class` | Non-instantiable | Not applicable | Reusable helper methods, extension methods, global constants, and stateless utility functions (such as <xref:System.Math>). |
+| `struct` | Value type | Value equality | Small, short-lived data structures (≤ 16 bytes), math primitives, coordinates, and performance-critical algorithms requiring stack allocation. |
+| `record class` | Reference type | Value equality | Data Transfer Objects (DTOs), API models, immutable domain models, and messages with built-in value-based equality and `with` expressions. |
+| `record struct` | Value type | Value equality | Small data models requiring value-based semantics and `with` expressions without heap allocations. |
+| Tuple | Value type | Structural equality | Ad-hoc, temporary grouping of multiple return values from private or internal methods without declaring a formal named type. |
+| `interface` | Contract / abstraction | Not applicable | Decoupling contracts from concrete implementations, enabling dependency injection, and polymorphically unifying disparate classes. |
 
 ## Declare a class
 
@@ -79,7 +93,20 @@ A `static` class can't be instantiated and contains only static members. Use sta
 
 :::code language="csharp" source="snippets/classes/Program.cs" ID="UsingStaticClass":::
 
-The .NET class library includes many static classes, such as <xref:System.Math> and <xref:System.Console>. A static class is implicitly sealed. You can't derive from it or instantiate it.
+The .NET class library includes many static classes, such as <xref:System.Math> and <xref:System.Console>. A static class is implicitly sealed, so you can't derive from it or instantiate it.
+
+### When to create a static class
+
+Create a `static` class when:
+
+- You need a container for utility or helper methods that operate purely on input arguments and do not maintain state between calls.
+- You are declaring [extension methods](../../programming-guide/classes-and-structs/extension-methods.md). Extension methods must be defined inside a non-generic, non-nested `static` class.
+- You need a dedicated grouping for application constants or pure factory methods.
+
+Do not use a `static` class when you need:
+
+- **Polymorphism or interface implementation**: Static classes cannot implement interfaces or inherit from base classes.
+- **Dependency injection and test mocking**: Static classes cannot be substituted with test mocks or stubs. For services that interact with I/O, databases, or external dependencies, define an [interface](interfaces.md) and an instantiable service `class` instead.
 
 ## Object initializers
 

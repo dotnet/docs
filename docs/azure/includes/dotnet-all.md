@@ -490,7 +490,7 @@
 | unknown | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.NetworkSecurity/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/ResourceManager.NetworkSecurity-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.NetworkSecurity_1.0.0-beta.1/sdk/networksecurity/Azure.ResourceManager.NetworkSecurity/) |
 | unknown | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.Sovereign/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/ResourceManager.Sovereign-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Sovereign_1.0.0-beta.1/sdk/sovereign/Azure.ResourceManager.Sovereign/) |
 | .NET Function Templates | NuGet [1.0.2](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Templates.DotNet/1.0.2) |  |  |
-| .NET Stack | NuGet [1.0.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.DotNet/1.0.0-preview.3) |  |  |
+| .NET Stack | NuGet [1.0.0-preview.4](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.DotNet/1.0.0-preview.4) |  |  |
 | App Configuration Extension | NuGet [8.6.0](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.Functions.Worker/8.6.0)<br>NuGet [8.7.0-preview](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.Functions.Worker/8.7.0-preview) |  |  |
 | App Configuration Provider | NuGet [8.6.0](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.AspNetCore/8.6.0)<br>NuGet [8.7.0-preview](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.AspNetCore/8.7.0-preview) |  |  |
 | Azure Functions CLI | NuGet [5.0.0-preview.1](https://www.nuget.org/packages/Azure.Functions.Cli.Abstractions/5.0.0-preview.1) |  |  |
@@ -525,19 +525,19 @@
 | Fabric MCP | NuGet [1.8.0](https://www.nuget.org/packages/Microsoft.Fabric.Mcp.win-x64/1.8.0) |  |  |
 | Functions Connector Extension | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Connector/1.0.0) |  |  |
 | Functions Extension MCP | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Mcp/1.6.0) |  |  |
-| Functions Host | NuGet [4.1055.100-preview.1](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host/4.1055.100-preview.1) |  |  |
-| Functions Host | NuGet [4.1054.200-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.linux-arm64/4.1054.200-preview.3) |  |  |
-| Functions Host | NuGet [4.1054.200-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.linux-x64/4.1054.200-preview.3) |  |  |
-| Functions Host | NuGet [4.1054.200-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.osx-arm64/4.1054.200-preview.3) |  |  |
-| Functions Host | NuGet [4.1054.200-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.osx-x64/4.1054.200-preview.3) |  |  |
-| Functions Host | NuGet [4.1054.200-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.win-arm64/4.1054.200-preview.3) |  |  |
-| Functions Host | NuGet [4.1054.200-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.win-x64/4.1054.200-preview.3) |  |  |
+| Functions Host | NuGet [4.1055.100-preview.2](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host/4.1055.100-preview.2) |  |  |
+| Functions Host | NuGet [4.1055.100-preview.2](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.linux-arm64/4.1055.100-preview.2) |  |  |
+| Functions Host | NuGet [4.1055.100-preview.2](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.linux-x64/4.1055.100-preview.2) |  |  |
+| Functions Host | NuGet [4.1055.100-preview.2](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.osx-arm64/4.1055.100-preview.2) |  |  |
+| Functions Host | NuGet [4.1055.100-preview.2](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.osx-x64/4.1055.100-preview.2) |  |  |
+| Functions Host | NuGet [4.1055.100-preview.2](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.win-arm64/4.1055.100-preview.2) |  |  |
+| Functions Host | NuGet [4.1055.100-preview.2](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Host.win-x64/4.1055.100-preview.2) |  |  |
 | Functions Worker Connector Extension | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Connector/1.0.0) |  |  |
 | Functions Worker Extension MCP | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Mcp/1.6.0) |  |  |
 | Functions Worker Extension MCP SDK | NuGet [1.0.0-preview.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Mcp.Sdk/1.0.0-preview.4) |  |  |
 | Functions Worker Extension MySQL | NuGet [1.0.133](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.133) |  |  |
-| Go Stack | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Go/1.0.0-preview.2) |  |  |
-| Go Worker | NuGet [1.0.0-preview.1](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Go/1.0.0-preview.1) |  |  |
+| Go Stack | NuGet [1.0.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Go/1.0.0-preview.3) |  |  |
+| Go Worker | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Go/1.0.0-preview.2) |  |  |
 | HTTP ASPNETCore Analyzers | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.Analyzers/1.0.4) |  |  |
 | IoT Device Client | NuGet [2.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Iot.Device/2.0.0-preview4) |  |  |
 | IoT Operations Connector | NuGet [1.3.0](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/1.3.0) |  |  |
@@ -548,7 +548,7 @@
 | IoT Operations Templates | NuGet [1.2.1](https://www.nuget.org/packages/Azure.Iot.Operations.Templates/1.2.1) |  |  |
 | Item Templates NetCore | NuGet [4.0.5779](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetCore/4.0.5779) |  |  |
 | Item Templates NetFx | NuGet [4.0.5779](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetFx/4.0.5779) |  |  |
-| Java Stack | NuGet [1.0.0-preview.1](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Java/1.0.0-preview.1) |  |  |
+| Java Stack | NuGet [1.0.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Java/1.0.0-preview.3) |  |  |
 | Java Worker | NuGet [2.19.5-preview.1](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Java/2.19.5-preview.1) |  |  |
 | MCP Template | NuGet [0.0.12](https://www.nuget.org/packages/Microsoft.Template.Mcp/0.0.12) |  |  |
 | MCP Template | NuGet [0.0.12](https://www.nuget.org/packages/Microsoft.Template.Mcp.linux-arm64/0.0.12) |  |  |
@@ -566,19 +566,19 @@
 | Microsoft.Azure.DataFactoryTestingFramework.Expressions | NuGet [0.2.7](https://www.nuget.org/packages/Microsoft.Azure.DataFactoryTestingFramework.Expressions/0.2.7) |  |  |
 | Microsoft.Azure.Functions.Worker.OpenTelemetry | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.OpenTelemetry/1.2.0) |  |  |
 | Node.js Function Templates | NuGet [1.0.1](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Templates.Node/1.0.1) |  |  |
-| Node.js Stack | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Node/1.0.0-preview.2) |  |  |
+| Node.js Stack | NuGet [1.0.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Node/1.0.0-preview.3) |  |  |
 | Node.js Worker | NuGet [3.16.1-preview.1](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Node/3.16.1-preview.1) |  |  |
 | OpenTelemetry Profiler | NuGet [1.0.1-beta.7](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.Profiler/1.0.1-beta.7) |  |  |
-| PowerShell Stack | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.PowerShell/1.0.0-preview.2) |  |  |
+| PowerShell Stack | NuGet [1.0.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.PowerShell/1.0.0-preview.3) |  |  |
 | PowerShell Worker | NuGet [4.0.5362-preview.1](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.PowerShell/4.0.5362-preview.1) |  |  |
 | Python Function Templates | NuGet [1.0.1](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Templates.Python/1.0.1) |  |  |
-| Python Stack | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Python/1.0.0-preview.2) |  |  |
-| Python Worker | NuGet [4.46.2-preview](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python/4.46.2-preview) |  |  |
-| Python Worker | NuGet [4.46.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.linux-arm64/4.46.0-preview.3) |  |  |
-| Python Worker | NuGet [4.46.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.linux-x64/4.46.0-preview.3) |  |  |
-| Python Worker | NuGet [4.46.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.osx-arm64/4.46.0-preview.3) |  |  |
-| Python Worker | NuGet [4.46.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.osx-x64/4.46.0-preview.3) |  |  |
-| Python Worker | NuGet [4.46.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.win-x64/4.46.0-preview.3) |  |  |
+| Python Stack | NuGet [1.0.0-preview.3](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Python/1.0.0-preview.3) |  |  |
+| Python Worker | NuGet [4.47.0-preview](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python/4.47.0-preview) |  |  |
+| Python Worker | NuGet [4.47.0-preview](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.linux-arm64/4.47.0-preview) |  |  |
+| Python Worker | NuGet [4.47.0-preview](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.linux-x64/4.47.0-preview) |  |  |
+| Python Worker | NuGet [4.47.0-preview](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.osx-arm64/4.47.0-preview) |  |  |
+| Python Worker | NuGet [4.47.0-preview](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.osx-x64/4.47.0-preview) |  |  |
+| Python Worker | NuGet [4.47.0-preview](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.win-x64/4.47.0-preview) |  |  |
 | Speech CLI | NuGet [1.53.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.CLI/1.53.1) |  |  |
 | Speech Extension Embedded SR | NuGet [1.53.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.SR/1.53.1) |  |  |
 | Speech Extension Embedded TTS | NuGet [1.53.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.TTS/1.53.1) |  |  |
@@ -586,6 +586,7 @@
 | Speech Extension ONNX Runtime | NuGet [1.53.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.ONNX.Runtime/1.53.1) |  |  |
 | Speech Extension Telemetry | NuGet [1.53.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.53.1) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
+| unknown | NuGet [4.47.0-preview](https://www.nuget.org/packages/Azure.Functions.Cli.Workloads.Workers.Python.win-arm64/4.47.0-preview) |  |  |
 | unknown | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.QueryPlanInterop/1.0.1) |  |  |
 | Web PubSub Emulator | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.WebPubSub.Emulator/1.0.0-beta.1) |  |  |
 | WebJobs Extension Cosmos DB Mongo | NuGet [1.2.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.2.2)<br>NuGet [1.2.5-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.2.5-preview) |  |  |

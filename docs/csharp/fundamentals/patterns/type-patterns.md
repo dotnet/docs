@@ -70,7 +70,10 @@ double CalculateArea(Shape shape) => shape switch
 };
 ```
 
-If a new subtype is added to the closed hierarchy in the future, the compiler issues a warning wherever an existing `switch` expression is missing the new case, preventing unhandled runtime cases.
+Adding a new direct subtype to a closed hierarchy is both a source and binary breaking change for consuming code:
+
+- **Compile time**: When dependent code is recompiled against the updated hierarchy, the compiler issues a warning for any `switch` expression that no longer covers all direct subtypes.
+- **Runtime**: If dependent code is run without being recompiled, any unhandled direct subtype that reaches an impacted `switch` expression throws a <xref:System.Runtime.CompilerServices.SwitchExpressionException> at run time.
 
 ## Optional: use a type parameter as the tested type
 

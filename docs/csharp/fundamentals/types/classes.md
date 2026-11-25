@@ -123,7 +123,7 @@ decimal GetProcessingFee(PaymentMethod method) => method switch
 };
 ```
 
-A `closed` class is implicitly abstract and cannot be directly instantiated. Unlike [union types](../../language-reference/builtin-types/union.md), which define a fixed union across distinct value or reference types, closed hierarchies use standard object-oriented inheritance and reference polymorphism. Subtypes can share base implementations, declare virtual members, and encapsulate their own fields and behavior.
+A `closed` class serves as a polymorphic base type that provides shared behavior, properties, or virtual members across its direct subtypes while ensuring that code inspecting an instance can account for all possible forms.
 
 For more information, see the [closed modifier](../../language-reference/keywords/closed.md) reference.
 

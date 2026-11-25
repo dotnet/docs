@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Composite ML-DSA on Windows uses native implementation"
 description: "Learn about the breaking change in .NET 11 where Composite ML-DSA on Windows uses the native Windows implementation, which supports fewer algorithms than the previous managed implementation."
-ms.date: 08/03/2026
+ms.date: 11/10/2026
 ai-usage: ai-generated
 ---
 
@@ -11,7 +11,7 @@ Starting in .NET 11, <xref:System.Security.Cryptography.CompositeMLDsa> on Windo
 
 ## Version introduced
 
-.NET 11 Preview 7
+.NET 11
 
 ## Previous behavior
 

@@ -12,6 +12,9 @@ on:
         description: 'The reason for running the workflow'
         required: true
         default: 'Manual run'
+      pull:
+        description: "The pull request number to manually test"
+        required: true
 
 env:
   DOTNET_VERSION: '11.0.*'
@@ -24,14 +27,12 @@ permissions:
 
 jobs:
   snippets-build:
-    runs-on: windows-2022
-    permissions:
-        statuses: write
+    runs-on: windows-11-arm
 
     steps:
     # Checkout the repository for the PR
     - name: Harden Runner
-      uses: step-security/harden-runner@ccd8616d44fd3846e67624a50d5aad6d37bf2d25 # v2.22.1
+      uses: step-security/harden-runner@aebdcf6156ab6691adf63218240e476564a1ed4c # v2.23.0
       with:
         egress-policy: audit
 
@@ -41,7 +42,7 @@ jobs:
     # Get the latest preview SDK (or sdk not installed by the runner)
     - name: Setup .NET
       if: ${{ env.DOTNET_DO_INSTALL == 'true' }}
-      uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 #@6.0.0
+      uses: actions/setup-dotnet@0f4a354dd5547a28c70b7853dbd95d5b67886e73 #@6.1.0
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
         dotnet-quality: ${{ env.DOTNET_QUALITY }}
@@ -56,11 +57,19 @@ jobs:
       run: |
         git clone --depth 1 https://github.com/dotnet/docs-tools
 
-    # Run snippets 5000
+    # Run snippets 5000 for the pull request, either from the triggering event or the manual input.
     - name: Run snippets 5000 for PR
       env:
         GitHubKey: ${{ secrets.GITHUB_TOKEN }}
         ExtensionsCodeTriggers: .cs;.vb;.fs;.xaml;.razor;.cshtml;.vbhtml;.sln;.csproj;.fsproj;.vbproj;.proj
         ExtensionsProjects: .sln;.csproj;.fsproj;.vbproj;.proj
       run: |
-        dotnet run --project docs-tools/snippets5000/Snippets5000/Snippets5000.csproj -- --sourcepath "${{ github.workspace }}" --pullrequest ${{ github.event.number }} --owner ${{ github.repository_owner }} --repo ${{ github.event.repository.name }}
+        dotnet run --project docs-tools/snippets5000/Snippets5000/Snippets5000.csproj -- --sourcepath "${{ github.workspace }}" --pullrequest ${{ github.event.number || inputs.pull }} --owner ${{ github.repository_owner }} --repo ${{ github.event.repository.name }}
+
+    - name: Upload snippets diagnostics
+      if: ${{ always() }}
+      uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+      with:
+        name: snippets5000-diagnostics
+        path: ${{ github.workspace }}\output.json
+        if-no-files-found: ignore

@@ -4,10 +4,22 @@ items:
   - name: Breaking changes by version
     expanded: true
     items:
+      - name: .NET 12
+        items:
+          - name: Overview
+            href: 12.md
+          - name: SDK and MSBuild
+            items:
+              - name: Full build skipped for Native AOT publish
+                href: sdk/12/aot-publish-skips-full-build.md
       - name: .NET 11
         items:
           - name: Overview
             href: 11.md
+          - name: Containers
+            items:
+              - name: dotnet test needs a writable VSTest artifacts base directory in containers
+                href: containers/11/vstest-artifacts-base-directory.md
           - name: Core .NET libraries
             items:
               - name: Assembly.GetCallingAssembly behavior change when stack-trace support disabled
@@ -28,6 +40,8 @@ items:
                 href: core-libraries/11/environment-getcommandlineargs-apphost-invocation-name.md
               - name: Environment.TickCount made consistent with Windows timeout behavior
                 href: core-libraries/11/environment-tickcount-windows-behavior.md
+              - name: Generated WMI collection and enumerator wrappers implement IDisposable
+                href: core-libraries/11/wmi-wrappers-implement-idisposable.md
               - name: Math.Round and MathF.Round return correctly rounded results
                 href: core-libraries/11/math-round-digits.md
               - name: Named mutexes default to user scope on Unix
@@ -74,6 +88,8 @@ items:
                 href: extensions/11/changetoken-onchange-async-overloads-rebind-callbacks.md
               - name: Dependency injection scope disposal aggregates exceptions
                 href: extensions/11/dependency-injection-disposal-exceptions.md
+              - name: Empty strings in chained configuration override earlier providers
+                href: extensions/11/chained-configuration-empty-string.md
               - name: FileConfigurationProvider doesn't raise reload token after ignored load failure
                 href: extensions/11/fileconfigurationprovider-reload-token-load-failure.md
               - name: FileConfigurationSource.OnLoadException callback is called for IO errors
@@ -86,8 +102,6 @@ items:
                 href: extensions/11/physicalfileswatcher-validates-root-path.md
               - name: Some Microsoft.Extensions packages included in shared framework
                 href: extensions/11/extensions-in-shared-framework.md
-              - name: Synchronous access to async-validated options throws
-                href: extensions/11/async-options-validation-sync-access.md
           - name: Globalization
             items:
               - name: Japanese Calendar minimum supported date corrected
@@ -110,10 +124,32 @@ items:
                 href: networking/11/http-metrics-observable-counters.md
               - name: SslStream server-side AIA certificate downloads disabled by default
                 href: networking/11/sslstream-aia-downloads-disabled.md
+              - name: Uri parsing and UriBuilder validation changes
+                href: networking/11/uri-parsing-validation.md
           - name: .NET MAUI
             items:
+              - name: Android x86 is not supported
+                href: maui/11/android-x86-unsupported.md
+              - name: Code generation on mobile changes from Mono to CoreCLR
+                href: maui/11/mobile-code-generation.md
+              - name: CoreCLR replaces Mono runtime for .NET mobile apps
+                href: maui/11/mobile-runtime-replacement.md
+              - name: CoreCLR trace events replace Mono trace events
+                href: maui/11/runtime-trace-events.md
+              - name: Crash-reporting behavior changes on mobile platforms
+                href: maui/11/mobile-crash-reporting.md
+              - name: Debugging interfaces on mobile platforms changing to ICorDebug
+                href: maui/11/mobile-debugger-interfaces.md
               - name: Minimum Android API level raised to 24
                 href: maui/11/android-minimum-api-level.md
+              - name: Mono embedding APIs no longer supported on mobile platforms
+                href: maui/11/mono-embedding-apis.md
+              - name: Mono project properties no longer configure mobile apps
+                href: maui/11/mono-project-properties.md
+              - name: Mono runtime settings no longer configure mobile apps
+                href: maui/11/mono-runtime-settings.md
+              - name: UnwindNativeCode isn't supported on Apple targets
+                href: maui/11/unwind-native-code-apple.md
           - name: SDK and MSBuild
             items:
               - name: dnx scripts bypass global.json SDK selection
@@ -124,6 +160,8 @@ items:
                 href: sdk/11/native-cli-command-handling-enabled.md
               - name: NU1703 warns for packages that use deprecated MonoAndroid framework assets
                 href: sdk/11/nu1703-deprecated-monoandroid-framework.md
+              - name: NuGet locks directory moved on Linux
+                href: sdk/11/nuget-locks-directory-linux.md
               - name: NuGet pack warns for package IDs with restricted characters
                 href: sdk/11/nuget-pack-nu5052-packageid.md
               - name: Restore doesn't search global packages folder for higher version
@@ -132,6 +170,8 @@ items:
                 href: sdk/11/native-local-container-runtimes.md
               - name: Template engine packages no longer support netstandard2.0
                 href: sdk/11/template-engine-netstandard.md
+              - name: Template package installation verifies NuGet signatures
+                href: sdk/11/template-package-signature-verification.md
               - name: VSTest removes dependency on Newtonsoft.Json
                 href: sdk/11/vstest-removes-newtonsoft-json.md
       - name: .NET 10
@@ -144,6 +184,8 @@ items:
             items:
               - name: Default .NET images use Ubuntu
                 href: containers/10.0/default-images-use-ubuntu.md
+              - name: dotnet test needs a writable VSTest artifacts base directory in containers
+                href: containers/11/vstest-artifacts-base-directory.md
           - name: Core .NET libraries
             items:
               - name: API obsoletions with non-default diagnostic IDs
@@ -298,6 +340,8 @@ items:
                 href: sdk/10.0/prune-packagereference-privateassets.md
               - name: "'ToolCommandName' not set for non-tool packages"
                 href: sdk/10.0/toolcommandname-not-set.md
+              - name: Template package installation verifies NuGet signatures
+                href: sdk/11/template-package-signature-verification.md
           - name: Serialization
             items:
               - name: System.Text.Json checks for property name conflicts
@@ -334,6 +378,8 @@ items:
             items:
               - name: Container images no longer install zlib
                 href: containers/9.0/no-zlib.md
+              - name: dotnet test needs a writable VSTest artifacts base directory in containers
+                href: containers/11/vstest-artifacts-base-directory.md
               - name: .NET Monitor images simplified to version-only tags
                 href: containers/9.0/monitor-images.md
           - name: Core .NET libraries
@@ -436,6 +482,8 @@ items:
                 href: sdk/9.0/default-rid.md
               - name: Terminal logger is default
                 href: sdk/9.0/terminal-logger.md
+              - name: Template package installation verifies NuGet signatures
+                href: sdk/11/template-package-signature-verification.md
               - name: Version requirements
                 href: sdk/9.0/version-requirements.md
               - name: Warning emitted for .NET Standard 1.x targets
@@ -488,6 +536,8 @@ items:
                 href: containers/8.0/debian-version.md
               - name: Default ASP.NET Core port changed to 8080
                 href: containers/8.0/aspnet-port.md
+              - name: dotnet test needs a writable VSTest artifacts base directory in containers
+                href: containers/11/vstest-artifacts-base-directory.md
               - name: Kerberos package removed from Alpine and Debian images
                 href: containers/8.0/krb5-libs-package.md
               - name: libintl package removed from Alpine images
@@ -652,6 +702,8 @@ items:
                 href: sdk/10.0/dotnet-nuget-sign-sha1-deprecated.md
               - name: Source Link included in the .NET SDK
                 href: sdk/8.0/source-link.md
+              - name: Template package installation verifies NuGet signatures
+                href: sdk/11/template-package-signature-verification.md
               - name: Trimming can't be used with .NET Standard or .NET Framework
                 href: sdk/8.0/trimming-unsupported-targetframework.md
               - name: Unlisted packages not installed by default
@@ -1074,14 +1126,10 @@ items:
                 href: core-libraries/5.0/obsolete-consoleloggeroptions-properties.md
               - name: Complexity of LINQ OrderBy.First
                 href: core-libraries/5.0/orderby-firstordefault-complexity-increase.md
-              - name: OSPlatform attributes renamed or removed
-                href: core-libraries/5.0/os-platform-attributes-renamed.md
               - name: Microsoft.DotNet.PlatformAbstractions package removed
                 href: core-libraries/5.0/platformabstractions-package-removed.md
               - name: PrincipalPermissionAttribute is obsolete
                 href: core-libraries/5.0/principalpermissionattribute-obsolete.md
-              - name: Parameter name changes from preview versions
-                href: core-libraries/5.0/reference-assembly-parameter-names-rc1.md
               - name: Parameter name changes in reference assemblies
                 href: core-libraries/5.0/reference-assembly-parameter-names.md
               - name: Remoting APIs are obsolete

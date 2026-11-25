@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0010: ClassInitialize method should have valid layout"
 description: "Learn about code analysis rule MSTEST0010: ClassInitialize method should have valid layout"
-ms.date: 02/19/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0010
 - ClassInitializeShouldBeValidAnalyzer
@@ -30,22 +31,19 @@ A method marked with `[ClassInitialize]` should have valid layout.
 
 ## Rule description
 
-Methods marked with `[ClassInitialize]` should follow the following layout to be valid:
+MSTest calls `[ClassInitialize]` to prepare resources shared by a test class, rather than the state of one test-class instance:
 
-- it can't be declared on a generic class without the `InheritanceBehavior` mode is set
-- it should be `public`
-- it should be `static`
-- it should not be `async void`
-- it should not be a special method (finalizer, operator...).
-- it should not be generic
-- it should take one parameter of type `TestContext`
-- return type should be `void`, `Task` or `ValueTask`
-- `InheritanceBehavior.BeforeEachDerivedClass` attribute parameter should be specified if the class is `abstract`.
-- `InheritanceBehavior.BeforeEachDerivedClass` attribute parameter should not be specified if the class is `sealed`.
+| Requirement | Reason |
+|-------------|--------|
+| The method is `public`. | Public methods form MSTest's lifecycle discovery contract. `[DiscoverInternals]` permits an internal declaring class, not an internal lifecycle method. |
+| The method is `static`. | Class initialization belongs to the class's shared lifecycle, not to any one of the instances created for its tests. |
+| The method is ordinary and isn't `abstract` or generic. | MSTest needs a method body it can invoke without special invocation rules or method type arguments. |
+| The method takes exactly one `TestContext` parameter. | MSTest passes the class-initialization context directly because no per-test instance supplies it to this static callback. |
+| The return type is `void`, `Task`, or `ValueTask`, and the method isn't `async void`. | MSTest must wait for asynchronous initialization and observe its failures before it runs tests that depend on the shared resources. |
+| An abstract or generic declaring class specifies `InheritanceBehavior.BeforeEachDerivedClass`. | Such a base class doesn't run as a concrete test class on its own. The inheritance setting associates its initialization with the concrete derived classes that run the tests. |
+| A sealed declaring class doesn't specify `InheritanceBehavior.BeforeEachDerivedClass`. | A sealed class can't have derived classes, so that inheritance setting has no lifecycle to apply to. |
 
 [!INCLUDE [test-class-rules](includes/test-class-rules.md)]
-
-- the class should not be generic
 
 ## How to fix violations
 

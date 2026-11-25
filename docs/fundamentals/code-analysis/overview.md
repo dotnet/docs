@@ -2,9 +2,10 @@
 title: Code analysis in .NET
 titleSuffix: ""
 description: Learn about source code analysis in the .NET SDK.
-ms.date: 11/05/2025
+ms.date: 11/12/2026
 ms.topic: overview
 ms.custom: updateeachrelease
+ai-usage: ai-assisted
 helpviewer_keywords:
   - code analysis
   - code analyzers
@@ -23,6 +24,43 @@ If rule violations are found by an analyzer, they're reported as a suggestion, w
 > If you're using Visual Studio, many analyzer rules have associated *code fixes* that you can apply to automatically correct the problem. Code fixes are shown in the light bulb icon menu.
 
 ### Enabled rules
+
+# [.NET 11](#tab/net-11)
+
+The following rules are enabled, by default, as errors or warnings in .NET 11. Additional rules are enabled as suggestions.
+
+| Diagnostic ID                     | Category         | Severity | Version added | Description                     |
+|-----------------------------------|------------------|----------|---------------|---------------------------------|
+| [CA1416](quality-rules/ca1416.md) | Interoperability | Warning  | .NET 5        | Validate platform compatibility |
+| [CA1417](quality-rules/ca1417.md) | Interoperability | Warning  | .NET 5        | Do not use `OutAttribute` on string parameters for P/Invokes |
+| [CA1418](quality-rules/ca1418.md) | Interoperability | Warning | .NET 6 | Use valid platform string |
+| [CA1420](quality-rules/ca1420.md) | Interoperability | Warning | .NET 7 | Using features that require runtime marshalling when it's disabled will result in runtime exceptions |
+| [CA1422](quality-rules/ca1422.md) | Interoperability | Warning | .NET 7 | Validate platform compatibility |
+| [CA1831](quality-rules/ca1831.md) | Performance | Warning | .NET 5 | Use `AsSpan` instead of range-based indexers for string when appropriate |
+| [CA1856](quality-rules/ca1856.md) | Performance | Error | .NET 8 | Incorrect usage of `ConstantExpected` attribute |
+| [CA1857](quality-rules/ca1857.md) | Performance | Warning | .NET 8 | A constant is expected for the parameter |
+| [CA2013](quality-rules/ca2013.md) | Reliability | Warning | .NET 5 | Do not use `ReferenceEquals` with value types |
+| [CA2014](quality-rules/ca2014.md) | Reliability | Warning | .NET 5 | Do not use `stackalloc` in loops |
+| [CA2015](quality-rules/ca2015.md) | Reliability | Warning | .NET 5 | Do not define finalizers for types derived from <xref:System.Buffers.MemoryManager`1> |
+| [CA2017](quality-rules/ca2017.md) | Reliability | Warning | .NET 6 | Parameter count mismatch |
+| [CA2018](quality-rules/ca2018.md) | Reliability | Warning | .NET 6 | The `count` argument to `Buffer.BlockCopy` should specify the number of bytes to copy |
+| [CA2021](quality-rules/ca2021.md) | Reliability | Warning | .NET 8 | Do not call `Enumerable.Cast<T>` or `Enumerable.OfType<T>` with incompatible types |
+| [CA2022](quality-rules/ca2022.md) | Reliability | Warning | .NET 9 | Avoid inexact read with `Stream.Read` |
+| [CA2023](quality-rules/ca2023.md) | Reliability | Warning | .NET 10 | Invalid braces in message template |
+| [CA2200](quality-rules/ca2200.md) | Usage | Warning | .NET 5 | Rethrow to preserve stack details |
+| [CA2247](quality-rules/ca2247.md) | Usage | Warning | .NET 5 | Argument passed to `TaskCompletionSource` constructor should be <xref:System.Threading.Tasks.TaskCreationOptions> enum instead of <xref:System.Threading.Tasks.TaskContinuationOptions> |
+| [CA2252](quality-rules/ca2252.md) | Usage | Error | .NET 6 | Opt in to preview features |
+| [CA2255](quality-rules/ca2255.md) | Usage | Warning | .NET 6 | The `ModuleInitializer` attribute should not be used in libraries |
+| [CA2256](quality-rules/ca2256.md) | Usage | Warning | .NET 6 | All members declared in parent interfaces must have an implementation in a `DynamicInterfaceCastableImplementation`-attributed interface |
+| [CA2257](quality-rules/ca2257.md) | Usage | Warning | .NET 6 | Members defined on an interface with the `DynamicInterfaceCastableImplementationAttribute` should be `static` |
+| [CA2258](quality-rules/ca2258.md) | Usage | Warning | .NET 6 | Providing a `DynamicInterfaceCastableImplementation` interface in Visual Basic is unsupported |
+| [CA2259](quality-rules/ca2259.md) | Usage | Warning | .NET 7 | `ThreadStatic` only affects static fields |
+| [CA2260](quality-rules/ca2260.md) | Usage | Warning | .NET 7 | Use correct type parameter |
+| [CA2261](quality-rules/ca2261.md) | Usage | Warning | .NET 8 | Do not use `ConfigureAwaitOptions.SuppressThrowing` with `Task<TResult>` |
+| [CA2264](quality-rules/ca2264.md) | Usage | Warning | .NET 9 | Do not pass a non-nullable value to `ArgumentNullException.ThrowIfNull` |
+| [CA2265](quality-rules/ca2265.md) | Usage | Warning | .NET 9 | Do not compare `Span<T>` to `null` or `default` |
+| [CA2266](quality-rules/ca2266.md) | Usage | Warning | .NET 10 | File-based program entry point should start with `#!` |
+| [CA2267](quality-rules/ca2267.md) | Usage | Warning | .NET 11 | Quote whitespace in file-based program directive values |
 
 # [.NET 10](#tab/net-10)
 
@@ -140,7 +178,7 @@ You can change the severity of these rules to disable them or elevate them to er
 
 You can also omit [`<AnalysisMode>`](../../core/project-sdk/msbuild-props.md#analysismode) in favor of a compound value for the `<AnalysisLevel>` property. For example, the following value enables the recommended set of rules for the latest release: `<AnalysisLevel>latest-Recommended</AnalysisLevel>`. For more information, see [`AnalysisLevel`](../../core/project-sdk/msbuild-props.md#analysislevel).
 
-To find the default severity for each available rule and whether or not the rule is enabled in `Default` analysis mode, see the [full list of rules](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
+To find the default severity for each available rule and whether or not the rule is enabled in `Default` analysis mode, see the [full list of rules](https://github.com/dotnet/sdk/blob/main/src/Microsoft.CodeAnalysis.NetAnalyzers/src/Microsoft.CodeAnalysis.NetAnalyzers/AnalyzerReleases.Shipped.md).
 
 ### Treat warnings as errors
 
@@ -156,19 +194,17 @@ You'll still see any code analysis warnings, but they won't break your build.
 
 ### Latest updates
 
-By default, you'll get the latest code analysis rules and default rule severities as you upgrade to newer versions of the .NET SDK. If you don't want this behavior, for example, if you want to ensure that no new rules are enabled or disabled, you can override it in one of the following ways:
+By default, the code analysis rules and default severities match your target framework version. The latest released .NET version supported by the SDK uses the latest rules. Older target frameworks keep their corresponding rules, even when you build with a newer SDK. To use the latest rules regardless of the target framework, set `AnalysisLevel` to `latest`.
 
-- Set the `AnalysisLevel` MSBuild property to a specific value to lock the warnings to that set. When you upgrade to a newer SDK, you'll still get bug fixes for those warnings, but no new warnings will be enabled and no existing warnings will be disabled. For example, to lock the set of rules to those that ship with version 8.0 of the .NET SDK, add the following entry to your project file.
+- Set the `AnalysisLevel` MSBuild property to a specific value to lock the warnings to that set. When you upgrade to a newer SDK, you'll still get bug fixes for those warnings, but no new warnings will be enabled and no existing warnings will be disabled. For example, if you upgrade from .NET 10 to .NET 11 but want to keep the .NET 10 rules, add the following entry to your project file.
 
   ```xml
   <PropertyGroup>
-    <AnalysisLevel>8.0</AnalysisLevel>
+    <AnalysisLevel>10.0</AnalysisLevel>
   </PropertyGroup>
   ```
 
   > [!TIP]
-  > The default value for the `AnalysisLevel` property is `latest`, which means you always get the latest code analysis rules as you move to newer versions of the .NET SDK.
-
   For more information, and to see a list of possible values, see [AnalysisLevel](../../core/project-sdk/msbuild-props.md#analysislevel).
 
 - Install the [Microsoft.CodeAnalysis.NetAnalyzers NuGet package](https://github.com/dotnet/roslyn-analyzers#microsoftcodeanalysisnetanalyzers) to decouple rule updates from .NET SDK updates. For projects that target .NET 5+, installing the package turns off the built-in SDK analyzers. You'll get a build warning if the SDK contains a newer analyzer assembly version than that of the NuGet package. To disable the warning, set the `_SkipUpgradeNetAnalyzersNuGetWarning` property to `true`.

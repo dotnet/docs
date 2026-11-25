@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Native AOT rejects non-blittable UnmanagedCallersOnly signatures"
 description: "Learn about the breaking change in .NET 11 where Native AOT throws InvalidProgramException for non-blittable UnmanagedCallersOnly signatures when runtime marshalling is enabled."
-ms.date: 10/21/2026
+ms.date: 11/10/2026
 ai-usage: ai-generated
 ---
 
@@ -11,7 +11,7 @@ In .NET 11, Native AOT enforces the requirement that methods annotated with <xre
 
 ## Version introduced
 
-.NET 11 Preview 7
+.NET 11
 
 ## Previous behavior
 

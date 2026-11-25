@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: CborReader and CborWriter enforce a default maximum nesting depth"
 description: "Learn about the breaking change in .NET 11 where CborReader and CborWriter enforce a maximum nesting depth by default, throwing exceptions when the limit is exceeded."
-ms.date: 06/12/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ Starting in .NET 11, <xref:System.Formats.Cbor.CborReader> and <xref:System.Form
 
 ## Version introduced
 
-.NET 11 Preview 5
+.NET 11
 
 ## Previous behavior
 

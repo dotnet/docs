@@ -2,7 +2,7 @@
 Option Strict On
 
 Imports System.Data
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 Imports System.Data.SqlTypes
 
 Module Module1
@@ -79,4 +79,3 @@ Module Module1
         Throw New NotImplementedException()
     End Function
 End Module
-

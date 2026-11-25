@@ -3,11 +3,11 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <RootNamespace>AssemblySnippets</RootNamespace>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Reflection.Metadata" Version="10.0.12" />
+    <PackageReference Include="System.Reflection.Metadata" Version="10.0.14" />
   </ItemGroup>
 
 </Project>

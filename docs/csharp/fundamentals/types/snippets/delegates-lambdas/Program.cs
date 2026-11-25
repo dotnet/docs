@@ -2,12 +2,15 @@ namespace DelegatesLambdasSample;
 
 delegate int Transform(int value);
 
+// <MessagePublisher>
 public sealed class MessagePublisher
 {
     public event EventHandler<string>? MessagePublished;
 
     public void Publish(string message) => MessagePublished?.Invoke(this, message);
 }
+
+// </MessagePublisher>
 
 public static class Program
 {

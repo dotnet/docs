@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0039: Use newer 'Assert.Throws' methods"
 description: "Learn about code analysis rule MSTEST0039: Use 'Assert.ThrowsExactly' instead of 'Assert.ThrowsException'"
-ms.date: 01/17/2025
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0039
 - UseNewerAssertThrowsAnalyzer
@@ -33,7 +34,9 @@ The use of `Assert.ThrowsException` or `Assert.ThrowsExceptionAsync`, which are 
 
 ## Rule description
 
-The `Assert.ThrowsException` and `Assert.ThrowsExceptionAsync` methods aren't recommended and might be deprecated in the future.
+The newer exception assertions make the exception-type contract explicit. `Assert.ThrowsExactly` and `Assert.ThrowsExactlyAsync` require the exact exception type, while `Assert.Throws` and `Assert.ThrowsAsync` also accept derived exception types.
+
+To preserve the exact-type behavior of `Assert.ThrowsException` and `Assert.ThrowsExceptionAsync`, migrate to the `ThrowsExactly` variants. Choose a `Throws` variant only if accepting derived exceptions is intentional. The older APIs are removed in MSTest 4.
 
 ## How to fix violations
 

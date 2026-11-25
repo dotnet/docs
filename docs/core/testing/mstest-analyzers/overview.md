@@ -3,20 +3,27 @@ title: MSTest code analysis
 description: Learn about the MSTest code analysis.
 author: evangelink
 ms.author: amauryleve
-ms.date: 10/06/2026
+ms.date: 11/05/2026
 ai-usage: ai-assisted
 ---
 
 # MSTest code analysis
 
-*MSTest analysis* ("MSTESTxxxx") rules inspect your C# or Visual Basic code for security, performance, design and other issues.
+*MSTest analysis* ("MSTESTxxxx") rules inspect your C# or Visual Basic test code for problems that affect test discovery, execution, reliability, and maintainability.
 
-> [!TIP]
-> If you're using Visual Studio, many analyzer rules have associated *code fixes* that you can apply to correct the problem. Code fixes are shown in the light bulb icon menu.
+## Why these rules exist
 
-The rules are organized into categories such as performance usage...
+MSTest calls your test and lifecycle methods, supplies their arguments, and waits for asynchronous work to finish. Rules such as [MSTEST0003](mstest0003.md) check that your code meets those execution requirements. Other rules detect mistakes that can hide failures, produce misleading results, or interfere with other tests.
 
-Starting with MSTest.TestFramework 3.7, the MSTest.Analyzers NuGet package is a dependency of the framework. For earlier versions, you need to use `MSTest` metapackage or add a package reference for `MSTest.Analyzers` explicitly.
+Not every rule describes a runtime requirement. Design rules can express a project convention or a tradeoff. For example, [MSTEST0019](mstest0019.md) favors `TestInitialize` for asynchronous setup, while [MSTEST0020](mstest0020.md) favors constructors for synchronous setup of `readonly` fields. Both approaches are supported. Use each rule's **Rule description** and **When to suppress warnings** sections to understand its purpose and decide whether it fits your project.
+
+## Editor support
+
+The `MSTest.Analyzers` NuGet package reports diagnostics in supported editors and during builds. Starting with `MSTest.TestFramework` 3.7, the framework depends on this package. For earlier versions, use the `MSTest` metapackage or add an explicit package reference to `MSTest.Analyzers`.
+
+In Visual Studio, many rules have associated *code fixes* in the light bulb menu. Each rule page lists whether a code fix is available, but not every violation can be fixed automatically.
+
+Code inserted by IntelliSense or another editor feature still needs to meet MSTest's requirements. Analyzers check the resulting code and can help you correct it; they don't configure the editor's completion or code-generation templates.
 
 ## MSTestAnalysisMode
 

@@ -19,7 +19,15 @@ The diagnostic port supports different transports depending on platform. Current
 
 ## Security considerations
 
-The diagnostic port exposes sensitive information about a running application. If an untrusted user gains access to this channel, they could observe detailed program state, including any secrets that are in memory, and arbitrarily modify the execution of the program. On the CoreCLR runtime, the default diagnostic port is configured to only be accessible by the same user account that launched the app or by an account with super-user permissions. If your security model does not trust other processes with the same user account credentials, you can disable all diagnostic ports by setting environment variable `DOTNET_EnableDiagnostics=0`. This setting will block your ability to use external tooling such as .NET debugging or any of the dotnet-* diagnostic tools.
+> [!CAUTION]
+> Diagnostic ports expose sensitive information about a running application. If an untrusted user gains access to this channel, they could observe detailed program state, including any secrets that are in memory, and arbitrarily modify the execution of the program.
+
+On the CoreCLR runtime, the default diagnostic port is configured to only be accessible by the same user account that launched the app or by an account with super-user permissions. If your security model does not trust other processes with the same user account credentials, you can disable all diagnostic ports by setting environment variable `DOTNET_EnableDiagnostics=0`. This setting will block your ability to use external tooling such as .NET debugging or any of the dotnet-* diagnostic tools.
+
+A diagnostic port can be configured in `connect` mode with `DOTNET_DiagnosticPorts`. In this opt-in mode, the runtime connects to an endpoint that the diagnostic tool creates, which reverses the default connection direction. Tools such as [dotnet-counters](./dotnet-counters.md) and [dotnet-trace](./dotnet-trace.md) create and listen on this endpoint when you invoke them with the `--diagnostic-port <port-address>` option.
+
+> [!CAUTION]
+> Configure `connect` mode ports only with fully trusted endpoints. The runtime doesn't authenticate the process that owns the endpoint and reconnects if the connection is lost. Ensure that untrusted processes—including lower-integrity processes running as the same user—can't create or replace the endpoint for the lifetime of the app.
 
 ## Default diagnostic port
 

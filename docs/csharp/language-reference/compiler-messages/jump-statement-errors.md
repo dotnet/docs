@@ -5,25 +5,37 @@ f1_keywords:
   - "CS0126"
   - "CS0127"
   - "CS0139"
+  - "CS0140"
   - "CS0153"
+  - "CS0157"
+  - "CS0158"
   - "CS0159"
   - "CS0161"
+  - "CS0162"
   - "CS0163"
+  - "CS0164"
   - "CS0469"
+  - "CS8070"
   - "CS9393"
   - "CS9394"
 helpviewer_keywords:
   - "CS0126"
   - "CS0127"
   - "CS0139"
+  - "CS0140"
   - "CS0153"
+  - "CS0157"
+  - "CS0158"
   - "CS0159"
   - "CS0161"
+  - "CS0162"
   - "CS0163"
+  - "CS0164"
   - "CS0469"
+  - "CS8070"
   - "CS9393"
   - "CS9394"
-ms.date: 07/17/2026
+ms.date: 10/30/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings for jump statements
@@ -31,84 +43,110 @@ ai-usage: ai-assisted
 This article covers the following compiler errors and warnings:
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
-That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+That's by design. The text closely matches the text of the compiler error or warning for SEO purposes.
  -->
 
-The following errors occur when you use a `break`, `continue`, `goto`, or `return` statement in a way that doesn't match the surrounding control flow:
+- [**CS0126**](#return-the-required-values): *An object of a type convertible to 'type' is required*
+- [**CS0127**](#return-the-required-values): *Since 'method' returns void, a return keyword must not be followed by an object expression*
+- [**CS0139**](#choose-valid-jump-targets): *No enclosing loop out of which to break or continue*
+- [**CS0140**](#define-and-reference-labels-consistently): *The label 'label' is a duplicate*
+- [**CS0153**](#choose-valid-jump-targets): *A goto case is only valid inside a switch statement*
+- [**CS0157**](#choose-valid-jump-targets): *Control cannot leave the body of a finally clause*
+- [**CS0158**](#define-and-reference-labels-consistently): *The label 'label' shadows another label by the same name in a contained scope*
+- [**CS0159**](#choose-valid-jump-targets): *No such label 'label' within the scope of the goto statement*
+- [**CS0161**](#return-the-required-values): *'method': not all code paths return a value*
+- [**CS0162**](#remove-unreachable-code): *Unreachable code detected*
+- [**CS0163**](#terminate-switch-sections-explicitly): *Control cannot fall through from one case label ('label') to another*
+- [**CS0164**](#define-and-reference-labels-consistently): *This label has not been referenced*
+- [**CS0469**](#choose-valid-jump-targets): *The 'goto case' value is not implicitly convertible to type 'type'*
+- [**CS8070**](#terminate-switch-sections-explicitly): *Control cannot fall out of switch from final case label ('label')*
+- [**CS9393**](#choose-valid-jump-targets): *No enclosing loop or switch statement with the label 'label' out of which to break*
+- [**CS9394**](#choose-valid-jump-targets): *No enclosing loop with the label 'label' out of which to continue*
 
-- [**CS0126**](#return-statement-values): *An object of a type convertible to 'type' is required*
-- [**CS0127**](#return-statement-values): *Since 'method' returns void, a return keyword must not be followed by an object expression*
-- [**CS0139**](#break-and-continue-targets): *No enclosing loop out of which to break or continue*
-- [**CS0153**](#goto-statement-targets): *A goto case is only valid inside a switch statement*
-- [**CS0159**](#goto-statement-targets): *No such label 'label' within the scope of the goto statement*
-- [**CS0161**](#return-statement-values): *'method': not all code paths return a value*
-- [**CS0163**](#switch-section-termination): *Control cannot fall through from one case label ('label') to another*
-- [**CS9393**](#break-and-continue-targets): *No enclosing loop or switch statement with the label 'label' out of which to break*
-- [**CS9394**](#break-and-continue-targets): *No enclosing loop with the label 'label' out of which to continue*
-
-The following warning occurs when a `goto case` statement targets a value that requires a conversion:
-
-- [**CS0469**](#goto-statement-targets): *The 'goto case' value is not implicitly convertible to type 'type'*
-
-## Break and continue targets
+## Choose valid jump targets
 
 - **CS0139**: *No enclosing loop out of which to break or continue*
+- **CS0153**: *A goto case is only valid inside a switch statement*
+- **CS0157**: *Control cannot leave the body of a finally clause*
+- **CS0159**: *No such label 'label' within the scope of the goto statement*
+- **CS0469**: *The 'goto case' value is not implicitly convertible to type 'type'*
 - **CS9393**: *No enclosing loop or switch statement with the label 'label' out of which to break*
 - **CS9394**: *No enclosing loop with the label 'label' out of which to continue*
 
-The `break` statement transfers control out of the nearest enclosing loop or `switch` statement, and the `continue` statement starts the next iteration of the nearest enclosing loop. The compiler reports these diagnostics when it can't find that target.
+- Place `break` inside a loop or `switch` statement, and place `continue` inside a loop. Each statement needs an enclosing construct to target (**CS0139**).
+- Apply the label in `break label;` to an enclosing loop or `switch` statement (**CS9393**). Apply the label in `continue label;` to an enclosing loop, not a `switch` statement (**CS9394**).
+- Place `goto case` and `goto default` inside the `switch` statement that contains their destination (**CS0153**).
+- Define the named destination within the `goto` statement's scope, or correct the target name. A `goto` statement can't enter a nested block or another member (**CS0159**).
+- Give a `goto case` value a type that's implicitly convertible to the `switch` governing type. For example, use `goto case (char)127;` rather than `goto case 127;` when the destination is a character case label (**CS0469**).
+- Move a `return`, `break`, `continue`, or `goto` that exits a `finally` block outside that block. Jumps within the block are valid only when their targets also remain inside it (**CS0157**).
 
-To resolve these errors:
+See [Jump statements](../statements/jump-statements.md) and [The try-finally statement](../statements/exception-handling-statements.md#the-try-finally-statement) for the applicable control-flow rules.
 
-- Place the `break` or `continue` statement inside a `while`, `do`, `for`, or `foreach` loop. A `break` statement can also appear in a `switch` section. A bare `break` or `continue` that isn't nested in one of these statements has no target (**CS0139**).
-- When you write a labeled `break` (`break label;`), apply the same label to an enclosing loop or `switch` statement. The label must name a loop or `switch` that contains the `break` statement (**CS9393**).
-- When you write a labeled `continue` (`continue label;`), apply the same label to an enclosing loop. A labeled `continue` can target only a loop, not a `switch` statement, because `continue` starts the next loop iteration (**CS9394**).
+## Define and reference labels consistently
 
-For more information about these statements, see [The `break` statement](../statements/jump-statements.md#the-break-statement) and [The `continue` statement](../statements/jump-statements.md#the-continue-statement) in the jump statements article.
+- **CS0140**: *The label 'label' is a duplicate*
+- **CS0158**: *The label 'label' shadows another label by the same name in a contained scope*
+- **CS0164**: *This label has not been referenced*
 
-## Goto statement targets
+- Rename labels that have the same name in the same or nested scopes, and update the corresponding `goto` targets. Remove a duplicate label if the existing label already marks the intended destination (**CS0140**, **CS0158**).
+- Remove an unused label while keeping its statement. If a `goto` was intended to reach that statement, correct its target label instead (**CS0164**).
 
-- **CS0153**: *A goto case is only valid inside a switch statement*
-- **CS0159**: *No such label 'label' within the scope of the goto statement*
-- **CS0469**: *The 'goto case' value is not implicitly convertible to type 'type'*
+For label scope and target resolution, see [The goto statement](../statements/jump-statements.md#the-goto-statement).
 
-The `goto` statement transfers control to a labeled statement, to a `case` label, or to the `default` label of a `switch` statement. The compiler reports these diagnostics when the target label doesn't exist or isn't reachable from the `goto` statement.
-
-To resolve these errors:
-
-- Use `goto case` and `goto default` only inside a `switch` statement. Both forms name a section of the enclosing `switch` statement, so they have no meaning outside one (**CS0153**).
-- Add a label that matches the name in the `goto` statement, and confirm that the label is within the scope of the `goto` statement. A `goto` statement can't jump into a nested block, and `goto case` requires a matching `case` label in the same `switch` statement (**CS0159**).
-- Give the `goto case` value the same type as the `switch` governing expression, or add an explicit cast so an implicit conversion exists. For example, use `goto case (char)127;` rather than `goto case 127;` when the `switch` governs a `char` value (**CS0469**).
-
-For more information about the `goto` statement, see [The `goto` statement](../statements/jump-statements.md#the-goto-statement) in the jump statements article. For more information about `goto case` and `goto default`, see [The `switch` statement](../statements/selection-statements.md#the-switch-statement) in the selection statements article.
-
-## Switch section termination
+## Terminate switch sections explicitly
 
 - **CS0163**: *Control cannot fall through from one case label ('label') to another*
+- **CS8070**: *Control cannot fall out of switch from final case label ('label')*
 
-C# doesn't allow control to fall through from one `switch` section to the next. When a `switch` statement contains more than one section, you must explicitly terminate each section, including the last one.
+Add a jump statement such as `break`, `return`, `goto case`, `goto default`, or `throw` wherever control could otherwise reach the end of a `switch` section. Control can't fall into the next section (**CS0163**) or out of the final section (**CS8070**), even when the `switch` has only one section.
 
-To resolve this error, end each `switch` section that contains statements with a jump statement, such as `break`, `return`, `goto case`, `goto default`, or `throw`. To run the same statements for more than one value, stack the `case` labels with no statements between them; that arrangement isn't fall-through. When you want one section to continue into another, use `goto case` or `goto default` to name the next section explicitly (**CS0163**).
+The following examples generate **CS8070** at the marked final `case 1:` and `default:` labels. Uncomment the final `break;` in each `switch` to fix the error:
 
-For more information about the `switch` statement, see [The `switch` statement](../statements/selection-statements.md#the-switch-statement) in the selection statements article. For more information about the `throw` statement, see [The `throw` statement](../statements/exception-handling-statements.md#the-throw-statement) in the exception handling statements article.
+```csharp
+switch (number)
+{
+    case 0:
+        number++;
+        break;
+    case 1: // CS8070
+        number = 0;
+        // break;
+}
 
-## Return statement values
+switch (number)
+{
+    case 0:
+        number++;
+        break;
+    default: // CS8070
+        number = 0;
+        // break;
+}
+```
+
+To share statements between values, stack their `case` labels with no intervening statements. To transfer control to another section explicitly, use `goto case` or `goto default`.
+
+See [The switch statement](../statements/selection-statements.md#the-switch-statement) and [The throw statement](../statements/exception-handling-statements.md#the-throw-statement).
+
+## Return the required values
 
 - **CS0126**: *An object of a type convertible to 'type' is required*
 - **CS0127**: *Since 'method' returns void, a return keyword must not be followed by an object expression*
 - **CS0161**: *'method': not all code paths return a value*
 
-The `return` statement ends execution of the containing member and returns control to the caller. A `return` statement can also return a value.
+- Supply an expression after `return` when the containing member requires a value, and make its type convertible to the required return type (**CS0126**).
+- Use `return;` without an expression in a member that doesn't return a value, such as a `void` method or a property setter (**CS0127**).
+- Cover every reachable exit from a value-returning member. Add a return for an uncovered branch, or throw when a branch can't produce a result (**CS0161**).
 
-To resolve these errors:
+For return forms and requirements, see [The return statement](../statements/jump-statements.md#the-return-statement).
 
-- Supply a value in each `return` statement of a member that has a non-`void` return type, and make sure the value is convertible to that return type. A `get` accessor and a value-returning method both require a `return` statement that includes a value (**CS0126**).
-- Remove the value from any `return` statement in a member that returns `void`, such as a `set` accessor or a method with a `void` return type. Use a bare `return;` statement to exit early (**CS0127**).
-- Make sure every code path in a value-returning member ends with a `return` statement or a `throw` statement. A member returns on all code paths when each branch of every conditional statement returns a value, or when a final `return` statement follows the conditional logic (**CS0161**).
+## Remove unreachable code
 
-For more information about `return` statements in async methods and members that return `Task` or `ValueTask` types, see [Errors and warnings related to async and await](async-await-errors.md). For more information about `return` statements in iterators, see [Errors and warnings related to iterators](iterator-yield.md).
+- **CS0162**: *Unreachable code detected*
 
-For more information about the `return` statement, see [The `return` statement](../statements/jump-statements.md#the-return-statement) in the jump statements article.
+Remove statements that follow an unconditional jump when no control-flow path can reach them. For example, remove `break;` immediately after `return` in a `switch` section; the return already exits the member (**CS0162**).
+
+If the statements were intended to execute, move them before the jump or correct the condition or jump target that makes them unreachable. See [Jump statements](../statements/jump-statements.md) for how each statement transfers control.
 
 ## C# language specification
 

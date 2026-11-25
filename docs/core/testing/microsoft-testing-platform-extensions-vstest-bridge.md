@@ -3,7 +3,8 @@ title: Microsoft.Testing.Platform (MTP) VSTest bridge extension
 description: Learn about the MTP VSTest bridge extension and how to use it.
 author: evangelink
 ms.author: amauryleve
-ms.date: 04/10/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 ---
 
 # VSTest Bridge extension
@@ -19,6 +20,10 @@ This extension is shipped as part of [Microsoft.Testing.Extensions.VSTestBridge]
 
 The main purpose of this extension is to offer an easy and smooth upgrade experience for VSTest users by allowing a dual mode where the new platform is enabled and in parallel a compatibility mode is offered to allow the usual workflows to continue working.
 
+The bridge adapts a VSTest-based test framework to MTP. It doesn't turn `VsTestConsoleWrapper` into a native MTP client or guarantee that every MTP framework can run through VSTest. An existing `Microsoft.TestPlatform.TranslationLayer` integration still requires `vstest.console` and a compatible VSTest adapter.
+
+For new tools that discover and run MTP tests, use the [MTP server-mode client](./microsoft-testing-platform-server-mode.md). For other integration options, see [Programmatic test discovery and execution](./unit-testing-mstest-running-tests.md#programmatic-test-discovery-and-execution).
+
 ## Runsettings support
 
 This extension allows you to provide a [VSTest *.runsettings* file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file), but not all options in this file are picked up by the platform. We describe below the supported and unsupported settings, configuration options and alternatives for the most used VSTest configuration options.
@@ -32,7 +37,7 @@ The following **RunConfiguration** elements are not supported by MTP:
 | Node | Description | Reason / Workaround |
 |------|-------------|---------------------|
 | **MaxCpuCount** | This setting controls the level of parallelism on process-level. Use 0 to enable the maximum process-level parallelism.| When MTP is used with MSBuild, this option is [offloaded to MSBuild](/visualstudio/msbuild/building-multiple-projects-in-parallel-with-msbuild). When a single executable is run, this option has no meaning for MTP. |
-| **ResultsDirectory** | The directory where test results are placed. The path is relative to the directory that contains the *.runsettings* file.| Use the command-line option `--results-directory` to determine the directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the test application. |
+| **ResultsDirectory** | The directory where test results are placed. The path is relative to the directory that contains the *.runsettings* file.| Use the [`--results-directory`](microsoft-testing-platform-cli-options.md) command-line option to set the results directory. For `dotnet test` defaults and layouts, see [Results and artifacts](../tools/dotnet-test-mtp.md#results-and-artifacts). |
 | **TargetFrameworkVersion** | This setting defines the framework version, or framework family to use to run tests.| This option is ignored. The `<TargetFramework>` or `<TargetFrameworks>` MSBuild properties determine the target framework of the application. The tests are hosted in the final application. |
 | **TargetPlatform** | This setting defines the architecture to use to run tests. | `<RuntimeIdentifier>` determines the architecture of the final application that hosts the tests. |
 | **TreatTestAdapterErrorsAsWarnings** | Suppresses test adapter errors to become warnings. | MTP allows only one type of tests to be run from a single assembly, and failure to load the test framework or other parts of infrastructure will become an un-skippable error, because it signifies that some tests could not be discovered or run. |

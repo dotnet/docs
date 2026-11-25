@@ -2,7 +2,8 @@
 title: Copy and Update Record Expressions
 description: Learn how to write a 'copy and update expression' that copies an existing record or anonymous record, updates specified fields, and returns the updated record or anonymous record.
 author: ChrSteinert
-ms.date: 06/12/2019
+ms.date: 09/24/2026
+ai-usage: ai-assisted
 ---
 # Copy and Update Record Expressions
 
@@ -57,6 +58,10 @@ The same syntax extension works for anonymous records as well. Additionally, you
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet19063.fs)]
 
 This flexibility ensures that the same concise syntax applies whether you're working with regular or anonymous records.
+
+## Compose different record shapes
+
+For a same-type update, use the copy-and-update expressions described here. Starting with F# 11, [record spread operators](record-spreads.md) also support multiple sources, projections to different record types, and shared field declarations. Don't combine `with` and spread syntax in the same expression.
 
 ## See also
 

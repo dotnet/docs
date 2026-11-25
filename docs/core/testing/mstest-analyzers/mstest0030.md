@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0030: Type containing `[TestMethod]` should be marked with `[TestClass]`"
 description: "Learn about code analysis rule MSTEST0030: Type containing `[TestMethod]` should be marked with `[TestClass]`, otherwise the test method will be silently ignored."
-ms.date: 07/02/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0030
 - TypeContainingTestMethodShouldBeATestClass
@@ -30,11 +31,13 @@ Type containing `[TestMethod]` should be marked with `[TestClass]`, otherwise th
 
 ## Rule description
 
-MSTest considers test methods only on the context of a test class container (a class marked with [TestClass] or derived attribute) which could lead to some tests being silently ignored. If your class is supposed to represent common test behavior to be executed by children classes, it's recommended to mark the type as abstract to clarify the intent for other developers reading the code.
+`[TestClass]` identifies the fixture that owns test instances and class-level lifecycle callbacks. MSTest discovers those containers before it enumerates their test methods. `[TestMethod]` alone doesn't establish a fixture, so a concrete class without `[TestClass]` doesn't contribute its own tests.
+
+If a class only supplies test implementations for derived classes, declare it abstract to express that it isn't a runnable fixture of its own. Mark each concrete test class with `[TestClass]`.
 
 ## How to fix violations
 
-A non-abstract class contains test methods should be marked with '[TestClass]'.
+Mark a concrete class that owns tests with `[TestClass]`. If the class only supplies shared base behavior, declare it abstract and mark the concrete derived test classes with `[TestClass]`.
 
 ## When to suppress warnings
 

@@ -21,7 +21,7 @@ Clearly, if your goal is to have an application (web app or service) that can ru
 
 [Visual Studio](https://www.visualstudio.com/vs/) provides an integrated development environment (IDE) for Windows and supports Docker development.
 
-You can also use [Visual Studio Code](https://code.visualstudio.com/) on macOS, Linux, and Windows. Visual Studio Code fully supports .NET 8, including IntelliSense and debugging. Because VS Code is a lightweight editor, you can use it to develop containerized apps on the machine in conjunction with the Docker CLI and the [.NET CLI](../../../core/tools/index.md). You can also target .NET 8 with most third-party editors like Sublime, Emacs, vi, and the open-source OmniSharp project, which also provides IntelliSense support.
+You can also use [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) on macOS, Linux, and Windows. Visual Studio Code fully supports .NET 8, including IntelliSense and debugging. Because VS Code is a lightweight editor, you can use it to develop containerized apps on the machine in conjunction with the Docker CLI and the [.NET CLI](../../../core/tools/index.md). You can also target .NET 8 with most third-party editors like Sublime, Emacs, and vi.
 
 In addition to the IDEs and editors, you can use the [.NET CLI](../../../core/tools/index.md) for all supported platforms.
 

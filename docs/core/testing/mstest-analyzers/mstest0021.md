@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0021: Prefer Dispose over TestCleanup methods"
 description: "Learn about code analysis rule MSTEST0021: Prefer Dispose over TestCleanup methods"
-ms.date: 03/19/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0021
 - PreferDisposeOverTestCleanupAnalyzer
@@ -30,7 +31,9 @@ This rule raises a diagnostic when there is a void `[TestCleanup]` method or on 
 
 ## Rule description
 
-Using `Dispose` or `DisposeAsync` is a more common pattern and some developers prefer to always use this pattern even for tests.
+To express that a test-class instance owns resources, use the standard .NET `IDisposable` or `IAsyncDisposable` pattern. MSTest invokes the disposal methods as part of per-test cleanup, so resource release can follow the same pattern as the rest of your code.
+
+`[TestCleanup]` is also supported. This rule expresses an opt-in convention, not a requirement for correct test execution. [MSTEST0022](mstest0022.md) offers the opposite convention; choose the cleanup policy that fits your project rather than enabling both.
 
 ## How to fix violations
 

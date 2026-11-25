@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0018: DynamicData should be valid"
 description: "Learn about code analysis rule MSTEST0018: DynamicData should be valid"
-ms.date: 08/09/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0018
 - DynamicDataShouldBeValidAnalyzer
@@ -29,27 +30,29 @@ A method marked with `[DynamicData]` should have valid layout.
 
 ## Rule description
 
-Methods marked with `[DynamicData]` should also be marked with `[TestMethod]` (or a derived attribute).
+`[DynamicData]` names a member that supplies test cases. MSTest resolves that member, enumerates its rows, and passes each row to a test method. The analyzer catches member-lookup and signature problems before the runner encounters them.
 
-The "data source" member referenced:
+MSTest can enumerate data during discovery, before it creates a per-test instance or runs per-test initialization. A data source therefore must not depend on those steps to supply its rows.
 
-- should exist on the specified type (current class if no type is specified)
-- should not have overloads
-- should be of the same kind (method or property) as the `DataSourceType` property
-- should be `static`
-- should not be generic
-- should be parameterless
-- should return `IEnumerable<object[]>`, `IEnumerable<Tuple<T,...>>`, or `IEnumerable<ValueTuple<,...>>`
+| Data-source requirement | Reason |
+|-------------------------|--------|
+| Apply `[DynamicData]` to a method marked with `[TestMethod]` or a derived attribute. | A data attribute supplies arguments; it doesn't declare a test entry point. |
+| Reference an existing, unambiguous member on the specified type, or the current class if no type is specified. | MSTest resolves the member by name. A missing or ambiguous member prevents the runner from obtaining the intended test data. |
+| Match the member kind to the specified `DynamicDataSourceType`, or use `AutoDetect` on versions that support it. | MSTest must know whether to invoke a method, read a property, or read a field to obtain the rows. |
+| Use a static member and a non-generic data-source method. | The source must be callable without a per-test instance or method type arguments. |
+| Use a parameterless method, or in MSTest 3.10 and later, supply matching data-source arguments through `[DynamicData]`. | The runner only supplies the data-source arguments specified by the attribute, not arbitrary values or the test's `TestContext`. |
+| Return an enumerable of supported test-data rows. | MSTest enumerates the source and binds each row to the test method's parameters. The row shape must supply compatible arguments. Common return types include `IEnumerable<object[]>`, `IEnumerable<Tuple<...>>`, and `IEnumerable<ValueTuple<...>>`. |
 
-The "display name" member referenced:
+For supported row types and parameterized sources, see [DynamicDataAttribute](../unit-testing-mstest-writing-tests-data-driven.md#dynamicdataattribute). For automatic member-kind detection, see [MSTEST0052](mstest0052.md).
 
-- should exist on the specified type (current class if no type is specified)
-- should not have overloads
-- should be a method
-- should be `static`
-- should not be generic
-- should return `string`
-- should take exactly 2 parameters, the first being `MethodInfo` and the second being `object[]`
+If you specify a custom display-name member, it must meet a separate callback contract:
+
+| Display-name requirement | Reason |
+|--------------------------|--------|
+| Reference an existing, unambiguous method on the specified type. | MSTest must resolve one callback that formats the name, rather than a property or an ambiguous overload. |
+| Use a public, static, non-generic method. | MSTest invokes the formatter directly without a test-class instance or method type arguments. |
+| Return `string`. | The callback supplies the human-readable name used to identify the test case. |
+| Take exactly two parameters: `MethodInfo` followed by `object[]`. | MSTest supplies the test method and the current row's values so the formatter can distinguish individual test cases. |
 
 Example:
 

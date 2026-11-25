@@ -31,7 +31,7 @@ To use WinForms or WPF, specify the following settings in the project file of yo
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net11.0-windows</TargetFramework>
 
     <UseWPF>true</UseWPF>
     <!-- and/or -->

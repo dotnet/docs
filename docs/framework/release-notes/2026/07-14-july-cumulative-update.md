@@ -1,11 +1,12 @@
 ---
 title: July 2026 cumulative update
 description: Learn about the improvements in the .NET Framework July 2026 cumulative update.
-ms.date: 07/14/2026
+ms.date: 08/17/2026
 ---
 # .NET Framework July 2026 cumulative update
 
 _Released July 14, 2026_
+_Revised August 17, 2026_
 
 ## Summary of what's new in this release
 
@@ -139,6 +140,7 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5100991](https://support.microsoft.com/kb/5100991) |
 | .NET Framework 4.8 | [5101011](https://support.microsoft.com/kb/5101011) |
 | **Windows Server 2012** | **[5102204](https://support.microsoft.com/kb/5102204)** |
+| .NET Framework 3.5 | [5100984](https://support.microsoft.com/kb/5100984) |
 | .NET Framework 3.5 | 5100986 |
 | .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5100990](https://support.microsoft.com/kb/5100990) |
 | .NET Framework 4.8 | [5101009](https://support.microsoft.com/kb/5101009) |

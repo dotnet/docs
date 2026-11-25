@@ -3,7 +3,7 @@ title: Build a test framework for Microsoft.Testing.Platform (MTP)
 description: Learn how to create a custom test framework for Microsoft.Testing.Platform (MTP), including registration, lifecycle, and test node reporting.
 author: MarcoRossignoli
 ms.author: mrossignoli
-ms.date: 10/01/2026
+ms.date: 11/05/2026
 ai-usage: ai-assisted
 ---
 
@@ -83,6 +83,8 @@ return await testApplication.RunAsync();
 
 > [!NOTE]
 > Returning empty [ITestFrameworkCapabilities](./microsoft-testing-platform-architecture-capabilities.md) shouldn't prevent the execution of the test session. All test frameworks should be capable of discovering and running tests. The impact should be limited to extensions that may opt-out if the test framework lacks a certain feature.
+
+For TRX reports, register [`ITrxReportCapability`](./microsoft-testing-platform-architecture-capabilities.md#itrxreportcapability) and supply the [required test identity on final node updates](./microsoft-testing-platform-architecture-capabilities.md#required-test-node-data). Additional report metadata is optional.
 
 ### Create a testing framework
 
@@ -168,6 +170,8 @@ The message bus serves as the central hub for the platform, facilitating asynchr
 For a comprehensive list of information that can be published to the testing platform, refer to the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) section.
 
 `CancellationToken`: This token is utilized to interrupt the processing of a particular request.
+
+To stop scheduling new tests without canceling result publication or cleanup, implement [`IGracefulStopTestExecutionCapability`](./microsoft-testing-platform-architecture-capabilities.md#igracefulstoptestexecutioncapability). This separate capability supports features such as `--maximum-failed-tests`.
 
 `Complete()`: As depicted in the previous sequence, the `Complete` method notifies the platform that the request has been successfully processed and all relevant information has been transmitted to the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service).
 
@@ -309,6 +313,34 @@ await context.MessageBus.PublishAsync(
         runTestExecutionRequest.Session.SessionUid,
         failedTestNode));
 ```
+
+#### Honor request filters
+
+To run only the tests that a user or tool selects, apply `TestExecutionRequest.Filter` to both discovery and execution. MTP passes the filter to your framework; the platform doesn't filter the tests that your framework publishes or executes.
+
+The stable filter contracts in `Microsoft.Testing.Platform.Requests` include:
+
+| Filter | Framework behavior |
+|---|---|
+| `NopFilter` | Apply no additional constraint. |
+| `TestNodeUidListFilter` | Select only tests whose stable `TestNodeUid` appears in `TestNodeUids`. An empty array selects no tests. |
+
+Compare UIDs as opaque, case-sensitive identifiers. Don't substitute a display name or a newly generated identifier. The platform uses UID filters for `--filter-uid`, targeted tool requests, and the [retry extension](./microsoft-testing-platform-retry.md).
+
+The following helper handles these two filter types and rejects unsupported filters instead of silently executing the full suite:
+
+:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-test-framework/csharp/Program.cs" id="MatchFilter":::
+:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-test-framework/vb/Program.vb" id="MatchFilter":::
+
+Use the helper before you publish a discovered node or execute a selected test. The following sample framework uses the same selection logic for both requests:
+
+:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-test-framework/csharp/Program.cs" id="HandleFilters":::
+:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-test-framework/vb/Program.vb" id="HandleFilters":::
+
+When no tests match, complete the request without executing or publishing unselected tests. MTP applies its zero-tests or minimum-expected-tests policy.
+
+> [!IMPORTANT]
+> `TreeNodeFilter` and `CompositeTestExecutionFilter` are experimental and use the `TPEXP` diagnostic ID. A framework that supports tree filters must evaluate the filter against its test tree and properties. A framework that uses [filter providers](./microsoft-testing-platform-architecture-extensions.md#the-itestexecutionfilterprovider-extensions) must also evaluate every child of a composite filter. The helper in this example supports only `NopFilter` and `TestNodeUidListFilter`.
 
 #### Canonical test execution
 
@@ -452,15 +484,6 @@ Optional properties, on the other hand, enhance the testing experience by provid
 ##### Generic information
 
 ```csharp
-public record KeyValuePairStringProperty(
-    string Key,
-    string Value)
-        : IProperty;
-```
-
-The `KeyValuePairStringProperty` stands for a general key/value pair data.
-
-```csharp
 public record struct LinePosition(
     int Line,
     int Column);
@@ -494,17 +517,34 @@ public sealed record TestMethodIdentifierProperty(
 
 `TestMethodIdentifierProperty` is a unique identifier for a test method.
 
+To publish portable key-value metadata, create a `TestMetadataProperty` from `Microsoft.Testing.Platform.Extensions.Messages` and add it to `TestNode.Properties`:
+
 ```csharp
-public sealed record TestMetadataProperty(
-    string Key,
-    string Value)
+var metadata = new TestMetadataProperty("Environment", "Staging");
 ```
 
-`TestMetadataProperty` is utilized to convey the characteristics or *traits* of a `TestNode`.
+```vb
+Dim metadata = New TestMetadataProperty("Environment", "Staging")
+```
+
+MTP exposes these properties as *traits* in [JSON discovery output](./microsoft-testing-platform-cli-options.md#discover-tests-as-json) and [server-mode updates](./microsoft-testing-platform-server-mode.md#consume-updates-and-metadata). Arbitrary `IProperty` implementations remain available to in-process consumers but don't automatically serialize to external clients. The platform's internal `SerializableKeyValuePairStringProperty` type isn't a public extension point.
 
 Starting with MTP 2.4, add `AssertionFailureProperty` to a failed test node to supply separate, preformatted expected and actual values. Report consumers can use these values to render a structured difference instead of parsing the failure message. At least one value must be non-`null`. Consumers prefer this property but can fall back to the legacy `assert.expected` and `assert.actual` entries in <xref:System.Exception.Data>.
 
 Starting with MTP 2.4, add `RetryAttemptProperty` to every update in an in-process retry sequence. `AttemptNumber` is one-based, and `IsSuperseded` marks an attempt that a later attempt replaces. TRX, JUnit, and the process exit code ignore superseded attempts, while the terminal, HTML, and CTRF consumers can preserve the full history. This property doesn't represent the out-of-process `--retry-failed-tests` attempts.
+
+##### Captured test output
+
+To associate captured text with a test, add `StandardOutputProperty` and `StandardErrorProperty` from `Microsoft.Testing.Platform.Extensions.Messages` to that test's `TestNode.Properties`. Publish the node through a `TestNodeUpdateMessage` with the same stable UID and session as the test result.
+
+Your framework owns output capture and attribution, including isolation between parallel tests. MTP consumes the properties; it doesn't automatically capture arbitrary calls to <xref:System.Console.WriteLine*>. The following example uses sample text in place of output captured by a real framework:
+
+:::code language="csharp" source="./snippets/microsoft-testing-platform-architecture-test-framework/csharp/Program.cs" id="CapturedOutput":::
+:::code language="vb" source="./snippets/microsoft-testing-platform-architecture-test-framework/vb/Program.vb" id="CapturedOutput":::
+
+The terminal reporter uses these properties with [`--show-stdout` and `--show-stderr`](./microsoft-testing-platform-terminal-output.md#options). A standard-error property doesn't make a test fail; the test's state property determines its outcome.
+
+Keep per-test output separate from diagnostic logs and extension-level output through `IOutputDevice`. To include text in a TRX report, also supply the [TRX-specific message properties](./microsoft-testing-platform-architecture-capabilities.md#itrxreportcapability). Don't assume every report consumer maps the same properties.
 
 ##### Discovery information
 

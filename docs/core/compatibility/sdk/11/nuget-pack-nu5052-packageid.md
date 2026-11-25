@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: NuGet pack warns for package IDs with restricted characters"
 description: "Learn about the breaking change in .NET 11 where NuGet's pack command emits warning NU5052 for package IDs that use characters outside the restricted set."
-ms.date: 07/22/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ Starting in .NET 11, `dotnet pack` emits warning **NU5052** when a package ID co
 
 ## Version introduced
 
-.NET 11 Preview 6
+.NET 11
 
 ## Previous behavior
 

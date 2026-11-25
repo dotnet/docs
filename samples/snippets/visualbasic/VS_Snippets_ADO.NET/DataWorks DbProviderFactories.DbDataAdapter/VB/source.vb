@@ -1,6 +1,5 @@
 ﻿Imports System.Data
-Imports System.Data.SqlClient
-Imports System.Data.OleDb
+Imports Microsoft.Data.SqlClient
 Imports System.Configuration
 Imports System.Data.Common
 
@@ -12,6 +11,9 @@ Class Program
 
         ' Create the DbProviderFactory and DbConnection.
         Try
+#If NET Then
+            DbProviderFactories.RegisterFactory("Microsoft.Data.SqlClient", SqlClientFactory.Instance)
+#End If
             Dim factory As DbProviderFactory = _
                DbProviderFactories.GetFactory(providerName)
 

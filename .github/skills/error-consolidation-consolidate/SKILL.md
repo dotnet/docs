@@ -26,6 +26,8 @@ Collect the **destination filename** for the consolidated `.md` file in `docs/cs
    - The included error codes.
    - A one-sentence rationale.
 
+Prefer a coherent shared section over a new H2 for a single diagnostic, even when combining expands a section's scope. Reuse existing sections and anchors where practical; don't add loosely related diagnostics merely to increase a theme's size. Explain any proposed ownership or anchor changes before applying them.
+
 Present the proposal and stop:
 
 ```markdown
@@ -85,6 +87,9 @@ Repeat codes and messages without anchor links inside the thematic section.
 - Do not add H3 headings; keep each thematic section flat under its H2.
 - Explicitly identify diagnostics that the latest C# compiler no longer produces.
 - Reuse source text or a brief source example when it supports the resolution.
+- Preserve a useful diagnostic-producing example together with its explicit correction; don't turn it into a feature tutorial.
+- Distinguish compiler command-line arguments, shell quoting, project-file XML, and Roslyn API settings. Verify the actual emitting input before offering a reproduction. An enum entry can remain eligible for coverage without a known current emitter.
+- For ignored switches, explain what is ignored and what to change without promising future implementation. For malformed values, verify the option's actual parser rather than inferring accepted values from the diagnostic name.
 
 ### 4. Remove Absorbed H2 Sections
 

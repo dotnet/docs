@@ -68,7 +68,7 @@ You can also use `.` to access an [extension member](../../programming-guide/cla
 
 ## Indexer operator []
 
-Square brackets, `[]`, typically access array, indexer, or pointer elements. Beginning with C# 12, `[]` encloses a [collection expression](./collection-expressions.md).
+Square brackets, `[]`, typically access array, indexer, or pointer elements. Square brackets also enclose a [collection expression](./collection-expressions.md).
 
 ### Array access
 

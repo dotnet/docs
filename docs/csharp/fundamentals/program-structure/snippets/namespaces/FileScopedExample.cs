@@ -3,9 +3,8 @@ namespace MyApp.Models;
 
 class Customer
 {
-    public required string Name { get; init; }
-    public string? Email { get; init; }
+    public string Name { get; set; } = "";
 
-    public override string ToString() => $"{Name} ({Email ?? "no email"})";
+    public override string ToString() => Name;
 }
 // </FileScopedNamespace>

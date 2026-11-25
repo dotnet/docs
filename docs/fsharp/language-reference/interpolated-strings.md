@@ -1,7 +1,7 @@
 ---
 title: Interpolated strings
 description: Learn about interpolated strings, a special form of string that allows you to embed F# expressions directly inside them.
-ms.date: 10/01/2025
+ms.date: 09/25/2026
 ai-usage: ai-assisted
 ---
 
@@ -34,7 +34,7 @@ printfn $"I think {3.0 + 0.14} is close to {System.Math.PI}!"
 
 The contents in between each `{}` brace pair can be any F# expression.
 
-For non-typed interpolated strings (without format specifiers), the expression is converted to a string using the `ToString()` method. If the expression evaluates to `null`, an empty string is used.
+For string-valued interpolation in F# 11, an unformatted expression uses F#'s `string` conversion. If the expression evaluates to `null`, an empty string is used. Earlier compilers could optimize some string-only interpolations, but otherwise used printf formatting; see [Native AOT and string-valued interpolation](#native-aot-and-string-valued-interpolation) for formatting differences.
 
 For typed interpolated strings with format specifiers (such as `%s{expr}` or `%d{expr}`), the conversion follows the rules defined for that specific format specifier.
 To escape a `{}` brace pair, write two of them like so:
@@ -170,6 +170,50 @@ The number of `%` characters needed for format specifiers is affected in the sam
 let percent = $$"""50% of 20 is %%.1f{{20m * 0.5m}}"""
 // "50% of 20 is 10.0"
 ```
+
+## Native AOT and string-valued interpolation
+
+To format text without a reflection-based formatting engine, use string-valued interpolation with plain or .NET-format holes:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="Interpolation":::
+
+F# 11 uses direct conversions and `System.String.Concat` for more string-valued interpolations. A .NET-format hole uses invariant `String.Format` and boxes its argument. These compiler changes support [Native AOT](../../core/deploying/native-aot/index.md) without requiring the modern Core build; other application code can still need reflection.
+
+Printf-style holes requiring printf formatting, such as `%04d{number}` or `%A{record}`, can still use the reflection-based path. Bare `%s`, `%c`, `%d`, `%i`, and `%M` holes retain their type checks and avoid printf formatting. Other specifiers, including `%u`, aren't covered by that optimization. An interpolation used as a `PrintfFormat` value is also distinct from one whose result type is `string`.
+
+### Culture and format compatibility
+
+Plain holes use F#'s `string` conversion; .NET-format holes use invariant formatting. To produce localized output, select the culture explicitly:
+
+:::code language="fsharp" source="../whats-new/snippets/fsharp-11/Stable.fs" id="Culture":::
+
+Check localized output when upgrading. `FormattableString` retains its arguments for later provider-based formatting instead of following this concatenation path.
+
+Warning FS3884 identifies an unapplied function or delegate in an interpolation hole. Apply the function if you intended its result:
+
+```fsharp
+let weight () = 12.5m
+let text: string = $"Weight: {weight ()} kg"
+```
+
+### Write a value to standard output
+
+To write a value without a printf format, FSharp.Core 11 adds `print` and `printn`. They use `string` conversion; `printn` adds a newline:
+
+```fsharp
+print "Parcels: "
+printn 3
+```
+
+For structural `%A` output, use [plaintext formatting](plaintext-formatting.md).
+
+### Record and union output without reflection
+
+With `--reflectionfree`, F# 11 can generate meaningful `ToString` implementations for records and unions instead of displaying only the type name:
+
+:::code language="fsharp" source="snippets/interpolated-strings/ReflectionFree.fs" id="ReflectionFree":::
+
+The [sample project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/interpolated-strings/ReflectionFree.fsproj) enables the flag. Output differs from `%A`; field types also need suitable `ToString` implementations.
 
 ## See also
 

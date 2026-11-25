@@ -1,24 +1,26 @@
 ---
 description: "Learn more about enabling and enumerating statistics for SQL Server, and the available statistical values."
 title: "Provider Statistics for SQL Server"
-ms.date: "03/30/2017"
+ms.date: "10/23/2026"
 dev_langs:
   - "csharp"
   - "vb"
 ---
 # Provider statistics for SQL Server
 
-The .NET Framework Data Provider for SQL Server supports runtime statistics. Enable statistics by setting the <xref:System.Data.SqlClient.SqlConnection.StatisticsEnabled> property on a valid <xref:System.Data.SqlClient.SqlConnection> object to `True`.
+Microsoft.Data.SqlClient supports runtime statistics. Enable statistics by setting the <xref:Microsoft.Data.SqlClient.SqlConnection.StatisticsEnabled> property on a valid <xref:Microsoft.Data.SqlClient.SqlConnection> object to `True`.
 
-After statistics are enabled, you can review them as a "snapshot in time" by retrieving an <xref:System.Collections.IDictionary> reference via the <xref:System.Data.SqlClient.SqlConnection.RetrieveStatistics*> method of the <xref:System.Data.SqlClient.SqlConnection> object. You enumerate through the list as a set of name/value pair dictionary entries. These name/value pairs are unordered. At any time, you can call the <xref:System.Data.SqlClient.SqlConnection.ResetStatistics*> method of the <xref:System.Data.SqlClient.SqlConnection> object to reset the counters.
+After you enable statistics, call <xref:Microsoft.Data.SqlClient.SqlConnection.RetrieveStatistics*> for a point-in-time snapshot in the <xref:System.Collections.IDictionary> object. Enumerate its unordered name/value pairs to read the counters. To reset the counters, call <xref:Microsoft.Data.SqlClient.SqlConnection.ResetStatistics*>.
 
-If statistic gathering has not been enabled, an exception is not generated. In addition, if <xref:System.Data.SqlClient.SqlConnection.RetrieveStatistics*> is called without <xref:System.Data.SqlClient.SqlConnection.StatisticsEnabled*> having been called first, the values retrieved are the initial values for each entry. If you enable statistics, run your application for a while, and then disable statistics, the values retrieved will reflect the values collected up to the point where statistics were disabled.
+If you haven't enabled statistics, `RetrieveStatistics` returns each counter's initial value without an exception. After you disable statistics, the counters retain the values collected up to that point.
 
 All statistical values gathered are on a per-connection basis.
 
 ## Statistical Values Available
 
- Currently there are 18 different items available from the Microsoft SQL Server provider. The number of items available can be accessed via the `Count` property of the <xref:System.Collections.IDictionary> interface reference returned by <xref:System.Data.SqlClient.SqlConnection.RetrieveStatistics*>. All of the counters for provider statistics use the common language runtime <xref:System.Int64> type (**long** in C# and Visual Basic), which is 64 bits wide. The maximum value of the **int64** data type, as defined by the **int64.MaxValue** field, is ((2^63)-1)). When the values for the counters reach this maximum value, they should no longer be considered accurate. This means that **int64.MaxValue**-1((2^63)-2) is effectively the greatest valid value for any statistic.
+The Microsoft SQL Server provider exposes 18 statistical values. Read the dictionary's `Count` property to get the number of available entries. All counters use <xref:System.Int64>, the 64-bit type named `long` in C# and `Long` in Visual Basic.
+
+The maximum value, `Int64.MaxValue`, is (2^63)-1. At that limit, counters are no longer accurate. The greatest valid value for a statistic is therefore `Int64.MaxValue - 1`, or (2^63)-2.
 
 > [!NOTE]
 > A dictionary is used for returning provider statistics because the number, names and order of the returned statistics may change in the future. Applications should not rely on a specific value being found in the dictionary, but should instead check whether the value is there and branch accordingly.
@@ -32,18 +34,18 @@ All statistical values gathered are on a per-connection basis.
 |`BytesReceived`|Returns the number of bytes of data in the TDS packets received by the provider from SQL Server once the application has started using the provider and has enabled statistics.|
 |`BytesSent`|Returns the number of bytes of data sent to SQL Server in TDS packets after the application has started using the provider and has enabled statistics.|
 |`ConnectionTime`|The amount of time (in milliseconds) that the connection has been opened after statistics have been enabled (total connection time if statistics were enabled before opening the connection).|
-|`CursorOpens`|Returns the number of times a cursor was open through the connection once the application has started using the provider and has enabled statistics.<br /><br /> Note that read-only/forward-only results returned by SELECT statements are not considered cursors and thus do not affect this counter.|
-|`ExecutionTime`|Returns the cumulative amount of time (in milliseconds) that the provider has spent processing once statistics have been enabled, including the time spent waiting for replies from the server as well as the time spent executing code in the provider itself.<br /><br /> The classes that include timing code are:<br /><br /> SqlConnection<br /><br /> SqlCommand<br /><br /> SqlDataReader<br /><br /> SqlDataAdapter<br /><br /> SqlTransaction<br /><br /> SqlCommandBuilder<br /><br /> To keep performance-critical members as small as possible, the following members are not timed:<br /><br /> SqlDataReader<br /><br /> this[] operator (all overloads)<br /><br /> GetBoolean<br /><br /> GetChar<br /><br /> GetDateTime<br /><br /> GetDecimal<br /><br /> GetDouble<br /><br /> GetFloat<br /><br /> GetGuid<br /><br /> GetInt16<br /><br /> GetInt32<br /><br /> GetInt64<br /><br /> GetName<br /><br /> GetOrdinal<br /><br /> GetSqlBinary<br /><br /> GetSqlBoolean<br /><br /> GetSqlByte<br /><br /> GetSqlDateTime<br /><br /> GetSqlDecimal<br /><br /> GetSqlDouble<br /><br /> GetSqlGuid<br /><br /> GetSqlInt16<br /><br /> GetSqlInt32<br /><br /> GetSqlInt64<br /><br /> GetSqlMoney<br /><br /> GetSqlSingle<br /><br /> GetSqlString<br /><br /> GetString<br /><br /> IsDBNull|
-|`IduCount`|Returns the total number of INSERT, DELETE, and UPDATE statements executed through the connection once the application has started using the provider and has enabled statistics.|
-|`IduRows`|Returns the total number of rows affected by INSERT, DELETE, and UPDATE statements executed through the connection once the application has started using the provider and has enabled statistics.|
+|`CursorOpens`|Returns the number of times a cursor was open through the connection once the application has started using the provider and has enabled statistics.<br /><br /> Note that read-only/forward-only results returned by `SELECT` statements are not considered cursors and thus do not affect this counter.|
+|`ExecutionTime`|Returns the cumulative amount of time (in milliseconds) that the provider has spent processing once statistics have been enabled, including the time spent waiting for replies from the server as well as the time spent executing code in the provider itself.<br /><br /> The classes that include timing code are:<br /><br /> `SqlConnection`<br /><br /> `SqlCommand`<br /><br /> `SqlDataReader`<br /><br /> `SqlDataAdapter`<br /><br /> `SqlTransaction`<br /><br /> `SqlCommandBuilder`<br /><br /> To keep performance-critical members as small as possible, the following members are not timed:<br /><br /> `SqlDataReader`<br /><br /> `this[]` operator (all overloads)<br /><br /> `GetBoolean`<br /><br /> `GetChar`<br /><br /> `GetDateTime`<br /><br /> `GetDecimal`<br /><br /> `GetDouble`<br /><br /> `GetFloat`<br /><br /> `GetGuid`<br /><br /> `GetInt16`<br /><br /> `GetInt32`<br /><br /> `GetInt64`<br /><br /> `GetName`<br /><br /> `GetOrdinal`<br /><br /> `GetSqlBinary`<br /><br /> `GetSqlBoolean`<br /><br /> `GetSqlByte`<br /><br /> `GetSqlDateTime`<br /><br /> `GetSqlDecimal`<br /><br /> `GetSqlDouble`<br /><br /> `GetSqlGuid`<br /><br /> `GetSqlInt16`<br /><br /> `GetSqlInt32`<br /><br /> `GetSqlInt64`<br /><br /> `GetSqlMoney`<br /><br /> `GetSqlSingle`<br /><br /> `GetSqlString`<br /><br /> `GetString`<br /><br /> `IsDBNull`|
+|`IduCount`|Returns the total number of `INSERT`, `DELETE`, and `UPDATE` statements executed through the connection once the application has started using the provider and has enabled statistics.|
+|`IduRows`|Returns the total number of rows affected by `INSERT`, `DELETE`, and `UPDATE` statements executed through the connection once the application has started using the provider and has enabled statistics.|
 |`NetworkServerTime`|Returns the cumulative amount of time (in milliseconds) that the provider spent waiting for replies from the server once the application has started using the provider and has enabled statistics.|
 |`PreparedExecs`|Returns the number of prepared commands executed through the connection once the application has started using the provider and has enabled statistics.|
 |`Prepares`|Returns the number of statements prepared through the connection once the application has started using the provider and has enabled statistics.|
-|`SelectCount`|Returns the number of SELECT statements executed through the connection once the application has started using the provider and has enabled statistics. This includes FETCH statements to retrieve rows from cursors, and the count for SELECT statements is updated when the end of a <xref:System.Data.SqlClient.SqlDataReader> is reached.|
-|`SelectRows`|Returns the number of rows selected once the application has started using the provider and has enabled statistics. This counter reflects all the rows generated by SQL statements, even those that were not actually consumed by the caller. For example, closing a data reader before reading the entire result set would not affect the count. This includes the rows retrieved from cursors through FETCH statements.|
+|`SelectCount`|Returns the number of `SELECT` statements executed through the connection after the application enables statistics. Includes `FETCH` statements that retrieve rows from cursors. For `SELECT` statements, the provider updates the count when the <xref:Microsoft.Data.SqlClient.SqlDataReader> reaches the end of the results.|
+|`SelectRows`|Returns the number of rows selected once the application has started using the provider and has enabled statistics. This counter reflects all the rows generated by SQL statements, even those that were not actually consumed by the caller. For example, closing a data reader before reading the entire result set would not affect the count. This includes the rows retrieved from cursors through `FETCH` statements.|
 |`ServerRoundtrips`|Returns the number of times the connection sent commands to the server and got a reply back once the application has started using the provider and has enabled statistics.|
 |`SumResultSets`|Returns the number of result sets that have been used once the application has started using the provider and has enabled statistics. For example this would include any result set returned to the client. For cursors, each fetch or block-fetch operation is considered an independent result set.|
-|`Transactions`|Returns the number of user transactions started once the application has started using the provider and has enabled statistics, including rollbacks. If a connection is running with auto commit on, each command is considered a transaction.<br /><br /> This counter increments the transaction count as soon as a BEGIN TRAN statement is executed, regardless of whether the transaction is committed or rolled back later.|
+|`Transactions`|Returns the number of user transactions started once the application has started using the provider and has enabled statistics, including rollbacks. If a connection is running with auto commit on, each command is considered a transaction.<br /><br /> This counter increments the transaction count as soon as a `BEGIN TRAN` statement is executed, regardless of whether the transaction is committed or rolled back later.|
 |`UnpreparedExecs`|Returns the number of unprepared statements executed through the connection once the application has started using the provider and has enabled statistics.|
 
 ### Retrieving a Value
@@ -59,7 +61,7 @@ Option Strict On
 Imports System
 Imports System.Collections
 Imports System.Data
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 
 Module Module1
 
@@ -128,7 +130,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 namespace CS_Stats_Console_GetValue
 {
@@ -214,7 +216,7 @@ Option Strict On
 Imports System
 Imports System.Collections
 Imports System.Data
-Imports System.Data.SqlClient
+Imports Microsoft.Data.SqlClient
 
 Module Module1
   Sub Main()
@@ -275,7 +277,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 namespace CS_Stats_Console_GetAll
 {

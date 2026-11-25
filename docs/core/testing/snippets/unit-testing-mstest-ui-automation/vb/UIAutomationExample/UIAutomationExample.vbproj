@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <RootNamespace>UIAutomationExample</RootNamespace>
-    <TargetFramework>net10.0-windows</TargetFramework>
+    <TargetFramework>net11.0-windows</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(UseMSTest45Preview)' == 'true'">

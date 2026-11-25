@@ -160,6 +160,10 @@ items:
       href: fundamentals/building-software/local-functions.md
     - name: Iterators
       href: fundamentals/building-software/iterators.md
+  - name: Namespaces
+    items:
+    - name: Organize types with namespaces
+      href: fundamentals/namespaces/overview.md
   - name: Object-oriented programming
     items:
     - name: Classes, structs, and records
@@ -194,6 +198,8 @@ items:
     items:
     - name: Build file-based apps
       href: fundamentals/tutorials/file-based-programs.md
+    - name: "Tutorial: Combine C# techniques to generate badge labels"
+      href: fundamentals/tutorials/functional-techniques.md
     - name: "How to display command-line arguments"
       href: fundamentals/tutorials/how-to-display-command-line-arguments.md
     - name: "Build a command-line app with System.CommandLine"
@@ -241,8 +247,6 @@ items:
     href: whats-new/csharp-14.md
   - name: C# 13
     href: whats-new/csharp-13.md
-  - name: C# 12
-    href: whats-new/csharp-12.md
   - name: Breaking changes
     items:
     - name: After C# 14

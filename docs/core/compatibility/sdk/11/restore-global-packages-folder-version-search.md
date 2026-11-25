@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Restore doesn't search the global packages folder for a higher package version"
 description: "Learn about the breaking change in .NET 11 where NuGet restore no longer considers versions in the global packages folder when it selects a higher package version."
-ms.date: 09/01/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ When a `PackageReference` or package dependency requests a package version that 
 
 ## Version introduced
 
-.NET 11 RC 1
+.NET 11
 
 ## Previous behavior
 

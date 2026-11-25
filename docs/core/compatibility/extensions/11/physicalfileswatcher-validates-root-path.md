@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: PhysicalFilesWatcher validates root and FileSystemWatcher paths"
 description: "Learn about the breaking change in .NET 11 where PhysicalFilesWatcher validates the root argument and the relationship between root and FileSystemWatcher.Path."
-ms.date: 08/28/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 ## Version introduced
 
-.NET 11 Preview 4
+.NET 11
 
 ## Previous behavior
 

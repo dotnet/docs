@@ -1,7 +1,7 @@
 ---
 title: .NET environment variables
 description: Learn about the environment variables that you can use to configure the .NET SDK, .NET CLI, and .NET runtime.
-ms.date: 05/15/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -41,7 +41,7 @@ There are several global HTTP environment variable settings:
 - `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT`
   - When set to `false` or `0`, disables HTTP/2 support, which is enabled by default.
 - `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP3SUPPORT`
-  - When set to `true` or `1`, enables HTTP/3 support, which is disabled by default.
+  - When set to `false` or `0`, disables HTTP/3 support, which is enabled by default.
 - `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2FLOWCONTROL_DISABLEDYNAMICWINDOWSIZING`
   - When set to `false` or `0`, overrides the default and disables the HTTP/2 dynamic window scaling algorithm.
 - `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_FLOWCONTROL_MAXSTREAMWINDOWSIZE`
@@ -334,7 +334,7 @@ Set this variable to control the fast path explicitly:
 - To disable it and route every invocation to the managed CLI, set the variable to `false`, `0`, `no`, or `off`.
 
 > [!NOTE]
-> Starting in .NET 11 Preview 7, this fast path is enabled by default (`true`) on all platforms. To disable it, set the variable to `false`, `0`, `no`, or `off`.
+> Starting in .NET 11, this fast path is enabled by default (`true`) on all platforms. To disable it, set the variable to `false`, `0`, `no`, or `off`.
 
 ### `DOTNET_GENERATE_ASPNET_CERTIFICATE`
 

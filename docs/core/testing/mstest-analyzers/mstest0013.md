@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0013: AssemblyCleanup method should have valid layout"
 description: "Learn about code analysis rule MSTEST0013: AssemblyCleanup method should have valid layout"
-ms.date: 02/19/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0013
 - AssemblyCleanupShouldBeValidAnalyzer
@@ -30,23 +31,16 @@ A method marked with `[AssemblyCleanup]` should have valid layout.
 
 ## Rule description
 
-Methods marked with `[AssemblyCleanup]` should follow the following layout to be valid:
+MSTest calls `[AssemblyCleanup]` to release assembly-wide resources after the assembly's tests finish:
 
-- it should be `public`
-- it should be `static`
-- it should not be `async void`
-- it should not be a special method (finalizer, operator...).
-- it should not be generic
-- it should not be abstract
-- it should not take any parameter, or starting with MSTest 3.8, it can have a single `TestContext` parameter
-- return type should be `void`, `Task` or `ValueTask`
-
-The type declaring these methods should also respect the following rules:
-
-- The type should be a class.
-- The class should be public or internal (if the test project is using the [DiscoverInternals] attribute).
-- The class should be marked with [TestClass] (or a derived attribute)
-- the class should not be generic
+| Requirement | Reason |
+|-------------|--------|
+| The method is `public static`. | MSTest discovers a public lifecycle entry point and invokes it without a test-class instance. Assembly cleanup must not depend on the state of one test instance. |
+| The method is ordinary and isn't `abstract` or generic. | MSTest needs a method body it can invoke without special invocation rules or method type arguments. |
+| The method has no parameters, or one `TestContext` parameter in MSTest 3.8 and later. | MSTest can invoke cleanup without arguments or supply the assembly-cleanup context. It doesn't supply an individual test's arguments. |
+| The return type is `void`, `Task`, or `ValueTask`, and the method isn't `async void`. | MSTest must wait for asynchronous resource release and observe cleanup failures before it completes the assembly lifecycle. |
+| The declaring type is a non-generic class marked with `[TestClass]` or a derived attribute. | MSTest locates assembly callbacks through test-class containers. A non-generic container identifies the callback without requiring class type arguments. The container can be static. |
+| The declaring class is `public`, or `internal` with `[assembly: DiscoverInternals]`. | The container must be accessible under MSTest's discovery contract. Internal discovery doesn't change the requirement that the callback itself is public. |
 
 ## How to fix violations
 

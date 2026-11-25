@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0032: Review or remove the assertion as its condition is known to be always true."
 description: "Learn about code analysis rule MSTEST0032: Review or remove the assertion as its condition is known to be always true."
-ms.date: 07/11/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0032
 - ReviewAlwaysTrueAssertConditionAnalyzer
@@ -30,7 +31,9 @@ This rule raises a diagnostic when a call to an assertion produces an always-tru
 
 ## Rule description
 
-When you encounter an assertion that always passes (for example, `Assert.IsTrue(true)`), it's not obvious to someone reading the code why the assertion is there or what condition it's trying to check. This can lead to confusion and wasted time for developers who come across the code later on.
+An assertion that always passes, such as `Assert.IsTrue(true)`, can't detect a regression in the code under test. It can make a test appear to verify behavior while checking only a constant or a value against itself.
+
+Review the assertion for a copy-and-paste error, a missing comparison, or the wrong variable. Assert a condition based on the actual result, or remove an assertion that has no behavior to verify.
 
 ## How to fix violations
 

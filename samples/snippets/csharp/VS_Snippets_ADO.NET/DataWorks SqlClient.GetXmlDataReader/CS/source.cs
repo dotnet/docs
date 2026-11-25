@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Data.SqlTypes;
 using System.Xml;
 
@@ -13,7 +13,7 @@ static class Class1
     }
     // <Snippet1>
     // Example assumes the following directives:
-    //     using System.Data.SqlClient;
+    //     using Microsoft.Data.SqlClient;
     //     using System.Xml;
     //     using System.Data.SqlTypes;
 

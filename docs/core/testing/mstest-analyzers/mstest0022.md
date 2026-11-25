@@ -1,7 +1,8 @@
 ---
 title: "MSTEST0022: Prefer TestCleanup over Dispose methods"
 description: "Learn about code analysis rule MSTEST0022: Prefer TestCleanup over Dispose methods"
-ms.date: 03/19/2024
+ms.date: 11/05/2026
+ai-usage: ai-assisted
 f1_keywords:
 - MSTEST0022
 - PreferTestCleanupOverDisposeAnalyzer
@@ -30,7 +31,9 @@ This rule raises a diagnostic when a `Dispose` or `DisposeAsync` method is detec
 
 ## Rule description
 
-Although `Dispose` or `DisposeAsync` is a more common pattern, some developers prefer to always use `[TestCleanup]` for their test cleanup phase as the method is allowing async pattern even in older version of .NET.
+To identify cleanup explicitly as an MSTest lifecycle callback, use `[TestCleanup]`. A `Task`-returning callback also supports asynchronous cleanup on target frameworks that don't provide `IAsyncDisposable`.
+
+`Dispose` and `DisposeAsync` are also supported. This rule expresses an opt-in convention, not a requirement for correct test execution. [MSTEST0021](mstest0021.md) offers the opposite convention; choose the cleanup policy that fits your project rather than enabling both.
 
 ## How to fix violations
 

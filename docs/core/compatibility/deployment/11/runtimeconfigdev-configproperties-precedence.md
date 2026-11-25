@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: configProperties in .runtimeconfig.dev.json override .runtimeconfig.json"
 description: "Learn about the breaking change in .NET 11 where configProperties in .runtimeconfig.dev.json override matching configProperties in .runtimeconfig.json."
-ms.date: 07/05/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ If an app defines the same runtime `configProperties` key in both `.runtimeconfi
 
 ## Version introduced
 
-.NET 11 Preview 6
+.NET 11
 
 ## Previous behavior
 

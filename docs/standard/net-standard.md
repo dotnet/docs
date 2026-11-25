@@ -1,7 +1,7 @@
 ---
 title: .NET Standard overview
 description: Learn what .NET Standard is, which .NET implementations support each version, and why .NET 5 and later versions simplify cross-platform code sharing.
-ms.date: 11/06/2025
+ms.date: 11/11/2026
 ms.service: dotnet
 ms.subservice: standard-library
 ms.custom: "updateeachrelease"
@@ -87,34 +87,34 @@ If you only need to consume .NET Standard 2.0 libraries in your projects, you ca
 
 ## .NET 5+ and .NET Standard
 
-.NET 5, .NET 6, .NET 7, .NET 8, .NET 9, and .NET 10 are single products with a uniform set of capabilities and APIs that can be used for Windows desktop apps and cross-platform console apps, cloud services, and websites. The .NET 10 [TFMs](frameworks.md), for example, reflect this broad range of scenarios:
+.NET 5, .NET 6, .NET 7, .NET 8, .NET 9, .NET 10, and .NET 11 are single products with a uniform set of capabilities and APIs that can be used for Windows desktop apps and cross-platform console apps, cloud services, and websites. The .NET 11 [TFMs](frameworks.md), for example, reflect this broad range of scenarios:
 
-- `net10.0`
+- `net11.0`
 
   This TFM is for code that runs everywhere. With a few exceptions, it includes only technologies that work cross-platform.
 
-- `net10.0-windows`
+- `net11.0-windows`
 
-  This is an example of an [OS-specific TFM](frameworks.md#os-specific-tfms) that adds OS-specific functionality to everything that `net10.0` refers to.
+  This is an example of an [OS-specific TFM](frameworks.md#os-specific-tfms) that adds OS-specific functionality to everything that `net11.0` refers to.
 
 ### When to target `netx.0` vs. `netstandard`
 
-For existing code that targets .NET Standard 2.0 or later, there's no need to change the TFM to `net8.0` or a later TFM. .NET 8, .NET 9, and .NET 10 implement .NET Standard 2.1 and earlier. The only reason to retarget from .NET Standard to .NET 8+ would be to gain access to more runtime features, language features, or APIs. For example, to use C# 9, you need to target .NET 5 or a later version. You can multitarget .NET and .NET Standard to get access to newer features and still have your library available to other .NET implementations.
+For existing code that targets .NET Standard 2.0 or later, there's no need to change the TFM just to use a newer .NET release. .NET 10 and .NET 11 implement .NET Standard 2.1 and earlier. The only reason to retarget from .NET Standard to .NET 11 or later would be to gain access to more runtime features, language features, or APIs. For example, to use C# 9, you need to target .NET 5 or a later version. You can multitarget .NET and .NET Standard to get access to newer features and still have your library available to other .NET implementations.
 
 > [!NOTE]
-> If your project targets .NET Standard 1.x, we recommend you retarget it to .NET Standard 2.0 or .NET 8+. For more information, see [Warning emitted for .NET Standard 1.x targets](../core/compatibility/sdk/9.0/netstandard-warning.md).
+> If your project targets .NET Standard 1.x, we recommend you retarget it to .NET Standard 2.0 or .NET 11+. For more information, see [Warning emitted for .NET Standard 1.x targets](../core/compatibility/sdk/9.0/netstandard-warning.md).
 
 Here are some guidelines for new code for .NET 5+:
 
 - App components
 
-  If you're using libraries to break down an application into several components, we recommend you target `net10.0`. For simplicity, it's best to keep all projects that make up your application on the same version of .NET. Then you can assume the same BCL features everywhere.
+  If you're using libraries to break down an application into several components, we recommend you target `net11.0`. For simplicity, it's best to keep all projects that make up your application on the same version of .NET. Then you can assume the same BCL features everywhere.
 
 - Reusable libraries
 
   If you're building reusable libraries that you plan to ship on NuGet, consider the trade-off between reach and available feature set. .NET Standard 2.0 is the latest version that's supported by .NET Framework, so it gives good reach with a fairly large feature set. We don't recommend targeting .NET Standard 1.x, as you'd limit the available feature set for a minimal increase in reach.
 
-  If you don't need to support .NET Framework, you could target .NET Standard 2.1 or .NET 10. We recommend you skip .NET Standard 2.1 and go straight to .NET 10. Most widely used libraries multi-target for both .NET Standard 2.0 and .NET 5+. Supporting .NET Standard 2.0 gives you the most reach, while supporting .NET 5+ ensures you can leverage the latest platform features for customers that are already on .NET 5+.
+  If you don't need to support .NET Framework, you could target .NET Standard 2.1 or .NET 11. We recommend you skip .NET Standard 2.1 and go straight to .NET 11. Most widely used libraries multi-target for both .NET Standard 2.0 and .NET 5+. Supporting .NET Standard 2.0 gives you the most reach, while supporting .NET 5+ ensures you can leverage the latest platform features for customers that are already on .NET 5+.
 
 ### .NET Standard problems
 
@@ -130,7 +130,7 @@ Here are some problems with .NET Standard that help explain why .NET 5 and later
 
   The separation of the API specification from its implementations results in complex mapping between API specification versions and implementation versions. This complexity is evident in the table shown earlier in this article and the instructions for how to interpret it.
 
-  **Solution in .NET 5+:** There's no separation between a .NET 5+ API specification and its implementation. The result is a simplified TFM scheme. There's one TFM prefix for all workloads: `net10.0` is used for libraries, console apps, and web apps. The only variation is a [suffix that specifies platform-specific APIs](frameworks.md#os-specific-tfms) for a particular platform, such as `net10.0-windows`. Thanks to this TFM naming convention, you can easily tell whether a given app can use a given library. No version number equivalents table, like the one for .NET Standard, is needed.
+  **Solution in .NET 5+:** There's no separation between a .NET 5+ API specification and its implementation. The result is a simplified TFM scheme. There's one TFM prefix for all workloads: `net11.0` is used for libraries, console apps, and web apps. The only variation is a [suffix that specifies platform-specific APIs](frameworks.md#os-specific-tfms) for a particular platform, such as `net11.0-windows`. Thanks to this TFM naming convention, you can easily tell whether a given app can use a given library. No version number equivalents table, like the one for .NET Standard, is needed.
 
 - Platform-unsupported exceptions at runtime
 

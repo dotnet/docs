@@ -61,7 +61,7 @@ The `platformOptions` section of the *testconfig.json* file configures the core 
 
 | Entry | Default | Description |
 |-------|---------|-------------|
-| `resultDirectory` | `TestResults` | The directory where the test results are placed. Can be a relative path (resolved from the current working directory) or an absolute path. The `--results-directory` command-line option takes precedence. |
+| `resultDirectory` | `TestResults` | The directory where the test results are placed. Can be a relative path (resolved from [MTP's working directory](microsoft-testing-platform-cli-options.md)) or an absolute path. The `--results-directory` command-line option takes precedence. |
 | `exitProcessOnUnhandledException` | `false` | When set to `true`, the test host process exits immediately on unhandled exceptions instead of allowing graceful shutdown. The `TESTINGPLATFORM_EXIT_PROCESS_ON_UNHANDLED_EXCEPTION` environment variable (values `1` or `0`) takes precedence. |
 
 > [!NOTE]
@@ -290,7 +290,7 @@ The variable has no effect on Windows, where named pipes don't use file-system p
 
 Set `TESTINGPLATFORM_DEADLINE` to the complete hard-cancel instant supplied by the deadline producer. Use an ISO 8601 UTC value. Don't subtract MTP's margins from the value.
 
-MTP requests a graceful stop before the deadline. `TESTINGPLATFORM_DEADLINE_STOP_MARGIN` controls how early and defaults to 60 seconds. A test framework that doesn't support graceful stop ignores this request.
+MTP requests a [graceful stop](./microsoft-testing-platform-architecture-capabilities.md#igracefulstoptestexecutioncapability) before the deadline. `TESTINGPLATFORM_DEADLINE_STOP_MARGIN` controls how early and defaults to 60 seconds. A test framework that doesn't support graceful stop ignores this request.
 
 As a fallback, `TESTINGPLATFORM_DEADLINE_DUMP_MARGIN` starts an active HangDump extension before the deadline. The margin defaults to 30 seconds. HangDump captures the process tree and then kills the test host. Without a deadline, MTP doesn't start a deadline timer.
 

@@ -327,33 +327,33 @@
 
 		End Sub
 
-		#End Region
+#End Region
 
-		Private tabControl1 As TabControl
-		Private tabPage1 As TabPage
-		Private textBox1 As TextBox
-		Private tabPage2 As TabPage
-		Private listBox1 As ListBox
-		Private comboBox1 As ComboBox
-		Private checkedListBox1 As CheckedListBox
-		Private maskedTextBox1 As MaskedTextBox
-		Private tabPage3 As TabPage
-		Private richTextBox1 As RichTextBox
-		Private radioButton1 As RadioButton
-		Private checkBox1 As CheckBox
-		Private button1 As Button
-		Private label3 As Label
-		Private label2 As Label
-		Private label1 As Label
-		Private label6 As Label
-		Private label5 As Label
-		Private label4 As Label
-		Private label9 As Label
-		Private label8 As Label
-		Private label7 As Label
-		Private chkbxShowPatterns As CheckBox
-		Private tbListen As TextBox
+        Private WithEvents tabControl1 As TabControl
+        Private WithEvents tabPage1 As TabPage
+        Private WithEvents textBox1 As TextBox
+        Private WithEvents tabPage2 As TabPage
+        Private WithEvents listBox1 As ListBox
+        Private WithEvents comboBox1 As ComboBox
+        Private WithEvents checkedListBox1 As CheckedListBox
+        Private WithEvents maskedTextBox1 As MaskedTextBox
+        Private WithEvents tabPage3 As TabPage
+        Private WithEvents richTextBox1 As RichTextBox
+        Private WithEvents radioButton1 As RadioButton
+        Private WithEvents checkBox1 As CheckBox
+        Private WithEvents button1 As Button
+        Private WithEvents label3 As Label
+        Private WithEvents label2 As Label
+        Private WithEvents label1 As Label
+        Private WithEvents label6 As Label
+        Private WithEvents label5 As Label
+        Private WithEvents label4 As Label
+        Private WithEvents label9 As Label
+        Private WithEvents label8 As Label
+        Private WithEvents label7 As Label
+        Private WithEvents chkbxShowPatterns As CheckBox
+        Private WithEvents tbListen As TextBox
 
-	End Class
+    End Class
 End Namespace
 

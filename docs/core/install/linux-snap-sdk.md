@@ -3,7 +3,7 @@ title: Install .NET SDK on Linux with Snap
 description: Learn about how to install the .NET SDK snap package. Canonical maintains and supports .NET-related snap packages.
 author: adegeo
 ms.author: adegeo
-ms.date: 07/15/2026
+ms.date: 11/17/2026
 ms.topic: install-set-up-deploy
 ms.custom: linux-related-content, updateeachrelease
 ai-usage: ai-assisted
@@ -42,7 +42,7 @@ Your Linux distribution might already include snap. Try running `snap` from a te
 To install the .NET SDK, use version-specific snap package identifiers because this approach lets you install and manage multiple SDK versions side by side. For example, use `dotnet-sdk-80` for .NET 8 and `dotnet-sdk-100` for .NET 10. The SDK includes both the ASP.NET Core and .NET runtime, versioned to the SDK. This article uses the .NET 10 SDK snap package; if you're using a different package, substitute it.
 
 > [!TIP]
-> The Snapcraft .NET SDK package page ([.NET 8](https://snapcraft.io/dotnet-sdk-80), [.NET 9](https://snapcraft.io/dotnet-sdk-90), [.NET 10](https://snapcraft.io/dotnet-sdk-100)) includes distribution-specific instructions on how to install Snapcraft and .NET.
+> The Snapcraft .NET SDK package page ([.NET 8](https://snapcraft.io/dotnet-sdk-80), [.NET 9](https://snapcraft.io/dotnet-sdk-90), [.NET 10](https://snapcraft.io/dotnet-sdk-100), [.NET 11](https://snapcraft.io/dotnet-sdk-110)) includes distribution-specific instructions on how to install Snapcraft and .NET.
 
 01. Open a terminal.
 01. Use `snap install` to install the .NET SDK snap package.
@@ -55,11 +55,12 @@ To install the .NET SDK, use version-specific snap package identifiers because t
 
 The following table lists the .NET SDK snap packages you can install:
 
-| .NET version | Snap package     |
-|--------------|------------------|
-| 10 (LTS)     | `dotnet-sdk-100` |
-| 9 (STS)      | `dotnet-sdk-90`  |
-| 8 (LTS)      | `dotnet-sdk-80`  |
+| .NET version | Snap package     | .NET version supported by Microsoft |
+|--------------|------------------|-------------------------------------|
+| 11 (STS)     | `dotnet-sdk-110` | Yes                                 |
+| 10 (LTS)     | `dotnet-sdk-100` | Yes                                 |
+| 9 (STS)      | `dotnet-sdk-90`  | No                                  |
+| 8 (LTS)      | `dotnet-sdk-80`  | No                                  |
 
 ## 2. Map the dotnet command
 

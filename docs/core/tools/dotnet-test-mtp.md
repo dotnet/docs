@@ -1,7 +1,7 @@
 ---
 title: dotnet test command with Microsoft.Testing.Platform (MTP)
 description: The dotnet test command is used to execute unit tests in a given project using MTP.
-ms.date: 09/21/2026
+ms.date: 11/19/2026
 ai-usage: ai-assisted
 ---
 # dotnet test with Microsoft.Testing.Platform (MTP)
@@ -73,6 +73,8 @@ With MTP, `dotnet test` operates faster than with VSTest. The test-related argum
 
 The MTP mode of `dotnet test` requires the .NET 10 SDK and MTP 1.7 or later. Options added after .NET 10 have individual SDK version requirements in the following sections. Some options also require a newer MTP package because the SDK coordinates the complete run while each test application implements the corresponding capability.
 
+The SDK also supplies the terminal reporter used by `dotnet test`. Its supported output options and values depend on the SDK version, not only on the MTP package referenced by the test project. The [MTP terminal output](../testing/microsoft-testing-platform-terminal-output.md) article describes the package's reporter, which you use when you run a test application directly.
+
 ## Implicit restore
 
 [!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
@@ -88,7 +90,7 @@ The MTP mode of `dotnet test` requires the .NET 10 SDK and MTP 1.7 or later. Opt
 
 - **`PROJECT_OR_TRAVERSAL_PATH`**
 
-  Specifies a project or traversal project to run. Starting with .NET 11 Preview 7, `dotnet test` supports `Microsoft.Build.Traversal` projects, such as `dirs.proj`, and recursively runs their referenced test projects.
+  Specifies a project or traversal project to run. Starting with .NET 11, `dotnet test` supports `Microsoft.Build.Traversal` projects, such as `dirs.proj`, and recursively runs their referenced test projects.
 
   Starting with .NET 12 Preview 1, the argument can also identify a C# file-based MTP test app. File-based test apps don't support `--device`.
 
@@ -102,7 +104,7 @@ The MTP mode of `dotnet test` requires the .NET 10 SDK and MTP 1.7 or later. Opt
 
 - **`--test-modules <EXPRESSION>`**
 
-  Filters test modules using file globbing. Only tests belonging to those test modules run. Because this option doesn't evaluate projects, use it to run already-built test applications when project restore state isn't available. Starting with .NET 11 Preview 6, prefix a pattern with `!` to exclude matching modules. Separate multiple patterns with semicolons; whitespace around each pattern is ignored.
+  Filters test modules using file globbing. Only tests belonging to those test modules run. Because this option doesn't evaluate projects, use it to run already-built test applications when project restore state isn't available. Starting with .NET 11, prefix a pattern with `!` to exclude matching modules. Separate multiple patterns with semicolons; whitespace around each pattern is ignored.
 
 - **`--root-directory <ROOT_PATH>`**
 
@@ -118,13 +120,13 @@ The MTP mode of `dotnet test` requires the .NET 10 SDK and MTP 1.7 or later. Opt
 
 - **`--results-directory <RESULTS_DIRECTORY>`**
 
-  Specifies the directory where test results are stored. If the directory doesn't exist, it's created. If a relative path is provided, it's converted to an absolute path based on the current directory.
+  Specifies the directory where test results are stored. If the directory doesn't exist, it's created. If a relative path is provided, it's converted to an absolute path based on the current directory. For defaults and layout overrides, see [Results and artifacts](#results-and-artifacts).
 
 - **`--results-directory-layout <flat|per-module>`**
 
-  Specifies how a multi-module run organizes files under the results directory. The default, `flat`, writes all results to the same directory. `per-module` writes each module's results to `<project>/<target-framework>_<runtime-or-architecture>`, which prevents reports with the same file name from overwriting one another.
+  Specifies how a multi-module run organizes files under the results directory. The default, `flat`, writes all results to the same directory. `per-module` writes each module's results to `<project>/<target-framework>_<runtime-or-architecture>`, which prevents reports with the same relative file name from overwriting one another. A shared absolute extension output path, such as an absolute `--coverage-output` path, bypasses this layout.
 
-  Available starting with .NET 11 RC 1.
+  Available starting with .NET 11. The option is also available in .NET SDK 10.0.402 and later updates in the 10.0.4xx feature band.
 
 - **`--diagnostic-output-directory <DIAGNOSTIC_OUTPUT_DIRECTORY>`**
 
@@ -143,19 +145,19 @@ The MTP mode of `dotnet test` requires the .NET 10 SDK and MTP 1.7 or later. Opt
 
   Stops the complete run after it reaches the specified number of failed, errored, timed-out, or canceled tests. The run exits with code 13.
 
-  Available starting with .NET 11 Preview 7 and requires MTP 2.4 or later.
+  Available starting with .NET 11 and requires MTP 2.4 or later.
 
 - **`--timeout <DURATION>`**
 
   Stops the complete run after the specified duration while at least one test application is running. Specify a positive number followed by a unit, such as `500ms`, `90s`, `10m`, `2h`, or `1d`. A timed-out run exits with code 3.
 
-  Available starting with .NET 11 Preview 7 and requires MTP 2.4 or later.
+  Available starting with .NET 11 and requires MTP 2.4 or later.
 
 - **`-e|--environment <NAME="VALUE">`**
 
   Sets an environment variable for the test process. Specify the option multiple times to set multiple variables. Command-line values override values from a launch profile.
 
-  Use .NET SDK 10.0.110 or later when no launch profile exists or when you specify `--no-launch-profile`; earlier .NET 10 SDK versions can ignore the variables in those cases. Starting with .NET 11 Preview 7, the variables also flow to capability-aware build, device selection, deployment, and run-argument targets.
+  Use .NET SDK 10.0.110 or later when no launch profile exists or when you specify `--no-launch-profile`; earlier .NET 10 SDK versions can ignore the variables in those cases. Starting with .NET 11, the variables also flow to capability-aware build, device selection, deployment, and run-argument targets.
 
 - [!INCLUDE [arch](includes/cli-arch.md)]
 
@@ -184,7 +186,7 @@ The MTP mode of `dotnet test` requires the .NET 10 SDK and MTP 1.7 or later. Opt
 
   Uses the current runtime as the target runtime during restore and build.
 
-  Available starting with .NET 11 Preview 6. You can't combine this option with `--test-modules`.
+  Available starting with .NET 11. You can't combine this option with `--test-modules`.
 
 - [!INCLUDE [verbosity](includes/cli-verbosity.md)]
 
@@ -196,7 +198,7 @@ The MTP mode of `dotnet test` requires the .NET 10 SDK and MTP 1.7 or later. Opt
 
   Skips building project-to-project references.
 
-  Available starting with .NET 11 Preview 6.
+  Available starting with .NET 11.
 
 - **`--no-restore`**
 
@@ -206,7 +208,7 @@ The MTP mode of `dotnet test` requires the .NET 10 SDK and MTP 1.7 or later. Opt
 
   Suppresses the .NET and MTP startup banners. The `-nologo` and `/nologo` forms and the `DOTNET_NOLOGO` environment variable are also supported.
 
-  Available in MTP mode starting with .NET 11 Preview 7.
+  Available in MTP mode starting with .NET 11.
 
 - **`--no-ansi`**
 
@@ -218,21 +220,25 @@ The MTP mode of `dotnet test` requires the .NET 10 SDK and MTP 1.7 or later. Opt
 
 - **`--no-artifact-post-processing`**
 
-  Disables post-processing of compatible artifacts after a multi-module run. Starting with .NET 11 RC 1 and MTP 2.4, registered artifact post-processors can combine compatible reports, such as TRX results. If post-processing fails, the SDK preserves the original artifacts and the test exit code.
+  Disables post-processing of compatible artifacts after a multi-module run. Starting with .NET 11 and MTP 2.4, registered artifact post-processors can combine compatible reports, such as TRX results. If post-processing fails, the SDK preserves the original artifacts and the test exit code.
 
 - **`--output <VERBOSITY_LEVEL>`**
 
-  Specifies the output verbosity for test results. Valid values are `Minimal`, `Normal`, and `Detailed`. The default is `Normal`. `Minimal` requires MTP 2.4 preview.
+  Specifies the output verbosity for test results. Valid values are `Minimal`, `Normal`, and `Detailed`. The default is `Normal`.
+
+  The .NET 10 SDK supports `Normal` and `Detailed`. `Minimal` is available starting with .NET 11. Updating the test project's MTP package doesn't enable `Minimal` in the .NET 10 SDK.
 
 - **`--show-test-results <OUTCOME>`**
 
-  Selects result blocks by outcome. In MTP 2.4 preview, use `passed`, `failed`, `skipped`, `all`, or `none`. The `failed` value also includes errors, timeouts, and cancellations.
+  Selects result blocks by outcome. Use `passed`, `failed`, `skipped`, `all`, or `none`. The `failed` value also includes errors, timeouts, and cancellations.
 
   Combine `passed`, `failed`, and `skipped` with commas, spaces, or repeated `--show-test-results` options. Don't combine `all` or `none` with another value. This explicit option overrides the `--output` preset regardless of option order.
 
+  Available starting with .NET 11 and requires MTP 2.4 or later.
+
 - **`--list-tests [text|json]`**
 
-  Lists discovered tests without executing them. Omit the value or specify `text` for human-readable output. Starting with .NET 11 Preview 7, specify `json` for a versioned JSON document that groups tests by assembly, target framework, and architecture and includes available identifiers, source locations, methods, parameters, and traits.
+  Lists discovered tests without executing them. Omit the value or specify `text` for human-readable output. Starting with .NET 11, specify `json` for a versioned JSON document that groups tests by assembly, target framework, and architecture and includes available identifiers, source locations, methods, parameters, and traits.
 
 - **`--no-launch-profile`**
 
@@ -246,19 +252,19 @@ The MTP mode of `dotnet test` requires the .NET 10 SDK and MTP 1.7 or later. Opt
 
   Selects a device, emulator, or simulator for each target framework in an Android or iOS test project. The MTP path also supports macOS and Mac Catalyst test projects. If input is interactive and more than one device is available, `dotnet test` can prompt you to select one.
 
-  Available starting with .NET 11 Preview 6. For multi-targeted projects, use .NET 11 RC 2 or later so device discovery evaluates each target framework correctly. Browser WebAssembly test projects aren't supported by this option.
+  Available starting with .NET 11. For multi-targeted projects, use .NET 11 or later so device discovery evaluates each target framework correctly. Browser WebAssembly test projects aren't supported by this option.
 
 - **`--list-devices`**
 
   Lists available devices for a project without running tests. Specify a project rather than a solution.
 
-  Available starting with .NET 11 Preview 7.
+  Available starting with .NET 11.
 
 - **`--collect-test-map`** and **`--affected-tests`**
 
   Collect a repository test map or run tests affected by a change. These experimental options require a separately distributed extension and the `DOTNET_CLI_ENABLE_AFFECTED_TESTS=1` environment variable. You can't combine the two options. Affected-test workflows also don't support device testing, parallel test modules, or minimum-test policies.
 
-  Available starting with .NET 11 RC 1.
+  Available starting with .NET 11.
 
 - **`--property:<NAME>=<VALUE>`**
 
@@ -283,23 +289,27 @@ The MTP mode of `dotnet test` requires the .NET 10 SDK and MTP 1.7 or later. Opt
 > [!NOTE]
 > To enable trace logging to a file, use the environment variable `DOTNET_CLI_TEST_TRACEFILE` to provide the path to the trace file.
 >
-> Starting with .NET 11 RC 1, `dotnet test -bl` uses one MSBuild session for multi-project, multi-targeted, and device runs so the binary log contains the complete build.
+> Starting with .NET 11, `dotnet test -bl` uses one MSBuild session for multi-project, multi-targeted, and device runs so the binary log contains the complete build.
 
 ## Output and cancellation behavior
 
-Starting with .NET 11 Preview 6, interactive ANSI output shows tests that are currently running and reports per-assembly test counts. The progress display remains disabled when output is redirected, ANSI or progress output is disabled, or the environment isn't interactive.
+Starting with .NET 11, interactive ANSI output shows tests that are currently running and reports per-assembly test counts. The progress display remains disabled when output is redirected, ANSI or progress output is disabled, or the environment isn't interactive.
 
-Starting with .NET 11 Preview 6, the first <kbd>Ctrl</kbd>+<kbd>C</kbd> stops scheduling new test applications and requests cooperative cancellation. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> again to terminate the child processes immediately. An aborted run exits with code 3.
+Starting with .NET 11, the first <kbd>Ctrl</kbd>+<kbd>C</kbd> stops scheduling new test applications and requests cooperative cancellation. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> again to terminate the child processes immediately. An aborted run exits with code 3.
 
-Live test-host output requires an MTP host that supports protocol 1.1 or later. Older hosts keep output captured and replay it for a failed module. Starting with .NET 11 Preview 7, failure summaries truncate captured standard output longer than 40 lines to the first 30 and last 10 lines; diagnostic logs retain the complete output.
+Live test-host output requires an MTP host that supports protocol 1.1 or later. Older hosts keep output captured and replay it for a failed module. Starting with .NET 11, failure summaries truncate captured standard output longer than 40 lines to the first 30 and last 10 lines; diagnostic logs retain the complete output.
 
-For multi-module runs, `dotnet test` evaluates the zero-test result across the complete run starting with .NET 11 Preview 7. A module with no tests doesn't fail the run if another module executes tests successfully, unless an explicit minimum-test policy requires more tests.
+For multi-module runs, `dotnet test` evaluates the zero-test result across the complete run starting with .NET 11. A module with no tests doesn't fail the run if another module executes tests successfully, unless an explicit minimum-test policy requires more tests.
 
 ## Results and artifacts
 
-When the SDK artifacts output layout is enabled, .NET 11 RC 1 and later versions place MTP reports, coverage files, and diagnostics under `<ArtifactsPath>/test/<project>/<pivot>` by default. An explicit `--results-directory` or `--results-directory-layout` takes precedence.
+With .NET SDK 10.0.200 or later and MTP 2.3.1 or later, the default results directory is `TestResults` beneath the directory where you invoke `dotnet test`. The SDK supplies that directory through `DOTNET_CLI_TEST_COMMAND_WORKING_DIRECTORY`, which MTP uses as its working directory and the base for default results. Previously, each test application used its own output directory as the base.
 
-Starting with .NET 11 RC 1 and MTP 2.4, compatible extensions can post-process artifacts from a multi-module run. For example, the TRX extension can create a merged report while preserving the per-module reports. For extension and report requirements, see [MTP test reports](../testing/microsoft-testing-platform-test-reports.md).
+With the default `flat` layout, test applications from the same invocation share the results directory. To isolate their relative report paths, use `--results-directory-layout per-module`. For coverage-specific file names and collision risks, see [Coverage output files](../testing/microsoft-testing-platform-code-coverage.md#coverage-output-files).
+
+When the SDK artifacts output layout is enabled, .NET 11 and later versions place MTP reports, coverage files, and diagnostics under `<ArtifactsPath>/test/<project>/<pivot>` by default. An explicit `--results-directory` or `--results-directory-layout` takes precedence.
+
+Starting with .NET 11 and MTP 2.4, compatible extensions can post-process artifacts from a multi-module run. For example, the TRX extension can create a merged report while preserving the per-module reports. For extension and report requirements, see [MTP test reports](../testing/microsoft-testing-platform-test-reports.md).
 
 ## Forward arguments to the test application
 
@@ -337,7 +347,7 @@ The two scopes count skipped tests differently:
 
 Starting with the .NET 11 SDK, the zero-tests verdict for the whole run is decided once from the aggregated results. A module that matches no tests, for example because of `--test-modules` or a global `--filter`, exits with code 8 (`ZeroTests`), but that code is normalized to success before the results are aggregated. As a result, a single empty module doesn't fail the whole run, although the module keeps its `Exit code: 8` diagnostic in the output for visibility.
 
-MTP 4.3.0 and later versions provide `--zero-tests-policy <allow-skipped|strict>`. The default value, `allow-skipped`, lets an all-skipped module succeed. The `strict` value treats skipped tests as not run, so an all-skipped module exits with code 8. Pass the option after `--` to forward it to each test module:
+MTP 2.3.0 and later versions provide `--zero-tests-policy <allow-skipped|strict>`. The default value, `allow-skipped`, lets an all-skipped module succeed. The `strict` value treats skipped tests as not run, so an all-skipped module exits with code 8. Pass the option after `--` to forward it to each test module:
 
 ```dotnetcli
 dotnet test -- --zero-tests-policy strict
@@ -345,14 +355,14 @@ dotnet test -- --zero-tests-policy strict
 
 When you don't set a global minimum, the .NET 11 SDK determines the whole-run zero-tests verdict separately. An all-skipped whole run exits with code 8 regardless of the per-module `--zero-tests-policy` value.
 
-When you specify `--minimum-expected-tests` and the minimum isn't met, the run fails with exit code 9 (`MinimumExpectedTestsPolicyViolation`). This code is distinct from 8 so that a stricter global or per-module minimum isn't confused with an empty module. For a per-module minimum to return code 9 when the module runs zero tests, the test module must use MTP 4.4.0 or a later version.
+When you specify `--minimum-expected-tests` and the minimum isn't met, the run fails with exit code 9 (`MinimumExpectedTestsPolicyViolation`). This code is distinct from 8 so that a stricter global or per-module minimum isn't confused with an empty module. For a per-module minimum to return code 9 when the module runs zero tests, the test module must use MTP 2.3.0 or a later version.
 
 > [!NOTE]
 > `--minimum-expected-tests 0` is invalid. To suppress the zero-tests exit code, use `--ignore-exit-code 8`.
 
-Starting with .NET 11 Preview 6, `--tl`, `--terminallogger`, and `--tlp` are forwarded to MSBuild instead of the test application. Starting with .NET 12 Preview 1, the recognized `-mt` and `-multiThreaded` forms are also forwarded to MSBuild. To pass an application option with one of these names, place it after `--`.
+Starting with .NET 11, `--tl`, `--terminallogger`, and `--tlp` are forwarded to MSBuild instead of the test application. Starting with .NET 12 Preview 1, the recognized `-mt` and `-multiThreaded` forms are also forwarded to MSBuild. To pass an application option with one of these names, place it after `--`.
 
-Pass execution-mode options such as `--help` and `--list-tests` directly to `dotnet test`. Starting with .NET 11 Preview 6, the SDK validates the execution mode negotiated with the test application. If a launch profile or `TestingPlatformCommandLineArguments` injects one of these options, the requested SDK operation and the application operation don't match, and the run fails with a diagnostic.
+Pass execution-mode options such as `--help` and `--list-tests` directly to `dotnet test`. Starting with .NET 11, the SDK validates the execution mode negotiated with the test application. If a launch profile or `TestingPlatformCommandLineArguments` injects one of these options, the requested SDK operation and the application operation don't match, and the run fails with a diagnostic.
 
 ## Examples
 
@@ -386,13 +396,13 @@ Pass execution-mode options such as `--help` and `--list-tests` directly to `dot
   dotnet test --test-modules "**/bin/**/Debug/net10.0/TestProject.dll" --root-directory "c:\code"
   ```
 
-- Run all test projects referenced by a traversal project with .NET 11 Preview 7 or later:
+- Run all test projects referenced by a traversal project with .NET 11 or later:
 
   ```dotnetcli
   dotnet test dirs.proj
   ```
 
-- List tests as JSON with .NET 11 Preview 7 or later:
+- List tests as JSON with .NET 11 or later:
 
   ```dotnetcli
   dotnet test --list-tests json

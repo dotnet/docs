@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: SslStream server-side AIA certificate downloads disabled by default"
 description: "Learn about the breaking change in .NET 11 where SslStream disables AIA certificate downloads during server-side client-certificate validation by default."
-ms.date: 04/03/2026
+ms.date: 11/10/2026
 ai-usage: ai-assisted
 ---
 
@@ -11,7 +11,7 @@ Starting in .NET 11, <xref:System.Net.Security.SslStream> doesn't download missi
 
 ## Version introduced
 
-.NET 11 Preview 3
+.NET 11
 
 ## Previous behavior
 

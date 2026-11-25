@@ -2,7 +2,8 @@
 title: Delegates in F#
 titleSuffix: ""
 description: Learn how to work with delegates in F#.
-ms.date: 08/27/2023
+ms.date: 09/25/2026
+ai-usage: ai-assisted
 ---
 # Delegates (F#)
 
@@ -63,6 +64,36 @@ The output of the previous code example is as follows.
 ```console
 aa
 ```
+
+## Direct construction and framework metadata
+
+To preserve parameter names and attributes for reflection-based frameworks, F# 11 can target a compatible named function or method directly instead of a generated wrapper.
+
+For example, [ASP.NET Core Minimal API parameter binding](/aspnet/core/fundamentals/minimal-apis/parameter-binding) uses route names and binding attributes to populate handler arguments:
+
+:::code language="fsharp" source="snippets/delegates/Program.fs" id="Handler":::
+
+Check the original metadata through <xref:System.Delegate.Method>:
+
+:::code language="fsharp" source="snippets/delegates/Program.fs" id="Metadata":::
+
+For the complete runnable application, see the [sample project](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/snippets/delegates/ShipmentApi.fsproj).
+
+### Which targets are direct?
+
+Prefer `Func<...>(namedFunction)` for direct construction in both optimized and unoptimized builds. An explicit forwarding lambda retains its wrapper in unoptimized builds. Captures, argument adaptation, and mandatory inline expansion can also require wrappers.
+
+Direct delegates with the same method and receiver compare equal. For reliable event unsubscription, retain and reuse the subscribed delegate.
+
+> [!IMPORTANT]
+> Validate instance receivers before direct delegate construction. A null receiver can throw `ArgumentException` for a non-virtual method or `NullReferenceException` for a virtual method before invocation.
+
+```fsharp
+let receiver: System.Text.StringBuilder = null
+let callback = System.Func<char, System.Text.StringBuilder>(receiver.Append)
+```
+
+Wrappers can use parameter names from the delegate's `Invoke` signature when the function supplies none; they don't preserve the original method's metadata.
 
 ## See also
 

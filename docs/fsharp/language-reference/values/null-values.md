@@ -1,7 +1,8 @@
 ---
 title: Null Values
 description: Learn how the null value is used in the F# programming language.
-ms.date: 08/15/2020
+ms.date: 09/24/2026
+ai-usage: ai-assisted
 ---
 # Null Values
 
@@ -97,6 +98,29 @@ match x with
 
 > [!IMPORTANT]
 > The extra null related capabilities were added to the language for the interoperability purposes. Using `| null` in F# type modeling is not considered idiomatic for denoting missing information - for that purpose, use options (as described above). Read more about null-related [conventions](../../style-guide/conventions.md#nulls-and-default-values) in the style guide.
+
+## Conditional return contracts
+
+[`NotNullIfNotNull`](../../../csharp/language-reference/attributes/nullable-analysis.md#conditional-postconditions-notnullwhen-maybenullwhen-and-notnullifnotnull) is an existing .NET nullable-analysis contract that promises a non-null result when a named input is non-null.
+
+Starting with F# 11, null checking uses this return contract when you call an annotated API:
+
+:::code language="fsharp" source="../../whats-new/snippets/fsharp-11/Stable.fs" id="Nullability":::
+
+Enable null checking with `<Nullable>enable</Nullable>` or `--checknulls+`. The reference assembly must contain the annotation. The attribute is applied to the return contract and names an input parameter; it isn't a runtime null check.
+
+`fileName` has type `string`; `fileNameOf` accepts and returns `string | null`. Named arguments and non-first parameters are supported, but multiple conditional attributes aren't combined into a general contract.
+
+## Unconstrained nullable generic interop
+
+To implement C# APIs with unconstrained `T?`, FSharp.Core 11 adds `Unchecked.withNull`:
+
+```fsharp
+let nullableResult (value: 'T) : 'T | null =
+    Unchecked.withNull value
+```
+
+Unlike constrained `withNull`, this helper accepts any `'T`. It changes only the static type, not the value or its safety to dereference.
 
 ## See also
 

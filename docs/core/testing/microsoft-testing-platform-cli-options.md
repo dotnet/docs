@@ -3,7 +3,7 @@ title: Microsoft.Testing.Platform (MTP) CLI options reference
 description: Find platform and extension command-line options for MTP in one place.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 10/01/2026
+ms.date: 11/05/2026
 ai-usage: ai-assisted
 ---
 
@@ -104,6 +104,8 @@ This article gives a central entry point for MTP command-line options.
 
   Filters the tests to run by their test node UIDs. Accepts one or more UIDs.
 
+  Framework authors must honor `TestNodeUidListFilter` for discovery and execution. For implementation guidance, see [Honor request filters](./microsoft-testing-platform-architecture-test-framework.md#honor-request-filters).
+
   > [!NOTE]
   > This option is available in MTP starting with version 1.8.0. Starting with MTP 2.3.0, you can't combine `--filter-uid` with `--treenode-filter`; specifying both fails command-line validation with the `InvalidCommandLine` exit code.
 
@@ -130,12 +132,16 @@ This article gives a central entry point for MTP command-line options.
 
   Lists the available tests without executing them. Optionally takes an argument that controls the output format: `text` (default, human-readable) or `json`.
 
+  For structured metadata and an example, see [Discover tests as JSON](#discover-tests-as-json).
+
   > [!NOTE]
   > The `json` output format is available in MTP starting with version 2.3.0.
 
 - **`--maximum-failed-tests`**
 
-  Specifies the maximum number of tests failures that, when reached, will stop the test run. Support for this switch requires framework authors to implement the `IGracefulStopTestExecutionCapability` capability. The exit code when reaching that amount of test failures is 13. For more information, see [MTP exit codes](microsoft-testing-platform-troubleshooting.md#exit-codes).
+  Specifies a positive maximum number of test failures. When the failure count reaches the maximum, MTP requests a graceful stop and returns exit code `13`. Tests that are already in progress can finish, so the final failure count can exceed the maximum. For more information, see [MTP exit codes](microsoft-testing-platform-troubleshooting.md#exit-codes).
+
+  Framework authors must implement and register [`IGracefulStopTestExecutionCapability`](./microsoft-testing-platform-architecture-capabilities.md#igracefulstoptestexecutioncapability) and register the option provider with `AddMaximumFailedTestsService`. The capability documentation includes implementation and registration examples. Test authors don't need to implement the capability if their framework already supports the option.
 
   > [!NOTE]
   > This feature is available in MTP starting with version 1.5.
@@ -155,7 +161,11 @@ This article gives a central entry point for MTP command-line options.
 
 - **`--results-directory`**
 
-  The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the test application.
+  Specifies the directory where MTP places test results. If the directory doesn't exist, it's created. The default is `TestResults` beneath MTP's working directory. When you launch a test application directly, the working directory defaults to the directory that contains the test application.
+
+  With `dotnet test`, the default depends on the SDK and MTP versions. For the shared invocation-relative root, version requirements, and artifacts-layout overrides, see [Results and artifacts](../tools/dotnet-test-mtp.md#results-and-artifacts).
+
+  To isolate multiple test applications, pass the SDK's `--results-directory-layout per-module` option before `--`. This option belongs to the SDK, not MTP core, and isn't available when you launch a test application directly.
 
 - **`--server`**
 
@@ -187,7 +197,40 @@ This article gives a central entry point for MTP command-line options.
   Controls whether a run that executes no tests because every test was skipped is treated as a failure. Valid values are `allow-skipped` (default) and `strict`. With `allow-skipped`, an all-skipped run succeeds. With `strict`, it fails with exit code `8`. An explicit `--minimum-expected-tests` value supersedes this policy and uses exit code `9` when the minimum isn't met.
 
   > [!NOTE]
-  > This option is available in MTP starting with version 4.3.0. With `dotnet test`, pass the option after `--` to forward it to each test module. When you don't set a global minimum, the .NET 11 SDK determines the whole-run zero-tests verdict separately. For more information, see [Whole-run and per-module minimums](../tools/dotnet-test-mtp.md#whole-run-and-per-module-minimums).
+  > This option is available in MTP starting with version 2.3.0. With `dotnet test`, pass the option after `--` to forward it to each test module. When you don't set a global minimum, the .NET 11 SDK determines the whole-run zero-tests verdict separately. For more information, see [Whole-run and per-module minimums](../tools/dotnet-test-mtp.md#whole-run-and-per-module-minimums).
+
+## Discover tests as JSON
+
+Starting with MTP 2.3.0, use `--list-tests json` to discover tests as a machine-readable JSON document instead of parsing the human-readable list:
+
+```dotnetcli
+dotnet Contoso.MyTests.dll --list-tests json --no-banner
+```
+
+Run the built test application rather than a command that also writes build output. Capture standard output separately from standard error, and check the process exit code before you consume the document. Keep application and extension startup messages off standard output in machine-readable modes.
+
+Don't combine discovery with execution-only options such as `--report-trx`. If `testconfig.json` enables those options, use `--config-file` with a separate discovery configuration that omits them.
+
+The document contains a `schemaVersion` and a `tests` array. Each test includes `uid` and `displayName`. Optional fields include `type`, `location`, `traits`, and `properties`, when the test framework supplies the corresponding metadata. For example, a test with an `Environment` trait can produce:
+
+```json
+{
+  "schemaVersion": 1,
+  "tests": [
+    {
+      "uid": "<test-uid>",
+      "displayName": "ConnectToService",
+      "traits": [
+        { "key": "Environment", "value": "Staging" }
+      ]
+    }
+  ]
+}
+```
+
+Both `traits` and `properties` use arrays of key-value entries, not JSON objects. Don't assume keys are unique. Traits represent public `TestMetadataProperty` values, including MSTest categories and custom `TestProperty` values. The `properties` array contains serializable string properties supplied by the platform or compatibility layer. It doesn't export every in-memory property, and its internal `SerializableKeyValuePairStringProperty` type isn't an API for external frameworks or extensions.
+
+Use the discovered UIDs with [`--filter-uid`](#platform-options) to run selected tests. For a typed .NET client with discovery, execution, cancellation, and live updates, use [MTP server mode](./microsoft-testing-platform-server-mode.md).
 
 ## Extension options by scenario
 
@@ -208,6 +251,12 @@ Run your test executable with `--help`, or run `dotnet test --help` in MTP mode,
 Starting with MTP 2.4, an unknown option error suggests a uniquely matching option name when one is available. If the option belongs to a known Microsoft-provided extension that the test application hasn't registered, the error also identifies the NuGet package that provides the option.
 
 For advanced diagnostics of registered providers and options, run with `--info`.
+
+## Run a registered tool
+
+Some extensions register commands that process artifacts instead of executing tests. Pass the command name as the test application's first positional argument. For example, the TRX extension provides [`merge-trx` and `ms-trxcompare`](./microsoft-testing-platform-test-reports.md#merge-trx-files-manually).
+
+Run the application with `--info` to list registered tools and their command-line options. These commands belong to the test application; they aren't `dotnet tool` commands.
 
 ## See also
 

@@ -1,7 +1,7 @@
 ---
 title: File-based apps
 description: Learn how to create, build, and run C# applications from a single file without a project file.
-ms.date: 09/10/2026
+ms.date: 11/20/2026
 ai-usage: ai-assisted
 ---
 # File-based apps
@@ -21,12 +21,12 @@ In this article, learn how to create, configure, and work with file-based apps e
 
 ## Supported directives
 
-File-based apps use directives prefixed with `#:` to configure the build and run the application. Supported directives are: `#:include`, `#:package`, `#:project`, `#:property`, and `#:sdk`. Place these directives at the top of the C# file.
+File-based apps use directives prefixed with `#:` to configure the build and run the application. Supported directives are: `#:include`, `#:package`, `#:project`, `#:property`, `#:ref`, and `#:sdk`. Place these directives at the top of the C# file.
 
 ### `#:include`
 
 > [!NOTE]
-> This directive is available in .NET 11 Preview 3 and .NET SDK 10.0.300 and later.
+> This directive is available in .NET 11 and .NET SDK 10.0.300 and later.
 
 Includes another file in the file-based app.
 
@@ -81,18 +81,18 @@ References another project file or directory that contains a project file.
 #:project ../SharedLibrary/SharedLibrary.csproj
 ```
 
-Instead of manually editing `#:project` directives, you can use the `dotnet reference` command to manage project references in a file-based app. Use the `--file` option to specify the file-based app:
+### `#:ref`
 
 > [!NOTE]
-> `dotnet reference` support for file-based apps is available in .NET 11 and later.
+> This directive is available in .NET 11 and later.
 
-```dotnetcli
-dotnet reference add --file app.cs ../SharedLibrary/SharedLibrary.csproj
-dotnet reference list --file app.cs
-dotnet reference remove --file app.cs ../SharedLibrary/SharedLibrary.csproj
+References another file-based app or library:
+
+```csharp
+#:ref ./library.cs
 ```
 
-The `dotnet reference add` command adds a `#:project` directive to the top of the file, and the `remove` command removes it.
+Unlike `#:include`, which adds source files to the same compilation, `#:ref` builds the referenced file separately and adds a project reference to it. If the referenced file defines a library without an entry point, add `#:property OutputType=Library` to that file.
 
 ### `#:property`
 
@@ -101,6 +101,12 @@ Sets an MSBuild property value.
 ```csharp
 #:property TargetFramework=net10.0
 #:property PublishAot=false
+```
+
+Starting with .NET 11, you can quote property values that contain spaces:
+
+```csharp
+#:property AssemblyTitle="Contoso Directive Demo"
 ```
 
 #### Conditional property values
@@ -131,6 +137,18 @@ Specifies the SDK to use. Defaults to `Microsoft.NET.Sdk`.
 #:sdk Microsoft.NET.Sdk.Web
 #:sdk Aspire.AppHost.Sdk@13.0.2
 ```
+
+### Item metadata
+
+Starting with .NET 11, `#:package`, `#:project`, and `#:ref` directives accept MSBuild item metadata as trailing `Name=Value` pairs. Separate multiple pairs with spaces, and quote values that contain spaces. For example, the following directives specify the `Aliases` metadata for each reference:
+
+```csharp
+#:package System.CommandLine@2.0.1 Aliases=CommandLine
+#:project ../SharedLibrary/SharedLibrary.csproj Aliases=Shared
+#:ref ./library.cs Aliases=Library
+```
+
+In C#, use an [`extern alias`](../../csharp/language-reference/keywords/extern-alias.md) declaration to access a reference with an alias. For more information about package reference metadata, see [PackageReference in project files](/nuget/consume-packages/package-references-in-project-files). For project reference metadata, see [ProjectReference items](/visualstudio/msbuild/common-msbuild-project-items#projectreference).
 
 ## CLI commands
 
@@ -255,6 +273,36 @@ dotnet restore file.cs
 
 By default, restore runs implicitly when you build or run your application. However, you can pass `--no-restore` to both the `dotnet build` and `dotnet run` commands to build or run without implicitly restoring.
 
+### Manage references
+
+Starting with .NET 11, use `dotnet reference` to manage references to project files and other file-based apps. Specify the app to update with `--file`:
+
+```dotnetcli
+dotnet reference add --file app.cs ../SharedLibrary/SharedLibrary.csproj library.cs
+dotnet reference list --file app.cs
+dotnet reference remove --file app.cs ../SharedLibrary/SharedLibrary.csproj library.cs
+```
+
+The `add` command adds a `#:project` directive for a project or a `#:ref` directive for a file-based app. The `remove` command removes the corresponding directive.
+
+Use `dotnet package` to manage NuGet package references, and `dotnet nuget why` to inspect why a package is in the dependency graph:
+
+```dotnetcli
+dotnet package add System.CommandLine@2.0.1 --file app.cs
+dotnet package list --file app.cs
+dotnet package update System.CommandLine --file app.cs
+dotnet nuget why app.cs System.CommandLine
+dotnet package remove System.CommandLine --file app.cs
+```
+
+### Format code
+
+Starting with .NET 11, use `dotnet format` to format a file-based app:
+
+```dotnetcli
+dotnet format app.cs
+```
+
 ## Default included items
 
 File-based apps automatically include specific file types for compilation and packaging.
@@ -284,12 +332,6 @@ For more information about native AOT, see [Native AOT deployment](../deploying/
 > This behavior is available in .NET 11 and later.
 
 The native AOT command-line path can reuse existing build outputs when it runs an unchanged file-based app. Supported cached launches include `dotnet run --file app.cs`, `dotnet run app.cs`, and `dotnet app.cs`. If the cached output doesn't match the current command arguments, the CLI falls back to the managed path.
-
-`dotnet format` also accepts a file-based app:
-
-```dotnetcli
-dotnet format app.cs
-```
 
 When a repository enables the SDK artifacts layout, file-based app outputs are placed under that repository's artifacts directory instead of the default per-user cache.
 

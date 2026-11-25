@@ -66,7 +66,7 @@ You can also change the value associated with a key that already exists. Assign 
 
 ## Create collections with collection expressions
 
-A *collection expression* creates a collection from expressions between square brackets. Beginning with C# 12, collection expressions can create arrays, lists, and other collection types. A *spread element* copies the elements from another collection into the new collection.
+A *collection expression* creates a collection from expressions between square brackets. Collection expressions can create arrays, lists, and other collection types. A *spread element* copies the elements from another collection into the new collection.
 
 :::code language="csharp" source="./snippets/collections-statements/Program.cs" id="CollectionExpressions":::
 

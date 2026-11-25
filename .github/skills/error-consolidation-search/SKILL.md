@@ -31,6 +31,8 @@ Collect these inputs from the user:
 3. Read every candidate and decide whether its diagnostic relates to the theme.
 4. Build a candidate list containing the file, error code, and a brief reason it matches.
 
+Check each candidate against Roslyn `ErrorCode.cs`. An uncommented entry remains eligible even when no emitting source reference is found. Classify commented-out or absent entries as obsolete candidates for a separately approved retirement, not as new destination coverage. Keep diagnostic inclusion separate from evidence about when the compiler emits it.
+
 Present the list and stop:
 
 ```markdown
@@ -52,11 +54,13 @@ After the Phase A gate is satisfied:
 1. Read `f1_keywords` from the catch-all file's front matter.
 2. For each listed code:
    1. Extract the numeric portion, such as `CS0463` to `463`.
-   2. Find the `ERR_` or `WRN_` constant assigned that number in `ErrorCode.cs`.
+   2. Find the constant assigned that number in `ErrorCode.cs`, including fatal `FTL_` diagnostics as well as `ERR_` and `WRN_` diagnostics.
    3. Find the `<data>` element in `CSharpResources.resx` whose `name` exactly matches the constant.
    4. Read the verbatim message from its `<value>` child.
 3. Keep only messages related to the theme.
 4. Exclude codes already present in the destination.
+
+Account for every catch-all code: report any missing enum or resource mapping rather than silently dropping it. Report obsolete entries separately from current candidates. Don't reject an uncommented enum entry solely because no emitting reference or reproduction is available.
 
 Present the filtered list and stop:
 
@@ -89,6 +93,8 @@ For each code:
    Use `#anchor-tbd` until the consolidation phase assigns thematic anchors. Replace Roslyn format placeholders such as `'{0}'` and `'{1}'` with descriptive terms while preserving the static message text and producing a coherent sentence. Prefer context-appropriate generic terms such as `'type'`, `'value'`, `'operator'`, `'member'`, or `'method'`. For example, `Constant value '{0}' cannot be converted to a '{1}'` becomes `Constant value 'value' cannot be converted to a 'type'`. Use the following XML `<comment>` element, when present, to identify placeholder meanings.
 3. Add it to the destination TOC entry's `displayName` in numeric order.
 4. Remove it from `f1_keywords` in the catch-all file.
+
+Verify unique `f1_keywords` ownership across C# articles, including `misc` and other consolidated pages. F1 metadata is the primary discovery mechanism; adding cross-links between diagnostic articles doesn't resolve duplicate ownership.
 
 Do not create redirects for these codes because they had no standalone articles.
 

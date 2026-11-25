@@ -38,7 +38,7 @@ Accessibility lets you limit the scope of where change can happen. Keep fields a
 
 Access modifiers are optional. Every type or member has a default accessibility. Don't rely on the default accessibility in your code. Declare accessibility explicitly. Developers who read your code see your intent without having to memorize the defaults.
 
-The default accessibility for a type depends on where it's declared. Start with a class declared directly in a namespace. A namespace groups names and imposes no access restriction of its own, so the class's declared accessibility determines where you can use it. The default accessibility for a class declared in a namespace is `internal`. The default accessibility on a member of class, including  a nested type, is`private`. For example:
+The default accessibility for a type depends on where it's declared. Start with a class declared directly in a namespace. A namespace groups names and imposes no access restriction of its own, so the class's declared accessibility determines where you can use it. The default accessibility for a class declared in a namespace is `internal`. The default accessibility on a member of class, including a nested type, is `private`. For example:
 
 :::code language="csharp" source="snippets/index/Program.cs" id="DefaultAccess":::
 

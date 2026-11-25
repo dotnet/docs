@@ -66,25 +66,7 @@ In nested loops, `break` and `continue` statements apply only to the innermost l
 - A labeled `break` (such as `break outer;`) terminates the labeled enclosing loop or `switch` statement immediately.
 - A labeled `continue` (such as `continue outer;`) skips the rest of the inner execution and begins the next iteration of the labeled enclosing loop.
 
-```csharp
-outer: for (int row = 0; row < 5; row++)
-{
-    for (int col = 0; col < 5; col++)
-    {
-        if (row * col > 6)
-        {
-            // Jump directly to the next iteration of the outer loop
-            continue outer;
-        }
-
-        if (row == 3 && col == 2)
-        {
-            // Exit the outer loop entirely
-            break outer;
-        }
-    }
-}
-```
+:::code language="csharp" source="./snippets/iteration-statements/Program.cs" id="LabeledBreakContinue":::
 
 Labeled jump statements eliminate the need for boolean flags or `goto` statements to coordinate nested loops. For more information, see [The `break` statement](../../language-reference/statements/jump-statements.md#the-break-statement) and [The `continue` statement](../../language-reference/statements/jump-statements.md#the-continue-statement).
 

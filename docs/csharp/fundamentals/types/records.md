@@ -110,9 +110,11 @@ Starting in C# 15 (.NET 11), combining the [`closed`](../../language-reference/k
 
 ```csharp
 public closed record class Result<T>;
-public record class Success<T>(T Value) : Result<T>;
-public record class Failure<T>(string Error) : Result<T>;
+public sealed record class Success<T>(T Value) : Result<T>;
+public sealed record class Failure<T>(string Error) : Result<T>;
 ```
+
+Marking each direct subtype `sealed` closes the hierarchy completely against further derivation, ensuring that the hierarchy defines all possible leaf types. If any direct subtype is left unsealed, other record types could extend it, meaning the hierarchy would define all direct subtypes, but not necessarily all leaf types.
 
 Because `Result<T>` is `closed`, consumers can match on all variants without needing a fallback discard pattern:
 

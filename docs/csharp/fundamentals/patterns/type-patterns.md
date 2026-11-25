@@ -51,12 +51,12 @@ Starting in C# 15 (.NET 11), when the base class is declared with the [`closed`]
 ```csharp
 public closed class Shape;
 
-public class Circle(double radius) : Shape
+public sealed class Circle(double radius) : Shape
 {
     public double Radius { get; } = radius;
 }
 
-public class Rectangle(double width, double height) : Shape
+public sealed class Rectangle(double width, double height) : Shape
 {
     public double Width { get; } = width;
     public double Height { get; } = height;
@@ -69,6 +69,8 @@ double CalculateArea(Shape shape) => shape switch
     // Exhaustive: every direct subtype of Shape is handled
 };
 ```
+
+The `closed` modifier applies to direct derivation. If all direct subtypes are `sealed`, the hierarchy is closed to all further derivation. If a direct subtype isn't `sealed`, derived leaf types can be declared, but an arm matching the direct subtype also matches any of its derived subtypes.
 
 Adding a new direct subtype to a closed hierarchy is both a source and binary breaking change for consuming code:
 

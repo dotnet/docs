@@ -112,18 +112,41 @@ public class BankTransfer(string Iban) : PaymentMethod;
 public class Cash : PaymentMethod;
 ```
 
+A `closed` class serves as a polymorphic base type that provides shared behavior, properties, or virtual members across its direct subtypes while ensuring that code inspecting an instance can account for all possible forms.
+
+### Direct subtypes vs. leaf types
+
+A closed hierarchy guarantees that the compiler knows every *direct* subtype of the base class. However, how derivation behaves beyond those direct subtypes depends on whether the subtypes themselves are `sealed`:
+
+- **Closed to all derivation**: If all direct subtypes are marked with the `sealed` modifier, the hierarchy is fully closed. No further derived classes can be created anywhere:
+
+  ```csharp
+  public closed class PaymentMethod;
+  public sealed class CreditCard(string Number) : PaymentMethod;
+  public sealed class BankTransfer(string Iban) : PaymentMethod;
+  public sealed class Cash : PaymentMethod;
+  ```
+
+- **Open leaf types**: If a direct subtype isn't `sealed`, other classes can inherit from it. The closed hierarchy still represents *all* direct subtypes, but not *all possible leaf types*. Pattern-matching a direct subtype matches both that subtype and any classes derived from it:
+
+  ```csharp
+  public closed class PaymentMethod;
+  public class CreditCard(string Number) : PaymentMethod; // Non-sealed: can be extended
+  public class RewardsCreditCard(string Number, int Points) : CreditCard(Number); // Leaf type
+  public sealed class BankTransfer(string Iban) : PaymentMethod;
+  public sealed class Cash : PaymentMethod;
+  ```
+
 Because the complete set of direct descendants is fixed at compile time, the compiler verifies that pattern-matching `switch` expressions exhaustively cover all direct subtypes without needing a default or discard arm:
 
 ```csharp
 decimal GetProcessingFee(PaymentMethod method) => method switch
 {
-    CreditCard => 1.50m,
+    CreditCard => 1.50m, // Matches CreditCard and RewardsCreditCard
     BankTransfer => 0.50m,
     Cash => 0.00m
 };
 ```
-
-A `closed` class serves as a polymorphic base type that provides shared behavior, properties, or virtual members across its direct subtypes while ensuring that code inspecting an instance can account for all possible forms.
 
 For more information, see the [closed modifier](../../language-reference/keywords/closed.md) reference.
 

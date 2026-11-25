@@ -2,6 +2,7 @@
 title: "Decrypting data"
 description: Learn how to decrypt data in .NET, using a symmetric algorithm or an asymmetric algorithm.
 ms.date: 11/14/2022
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -19,6 +20,9 @@ Decryption is the reverse operation of encryption. For secret-key encryption, yo
 
 ## Symmetric decryption
 
+> [!IMPORTANT]
+> Symmetric decryption with CBC mode (the default for `Aes.Create()`) is vulnerable to padding oracle attacks if the ciphertext integrity isn't verified before decryption. Always verify data integrity (for example, by using an HMAC with an Encrypt-then-MAC pattern) before attempting to decrypt. For more information, see [Timing vulnerabilities with CBC-mode symmetric decryption using padding](vulnerabilities-cbc-mode.md).
+
 The decryption of data encrypted with symmetric algorithms is similar to the process used to encrypt data with symmetric algorithms. The <xref:System.Security.Cryptography.CryptoStream> class is used with symmetric cryptography classes provided by .NET to decrypt data read from any managed stream object.
 
 The following example illustrates how to create a new instance of the default implementation class for the <xref:System.Security.Cryptography.Aes> algorithm. The instance is used to perform decryption on a <xref:System.Security.Cryptography.CryptoStream> object. This example first creates a new instance of the <xref:System.Security.Cryptography.Aes> implementation class. It reads the initialization vector (IV) value from a managed stream variable, `fileStream`. Next it instantiates a <xref:System.Security.Cryptography.CryptoStream> object and initializes it to the value of the `fileStream` instance. The <xref:System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor*?displayProperty=nameWithType> method from the <xref:System.Security.Cryptography.Aes> instance is passed the IV value and the same key that was used for encryption.
@@ -35,12 +39,12 @@ CryptoStream cryptStream = new CryptoStream(
     fileStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read);
 ```
 
-The following example shows the entire process of creating a stream, decrypting the stream, reading from the stream, and closing the streams. A file stream object is created that reads a file named *TestData.txt*. The file stream is then decrypted using the **CryptoStream** class and the **Aes** class. This example specifies key value that is used in the symmetric encryption example for [Encrypting Data](encrypting-data.md). It does not show the code needed to encrypt and transfer these values.
+The following example shows the entire process of creating a stream, decrypting the stream, reading from the stream, and closing the streams. A file stream object is created that reads a file named *TestData.txt*. The file stream is then decrypted using the **CryptoStream** class and the **Aes** class. This example specifies the same key value that is used in the symmetric encryption example for [Encrypting Data](encrypting-data.md). It does not show the code needed to encrypt and transfer these values.
 
 :::code language="csharp" source="snippets/decrypting-data/csharp/aes-decrypt.cs":::
 :::code language="vb" source="snippets/decrypting-data/vb/aes-decrypt.vb":::
 
-The preceding example uses the same key, and algorithm used in the symmetric encryption example for [Encrypting Data](encrypting-data.md). It decrypts the *TestData.txt* file that is created by that example and displays the original text on the console.
+The preceding example uses the same key and algorithm used in the symmetric encryption example for [Encrypting Data](encrypting-data.md). It decrypts the *TestData.txt* file that is created by that example and displays the original text on the console.
 
 ## Asymmetric decryption
 
@@ -51,27 +55,31 @@ For information on how to store an asymmetric key in secure cryptographic key co
 The following example illustrates the decryption of two arrays of bytes that represent a symmetric key and IV. For information on how to extract the asymmetric public key from the <xref:System.Security.Cryptography.RSA> object in a format that you can easily send to a third party, see [Encrypting Data](encrypting-data.md#asymmetric-encryption).
 
 ```vb
-'Create a new instance of the RSA class.
-Dim rsa As RSA = RSA.Create()
+'Create a new instance of the RSA class. The 2048-bit key size shown
+'here is for illustration; choose a key size that matches your
+'security requirements per NIST SP 800-57.
+Dim rsa As RSA = RSA.Create(2048)
 
 ' Export the public key information and send it to a third party.
 ' Wait for the third party to encrypt some data and send it back.
 
-'Decrypt the symmetric key and IV.
-symmetricKey = rsa.Decrypt(encryptedSymmetricKey, RSAEncryptionPadding.Pkcs1)
-symmetricIV = rsa.Decrypt(encryptedSymmetricIV, RSAEncryptionPadding.Pkcs1)
+'Decrypt the symmetric key and IV using OAEP padding.
+symmetricKey = rsa.Decrypt(encryptedSymmetricKey, RSAEncryptionPadding.OaepSHA256)
+symmetricIV = rsa.Decrypt(encryptedSymmetricIV, RSAEncryptionPadding.OaepSHA256)
 ```
 
 ```csharp
-//Create a new instance of the RSA class.
-RSA rsa = RSA.Create();
+// Create a new instance of the RSA class. The 2048-bit key size shown
+// here is for illustration; choose a key size that matches your
+// security requirements per NIST SP 800-57.
+RSA rsa = RSA.Create(2048);
 
 // Export the public key information and send it to a third party.
 // Wait for the third party to encrypt some data and send it back.
 
-//Decrypt the symmetric key and IV.
-symmetricKey = rsa.Decrypt(encryptedSymmetricKey, RSAEncryptionPadding.Pkcs1);
-symmetricIV = rsa.Decrypt(encryptedSymmetricIV , RSAEncryptionPadding.Pkcs1);
+// Decrypt the symmetric key and IV using OAEP padding.
+symmetricKey = rsa.Decrypt(encryptedSymmetricKey, RSAEncryptionPadding.OaepSHA256);
+symmetricIV = rsa.Decrypt(encryptedSymmetricIV, RSAEncryptionPadding.OaepSHA256);
 ```
 
 ## See also

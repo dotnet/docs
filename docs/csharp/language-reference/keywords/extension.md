@@ -110,7 +110,7 @@ Extension indexers and related members have the following restrictions:
 
 ## See also
 
-- [Extensions feature specification](~/_csharplang/proposals/csharp-14.0/extensions.md)
+- [Extension members](~/_csharpstandard/standard/classes.md#1514-extension-members) in the C# language specification
 - [Extension indexers feature specification](~/_csharplang/proposals/csharp-15.0/extension-indexers.md)
 
 ## C# language specification

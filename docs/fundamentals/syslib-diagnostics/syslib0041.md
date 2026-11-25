@@ -19,9 +19,13 @@ The following <xref:System.Security.Cryptography.Rfc2898DeriveBytes> constructor
 
 ## Workaround
 
-Use a different constructor overload where you can explicitly specify the iteration count (the default is 1000) and hash algorithm name (the default is <xref:System.Security.Cryptography.HashAlgorithmName.SHA1?displayProperty=nameWithType>).
+Use a different constructor overload where you can explicitly specify the iteration count and hash algorithm name.
 
-If you're using the default iteration count or default hash algorithm, consider moving to more secure values&mdash;that is, a larger iteration count or a newer hash algorithm.
+For compatibility with existing values specify an iteration count of 1000 and a hash algorithm of <xref:System.Security.Cryptography.HashAlgorithmName.SHA1?displayProperty=nameWithType>.
+When generating new values, use an iteration count and hash algorithm consistent with your desired security properties.
+
+> [!TIP]
+> For information on choosing an iteration count, see [NIST SP 800-132](https://csrc.nist.gov/pubs/sp/800/132/final) Appendix A.2.2.
 
 ## Suppress a warning
 

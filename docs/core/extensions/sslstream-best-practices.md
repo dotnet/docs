@@ -21,7 +21,7 @@ Deferring the decision to the OS automatically uses the most recent version of T
 
 ## Select cipher suites
 
-`SslStream` allows users to specify which cipher suites can be negotiated by the TLS handshake via the <xref:System.Net.Security.CipherSuitesPolicy> class. As with TLS versions, it's recommended to let the OS decide which are the best cipher suites to negotiate with, and, therefore, it's recommended to avoid using <xref:System.Net.Security.CipherSuitesPolicy>.
+`SslStream` allows users to specify which cipher suites can be negotiated by the TLS handshake via the <xref:System.Net.Security.CipherSuitesPolicy> class. As with TLS versions, it's recommended to let the OS decide which are the best cipher suites to negotiate with, and avoid using <xref:System.Net.Security.CipherSuitesPolicy> unless you have a specific interoperability requirement.
 
 > [!NOTE]
 > <xref:System.Net.Security.CipherSuitesPolicy> is not supported on Windows and attempts to instantiate it will cause <xref:System.NotSupportedException> to be thrown.

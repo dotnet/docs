@@ -12,16 +12,19 @@ Module Program
         Dim sharedParameters As RSAParameters
         Dim signedHash As Byte()
 
-        ' Generate signature
+        ' Generate signature with Pkcs1 padding.
+        ' When creating RSA signatures, choose a padding mode that is appropriate to your needs.
         Using rsa As RSA = RSA.Create()
-            sharedParameters = rsa.ExportParameters(True)
+            sharedParameters = rsa.ExportParameters(False)
             Dim rsaFormatter As New RSAPKCS1SignatureFormatter(rsa)
             rsaFormatter.SetHashAlgorithm(NameOf(SHA256))
 
             signedHash = rsaFormatter.CreateSignature(hash)
         End Using
 
-        ' Verify signature
+        ' Verify signature.
+        ' Since the signature was generated with Pkcs1 padding,
+        ' it can only be verified with Pkcs1 padding.
         Using rsa As RSA = RSA.Create()
             rsa.ImportParameters(sharedParameters)
 

@@ -12,9 +12,11 @@ on:
         description: 'The reason for running the workflow'
         required: true
         default: 'Manual run'
+        type: string
       pull:
         description: "The pull request number to manually test"
         required: true
+        type: number
 
 env:
   DOTNET_VERSION: '11.0.*'
@@ -24,6 +26,10 @@ env:
 
 permissions:
   contents: read
+
+concurrency:
+    group: ${{ github.workflow }}-${{ github.event.pull_request.number || inputs.pull }}
+    cancel-in-progress: true
 
 jobs:
   snippets-build:

@@ -6,9 +6,15 @@ on:
         description: "The reason for running the workflow"
         required: true
         default: "Manual run"
+        type: string
       issue:
         description: "The issue number to manually test"
         required: true
+        type: number
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.inputs.issue }}
+  cancel-in-progress: true
 
 permissions:
   contents: read

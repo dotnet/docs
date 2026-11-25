@@ -56,7 +56,7 @@ Adds an IP address or DNS name to the proxy bypass list.
 
  The value of the `address` attribute should be a regular expression that describes a set of IP addresses or host names.
 
- You should use caution when specifying a regular expression for this element. The regular expression `[a-z]+\\.contoso\\.com` matches any host in the contoso.com domain, but it also matches any host in the contoso.com.cpandl.com domain. To match only a host in the contoso.com domain, use an anchor (`$`): `[a-z]+\\.contoso\\.com$`.
+ You should use caution when specifying a regular expression for this element. The regular expression `[a-zA-Z0-9_-]+\\.contoso\\.com` matches any host in the contoso.com domain, but it also matches any host in the contoso.com.cpandl.com domain. To match only a host in the contoso.com domain, use an anchor (`$`): `[a-zA-Z0-9_-]+\\.contoso\\.com$`.
 
  For more information about regular expressions, see .[.NET Framework Regular Expressions](../../../../standard/base-types/regular-expressions.md).
 
@@ -73,7 +73,7 @@ Adds an IP address or DNS name to the proxy bypass list.
   <system.net>
     <defaultProxy>
       <bypasslist>
-        <add address="[a-z]+\.contoso\.com$" />
+        <add address="[a-zA-Z0-9_-]+\.contoso\.com$" />
         <add address="192\.168\.\d{1,3}\.\d{1,3}" />
       </bypasslist>
     </defaultProxy>

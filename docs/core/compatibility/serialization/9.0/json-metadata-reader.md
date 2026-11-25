@@ -2,6 +2,7 @@
 title: "Breaking change: System.Text.Json metadata reader now unescapes metadata property names"
 description: System.Text.Json now unescapes metadata property names, affecting reference preservation and metadata property validation.
 ms.date: 2/13/2025
+ms.update-cycle: 3650-days
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/44748
 ---

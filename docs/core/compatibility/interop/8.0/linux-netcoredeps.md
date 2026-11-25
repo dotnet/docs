@@ -2,6 +2,7 @@
 title: "Breaking change - Linux native library resolution no longer uses `netcoredeps`"
 description: "Learn about the breaking change in .NET 8 where Linux applications no longer search the `netcoredeps` subdirectory for native libraries."
 ms.date: 4/10/2025
+ms.update-cycle: 3650-days
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/45777
 ---

@@ -2,6 +2,7 @@
 title: ".NET 8 breaking change: Legacy Console.ReadKey removed"
 description: Learn about the .NET 8 breaking change in core .NET libraries where the legacy Console.ReadKey implementation has been removed.
 ms.date: 01/27/2023
+ms.update-cycle: 3650-days
 ---
 # Legacy Console.ReadKey removed
 

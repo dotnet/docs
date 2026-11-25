@@ -2,6 +2,7 @@
 title: "Breaking change: Nullable JsonDocument properties deserialize to JsonValueKind.Null"
 description: Learn about the breaking change in serialization in .NET 9 where nullable JsonDocument values deserialize to JsonValueKind.Null instead of null.
 ms.date: 12/5/2024
+ms.update-cycle: 3650-days
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/43869
 ---

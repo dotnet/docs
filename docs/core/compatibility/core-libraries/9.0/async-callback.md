@@ -2,6 +2,7 @@
 title: "IncrementingPollingCounter initial callback is asynchronous"
 description: Learn about the .NET 9 breaking change in core .NET libraries where the IncrementingPollingCounter initial callback is no longer synchronous.
 ms.date: 09/05/2024
+ms.update-cycle: 3650-days
 ---
 # IncrementingPollingCounter initial callback is asynchronous
 

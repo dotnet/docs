@@ -2,6 +2,7 @@
 title: "Breaking change: BinaryReader.ReadString() returns '\uFFFD' on malformed sequences"
 description: Learn about the .NET 9 breaking change in core .NET libraries where BinaryReader.ReadString() returns "\uFFFD" on malformed encoded string sequences.
 ms.date: 10/03/2024
+ms.update-cycle: 3650-days
 ---
 # BinaryReader.ReadString() returns "\uFFFD" on malformed sequences
 

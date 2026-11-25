@@ -2,6 +2,7 @@
 title: "Breaking change: Polymorphic serialization for object types"
 description: Learn about the .NET 7 breaking change in serialization where System.Text.Json no longer hardcodes polymorphism for root-level object types.
 ms.date: 09/12/2022
+ms.update-cycle: 3650-days
 ---
 # Polymorphic serialization for object types
 

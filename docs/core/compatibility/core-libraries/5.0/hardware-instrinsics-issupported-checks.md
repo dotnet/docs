@@ -2,6 +2,7 @@
 title: "Breaking change: Hardware intrinsic IsSupported checks may differ for nested types"
 description: Learn about the .NET 5 breaking change in core .NET libraries where checking X64.IsSupported for hardware intrinsics may now produce a different result.
 ms.date: 11/01/2020
+ms.update-cycle: 3650-days
 ---
 # Hardware intrinsic IsSupported checks may differ for nested types
 

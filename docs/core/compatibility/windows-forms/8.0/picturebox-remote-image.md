@@ -2,6 +2,7 @@
 title: "Breaking change: Certificates checked before loading remote images in PictureBox"
 description: Learn about the .NET 9 breaking change in Windows Forms where WebClient checks certificates against the revocation list before loading remote images in a PictureBox control.
 ms.date: 02/12/2024
+ms.update-cycle: 3650-days
 ---
 # Certificates checked before loading remote images in PictureBox
 

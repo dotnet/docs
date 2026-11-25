@@ -2,6 +2,7 @@
 title: "Breaking change: Inline array struct size limit is enforced"
 description: Learn about the .NET 9 breaking change in core .NET libraries where the size limit for inline arrays is now enforced.
 ms.date: 02/09/2024
+ms.update-cycle: 3650-days
 ---
 # Inline array struct size limit is enforced
 

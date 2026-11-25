@@ -2,6 +2,7 @@
 title: "Breaking change: Package part URIs are now compared case-insensitively in System.IO.Packaging"
 description: "Learn about the breaking change in .NET 8 where System.IO.Packaging now compares package part URIs case-insensitively to align with the OPC specification."
 ms.date: 09/29/2024
+ms.update-cycle: 3650-days
 ai-usage: ai-generated
 ---
 

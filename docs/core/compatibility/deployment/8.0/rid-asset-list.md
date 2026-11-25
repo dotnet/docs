@@ -2,6 +2,7 @@
 title: "Breaking change: Host determines RID-specific assets"
 description: Learn about the breaking change in deployment in .NET 8 where the runtime host looks for RID-specific assets via a known list.
 ms.date: 06/07/2023
+ms.update-cycle: 3650-days
 ---
 # Host determines RID-specific assets
 

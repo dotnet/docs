@@ -3,6 +3,7 @@ title: "Breaking change: .NET 7 obsoletions with default diagnostic ID"
 titleSuffix: ""
 description: Learn about the .NET 7 breaking change in core .NET libraries where some APIs have been marked as obsolete with the default diagnostic ID.
 ms.date: 10/19/2022
+ms.update-cycle: 3650-days
 ---
 # API obsoletions with default diagnostic ID (.NET 7)
 

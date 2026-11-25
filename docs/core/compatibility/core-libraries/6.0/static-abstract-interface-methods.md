@@ -2,6 +2,7 @@
 title: "Breaking change: Static abstract members in interfaces"
 description: Learn about the .NET 6 breaking change where `static` interface members can now be marked `abstract`.
 ms.date: 09/08/2021
+ms.update-cycle: 3650-days
 ---
 # Static abstract members declared in interfaces
 

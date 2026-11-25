@@ -2,6 +2,7 @@
 title: "Breaking change: All assemblies trimmed by default"
 description: Learn about the .NET 7 breaking change in deployment where all assemblies in a console app are trimmed by default.
 ms.date: 07/28/2022
+ms.update-cycle: 3650-days
 ---
 # All assemblies trimmed by default
 

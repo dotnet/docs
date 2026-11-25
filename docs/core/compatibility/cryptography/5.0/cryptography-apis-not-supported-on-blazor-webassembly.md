@@ -2,6 +2,7 @@
 title: "Breaking change: System.Security.Cryptography APIs not supported on Blazor WebAssembly"
 description: Learn about the breaking change in .NET 5 where cryptography APIs throw an exception when run on a browser.
 ms.date: 09/16/2020
+ms.update-cycle: 3650-days
 ---
 # System.Security.Cryptography APIs not supported on Blazor WebAssembly
 

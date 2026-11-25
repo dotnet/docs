@@ -2,6 +2,7 @@
 title: "Breaking change: CreateObjectFlags.Unwrap only unwraps on target instance"
 description: Learn about the breaking change in interop in .NET 8 where 'GetOrCreateObjectForComInstance()' with the 'CreateObjectFlags.Unwrap' flag only unwraps wrappers from the target 'ComWrappers' instance.
 ms.date: 06/12/2023
+ms.update-cycle: 3650-days
 ---
 # CreateObjectFlags.Unwrap only unwraps on target instance
 

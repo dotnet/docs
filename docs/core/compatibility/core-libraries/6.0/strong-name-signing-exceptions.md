@@ -2,6 +2,7 @@
 title: "Breaking change: Strong-name APIs throw PlatformNotSupportedException"
 description: Learn about the .NET 6 breaking change in core .NET libraries where an exception is thrown in StrongNameKeyPair constructors and AssemblyName.KeyPair.
 ms.date: 05/31/2022
+ms.update-cycle: 3650-days
 ---
 # Strong-name APIs throw PlatformNotSupportedException
 

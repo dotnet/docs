@@ -2,6 +2,7 @@
 title: "Breaking change: MulticastOption.Group doesn't accept a null value"
 description: Learn about the breaking change in .NET 5 where MulticastOption.Group no longer accepts a null value.
 ms.date: 08/18/2020
+ms.update-cycle: 3650-days
 ---
 # MulticastOption.Group doesn't accept a null value
 

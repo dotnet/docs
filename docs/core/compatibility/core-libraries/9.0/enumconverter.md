@@ -2,6 +2,7 @@
 title: "Breaking change: EnumConverter validates registered types to be enum"
 description: Learn about the .NET 9 breaking change where EnumConverter now validates that the type to be registered is an enum type.
 ms.date: 10/04/2024
+ms.update-cycle: 3650-days
 ---
 # EnumConverter validates registered types to be enum
 

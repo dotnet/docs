@@ -2,6 +2,7 @@
 title: "Breaking change: Flow direction helper methods removed"
 description: Learn about the .NET 7 breaking change in .NET MAUI where flow direction helper methods have been removed.
 ms.date: 11/14/2022
+ms.update-cycle: 3650-days
 ---
 # Flow direction helper methods removed
 

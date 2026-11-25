@@ -2,6 +2,7 @@
 title: "Removal of WCF APIs with a `configurationName` parameter"
 description: Learn about the breaking change in WCF 8 where the APIs that accept a `configurationName` parameter have been removed.
 ms.date: 11/13/2024
+ms.update-cycle: 3650-days
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/43111
 ---

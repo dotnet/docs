@@ -2,6 +2,7 @@
 title: "Default RID used when targeting .NET Framework"
 description: "Learn about the breaking change in the .NET 9 SDK where a new default RID is used for apps that target .NET Framework."
 ms.date: 12/5/2024
+ms.update-cycle: 3650-days
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/43692
 ---

@@ -2,6 +2,7 @@
 title: "Breaking change: XNodeReader.GetAttribute and invalid indices"
 description: Learn about the .NET 6 breaking change where XNodeReader.GetAttribute now throws an exception for an invalid index.
 ms.date: 10/19/2021
+ms.update-cycle: 3650-days
 ---
 # XNodeReader.GetAttribute behavior for invalid index
 

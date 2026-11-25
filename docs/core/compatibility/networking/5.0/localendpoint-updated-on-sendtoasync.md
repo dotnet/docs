@@ -2,6 +2,7 @@
 title: "Breaking change: Socket.LocalEndPoint is updated after calling SendToAsync"
 description: Learn about the breaking change in .NET 5 where SendToAsync now updates the value of the local endpoint property to the socket's local address.
 ms.date: 10/18/2020
+ms.update-cycle: 3650-days
 ---
 # Socket.LocalEndPoint is updated after calling SendToAsync
 

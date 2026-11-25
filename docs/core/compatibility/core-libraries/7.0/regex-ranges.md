@@ -2,6 +2,7 @@
 title: ".NET 7 breaking change: Regex patterns with ranges corrected"
 description: Learn about the .NET 7 breaking change in core .NET libraries where regular expressions that have ranges in the pattern and are used with the RegexOptions.IgnoreCase option might break.
 ms.date: 12/08/2023
+ms.update-cycle: 3650-days
 ---
 # Regex patterns with ranges corrected
 

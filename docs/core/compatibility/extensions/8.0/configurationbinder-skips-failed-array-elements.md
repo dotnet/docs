@@ -2,6 +2,7 @@
 title: "Breaking change: ConfigurationBinder silently skips invalid array elements"
 description: "Learn about the breaking change in .NET 8 where ConfigurationBinder silently skips array or list elements that fail type conversion instead of preserving null placeholders."
 ms.date: 03/11/2026
+ms.update-cycle: 3650-days
 ai-usage: ai-assisted
 ---
 

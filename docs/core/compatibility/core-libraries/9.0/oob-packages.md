@@ -2,6 +2,7 @@
 title: "New version of some OOB packages"
 description: Learn about the breaking change in core .NET libraries where updates were made to TFMs and package versions for several OOB packages.
 ms.date: 12/4/2024
+ms.update-cycle: 3650-days
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/43564
 ---

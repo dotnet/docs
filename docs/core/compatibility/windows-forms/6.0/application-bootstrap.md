@@ -2,6 +2,7 @@
 title: "Breaking change: C# templates use application bootstrap"
 description: Learn about the breaking change in .NET 6 where C# templates for Windows Forms apps include application bootstrap code.
 ms.date: 10/27/2021
+ms.update-cycle: 3650-days
 ---
 # C# templates use application bootstrap
 

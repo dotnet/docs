@@ -2,6 +2,7 @@
 title: "Breaking change: 'dotnet list package' warns if source doesn't provide vulnerability data"
 description: "Learn about the breaking change in .NET 8 where 'dotnet list package --vulnerable' emits a warning when audit sources don't support VulnerabilityInfoResource."
 ms.date: 09/29/2025
+ms.update-cycle: 3650-days
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/42608
 ---

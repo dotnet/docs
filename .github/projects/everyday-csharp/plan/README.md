@@ -14,8 +14,13 @@ Supporting work Q has its own dependency-based placement, not a competing priori
 Preserve the shipped section's purpose and placement; don't restore the retired Functional techniques
 subgroup. **Phase G is complete:** [#56771](https://github.com/dotnet/docs/pull/56771) merged
 2026-11-12; [reconciliation on 2026-11-16](phase-g-namespaces-oop.md) records the two-level
-namespace path, shared snippets, and preserved later sources. H Classes is next in the existing
-sequence; the namespace checkpoint doesn't itself start OOP redistribution.
+namespace path, shared snippets, and preserved later sources. **H's PR 25 framework shipped**
+in [#56923](https://github.com/dotnet/docs/pull/56923) on 2026-11-25: three class foundation
+articles and revised class/object/record introductions, not all of Classes.
+[Phase H](phase-h-classes.md) records exact paths, shared snippets, two retirements, and five
+retained legacy guides. PR 26 / [#56749](https://github.com/dotnet/docs/issues/56749) is the
+next article; Bill deferred its first draft until he prepares a new branch. No article work
+starts in this reconciliation.
 The approved roadmap isn't a new delivery commitment, a phase start, or authorization to create
 issues or move content. Preserve the three shipped practical guides without requiring new
 language-foundations homes.
@@ -144,7 +149,7 @@ and helper placement in that example aren't universal requirements.
 | [P — Documentation comments (Annex D)](phase-p-documentation-comments.md) | XML comments, useful tags, compiler output, existing tutorial | PR 36 |
 | [Q — Cross-cutting supporting work](phase-q-supporting-work.md) | Async basics, coding style/analyzers, console tutorial | PR 34, 37, 45 |
 | [R — Building software growth](phase-r-building-software.md) | Applied design/algorithm choices harvested from the Programming Guide | PR 32–33; BS01–BS12 |
-| [Programming Guide retirement inventory](programming-guide-inventory.md) | 82-source snapshot (2026-10-16): destination, task, extraction/retirement action; PR 22 consolidations now shipped | — |
+| [Programming Guide retirement inventory](programming-guide-inventory.md) | 82-source snapshot (2026-10-16): two PR 22 and two PR 25 retirements shipped; retained-source holds remain | — |
 | [Verification & decisions](verification-and-decisions.md) | Build/lint verification + running decisions log | — |
 
 ## Execution sequence
@@ -158,7 +163,7 @@ Historical PR IDs remain stable and aren't sorted numerically.
 |---|---|
 | Completed prerequisite | Phase E expressions/statements/collections/equality and Phase F patterns/practical guides/tutorial are shipped. PR 17 is merged; PR 18's two intended inbound links are present in `types/built-in-types.md` and `null-safety/null-operators.md` (verified 2026-10-29). No foundation tail-work is invented from the old deferred labels. |
 | G: Namespaces — ✅ Shipped | PR 24 / #56771, merged 2026-11-12: canonical depth, retained orientation URL and shared snippet project; later class/OOP sources preserved. Reconciled 2026-11-16. |
-| H: Classes | PR 25 → 26 → 27 → 28 → 29 → 31 → 46. Establish shared member rules and record classes; keep each article independently reviewable. |
+| H: Classes — framework shipped; follow-ons remain | PR 25 framework / #56923 merged 2026-11-25. Continue 26 → 27 → 28 → 29 → 31 → 46; PR 26 / #56749 draft waits for Bill's new branch. Retained-source retirement and applied extracts aren't complete. |
 | I: Structs | PR 39: class/struct differences and the shared records comparison, after H. |
 | J: Arrays/indexes/ranges | PR 40 → PR 30 concept work → its tutorial if split. Properties already exist from H; defer interface-specific cross-links to K. |
 | K: Interfaces | PR 41: implementation and interface views, after J; finish the shared interface-indexer extract. |

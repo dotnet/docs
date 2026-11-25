@@ -4,7 +4,7 @@
 
 The 2026-10-16 `EverydayCSharp` snapshot contained **82 Markdown articles** under `docs/csharp/programming-guide/`, excluding snippet trees and assets. Each appears exactly once below. **Reconciled 2026-10-29:** #56333 subsequently retired the local-functions and iterators sources named below; keep their rows as shipped provenance, not pending moves or a current-file count. The sweep considered article purpose, sections, and representative content, not just numeric counts or directory names. Existing canonical teaching/reference and source code still need task-specific verification before migration.
 
-Paths in the **Source** column are relative to `docs/csharp/programming-guide/`. Task links name the owning delivery area; the final column distinguishes practical extracts from construct coverage and advanced material. Decision 16 adopts this task coverage as part of the active plan. Apart from the explicitly shipped PR 22 rows, this ledger records planned dispositions, not completed moves or live destinations. Resolve detailed splits, final paths, and preservation owners during assigned work; concrete OOP redistribution follows Phase G's namespace checkpoint.
+Paths in the **Source** column are relative to `docs/csharp/programming-guide/`. Task links name the owning delivery area; the final column distinguishes practical extracts from construct coverage and advanced material. Decision 16 adopts this task coverage as part of the active plan. Apart from the explicitly shipped PR 22/25 coverage below, this ledger records planned dispositions, not completed moves or live destinations. Resolve detailed splits, final paths, and preservation owners during assigned work; concrete OOP redistribution follows Phase G's namespace checkpoint.
 
 **Execution update, team decision 2026-10-29:** Complete G-P in
 [standard order](README.md#execution-sequence), then deliver the applied extracts through
@@ -20,6 +20,13 @@ Other class/OOP, applied, and specialized source dispositions remain as assigned
 hold below is released. The two PR 22 consolidations remain shipped, not pending again.
 See [source ownership](../content-sources.md#namespace-source-reconciliation).
 
+**Classes framework, reconciled 2026-11-25:** PR 25 shipped in
+[#56923](https://github.com/dotnet/docs/pull/56923), merged 2026-11-25.
+Only `members.md` and `how-to-define-constants.md` retired. The five access/fields/constants/
+static-class/nested-type guides remain with pointers to the new foundation articles.
+Together with #56333's two retirements, four rows now record deleted/redirected sources;
+the 82 remains the historical snapshot, not a live-file count. No shared-source hold is released.
+
 ### Destination and action key
 
 - **Extract:** harvest useful decision guidance for [BS01-BS11](phase-r-building-software.md); the remaining mechanics have the phase owner named in the row.
@@ -33,18 +40,18 @@ Use the detailed destination/task definitions in [Classes](phase-h-classes.md), 
 | Source | Action and task | Destination and reason |
 |---|---|---|
 | `classes-and-structs/abstract-and-sealed-classes-and-class-members.md` | Merge PR 29; extract BS01/BS05 | Inheritance mechanics in Classes; extending behavior versus a capability/collaborator in Building software. |
-| `classes-and-structs/access-modifiers.md` | Merge PR 25; extract BS01/BS03 | Class/member accessibility versus intentionally exposed API surface. |
+| `classes-and-structs/access-modifiers.md` | ✅ Foundation shipped PR 25; source retained; extract BS01/BS03 | `fundamentals/classes/access-modifiers.md` in #56923; source gains a pointer and retains cross-type, signature, and friend-assembly detail. Final retirement remains held. |
 | `classes-and-structs/anonymous-types.md` | Retain/link, BS12 | Reference/LINQ owner to confirm; anonymous types remain excluded from Fundamentals. No new beginner anonymous-type article. |
 | `classes-and-structs/auto-implemented-properties.md` | Merge PR 26; extract BS02/BS03 | Properties mechanics, initialized data, and small encapsulated-state choices. |
-| `classes-and-structs/constants.md` | Merge PR 25; extract BS03 | Fields/constants owner; distinguish a constant contract from instance state where useful. |
+| `classes-and-structs/constants.md` | ✅ Foundation shipped PR 25; source retained; extract BS03 | `fundamentals/classes/fields-constants.md` in #56923; source gains a pointer and retains substitution/versioning detail. Final retirement remains held. |
 | `classes-and-structs/constructors.md` | Merge PR 27; extract BS02 | Constructor mechanics versus required inputs and initialization choices. |
 | `classes-and-structs/extension-methods.md` | Merge PR 46; extract BS10 | Released extension syntax versus extension/wrapper/owned-member choices; deep binding rules stay reference. |
-| `classes-and-structs/fields.md` | Merge PR 25; extract BS03 | Fields and storage choices; preserve volatile/fixed/ref-field detail outside Fundamentals. |
+| `classes-and-structs/fields.md` | ✅ Foundation shipped PR 25; source retained; extract BS03 | `fundamentals/classes/fields-constants.md` in #56923; source gains a pointer and retains other field forms/state-exposure guidance. Preserve specialized detail outside Fundamentals before final retirement. |
 | `classes-and-structs/finalizers.md` | Retain advanced, BS12; extract/link BS07 | Only useful resource-lifetime orientation enters Building software; finalizer implementation remains advanced. |
 | `classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md` | Merge PR 46; extract BS10 | Enum extensions belong to extension mechanics/choice, with a PR 42 cross-link. |
 | `classes-and-structs/how-to-declare-and-use-read-write-properties.md` | Merge PR 26; extract BS03 | Property accessors versus controlled read/write state. |
 | `classes-and-structs/how-to-define-abstract-properties.md` | Merge PR 26/29; extract BS05 | Property mechanics and inheritance; a contract example only where it clarifies the choice. |
-| `classes-and-structs/how-to-define-constants.md` | Merge PR 25 | One fields/constants lesson; no redundant standalone how-to. |
+| `classes-and-structs/how-to-define-constants.md` | ✅ Shipped PR 25 retirement | Deleted in #56923; redirect to `/dotnet/csharp/fundamentals/classes/fields-constants`. Legacy TOC entry removed; How-to index links to `#use-named-constants-for-common-values`. Legacy snippet files weren't deleted. |
 | `classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md` | Extract BS02/BS09; merge mechanics PR 26 | Initialization and value/identity choices; don't retain a second basic property tutorial. |
 | `classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md` | Merge PR 46; extract BS10 | Extension invocation and extension-versus-wrapper choice. |
 | `classes-and-structs/how-to-initialize-a-dictionary-with-a-collection-initializer.md` | Extract BS06; merge Phase E collections | Initialization choices; preserve dictionary behavior, don't invent dictionary-expression syntax. |
@@ -58,16 +65,16 @@ Use the detailed destination/task definitions in [Classes](phase-h-classes.md), 
 | `classes-and-structs/interface-properties.md` | Merge PR 41; extract BS05 | Contract members; share property syntax with PR 26. |
 | `classes-and-structs/knowing-when-to-use-override-and-new-keywords.md` | Merge PR 29; extract BS01 | Dispatch mechanics and intended extensibility; keep examples' static reference types visible. |
 | `classes-and-structs/local-functions.md` | ✅ Shipped PR 22 consolidation | `fundamentals/building-software/local-functions.md`; source deleted/redirected in #56333. Don't plan its initial migration twice. |
-| `classes-and-structs/members.md` | Merge PR 25; BS12 retirement routing | Member orientation in Classes; specialized member kinds link to their owners. |
+| `classes-and-structs/members.md` | ✅ Shipped PR 25 retirement | Deleted in #56923; redirect to `/dotnet/csharp/fundamentals/classes` (`index.md`). Legacy TOC entry removed; OOP index links to Class members and instances, which routes other member kinds to their owners. |
 | `classes-and-structs/methods.md` | Merge PR 28; extract BS03/BS04 | Parameters/member mechanics versus supplied behavior and API shape. |
 | `classes-and-structs/named-and-optional-arguments.md` | Merge PR 28; extract BS02/BS03 if useful | Call syntax versus defaults and caller-visible contracts; overload edge rules stay reference. |
-| `classes-and-structs/nested-types.md` | Merge small subset PR 25; retain detail via BS12 | Scope/encapsulation orientation, not a new nested-type design article. |
+| `classes-and-structs/nested-types.md` | ✅ Small subset shipped PR 25; source retained via BS12 | Private nested-type example at `fundamentals/classes/index.md#nested-types` in #56923; source gains a pointer and retains containing-instance, accessibility, and analyzer details. |
 | `classes-and-structs/object-and-collection-initializers.md` | Extract BS02/BS06; merge mechanics PR 27/40 | Construction, nested object identity, and collection initialization; preserve advanced/LINQ portions separately. |
 | `classes-and-structs/partial-classes-and-methods.md` | Merge subset PR 31; retain advanced via BS12 | Recognize generated/handwritten parts; generator authoring and full member restrictions stay deeper. |
 | `classes-and-structs/private-constructors.md` | Merge PR 27; extract BS02 | Construction access and who may create instances; no generic singleton-pattern tutorial. |
 | `classes-and-structs/properties.md` | Merge PR 26; extract BS03 | Accessor mechanics versus computed/stored/validated state and mutation. |
 | `classes-and-structs/restricting-accessor-accessibility.md` | Merge PR 26; extract BS03 | Accessibility syntax versus public read/private write contract. |
-| `classes-and-structs/static-classes-and-static-class-members.md` | Merge PR 25; extract BS03 | Static/instance mechanics and shared state/call shape, without a universal utility-class preference. |
+| `classes-and-structs/static-classes-and-static-class-members.md` | ✅ Foundation shipped PR 25; source retained; extract BS03 | `fundamentals/classes/index.md` in #56923; source gains a pointer and retains specialized static storage/initialization detail. Final retirement remains held. |
 | `classes-and-structs/static-constructors.md` | Merge intro PR 27; retain runtime detail via BS12 | Recognize one-time type setup; detailed execution ordering stays reference. |
 | `classes-and-structs/using-constructors.md` | Merge PR 27; extract BS02 | Consolidate construction basics and initialization decisions. |
 | `classes-and-structs/using-properties.md` | Merge PR 26; extract BS03 | Accessor use, computed values, validation, and hidden implementation choices. |
@@ -119,12 +126,13 @@ Use the detailed destination/task definitions in [Classes](phase-h-classes.md), 
 
 BS12 coordinates shared-source retirement. Each delivery records the extracted paragraphs/examples, remaining owner, snippet regions, redirects, TOC updates, and repo-wide inbound links. A partial extract isn't authorization to delete the source. New advanced homes require a named destination and review before retirement.
 
-Only the local planning files change now. The two PR 22 rows record verified #56333 consolidation;
-no other source disposition is marked complete by this reconciliation.
+Only local planning files change now. The two PR 22 retirements in #56333 and two PR 25
+retirements in #56923 are verified shipped provenance. The five retained PR 25 guides have
+shipped foundation coverage, not completed source retirement or applied/advanced redistribution.
 
 ## Shared-source retirement holds
 
-These are planned blocking conditions, not claims that extraction has started. The table supplements,
+These are remaining blocking conditions, not claims that all extraction is complete. The table supplements,
 not replaces or recounts, the 82 source rows above. `C/` abbreviates `classes-and-structs/`;
 other paths retain their Source-column spelling. The named foundation owner coordinates mechanics;
 BS12 coordinates final per-source retirement. A source may retire once all of its own consumers
@@ -133,7 +141,7 @@ are accepted, without waiting for unrelated tasks in the same batch.
 | Shared source(s) | Mechanics / other content owner | Applied release condition | Redirect / remaining investigation |
 |---|---|---|---|
 | `C/abstract-and-sealed-classes-and-class-members.md`, `C/knowing-when-to-use-override-and-new-keywords.md` | PR 29; PR 26 for abstract property mechanics | BS01 (R1); abstract/sealed also BS05 (R2) | Prefer the final inheritance depth owner for mechanics; preserve compatibility detail separately before retiring mixed material. |
-| `C/access-modifiers.md`, `C/fields.md`, `C/constants.md`, `C/static-classes-and-static-class-members.md` | PR 25; advanced low-level/reference sections via BS12 | BS01 accessibility/object-state extract and BS03 API/state extracts (R1), as applicable | Choose class/access/member targets per source; volatile/ref/fixed details need named reference routes, not loss during a beginner pull. |
+| `C/access-modifiers.md`, `C/fields.md`, `C/constants.md`, `C/static-classes-and-static-class-members.md` | PR 25 foundation shipped #56923; sources retained; advanced low-level/reference sections via BS12 | BS01 accessibility/object-state extract and BS03 API/state extracts (R1), as applicable | Foundation targets now live under `fundamentals/classes/`; final retirement routes and advanced preservation still need per-source decisions. No redirect/deletion of these four guides shipped. |
 | `C/properties.md`, `C/using-properties.md`, `C/restricting-accessor-accessibility.md`, `C/auto-implemented-properties.md`, read/write-property how-to | PR 26 | BS03 (R1); auto-property initialization also BS02 | Retain distinct accessor/validation examples; select the properties owner as the syntax route only after all useful extracts are preserved. |
 | Constructor overview/instance/using/private sources and object-initializer how-to | PR 27 | BS02 (R1) | Construction/access examples have one mechanics owner; preserve private-construction choice without expanding into singleton architecture. |
 | `C/object-and-collection-initializers.md` | PR 27 object mechanics; PR 40/current collections collection mechanics; LINQ/advanced anonymous-type portions via BS12 | BS02 (R1) and BS06 (R3) | Keep until nested identity, collection behavior, and anonymous projection portions all have owners; final dominant redirect remains an implementation decision. |

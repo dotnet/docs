@@ -331,6 +331,18 @@ source ownership, and navigation are recorded in Decision 12b. Resolve subsequen
 within H-R as already assigned, rather than reopening namespace design or treating retained
 class/design material as shipped.
 
+**Classes framework as shipped (2026-11-25):**
+[#56923](https://github.com/dotnet/docs/pull/56923), merged 2026-11-25 at
+`35f6dec804ff3931bf200a4d9d0a9c36e049cf34`, fixes #56748. It implements PR 25 with
+`fundamentals/classes/{index,access-modifiers,fields-constants}.md` and revisions to the retained
+class/object/record articles. The live Classes node contains only those three new children,
+after Namespaces and before the retained OOP node; the full target regrouping hasn't shipped.
+Only legacy `members.md` and `how-to-define-constants.md` retire with redirects.
+The access, fields, constants, static-class, and nested-type guides remain with foundation
+pointers and preservation holds. [Phase H](plan/phase-h-classes.md) records exact titles,
+snippet homes, redirect targets, and remaining work. This is an implementation receipt,
+not a change to the class-first architecture or approval to retire mixed sources.
+
 **Shipped preservation:** Build software's current placement, four direct guides, and URLs stay
 as shipped in #56333. In particular, its lambda, local-function, and iterator guides don't need
 new language-foundations homes. Phase F and #55930 remain complete through #56528.
@@ -350,8 +362,10 @@ O Attributes → P Documentation comments before substantial new Phase R applied
 This supersedes the earlier blanket flexibility to choose any later phase. It doesn't reorder
 the shipped Build software section or require duplicate syntax homes for its practical guides.
 
-**Progress reconciled 2026-11-16:** G shipped in #56771 on 2026-11-12. H Classes is next in this
-existing sequence; H-P and R remain planned, not started or delivered by namespace consolidation.
+**Progress reconciled 2026-11-25:** G shipped in #56771 on 2026-11-12; H's PR 25 framework
+shipped in #56923 on 2026-11-25. H follow-ons, I-P, and applied R remain open. PR 26 / #56749's
+first draft is deferred until Bill prepares a new branch. No article work starts in this
+tracking reconciliation; the sequence and source-preservation obligations are unchanged.
 
 **Execution detail:** The [phase index](plan/README.md#execution-sequence) preserves historical
 PR identifiers and distinguishes internal task dependencies from review order. Supporting Q
@@ -410,3 +424,8 @@ deep immutability.
 [PR 39](plan/phase-i-structs.md) coordinate sections of the existing `fundamentals/types/records.md`;
 don't create competing records articles or replace its canonical URL. The early Type system
 orientation remains useful. This guidance changes the plan, not October's scope or live articles.
+
+**As shipped, 2026-11-25:** #56923 supplies PR 25's record-class depth in the same canonical
+records article, with a new `types/snippets/records/RecordClasses.cs` demo. It retains a compact
+record-class/record-struct comparison and positional-property defaults; PR 39 still owns the
+deeper paired struct semantics and cross-links. Neither phase needs another records article.

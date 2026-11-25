@@ -22,8 +22,15 @@ The following outline shows article coverage in the approved Fundamentals plan, 
 > Rows #4 and #100, their titles/paths, and the target skeleton below now reflect the merge.
 > The existing introduction URL and shared snippet project remain; no class/OOP source was retired.
 
+> **Classes framework reconciliation (2026-11-25):**
+> [#56923](https://github.com/dotnet/docs/pull/56923), merged 2026-11-25, fixes #56748.
+> PR 25's three new articles and class/object/record revisions shipped; Phase H isn't complete.
+> The live Classes node has only Class members and instances, Class accessibility, and Fields
+> and constants, between Namespaces and the retained Object-oriented programming node.
+> The target skeleton below isn't a claim that the full Classes regrouping shipped.
+
 **Execution, not a live TOC move:** [Decision 17](decisions.md#decision-17-foundations-first-execution-and-source-harvesting)
-records G Namespaces as shipped; remaining delivery is H Classes → I Structs → J Arrays/indexes/ranges →
+records G Namespaces and H's PR 25 framework as shipped; remaining delivery is H's follow-ons → I Structs → J Arrays/indexes/ranges →
 K Interfaces → L Enums → M Delegates/events → N Exceptions → O Attributes → P Documentation
 comments, then R's applied harvesting batches. Expressions/statements/patterns are completed
 prerequisites. Q stays dependency-based supporting work. The shipped Build software node stays
@@ -200,8 +207,9 @@ BS12 tracks preservation/retirement and doesn't create a reader-facing article.
 
 ### Classes (§15)
 
-Approved construct-first ownership in [Phase H](plan/phase-h-classes.md). Retain current canonical
-introductions, and resolve deeper destinations during assigned work before moving articles. Design extracts belong to
+Approved construct-first ownership in [Phase H](plan/phase-h-classes.md). PR #56923 established
+the three `fundamentals/classes/` foundation articles and revised the retained introductions.
+Resolve later destinations during assigned work before moving articles. Design extracts belong to
 Building software, not a competing OOP paradigm section.
 
 Classes supplies the shared baseline for the later Structs and Interfaces differences. Record-class
@@ -210,13 +218,13 @@ the same retained records article instead of independent guides.
 
 | # | Article | Status | Notes |
 |---|---|---|---|
-| 8 | Classes introduction | ✅ Exists; review | Retain `fundamentals/types/classes.md`; link deeper class/member coverage. |
-| 10 | Records | ✅ Exists; revise in PR 25/39 | Retain `fundamentals/types/records.md`; Classes owns record-class declarations, synthesized members, value equality, and shallow `with` copies; Structs owns the record-class/record-struct comparison. |
-| 40 | Objects | ✅ Exists | |
-| 114 | Class members | 📝 Proposed orientation, PR 25 | Proposed `fundamentals/classes/index.md`; short member map, not a second class/OOP overview. |
-| 41 | Access modifiers | 📥 Pull | From programming guide; all modifiers incl. `private protected` (C# 7.2) |
-| 42 | Fields and constants | 📥 Pull | From programming guide; attributes on backing fields (C# 7.3) |
-| 43 | Properties | 📥 Pull | Auto-properties (C# 3), initializers (C# 6), getter-only (C# 6), init-only (C# 9), required (C# 11), `field` keyword (C# 14), expression-bodied, separate accessibility (C# 2) |
+| 8 | C# classes | ✅ Revised, #56923 | Retain `fundamentals/types/classes.md`; short class/reference introduction routes to member depth and records; shares `classes/snippets/index/`. |
+| 10 | C# record types | ✅ Record-class revision shipped, #56923; PR 39 remains | Retain `fundamentals/types/records.md`; declarations, generated members, reference assignment, value equality, and shallow `with` copies. Compact class/struct comparison retained; Structs owns its deeper follow-on. Existing `types/snippets/records/` gains `RecordClasses.cs`. |
+| 40 | Objects - create instances of types | ✅ Revised, #56923 | Retain `fundamentals/object-oriented/objects.md`; references, identity/value equality, and lifetime, using shared class snippets. Still under the live OOP node. |
+| 114 | Class members and instances | ✅ Shipped, #56923 | `fundamentals/classes/index.md`; instance/static state, static classes, small nested type, and member routing. Legacy `members.md` deleted/redirected here. |
+| 41 | Class accessibility | ✅ Shipped, #56923 | `fundamentals/classes/access-modifiers.md`; common/default access and containing-type limits. `private protected`, other combinations, and specialized cases link to reference. Legacy access guide retained. |
+| 42 | Fields and constants | ✅ Shipped, #56923 | `fundamentals/classes/fields-constants.md`; initialization, default values, `readonly`, `const`, and `static readonly`. Only constants how-to retired; fields/constants guides retained. Backing-field attributes remain follow-on coverage. |
+| 43 | Properties | 📥 Pull; #56749 draft deferred | Auto-properties (C# 3), initializers (C# 6), getter-only (C# 6), init-only (C# 9), required (C# 11), `field` keyword (C# 14), expression-bodied, separate accessibility (C# 2). Bill prepares a new branch before the first draft. |
 | 44 | Constructors | 📥 Pull | Instance, static, primary (C# 12) |
 | 45 | Methods | 📥 Pull | Named/optional args (C# 4), non-trailing named (C# 7.2), expression-bodied (C# 6+), `ref`/`out`, `params` → `params` collections (C# 13), out variables (C# 7) |
 | 47 | Inheritance and polymorphism | 🟡 Merge | Reconcile existing Inheritance and Polymorphism articles; `virtual`/`override`/`new`, `sealed`, covariant returns (C# 9), `abstract`/`base`. |
@@ -309,10 +317,11 @@ the same retained records article instead of independent guides.
 | Approved architecture and task coverage | Decision 16, 2026-10-29 | Language foundations plus applied guidance; detailed splits/paths remain phase work, with concrete OOP redistribution after the Phase G checkpoint; no implementation started by approval |
 | Phase F complete | PRs 19-23, all merged | Pattern section, deconstruction, two pattern tutorials, four Build software guides, and the badge-label tutorial; see the [merge evidence](plan/phase-f-patterns-functional.md) |
 | Phase G complete | PR 24 / #56771, merged 2026-11-12 | Two-level namespace path, shared snippets, depth links and five retargeted legacy redirects; [reconciled 2026-11-16](plan/phase-g-namespaces-oop.md) |
+| Phase H framework shipped | PR 25 / #56923, merged 2026-11-25 | Three class foundation articles and revised class/object/record introductions; two source retirements, five legacy guides retained. PR 26 / #56749 and later H tasks remain. |
 | Former October completion target | #55930 / PR 23 | Delivered in #56528 on 2026-10-29; no next phase scheduled by this reconciliation |
-| Standard-aligned expansion | Phases H-P | Classes through Documentation comments; reuse current introductions and deeper reference |
+| Standard-aligned expansion | Remaining H follow-ons through P | Classes framework shipped, not the complete section; reuse current introductions and deeper reference |
 | Applied guidance and retirement | BS01-BS12 | Future backlog; BS12 isn't an article and BS11 may merge into existing coverage |
-| Programming Guide ledger | 82 articles at the 2026-10-16 snapshot | Two PR 22 source consolidations shipped in #56333; other rows remain future dispositions |
+| Programming Guide ledger | 82 articles at the 2026-10-16 snapshot | Two retirements in #56333 and two in #56923; five other PR 25 sources retained after foundation coverage. Remaining holds/dispositions stay open. |
 
 The old ~93-article estimate is retired rather than presented as a current census. Some rows are
 retained introductions, some are planned merges/extracts, and some are conditional new articles;
@@ -607,26 +616,32 @@ review justifies separate articles. Never publish those nodes before real conten
       # The program-structure introduction retains its URL and links here.
       href: fundamentals/namespaces/overview.md
 
-  # Approved construct taxonomy: resolve article splits after Phase G before OOP moves.
+  # Approved target taxonomy; #56923 shipped only the three Classes foundation
+  # children below. Introductions remain under Type system and Objects under OOP
+  # in the live TOC; later Classes children aren't shipped by that framework PR.
   # Canonical type-introduction URLs stay unchanged.
   # §15 Classes
   - name: Classes
     items:
-    - name: Overview
+    - name: C# classes
       href: fundamentals/types/classes.md
-    - name: Records
+    - name: C# record types
       # Retain canonical URL. Classes owns record classes; Structs owns the
       # record-class/record-struct comparison in this same article.
       href: fundamentals/types/records.md
-    - name: Objects
+    - name: Objects - create instances of types
       href: fundamentals/object-oriented/objects.md
-    - name: Class members
+    - name: Class members and instances
+      # SHIPPED: #56923, 2026-11-25; shared snippets/index/ project.
       href: fundamentals/classes/index.md
-    - name: Access modifiers
+    - name: Class accessibility
+      # SHIPPED: #56923; deeper legacy guide retained.
       href: fundamentals/classes/access-modifiers.md
     - name: Fields and constants
+      # SHIPPED: #56923; fields/constants legacy guides retained.
       href: fundamentals/classes/fields-constants.md
     - name: Properties
+      # PLANNED: PR 26 / #56749; draft waits for Bill's new branch.
       href: fundamentals/classes/properties.md
     - name: Constructors
       href: fundamentals/classes/constructors.md

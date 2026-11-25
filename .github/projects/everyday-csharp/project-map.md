@@ -80,7 +80,8 @@ material. The Programming Guide is a source to retire incrementally, not a new c
 The construct/design organization and expanded task coverage are **the approved active plan**.
 Exact per-article split boundaries, final paths, and redirect targets are resolved during assigned
 phase work; conditional outputs still require their gap reviews. Phase G's namespace checkpoint
-shipped in #56771; concrete OOP redistribution remains assigned future phase work. The
+shipped in #56771; H's first class/record framework shipped in #56923. Further OOP redistribution
+remains assigned phase work. The
 [execution sequence](plan/README.md#execution-sequence), after completed G Namespaces, is H Classes → I Structs →
 J Arrays/indexes/ranges → K Interfaces → L Enums → M Delegates/events → N Exceptions →
 O Attributes → P Documentation comments, then R's five applied harvesting batches.
@@ -91,7 +92,24 @@ Plan approval doesn't supersede #56333's
 shipped placement, turn open work into shipped content, start a phase, or authorize content moves,
 new issues, commits, or pushes.
 
-## Current reconciliation: Phases F and G complete
+## Current reconciliation: F/G complete; H framework shipped
+
+**Classes framework reconciliation, 2026-11-25:**
+[#56923](https://github.com/dotnet/docs/pull/56923), merged 2026-11-25 at
+`35f6dec804ff3931bf200a4d9d0a9c36e049cf34`, fixes #56748 and ships PR 25's framework.
+New `fundamentals/classes/{index,access-modifiers,fields-constants}.md` articles cover members
+and instances, class accessibility, and fields/constants. Existing class, object, and record
+introductions retain their URLs with revised teaching; one new `classes/snippets/index/`
+project supplies class examples, while record snippets remain under `types/snippets/records/`.
+Only `members.md` and `how-to-define-constants.md` retired with redirects; the five deeper
+access/fields/constants/static/nested guides remain with foundation pointers and BS12 holds.
+
+The live Classes node sits between Namespaces and the retained OOP node, with only the three
+new articles. This isn't full Phase H completion or the target TOC's complete regrouping.
+[Phase H](plan/phase-h-classes.md) and [source reconciliation](content-sources.md#classes-and-records-source-reconciliation)
+record exact shipped titles, paths, and boundaries. Properties (PR 26 / #56749), constructors,
+methods, inheritance, partial types, extensions, and the deeper Structs comparison remain.
+Bill deferred #56749's first draft until he prepares a new branch; this pass updates plans only.
 
 **Namespace reconciliation, 2026-11-16:** [#56771](https://github.com/dotnet/docs/pull/56771),
 merged 2026-11-12 at `678c15c744ffe9f18ad6d721a9553635f755db41`, closes #56747 and completes
@@ -106,9 +124,9 @@ early, prefers file-scoped declarations, defines simple names/qualification, and
 by project/file scope. References are a short note, not a second tutorial.
 [Decision 12b](decisions.md#decision-12b-consolidate-namespaces-14-to-one-canonical-article) and
 [Phase G](plan/phase-g-namespaces-oop.md) record as-shipped scope, exact sources, and review lessons
-(including the unavailable gist caveat). No retained Programming Guide, class/OOP, or reflection
-source was retired; H-P and R remain planned. H Classes is next in the existing sequence, not
-started by this reconciliation.
+(including the unavailable gist caveat). That namespace PR retired no retained Programming
+Guide, class/OOP, or reflection source. The later #56923 framework is recorded above;
+remaining H follow-ons, I-P, and R aren't completed by either reconciliation.
 
 As of 2026-10-29, all five [Phase F PRs](plan/phase-f-patterns-functional.md) are merged and
 present on this rebased planning branch: #55966 (overview, basic patterns, discards), #56113
@@ -120,5 +138,5 @@ status. See [TOC and articles](toc-and-articles.md#building-software) for shippe
 The [canonical authoring conventions](plan/README.md) now capture lessons
 from the merged pattern articles and tutorial: explain contextual choices, define and link
 concepts consistently, and let readers observe execution in a small incremental sample.
-The approved roadmap after G remains future work, separately adopted in Decision 16;
-this F/G reconciliation doesn't audit unrelated phase delivery status.
+The approved roadmap's remaining work follows Decision 16; this F/G/H-framework reconciliation
+doesn't audit unrelated phase delivery status.

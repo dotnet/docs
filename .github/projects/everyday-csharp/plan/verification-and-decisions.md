@@ -14,10 +14,17 @@
   2026-11-12 at `678c15c744ffe9f18ad6d721a9553635f755db41`, reconciled 2026-11-16.
   [Phase G evidence](phase-g-namespaces-oop.md) records final articles, shared snippet selection,
   live navigation, five retargeted redirects, retained sources, and the inaccessible gist.
-  H is next in the existing sequence; no later delivery or source retirement is implied.
+  That namespace PR implies no later delivery or source retirement.
+- PR 25's framework shipped in [#56923](https://github.com/dotnet/docs/pull/56923), merged
+  2026-11-25 at `35f6dec804ff3931bf200a4d9d0a9c36e049cf34`, fixes #56748.
+  [Phase H](phase-h-classes.md) records the three new foundation articles, retained/revised
+  introductions, class and records snippet homes, exact live navigation, and two retirements.
+  The five legacy access/fields/constants/static/nested guides remain with foundation pointers;
+  BS12 holds aren't released. H follow-ons and I-P/R remain open; #56749's first draft waits
+  for Bill's new branch. Don't infer complete Classes delivery from this framework.
 - Phases H-P explicitly account for Classes (§15), Structs (§16), Arrays (§17), extended indexing and slicing (§18), Interfaces (§19), Enums (§20), Delegates (§21), Exceptions (§22), Attributes (§23), and Documentation comments (Annex D). Unsafe code and all other appendixes are excluded.
 - We adopted the language-foundations/applied-guidance architecture and expanded task coverage on 2026-10-29 in [Decision 16](../decisions.md#decision-16-adopt-language-foundations-and-applied-guidance-as-the-governing-plan). Resolve detailed article splits, final paths, and redirect targets during assigned work; plan approval doesn't start implementation. Phase G remains namespace consolidation and the checkpoint before concrete OOP redistribution. PR #56333's shipped Building software placement isn't reopened.
-- Validate all relative planning-file links/anchors, new numeric task-ID uniqueness, legacy task routing, and the Programming Guide source ledger. Its 82-article count is the 2026-10-16 snapshot, not a current-file count after #56333 retired its two Programming Guide sources. Preserve those shipped rows as provenance; recheck remaining sources before future migrations.
+- Validate all relative planning-file links/anchors, new numeric task-ID uniqueness, legacy task routing, and the Programming Guide source ledger. Its 82-article count is the 2026-10-16 snapshot, not a current-file count after #56333 and #56923 each retired two Programming Guide sources. Preserve those shipped rows as provenance; recheck remaining sources before future migrations.
 - Existing canonical introductions and already-shipped material aren't new article commitments. Conditional outputs remain conditional until their gap review; don't claim the old rough article estimate as a current total.
 - Classes establishes shared rules and covers record classes; Structs and Interfaces teach their differences from that baseline. Verify that links replace repeated rules and the retained records article has coordinated PR 25/39 ownership. Paired record-class/record-struct samples must demonstrate assignment, shallow `with` copies, equality, and positional-property mutability without implying deep immutability.
 - On later migration PRs, name every extract and retained section's owner before deleting a mixed source. BS12 coordinates shared-source retirement; preserve useful examples, complete syntax, advanced material, redirects, TOC entries, inbound links, and snippet references.
@@ -26,6 +33,10 @@
 - Each remaining foundation task states its outcome, canonical source/owner, review slices, snippet evidence, exclusions, source holds, and navigation/redirect exit. Confirm paired record semantics and enum named-value validation explicitly; don't substitute a full spec-rule transcription.
 - Each applied task identifies exact source paths, useful extracted concepts, mechanics owners, contextual comparison examples, prerequisites, and retirement actions. Verify the BS12 hold ledger before deleting any shared source; unresolved advanced targets or BS11/array/XML article splits must stay visible.
 - Plan-only validation checks relative links/anchors, source existence (expanding source-path shorthand), task/batch/phase references, unchanged branch/HEAD/index, and no edits outside existing planning files. Compare this pass with the captured dirty baseline rather than overwrite prior edits. `docfx.json` builds publishing content under `docs` and other named roots, not this `.github/projects/` plan; no publishing build is required.
+- Repository Markdownlint excludes `.github/` in `.markdownlint-cli2.jsonc`, so these tracking
+  files have no applicable Markdownlint run. For plan-only edits, run `git diff --check` and
+  check changed planning links/anchors and factual receipts against the merged PR; don't build
+  snippets or publishing content that this pass doesn't modify.
 
 ## Decisions
 

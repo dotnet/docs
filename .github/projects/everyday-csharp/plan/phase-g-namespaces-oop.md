@@ -20,7 +20,8 @@ The rebased planning checkout matches the merged namespace articles, snippets, T
 
 **Outcome:** After expressions/statements/patterns, readers can organize types and resolve a
 naming collision before deeper class work. G is a completed checkpoint in the
-[execution sequence](README.md#execution-sequence); H is the next planned foundation phase.
+[execution sequence](README.md#execution-sequence); H follows it, with PR 25's later framework
+delivery recorded in [Legacy PR routing](#legacy-pr-routing).
 
 | Delivered unit | Final owner and scope | Evidence at completion |
 |---|---|---|
@@ -105,6 +106,12 @@ choice or navigation/redirect repair is inferred from that access limitation.
 ## Legacy PR routing
 
 Historical identifiers are retained; their work isn't scheduled twice.
+
+**Later delivery, reconciled 2026-11-25:** PR 25's class/record framework shipped in
+[#56923](https://github.com/dotnet/docs/pull/56923), not under the historical
+`object-oriented/` destinations below. [Phase H](phase-h-classes.md) records the three new
+`fundamentals/classes/` articles, revised introductions, and two source retirements.
+PR 26-28 and later class follow-ons remain; the OOP index only gains a repaired member link.
 
 | Legacy task | Current plan owner |
 |---|---|

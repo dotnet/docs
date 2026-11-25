@@ -20,7 +20,8 @@ Exact source splits, final paths, and redirects remain implementation decisions.
 
 The [source ledger](plan/programming-guide-inventory.md) accounts for all **82** Programming
 Guide Markdown articles outside snippet trees at its 2026-10-16 snapshot. Two source consolidations
-subsequently shipped in #56333; the remaining dispositions stay future work. It separates construct teaching, Building software
+subsequently shipped in #56333, and two more sources retired in #56923; the remaining dispositions
+stay future work except for the explicitly shipped introductory coverage below. It separates construct teaching, Building software
 extracts, specialized material retained until an advanced/reference owner is approved, and index
 retirement. Every source appears once; shared extracts don't authorize premature source deletion.
 
@@ -50,8 +51,9 @@ advanced routes and conditional article splits stay explicit implementation ques
 | Nullable migration | Existing migration articles | Pull |
 | String interpolation | `tutorials/string-interpolation.md` | Pull + modernize |
 | String how-tos (5 articles) | `how-to/` string articles | Pull |
-| Access modifiers | `programming-guide/classes-and-structs/access-modifiers.md` | Pull + revise |
-| Fields and constants | `programming-guide/classes-and-structs/fields.md` + `constants.md` | Merge + revise |
+| Class members and instances | `programming-guide/classes-and-structs/members.md`; static-class and nested-type introductions | ✅ Shipped at `fundamentals/classes/index.md` in #56923; only `members.md` deleted/redirected, static/nested guides retained |
+| Class accessibility | `programming-guide/classes-and-structs/access-modifiers.md` | ✅ Foundation shipped at `fundamentals/classes/access-modifiers.md` in #56923; source retained with pointer and deeper coverage |
+| Fields and constants | `programming-guide/classes-and-structs/fields.md` + `constants.md` + `how-to-define-constants.md` | ✅ Foundation shipped at `fundamentals/classes/fields-constants.md` in #56923; only the how-to deleted/redirected, fields/constants guides retained |
 | Properties | `programming-guide/classes-and-structs/properties.md` + related | Pull + major revise for everday C# features |
 | Constructors | `programming-guide/classes-and-structs/constructors.md` + related | Pull + add primary constructors |
 | Methods | `programming-guide/classes-and-structs/methods.md` + `methods.md` | Merge mechanics in PR 28; extract API-shape guidance into BS03/BS04 |
@@ -69,6 +71,25 @@ advanced routes and conditional article splits stay explicit implementation ques
 | Type conversions | `programming-guide/types/` casting/conversion articles | Pull + revise |
 | Async overview | `asynchronous-programming/index.md` | Pull + redirect |
 | Tutorials (6 articles) | `tutorials/` section | Move into Fundamentals tutorials |
+
+## Classes and records source reconciliation
+
+**Reconciled 2026-11-25:** [#56923](https://github.com/dotnet/docs/pull/56923), merged
+2026-11-25 at `35f6dec804ff3931bf200a4d9d0a9c36e049cf34`, fixes #56748.
+[Phase H](plan/phase-h-classes.md#pr-25--classes-objects-accessibility-fields-and-constants)
+records the shipped framework, titles, navigation, and shared `classes/snippets/index/` project.
+The existing `types/classes.md`, `types/records.md`, and `object-oriented/objects.md` retain
+their canonical URLs; records snippets remain in `types/snippets/records/`, with a new
+`RecordClasses.cs` demo and revised class/struct assignment comparison.
+
+The only retired sources are `programming-guide/classes-and-structs/members.md`
+(redirect to `/dotnet/csharp/fundamentals/classes`) and `how-to-define-constants.md`
+(redirect to `/dotnet/csharp/fundamentals/classes/fields-constants`).
+The legacy access, fields, constants, static-class, and nested-type guides remain with
+foundation pointers, their deeper material, and existing snippet consumers. No legacy snippet
+files were deleted by this PR. Their applied/advanced extracts and final retirement routes
+remain subject to BS12 holds. Properties, constructors, methods, inheritance, partial types,
+and extensions remain follow-ons; #56749's first draft waits for Bill's new branch.
 
 ## Building software source reconciliation
 

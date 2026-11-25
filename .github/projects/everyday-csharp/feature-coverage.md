@@ -27,7 +27,13 @@ These features are "Everyday C#" and receive full treatment in Fundamentals with
 **Namespace status, reconciled 2026-11-16:** [#56771](https://github.com/dotnet/docs/pull/56771)
 shipped 2026-11-12. Program structure retains recognition-level guidance; canonical declaration,
 alias, and import depth is now **Organize types with namespaces**
-(`fundamentals/namespaces/overview.md`). G is complete; H-P and R remain future work.
+(`fundamentals/namespaces/overview.md`). G is complete.
+
+**Classes framework, reconciled 2026-11-25:** [#56923](https://github.com/dotnet/docs/pull/56923)
+shipped PR 25's class members, accessibility, and fields/constants foundation plus revised
+class/object/record introductions. H follow-ons, I-P, and applied R remain open. The
+[Phase H receipt](plan/phase-h-classes.md) distinguishes shipped beginner coverage from
+reference pointers and retained sources; no complete Classes-section delivery is implied.
 
 | Feature | Version | Planned or shipped location (see status) |
 |---|---|---|
@@ -39,14 +45,14 @@ alias, and import depth is now **Organize types with namespaces**
 | Raw string literals | C# 11 | Strings > Raw string literals |
 | List patterns | C# 11 | Pattern matching > List and slice patterns; shipped in #56113 |
 | File-local types | C# 11 | Program structure (in context of top-level statements) |
-| Required members | C# 11 | Classes > Properties/fields (PR 25-27); initialization choices in BS02 |
+| Required members | C# 11 | #56923 explains `required` on the retained records example; full property/initialization mechanics remain PR 26-27, with initialization choices in BS02 |
 | Auto-default structs | C# 11 | Structs (PR 39); retained Type system introduction URL |
 | Record structs | C# 10 | Structs (PR 39): differences from record classes in retained `types/records.md` |
 | Global using directives | C# 10 | Namespaces > Organize types with namespaces; project-wide versus regular file/namespace-body imports and SDK implicit usings, shipped in #56771 |
 | File-scoped namespaces | C# 10 | Namespaces > Organize types with namespaces; preferred common layout, equivalent block form and repeated declarations across files, shipped in #56771; short Program structure introduction retained |
 | Parameterless struct constructors | C# 10 | Structs (PR 39) |
-| Records and `with` expressions | C# 9 | Classes > Records (PR 25); record-class/record-struct comparison in PR 39 |
-| Init-only setters | C# 9 | Classes > Properties (PR 26) |
+| Records and `with` expressions | C# 9 | Record-class depth shipped in #56923 at retained `fundamentals/types/records.md`: reference assignment, value equality, shallow `with` copies, and shared array state. Compact class/struct comparison retained; deeper comparison remains PR 39. |
+| Init-only setters | C# 9 | #56923 explains positional record-class defaults and why init-only access doesn't imply deep immutability; full property mechanics remain PR 26 |
 | Top-level statements | C# 9 | Program structure |
 | Pattern matching (relational, combinator, parenthesized, type) | C# 9 | Pattern matching; type patterns shipped in #55966, relational/logical/parenthesized in #56113 |
 | Native sized integers (`nint`) | C# 9 | Type system > Built-in types (mention) |
@@ -59,9 +65,9 @@ alias, and import depth is now **Organize types with namespaces**
 | Static local functions | C# 8 | Building software > Local functions: explicit inputs vs. captured context; shipped in #56333 |
 | Readonly members | C# 8 | Structs (PR 39) |
 | Tuple comparison `==` and `!=` | C# 7.3 | Type system > Tuples |
-| Attributes on backing fields | C# 7.3 | Classes > Fields/properties (PR 25-26); Attributes (PR 35) |
+| Attributes on backing fields | C# 7.3 | Remaining property/attribute coverage (PR 26/35); not taught by #56923's fields/constants foundation |
 | Non-trailing named arguments | C# 7.2 | Classes > Methods (PR 28) |
-| `private protected` accessibility | C# 7.2 | Classes > Access modifiers (PR 25) |
+| `private protected` accessibility | C# 7.2 | Class accessibility shipped in #56923 at `fundamentals/classes/access-modifiers.md`; combined modifiers are reference pointers, not a full worked lesson |
 | Digit separator after base specifier | C# 7.2 | Type system > Built-in types |
 | Async Main | C# 7.1 | Program structure > Main |
 | `default` expressions | C# 7.1 | Type system > Built-in types |
@@ -93,7 +99,7 @@ alias, and import depth is now **Organize types with namespaces**
 | Iterators (`yield`) | C# 2 | Building software > Iterators: synchronous `yield return`/`yield break`, `foreach`, deferred production, iterator vs. completed collection or ordinary loop; shipped in #56333 |
 | Nullable value types | C# 2 | Null safety > Nullable value types |
 | Getter/setter separate accessibility | C# 2 | Classes > Properties (PR 26) |
-| Static classes | C# 2 | Classes (PR 25); retained introduction URL |
+| Static classes | C# 2 | Shipped in #56923 at `fundamentals/classes/index.md#static-classes`; short class introduction URL retained, specialized legacy static-class guide retained with pointer |
 | Covariance and contravariance | C# 2 | Type system > Generics |
 | Classes, Structs, Enums, Interfaces | C# 1 | Explicit phases H/I/K/L; retain current introduction URLs and early type-system links |
 | Events | C# 1 | Delegates > Events (PR 44); notification choices in BS04 |

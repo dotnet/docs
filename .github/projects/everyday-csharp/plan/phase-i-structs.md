@@ -8,6 +8,13 @@ Use Classes as the shared baseline, following the standard's strategy of explain
 
 **Reuse, not new coverage:** revise the existing `docs/csharp/fundamentals/types/structs.md`. Its early Type system link remains useful; render its deeper learning path at the standard-aligned Structs checkpoint rather than create `fundamentals/structs/structs.md` with duplicate content.
 
+**PR 25 baseline shipped, 2026-11-25:** [#56923](https://github.com/dotnet/docs/pull/56923)
+revised the retained `types/records.md` for record classes and kept a compact class/struct
+assignment and positional-property comparison. `types/snippets/records/RecordStruct.cs` now
+uses the new `RecordClasses.cs` demo's `Route`. Preserve that baseline; PR 39's deeper paired
+assignment/`with`/equality/mutation work and `types/structs.md` revision remain pending.
+This framework delivery doesn't complete Phase H or start Phase I.
+
 Sources:
 
 - `docs/csharp/fundamentals/types/structs.md` and `records.md`.

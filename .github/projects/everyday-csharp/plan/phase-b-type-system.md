@@ -24,6 +24,12 @@
 
 > **Later roadmap ownership:** the PR 4 inventory above is shipped history. [Classes / PR 25](phase-h-classes.md#record-classes-within-pr-25) now owns record-class depth in the retained `types/records.md`; [Structs / PR 39](phase-i-structs.md) owns the explicit record-class/record-struct comparison. Classes supplies the common baseline for struct/interface differences. Keep early Type system orientation and canonical links without scheduling another copy of these articles.
 
+> **As shipped, 2026-11-25:** #56923 revised `types/classes.md` (**C# classes**) and
+> `types/records.md` (**C# record types**) at their retained URLs. Class examples now share
+> `classes/snippets/index/`; record examples remain in `types/snippets/records/`, with new
+> record-class depth and a compact retained class/struct comparison. PR 39's deeper comparison
+> remains pending; these revisions aren't a second PR 4 delivery or all of Phase H.
+
 ### PR 5 — Type system: tuples, interfaces, generics
 
 [#52891](https://github.com/dotnet/docs/pull/52891) *Merged*

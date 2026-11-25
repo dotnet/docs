@@ -297,7 +297,12 @@ This isn't permission to leave Programming Guide as its permanent home.
 
 This is a tracking/redistribution task, not a new Fundamentals article.
 
-- Complete the remaining per-source actions in the [inventory](programming-guide-inventory.md), including retained advanced/reference material and legacy indexes; don't repeat routes already shipped in #56333.
+- Complete the remaining per-source actions in the [inventory](programming-guide-inventory.md), including retained advanced/reference material and legacy indexes; don't repeat routes already shipped in #56333 or #56923.
+- **Foundation receipt, 2026-11-25:** #56923 retires only `members.md` and
+  `how-to-define-constants.md`, with redirects to Classes and Fields and constants.
+  The access/fields/constants/static/nested guides retain deeper content and gain foundation
+  pointers. Their useful applied extracts and advanced retirement routes remain held;
+  PR 25's shipped framework doesn't complete BS01/BS03/BS09 or BS12.
 - Don't delete entire mixed articles after copying only their introductory paragraphs. Record each extract, remaining destination, snippets, redirect, TOC removal, and inbound-link repair.
 - Advanced generic authoring/variance, runtime behavior, custom delegate/multicast rules, custom events, and compatibility/versioning are not Building software beginner articles just because they live in Programming Guide.
 - Propose named advanced/reference homes before retiring retained material. No indefinite new Programming Guide destinations are introduced.

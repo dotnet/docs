@@ -1,10 +1,10 @@
-> Part of the [Everyday C# plan](README.md). Future backlog, not an October commitment.
+> Part of the [Everyday C# plan](README.md). PR 25's framework shipped; follow-ons remain backlog.
 
 ## Phase H: Classes (§15)
 
 Teach class and member semantics, including record classes, as the common baseline. Following the standard's teaching strategy, [Structs](phase-i-structs.md) and [Interfaces](phase-k-interfaces.md) explain their differences from classes rather than repeat the shared rules. Then link to [Building software](phase-r-building-software.md) for design choices. This redistributes the construct portions of legacy PR 25-31; it doesn't duplicate their old OOP articles.
 
-**Canonical-home plan:** retain `fundamentals/types/classes.md` as the short class introduction. Plan `fundamentals/classes/` articles for member and inheritance depth. Retain the existing objects article where useful. Decision 16 approves this construct-first coverage; resolve exact source splits and final destinations during assigned work, after the Phase G namespace checkpoint and before concrete OOP redistribution. No live TOC change or phase start is part of this planning edit.
+**Canonical homes:** retain `fundamentals/types/classes.md` as the short class introduction. PR #56923 established `fundamentals/classes/` for member depth and retained `fundamentals/object-oriented/objects.md` for object references, identity, and lifetime. Later member/inheritance destinations remain proposed until their assigned work ships. Decision 16's construct-first coverage and class-first teaching remain intact; this reconciliation changes tracking only.
 
 Reuse `fundamentals/types/records.md` for record coverage, surfaced in this Classes checkpoint rather than creating a second records article. PR 25 owns the record-class explanation; PR 39 owns the record-class/record-struct comparison in that same canonical article and the struct-specific teaching in `types/structs.md`. The early Type system overview still links to these introductions.
 
@@ -12,21 +12,58 @@ All source paths below are relative to `docs/csharp/`. Destinations described as
 
 ### PR 25 — Classes, objects, accessibility, fields, and constants
 
-- Reconcile `fundamentals/types/classes.md` and `fundamentals/object-oriented/objects.md`; don't write a third definition of a class.
-- Harvest `programming-guide/classes-and-structs/{members,access-modifiers,fields,constants,static-classes-and-static-class-members,nested-types}.md` plus `how-to-define-constants.md`.
-- Proposed outputs: `fundamentals/classes/{index,access-modifiers,fields-constants}.md`. Define class/instance/static members, accessibility, constants versus instance state, and a small nested-type example only where it clarifies scope.
-- Extract API-surface and state-visibility decisions into BS03. Preserve specialized `volatile`, fixed buffers, ref fields, and memory-model content in reference/advanced destinations rather than import it into Fundamentals.
-- Done when the early class introduction routes to a single member-depth owner, examples distinguish instance/static state, and every retired source has a redirect and repaired inbound/snippet links.
+**✅ Framework shipped:** [#56923](https://github.com/dotnet/docs/pull/56923), merged
+2026-11-25 at `35f6dec804ff3931bf200a4d9d0a9c36e049cf34`, fixes #56748.
+This completes the PR 25 framework and selected articles, not all of Phase H or its source retirements.
+
+- New articles: **Class members and instances** at `fundamentals/classes/index.md`,
+  **Class accessibility** at `fundamentals/classes/access-modifiers.md`, and
+  **Fields and constants** at `fundamentals/classes/fields-constants.md`.
+- Revised introductions retain their URLs: **C# classes** at `fundamentals/types/classes.md`
+  and **Objects - create instances of types** at `fundamentals/object-oriented/objects.md`.
+  The former supplies declaration/reference basics; the latter follows references, identity,
+  equality, and lifetime. Neither becomes another member-depth owner.
+- Coverage includes independent instances/shared static state, reference assignment, static
+  classes, a small private nested type, common/default accessibility and containing-type limits,
+  field initialization, `readonly`, `const`, and `static readonly`. Combined accessibility
+  modifiers and specialized fields link to reference; backing-field attributes aren't taught here.
+- All three new articles, the class introduction, and the objects article share
+  `fundamentals/classes/snippets/index/{Classes.csproj,Program.cs}`. The new executable targets
+  `net11.0` with nullable and implicit usings enabled; there aren't separate access/fields projects.
+- Deleted only `programming-guide/classes-and-structs/members.md` and
+  `how-to-define-constants.md`. Their redirects target `/dotnet/csharp/fundamentals/classes`
+  and `/dotnet/csharp/fundamentals/classes/fields-constants`, respectively.
+  Their legacy TOC entries were removed; `fundamentals/object-oriented/index.md` now links
+  to the member overview, and `how-to/index.md` links directly to the new constants section.
+- The legacy `access-modifiers.md`, `fields.md`, `constants.md`,
+  `static-classes-and-static-class-members.md`, and `nested-types.md` remain published with
+  introductory pointers to the new articles. They weren't deleted or redirected. Applied
+  API/state extracts and advanced/reference preservation remain on the
+  [source holds](programming-guide-inventory.md#shared-source-retirement-holds); BS03/BS12 aren't complete.
+- The live Classes TOC node sits after Namespaces and before the retained Object-oriented
+  programming node, with only the three new articles (`toc.yml`, lines 167-180 at the merge).
+  The early Type system entries retain
+  their URLs under the names **C# classes** and **C# record types**. The target TOC's broader
+  Classes grouping remains a plan, not an already-shipped navigation move.
 
 #### Record classes within PR 25
 
-- Reconcile existing `fundamentals/types/records.md`, the records tutorial, and equality guidance; retain their canonical URLs and distinct outcomes. This extends the already-shipped PR 4 coverage, not a new records introduction.
-- Teach `record` / `record class` as reference types with synthesized members, positional declarations, value-based equality, and `with` expressions. Compare an ordinary class with a record class without implying record classes acquire struct/value-type copying semantics.
-- Explain assignment versus a `with` copy, shared reference-valued members, and shallow copying. Positional record-class properties are init-only by default; records aren't necessarily immutable and init-only properties don't guarantee deep immutability.
-- Coordinate property/constructor mechanics with PR 26/27 and record-class inheritance differences with PR 29. Link the existing equality owner rather than repeat its full lesson.
-- PR 39 adds the explicit `record class` versus `record struct` comparison. Done when examples distinguish reference identity, value equality, and copying, and both phases use one records owner instead of competing guides.
+**✅ Record-class revision shipped in #56923:** **C# record types** retains
+`fundamentals/types/records.md`. It teaches positional declarations and generated members,
+reference assignment, value equality, `with`, shared array references/shallow copying,
+init-only versus mutable properties, deconstruction, and the record-inheritance boundary.
+It links the existing equality, deconstruction, records tutorial, property/constructor,
+inheritance, and reference owners rather than replace them.
+
+The existing `fundamentals/types/snippets/records/` project gains `RecordClasses.cs`
+(`Route` and `Reading`); its `Program.cs` invokes the new demo. `RecordStruct.cs` now uses
+`Route` for the assignment comparison. The article retains a compact record-class/record-struct
+comparison, including positional-property defaults; [PR 39](phase-i-structs.md) still owns the
+deeper paired struct semantics and cross-links. PR 26/27/29 mechanics remain follow-ons.
 
 ### PR 26 — Properties
+
+**Next article, not started here:** [#56749](https://github.com/dotnet/docs/issues/56749).
 
 - Harvest `programming-guide/classes-and-structs/{properties,auto-implemented-properties,using-properties,restricting-accessor-accessibility}.md` and `how-to-declare-and-use-read-write-properties.md`.
 - Proposed output: `fundamentals/classes/properties.md`. Cover accessors, auto/computed/field-backed properties, `init`, `required`, and accessor accessibility using released syntax.

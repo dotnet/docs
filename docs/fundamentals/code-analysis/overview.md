@@ -54,7 +54,7 @@ The following rules are enabled, by default, as errors or warnings in .NET 11. A
 | [CA2256](quality-rules/ca2256.md) | Usage | Warning | .NET 6 | All members declared in parent interfaces must have an implementation in a `DynamicInterfaceCastableImplementation`-attributed interface |
 | [CA2257](quality-rules/ca2257.md) | Usage | Warning | .NET 6 | Members defined on an interface with the `DynamicInterfaceCastableImplementationAttribute` should be `static` |
 | [CA2258](quality-rules/ca2258.md) | Usage | Warning | .NET 6 | Providing a `DynamicInterfaceCastableImplementation` interface in Visual Basic is unsupported |
-| [CA2259](quality-rules/ca2259.md) | Usage | Warning | .NET 7 | `ThreadStatic` only affects static fields |
+| [CA2259](quality-rules/ca2259.md) | Usage | Warning | .NET 7 | Attribute has no effect |
 | [CA2260](quality-rules/ca2260.md) | Usage | Warning | .NET 7 | Use correct type parameter |
 | [CA2261](quality-rules/ca2261.md) | Usage | Warning | .NET 8 | Do not use `ConfigureAwaitOptions.SuppressThrowing` with `Task<TResult>` |
 | [CA2264](quality-rules/ca2264.md) | Usage | Warning | .NET 9 | Do not pass a non-nullable value to `ArgumentNullException.ThrowIfNull` |
@@ -91,7 +91,7 @@ The following rules are enabled, by default, as errors or warnings in .NET 10. A
 | [CA2256](quality-rules/ca2256.md) | Usage | Warning | .NET 6 | All members declared in parent interfaces must have an implementation in a `DynamicInterfaceCastableImplementation`-attributed interface |
 | [CA2257](quality-rules/ca2257.md) | Usage | Warning | .NET 6 | Members defined on an interface with the `DynamicInterfaceCastableImplementationAttribute` should be `static` |
 | [CA2258](quality-rules/ca2258.md) | Usage | Warning | .NET 6 | Providing a `DynamicInterfaceCastableImplementation` interface in Visual Basic is unsupported |
-| [CA2259](quality-rules/ca2259.md) | Usage | Warning | .NET 7 | `ThreadStatic` only affects static fields |
+| [CA2259](quality-rules/ca2259.md) | Usage | Warning | .NET 7 | Attribute has no effect |
 | [CA2260](quality-rules/ca2260.md) | Usage | Warning | .NET 7 | Use correct type parameter |
 | [CA2261](quality-rules/ca2261.md) | Usage | Warning | .NET 8 | Do not use `ConfigureAwaitOptions.SuppressThrowing` with `Task<TResult>` |
 | [CA2264](quality-rules/ca2264.md) | Usage | Warning | .NET 9 | Do not pass a non-nullable value to `ArgumentNullException.ThrowIfNull` |
@@ -126,7 +126,7 @@ The following rules are enabled, by default, as errors or warnings in .NET 9. Ad
 | [CA2256](quality-rules/ca2256.md) | Usage | Warning | .NET 6 | All members declared in parent interfaces must have an implementation in a `DynamicInterfaceCastableImplementation`-attributed interface |
 | [CA2257](quality-rules/ca2257.md) | Usage | Warning | .NET 6 | Members defined on an interface with the `DynamicInterfaceCastableImplementationAttribute` should be `static` |
 | [CA2258](quality-rules/ca2258.md) | Usage | Warning | .NET 6 | Providing a `DynamicInterfaceCastableImplementation` interface in Visual Basic is unsupported |
-| [CA2259](quality-rules/ca2259.md) | Usage | Warning | .NET 7 | `ThreadStatic` only affects static fields |
+| [CA2259](quality-rules/ca2259.md) | Usage | Warning | .NET 7 | Attribute has no effect |
 | [CA2260](quality-rules/ca2260.md) | Usage | Warning | .NET 7 | Use correct type parameter |
 | [CA2261](quality-rules/ca2261.md) | Usage | Warning | .NET 8 | Do not use `ConfigureAwaitOptions.SuppressThrowing` with `Task<TResult>` |
 | [CA2264](quality-rules/ca2264.md) | Usage | Warning | .NET 9 | Do not pass a non-nullable value to `ArgumentNullException.ThrowIfNull` |
@@ -159,7 +159,7 @@ The following rules are enabled, by default, as errors or warnings in .NET 8. Ad
 | [CA2256](quality-rules/ca2256.md) | Usage | Warning | .NET 6 | All members declared in parent interfaces must have an implementation in a `DynamicInterfaceCastableImplementation`-attributed interface |
 | [CA2257](quality-rules/ca2257.md) | Usage | Warning | .NET 6 | Members defined on an interface with the `DynamicInterfaceCastableImplementationAttribute` should be `static` |
 | [CA2258](quality-rules/ca2258.md) | Usage | Warning | .NET 6 | Providing a `DynamicInterfaceCastableImplementation` interface in Visual Basic is unsupported |
-| [CA2259](quality-rules/ca2259.md) | Usage | Warning | .NET 7 | `ThreadStatic` only affects static fields |
+| [CA2259](quality-rules/ca2259.md) | Usage | Warning | .NET 7 | Attribute has no effect |
 | [CA2260](quality-rules/ca2260.md) | Usage | Warning | .NET 7 | Use correct type parameter |
 | [CA2261](quality-rules/ca2261.md) | Usage | Warning | .NET 8 | Do not use `ConfigureAwaitOptions.SuppressThrowing` with `Task<TResult>` |
 

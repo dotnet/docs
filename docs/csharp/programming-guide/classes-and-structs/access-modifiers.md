@@ -2,11 +2,15 @@
 title: "Access Modifiers"
 description: All types and type members in C# have an accessibility level that controls whether they can be used from other code. Review this list of access modifiers.
 ms.date: 12/15/2025
+ai-usage: ai-assisted
 helpviewer_keywords:
   - "C# Language, access modifiers"
   - "access modifiers [C#], about"
 ---
 # Access modifiers (C# programming guide)
+
+> [!TIP]
+> For the class foundation, start with [Class accessibility](../../fundamentals/classes/access-modifiers.md). This guide also covers cross-type access rules, signature constraints, and friend-assembly guidance.
 
 All types and type members have an accessibility level. The accessibility level controls whether other code in your assembly or other assemblies can use them. An [assembly](../../../standard/glossary.md#assembly) is a *.dll* or *.exe* created by compiling one or more *.cs* files in a single compilation. Use the following access modifiers to specify the accessibility of a type or member when you declare it:
 

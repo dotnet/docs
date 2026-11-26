@@ -125,6 +125,9 @@ try {
         'merge.md' = @{ Text = "---`ntitle: Fixture`n<<: *defaults`n---`nBody"; Error = 'YAML merge keys' }
         'block.md' = @{ Text = "---`nms.update-cycle: |`n  old`n---`nBody"; Error = 'ambiguous target scalar' }
         'folded.md' = @{ Text = "---`nms.update-cycle: old`n  continuation`n---`nBody"; Error = 'Multiline or structured' }
+        'indentless-list.md' = @{ Text = "---`nms.update-cycle:`n- old`n---`nBody"; Error = 'Multiline or structured' }
+        'indentless-list-comments.md' = @{ Text = "---`r`nms.update-cycle: # list`r`n`r`n# comment`r`n- old`r`n---`r`nBody"; Error = 'Multiline or structured' }
+        'indentless-list-empty-item.md' = @{ Text = "---`nms.update-cycle:`n-`n---`nBody"; Error = 'Multiline or structured' }
         'list.md' = @{ Text = "---`nms.update-cycle: [old, older]`n---`nBody"; Error = 'ambiguous target scalar' }
         'missing.md' = @{ Text = 'No frontmatter'; Error = 'opening YAML frontmatter delimiters' }
         'spaced-duplicate.md' = @{ Text = "---`nms.update-cycle: old`nms.update-cycle : older`n---`nBody"; Error = 'Duplicate frontmatter key' }
@@ -177,6 +180,11 @@ try {
     Preview $manifest
     $null = Apply $manifest
     Assert ([IO.File]::ReadAllText((Join-Path $fixtureRoot 'spaced.md')) -ceq "---`ncustom.key  :   new-value # keep spacing`n---`nBody") 'Existing key spacing was lost or a duplicate key was added'
+    Write-Fixture 'unrelated-list.md' "---`nms.update-cycle: old`nkeywords:`n- stable`n---`nBody"
+    $manifest = Make-Manifest unrelated-list @('unrelated-list.md')
+    Preview $manifest
+    $null = Apply $manifest
+    Assert ([IO.File]::ReadAllText((Join-Path $fixtureRoot 'unrelated-list.md')) -ceq "---`nms.update-cycle: 3650-days`nkeywords:`n- stable`n---`nBody") 'An unrelated indentless sequence prevented or changed the scalar edit'
     "Passed $assertions assertions."
 }
 finally {

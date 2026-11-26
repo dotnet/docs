@@ -142,7 +142,7 @@ function Get-Edit {
     $scalar = ConvertTo-Scalar $Value
     if ($field.Success) {
         $parsed = Read-Scalar $field.Groups['raw'].Value $Article.Path
-        if ($body.Substring($field.Index + $field.Length) -match '\A(?:[ \t]*(?:#[^\r\n]*)?\r?\n)*[ \t]+[^#\s]') {
+        if ($body.Substring($field.Index + $field.Length) -match '\A(?:[ \t]*(?:#[^\r\n]*)?\r?\n)*(?:[ \t]+[^#\s]|-(?=[ \t]|\r?\n|$))') {
             throw "Multiline or structured target values are not supported: $($Article.Path)"
         }
         $currentValue = $parsed.Value

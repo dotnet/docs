@@ -20,6 +20,10 @@ In .NET Core 3.0 and later, the default name for a resource manifest is used whe
 
 If the resource file is colocated with a source file (*.cs* or *.vb*) of the same root file name, the full name of the first type that's defined in the source file is used for the manifest file name. For example, if `MyNamespace.Form1` is the first type defined in *Form1.cs*, and *Form1.cs* is colocated with *Form1.resx*, the generated manifest name for that resource file is *MyNamespace.Form1.resources*.
 
+For a culture-neutral `.txt` file that you include as an `EmbeddedResource`, the default manifest name combines the root namespace and relative path. MSBuild uses dots for path separators, normalizes directory names to valid namespace identifiers, and preserves the file name and extension. For example, with the root namespace `MyApp`, `Demo-Folder/Demo-File.txt` becomes `MyApp.Demo_Folder.Demo-File.txt`.
+
+Pass the full manifest name to <xref:System.Reflection.Assembly.GetManifestResourceStream(System.String)>. To set an exact name, use [LogicalName metadata](#logicalname-metadata).
+
 ## LogicalName metadata
 
 If a resource file is explicitly included in the project file as an `EmbeddedResource` item with `LogicalName` metadata, the `LogicalName` value is used as the manifest name. `LogicalName` takes precedence over any other metadata or setting.

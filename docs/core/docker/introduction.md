@@ -1,8 +1,9 @@
 ---
 title: Introduction to Docker
 description: This article provides an introduction and overview to Docker containers in the context of a .NET application.
-ms.date: 10/20/2025
+ms.date: 11/17/2026
 ms.custom: "mvc"
+ai-usage: ai-assisted
 ---
 
 # Introduction to .NET and Docker
@@ -13,40 +14,39 @@ Docker provides a great [overview](https://docs.docker.com/engine/docker-overvie
 
 ## .NET images
 
-Official .NET container images are published to the [Microsoft Artifact Registry](https://mcr.microsoft.com/) and are discoverable on the [Docker Hub](https://hub.docker.com/_/microsoft-dotnet/). There are [runtime images](https://mcr.microsoft.com/product/dotnet/aspnet/) for production and [SDK images](https://mcr.microsoft.com/product/dotnet/sdk/) for building your code, for Linux (Alpine, Debian, Ubuntu, Mariner) and Windows. For more information, see [.NET container images](container-images.md).
+Official .NET container images are published to [Microsoft Artifact Registry](https://mcr.microsoft.com/) and discoverable on [Docker Hub](https://hub.docker.com/_/microsoft-dotnet/). Microsoft provides [runtime images](https://mcr.microsoft.com/product/dotnet/aspnet/) for production and [SDK images](https://mcr.microsoft.com/product/dotnet/sdk/) for building your code. Images for .NET 10 and .NET 11 are available for Linux (Alpine, Azure Linux, and Ubuntu) and Windows (Nano Server and Windows Server Core). Because the set of supported distributions changes over time, check the [full tag listing](https://github.com/dotnet/dotnet-docker/blob/main/README.aspnet.md#full-tag-listing) for the current list of images. For more information, see [.NET container images](container-images.md).
 
 .NET images are regularly updated whenever a new .NET patch is published or when an operating system base image is updated.
 
-[Chiseled container images](https://devblogs.microsoft.com/dotnet/announcing-dotnet-chiseled-containers/) are Ubuntu container images with a minimal set of components required by the .NET runtime. These images are ~100 MB smaller than the regular Ubuntu images and have fewer [CVEs](https://www.cve.org/) since they have fewer components. In particular, they don't contain a shell or package manager, which significantly improves their security profile. They also include a [non-root user](https://devblogs.microsoft.com/dotnet/securing-containers-with-rootless/) and are configured with that user enabled.
+[Chiseled container images](https://devblogs.microsoft.com/dotnet/announcing-dotnet-chiseled-containers/) are Ubuntu container images with only the minimal components required by the .NET runtime. These images are smaller than regular Ubuntu images and have fewer [CVEs](https://www.cve.org/) because they contain fewer components. In particular, they omit a shell and package manager, which reduces their attack surface. They also include a [non-root user](https://devblogs.microsoft.com/dotnet/securing-containers-with-rootless/) and run as that user by default.
 
 ## Building container images
 
 You can build a container image with a **Dockerfile** or rely on the [.NET SDK to produce an image](../containers/sdk-publish.md). For samples on building images, see [dotnet/dotnet-docker](https://github.com/dotnet/dotnet-docker/blob/main/samples/README.md) and [dotnet/sdk-container-builds](https://github.com/dotnet/sdk-container-builds).
 
-The following example demonstrates building and running a container image in a few quick steps (supported with .NET 8 and .NET 7.0.300).
+The following example builds a container image and runs it as a container. These steps work with the .NET 10 SDK and the .NET 11 SDK. The example output uses the .NET 10 SDK.
 
 ```bash
 $ dotnet new webapp -o webapp
 $ cd webapp/
 $ dotnet publish -t:PublishContainer
-MSBuild version 17.8.3+195e7f5a3 for .NET
-  Determining projects to restore...
-  All projects are up-to-date for restore.
-  webapp -> /home/rich/webapp/bin/Release/net8.0/webapp.dll
-  webapp -> /home/rich/webapp/bin/Release/net8.0/publish/
-  Building image 'webapp' with tags 'latest' on top of base image 'mcr.microsoft.com/dotnet/aspnet:8.0'.
-  Pushed image 'webapp:latest' to local registry via 'docker'.
+Restore complete (0.8s)
+  webapp net10.0 succeeded (13.1s) → bin/Release/net10.0/publish/
+
+Build succeeded in 15.1s
 $ docker run --rm -d -p 8000:8080 webapp
-7c7ad33409e52ddd3a9d330902acdd49845ca4575e39a6494952b642e584016e
+b798c72fd2dc649270963a464b19db9bbc1465087eb07dbd9710a7174a8b8736
 $ curl -s http://localhost:8000 | grep ASP.NET
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 $ docker ps
-CONTAINER ID   IMAGE     COMMAND               CREATED              STATUS              PORTS                                       NAMES
-7c7ad33409e5   webapp    "dotnet webapp.dll"   About a minute ago   Up About a minute   0.0.0.0:8000->8080/tcp, :::8000->8080/tcp   jovial_shtern
-$ docker kill 7c7ad33409e5
+CONTAINER ID   IMAGE    COMMAND                  CREATED              STATUS              PORTS                                         NAMES
+b798c72fd2dc   webapp   "dotnet /app/webapp.…"   About a minute ago   Up About a minute   0.0.0.0:8000->8080/tcp, [::]:8000->8080/tcp   jovial_shtern
+$ docker kill b798c72fd2dc
 ```
 
-[`docker init`](https://www.docker.com/blog/docker-desktop-4-23/) is a new option for developers wanting to use Dockerfiles.
+The `dotnet publish` command names the image after the project, builds it on top of the ASP.NET Core runtime image that matches the project's target framework, and loads it into your local container runtime as `webapp:latest`. In this example, the project targets .NET 10, so the base image is `mcr.microsoft.com/dotnet/aspnet:10.0`. With the .NET 11 SDK, the project targets .NET 11, and the base image is `mcr.microsoft.com/dotnet/aspnet:11.0`.
+
+To generate a _Dockerfile_ and related starter files for your project instead, use [`docker init`](https://docs.docker.com/reference/cli/docker/init/).
 
 ## Ports
 
@@ -58,7 +58,9 @@ The `ASPNETCORE_HTTP_PORTS`, `ASPNETCORE_HTTPS_PORTS`, and `ASPNETCORE_URLS` env
 
 ## Users
 
-Starting with .NET 8, all images include a non-root user called `app`. By default, chiseled images are configured with this user enabled. The publish app as .NET container feature (demonstrated in the [Building container images](#building-container-images) section) also configures images with this user enabled by default. In all other scenarios, the `app` user can be set manually, for example with the `USER` *Dockerfile* instruction. If an image has been configured with `app` and commands need to run as `root`, then the `USER` instruction can be used to set to the user to `root`.
+Starting with .NET 8, Linux images include a non-root user called `app`. The `APP_UID` environment variable in these images contains the user ID of the `app` user. Chiseled images, Azure Linux distroless images, and images built with the .NET SDK container publishing feature (shown in [Building container images](#building-container-images)) run as this user by default. Other Linux images run as `root` by default. To run as the `app` user in those images, set the user manually, for example, with the `USER $APP_UID` _Dockerfile_ instruction. If an image runs as `app` and some commands need to run as `root`, use the `USER root` instruction to switch users.
+
+Windows images don't include the `app` user. Nano Server images run as the non-administrator `ContainerUser` account by default, and Windows Server Core images run as `ContainerAdministrator` by default. For more information, see [When to use ContainerAdmin and ContainerUser user accounts](/virtualization/windowscontainers/manage-containers/container-security#when-to-use-containeradmin-and-containeruser-user-accounts).
 
 ## Staying informed
 

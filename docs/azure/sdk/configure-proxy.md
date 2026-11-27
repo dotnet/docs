@@ -46,7 +46,7 @@ For a deep understanding of how these environment variables are processed, see [
 - `ALL_PROXY` is considered only when either an HTTP or an HTTPS proxy is undefined.
 - Protocol-specific environment variables take precedence over `ALL_PROXY`.
 
-The proxy server URL takes the form `http[s]://[username:password@]<ip_address_or_hostname>:<port>/`, where the `username:password` combination is optional. To get the IP address or hostname, port, and credentials for your proxy server, consult your network administrator.
+The proxy server URL takes the form `http://[username:password@]<ip_address_or_hostname>:<port>/`, where the `username:password` combination is optional. Even when configuring `HTTPS_PROXY` (which specifies the proxy used for HTTPS requests), `Azure.Core`'s `HttpEnvironmentProxy` only parses `http://` proxy URLs (if no scheme is specified, `http://` is assumed). To get the IP address or hostname, port, and credentials for your proxy server, consult your network administrator.
 
 The following examples show how to set the appropriate environment variables in command shell (Windows) and bash (Linux/macOS) environments. Setting the appropriate environment variable causes the Azure SDK for .NET libraries to use the proxy server at runtime.
 
@@ -60,10 +60,10 @@ rem Authenticated HTTP server:
 set HTTP_PROXY=http://username:password@10.10.1.10:1180
 
 rem Non-authenticated HTTPS server:
-set HTTPS_PROXY=https://10.10.1.10:1180
+set HTTPS_PROXY=http://10.10.1.10:1180
 
 rem Authenticated HTTPS server:
-set HTTPS_PROXY=https://username:password@10.10.1.10:1180
+set HTTPS_PROXY=http://username:password@10.10.1.10:1180
 ```
 
 ### [bash](#tab/bash)
@@ -76,10 +76,10 @@ HTTP_PROXY=http://10.10.1.10:1180
 HTTP_PROXY=http://username:password@10.10.1.10:1180
 
 # Non-authenticated HTTPS server:
-HTTPS_PROXY=https://10.10.1.10:1180
+HTTPS_PROXY=http://10.10.1.10:1180
 
 # Authenticated HTTPS server:
-HTTPS_PROXY=https://username:password@10.10.1.10:1180
+HTTPS_PROXY=http://username:password@10.10.1.10:1180
 ```
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "How to: Display Milliseconds in Date and Time Values"
 description: In this article, learn how to include a date and time's millisecond component in formatted date and time strings in .NET.
-ms.date: "08/01/2022"
+ms.date: 11/01/2026
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
@@ -39,7 +39,7 @@ The `fff` format pattern includes any trailing zeros in the millisecond value. T
 :::code language="csharp" source="snippets/how-to-display-milliseconds-in-date-and-time-values/csharp/Program.cs" id="TrailingZero":::
 :::code language="vb" source="snippets/how-to-display-milliseconds-in-date-and-time-values/vb/Program.vb" id="TrailingZero":::
 
-A problem with defining a complete custom format specifier that includes the millisecond component of a date and time is that it defines a hard-coded format that might not correspond to the arrangement of time elements in the application's current culture. A better alternative is to retrieve one of the date and time display patterns defined by the current culture's <xref:System.Globalization.DateTimeFormatInfo> object and modify it to include milliseconds. The example also illustrates this approach. It retrieves the current culture's full date and time pattern from the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern?displayProperty=nameWithType> property and then inserts the custom pattern `fff` along with the current culture's millisecond separator. The example uses a regular expression to do this operation in a single method call.
+A problem with defining a complete custom format specifier that includes the millisecond component of a date and time is that it defines a hard-coded format that might not correspond to the arrangement of time elements in the application's current culture. A better alternative is to retrieve one of the date and time display patterns defined by the current culture's <xref:System.Globalization.DateTimeFormatInfo> object and modify it to include milliseconds. The example also illustrates this approach. It retrieves the current culture's full date and time pattern from the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern?displayProperty=nameWithType> property and then inserts the custom pattern `fff` along with the current culture's millisecond separator. The example uses a regular expression to match the unquoted seconds specifier (`s` or `ss`) across all cultures (including those that use periods, spaces, or words rather than colons as time separators) and append milliseconds in a single method call.
 
 You can also use a custom format specifier to display a fractional part of seconds other than milliseconds. For example, the `f` or `F` custom format specifier displays tenths of a second, the `ff` or `FF` custom format specifier displays hundredths of a second, and the `ffff` or `FFFF` custom format specifier displays ten-thousandths of a second. Fractional parts of a millisecond are truncated instead of rounded in the returned string. These format specifiers are used in the following example:
 

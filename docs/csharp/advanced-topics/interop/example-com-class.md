@@ -1,32 +1,33 @@
 ---
-title: "Example COM Class"
-description: Learn how to expose a class as a COM object in C#. This example adds code in a .cs file to a project and sets the Register for COM Interop property.
-ms.date: 02/15/2023
+title: "Example COM class"
+description: Learn how to expose a C# class with properties, methods, and events as a COM object using explicit interfaces and DispId attributes.
+ms.date: 11/01/2026
 ms.topic: how-to
 helpviewer_keywords: 
   - "examples [C#], COM classes"
   - "COM, exposing C# objects to"
 ---
-# Example COM Class
+# Example COM class
 
-The following code is an example of a class that you would expose as a COM object. After you place this code in a .cs file added to your project, set the **Register for COM Interop** property to **True**. For more information, see [How to: Register a Component for COM Interop](/previous-versions/visualstudio/visual-studio-2010/w29wacsy(v=vs.100)).
+The following code demonstrates a practical class exposed as a Component Object Model (COM) object. To expose C# objects to COM clients, declare a class interface, an events interface, and the implementing class.
 
-Exposing C# objects to COM requires declaring a class interface, an "events interface" if necessary, and the class itself. Class members must follow these rules to be visible to COM:
+Class members must follow these rules to be visible to COM:
 
-- The class must be public.
-- Properties, methods, and events must be public.
-- Properties and methods must be declared on the class interface.
-- Events must be declared in the event interface.
-
-Other public members in the class that you don't declare in these interfaces aren't visible to COM, but they're visible to other .NET objects. To expose properties and methods to COM, you must declare them on the class interface and mark them with a `DispId` attribute, and implement them in the class. The order in which you declare the members in the interface is the order used for the COM vtable. To expose events from your class, you must declare them on the events interface and mark them with a `DispId` attribute. The class shouldn't implement this interface.
-
-The class implements the class interface; it can implement more than one interface, but the first implementation is the default class interface. Implement the methods and properties exposed to COM here. They must be public and must match the declarations in the class interface. Also, declare the events raised by the class here. They must be public and must match the declarations in the events interface.
+- The class and its interfaces must be `public`.
+- Properties, methods, and events must be `public`.
+- Properties and methods must be declared on the class interface and decorated with distinct [`DispId`](<xref:System.Runtime.InteropServices.DispIdAttribute>) values.
+- Events must be declared on the event interface and decorated with [`DispId`](<xref:System.Runtime.InteropServices.DispIdAttribute>) values. The event interface must be marked with `[InterfaceType(ComInterfaceType.InterfaceIsIDispatch)]`.
+- The class must implement the class interface, but it must **not** implement the events interface. Instead, associate the event interface using the [`[ComSourceInterfaces]`](<xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>) attribute.
+- Apply [`[ClassInterface(ClassInterfaceType.None)]`](<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>) to enforce that COM clients interact with your class through your explicit interface rather than an auto-generated class interface.
 
 ## Example
+
+The following example defines a `Calculator` COM class that exposes calculations, properties, and completion events to COM clients:
 
 :::code language="csharp" source="./snippets/ExampleCOMClass/ExampleCOM.cs":::
 
 ## See also
 
-- [Interoperability](./index.md)
-- [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp)
+- [COM interoperability in .NET](../../../standard/native-interop/cominterop.md)
+- [Exposing .NET Core components to COM](../../../core/native-interop/expose-components-to-com.md)
+- [Interoperability overview](./index.md)

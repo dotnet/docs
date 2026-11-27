@@ -20,6 +20,7 @@ Assembly attributes provide information about an assembly. They fall into the fo
 - Assembly identity attributes
 - Informational attributes
 - Assembly manifest attributes
+- Compilation and assembly access attributes
 
 ## Assembly identity attributes
 
@@ -57,3 +58,11 @@ Use assembly manifest attributes to provide information in the assembly manifest
 | <xref:System.Reflection.AssemblyDescriptionAttribute>   | Specifies an assembly description for an assembly manifest. |
 | <xref:System.Reflection.AssemblyConfigurationAttribute> | Specifies an assembly configuration (such as retail or debug) for an assembly manifest. |
 | <xref:System.Reflection.AssemblyDefaultAliasAttribute>  | Defines a friendly default alias for an assembly manifest.  |
+
+## Compilation and assembly access attributes
+
+Use compilation and access attributes to control compiler accessibility checks. The following table lists common assembly-level attributes interpreted during compilation:
+
+| Attribute | Purpose |
+|---|---|
+| <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> | Specifies that types and members ordinarily visible only within the current assembly are visible to a specified friend assembly. For more information, see [Friend assemblies](../../../standard/assembly/friend.md). |

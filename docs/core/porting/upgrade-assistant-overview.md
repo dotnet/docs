@@ -2,7 +2,7 @@
 title: .NET Upgrade Assistant Overview
 description: "Learn more about .NET Upgrade Assistant for .NET-related projects. This tool helps you upgrade from older versions of .NET, including .NET Framework, to the latest version of .NET. Code incompatibilities can be fixed as part of the upgrade."
 author: adegeo
-ms.author: adegeo
+ms.author: wiwagn
 ms.topic: overview
 ms.date: 03/19/2026
 

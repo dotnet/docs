@@ -2,7 +2,7 @@
 title: Install .NET Upgrade Assistant
 description: "Learn how to install .NET Upgrade Assistant in Visual Studio or as a .NET Global Tool. .NET Upgrade Assistant assists you when upgrading projects to the latest dependencies or when upgrading to a new .NET"
 author: adegeo
-ms.author: adegeo
+ms.author: wiwagn
 ms.topic: install-set-up-deploy
 ms.date: 03/19/2026
 

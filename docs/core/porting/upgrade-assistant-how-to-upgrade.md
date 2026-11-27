@@ -2,7 +2,7 @@
 title: How to upgrade a project with .NET Upgrade Assistant
 description: "Learn how to upgrade one or more projects with .NET Upgrade Assistant using either Visual Studio or a terminal."
 author: adegeo
-ms.author: adegeo
+ms.author: wiwagn
 ms.topic: how-to
 ms.date: 03/19/2026
 

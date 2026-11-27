@@ -2,7 +2,7 @@
 title: How to analyze a project with .NET Upgrade Assistant
 description: "Learn how to analyze one or more projects with .NET Upgrade Assistant. Before upgrading, it's a good idea to perform code analysis on your projects so that you understand if extra effort is required after upgrading."
 author: adegeo
-ms.author: adegeo
+ms.author: wiwagn
 ms.topic: how-to
 ms.date: 03/19/2026
 

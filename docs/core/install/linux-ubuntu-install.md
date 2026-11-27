@@ -237,7 +237,7 @@ The following versions of .NET are supported or available for Ubuntu 22.04:
 
 | Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| 11.0, 10.0              | 8.0, 7.0, 6.0                        | 10.0, 9.0                                                                                                | 8.0, 7.0, 6.0, 3.1                |
+| 11.0, 10.0              | 8.0, 7.0, 6.0                        | 11.0, 10.0, 9.0                                                                                         | 8.0, 7.0, 6.0, 3.1                |
 
 [!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
 

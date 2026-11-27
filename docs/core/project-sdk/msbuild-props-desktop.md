@@ -4,7 +4,7 @@ description: Reference for the MSBuild properties and items that are understood 
 ms.date: 08/13/2024
 ms.topic: reference
 author: adegeo
-ms.author: adegeo
+ms.author: wiwagn
 ms.custom: updateeachrelease
 no-loc: ["App.xaml", "Application.xaml", "ApplicationDefinition", "Page", "EmbeddedResource", "Compile", "None"]
 ---

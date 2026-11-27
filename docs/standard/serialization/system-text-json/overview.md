@@ -63,3 +63,4 @@ The `System.Text.Json` serializer was designed with thread safety in mind. Pract
 ## Additional resources
 
 * [How to use the library](how-to.md)
+* [Raw string literals in C#](../../../csharp/language-reference/tokens/raw-string.md) (for defining inline JSON literals in code)

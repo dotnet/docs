@@ -62,7 +62,8 @@ if (OtlpEndpoint != null)
 //</Snippet_OTEL>
 
 //<Snippet_AzureMonitor>
-if (!string.IsNullOrEmpty(builder.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]))
+if (!string.IsNullOrEmpty(builder.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]
+                          ?? builder.Configuration["AzureMonitor:ConnectionString"]))
 {
     otel.UseAzureMonitor();
 }

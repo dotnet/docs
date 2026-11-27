@@ -59,6 +59,17 @@ The `continue` statement skips the rest of the current iteration and moves on to
 
 :::code language="csharp" source="./snippets/iteration-statements/Program.cs" id="Continue":::
 
+### Labeled `break` and `continue`
+
+In nested loops, `break` and `continue` statements apply only to the innermost loop by default. Starting in C# 15 (.NET 11), you can prefix an enclosing loop with a label and specify that label in a `break` or `continue` statement to control the outer loop directly:
+
+- A labeled `break` (such as `break outer;`) terminates the labeled enclosing loop or `switch` statement immediately.
+- A labeled `continue` (such as `continue outer;`) skips the rest of the inner execution and begins the next iteration of the labeled enclosing loop.
+
+:::code language="csharp" source="./snippets/iteration-statements/Program.cs" id="LabeledBreakContinue":::
+
+Labeled jump statements eliminate the need for boolean flags or `goto` statements to coordinate nested loops. For more information, see [The `break` statement](../../language-reference/statements/jump-statements.md#the-break-statement) and [The `continue` statement](../../language-reference/statements/jump-statements.md#the-continue-statement).
+
 ## Iterate an asynchronous stream with `await foreach`
 
 An *asynchronous stream* is a reader that uses an asynchronous task to produce each next element. C# represents it with the <xref:System.Collections.Generic.IAsyncEnumerable`1> interface. Data that arrives over time, such as pages from a web API or rows from a database, fits this model: retrieving the next element is an awaitable operation instead of an immediate return.

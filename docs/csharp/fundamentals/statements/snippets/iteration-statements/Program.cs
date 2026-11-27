@@ -10,6 +10,7 @@ public static class Program
         ForExample();
         BreakExample();
         ContinueExample();
+        LabeledBreakContinueExample();
         await AwaitForeachExample();
     }
 
@@ -103,6 +104,29 @@ public static class Program
             Console.WriteLine(value); // => 1, then 3, then 5
         }
         // </Continue>
+    }
+
+    private static void LabeledBreakContinueExample()
+    {
+        // <LabeledBreakContinue>
+        outer: for (int row = 0; row < 5; row++)
+        {
+            for (int col = 0; col < 5; col++)
+            {
+                if (row * col > 6)
+                {
+                    // Jump directly to the next iteration of the outer loop
+                    continue outer;
+                }
+
+                if (row == 3 && col == 2)
+                {
+                    // Exit the outer loop entirely
+                    break outer;
+                }
+            }
+        }
+        // </LabeledBreakContinue>
     }
 
     // <AwaitForeach>

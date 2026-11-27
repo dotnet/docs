@@ -2,7 +2,7 @@
 title: Remove the .NET runtime and SDK
 description: This article describes how to uninstall .NET on Windows, macOS, and Linux. Uninstall .NET manually, through a package manager, with the .NET Uninstall Tool, or the .NET Install Manager.
 author: adegeo
-ms.author: adegeo
+ms.author: wiwagn
 ms.date: 04/23/2026
 ms.custom: linux-related-content
 zone_pivot_groups: operating-systems-set-one

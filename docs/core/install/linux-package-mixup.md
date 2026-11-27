@@ -2,7 +2,7 @@
 title: Troubleshoot .NET package mix ups on Linux
 description: Learn about how to troubleshoot strange .NET package errors on Linux. These errors may occur when you run the dotnet command.
 author: omajid
-ms.author: adegeo
+ms.author: wiwagn
 ms.date: 04/23/2026
 ms.custom: linux-related-content
 no-loc: ['usr','lib64','share','dotnet','libhostfxr.so', 'fxr', 'FrameworkList.xml', 'System.IO.FileNotFoundException']

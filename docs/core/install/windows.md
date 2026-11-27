@@ -2,7 +2,7 @@
 title: "Install .NET on Windows"
 description: "Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on Windows."
 author: adegeo
-ms.author: adegeo
+ms.author: wiwagn
 ms.topic: install-set-up-deploy #Don't change
 ms.date: 11/11/2026
 no-loc: ["Program Files", "dotnet"]

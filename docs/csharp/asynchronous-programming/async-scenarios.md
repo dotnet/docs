@@ -145,6 +145,54 @@ You can choose between <xref:System.Linq.Enumerable.ToArray*?displayProperty=nam
 - Use `ToArray()` when you plan to process all tasks together, such as with `Task.WhenAll`. Arrays are efficient for scenarios where the collection size is fixed.
 - Use `ToList()` when you need to dynamically manage tasks, such as with `Task.WhenAny` where you might remove completed tasks from the collection as they finish.
 
+### Limit concurrency for multiple asynchronous tasks
+
+When you process large sequences of items (such as sending HTTP requests for thousands of records), initiating all operations simultaneously with `Task.WhenAll` can overwhelm network sockets, exceed API rate limits, or consume excessive memory.
+
+To control the maximum number of concurrent operations, choose between <xref:System.Threading.Tasks.Parallel.ForEachAsync*?displayProperty=nameWithType> and <xref:System.Threading.SemaphoreSlim>:
+
+- **`Parallel.ForEachAsync` (recommended for .NET 6+)**: <xref:System.Threading.Tasks.Parallel.ForEachAsync*> processes an enumerable sequence asynchronously while respecting <xref:System.Threading.Tasks.ParallelOptions.MaxDegreeOfParallelism%2A?displayProperty=nameWithType>. It partitions work efficiently across the thread pool without instantiating all tasks upfront:
+
+  ```csharp
+  var userIds = Enumerable.Range(1, 1000);
+  var options = new ParallelOptions { MaxDegreeOfParallelism = 10 };
+
+  await Parallel.ForEachAsync(userIds, options, async (userId, cancellationToken) =>
+  {
+      await ProcessUserAsync(userId, cancellationToken);
+  });
+  ```
+
+- **`SemaphoreSlim` with `Task.WhenAll`**: If you need to return collected results from individual tasks or are working on earlier .NET versions, use a <xref:System.Threading.SemaphoreSlim> to throttle concurrent execution:
+
+  ```csharp
+  const int MaxDegreeOfParallelism = 10;
+  using var semaphore = new SemaphoreSlim(MaxDegreeOfParallelism);
+  var tasks = userIds.Select(async userId =>
+  {
+      await semaphore.WaitAsync();
+      try
+      {
+          return await GetUserDataAsync(userId);
+      }
+      finally
+      {
+          semaphore.Release();
+      }
+  });
+
+  UserData[] results = await Task.WhenAll(tasks);
+  ```
+
+#### Comparison: `Task.WhenAll` vs. `Parallel.ForEachAsync`
+
+| Feature | `Task.WhenAll` | `Parallel.ForEachAsync` |
+| --- | --- | --- |
+| **Primary purpose** | Awaiting a fixed collection of started tasks. | Iterating over a data sequence and executing an async delegate for each element. |
+| **Concurrency control** | None (runs all tasks concurrently unless throttled manually with `SemaphoreSlim`). | Built-in via <xref:System.Threading.Tasks.ParallelOptions.MaxDegreeOfParallelism%2A>. |
+| **Memory allocation** | Allocates all task instances upfront before awaiting. | Processes items on demand as worker capacity becomes available. |
+| **Return values** | Returns an array containing the results of all tasks (`T[]`). | Returns `Task` (side effects or collecting results into a thread-safe collection). |
+
 ## Review considerations for asynchronous programming
 
 With asynchronous programming, there are several details to keep in mind that can prevent unexpected behavior.

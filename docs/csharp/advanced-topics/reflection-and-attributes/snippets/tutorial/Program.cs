@@ -41,6 +41,15 @@ public class Program
         foreach(var attr in attrs)
             Console.WriteLine("Attribute on MyClass: " + attr.GetType().Name);
         // </ReflectionExample2>
+
+        // <ReadCustomAttributeValues>
+        PropertyInfo? prop = typeof(PlayerAccount).GetProperty(nameof(PlayerAccount.Level));
+        var rangeAttr = prop?.GetCustomAttribute<RangeValidationAttribute>();
+        if (rangeAttr != null)
+        {
+            Console.WriteLine($"Property '{prop!.Name}' must be between {rangeAttr.Minimum} and {rangeAttr.Maximum}.");
+        }
+        // </ReadCustomAttributeValues>
     }
 }
 
@@ -131,3 +140,24 @@ public class AttributeFail
 }
 // </AttributeGotcha2>
 */
+
+// <PracticalAttributeUsage>
+[AttributeUsage(AttributeTargets.Property)]
+public class RangeValidationAttribute : Attribute
+{
+    public int Minimum { get; }
+    public int Maximum { get; }
+
+    public RangeValidationAttribute(int minimum, int maximum)
+    {
+        Minimum = minimum;
+        Maximum = maximum;
+    }
+}
+
+public class PlayerAccount
+{
+    [RangeValidation(1, 100)]
+    public int Level { get; set; } = 15;
+}
+// </PracticalAttributeUsage>

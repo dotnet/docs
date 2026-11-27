@@ -63,6 +63,20 @@ The following example shows the difference. The first block shows the definition
 
 All types ultimately derive from <xref:System.Object?displayProperty=nameWithType>. Value types derive from <xref:System.ValueType?displayProperty=nameWithType>, which derives from `object`. This unified hierarchy is called the [Common Type System](../../../standard/base-types/common-type-system.md) (CTS). For more information about inheritance, see [Inheritance](../object-oriented/inheritance.md).
 
+## Mutability, immutability, and readonly
+
+The concepts of *mutability*, *immutability*, and *readonly* describe whether and how an instance's state can change after it's constructed:
+
+- **Mutable** &mdash; An object whose internal state (fields and properties) can be modified after instantiation. By default, classes and structs with `get` and `set` properties or public fields are mutable.
+- **Immutable** &mdash; An object whose state cannot be changed after creation. In C#, immutability is commonly modeled using [record classes](records.md), [`readonly struct`](structs.md#readonly-struct), or types with [init-only properties](../../language-reference/keywords/init.md). Immutable types are inherently thread-safe because multiple threads can read the same instance concurrently without locking or synchronization.
+- **`readonly`** &mdash; A C# language modifier that enforces read-only access at compile time:
+  - **Fields**: A [`readonly` field](../../language-reference/keywords/readonly.md#readonly-field-example) can only be assigned during declaration or in the containing type's constructor.
+  - **Structs**: A [`readonly struct`](../../language-reference/builtin-types/struct.md#readonly-struct) requires all fields to be `readonly` and guarantees the type is immutable, enabling the compiler to optimize calls and avoid defensive copies.
+  - **Members**: Applying `readonly` to a struct method or property accessor ensures that the member does not modify the struct's fields.
+  - **Parameters and returns**: Using [`in`](../../language-reference/keywords/method-parameters.md#in-parameter-modifier) or [`ref readonly`](../../language-reference/keywords/ref.md#ref-readonly-returns) passes or returns values by reference while preventing the recipient from modifying the underlying data.
+
+Understanding mutability helps you design resilient domain models and avoid unexpected side effects when instances are shared across components.
+
 ## Choose which kind of type
 
 When you define a new type, the kind you choose shapes how your code behaves. Use the following guidelines to make an initial decision:

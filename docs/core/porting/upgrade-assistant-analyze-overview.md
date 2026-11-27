@@ -2,7 +2,7 @@
 title: .NET Upgrade Assistant code analysis overview
 description: "Describes how the code analysis function of .NET Upgrade Assistant works. The analysis generates a report that lists what aspects of your project will be upgraded, and if any manual work is involved."
 author: adegeo
-ms.author: adegeo
+ms.author: wiwagn
 ms.topic: overview
 ms.date: 03/19/2026
 

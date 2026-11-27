@@ -47,7 +47,7 @@ Complete the following steps to register the services you need:
 
 3. In the `Program.cs` file of your app, invoke the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients*> extension method from the `Microsoft.Extensions.Azure` library to register a client to communicate with each Azure service. Some client libraries provide additional [subclients](https://azure.github.io/azure-sdk/dotnet_introduction.html#dotnet-subclients) for specific subgroups of Azure service functionality. You can register such subclients for dependency injection via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.AddClient*> extension method.
 
-    :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" highlight="4-7,13-15":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-28" highlight="5-8,14-17":::
 
 4. Inject the registered clients into your ASP.NET Core app components, services, or API endpoint:
 
@@ -82,7 +82,7 @@ Use the [Azure Identity](/dotnet/api/overview/azure/identity-readme) library for
 
 1. In the `Program.cs` file of your app, invoke the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients*> extension method from the `Microsoft.Extensions.Azure` library to set a shared `DefaultAzureCredential` instance for all registered Azure service clients:
 
-    :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" :::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="13-13" :::
 
     `DefaultAzureCredential` discovers available credentials in the current environment and uses them to authenticate to Azure services. For the order and locations in which `DefaultAzureCredential` scans for credentials, see [DefaultAzureCredential overview](/dotnet/azure/sdk/authentication/credential-chains?tabs=dac#defaultazurecredential-overview). Using a shared `DefaultAzureCredential` instance ensures the underlying token cache is used, which improves application resilience and performance due to fewer requests for a new token.
 

@@ -1,7 +1,7 @@
 ---
 title: Options pattern
 description: Learn the options pattern to represent groups of related settings in .NET apps. The options pattern uses classes to provide strongly-typed access to settings.
-ms.date: 10/22/2025
+ms.date: 11/01/2026
 ai-usage: ai-assisted
 ---
 
@@ -140,6 +140,22 @@ builder.Services
 ```
 
 In the preceding code, the `Configure<TOptions>` method is used to register a configuration instance that `TOptions` will bind against, and updates the options when the configuration changes.
+
+### Performance considerations
+
+<xref:Microsoft.Extensions.Options.IOptionsSnapshot`1> recomputes options instances for every new dependency injection scope by executing the complete configuration pipeline:
+
+1. All registered <xref:Microsoft.Extensions.Options.IConfigureOptions`1> and <xref:Microsoft.Extensions.Options.IConfigureNamedOptions`1> actions (including `IConfiguration` binding when registered via `Configure<TOptions>(section)`).
+1. All <xref:Microsoft.Extensions.Options.IPostConfigureOptions`1> actions.
+1. All <xref:Microsoft.Extensions.Options.IValidateOptions`1> validations.
+
+This recomputation occurs whenever an options instance is first resolved in a new scope, regardless of whether the underlying configuration sources have changed. In ASP.NET Core applications, a DI scope is created for every HTTP request. If your options type involves complex binding, deep object graphs, regular expressions, or expensive validation rules, re-evaluating the pipeline on every request can introduce measurable latency on the request processing path.
+
+To select the right options abstraction for your scenario:
+
+- **Static configuration**: If your configuration never changes after application startup, use <xref:Microsoft.Extensions.Options.IOptions`1>. It is a singleton service whose value is computed once for the entire application lifetime.
+- **Reloadable configuration with high throughput**: If you need to observe configuration updates but want to avoid re-evaluating options on every request scope, use <xref:Microsoft.Extensions.Options.IOptionsMonitor`1>. `IOptionsMonitor` is a singleton service that caches options instances and only recomputes them when the underlying configuration source fires a change token notification.
+- **Consistent scope snapshots from an options monitor**: If your application requires a value that does not change during the execution of a single request, but you want to avoid per-scope recomputation, consider capturing <xref:Microsoft.Extensions.Options.IOptionsMonitor`1.CurrentValue> once at the start of the scope (such as in middleware) or registering a scoped service that resolves the current value from `IOptionsMonitor<TOptions>`.
 
 ## IOptionsMonitor
 

@@ -172,6 +172,8 @@ items:
       href: fundamentals/classes/access-modifiers.md
     - name: Fields and constants
       href: fundamentals/classes/fields-constants.md
+    - name: Declare and initialize properties
+      href: fundamentals/classes/properties.md
   - name: Object-oriented programming
     items:
     - name: Classes, structs, and records
@@ -603,17 +605,15 @@ items:
         href: programming-guide/classes-and-structs/how-to-define-abstract-properties.md
     - name: Properties
       items:
-      - name: Properties overview
+      - name: Properties and backing fields
         href: programming-guide/classes-and-structs/properties.md
-      - name: Using Properties
+      - name: Using properties
         href: programming-guide/classes-and-structs/using-properties.md
       - name: Interface Properties
         href: programming-guide/classes-and-structs/interface-properties.md
-      - name: Restricting Accessor Accessibility
+      - name: Accessor accessibility examples
         href: programming-guide/classes-and-structs/restricting-accessor-accessibility.md
-      - name: "How to declare and use read write properties"
-        href: programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties.md
-      - name: Automatically implemented properties
+      - name: Auto-implemented property examples
         href: programming-guide/classes-and-structs/auto-implemented-properties.md
       - name: "How to implement a lightweight class with automatically implemented properties"
         href: programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md

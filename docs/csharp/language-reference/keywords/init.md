@@ -11,7 +11,7 @@ helpviewer_keywords:
 # The `init` keyword (C# Reference)
 
 The `init` keyword defines an *accessor* method in a property or indexer. An init-only setter assigns a value to the property or the indexer element **only** during object construction. An `init` enforces immutability, so that once the object is initialized, it can't be changed. An `init` accessor enables calling code to use an [object initializer](../../programming-guide/classes-and-structs/how-to-initialize-objects-by-using-an-object-initializer.md) to set the initial value. In contrast, an
- [automatically implemented property](../../programming-guide/classes-and-structs/auto-implemented-properties.md) with only a `get` accessor must be initialized by calling a constructor. A property with a `private set` accessor can be modified after construction, but only in the class.
+ [automatically implemented property](../../fundamentals/classes/properties.md#declare-an-auto-implemented-property) with only a `get` accessor must be initialized by calling a constructor. A property with a `private set` accessor can be modified after construction, but only in the class.
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
@@ -51,4 +51,4 @@ The following example shows the distinction between a `private set`, read-only, 
 
 ## See also
 
-- [Properties](../../programming-guide/classes-and-structs/properties.md)
+- [Properties](../../fundamentals/classes/properties.md)

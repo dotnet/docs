@@ -72,7 +72,7 @@ Nesting places the type's name within its containing type. For more declaration 
 Use the following articles for the next part of your class:
 
 - [Fields and constants](fields-constants.md) explains stored state, default values, `readonly`, and compile-time constants.
-- [Properties](../../programming-guide/classes-and-structs/properties.md) explains members that expose values through accessors.
+- [Properties](properties.md) explains members that expose values through accessors.
 - [Methods](../../programming-guide/classes-and-structs/methods.md) explains parameters, return values, and calls.
 - [Constructors](../../programming-guide/classes-and-structs/constructors.md) explains how an object starts with its initial state.
 - [Object and collection initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) explains how callers supply initial member values.

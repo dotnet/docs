@@ -310,7 +310,7 @@ Warnings:
 
 To correct these errors:
 
-- Store the result of a property or indexer access in a local variable before passing it as a reference parameter. [Properties](../../programming-guide/classes-and-structs/properties.md) and [indexers](../../programming-guide/indexers/index.md) are methods that return values rather than providing direct access to storage locations, and reference parameters require an actual variable with a stable memory location that can be aliased (**CS0206**, **CS1510**).
+- Store the result of a property or indexer access in a local variable before passing it as a reference parameter. [Properties](../../fundamentals/classes/properties.md) and [indexers](../../programming-guide/indexers/index.md) are methods that return values rather than providing direct access to storage locations, and reference parameters require an actual variable with a stable memory location that can be aliased (**CS0206**, **CS1510**).
 - Use the `in` modifier instead of `ref` when passing arguments to `in` parameters. While `ref` technically works due to backward compatibility, the `in` modifier more clearly expresses the intent that the argument is read-only and can be passed more efficiently as a reference without copying (**CS9191**, **CS9195**).
 - Add the appropriate reference modifier (`ref`, `in`, or `ref readonly`) when passing arguments to parameters that expect references. Omitting the modifier might cause the compiler to create a temporary copy of the value, which is inefficient and can lead to unexpected behavior if the calling code expects modifications to be reflected in the original variable (**CS9192**, **CS9193**).
 

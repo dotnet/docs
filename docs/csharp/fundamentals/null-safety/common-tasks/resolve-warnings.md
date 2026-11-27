@@ -88,7 +88,7 @@ The full list is in [Nullable static analysis attributes](../../../language-refe
 
 ## Initialize non-nullable members
 
-A constructor warning means a non-nullable field, property, or [auto-property](../../../programming-guide/classes-and-structs/auto-implemented-properties.md) (a property that uses the compiler-generated backing field, such as `public string Name { get; set; }`) exits the constructor without being assigned a non-null value:
+A constructor warning means a non-nullable field, property, or [auto-property](../../classes/properties.md#declare-an-auto-implemented-property) (a property that uses the compiler-generated backing field, such as `public string Name { get; set; }`) exits the constructor without being assigned a non-null value:
 
 :::code language="csharp" source="snippets/resolve-warnings/Program.cs" id="UninitializedMember":::
 

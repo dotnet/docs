@@ -125,7 +125,7 @@ You can correct these errors using the following techniques:
 - Ensure that parameter types in the implementing method exactly match the parameter types declared in the interface member (**CS9333**). Each parameter must have the identical type in the same position as specified in the interface declaration, as parameter types are fundamental components of the method signature that the compiler uses to match implementations to interface members.
 - Add an `init` accessor to the implementing property when the interface property declares an `init` setter (**CS8854**). The `init` keyword allows property initialization during object construction while preventing modification afterward, and the implementing property must provide this same initialization-only behavior to satisfy the interface contract.
 
-For more information, see [Interfaces](../../fundamentals/types/interfaces.md), [Properties](../../programming-guide/classes-and-structs/properties.md), and [Init-only setters](../keywords/init.md).
+For more information, see [Interfaces](../../fundamentals/types/interfaces.md), [Properties](../../fundamentals/classes/properties.md), and [Init-only setters](../keywords/init.md).
 
 ## Missing or incomplete implementations
 
@@ -141,7 +141,7 @@ You can correct these errors using the following techniques:
 - Remove any accessors from the implementing property that aren't declared in the interface property (**CS0550**). The implementing property can only include the accessors explicitly declared in the interface definition, ensuring that the implementation doesn't add functionality beyond what the interface contract specifies.
 - Add all required accessors to the explicit interface implementation to match the interface declaration (**CS0551**). Each accessor declared in the interface must have a corresponding accessor in the implementation with matching signatures, as the implementation must fulfill the complete accessor contract defined by the interface.
 
-For more information, see [Interfaces](../../fundamentals/types/interfaces.md) and [Properties](../../programming-guide/classes-and-structs/properties.md).
+For more information, see [Interfaces](../../fundamentals/types/interfaces.md) and [Properties](../../fundamentals/classes/properties.md).
 
 ## Member matching and resolution
 
@@ -201,7 +201,7 @@ You can correct these errors using the following techniques:
 - Replace methods with accessor-like names (such as `get_PropertyName`) with proper property syntax using explicit interface implementation (**CS0470**). The compiler generates accessor methods internally for properties, and attempting to manually create methods with these reserved names conflicts with the property implementation mechanism.
 - Use explicit interface implementation syntax to resolve naming conflicts when the interface contains method names that match the auto-generated accessor methods (**CS0686**). The compiler automatically generates methods like `get_Property` and `set_Property` for properties, and `add_Event` and `remove_Event` for events, so if an interface declares methods with these exact names, explicit implementation is required to disambiguate between the interface method and the compiler-generated accessor.
 
-For more information, see [Interfaces](../../fundamentals/types/interfaces.md), [Properties](../../programming-guide/classes-and-structs/properties.md), and [Events](../../programming-guide/events/index.md).
+For more information, see [Interfaces](../../fundamentals/types/interfaces.md), [Properties](../../fundamentals/classes/properties.md), and [Events](../../programming-guide/events/index.md).
 
 ## Ambiguous and conflicting implementations
 

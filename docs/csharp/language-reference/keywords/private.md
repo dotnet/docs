@@ -32,7 +32,7 @@ If you reference a private member outside the class or the struct where you decl
 
 For a comparison of `private` with the other access modifiers, see [Accessibility Levels](accessibility-levels.md) and [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md).
 
-In this example, the `Employee` class contains two private data members, `_name` and `_salary`. As private members, member methods are the only way to access them. The example adds public methods named `GetName` and `Salary` to allow controlled access to the private members. The `_name` member is accessed by way of a public method, and the `_salary` member is accessed by way of a public read-only property. For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md).
+In this example, the `Employee` class contains two private data members, `_name` and `_salary`. As private members, member methods are the only way to access them. The example adds public methods named `GetName` and `Salary` to allow controlled access to the private members. The `_name` member is accessed by way of a public method, and the `_salary` member is accessed by way of a public read-only property. For more information, see [Properties](../../fundamentals/classes/properties.md).
 
 :::code language="csharp" source="./snippets/csrefKeywordsModifiers.cs" id="10":::
 

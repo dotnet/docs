@@ -19,7 +19,7 @@ The addition of the `field` contextual keyword provides a smooth path to add ben
 
 You might implement the `Hours` property as an automatically implemented property. Then, you discover that you want to protect against a negative value. Use `field` and provide range checking in the `set` accessor. You don't need to declare the backing field by hand or provide a body for the `get` accessor.
 
-For more information, see the [Properties](../../programming-guide/classes-and-structs/properties.md) and [Indexers](../../programming-guide/indexers/index.md) articles.
+For more information, see the [Properties](../../fundamentals/classes/properties.md) and [Indexers](../../programming-guide/indexers/index.md) articles.
 
 ## C# language specification
 

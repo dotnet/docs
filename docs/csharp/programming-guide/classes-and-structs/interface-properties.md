@@ -12,7 +12,7 @@ Properties can be declared on an [interface](../../language-reference/keywords/i
 
 :::code language="csharp" source="./snippets/properties/interfaces.cs" id="SnippetDeclareInterfaceProperties":::
 
-Interface properties typically don't have a body. The accessors indicate whether the property is read-write, read-only, or write-only. Unlike in classes and structs, declaring the accessors without a body doesn't declare an [automatically implemented property](auto-implemented-properties.md). An interface can define a default implementation for members, including properties. Defining a default implementation for a property in an interface is rare because interfaces can't define instance data fields.
+Interface properties typically don't have a body. The accessors indicate whether the property is read-write, read-only, or write-only. Unlike in classes and structs, declaring the accessors without a body doesn't declare an [automatically implemented property](../../fundamentals/classes/properties.md#declare-an-auto-implemented-property). An interface can define a default implementation for members, including properties. Defining a default implementation for a property in an interface is rare because interfaces can't define instance data fields.
 
 ## Example
 
@@ -47,7 +47,7 @@ Employee name: Hazem Abolrous
 
 ## See also
 
-- [Properties](./properties.md)
+- [Properties](../../fundamentals/classes/properties.md)
 - [Using Properties](./using-properties.md)
 - [Comparison Between Properties and Indexers](../indexers/comparison-between-properties-and-indexers.md)
 - [Indexers](../indexers/index.md)

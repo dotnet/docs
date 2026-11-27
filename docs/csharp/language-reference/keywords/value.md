@@ -9,7 +9,7 @@ helpviewer_keywords:
 ---
 # The `value` implicit parameter
 
-The `set` accessor in [property](../../programming-guide/classes-and-structs/properties.md) and [indexer](../../programming-guide/indexers/index.md) declarations uses the implicit parameter `value`. This parameter acts as an input for the method. The word `value` refers to the value that client code tries to assign to the property or indexer.
+The `set` accessor in [property](../../fundamentals/classes/properties.md) and [indexer](../../programming-guide/indexers/index.md) declarations uses the implicit parameter `value`. This parameter acts as an input for the method. The word `value` refers to the value that client code tries to assign to the property or indexer.
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
@@ -17,7 +17,7 @@ In the following example, `TimePeriod2` has a property named `Seconds` that uses
 
 :::code language="csharp" source="./snippets/PropertyAccessors.cs" id="GetSetExpressions":::
 
-For more information, see the [Properties](../../programming-guide/classes-and-structs/properties.md) and [Indexers](../../programming-guide/indexers/index.md) articles.
+For more information, see the [Properties](../../fundamentals/classes/properties.md) and [Indexers](../../programming-guide/indexers/index.md) articles.
 
 ## C# language specification
 

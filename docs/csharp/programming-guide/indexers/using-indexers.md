@@ -86,9 +86,9 @@ There are two main ways in which the security and reliability of indexers can be
 
 - Be sure to incorporate some type of error-handling strategy to handle the chance of client code passing in an invalid index value. In the first example earlier in this article, the TempRecord class provides a Length property that enables the client code to verify the input before passing it to the indexer. You can also put the error handling code inside the indexer itself. Be sure to document for users any exceptions that you throw inside an indexer accessor.
 
-- Set the accessibility of the [get](../../language-reference/keywords/get.md) and [set](../../language-reference/keywords/set.md) accessors to be as restrictive as is reasonable. This is important for the `set` accessor in particular. For more information, see [Restricting Accessor Accessibility](../classes-and-structs/restricting-accessor-accessibility.md).
+- Set the accessibility of the [get](../../language-reference/keywords/get.md) and [set](../../language-reference/keywords/set.md) accessors to be as restrictive as is reasonable. This is important for the `set` accessor in particular. For more information, see [Restricting Accessor Accessibility](../../fundamentals/classes/properties.md#restrict-accessor-access).
 
 ## See also
 
 - [Indexers](./index.md)
-- [Properties](../classes-and-structs/properties.md)
+- [Properties](../../fundamentals/classes/properties.md)

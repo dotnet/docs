@@ -59,5 +59,5 @@ Accessible members must also use sufficiently accessible types. For example, a p
 ## Next steps
 
 - Use [Fields and constants](fields-constants.md) for state declarations.
-- Use [Properties](../../programming-guide/classes-and-structs/properties.md) to expose values through accessors.
+- Use [Properties](properties.md) to expose values through accessors.
 - Use the existing [accessibility guide](../../programming-guide/classes-and-structs/access-modifiers.md) for other type kinds, friend assemblies, and inheritance-related access details.

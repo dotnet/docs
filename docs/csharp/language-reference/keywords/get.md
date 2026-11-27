@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # The `get` keyword
 
-The `get` keyword defines an *accessor* method in a property or indexer that returns the property value or the indexer element. For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md), [Automatically implemented Properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md), and [Indexers](../../programming-guide/indexers/index.md).
+The `get` keyword defines an *accessor* method in a property or indexer that returns the property value or the indexer element. For more information, see [Properties](../../fundamentals/classes/properties.md), [Automatically implemented Properties](../../fundamentals/classes/properties.md#declare-an-auto-implemented-property), and [Indexers](../../programming-guide/indexers/index.md).
 
 [!INCLUDE[csharp-version-note](../includes/initial-version.md)]
 
@@ -40,4 +40,4 @@ The following example defines both a `get` and a `set` accessor for a property n
 ## See also
 
 - [C# Keywords](./index.md)
-- [Properties](../../programming-guide/classes-and-structs/properties.md)
+- [Properties](../../fundamentals/classes/properties.md)

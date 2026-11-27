@@ -24,7 +24,7 @@ The following list summarizes the restrictions on declared accessibility levels.
 - [Constants](../../programming-guide/classes-and-structs/constants.md): The type of a constant must be at least as accessible as the constant itself.
 - [Fields](../../programming-guide/classes-and-structs/fields.md): The type of a field must be at least as accessible as the field itself.
 - [Methods](../../programming-guide/classes-and-structs/methods.md): The return type and parameter types of a method must be at least as accessible as the method itself.
-- [Properties](../../programming-guide/classes-and-structs/properties.md): The type of a property must be at least as accessible as the property itself.
+- [Properties](../../fundamentals/classes/properties.md): The type of a property must be at least as accessible as the property itself.
 - [Events](../../programming-guide/events/index.md): The type of an event must be at least as accessible as the event itself.
 - [Indexers](../../programming-guide/indexers/index.md): The type and parameter types of an indexer must be at least as accessible as the indexer itself.
 - [Operators](../operators/index.md): The return type and parameter types of an operator must be at least as accessible as the operator itself.

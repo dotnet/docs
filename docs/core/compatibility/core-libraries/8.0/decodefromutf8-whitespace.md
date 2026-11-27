@@ -20,6 +20,8 @@ With this change, the <xref:System.Buffers.Text.Base64.DecodeFromUtf8(System.Rea
 
 <xref:System.Buffers.Text.Base64.DecodeFromUtf8(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@,System.Int32@,System.Boolean)?displayProperty=nameWithType> and <xref:System.Buffers.Text.Base64.DecodeFromUtf8InPlace(System.Span{System.Byte},System.Int32@)?displayProperty=nameWithType> now ignore whitespace (specifically ' ', '\t', '\r', and '\n') in the input, which matches the behavior of <xref:System.Convert.FromBase64String(System.String)?displayProperty=nameWithType>.
 
+The .NET 11 change that [rejects nonzero Base64 pad bits in `Convert`](../11/convert-base64-unused-bits.md) doesn't change which whitespace these methods ignore.
+
 ## Version introduced
 
 .NET 8 Preview 5

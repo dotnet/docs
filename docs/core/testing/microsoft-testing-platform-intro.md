@@ -69,6 +69,12 @@ MTP supports .NET (.NET 8 and later), .NET Framework (versions 4.6.2 and later),
 
 Starting with MTP 2.5 and MSTest 4.5, MTP also supports classic UWP, modern .NET UWP, and WinUI 3 AppContainer test hosts through the MSTest.Sdk app-model sidecar. Packaged full-trust and unpackaged WinUI 3 test hosts are also supported. For details, see [Test UWP and WinUI 3 apps with MSTest and MTP](unit-testing-mstest-winui.md).
 
+## MTP support policy
+
+MTP strictly follows [semantic versioning](../../csharp/versioning.md#semantic-versioning).
+
+In alignment with the [.NET package support policy](https://github.com/dotnet/core/blob/main/Documentation/policies/package-servicing.md#support), the .NET testing team only supports the latest released version. To benefit from improvements and security patches, update to the latest version. Preview releases aren't supported by Microsoft but are offered for public testing ahead of final release.
+
 ## Run and debug tests
 
 For detailed guidance on running and debugging MTP test projects from CLI, Visual Studio, Visual Studio Code, and CI pipelines, see [Run and debug tests](./microsoft-testing-platform-run-and-debug.md).

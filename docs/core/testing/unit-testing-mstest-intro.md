@@ -120,7 +120,7 @@ For new projects, we recommend using [MTP](unit-testing-mstest-running-tests.md)
 
 Since v3.0.0, MSTest strictly follows [semantic versioning](../../csharp/versioning.md#semantic-versioning).
 
-The MSTest team only supports the latest released version and strongly encourages users to always update to the latest version to benefit from improvements and security patches. Preview releases aren't supported by Microsoft but are offered for public testing ahead of final release.
+In alignment with the [.NET package support policy](https://github.com/dotnet/core/blob/main/Documentation/policies/package-servicing.md#support), the .NET testing team only supports the latest released version. To benefit from improvements and security patches, update to the latest version. Preview releases aren't supported by Microsoft but are offered for public testing ahead of final release.
 
 ### Version history
 

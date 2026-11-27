@@ -55,9 +55,12 @@ The analyzer with code fix template creates five projects:
 >
 > The hive includes not only the analyzer under development, but also any previous analyzers opened. To reset Roslyn hive, you need to manually delete it from *%LocalAppData%\\Microsoft\\VisualStudio*. The folder name of Roslyn hive ends in `Roslyn`, for example, `16.0_9ae182f9Roslyn`. You might need to clean the solution and rebuild it after deleting the hive.
 
-In the second Visual Studio instance that you just started, create a new C# Console Application project (any target framework will work -- analyzers work at the source level.) Hover over the token with a wavy underline, and the warning text provided by an analyzer appears.
+In the second Visual Studio instance that you just started, create a new C# Console Application project (any target framework will work -- analyzers work at the source level).
 
-The template creates an analyzer that reports a warning on each type declaration where the type name contains lowercase letters, as shown in the following figure:
+> [!NOTE]
+> The default C# Console Application template uses [top-level statements](../../fundamentals/program-structure/top-level-statements.md) and does not include an explicit class declaration in *Program.cs*. Because the template analyzer checks for lowercase letters in named type declarations, add a class declaration like `class MyClass { }` to *Program.cs* (or uncheck **Do not use top-level statements** when creating the project) to observe the initial analyzer warning.
+
+Hover over the token with a wavy underline, and the warning text provided by the analyzer appears. The template creates an analyzer that reports a warning on each type declaration where the type name contains lowercase letters, as shown in the following figure:
 
 ![Analyzer reporting warning](media/how-to-write-csharp-analyzer-code-fix/report-warning.png)
 
@@ -256,7 +259,7 @@ Add the following code to the end of the `MakeConstAsync` method:
 
 :::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.CodeFixes/MakeConstCodeFixProvider.cs" id="ReplaceDocument":::
 
-Your code fix is ready to try.  Press <kbd>F5</kbd> to run the analyzer project in a second instance of Visual Studio. In the second Visual Studio instance, create a new C# Console Application project and add a few local variable declarations initialized with constant values to the Main method. You see that they're reported as warnings as shown in the following image.
+Your code fix is ready to try. Press <kbd>F5</kbd> to run the analyzer project in a second instance of Visual Studio. In the second Visual Studio instance, create a new C# Console Application project and add a few local variable declarations initialized with constant values (either as top-level statements in *Program.cs* or inside a `Main` method). You see that they're reported as warnings as shown in the following image.
 
 ![Can make const warnings](media/how-to-write-csharp-analyzer-code-fix/make-const-warning.png)
 
@@ -425,8 +428,8 @@ using Microsoft.CodeAnalysis.Simplification;
 
 Run your tests, and they should all pass. Congratulate yourself by running your finished analyzer. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the analyzer project in a second instance of Visual Studio with the Roslyn Preview extension loaded.
 
-- In the second Visual Studio instance, create a new C# Console Application project and add `int x = "abc";` to the Main method. Thanks to the first bug fix, no warning is reported for this local variable declaration (though there's a compiler error as expected).
-- Next, add `object s = "abc";` to the Main method. Because of the second bug fix, no warning is reported.
+- In the second Visual Studio instance, create a new C# Console Application project and add `int x = "abc";` (either as a top-level statement or inside a `Main` method). Thanks to the first bug fix, no warning is reported for this local variable declaration (though there's a compiler error as expected).
+- Next, add `object s = "abc";`. Because of the second bug fix, no warning is reported.
 - Finally, add another local variable that uses the `var` keyword. You see that a warning is reported and a suggestion appears beneath to the left.
 - Move the editor caret over the squiggly underline and press <kbd>Ctrl</kbd>+<kbd>.</kbd>. to display the suggested code fix. Upon selecting your code fix, note that the `var` keyword is now handled correctly.
 

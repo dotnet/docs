@@ -2,6 +2,7 @@
 title: "Breaking change: TrustedCertificatesDirectory and StartNewTlsSessionContext are not available on .NET Standard / .NET Framework"
 description: Learn about the .NET 8 breaking change in core .NET libraries where TrustedCertificatesDirectory and StartNewTlsSessionContext are not available when targeting .NET Standard 2.0.
 ms.date: 10/14/2025
+ms.update-cycle: 3650-days
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/48879
 ---

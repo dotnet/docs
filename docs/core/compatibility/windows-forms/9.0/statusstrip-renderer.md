@@ -2,6 +2,7 @@
 title: "Breaking change: System.Windows.Forms.StatusStrip uses a different default renderer"
 description: Learn about the breaking change in .NET 9 for Windows Forms where System.Windows.Forms.StatusStrip uses a different default value for the RenderMode property.
 ms.date: 02/12/2025
+ms.update-cycle: 3650-days
 ---
 # System.Windows.Forms.StatusStrip uses a different default renderer
 

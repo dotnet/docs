@@ -2,6 +2,7 @@
 title: "Breaking change: Deserialize Version with leading/trailing whitespace"
 description: Learn about the .NET 7 breaking change for deserializing Version types with leading or trailing whitespace.
 ms.date: 01/11/2022
+ms.update-cycle: 3650-days
 ---
 # Deserialize Version type with leading or trailing whitespace
 

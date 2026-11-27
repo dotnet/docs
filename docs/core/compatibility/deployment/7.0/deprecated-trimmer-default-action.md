@@ -2,6 +2,7 @@
 title: "Breaking change: Deprecation of `TrimmerDefaultAction` property"
 description: Learn about the .NET 7 breaking change in deployment where the `TrimmerDefaultAction` property is being deprecated.
 ms.date: 09/20/2022
+ms.update-cycle: 3650-days
 ---
 # MSBuild property `TrimmerDefaultAction` is deprecated
 

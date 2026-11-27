@@ -2,6 +2,7 @@
 title: "Breaking change: DuplexChannelFactory captures synchronization context"
 description: Learn about the breaking change in WCF Client 6.0 where the DuplexChannelFactory now captures the synchronization context when it's opened.
 ms.date: 04/06/2023
+ms.update-cycle: 3650-days
 ---
 # Duplex contract captures synchronization context
 

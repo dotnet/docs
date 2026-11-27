@@ -2,6 +2,7 @@
 title: "Breaking change: 'dotnet publish' uses Release configuration"
 description: Learn about a breaking change in the .NET 8 SDK where 'dotnet publish' uses the 'Release' configuration by default.
 ms.date: 02/02/2023
+ms.update-cycle: 3650-days
 ---
 # 'dotnet publish' uses Release configuration
 

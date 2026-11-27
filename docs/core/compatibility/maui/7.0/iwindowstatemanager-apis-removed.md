@@ -2,6 +2,7 @@
 title: "Breaking change: Some Windows APIs are removed"
 description: Learn about the .NET 7 breaking change in .NET MAUI where the `IWindowStateManager.ActiveWindowDisplayChanged`, `IWindowStateManager.OnWindowMessage`, and `Platform.OnWindowMessage` APIs have been removed.
 ms.date: 11/14/2022
+ms.update-cycle: 3650-days
 ---
 # Some Windows APIs are removed
 

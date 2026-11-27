@@ -2,6 +2,7 @@
 title: "Breaking change: Instantiating default implementations of cryptographic abstractions is not supported"
 description: Learn about the breaking change in .NET 5 where the parameterless Create() overloads on cryptographic abstractions are obsolete.
 ms.date: 10/16/2020
+ms.update-cycle: 3650-days
 ---
 # Instantiating default implementations of cryptographic abstractions is not supported
 

@@ -2,6 +2,7 @@
 title: "Breaking change - APIs Removed from System.Security.Cryptography.Pkcs netstandard2.0"
 description: "Learn about the breaking change in .NET 9 where certain APIs were removed from System.Security.Cryptography.Pkcs netstandard2.0."
 ms.date: 3/11/2025
+ms.update-cycle: 3650-days
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/45186
 ---

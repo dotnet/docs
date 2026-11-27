@@ -2,6 +2,7 @@
 title: "Breaking change: Standard numeric format parsing precision"
 description: Learn about the .NET 6 breaking change in core .NET libraries where standard numeric format parsing now handles higher precisions.
 ms.date: 02/26/2021
+ms.update-cycle: 3650-days
 ---
 # Standard numeric format parsing precision
 

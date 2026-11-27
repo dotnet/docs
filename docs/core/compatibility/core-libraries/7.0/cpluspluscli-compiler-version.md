@@ -2,6 +2,7 @@
 title: ".NET 7 breaking change: Compiling C++/CLI projects in Visual Studio"
 description: Learn about the breaking change in core .NET libraries where Visual Studio version 17.2 is required to compile .NET 7 C++/CLI projects.
 ms.date: 03/21/2022
+ms.update-cycle: 3650-days
 ---
 # C++/CLI projects in Visual Studio
 

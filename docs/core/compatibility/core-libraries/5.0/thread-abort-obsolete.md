@@ -2,6 +2,7 @@
 title: "Breaking change: Thread.Abort is obsolete"
 description: Learn about the .NET 5 breaking change in core .NET libraries where the Thread.Abort APIs are obsolete.
 ms.date: 11/01/2020
+ms.update-cycle: 3650-days
 ---
 # Thread.Abort is obsolete
 

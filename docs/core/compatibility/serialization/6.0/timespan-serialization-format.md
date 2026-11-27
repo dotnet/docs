@@ -2,6 +2,7 @@
 title: "Breaking change: Default serialization format for TimeSpan"
 description: Learn about the .NET 6 servicing release breaking change where the default serialization format for TimeSpan in source generators has changed.
 ms.date: 01/11/2022
+ms.update-cycle: 3650-days
 ---
 # Default serialization format for TimeSpan
 

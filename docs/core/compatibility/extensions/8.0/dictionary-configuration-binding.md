@@ -2,6 +2,7 @@
 title: "Breaking change: Empty keys added to dictionary by configuration binder"
 description: Learn about the .NET 8 breaking change in .NET extensions where empty keys are now added to dictionary types by the configuration binder.
 ms.date: 07/27/2023
+ms.update-cycle: 3650-days
 ---
 # Empty keys added to dictionary by configuration binder
 

@@ -2,6 +2,7 @@
 title: "Breaking change: Default ActivityIdFormat is W3C"
 description: Learn about the .NET 5 breaking change in core .NET libraries where the default ActivityIdFormat is now W3C.
 ms.date: 11/01/2020
+ms.update-cycle: 3650-days
 ---
 # Default ActivityIdFormat is W3C
 

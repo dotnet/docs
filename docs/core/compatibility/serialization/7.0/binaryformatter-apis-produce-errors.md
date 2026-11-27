@@ -2,6 +2,7 @@
 title: "Breaking change: BinaryFormatter serialization APIs produce compiler errors"
 description: Learn about the .NET 7 breaking change in core .NET libraries where serialize and deserialize methods on BinaryFormatter, Formatter, and IFormatter are obsolete as errors.
 ms.date: 08/08/2022
+ms.update-cycle: 3650-days
 ---
 # BinaryFormatter serialization APIs produce compiler errors
 

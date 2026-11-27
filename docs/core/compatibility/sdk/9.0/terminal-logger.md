@@ -2,6 +2,7 @@
 title: "Breaking change: Terminal Logger is default"
 description: Learn about a breaking change in the .NET 9 SDK where Terminal Logger is used by default for interactive MSBuild invocations.
 ms.date: 01/10/2024
+ms.update-cycle: 3650-days
 ---
 # Terminal Logger is default
 

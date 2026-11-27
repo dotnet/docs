@@ -2,6 +2,7 @@
 title: "Breaking change: JSON source-generation API refactoring"
 description: Learn about the .NET 6 breaking change where the APIs called by JSON source generator output were refactored.
 ms.date: 09/22/2021
+ms.update-cycle: 3650-days
 ---
 # JSON source-generation API refactoring
 

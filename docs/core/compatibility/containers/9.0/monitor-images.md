@@ -2,6 +2,7 @@
 title: ".NET Monitor images simplified to version-only tags"
 description: Learn about the breaking change in containers where the .NET Monitor 9 image offering has been simplified to only provide Azure Linux distroless images.
 ms.date: 12/4/2024
+ms.update-cycle: 3650-days
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/43379
 ---

@@ -2,6 +2,7 @@
 title: "Breaking change: Resolving disposed ServiceProvider throws exception"
 description: Learn about the .NET 6 breaking change in .NET extensions where resolving a disposed service provider throws an exception.
 ms.date: 11/08/2021
+ms.update-cycle: 3650-days
 ---
 # Resolving disposed ServiceProvider throws exception
 

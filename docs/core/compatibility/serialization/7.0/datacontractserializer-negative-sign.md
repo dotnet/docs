@@ -2,6 +2,7 @@
 title: "Breaking change: DataContractSerializer retains sign when deserializing -0"
 description: Learn about the .NET 6/7 breaking change in serialization where DataContractSerializer retains the negative sign when deserializing the value "-0" as a float or double.
 ms.date: 09/08/2022
+ms.update-cycle: 3650-days
 ---
 # DataContractSerializer retains sign when deserializing -0
 

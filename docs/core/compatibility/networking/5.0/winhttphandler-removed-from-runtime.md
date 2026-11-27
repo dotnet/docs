@@ -2,6 +2,7 @@
 title: "Breaking change: WinHttpHandler removed from .NET runtime"
 description: Learn about the breaking change in .NET 5 where WinHttpHandler was removed from the .NET runtime.
 ms.date: 10/18/2020
+ms.update-cycle: 3650-days
 ---
 # WinHttpHandler removed from .NET runtime
 

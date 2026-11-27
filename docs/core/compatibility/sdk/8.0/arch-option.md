@@ -2,6 +2,7 @@
 title: "Breaking change: Architecture option doesn't imply self-contained"
 description: Learn about a breaking change in the .NET 8 SDK where the `--arch` option no longer implies that an app is self-contained.
 ms.date: 10/05/2023
+ms.update-cycle: 3650-days
 ---
 # --arch option doesn't imply self-contained
 

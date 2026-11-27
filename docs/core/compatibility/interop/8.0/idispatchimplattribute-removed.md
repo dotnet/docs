@@ -2,6 +2,7 @@
 title: "Breaking change: IDispatchImplAttribute API is removed"
 description: Learn about the breaking change in interop in .NET 8 where the IDispatchImplAttribute API has been removed.
 ms.date: 08/22/2023
+ms.update-cycle: 3650-days
 ---
 # IDispatchImplAttribute API is removed
 

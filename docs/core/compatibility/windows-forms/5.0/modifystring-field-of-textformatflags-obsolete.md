@@ -2,6 +2,7 @@
 title: "Breaking change: TextFormatFlags.ModifyString is obsolete"
 description: Learn about the breaking change in .NET 5 where the TextFormatFlags.ModifyString field is obsolete as a warning.
 ms.date: 11/05/2020
+ms.update-cycle: 3650-days
 ---
 # TextFormatFlags.ModifyString is obsolete
 

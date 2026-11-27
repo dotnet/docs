@@ -2,6 +2,7 @@
 title: ".NET 6 breaking change: New diagnostic IDs for obsoleted APIs"
 description: Learn about the .NET 6 breaking change where the diagnostic ID for some obsoletions was changed.
 ms.date: 08/16/2021
+ms.update-cycle: 3650-days
 ---
 # New diagnostic IDs for obsoleted APIs
 

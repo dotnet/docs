@@ -2,6 +2,7 @@
 title: ".NET 7 breaking change: Collectible Assembly in non-collectible AssemblyLoadContext"
 description: Learn about the .NET 7 breaking change in core .NET libraries where resolving a collectible Assembly in a non-collectible AssemblyLoadContext results in a FileLoadException.
 ms.date: 05/10/2022
+ms.update-cycle: 3650-days
 ---
 # Collectible Assembly in non-collectible AssemblyLoadContext
 

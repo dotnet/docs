@@ -2,6 +2,7 @@
 title: ".NET 8 breaking change: GC.GetGeneration might return Int32.MaxValue"
 description: Learn about the .NET 8 breaking change in core .NET libraries where GC.GetGeneration might return Int32.MaxValue for certain object types.
 ms.date: 05/02/2023
+ms.update-cycle: 3650-days
 ---
 # GC.GetGeneration might return Int32.MaxValue
 

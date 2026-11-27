@@ -2,6 +2,7 @@
 title: "Breaking change: Parameter names changed in reference assemblies"
 description: Learn about the .NET 5 breaking change in core .NET libraries where some reference assembly parameter names have changed to match parameter names in the implementation assemblies.
 ms.date: 11/01/2020
+ms.update-cycle: 3650-days
 ---
 # Parameter names changed in reference assemblies
 

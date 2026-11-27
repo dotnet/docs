@@ -2,6 +2,7 @@
 title: "Breaking change: 'GetXmlNamespaceMaps' type change"
 description: Learn about the breaking change in .NET 9 for WPF where the backing property of 'XmlNamespaceMaps' has been changed from 'String' to 'Hashtable'.
 ms.date: 03/15/2024
+ms.update-cycle: 3650-days
 ---
 # `GetXmlNamespaceMaps` type change
 

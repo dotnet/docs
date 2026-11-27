@@ -2,6 +2,7 @@
 title: "Breaking change: Nullable reference type annotation changes"
 description: Learn about the .NET 6 breaking change in core .NET libraries where some nullable reference type annotations have changed.
 ms.date: 12/13/2023
+ms.update-cycle: 3650-days
 ---
 # Changes to nullable reference type annotations
 

@@ -2,6 +2,7 @@
 title: "URI query redaction in HttpClient EventSource events"
 description: "Learn about the breaking change in networking in .NET 9 where HttpClient EventSource events scrub query strings by default to enhance privacy."
 ms.date: 11/5/2024
+ms.update-cycle: 3650-days
 ai-usage: ai-assisted
 ---
 

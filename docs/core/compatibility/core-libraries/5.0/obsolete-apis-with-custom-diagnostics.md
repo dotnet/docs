@@ -3,6 +3,7 @@ title: "Breaking change: .NET 5 API obsoletions with non-default diagnostic IDs"
 titleSuffix: ""
 description: Learn about the .NET 5 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
 ms.date: 11/01/2020
+ms.update-cycle: 3650-days
 ---
 # API obsoletions with non-default diagnostic IDs
 

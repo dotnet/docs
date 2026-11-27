@@ -2,6 +2,7 @@
 title: "'dotnet sln add' no longer allows invalid file names"
 description: Learn about the breaking change in the .NET SDK where the CLI command 'dotnet sln add' adds support for .slnx solution files and no longer allows invalid file names.
 ms.date: 12/10/2024
+ms.update-cycle: 3650-days
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/43882
 ---

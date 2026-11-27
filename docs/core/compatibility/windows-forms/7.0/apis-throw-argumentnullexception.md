@@ -2,6 +2,7 @@
 title: "Breaking change: Some APIs throw ArgumentNullException (.NET 7)"
 description: Learn about the breaking change in .NET 7 where some APIs validate arguments and now throw an ArgumentNullException.
 ms.date: 01/21/2022
+ms.update-cycle: 3650-days
 ---
 # Some APIs throw ArgumentNullException (.NET 7)
 

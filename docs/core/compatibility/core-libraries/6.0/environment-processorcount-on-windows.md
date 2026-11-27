@@ -2,6 +2,7 @@
 title: ".NET 6 breaking change: Environment.ProcessorCount behavior on Windows"
 description: Learn about the .NET 6 breaking change in core .NET libraries where Environment.ProcessorCount may return a different value on Windows compared to previous .NET versions.
 ms.date: 05/19/2021
+ms.update-cycle: 3650-days
 ---
 # Environment.ProcessorCount behavior on Windows
 

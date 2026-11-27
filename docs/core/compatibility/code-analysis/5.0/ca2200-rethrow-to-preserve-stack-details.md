@@ -2,6 +2,7 @@
 title: "Breaking change: CA2200: Rethrow to preserve stack details"
 description: Learn about the breaking change in .NET 5 caused by the enablement of code analysis rule CA2200.
 ms.date: 09/03/2020
+ms.update-cycle: 3650-days
 ---
 # Warning CA2200: Rethrow to preserve stack details
 

@@ -2,6 +2,7 @@
 title: "Breaking change: Asterisk no longer accepted for assembly name attributes"
 description: Learn about the breaking change in core .NET libraries in .NET 7 where assembly names no longer accept '*' as a wildcard attribute value.
 ms.date: 11/25/2024
+ms.update-cycle: 3650-days
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/42598
 ---

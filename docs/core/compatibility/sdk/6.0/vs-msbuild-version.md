@@ -2,6 +2,7 @@
 title: "Breaking change: Version requirements for .NET 6 SDK"
 description: Learn about the breaking change in the .NET 6 SDK where version 17.0 or newer of Visual Studio and MSBuild is required.
 ms.date: 03/25/2022
+ms.update-cycle: 3650-days
 ---
 # Version requirements for .NET 6 SDK
 

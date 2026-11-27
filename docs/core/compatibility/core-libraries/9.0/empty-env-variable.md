@@ -2,6 +2,7 @@
 title: "Breaking change: Support for empty environment variables"
 description: Learn about the .NET 9 breaking change in core .NET libraries where passing `string.Empty` to `Environment.SetEnvironmentVariable` no longer deletes the environment variable.
 ms.date: 07/10/2024
+ms.update-cycle: 3650-days
 ---
 # Support for empty environment variables
 

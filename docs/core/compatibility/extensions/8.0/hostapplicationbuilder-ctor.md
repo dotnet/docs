@@ -2,6 +2,7 @@
 title: "Breaking change: HostApplicationBuilderSettings.Args respected by HostApplicationBuilder ctor"
 description: Learn about the .NET 8 breaking change in .NET extensions where the HostApplicationBuilder constructor respects the HostApplicationBuilderSettings.Args value even if DisableDefaults is true.
 ms.date: 03/13/2023
+ms.update-cycle: 3650-days
 ---
 # HostApplicationBuilderSettings.Args respected by HostApplicationBuilder ctor
 

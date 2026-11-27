@@ -2,7 +2,7 @@
 title: Install .NET on Linux distributions
 description: Learn about how .NET is available on Linux. .NET can be installed through a package manager, a snap package, or manually.
 author: adegeo
-ms.author: adegeo
+ms.author: wiwagn
 ms.custom: updateeachrelease, linux-related-content
 ms.date: 11/17/2026
 ---

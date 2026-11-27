@@ -2,7 +2,7 @@
 title: Working with macOS Catalina Notarization
 description: How to handle notarization and certificate problems with macOS when you install the .NET runtime, SDK, and apps built with .NET.
 author: adegeo
-ms.author: adegeo
+ms.author: wiwagn
 ms.date: 04/23/2026
 ---
 

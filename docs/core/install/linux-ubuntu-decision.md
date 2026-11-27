@@ -2,7 +2,7 @@
 title: .NET and Ubuntu overview
 description: Learn about the ways you can install .NET on Ubuntu, either from the built-in package feed, the .NET backports repository, or the Microsoft repository.
 author: adegeo
-ms.author: adegeo
+ms.author: wiwagn
 ms.date: 11/11/2026
 ms.custom: updateeachrelease, linux-related-content
 ---

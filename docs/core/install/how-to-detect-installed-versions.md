@@ -2,7 +2,7 @@
 title: Check installed .NET versions on Windows, Linux, and macOS
 description: Learn how to list which versions of .NET are installed on your computer. This includes the .NET runtime and SDK.
 author: adegeo
-ms.author: adegeo
+ms.author: wiwagn
 ms.date: 11/11/2026
 ms.custom: updateeachrelease, linux-related-content
 zone_pivot_groups: operating-systems-set-one

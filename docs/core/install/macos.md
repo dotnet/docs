@@ -2,7 +2,7 @@
 title: Install .NET on macOS
 description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on macOS.
 author: adegeo
-ms.author: adegeo
+ms.author: wiwagn
 ms.topic: install-set-up-deploy
 ms.date: 11/11/2026
 ms.custom: updateeachrelease, linux-related-content

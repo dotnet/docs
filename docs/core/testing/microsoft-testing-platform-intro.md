@@ -73,7 +73,7 @@ Starting with MTP 2.5 and MSTest 4.5, MTP also supports classic UWP, modern .NET
 
 MTP strictly follows [semantic versioning](../../csharp/versioning.md#semantic-versioning).
 
-In alignment with the [.NET package support policy](https://github.com/dotnet/core/blob/main/Documentation/policies/package-servicing.md#support), the MTP team only supports the latest released version. To benefit from improvements and security patches, update to the latest version. Preview releases aren't supported by Microsoft but are offered for public testing ahead of final release.
+In alignment with the [.NET package support policy](https://github.com/dotnet/core/blob/main/Documentation/policies/package-servicing.md#support), the .NET testing team only supports the latest released version. To benefit from improvements and security patches, update to the latest version. Preview releases aren't supported by Microsoft but are offered for public testing ahead of final release.
 
 ## Run and debug tests
 

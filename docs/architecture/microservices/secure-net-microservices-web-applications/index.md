@@ -2,7 +2,7 @@
 title: Securing .NET Microservices and Web Applications
 description: Security in .NET Microservices and Web Applications - Get to know the authentication options in ASP.NET Core web applications.
 author: mjrousos
-ms.date: 01/13/2021
+ms.date: 11/03/2026
 ms.custom: sfi-ropc-nochange
 ---
 # Make secure .NET Microservices and Web Applications
@@ -170,7 +170,6 @@ services.AddAuthentication(options =>
     options.ResponseType = useLoadTest ? "code id_token token" : "code id_token";
     options.SaveTokens = true;
     options.GetClaimsFromUserInfoEndpoint = true;
-    options.RequireHttpsMetadata = false;
     options.Scope.Add("openid");
     options.Scope.Add("profile");
     options.Scope.Add("orders");
@@ -253,7 +252,6 @@ builder.Services.AddAuthentication(options =>
 }).AddJwtBearer(options =>
 {
     options.Authority = identityUrl;
-    options.RequireHttpsMetadata = false;
     options.Audience = "orders";
 });
 
@@ -273,7 +271,9 @@ The parameters in this usage are:
 
 - `Authority` is the address of the token-issuing authentication server. The JWT bearer authentication middleware uses this URI to get the public key that can be used to validate the token's signature. The middleware also confirms that the `iss` parameter in the token matches this URI.
 
-Another parameter, `RequireHttpsMetadata`, is useful for testing purposes; you set this parameter to false so you can test in environments where you don't have certificates. In real-world deployments, JWT bearer tokens should always be passed only over HTTPS.
+The `RequireHttpsMetadata` parameter defaults to `true`, which requires the metadata address and the authority to use HTTPS. Keep the default in real-world deployments, where JWT bearer tokens should always be passed only over HTTPS. Set it to `false` only in local development or test environments where you don't have certificates.
+
+Also keep the default token validation settings. Don't disable issuer, audience, or lifetime validation (`ValidateIssuer`, `ValidateAudience`, `ValidateLifetime`), and don't disable `RequireExpirationTime`.
 
 With this middleware in place, JWT tokens are automatically extracted from authorization headers. They are then deserialized, validated (using the values in the `Audience` and `Authority` parameters), and stored as user information to be referenced later by MVC actions or authorization filters.
 

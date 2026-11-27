@@ -1,7 +1,7 @@
 ---
 title: Implementing API Gateways with Ocelot
 description: Learn how to implement API Gateways with Ocelot and how to use Ocelot in a container-based environment.
-ms.date: 06/23/2021
+ms.date: 11/03/2026
 ms.custom: sfi-ropc-nochange
 ---
 
@@ -458,7 +458,6 @@ namespace OcelotApiGw
                 .AddJwtBearer(authenticationProviderKey, x =>
                 {
                     x.Authority = identityUrl;
-                    x.RequireHttpsMetadata = false;
                     x.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
                     {
                         ValidAudiences = new[] { "orders", "basket", "locations", "marketing", "mobileshoppingagg", "webshoppingagg" }
@@ -500,10 +499,11 @@ services.AddAuthentication(options =>
 }).AddJwtBearer(options =>
 {
     options.Authority = identityUrl;
-    options.RequireHttpsMetadata = false;
     options.Audience = "basket";
 });
 ```
+
+These samples keep the default `RequireHttpsMetadata` value (`true`) and leave issuer, audience, and lifetime validation enabled. If you use an HTTP identity endpoint in a local development environment, set `RequireHttpsMetadata` to `false` only for that environment.
 
 If you try to access any secured microservice, like the Basket microservice with a ReRoute URL based on the API Gateway like `http://host.docker.internal:5202/api/v1/b/basket/1`, then you'll get a 401 Unauthorized unless you provide a valid token. On the other hand, if a ReRoute URL is authenticated, Ocelot will invoke whatever downstream scheme is associated with it (the internal microservice URL).
 

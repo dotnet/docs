@@ -27,9 +27,13 @@ Delete a markdown article from the repository and create a redirect entry that p
 
 **DO NOT manually edit a redirection JSON file.** Use the `create-redirect-entry.ps1` script to handle the redirect creation automatically.
 
-1. **Delete the source article** - Remove the original markdown file from the repository using `Remove-Item`
-2. **Create a redirect entry** - **REQUIRED:** Use the `create-redirect-entry.ps1` script (see below) to add the redirect entry to the appropriate JSON file. Do not manually edit the JSON file
-3. **Update internal links** - Search the repository for links to the old article and update them to point to the new article
+1. **Confirm the plan** - Show the user the source article to delete, the redirect target, and the selected redirection file. Obtain explicit confirmation before making changes.
+2. **Create the redirect entry** - **REQUIRED:** Use the `create-redirect-entry.ps1` script (see below) to add the redirect entry to the selected JSON file. Do not manually edit the JSON file.
+3. **Verify the redirect entry** - Read and parse the selected JSON file. Confirm that exactly one entry has the source article's path, allowing for a leading `/` and either `source_path_from_root` or `source_path`, and that its `redirect_url` matches the confirmed target. Don't rely only on the script's success message.
+4. **Delete the source article** - Only after verification succeeds, remove the original markdown file from the repository using `Remove-Item`.
+5. **Update internal links** - Search the repository for links to the old article and update them to point to the new article.
+
+If the script fails, the JSON can't be parsed, or the entry is missing, duplicated, or points to a different target, stop without deleting the article. Resolve the problem and verify the entry before proceeding.
 
 ### 2. Update the internal links
 
@@ -80,7 +84,7 @@ Location (relative to this skill file): `./scripts/create-redirect-entry.ps1`
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `RedirectionFile` | Yes | The redirection JSON file name (e.g., `.openpublishing.redirection.csharp.json`) |
-| `SourcePath` | Yes | Repository path of the deleted article (with or without leading `/`) |
+| `SourcePath` | Yes | Repository path of the article to delete (with or without leading `/`) |
 | `RedirectUrl` | Yes | Destination URL to redirect to |
 
 **Example:**

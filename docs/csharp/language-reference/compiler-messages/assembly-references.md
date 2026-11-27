@@ -31,6 +31,9 @@ f1_keywords:
  - "CS8006"
  - "CS8007"
  - "CS8008"
+ - "CS8010"
+ - "CS8011"
+ - "CS8012"
  - "CS8014"
  - "CS8015"
  - "CS8090"
@@ -68,6 +71,9 @@ helpviewer_keywords:
  - "CS8006"
  - "CS8007"
  - "CS8008"
+ - "CS8010"
+ - "CS8011"
+ - "CS8012"
  - "CS8014"
  - "CS8015"
  - "CS8090"
@@ -75,7 +81,7 @@ helpviewer_keywords:
  - "CS8206"
  - "CS8356"
  - "CS9286"
-ms.date: 11/18/2026
+ms.date: 11/24/2026
 ai-usage: ai-assisted
 ---
 # Resolve errors and warnings related to assembly references
@@ -111,6 +117,9 @@ That's by design. The text closely matches the text of the compiler error or war
 - [**CS8006**](#type-forwarding): *Forwarded type 'type name' conflicts with type declared in primary module of this assembly.*
 - [**CS8007**](#type-forwarding): *Type 'first type name' forwarded to assembly 'first assembly name' conflicts with type 'second type name' forwarded to assembly 'second assembly name'.*
 - [**CS8008**](#type-forwarding): *Type 'forwarded type name' forwarded to assembly 'assembly name' conflicts with type 'exported type name' exported from module 'module name'.*
+- [**CS8010**](#processor-target-compatibility): *Agnostic assembly cannot have a processor specific module 'module name'.*
+- [**CS8011**](#processor-target-compatibility): *Assembly and module 'module name' cannot target different processors.*
+- [**CS8012**](#processor-target-compatibility): *Referenced assembly 'assembly name' targets a different processor.*
 - [**CS8014**](#invalid-assembly-reference): *Reference to 'module name' netmodule missing.*
 - [**CS8015**](#duplicate-references): *Module 'module name' is already defined in this assembly. Each module must have a unique filename.*
 - [**CS8090**](#invalid-assembly-reference): *There is an error in a referenced assembly 'assembly name'.*
@@ -322,3 +331,58 @@ Correct unresolved type ownership in the input metadata: include the intended ty
 Choose a nonreserved assembly name for an interactive-session reference (**CS7008**). Correct malformed assembly identities (**CS7071**) or the output assembly name described by the diagnostic (**CS8203**). When you create a Roslyn compilation, supply a valid assembly name rather than a path. Check spelling and the actual referenced files rather than changing only source-level aliases.
 
 Read the errors reported for the referenced assembly, then rebuild or replace that dependency (**CS8090**). Adding another reference doesn't correct errors already present in the dependency.
+
+## Processor-target compatibility
+
+- **CS8010**: *Agnostic assembly cannot have a processor specific module 'module name'.*
+- **CS8011**: *Assembly and module 'module name' cannot target different processors.*
+- **CS8012**: *Referenced assembly 'assembly name' targets a different processor.*
+
+Select the output processor through [**PlatformTarget**](../compiler-options/output.md#platformtarget). For example, set `<PlatformTarget>x64</PlatformTarget>` in the project's `PropertyGroup`, or pass `/platform:x64` directly to the compiler. Changing the consumer's setting doesn't retarget an existing `.dll` or `.netmodule`; rebuild the affected input.
+
+- For processor-agnostic output, such as `AnyCPU`, use processor-agnostic added modules (**CS8010**, error). If a module requires a specific processor, select a compatible specific output target instead.
+- Match the output and added module's specific processor targets (**CS8011**, error). Rebuild the module for the intended output target, or change the output target if the deployment supports that choice. A processor-agnostic module also works with a processor-specific output.
+- Reference an assembly built for a compatible target (**CS8012**, level-1 warning). Rebuild or replace an incompatible dependency, or select a compatible consumer target. A processor-agnostic dependency works with either neutral or specific output targets. An `AnyCPU` consumer can omit this warning for a processor-specific dependency; that absence doesn't guarantee compatibility with the eventual runtime process.
+
+These diagnostics concern the compilation as a whole. **CS8012** appears during output generation, so build the project rather than relying on editor diagnostics.
+
+For the following compilation-only examples, use a Roslyn C# compiler with your target framework's reference assemblies configured. Multi-module runtime support depends on the target environment. Save these declarations as `Sensor.cs` and `Reader.cs`, respectively:
+
+```csharp
+public class Sensor { }
+```
+
+```csharp
+public class Reader { public Sensor Read() => new Sensor(); }
+```
+
+Create an x86 module, then attempt to include it in neutral and x64 outputs:
+
+```console
+csc /target:module /platform:x86 /out:Sensor.netmodule Sensor.cs
+csc /target:library /platform:anycpu /addmodule:Sensor.netmodule /out:Reader.dll Reader.cs
+csc /target:library /platform:x64 /addmodule:Sensor.netmodule /out:Reader.dll Reader.cs
+```
+
+The second command reports **CS8010**; the third reports **CS8011**. To produce an x64 assembly, rebuild the module for x64, then compile the consumer again:
+
+```console
+csc /target:module /platform:x64 /out:Sensor.netmodule Sensor.cs
+csc /target:library /platform:x64 /addmodule:Sensor.netmodule /out:Reader.dll Reader.cs
+```
+
+For the referenced-assembly case, the following commands report **CS8012**, not a module error:
+
+```console
+csc /target:library /platform:x86 /out:Sensor.dll Sensor.cs
+csc /target:library /platform:x64 /reference:Sensor.dll /out:Reader.dll Reader.cs
+```
+
+To keep the x64 consumer, rebuild the dependency for x64 and recompile:
+
+```console
+csc /target:library /platform:x64 /out:Sensor.dll Sensor.cs
+csc /target:library /platform:x64 /reference:Sensor.dll /out:Reader.dll Reader.cs
+```
+
+Both corrections remove the intended diagnostics without suppression. Choose neutral targets only when the inputs and intended deployment support them.

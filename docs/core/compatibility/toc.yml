@@ -10,6 +10,8 @@ items:
             href: 12.md
           - name: SDK and MSBuild
             items:
+              - name: CLI path options preserve literal MSBuild-special characters
+                href: sdk/12/literal-path-options.md
               - name: Full build skipped for Native AOT publish
                 href: sdk/12/aot-publish-skips-full-build.md
       - name: .NET 11
